@@ -16,13 +16,17 @@ book:
   favicon: assets/logo-mark-dark.svg
   chapters:
     - index.qmd
-    - chapters/01-introduction.qmd
-    - chapters/02-stage-1-explore.qmd
-    - chapters/03-stage-2-organize.qmd
-    - chapters/04-stage-3-integrate.qmd
-    - chapters/05-stage-4-compound.qmd
-    - chapters/06-the-sprint.qmd
-    - chapters/07-what-to-do-next.qmd
+    - chapters/01-diagnosis.qmd
+    - chapters/02-co-operating-model.qmd
+    - chapters/03-the-framework.qmd
+    - chapters/04-signal.qmd
+    - chapters/05-source.qmd
+    - chapters/06-design.qmd
+    - chapters/07-build.qmd
+    - chapters/08-deliver.qmd
+    - chapters/09-compound.qmd
+    - chapters/10-the-rhythm.qmd
+    - chapters/11-what-to-do-next.qmd
     - chapters/appendix-prompt-engineering.qmd
 
 format:

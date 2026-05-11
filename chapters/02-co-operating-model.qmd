@@ -1,0 +1,70 @@
+# Chapter 2: The *Co-Operating* Model.
+
+The diagnosis was the easy part. You have an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model actually looks like. Not in the abstract, and not as a vision deck. As a structure you can draw on a whiteboard, point at, and start running against on Monday. That structure has a name in this book. We call it the Co-Operating Model. It is what a Co-Intelligent Company is built on, and it is what makes *Co-Intelligent Co-operation* — humans and AI working the same problems together — something other than an accident.
+
+## Two words, two jobs.
+
+*Co-Intelligent Co-operation* is the activity. *Co-Operating Model* is the structure. Hold those apart and the rest of the book makes sense.
+
+Co-Intelligent Co-operation is the relational frame. It names what humans and AI are actually doing when the thing is working — working the same problems together, in the same loop, against the same outcome. Not humans doing tasks while AI does tasks in some adjacent track. One system, one set of problems, two kinds of intelligence pointed at it. That is the activity.
+
+The Co-Operating Model is the system frame. It is the structure that makes the activity possible — the explicit decisions, written down, about who brings what intelligence to the work and who owns which operating responsibility inside it. A company without a Co-Operating Model can still occasionally produce Co-Intelligent Co-operation — in the way a company without an org chart can still occasionally ship a project. It just can't do it on purpose, can't do it repeatedly, and can't compound on it. The model is what turns a lucky outcome into a designed one.
+
+The reason most companies that have invested in AI have no compounding return is that they jumped to the activity without ever building the structure. They put a tool next to the existing workflow and asked the team to figure it out. The Co-Operating Model is the work they skipped.
+
+## Why the *Co* is load-bearing.
+
+You will notice we do not say *augmented*. The previous decade of enterprise software pitched augmentation — a graft onto the existing org, a productivity layer bolted on top. Augmentation is a metaphor of addition. You had a worker; now the worker has a tool. The shape of the work, the shape of the org, the shape of the accountabilities — none of that changes. You just expect more output from the same structure.
+
+Co-Intelligence is a different metaphor. It is a metaphor of system design. The human and the agent are both inside the loop. The work itself gets re-shaped around the fact that two different kinds of intelligence are now executing it. The structure is built to evolve — because the agent gets smarter every quarter, the human's task space shifts as a result, and the design has to keep pace. The *Co* is what gives the company that joint mechanism for continually evolving. Augmentation produces a frozen graft. Co-Intelligence produces a living system.
+
+This is not a vocabulary preference. It is the difference between a company that absorbs every model upgrade as a free improvement to its operating model, and a company that has to re-run a change-management project every time the technology takes a step. One compounds. The other restarts.
+
+## What each one brings.
+
+Start with intelligence. What does the human actually contribute to the work, and what does the agent? Get this honest and the rest of the design falls out cleanly. Get it wrong — assume the human is good at memory, or the agent is good at judgment — and every workflow you design will fight the people running it.
+
+| The Human brings the intelligence of | The Agent brings the intelligence of |
+|---|---|
+| Judgment under ambiguity | Memory at scale |
+| Context, history, relationships | Pattern recognition across your data |
+| Strategy, taste, ethics | Tireless synthesis from broad sources |
+
+Notice what is not on either side. The human is not on the "creative" side and the agent on the "analytical" side. That split is wrong and it is how most AI programs get designed badly. The honest split is about ambiguity and scale. The human carries the ambiguous, situated, value-laden judgments — the ones that require knowing the customer for nine years, or knowing why a number is the way it is, or deciding what kind of company you want to be. The agent carries the high-volume, pattern-heavy, memory-dependent work — reading everything, remembering everything, drawing on everything at once.
+
+## What each one owns.
+
+Intelligence is the easy half. Ownership is the half companies skip — and it is the half that determines whether the work compounds.
+
+| The Human owns the operating responsibility of | The Agent owns the operating responsibility of |
+|---|---|
+| Deciding what's worth solving | Research, drafting, first-pass analysis |
+| Directing the work; pricing the cost | Decision support and recommendations |
+| Owning the outcome and the risk | Documentation, capture, monitoring |
+| Coaching the system over time | Executing the routine, on call, on time |
+
+Read those columns carefully. The human side is almost entirely verbs of judgment and direction — *decides, directs, prices, owns, coaches*. The agent side is almost entirely verbs of execution and capture — *drafts, recommends, documents, monitors, executes*. The human is not in the workflow as a faster operator. The human is in the workflow as the operator of the operators. That is the shift that makes the math work.
+
+The two columns are not negotiable line items. They are the load-bearing logic of the model. A company that lets agents start deciding what's worth solving has lost the plot — the agent does not know what business you are in, what your reputation is worth, or what a bad week feels like with your largest customer. A company that keeps the human inside the documentation and the first-pass drafting has wasted the model — that work has just moved sideways at high cost.
+
+When you get the split right, the company compounds. The human's hours flow into the work only humans can do: deciding, directing, pricing, owning, coaching. The agent's hours flow into everything else, at a cost and speed that re-prices the underlying economics of the business. Both sides get more leverage from every quarter, because the structure was built to absorb improvement on both sides.
+
+When you get it wrong — and most companies get it wrong on first attempt — you get the failure mode we keep seeing in the field: two parallel tracks producing nothing structural. The team has its workflow. The agents have theirs. The handoff is undefined. The outcome belongs to no one. The dashboard shows tool adoption and the P&L shows nothing.
+
+## The *Equation*.
+
+Every operating system worth running can be reduced to one line that contains the whole architecture. EOS does it with *Vision + Traction = Healthy Organization* — the two halves of the model on the left, the outcome on the right, and the equals sign carrying the whole argument that you cannot get the outcome without both halves.
+
+Ours is *Co-Intelligence + Rhythm = Compound.*
+
+Co-Intelligence is the system half — the Co-Operating Model you just read, the designed structure where human and agent intelligence do their respective work against the same problems. It is the *what*.
+
+Rhythm is the cadence half — running the system on a quarterly beat, sprint by sprint, against your real operational constraints. It is the *how often*.
+
+Compound is the outcome — used as a verb. Not "transformation," not "maturity," not "scale." Compound, in the precise sense your CFO means it. Each sprint produces a return; the infrastructure built in that sprint reduces the cost of the next sprint; the design improvements made between sprints accelerate every sprint that follows. The company compounds on its AI investment the same way a balance sheet compounds on retained earnings. Slowly at first. And then not slowly.
+
+The Equation does the same work for us that *Vision + Traction* does for an EOS company. You can put it on the wall. You can use it to diagnose what is missing. A company with the model but no rhythm has a slide deck — no work shipped. A company with rhythm but no model has activity — no compounding. Both halves, on the same beat, against real constraints — that produces the outcome.
+
+## What's next.
+
+You now have the *what*. The next chapter gives you the *how* — the Framework that runs the Co-Operating Model in practice, the Sequence of six stages that move a sprint from a vague pain to a shipped result, the Rhythm that runs that Sequence quarter after quarter, and the Sprint as the unit of work where all of it lands. The model on the wall is the answer to the question this chapter asked. The Framework is the answer to the question every CEO asks next: *fine, on Monday morning, what do we actually do?*

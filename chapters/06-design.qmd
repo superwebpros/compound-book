@@ -1,0 +1,109 @@
+# Design.
+
+Design is the stage where the constraint and the knowledge map turn into a workflow with named owners. Signal told you what to solve. Source told you what the work actually requires. Design decides who does what — and writes that decision down in a form the rest of the company can read, build against, and improve.
+
+This is the first stage of *Execute & Compound*. Everything before this was diagnosis. Everything after this is shipping. Design is the gate between the two — and the reason every sprint either compounds or stalls.
+
+## What Design produces.
+
+Design has two deliverables, and they ship together.
+
+The first is a *designed workflow* — specific enough that Build can execute against it without ambiguity. Not a sketch. Not a Miro board with sticky notes. A workflow specification that names the inputs, the steps, the handoffs, the outputs, and the points at which a human decides versus an agent executes. If Build has to ask "what did you mean here?" the workflow was not designed — it was described.
+
+The second is an entry in the *Hybrid Accountability Chart* for the specific accountability this sprint is addressing. One row. One accountability. One named agent team. One named human supervisor. One decision about whether this work is AI-assisted or automated. Over many sprints, the chart fills in. After one sprint, it has a single row — and that single row is the first piece of structural evidence that your company is operating as a Co-Intelligent Company rather than a human company that happens to use AI tools.
+
+Design produces both of these or it has not produced anything. A workflow without an accountability entry is a process map without an owner. An accountability entry without a designed workflow is an org chart row with nothing behind it. The two deliverables are the same artifact viewed from two angles — one is the operational shape of the work, the other is the structural shape of the responsibility.
+
+## The Hybrid Accountability Chart.
+
+The Hybrid Accountability Chart is the named, teachable instrument that makes Design concrete. If you run on EOS, you already have an Accountability Chart — one name against each accountability in the company. The Hybrid Accountability Chart extends that idea to a workforce that includes agent teams alongside humans.
+
+For each accountability, the chart answers four questions:
+
+1. What role or function does this team perform?
+2. What is the name of the agent team, if applicable?
+3. Who is the human supervisor?
+4. Is this accountability *AI-assisted* — meaning a human is in the loop on every output — or *Automated* — meaning the agent team executes and the human reviews on a schedule?
+
+Here is what a partially built chart looks like, after a company has run a handful of sprints:
+
+| Role / function | Agent team name | Human supervisor | AI-Assisted or Automated |
+|---|---|---|---|
+| Sales Quoting | Quote Generation Team | Sales Director | AI-Assisted |
+| Content Production | Content Ops Team | Marketing Lead | Automated |
+| Client Onboarding | Onboarding Agent | Ops Manager | AI-Assisted |
+| Financial Reporting | Reporting Team | CFO | AI-Assisted |
+
+Every agent team in the chart has a human supervisor — every row, no exceptions. There are no unowned teams. This is not a soft principle. It is a structural rule of the chart, and it is the rule that makes the difference between an organization that has deployed AI and an organization that has *designed* with AI. When you look at the chart, every accountability in the Human+AI workforce has a name beside it the same way every accountability in a healthy human org chart has a name beside it. If you cannot put a name beside it, the design is not done.
+
+The four questions are not a template to fill in once and forget. They are a design discipline. Every sprint adds one row, and every row forces the four answers — including the harder ones. "Who supervises this team?" is uncomfortable when the agent team is producing work that nobody on the leadership team has owned before. That discomfort is the point. The chart is what surfaces it before any code is written.
+
+## AI-assisted or automated.
+
+The fourth question is the one operators get wrong most often, because they treat it as a technology decision when it is a design decision.
+
+Most accountabilities start AI-assisted. A human is in the loop on every output — reviewing accuracy, format, completeness, judgment. As the design matures, as the data cleans up, as the leadership team develops trust in the agent's behavior on a class of decisions, the accountability moves toward automated — the agent executes, the human reviews on a schedule, the bottleneck of per-output review goes away.
+
+This is a spectrum, not a binary. And it shifts over time. The Quote Generation Team that started AI-assisted in sprint one might be reviewed every-other-quote by sprint four, and reviewed weekly-in-batch by sprint eight. Nothing about the agent changed in those eight sprints. What changed was the design — the leadership team learned which decisions the agent gets right reliably, which it does not, and where the human's judgment actually adds value.
+
+That decision — where on the spectrum this accountability sits, and when it moves — depends on the stakes of the work, the cleanliness of the data, and the organization's comfort with agent judgment in that function. High-stakes decisions with ambiguous inputs stay AI-assisted longer. Repetitive, well-defined work with clean inputs moves to automated faster. The Design stage is where that call gets made deliberately, with the Human Orchestrator's name attached to it — instead of drifting into "we just don't review the outputs anymore" three months after deployment, which is what happens when no one designed the supervision in the first place.
+
+## The two instruments.
+
+Design has two Skills Library instruments: Work Deconstruction and Hybrid Accountability Chart.
+
+*Work Deconstruction* breaks an accountability into its component tasks and classifies each one. For every task, the question is: does this require human judgment, does this benefit from agent assistance, is this fully automatable, or is this a workflow-automation problem that does not need an agent at all? The classification is the work — and most accountabilities, when deconstructed, turn out to have a different shape than the leader assumed. The "judgment-heavy role" is actually 70% routing and documentation. The "low-skill operational task" turns out to depend on a relationship the agent cannot replicate. You do not know which is which until you decompose the role honestly, task by task.
+
+*Hybrid Accountability Chart* is the instrument that takes the output of Work Deconstruction and turns it into a chart entry — the row described above. One accountability, one agent team, one supervisor, one position on the AI-assisted-to-automated spectrum. The two skills run together: Work Deconstruction is the thinking, the chart entry is the artifact.
+
+These names matter. Earlier internal versions of the framework called these "Work Decomposition" and "Human vs. AI Allocation." Those names are retired. The current names are *Work Deconstruction* and *Hybrid Accountability Chart* — and the distinction matters because the chart is what makes the decomposition durable. A decomposition that does not land inside the chart is a one-time analysis. A decomposition that lands inside the chart becomes structure.
+
+## Donna's role, deconstructed.
+
+Inside a member company, Donna was the operations lead. The role had become a bottleneck — too much work, too few hours — and the company was about to backfill it with a junior coordinator. A new hire, a new training ramp, another body in the operations function. Standard headcount math.
+
+Instead, the team pulled Donna's accountability chart and ran Work Deconstruction against it, using TML — the Task-ML decomposition framework. Every accountability Donna owned was broken into its task components, and every task got a classification: human judgment, agent-assisted, or fully automated.
+
+The decomposition revealed the obvious thing nobody had looked at directly. A substantial fraction of Donna's day was high-volume, low-judgment routing and documentation work — the kind of work that looks like operations because it is happening inside the operations function, but is not actually operations judgment. That work became a designed agent team. It landed in the Hybrid Accountability Chart as an AI-assisted entry, with Donna as the human supervisor. She reviewed every output to start. The rest of Donna's time stayed with Donna — the parts that required judgment, relationships, and context the agent did not have.
+
+The junior coordinator hire was never posted. The work shipped. Donna's role became more strategic, not less — she was supervising an agent team on the high-volume work and spending the recovered hours on the parts of operations that only she could do. One row in the chart. One sprint. One avoided hire.
+
+That is what Design looks like in practice — an accountability chart, an honest decomposition, and a workflow that lands inside the Hybrid Accountability Chart with named owners. Not a transformation initiative. Not a strategic offsite. One accountability, one sprint, one row.
+
+## The Design Agent.
+
+Compound provides a Design Agent — one of the six coaching agents on the Compound Bench. The Design Agent takes two inputs: the validated constraint statement from Signal and the Knowledge Map from Source. With those in hand, it helps the leadership team draft the work allocation, draw the Hybrid Accountability Chart entry, and scope the sprint before building begins.
+
+The Design Agent does not replace the design judgment of the leadership team. It accelerates it. The questions it asks — which tasks require judgment, which benefit from assistance, which can be automated, who supervises, what is the appropriate level of automation to start — are the same questions a good operating consultant would ask, run with the speed and consistency of an agent that has run the conversation hundreds of times. The leadership team still owns the decisions. The Design Agent makes sure none of the four questions get skipped, none of the tasks get hand-waved, and none of the rows leave the conversation without a named human supervisor.
+
+This is what the Bench is for. The Design Agent is Compound's accumulated reps on this specific design conversation, available to the operator running their first sprint at the same quality as a Compound coach running their fortieth.
+
+## The Human Orchestrator.
+
+Design produces a workflow and a chart entry. It also produces a role: the *Human Orchestrator* for this accountability.
+
+The Human Orchestrator is Compound's answer to the question every operator eventually asks — "what does the human do when AI does the work?" The answer is not "less." The answer is "something different, and more strategic."
+
+The Human Orchestrator sets the goals for the agent team. They design the workflow the agent team executes against. They own the outcome — the sprint's measurable result against the constraint from Signal. They review the agent team at the goal level, not the task level — they are not checking every output line by line, they are asking whether the team is moving the constraint in the right direction. And critically, they make the design improvements between sprints. After every Compound phase, the Human Orchestrator looks at what the team produced and asks: what one design change would make the next sprint better? That iterative improvement is the compounding mechanism on the leadership side of the chart — eight sprints of one good design change each produces an agent team that is substantially more capable than the one that shipped in sprint one.
+
+This is a more strategic role than executing inside the function. It is also a role most leaders were not hired for. The operations lead who got the job because she was excellent at executing operations work is now being asked to design the operations function instead of doing it. That is not a smaller role. It is a different one — and developing the capability is deliberate work, not a personality change. The Design stage names the role; the Rhythm builds the muscle.
+
+## The Agent Coordinator.
+
+Beneath the Human Orchestrator sits an operational role: the *Agent Coordinator*.
+
+The Agent Coordinator manages the agent team day-to-day. Inputs clean. Outputs reviewed at the appropriate frequency. Judgment-call escalations surfaced to the Human Orchestrator when the agent produces something outside its designed scope. Monitoring the team's performance over time and flagging when the design is drifting — inputs degrading, outputs trending off, a class of decisions no longer being handled cleanly. The Agent Coordinator is to an agent team what a team lead is to a group of junior employees: not the strategist, but the person who makes sure the work is on track and that problems surface before they become expensive.
+
+In a 25-person company, this is part of someone's existing role — often the operations lead, often the same person who championed the first sprint. In a 100-person company, it may be a dedicated position. The staffing decision is less important than the fact that *someone owns it*. Companies that deploy agent teams without an Agent Coordinator discover within weeks that the team has drifted — inputs no longer reviewed, outputs no longer trusted, the workflow back to "we just do it the old way." The fix is not technical. The fix is naming the role and giving it the hours.
+
+The Human Orchestrator and the Agent Coordinator are two different jobs. They can live in the same person at small scale. They cannot live nowhere.
+
+## Design is the gate.
+
+Nothing in Execute & Compound begins until Design is locked. That is not bureaucracy. It is the structural reason Build moves fast when other approaches stall.
+
+Teams that find Build slow or complicated are almost always teams that moved through Design too quickly — they discovered mid-build that there were decisions nobody had made, handoffs nobody had specified, supervision arrangements nobody had named. Every one of those discoveries is a piece of Design surfacing where it does not belong, in the middle of the build phase, where it costs five times as much to resolve. The gate exists to prevent that. The teams that respect the gate ship fast in Build because Build is what is left when the actual thinking has already been done.
+
+A locked Design has three things: a workflow specific enough to build against, a Hybrid Accountability Chart entry with all four questions answered, and named Human Orchestrator and Agent Coordinator roles for the accountability. When those three are in place, Build can begin. Until they are, it cannot — and the discipline of holding that line is what separates the operators who run the Sequence from the operators who buy AI tools and hope.
+
+The next chapter is Build — the phase where the designed workflow becomes a deployable system, specified at the level of detail a developer can execute against, with the guardrails and oversight decisions Design locked in already on the table.

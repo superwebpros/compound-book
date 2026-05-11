@@ -1,0 +1,87 @@
+# *Deliver*.
+
+Build deployed the workflow. Deliver is what happens next — and it is its own stage for a reason. Most AI implementations end at Build. The tool is configured, the agent runs in production, the project ticket is closed, and the team that commissioned the work declares the sprint complete. Six months later the dashboard has not moved, the people whose work was supposed to change are still working the old way, and nobody can explain what happened.
+
+What happened is that Build's "deployed" is a technical claim. Deliver's "delivered" is an organizational one. The workflow is only delivered when the people whose handoffs change have been trained, when the upstream routing has been re-wired, when the reporting that used to roll up has been redirected, and when the sprint's outcome has been measured against the cost Signal quantified. None of that happens automatically. Deliver is the stage where the deployed solution actually changes the way the organization operates — and the stage where the sprint's claim gets proven against a number.
+
+## *Deployed* is not the same as *delivered*.
+
+Build ends with a working agent running in the production environment. That is a real milestone. It is also incomplete. The agent is doing the work it was designed to do; the organization around it has not yet adjusted to receive what the agent now produces.
+
+The person whose week used to include four hours of manual routing now has those four hours back — but only if their calendar, their queue, and their handoffs have been re-set to reflect that. The colleague who used to send them tickets needs to know to send the tickets somewhere else. The manager who used to see the weekly summary needs the new reporting wired up. The escalation path for the exceptions the agent flags needs to land on a human who has been told it will land on them.
+
+If you skip that work, the deployed system still functions — but the organization continues to behave as if the old workflow is in place. People route around the new system because they were never told to route through it. The agent does its job. The hours do not come back. The cost Signal quantified does not get recovered. The sprint did not produce.
+
+Deliver is the stage that closes that gap. It is operational, not technical. The instruments are not code — they are the runbook the team uses to work the new way, and the pre-flight check that confirms the team is ready to.
+
+## What Deliver *produces*.
+
+The deliverable of Deliver is a documented sprint outcome — the result against the constraint Signal named, expressed in the measurable terms Signal quantified.
+
+Not "the agent team ran 200 tasks." Not "the system is in production and stable." The deliverable is a sentence that mirrors the Signal statement: the quoting process that took three days now takes four hours. The eight hours of manual routing per week now run without a person in the loop. The on-call escalation that used to fire twice a night now fires twice a quarter.
+
+The specificity is the point. It is what creates accountability for the sprint's claim. It is what gives the leadership team the confidence — and the evidence — to commit to a second sprint. And it is what closes the loop between the cost Signal named at the start and the recovery the Sequence produced at the end.
+
+If Deliver cannot produce that sentence, one of two things is true. Either the sprint did not produce, or Signal did not quantify the constraint precisely enough to measure against. Both outcomes are useful — but they are different problems, and naming which one is in play is part of Deliver's job.
+
+## The *measurement* question.
+
+Deliver's first responsibility is to measure the sprint against Signal's quantified cost. Signal said the constraint costs $150K a year. Deliver shows a workflow that recovers 80% of that. The sprint produced. The math is legible. The next sprint earns the right to start.
+
+That is the clean case. The interesting cases are the ones where the measurement is harder. The sprint clearly changed the work — the team feels it, the operator's week looks different, the bottleneck is gone — but the dollar figure is hard to pin down because the original Signal quantification was looser than it should have been. That is not a Deliver failure. That is a Signal lesson, and it goes into the Compound stage as an input to how the next sprint gets framed.
+
+The discipline is to write down the number anyway. Even an imperfect measurement is better than a vibe. If the constraint cost was estimated at "around 8 hours a week" and Deliver shows the work now takes a person 30 minutes a week, the recovery is real and the math is good enough to be reported. The point is to refuse the trap of declaring victory without evidence — and to refuse the equally bad trap of letting imperfect evidence become an excuse to claim nothing happened.
+
+A measurement that is honest beats a measurement that is precise. The leadership team needs to know what changed. They do not need a three-decimal-place ROI.
+
+## What gets *logged*.
+
+Deliver also surfaces what did not work. This is not a postmortem — the retrospective belongs to Compound, and that is the next chapter. This is the operational logging that captures, in real time, the gaps between what was designed and what production actually revealed.
+
+Two categories matter. The first is outputs that required human intervention outside the designed handoffs. The Hybrid Accountability Chart specifies where humans review what the agent produces; any case where someone had to step in outside those review points is a design signal worth recording. Either the work was misclassified in Design, or the agent's guardrails are not catching what they were supposed to catch, or a category of input exists in production that did not exist in the Source map.
+
+The second is data gaps that were not visible in Source but surfaced in production. The Knowledge Map was built against what the team could see. Sometimes the work reveals what the team could not see — a customer record format nobody flagged, an exception path that only fires at quarter-end, a system handoff that works for 95% of cases and silently fails for 5%. Those become Source inputs for the next sprint.
+
+Both categories get written down. Not in a formal incident-report shape — in a running log the Agent Coordinator maintains as part of the operating rhythm. That log is what the Compound stage works against when it asks: what would we do differently next time?
+
+## The two instruments — *Deploy Readiness Audit* and *Training Set Generator*.
+
+Deliver has two installable instruments. They run in sequence: one before the workflow goes live in production, one as it goes live.
+
+The **Deploy Readiness Audit** is the pre-flight check. Are the people whose handoffs change trained on the new flow? Are the inputs to the agent clean and arriving in the expected format? Are the escalation paths defined, named, and acknowledged by the humans who own them? Is the rollback plan written down — the specific steps the team takes if the new workflow produces results the organization cannot accept, and who has the authority to invoke it? The Audit's job is to refuse a go-live until each of those questions has an answer. Most failed deploys can be traced back to a question that nobody asked at this gate.
+
+The **Training Set Generator** produces the training material for the team whose work is changing. Not a slide deck about AI. Not a generic onboarding doc. The specific runbook for the new workflow: what inputs to send the agent, what outputs to expect back, what to do when the agent produces something unexpected, who to escalate to and how, what the new handoffs look like, what the new reporting looks like. It is operator documentation, written for the people who now have to work the new way. The Generator's job is to produce that runbook in the shape the team actually uses — a one-pager, a Loom, a checklist inside the tool they already work in — not in a format that requires anyone to leave their workflow to consult it.
+
+The two instruments answer two different questions. The Audit asks: are we ready to flip the switch? The Generator answers: now that the switch is flipped, how does the team work?
+
+## The *Deliver Agent*.
+
+Compound provides a Deliver Agent — the fifth of the six coaching agents on the Compound Bench. You run it on a built sprint, with the Hybrid Accountability Chart from Design and the deployed workflow from Build as its inputs.
+
+The Deliver Agent identifies who needs training and on what. It walks the Hybrid Accountability Chart and surfaces every role whose handoffs have changed — including the ones the team has not thought about because the change is small. It drafts the runbook the Training Set Generator produces, against the specific workflow rather than as a generic template. It defines how the result gets measured — pulling the cost Signal quantified, the production metric Build's instrumentation actually captures, and the gap between the two. And it specifies the rollback plan: the exact conditions under which the new workflow gets paused, the alternative path the work takes during the pause, and the human who owns the call.
+
+The Agent is not the deploy. The team still owns the deploy. The Agent is the structure that makes sure the deploy is operational, not just technical — the artifact that says, on one page, here is what changes for whom, here is how we will know it worked, and here is what we do if it does not.
+
+### Sprint · Process Automation.
+
+A workflow inside Compound was costing the operator about eight hours per week. Manual operations work — the kind of high-volume routing-and-documentation work that should never have stayed with a person but had been there long enough that nobody had been able to carve out the design time to move it.
+
+The team ran the full Sequence on the workflow. Signal: name the hours and what they cost. Source: map the systems and the decisions — what got routed where, what triggered an exception, which calls had to stay with a human. Design: classify the components. Most of the eight hours was deterministic routing with clear inputs and clear outputs; the rest was judgment calls that had to stay with the operator. Build: a low-code workflow stitched together inside the tools the team already used, with a Compound agent doing the routing and the operator reviewing exceptions instead of handling the volume.
+
+Then Deliver. Deploy it inside the operating rhythm. Retrain the operator on what their week now looked like — what the agent did, what arrived in their queue, what they were now responsible for and what they were not. Change the upstream handoff so the work flowed into the new system instead of the old inbox. Measure the recovered hours against the Signal number.
+
+The result: those eight hours come back to the operator every week. The workflow runs without a person in the loop. The operator's week now includes the design work that used to be impossible to make room for — which is itself an input to the next sprint.
+
+## The change is not the *launch*. The change is the *week*.
+
+A well-run Deliver phase changes the work the people in the function actually do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that is now automated either get reinvested — in the strategic work the Design phase identified as the higher-leverage use of their time — or they get pulled out of the org over time, as the headcount math gets re-computed against the new operating reality.
+
+That is the test of whether Deliver actually delivered. Not whether the agent is running. Not whether the dashboard exists. Whether the people whose work was supposed to change can describe, concretely, what they now do that they did not do before, and what they no longer do that they used to. If they can, the sprint produced. If they cannot, the sprint deployed a tool — and you are looking at the failure mode this stage exists to prevent.
+
+The reason Build's "deployed" feels like the finish line is because, technically, it is. The agent is running. The job is done. But the operating model has not changed yet — the routing, the queues, the reporting, the calendars, the handoffs. Build is the engineering completion. Deliver is the operating completion. Both are required for the sprint to have produced anything beyond a demo.
+
+## End of the sprint as a *project*. Start of it as *infrastructure*.
+
+Deliver is where the sprint ends as a project and begins as infrastructure. The workflow is live. The team is trained. The result is measured. The log of what did not work is captured. The constraint Signal named is — depending on the sprint — either resolved, materially reduced, or honestly described in terms of how much of it the sprint moved and how much remains.
+
+That artifact set — the outcome, the log, the runbook, the updated Hybrid Accountability Chart entry — is what the next stage works against. Compound is where the team turns it into the inputs that accelerate the next sprint. That is the next chapter.
