@@ -10,7 +10,7 @@ The first move is not to select a platform, not to hire a consultant, not to sch
 
 That single step — done honestly, without rushing to a solution — is what separates the companies that produce results from AI from the companies that produce a second round of the same experiments they ran last year. Most CEOs skip it. They move to tools because tools are concrete and constraints are uncomfortable. The discomfort is the work. The constraint is the asset.
 
-If you have read this far and done the thinking the chapters asked of you, you almost certainly have a sense of where your real constraint lives. You may have already named it on the margin of a page. The job now is to sharpen it — to move from a general area of concern to a specific, validated problem statement with a cost attached to it.
+If you have read this far and done the thinking the chapters asked of you, you have a sense of where your real constraint lives. You may have already named it on the margin of a page. The job now is to sharpen it — to move from a general area of concern to a specific, validated problem statement with a cost attached.
 
 That is what a first sprint is built on. Without it, there is nothing to sprint against.
 

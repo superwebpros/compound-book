@@ -14,13 +14,13 @@ The discipline of insisting on one is the entire point. Most leadership teams ar
 
 That commitment is not arbitrary. It is structural. A six-to-eight-week Sprint that tries to solve three problems solves none of them. A Sprint that solves one produces a measurable result against a number you wrote down at the start, and that result becomes the proof point that earns the next Sprint. The narrowness is what makes the work pay.
 
-The quantified cost is also non-negotiable. "It's a big problem" is not a Signal. "It cost us roughly $180,000 in overtime and rework over the last twelve months, concentrated in the operations group" is. The number does two things. It tells you whether the constraint is worth a Sprint's attention. And it gives you a target the Deliver phase can measure against — without it, you cannot prove the Sprint paid for itself.
+The quantified cost is also non-negotiable. "It's a big problem" is not a Signal. "It cost us roughly $180,000 in overtime and rework over the last twelve months, concentrated in the operations group" is. The number does two things. It tells you whether the constraint is worth a Sprint's attention, and it gives you a target the Deliver phase can measure against. Without it, you cannot prove the Sprint paid for itself.
 
 ## The gate is real. You don't get past it by *declaring* it complete.
 
 Signal is a gate. You do not move to Source until the constraint is locked. There is no graceful workaround for this. You either have one validated constraint statement with a number on it, or you do not — and if you do not, the Sprint has not started.
 
-The most common failure mode here is not technical. It is political. Leadership teams cannot agree on which constraint is the constraint, so they punt — they pick three, or they pick the one the loudest VP wants, or they write something so abstract that it is impossible to disagree with and impossible to act on. None of these get you to Source. All of them produce the same outcome eighteen months later: another deck explaining why the AI investment did not move the numbers.
+The most common failure mode here is not technical. It is political. Leadership teams cannot agree on which constraint is the constraint, so they punt — they pick three, or they pick the one the loudest VP wants, or they write something so abstract that it is impossible to disagree with and impossible to act on. None of these get you to Source. All of them produce the same outcome eighteen months later — another deck explaining why the AI investment did not move the numbers.
 
 The inability to agree on one constraint is itself a design signal. It almost always means the leadership team is unclear about priorities. That is a leadership design problem, not a technology problem — and no AI tool is going to resolve it for you. If your team cannot pick one, you have learned something important before a single line of the Sprint has been built. The fix is upstream of anything in this book.
 
@@ -30,7 +30,7 @@ When a team does land on one constraint and commits to it, the energy in the roo
 
 Most organizations bring symptoms to the table. "Our quoting takes too long." "Our onboarding is messy." "The sales team is drowning in admin." These are real, and the people raising them are not wrong — but none of them, as stated, is a constraint a Sprint can solve.
 
-The work of Signal is to trace the symptom to the underlying constraint. Quoting takes too long because three different systems hold pieces of the customer record and the ops manager is the only person who knows how to reconcile them. Onboarding is messy because the handoff between sales and delivery is undefined and every new customer triggers a custom escalation chain. Sales is drowning in admin because the CRM was configured for a smaller company and the reps are doing manual data hygiene to compensate.
+The work of Signal is to trace the symptom to the underlying constraint. Quoting takes too long because three different systems hold pieces of the customer record, and the ops manager is the only person who knows how to reconcile them. Onboarding is messy because the handoff between sales and delivery is undefined, and every new customer triggers a custom escalation chain. Sales is drowning in admin because the CRM was configured for a smaller company, and the reps are doing manual data hygiene to compensate.
 
 The symptom is the thing you feel. The constraint is the thing that, if removed, would change the math. Signal makes you stop at the symptom long enough to find the constraint underneath it — and then it makes you put a number on what that constraint is costing you. Until both moves are complete, you are not at Signal yet. You are still describing the weather.
 
@@ -38,7 +38,7 @@ The symptom is the thing you feel. The constraint is the thing that, if removed,
 
 Signal has two installable instruments. They do different jobs and you use them at different moments.
 
-The **Constraint Finder** is the structured conversation that surfaces the constraint. It walks the team from the situation, to the symptom, to the underlying constraint, to the dollar cost. What is the problem in one sentence? Where does it live in the organization? How long has it existed? What does it cost — in hours per week, in dollars per quarter, in margin lost, in deals not closed? The output is the one-page constraint statement. It is the artifact the rest of the Sprint runs against.
+The **Constraint Finder** is the structured conversation that surfaces the constraint. It walks the team from situation, to symptom, to underlying constraint, to dollar cost. What is the problem in one sentence? Where does it live in the organization? How long has it existed? What does it cost — in hours per week, in dollars per quarter, in margin lost, in deals not closed? The output is the one-page constraint statement. It is the artifact the rest of the Sprint runs against.
 
 The **Issue Surfacer** is used earlier — before a Sprint, or when something feels off but the team cannot name it. It pulls into view the issues the company has been quietly working around. Every operating company accumulates these: the workaround that became a process, the manual reconciliation everyone forgot was manual, the role that exists because something upstream broke years ago and nobody fixed it. The Issue Surfacer drags those into daylight so the Constraint Finder has something to work on. In an EOS shop, the Issue Surfacer often borrows directly from the existing issues list — that list is half of Signal's input lying on a whiteboard somewhere.
 
@@ -48,7 +48,7 @@ You will rarely run one without the other. The Issue Surfacer gives you the cand
 
 Compound provides a Signal Agent — the first of the six on the Compound Bench. You run it when something feels off but you cannot name what is broken.
 
-The Signal Agent walks you from situation → symptom → constraint → dollar cost. It asks the questions a good outside operator would ask if they sat down with you for two hours: what is actually slow, what is actually expensive, what is the workaround your team built that you forgot was a workaround, what would change if this one thing got faster. It does not let you stop at the symptom. It keeps pushing until you have a number.
+The Signal Agent walks you from situation → symptom → constraint → dollar cost. It asks the questions a good outside operator would ask if they sat down with you for two hours: what is slow, what is expensive, what workaround did your team build that you forgot was a workaround, what would change if this one thing got faster. It does not let you stop at the symptom. It keeps pushing until you have a number.
 
 You leave the session with a one-page constraint statement. That is the artifact you bring to Source. It is also the artifact you bring to your next leadership meeting when someone asks "what are we actually solving for this quarter" — because Signal is not just the start of a Sprint. It is the most honest version of a strategy conversation your team has had in a while.
 
@@ -60,7 +60,7 @@ The issues list is the most obvious input. Every L10, every weekly tactical, eve
 
 Quarterly rocks that are not moving are another input. A rock that has been carried for three quarters without progress is almost always sitting on top of a constraint that nobody named. The rock is the symptom. The constraint is whatever is preventing the rock from moving. Find that, and the rock starts moving on its own.
 
-The headcount conversation is the third — and the most expensive when you miss it. Every time the org reaches for a hire, there is a constraint hiding underneath. The work is real. The team is stretched. The default move is to add a person. But under that conversation is a workflow that was never designed for the volume it is now carrying. Signal asks: before you post the role, what is the constraint that is generating the demand for a new hire? Half the time, naming it changes what you do next. The other half, you still hire — but you hire against a redesigned workflow rather than the one that is already failing.
+The headcount conversation is the third — and the most expensive when you miss it. Every time the org reaches for a hire, there is a constraint hiding underneath. The work is real. The team is stretched. The default move is to add a person. But under that conversation is a workflow that was never designed for the volume it is now carrying. Signal asks: before you post the role, what is the constraint generating the demand for a new hire? Half the time, naming it changes what you do next. The other half, you still hire — but you hire against a redesigned workflow rather than the one already failing.
 
 ### Sprint · Saint Clair Systems.
 
@@ -80,7 +80,7 @@ It is also cheap. The alternative — the one most companies pick by default —
 
 ## The *failure mode* is comfortable. That is what makes it dangerous.
 
-Skipping Signal looks like progress. The team is busy. Tools are being evaluated. There are demos on Fridays. Somebody is prompting. The Slack channel has activity. None of this is Signal. All of it can be happening while the organization has not named a single constraint it is committed to solving.
+Skipping Signal looks like progress. The team is busy. Tools are being evaluated. There are demos on Fridays. Somebody is prompting. The Slack channel has activity. None of it is Signal. All of it can be happening while the organization has not named a single constraint it is committed to solving.
 
 Six weeks of ungoverned AI experimentation produces another demo. Six weeks through a real Signal produces a validated problem statement, a number, and the foundation for everything in Source, Design, Build, and Deliver to land on. The two things look identical for the first week and diverge violently after that.
 

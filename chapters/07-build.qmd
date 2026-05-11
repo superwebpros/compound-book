@@ -8,7 +8,7 @@ This chapter is about what Build actually produces, what the team is choosing be
 
 Build produces one thing: a working, deployed solution to the validated constraint.
 
-*Working* means the solution has been tested against real inputs and produces outputs the human supervisor can review and trust. Not synthetic inputs. Not a demo dataset. The actual records, the actual emails, the actual quote requests, the actual customer files — whatever the design specified as input. The outputs land in a form the supervisor can evaluate the same way they would evaluate a person's work.
+*Working* means the solution has been tested against real inputs and produces outputs the human supervisor can review and trust. Not synthetic inputs. Not a demo dataset. The actual records, emails, quote requests, customer files — whatever the design specified as input. The outputs land in a form the supervisor can evaluate the same way they would evaluate a person's work.
 
 *Deployed* means the solution is operating inside the actual business environment — connected to the systems it needs, used by the people who need to use it, producing outputs that flow into the next handoff. A demo in a sandbox is not the deliverable. A working system that the team is using on real work is the deliverable.
 
@@ -22,7 +22,7 @@ That is not Build. That is a different project pretending to be Build.
 
 The Build phase is scoped exactly — and only — to the workflow the Design phase produced. Not the surrounding workflow. Not the system of record it integrates with. Not the team's other AI ambitions. The solution for the validated constraint, built to the specifications the Design phase committed to, and nothing else.
 
-This is not a limitation. It is the structural reason Build is fast. A team that built a quoting workflow in three weeks did not build it in three weeks because they were clever. They built it in three weeks because Design gave them a workflow narrow enough to build in three weeks. The discipline of scope is upstream of the speed of execution.
+This is not a limitation. It is the structural reason Build is fast. A team that built a quoting workflow in three weeks did not do it because they were clever. They did it because Design gave them a workflow narrow enough to build in three weeks. The discipline of scope is upstream of the speed of execution.
 
 If, mid-Build, the team finds themselves negotiating new requirements, that is a Design-debt conversation, not a Build conversation. The right move is to stop, go back, fix the design, and resume — not to absorb the ambiguity into Build and hope it works out. It will not work out.
 
@@ -36,7 +36,7 @@ When all of that is true, Build is mostly translation work. The specification al
 
 When any of that is not true, Build is where the unresolved questions surface — usually at the worst possible moment, usually expensive, usually disguised as a technical problem when they are actually a design problem. The mid-build "wait, we didn't decide that" conversation is not a Build problem. It is Design debt arriving on the worst possible balance sheet.
 
-The Diagnose half of the Sequence — Signal and Source — and the gate at the end of Design exist to prevent that conversation from ever happening. Teams that internalize this stop experiencing Build as a struggle. They experience it as the short, almost mechanical stage between deciding and shipping.
+The Diagnose half of the Sequence — Signal and Source — and the gate at the end of Design exist to prevent that conversation from ever happening. Teams that internalize this stop experiencing Build as a struggle. They experience it as the short, mechanical stage between deciding and shipping.
 
 ## The build *paths*.
 
@@ -58,7 +58,7 @@ The Design phase determines the path. Build executes it. A team that picks a pat
 
 A 60-person professional services firm came into a sprint with a Signal that was almost embarrassing in its clarity — quotes were taking five business days, the principal was the bottleneck on every one, and the constraint was costing them roughly $200K a year in lost or stale deals. Source mapped the inputs: the inbound brief, the historical quote library, the rate card, the scoping checklist. Design produced a workflow where an agent drafted the quote, the project lead reviewed and edited it, and the principal signed off only on the final number.
 
-The build path was low-code. No engineer needed. The team assembled the workflow themselves in three weeks, using tools they already had licenses for. Quotes started going out the same day they came in. The principal got their week back. The cost of the build was a rounding error against what the constraint was costing.
+The build path was low-code. No engineer needed. The team assembled the workflow themselves in three weeks, using tools they already had licenses for. Quotes started going out the same day they came in. The principal got their week back. The cost of the build was a rounding error against what the constraint had been costing.
 
 The story isn't that low-code is magic. The story is that Design gave them a workflow simple enough to build in low-code in three weeks. That is what a thorough diagnose produces.
 
@@ -84,7 +84,7 @@ You hand it the designed workflow and the Hybrid Accountability Chart entry from
 
 The Build Agent is not the builder. It is the specifier. It produces the document the builder works from.
 
-This matters because, for most Compound members, Compound is not the builder either. The build itself is done by the company's own people, by their existing vendor, by a contract engineer they already have a relationship with, or — on the low-code path — by the team themselves. The Build Agent's job is to give those people a spec clear enough that they can execute against it without inventing the design on the fly.
+This matters because, for most Compound members, Compound is not the builder either. The build is done by the company's own people, by their existing vendor, by a contract engineer they already have a relationship with, or — on the low-code path — by the team themselves. The Build Agent's job is to give those people a spec clear enough that they can execute against it without inventing the design on the fly.
 
 Some members prefer to bring Compound in to manage the build. That is available. Most do not need it. Most have technical resources that work fine — they just have never had a clean spec to work from. The Build Agent solves that.
 
@@ -94,7 +94,7 @@ Build is done when there is a deployed solution producing outputs against real i
 
 Not a demo. Not a pilot in a sandbox. Not a working prototype the team is waiting to "really roll out" after some unspecified additional work. Deployed and producing against real work.
 
-If the team is uncertain whether Build is done, the test is simple — pull the last week of inputs the workflow was supposed to handle. Did the system handle them? Did the supervisor review the outputs? Did the work move forward? If yes, Build is done. If no, the team is not in Deliver yet.
+If the team is uncertain whether Build is done, the test is simple. Pull the last week of inputs the workflow was supposed to handle. Did the system handle them? Did the supervisor review the outputs? Did the work move forward? If yes, Build is done. If no, the team is not in Deliver yet.
 
 ## Hand off to *Deliver*.
 

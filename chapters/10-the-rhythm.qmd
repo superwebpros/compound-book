@@ -1,6 +1,6 @@
 # The *Rhythm*.
 
-One sprint is a project. Two sprints is a habit. Six sprints is an operating system. This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on. The Rhythm is not a new step. It is the same six stages — Signal → Source → Design → Build → Deliver → Compound — run quarterly, on the next constraint, on top of whatever operating system the company already uses. The rhythm is doing it over and over and over and over and over. And it is the point in the framework where the headcount math from Chapter 1 finally breaks in the company's favor.
+One sprint is a project. Two sprints is a habit. Six sprints is an operating system. This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on. The Rhythm is not a new step. It is the same six stages — Signal → Source → Design → Build → Deliver → Compound — run quarterly, on the next constraint, on top of whatever operating system the company already uses. The Rhythm is doing it over and over and over. It is the point in the framework where the headcount math from Chapter 1 finally breaks in the company's favor.
 
 ## What *Rhythm* means in this book.
 
@@ -21,7 +21,7 @@ The Rhythm has a meeting. One to two hours, leadership team, every quarter, on t
 
 That is the entire session. The agenda is stable. The inputs are the Signal Backlog and the previous sprint's scorecard. The output is a commitment and an updated chart.
 
-For the audience this book is written for — CEOs running on EOS, Scaling Up, 4DX, or a homegrown operating cadence — the Compound quarterly session is *not* a competitor. It is the AI operating layer that runs on top of the operating system you already use. Your quarterly off-site still happens. Your rocks still get set. Your L10s still run. The sprint session is the focused hour that decides what the AI workforce is doing this quarter, and that decision arrives at your existing meetings as real data — what the organization's largest constraint actually is, in dollars — instead of opinion.
+For the audience this book is written for — CEOs running on EOS, Scaling Up, 4DX, or a homegrown operating cadence — the Compound quarterly session is *not* a competitor. It is the AI operating layer that runs on top of the operating system you already use. Your quarterly off-site still happens. Your rocks still get set. Your L10s still run. The sprint session is the focused hour that decides what the AI workforce is doing this quarter, and that decision arrives at your existing meetings as real data — what the organization's largest constraint is, in dollars — instead of opinion.
 
 EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm makes them executable by a Human+AI workforce. The two stack.
 
@@ -43,11 +43,11 @@ After six to eight sprints on the Rhythm, the math moves. Not universally, not f
 
 That is the shift. It does not mean headcount never grows. Some constraints are headcount constraints, and the answer is to hire. It means the question is asked seriously, with the Signal Agent, against the Signal Backlog, *before* the requisition is written. And more often than the organization expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the sprint that addresses it ships a designed workflow instead of a job posting.
 
-Organizations that default to designing before hiring build a fundamentally different cost structure than organizations that default to adding people. The former gets compounding returns on the design infrastructure it already built. The latter grows costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
+Organizations that default to designing before hiring build a different cost structure than organizations that default to adding people. The former gets compounding returns on the design infrastructure it already built. The latter grows costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
 
 ### Sprint · the role we did not hire.
 
-A role inside Compound was not producing. The default move was the obvious one — write a job description, post for a replacement, run the requisition. Instead, we ran the full Sequence on the workflow the role was supposed to be doing. Signal asked the unflattering questions: what is this role actually accountable for, what does the gap cost the company, what does the work itself look like? Source mapped every input the work required — what knowledge it touched, what data it needed, what judgment calls it made. Design classified the work in two columns: which parts were judgment-heavy and had to stay with a human, and which parts were structured, high-volume work that could move to a designed agent team. Build produced the spec. Deliver shipped it into the operating rhythm and trained the people who would supervise it.
+A role inside Compound was not producing. The default move was the obvious one — write a job description, post for a replacement, run the requisition. Instead, we ran the full Sequence on the workflow the role was supposed to be doing. Signal asked the unflattering questions: what is this role accountable for, what does the gap cost the company, what does the work itself look like? Source mapped every input the work required — what knowledge it touched, what data it needed, what judgment calls it made. Design classified the work in two columns: which parts were judgment-heavy and had to stay with a human, and which parts were structured, high-volume work that could move to a designed agent team. Build produced the spec. Deliver shipped it into the operating rhythm and trained the people who would supervise it.
 
 By the end, an AI solution was in production and the team's existing humans were directing it. The hire was never posted. The work shipped.
 
@@ -65,7 +65,7 @@ And the leaders themselves have changed. Executives who, eighteen months ago, ha
 
 ### Sprint · the company that was already ready.
 
-A mid-market company growing 30% year over year, running EOS at high fidelity. Real accountability chart. Scorecards on the wall. IDS in every L10. The operating machine is humming. That kind of company does not need to learn the Rhythm — it already has the muscle. The discipline of running a focused session, committing to a measurable outcome, and reviewing it on a cadence is the company's default state.
+A mid-market company growing 30% year over year, running EOS at high fidelity. Real accountability chart. Scorecards on the wall. IDS in every L10. The operating machine is humming. That kind of company does not need to learn the Rhythm — it already has the muscle. The discipline of running a focused session, committing to a measurable outcome, and reviewing it on a cadence is its default state.
 
 What that company needs is to install the Sequence as the AI layer on top of the operating system it already runs. The Rhythm in companies like that is fast, because the operating discipline is already there. The first sprint ships in a quarter. The second sprint ships in the next. By the fourth quarter the leadership team is running the quarterly session as naturally as the L10.
 

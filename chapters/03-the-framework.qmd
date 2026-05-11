@@ -4,7 +4,7 @@ This is the chapter that maps the rest of the book. The first two chapters named
 
 ## The order is the *argument*.
 
-Most AI initiatives skip the diagnosis and start at Build. A tool gets chosen, a vendor gets paid, a pilot gets launched — and somewhere around month nine the CEO is sitting in a board meeting trying to explain why the AI line item produced no operational result. The cause is not the tool. The cause is the order.
+Most AI initiatives skip the diagnosis and start at Build. A tool gets chosen, a vendor gets paid, a pilot gets launched — and around month nine the CEO is sitting in a board meeting trying to explain why the AI line item produced no operational result. The cause is not the tool. The cause is the order.
 
 Building before diagnosing is the same mistake as framing a house before pouring the foundation. The walls go up. The roof goes on. It looks like progress right up until the moment the structure has to carry weight — and then it does not. Construction has rules about the order of operations because the order is load-bearing. So does this.
 
@@ -40,7 +40,7 @@ Six stages. One Sprint. Then again.
 
 The Sequence splits into two halves, and the split is more important than the stages themselves. The first half is **Diagnose**: Signal and Source. The second half is **Execute & Compound**: Design, Build, Deliver, Compound.
 
-Diagnose is the work most companies skip. They skip it because it does not look like progress — no tool gets bought, no pilot gets launched, no slide gets shown to the board. It looks like talking. It is the part of the work that determines whether everything downstream is solving the right problem against a real map of what the company actually knows. Skip it and you Build beautifully against the wrong constraint, using data you assumed existed.
+Diagnose is the work most companies skip. They skip it because it does not look like progress — no tool gets bought, no pilot gets launched, no slide gets shown to the board. It looks like talking. It is the part of the work that determines whether everything downstream is solving the right problem against a real map of what the company knows. Skip it and you Build beautifully against the wrong constraint, using data you assumed existed.
 
 Execute & Compound is the work most companies start with — which is precisely why they fail. They begin at Design (or worse, at Build), choosing tools and writing specs against a constraint nobody validated and a knowledge map nobody made. The reason this book puts Design inside Execute, not inside Diagnose, is to be exact about this: Design is downstream work. It depends entirely on what Signal and Source produced. Move it earlier and you are designing in the dark.
 
@@ -58,11 +58,11 @@ The shorthand worth holding in your head: the Bench runs the Sequence with you; 
 
 ## You learn this on a *Sprint*.
 
-You do not learn the Framework by reading about it. You learn it by running one Sprint on one real constraint in your own company. That is the only teaching unit that works, because the Framework is not a model of how AI implementation could go — it is the structure of how the work actually moves when it moves correctly.
+You do not learn the Framework by reading about it. You learn it by running one Sprint on one real constraint in your own company. That is the only teaching unit that works, because the Framework is not a model of how AI implementation could go — it is the structure of how the work moves when it moves correctly.
 
 The Sprint is roughly six to eight weeks. It is narrow on purpose — one validated constraint, one designed workflow, one measurable result against the cost that Signal quantified. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. Six to eight weeks, one constraint, one documented outcome. That is the bar.
 
-The Rhythm is what turns that one Sprint into a compounding business. Quarterly, you run another one. The Hybrid Accountability Chart gets one more entry. The knowledge maps get richer. The team's design judgment improves. The Sprints themselves get cheaper and faster, because the infrastructure each Sprint leaves behind accelerates the next one. *Co-Intelligence + Rhythm = Compound.* The Equation is not a slogan — it is a description of what actually happens to a company that runs this work on a cadence.
+The Rhythm is what turns that one Sprint into a compounding business. Quarterly, you run another one. The Hybrid Accountability Chart gets one more entry. The knowledge maps get richer. The team's design judgment improves. The Sprints themselves get cheaper and faster, because the infrastructure each Sprint leaves behind accelerates the next one. *Co-Intelligence + Rhythm = Compound.* The Equation is not a slogan — it is a description of what happens to a company that runs this work on a cadence.
 
 The first Sprint is where the Framework stops being something you read about and starts being something your organization can do. Every Sprint after that is what makes the change permanent.
 

@@ -1,12 +1,12 @@
 # The *Co-Operating* Model.
 
-The diagnosis was the easy part. You have an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model actually looks like. Not in the abstract, and not as a vision deck. As a structure you can draw on a whiteboard, point at, and start running against on Monday. That structure has a name in this book. We call it the Co-Operating Model. It is what a Co-Intelligent Company is built on, and it is what makes *Co-Intelligent Co-operation* — humans and AI working the same problems together — something other than an accident.
+The diagnosis was the easy part. You have an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. Not in the abstract, and not as a vision deck. As a structure you can draw on a whiteboard, point at, and start running against on Monday. That structure has a name in this book. We call it the Co-Operating Model. It is what a Co-Intelligent Company is built on, and it is what makes *Co-Intelligent Co-operation* — humans and AI working the same problems together — something other than an accident.
 
 ## Two words, two *jobs*.
 
 *Co-Intelligent Co-operation* is the activity. *Co-Operating Model* is the structure. Hold those apart and the rest of the book makes sense.
 
-Co-Intelligent Co-operation is the relational frame. It names what humans and AI are actually doing when the thing is working — working the same problems together, in the same loop, against the same outcome. Not humans doing tasks while AI does tasks in some adjacent track. One system, one set of problems, two kinds of intelligence pointed at it. That is the activity.
+Co-Intelligent Co-operation is the relational frame. It names what humans and AI are doing when the thing is working — working the same problems together, in the same loop, against the same outcome. Not humans doing tasks while AI does tasks in some adjacent track. One system, one set of problems, two kinds of intelligence pointed at it. That is the activity.
 
 The Co-Operating Model is the system frame. It is the structure that makes the activity possible — the explicit decisions, written down, about who brings what intelligence to the work and who owns which operating responsibility inside it. A company without a Co-Operating Model can still occasionally produce Co-Intelligent Co-operation — in the way a company without an org chart can still occasionally ship a project. It just can't do it on purpose, can't do it repeatedly, and can't compound on it. The model is what turns a lucky outcome into a designed one.
 
@@ -22,7 +22,7 @@ This is not a vocabulary preference. It is the difference between a company that
 
 ## What each one *brings*.
 
-Start with intelligence. What does the human actually contribute to the work, and what does the agent? Get this honest and the rest of the design falls out cleanly. Get it wrong — assume the human is good at memory, or the agent is good at judgment — and every workflow you design will fight the people running it.
+Start with intelligence. What does the human contribute to the work, and what does the agent? Get this honest and the rest of the design falls out cleanly. Get it wrong — assume the human is good at memory, or the agent is good at judgment — and every workflow you design will fight the people running it.
 
 | The Human brings the intelligence of | The Agent brings the intelligence of |
 |---|---|
@@ -30,7 +30,7 @@ Start with intelligence. What does the human actually contribute to the work, an
 | Context, history, relationships | Pattern recognition across your data |
 | Strategy, taste, ethics | Tireless synthesis from broad sources |
 
-Notice what is not on either side. The human is not on the "creative" side and the agent on the "analytical" side. That split is wrong and it is how most AI programs get designed badly. The honest split is about ambiguity and scale. The human carries the ambiguous, situated, value-laden judgments — the ones that require knowing the customer for nine years, or knowing why a number is the way it is, or deciding what kind of company you want to be. The agent carries the high-volume, pattern-heavy, memory-dependent work — reading everything, remembering everything, drawing on everything at once.
+Notice what is not on either side. The human is not on the "creative" side and the agent on the "analytical" side. That split is wrong, and it is how most AI programs get designed badly. The honest split is about ambiguity and scale. The human carries the situated, value-laden judgments — the ones that require knowing the customer for nine years, or knowing why a number is the way it is, or deciding what kind of company you want to be. The agent carries the high-volume, pattern-heavy, memory-dependent work — reading everything, remembering everything, drawing on everything at once.
 
 ## What each one *owns*.
 
