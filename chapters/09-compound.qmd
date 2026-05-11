@@ -16,7 +16,7 @@ The third is a commitment to the next sprint's focus — the constraint, the acc
 
 If a sprint ends and the backlog is not updated, the chart has not gained a permanent row, and no next constraint is named, the sprint did not finish. It stopped. Those are different states. Compound is the discipline of finishing.
 
-## The two instruments.
+## The two *instruments*.
 
 Compound has two Skills Library instruments: *Sprint Retrospective* and *Constraint Re-rank*.
 
@@ -78,7 +78,7 @@ Compound the stage is where the verb actually happens — where the previous spr
 
 Members get this on their second sprint. The first sprint feels like a project. The second sprint, when the Source map already exists and the chart already has a row and the design conversation has a precedent — that is when the word starts to mean what it means. *Stop transforming. Start compounding.* The tagline is not a slogan. It is a description of the operating posture the stage produces.
 
-## One sprint, one Compound.
+## One sprint, one *Compound*.
 
 One Sprint produces one Compound stage. That is the unit. You run the Sequence on one validated constraint, you ship the work, and you close it with Compound — Sprint Retrospective, Constraint Re-rank, one design change installed, the backlog re-ranked, the chart updated, the next constraint named. That is a complete pass through the system, and at the end of it your company knows things, and owns things, it did not at the start.
 

@@ -1,3 +1,3 @@
 # Preface {.unnumbered}
 
-This book is not about which AI tools to buy. It is about the organizational design work that has to happen before any tool gets deployed. If you've bought tools and seen no return, this is why. If you want to know exactly what to do instead, read on.
+This book is not about which AI tools to buy. It is about the design work that has to happen before any tool gets deployed. If you've bought tools and seen no return, this is why. If you want to know exactly what to do instead, read on.

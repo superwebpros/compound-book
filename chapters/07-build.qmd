@@ -1,4 +1,4 @@
-# Build.
+# *Build*.
 
 Build is the stage where the locked design becomes a working, deployed system. It is the narrowest stage of the Sequence — and the fastest, when the diagnostic work was done properly. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
 
@@ -38,7 +38,7 @@ When any of that is not true, Build is where the unresolved questions surface �
 
 The Diagnose half of the Sequence — Signal and Source — and the gate at the end of Design exist to prevent that conversation from ever happening. Teams that internalize this stop experiencing Build as a struggle. They experience it as the short, almost mechanical stage between deciding and shipping.
 
-## The build paths.
+## The build *paths*.
 
 The team enters Build with a designed workflow. They exit Build with that workflow operating in production. Between those two points is a choice — but the choice is not which technology is exciting this quarter. The choice is which path fits the design.
 
@@ -48,7 +48,7 @@ Three paths cover almost every Compound sprint:
 
 - **Low-code or no-code build.** A workflow assembled in something like Zapier, Make, Airtable, n8n, or a Claude project with skills and connectors. No external engineering. The team owns it directly — they can see how it works, change it, and extend it. This is the right path when the workflow is custom enough that no off-the-shelf product fits, but is composed of standard primitives — pulling from a system, transforming with an agent, writing back to a system, notifying a person.
 
-- **Hand-built integration.** Custom code, usually involving an API to a system of record, often with an engineer in the loop. Slower than low-code, higher leverage, harder to change later. This is the right path when the workflow runs at a scale or against a system that low-code tools cannot reach — or when the integration touches data the company will not put through a third-party automation platform.
+- **Hand-built integration.** Custom code, usually involving an API to a system of record, often with an engineer in the loop. Slower than low-code, higher return, harder to change later. This is the right path when the workflow runs at a scale or against a system that low-code tools cannot reach — or when the integration touches data the company will not put through a third-party automation platform.
 
 These are not a hierarchy. None of them is better than the others. The right path is the one that matches the design — the workflow's shape, the systems it touches, the data sensitivity, the team's ability to own it, the volume it will run at, and the speed the constraint demands.
 
@@ -88,7 +88,7 @@ This matters because, for most Compound members, Compound is not the builder eit
 
 Some members prefer to bring Compound in to manage the build. That is available. Most do not need it. Most have technical resources that work fine — they just have never had a clean spec to work from. The Build Agent solves that.
 
-## What done looks like.
+## What *done* looks like.
 
 Build is done when there is a deployed solution producing outputs against real inputs, reviewed by the human supervisor named in the Hybrid Accountability Chart. The supervisor is using it. The team is using it. The work the constraint named is being done, by the system the design specified, inside the operating environment of the business.
 

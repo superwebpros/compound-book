@@ -18,9 +18,9 @@ That is what a first sprint is built on. Without it, there is nothing to sprint 
 
 If you want a peer to pressure-test that constraint with you before you spend a quarter on it, we offer one mechanism. It is called the **Clarity Call**.
 
-Thirty minutes. At no cost. With an operator, not a salesperson.
+30 minutes. At no cost. With an operator, not a salesperson.
 
-At the end of thirty minutes, you will have clarity on what AI can do, and where it fits, in your organization. Not in the abstract — in *yours*, with your team, your industry, your headcount math, your numbers. The output of the call is not a software recommendation. It is not a sales pitch. It is a constraint you can act on.
+At the end of 30 minutes, you'll have clarity about where AI fits and what it can do in your organization. Not in the abstract — in *yours*, with your team, your industry, your headcount math, your numbers. The output of the call is not a software recommendation. It is not a sales pitch. It is a constraint you can act on.
 
 Whether you ever talk to us again or not, what you walk away with is yours. The call is the same call we would run as the first thirty minutes of any engagement. You get it standalone because the framework is more valuable in the world than it is in a funnel.
 
@@ -28,7 +28,7 @@ Book it at **[compoundorg.com/clarity-call](https://compoundorg.com/clarity-call
 
 That is the only ask in this book.
 
-## Two paths after the call.
+## Two paths after the *call*.
 
 Once you have a constraint named clearly enough to commit a sprint to it, you have two paths forward. They produce the same artifact — a Co-Intelligent Company, sprint by sprint — at different speeds and with different levels of support.
 

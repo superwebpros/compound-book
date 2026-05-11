@@ -4,7 +4,7 @@
 
 That sentence is the one most CEOs of $5M–$50M companies will not say out loud, but it is the one that is true. You have read the same essays. You have watched the same demos. You have a working theory of where this is heading — agents doing real work, smaller teams shipping more, the cost curve of knowledge work bending. None of that is in doubt for you anymore. What is in doubt is what you are supposed to *do* on a Tuesday morning, inside the company you actually run, with the people you actually employ, against the P&L you actually own.
 
-You bought into AI somewhere in the last two years. A ChatGPT subscription for the team. A workflow automation pilot. An AI-enabled platform your vendor swore would change the math. You spent real money and gave it real time. And what you have to show for it is a tool your team mostly ignores, a handful of scattered use cases that never scaled, and a quiet suspicion that something is wrong — but not the thing everyone keeps telling you is wrong.
+You bought into AI somewhere in the last two years. A ChatGPT subscription for the team. A workflow automation pilot. An AI platform your vendor swore would change the math. You spent real money and gave it real time. And what you have to show for it is a tool your team mostly ignores, a handful of scattered use cases that never scaled, and a quiet suspicion that something is wrong — but not the thing everyone keeps telling you is wrong.
 
 The instinct is to blame adoption. Your team resisted. They didn't take the training seriously. They went back to their habits. That diagnosis is comfortable because it puts the problem on the floor instead of in the operating model — but it is the wrong diagnosis, and acting on it produces exactly one outcome: another training session that also doesn't work.
 
@@ -28,7 +28,7 @@ The reflexive move is to blame the tools — to assume the technology was overso
 
 Read that again, because it is the load-bearing sentence of this whole book.
 
-It looks like a technology problem. It's actually an operating problem. Specifically, a Co-Intelligent Company problem.
+The reason your AI investments aren't producing returns is an operating-model problem — not a technology problem. Specifically, a Co-Intelligent Company problem.
 
 This is the diagnostic phrase, and it matters that it is precise. Not a *culture* problem — your culture is fine, your people are willing. Not a *training* problem — they have had the training. Not a *tool selection* problem — the tools you have can do far more than you are currently asking of them. It is an operating-model problem. The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker — synthetic, capable, available — and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, no defined handoff. So it produces nothing the organization can compound on.
 

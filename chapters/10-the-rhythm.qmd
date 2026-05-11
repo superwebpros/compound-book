@@ -1,4 +1,4 @@
-# The Rhythm.
+# The *Rhythm*.
 
 One sprint is a project. Two sprints is a habit. Six sprints is an operating system. This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on. The Rhythm is not a new step. It is the same six stages — Signal → Source → Design → Build → Deliver → Compound — run quarterly, on the next constraint, on top of whatever operating system the company already uses. The rhythm is doing it over and over and over and over and over. And it is the point in the framework where the headcount math from Chapter 1 finally breaks in the company's favor.
 
@@ -10,7 +10,7 @@ The Rhythm is quarterly. Not because the calendar is sacred, but because a sprin
 
 Once a member commits to the Rhythm, the Sprint stops being a discrete project on the strategic plan and becomes the operating mechanism of the Co-Intelligent Company.
 
-## The quarterly operating session.
+## The quarterly operating *session*.
 
 The Rhythm has a meeting. One to two hours, leadership team, every quarter, on the calendar before the year starts. It does four things, in this order:
 
@@ -35,7 +35,7 @@ The Hybrid Org Today is updated in the quarterly session. Not by a Notion-curato
 
 When a new executive joins, the Hybrid Org Today is the briefing. When a customer asks how the company is using AI, the Hybrid Org Today is the answer — concrete, current, in the company's own vocabulary. When the board asks what the AI investments have produced, the Hybrid Org Today is the receipt.
 
-## The headcount paradox, resolved.
+## The headcount paradox, *resolved*.
 
 Return to where this book started. Revenue growing. Headcount growing with it. AI investments producing no measurable gap between the two. The CEO knows the math is wrong and cannot find the lever that moves it.
 
@@ -53,7 +53,7 @@ By the end, an AI solution was in production and the team's existing humans were
 
 That is what happens once the Rhythm is real. The CEO ran Signal before the requisition got written. The headcount math broke in the company's favor — not because of a slogan, but because there was a working session, a Signal Backlog, a named constraint owner, and a sprint window already on the calendar to do the work in.
 
-## What compounding looks like, sprint six.
+## What compounding looks like, *sprint six*.
 
 A member is six to eight sprints in. What has actually changed?
 
@@ -69,7 +69,7 @@ A mid-market company growing 30% year over year, running EOS at high fidelity. R
 
 What that company needs is to install the Sequence as the AI layer on top of the operating system it already runs. The Rhythm in companies like that is fast, because the operating discipline is already there. The first sprint ships in a quarter. The second sprint ships in the next. By the fourth quarter the leadership team is running the quarterly session as naturally as the L10.
 
-## The Co-Intelligent Company.
+## The *Co-Intelligent Company*.
 
 The Co-Intelligent Company is not a vision the reader is working toward. It is the company built — quarter by quarter, sprint by sprint — by running the Sequence on the Rhythm. The framework is the shape. The Sequence is the order. The Sprint is the unit. The Rhythm is the cadence. The Hybrid Org Today is the receipt. The Hybrid Accountability Chart is the structure. The Signal Backlog is the inventory. The Co-Intelligent Company is the result.
 

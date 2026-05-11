@@ -74,7 +74,7 @@ The result: those eight hours come back to the operator every week. The workflow
 
 ## The change is not the *launch*. The change is the *week*.
 
-A well-run Deliver phase changes the work the people in the function actually do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that is now automated either get reinvested — in the strategic work the Design phase identified as the higher-leverage use of their time — or they get pulled out of the org over time, as the headcount math gets re-computed against the new operating reality.
+A well-run Deliver phase changes the work the people in the function actually do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that is now automated either get reinvested — in the strategic work the Design phase identified as the higher-return use of their time — or they get pulled out of the org over time, as the headcount math gets re-computed against the new operating reality.
 
 That is the test of whether Deliver actually delivered. Not whether the agent is running. Not whether the dashboard exists. Whether the people whose work was supposed to change can describe, concretely, what they now do that they did not do before, and what they no longer do that they used to. If they can, the sprint produced. If they cannot, the sprint deployed a tool — and you are looking at the failure mode this stage exists to prevent.
 

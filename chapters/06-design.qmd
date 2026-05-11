@@ -1,10 +1,10 @@
-# Design.
+# *Design*.
 
 Design is the stage where the constraint and the knowledge map turn into a workflow with named owners. Signal told you what to solve. Source told you what the work actually requires. Design decides who does what — and writes that decision down in a form the rest of the company can read, build against, and improve.
 
 This is the first stage of *Execute & Compound*. Everything before this was diagnosis. Everything after this is shipping. Design is the gate between the two — and the reason every sprint either compounds or stalls.
 
-## What Design produces.
+## What Design *produces*.
 
 Design has two deliverables, and they ship together.
 
@@ -14,7 +14,7 @@ The second is an entry in the *Hybrid Accountability Chart* for the specific acc
 
 Design produces both of these or it has not produced anything. A workflow without an accountability entry is a process map without an owner. An accountability entry without a designed workflow is an org chart row with nothing behind it. The two deliverables are the same artifact viewed from two angles — one is the operational shape of the work, the other is the structural shape of the responsibility.
 
-## The Hybrid Accountability Chart.
+## The *Hybrid Accountability Chart*.
 
 The Hybrid Accountability Chart is the named, teachable instrument that makes Design concrete. If you run on EOS, you already have an Accountability Chart — one name against each accountability in the company. The Hybrid Accountability Chart extends that idea to a workforce that includes agent teams alongside humans.
 
@@ -38,7 +38,7 @@ Every agent team in the chart has a human supervisor — every row, no exception
 
 The four questions are not a template to fill in once and forget. They are a design discipline. Every sprint adds one row, and every row forces the four answers — including the harder ones. "Who supervises this team?" is uncomfortable when the agent team is producing work that nobody on the leadership team has owned before. That discomfort is the point. The chart is what surfaces it before any code is written.
 
-## AI-assisted or automated.
+## AI-assisted or *automated*.
 
 The fourth question is the one operators get wrong most often, because they treat it as a technology decision when it is a design decision.
 
@@ -48,7 +48,7 @@ This is a spectrum, not a binary. And it shifts over time. The Quote Generation 
 
 That decision — where on the spectrum this accountability sits, and when it moves — depends on the stakes of the work, the cleanliness of the data, and the organization's comfort with agent judgment in that function. High-stakes decisions with ambiguous inputs stay AI-assisted longer. Repetitive, well-defined work with clean inputs moves to automated faster. The Design stage is where that call gets made deliberately, with the Human Orchestrator's name attached to it — instead of drifting into "we just don't review the outputs anymore" three months after deployment, which is what happens when no one designed the supervision in the first place.
 
-## The two instruments.
+## The two *instruments*.
 
 Design has two Skills Library instruments: Work Deconstruction and Hybrid Accountability Chart.
 
@@ -56,9 +56,9 @@ Design has two Skills Library instruments: Work Deconstruction and Hybrid Accoun
 
 *Hybrid Accountability Chart* is the instrument that takes the output of Work Deconstruction and turns it into a chart entry — the row described above. One accountability, one agent team, one supervisor, one position on the AI-assisted-to-automated spectrum. The two skills run together: Work Deconstruction is the thinking, the chart entry is the artifact.
 
-These names matter. Earlier internal versions of the framework called these "Work Decomposition" and "Human vs. AI Allocation." Those names are retired. The current names are *Work Deconstruction* and *Hybrid Accountability Chart* — and the distinction matters because the chart is what makes the decomposition durable. A decomposition that does not land inside the chart is a one-time analysis. A decomposition that lands inside the chart becomes structure.
+The distinction matters because the chart is what makes the deconstruction durable. A deconstruction that does not land inside the chart is a one-time analysis. A deconstruction that lands inside the chart becomes structure.
 
-## Donna's role, deconstructed.
+## Donna's role, *deconstructed*.
 
 Inside a member company, Donna was the operations lead. The role had become a bottleneck — too much work, too few hours — and the company was about to backfill it with a junior coordinator. A new hire, a new training ramp, another body in the operations function. Standard headcount math.
 
@@ -68,9 +68,9 @@ The decomposition revealed the obvious thing nobody had looked at directly. A su
 
 The junior coordinator hire was never posted. The work shipped. Donna's role became more strategic, not less — she was supervising an agent team on the high-volume work and spending the recovered hours on the parts of operations that only she could do. One row in the chart. One sprint. One avoided hire.
 
-That is what Design looks like in practice — an accountability chart, an honest decomposition, and a workflow that lands inside the Hybrid Accountability Chart with named owners. Not a transformation initiative. Not a strategic offsite. One accountability, one sprint, one row.
+That is what Design looks like in practice — an accountability chart, an honest decomposition, and a workflow that lands inside the Hybrid Accountability Chart with named owners. Not a change initiative. Not a strategic offsite. One accountability, one sprint, one row.
 
-## The Design Agent.
+## The *Design Agent*.
 
 Compound provides a Design Agent — one of the six coaching agents on the Compound Bench. The Design Agent takes two inputs: the validated constraint statement from Signal and the Knowledge Map from Source. With those in hand, it helps the leadership team draft the work allocation, draw the Hybrid Accountability Chart entry, and scope the sprint before building begins.
 
@@ -78,7 +78,7 @@ The Design Agent does not replace the design judgment of the leadership team. It
 
 This is what the Bench is for. The Design Agent is Compound's accumulated reps on this specific design conversation, available to the operator running their first sprint at the same quality as a Compound coach running their fortieth.
 
-## The Human Orchestrator.
+## The *Human Orchestrator*.
 
 Design produces a workflow and a chart entry. It also produces a role: the *Human Orchestrator* for this accountability.
 
@@ -88,7 +88,7 @@ The Human Orchestrator sets the goals for the agent team. They design the workfl
 
 This is a more strategic role than executing inside the function. It is also a role most leaders were not hired for. The operations lead who got the job because she was excellent at executing operations work is now being asked to design the operations function instead of doing it. That is not a smaller role. It is a different one — and developing the capability is deliberate work, not a personality change. The Design stage names the role; the Rhythm builds the muscle.
 
-## The Agent Coordinator.
+## The *Agent Coordinator*.
 
 Beneath the Human Orchestrator sits an operational role: the *Agent Coordinator*.
 
@@ -98,7 +98,7 @@ In a 25-person company, this is part of someone's existing role — often the op
 
 The Human Orchestrator and the Agent Coordinator are two different jobs. They can live in the same person at small scale. They cannot live nowhere.
 
-## Design is the gate.
+## Design is the *gate*.
 
 Nothing in Execute & Compound begins until Design is locked. That is not bureaucracy. It is the structural reason Build moves fast when other approaches stall.
 
