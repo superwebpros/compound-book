@@ -1,0 +1,45 @@
+# Introduction: The Design Problem
+
+At some point in the last two years, you bought into AI. Maybe it was a ChatGPT subscription for the team. Maybe it was a bigger bet — a workflow automation platform, an AI-enabled CRM, a pilot with a consultant who promised it would change everything. You spent real money. You gave it real time. And now you're sitting with a tool your team mostly ignores, a few scattered use cases that never scaled, and a growing suspicion that either the technology is oversold or something is fundamentally wrong with how your organization approached it.
+
+The technology is not oversold. Something is fundamentally wrong with how your organization approached it. And it is not what you think.
+
+The instinct, when AI doesn't produce returns, is to blame adoption. Your team resisted the change. They didn't take the training seriously. They went back to their old habits. This diagnosis feels plausible, and it lets everyone off the hook — the CEO included. But it is the wrong diagnosis, and acting on it produces exactly one outcome: another training session that also doesn't work.
+
+The real problem is not adoption. The real problem is that nobody redesigned the work.
+
+You built an org chart for humans. You bought AI tools. And then you put the tools next to the existing structure and asked your team to figure out how to use them. Nobody decided — before deploying anything — who owns what outcome, what outputs are expected of AI versus humans, or how the two hand off to each other. The tool sits next to the existing workflow and produces nothing, because nothing was designed to receive it. As one way to put it: the new tool physically bounces off the rigid org chart.
+
+Think about construction. You would never pour concrete or frame walls without mapping the foundation first. Yet that is precisely what most businesses are doing with AI. They are installing advanced technology without any underlying operational architecture. The missing step is organizational design.
+
+## The Headcount Paradox
+
+Here is the math most CEOs are living right now.
+
+Revenue is growing — maybe 20%, maybe 30%, maybe more. Headcount costs are growing with it, because the only model the organization knows for handling more work is adding more people. You bought AI specifically to interrupt that pattern. But the AI efficiency gain you expected never materialized. The team is working roughly the same way it always has, with new software sitting next to them that they occasionally poke at. Your margins are compressing, your AI investment sits on the balance sheet doing nothing, and you are considering whether to post another hire to handle the load.
+
+This is the headcount paradox: AI was supposed to change the math of scaling. It didn't. Revenue growth and headcount growth are still moving together, and the cost of one keeps increasing.
+
+The instinct is to blame the tools. That is also the wrong diagnosis. The tools are capable. The problem is that the organization was never designed to use them. There is no defined relationship between the AI system and the work it is supposed to do — no designed workflow, no clear accountability, no governance. The tool is ambient. It helps individuals occasionally. It changes nothing structurally.
+
+The headcount paradox resolves only when the organization stops treating AI as a tool adoption problem and starts treating it as a workforce design problem. When a company designs a workflow instead of posting a job, the headcount math changes. Not because people are replaced, but because the work that would have required a new hire is now handled by a designed system. We will return to this in Stage 4 with a concrete example of what that looks like in practice.
+
+## The Wrong Question
+
+There is a specific trap most organizations fall into at the start of their AI efforts, and it is worth naming precisely because it looks exactly like the right approach.
+
+Task-orientation is asking: "Which of our existing tasks could AI help with?" It produces prompt tips, a few genuinely useful shortcuts, and no change to how the organization actually operates. A task-oriented AI program adds AI to the existing workflow. The existing workflow was designed for humans. So the AI fits awkwardly into a process that was never designed to include it, and produces inconsistent results that confirm everyone's suspicion that AI is just a novelty.
+
+Goal-orientation asks a different question: "What outcomes are we actually accountable for, and what is the best way to design work — human and AI together — to achieve them?" This question does not start with the tools. It starts with the accountability. It produces a deliberate design for who owns what, what the AI team executes, what the human reviews, and how the handoff works. It produces results, because the design was built to produce them.
+
+The distinction sounds minor. It is not. Nearly every failed AI implementation is running the task-oriented question. Every section of this book is designed to move you from the first question to the second.
+
+## What This Book Is
+
+This is a four-stage model for building an organization that compounds on its AI investments — sprint by sprint, quarter by quarter. It is structured around the Compound Sprint, which is the operational mechanism that moves an organization through the stages. Each stage has a specific body of work. The Sprint is how you do that work.
+
+The four stages are not a maturity model to admire from a distance. They describe a real sequence of organizational decisions that companies work through as they learn to design work for a Human+AI workforce. Stage 1 is where you form the right question. Stage 2 is where you build the design infrastructure. Stage 3 is where humans learn to direct agent teams. Stage 4 is where the sprints start to compound — where the infrastructure built in Sprint 1 makes Sprint 6 dramatically faster, and where the headcount math changes.
+
+There is a name for the organization this model produces. We call it the Orchestrated Organization — a company where humans and AI work together in deliberate, designed roles, with humans orchestrating the work and AI executing it. This is not a picture of humans occasionally using AI tools, nor of AI doing tasks while humans do other tasks in parallel, unconnected. Orchestration means humans setting the goals, designing the workflows, directing the agent teams, and owning the outcomes — while AI executes the structured, high-volume work those designs require. The Orchestrated Organization is not a vision of a distant future. It is the specific, operational result of doing the work this book describes. Every stage is a step toward it. Every sprint is the mechanism for getting there.
+
+None of this is about tool selection. Tool selection comes after design. Every section of this book follows that sequence.

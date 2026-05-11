@@ -1,0 +1,55 @@
+# Stage 1: Explore
+
+The name of this stage has a tendency to mislead. "Explore" implies open-ended experimentation — try a few tools, see what your team responds to, let curiosity run. That is not what Stage 1 is.
+
+Stage 1 is the diagnostic stage. It is where you stop asking the task-oriented question and start asking the goal-oriented one. The primary deliverable of Stage 1 is not a list of promising AI use cases or a team that has become comfortable with a new tool. It is a clear understanding that your organization has a work design problem — and that solving it requires deliberate design before anything gets deployed.
+
+If you leave Stage 1 with anything less than that understanding, you are not actually in Stage 1. You are in a loop that will produce exactly the AI results you've already gotten.
+
+## What Most Companies Get Wrong Here
+
+Most organizations treat Stage 1 as a tool evaluation exercise. They run experiments, collect anecdotes about what worked, and build a shortlist of AI tools to purchase. Some designate an "AI champion" — usually the most technically curious person on the team — and give them a vague mandate to drive AI adoption.
+
+This is not wrong exactly. But it is incomplete in a way that produces predictable failure downstream.
+
+The experiments are valuable — not because they identify which tools to buy, but because they reveal where the organization's design gaps are. Every place where an AI tool produced inconsistent results, or where your team went back to the manual process, or where the AI output required so much review that it didn't actually save time — those are not tool failures. They are design signals. The design of who does what, how work flows, and what decisions belong to a human versus a machine was never made explicit. The tool had nowhere to go.
+
+The champion role is also valuable, but not as an evangelist for AI adoption. In the Compound model, the internal champion's job is to facilitate the organizational design process — to ask the goal-oriented questions, map accountabilities, and push back when the organization is reaching for a tool before it has designed the work. That is a different skill set than "technically curious and good at prompting."
+
+## The Headcount Paradox (The Problem You're Already Living)
+
+If you are running a company between $5M and $50M in revenue, there is a reasonable chance that the headcount paradox is already visible in your numbers. Revenue growth and headcount growth are correlated in a way that should have changed when you started investing in AI. It has not. The math is still basically: more work requires more people, and AI so far has produced individual productivity gains that do not show up in the aggregate.
+
+The paradox has a specific cause: AI efficiency requires designed workflow, and you have not designed the workflow. Your people are using AI as individuals — to write faster, to summarize documents, to generate first drafts. That produces individual productivity gains. It does not change the organization's capacity. The organization's capacity is determined by its structure — by how work is assigned, how it flows, how it is supervised, and what is done by humans versus systems. Structure is a design problem, not a tool adoption problem.
+
+You are not going to fix the headcount paradox by deploying more tools. You are going to fix it by designing workflows that handle work that would otherwise require a new hire. When a company does that — when it designs a workflow instead of posting a job — the headcount math changes. The proof of this is in Stage 4. The design work that makes it possible starts in Stage 2.
+
+## Task-Orientation Is the Trap
+
+When you ask your team to "experiment with AI," the question they naturally ask is: "Which of my existing tasks could AI help with?" That is the task-oriented question. It is not a bad question for individuals learning a new tool. It is a catastrophically incomplete question for an organization trying to change its operating capacity.
+
+The problem with task-orientation is not that it produces nothing. It produces incremental productivity gains for individuals, and those gains are real and worth capturing. The problem is that it does not produce the structural change that resolves the headcount paradox. Individuals becoming more productive at their existing tasks is not the same as the organization designing work differently. The latter requires asking the goal-oriented question: what outcomes are we accountable for, and what is the best designed system — human, agent, or combination — to achieve them?
+
+Think about agents specifically. When you start thinking about your accountability structure from the lens of what the work requires, rather than the tools available, agents start to make sense. An AI agent can seem abstract until you think of it as a team member with a specific accountability — a team member whose role is defined, whose output is measurable, and whose workflow was designed to receive it. At that point, it becomes clear when, why, and how you would use an AI agent versus a human versus simple workflow automation. That clarity comes from the goal-oriented question. It never comes from the task-oriented one.
+
+## What to Do in Stage 1
+
+The work of Stage 1 is simpler than most organizations make it. It has two parts.
+
+The first is to get a clear map of the organization's accountabilities — not its tasks, its accountabilities. What outcomes is this organization responsible for delivering? Where do those accountabilities live? Who owns them? This is not an unusual exercise. If your company runs on EOS or a similar operating system, you may already have an accountability chart. If you do, pull it out. You are going to use it in Stage 2.
+
+The second is to look at that accountability map and ask, honestly: where is our biggest operational constraint? Not "where could AI help?" — that is the task-oriented question again. Where is the problem that costs the most in time, margin, or customer quality? What is the bottleneck that, if removed, would change the math most meaningfully? That question is the entry point to the Compound Sprint. It is the Signal — and Signal is where every sprint begins.
+
+Stage 1 ends when you can answer that question with a specific, honest answer. Not a list of five constraints. One constraint, clearly named, with a sense of what it costs.
+
+## Warning Signs You Are Stuck Here
+
+Stage 1 is not supposed to be a permanent state, but plenty of organizations live there for months or years without realizing it. The signs that you are stuck look like this: your team is actively using AI tools for individual tasks, but the organization's operating capacity has not changed. You have a list of promising use cases, but no one is accountable for implementing any of them. Your AI champion is producing enthusiastic demos but no measurable results. You are about to purchase another tool.
+
+These are not adoption failures. They are design failures. The organization has not made the fundamental design decisions that allow AI to do structural work. It is using AI as a productivity accessory for individuals — which is useful, and you should keep it — but it has not designed for AI at the organizational level.
+
+## Ready for Stage 2?
+
+You are ready to move to Stage 2 when you have done two things. First, you have a clear accountability map — a picture of what this organization is responsible for and who owns each accountability. Second, you have identified at least one specific operational constraint that you are willing to commit a sprint to. It does not need to be the perfect constraint. It needs to be real, quantifiable, and genuinely important.
+
+That is your signal. Stage 2 is where you design the solution. Everything the Orchestrated Organization becomes starts here, with this constraint, before anything is deployed.

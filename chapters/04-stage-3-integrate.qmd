@@ -1,0 +1,61 @@
+# Stage 3: Integrate
+
+Most AI frameworks treat "integrate" as a technical task: connect your tools to your existing systems, run APIs, build data pipelines. Stage 3 is something different.
+
+Stage 3 is about humans learning to direct a mixed workforce. The Hybrid Accountability Chart is off the whiteboard. The agent teams are deployed. And now the harder question surfaces: what does a human actually do when an AI team is executing work that used to belong to a person?
+
+Most organizations have no model for this. They have plenty of experience managing humans. They have no experience directing agent teams — setting the goals, reviewing outputs at the outcome level rather than the task level, making the design improvements between sprints that keep the agent team productive. Stage 3 is where that model gets built.
+
+## Stage 3 Is Not a Change Management Problem
+
+The frame for Stage 3 in most AI frameworks is change management. Teams need to adjust. People are worried. Communication is important. There is some truth in that — any organizational change requires deliberate communication. But framing Stage 3 primarily as change management is a category error.
+
+The challenge of Stage 3 is not persuading your team to adopt AI. Your team is already using AI. The challenge is teaching your leaders to operate as orchestrators — to direct agent teams instead of executing tasks themselves. That is a skills and mindset shift, not a communication campaign.
+
+The change that matters in Stage 3 is the one that happens in how your leaders understand their own role. The leader who previously owned a function by doing its key tasks is now the leader who owns a function by designing how it works and directing the team — human and AI — that executes it. That is not a smaller role. It is a more strategic one. But it requires leaders to develop capabilities they were not hired for, and that development takes deliberate investment.
+
+## The Human Orchestrator
+
+The Human Orchestrator is the Compound model's answer to the question: "What does the human do when AI does the work?" The answer is not "less." The answer is: they do something different, and more valuable.
+
+The Human Orchestrator sets goals and designs work. They do not primarily execute tasks — they define what the agent team is accountable for achieving, design the workflow the agent team follows, and own the outcome of the sprint. They provide the context, constraints, and data the agent needs to operate. They review outputs at the goal level, not at the task level — they are not checking every line the agent produces, they are asking whether the agent team is moving the constraint in the right direction.
+
+The Human Orchestrator also makes the judgment calls that require human discretion: the decisions that depend on relationships, context, or nuance that the agent team does not have. In a well-designed system, these judgment calls are the exception, not the rule. The design work of Stage 2 minimized the number of decisions that require escalation. But some will always exist, and the Human Orchestrator is the one who makes them.
+
+Finally, the Human Orchestrator improves the design between sprints. After each sprint's Compound phase — after the retrospective, after the outcome is documented — the Human Orchestrator is the person who looks at what the agent team produced and asks: what one design change would make the next sprint better? That iterative improvement is the compounding mechanism. The orchestrator who makes one good design change per sprint produces an agent team that is significantly more capable after eight sprints than after one.
+
+This is not a platitude about humans and AI working together harmoniously. It is a specific set of responsibilities that need to be assigned to specific people, trained for deliberately, and measured against real outcomes. The Human Orchestrator is a role in the organizational design, not a cultural attitude.
+
+## The Agent Coordinator Role
+
+The Human Orchestrator operates at the strategic level: setting goals, owning outcomes, making design improvements. But there is also an operational layer that needs to be named and staffed.
+
+The Agent Coordinator is the person who manages the day-to-day operation of an agent team — ensuring inputs are clean, reviewing outputs at the appropriate frequency, and escalating to the Human Orchestrator when the agent's output requires a judgment call that is outside the agent's designed scope. They monitor the agent team's performance over time and flag when the design is drifting or degrading.
+
+Think of the Agent Coordinator as a team lead for an AI-enabled function — analogous to the person who manages a group of junior employees, ensuring their work is on track and that problems surface before they become expensive. In a 25-person company, this responsibility might live as part of someone's existing role — perhaps the operations lead, or the champion from Stage 1. In a 100-person company, it may become a dedicated position. The exact staffing decision is less important than the fact that this role exists somewhere in the organizational design and is owned by a specific person.
+
+Organizations that deploy agent teams without an Agent Coordinator discover, usually within a few weeks, that the agent team has drifted — inputs degraded, outputs never reviewed, results nobody trusts. The fix is not technical. It is a design decision: someone needs to own this.
+
+## Running an Agent Team: What a Week Actually Looks Like
+
+Abstract frameworks are useful until they are not. Here is what a well-designed agent team looks like in operation — grounded in a scenario that is representative of what companies in Stage 3 are actually building.
+
+Consider an operations lead at a 60-person professional services firm. Before Stage 2, this person spent three to four hours per week managing the sales quoting process: gathering information from the sales team, building quotes, formatting them, running them through an approval process, and sending them to prospects. It was the kind of work that required accuracy and attention but very little judgment.
+
+After Stage 2, the sales quoting accountability has a Hybrid Accountability Chart entry. There is a Quote Generation Team — an AI agent team — that is AI-assisted, meaning the operations lead reviews every quote before it goes out. The workflow is designed: the sales team inputs the deal parameters into a standardized form, the agent team generates the quote in the correct format and template, and the operations lead receives it for review. What used to take three to four hours per week now takes forty-five minutes — the agent team handles the generation, and the operations lead reviews the output at the goal level (accuracy, format, completeness) rather than doing the building.
+
+On Monday morning, the operations lead does not do quoting tasks. They check whether the agent team's inputs are clean — whether the sales team is using the standardized form correctly. They review the previous week's quotes at the outcome level: were they accurate? Were they sent on time? Were there any patterns in what needed correction? If there is a pattern, that is a design signal — something in the workflow needs to be adjusted. That design improvement is the one thing the operations lead does for the agent team that week.
+
+This is what orchestration looks like in practice. The human is not doing less. The human is doing something more strategic — owning the design of the system rather than executing within it. The agent team is doing the repetitive, high-volume work it was designed to do. And the organization is handling more quoting volume without adding a person to the operations function.
+
+## Warning Signs You Are Stuck Here
+
+In Stage 3, the warning signs are about structural drift. Agent teams were deployed with good design, but the design is not being maintained. The Human Orchestrator role was named but never trained for — the person in the role is still executing tasks rather than directing the team. The Agent Coordinator responsibility was assigned but not resourced — the person has too many other obligations to actually review outputs at the right frequency.
+
+The other warning sign is that the organization is treating Stage 3 as a technical project rather than an organizational design project. If the agenda in leadership meetings about AI is dominated by questions about which tools to integrate, rather than questions about whether the agent teams are achieving their designed outcomes, the frame has slipped. Stage 3 is about humans learning to direct a mixed workforce. The technical work is in service of that — not the other way around.
+
+## Ready for Stage 4?
+
+You are ready for Stage 4 when two things are true. First, at least one agent team is operating in your organization with a functioning human supervisor relationship — the Agent Coordinator role is staffed, outputs are being reviewed, and design improvements are being made between sprints. Second, your leadership team has experienced the orchestrator shift: they understand what it feels like to own an outcome without executing every task, and they are asking better questions as a result.
+
+The second condition is the harder one to assess from the inside. A useful signal: are your leaders bringing Signal questions to meetings — "what constraint should the next sprint address?" — rather than tool questions — "what should we buy next?" If the frame has shifted, you are ready.

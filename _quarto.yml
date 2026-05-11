@@ -1,0 +1,44 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Co-Intelligent Co-Operation"
+  subtitle: "How to build the Human+AI Company of the Future...Today"
+  author:
+    - name: Jesse Flores
+      affiliation: Compound
+    - name: Julie Mann
+      affiliation: Compound
+  date: "2026"
+  site-url: https://compoundorg.com
+  chapters:
+    - index.qmd
+    - chapters/01-introduction.qmd
+    - chapters/02-stage-1-explore.qmd
+    - chapters/03-stage-2-organize.qmd
+    - chapters/04-stage-3-integrate.qmd
+    - chapters/05-stage-4-compound.qmd
+    - chapters/06-the-sprint.qmd
+    - chapters/07-what-to-do-next.qmd
+    - chapters/appendix-prompt-engineering.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: false
+  pdf:
+    documentclass: scrbook
+    papersize: letter
+    margin-top: 1in
+    margin-bottom: 1in
+    margin-left: 1.25in
+    margin-right: 1in
+    fontsize: 11pt
+    linestretch: 1.4
+    include-in-header:
+      text: |
+        \usepackage{microtype}
+  epub:
+    toc: true
