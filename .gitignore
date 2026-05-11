@@ -3,3 +3,8 @@ _book/
 
 /.quarto/
 **/*.quarto_ipynb
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key

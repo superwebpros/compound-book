@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "compound_book",
+  "project_id": "c2e71d59-75bd-4fb0-b8c1-ae18a9c91cf4"
+}
