@@ -12,6 +12,8 @@ book:
       affiliation: Compound
   date: "2026"
   site-url: https://compoundorg.com
+  cover-image: assets/cover.png
+  favicon: assets/logo-mark-dark.svg
   chapters:
     - index.qmd
     - chapters/01-introduction.qmd
@@ -25,9 +27,13 @@ book:
 
 format:
   html:
-    theme: cosmo
+    theme:
+      - cosmo
+      - assets/brand.scss
     toc: true
     number-sections: false
+    code-overflow: wrap
+    fontsize: 1.0625rem
   pdf:
     documentclass: scrbook
     papersize: letter
@@ -37,8 +43,18 @@ format:
     margin-right: 1in
     fontsize: 11pt
     linestretch: 1.4
-    include-in-header:
-      text: |
-        \usepackage{microtype}
+    colorlinks: true
+    linkcolor: black
+    urlcolor: compoundred
+    citecolor: compoundred
+    toccolor: black
+    pdf-engine: xelatex
+    mainfont: "Bricolage Grotesque"
+    sansfont: "Archivo"
+    monofont: "JetBrains Mono"
+    include-in-header: assets/preamble.tex
   epub:
     toc: true
+    cover-image: assets/cover.png
+    css: assets/epub.css
+    epub-cover-image: assets/cover.png

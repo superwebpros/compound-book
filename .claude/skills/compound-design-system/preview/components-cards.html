@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--bg);}
+  .wrap{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .c{background:#131211;border:1px solid var(--rule);border-radius:4px;padding:0;display:flex;flex-direction:column;transition:border-color 200ms;overflow:hidden;}
+  .c:hover{border-color:var(--ink-dim);}
+  .media{aspect-ratio:16 / 9;background:
+    repeating-linear-gradient(135deg, rgba(242,237,228,.025) 0 2px, transparent 2px 7px),
+    linear-gradient(160deg, #1a1816 0%, #0e0d0c 100%);
+    border-bottom:1px solid var(--rule);position:relative;}
+  .media::after{content:"PLACEHOLDER · DOCUMENTARY";position:absolute;left:14px;bottom:12px;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;color:var(--ink-dim);}
+  .media .frame{position:absolute;inset:14px;border:1px solid rgba(242,237,228,.06);}
+  .body-wrap{padding:18px 22px 20px;display:flex;flex-direction:column;gap:8px;}
+  .meta{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);display:flex;align-items:center;gap:8px;}
+  .meta::before{content:"";width:18px;height:2px;background:var(--red);}
+  .ttl{font-family:var(--font-display);font-weight:800;font-size:22px;line-height:1.08;color:var(--ink);letter-spacing:-.025em;}
+  .body{font-family:var(--font-body);font-size:13.5px;line-height:1.55;color:var(--ink-dim);margin:0;}
+  .read{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-top:4px;}
+</style></head>
+<body><div class="wrap">
+  <div class="c">
+    <div class="media"><div class="frame"></div></div>
+    <div class="body-wrap">
+      <div class="meta">02 / Source</div>
+      <div class="ttl">It's not a tool problem. It's an <em>operating</em> problem.</div>
+      <p class="body">Why every "AI rollout" stalls at the seam between the tool and the team.</p>
+      <span class="read">Read article →</span>
+    </div>
+  </div>
+  <div class="c">
+    <div class="media"><div class="frame"></div></div>
+    <div class="body-wrap">
+      <div class="meta">04 / Build</div>
+      <div class="ttl">The Hybrid <em>Org Today</em>.</div>
+      <p class="body">The living artifact every member updates each quarter.</p>
+      <span class="read">Read article →</span>
+    </div>
+  </div>
+</div></body></html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--bg);}
+  .nav{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid var(--rule);background:var(--bg);}
+  .left{display:flex;align-items:center;gap:36px;}
+  .logo{display:flex;align-items:center;}
+  .logo img{height:24px;width:auto;display:block;}
+  .links{display:flex;gap:24px;}
+  .links a{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);text-decoration:none;}
+  .links a:hover,.links a.active{color:var(--ink);}
+  .right{display:flex;align-items:center;gap:14px;}
+  .cta{font-family:var(--font-body);font-size:13px;font-weight:500;background:var(--red);color:var(--ink);padding:10px 16px;border-radius:2px;border:0;cursor:pointer;}
+  .pad{height:48px;}
+</style></head>
+<body>
+  <div class="nav">
+    <div class="left">
+      <div class="logo"><img src="../assets/logo-compound.svg" alt="Compound"></div>
+      <div class="links"><a class="active">The Sequence</a><a>The Brief</a><a>Cohort</a><a>Writing</a></div>
+    </div>
+    <div class="right">
+      <a class="links" style="color:var(--ink-dim);text-decoration:none;font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;">Sign in</a>
+      <button class="cta">Book the diagnostic call</button>
+    </div>
+  </div>
+  <div class="pad"></div>
+</body></html>

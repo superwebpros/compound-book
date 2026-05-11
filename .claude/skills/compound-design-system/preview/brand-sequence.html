@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--bg);}
+  .wrap{padding:28px;display:flex;flex-direction:column;gap:18px;}
+  .seq{font-family:var(--font-display);font-weight:800;font-size:26px;line-height:1.05;color:var(--ink);letter-spacing:-.02em;text-transform:uppercase;}
+  .seq .arrow{color:var(--ink-dim);margin:0 .25em;font-weight:400;font-family:var(--font-mono);}
+  .seq .hit-block{background:var(--red);color:var(--ink);padding:0 .15em;}
+  .stages{display:flex;gap:10px;flex-wrap:wrap;}
+  .stage{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);border:1px solid var(--rule);border-left:2px solid var(--red);padding:8px 12px 8px 10px;border-radius:2px;display:inline-flex;gap:8px;align-items:baseline;}
+  .stage .n{color:var(--ink-dim);}
+  .stage.terminal{background:var(--red);border-color:var(--red);}
+  .stage.terminal .n{color:var(--ink);opacity:.75;}
+</style></head>
+<body><div class="wrap">
+  <div class="seq">SIGNAL <span class="arrow">→</span> SOURCE <span class="arrow">→</span> DESIGN <span class="arrow">→</span> BUILD <span class="arrow">→</span> DELIVER <span class="arrow">→</span> <span class="hit-block">COMPOUND.</span></div>
+  <div class="stages">
+    <span class="stage"><span class="n">01</span>SIGNAL</span>
+    <span class="stage"><span class="n">02</span>SOURCE</span>
+    <span class="stage"><span class="n">03</span>DESIGN</span>
+    <span class="stage"><span class="n">04</span>BUILD</span>
+    <span class="stage"><span class="n">05</span>DELIVER</span>
+    <span class="stage terminal"><span class="n">06</span>COMPOUND</span>
+  </div>
+</div></body></html>

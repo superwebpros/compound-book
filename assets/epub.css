@@ -1,0 +1,52 @@
+/* Compound brand — EPUB
+   Reader-safe subset. Many e-readers ignore custom fonts and selection styles;
+   we still declare them for readers that honor CSS (Apple Books, modern Kindle,
+   Calibre). Fallbacks are system fonts so type degrades gracefully. */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;800&family=Bricolage+Grotesque:opsz,wght@10..48,300..800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+body {
+  font-family: "Bricolage Grotesque", Georgia, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #0A0A0A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Archivo", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: #0A0A0A;
+}
+
+h1 em, h2 em, h3 em, h4 em {
+  font-style: normal;
+  font-weight: inherit;
+  border-bottom: 2px solid #E11D2D;
+  text-decoration: none;
+}
+
+a {
+  color: #E11D2D;
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: 3px solid #E11D2D;
+  padding-left: 1em;
+  margin-left: 0;
+  font-size: 1.05em;
+  line-height: 1.5;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #E8E6E1;
+  margin: 2em 0;
+}
+
+code, pre, kbd, samp {
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 0.92em;
+}

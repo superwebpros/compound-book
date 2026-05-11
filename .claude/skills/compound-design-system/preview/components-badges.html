@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--bg);}
+  .wrap{padding:24px;display:flex;gap:14px;flex-wrap:wrap;}
+  .pill{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;padding:6px 12px;border-radius:999px;border:1px solid var(--rule);color:var(--ink);display:inline-flex;align-items:center;gap:8px;}
+  .pill.status{border-color:var(--red);color:var(--ink);}
+  .pill.status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 3px rgba(225,29,45,.18);}
+  .pill.solid{background:var(--red);color:var(--ink);border-color:var(--red);}
+  .tag{font-family:var(--font-mono);font-size:11px;letter-spacing:.04em;color:var(--ink);border:1px solid var(--rule);border-left:2px solid var(--red);padding:6px 10px 6px 8px;border-radius:2px;display:inline-flex;align-items:baseline;gap:8px;}
+  .tag .num{color:var(--ink-dim);}
+</style></head>
+<body><div class="wrap">
+  <span class="pill">Operator's Brief</span>
+  <span class="pill status">Cohort 01 · Open</span>
+  <span class="pill solid">Live now</span>
+  <span class="tag"><span class="num">01</span>SIGNAL</span>
+  <span class="tag"><span class="num">02</span>SOURCE</span>
+  <span class="tag"><span class="num">06</span>COMPOUND</span>
+</div></body></html>

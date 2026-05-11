@@ -8,3 +8,7 @@ _book/
 .dolt/
 *.db
 .beads-credential-key
+
+.claude/scheduled_tasks.lock
+.claude/settings.local.json
+.claude/skills/*/.tmp/

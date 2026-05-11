@@ -1,0 +1,24 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--bg);}
+  .card{padding:24px;display:flex;flex-direction:column;gap:14px;}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;}
+  .swatch{flex:1;min-width:0;border-radius:var(--radius-2);border:1px solid var(--rule);padding:14px;display:flex;flex-direction:column;justify-content:space-between;min-height:96px;}
+  .swatch .name{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);opacity:.95;}
+  .swatch .hex{font-family:var(--font-mono);font-size:11px;color:var(--ink-dim);}
+  .swatch.dark .hex{color:#A8A39A;}
+  .swatch.light .name,.swatch.light .hex{color:#0A0A0A;}
+  .swatch.light .hex{color:#5a564f;}
+</style></head>
+<body><div class="card">
+  <div class="row">
+    <div class="swatch dark" style="background:#0A0A0A;"><div class="name">--bg</div><div class="hex">#0A0A0A · warm near-black</div></div>
+    <div class="swatch dark" style="background:#000000;border-color:#1F1E1B;"><div class="name">--bg-deep</div><div class="hex">#000000 · max contrast</div></div>
+    <div class="swatch light" style="background:#F2EDE4;"><div class="name">--ink</div><div class="hex">#F2EDE4 · cream-white</div></div>
+  </div>
+  <div class="row">
+    <div class="swatch" style="background:#1A1916;"><div class="name" style="color:#A8A39A;">--ink-dim</div><div class="hex" style="color:#A8A39A;">#A8A39A · meta</div></div>
+    <div class="swatch dark" style="background:#1F1E1B;"><div class="name">--rule</div><div class="hex">#1F1E1B · borders</div></div>
+  </div>
+</div></body></html>

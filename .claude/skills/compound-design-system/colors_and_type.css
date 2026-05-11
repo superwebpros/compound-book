@@ -1,0 +1,320 @@
+/* =============================================================
+   Compound — Colors & Type
+   Editorial-direct-response. Warm dark, not cold dark.
+   ============================================================= */
+
+/* ---- Webfonts (Google Fonts CDN) ----------------------------
+   Substitution flag: We're loading Instrument Serif, Bricolage
+   Grotesque, and JetBrains Mono directly from Google Fonts.
+   If the brand has self-hosted .ttf/.woff2 files, drop them
+   into /fonts and replace the @import below with @font-face.
+   ------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@10..48,300..800&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+  /* ---- Color Tokens ---- */
+  --bg:          #0A0A0A;  /* Default background — warm near-black */
+  --bg-deep:     #000000;  /* True black — hero / max-contrast moments */
+  --ink:         #F2EDE4;  /* Primary text — warm cream-white */
+  --ink-dim:     #A8A39A;  /* Secondary text, captions, meta */
+  --rule:        #1F1E1B;  /* Borders, dividers, low-contrast surfaces */
+  --red:         #E11D2D;  /* Primary accent — nucleus, emphasis, CTAs */
+  --red-bright:  #FF2A3C;  /* Hover / urgency */
+
+  /* Surfaces derived from --bg + --rule */
+  --surface-1:   #131211;  /* Card surface on --bg */
+  --surface-2:   #1A1916;  /* Raised / hovered surface */
+
+  /* ---- Field roles ----
+     Three fields: paper (canvas), cream (callout band), dark (gravitas band).
+     Default token values below = dark, since the system originated dark-first
+     and existing pages without a data-field still need to render correctly.
+     Apply data-field="paper" / "cream" / "dark" on a section root to flip. */
+  --field-bg:        var(--bg);
+  --field-bg-deep:   var(--bg-deep);
+  --field-ink:       var(--ink);
+  --field-ink-dim:   var(--ink-dim);
+  --field-rule:      var(--rule);
+  --field-surface:   var(--surface-1);
+  /* Red stays constant across all three fields — that's the load-bearing rule. */
+}
+
+/* ---- Paper field — the canvas ----
+   Default light field. Articles, sequences, body copy, forms, homepage default.
+   Paper-warm (#FAFAF8), not pure white: 100% luminance is a flashbulb in the
+   afternoon office, and warmth signals "publication" rather than SaaS dashboard.
+   Same DNA reasoning that picked cream over white originally — applied at the
+   right scale. Use this for any page with 5+ screens of body copy. */
+[data-field="paper"] {
+  --field-bg:       #FAFAF8;  /* Paper-warm white — the canvas */
+  --field-bg-deep:  #F2EDE4;  /* Cream, used here as a deep variant for paper */
+  --field-ink:      #0A0A0A;  /* Near-black, matches --bg for cross-field rhythm */
+  --field-ink-dim:  #5A554C;  /* Warm graphite */
+  --field-rule:     #E8E6E1;  /* Hairline on paper */
+  --field-surface:  #F2EDE4;  /* Card surface on paper = cream */
+  background: var(--field-bg);
+  color: var(--field-ink);
+}
+
+/* ---- Cream field — the callout band ----
+   ONE PER PAGE MAX. Fills the slot Kajabi/editorial sites use for sage-green
+   or soft-gray banded sections — warmth without going dark. Use to break up
+   a paper canvas, set off a brief callout, mark a featured testimonial, etc.
+   Not a long-form reading surface — at 4096px+ of scroll the warmth becomes
+   oppressive and reads "dated paper" instead of "publication." */
+[data-field="cream"] {
+  --field-bg:       #F2EDE4;  /* Warm cream — the callout band */
+  --field-bg-deep:  #E8E1D3;  /* Warmer cream for inset moments */
+  --field-ink:      #0A0A0A;
+  --field-ink-dim:  #5A554C;
+  --field-rule:     #D9D2C2;  /* Warm cream rule */
+  --field-surface:  #EBE5D8;  /* Card surface on cream */
+  background: var(--field-bg);
+  color: var(--field-ink);
+}
+
+/* ---- Dark field — gravitas band ----
+   Hero, founder quote, footer, section breaks, anywhere the page needs
+   gravitas. Explicit override so the field is first-class alongside paper +
+   cream — not just "the default if nothing's set." */
+[data-field="dark"] {
+  --field-bg:       var(--bg);
+  --field-bg-deep:  var(--bg-deep);
+  --field-ink:      var(--ink);
+  --field-ink-dim:  var(--ink-dim);
+  --field-rule:     var(--rule);
+  --field-surface:  var(--surface-1);
+  background: var(--field-bg);
+  color: var(--field-ink);
+}
+
+/* Re-open :root for the rest of the global tokens. */
+:root {
+
+  /* ---- Semantic Color ---- */
+  --color-bg:        var(--bg);
+  --color-fg:        var(--ink);
+  --color-fg-muted:  var(--ink-dim);
+  --color-border:    var(--rule);
+  --color-accent:    var(--red);
+  --color-accent-hi: var(--red-bright);
+
+  /* ---- Type families ---- */
+  --font-display: "Archivo", "Inter Tight", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-body:    "Bricolage Grotesque", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", "Menlo", monospace;
+
+  /* ---- Type scale (1920-design baseline; scale w/ rem at use site) ---- */
+  --fs-meta:    11px;   /* mono labels: 01/02 markers, dates, captions */
+  --fs-caption: 13px;
+  --fs-body:    16px;
+  --fs-lede:    20px;
+  --fs-h6:      22px;
+  --fs-h5:      28px;
+  --fs-h4:      36px;
+  --fs-h3:      48px;
+  --fs-h2:      64px;
+  --fs-h1:      88px;
+  --fs-display: 128px;
+
+  /* ---- Line height ---- */
+  --lh-tight:   1.04;   /* serif display */
+  --lh-snug:    1.18;   /* large headings */
+  --lh-body:    1.55;   /* body */
+  --lh-loose:   1.7;    /* long-form reading */
+
+  /* ---- Tracking ---- */
+  --ls-display: -0.02em;
+  --ls-body:     0em;
+  --ls-mono:     0.04em;   /* mono caps benefit from a touch of tracking */
+  --ls-meta:     0.16em;   /* MONO LABELS (UPPERCASE) */
+
+  /* ---- Spacing scale (4px base) ---- */
+  --space-0:   0;
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   24px;
+  --space-6:   32px;
+  --space-7:   48px;
+  --space-8:   64px;
+  --space-9:   96px;
+  --space-10: 128px;
+  --space-11: 192px;
+
+  /* ---- Radii — restrained. Editorial, not bubbly. ---- */
+  --radius-0: 0px;
+  --radius-1: 2px;     /* hairline rounding — buttons, tags */
+  --radius-2: 4px;     /* inputs, small cards */
+  --radius-3: 8px;     /* cards */
+  --radius-pill: 999px;
+
+  /* ---- Borders ---- */
+  --border-hairline: 1px solid var(--rule);
+  --border-strong:   1px solid var(--ink);
+  --border-accent:   1px solid var(--red);
+
+  /* ---- Shadows — minimal. Dark UIs read shadow as fog; use sparingly. ---- */
+  --shadow-1: 0 1px 0 0 rgba(0,0,0,0.4);
+  --shadow-2: 0 6px 24px -8px rgba(0,0,0,0.6);
+  --shadow-glow-red: 0 0 0 1px rgba(225, 29, 45, 0.4), 0 8px 32px -8px rgba(225, 29, 45, 0.35);
+
+  /* ---- Motion ---- */
+  --ease-out:   cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in:    cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:   120ms;
+  --dur-base:   200ms;
+  --dur-slow:   360ms;
+
+  /* ---- Layout ---- */
+  --content-w-narrow: 640px;
+  --content-w:        960px;
+  --content-w-wide:   1200px;
+  --gutter:           clamp(20px, 4vw, 56px);
+}
+
+/* =============================================================
+   Element-level defaults (use directly, or ride on a `.compound`
+   theming class if the design system needs to coexist with other
+   styles).
+   ============================================================= */
+
+html, body {
+  background: var(--field-bg);
+  color: var(--field-ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--red); color: var(--field-ink); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 800;            /* Archivo Black — display weight */
+  letter-spacing: var(--ls-display);
+  line-height: var(--lh-snug);
+  color: var(--field-ink);
+  margin: 0;
+  text-wrap: balance;
+}
+
+h1 { font-size: var(--fs-h1); line-height: var(--lh-tight); }
+h2 { font-size: var(--fs-h2); line-height: var(--lh-tight); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+h5 { font-size: var(--fs-h5); }
+h6 { font-size: var(--fs-h6); }
+
+/* Emphasis system — Archivo doesn't take well to weight-down emphasis.
+   Default mechanism: <em> renders as a red rule-underline beneath the word.
+   Secondary: .hit-block renders as a solid red highlighter (ink on red).
+   Italics are NOT used. */
+h1 em, h2 em, h3 em, h4 em,
+.display em, .lede em {
+  font-style: normal;
+  font-weight: inherit;
+  color: var(--field-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.14em;
+  text-decoration-skip-ink: none;
+}
+/* Block highlighter — use once per page max for a hero moment. */
+.hit-block, h1 .hit-block, h2 .hit-block, h3 .hit-block {
+  background: var(--red);
+  color: var(--field-ink);
+  padding: 0 .18em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  text-decoration: none;
+}
+/* The red word — reserved for ≥18px display contexts only (AA Large). */
+h1 .red-word, h2 .red-word, h3 .red-word { color: var(--red); }
+
+/* The red word — used sparingly. */
+.accent-red, .red-word { color: var(--red); }
+
+p, li {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-loose);
+  color: var(--field-ink);
+  text-wrap: pretty;
+  margin: 0 0 1em;
+}
+
+.lede {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--fs-lede);
+  line-height: var(--lh-snug);
+  color: var(--field-ink);
+  letter-spacing: -0.005em;
+}
+
+small, .caption {
+  font-size: var(--fs-caption);
+  color: var(--field-ink-dim);
+  line-height: var(--lh-body);
+}
+
+/* ---- Mono meta labels — operator's-brief signature ---- */
+.meta, .label-mono, .eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-meta);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-meta);
+  color: var(--field-ink-dim);
+  font-weight: 500;
+}
+
+.meta--ink { color: var(--field-ink); }
+.meta--red { color: var(--red); }
+
+/* Section markers: 01 / 02 / 03 */
+.section-marker {
+  font-family: var(--font-mono);
+  font-size: var(--fs-meta);
+  letter-spacing: var(--ls-meta);
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+code, kbd, pre, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  letter-spacing: var(--ls-mono);
+}
+
+a {
+  color: var(--field-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: text-decoration-color var(--dur-fast) var(--ease-out),
+              color var(--dur-fast) var(--ease-out);
+}
+a:hover {
+  text-decoration-color: var(--red);
+}
+
+hr {
+  border: 0;
+  border-top: var(--border-hairline);
+  margin: var(--space-7) 0;
+}
+
+/* ---- Utility: warm-cream-on-warm-black surface ---- */
+.compound-surface {
+  background: var(--field-bg);
+  color: var(--field-ink);
+}

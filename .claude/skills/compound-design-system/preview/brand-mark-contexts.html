@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--bg);}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;height:240px;}
+  .cell{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;border-right:1px solid var(--rule);}
+  .cell:last-child{border-right:0;}
+  .cell.dark{background:#0A0A0A;}
+  .cell.deep{background:#000;}
+  .cell.cream{background:#F2EDE4;}
+  .cell img{height:88px;width:auto;}
+  .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);}
+  .cell.cream .lbl{color:#5a564f;}
+</style></head>
+<body><div class="grid">
+  <div class="cell dark"><img src="../assets/logo-compound-mark.svg" alt=""><div class="lbl">on --bg</div></div>
+  <div class="cell deep"><img src="../assets/logo-compound-mark.svg" alt=""><div class="lbl">on --bg-deep</div></div>
+  <div class="cell cream"><img src="../assets/logo-compound-mark-dark.svg" alt=""><div class="lbl">on --ink</div></div>
+</div></body></html>

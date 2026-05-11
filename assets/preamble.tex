@@ -1,0 +1,16 @@
+% Compound brand — PDF preamble
+% Link colors / colorlinks are set via Quarto YAML (linkcolor, urlcolor, citecolor)
+% so they're fed to hyperref at the right point in the template load order.
+% This file holds only what the template can't express in metadata.
+
+\usepackage{xcolor}
+\definecolor{compoundred}{HTML}{E11D2D}
+\definecolor{compoundink}{HTML}{0A0A0A}
+\definecolor{compoundinkdim}{HTML}{5A554C}
+
+\usepackage{microtype}
+
+% Heading color — keep ink; red is reserved for emphasis, not decoration.
+\addtokomafont{disposition}{\color{compoundink}}
+\addtokomafont{title}{\color{compoundink}}
+\addtokomafont{subtitle}{\color{compoundinkdim}}
