@@ -60,7 +60,7 @@ Three paths cover almost every Compound sprint:
 
 - **Hand-built integration.** Custom code, usually involving an API to a system of record, often with an engineer in the loop. Slower than low-code, higher return, harder to change later. This is the right path when the workflow runs at a scale or against a system that low-code tools cannot reach — or when the integration touches data the company will not put through a third-party automation platform.
 
-Harley's four-agent setup — the one from Chapter 2 — didn't require a line of code. It was a low-code build: skills wired, projects connected, tools configured. That's what Build looks like when Design has done its job.
+Our marketing lead's four-agent setup — the one from Chapter 2 — didn't require a line of code. It was a low-code build: skills wired, projects connected, tools configured. That's what Build looks like when Design has done its job.
 
 These are not a hierarchy. None of them is better than the others. The right path is the one that matches the design — the workflow's shape, the systems it touches, the data sensitivity, the team's ability to own it, the volume it will run at, and the speed the constraint demands.
 

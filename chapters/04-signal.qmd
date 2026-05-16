@@ -86,13 +86,13 @@ Quarterly rocks that are not moving are another input. A rock that has been carr
 
 The headcount conversation is the third — and the most expensive when you miss it. Every time the org reaches for a hire, there is a constraint hiding underneath. The work is real. The team is stretched. The default move is to add a person. But under that conversation is a workflow that was never designed for the volume it is now carrying. Signal asks: before you post the role, what is the constraint generating the demand for a new hire? Half the time, naming it changes what you do next. The other half, you still hire — but you hire against a redesigned workflow rather than the one already failing.
 
-### Sprint · Saint Clair Systems.
+### Sprint · a manufacturing company on EOS.
 
-Saint Clair Systems came in the way most companies do — asking which AI tool they should buy. They are a manufacturing company on EOS, well-run, with the L10 cadence and accountability chart already in place.
+A manufacturing company came in the way most companies do — asking which AI tool they should buy. They run on EOS, well-run, with the L10 cadence and accountability chart already in place.
 
 The first useful work was not tool evaluation. It was Signal. They already had an issues list — the standard EOS L10 artifact — and that list was the perfect input. The team walked through one issue and asked the Signal questions in order. What is the problem? Where does it live? Who currently solves it, and how? The conversation surfaced that the issue was sitting across their CRM, their ERP, and the ops manager who held the tribal knowledge that connected the two systems.
 
-Only after the constraint was named did the conversation turn to what to build. The lesson Saint Clair makes obvious: a high-functioning EOS shop already has half of Signal's inputs lying around. The issues list, the scorecards, the rocks that are not moving — these are not bureaucratic artifacts. They are the raw material the Constraint Finder is designed to work on.
+Only after the constraint was named did the conversation turn to what to build. The lesson this company makes obvious: a high-functioning EOS shop already has half of Signal's inputs lying around. The issues list, the scorecards, the rocks that are not moving — these are not bureaucratic artifacts. They are the raw material the Constraint Finder is designed to work on.
 
 ### Sprint · Three hours, one *root cause*.
 
