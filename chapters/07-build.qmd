@@ -1,5 +1,13 @@
 # *Build*.
 
+When our account manager opens the quoting agent, it knows everything. Past projects, what we charged, how we scoped them, what capacity we had left, what the client asked for in the last engagement. She types a brief and it drafts a quote — real numbers, real scope, real pricing — in minutes.
+
+Nobody else on the team has access to that agent. Not because we don't trust them. Because the design said this information doesn't need to go further than the person who owns it. We built that access layer in before we built anything else. Not as an afterthought. As part of the spec.
+
+There is a second agent — a content production workflow that a different team member runs. That one is open to anyone. Different data, different stakes, different guardrails. Same sprint. Two agents, two different access levels, both decisions made in Design before Build executed either one.
+
+The reason I'm telling you this is because the Guardrails Checklist isn't a compliance exercise. It's the moment in Build where you decide what the system is allowed to touch. If you do that work before the build executes, it costs almost nothing. If you discover it after something goes sideways — after the wrong person pulls the wrong data — it costs everything. The spec either includes the guardrail or it doesn't. And if it doesn't, Build isn't done yet.
+
 Build is the stage where the locked design becomes a working, deployed system. It is the narrowest stage of the Sequence — and the fastest, when the diagnostic work was done properly. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
 
 This chapter is about what Build actually produces, what the team is choosing between when they build, and why this stage is short when the four previous stages were honest.
@@ -15,6 +23,8 @@ Build produces one thing: a working, deployed solution to the validated constrai
 That bar is deliberately high, because anything less than that leaks back into the *we'll roll it out next quarter* limbo that swallowed the last AI initiative. Build is done when work the team used to do is being done by the designed system, supervised by the human the Hybrid Accountability Chart names.
 
 ## Build is scoped to the *designed* workflow.
+
+The agents we designed in the last chapter — the ones that replaced 90% of the coordinator's function — this is where they got built. Design told us the shape. Build executed it.
 
 The single most common Build failure is scope drift — the moment the engineer or vendor or low-code builder looks at the spec and starts to "improve" it. Add a feature. Connect another system. Generalize the workflow into a platform. Use the constraint as an excuse to rebuild a tool the company should have replaced anyway.
 
@@ -50,6 +60,8 @@ Three paths cover almost every Compound sprint:
 
 - **Hand-built integration.** Custom code, usually involving an API to a system of record, often with an engineer in the loop. Slower than low-code, higher return, harder to change later. This is the right path when the workflow runs at a scale or against a system that low-code tools cannot reach — or when the integration touches data the company will not put through a third-party automation platform.
 
+Harley's four-agent setup — the one from Chapter 2 — didn't require a line of code. It was a low-code build: skills wired, projects connected, tools configured. That's what Build looks like when Design has done its job.
+
 These are not a hierarchy. None of them is better than the others. The right path is the one that matches the design — the workflow's shape, the systems it touches, the data sensitivity, the team's ability to own it, the volume it will run at, and the speed the constraint demands.
 
 The Design phase determines the path. Build executes it. A team that picks a path because of a vendor relationship, an internal preference, or a fashion in the market is making a Design decision under the cover of Build — and they will pay for it.
@@ -61,6 +73,12 @@ A 60-person professional services firm came into a sprint with a Signal that was
 The build path was low-code. No engineer needed. The team assembled the workflow themselves in three weeks, using tools they already had licenses for. Quotes started going out the same day they came in. The principal got their week back. The cost of the build was a rounding error against what the constraint had been costing.
 
 The story isn't that low-code is magic. The story is that Design gave them a workflow simple enough to build in low-code in three weeks. That is what a thorough diagnose produces.
+
+The low-code path goes further than most people expect. I was in a strategy session with a client team — a professional services firm, small leadership group — and one of them mentioned, almost in passing, that he was already writing LinkedIn posts at his kid's soccer game. Sitting in the bleachers, pulling out his phone, typing a prompt into ChatGPT, and two minutes later he had a post. Doing it consistently. Getting results he liked.
+
+I said: go into Claude. Start the skill creator. Copy in your three best posts. Tell it what worked about each one. Ten minutes — by the time the half is over — you've built a skill. You've got a pipeline. You don't need a developer. You don't need us to do it for you.
+
+The reason I'm telling you this is because Build doesn't require an engineer. It requires a design that names the shape. The client's workflow was simple enough that a skill did it. That's not a limitation — that's exactly the point. When Design has done its job, the build path reveals itself.
 
 ## The two instruments — *Build Spec Writer* and *Guardrails Checklist*.
 
@@ -95,6 +113,8 @@ Build is done when there is a deployed solution producing outputs against real i
 Not a demo. Not a pilot in a sandbox. Not a working prototype the team is waiting to "really roll out" after some unspecified additional work. Deployed and producing against real work.
 
 If the team is uncertain whether Build is done, the test is simple. Pull the last week of inputs the workflow was supposed to handle. Did the system handle them? Did the supervisor review the outputs? Did the work move forward? If yes, Build is done. If no, the team is not in Deliver yet.
+
+There's a moment later in this book where I describe closing my laptop at 5:30 and going home for dinner. That moment is the human payoff of what Build produces. But we're not there yet — Build is the mechanism, not the feeling.
 
 ## Hand off to *Deliver*.
 

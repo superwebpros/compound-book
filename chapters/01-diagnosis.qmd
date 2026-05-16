@@ -1,14 +1,30 @@
 # The *diagnosis*.
 
+I asked them one question. The answer told me everything.
+
+We were on a discovery call with a long-time client — a small manufacturing company, ten people, good revenue, all three principals on the call. I asked how they were using AI. The first one said ChatGPT. The second said Claude. The third said Poe — an aggregator that lets you sample models without committing to one.
+
+Three people. One company. Three different tools. No shared accounts, no shared projects, no shared workflow. Each of them had gone out and found something on their own, the same way someone downloads a new app to try it out. And each of them was using it the same way: individually, occasionally, for whatever felt useful in the moment.
+
+I asked what they were hoping AI would do for the business. The answer was honest and almost word for word what I hear every time: "We know what we want — we just don't know how to start harnessing it."
+
+That's not a technology problem. That's a design problem. And it's the most common version of the AI problem I see: three people, three tools, zero coordination, zero structural change. Not because anyone failed to try. Because no one designed the work before the tool arrived.
+
+That company is not unusual. It might be yours.
+
 > You can see where AI is going. You just don't yet know how to operate inside it.
 
-That sentence is the one most CEOs of $5M–$50M companies will not say out loud — but it is the one that is true. You have read the same essays. You have watched the same demos. You have a working theory of where this is heading: agents doing real work, smaller teams shipping more, the cost curve of knowledge work bending. None of that is in doubt for you anymore. What is in doubt is what you are supposed to *do* on a Tuesday morning, inside the company you actually run, with the people you actually employ, against the P&L you actually own.
+That sentence is the one most CEOs of \$5M–\$50M companies will not say out loud — but it is the one that is true. You have read the same essays. You have watched the same demos. You have a working theory of where this is heading: agents doing real work, smaller teams shipping more, the cost curve of knowledge work bending. None of that is in doubt for you anymore. What is in doubt is what you are supposed to *do* on a Tuesday morning, inside the company you actually run, with the people you actually employ, against the P&L you actually own.
 
 You bought into AI somewhere in the last two years. A ChatGPT subscription for the team. A workflow automation pilot. An AI platform your vendor swore would change the math. You spent real money and gave it real time. And what you have to show for it is a tool your team mostly ignores, a handful of scattered use cases that never scaled, and a quiet suspicion that something is wrong — but not the thing everyone keeps telling you is wrong.
 
+Consider what I saw on a discovery call with an EOS company we were talking to. They had AI subscriptions across the team. Their marketing lead had built an agent in Microsoft Copilot — she mentioned it almost in passing, as a side note. She had been working on it the night before the call, trying to get it to draft content and post it automatically. She called it "lower level," which was honest. Meanwhile, the rest of the staff was using AI as a sounding board — asking it questions, getting answers, moving on. No workflow had changed. No output was different. When I asked who in the organization could be the internal driver of their AI initiative, there was a pause. Then the owner said four words: "I don't have that person."
+
+Their marketing lead was already working nights. The effort was real. The adoption was real. And none of it was producing structural change — because one person working harder inside a system that was never designed for AI is not adoption. It's heroism without leverage.
+
 The instinct is to blame adoption. Your team resisted. They didn't take the training seriously. They went back to their habits. That diagnosis is comfortable because it puts the problem on the floor instead of in the operating model — but it is the wrong diagnosis, and acting on it produces exactly one outcome: another training session that also doesn't work.
 
-The real problem is upstream of adoption. The real problem is that nobody redesigned the work before the tool arrived.
+The real problem is upstream of adoption. The real problem is that nobody redesigned the work before the tool arrived. I described in the preface the moment a key developer left my company — I paid for the ladder and incurred the cost of the chute. That wasn't a technology failure. That was a design failure. This chapter's diagnosis is that same failure, wearing a different coat.
 
 ## The *headcount* paradox.
 
@@ -36,6 +52,8 @@ Operators who run on EOS, Scaling Up, or any disciplined system already know thi
 
 If you walked into any function in your company today and asked the same three questions you would ask of a human team — what is this function accountable for, what is its scorecard, who reviews the output and on what cadence — you would get clean answers for the humans and blank stares for the AI. That is the diagnosis in one move. The AI in your company has no seat on the chart. It has no number it is hitting. It has no review rhythm. You would never run a function that way if it were staffed by people. You are running it that way because you have not yet decided that AI is staff.
 
+We had an underperforming project coordinator — someone the team was afraid to let go because at least she knew some stuff. That fear, and what we did with it, is a story for a later chapter. For now, know this: the instinct to solve a people problem with another person is exactly the instinct this book exists to interrupt.
+
 The pattern is mechanical. The diagnosis is mechanical. The fix is mechanical. None of it is mysterious — but all of it is operating work, not technology work. (Yes, there is some organizational design happening here at the tactical level, and we will get into it. But framing the problem as "we need an org redesign" is too small for what is actually required. The frame is the operating model itself.)
 
 ## The wrong *question*.
@@ -54,6 +72,6 @@ You cannot get to the second question by working harder at the first. They are d
 
 There is a name for the company that runs on the second question. We call it the Co-Intelligent Company — a company where humans and AI operate as one system rather than two parallel tracks, where the work has been designed before the tool was deployed, and where the headcount math finally moves the way it was supposed to move when you first wrote the AI line into the budget.
 
-We are not going to define the Co-Intelligent Company in this chapter. That is the next chapter's job, and it deserves the room. What this chapter has done is name the diagnosis — the headcount paradox, the operating-model misread, the wrong question — so that the rest of the book has something to answer.
+We are not going to define the Co-Intelligent Company in this chapter. That is the next chapter's job, and it deserves the room. What this chapter has done is name the diagnosis — the headcount paradox, the operating-model misread, the wrong question — so that the rest of the book has something to answer. By the end of it, you will see how one company went from 13 employees to 8 with double-digit growth on every metric. That is the destination. This chapter is about why most companies never get there.
 
 The answer comes next.

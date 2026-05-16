@@ -1,5 +1,21 @@
 # What to do *next*.
 
+I'm on a call with a CEO I'll call Katie. She came in knowing exactly what was wrong with her business. She'd been thinking about it for months. She had a list, and she was ready to talk about it.
+
+I'm watching the clock because we've got thirty minutes and I know how these calls move. We get about eight minutes in and I ask her: "What does this problem cost you? Not in frustration, not in lost revenue abstractly — in dollars, per year, if nothing changes next year."
+
+She goes quiet. Not the uncomfortable quiet of someone who doesn't want to answer. The quiet of someone who has never actually done that math.
+
+That's always the moment.
+
+By minute twenty-five, we'd named something she hadn't walked in with. Not the problem on her list — a different one. The actual constraint underneath it. And she said, almost to herself: *Oh. That's what it is.*
+
+The same thing happened the following week with a different CEO — I'll call her Jill. Different industry, different list, same conversation structure, same moment at roughly the same point in the call. Neither of them had known their real constraint before the call. Both of them could name it by minute twenty-five.
+
+Thirty minutes. Neither of them had to run a workshop or hire a consultant to get there. They had to be asked the right question in the right order and refuse the temptation to answer it with the first thing that came to mind.
+
+That is what this chapter is for. Not to give you more to think about. To give you the first move.
+
 You have the diagnosis. You have the framework. You have the mechanism. You have the language to describe what a Co-Intelligent Company is, the Sequence to build one, and the Rhythm to keep it compounding. The work from here is not theoretical. It is operational. The only real question left is where you start.
 
 ## Start by running *Signal* on yourself.
@@ -30,6 +46,18 @@ That is the only ask in this book.
 
 ## Two paths after the *call*.
 
+Before the paths, a note on what stops most people at this stage.
+
+I was on a discovery call with a physical therapy practice owner — one of the top private practices in the country, by his own description, and I believed him. He'd just come back from a foundation retreat and he was lit up. His vision: an automated executive suite. AI agents for every C-suite function. Budgeting, forecasting, marketing, KPI management — all of it running on agents trained on his institutional knowledge. He wanted to package that knowledge and take it to the world.
+
+It was a genuinely impressive vision. So I asked the only question that mattered: "Who on your team would build this?"
+
+He went quiet. Then: "I don't have that person."
+
+There it is. The vision was not the obstacle. The gap between the vision and the first step was the obstacle. He was staring at the vision and the first step kept not appearing, and so the quarter ended and nothing moved. That is not a failure of ambition. It is a failure of sequencing. The Clarity Call exists to close that gap — not to shrink the vision, but to find the step.
+
+The same pattern appeared in Chapter 1, in a different form: a marketing lead building agents alone at night in Copilot, unsupported, without a designed system around her, while the rest of the organization waited for someone to tell them what to do. "I don't have that person" and "I don't have that structure" are the same constraint wearing different clothes. Both of them resolve with a named first sprint, not a better platform.
+
 Once you have a constraint named clearly enough to commit a sprint to it, you have two paths forward. They produce the same artifact — a Co-Intelligent Company, sprint by sprint — at different speeds and with different levels of support.
 
 1. **Run the Sprint independently.** The framework is in this book. The Sequence is here. The artifacts — the Knowledge Map, the Hybrid Accountability Chart, the Hybrid Org Today — are defined. A disciplined operating team with EOS or Scaling Up already in place can execute a first sprint on its own. Many will. We wrote the book so they could.
@@ -49,6 +77,10 @@ The companies that will look obvious in five years are the ones that started run
 You do not need to see the whole staircase. You need the next step, clearly named, with a cost attached.
 
 That is what the Clarity Call gives you. Take it.
+
+This book started with a developer leaving and a company playing chutes and ladders — paying for the ladder and riding the chute. Every dollar of training, every hour of onboarding, every mistake paid for, walking out the door when the person did. That problem forced a question: what is the actual constraint? Not what tool do I buy, not what position do I post, but what is the problem I am trying to solve and what does it cost me if I don't? That question is the framework. The framework is in your hands.
+
+We went from thirteen people to eight in one year. Billings up. Profitability up. Not because we cut costs — because the Rhythm changed which question we asked about every capacity problem. I'm telling you this not as a sales claim but as evidence. The math is not theoretical. It works. The question is only whether you run it on your organization this quarter or let your competitors run it on theirs first.
 
 ---
 

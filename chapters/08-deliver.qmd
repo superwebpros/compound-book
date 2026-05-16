@@ -1,5 +1,19 @@
 # *Deliver*.
 
+We flip the switch on a Wednesday.
+
+The workflow goes live. The agent starts pulling tickets from the queue, routing them, logging its decisions. I'm watching the dashboard. Left side: everything working the way we designed it. Right side: flags. Not catastrophic — the system isn't down — but the agent is handling a category of inputs we didn't map fully in Source, and it's doing things we didn't expect.
+
+I tell my co-founder: "Pretty buggy over here. But it's doing a great job over there."
+
+She nods. We're both looking at the same screen.
+
+Here's what I didn't understand yet, on that Wednesday: "live" is a technical claim. The agent is running. The workflow is in production. The ticket is about to get closed. And none of that means the sprint produced.
+
+The sprint produces on Monday. When the operator whose week was supposed to change sits down, opens their queue, and finds that the eight hours of routing work they used to do is gone — not delegated, not reduced, gone — and they have something different to do instead. If that happens, the sprint produced. If they're still routing manually, still sending work to the old inbox out of habit or because no one told them to stop, still working the system we were supposed to replace — then we deployed a tool. We didn't deliver anything.
+
+The difference is operational, not technical. And Deliver is the stage that closes it.
+
 Build deployed the workflow. Deliver is what happens next — and it is its own stage for a reason. Most AI implementations end at Build. The tool is configured, the agent runs in production, the ticket is closed, and the team that commissioned the work declares the sprint complete. Six months later the dashboard has not moved, the people whose work was supposed to change are still working the old way, and nobody can explain what happened.
 
 What happened is that Build's "deployed" is a technical claim. Deliver's "delivered" is an organizational one. The workflow is only delivered when the people whose handoffs change have been trained, when the upstream routing has been re-wired, when the reporting that used to roll up has been redirected, and when the sprint's outcome has been measured against the cost Signal quantified. None of that happens automatically. Deliver is the stage where the deployed solution changes the way the organization operates — and the stage where the sprint's claim gets proven against a number.
@@ -11,6 +25,10 @@ Build ends with a working agent running in production. That is a real milestone.
 The person whose week used to include four hours of manual routing now has those four hours back — but only if their calendar, their queue, and their handoffs have been re-set to reflect that. The colleague who used to send them tickets needs to know to send the tickets somewhere else. The manager who used to see the weekly summary needs the new reporting wired up. The escalation path for the exceptions the agent flags needs to land on a human who has been told it will land on them.
 
 If you skip that work, the deployed system still functions — but the organization continues to behave as if the old workflow is in place. People route around the new system because they were never told to route through it. The agent does its job. The hours do not come back. The cost Signal quantified does not get recovered. The sprint did not produce.
+
+I learned this in my own shop before I understood it as a principle. We finished a sprint, deployed a workflow, wrote the runbook. Two weeks later I watched a teammate do the task manually — the exact task the agent now handles — because she'd never been explicitly told to stop. The workflow was in production. The old inbox was still open. She was routing to both, hedging, not sure which one was "real." We built the tool to do this. Why are you still doing it this way? I said it out loud. I was, in a meaningful sense, talking to myself — because I was the one who never closed the old inbox.
+
+The failure isn't resistance. The failure is an unanswered question: who was supposed to tell her to stop? That's Deliver's job. Not the technology part — that part was done. The operational part: closing the old inbox, redirecting the upstream handoff, making the new workflow the only workflow. Until that happens, you have two systems running in parallel, one of them invisible, and people will choose the one they know.
 
 Deliver is the stage that closes that gap. It is operational, not technical. The instruments are not code — they are the runbook the team uses to work the new way, and the pre-flight check that confirms the team is ready to.
 
@@ -41,6 +59,8 @@ Deliver also surfaces what did not work. This is not a postmortem — the retros
 Two categories matter. The first is outputs that required human intervention outside the designed handoffs. The Hybrid Accountability Chart specifies where humans review what the agent produces; any case where someone had to step in outside those review points is a design signal worth recording. Either the work was misclassified in Design, or the agent's guardrails are not catching what they were supposed to catch, or a category of input exists in production that did not exist in the Source map.
 
 The second is data gaps that were not visible in Source but surfaced in production. The Knowledge Map was built against what the team could see. Sometimes the work reveals what they could not see — a customer record format nobody flagged, an exception path that only fires at quarter-end, a system handoff that works for 95% of cases and silently fails for 5%. Those become Source inputs for the next sprint.
+
+In Chapter 5, I described a client whose AI kept surfacing expired information because nobody audited the knowledge base before indexing it. That's exactly what Deliver's logging phase is designed to catch — the gaps that Source couldn't see because they only become visible in production.
 
 Both categories get written down. Not in a formal incident-report shape — in a running log the Agent Coordinator maintains as part of the operating rhythm. That log is what the Compound stage works against when it asks: what would we do differently next time?
 

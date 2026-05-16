@@ -1,5 +1,13 @@
 # The *Co-Operating* Model.
 
+I'm sitting across from a CEO looking at her P&L and her headcount report side by side. Good company. Profitable. Growing. She bought AI software fourteen months ago — a meaningful line on the books. She ran a rollout. Her team is using the tools. And I'm scrolling across the two reports and I see the thing I keep seeing: the headcount line and the revenue line are moving together, exactly the way they were before the software. Same slope. Same ratio. Quarter after quarter. The AI subscription is right there, third line down — and it has changed nothing structural.
+
+She has done everything right. She identified the problem, bought a credible solution, and deployed it. And the headcount curve didn't bend.
+
+I've seen this enough times to know what it is. She dropped a highly capable synthetic worker into an organization designed exclusively for humans. Think about that as a hiring scenario: if you brought on a new employee but gave them no seat on the org chart, no defined handoffs, and no accountability for any outcome, that employee's work would die in the gap. Every piece of output they produced would dissolve somewhere between their desk and the person who needed it. The AI is failing for the exact same reason. Not because the tool doesn't work. Because the business wasn't designed for a non-human worker.
+
+That is an operating design failure. And the Co-Operating Model is the answer to it.
+
 The diagnosis was the easy part. You have an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. Not in the abstract, and not as a vision deck. As a structure you can draw on a whiteboard, point at, and start running against on Monday. That structure has a name in this book. We call it the Co-Operating Model. It is what a Co-Intelligent Company is built on, and it is what makes *Co-Intelligent Co-operation* — humans and AI working the same problems together — something other than an accident.
 
 ## Two words, two *jobs*.
@@ -19,6 +27,8 @@ The last decade of enterprise software pitched a graft — a productivity layer 
 Co-Intelligence is a different metaphor. It is a metaphor of system design. The human and the agent are both inside the loop. The work itself gets re-shaped around the fact that two different kinds of intelligence are now executing it. The structure is built to evolve — because the agent gets smarter every quarter, the human's task space shifts as a result, and the design has to keep pace. The *Co* is what gives the company that joint mechanism for continually evolving. A graft produces a frozen artifact. Co-Intelligence produces a living system.
 
 This is not a vocabulary preference. It is the difference between a company that absorbs every model upgrade as a free improvement to its operating model, and a company that has to re-run a change-management project every time the technology takes a step. One compounds. The other restarts.
+
+I described in the preface the moment a key developer left my company — paying for the ladder and riding the chute. That is what the graft model produces over time: frozen knowledge, frozen structure, and then a single departure that undoes years of investment. Co-Intelligence is the architecture that prevents it. The knowledge stays because it was designed to stay.
 
 ## What each one *brings*.
 
@@ -50,6 +60,18 @@ The two columns are not negotiable line items. They are the load-bearing logic o
 When you get the split right, the company compounds. The human's hours flow into the work only humans can do: deciding, directing, pricing, owning, coaching. The agent's hours flow into everything else, at a cost and speed that re-prices the underlying economics of the business. Both sides get compounding returns every quarter, because the structure was built to absorb improvement on both sides.
 
 When you get it wrong — and most companies get it wrong on first attempt — you get the failure mode we keep seeing in the field: two parallel tracks producing nothing structural. The team has its workflow. The agents have theirs. The handoff is undefined. The outcome belongs to no one. The dashboard shows tool adoption and the P&L shows nothing.
+
+Here is what it looks like when you get it right.
+
+Our marketing lead manages content and video production for Compound. Before we applied the model, that meant she was the doer — writing the copy, editing the video, building the assets, one task at a time. After, we stopped and looked at what was actually happening on her screen. Claude Design was working on the visual assets. Claude AI was drafting copy. NotebookLM was pulling and synthesizing source material. HeyGen was handling the video. Four agents. Four workstreams. All pointed at the same output. And she was not editing a video. She was not writing a caption. She was deciding whether the outputs were right. She was steering.
+
+Her job did not get smaller. It got higher.
+
+That is the ownership split made visible. The agents are doing exactly what the right column says they should do — drafting, documenting, synthesizing, executing on a defined output. She is doing exactly what the left column says the human should do — directing the work, pricing what's good enough, owning the outcome. What used to be a solo production workflow is now a team she manages. The team just doesn't have business cards.
+
+We had to design that before we could run it. We had to answer, explicitly, which tasks the agent would own and which she would keep. We had to define the handoffs — what she reviews, what she approves, what goes out without her touching it. That design work is what made the model real. Without it, the tools would have been four separate tabs she opened when she felt like it, and the outcome would have looked exactly like the CEO's headcount report I described at the start of this chapter.
+
+That story — an underperforming project coordinator, an integrator ready to post a new job, and the question we asked instead — walks this same split in a different context. You will see it in full in Chapter 6, where it earns its full telling. Here, know what it proved: once you define who owns what, the operating question stops being "who do we hire?" and starts being "what does the agent take?"
 
 ## The *Equation*.
 

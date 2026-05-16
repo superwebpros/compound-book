@@ -1,5 +1,15 @@
 # The *Framework*.
 
+She's on the screen and I can tell from the way she's sitting that she's already made up her mind. We've been talking for maybe twenty minutes — her company, her bottlenecks, what she's hoping AI can fix — and then she leans forward and says it: "Can we just build it? I just need this thing built."
+
+I know exactly what she means. She's seen the demos. She's read the case studies. She has a clear picture in her head of the tool that's going to solve her problem, and she wants to stop talking about it and start building it. That's not impatience — that's the instinct of someone who has run a business. When you know what you want, you build it.
+
+But I've also watched what happens when you start there. The build goes well. The tool gets deployed. The team learns to use it. And six or eight weeks later she's back on a call, quieter this time, trying to explain to her team why the output doesn't match what they actually needed. The workflow solves something — just not the right thing. And when we trace it back, the answer is always the same: we skipped Signal. We assumed we knew what the constraint was. We built against an assumption, not a diagnosis. The foundation was never poured. The walls went up anyway.
+
+I didn't tell her that on the call. I said: let's start at Signal. She said: okay. We did. What she found there surprised her. The constraint she'd been carrying around in her head for six months wasn't the real constraint — it was a symptom of something two steps upstream. If we'd built what she came in asking for, we'd have solved the symptom beautifully and left the actual problem running.
+
+That is the conversation this chapter exists to prevent you from having with yourself.
+
 This is the chapter that maps the rest of the book. The first two chapters named the problem and named the system that solves it; this one shows the shape of the work itself — the order it runs in, the cadence it runs on, and the single unit of work you will use to learn it. The next six chapters each take one stage of that work and go deep. Treat this chapter as the page you flip back to when you forget which word means what.
 
 ## The order is the *argument*.
@@ -9,6 +19,8 @@ Most AI initiatives skip the diagnosis and start at Build. A tool gets chosen, a
 Building before diagnosing is the same mistake as framing a house before pouring the foundation. The walls go up. The roof goes on. It looks like progress right up until the moment the structure has to carry weight — and then it does not. Construction has rules about the order of operations because the order is load-bearing. So does this.
 
 The Framework exists because there is a correct sequence for installing co-intelligence into a company, and that sequence is the entire reason the result compounds instead of evaporating. Skip the first two steps and you are buying a tool. Run all six in order and you are changing how the work is owned. Those two things look similar from the outside and produce nothing alike.
+
+The framework you are about to learn was born from the chutes-and-ladders problem I described at the start of this book. The developer left. The knowledge left with him. And the only reason what came next worked is because I solved the problem in a specific order.
 
 That is the argument. Now the vocabulary.
 
@@ -59,6 +71,8 @@ The shorthand worth holding in your head: the Bench runs the Sequence with you; 
 ## You learn this on a *Sprint*.
 
 You do not learn the Framework by reading about it. You learn it by running one Sprint on one real constraint in your own company. That is the only teaching unit that works, because the Framework is not a model of how AI implementation could go — it is the structure of how the work moves when it moves correctly.
+
+The project coordinator story — the one where we mapped the work instead of posting a job — walks all six stages of the Framework. You will see it in full in Chapter 6. Here, it serves as proof that the sequence works when followed in order: Signal named the constraint, Source mapped what the role actually required, Design allocated the work between human and agent, Build produced the workflow, Deliver shipped it into the team's environment, and Compound captured what the next Sprint would inherit. One constraint. Six stages. One documented outcome.
 
 The Sprint is roughly six to eight weeks. It is narrow on purpose — one validated constraint, one designed workflow, one measurable result against the cost that Signal quantified. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. Six to eight weeks, one constraint, one documented outcome. That is the bar.
 

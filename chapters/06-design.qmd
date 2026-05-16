@@ -1,5 +1,11 @@
 # *Design*.
 
+My integrator is on a weekly call and she's not building up to it. "She's not keeping up with clients. Reports are late. I think we need to let her go."
+
+I know the feeling on both ends of that sentence. The project coordinator had been with us long enough to know things — where the client files actually lived, which contacts needed extra lead time, what the unwritten rules were for each account. That knowledge doesn't transfer with a two-week notice. It walks out the door and you spend the next three months paying a new person to relearn it while the work piles up. The devil you know. We'd been around this loop before and I could feel myself starting to reach for the job description template.
+
+Instead I stopped and asked a different question. Not "who should we hire?" but "what does this role actually do?" We opened a blank document and started listing the sources of information that fed the job — the CRM, the project tracker, the report templates she'd built, the client check-in cadence she managed from memory. Then we ran the accountability list through Work Deconstruction, task by task: which items required genuine judgment and relationships, and which were high-volume, low-judgment work that looked like operations because it lived inside the operations function? The shape of the role changed in front of us. What had looked like one job was actually two — and one of those jobs, we could design an agent team for. We never posted the listing. The work shipped. That question — "what is this work, actually?" — is the question Design exists to ask.
+
 Design is the stage where the constraint and the knowledge map turn into a workflow with named owners. Signal told you what to solve. Source told you what the work actually requires. Design decides who does what — and writes that decision down in a form the rest of the company can read, build against, and improve.
 
 This is the first stage of *Execute & Compound*. Everything before this was diagnosis. Everything after this is shipping. Design is the gate between the two — and the reason every sprint either compounds or stalls.
@@ -58,17 +64,19 @@ Design has two Skills Library instruments: Work Deconstruction and Hybrid Accoun
 
 The distinction matters because the chart is what makes the deconstruction durable. A deconstruction that does not land inside the chart is a one-time analysis. A deconstruction that lands inside the chart becomes structure.
 
-## Donna's role, *deconstructed*.
+## The role, *deconstructed*.
 
-Inside a member company, Donna was the operations lead. The role had become a bottleneck — too much work, too few hours — and the company was about to backfill it with a junior coordinator. A new hire, a new training ramp, another body in the operations function. Standard headcount math.
+The project coordinator story from the opening of this chapter is also the clearest illustration of what Work Deconstruction actually produces — because we ran it in real time, on a real role, with the pressure of a pending hiring decision sitting on the table.
 
-Instead, the team pulled Donna's accountability chart and ran Work Deconstruction against it, using TML — the Task-ML decomposition framework. Every accountability Donna owned was broken into its task components, and every task got a classification: human judgment, agent-assisted, or fully automated.
+We pulled her accountability list. Not her job description — those are always cleaner than the reality. Her actual accountability chart: the items she owned, the work she touched every week. Then we ran TML against it, task by task. Every item got a classification. Does this require judgment — the kind that depends on knowing the client, knowing the history, reading a room? Does it benefit from agent assistance, with a human reviewing every output? Or is it fully automatable — high-volume, well-defined, clean inputs, predictable outputs?
 
-The decomposition revealed the obvious thing nobody had looked at directly. A substantial fraction of Donna's day was high-volume, low-judgment routing and documentation work — the kind of work that looks like operations because it happens inside the operations function, but is not operations judgment. That work became a designed agent team. It landed in the Hybrid Accountability Chart as an AI-assisted entry, with Donna as the human supervisor. She reviewed every output to start. The rest of Donna's time stayed with Donna — the parts that required judgment, relationships, and context the agent did not have.
+The classification took maybe ninety minutes. What it revealed is the thing nobody had looked at directly: a substantial fraction of her work was routing and documentation. Scheduling client check-ins. Updating the project tracker after calls. Generating the weekly status reports from data that already lived in the CRM. That work looked like operations because it happened inside the operations function — but it was not operations judgment. It was operations administration. The kind of work that eats a skilled person's hours and leaves them with no time for the parts of the role that actually require them.
 
-The junior coordinator hire was never posted. The work shipped. Donna's role became more strategic, not less — she was supervising an agent team on the high-volume work and spending the recovered hours on the parts of operations that only she could do. One row in the chart. One sprint. One avoided hire.
+That work became a designed agent team. It landed in the Hybrid Accountability Chart as an AI-assisted entry — she reviewed every output to start, which is the right call when the team is new and trust hasn't been established. The remaining accountability — the client relationships, the judgment calls, the situations that required someone who knew the history — stayed with her. Her role became more strategic, not because we gave her a new title, but because we gave her back the hours that the low-judgment work had been consuming.
 
-That is what Design looks like in practice — an accountability chart, an honest decomposition, and a workflow that lands inside the Hybrid Accountability Chart with named owners. Not a change initiative. Not a strategic offsite. One accountability, one sprint, one row.
+The junior coordinator listing was never posted. One row in the chart. One sprint. One avoided hire.
+
+This is also the answer to a pattern I described earlier in this book: the headcount line that tracks revenue dollar for dollar, the AI investment on the P&L that produces no observable change. That pattern exists because the AI dropped into the organization had no seat — no designed workflow, no named owner, no accountability structure to receive what it produced. Work Deconstruction is how you give it a seat. The Hybrid Accountability Chart is what makes that seat visible, owned, and improvable over time.
 
 ## The *Design Agent*.
 
@@ -85,6 +93,8 @@ Design produces a workflow and a chart entry. It also produces a role: the *Huma
 The Human Orchestrator is Compound's answer to the question every operator eventually asks — "what does the human do when AI does the work?" The answer is not "less." The answer is "something different, and more strategic."
 
 The Human Orchestrator sets the goals for the agent team. They design the workflow the agent team executes against. They own the outcome — the sprint's measurable result against the constraint from Signal. They review the agent team at the goal level, not the task level — not checking every output line by line, but asking whether the team is moving the constraint in the right direction. And they make the design improvements between sprints. After every Compound phase, the Human Orchestrator looks at what the team produced and asks: what one design change would make the next sprint better? That iterative improvement is the compounding mechanism on the leadership side of the chart — eight sprints of one good design change each produces an agent team substantially more capable than the one that shipped in sprint one.
+
+You met a version of this role in Chapter 2 — our marketing lead running four agent teams in parallel, each working a different piece of the same content project. What I didn't show you there is the Design work that made that shift possible. Someone had to sit down and ask what she was actually accountable for. Which parts of her job required her judgment, and which parts required execution that any well-designed agent could handle? Which of those teams needed to surface decisions to her, and at what frequency? Those questions got answered in a Design session before a single agent was built. The four-tab setup wasn't improvised. It was designed — and because it was designed, her role didn't shrink when the agents came in. It changed shape into something the original offer letter didn't have a name for.
 
 This is a more strategic role than executing inside the function. It is also a role most leaders were not hired for. The operations lead who got the job because she was excellent at executing operations work is now being asked to design the operations function instead of doing it. That is not a smaller role. It is a different one — and developing the capability is deliberate work, not a personality change. The Design stage names the role; the Rhythm builds the muscle.
 

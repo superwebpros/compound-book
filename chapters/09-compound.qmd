@@ -1,5 +1,27 @@
 # *Compound*.
 
+I am a compulsive worker. I've always known this about myself — it is not a character flaw I've conquered, it is a fact I manage. For most of my career, "done for the day" was not a state I inhabited. It was a fiction I told myself when I ran out of energy. The list never cleared. The inbox never reached zero. There was always another thread to pull, another problem to sit with, another thing that would compound into a bigger problem if I left it overnight. In a fast-moving industry, that felt like the only acceptable posture.
+
+Then something changed.
+
+I'm looking at the clock. It says 5:30. I do what I always do — I scan the list of everything that was supposed to happen today. The reports that needed to ship. The reviews I was supposed to run. The decisions that had been sitting in my inbox waiting for me to be the bottleneck that resolved them.
+
+It's done. Not most of it. Not the urgent half. All of it.
+
+I sit there for a moment, because this doesn't feel like the ordinary kind of done — the kind where you convinced yourself you finished by letting something slip. It feels like the day actually finished. Like the list closed on its own terms, not on mine.
+
+I close the laptop. I go home. I have dinner with my family.
+
+It happens again the next night. And the night after that.
+
+If I were to count the number of times I left at 5:30 in the eighteen months before I started deploying these systems, versus the six months after — it is not a marginal difference. It is dramatic. The gap is embarrassing.
+
+The reason I'm telling you this is not to make a claim about work-life balance. That is not what changed. The work was the same. The industry was the same. I was still moving fast. What changed is that the infrastructure I had built was doing work in parallel — work that used to wait for me, work that was queued behind my availability as a single-threaded human. Each sprint I ran built on the last. The agents knew the company's conventions because they'd learned them in an earlier sprint. The tools knew the formats because we'd built the templates. The Source maps from the first sprint were sitting inside the system, accelerating the fifth. None of that had to be rebuilt. It just ran.
+
+And because it ran, I could stop.
+
+That is what compounding feels like from the inside. Not a dashboard metric. Not a headcount number on a slide. An evening home, on a Tuesday, when eighteen months earlier that was not something I was capable of choosing.
+
 Compound is the sixth stage of the Sequence and the one that closes the loop. Signal found the constraint. Source mapped what the work required. Design wrote down who does what. Build produced the spec and the workflow. Deliver shipped it inside the company and measured it against the cost Signal named. Compound is what happens after the win is documented — the stage that turns a delivered sprint into the foundation of the next one.
 
 This is the stage the word in our company name points at. The brand is *Compound* because what the work produces is compounding — not as metaphor, but as the structural property of running the Sequence on a cadence. Without this stage, you have shipped a project. With it, you have built infrastructure.
@@ -59,6 +81,20 @@ Sprint one's Source phase produced a Knowledge Map for the client delivery funct
 The same is true of every artifact in the Sequence. The Hybrid Accountability Chart has one row after sprint one and a dozen rows after sprint twelve — every new sprint inherits the chart's existing rows as context for the design decisions it has to make. The Build Spec Writer learned the company's conventions in sprint one and applies them automatically in sprint two. The leadership team that was new to Work Deconstruction in sprint one runs it with judgment in sprint four. The training material from sprint three's Deliver phase becomes the onboarding for sprint seven. None of this is a metaphor. These are real artifacts, sitting inside the company, accelerating the next sprint.
 
 A member six sprints in finds the Source phase of their seventh sprint taking days instead of weeks. The constraint they are working on now is sharper, because three sprints' worth of Sprint Retrospectives taught them what kinds of constraints actually move the headcount math. The Hybrid Accountability Chart entry they draft in Design takes an afternoon, because they have drafted six of them. *That is the infrastructure compounding.* It is not a speech the CEO gives at the offsite. It is what the work feels like in the seventh sprint, compared to the first.
+
+### The 45 minutes that saved weeks.
+
+I'm running a Source session with a client group. Multiple people on a video call. We're in the Source phase — the goal is to map where their information lives. What data do they have, who owns it, how often is it updated, what can an agent actually access.
+
+I ask the first question. Someone answers. Someone else adds a correction. A third person remembers something they'd forgotten to include. The conversation does what group conversations do — it meanders productively, people interrupt each other, problems get added to the pile mid-session.
+
+But the whole time, the skill is building the document. Attendees. Problem inventory. Knowledge inventory. Current tools. Connected data sources. Key themes. All of it accumulating sentence by sentence as the conversation happens, without anyone in the room writing a word.
+
+Forty-five minutes later, we're done. I pull up the document. It has everything — the complete Source picture for this organization, organized, structured, categorized, ready to use. I send it to them. The response from the person who'd been expecting a conversation: "This is great. I spent zero time creating it."
+
+That document is still inside their company. The next sprint they run, the Source phase starts from that map — not from zero. Three weeks of discovery that used to happen at the start of every engagement now happens once, and then gets updated at the edges. That's the 45-minute session doing compounding work across every sprint that follows it.
+
+The coordinator's knowledge base I described in the Design chapter — the one we extracted before she left and built the agents on top of — that artifact is still working too. Not as a memory of the sprint that produced it. As the living foundation the next sprint runs on. The knowledge we mapped became infrastructure. The infrastructure compounded. The numbers in the next chapter — thirteen people to eight, double-digit growth across every metric — those didn't come from a single sprint. They came from the stack of infrastructure each sprint left behind.
 
 ## Compound is not the same as *scale*.
 
