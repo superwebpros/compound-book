@@ -74,7 +74,7 @@ You do not need to see the whole staircase. You need the next step, clearly name
 
 The book gives you that. The Clarity Call accelerates it. Either way, the constraint is the first move — and the first move is available to you right now.
 
-This book started with a developer leaving and a company playing chutes and ladders — paying for the ladder and riding the chute. Every dollar of training, every hour of onboarding, every mistake paid for, walking out the door when the person did. That problem forced a question: what is the actual constraint? Not what tool do I buy, not what position do I post, but what is the problem I am trying to solve and what does it cost me if I don't? That question is the framework. The framework is in your hands.
+This book started with a developer leaving and a company playing chutes and ladders — paying for the ladder and absorbing the cost of the chute. Every dollar of training, every hour of onboarding, every mistake paid for, walking out the door when the person did. That problem forced a question: what is the actual constraint? Not what tool do I buy, not what position do I post, but what is the problem I am trying to solve and what does it cost me if I don't? That question is the framework. The framework is in your hands.
 
 We went from thirteen people to eight in one year. Billings up. Profitability up. Not because we cut costs — because the Rhythm changed which question we asked about every capacity problem. The math is not theoretical. It works. The question is only whether you run it on your organization this quarter or let your competitors run it on theirs first.
 

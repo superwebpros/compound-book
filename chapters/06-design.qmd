@@ -95,7 +95,7 @@ This is also the answer to a pattern I described earlier in this book: the headc
 
 ## The *Design Agent*.
 
-The Compound Bench includes a Design Agent — and this is where I see operators get the most leverage out of a coaching session. You bring in two things: the validated constraint statement from Signal and the Knowledge Map from Source. What comes back is a structured conversation that will not let you skip the hard questions. Which tasks require a human judgment call? Which benefit from agent assistance with a human in the loop? Which can be fully automated? Who supervises? Where on the AI-assisted-to-automated spectrum does this accountability start?
+The third agent on the Compound Bench is the Design Agent — and this is where I see operators get the most leverage out of a coaching session. You bring in two things: the validated constraint statement from Signal and the Knowledge Map from Source. What comes back is a structured conversation that will not let you skip the hard questions. Which tasks require a human judgment call? Which benefit from agent assistance with a human in the loop? Which can be fully automated? Who supervises? Where on the AI-assisted-to-automated spectrum does this accountability start?
 
 Those are the same questions I ask when I'm in the room. The Design Agent runs them in the same sequence, every time, with no shortcuts. The leadership team still owns every decision — the agent does not make calls. What it does is make sure none of the four questions disappear into "we'll figure that out in Build," which is where design debt goes to get expensive. Every row that leaves the Design session has a named human supervisor beside it.
 

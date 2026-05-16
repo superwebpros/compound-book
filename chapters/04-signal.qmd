@@ -106,7 +106,7 @@ Only after the constraint was named did the conversation turn to what to build. 
 
 ### Sprint · Three hours, one *root cause*.
 
-Jill's leadership team spent three hours moving through the Signal questions on a single problem. What is the constraint? Where does it live? Quantify the cost. Validate against real data. Map what connects to it. Each question had to be answered before the next one was asked — not answered in the abstract, but answered with a number or a name or a date someone in the room could verify.
+One client's leadership team spent three hours moving through the Signal questions on a single problem. What is the constraint? Where does it live? Quantify the cost. Validate against real data. Map what connects to it. Each question had to be answered before the next one was asked — not answered in the abstract, but answered with a number or a name or a date someone in the room could verify.
 
 Three hours of facilitated conversation, on one issue, to get to a root cause that the team could agree on and put a number against. That is the price of doing Signal honestly the first time. Your first session will feel slow. That is not a sign the process is broken — it is a sign the problem has never been examined at this resolution before.
 

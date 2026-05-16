@@ -2,7 +2,7 @@
 
 This time last year, I had thirteen people. I'm looking at the current roster and there are eight.
 
-Five people are gone — not lost to attrition, not cut in a crisis, not managed out because the company was struggling. Gone because the work they were doing is now being done differently. And we are growing. Double digits on every metric. Billings up. Profitability up significantly. The fewer people are the reason.
+Five people are gone — not lost to attrition, not cut in a crisis, not managed out because the company was struggling. Gone because the work they were doing is now being done differently. And we are growing. Double-digit growth on billings and profitability. The fewer people are the reason.
 
 The shift did not happen because we adopted a new platform or made a strategic decision to run lean. It happened because we ran Signal before we wrote requisitions. That is the behavioral change. It sounds small. It is not.
 
@@ -10,7 +10,7 @@ Here is the specific moment I can point to. We had a project coordinator who was
 
 We stopped before we did that. Not because we had some principled objection to hiring. Because by that point we had run enough sprints that the first question had changed. Not *who do we hire?* but *what does Signal say about this?*
 
-So we ran Signal. What is the actual constraint? What does this role touch? We mapped the information sources — the CRM fields she used, the project management cadence she owned, the client follow-up patterns she was responsible for. We asked which parts of the work required human judgment and which parts were high-volume and structured. Then we designed a workflow without assuming a human had to sit in every seat. We built a set of AI agents that could handle ninety percent of what she was doing. We deployed.
+So we ran Signal. What is the actual constraint? What does this role touch? We mapped the information sources — the CRM fields she used, the project management cadence she owned, the client follow-up patterns she was responsible for. We asked which parts of the work required human judgment and which parts were high-volume and structured. Then we designed a workflow without assuming a human had to sit in every seat. We built a set of AI agents that could handle the bulk of what she was doing — the routing, the reporting, the follow-up cadence. We deployed.
 
 The hire never got posted. The work shipped.
 

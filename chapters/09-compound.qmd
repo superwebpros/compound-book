@@ -42,7 +42,7 @@ If your sprint ends and the backlog is not updated, the chart has not gained a p
 
 ## The two *instruments*.
 
-Compound has two Skills Library instruments: *Sprint Retrospective* and *Constraint Re-rank*. Both are gated to Compound members — what follows describes what they do and how to run the underlying process.
+Compound has two Skills Library instruments: *Sprint Retrospective* and *Constraint Re-rank*. Both are available through Compound membership — what follows describes what they do and how to run the underlying process without them.
 
 *Sprint Retrospective* is the structured review of the sprint that just shipped. It asks the same questions every time. What worked — the specific design decisions that paid off, not "the team did great." What did not work — the handoffs that broke, the inputs that turned out dirtier than Source claimed, the supervisor reviews that got skipped because the cadence was wrong. What one design change would have made this sprint better — the disciplined version of the lesson, written as a future-tense instruction the next sprint can use. You run this with your Human Orchestrator and any supervisors who owned sprint accountabilities. The output is not a document filed in a drawer. It is a small number of design changes that get installed into the operating system before the next sprint begins. Lessons that do not change the design are not lessons. They are notes.
 
@@ -82,7 +82,7 @@ Sprint one's Source phase produced a Knowledge Map for the client delivery funct
 
 The same is true of every artifact in the Sequence. The Hybrid Accountability Chart has one row after sprint one and a dozen rows after sprint twelve — every new sprint inherits the chart's existing rows as context for the design decisions it has to make. The Build Spec Writer learned the company's conventions in sprint one and applies them automatically in sprint two. The leadership team that was new to Work Deconstruction in sprint one runs it with judgment in sprint four. The training material from sprint three's Deliver phase becomes the onboarding for sprint seven. None of this is a metaphor. These are real artifacts, sitting inside the company, accelerating the next sprint.
 
-A member six sprints in finds the Source phase of their seventh sprint taking days instead of weeks. The constraint they are working on now is sharper, because three sprints' worth of Sprint Retrospectives taught them what kinds of constraints actually move the headcount math. The Hybrid Accountability Chart entry they draft in Design takes an afternoon, because they have drafted six of them. *That is the infrastructure compounding.* It is not a speech the CEO gives at the offsite. It is what the work feels like in the seventh sprint, compared to the first.
+A company six sprints in finds the Source phase of their seventh sprint taking days instead of weeks. The constraint they are working on now is sharper, because three sprints' worth of Sprint Retrospectives taught them what kinds of constraints actually move the headcount math. The Hybrid Accountability Chart entry they draft in Design takes an afternoon, because they have drafted six of them. *That is the infrastructure compounding.* It is not a speech the CEO gives at the offsite. It is what the work feels like in the seventh sprint, compared to the first.
 
 ### The 45 minutes that saved weeks.
 
@@ -112,7 +112,7 @@ By now you have noticed that the word *Compound* is doing more than one job in t
 
 Compound the stage is where the verb happens — where the previous sprint's output stops being an outcome and becomes the next sprint's accelerant. That mechanism is what Compound the company exists to install. The brand and the stage share a name because the company *is* the stage — the institutional answer to "who teaches you to run this last step, and to run it every time?"
 
-Members get this on their second sprint. The first sprint feels like a project. The second sprint, when the Source map already exists and the chart already has a row and the design conversation has a precedent — that is when the word starts to mean what it means. The mechanism is real. The infrastructure is there. The next sprint runs on what this one built.
+Operators get this on their second sprint. The first sprint feels like a project. The second sprint, when the Source map already exists and the chart already has a row and the design conversation has a precedent — that is when the word starts to mean what it means. The mechanism is real. The infrastructure is there. The next sprint runs on what this one built.
 
 ## One sprint, one *Compound*.
 

@@ -79,7 +79,7 @@ When you get it wrong — and most companies get it wrong on first attempt — y
 
 Here is what it looks like when you get it right.
 
-Our marketing lead manages content and video production for Compound. Before we applied the model, that meant she was the doer — writing the copy, editing the video, building the assets, one task at a time. After, we stopped and looked at what was actually happening on her screen. Claude Design was working on the visual assets. Claude AI was drafting copy. NotebookLM was pulling and synthesizing source material. HeyGen was handling the video. Four agents. Four workstreams. All pointed at the same output. And she was not editing a video. She was not writing a caption. She was deciding whether the outputs were right. She was steering.
+Our marketing lead manages content and video production for Compound. Before we applied the model, that meant she was the doer — writing the copy, editing the video, building the assets, one task at a time. After, we stopped and looked at what was actually happening on her screen. Claude Design was working on the visual assets. Claude AI was drafting copy. NotebookLM was pulling and synthesizing source material. HeyGen was handling the video. Four agent teams. Four workstreams. All pointed at the same output. And she was not editing a video. She was not writing a caption. She was deciding whether the outputs were right. She was steering.
 
 Her job did not get smaller. It got higher.
 
