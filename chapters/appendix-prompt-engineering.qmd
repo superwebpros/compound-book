@@ -6,7 +6,40 @@ If you have read this book and you are interested in prompt engineering, your ti
 
 ## What effective prompting looks like in the *sprint context*.
 
-In the Design phase, when Work Deconstruction has identified the specific tasks an agent team will execute, prompt design is the activity of writing precise, testable instructions for each task — instructions that depend on the constraint Signal surfaced and the knowledge map Source produced. The best prompts in a sprint context have three characteristics: they are specific about the input format the agent receives, explicit about the output format the agent should produce, and they include the constraints and edge cases the human supervisor identified during Design. Prompts built during Design — against a specific accountability, with a known input and output — produce more consistent output and require fewer mid-sprint corrections than prompts written in the abstract.
+In the Design phase, when Work Deconstruction has identified the specific tasks your agent team will execute, prompt design is the activity of writing precise, testable instructions for each task — instructions that depend on the constraint Signal surfaced and the knowledge map Source produced. The best prompts in a sprint context have three characteristics: they are specific about the input format the agent receives, explicit about the output format the agent should produce, and they include the constraints and edge cases your human supervisor identified during Design.
+
+Here is what that looks like in practice. Suppose your sprint constraint (from Signal) is *"Our proposal win rate drops when the executive summary exceeds one page."* Work Deconstruction assigns an agent the task of drafting executive summaries. A prompt built against that accountability reads differently than a generic "write a summary" instruction:
+
+```
+ROLE
+You are a proposal writer for [Company]. Your accountability is the executive summary — the first page a prospective client reads.
+
+INPUT
+You will receive:
+- A completed proposal body (uploaded document)
+- The client's stated evaluation criteria (bulleted list, provided below)
+- Word budget: 350 words maximum
+
+OUTPUT
+Return a single executive summary that:
+1. Opens with the client's primary evaluation criterion in the first sentence
+2. States the proposed approach in plain language — no jargon
+3. Closes with a single, specific risk we are taking off the table for them
+4. Stays within 350 words
+
+CONSTRAINTS (from Design phase)
+- Do not use the word "synergy," "innovative," or "best-in-class"
+- If the proposal body contains pricing, do not reference specific dollar amounts in the summary
+- If the client criteria list is empty or unclear, stop and ask rather than guessing
+
+EDGE CASES
+- If the proposal body is longer than 20 pages, read only the executive brief section and the conclusion before drafting
+- If multiple evaluation criteria are equally weighted, prioritize the one listed first
+```
+
+Your prompt will differ — the accountability, the input sources, the constraints are all specific to your sprint. This template is the structure. Fill it from your Signal constraint, your Source knowledge map, and the edge cases your supervisor flagged in Design. A prompt built this way gives the agent a target it can hit and gives you a result you can evaluate. Prompts built in the abstract give you neither.
+
+Prompts built during Design — against a specific accountability, with a known input and output — produce more consistent output and require fewer mid-sprint corrections than prompts written in the abstract.
 
 After the Deliver phase, the Sprint Retrospective will surface cases where the agent produced unexpected output. Those cases are prompt design signals — they indicate where the instruction was ambiguous or where an edge case was not anticipated. The Compound phase is where those signals become prompt improvements, then Design improvements, then better sprint performance in the next cycle.
 

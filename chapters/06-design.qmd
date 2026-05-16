@@ -24,14 +24,14 @@ Design produces both of these or it has not produced anything. A workflow withou
 
 The Hybrid Accountability Chart is the named, teachable instrument that makes Design concrete. If you run on EOS, you already have an Accountability Chart — one name against each accountability in the company. The Hybrid Accountability Chart extends that idea to a workforce that includes agent teams alongside humans.
 
-For each accountability, the chart answers four questions:
+You build it one row at a time, one sprint at a time. For each accountability your sprint is addressing, you answer four questions — and you write the answers into the chart before Build begins:
 
 1. What role or function does this team perform?
 2. What is the name of the agent team, if applicable?
 3. Who is the human supervisor?
 4. Is this accountability *AI-assisted* — meaning a human is in the loop on every output — or *Automated* — meaning the agent team executes and the human reviews on a schedule?
 
-Here is what a partially built chart looks like, after a company has run a handful of sprints:
+Here is what your chart looks like after a handful of sprints — one row per sprint, built up over time:
 
 | Role / function | Agent team name | Human supervisor | AI-Assisted or Automated |
 |---|---|---|---|
@@ -52,25 +52,40 @@ Most accountabilities start AI-assisted. A human is in the loop on every output 
 
 This is a spectrum, not a binary. And it shifts over time. The Quote Generation Team that started AI-assisted in sprint one might be reviewed every-other-quote by sprint four, and reviewed weekly-in-batch by sprint eight. Nothing about the agent changed in those eight sprints. What changed was the design — the leadership team learned which decisions the agent gets right reliably, which it does not, and where the human's judgment adds value.
 
-That decision — where on the spectrum this accountability sits, and when it moves — depends on the stakes of the work, the cleanliness of the data, and the organization's comfort with agent judgment in that function. High-stakes decisions with ambiguous inputs stay AI-assisted longer. Repetitive, well-defined work with clean inputs moves to automated faster. Design is where that call gets made deliberately, with the Human Orchestrator's name attached to it — instead of drifting into "we just don't review the outputs anymore" three months after deployment, which is what happens when no one designed the supervision in the first place.
+When you are deciding where to start your own accountability on this spectrum, use these triggers:
+
+**Start AI-assisted when:** the stakes of a wrong output are high, the inputs are ambiguous or variable, or the agent team is new and trust has not been established.
+
+**Move toward automated when:** the agent has been right on a class of decisions consistently across multiple sprints, the inputs are clean and well-defined, and the cost of per-output review outweighs the risk of occasional error.
+
+Design is where that call gets made deliberately, with the Human Orchestrator's name attached to it — instead of drifting into "we just don't review the outputs anymore" three months after deployment, which is what happens when no one designed the supervision in the first place.
 
 ## The two *instruments*.
 
-Design has two Skills Library instruments: Work Deconstruction and Hybrid Accountability Chart.
+Design has two Skills Library instruments: Work Deconstruction and Hybrid Accountability Chart. Both are available through Compound membership. The process is yours to run right now.
 
-*Work Deconstruction* breaks an accountability into its component tasks and classifies each one. For every task, the question is: does this require human judgment, does this benefit from agent assistance, is this fully automatable, or is this a workflow-automation problem that does not need an agent at all? The classification is the work — and most accountabilities, when deconstructed, turn out to have a different shape than the leader assumed. The "judgment-heavy role" is actually 70% routing and documentation. The "low-skill operational task" turns out to depend on a relationship the agent cannot replicate. You do not know which is which until you decompose the role honestly, task by task.
+*Work Deconstruction* is how you run it: pull the actual accountability list for a role — not the job description, which is always cleaner than reality, but the real list of things that person touches every week. Then go task by task and classify each one using four categories:
 
-*Hybrid Accountability Chart* is the instrument that takes the output of Work Deconstruction and turns it into a chart entry — the row described above. One accountability, one agent team, one supervisor, one position on the AI-assisted-to-automated spectrum. The two skills run together: Work Deconstruction is the thinking, the chart entry is the artifact.
+1. **Human judgment required** — This task depends on knowing the client, reading the room, drawing on relationship history, or making a call that is genuinely ambiguous. An agent cannot reliably do this.
+2. **Agent-assisted** — An agent can draft, compile, or generate the output, but a human needs to review every result before it goes anywhere. Accuracy matters and the stakes are real.
+3. **Fully automatable** — High-volume, well-defined, clean inputs, predictable outputs. The agent executes and the human reviews on a schedule, not per output.
+4. **Workflow automation only** — This is a routing or integration problem, not an intelligence problem. A simple automation handles it. No agent needed.
 
-The distinction matters because the chart is what makes the deconstruction durable. A deconstruction that does not land inside the chart is a one-time analysis. A deconstruction that lands inside the chart becomes structure.
+The classification is the work — and most accountabilities, when deconstructed this way, turn out to have a different shape than the leader assumed. The "judgment-heavy role" is actually 70% routing and documentation. The "low-skill operational task" turns out to depend on a relationship the agent cannot replicate. You do not know which is which until you decompose the role honestly, task by task. Do this on paper or in a shared doc. It takes sixty to ninety minutes for a real role.
+
+*Hybrid Accountability Chart* is what you build once the deconstruction is done — the chart entry described above. One accountability, one agent team name, one supervisor, one position on the AI-assisted-to-automated spectrum. The two instruments run in sequence: Work Deconstruction is the thinking, the chart entry is the artifact that makes the thinking durable.
+
+A deconstruction that does not land inside the chart is a one-time analysis. A deconstruction that lands inside the chart becomes structure.
 
 ## The role, *deconstructed*.
 
-The project coordinator story from the opening of this chapter is also the clearest illustration of what Work Deconstruction actually produces — because we ran it in real time, on a real role, with the pressure of a pending hiring decision sitting on the table.
+The project coordinator story from the opening of this chapter is also the clearest illustration of what Work Deconstruction actually produces — because we ran it in real time, on a real role, with the pressure of a pending hiring decision sitting on the table. Run the same sequence on your role, or a role on your team, and you will get the same kind of result.
 
-We pulled her accountability list. Not her job description — those are always cleaner than the reality. Her actual accountability chart: the items she owned, the work she touched every week. Then we ran every item through the Work Deconstruction classification, task by task. Every item got a classification. Does this require judgment — the kind that depends on knowing the client, knowing the history, reading a room? Does it benefit from agent assistance, with a human reviewing every output? Or is it fully automatable — high-volume, well-defined, clean inputs, predictable outputs?
+We pulled her accountability list. Not her job description — those are always cleaner than the reality. Her actual accountability chart: the items she owned, the work she touched every week. Start there with your own role: write down every accountability, not the aspirational version, but the actual weekly work. Then run every item through the four-category classification, task by task. Every item gets a label. Does this require judgment — the kind that depends on knowing the client, knowing the history, reading a room? Does it benefit from agent assistance, with a human reviewing every output? Or is it fully automatable — high-volume, well-defined, clean inputs, predictable outputs?
 
 The classification took maybe ninety minutes. What it revealed is the thing nobody had looked at directly: a substantial fraction of her work was routing and documentation. Scheduling client check-ins. Updating the project tracker after calls. Generating the weekly status reports from data that already lived in the CRM. That work looked like operations because it happened inside the operations function — but it was not operations judgment. It was operations administration. The kind of work that eats a skilled person's hours and leaves them with no time for the parts of the role that actually require them.
+
+When you do this on your own role, look for the same pattern: what percentage of your weekly hours go to tasks that are well-defined, data-driven, and repeatable? That percentage is your design opportunity.
 
 That work became a designed agent team. It landed in the Hybrid Accountability Chart as an AI-assisted entry — she reviewed every output to start, which is the right call when the team is new and trust hasn't been established. The remaining accountability — the client relationships, the judgment calls, the situations that required someone who knew the history — stayed with her. Her role became more strategic, not because we gave her a new title, but because we gave her back the hours that the low-judgment work had been consuming.
 
@@ -114,6 +129,14 @@ Nothing in Execute & Compound begins until Design is locked. That is not bureauc
 
 Teams that find Build slow or complicated are almost always teams that moved through Design too quickly — they discovered mid-build that there were decisions nobody had made, handoffs nobody had specified, supervision arrangements nobody had named. Every one of those discoveries is a piece of Design surfacing where it does not belong, in the middle of the build phase, where it costs five times as much to resolve. The gate exists to prevent that. Teams that respect the gate ship fast in Build because Build is what is left when the thinking has already been done.
 
-A locked Design has three things: a workflow specific enough to build against, a Hybrid Accountability Chart entry with all four questions answered, and named Human Orchestrator and Agent Coordinator roles for the accountability. When those three are in place, Build can begin. Until they are, it cannot — and the discipline of holding that line is what separates the operators who run the Sequence from the operators who buy AI tools and hope.
+A locked Design has three things: a workflow specific enough to build against, a Hybrid Accountability Chart entry with all four questions answered, and named Human Orchestrator and Agent Coordinator roles for the accountability. Before you move to Build, check your own Design against this list:
+
+- [ ] The workflow names specific inputs, steps, handoffs, and outputs — not a sketch, but a specification
+- [ ] The Hybrid Accountability Chart has a row for this accountability with all four fields filled in
+- [ ] A Human Orchestrator is named — one person who owns the outcome
+- [ ] An Agent Coordinator is named — one person (or part of one role) who manages the team day-to-day
+- [ ] The AI-assisted vs. automated call is documented, with a rationale, not just a box checked
+
+When those five are in place, Build can begin. Until they are, it cannot — and the discipline of holding that line is what separates the operators who run the Sequence from the operators who buy AI tools and hope.
 
 The next chapter is Build — the phase where the designed workflow becomes a deployable system, specified at the level of detail a developer can execute against, with the guardrails and oversight decisions Design locked in already on the table.

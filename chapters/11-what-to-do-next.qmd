@@ -26,9 +26,9 @@ The first move is to run Signal on your own organization — the same discipline
 
 That single step — done honestly, without rushing to a solution — is what separates the companies that produce results from AI from the companies that produce a second round of the same experiments they ran last year. Most CEOs skip it. They move to tools because tools are concrete and constraints are uncomfortable. The discomfort is the work. The constraint is the asset.
 
-If you have read this far and done the thinking the chapters asked of you, you have a sense of where your real constraint lives. You may have already named it on the margin of a page. The job now is to sharpen it — to move from a general area of concern to a specific, validated problem statement with a cost attached.
+If you have read this far and done the thinking the chapters asked of you, you have a sense of where your real constraint lives. You may have already named it on the margin of a page. The job now is to sharpen it.
 
-That is what a first sprint is built on. Without it, there is nothing to sprint against.
+Open a blank document. Write one sentence that names the constraint. Then answer three questions: What does it cost per year if nothing changes? Who on the team feels it most acutely? What is the first thing that would have to be true for it to be solved? Do not move past that exercise until you can answer all three in writing. That document is the foundation of your first sprint. Without it, there is nothing to sprint against.
 
 ## The *Clarity Call*.
 
@@ -36,15 +36,13 @@ If you want a peer to pressure-test that constraint with you before you spend a 
 
 30 minutes. At no cost. With an operator, not a salesperson.
 
-The Clarity Call is not Signal — Signal is the rigorous diagnostic process described in Chapter 4. The call is a 30-minute conversation that gives you a head start on Signal: it surfaces the constraint category, sharpens the question you take into the full process, and tells you whether your first sprint candidate is real. You walk away with clarity about where AI fits in *your* organization — your team, your industry, your headcount math, your numbers. The output is not a software recommendation. It is not a sales pitch. It is a constraint you can act on.
+The Clarity Call is not Signal — Signal is the rigorous diagnostic process described in Chapter 4. The call is a 30-minute conversation that gives you a head start on it: it surfaces the constraint category, sharpens the question you take into the full process, and tells you whether your first sprint candidate is real. You walk away with clarity about where AI fits in *your* organization — your team, your industry, your headcount math, your numbers. The output is not a software recommendation. It is not a sales pitch. It is a constraint you can act on.
 
 Whether you ever talk to us again or not, what you walk away with is yours.
 
 Book it at **[compoundorg.com/clarity-call](https://compoundorg.com/clarity-call)**.
 
-That is the only ask in this book.
-
-## Two paths after the *call*.
+## Two paths forward.
 
 I was on a discovery call with a physical therapy practice owner — one of the top private practices in the country, by his own description, and I believed him. He'd just come back from a foundation retreat and he was lit up. His vision: an automated executive suite. AI agents for every C-suite function. Budgeting, forecasting, marketing, KPI management — all of it running on agents trained on his institutional knowledge. He wanted to package that knowledge and take it to the world.
 
@@ -74,7 +72,7 @@ The companies that will look obvious in five years are the ones that started run
 
 You do not need to see the whole staircase. You need the next step, clearly named, with a cost attached.
 
-That is what the Clarity Call gives you. Take it.
+The book gives you that. The Clarity Call accelerates it. Either way, the constraint is the first move — and the first move is available to you right now.
 
 This book started with a developer leaving and a company playing chutes and ladders — paying for the ladder and riding the chute. Every dollar of training, every hour of onboarding, every mistake paid for, walking out the door when the person did. That problem forced a question: what is the actual constraint? Not what tool do I buy, not what position do I post, but what is the problem I am trying to solve and what does it cost me if I don't? That question is the framework. The framework is in your hands.
 

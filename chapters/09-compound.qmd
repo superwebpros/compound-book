@@ -28,33 +28,33 @@ This is the stage the word in our company name points at. The brand is *Compound
 
 ## What *Compound* produces.
 
-Compound has three deliverables, and they ship together.
+Compound has three deliverables, and they ship together — in a single session, before your team closes the laptop on this sprint.
 
-The first is an updated *Signal Backlog* — the running, prioritized list of validated constraints the organization is working through. Signal generated the constraint that drove this sprint; the sprint generated new information about the rest of the backlog. Compound is where the backlog gets re-ranked against what you now know.
+The first is an updated *Signal Backlog* — the running, prioritized list of validated constraints your organization is working through. Signal generated the constraint that drove this sprint; the sprint generated new information about the rest of the backlog. Compound is where you re-rank the backlog against what you now know.
 
-The second is an updated *Hybrid Accountability Chart*. The chart had one new row when Design produced it for this sprint's accountability. By the end of Deliver that row was real — a named agent team, a named human supervisor, a position on the AI-assisted-to-automated spectrum, and a documented outcome against the constraint. Compound is where that row lands permanently in the chart and where any neighboring rows get reviewed for the second-order effects of the sprint that just shipped.
+The second is an updated *Hybrid Accountability Chart*. The chart had one new row when Design produced it for this sprint's accountability. By the end of Deliver that row was real — a named agent team, a named human supervisor, a position on the AI-assisted-to-automated spectrum, and a documented outcome against the constraint. In Compound, you make that row permanent and review any neighboring rows for second-order effects from the sprint that just shipped.
 
-The third is a commitment to the next sprint's focus — the constraint, the accountability, the human owner. Not "we will start the next sprint sometime." A named next constraint, taken from the re-ranked backlog, with the Human Orchestrator already assigned.
+The third is a commitment to the next sprint's focus — the constraint, the accountability, the human owner. Not "we will start the next sprint sometime." A named next constraint, taken from the re-ranked backlog, with the Human Orchestrator already assigned. You leave the session with the next sprint started in name, even if the work is weeks away.
 
 These three deliverables slot into the living document I'll describe in the next chapter — the Hybrid Org Today, the current operational picture of the Co-Intelligent Company. The Signal Backlog and the Hybrid Accountability Chart are both slices of it. Compound is where those slices get updated.
 
-If a sprint ends and the backlog is not updated, the chart has not gained a permanent row, and no next constraint is named, the sprint did not finish. It stopped. Those are different states. Compound is the discipline of finishing.
+If your sprint ends and the backlog is not updated, the chart has not gained a permanent row, and no next constraint is named, the sprint did not finish. It stopped. Those are different states. Compound is the discipline of finishing.
 
 ## The two *instruments*.
 
-Compound has two Skills Library instruments: *Sprint Retrospective* and *Constraint Re-rank*.
+Compound has two Skills Library instruments: *Sprint Retrospective* and *Constraint Re-rank*. Both are gated to Compound members — what follows describes what they do and how to run the underlying process.
 
-*Sprint Retrospective* is the structured review of the sprint that just shipped. It asks the same questions every time. What worked — the specific design decisions that paid off, not "the team did great." What did not work — the handoffs that broke, the inputs that turned out dirtier than Source claimed, the supervisor reviews that got skipped because the cadence was wrong. What one design change would have made this sprint better — the disciplined version of the lesson, written as a future-tense instruction the next sprint can use. The output of Sprint Retrospective is not a document filed in a drawer. It is a small number of design changes that get installed into the operating system before the next sprint begins. Lessons that do not change the design are not lessons. They are notes.
+*Sprint Retrospective* is the structured review of the sprint that just shipped. It asks the same questions every time. What worked — the specific design decisions that paid off, not "the team did great." What did not work — the handoffs that broke, the inputs that turned out dirtier than Source claimed, the supervisor reviews that got skipped because the cadence was wrong. What one design change would have made this sprint better — the disciplined version of the lesson, written as a future-tense instruction the next sprint can use. You run this with your Human Orchestrator and any supervisors who owned sprint accountabilities. The output is not a document filed in a drawer. It is a small number of design changes that get installed into the operating system before the next sprint begins. Lessons that do not change the design are not lessons. They are notes.
 
-*Constraint Re-rank* is the corresponding instrument on the strategic side. The Signal Backlog that existed at the start of the sprint was built on the information the company had at that moment. The sprint produced new information — about what the data really looks like, which accountabilities have unexpected friction, which constraints turned out to be symptoms of a deeper constraint. Constraint Re-rank takes the backlog into that new information and reorders it. Some constraints move up. Some move down. Some get resolved entirely, because the sprint that just shipped quietly absorbed them. Occasionally, a constraint that was not on the backlog at all emerges as the next most important — the kind of insight you only get from operators who have just finished a sprint.
+*Constraint Re-rank* is the corresponding instrument on the strategic side. The Signal Backlog that existed at the start of the sprint was built on the information your company had at that moment. The sprint produced new information — about what the data really looks like, which accountabilities have unexpected friction, which constraints turned out to be symptoms of a deeper constraint. You take the backlog into that new information and reorder it. Some constraints move up. Some move down. Some get resolved entirely, because the sprint that just shipped quietly absorbed them. Occasionally, a constraint that was not on the backlog at all emerges as the next most important — the kind of insight you only get from operators who have just finished a sprint.
 
-The two instruments run together. Sprint Retrospective looks backward at the work that shipped. Constraint Re-rank looks forward at the work that comes next. Both produce changes to artifacts the company already maintains — the chart, the backlog, the design rules — rather than artifacts the company has to remember to consult.
+The two instruments run together in a single Compound session. Sprint Retrospective looks backward at the work that shipped. Constraint Re-rank looks forward at the work that comes next. Both produce changes to artifacts your company already maintains — the chart, the backlog, the design rules — rather than artifacts it has to remember to consult.
 
 ## The *Compound Agent*.
 
 The sixth agent on the Compound Bench is the one I run at the end of every sprint. Its job is to make Sprint Retrospective and Constraint Re-rank impossible to skip.
 
-I've watched leadership teams end a sprint, celebrate the outcome, and move immediately to whatever is next. The retrospective gets scheduled for "sometime next week." The backlog does not get re-ranked. The one design change nobody names. Three months later, the next sprint runs into the same friction the last sprint identified and never fixed. The Compound Agent exists to close that gap before the team closes the laptop.
+I've watched leadership teams end a sprint, celebrate the outcome, and move immediately to whatever is next. The retrospective gets scheduled for "sometime next week." The backlog does not get re-ranked. The one design change nobody names. Three months later, the next sprint runs into the same friction the last sprint identified and never fixed. If you have run a sprint and felt that — if the lessons dissolved before they landed — the Compound Agent exists to close that gap before you close the laptop.
 
 What it does: it takes the documented sprint outcome from Deliver and holds it against the original constraint cost from Signal — the dollar figure or hour figure that opened the sprint. The quoting cycle that was supposed to take four hours; did it? The gap is the data. The agent runs the Sprint Retrospective questions with the leadership team — structured, fast, the same questions every time — and produces the design changes that come out of it. It runs Constraint Re-rank against the Signal Backlog and surfaces the candidates for next sprint.
 
@@ -62,7 +62,7 @@ What it does not do is decide what to work on next. That is the Human Orchestrat
 
 ## The one design change *rule*.
 
-After every sprint, the Human Orchestrator answers one question: *what one design change would make the next sprint better?*
+After every sprint, you answer one question as the Human Orchestrator: *what one design change would make the next sprint better?*
 
 One. Not five. Not a list of improvements. One.
 
@@ -116,6 +116,6 @@ Members get this on their second sprint. The first sprint feels like a project. 
 
 ## One sprint, one *Compound*.
 
-One Sprint produces one Compound stage. That is the unit. You run the Sequence on one validated constraint, you ship the work, and you close it with Compound — Sprint Retrospective, Constraint Re-rank, one design change installed, the backlog re-ranked, the chart updated, the next constraint named. That is a complete pass through the system, and at the end of it your company knows things, and owns things, it did not at the start.
+One Sprint produces one Compound stage. That is the unit. You run the Sequence on one validated constraint, you ship the work, and you close it — in a single session — with Compound: Sprint Retrospective run, Constraint Re-rank done, one design change installed, the backlog re-ranked, the chart updated, the next constraint named, the next Human Orchestrator assigned. That is a complete pass through the system, and at the end of it your company knows things, and owns things, it did not at the start.
 
 The chapter that follows is *the Rhythm* — what happens when this stage runs *quarterly* and becomes how the company operates. One Compound stage proves the mechanism works on one sprint. The Rhythm is what turns the mechanism into a business outcome. It is also where the headcount math from the opening of this book gets answered, in the language of a company that has been running the Sequence long enough that the answer is no longer hypothetical.

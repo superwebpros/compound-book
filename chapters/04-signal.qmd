@@ -58,47 +58,57 @@ That's the moment Signal locks. Not the insight — the agreement. The whole con
 
 The expansion plan was a symptom. The scheduling loop was the constraint. The gap between 60 and 83 is the number that tells you which one to work on.
 
-## The two instruments — *Constraint Finder* and *Issue Surfacer*.
+## How to run Signal yourself.
 
-Signal's two installable workflows from the Skills Library do different jobs and you use them at different moments.
+Signal is a facilitated conversation. You can run it with your leadership team in a single working session — two to three hours the first time, faster once the pattern is familiar. The structure is a sequence of questions, asked in order, and you do not move to the next question until the current one has a real answer.
 
-The **Constraint Finder** is the structured conversation that surfaces the constraint. It walks the team from situation, to symptom, to underlying constraint, to dollar cost. What is the problem in one sentence? Where does it live in the organization? How long has it existed? What does it cost — in hours per week, in dollars per quarter, in margin lost, in deals not closed? The output is the one-page constraint statement. It is the artifact the rest of the Sprint runs against.
+**Start by listing candidates.** Before you can pick one constraint, you need a honest inventory of what is broken or slow. Ask the room: what are we working around? What process exists because something upstream failed? What does a new person always find confusing in their first ninety days? Write everything down without filtering. This is the Issue Surfacer conversation — it does not require a tool, it requires a room that is willing to name things.
 
-The **Issue Surfacer** is used earlier — before a Sprint, or when something feels off but the team cannot name it. It pulls into view the issues the company has been quietly working around. Every operating company accumulates these: the workaround that became a process, the manual reconciliation everyone forgot was manual, the role that exists because something upstream broke years ago and nobody fixed it. The Issue Surfacer drags those into daylight so the Constraint Finder has something to work on. In an EOS shop, the Issue Surfacer often borrows directly from the existing issues list — that list is half of Signal's input lying on a whiteboard somewhere.
+**Then walk each candidate through the constraint questions:**
 
-You will rarely run one without the other. The Issue Surfacer gives you the candidate set. The Constraint Finder picks the one that matters and forces the math.
+1. What is the problem in one sentence?
+2. Where does it live in the organization — which team, which workflow, which handoff?
+3. How long has it existed? (Months? Years? Since a system change? Since a hire?)
+4. What does it cost — in hours per week, in dollars per quarter, in margin lost, in deals not closed?
+5. If this constraint were removed, what would actually change? Be specific.
+
+The question that separates Signal from a regular problem-solving conversation is question four. Most leadership teams stop at question three. They name the problem, locate it, and move to solutions. The quantified cost is what turns a complaint into a constraint you can act on — and what gives the Sprint a target to measure against when it ends.
+
+**Pick one.** When you have walked the candidates through all five questions, one will have the strongest answers — the clearest location, the longest history, the largest cost. That is the constraint you bring to Source. Write it in a single sentence, surrounded by the evidence that validates it, on one page. That document is the artifact the rest of the Sprint runs against.
+
+The Compound Skills Library includes two structured instruments — the **Constraint Finder** and the **Issue Surfacer** — that run this process as AI-guided facilitation, pulling from your data and your team's answers in real time. If you have access to them, use them. If you do not, the five questions above run the same logic. The method is the thing. The tool is a faster version of the method.
 
 ## The *Signal Agent*.
 
 The first agent on the Compound Bench is the Signal Agent. You run it when something feels off but you can't name it yet — when the scorecard is red and the team is nodding and nobody is saying the thing that needs to be said.
 
-The Signal Agent asks the questions I would ask if I sat down with you for two hours. What is slow? What is expensive? What workaround did your team build three years ago that everyone forgot was a workaround? What would change — actually change, in dollars or hours — if this one thing got faster? It does not let you stop at the symptom. It keeps asking until you land on the constraint underneath it and put a number on what that constraint is costing you.
+The Signal Agent asks the questions I would ask if I sat down with you for two hours. What is slow? What is expensive? What workaround did your team build three years ago that everyone forgot was a workaround? What would change — actually change, in dollars or hours — if this one thing got faster? It does not let you stop at the symptom. It keeps asking until you land on the constraint underneath it and put a number on what that constraint is costing you. If you do not have the Signal Agent yet, the five questions in the section above run the same logic. The Agent is a faster, more persistent version of the same conversation — it does not let authority or silence short-circuit the process, which is the main thing facilitation has to defend against.
 
 You leave the session with a one-page constraint statement anchored in a single sentence. That is the artifact you bring to Source. It is also the artifact you bring to your next leadership meeting when someone asks "what are we actually solving for this quarter," because Signal is not just the start of a Sprint. It is the most honest version of a strategy conversation your team has had in a while.
 
 ## Where the constraint comes from inside an *EOS or Scaling Up shop*.
 
-If your company runs on EOS, Scaling Up, or a similar operating system, you already have most of Signal's inputs sitting on a whiteboard or in a shared doc somewhere. You just have to know where to look.
+If your company runs on EOS, Scaling Up, or a similar operating system, you already have most of Signal's inputs sitting on a whiteboard or in a shared doc somewhere. You just have to know where to look — and then you have to run the constraint questions against what you find.
 
-The issues list is the most obvious input. Every L10, every weekly tactical, every quarterly review produces a list of issues the team has been carrying. Most of them are symptoms. A few of them, traced honestly, are constraints. The Issue Surfacer's job is to walk that list and ask, for each one — is this the thing, or is this how the thing shows up? The Constraint Finder takes whichever one survives that walk and turns it into the one-sentence constraint statement.
+The issues list is the most obvious input. Every L10, every weekly tactical, every quarterly review produces a list of issues the team has been carrying. Most of them are symptoms. A few of them, traced honestly, are constraints. Walk that list and ask, for each one: is this the thing, or is this how the thing shows up? When you find one that survives that question — one you can locate in a specific workflow, with a duration and a cost — run the five Signal questions against it. That one becomes your constraint candidate.
 
-Quarterly rocks that are not moving are another input. A rock that has been carried for three quarters without progress is almost always sitting on top of a constraint that nobody named. The rock is the symptom. The constraint is whatever is preventing the rock from moving. Find that, and the rock starts moving on its own.
+Quarterly rocks that are not moving are another input. A rock that has been carried for three quarters without progress is almost always sitting on top of a constraint that nobody named. The rock is the symptom. The constraint is whatever is preventing the rock from moving. Ask what would have to be true for this rock to move on its own. The answer to that question is usually the constraint.
 
-The headcount conversation is the third — and the most expensive when you miss it. Every time the org reaches for a hire, there is a constraint hiding underneath. The work is real. The team is stretched. The default move is to add a person. But under that conversation is a workflow that was never designed for the volume it is now carrying. Signal asks: before you post the role, what is the constraint generating the demand for a new hire? Half the time, naming it changes what you do next. The other half, you still hire — but you hire against a redesigned workflow rather than the one already failing.
+The headcount conversation is the third — and the most expensive when you miss it. Every time the org reaches for a hire, there is a constraint hiding underneath. The work is real. The team is stretched. The default move is to add a person. But under that conversation is a workflow that was never designed for the volume it is now carrying. Before you post the role, run the Signal questions: what is the constraint generating the demand for a new hire? Where does it live? What has it cost you this quarter? Half the time, naming it changes what you do next. The other half, you still hire — but you hire against a redesigned workflow rather than the one already failing.
 
 ### Sprint · a manufacturing company on EOS.
 
 A manufacturing company came in the way most companies do — asking which AI tool they should buy. They run on EOS, well-run, with the L10 cadence and accountability chart already in place.
 
-The first useful work was not tool evaluation. It was Signal. They already had an issues list — the standard EOS L10 artifact — and that list was the perfect input. The team walked through one issue and asked the Signal questions in order. What is the problem? Where does it live? Who currently solves it, and how? The conversation surfaced that the issue was sitting across their CRM, their ERP, and the ops manager who held the tribal knowledge that connected the two systems.
+The first useful work was not tool evaluation. It was Signal. They already had an issues list — the standard EOS L10 artifact — and that list was the perfect input. The team picked one issue and ran the constraint questions against it in order: What is the problem in one sentence? Where does it live? Who currently solves it, and how? What does it cost? The conversation surfaced that the issue was sitting across their CRM, their ERP, and the ops manager who held the tribal knowledge that connected the two systems. That became the one-sentence constraint. That is what went on the one-page statement.
 
-Only after the constraint was named did the conversation turn to what to build. The lesson this company makes obvious: a high-functioning EOS shop already has half of Signal's inputs lying around. The issues list, the scorecards, the rocks that are not moving — these are not bureaucratic artifacts. They are the raw material the Constraint Finder is designed to work on.
+Only after the constraint was named did the conversation turn to what to build. You can do this with any issues list. Pick the issue that feels most expensive, run it through the five questions, and see whether you can put a real number on it. If you can, you have a constraint worth a Sprint. If you cannot, keep walking the list until you find one you can.
 
 ### Sprint · Three hours, one *root cause*.
 
-Jill's leadership team spent three hours moving through the Signal questions on a single problem. What is the constraint? Where does it live? Quantify the cost. Validate against real data. Map what connects to it.
+Jill's leadership team spent three hours moving through the Signal questions on a single problem. What is the constraint? Where does it live? Quantify the cost. Validate against real data. Map what connects to it. Each question had to be answered before the next one was asked — not answered in the abstract, but answered with a number or a name or a date someone in the room could verify.
 
-Three hours of facilitated conversation, on one issue, to get to a root cause that the team could agree on and put a number against. That is the price of doing Signal honestly the first time.
+Three hours of facilitated conversation, on one issue, to get to a root cause that the team could agree on and put a number against. That is the price of doing Signal honestly the first time. Your first session will feel slow. That is not a sign the process is broken — it is a sign the problem has never been examined at this resolution before.
 
 It is also cheap. The alternative — the one most companies pick by default — is eighteen months of deploying tools against unnamed constraints, watching the dashboards not move, and explaining to the board why the AI line item is not paying for itself. Three hours up front, against that. The math is not close.
 

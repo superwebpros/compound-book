@@ -6,4 +6,6 @@ That moment is why this book exists.
 
 This book is about the design work — the operating design — that has to happen before any tool gets deployed. If you've bought tools and seen no return, this is why. If you want to know exactly what to do instead, read on.
 
+What you will leave with is a six-step Sequence — Signal, Source, Design, Build, Deliver, Compound — and the sprint structure to run it. You can pick this book up and run the framework yourself. The Sequence is not a concept to absorb. It is a process to execute.
+
 When the design is right, 5:30 arrives and everything that needed to get done is done. You close the laptop and go home.

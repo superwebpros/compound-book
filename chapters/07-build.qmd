@@ -62,6 +62,12 @@ Our marketing lead's four-agent setup — the one from Chapter 2 — didn't requ
 
 These are not a hierarchy. None of them is better than the others. The right path is the one that matches the design — the workflow's shape, the systems it touches, the data sensitivity, the team's ability to own it, the volume it will run at, and the speed the constraint demands.
 
+To pick the right path for your design, run through these questions in order:
+
+1. Does a mature product already do exactly what the designed workflow requires, with light configuration? If yes — off-the-shelf. Don't build what you can configure.
+2. Is the workflow custom but composed of standard moves — pull from a system, run through an agent, write back, notify someone? If yes — low-code. Your team can own and change it directly.
+3. Does the workflow run at a scale, or touch a system of record, that low-code tools cannot reach? Or does the data sensitivity rule out a third-party automation platform? If yes — hand-built.
+
 The Design phase determines the path. Build executes it. A team that picks a path because of a vendor relationship, an internal preference, or a fashion in the market is making a Design decision under the cover of Build — and they will pay for it.
 
 ### Sprint · the three-week quoting workflow.
@@ -70,7 +76,9 @@ A 60-person professional services firm came into a sprint with a Signal that was
 
 The build path was low-code. No engineer needed. The team assembled the workflow themselves in three weeks, using tools they already had licenses for. Quotes started going out the same day they came in. The principal got their week back. The cost of the build was a rounding error against what the constraint had been costing.
 
-The story isn't that low-code is magic. The story is that Design gave them a workflow simple enough to build in low-code in three weeks. That is what a thorough diagnose produces.
+Before the build started, the team completed the spec and ran the Guardrails Checklist. The spec told the builder: inputs are the inbound brief and the historical quote library; outputs are a draft quote landing in the project lead's review queue; the agent drafts, the project lead edits, the principal signs off on the final number only. The checklist locked the access layer before they built anything else — the account manager's quoting data stayed with the account manager. Those were ten-minute decisions. They made three weeks of build work unambiguous.
+
+The story isn't that low-code is magic. The story is that Design gave them a workflow simple enough to build in low-code in three weeks, and a spec clear enough that the builder never had to invent anything. That is what a thorough diagnose produces.
 
 The low-code path goes further than most people expect. I was in a strategy session with a client team — a professional services firm, small leadership group — and one of them mentioned, almost in passing, that he was already writing LinkedIn posts at his kid's soccer game. Sitting in the bleachers, pulling out his phone, typing a prompt into ChatGPT, and two minutes later he had a post. Doing it consistently. Getting results he liked.
 
@@ -84,13 +92,34 @@ Build doesn't require an engineer. It requires a design that names the shape. Wh
 
 Build is supported by two instruments in the Skills Library.
 
-**Build Spec Writer** translates the designed workflow into a developer-ready specification. What the workflow does, end to end. What tools and systems it integrates with. What the inputs are and where they come from. What the outputs are and where they go. What the agent does. What the human supervisor reviews. Where the handoffs sit. What the failure modes are and how the system surfaces them.
+**Build Spec Writer** translates the designed workflow into a developer-ready specification. The spec is the artifact a builder — engineer, vendor, low-code assembler — works from. Its job is to remove ambiguity. If the spec is right, the build is mostly execution. If the spec is wrong, the build is mostly negotiation.
 
-The spec is the artifact a builder — engineer, vendor, low-code assembler — works from. Its job is to remove ambiguity. If the spec is right, the build is mostly execution. If the spec is wrong, the build is mostly negotiation. Build Spec Writer is the Library instrument that produces the template and method. The Build Agent on the Bench runs you through it interactively, in conversation — that is the distinction between the two. Both produce the same artifact; the Library gives you the form, the Bench walks you through filling it.
+A complete spec covers eight sections:
 
-**Guardrails Checklist** is the set of quality, privacy, and oversight decisions that must be locked before the solution goes live. Who reviews what. How often. How errors are caught. What happens when the agent produces output that requires escalation — who it goes to, in what form, on what timeline. What data the system is permitted to touch and what it is not. What gets logged and where. What the rollback looks like if something fails.
+1. **Workflow summary.** One paragraph: what this workflow does, end to end, in plain language. No jargon. A builder who knows nothing about your business should be able to read it and understand what they are building.
+2. **Inputs.** What triggers the workflow. What data enters it, in what form, from which systems. Where that data lives and how the builder accesses it.
+3. **Outputs.** What the workflow produces. What form it takes. Where it goes. Who receives it.
+4. **Agent scope.** What the agent does, step by step. What decisions it makes. What it is not permitted to decide.
+5. **Human supervisor role.** Who reviews the output. What they are reviewing for. What the handoff looks like — where the output lands, in what form, on what timeline.
+6. **Systems and integrations.** Every system the workflow touches. Read access, write access, or both. Authentication method. Data sensitivity classification for each.
+7. **Failure modes.** What happens when the agent produces output that needs escalation. Who it goes to. In what form. On what timeline. What the builder needs to wire to make that possible.
+8. **Build path and constraints.** Which of the three paths this build uses, and why. Any constraints the builder must observe — data residency, existing licenses, internal security requirements.
 
-Guardrails Checklist is not bureaucracy. It is the difference between an AI solution your company can stand behind and an AI solution your company is one mistake away from regretting publicly. The work of completing it is small. The work of skipping it is enormous and arrives late.
+Build Spec Writer is the Library instrument that produces the template and method. The Build Agent on the Bench runs you through it interactively, in conversation — that is the distinction between the two. Both produce the same artifact; the Library gives you the form, the Bench walks you through filling it. If you are working without either instrument, these eight sections are the spec. Fill them in that order before you hand anything to a builder.
+
+**Guardrails Checklist** is the set of quality, privacy, and oversight decisions that must be locked before the solution goes live. The checklist is not bureaucracy. It is the difference between an AI solution your company can stand behind and an AI solution your company is one mistake away from regretting publicly. The work of completing it is small. The work of skipping it is enormous and arrives late.
+
+Run through these questions before the build executes, not after:
+
+- **Data access.** What data is the system permitted to touch? What is it explicitly not permitted to touch? Who made that decision, and where is it documented?
+- **Review cadence.** Who reviews the agent's outputs? How often? Is that review manual for every output, sampled, or triggered by exceptions?
+- **Escalation path.** When the agent produces output that requires human judgment — an edge case, a confidence flag, an anomaly — who does it go to? In what form? On what timeline?
+- **Error handling.** How does the system surface a failure? Who is notified? What is the fallback if the workflow breaks?
+- **Logging.** What gets logged? Where does the log live? Who has access to it?
+- **Rollback.** If the system produces a bad output at scale before anyone catches it — what does rollback look like? Can you stop it? Can you reverse the outputs that went out?
+- **Access control.** Who can see the outputs? Who can run the workflow? Is that aligned with what the Design phase decided about data sensitivity and who needs to know what?
+
+If you cannot answer all seven, the system is not ready to deploy. These are not edge cases. They are the conditions under which the human supervisor can actually supervise.
 
 The two instruments produce a build that is specified clearly and constrained safely. Both have to be done before the build path executes — not after.
 
@@ -102,7 +131,7 @@ You bring it the designed workflow and the Hybrid Accountability Chart entry fro
 
 The Build Agent is not the builder. It is the specifier.
 
-Most Compound members don't use Compound to build. The build gets done by the company's own people, by the vendor they already have a relationship with, by a contract engineer, or — on the low-code path — by the team themselves. The Build Agent's job is to give whoever is building a spec clear enough that they can execute against it without inventing the design on the fly. Most teams have the technical resources to build. They just have never had a clean spec to hand them. The Build Agent is what changes that.
+Most Compound members don't use Compound to build. Your build gets done by your own people, by the vendor you already have a relationship with, by a contract engineer, or — on the low-code path — by your team directly. The Build Agent's job is to give whoever is building a spec clear enough that they can execute against it without inventing the design on the fly. Most teams have the technical resources to build. What they have never had is a clean spec to hand the builder. The Build Agent is what changes that. If you are working without Compound membership, the eight-section spec above is the substitute — and it works the same way. The spec is the mechanism. The agent is just a faster path to filling it.
 
 ## What *done* looks like.
 
@@ -110,7 +139,7 @@ Build is done when there is a deployed solution producing outputs against real i
 
 Not a demo. Not a pilot in a sandbox. Not a working prototype the team is waiting to "really roll out" after some unspecified additional work. Deployed and producing against real work.
 
-If the team is uncertain whether Build is done, the test is simple. Pull the last week of inputs the workflow was supposed to handle. Did the system handle them? Did the supervisor review the outputs? Did the work move forward? If yes, Build is done. If no, the team is not in Deliver yet.
+If you are uncertain whether Build is done, the test is simple. Pull the last week of inputs the workflow was supposed to handle. Did the system handle them? Did the supervisor review the outputs? Did the work move forward? If yes, Build is done. If no, your team is not in Deliver yet.
 
 There's a moment later in this book where I describe closing my laptop at 5:30 and going home for dinner. That moment is the human payoff of what Build produces. But we're not there yet — Build is the mechanism, not the feeling.
 

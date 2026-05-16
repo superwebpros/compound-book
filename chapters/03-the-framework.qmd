@@ -39,12 +39,12 @@ The reason to be precise here is that the looser versions of these words are exa
 
 The Sequence is six stages and you will spend one chapter on each. For navigation, here is the role of each in one line. Nothing more — the rest is owned by the chapters that follow.
 
-1. **Signal** — find the one operational constraint worth solving first, and quantify what it costs.
-2. **Source** — map what the work actually requires: the knowledge, the data, the judgment, the context.
-3. **Design** — decide who does what across the Human+AI workforce for this specific constraint.
-4. **Build** — produce the spec and deploy the workflow into the system the team already uses.
-5. **Deliver** — ship it inside the org, train the people whose handoffs change, and measure the result against what Signal said it cost.
-6. **Compound** — capture the learning, update the infrastructure the next Sprint will use, and rank what comes next.
+1. **Signal** — you find the one operational constraint worth solving first, and quantify what it costs.
+2. **Source** — you map what the work actually requires: the knowledge, the data, the judgment, the context.
+3. **Design** — you decide who does what across the Human+AI workforce for this specific constraint.
+4. **Build** — you produce the spec and deploy the workflow into the system your team already uses.
+5. **Deliver** — you ship it inside the org, train the people whose handoffs change, and measure the result against what Signal said it cost.
+6. **Compound** — you capture the learning, update the infrastructure the next Sprint will use, and rank what comes next.
 
 Six stages. One Sprint. Then again.
 
@@ -60,15 +60,15 @@ Design is downstream work. It depends entirely on what Signal and Source produce
 
 ## What you get *inside* the Framework.
 
-This book teaches you to run the Framework yourself. The Sequence is self-implementing — the same way *Traction* teaches you to run EOS without a facilitator, this book gives you the order of operations and the tools to execute it inside your own company.
+This book teaches you to run the Framework yourself. The Sequence is self-implementing — the same way *Traction* teaches you to run EOS without a facilitator, this book gives you the order of operations and the tools to execute it inside your own company. You do not need a consultant, a vendor, or a Compound engagement to run your first Sprint. You need the order, the discipline, and a real constraint to work against.
 
-Compound membership provides two additional layers that accelerate the work. They are not required to run a Sprint; they make each Sprint faster and less expensive than it would be without them. Each is introduced briefly here and then carried by the stage chapters that follow.
+Two additional layers exist that accelerate the work without changing it. They are not required to run a Sprint; they make each Sprint faster and less expensive than it would be without them. Each is introduced briefly here and then carried by the stage chapters that follow.
 
-The first is **the Compound Bench** — six AI coaching agents, one per stage of the Sequence. They are not the agents you will build inside your company; they are the agents that run the Sequence *with* you. Each stage chapter introduces its Bench agent at the moment the agent does its work: what it diagnoses, what it produces, what question it forces you to answer before you move on. The Bench is the practical answer to "how do we actually run this without a six-figure consultant on retainer?"
+The first is **the Compound Bench** — six AI coaching agents, one per stage of the Sequence. They are not the agents you will build inside your company; they are the agents that run the Sequence *with* you. Each stage chapter introduces its Bench agent at the moment the agent does its work: what it diagnoses, what it produces, what question it forces you to answer before you move on. The Bench is the practical answer to "how do we actually run this without a six-figure consultant on retainer?" It is available through Compound membership.
 
-The second is **the Skills Library** — twelve installable instruments, two per stage of the Sequence, that you port into your own AI stack. The Library is the durable artifact. Where the Bench is a coach you bring in for a Sprint, the instruments are tools you keep — drop-ins that make each stage faster on the second Sprint than it was on the first, and faster again on the third. The stage chapters introduce each pair of instruments as the stage that owns them is taught.
+The second is **the Skills Library** — twelve installable instruments, two per stage of the Sequence, that you port into your own AI stack. The Library is the durable artifact. Where the Bench is a coach you bring in for a Sprint, the instruments are tools you keep — drop-ins that make each stage faster on the second Sprint than it was on the first, and faster again on the third. The stage chapters introduce each pair of instruments as the stage that owns them is taught. The Library is also available through Compound membership.
 
-The shorthand worth holding in your head: the Bench runs the Sequence with you; the Library makes the Sequence yours.
+The shorthand worth holding in your head: the Framework is yours to run. The Bench runs the Sequence with you. The Library makes the Sequence permanently yours.
 
 ## You learn this on a *Sprint*.
 

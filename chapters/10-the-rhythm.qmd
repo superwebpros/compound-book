@@ -30,38 +30,38 @@ Once an operator commits to the Rhythm, the Sprint stops being a discrete projec
 
 ## The quarterly operating *session*.
 
-The Rhythm has a meeting. One to two hours, leadership team, every quarter, on the calendar before the year starts. It does four things, in this order:
+The Rhythm has a meeting. One to two hours, your leadership team, every quarter, on the calendar before the year starts. You do four things, in this order:
 
-1. **Review the previous sprint at the outcome level.** Did the constraint move? By how much? What changed in the cost the team quantified during Signal? This is not a status update on the agent team's activity — that conversation happens elsewhere, more often. This is the outcome question. The Hybrid Accountability Chart names a constraint owner; that owner reports the result.
-2. **Update the Signal Backlog.** What has shifted in priority since last quarter? What new constraints have emerged? What is now resolved and can come off the list? The Signal Backlog is the running inventory of the company's most expensive operational problems, ranked. It is the input to every quarterly conversation.
-3. **Commit to the next sprint.** One validated constraint. One constraint owner. A specific six-to-eight-week window. The Signal Agent's one-page constraint statement is the artifact. The team leaves the session knowing exactly what the next sprint is about and who owns it.
+1. **Review the previous sprint at the outcome level.** Did the constraint move? By how much? What changed in the cost your team quantified during Signal? This is not a status update on the agent team's activity — that conversation happens elsewhere, more often. This is the outcome question. The Hybrid Accountability Chart names a constraint owner; that owner reports the result.
+2. **Update the Signal Backlog.** What has shifted in priority since last quarter? What new constraints have emerged? What is now resolved and can come off the list? The Signal Backlog is the running inventory of your company's most expensive operational problems, ranked. It is the input to every quarterly conversation.
+3. **Commit to the next sprint.** One validated constraint. One constraint owner. A specific six-to-eight-week window. The Signal Agent's one-page constraint statement is the artifact. Your team leaves the session knowing exactly what the next sprint is about and who owns it.
 4. **Update the Hybrid Accountability Chart.** If roles changed, if an agent team's scope shifted, if the Agent Coordinator handoffs moved — record it. The chart is a living document, not a workshop output from eighteen months ago.
 
 That is the entire session. The agenda is stable. The inputs are the Signal Backlog and the previous sprint's scorecard. The output is a commitment and an updated chart.
 
-For the audience this book is written for — CEOs running on EOS, Scaling Up, 4DX, or a homegrown operating cadence — the Compound quarterly session is *not* a competitor. It is the AI operating layer that runs on top of the operating system you already use. Your quarterly off-site still happens. Your rocks still get set. Your L10s still run. The sprint session is the focused hour that decides what the AI workforce is doing this quarter, and that decision arrives at your existing meetings as real data — what the organization's largest constraint is, in dollars — instead of opinion.
+For the audience this book is written for — CEOs running on EOS, Scaling Up, 4DX, or a homegrown operating cadence — the Compound quarterly session is *not* a competitor. It is the AI operating layer that runs on top of the operating system you already use. Your quarterly off-site still happens. Your rocks still get set. Your L10s still run. The sprint session is the focused hour that decides what your AI workforce is doing this quarter, and that decision arrives at your existing meetings as real data — what your largest constraint is, in dollars — instead of opinion.
 
 EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm makes them executable by a Human+AI workforce. The two stack.
 
 ## The *Hybrid Org Today*.
 
-Every company running the Rhythm maintains one living document: the Hybrid Org Today. It is the current operational picture of the Co-Intelligent Company.
+Once you are running the Rhythm, you maintain one living document: the Hybrid Org Today. It is the current operational picture of your Co-Intelligent Company.
 
-The Hybrid Org Today maps four things — what people own, what AI handles, what is solved, what is next. The Hybrid Accountability Chart from Chapter 6 is one slice of it: the structural layer, who owns which handoffs across the human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question the leadership team needs to answer on any given quarter: *where does the design layer of this company stand today, and what is it doing next?*
+The Hybrid Org Today maps four things — what people own, what AI handles, what is solved, what is next. The Hybrid Accountability Chart from Chapter 6 is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
 
-The Hybrid Org Today is updated in the quarterly session. Not by a Notion-curator on a Thursday afternoon. Not by the CEO at year-end planning. By the leadership team, during the meeting, as part of the four things the session does. That is the discipline that prevents the document from becoming the wiki page that rots — a thing every operator has watched happen with every other "living" document the company has tried to maintain.
+You update the Hybrid Org Today in the quarterly session. Not by a Notion-curator on a Thursday afternoon. Not at year-end planning. By your leadership team, during the meeting, as part of the four things the session does. That is the discipline that prevents the document from becoming the wiki page that rots — a thing every operator has watched happen with every other "living" document the company has tried to maintain.
 
-When a new executive joins, the Hybrid Org Today is the briefing. When a customer asks how the company is using AI, the Hybrid Org Today is the answer — concrete, current, in the company's own vocabulary. When the board asks what the AI investments have produced, the Hybrid Org Today is the receipt.
+When a new executive joins, the Hybrid Org Today is the briefing. When a customer asks how you are using AI, it is the answer — concrete, current, in your own vocabulary. When the board asks what the AI investments have produced, it is the receipt.
 
 ## The headcount paradox, *resolved*.
 
 Return to where this book started. Revenue growing. Headcount growing with it. AI investments producing no measurable gap between the two. The CEO knows the math is wrong and cannot find the lever that moves it.
 
-After six to eight sprints on the Rhythm, the math moves. Not overnight — but the pattern is broken. The behavioral marker is specific. The CEO's first response to a capacity problem is no longer *who do we hire?* It is *what does Signal say about this?*
+After six to eight sprints on the Rhythm, the math moves. Not overnight — but the pattern is broken. The behavioral marker is specific. Your first response to a capacity problem is no longer *who do we hire?* It is *what does Signal say about this?*
 
-That is the shift. Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked with the Signal Agent, against the Signal Backlog, *before* the requisition is written. And more often than the organization expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the sprint that addresses it ships a designed workflow instead of a job posting.
+That is the shift. Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked with the Signal Agent, against the Signal Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the sprint that addresses it ships a designed workflow instead of a job posting.
 
-Organizations that default to designing before hiring build a different cost structure than organizations that default to adding people. The former gets compounding returns on the design infrastructure it already built. The latter grows costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
+Companies that default to designing before hiring build a different cost structure than companies that default to adding people. The former gets compounding returns on the design infrastructure it already built. The latter grows costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
 
 The coordinator story that opened this chapter ends here. Not with the sprint that shipped. With the question that stopped getting asked. The hire that never got posted was not a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That is the Rhythm doing its job. Not making you smarter on any single call. Making the default behavior of the organization smarter across every call that follows.
 

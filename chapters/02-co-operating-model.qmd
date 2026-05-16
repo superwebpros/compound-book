@@ -54,6 +54,8 @@ Start with intelligence. What does the human contribute to the work, and what do
 
 Notice what is not on either side. The human is not on the "creative" side and the agent on the "analytical" side. That split is wrong, and it is how most AI programs get designed badly. The honest split is about ambiguity and scale. The human carries the situated, value-laden judgments — the ones that require knowing the customer for nine years, or knowing why a number is the way it is, or deciding what kind of company you want to be. The agent carries the high-volume, pattern-heavy, memory-dependent work — reading everything, remembering everything, drawing on everything at once.
 
+Before you read the next section, pick one role in your company — yours, or a direct report's — and ask: what percentage of that person's week is currently spent on work that belongs in the right column? That number is your baseline.
+
 ## What each one *owns*.
 
 Ownership is where most companies stall, and it is the only variable that determines whether the work compounds.
@@ -71,6 +73,8 @@ The two columns are not negotiable line items. They are the load-bearing logic o
 
 When you get the split right, the company compounds. The human's hours flow into the work only humans can do: deciding, directing, pricing, owning, coaching. The agent's hours flow into everything else, at a cost and speed that re-prices the underlying economics of the business. Both sides get compounding returns every quarter, because the structure was built to absorb improvement on both sides.
 
+Look at the role you picked a moment ago. Map what that person actually does against the two columns — not what you'd like them to do, what they do today. The gap between their current task list and the left column is the redesign work the rest of this book will help you do.
+
 When you get it wrong — and most companies get it wrong on first attempt — you get the failure mode we keep seeing in the field: two parallel tracks producing nothing structural. The team has its workflow. The agents have theirs. The handoff is undefined. The outcome belongs to no one. The dashboard shows tool adoption and the P&L shows nothing.
 
 Here is what it looks like when you get it right.
@@ -82,6 +86,8 @@ Her job did not get smaller. It got higher.
 That is the ownership split made visible. The agents are doing exactly what the right column says they should do — drafting, documenting, synthesizing, executing on a defined output. She is doing exactly what the left column says the human should do — directing the work, pricing what's good enough, owning the outcome. What used to be a solo production workflow is now a team she manages. The team just doesn't have business cards.
 
 We had to design that before we could run it. We had to answer, explicitly, which tasks the agent would own and which she would keep. We had to define the handoffs — what she reviews, what she approves, what goes out without her touching it. That design work is what made the model real. Without it, the tools would have been four separate tabs she opened when she felt like it, and the outcome would have looked exactly like the CEO's headcount report I described at the start of this chapter.
+
+You will do the same design work. Not for her role — for the roles in your company. The chapters that follow give you the structure to do it sprint by sprint, starting from whatever your actual constraints are today.
 
 Chapter 6 proves the same ownership split in a different context — and changes the question from "who do we hire?" to "what does the agent take?"
 
