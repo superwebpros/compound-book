@@ -20,6 +20,10 @@ The **Co-Intelligent Company** is the identity layer — what a company becomes 
 
 The **Co-Operating Model** is the system frame — the structure that makes Co-Intelligent Co-operation possible. It is the explicit design of who brings what intelligence to the work and who owns which operating responsibility inside it.
 
+<!-- DIAGRAM: Three nested or stacked layers — Co-Intelligent Company (identity) / Co-Intelligent Co-operation (activity) / Co-Operating Model (structure) — showing how the terms relate hierarchically -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: nice-to-have -->
+
 The CEO in the opening story has a company that uses AI. She does not yet have a Co-Intelligent Company. The difference is not the tools she bought. It is the operating model she hasn't built yet.
 
 ## Two words, two *jobs*.
@@ -46,6 +50,10 @@ I described in the preface the moment a key developer left my company — I paid
 
 Start with intelligence. What does the human contribute to the work, and what does the agent? Get this honest and the rest of the design falls out cleanly. Get it wrong — assume the human is good at memory, or the agent is good at judgment — and every workflow you design will fight the people running it.
 
+<!-- DIAGRAM: Two-column visual contrast — Human intelligence (judgment, context, strategy/taste/ethics) vs. Agent intelligence (memory at scale, pattern recognition, tireless synthesis) — styled to make the split feel definitive, not hierarchical -->
+<!-- FORMAT: table -->
+<!-- PRIORITY: must-have -->
+
 | The Human brings the intelligence of | The Agent brings the intelligence of |
 |---|---|
 | Judgment under ambiguity | Memory at scale |
@@ -59,6 +67,10 @@ Before you read the next section, pick one role in your company — yours, or a 
 ## What each one *owns*.
 
 Ownership is where most companies stall, and it is the only variable that determines whether the work compounds.
+
+<!-- DIAGRAM: Two-column ownership table — Human (decide, direct, price, own, coach) vs. Agent (draft, recommend, document, monitor, execute) — verbs should be visually prominent; this is the structural heart of the chapter -->
+<!-- FORMAT: table -->
+<!-- PRIORITY: must-have -->
 
 | The Human owns the operating responsibility of | The Agent owns the operating responsibility of |
 |---|---|
@@ -81,6 +93,10 @@ Here is what it looks like when you get it right.
 
 Our marketing lead manages content and video production for Compound. Before we applied the model, that meant she was the doer — writing the copy, editing the video, building the assets, one task at a time. After, we stopped and looked at what was actually happening on her screen. Claude Design was working on the visual assets. Claude AI was drafting copy. NotebookLM was pulling and synthesizing source material. HeyGen was handling the video. Four agent teams. Four workstreams. All pointed at the same output. And she was not editing a video. She was not writing a caption. She was deciding whether the outputs were right. She was steering.
 
+<!-- DIAGRAM: Before/after illustration — "Before": one person connected to a stack of tasks; "After": one person at the center directing four named agent workstreams (Claude Design, Claude AI, NotebookLM, HeyGen) all pointing at a single output -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: must-have -->
+
 Her job did not get smaller. It got higher.
 
 That is the ownership split made visible. The agents are doing exactly what the right column says they should do — drafting, documenting, synthesizing, executing on a defined output. She is doing exactly what the left column says the human should do — directing the work, pricing what's good enough, owning the outcome. What used to be a solo production workflow is now a team she manages. The team just doesn't have business cards.
@@ -96,6 +112,10 @@ Chapter 6 proves the same ownership split in a different context — and changes
 Every operating system worth running can be reduced to one line that contains the whole architecture. EOS does it with *Vision + Traction = Healthy Organization* — the two halves of the model on the left, the outcome on the right, and the equals sign carrying the whole argument that you cannot get the outcome without both halves.
 
 Ours is *Co-Intelligence + Rhythm = Compound.*
+
+<!-- DIAGRAM: The Equation as a typographic/visual treatment — "Co-Intelligence + Rhythm = Compound" with brief labels under each term (system / cadence / outcome); mirrors the EOS equation referenced in the preceding sentence -->
+<!-- FORMAT: illustration -->
+<!-- PRIORITY: must-have -->
 
 Co-Intelligence is the system half — the Co-Operating Model you just read, the designed structure where human and agent intelligence do their respective work against the same problems. It is the *what*.
 

@@ -56,6 +56,10 @@ The same pattern appeared in Chapter 1, in a different form: a marketing lead bu
 
 Once you have a constraint named clearly enough to commit a sprint to it, you have two paths forward. They produce the same artifact — a Co-Intelligent Company, sprint by sprint — at different speeds and with different levels of support.
 
+<!-- DIAGRAM: Fork diagram showing two paths from "Named Constraint + First Sprint" — left branch: "Independent" (self-directed, existing operating discipline, book as guide); right branch: "Compound Membership" (weekly retros, peer cohort, operator coaching). Both branches converge at "Co-Intelligent Company." -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: must-have -->
+
 1. **Run the Sprint independently.** The framework is in this book. The Sequence is here. The artifacts — the Knowledge Map, the Hybrid Accountability Chart, the Hybrid Org Today — are defined in the chapters behind you. A disciplined operating team with EOS or Scaling Up already in place can execute a first sprint on its own. Many will. We wrote the book so they could.
 
 2. **Run the Sprint inside the Compound Membership.** The same Sequence, paired with weekly retros, a cohort of peer CEOs running the same framework against constraints in their own companies, and Compound operators coaching you through each stage. The Compound Bench and Skills Library are membership features that accelerate the Sequence — they are not required to run it. The membership is for operators who would rather not run the first one alone.

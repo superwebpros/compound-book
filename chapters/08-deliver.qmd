@@ -64,7 +64,11 @@ The second is data gaps that were not visible in Source but surfaced in producti
 
 In Chapter 5, I described a client whose AI kept surfacing expired information because nobody audited the knowledge base before indexing it. That's exactly what Deliver's logging phase is designed to catch — the gaps that Source couldn't see because they only become visible in production.
 
-Both categories get written down. Not in a formal incident-report shape — in a running log the Agent Coordinator maintains as part of the operating rhythm. Each entry needs four things: the date, what happened (the output or gap), which category it falls into (unplanned intervention or data gap), and what it likely signals (a Design misclassification, a guardrails miss, or a new input category Source did not map). That is enough. You are not writing a postmortem — you are leaving a trail that Compound can read when it asks: what would we do differently next time?
+Both categories get written down. Not in a formal incident-report shape — in a running log the Agent Coordinator maintains as part of the operating rhythm. Each entry needs four things: the date, what happened (the output or gap), which category it falls into (unplanned intervention or data gap), and what it likely signals (a Design misclassification, a guardrails miss, or a new input category Source did not map). That is enough.
+
+<!-- DIAGRAM: Operational log structure — four-column entry format: Date | What happened | Category (unplanned intervention / data gap) | What it signals -->
+<!-- FORMAT: table -->
+<!-- PRIORITY: must-have --> You are not writing a postmortem — you are leaving a trail that Compound can read when it asks: what would we do differently next time?
 
 That log is operational: it captures what happened in real time, as the sprint runs in production. It is distinct from the documented sprint outcome Deliver produces at the close — the summary of what the sprint changed, measured against Signal's quantified cost — which is the artifact Compound works against.
 
@@ -73,6 +77,10 @@ That log is operational: it captures what happened in real time, as the sprint r
 Deliver has two installable instruments. They run in sequence: one before the workflow goes live in production, one as it goes live.
 
 The **Deploy Readiness Audit** is the pre-flight check. Before your team flips the switch, you need affirmative answers to each of the following:
+
+<!-- DIAGRAM: Deploy Readiness Audit — four-question pre-flight checklist with pass/block indicators for each gate -->
+<!-- FORMAT: table -->
+<!-- PRIORITY: must-have -->
 
 - Are the people whose handoffs change trained on the new flow?
 - Are the inputs to the agent clean and arriving in the expected format?
@@ -83,7 +91,11 @@ The Audit's job is to verify these answers exist before the switch flips — it 
 
 The **Training Set Generator** produces the training material for the team whose work is changing. Not a slide deck about AI. Not a generic onboarding doc. The specific runbook for the new workflow: what inputs to send the agent, what outputs to expect back, what to do when the agent produces something unexpected, who to escalate to and how, what the new handoffs look like, what the new reporting looks like. It is operator documentation, written for the people who now have to work the new way. The Generator's job is to produce that runbook in the shape the team uses — a one-pager, a Loom, a checklist inside the tool they already work in — not a format that requires anyone to leave their workflow to consult it.
 
-Whether or not you have access to the Generator instrument, your team can produce this runbook directly. Sit down with the Hybrid Accountability Chart from Design and work through each role whose handoffs changed. For each role, write three things: what they send to the agent (the trigger or input), what comes back to them (the output and its format), and what they do when something lands outside the expected range (the escalation path). That is the runbook. One page per role. Get it in the tool they already live in — the project management system, the shared doc, the Slack channel — before the workflow goes live, not after.
+Whether or not you have access to the Generator instrument, your team can produce this runbook directly. Sit down with the Hybrid Accountability Chart from Design and work through each role whose handoffs changed. For each role, write three things: what they send to the agent (the trigger or input), what comes back to them (the output and its format), and what they do when something lands outside the expected range (the escalation path). That is the runbook. One page per role.
+
+<!-- DIAGRAM: Training Set structure — per-role runbook template: Role | Input (what they send) | Output (what comes back) | Escalation path — shown as a repeating one-page card -->
+<!-- FORMAT: table -->
+<!-- PRIORITY: must-have --> Get it in the tool they already live in — the project management system, the shared doc, the Slack channel — before the workflow goes live, not after.
 
 The two instruments answer two different questions. The Audit asks: are we ready to flip the switch? The Generator answers: now that the switch is flipped, how does the team work?
 
@@ -114,5 +126,9 @@ That is the test of whether Deliver delivered. Not whether the agent is running.
 ## End of the sprint as a *project*. Start of it as *infrastructure*.
 
 Deliver is where the sprint ends as a project and begins as infrastructure. The workflow is live. The team is trained. The result is measured. The log of what did not work is captured. The constraint Signal named is — depending on the sprint — either resolved, materially reduced, or honestly described in terms of how much of it the sprint moved and how much remains.
+
+<!-- DIAGRAM: Build → Deliver → Compound handoff flow — three-stage linear sequence showing what each stage produces and passes forward: Build outputs (deployed workflow, Guardrails Checklist) → Deliver outputs (measured outcome, operational log, runbook, updated HAC) → Compound inputs -->
+<!-- FORMAT: flowchart -->
+<!-- PRIORITY: nice-to-have -->
 
 That artifact set — the outcome, the log, the runbook, the updated Hybrid Accountability Chart entry — is what the next stage works against. Compound is where the team turns it into the inputs that accelerate the next sprint. That is the next chapter.

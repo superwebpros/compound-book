@@ -58,6 +58,10 @@ Three paths cover almost every Compound sprint:
 
 - **Hand-built integration.** Custom code, usually involving an API to a system of record, often with an engineer in the loop. Slower than low-code, higher return, harder to change later. This is the right path when the workflow runs at a scale or against a system that low-code tools cannot reach — or when the integration touches data the company will not put through a third-party automation platform.
 
+<!-- DIAGRAM: Three build paths — off-the-shelf / low-code / hand-built — as a decision flowchart, showing the qualifying questions that route the reader to each path -->
+<!-- FORMAT: flowchart -->
+<!-- PRIORITY: must-have -->
+
 Our marketing lead's four-agent setup — the one from Chapter 2 — didn't require a line of code. It was a low-code build: skills wired, projects connected, tools configured. That's what Build looks like when Design has done its job.
 
 These are not a hierarchy. None of them is better than the others. The right path is the one that matches the design — the workflow's shape, the systems it touches, the data sensitivity, the team's ability to own it, the volume it will run at, and the speed the constraint demands.
@@ -105,6 +109,10 @@ A complete spec covers eight sections:
 7. **Failure modes.** What happens when the agent produces output that needs escalation. Who it goes to. In what form. On what timeline. What the builder needs to wire to make that possible.
 8. **Build path and constraints.** Which of the three paths this build uses, and why. Any constraints the builder must observe — data residency, existing licenses, internal security requirements.
 
+<!-- DIAGRAM: Build Spec Writer — the eight sections as a structured reference table, with section name and a one-line description of what belongs in each -->
+<!-- FORMAT: table -->
+<!-- PRIORITY: must-have -->
+
 Build Spec Writer is the Library instrument that produces the template and method. The Build Agent on the Bench runs you through it interactively, in conversation — that is the distinction between the two. Both produce the same artifact; the Library gives you the form, the Bench walks you through filling it. If you are working without either instrument, these eight sections are the spec. Fill them in that order before you hand anything to a builder.
 
 **Guardrails Checklist** is the set of quality, privacy, and oversight decisions that must be locked before the solution goes live. The checklist is not bureaucracy. It is the difference between an AI solution your company can stand behind and an AI solution your company is one mistake away from regretting publicly. The work of completing it is small. The work of skipping it is enormous and arrives late.
@@ -118,6 +126,10 @@ Run through these questions before the build executes, not after:
 - **Logging.** What gets logged? Where does the log live? Who has access to it?
 - **Rollback.** If the system produces a bad output at scale before anyone catches it — what does rollback look like? Can you stop it? Can you reverse the outputs that went out?
 - **Access control.** Who can see the outputs? Who can run the workflow? Is that aligned with what the Design phase decided about data sensitivity and who needs to know what?
+
+<!-- DIAGRAM: Guardrails Checklist — the seven questions as a scannable checklist reference, suitable for use as a pre-deploy gate -->
+<!-- FORMAT: table -->
+<!-- PRIORITY: must-have -->
 
 If you cannot answer all seven, the system is not ready to deploy. These are not edge cases. They are the conditions under which the human supervisor can actually supervise.
 

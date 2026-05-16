@@ -10,6 +10,10 @@ In the Design phase, when Work Deconstruction has identified the specific tasks 
 
 Here is what that looks like in practice. Suppose your sprint constraint (from Signal) is *"Our proposal win rate drops when the executive summary exceeds one page."* Work Deconstruction assigns an agent the task of drafting executive summaries. A prompt built against that accountability reads differently than a generic "write a summary" instruction:
 
+<!-- DIAGRAM: Four-section prompt anatomy table — ROLE / INPUT / OUTPUT / CONSTRAINTS columns, with a second row showing which sprint phase supplies each section (Signal → CONSTRAINTS, Source → INPUT, Design → ROLE + OUTPUT) -->
+<!-- FORMAT: table -->
+<!-- PRIORITY: nice-to-have -->
+
 ```
 ROLE
 You are a proposal writer for [Company]. Your accountability is the executive summary — the first page a prospective client reads.
@@ -42,5 +46,9 @@ Your prompt will differ — the accountability, the input sources, the constrain
 Prompts built during Design — against a specific accountability, with a known input and output — produce more consistent output and require fewer mid-sprint corrections than prompts written in the abstract.
 
 After the Deliver phase, the Sprint Retrospective will surface cases where the agent produced unexpected output. Those cases are prompt design signals — they indicate where the instruction was ambiguous or where an edge case was not anticipated. The Compound phase is where those signals become prompt improvements, then Design improvements, then better sprint performance in the next cycle.
+
+<!-- DIAGRAM: Prompt improvement feedback loop — cyclic flowchart: Design (write prompt) → Build/Deliver (agent runs) → Retrospective (unexpected output flagged) → Compound (prompt revised) → Design (next sprint, better prompt) -->
+<!-- FORMAT: flowchart -->
+<!-- PRIORITY: must-have -->
 
 Prompt engineering, in this context, is a design feedback loop inside the Sequence.

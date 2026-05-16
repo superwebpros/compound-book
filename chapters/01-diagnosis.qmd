@@ -14,7 +14,7 @@ That company is not unusual. It might be yours.
 
 > You can see where AI is going. You just don't yet know how to operate inside it.
 
-That sentence is the one most CEOs of \$5M–\$50M companies will not say out loud — but it is the one that is true. You have read the same essays. You have watched the same demos. You have a working theory of where this is heading: agents doing real work, smaller teams shipping more, the cost curve of knowledge work bending. None of that is in doubt for you anymore. What is in doubt is what you are supposed to *do* on a Tuesday morning, inside the company you actually run, with the people you actually employ, against the P&L you actually own.
+That sentence is the one most CEOs will not say out loud — but it is the one that is true. You have read the same essays. You have watched the same demos. You have a working theory of where this is heading: agents doing real work, smaller teams shipping more, the cost curve of knowledge work bending. None of that is in doubt for you anymore. What is in doubt is what you are supposed to *do* on a Tuesday morning, inside the company you actually run, with the people you actually employ, against the P&L you actually own.
 
 You bought into AI somewhere in the last two years. A ChatGPT subscription for the team. A workflow automation pilot. An AI platform your vendor swore would change the math. You spent real money and gave it real time. And what you have to show for it is a tool your team mostly ignores, a handful of scattered use cases that never scaled, and a quiet suspicion that something is wrong — but not the thing everyone keeps telling you is wrong.
 
@@ -37,6 +37,10 @@ You bought AI specifically to interrupt that pattern. You watched the demos. You
 Meanwhile your integrator or COO is on the calendar asking to approve the next two roles. The numbers in the request are not unreasonable — the work is real, the team is stretched, the demand is there. You sign off, because the alternative is throttling growth, and throttling growth is not a strategy. But you sign off knowing the AI investment was supposed to make at least one of those requisitions unnecessary, and you cannot point to the reason it didn't.
 
 This is the headcount paradox. AI was supposed to change the math of scaling. It hasn't. Revenue and headcount are still moving together. The cost of one keeps climbing. And the investment you made to break the link is sitting on the books producing nothing structural.
+
+<!-- DIAGRAM: Two-line chart showing revenue growth vs. headcount growth tracking in parallel over time, with a third line for AI spend that rises but produces no gap between the first two lines. The expected scenario (headcount curve bending away from revenue) shown as a dashed line that never materializes. -->
+<!-- FORMAT: chart -->
+<!-- PRIORITY: must-have -->
 
 The reflexive move is to blame the tools — to assume the technology was oversold, the model you bought isn't the right one, or next quarter's version will finally do the thing. That is also the wrong diagnosis. The tools are capable. You have seen them work. The problem is that there is no defined relationship between the AI system and the work it is supposed to do. No designed workflow. No clear accountability. No governance. The tool is ambient. It helps individuals occasionally. It changes nothing structurally — and structural is the only kind of change that fixes the math.
 
@@ -67,6 +71,10 @@ The right question is goal-orientation: *what outcomes are we accountable for, a
 The distinction sounds minor on the page. It is the difference between an AI program that adds line items and an AI program that changes the math. Nearly every failed implementation you have ever seen — yours and everyone else's — is running the first question. Every implementation that compounds is running the second.
 
 You cannot get to the second question by working harder at the first. They are different starting points. They lead to different organizations.
+
+<!-- DIAGRAM: Two-column or two-path comparison. Left: "Wrong question — Which tasks could AI help with?" → path leads to scattered prompts, AI layered on unchanged workflow, inconsistent results, no structural change. Right: "Right question — What outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?" → path leads to defined ownership, designed handoffs, measured results, compounding output. -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: must-have -->
 
 ## What this *book* is for.
 

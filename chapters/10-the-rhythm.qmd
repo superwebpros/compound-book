@@ -39,6 +39,14 @@ The Rhythm has a meeting. One to two hours, your leadership team, every quarter,
 
 That is the entire session. The agenda is stable. The inputs are the Signal Backlog and the previous sprint's scorecard. The output is a commitment and an updated chart.
 
+<!-- DIAGRAM: Quarterly session agenda — 4 numbered steps (Review → Update Backlog → Commit → Update Chart) with brief annotation of input/output for each step -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: must-have -->
+
+<!-- DIAGRAM: The Rhythm as a layer on top of EOS/Scaling Up — stacked visual: base layer labeled "Your OS (EOS / Scaling Up / 4DX)" with quarterly cadence shown; layer above labeled "Compound Sprint Session" feeding sprint commitment down into existing rocks/L10 rhythm -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: nice-to-have -->
+
 For the audience this book is written for — CEOs running on EOS, Scaling Up, 4DX, or a homegrown operating cadence — the Compound quarterly session is *not* a competitor. It is the AI operating layer that runs on top of the operating system you already use. Your quarterly off-site still happens. Your rocks still get set. Your L10s still run. The sprint session is the focused hour that decides what your AI workforce is doing this quarter, and that decision arrives at your existing meetings as real data — what your largest constraint is, in dollars — instead of opinion.
 
 EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm makes them executable by a Human+AI workforce. The two stack.
@@ -50,6 +58,10 @@ Once you are running the Rhythm, you maintain one living document: the Hybrid Or
 The Hybrid Org Today maps four things — what people own, what AI handles, what is solved, what is next. The Hybrid Accountability Chart from Chapter 6 is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
 
 You update the Hybrid Org Today in the quarterly session. Not by a Notion-curator on a Thursday afternoon. Not at year-end planning. By your leadership team, during the meeting, as part of the four things the session does. That is the discipline that prevents the document from becoming the wiki page that rots — a thing every operator has watched happen with every other "living" document the company has tried to maintain.
+
+<!-- DIAGRAM: Hybrid Org Today as a living document — two-slice view showing the Hybrid Accountability Chart (structural layer) and Signal Backlog (constraint inventory) as components, with the quarterly session as the update trigger -->
+<!-- FORMAT: illustration -->
+<!-- PRIORITY: must-have -->
 
 When a new executive joins, the Hybrid Org Today is the briefing. When a customer asks how you are using AI, it is the answer — concrete, current, in your own vocabulary. When the board asks what the AI investments have produced, it is the receipt.
 
@@ -63,6 +75,10 @@ That is the shift. Some constraints are headcount constraints, and the answer is
 
 Companies that default to designing before hiring build a different cost structure than companies that default to adding people. The former gets compounding returns on the design infrastructure it already built. The latter grows costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
 
+<!-- DIAGRAM: Headcount math before/after — two-column or before/after comparison: left side shows headcount growing in step with revenue (linear); right side shows revenue continuing to grow while headcount flattens after sprint cadence takes hold -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: must-have -->
+
 The coordinator story that opened this chapter ends here. Not with the sprint that shipped. With the question that stopped getting asked. The hire that never got posted was not a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That is the Rhythm doing its job. Not making you smarter on any single call. Making the default behavior of the organization smarter across every call that follows.
 
 In Chapter 4, I described an L10 where a clinic director's scorecard had been red for nine consecutive weeks and she could not explain why any metric was off track. The meeting was real. The cadence was real. But the discipline that turns a red number into a named constraint — and a named constraint into a sprint — was absent. Nine weeks of red scorecards means the cadence exists and the Rhythm does not. What the Rhythm adds is not a new meeting. It is the four things the meeting produces: an outcome reviewed, a backlog updated, a constraint committed, a chart current. Without all four, the session is theater.
@@ -70,6 +86,10 @@ In Chapter 4, I described an L10 where a clinic director's scorecard had been re
 ## What compounding looks like, *sprint six*.
 
 A company is six to eight sprints in. What has actually changed?
+
+<!-- DIAGRAM: Sprint compounding over time — timeline from Sprint 1 to Sprint 6 showing decreasing Source phase duration and accumulating design infrastructure (knowledge maps, agent teams, HAC updates) as each sprint builds on the last -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: must-have -->
 
 The Source phase of the first sprint took three weeks. The team did not have a knowledge map for that function; building one was the work. The Source phase of the current sprint, in the same function, takes three days — because the knowledge map already exists, has been updated twice since, and is sitting in the Hybrid Org Today. The design infrastructure built in earlier sprints is accelerating the current one.
 

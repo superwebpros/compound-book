@@ -24,6 +24,10 @@ A good Knowledge Map fits on one page. It does not catalog every database in the
 
 The map is judged by usefulness, not completeness. The right question is not "does this document everything?" but "could a designer look at this and know what they are designing against?" If yes, Source is done. If not, Source is not done — no matter how many spreadsheets have been produced.
 
+<!-- DIAGRAM: Knowledge Map table — four columns (Source, Type, Owner, Status) with one sample row each for Digital, Organic, and Missing source types -->
+<!-- FORMAT: table -->
+<!-- PRIORITY: must-have -->
+
 **Building your Knowledge Map.** Start with a blank page and the constraint statement Signal produced. Draw four columns: *Source*, *Type*, *Owner*, *Status*. Then work through three passes.
 
 In the first pass, list every digital source that touches the constraint — the CRM records, the process logs, the shared drives, the inboxes, the spreadsheets. For each one, write the name, mark it as Digital, name the person who owns or maintains it, and mark its status: Clean, Needs Work, or Missing.
@@ -33,6 +37,10 @@ In the second pass, list every person whose judgment is load-bearing for this co
 In the third pass, look at what is missing. What would a designer need to know to solve this constraint that isn't represented anywhere in the first two passes? Add those rows as Missing sources.
 
 When you are done, you have a Knowledge Map — one page, one constraint, everything relevant. If a row doesn't connect to the constraint, it doesn't belong on the map.
+
+<!-- DIAGRAM: Three-pass Knowledge Map build — Digital sources pass, Organic sources pass, Missing sources pass shown as sequential steps feeding into a completed one-page map -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: nice-to-have -->
 
 ## The two *instruments*.
 
@@ -47,6 +55,10 @@ Together, the two instruments produce a map that names both the assets and the p
 In practice, the Knowledge Map and the Data Pipeline Audit are run as one exercise, not two. Your team works the constraint from both directions at once — what exists, and how it moves — because the answers inform each other. Discovering that the quoting team maintains an undocumented spreadsheet of pricing exceptions is a Knowledge Map finding; discovering that the CRM cannot ingest that spreadsheet without a manual export is a Pipeline Audit finding; and the design implication of those two findings together is something neither one produces alone. The resulting artifact is one thing: a Knowledge Map that contains both the asset inventory and the flow information.
 
 **Running the Pipeline Audit without the instrument.** For each digital source on your Knowledge Map, answer four questions: (1) Does this source connect to the other systems that touch the constraint, or does data move by manual export? (2) Is the data in a format a designed workflow could consume directly, or does it require translation? (3) Who owns the handoff — a person, a scheduled job, or nobody? (4) When was this data last verified as accurate? Mark each source as *Connected*, *Manual*, or *Broken*. The gaps that surface are not Source's problem to fix — they are Design's problem to decide on. Your job in Source is to make every gap visible before Design starts.
+
+<!-- DIAGRAM: Pipeline Audit status classification — each digital source rated Connected, Manual, or Broken, with gap annotations pointing forward to Design -->
+<!-- FORMAT: flowchart -->
+<!-- PRIORITY: must-have -->
 
 ## The *Source Agent*.
 
@@ -97,6 +109,10 @@ This is also why Source is not where data infrastructure gets built. Source maps
 ## Hand off to *Design*.
 
 At the end of Source, you should be able to do two things on one sheet of paper: state the constraint Signal validated, and show the Knowledge Map that describes the information environment around it — assets, flow, and gaps together. That is the input Design needs. Constraint plus map.
+
+<!-- DIAGRAM: Source-to-Design handoff artifact — one-page template showing constraint statement at top and Knowledge Map below (columns: Source, Type, Owner, Status, Gap notes) -->
+<!-- FORMAT: illustration -->
+<!-- PRIORITY: must-have -->
 
 What goes on that sheet: the constraint statement from Signal (one sentence), and the Knowledge Map (Source name, Type, Owner, Status, and one line of notes on each gap). Everything else is noise. If your Source output does not fit on one page, it is not scoped to the constraint — it has drifted into a general data audit, and you need to cut it back down.
 

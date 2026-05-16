@@ -22,6 +22,10 @@ Everything in the rest of the Sequence is designed to answer the question Signal
 
 Signal produces a single artifact: a one-page constraint statement anchored in one sentence. The sentence carries the constraint — the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The page surrounds it with the evidence that validates it: the data you checked, the people you talked to, the number you confirmed. One sentence. One page. One constraint.
 
+<!-- DIAGRAM: One-page constraint statement template — five labeled fields: (1) Constraint in one sentence, (2) Where it lives (team / workflow / handoff), (3) Duration, (4) Quantified cost, (5) Validating evidence. Show as a clean single-page layout, blank/placeholder text. -->
+<!-- FORMAT: illustration -->
+<!-- PRIORITY: nice-to-have -->
+
 The discipline of insisting on one is the entire point. Most leadership teams arrive at this conversation with five candidates and a tendency to argue for whichever one is loudest in the room that week. The job of Signal is to refuse the list. You pick one — the constraint that, if removed, would change the math most meaningfully — and you commit to it for the length of the Sprint.
 
 That commitment is not arbitrary. It is structural. A six-to-eight-week Sprint that tries to solve three problems solves none of them. A Sprint that solves one produces a measurable result against a number you wrote down at the start, and that result becomes the proof point that earns the next Sprint. The narrowness is what makes the work pay.
@@ -46,9 +50,17 @@ The work of Signal is to trace the symptom to the underlying constraint. Quoting
 
 The symptom is the thing you feel. The constraint is the thing that, if removed, would change the math. Signal makes you stop at the symptom long enough to find the constraint underneath it — and then it makes you put a number on what that constraint is costing you. Until both moves are complete, you are not at Signal yet. You are still describing the weather.
 
+<!-- DIAGRAM: Symptom-to-constraint tracing chain — three columns: Symptom (what you feel) → Constraint (root cause) → Cost (dollars/hours). Use two or three rows with the chapter's own examples (quoting latency, onboarding chaos, sales admin). Arrow spine runs left to right. -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: must-have -->
+
 Julie sat in on a meeting for a PT clinic operator that was forty-five minutes into a conversation about opening their sixth location. Site selection, lease terms, staffing — everyone around the table owned a piece of the vision. Nobody was wrong, exactly. They were just solving the wrong problem.
 
 She asked what their clinical efficiency rating was across the five clinics they already had. The room went quiet. Not uncomfortable quiet — confused quiet, like she'd asked a question in a language they almost spoke. Nobody knew. She walked to the whiteboard, drew the formula, and they calculated it together. The number came out between 58 and 63 percent depending on the location. Industry standard for expansion is 83.
+
+<!-- DIAGRAM: Single horizontal bar or gap chart — "Actual: 58–63%" on the left, "Expansion threshold: 83%" on the right, with the gap labeled "what the Sprint targets." Black and white. No decorative framing. -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: must-have -->
 
 She put the marker down and said: so let me get this straight — we've spent four hours today discussing a sixth facility, and the five we already own are running at 60 percent efficiency. You're not ready to expand. Stop that conversation.
 
@@ -71,6 +83,10 @@ Signal is a facilitated conversation. You can run it with your leadership team i
 3. How long has it existed? (Months? Years? Since a system change? Since a hire?)
 4. What does it cost — in hours per week, in dollars per quarter, in margin lost, in deals not closed?
 5. If this constraint were removed, what would actually change? Be specific.
+
+<!-- DIAGRAM: Five-step vertical flowchart — each question as a numbered node, with a gate/stop symbol between Q3 and Q4 labeled "must have a number to proceed." Arrow from Q5 exits to "→ pick one constraint." -->
+<!-- FORMAT: flowchart -->
+<!-- PRIORITY: must-have -->
 
 The question that separates Signal from a regular problem-solving conversation is question four. Most leadership teams stop at question three. They name the problem, locate it, and move to solutions. The quantified cost is what turns a complaint into a constraint you can act on — and what gives the Sprint a target to measure against when it ends.
 

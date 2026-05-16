@@ -28,6 +28,10 @@ That is the argument. Now the vocabulary.
 
 This book uses four words constantly and they are easy to conflate. Each names a different thing. Read them once, and then refer back when one of them feels slippery.
 
+<!-- DIAGRAM: Four-term relationship map — Framework contains Sequence; Sequence runs on a Sprint; Sprints repeat at the Rhythm. Show the nesting/hierarchy of all four terms so readers can hold the vocabulary in one glance. -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: nice-to-have -->
+
 - **Framework** — the whole six-step shape. When we say "the Framework" or "the Compound Framework," we mean the entire system: the order, the stages, the grouping, the cadence, and the unit of work. It is the noun for everything described in this book.
 - **Sequence** — the ordered steps inside the Framework: **Signal → Source → Design → Build → Deliver → Compound**. Always all six. Always in that order. Always written with arrows, because the arrows are the point. The Sequence is the operational claim — that *this* order is the one that produces results.
 - **Rhythm** — the cadence. Running the Framework over and over. Quarterly. The Rhythm is what turns a single sprint into a compounding business outcome — the same way a weekly L10 is what turns a quarterly Rock into a company that actually executes.
@@ -46,6 +50,10 @@ The Sequence is six stages and you will spend one chapter on each. For navigatio
 5. **Deliver** — you ship it inside the org, train the people whose handoffs change, and measure the result against what Signal said it cost.
 6. **Compound** — you capture the learning, update the infrastructure the next Sprint will use, and rank what comes next.
 
+<!-- DIAGRAM: The Sequence — Signal → Source → Design → Build → Deliver → Compound — rendered as a left-to-right arrow chain with a one-line role label under each stage node. This is the single most important diagram in the book. -->
+<!-- FORMAT: flowchart -->
+<!-- PRIORITY: must-have -->
+
 Six stages. One Sprint. Then again.
 
 ## Diagnose, then *Execute & Compound*.
@@ -55,6 +63,10 @@ The Sequence splits into two halves, and the split is more important than the st
 A Sprint that gets stuck in Build almost never has a Build problem. It has a Diagnose problem that surfaced late. Going back to Signal is not failure — it is the Framework doing its job, refusing to let undisclosed assumptions hide inside execution.
 
 Diagnose is the work most companies skip. They skip it because it does not look like progress — no deliverable, no demo, nothing to show the board. It looks like talking. It is the part of the work that determines whether everything downstream is solving the right problem against a real map of what the company knows. Skip it and you Build beautifully against the wrong constraint, using data you assumed existed.
+
+<!-- DIAGRAM: Sequence split into two labeled halves — DIAGNOSE (Signal, Source) on the left and EXECUTE & COMPOUND (Design, Build, Deliver, Compound) on the right, with a dividing line and brief rationale for each half. -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: must-have -->
 
 Design is downstream work. It depends entirely on what Signal and Source produced — which is why this book places it inside Execute rather than inside Diagnose. Move it earlier and you are designing against nothing: no validated constraint, no knowledge map.
 
@@ -67,6 +79,10 @@ Two additional layers exist that accelerate the work without changing it. They a
 The first is **the Compound Bench** — six AI coaching agents, one per stage of the Sequence. They are not the agents you will build inside your company; they are the agents that run the Sequence *with* you. Each stage chapter introduces its Bench agent at the moment the agent does its work: what it diagnoses, what it produces, what question it forces you to answer before you move on. The Bench is the practical answer to "how do we actually run this without a six-figure consultant on retainer?" It is available through Compound membership.
 
 The second is **the Skills Library** — twelve installable instruments, two per stage of the Sequence, that you port into your own AI stack. The Library is the durable artifact. Where the Bench is a coach you bring in for a Sprint, the instruments are tools you keep — drop-ins that make each stage faster on the second Sprint than it was on the first, and faster again on the third. The stage chapters introduce each pair of instruments as the stage that owns them is taught. The Library is also available through Compound membership.
+
+<!-- DIAGRAM: Three-layer stack — Framework (base, self-run), Bench (middle, one-per-stage coaching agents), Skills Library (top, installable instruments). Show which layers are included with Compound membership vs. self-service. -->
+<!-- FORMAT: diagram -->
+<!-- PRIORITY: nice-to-have -->
 
 The shorthand worth holding in your head: the Framework is yours to run. The Bench runs the Sequence with you. The Library makes the Sequence permanently yours.
 
