@@ -10,6 +10,18 @@ That is an operating design failure. And the Co-Operating Model is the answer to
 
 The diagnosis was the easy part. You have an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. Not in the abstract, and not as a vision deck. As a structure you can draw on a whiteboard, point at, and start running against on Monday. That structure has a name in this book. We call it the Co-Operating Model. It is what a Co-Intelligent Company is built on, and it is what makes *Co-Intelligent Co-operation* — humans and AI working the same problems together — something other than an accident.
 
+## What a *Co-Intelligent Company* is.
+
+Three terms in that paragraph are doing specific work and they are easy to blur together. Here is what each one means.
+
+The **Co-Intelligent Company** is the identity layer — what a company becomes when humans and AI work as one system, not two parallel tracks. Not a company that uses AI tools. Not a company that has an AI strategy. A company where the human and the synthetic are integrated into a single operating system, designed to run together from the start.
+
+**Co-Intelligent Co-operation** is the relational frame — the activity of humans and AI working the same problems together, inside the same loop, against the same outcome. That is the thing the company does, every sprint, every quarter.
+
+The **Co-Operating Model** is the system frame — the structure that makes Co-Intelligent Co-operation possible. It is the explicit design of who brings what intelligence to the work and who owns which operating responsibility inside it.
+
+The CEO in the opening story has a company that uses AI. She does not yet have a Co-Intelligent Company. The difference is not the tools she bought. It is the operating model she hasn't built yet.
+
 ## Two words, two *jobs*.
 
 *Co-Intelligent Co-operation* is the activity. *Co-Operating Model* is the structure. Hold those apart and the rest of the book makes sense.
@@ -26,9 +38,9 @@ The last decade of enterprise software pitched a graft — a productivity layer 
 
 Co-Intelligence is a different metaphor. It is a metaphor of system design. The human and the agent are both inside the loop. The work itself gets re-shaped around the fact that two different kinds of intelligence are now executing it. The structure is built to evolve — because the agent gets smarter every quarter, the human's task space shifts as a result, and the design has to keep pace. The *Co* is what gives the company that joint mechanism for continually evolving. A graft produces a frozen artifact. Co-Intelligence produces a living system.
 
-This is not a vocabulary preference. It is the difference between a company that absorbs every model upgrade as a free improvement to its operating model, and a company that has to re-run a change-management project every time the technology takes a step. One compounds. The other restarts.
+This is not a vocabulary preference. It is the difference between a company that absorbs every model upgrade as a free improvement to its operating model, and a company that has to re-run a change-management project every time the technology takes a step.
 
-I described in the preface the moment a key developer left my company — paying for the ladder and riding the chute. That is what the graft model produces over time: frozen knowledge, frozen structure, and then a single departure that undoes years of investment. Co-Intelligence is the architecture that prevents it. The knowledge stays because it was designed to stay.
+I described in the preface the moment a key developer left my company — I paid for the ladder and absorbed the cost of the chute. That is what the graft model produces over time: frozen knowledge, frozen structure, and then a single departure that undoes years of investment. Co-Intelligence is the architecture that prevents it. The knowledge stays because it was designed to stay.
 
 ## What each one *brings*.
 
@@ -44,7 +56,7 @@ Notice what is not on either side. The human is not on the "creative" side and t
 
 ## What each one *owns*.
 
-Intelligence is the easy half. Ownership is the half companies skip — and it is the half that determines whether the work compounds.
+Ownership is where most companies stall, and it is the only variable that determines whether the work compounds.
 
 | The Human owns the operating responsibility of | The Agent owns the operating responsibility of |
 |---|---|
@@ -71,7 +83,7 @@ That is the ownership split made visible. The agents are doing exactly what the 
 
 We had to design that before we could run it. We had to answer, explicitly, which tasks the agent would own and which she would keep. We had to define the handoffs — what she reviews, what she approves, what goes out without her touching it. That design work is what made the model real. Without it, the tools would have been four separate tabs she opened when she felt like it, and the outcome would have looked exactly like the CEO's headcount report I described at the start of this chapter.
 
-That story — an underperforming project coordinator, an integrator ready to post a new job, and the question we asked instead — walks this same split in a different context. You will see it in full in Chapter 6, where it earns its full telling. Here, know what it proved: once you define who owns what, the operating question stops being "who do we hire?" and starts being "what does the agent take?"
+Chapter 6 proves the same ownership split in a different context — and changes the question from "who do we hire?" to "what does the agent take?"
 
 ## The *Equation*.
 
@@ -89,4 +101,4 @@ The Equation does the same work for us that *Vision + Traction* does for an EOS 
 
 ## What's *next*.
 
-You now have the *what*. The next chapter gives you the *how* — the Framework that runs the Co-Operating Model in practice, the Sequence of six stages that move a sprint from a vague pain to a shipped result, the Rhythm that runs that Sequence quarter after quarter, and the Sprint as the unit of work where all of it lands. The model on the wall is the answer to the question this chapter asked. The Framework is the answer to the question every CEO asks next: *fine, on Monday morning, what do we actually do?*
+You now have the *what*. The next chapter gives you the *how* — the Framework that runs the Co-Operating Model in practice, the Sequence of six stages that carry a sprint from a validated constraint through Signal, Source, Design, Build, Deliver, and Compound, the Rhythm that runs that Sequence quarter after quarter, and the Sprint as the unit of work where all of it lands. The Framework is the answer to the question every CEO asks next: *fine, on Monday morning, what do we actually do?*

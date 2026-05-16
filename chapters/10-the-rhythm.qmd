@@ -2,7 +2,7 @@
 
 This time last year, I had thirteen people. I'm looking at the current roster and there are eight.
 
-Five people are gone — not lost to attrition, not cut in a crisis, not managed out because the company was struggling. Gone because the work they were doing is now being done differently. And we are growing. Double digits on every metric. Billings up. Profitability up significantly. Not despite having fewer people — because of it.
+Five people are gone — not lost to attrition, not cut in a crisis, not managed out because the company was struggling. Gone because the work they were doing is now being done differently. And we are growing. Double digits on every metric. Billings up. Profitability up significantly. The fewer people are the reason.
 
 The shift did not happen because we adopted a new platform or made a strategic decision to run lean. It happened because we ran Signal before we wrote requisitions. That is the behavioral change. It sounds small. It is not.
 
@@ -26,7 +26,7 @@ The Equation is *Co-Intelligence + Rhythm = Compound*. The first term is the sys
 
 The Rhythm is quarterly. Not because the calendar is sacred, but because a sprint takes six to eight weeks and the leadership team needs one focused session per quarter to commit the next one. Faster than that and the sprint becomes a slogan. Slower than that and the design infrastructure built in the last sprint starts to drift before the next one begins.
 
-Once a member commits to the Rhythm, the Sprint stops being a discrete project on the strategic plan and becomes the operating mechanism of the Co-Intelligent Company.
+Once an operator commits to the Rhythm, the Sprint stops being a discrete project on the strategic plan and becomes the operating mechanism of the Co-Intelligent Company.
 
 ## The quarterly operating *session*.
 
@@ -45,7 +45,7 @@ EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm make
 
 ## The *Hybrid Org Today*.
 
-Every member maintains one living document: the Hybrid Org Today. It is the current operational picture of the Co-Intelligent Company.
+Every company running the Rhythm maintains one living document: the Hybrid Org Today. It is the current operational picture of the Co-Intelligent Company.
 
 The Hybrid Org Today maps four things — what people own, what AI handles, what is solved, what is next. The Hybrid Accountability Chart from Chapter 6 is one slice of it: the structural layer, who owns which handoffs across the human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question the leadership team needs to answer on any given quarter: *where does the design layer of this company stand today, and what is it doing next?*
 
@@ -57,9 +57,9 @@ When a new executive joins, the Hybrid Org Today is the briefing. When a custome
 
 Return to where this book started. Revenue growing. Headcount growing with it. AI investments producing no measurable gap between the two. The CEO knows the math is wrong and cannot find the lever that moves it.
 
-After six to eight sprints on the Rhythm, the math moves. Not universally, not for every function, not overnight — but the pattern is broken. The behavioral marker is specific. The CEO's first response to a capacity problem is no longer *who do we hire?* It is *what does Signal say about this?*
+After six to eight sprints on the Rhythm, the math moves. Not overnight — but the pattern is broken. The behavioral marker is specific. The CEO's first response to a capacity problem is no longer *who do we hire?* It is *what does Signal say about this?*
 
-That is the shift. It does not mean headcount never grows. Some constraints are headcount constraints, and the answer is to hire. It means the question is asked seriously, with the Signal Agent, against the Signal Backlog, *before* the requisition is written. And more often than the organization expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the sprint that addresses it ships a designed workflow instead of a job posting.
+That is the shift. Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked with the Signal Agent, against the Signal Backlog, *before* the requisition is written. And more often than the organization expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the sprint that addresses it ships a designed workflow instead of a job posting.
 
 Organizations that default to designing before hiring build a different cost structure than organizations that default to adding people. The former gets compounding returns on the design infrastructure it already built. The latter grows costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
 
@@ -69,7 +69,7 @@ In Chapter 4, I described an L10 where a clinic director's scorecard had been re
 
 ## What compounding looks like, *sprint six*.
 
-A member is six to eight sprints in. What has actually changed?
+A company is six to eight sprints in. What has actually changed?
 
 The Source phase of the first sprint took three weeks. The team did not have a knowledge map for that function; building one was the work. The Source phase of the current sprint, in the same function, takes three days — because the knowledge map already exists, has been updated twice since, and is sitting in the Hybrid Org Today. The design infrastructure built in earlier sprints is accelerating the current one.
 
@@ -97,10 +97,8 @@ What that company needs is to install the Sequence as the AI layer on top of the
 
 ## The *Co-Intelligent Company*.
 
-The Co-Intelligent Company is not a vision the reader is working toward. It is the company built — quarter by quarter, sprint by sprint — by running the Sequence on the Rhythm. The framework is the shape. The Sequence is the order. The Sprint is the unit. The Rhythm is the cadence. The Hybrid Org Today is the receipt. The Hybrid Accountability Chart is the structure. The Signal Backlog is the inventory. The Co-Intelligent Company is the result.
+The Co-Intelligent Company is not a vision the reader is working toward. It is the company built — quarter by quarter, sprint by sprint — by running the Sequence on the Rhythm. The framework is the shape. The Sequence is the order. The Sprint is the unit. The Rhythm is the cadence. The Signal Backlog: the inventory. The Hybrid Accountability Chart: the structure. The Hybrid Org Today: the receipt. The Co-Intelligent Company is what you have when all of it is running.
 
-There is nothing aspirational left in this list. Every term in it is operational. Every artifact is a document the leadership team can produce on a Tuesday. Every behavior is a thing a CEO can run in their next quarterly session and watch the company's design layer change because of it.
-
-Stop transforming. Start compounding.
+There is nothing aspirational left in this list. Every term is operational. Every artifact is a document the leadership team can produce on a Tuesday. Every behavior is something a CEO can run in their next quarterly session.
 
 The framework is yours to run. The next chapter is about the one thing Compound does that you should not run alone.

@@ -18,7 +18,7 @@ Most AI initiatives skip the diagnosis and start at Build. A tool gets chosen, a
 
 Building before diagnosing is the same mistake as framing a house before pouring the foundation. The walls go up. The roof goes on. It looks like progress right up until the moment the structure has to carry weight — and then it does not. Construction has rules about the order of operations because the order is load-bearing. So does this.
 
-The Framework exists because there is a correct sequence for installing co-intelligence into a company, and that sequence is the entire reason the result compounds instead of evaporating. Skip the first two steps and you are buying a tool. Run all six in order and you are changing how the work is owned. Those two things look similar from the outside and produce nothing alike.
+The Framework exists because there is a correct sequence for installing co-intelligence into a company, and that sequence is the entire reason the result compounds instead of evaporating. Skip the first two steps and you are buying a tool. Run all six in order and you are changing how the work is owned.
 
 The framework you are about to learn was born from the chutes-and-ladders problem I described at the start of this book. The developer left. The knowledge left with him. And the only reason what came next worked is because I solved the problem in a specific order.
 
@@ -52,29 +52,31 @@ Six stages. One Sprint. Then again.
 
 The Sequence splits into two halves, and the split is more important than the stages themselves. The first half is **Diagnose**: Signal and Source. The second half is **Execute & Compound**: Design, Build, Deliver, Compound.
 
-Diagnose is the work most companies skip. They skip it because it does not look like progress — no tool gets bought, no pilot gets launched, no slide gets shown to the board. It looks like talking. It is the part of the work that determines whether everything downstream is solving the right problem against a real map of what the company knows. Skip it and you Build beautifully against the wrong constraint, using data you assumed existed.
+A Sprint that gets stuck in Build almost never has a Build problem. It has a Diagnose problem that surfaced late. Going back to Signal is not failure — it is the Framework doing its job, refusing to let undisclosed assumptions hide inside execution.
 
-Execute & Compound is the work most companies start with — which is precisely why they fail. They begin at Design (or worse, at Build), choosing tools and writing specs against a constraint nobody validated and a knowledge map nobody made. The reason this book puts Design inside Execute, not inside Diagnose, is to be exact about this: Design is downstream work. It depends entirely on what Signal and Source produced. Move it earlier and you are designing in the dark.
+Diagnose is the work most companies skip. They skip it because it does not look like progress — no deliverable, no demo, nothing to show the board. It looks like talking. It is the part of the work that determines whether everything downstream is solving the right problem against a real map of what the company knows. Skip it and you Build beautifully against the wrong constraint, using data you assumed existed.
 
-The grouping matters because it is what you check when a Sprint stalls. A Sprint that gets stuck in Build almost never has a Build problem. It has a Diagnose problem that surfaced late. Going back to Signal is not failure. It is the Framework doing its job — refusing to let undisclosed assumptions hide inside execution.
+Design is downstream work. It depends entirely on what Signal and Source produced — which is why this book places it inside Execute rather than inside Diagnose. Move it earlier and you are designing against nothing: no validated constraint, no knowledge map.
 
 ## What you get *inside* the Framework.
 
-You are not running this alone. Compound provides two layers that sit inside the Framework — one that runs alongside you on the work, one that you install into your own AI stack. Each is introduced briefly here and then carried by the stage chapters that follow.
+This book teaches you to run the Framework yourself. The Sequence is self-implementing — the same way *Traction* teaches you to run EOS without a facilitator, this book gives you the order of operations and the tools to execute it inside your own company.
+
+Compound membership provides two additional layers that accelerate the work. They are not required to run a Sprint; they make each Sprint faster and less expensive than it would be without them. Each is introduced briefly here and then carried by the stage chapters that follow.
 
 The first is **the Compound Bench** — six AI coaching agents, one per stage of the Sequence. They are not the agents you will build inside your company; they are the agents that run the Sequence *with* you. Each stage chapter introduces its Bench agent at the moment the agent does its work: what it diagnoses, what it produces, what question it forces you to answer before you move on. The Bench is the practical answer to "how do we actually run this without a six-figure consultant on retainer?"
 
-The second is **the Skills Library** — twelve installable workflows, two per stage of the Sequence, that you port into your own AI stack. The Library is the durable artifact. Where the Bench is a coach you bring in for a Sprint, the skills are tools you keep — drop-in workflows that make each stage faster on the second Sprint than it was on the first, and faster again on the third. The stage chapters introduce each pair of skills as the stage that owns them is taught.
+The second is **the Skills Library** — twelve installable instruments, two per stage of the Sequence, that you port into your own AI stack. The Library is the durable artifact. Where the Bench is a coach you bring in for a Sprint, the instruments are tools you keep — drop-ins that make each stage faster on the second Sprint than it was on the first, and faster again on the third. The stage chapters introduce each pair of instruments as the stage that owns them is taught.
 
-The shorthand worth holding in your head: the Bench runs the Sequence with you; the Library makes the Sequence yours. Both exist because the Framework is meant to be operated, not admired.
+The shorthand worth holding in your head: the Bench runs the Sequence with you; the Library makes the Sequence yours.
 
 ## You learn this on a *Sprint*.
 
 You do not learn the Framework by reading about it. You learn it by running one Sprint on one real constraint in your own company. That is the only teaching unit that works, because the Framework is not a model of how AI implementation could go — it is the structure of how the work moves when it moves correctly.
 
-The project coordinator story — the one where we mapped the work instead of posting a job — walks all six stages of the Framework. You will see it in full in Chapter 6. Here, it serves as proof that the sequence works when followed in order: Signal named the constraint, Source mapped what the role actually required, Design allocated the work between human and agent, Build produced the workflow, Deliver shipped it into the team's environment, and Compound captured what the next Sprint would inherit. One constraint. Six stages. One documented outcome.
+The project coordinator story — the one where we mapped the work instead of posting a job — walks all six stages of the Framework in sequence. You will see it in full in Chapter 6. What it proves here is specific: not that the Sequence is theoretically sound, but that each stage produces something the next stage requires. Signal named the constraint. Source mapped what the role actually required. Design allocated the work between human and agent. Build produced the workflow. Deliver shipped it into the team's environment. Compound captured what the next Sprint would inherit. Remove any one of those steps and the chain breaks. One constraint. Six stages. One documented outcome.
 
-The Sprint is roughly six to eight weeks. It is narrow on purpose — one validated constraint, one designed workflow, one measurable result against the cost that Signal quantified. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. Six to eight weeks, one constraint, one documented outcome. That is the bar.
+The Sprint is roughly six to eight weeks, Signal included. It is narrow on purpose — one validated constraint, one designed workflow, one measurable result against the cost that Signal quantified. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. Six to eight weeks, one constraint, one documented outcome. That is the bar.
 
 The Rhythm is what turns that one Sprint into a compounding business. Quarterly, you run another one. The Hybrid Accountability Chart gets one more entry. The knowledge maps get richer. The team's design judgment improves. The Sprints themselves get cheaper and faster, because the infrastructure each Sprint leaves behind accelerates the next one. *Co-Intelligence + Rhythm = Compound.* The Equation is not a slogan — it is a description of what happens to a company that runs this work on a cadence.
 

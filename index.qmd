@@ -1,9 +1,9 @@
 # Preface {.unnumbered}
 
-A developer who has been with me for years puts in his notice. I'm sitting there realizing I've just lost something I can't replace — not the person, the knowledge. Every system he understood, every shortcut he'd built, every decision embedded in the codebase: walking out the door in a banker's box. I had paid for years of that climb. And then the chute opened. That's when I understood my business was a game of chutes and ladders: I pay for the ladder and absorb the cost of the chute. It was awful. And it had nothing to do with which AI tool I was using.
+A developer who has been with me for years puts in his notice. I'm sitting there realizing I've just lost something I can't replace — not the person, the knowledge. Every system he understood, every shortcut he'd built, every decision embedded in the codebase: walking out the door in a banker's box. I had paid for years of that climb. And then the chute opened. That's when I understood my business was a game of chutes and ladders: I paid for the ladder and absorbed the cost of the chute. It was awful. And it had nothing to do with which AI tool I was using.
 
 That moment is why this book exists.
 
-This book is not about which AI tools to buy. It is about the design work that has to happen before any tool gets deployed. If you've bought tools and seen no return, this is why. If you want to know exactly what to do instead, read on.
+This book is about the design work — the operating design — that has to happen before any tool gets deployed. If you've bought tools and seen no return, this is why. If you want to know exactly what to do instead, read on.
 
-By the end of this book, you'll know what it looks like when the design is right — when 5:30 arrives and everything that needed to get done is done, and you close the laptop and go home.
+When the design is right, 5:30 arrives and everything that needed to get done is done. You close the laptop and go home.

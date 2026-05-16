@@ -22,7 +22,7 @@ You have the diagnosis. You have the framework. You have the mechanism. You have
 
 Not next quarter. Not after the offsite. Not after you finish the next tool evaluation. Now.
 
-The first move is not to select a platform, not to hire a consultant, not to schedule team training. The first move is to run Signal on your own organization — the same discipline this book describes. Find the real constraint. Name it precisely. Quantify what it costs you in dollars and hours and headcount over a year.
+The first move is to run Signal on your own organization — the same discipline this book describes. Find the real constraint. Name it precisely. Quantify what it costs you in dollars and hours and headcount over a year.
 
 That single step — done honestly, without rushing to a solution — is what separates the companies that produce results from AI from the companies that produce a second round of the same experiments they ran last year. Most CEOs skip it. They move to tools because tools are concrete and constraints are uncomfortable. The discomfort is the work. The constraint is the asset.
 
@@ -36,9 +36,9 @@ If you want a peer to pressure-test that constraint with you before you spend a 
 
 30 minutes. At no cost. With an operator, not a salesperson.
 
-At the end of 30 minutes, you'll have clarity about where AI fits and what it can do in your organization. Not in the abstract — in *yours*, with your team, your industry, your headcount math, your numbers. The output of the call is not a software recommendation. It is not a sales pitch. It is a constraint you can act on.
+The Clarity Call is not Signal — Signal is the rigorous diagnostic process described in Chapter 4. The call is a 30-minute conversation that gives you a head start on Signal: it surfaces the constraint category, sharpens the question you take into the full process, and tells you whether your first sprint candidate is real. You walk away with clarity about where AI fits in *your* organization — your team, your industry, your headcount math, your numbers. The output is not a software recommendation. It is not a sales pitch. It is a constraint you can act on.
 
-Whether you ever talk to us again or not, what you walk away with is yours. The call is the same call we would run as the first thirty minutes of any engagement. You get it standalone because the framework is more valuable in the world than it is in a funnel.
+Whether you ever talk to us again or not, what you walk away with is yours.
 
 Book it at **[compoundorg.com/clarity-call](https://compoundorg.com/clarity-call)**.
 
@@ -46,25 +46,23 @@ That is the only ask in this book.
 
 ## Two paths after the *call*.
 
-Before the paths, a note on what stops most people at this stage.
-
 I was on a discovery call with a physical therapy practice owner — one of the top private practices in the country, by his own description, and I believed him. He'd just come back from a foundation retreat and he was lit up. His vision: an automated executive suite. AI agents for every C-suite function. Budgeting, forecasting, marketing, KPI management — all of it running on agents trained on his institutional knowledge. He wanted to package that knowledge and take it to the world.
 
 It was a genuinely impressive vision. So I asked the only question that mattered: "Who on your team would build this?"
 
 He went quiet. Then: "I don't have that person."
 
-There it is. The vision was not the obstacle. The gap between the vision and the first step was the obstacle. He was staring at the vision and the first step kept not appearing, and so the quarter ended and nothing moved. That is not a failure of ambition. It is a failure of sequencing. The Clarity Call exists to close that gap — not to shrink the vision, but to find the step.
+The vision was not the obstacle. The gap between the vision and the first step was the obstacle. He was staring at the vision and the first step kept not appearing, and so the quarter ended and nothing moved. That is not a failure of ambition. It is a failure of sequencing. The Clarity Call exists to close that gap — not to shrink the vision, but to find the step.
 
 The same pattern appeared in Chapter 1, in a different form: a marketing lead building agents alone at night in Copilot, unsupported, without a designed system around her, while the rest of the organization waited for someone to tell them what to do. "I don't have that person" and "I don't have that structure" are the same constraint wearing different clothes. Both of them resolve with a named first sprint, not a better platform.
 
 Once you have a constraint named clearly enough to commit a sprint to it, you have two paths forward. They produce the same artifact — a Co-Intelligent Company, sprint by sprint — at different speeds and with different levels of support.
 
-1. **Run the Sprint independently.** The framework is in this book. The Sequence is here. The artifacts — the Knowledge Map, the Hybrid Accountability Chart, the Hybrid Org Today — are defined. A disciplined operating team with EOS or Scaling Up already in place can execute a first sprint on its own. Many will. We wrote the book so they could.
+1. **Run the Sprint independently.** The framework is in this book. The Sequence is here. The artifacts — the Knowledge Map, the Hybrid Accountability Chart, the Hybrid Org Today — are defined in the chapters behind you. A disciplined operating team with EOS or Scaling Up already in place can execute a first sprint on its own. Many will. We wrote the book so they could.
 
-2. **Run the Sprint inside the Compound Membership.** The same Sequence, paired with weekly retros, the Compound Bench of coaching agents, the Skills Library, and a cohort of peer CEOs running the same framework against constraints in their own companies. The membership is for operators who would rather not run the first one alone.
+2. **Run the Sprint inside the Compound Membership.** The same Sequence, paired with weekly retros, a cohort of peer CEOs running the same framework against constraints in their own companies, and Compound operators coaching you through each stage. The Compound Bench and Skills Library are membership features that accelerate the Sequence — they are not required to run it. The membership is for operators who would rather not run the first one alone.
 
-The book sells the framework. The membership coaches the system. Either path works. The one that does not work is the one most companies are still on: buying more tools and hoping a structure will emerge from them.
+Either path works when the team already has operating discipline in place. The one that does not work is the one most companies are still on: buying more tools and hoping a structure will emerge from them.
 
 ## The math is *still* moving.
 
@@ -80,7 +78,7 @@ That is what the Clarity Call gives you. Take it.
 
 This book started with a developer leaving and a company playing chutes and ladders — paying for the ladder and riding the chute. Every dollar of training, every hour of onboarding, every mistake paid for, walking out the door when the person did. That problem forced a question: what is the actual constraint? Not what tool do I buy, not what position do I post, but what is the problem I am trying to solve and what does it cost me if I don't? That question is the framework. The framework is in your hands.
 
-We went from thirteen people to eight in one year. Billings up. Profitability up. Not because we cut costs — because the Rhythm changed which question we asked about every capacity problem. I'm telling you this not as a sales claim but as evidence. The math is not theoretical. It works. The question is only whether you run it on your organization this quarter or let your competitors run it on theirs first.
+We went from thirteen people to eight in one year. Billings up. Profitability up. Not because we cut costs — because the Rhythm changed which question we asked about every capacity problem. The math is not theoretical. It works. The question is only whether you run it on your organization this quarter or let your competitors run it on theirs first.
 
 ---
 

@@ -20,7 +20,7 @@ Everything in the rest of the Sequence is designed to answer the question Signal
 
 ## The deliverable is *one sentence*.
 
-Signal produces a single artifact: a validated constraint statement with a quantified cost. It reads like this — the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. One sentence. One constraint.
+Signal produces a single artifact: a one-page constraint statement anchored in one sentence. The sentence carries the constraint — the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The page surrounds it with the evidence that validates it: the data you checked, the people you talked to, the number you confirmed. One sentence. One page. One constraint.
 
 The discipline of insisting on one is the entire point. Most leadership teams arrive at this conversation with five candidates and a tendency to argue for whichever one is loudest in the room that week. The job of Signal is to refuse the list. You pick one — the constraint that, if removed, would change the math most meaningfully — and you commit to it for the length of the Sprint.
 
@@ -60,7 +60,7 @@ The expansion plan was a symptom. The scheduling loop was the constraint. The ga
 
 ## The two instruments — *Constraint Finder* and *Issue Surfacer*.
 
-Signal has two installable instruments. They do different jobs and you use them at different moments.
+Signal's two installable workflows from the Skills Library do different jobs and you use them at different moments.
 
 The **Constraint Finder** is the structured conversation that surfaces the constraint. It walks the team from situation, to symptom, to underlying constraint, to dollar cost. What is the problem in one sentence? Where does it live in the organization? How long has it existed? What does it cost — in hours per week, in dollars per quarter, in margin lost, in deals not closed? The output is the one-page constraint statement. It is the artifact the rest of the Sprint runs against.
 
@@ -70,11 +70,11 @@ You will rarely run one without the other. The Issue Surfacer gives you the cand
 
 ## The *Signal Agent*.
 
-Compound provides a Signal Agent — the first of the six on the Compound Bench. You run it when something feels off but you cannot name what is broken.
+The first agent on the Compound Bench is the Signal Agent. You run it when something feels off but you can't name it yet — when the scorecard is red and the team is nodding and nobody is saying the thing that needs to be said.
 
-The Signal Agent walks you from situation → symptom → constraint → dollar cost. It asks the questions a good outside operator would ask if they sat down with you for two hours: what is slow, what is expensive, what workaround did your team build that you forgot was a workaround, what would change if this one thing got faster. It does not let you stop at the symptom. It keeps pushing until you have a number.
+The Signal Agent asks the questions I would ask if I sat down with you for two hours. What is slow? What is expensive? What workaround did your team build three years ago that everyone forgot was a workaround? What would change — actually change, in dollars or hours — if this one thing got faster? It does not let you stop at the symptom. It keeps asking until you land on the constraint underneath it and put a number on what that constraint is costing you.
 
-You leave the session with a one-page constraint statement. That is the artifact you bring to Source. It is also the artifact you bring to your next leadership meeting when someone asks "what are we actually solving for this quarter" — because Signal is not just the start of a Sprint. It is the most honest version of a strategy conversation your team has had in a while.
+You leave the session with a one-page constraint statement anchored in a single sentence. That is the artifact you bring to Source. It is also the artifact you bring to your next leadership meeting when someone asks "what are we actually solving for this quarter," because Signal is not just the start of a Sprint. It is the most honest version of a strategy conversation your team has had in a while.
 
 ## Where the constraint comes from inside an *EOS or Scaling Up shop*.
 
@@ -114,7 +114,7 @@ There is a specific version of this failure that shows up in even well-run EOS s
 
 What just happened is not Signal. It's a performance of Signal. The dominant personality resolved the discomfort of ambiguity. The underlying constraint is still there, unnamed, costing the business the same amount it was costing before the meeting started.
 
-The reason this matters structurally: without a process that forces the constraint to surface through questions rather than authority, you don't get Signal. You get whoever talks loudest. And whoever talks loudest is not always wrong — but they are almost never working from the data. The Constraint Finder exists precisely because authority is not a method.
+Without a process that forces the constraint to surface through questions rather than authority, you don't get Signal. You get whoever talks loudest. And whoever talks loudest is not always wrong — but they are almost never working from the data. The Constraint Finder exists precisely because authority is not a method.
 
 ## With the constraint locked, you can map *what surrounds it*.
 

@@ -36,6 +36,8 @@ The second is an updated *Hybrid Accountability Chart*. The chart had one new ro
 
 The third is a commitment to the next sprint's focus — the constraint, the accountability, the human owner. Not "we will start the next sprint sometime." A named next constraint, taken from the re-ranked backlog, with the Human Orchestrator already assigned.
 
+These three deliverables slot into the living document I'll describe in the next chapter — the Hybrid Org Today, the current operational picture of the Co-Intelligent Company. The Signal Backlog and the Hybrid Accountability Chart are both slices of it. Compound is where those slices get updated.
+
 If a sprint ends and the backlog is not updated, the chart has not gained a permanent row, and no next constraint is named, the sprint did not finish. It stopped. Those are different states. Compound is the discipline of finishing.
 
 ## The two *instruments*.
@@ -50,13 +52,13 @@ The two instruments run together. Sprint Retrospective looks backward at the wor
 
 ## The *Compound Agent*.
 
-Compound provides a Compound Agent — the sixth and final coaching agent on the Compound Bench. You run it at the end of every sprint, and its job is to make Sprint Retrospective and Constraint Re-rank impossible to skip.
+The sixth agent on the Compound Bench is the one I run at the end of every sprint. Its job is to make Sprint Retrospective and Constraint Re-rank impossible to skip.
 
-The Compound Agent takes the documented sprint outcome from Deliver and measures it against the original constraint cost from Signal — the dollar figure or hour figure that opened the sprint. It does not let the team round the number, narrate around it, or convert it into a softer metric. The quoting cycle that took three days was supposed to take four hours; either it does or it does not, and the gap is the data. The agent then runs the Sprint Retrospective conversation with the leadership team — structured, fast, the same questions every time — and produces the disciplined list of design changes that come out of it. It runs Constraint Re-rank against the existing Signal Backlog and surfaces the candidates for the next sprint.
+I've watched leadership teams end a sprint, celebrate the outcome, and move immediately to whatever is next. The retrospective gets scheduled for "sometime next week." The backlog does not get re-ranked. The one design change nobody names. Three months later, the next sprint runs into the same friction the last sprint identified and never fixed. The Compound Agent exists to close that gap before the team closes the laptop.
 
-What the Compound Agent does not do is decide what to work on next. The next constraint is the Human Orchestrator's call — the same call Signal demanded at the beginning of this sprint, made now with one more sprint's worth of evidence. The agent's job is to make sure that call gets made with the new information, not with the same map the company had eight weeks ago.
+What it does: it takes the documented sprint outcome from Deliver and holds it against the original constraint cost from Signal — the dollar figure or hour figure that opened the sprint. The quoting cycle that was supposed to take four hours; did it? The gap is the data. The agent runs the Sprint Retrospective questions with the leadership team — structured, fast, the same questions every time — and produces the design changes that come out of it. It runs Constraint Re-rank against the Signal Backlog and surfaces the candidates for next sprint.
 
-The Compound Agent is Compound's accumulated reps on this specific conversation, run with the speed and consistency of a coach who has finished a hundred sprints. The team owns the decisions. The agent makes sure none of the questions get skipped.
+What it does not do is decide what to work on next. That is the Human Orchestrator's call — made now with one more sprint's worth of evidence, not with the map the company had eight weeks ago. The agent's job is to make sure none of the questions get skipped and the decision gets made before momentum from this sprint dissipates.
 
 ## The one design change *rule*.
 
@@ -94,25 +96,23 @@ Forty-five minutes later, we're done. I pull up the document. It has everything 
 
 That document is still inside their company. The next sprint they run, the Source phase starts from that map — not from zero. Three weeks of discovery that used to happen at the start of every engagement now happens once, and then gets updated at the edges. That's the 45-minute session doing compounding work across every sprint that follows it.
 
-The coordinator's knowledge base I described in the Design chapter — the one we extracted before she left and built the agents on top of — that artifact is still working too. Not as a memory of the sprint that produced it. As the living foundation the next sprint runs on. The knowledge we mapped became infrastructure. The infrastructure compounded. The numbers in the next chapter — thirteen people to eight, double-digit growth across every metric — those didn't come from a single sprint. They came from the stack of infrastructure each sprint left behind.
+The coordinator's knowledge base I described in the Design chapter — the one we extracted before she left and built the agents on top of — that artifact is still working too. Not as a memory of the sprint that produced it. As the living foundation the next sprint runs on. The knowledge we mapped became infrastructure. The infrastructure compounded. The numbers in the next chapter — thirteen people to eight, double-digit growth on billings and profitability — those didn't come from a single sprint. They came from the stack of infrastructure each sprint left behind.
 
 ## Compound is not the same as *scale*.
 
-Be precise here. The audience for this book has been pitched "scale your AI" in every form imaginable and has every right to be skeptical.
-
-Scale is generic. It is the word every vendor uses when they want you to spend more money on the same thing. Scale tells you nothing about whether the second thing is cheaper than the first, or whether the second thing is better. It is a quantity claim with no architecture behind it.
+The audience for this book has been pitched "scale your AI" in every form imaginable and has every right to be skeptical. Every vendor uses "scale" to sell more of the same thing — it's a quantity claim with no architecture behind it.
 
 Compound is specific. The infrastructure built by each sprint accelerates the next one — measurably, in artifacts you can point at. The cost per sprint decreases, because Source is faster, Design is faster, Build is sharper, and Deliver inherits training material from the previous sprints. The return per sprint increases, because the constraints get more strategic as the easy ones come off the backlog and the leadership team's design judgment improves. The gap between revenue growth and headcount growth — the headcount math from the opening of this book, the dynamic everyone feels but nobody has named — starts to look like a solved problem. Not because revenue stops growing. Because revenue can grow without the head count line growing with it, and the company that runs the Rhythm long enough watches that gap widen on purpose.
 
-That is the difference between compounding and scaling. Scaling is doing more of the same thing. Compounding is doing the same thing with infrastructure that makes the next iteration cheaper and better than the last.
+Each sprint compounds the last — Source is faster, Design inherits a chart, Deliver inherits training material. Scaling just runs the same sprint again.
 
 ## The brand and the *stage* share a name on purpose.
 
 By now you have noticed that the word *Compound* is doing more than one job in this book. It is the name of the company. It is the verb the work produces. It is the stage of the Sequence you are reading about now. The naming is load-bearing.
 
-Compound the stage is where the verb happens — where the previous sprint's output stops being an outcome and becomes the next sprint's accelerant. That mechanism is what Compound the company exists to install. The brand and the stage share a name because the company *is* the stage — the institutional answer to "who teaches you to run this last step, and to run it every time?" The verb is what you are doing once the stage is part of how you operate.
+Compound the stage is where the verb happens — where the previous sprint's output stops being an outcome and becomes the next sprint's accelerant. That mechanism is what Compound the company exists to install. The brand and the stage share a name because the company *is* the stage — the institutional answer to "who teaches you to run this last step, and to run it every time?"
 
-Members get this on their second sprint. The first sprint feels like a project. The second sprint, when the Source map already exists and the chart already has a row and the design conversation has a precedent — that is when the word starts to mean what it means. *Stop transforming. Start compounding.* The tagline is not a slogan. It is a description of the operating posture the stage produces.
+Members get this on their second sprint. The first sprint feels like a project. The second sprint, when the Source map already exists and the chart already has a row and the design conversation has a precedent — that is when the word starts to mean what it means. The mechanism is real. The infrastructure is there. The next sprint runs on what this one built.
 
 ## One sprint, one *Compound*.
 

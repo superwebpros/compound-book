@@ -10,8 +10,6 @@ The reason I'm telling you this is because the Guardrails Checklist isn't a comp
 
 Build is the stage where the locked design becomes a working, deployed system. It is the narrowest stage of the Sequence — and the fastest, when the diagnostic work was done properly. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
 
-This chapter is about what Build actually produces, what the team is choosing between when they build, and why this stage is short when the four previous stages were honest.
-
 ## What *Build* produces.
 
 Build produces one thing: a working, deployed solution to the validated constraint.
@@ -24,7 +22,7 @@ That bar is deliberately high, because anything less than that leaks back into t
 
 ## Build is scoped to the *designed* workflow.
 
-The agents we designed in the last chapter — the ones that replaced 90% of the coordinator's function — this is where they got built. Design told us the shape. Build executed it.
+The agents we designed in the last chapter — the ones that took on the bulk of the coordinator's function — this is where they got built. Design told us the shape. Build executed it.
 
 The single most common Build failure is scope drift — the moment the engineer or vendor or low-code builder looks at the spec and starts to "improve" it. Add a feature. Connect another system. Generalize the workflow into a platform. Use the constraint as an excuse to rebuild a tool the company should have replaced anyway.
 
@@ -44,13 +42,13 @@ The teams who run Build cleanly are the teams who refused to advance past Signal
 
 When all of that is true, Build is mostly translation work. The specification already exists; Build encodes it.
 
-When any of that is not true, Build is where the unresolved questions surface — usually at the worst possible moment, usually expensive, usually disguised as a technical problem when they are actually a design problem. The mid-build "wait, we didn't decide that" conversation is not a Build problem. It is Design debt arriving on the worst possible balance sheet.
+When any of that is not true, Build is where the unresolved questions surface — at the worst possible moment, expensive, and disguised as a technical problem when they are actually a design problem. The mid-build "wait, we didn't decide that" conversation is not a Build problem. It is Design debt arriving on the worst possible balance sheet.
 
 The Diagnose half of the Sequence — Signal and Source — and the gate at the end of Design exist to prevent that conversation from ever happening. Teams that internalize this stop experiencing Build as a struggle. They experience it as the short, mechanical stage between deciding and shipping.
 
 ## The build *paths*.
 
-The team enters Build with a designed workflow. They exit Build with that workflow operating in production. Between those two points is a choice — but the choice is not which technology is exciting this quarter. The choice is which path fits the design.
+The team enters Build with a designed workflow. They exit Build with that workflow operating in production. Between those two points is a choice — and the design already made it. The choice is which path fits the design, nothing else.
 
 Three paths cover almost every Compound sprint:
 
@@ -76,9 +74,11 @@ The story isn't that low-code is magic. The story is that Design gave them a wor
 
 The low-code path goes further than most people expect. I was in a strategy session with a client team — a professional services firm, small leadership group — and one of them mentioned, almost in passing, that he was already writing LinkedIn posts at his kid's soccer game. Sitting in the bleachers, pulling out his phone, typing a prompt into ChatGPT, and two minutes later he had a post. Doing it consistently. Getting results he liked.
 
-I said: go into Claude. Start the skill creator. Copy in your three best posts. Tell it what worked about each one. Ten minutes — by the time the half is over — you've built a skill. You've got a pipeline. You don't need a developer. You don't need us to do it for you.
+For a single person's workflow — one skill, one use case, no organizational handoffs — the Sequence compresses to a conversation. You run through Signal, Source, and Design in your head in the time it takes to describe what you want. I said: go into Claude. Use Claude's built-in skill builder. Copy in your three best posts. Tell it what worked about each one. Ten minutes — by the time the half is over — you've built a skill. You've got a pipeline.
 
-The reason I'm telling you this is because Build doesn't require an engineer. It requires a design that names the shape. The client's workflow was simple enough that a skill did it. That's not a limitation — that's exactly the point. When Design has done its job, the build path reveals itself.
+That is not what a Compound sprint looks like. A sprint involves a team, shared systems, and a designed workflow with named supervisors and handoffs. The soccer-game build is a personal-productivity exception — one person, one tool, no one else's workflow affected. The reason it works without a full Sequence is because the stakes and complexity are bounded to a single seat. When the work crosses a handoff — when someone else has to use the output, when the data is shared, when the system touches a record of consequence — that is when the Sequence disciplines the build and prevents the failure modes this chapter describes.
+
+Build doesn't require an engineer. It requires a design that names the shape. When Design has done its job, the build path reveals itself.
 
 ## The two instruments — *Build Spec Writer* and *Guardrails Checklist*.
 
@@ -86,7 +86,7 @@ Build is supported by two instruments in the Skills Library.
 
 **Build Spec Writer** translates the designed workflow into a developer-ready specification. What the workflow does, end to end. What tools and systems it integrates with. What the inputs are and where they come from. What the outputs are and where they go. What the agent does. What the human supervisor reviews. Where the handoffs sit. What the failure modes are and how the system surfaces them.
 
-The spec is the artifact a builder — engineer, vendor, low-code assembler — works from. Its job is to remove ambiguity. If the spec is right, the build is mostly execution. If the spec is wrong, the build is mostly negotiation. Build Spec Writer is the instrument that gets the spec right.
+The spec is the artifact a builder — engineer, vendor, low-code assembler — works from. Its job is to remove ambiguity. If the spec is right, the build is mostly execution. If the spec is wrong, the build is mostly negotiation. Build Spec Writer is the Library instrument that produces the template and method. The Build Agent on the Bench runs you through it interactively, in conversation — that is the distinction between the two. Both produce the same artifact; the Library gives you the form, the Bench walks you through filling it.
 
 **Guardrails Checklist** is the set of quality, privacy, and oversight decisions that must be locked before the solution goes live. Who reviews what. How often. How errors are caught. What happens when the agent produces output that requires escalation — who it goes to, in what form, on what timeline. What data the system is permitted to touch and what it is not. What gets logged and where. What the rollback looks like if something fails.
 
@@ -96,15 +96,13 @@ The two instruments produce a build that is specified clearly and constrained sa
 
 ## The *Build Agent*.
 
-The Compound Bench provides a Build Agent for this stage.
+The Build Agent is the fourth of the six coaching agents on the Compound Bench.
 
-You hand it the designed workflow and the Hybrid Accountability Chart entry from Design. It produces the developer-ready specification — the same artifact a Compound member would otherwise hand to an engineer or vendor or low-code lead. It surfaces the Guardrails Checklist questions and walks the team through answering them.
+You bring it the designed workflow and the Hybrid Accountability Chart entry from Design. It walks you through the Build Spec Writer interactively — surfacing the Guardrails Checklist questions, filling the spec section by section, flagging what is missing before the builder starts. What comes out is the developer-ready specification: the document the builder works from.
 
-The Build Agent is not the builder. It is the specifier. It produces the document the builder works from.
+The Build Agent is not the builder. It is the specifier.
 
-This matters because, for most Compound members, Compound is not the builder either. The build is done by the company's own people, by their existing vendor, by a contract engineer they already have a relationship with, or — on the low-code path — by the team themselves. The Build Agent's job is to give those people a spec clear enough that they can execute against it without inventing the design on the fly.
-
-Some members prefer to bring Compound in to manage the build. That is available. Most do not need it. Most have technical resources that work fine — they just have never had a clean spec to work from. The Build Agent solves that.
+Most Compound members don't use Compound to build. The build gets done by the company's own people, by the vendor they already have a relationship with, by a contract engineer, or — on the low-code path — by the team themselves. The Build Agent's job is to give whoever is building a spec clear enough that they can execute against it without inventing the design on the fly. Most teams have the technical resources to build. They just have never had a clean spec to hand them. The Build Agent is what changes that.
 
 ## What *done* looks like.
 

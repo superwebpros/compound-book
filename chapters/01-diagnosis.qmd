@@ -24,7 +24,7 @@ Their marketing lead was already working nights. The effort was real. The adopti
 
 The instinct is to blame adoption. Your team resisted. They didn't take the training seriously. They went back to their habits. That diagnosis is comfortable because it puts the problem on the floor instead of in the operating model — but it is the wrong diagnosis, and acting on it produces exactly one outcome: another training session that also doesn't work.
 
-The real problem is upstream of adoption. The real problem is that nobody redesigned the work before the tool arrived. I described in the preface the moment a key developer left my company — I paid for the ladder and incurred the cost of the chute. That wasn't a technology failure. That was a design failure. This chapter's diagnosis is that same failure, wearing a different coat.
+The real problem is upstream of adoption. The real problem is that nobody redesigned the work before the tool arrived. I described in the preface the moment a key developer left my company — I paid for the ladder and absorbed the cost of the chute. That wasn't a technology failure. That was a design failure. This chapter's diagnosis is the same failure applied to AI instead of people.
 
 ## The *headcount* paradox.
 
@@ -46,7 +46,7 @@ Read that again, because it is the load-bearing sentence of this whole book.
 
 The reason your AI investments aren't producing returns is an operating-model problem — not a technology problem. Specifically, a Co-Intelligent Company problem.
 
-This is the diagnostic phrase, and it matters that it is precise. Not a *culture* problem — your culture is fine, your people are willing. Not a *training* problem — they have had the training. Not a *tool selection* problem — the tools you have can do far more than you are currently asking of them. It is an operating-model problem. The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker — synthetic, capable, available — and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, no defined handoff. So it produces nothing the organization can compound on.
+This is the diagnostic phrase, and it matters that it is precise. Not a *culture* problem: your culture is fine, your people are willing. Not a *training* problem: they have had the training. Not a *tool selection* problem — the tools you have can do far more than you are currently asking of them. It is an operating-model problem. The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker — synthetic, capable, available — and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, no defined handoff. So it produces nothing the organization can compound on.
 
 Operators who run on EOS, Scaling Up, or any disciplined system already know this shape. You did not get the results you have now by accident. You built an accountability chart. You wrote scorecards. You ran the L10 or the equivalent. You know exactly what happens to a company that adds work without naming who owns it — the work dies in the gap. AI is no different. It is a new kind of worker that has been added to the system without anyone naming who owns it, what it is accountable for, or where the handoffs live. So it dies in the gap, predictably, the same way any unowned function dies in the gap.
 
@@ -58,7 +58,7 @@ The pattern is mechanical. The diagnosis is mechanical. The fix is mechanical. N
 
 ## The wrong *question*.
 
-There is one specific trap every organization falls into at the start of its AI effort, and it is worth naming carefully because it looks exactly like the right approach.
+There is one specific trap every organization falls into at the start of its AI effort: it looks exactly like the right approach.
 
 The wrong question is task-orientation: *which of our existing tasks could AI help with?* It sounds reasonable. It sounds practical. It produces prompt tips, a few genuinely useful shortcuts, and zero change to how the company operates. A task-oriented AI program adds AI on top of the existing workflow. The existing workflow was designed for humans. So the AI fits awkwardly into a process that was never designed to receive it, and produces inconsistent results that confirm everyone's suspicion that AI is a novelty.
 
@@ -70,7 +70,7 @@ You cannot get to the second question by working harder at the first. They are d
 
 ## What this *book* is for.
 
-There is a name for the company that runs on the second question. We call it the Co-Intelligent Company — a company where humans and AI operate as one system rather than two parallel tracks, where the work has been designed before the tool was deployed, and where the headcount math finally moves the way it was supposed to move when you first wrote the AI line into the budget.
+There is a name for the company that runs on the second question. We call it the Co-Intelligent Company — a company where humans and AI operate as one system rather than two parallel tracks, where the work has been designed before the tool was deployed. That is where the headcount math finally moves the way it was supposed to move when you first wrote the AI line into the budget.
 
 We are not going to define the Co-Intelligent Company in this chapter. That is the next chapter's job, and it deserves the room. What this chapter has done is name the diagnosis — the headcount paradox, the operating-model misread, the wrong question — so that the rest of the book has something to answer. By the end of it, you will see how one company went from 13 employees to 8 with double-digit growth on every metric. That is the destination. This chapter is about why most companies never get there.
 

@@ -12,7 +12,7 @@ Here's what I didn't understand yet, on that Wednesday: "live" is a technical cl
 
 The sprint produces on Monday. When the operator whose week was supposed to change sits down, opens their queue, and finds that the eight hours of routing work they used to do is gone — not delegated, not reduced, gone — and they have something different to do instead. If that happens, the sprint produced. If they're still routing manually, still sending work to the old inbox out of habit or because no one told them to stop, still working the system we were supposed to replace — then we deployed a tool. We didn't deliver anything.
 
-The difference is operational, not technical. And Deliver is the stage that closes it.
+The difference is operational, not technical.
 
 Build deployed the workflow. Deliver is what happens next — and it is its own stage for a reason. Most AI implementations end at Build. The tool is configured, the agent runs in production, the ticket is closed, and the team that commissioned the work declares the sprint complete. Six months later the dashboard has not moved, the people whose work was supposed to change are still working the old way, and nobody can explain what happened.
 
@@ -62,13 +62,13 @@ The second is data gaps that were not visible in Source but surfaced in producti
 
 In Chapter 5, I described a client whose AI kept surfacing expired information because nobody audited the knowledge base before indexing it. That's exactly what Deliver's logging phase is designed to catch — the gaps that Source couldn't see because they only become visible in production.
 
-Both categories get written down. Not in a formal incident-report shape — in a running log the Agent Coordinator maintains as part of the operating rhythm. That log is what the Compound stage works against when it asks: what would we do differently next time?
+Both categories get written down. Not in a formal incident-report shape — in a running log the Agent Coordinator maintains as part of the operating rhythm. That log is operational: it captures what happened in real time, as the sprint runs in production. It is distinct from the documented sprint outcome Deliver produces at the close — the summary of what the sprint changed, measured against Signal's quantified cost — which is the artifact Compound works against when it asks: what would we do differently next time?
 
 ## The two instruments — *Deploy Readiness Audit* and *Training Set Generator*.
 
 Deliver has two installable instruments. They run in sequence: one before the workflow goes live in production, one as it goes live.
 
-The **Deploy Readiness Audit** is the pre-flight check. Are the people whose handoffs change trained on the new flow? Are the inputs to the agent clean and arriving in the expected format? Are the escalation paths defined, named, and acknowledged by the humans who own them? Is the rollback plan written down — the specific steps the team takes if the new workflow produces results the organization cannot accept, and who has the authority to invoke it? The Audit's job is to refuse a go-live until each of those questions has an answer. Most failed deploys can be traced back to a question that nobody asked at this gate.
+The **Deploy Readiness Audit** is the pre-flight check. Are the people whose handoffs change trained on the new flow? Are the inputs to the agent clean and arriving in the expected format? Are the escalation paths defined, named, and acknowledged by the humans who own them? Does the rollback plan Build's Guardrails Checklist produced contain the specific steps the team takes if the new workflow produces results the organization cannot accept, and is it clear who has the authority to invoke it? The Audit's job is to verify these answers exist before the switch flips — it checks what Build prepared, it does not author it fresh. Most failed deploys can be traced back to a question that nobody asked at this gate.
 
 The **Training Set Generator** produces the training material for the team whose work is changing. Not a slide deck about AI. Not a generic onboarding doc. The specific runbook for the new workflow: what inputs to send the agent, what outputs to expect back, what to do when the agent produces something unexpected, who to escalate to and how, what the new handoffs look like, what the new reporting looks like. It is operator documentation, written for the people who now have to work the new way. The Generator's job is to produce that runbook in the shape the team uses — a one-pager, a Loom, a checklist inside the tool they already work in — not a format that requires anyone to leave their workflow to consult it.
 
@@ -76,11 +76,11 @@ The two instruments answer two different questions. The Audit asks: are we ready
 
 ## The *Deliver Agent*.
 
-Compound provides a Deliver Agent — the fifth of the six coaching agents on the Compound Bench. You run it on a built sprint, with the Hybrid Accountability Chart from Design and the deployed workflow from Build as its inputs.
+The Deliver Agent is the fifth of the six coaching agents on the Compound Bench. I run it after Build has shipped — with the Hybrid Accountability Chart from Design and the deployed workflow from Build as inputs.
 
-The Deliver Agent identifies who needs training and on what. It walks the Hybrid Accountability Chart and surfaces every role whose handoffs have changed — including the ones the team has not thought about because the change is small. It drafts the runbook the Training Set Generator produces, against the specific workflow rather than as a generic template. It defines how the result gets measured — pulling the cost Signal quantified, the production metric Build's instrumentation actually captures, and the gap between the two. And it specifies the rollback plan: the exact conditions under which the new workflow gets paused, the alternative path the work takes during the pause, and the human who owns the call.
+Here is what it does. It walks the HAC and surfaces every role whose handoffs have changed — including the ones the team tends to miss because the change looks small on paper but lands hard on Monday morning. It drafts the runbook against the specific workflow, not a generic template. It names how the result gets measured: what Signal quantified, what Build's instrumentation actually captures in production, and what the gap between those two numbers means for the sprint's claim. It confirms that the rollback plan Build prepared answers the right questions — not just "who can invoke it" but "what exactly does the work do during the pause."
 
-The Agent is not the deploy. The team still owns the deploy. The Agent is the structure that makes sure the deploy is operational, not just technical — the artifact that says, on one page, here is what changes for whom, here is how we will know it worked, and here is what we do if it does not.
+The Agent does not deploy. I do. The Agent's job is to produce the structure that makes my deploy operational rather than just technical — a single artifact that says: here is what changes for whom, here is how we will know it worked, and here is what we do if it does not.
 
 ### Sprint · Process Automation.
 
@@ -97,8 +97,6 @@ The result: those eight hours come back to the operator every week. The workflow
 A well-run Deliver phase changes the work the people in the function do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that is now automated either get reinvested — in the strategic work Design identified as the higher-return use of their time — or they get pulled out of the org over time, as the headcount math gets re-computed against the new operating reality.
 
 That is the test of whether Deliver delivered. Not whether the agent is running. Not whether the dashboard exists. Whether the people whose work was supposed to change can describe, concretely, what they now do that they did not do before, and what they no longer do that they used to. If they can, the sprint produced. If they cannot, the sprint deployed a tool — and you are looking at the failure mode this stage exists to prevent.
-
-The reason Build's "deployed" feels like the finish line is because, technically, it is. The agent is running. The job is done. But the operating model has not changed yet — the routing, the queues, the reporting, the calendars, the handoffs. Build is the engineering completion. Deliver is the operating completion. Both are required for the sprint to have produced anything beyond a demo.
 
 ## End of the sprint as a *project*. Start of it as *infrastructure*.
 
