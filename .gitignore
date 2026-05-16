@@ -12,4 +12,5 @@ _book/
 .claude/scheduled_tasks.lock
 .claude/settings.local.json
 .claude/skills/*/.tmp/
+.claude/output/
 .wrangler/
