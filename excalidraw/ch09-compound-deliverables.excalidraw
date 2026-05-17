@@ -243,14 +243,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Documented sprint outcome",
+      "text": "Updated Signal Backlog",
       "fontSize": 20,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 20,
       "containerId": null,
-      "originalText": "Documented sprint outcome"
+      "originalText": "Updated Signal Backlog"
     },
     {
       "id": "r1c2",
@@ -268,14 +268,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Signal Backlog",
+      "text": "Signal Backlog (re-ranked)",
       "fontSize": 20,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 20,
       "containerId": null,
-      "originalText": "Signal Backlog"
+      "originalText": "Signal Backlog (re-ranked)"
     },
     {
       "id": "r1c3",
@@ -293,14 +293,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Constraint owner",
+      "text": "Human Orchestrator",
       "fontSize": 20,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 20,
       "containerId": null,
-      "originalText": "Constraint owner"
+      "originalText": "Human Orchestrator"
     },
     {
       "id": "r2c1",

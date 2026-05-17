@@ -344,14 +344,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "→  Training set",
+      "text": "→  Per-role runbook",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "→  Training set"
+      "originalText": "→  Per-role runbook"
     },
     {
       "id": "deliver-output-4",

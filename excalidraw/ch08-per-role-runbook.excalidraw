@@ -18,21 +18,21 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Training Set Template — Per-Role Runbook Card",
+      "text": "Per-Role Runbook — One Card per Affected Role",
       "fontSize": 28,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 25,
       "containerId": null,
-      "originalText": "Training Set Template — Per-Role Runbook Card"
+      "originalText": "Per-Role Runbook — One Card per Affected Role"
     },
     {
       "id": "subtitle",
       "type": "text",
       "x": 60,
       "y": 72,
-      "width": 600,
+      "width": 700,
       "height": 22,
       "angle": 0,
       "strokeColor": "#555555",
@@ -42,14 +42,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "One card per affected role. Repeat pattern for each.",
+      "text": "For every role affected by the sprint, document three things. Repeat pattern for each.",
       "fontSize": 16,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 14,
       "containerId": null,
-      "originalText": "One card per affected role. Repeat pattern for each."
+      "originalText": "For every role affected by the sprint, document three things. Repeat pattern for each."
     },
     {
       "id": "card1-border",
@@ -98,14 +98,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Role: Account Executive",
+      "text": "Role: Design Engineer",
       "fontSize": 20,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 18,
       "containerId": null,
-      "originalText": "Role: Account Executive"
+      "originalText": "Role: Design Engineer"
     },
     {
       "id": "card1-row1-bg",
@@ -162,14 +162,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "What they send to the system\n(e.g., deal ID, product tier, volume)",
+      "text": "What they receive from the agent\n(e.g., rapid estimate with material specs)",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "What they send to the system\n(e.g., deal ID, product tier, volume)"
+      "originalText": "What they receive from the agent\n(e.g., rapid estimate with material specs)"
     },
     {
       "id": "card1-row2-bg",
@@ -226,14 +226,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "What comes back\n(e.g., draft quote PDF, line-item breakdown)",
+      "text": "What they produce\n(e.g., approved quote or flagged revision)",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "What comes back\n(e.g., draft quote PDF, line-item breakdown)"
+      "originalText": "What they produce\n(e.g., approved quote or flagged revision)"
     },
     {
       "id": "card1-row3-bg",
@@ -290,14 +290,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "When and how to override\n(e.g., flag supervisor if margin < 10%)",
+      "text": "When and how to escalate\n(e.g., confidence < 85%, route to senior engineer)",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "When and how to override\n(e.g., flag supervisor if margin < 10%)"
+      "originalText": "When and how to escalate\n(e.g., confidence < 85%, route to senior engineer)"
     },
     {
       "id": "card2-border",
@@ -346,14 +346,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Role: Sales Operations",
+      "text": "Role: Ops Manager",
       "fontSize": 20,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 18,
       "containerId": null,
-      "originalText": "Role: Sales Operations"
+      "originalText": "Role: Ops Manager"
     },
     {
       "id": "card2-row1-bg",
@@ -410,14 +410,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "What they send to the system\n(e.g., approved quote, customer record)",
+      "text": "What they receive from the agent\n(e.g., dashboard of all quotes with status)",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "What they send to the system\n(e.g., approved quote, customer record)"
+      "originalText": "What they receive from the agent\n(e.g., dashboard of all quotes with status)"
     },
     {
       "id": "card2-row2-bg",
@@ -474,14 +474,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "What comes back\n(e.g., CRM entry, order form draft)",
+      "text": "What they produce\n(e.g., bi-weekly review summary)",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "What comes back\n(e.g., CRM entry, order form draft)"
+      "originalText": "What they produce\n(e.g., bi-weekly review summary)"
     },
     {
       "id": "card2-row3-bg",
@@ -538,14 +538,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "When and how to override\n(e.g., manual entry if CRM sync fails)",
+      "text": "When and how to escalate\n(e.g., approval rate < 90% over 5 days)",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "When and how to override\n(e.g., manual entry if CRM sync fails)"
+      "originalText": "When and how to escalate\n(e.g., approval rate < 90% over 5 days)"
     },
     {
       "id": "ellipsis",
@@ -562,14 +562,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "···",
+      "text": "...",
       "fontSize": 28,
       "fontFamily": 2,
       "textAlign": "center",
       "verticalAlign": "middle",
       "baseline": 24,
       "containerId": null,
-      "originalText": "···"
+      "originalText": "..."
     }
   ],
   "appState": {
