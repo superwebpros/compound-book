@@ -1,5 +1,10 @@
 # *Signal*.
 
+:::{.callout-important}
+## In Brief
+Signal is the discipline of refusing to move forward until one constraint has been identified precisely, confirmed against actual numbers, and quantified in dollars or hours. By the time you finish this stage, you have a one-page constraint statement that names the problem, where it lives, how long it has existed, and what it has cost. Everything in the rest of the Sequence is designed to answer the question Signal asks.
+:::
+
 I'm sitting in on their L10 — EOS's weekly leadership meeting. It's the ninth week in a row where everything on the scorecard is red — revenue, utilization, every metric that matters. Ninth week. And we're going around the table, each person reading their numbers, and the energy in the room is fine. Like this is normal. Like red for nine consecutive weeks is just the texture of Tuesday mornings now.
 
 I stop the reporting out. I say: let's go back around. Three questions. Why is your number off track? What do you need to get it back on track? What are you going to do about it by Friday?
@@ -9,11 +14,6 @@ The room changes. Not in a good way. People look at the table. They look at each
 I look at the client. I say: you own six metrics that move revenue forward. You have reported them red for nine consecutive weeks. And you cannot tell me why they're off track.
 
 That's the moment I understood something: the issues list was empty not because there were no issues. It was empty because nobody had learned how to look.
-
-:::{.callout-important}
-## In Brief
-Signal is the discipline of refusing to move forward until one constraint has been identified precisely, confirmed against actual numbers, and quantified in dollars or hours. By the time you finish this stage, you have a one-page constraint statement that names the problem, where it lives, how long it has existed, and what it has cost. Everything in the rest of the Sequence is designed to answer the question Signal asks.
-:::
 
 That room wasn't full of bad managers. It was full of people who had never been taught to distinguish between a symptom and a constraint. They could read a number. They could not trace it to a cause. Signal is the discipline that makes that tracing possible. The question "why is it off track?" sounds simple. It is not. It is the hardest question in operations — and most teams have never been asked to answer it out loud, in a room, with a number on the wall.
 
@@ -96,6 +96,8 @@ Once you've narrowed the location, trace the symptom to root cause:
 ## Pro Tip
 If your fifth "why" points to a person — "because Sarah is the only one who knows" — reframe. The constraint is not Sarah. It's the fact that critical knowledge lives in one person's head with no system to distribute it.
 :::
+
+With the Is/Is Not test and Five Whys in hand, you have what you need to separate your real constraints from the symptoms surrounding them.
 
 :::{.callout-note}
 ## Action Step

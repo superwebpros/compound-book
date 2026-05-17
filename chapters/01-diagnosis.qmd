@@ -1,5 +1,11 @@
 # The *diagnosis*.
 
+::: callout-important
+## In Brief
+
+This chapter is a diagnostic. You'll name what's actually broken in your company's AI approach — and it's not the tools, the training, or the team. It's the operating model. By the end you'll have a scored AI Readiness Scorecard across five dimensions, a clear picture of where to start, and the honest answer to a question most leadership teams avoid: are we actually ready to operate differently?
+:::
+
 I asked them one question. The answer told me everything.
 
 We were on a discovery call with a long-time client — a mid-size manufacturing company, about fifty people, eight-figure revenue. The CEO and two of his direct reports were on the screen. I asked how they were using AI. The CEO said ChatGPT. One director said Claude. The other said Poe — an aggregator that lets you sample models without committing to one.
@@ -11,12 +17,6 @@ I asked what they were hoping AI would do for the business. The answer was hones
 That's not a technology problem. That's a design problem. And it's the most common version of the AI problem I see: three people, three tools, zero coordination, zero structural change. The effort was real — but no one designed the work before the tool arrived.
 
 That company is not unusual. It might be yours.
-
-::: callout-important
-## In Brief
-
-This chapter is a diagnostic. You'll name what's actually broken in your company's AI approach — and it's not the tools, the training, or the team. It's the operating model. By the end you'll have a scored AI Readiness Scorecard across five dimensions, a clear picture of where to start, and the honest answer to a question most leadership teams avoid: are we actually ready to operate differently?
-:::
 
 > You know AI matters. You just don't know what it can actually do inside your company — or where to start.
 
@@ -125,6 +125,8 @@ A note before you start: you may not be able to answer all five of these cleanly
 
 Poll your leadership team individually — not in a group. Ask each person: "What is the ONE operational problem AI should solve for us?" Write down their answers verbatim. If you get five different answers from five people, you have your diagnosis.
 :::
+
+The poll results tell you more than any scorecard row. Agreement means you have a starting point. Disagreement means the constraint isn't the workflow — it's the leadership team's alignment on what matters most.
 
 ::: callout-tip
 ## Pro Tip

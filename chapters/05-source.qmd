@@ -1,5 +1,10 @@
 # *Source*.
 
+:::{.callout-important}
+## In Brief
+Source maps the information environment around the one constraint Signal validated. You're answering a specific question: what does our organization know about *this problem*, and where does that knowledge live? The deliverable is a one-page Knowledge Map — assets, flow, gaps, and the people whose heads hold what's never been written down. Skip Source and Design becomes a guessing exercise built on assumptions nobody verified.
+:::
+
 I'm walking Julie through what a Knowledge Map actually looks like, using our own business as the example. I'm pointing at the screen. Google Drive — that's where client work lives. Pro HQ — that's our CRM, our ERP, it has an API, our ops lead owns it. Our internal knowledge base — that's where documented process lives. And then I get to our client's senior engineer. Sixty years in his industry. Sixty years of relationships, judgment calls, institutional memory that nobody has ever written down. I type his name into the fourth box on the map — same box, same format as any database — and I say: he doesn't have an API.
 
 ```jf-note:
@@ -7,11 +12,6 @@ Isn't true it feels like an aggregation of a lot of different transcripts. We de
 ```
 
 That's the whole problem in one sentence. The most valuable source of knowledge in that engagement has no connector, no endpoint to call, no schema to query. The only way to get at what he knows is to sit with him long enough, ask the right questions, and write it down before he decides he's done. The Knowledge Map treats him exactly the same way it treats a database, because operationally he is one. Pretending otherwise is why most Source work fails before it starts.
-
-:::{.callout-important}
-## In Brief
-Source maps the information environment around the one constraint Signal validated. You're answering a specific question: what does our organization know about *this problem*, and where does that knowledge live? The deliverable is a one-page Knowledge Map — assets, flow, gaps, and the people whose heads hold what's never been written down. Skip Source and Design becomes a guessing exercise built on assumptions nobody verified.
-:::
 
 Signal named the constraint. Source maps what you have before anyone designs against it — the information environment around the validated constraint, so Design is grounded in what is real instead of what is assumed. The diagnosis is not finished when the constraint is named. It's finished when the team can see — on a single page — what they have, what they don't, and what's sitting inside one person's head waiting to leave the company.
 
@@ -89,6 +89,8 @@ For each source on your map, mark which tier it falls into. This classification 
 ## Pro Tip
 An AI workflow that treats everything as equally current is an AI workflow that will confidently cite your deprecated pricing from 2019. The tiers exist to prevent this.
 :::
+
+The classification pass takes five minutes per source and saves Design hours of rework. Do it now, while the map is fresh.
 
 :::{.callout-note}
 ## Action Step

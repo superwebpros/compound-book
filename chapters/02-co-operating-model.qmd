@@ -1,5 +1,10 @@
 # The *Co-Operating* Model.
 
+:::{.callout-important}
+## In Brief
+This chapter defines the Co-Operating Model — the structure that makes humans and AI work as one system instead of two parallel tracks. You'll learn the specific ownership split between human intelligence and agent intelligence, see what parallel workstreams look like in practice, and leave with an equation you can put on your wall: *Co-Intelligence + Rhythm = Compound.* By the end, you'll have mapped at least one role in your company against the model.
+:::
+
 I'm sitting across from a CEO — someone I've known for two years — looking at her P&L and her headcount report side by side. Good company. Profitable. Growing. She bought AI software fourteen months ago — a meaningful line on the books. She ran a rollout. Her team is using the tools. And I'm scrolling across the two reports and I see the thing I keep seeing: the headcount line and the revenue line are moving together, exactly the way they were before the software. Same slope. Same ratio. Quarter after quarter. The AI subscription is right there, third line down — and it has changed nothing structural.
 
 She's done everything right. She identified the problem, bought a credible solution, and deployed it. And the headcount curve didn't bend.
@@ -7,11 +12,6 @@ She's done everything right. She identified the problem, bought a credible solut
 I've seen this enough times to know what it is. She dropped a highly capable synthetic worker — an AI system that can process, draft, research, and execute — into an organization designed exclusively for humans. Think about that as a hiring scenario: if you brought on a new employee but gave them no seat on the org chart, no defined handoffs, and no accountability for any outcome, that employee's work would die in the gap. Every piece of output they produced would dissolve somewhere between their desk and the person who needed it. The AI is failing for the exact same reason — the business was never designed for a non-human worker.
 
 That is an operating design failure. And the Co-Operating Model is the answer to it.
-
-:::{.callout-important}
-## In Brief
-This chapter defines the Co-Operating Model — the structure that makes humans and AI work as one system instead of two parallel tracks. You'll learn the specific ownership split between human intelligence and agent intelligence, see what parallel workstreams look like in practice, and leave with an equation you can put on your wall: *Co-Intelligence + Rhythm = Compound.* By the end, you'll have mapped at least one role in your company against the model.
-:::
 
 The diagnosis was the easy part. You have an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. A structure you can draw on a whiteboard and start running against on Monday. That structure has a name in this book. We call it the Co-Operating Model. It is what a Co-Intelligent Company is built on, and it is what makes *Co-Intelligent Co-operation* — humans and AI working the same problems together — something other than an accident.
 
@@ -133,6 +133,8 @@ When you get the split right, the company compounds. The human's hours flow into
 If you're not sure which column a task belongs in, ask: would I trust a well-briefed new hire to do it competently within 30 days? If yes, it can probably be an agent task. The things that take years to learn — reading a room, knowing when a client is about to churn, choosing which battle to fight — those stay with the human.
 :::
 
+The ownership table is a design instrument, not a philosophical exercise. The next step is to apply it to a real role in your company — one task at a time.
+
 :::{.callout-note}
 ## Action Step: Map One Role Against the Two Columns
 Take the role you picked earlier. List 10–15 tasks that person actually does in a typical week — not what the job description says, what they do. Pull their calendar. Check their sent folder. Then sort every task into Column A (Human Intelligence: judgment that changes based on context a machine can't observe) or Column B (Agent Intelligence: processing that follows rules a machine could learn). Some tasks will split — "managing scope change requests" includes reading client politics (Column A) and updating the change log (Column B). Split those and sort each part.
@@ -233,6 +235,8 @@ The Hybrid Accountability Chart becomes the operating instrument for the redesig
 
 If you have multiple roles touching the same constraint, repeat this process for each one. Compile the results into a single table: Role, Column B %, Loaded Cost, Annual Misallocation Cost. That table is the raw material for the sprint design work in the chapters ahead.
 :::
+
+When the numbers land, expect a reaction. The Column B percentage is usually larger than anyone in the room predicted.
 
 :::{.callout-tip}
 ## Pro Tip

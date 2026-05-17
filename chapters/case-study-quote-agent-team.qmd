@@ -1,0 +1,225 @@
+# Case Study: The Quoting Agent Team
+
+This is the real story of how Compound built its first agent team — not for a client, but for ourselves. The constraint was me. I was the bottleneck to sales, and the quoting process couldn't move without my head or Marina's. What follows documents how that constraint was identified, what knowledge we mapped, what we designed, and what got built. Every quote from a transcript is real. Every gap is flagged.
+
+This case study is an internal reference document. It will be translated into the fictional Meridian case study for the book after Jesse reviews it for accuracy.
+
+```jf-note
+Wasn't our first one, but it was a significant one
+```
+
+## Signal: Naming the Constraint
+
+The constraint was simple: Compound's quoting workflow could not operate without Jesse ~~or Marina~~ present. Every Upwork opportunity required one of us to evaluate it, match it to past work, and price it. When we were busy, quoting stopped. When quoting stopped, revenue stopped.
+
+```jf-note:
+Not sure why the up work reference came from we don't pitch on up work and the reason that this was a challenge is because we quote pretty complicated technical things and that's been my role is to architect them.
+```
+
+I first said it out loud in the Upwork scoping call with Lennon on April 2, 2025: "Sometimes Marina gets so busy she won't have time to do it right away." That's the constraint in its most honest form — the entire sales pipeline stalled on two people's availability.
+
+The numbers made it worse. Lennon was handling the front end of Upwork leads, but he didn't have what Marina and I carried in our heads. I told him directly: "You've got your template that you're following, but you don't have the same knowledge that Marina does or that I do." ^[Transcript 67ed4cde2f5159318, 2025-04-02, "Upwork Project Scoping with Lennon"]
+
+```jf-note:
+Oh, I see where you got this from we can scrap all the up work stuff because that was just a pilot. We were seeing for our web business and not relevant to why we built the quoting agen
+```
+
+By June 2025, the L10 made it an action item: "Jesse: Work on creating an automation to help reduce time spent on Upwork opportunity quoting." Lennon confirmed the workflow at that point — Marina was quoting him on each opportunity with a formula like "do a smart site plus a development block." ^[Transcript 683e01298ed10352b, 2025-06-02, "Mkt & Content L10"]
+
+The pipeline data told the rest of the story: 25 cold leads, 52 assigned, 21 passed — a 21% pass rate. And the stakes were real. I told Lennon about one client — Lucky Little Learners — that started as a $750 assessment and spent almost $100K over three years. Every lead that sat in the queue because Marina or I were busy was a potential six-figure relationship rotting on the vine.
+
+By October 2025, the broader pattern was visible: "Marketing production is the biggest bottleneck — lack of a repeatable, quality-controlled process is causing delays and wasted spend." ^[Transcript 68f93a831610cf722, 2025-10-22, "Management L10"]
+
+### Artifact: Constraint Statement
+
+| Field | Detail |
+|---|---|
+| **Constraint** | Compound's quoting workflow requires Jesse or Marina to personally evaluate, match, and price every Upwork opportunity, creating a single-threaded bottleneck that stops sales when either is unavailable. |
+| **Cost** | [JESSE TO VERIFY: No explicit dollar cost was stated in the transcripts. Qualitative cost: 21% pass rate on Upwork leads, pipeline stalls during busy periods, unknown number of six-figure relationships lost to slow response times. Can we estimate cost from average deal size x missed/delayed opportunities?] |
+| **Owner** | Jesse Flores (constraint holder), Marina (co-holder of pricing knowledge) |
+| **Evidence** | Upwork pipeline data (100 leads tracked in ProHQ: 25 cold, 52 assigned, 21 passed); Lucky Little Learners as proof of LTV ($750 to ~$100K); direct testimony from Lennon, Marina, and Jesse across three transcripts (April, May, June 2025); L10 action item formalizing the problem. |
+
+## Source: Mapping the Knowledge
+
+The May 22 Upwork Overview call is where Source actually happened — though we didn't call it that at the time. Marina, Lennon, and I sat down and walked through what lived where. The answer was: mostly in our heads.
+
+I was showing Lennon an Upwork opportunity and caught myself doing something I'd done hundreds of times without thinking about it:
+
+> "In my mind I read this and immediately I think Lucky Little Learners. I think Intentional IEP, I think Forte. And you probably heard of some of those customers, maybe not all of them. Marina probably has a very similar thing that pops to her mind when she reads these as well." ^[Transcript 682f6f9476ac45333, 2025-05-22, "Upwork Overview"]
+
+That's pattern matching. That's the thing the quoting process actually ran on — the ability to read a lead description and instantly recall similar clients, what we'd built for them, what it cost, and how it went. The problem was that this knowledge existed nowhere outside Marina's and my heads.
+
+I asked Lennon: "How does that information get transmitted? Does Marina mention that in the note to you?"
+
+Lennon: "No, no, right now, no." ^[Transcript 682f6f9476ac45333]
+
+That's the knowledge transmission failure. The most critical input to the quoting decision — which past clients this opportunity resembles — was not written down, not in the CRM, not in any system Lennon could access. It traveled by hallway conversation or not at all.
+
+The pricing knowledge had a similar shape. I described it on the call:
+
+> "The way that we price is we price based on blocks of expected work. And if we have in Base Row a list of the kinds of things that we need... typically need to do, and the estimated blocks that we typically budget, then the AI could actually put together a pretty sophisticated block estimate." ^[Transcript 682f6f9476ac45333]
+
+Marina confirmed the scaffolding existed: "I had done it a while ago." Base Row had component-level work types with block estimates — but it was incomplete, unmaintained, and not connected to the quoting workflow.
+
+Then there was the case study problem. The pattern-matching depended on knowing how past projects went, and we hadn't tracked that:
+
+> "We've got headless clients, we got Shopify clients, we've got membership clients, we've got all sorts of case studies where we've not done a good job of like tracking our outcomes for them." ^[Transcript 682f6f9476ac45333]
+
+Marina flagged the same gap from the delivery side: "I'm starting to think that maybe we should start doing reports for deliveries the same way we're doing project charters." ^[Transcript 682f6f9476ac45333]
+
+The knowledge environment was clear: critical decision-making knowledge was organic (in heads), the digital scaffolding existed but was incomplete, and the feedback loop from delivered projects back into the quoting process was broken.
+
+### Artifact: Knowledge Map
+
+| Source | Type | Owner | Status | Pipeline | Notes |
+|---|---|---|---|---|---|
+| Jesse's pattern-matching (client resemblance, approach selection) | Organic | Jesse | Active but untransmitted | Broken — no capture mechanism | Core decision input for qualification and strategy |
+| Marina's pricing intuition (block estimates, scope judgment) | Organic | Marina | Active but untransmitted | Broken — moves by conversation only | "Marina is quoting me on each opportunity" |
+| Base Row component library (work types + block estimates) | Digital | Marina | Incomplete — "I had done it a while ago" | Manual — not connected to quoting flow | Foundation for automated block estimation |
+| ProHQ CRM pipeline (lead statuses, pass/qualify tracking) | Digital | Lennon / Marina | Active, 100 leads tracked | Connected — has API | Cold/assigned/pass/converted statuses; pass reasons being added |
+| Upwork lead descriptions | Digital (external) | Lennon | Active, 24-hour window | Manual — email notifications, copy/paste | Lucas researching API integration |
+| Past project case studies (outcomes, scope, client type) | Digital (scattered) | Nobody | Incomplete — "not done a good job of tracking outcomes" | Broken — no structured repository | Needed for strategy agent's pattern matching |
+| Delivery reports / project charters | Digital | Marina (starting) | Nascent | Manual | Marina proposing standardized delivery reports |
+| Marco (internal AI) | Digital | Team | Active | Connected — Lennon already using for credibility statements | Used for proposal drafting, client matching |
+| Qualification criteria (pass reasons: budget mismatch, difficult human, design-only work) | Organic → Digital | Jesse / Marina | Being codified | Moving to ProHQ structured fields | Jesse deciding to add structured pass reasons to train qualification agent |
+
+### Artifact: Source Classification
+
+| Source | Structured / Unstructured | Durable / Ephemeral | AI Tier |
+|---|---|---|---|
+| Jesse's pattern-matching | Unstructured | Ephemeral (in-head) | Tier 3 — requires knowledge capture before AI can use |
+| Marina's pricing intuition | Unstructured | Ephemeral (in-head) | Tier 3 — partially captured in Base Row |
+| Base Row component library | Structured | Durable | Tier 1 — directly consumable by AI once complete |
+| ProHQ CRM pipeline | Structured | Durable | Tier 1 — API-accessible |
+| Upwork lead descriptions | Semi-structured | Ephemeral (24-hour window) | Tier 1 — API in progress (Lucas) |
+| Past project case studies | Unstructured | Durable (scattered) | Tier 2 — exists but needs consolidation |
+| Delivery reports | Semi-structured | Durable (nascent) | Tier 2 — format being standardized |
+| Marco | Structured | Durable | Tier 1 — already integrated |
+| Qualification criteria | Unstructured → Structured | Transitioning | Tier 2 — being codified into ProHQ fields |
+
+## Design: Allocating the Work
+
+On the May 22 call, I laid out the agent design explicitly. Four roles — three agents, one human.
+
+The logic was straightforward. The quoting workflow had distinct steps, and each step required a different kind of knowledge. Some of that knowledge was already digital and structured enough for an agent. Some required judgment that only a human could provide — but less human judgment than before, because the agents would handle the parts that were pattern-matchable.
+
+Here's how I described the roles:
+
+**1. Qualification Agent** — evaluates whether an opportunity meets Compound's criteria. The pass criteria I codified on the call: (1) price/budget mismatch, (2) "difficult human" — signals in the lead description that the client would be a management problem, (3) looking for from-scratch design work, which isn't our strength. I decided to add structured "pass reasons" in the CRM specifically so this agent could learn from our decisions over time.
+
+**2. Strategy Agent** — matches qualified opportunities with past case studies and determines the approach. This is the agent that replaces the pattern-matching Marina and I do in our heads. It needs the case study repository and client history to function.
+
+**3. Proposal Drafting Agent with Quote** — generates the actual response, including block estimates pulled from Base Row. This is where the pricing knowledge gets operationalized.
+
+**4. Human (Lennon)** — "Getting the lead in the first place and posting it back to Upwork." The Upwork API can pull opportunities but cannot submit proposals, so the last mile stays human. Lennon also provides the first-pass review before submission.
+
+The design shifted Marina's role from "manually reviews every opportunity and provides pricing" to "validates edge cases the agents flag as uncertain." Her knowledge doesn't disappear — it gets encoded into the systems the agents use. But she stops being in the critical path for every quote.
+
+### Artifact: Work Deconstruction
+
+| Task | Before (Who) | After (Who) | Why |
+|---|---|---|---|
+| Monitor Upwork for new opportunities | Lennon (manual, email alerts) | Lennon + Upwork API integration | API pulls opportunities automatically; Lennon handles what API can't |
+| Initial qualification (pass/pursue) | Marina or Jesse (judgment call) | Qualification Agent | Pass criteria codified; structured pass reasons in CRM train the agent |
+| Pattern-match to similar past clients | Jesse or Marina (in-head recall) | Strategy Agent | Requires case study repository; replicates pattern-matching at scale |
+| Determine approach and scope | Jesse or Marina | Strategy Agent + Proposal Agent | Strategy agent selects approach; proposal agent scopes in blocks |
+| Price the opportunity (block estimate) | Marina (intuition + Base Row) | Proposal Drafting Agent | Base Row component library provides structured pricing data |
+| Draft the proposal | Lennon (using Marco for credibility statements) | Proposal Drafting Agent | Combines qualification, strategy, and pricing into complete proposal |
+| Review and approve | Jesse or Marina | Marina (edge cases only) | Agents handle routine; Marina validates flagged exceptions |
+| Submit to Upwork | Lennon (manual) | Lennon (manual) | API limitation — cannot submit proposals programmatically |
+
+### Artifact: HAC Entry
+
+[JESSE TO VERIFY: The HAC (Hybrid Accountability Chart) format may have evolved since these transcripts. Filling in based on what was described:]
+
+| Role | Type | Accountable For | Reports To | Tools / Systems |
+|---|---|---|---|---|
+| Qualification Agent | AI Agent | Pass/qualify decision on every Upwork lead within SLA | Jesse (sprint owner) | ProHQ CRM, Upwork API, qualification criteria ruleset |
+| Strategy Agent | AI Agent | Client-match recommendations with confidence scores | Jesse | Case study repository, ProHQ client history, Base Row |
+| Proposal Drafting Agent | AI Agent | Complete proposal draft with block estimate | Jesse | Base Row component library, Marco, Strategy Agent output |
+| Lennon | Human | Lead intake, final proposal submission, CRM hygiene | Jesse | Upwork platform, ProHQ, Marco |
+| Marina | Human | Edge-case validation, Base Row maintenance, delivery reports | Jesse | ProHQ, Base Row, delivery report templates |
+
+### Artifact: Design Gate Checklist
+
+| Gate Item | Status | Notes |
+|---|---|---|
+| Every task has a single accountable owner (human or agent) | PASS | Four roles, clear ownership per task |
+| No task is assigned to AI that requires undocumented judgment | PARTIAL | Strategy agent depends on case study repository that doesn't fully exist yet |
+| Human review points are explicit | PASS | Lennon reviews before submission; Marina validates edge cases |
+| Rollback plan exists if agent output is wrong | [JESSE TO VERIFY: Was a rollback plan discussed? Lennon's manual review is implicit rollback, but was this formalized?] | |
+| Knowledge sources identified in Source are wired to the right agent | PARTIAL | Base Row exists but incomplete; case study repository is a gap; ProHQ pipeline is live |
+| Pass criteria are codified, not vibes-based | PASS | Three explicit pass criteria + structured pass reasons in CRM |
+
+## Build: What Got Built
+
+The build was not a single construction project. It was incremental — pieces were already in motion before the design was formalized.
+
+**ProHQ CRM pipeline.** Already live with 100 leads tracked across four statuses: cold, assigned, pass, converted. The build work was adding structured pass reasons to the pipeline so the qualification agent could learn from historical decisions.
+
+**Base Row component library.** Marina had built the initial version — work types mapped to block estimates. The build work was completing it and connecting it to the proposal agent's workflow. I noted the calibration challenge on the call: "When we feed it blocks, it almost always overestimates... But if we're using Base Row... then the AI will know this kind of work is about this many blocks."
+
+**Upwork API integration.** Lucas was researching this. The API can pull new opportunities (24-hour window for retrieval) but cannot submit proposals back. This meant the intake could be automated but the last mile stayed manual.
+
+**Marco (internal AI).** Already in use. Lennon was using Marco for credibility statements and client matching in proposals. The build extended Marco's capabilities to handle the full proposal draft with block estimation.
+
+**Ideal flow as designed:**
+Email notification from Upwork → Qualification Agent evaluates against criteria → CRM updated with status and pass reason → Strategy Agent matches to case studies and recommends approach → Proposal Agent drafts response with block estimate → Lennon reviews and submits via Upwork platform.
+
+### Artifact: Build Spec
+
+| Component | System | Status at Design | Build Work Required |
+|---|---|---|---|
+| Lead intake | Upwork API | Lucas researching | API integration for automated opportunity pull |
+| Lead tracking | ProHQ CRM | Live, 100 leads | Add structured pass-reason fields |
+| Qualification rules | ProHQ + Agent | Pass criteria verbal | Codify into agent-readable ruleset |
+| Client pattern-matching | Case study repository | Scattered / incomplete | Consolidate outcomes across headless, Shopify, membership clients |
+| Block estimation | Base Row | Incomplete, unmaintained | Complete component library; connect to proposal agent |
+| Proposal drafting | Marco | Used for credibility statements | Extend to full proposal with quote |
+| Submission | Upwork platform | Manual (Lennon) | None — API cannot submit; stays human |
+
+## Deliver: Shipping It
+
+The delivery was incremental. There was no single launch day.
+
+By June 2, 2025, the pieces were in motion: Marina was quoting each opportunity with a formula, Lennon was already using Marco for parts of the proposal, and I committed to building the automation "this week." The pass/qualify workflow was live in ProHQ with 100 leads tracked.
+
+[JESSE TO VERIFY: What was the actual rollout sequence after June 2025? Did the qualification agent go live first, followed by strategy and proposal? Was there a specific week or month where the full pipeline was operational? The transcripts show the design and early build but don't capture a "launch" moment or results review.]
+
+[JESSE TO VERIFY: What was the transition experience for Lennon? Did agent output quality match expectations from the start, or was there a tuning period? How did Marina's role actually shift in practice?]
+
+### Artifact: Delivery Metrics
+
+| Metric | Before (Signal Baseline) | After (Delivery) | Delta |
+|---|---|---|---|
+| Time to quote (lead → proposal submitted) | [JESSE TO VERIFY] | [JESSE TO VERIFY] | |
+| Quoting throughput (proposals/week) | [JESSE TO VERIFY] | [JESSE TO VERIFY] | |
+| Pass rate accuracy | 21% pass rate (but unclear if passes were correct) | [JESSE TO VERIFY] | |
+| Jesse/Marina time on quoting (hours/week) | [JESSE TO VERIFY: Was the baseline ever measured?] | [JESSE TO VERIFY] | |
+| Revenue attributed to Upwork pipeline | Lucky Little Learners = $750 → ~$100K as proof of LTV | [JESSE TO VERIFY] | |
+
+[JESSE TO VERIFY: The transcripts provide strong qualitative evidence of the constraint but no before/after quantitative metrics. Were any tracked? If not, this is itself a finding for the Compound section — the sprint didn't measure its own output against Signal's cost estimate.]
+
+## Compound: What the Next Sprint Inherits
+
+The quoting agent team was designed to solve one constraint — Jesse and Marina as bottlenecks to Upwork quoting. But I saw something larger happening during the design:
+
+> "This will also force us to be more disciplined about our... about how we store projects and cases and also giving us and help us with quotes that are not related to Upwork." ^[Transcript 682f6f9476ac45333]
+
+That's the compound effect. Building the agent team forced us to codify knowledge that had value far beyond Upwork. The case study repository, the Base Row component library, the structured pass criteria — all of these are reusable assets. The sprint produced the quoting agent team as its deliverable, but it produced an organizational knowledge infrastructure as its byproduct.
+
+The block estimation calibration was its own learning: "When we feed it blocks, it almost always overestimates... But if we're using Base Row... then the AI will know this kind of work is about this many blocks." Each quote the agent produces creates training data that makes the next quote more accurate. The system learns.
+
+And the capacity shift was fundamental. I described it as: "It's basically like having a passive [sales rep]. It's just constantly aware." The agent team doesn't sleep, doesn't get busy with other work, doesn't forget to check Upwork for 48 hours because a client emergency came in. It converts a human-bottlenecked, interrupt-driven process into a continuous one.
+
+The scope expansion from Upwork to everywhere was visible from the design phase. If the system can evaluate and quote Upwork opportunities, it can evaluate and quote direct inquiries, referrals, and inbound leads from any channel. The first sprint solves Upwork. The second sprint takes the same architecture and points it at the rest of the pipeline.
+
+### Artifact: Sprint Retrospective
+
+| Category | Detail |
+|---|---|
+| **What worked** | Rich transcript evidence from the May 22 Upwork Overview call gave us a clear design session on record. ProHQ pipeline was already live with 100 leads — the infrastructure preceded the sprint. Lennon was already using Marco, so agent adoption wasn't a cold start. Pass criteria were concrete and codifiable. |
+| **What didn't work** | [JESSE TO VERIFY: What friction did the team encounter? Was Base Row completion a blocker? Did the case study repository gap slow the strategy agent?] |
+| **Knowledge gaps exposed** | Case study repository was the biggest gap — pattern-matching depends on it and it didn't exist in structured form. Delivery reports weren't standardized, breaking the feedback loop from delivered projects back into quoting. |
+| **What changes for next sprint** | Extend agent team beyond Upwork to all inbound channels. Complete case study repository as a dedicated Source effort. Standardize delivery reports (Marina's recommendation). Measure — the first sprint didn't produce quantitative before/after metrics, which means Compound can't prove the ROI. Next sprint must measure from day one. |
+| **Assets created for future sprints** | Qualification criteria ruleset; Base Row component library (partial); structured pass-reason fields in ProHQ; agent architecture pattern (qualification → strategy → proposal → human review) reusable for other workflows. |

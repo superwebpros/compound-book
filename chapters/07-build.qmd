@@ -1,5 +1,10 @@
 # *Build*.
 
+:::{.callout-important}
+## In Brief
+Build is the stage where the locked design becomes a working, deployed system. It is the narrowest stage of the Sequence — and the fastest, when the diagnostic work was done properly. Build produces one thing: a deployed solution to the validated constraint, specified by an eight-section Build Spec, stress-tested against a seven-question Guardrails Checklist, and confirmed done only when it handles real work under real supervision. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
+:::
+
 When our account manager opens the quoting agent, it knows everything. Past projects, what we charged, how we scoped them, what capacity we had left, what the client asked for in the last engagement. She types a brief and it drafts a quote — real numbers, real scope, real pricing — in minutes.
 
 Nobody else on the team has access to that agent. The design said this information doesn't need to go further than the person who owns it — trust had nothing to do with it. We built that access layer in before we built anything else, as part of the spec.
@@ -7,11 +12,6 @@ Nobody else on the team has access to that agent. The design said this informati
 There is a second agent — a content production workflow that a different team member runs. That one is open to anyone. Different data, different stakes, different guardrails. Same sprint. Two agents, two different access levels, both decisions made in Design before Build executed either one.
 
 The reason I'm telling you this is because the Guardrails Checklist isn't a compliance exercise. It's the moment in Build where you decide what the system is allowed to touch. If you do that work before the build executes, it costs almost nothing. If you discover it after something goes sideways — after the wrong person pulls the wrong data — it costs everything. The spec either includes the guardrail or it doesn't. And if it doesn't, Build isn't done yet.
-
-:::{.callout-important}
-## In Brief
-Build is the stage where the locked design becomes a working, deployed system. It is the narrowest stage of the Sequence — and the fastest, when the diagnostic work was done properly. Build produces one thing: a deployed solution to the validated constraint, specified by an eight-section Build Spec, stress-tested against a seven-question Guardrails Checklist, and confirmed done only when it handles real work under real supervision. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
-:::
 
 ## What *Build* produces.
 
@@ -120,7 +120,7 @@ Pricing is per token, and it varies by provider and model. As of this writing, t
 
 Why this matters for your build: a workflow that processes 500 documents a day at 2,000 tokens each is consuming a million tokens daily. At a few dollars per million tokens on a mid-tier model, that's manageable. At top-tier pricing, it's a line item. I learned this the hard way — our Anthropic API usage hit four figures in days when we first started building production workflows. We didn't have a problem with the model. We had a problem with not understanding the meter.
 
-The fix is straightforward: use the most capable model where judgment matters (the agent's core reasoning), and a cheaper, faster model where it doesn't (classification, summarization, routing). Your spec's agent scope section tells you which is which.
+The fix is simple: use the most capable model where judgment matters (the agent's core reasoning), and a cheaper, faster model where it doesn't (classification, summarization, routing). Your spec's agent scope section tells you which is which.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -200,6 +200,7 @@ A complete spec covers eight sections:
 
 {{< excalidraw ch07-build-spec-sections "Build Spec Writer: eight sections with section name and a one-line description of what belongs in each." >}}
 
+<!-- TODO: Update this example to use Meridian Manufacturing once the case study is finalized -->
 Here's what those sections look like filled in. This is from a manufacturing firm — 60 people, quoting bottleneck costing $180K a year in engineering time. Signal nailed the constraint, Source mapped the data, Design produced the workflow. Build started with this spec:
 
 **Section 1 — Workflow Summary:** When a new bid request arrives in the CRM, the quoting agent drafts a rapid cost estimate using the historical quote library, rate card, and customer segment data. The estimate lands in the project lead's review queue within 15 minutes. The project lead reviews, edits if needed, and routes: high-confidence estimates go to the principal for final sign-off; low-confidence estimates get flagged for full engineering review.
@@ -285,6 +286,7 @@ Answer all seven questions in writing. Attach the answers to the Build Spec as a
 
 ## Sprint: the three-week quoting workflow.
 
+<!-- TODO: Update this example to use Meridian Manufacturing once the case study is finalized -->
 A 60-person professional services firm came into a sprint with a Signal that was almost embarrassing in its clarity — quotes were taking five business days, the principal was the bottleneck on every one, and the constraint was costing them roughly $200K a year in lost or stale deals. Source mapped the inputs: the inbound brief, the historical quote library, the rate card, the scoping checklist. Design produced a workflow where an agent drafted the quote, the project lead reviewed and edited it, and the principal signed off only on the final number.
 
 The build path was low-code. No engineer needed. The team assembled the workflow themselves in three weeks, using tools they already had licenses for. Quotes started going out the same day they came in. The principal got their week back. The cost of the build was a rounding error against what the constraint had been costing.

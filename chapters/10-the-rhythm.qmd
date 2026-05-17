@@ -1,17 +1,17 @@
 # The *Rhythm*.
 
-This time last year, I had thirteen people. I'm looking at the current roster and there are eight.
-
-Five people are gone — not lost to attrition, not cut in a crisis, not managed out because the company was struggling. Gone because the work they were doing is now being done differently. And we are growing. Double-digit growth on billings and profitability. The fewer people are the reason.
-
 :::{.callout-important}
 ## In Brief
 One sprint is a project. A rhythm of sprints is a transformation. The Rhythm is the Sequence — Signal → Source → Design → Build → Deliver → Compound — run quarterly, on the next constraint, on top of whatever operating system you already use. This chapter gives you the quarterly session agenda, the living document that tracks where your hybrid org actually stands, and the scorecard that proves the compounding is real.
 :::
 
+This time last year, I had thirteen people. I'm looking at the current roster and there are eight.
+
+Five people are gone — not lost to attrition, not cut in a crisis, not managed out because the company was struggling. Gone because the work they were doing is now being done differently. And we are growing. Double-digit growth on billings and profitability. The fewer people are the reason.
+
 The shift did not happen because we adopted a new platform or made a strategic decision to run lean. It happened because we ran Signal before we wrote requisitions. That is the behavioral change. It sounds small. It is not.
 
-Here is the specific moment I can point to. We had a project coordinator who was underperforming. The reports weren't getting done. Client follow-ups were slipping. Capacities weren't being updated. My integrator was frustrated — had been bringing the same complaint to every meeting for weeks. We knew what the next step was supposed to be: let her go, write a job description, post for a replacement, spend two months hiring and onboarding the next version of the same role.
+Here is the specific moment I can point to. We had a project coordinator who was underperforming. The reports weren't getting done. Client follow-ups were slipping. Capacities weren't being updated. Our VP of Operations was frustrated — had been bringing the same complaint to every meeting for weeks. We knew what the next step was supposed to be: let her go, write a job description, post for a replacement, spend two months hiring and onboarding the next version of the same role.
 
 We stopped before we did that. Not because we had some principled objection to hiring. Because by that point we had run enough sprints that the first question had changed. Not *who do we hire?* but *what does Signal say about this?*
 
@@ -49,6 +49,8 @@ That is the entire session. The agenda is stable. The inputs are the Signal Back
 ## Pro Tip
 This session replaces no existing meetings. If you run EOS, it layers onto your quarterly planning — Signal Backlog maps to rocks, HAC maps to your accountability chart, sprint review maps to your quarterly review. Same cadence, new layer. If it feels like a second operating system, you're doing it wrong. The sprint *is* a rock. The quarterly session is a 30-minute addition to your quarterly planning.
 :::
+
+The session only works if it's on the calendar before the quarter starts — not penciled in as a maybe, but booked with the same discipline as any other quarterly commitment.
 
 :::{.callout-note}
 ## Action Step
@@ -121,7 +123,7 @@ After six to eight sprints on the Rhythm, the math moves. Not overnight — but 
 
 Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked against the Signal Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the sprint that addresses it ships a designed workflow instead of a job posting.
 
-Companies that default to designing before hiring build a different cost structure than companies that default to adding people. Companies that run Signal before requisitions get compounding returns on the infrastructure they build. Companies that add people to absorb demand grow costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
+Companies that default to designing before hiring build a different cost structure than companies that default to adding people. The ones running Signal before requisitions get compounding returns on the infrastructure they build. The ones adding people to absorb demand grow costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
 
 {{< excalidraw ch10-headcount-math "Headcount math before/after: headcount grows linearly with revenue (left) vs. headcount flattens while revenue grows after sprint cadence takes hold (right)." >}}
 
@@ -169,10 +171,9 @@ The year before, we had launched nothing new. We were at capacity. We had twice 
 
 We did not cut our way to growth. We ran the Sequence enough times that the design infrastructure compounding in the background was doing real work — work that used to require bodies, now running on agent teams with named human supervisors overseeing the outputs. Her role shifted from being the doer of marketing content to the orchestrator of agent teams producing it. That shift was not planned on a slide. It accumulated, one sprint at a time, until one day it was simply what the job was.
 
-That is what sprint six looks like from the inside: a team member managing capability that didn't exist a year ago, running at a pace that would have required three more hires twelve months earlier.
-
 ### Sprint six · a populated example.
 
+<!-- TODO: Update to Meridian Manufacturing -->
 Here is what this looks like on paper. Ridgeline Media Group, a 40-person marketing agency, ran three sprints over three quarters. This is their Hybrid Org Today document and Compounding Scorecard at the end of Q1 2027.
 
 ```
@@ -231,7 +232,7 @@ What that company needs is to install the Sequence as the AI layer on top of the
 
 The Co-Intelligent Company is not a vision. It is the company built — quarter by quarter, sprint by sprint — by running the Sequence on the Rhythm.
 
-There is nothing aspirational left. Every term is operational. Every artifact is a document the leadership team can produce on a Tuesday. Every behavior is something a CEO can run in their next quarterly session.
+There is nothing aspirational left. Every term is operational — a document the leadership team can produce on a Tuesday, a behavior a CEO can run in the next quarterly session.
 
 The framework is yours to run. The next chapter is about the one thing Compound does that you should not run alone.
 

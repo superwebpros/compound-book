@@ -1,0 +1,484 @@
+# Meridian Manufacturing: A Complete Compound Sprint
+
+Meridian Manufacturing is a custom metal fabrication shop in Grand Rapids, Michigan. \$7.2M in revenue. Twenty-seven employees — fourteen on the shop floor, thirteen in the office. They make custom parts and assemblies for industrial clients: brackets, housings, structural frames, one-offs and short runs. Every job is different. The work is won through competitive bidding — clients send RFQs, Meridian quotes them, and the fastest accurate quote usually wins the job.
+
+The company runs EOS. Mark Ellison is the CEO and visionary — he built the business from a two-person garage shop eighteen years ago and still holds the key customer relationships. Elena Ruiz is the VP of Operations and integrator — she runs the floor, manages scheduling, and is the only person in the company who can produce a complete quote. They have a sales lead (Ty Banfield), a senior design engineer (Dave Kowalski, thirty-one years in fabrication), and a shop floor supervisor (Carlos Medina). The rest of the team is project managers, junior engineers, welders, machinists, and admin.
+
+Meridian's problem is quoting speed. Quotes take three to five business days. Their competitors are turning them in twenty-four to forty-eight hours. Meridian is losing bids — not because their prices are wrong, but because the quote arrives after the client has already awarded the job to someone faster.
+
+## Act I: Diagnose
+
+### Signal
+
+It started in the Tuesday L10.
+
+Mark pulled up the scorecard. The win rate number had been yellow for six weeks running. He'd been watching it drift but hadn't named it yet — the kind of slow bleed that feels normal until you add up the total. He asked the room: what are we losing, and why?
+
+Ty spoke first. "I've got three RFQs sitting in Elena's queue right now. One's been there since Thursday. The client called me yesterday asking if we're still interested." He pulled up his CRM and scrolled. "In the last quarter I can count at least eight bids where the client told me they went with someone else because we were too slow. That's not eight small jobs. Two of them were over a hundred grand."
+
+Elena didn't push back. "He's right. I'm behind. I've been behind for months. I get four or five new RFQs a week and I can maybe process two or three of them on time. The rest wait until I have a gap in production management, which is — " she looked at the ceiling — "never."
+
+Mark asked the room to put a number on it. Ty went through his CRM. In the last four quarters, he identified eleven bids where the client explicitly cited turnaround time as the reason they went elsewhere. Average job value: \$38,000. That's \$418,000 in lost revenue — just the ones where the client told them why. The actual number was higher, because most clients don't explain. They just stop calling.
+
+Carlos, the shop supervisor, added something nobody expected. "I've got guys on the floor asking me about jobs that were supposed to start two weeks ago. The schedule has gaps because Elena's still quoting the next batch. The floor isn't running at capacity because the pipeline is backed up at her desk."
+
+Elena said: "It's not that I'm slow. It's that I'm the only one who can do it. Mark can't quote without me. Ty can't quote without me. Dave can estimate fabrication hours but he doesn't know the customer-specific pricing. I'm the only person who knows all the pieces."
+
+That was the moment the constraint locked. Not quoting speed in the abstract — Elena as the single-threaded bottleneck through which every piece of pricing knowledge, material lead-time judgment, and customer exception had to pass.
+
+Mark looked around the room. "Is this the thing?" Nobody hesitated. It was the thing.
+
+#### Artifact: AI Readiness Scorecard
+
+```
+DIMENSION                 SCORE     WHAT WE FOUND
+--------------------------------------------------------------------
+Constraint Clarity        Green     The L10 surfaced the constraint
+                                    with real numbers. Eleven lost
+                                    bids, $418K in documented lost
+                                    revenue. The room agreed in under
+                                    ten minutes.
+
+Information Readiness     Red       Elena IS the documentation. Pricing
+                                    exceptions live in her head and a
+                                    spreadsheet on her desktop that
+                                    hasn't been backed up in two years.
+                                    Material lead-time knowledge is
+                                    split between Elena and Carlos.
+                                    The ERP has job costing history
+                                    but nobody queries it for quoting.
+
+Workflow Visibility       Yellow    Elena could draw the quoting
+                                    workflow. Dave could draw the
+                                    engineering estimation piece. Ty
+                                    could draw the sales handoff. The
+                                    three drawings would conflict on
+                                    at least four steps. Nobody has
+                                    ever mapped the end-to-end flow.
+
+Decision Rights           Red       Nobody has discussed which parts
+                                    of quoting could be handled by AI.
+                                    Elena doesn't trust anything she
+                                    hasn't reviewed. Mark bought a
+                                    ChatGPT subscription six months
+                                    ago. He uses it for emails.
+
+Measurement Discipline    Yellow    Ty had the win/loss data. Elena
+                                    had gut estimates on time per
+                                    quote. Neither had been validated
+                                    or tracked as a metric. The $418K
+                                    number was calculated live in the
+                                    L10 — the first time anyone had
+                                    done the math.
+```
+
+One Green, two Yellows, two Reds. The Green on Constraint Clarity meant they could move straight to the work. The Reds on Information Readiness and Decision Rights were the deeper problems the Sprint would have to address.
+
+#### Artifact: Constraint Statement
+
+| Field | Detail |
+|---|---|
+| **Constraint** | The VP of Operations is the sole bottleneck for quoting — pricing exceptions, material lead times, labor estimates, and customer-specific terms all require her direct involvement, resulting in 3-5 day quote turnaround versus the 24-48 hour industry standard. |
+| **Where it lives** | Sales → Operations handoff. Specifically: Ty submits RFQs to Elena via email. Elena processes them in the order she gets to them, between production management tasks. Output goes back to Ty as a PDF. |
+| **Duration** | ~3 years. Started when the company grew past \$4M and inbound RFQ volume exceeded what Elena could process alongside her operational duties. The team normalized it — "Elena will get to it" became the default answer. |
+| **Quantified cost** | \$418K/year in documented lost revenue (11 lost bids × \$38K average). Estimated \$80K/year in Elena's time on quoting (~15 hours/week × \$103/hr loaded cost × 50 weeks). Floor underutilization from pipeline gaps: estimated \$60K-90K/year in lost capacity. Total estimated annual cost: \$558K-\$598K. |
+| **Validating evidence** | CRM win/loss records (Ty). Elena's self-reported time allocation. Carlos's production schedule gaps. Client feedback on three specific lost bids where turnaround was cited. |
+
+#### Artifact: Is/Is Not Test
+
+| | IS | IS NOT |
+|---|---|---|
+| **Where** does it occur? | Quoting workflow — the handoff between Ty (sales) and Elena (operations), and Elena's processing of RFQs against pricing, materials, and labor data | Product quality. Shop floor execution. Engineering design accuracy. Invoicing. |
+| **When** does it happen? | Every new RFQ. Worst during weeks when Elena is managing production issues, equipment failures, or scheduling conflicts — which is most weeks. | It doesn't happen on repeat orders from existing customers with locked pricing — those go fast because the lookup is simple. |
+| **Who** is affected? | Ty (can't close without quotes), Elena (overloaded), Mark (can't quote without Elena), shop floor (schedule gaps from pipeline delays) | Dave (engineering estimates are a small piece of the total). Junior engineers. Admin staff. Customers who have existing contracts with fixed pricing. |
+| **What** is the problem? | Speed of producing accurate quotes. Specifically: the time between RFQ receipt and quote delivery, caused by Elena being the only person who holds all the knowledge pieces simultaneously. | Quote accuracy (Elena's quotes are accurate — the problem is throughput, not quality). Customer relationships (strong). Pricing strategy (competitive). |
+
+The IS NOT column sharpened the constraint. The problem wasn't Elena's competence — her quotes were accurate and her win rates on submitted quotes were above industry average. The problem was throughput. She was a high-quality bottleneck.
+
+#### Artifact: Five Whys
+
+1. **Why is quoting slow?** Because every quote requires Elena's direct involvement — she processes them personally, one at a time, between her other responsibilities.
+
+2. **Why does every quote require Elena?** Because she's the only person who holds the pricing exceptions per customer, the material availability and lead-time knowledge, the labor estimation formulas, and the context of what similar jobs cost historically.
+
+3. **Why is she the only one who holds that knowledge?** Because the knowledge accumulated in her head over eight years and was never documented or systematized. The pricing exceptions exist in a spreadsheet on her desktop. The material knowledge is experience. The labor formulas are hers. The historical context is pattern matching she does from memory.
+
+4. **Why was it never documented or systematized?** Because the company grew faster than its systems. When Elena started, she was quoting ten jobs a month and could keep it all in her head. Now she's quoting twenty-five to thirty, and the volume outgrew her capacity — but no one built the infrastructure to distribute the knowledge because Elena was always "handling it."
+
+5. **What is the root cause?** The quoting function was designed as a single-person workflow at \$2M in revenue and never redesigned as the company grew to \$7.2M. Critical pricing, materials, and estimation knowledge lives exclusively in one person's head and one unshared spreadsheet, creating structural dependency on a single individual.
+
+The root cause pointed to a workflow and a knowledge gap — not a person. Elena was the symptom. The missing system was the constraint.
+
+### Source
+
+Elena cleared her Thursday afternoon. She sat down with Mark, Ty, and the Compound partner running the Sprint, and they walked through what she actually knew, where it lived, and what was missing.
+
+The exercise started with a simple question: "Elena, when an RFQ hits your inbox, what do you do first?"
+
+Her answer took forty-five minutes. She described a process nobody else in the company had ever watched end-to-end. She opened the RFQ, scanned the specs, and immediately started cross-referencing three things in her head: the customer's history (have we done something like this before? what did we charge?), the material requirements (what's the alloy? what's the lead time from our suppliers? do we have stock?), and the labor estimate (how many hours of welding, machining, and assembly? which of Carlos's guys would run it?). Then she pulled up her pricing exceptions spreadsheet — a file called "Customer Notes.xlsx" on her desktop — and checked whether this customer had negotiated terms that overrode the standard rate card.
+
+The spreadsheet had 147 rows. Each row was a customer with a note — some as simple as "10% discount on repeat orders," others as complex as "net-60 terms, free shipping on orders over \$15K, use 2024 alloy pricing for legacy parts." Elena had built it over eight years. It had never been shared, backed up, or version-controlled. "I email myself a copy sometimes," she said. "For backup."
+
+Dave, the senior engineer, added his piece. He could estimate fabrication hours by looking at a drawing — thirty-one years of experience compressed into a gut feel that was accurate to within 10% on standard work. But he couldn't estimate materials costs, didn't know customer-specific pricing, and had no access to the ERP's job costing history. His contribution to the quoting process was a single number — estimated hours — that Elena would then multiply by the labor rate and add to her materials and overhead calculation.
+
+Ty described what he saw from the sales side. He received RFQs from clients, forwarded them to Elena with a note ("hot lead, need this by Friday" or "low priority, whenever you can"), and waited. He had no visibility into where the quote stood. He couldn't tell the client when to expect it. When clients followed up, he walked to Elena's office and asked.
+
+The CRM held win/loss records, deal sizes, and customer contact information. It did not hold any quoting data — quotes were generated in Excel, saved to Elena's desktop, and emailed as PDFs. The CRM and the quoting process had no connection.
+
+The ERP held job costing history — every completed job had a record with actual materials cost, actual labor hours, and actual margin. Three years of history, roughly 800 completed jobs. Nobody had ever queried this data for quoting purposes. Elena accessed it occasionally by memory — "I remember that Mueller job from last year was about forty hours" — but there was no systematic lookup.
+
+#### Artifact: Knowledge Map
+
+| Source | Type | Owner | Status | Pipeline | Notes |
+|---|---|---|---|---|---|
+| ERP job costing history (800+ jobs, 3 years) | Digital | Finance / ERP admin | Clean | Manual — Elena queries by memory, not systematically | Best source for historical pricing, but nobody uses it for quoting. Structured data, queryable. |
+| CRM win/loss records | Digital | Ty (Sales) | Needs Work | Manual — Ty tracks outcomes but doesn't link to quotes | Has win rates by customer and job type. Missing: quote amounts on lost bids. |
+| Elena's pricing exceptions spreadsheet ("Customer Notes.xlsx") | Digital | Elena | Needs Work | Broken — lives on Elena's desktop, no backup, no version control | 147 customer-specific pricing rules. Mix of simple discounts and complex terms. Never validated against current contracts. |
+| Standard rate card (labor, overhead, margin targets) | Digital | Finance | Clean | Connected to ERP for invoicing, not for quoting | Updated annually. Clear and structured. |
+| Material supplier pricing and lead times | Digital | Elena + Carlos | Needs Work | Manual — Elena calls suppliers or checks emails for current pricing | Supplier price lists exist as PDFs and emails. No centralized database. Lead times are experience-based. |
+| Elena — pricing exceptions, customer history, quoting judgment | Organic | Elena | — | — | Holds the complete picture for every quote. Only person who can reconcile all sources. **AT RISK: single point of failure. No backup, no documentation.** |
+| Dave — fabrication hour estimation | Organic | Dave (Engineering) | — | — | 31 years experience. Estimates accurate to ~10% on standard work. Has never documented his estimation method. **AT RISK: 4 years to retirement.** |
+| Carlos — material availability and shop capacity | Organic | Carlos (Shop Floor) | — | — | Knows current stock, machine availability, crew capacity. Checks manually. Not documented. |
+| Historical quote-to-actual accuracy (did our quotes match final job costs?) | Missing | Nobody | Missing | — | Would validate whether rapid estimates are reliable. Data exists in ERP (actuals) and Elena's files (quotes) but has never been compared. |
+| Customer segment profitability (which customers/job types are most profitable?) | Missing | Nobody | Missing | — | Would enable prioritized quoting — fast-track high-margin segments. Requires joining CRM win/loss to ERP job costing. |
+| Standardized RFQ intake form | Missing | Nobody | Missing | — | RFQs arrive in inconsistent formats — email, PDF, phone calls. No structured intake. Agent would need consistent input format to process. |
+
+#### Artifact: Source Classification
+
+| Source | Structured / Unstructured | Durable / Ephemeral | AI Tier |
+|---|---|---|---|
+| ERP job costing history | Structured | Durable | Retrieved knowledge — queried when matching against historical jobs |
+| CRM win/loss records | Structured | Durable | Retrieved knowledge — queried for customer context |
+| Elena's pricing spreadsheet | Semi-structured | Durable | Standing context — always loaded, rules applied to every quote |
+| Standard rate card | Structured | Durable | Standing context — always loaded |
+| Material supplier pricing | Unstructured (PDFs, emails) | Ephemeral (prices change quarterly) | Retrieved knowledge — needs regular refresh |
+| Elena's quoting judgment | Unstructured (in her head) | Durable (institutional knowledge) | Standing context — must be captured via transcript and structured |
+| Dave's estimation method | Unstructured (in his head) | Durable (institutional knowledge) | Retrieved knowledge — captured as estimation framework |
+| Carlos's capacity knowledge | Unstructured (in his head) | Ephemeral (changes daily) | Not AI-tier — stays human, queried in real time |
+
+#### Artifact: Source Completeness Test
+
+1. **Designer test.** Could someone who wasn't in the room look at this map and know what they're designing against? **Pass.** The map names every source, flags the gaps, and identifies the three organic sources whose knowledge must be captured.
+
+2. **Constraint scope test.** Every row connects to the quoting constraint. **Pass.** No rows for HR, marketing, or accounting — only what touches quoting.
+
+3. **Pipeline test.** Every digital source has a pipeline status. **Pass.** Two Connected (rate card to ERP, CRM for records), two Manual (ERP queried by memory, supplier pricing via email), one Broken (Elena's spreadsheet).
+
+4. **At-risk test.** Elena flagged as single point of failure. Dave flagged with four years to retirement. **Pass.**
+
+5. **Gap test.** Three Missing sources identified: quote-to-actual accuracy, customer segment profitability, and standardized RFQ intake. **Pass.**
+
+6. **One-page test.** The map fits on one page. **Pass.**
+
+## Act II: Execute & Compound
+
+### Design
+
+The design session ran on a Friday morning. Elena, Mark, Ty, Dave, and the Compound partner sat in the conference room with the constraint statement and Knowledge Map printed on the whiteboard.
+
+The first question was the sorting question: which parts of the quoting process genuinely require Elena's judgment, and which parts require data she happens to hold?
+
+They walked the quoting workflow task by task. Eight steps. Elena described each one. The room classified each one using the four Work Deconstruction categories.
+
+What emerged surprised Elena. She'd assumed the whole process required her judgment. When they broke it down, roughly 65% of her quoting work was data retrieval and document assembly — looking up historical jobs, pulling material prices, applying known pricing rules, and formatting the quote document. Those tasks didn't require her judgment. They required her access.
+
+The remaining 35% was genuinely judgment-heavy: evaluating whether a new RFQ was similar enough to a historical job to use as a pricing reference, deciding how to handle a spec that pushed the shop's capabilities, and making the call on custom pricing for strategic accounts.
+
+Mark wanted one thing above all: the ability to get a first-pass quote to a client within hours, not days. Not a final quote — a rapid estimate accurate enough that the client would stay engaged while the detailed quote followed.
+
+Elena resisted at first. "I'm not comfortable sending a number I haven't personally reviewed."
+
+The Compound partner reframed: "What if you reviewed every estimate before it went out? The agent does the assembly — pulls the historical data, applies the rate card, formats the document — and you review it in fifteen minutes instead of building it from scratch in three hours."
+
+Elena paused. "That's different. If I'm reviewing it, that's different."
+
+That exchange defined the design. AI-assisted, not automated. Elena reviews every output. The agent handles the 65% that's data retrieval and assembly. Elena handles the 35% that's judgment. And the turnaround drops from days to hours because Elena's reviewing a draft rather than building from scratch.
+
+#### Artifact: Work Deconstruction
+
+| Task | Current Owner | Category | After Sprint | Rationale |
+|---|---|---|---|---|
+| RFQ intake and logging | Ty (manual email forward to Elena) | Workflow automation only | Automated intake form → CRM record | Routing problem. Standardized intake form auto-creates CRM record and notifies the quoting workflow. |
+| Customer history lookup | Elena (from memory + CRM) | Fully automatable | Agent queries CRM + ERP | Structured lookup. Agent pulls customer's past jobs, win/loss record, and pricing terms. Audited weekly by Elena. |
+| Historical job matching | Elena (pattern matching from memory) | Agent-assisted | Agent matches against ERP job costing database | Agent identifies 3-5 most similar historical jobs by spec, materials, and complexity. Elena reviews the matches — her judgment validates whether the match is actually comparable. |
+| Material pricing lookup | Elena (calls suppliers, checks emails) | Fully automatable | Agent queries materials database | Structured lookup once supplier pricing is centralized. Agent flags any material not in the database for Elena's manual lookup. |
+| Labor estimation | Dave + Elena | Human judgment required | Dave estimates hours; agent applies rate card | Dave's 31 years of estimation judgment can't be automated. Agent takes his hour estimate and applies the standard labor rate. |
+| Pricing exception application | Elena (from spreadsheet + memory) | Agent-assisted | Agent applies documented rules; Elena reviews | 147 exception rules need to be cleaned and loaded. Agent applies the known rules. Elena reviews every output — some exceptions have context the spreadsheet doesn't capture. |
+| Quote document generation | Elena (Excel template) | Fully automatable | Agent assembles the quote document | Template-driven. Agent populates the standard format with data from all upstream steps. Output lands in Elena's review queue. |
+| Quote review and approval | Elena | Human judgment required | Elena reviews agent-generated draft | The design decision that makes everything else work. Elena reviews in 15-20 minutes instead of building from scratch in 3 hours. Final authority on every number. |
+| Quote delivery to customer | Ty (emails PDF to client) | Workflow automation only | Approved quote auto-sent to Ty for delivery | Standard routing. After Elena approves, the quote PDF routes to Ty's CRM queue for customer delivery. |
+
+Task count: Human judgment required — 2. Agent-assisted — 2. Fully automatable — 3. Workflow automation only — 2.
+
+#### Artifact: Roles, Tasks, and Accountability Deconstruction
+
+Elena's role is VP of Operations. Her title didn't change. What changed was her task allocation.
+
+**Before the Sprint:**
+
+- Quoting: ~15 hours/week (RFQ processing, pricing lookups, quote assembly, review, delivery)
+- Production management: ~20 hours/week (scheduling, floor issues, supplier coordination)
+- Strategic operations: ~5 hours/week (process improvement, capacity planning, vendor negotiations)
+
+The quoting load was consuming 37% of her week. Production management consumed 50%. Strategic work got whatever was left — usually Friday afternoons, if nothing was on fire.
+
+**After the Sprint:**
+
+- Quoting: ~4 hours/week (review agent-generated drafts, handle edge cases, update pricing rules)
+- Production management: ~20 hours/week (unchanged in this sprint)
+- Strategic operations: ~16 hours/week (recovered from quoting reduction)
+
+Elena's role didn't shrink. It shifted. She went from building every quote to reviewing agent-generated drafts and spending the recovered hours on the strategic work that had been perpetually deferred — capacity planning, supplier renegotiations, and the process improvements the shop needed.
+
+#### Artifact: Hybrid Accountability Chart Entry
+
+| Role / Function | Human Role | Who | Agent Role | Which Agent |
+|---|---|---|---|---|
+| RFQ intake and logging | Oversees intake process | Ty (Sales Lead) | Auto-creates CRM record from standardized form | Intake Automation (workflow, not agent) |
+| Customer data retrieval and history matching | Reviews agent-selected matches for accuracy | Elena (VP Ops) | Queries CRM + ERP, identifies similar historical jobs | Quote Research Agent |
+| Material and labor pricing assembly | Provides labor hour estimates (Dave); reviews material pricing (Elena) | Dave + Elena | Looks up material costs, applies rate card, applies documented pricing exceptions | Quote Pricing Agent |
+| Draft quote generation and review | Reviews every draft quote; approves, edits, or escalates | Elena (VP Ops) | Assembles complete quote document from upstream outputs | Quote Assembly Agent |
+| Quote delivery and follow-up | Delivers quote to customer, handles negotiation | Ty (Sales Lead) | Routes approved quote to sales queue | Delivery Automation (workflow, not agent) |
+
+**Human Orchestrator:** Elena Ruiz, VP of Operations. Owns the constraint outcome: reduce quote turnaround from 3-5 days to same-day for standard work.
+
+**Agent Coordinator:** Ty Banfield, Sales Lead. Monitors intake quality, flags quotes stuck in the pipeline, reports on turnaround times weekly.
+
+#### Artifact: Agent Description to Definition
+
+| Agent | Description (Conceptual) | Definition (Operational) |
+|---|---|---|
+| **Quote Research Agent** | Finds historical jobs similar to the incoming RFQ and pulls customer context | **Input:** Parsed RFQ specs (materials, dimensions, quantities, complexity indicators) + customer ID. **Output:** Top 5 historical job matches with job number, final price, margin, and match-confidence score; customer pricing terms from exceptions database; customer win/loss history. **Trigger:** New RFQ record created in CRM. **Guardrails:** Cannot access financial records beyond job costing. Cannot access HR data. Cannot contact customers or suppliers. |
+| **Quote Pricing Agent** | Calculates the quote price using historical matches, rate card, and exception rules | **Input:** Historical job matches from Research Agent + Dave's labor hour estimate + current rate card + applicable pricing exceptions. **Output:** Draft price with line-item breakdown (materials, labor, overhead, margin), confidence score (high/medium/low), and flag for any exception rule applied. **Trigger:** Research Agent output + labor estimate received. **Guardrails:** Cannot override rate card without Elena's approval. Cannot apply undocumented exceptions. Flags any quote where the calculated price deviates >15% from the closest historical match. |
+| **Quote Assembly Agent** | Produces the formatted quote document | **Input:** Pricing Agent output + customer information + RFQ reference. **Output:** PDF quote in Meridian's standard format, placed in Elena's review queue in the CRM. **Trigger:** Pricing Agent output complete. **Guardrails:** Cannot send anything to a customer. Cannot modify pricing data. Output is always "draft" until Elena approves. |
+
+#### Artifact: Design Gate Checklist
+
+- [x] Every task in the constraint workflow is classified — Work Deconstruction complete, four categories, no unclassified items
+- [x] Every accountability has a Hybrid Accountability Chart entry with all four fields filled and a named supervisor
+- [x] The Human Orchestrator (Elena) and Agent Coordinator (Ty) are named — with irreducible decisions and escalation triggers documented
+- [x] AI-Assisted vs. Automated is decided for each agent team, with a rationale: all agent outputs are AI-Assisted (Elena reviews every quote) because the exception rules aren't fully captured and the agent is new
+- [x] Guardrails are defined: data access boundaries (CRM + ERP read, no financial reporting or HR), action permissions (draft only, never send to customer), escalation paths (low-confidence to Elena, unknown material to Carlos), quality monitoring (Elena reviews 100% in sprint one), and kill switch (any quote sent without review, pricing error >20% on three quotes in a week, or data access outside defined scope)
+
+#### Artifact: Human-in-the-Loop Spectrum
+
+All three agents start at **Human-in-the-loop** — Elena reviews every output before anything reaches a customer.
+
+The design includes a planned progression:
+
+| Sprint | Quote Research Agent | Quote Pricing Agent | Quote Assembly Agent |
+|---|---|---|---|
+| Sprint 1 | Human-in-the-loop: Elena validates every historical match set | Human-in-the-loop: Elena reviews every price calculation | Human-in-the-loop: Elena reviews every draft document |
+| Sprint 2-3 (target) | Human-on-the-loop: Elena spot-checks match sets weekly, reviews only low-confidence flags | Human-in-the-loop: Elena still reviews every price (highest-stakes output) | Human-on-the-loop: Elena reviews format weekly, trusts assembly if upstream is approved |
+| Sprint 4+ (target) | Human-over-the-loop: Elena reviews aggregate match accuracy monthly | Human-in-the-loop or Human-on-the-loop depending on exception capture completeness | Human-over-the-loop: document assembly is fully automated, Elena reviews template quarterly |
+
+The progression is earned, not scheduled. Moving from in-the-loop to on-the-loop requires that Elena's review produces zero substantive corrections for three consecutive weeks on that agent's output.
+
+### Build
+
+The Build conversation started with a question from Mark: "How much is this going to cost to build?"
+
+The answer was less than he expected. Meridian wasn't building custom software. They were assembling existing tools into a workflow shaped by the Design.
+
+The build path was low-code. The team used Claude as the AI backbone — a Claude Team workspace with three configured projects (one per agent), each loaded with the relevant knowledge from Source. The workflow orchestration ran through n8n, which Meridian already had a license for from a previous automation attempt that never went anywhere. The CRM (HubSpot) and ERP (JobBOSS) both had APIs.
+
+The build took three and a half weeks. The Compound partner handled the technical assembly. Elena spent four hours in structured interviews — what the Source chapter calls the transcript extraction — walking through her pricing exception logic, her material estimation heuristics, and her process for evaluating RFQ complexity. Those transcripts became the core knowledge base for the Quote Research and Quote Pricing agents.
+
+The hardest part of Build wasn't the technology. It was Elena's pricing spreadsheet.
+
+When the team went to load "Customer Notes.xlsx" into the agent's knowledge base, they discovered the spreadsheet was messier than anyone realized. Thirty-one of the 147 rows had conflicting entries — the same customer with two different discount rules, entered at different times, with no indication of which was current. Fourteen rows referenced customers Meridian hadn't worked with in over three years. Eight rows had notes so cryptic that even Elena couldn't explain them. ("Dave said OK to flex on this one" — which Dave? OK to flex on what? When?)
+
+Elena spent a full day cleaning the spreadsheet. She reduced it from 147 rows to 112 validated, current exception rules. That day of cleanup was the most valuable day of the entire Build. Without it, the agent would have been confidently applying expired discounts and contradictory terms.
+
+The second friction point was the ERP integration. JobBOSS's API documentation was sparse and outdated. The Compound partner spent three days getting the historical job data to extract reliably. When it finally worked, they discovered that roughly 15% of the job costing records had incomplete materials data — jobs where someone had entered the labor hours but not the materials breakdown. The team decided to flag those records rather than exclude them — the labor data was still useful for estimation, even without complete materials.
+
+Dave's contribution was the simplest and the most irreplaceable. He sat down for a ninety-minute recorded interview and described how he estimates fabrication hours. His method turned out to be remarkably systematic — he used a mental checklist of twelve factors (material thickness, number of bends, weld count, tolerance requirements, surface finish, fixturing complexity, and six others he'd never written down). The transcript became a structured estimation framework the agent could reference, though the agent still couldn't replace Dave's judgment on non-standard work. For standard jobs, the framework was good enough to produce estimates within Dave's 10% accuracy range.
+
+#### Artifact: Build Spec
+
+| Section | Detail |
+|---|---|
+| **Solution name** | Meridian Rapid Quote System |
+| **Constraint addressed** | VP of Operations is the sole bottleneck for quoting, resulting in 3-5 day turnaround vs. 24-48 hour industry standard, costing ~\$558K/year in lost revenue, misallocated time, and floor underutilization. |
+| **Systems connected** | HubSpot CRM (read/write — customer records, RFQ intake, quote delivery), JobBOSS ERP (read — historical job costing, rate card, materials pricing), Claude Team workspace (AI processing), n8n (workflow orchestration) |
+| **Tools/platforms** | Claude Team (3 agent projects), n8n (workflow triggers and routing), HubSpot API, JobBOSS API, Google Workspace (document generation and storage) |
+| **Agent capabilities** | Quote Research Agent: match incoming RFQs to historical jobs, surface customer context and pricing terms. Quote Pricing Agent: calculate draft pricing using historical matches, rate card, labor estimates, and exception rules. Quote Assembly Agent: generate formatted PDF quote document in Meridian's standard template. |
+| **Access/permissions** | Agents can read: CRM deal records, ERP job costing history, ERP rate card, cleaned pricing exceptions database, Dave's estimation framework. Agents cannot access: financial reporting, employee records, customer payment history, supplier contracts, or any system not listed. No agent can send external communications. |
+| **Guardrails** | All outputs are drafts until Elena approves. Agent flags any RFQ it can't match to historical work (confidence below 60%). Agent flags any pricing deviation >15% from closest historical match. Agent cannot apply undocumented exceptions. Kill switch: any quote reaching a customer without human review, pricing errors >20% on three quotes in any week, or data access outside defined scope. Elena holds the kill switch. |
+| **Human supervisor** | Elena Ruiz, VP of Operations. Reviews every draft quote. Approves, edits, or escalates. Target review time: 15-20 minutes per quote. |
+
+### Deliver
+
+Elena flipped the switch on a Monday. The first RFQ came in at 9:14 AM — a repeat customer requesting quotes on a batch of steel mounting brackets, sixty units.
+
+The intake form captured the specs. The Quote Research Agent pulled the customer's history: twelve previous jobs over four years, three of them bracket work. It matched against historical jobs and surfaced the closest comparables with pricing. The Quote Pricing Agent applied the rate card, applied the customer's documented 8% volume discount, and produced a draft at \$14,200. Elena received the draft in her review queue eleven minutes after the RFQ was submitted.
+
+She opened it. Looked at the historical matches. Looked at the pricing breakdown. Looked at the exception rule the agent had applied. She made one edit — she adjusted the material cost for 304 stainless steel down by 6% because she'd just negotiated a new supplier rate the previous week that wasn't in the system yet. She approved the quote. Total review time: fourteen minutes.
+
+Ty delivered the quote to the customer at 9:41 AM. Twenty-seven minutes from RFQ to quote delivery. The customer's previous experience with Meridian: four days.
+
+Elena said nothing for a moment. Then: "That took me fourteen minutes. It would have taken me three hours."
+
+The first week had friction. On day three, the agent hit a custom alloy specification — Inconel 718 — that wasn't in the materials database. The agent correctly flagged it as an unknown material and routed it to Elena for manual lookup. But it also attempted to estimate using the closest available material (316 stainless), which produced a price 40% below what Inconel would actually cost. If Elena hadn't caught it, the quote would have been catastrophically underpriced.
+
+The team added a guardrail: when the agent encounters an unknown material, it produces no price estimate for that line item — it flags it as "manual pricing required" and stops. The near-miss was exactly the kind of failure the Design anticipated by starting AI-assisted rather than automated.
+
+On day five, Ty submitted an RFQ without the customer's drawing attached. The agent produced an estimate based on the text description alone, which was vague enough to be useless. Elena rejected it and told Ty the new intake form required a drawing for any custom fabrication work. Ty pushed back — "sometimes the customer calls in a description over the phone." Elena held the line: "If there's no drawing, you sketch what they described and attach it. The agent needs specs, not stories." They added a required field to the intake form.
+
+Dave was skeptical through the first two weeks. He sat in on two of Elena's reviews and watched the agent's historical matching. "It's pulling jobs that aren't really comparable," he said about one match — a job where the specs looked similar on paper but the tolerances were tighter, which doubled the labor. Elena added a note to the estimation framework: tolerance class needed to be a matching criterion, not just material and dimensions. The agent's matches improved immediately.
+
+By week three, the pattern stabilized. Elena was reviewing four to five quotes a day, spending fifteen to twenty minutes on each. Standard jobs — the 70% of RFQs that were variations on previous work — were going out same-day. Complex jobs — custom alloys, tight tolerances, unusual geometries — still required Elena's full attention, but those were now 30% of her workload instead of 100%.
+
+Carlos noticed the change from the shop floor. "The schedule board has work on it three weeks out for the first time since I can remember. We're not scrambling for the next job anymore."
+
+#### Artifact: Delivery Metrics
+
+| Metric | Before | After (Week 4) | Delta |
+|---|---|---|---|
+| Average quote turnaround | 3.8 days | 4.2 hours (standard) / 1.5 days (complex) | -89% (standard) / -61% (complex) |
+| Elena's time on quoting | ~15 hours/week | ~5 hours/week | -67% (10 hours/week recovered) |
+| Quotes produced per week | 8-10 (limited by Elena's capacity) | 18-22 (limited by inbound RFQ volume) | +110% throughput |
+| Win rate on submitted quotes | 34% | 41% (early signal, not yet statistically significant) | +7 percentage points |
+| Quotes where agent draft needed substantive correction | N/A | 12% (declining week-over-week) | Trending toward <10% |
+| Revenue from bids that would have been delayed | N/A | \$47K in new jobs won in first month where client cited speed | Direct recovery against the \$418K annual loss |
+
+#### Artifact: Per-Role Runbook
+
+**Elena (VP of Operations):**
+
+- *Before:* Built every quote from scratch. Spent 15 hours/week on quoting. Production management and strategic work competed for remaining time.
+- *After:* Reviews agent-generated draft quotes in her CRM queue. Approves, edits, or escalates. Reviews take 15-20 minutes per quote vs. 3 hours. Spends recovered hours on production planning and supplier negotiations. Updates pricing exceptions database when terms change. Runs Monday/Thursday review of agent performance dashboard.
+
+**Ty (Sales Lead):**
+
+- *Before:* Forwarded RFQs to Elena via email. Had no visibility into queue status. Waited 3-5 days for quotes. Fielded client complaints about speed.
+- *After:* Submits RFQs through standardized intake form (required fields: customer, specs, drawing, quantity, deadline). Monitors quote pipeline in CRM — can see status of every active quote. Delivers approved quotes to customers same-day for standard work. Reports weekly on turnaround times and win rates.
+
+**Mark (CEO):**
+
+- *Before:* Could not quote without Elena. Lost strategic conversations because he couldn't give clients even a ballpark number on the spot.
+- *After:* Can request a rapid estimate through the system for relationship-based conversations. Still relies on Elena for final approval, but has a ballpark within an hour when he needs one for a client call. Reviews weekly quoting dashboard in the L10.
+
+**Dave (Senior Design Engineer):**
+
+- *Before:* Gave Elena verbal labor hour estimates when she asked. No documentation of his estimation method.
+- *After:* Provides labor estimates through a structured form (hours, complexity rating, notes on special requirements). His estimation framework is documented and referenced by the agent. Still provides all labor estimates personally — this piece stayed human. Reviews agent's historical job matching weekly to catch accuracy issues.
+
+**Carlos (Shop Floor Supervisor):**
+
+- *Before:* Dealt with schedule gaps caused by pipeline delays. Learned about upcoming jobs when Elena told him.
+- *After:* Has visibility into the quoting pipeline — can see jobs likely to convert and begin material and capacity planning earlier. Provides real-time shop capacity input when Elena flags high-volume quotes. No other changes to his daily workflow.
+
+### Compound
+
+The Sprint Retrospective ran six weeks after deployment, during Meridian's quarterly operating session. Mark, Elena, Ty, Dave, and Carlos were in the room.
+
+Elena started with the numbers. Quote turnaround: down from 3.8 days to 4.2 hours on standard work. Her time on quoting: down from fifteen hours a week to five. Quotes produced: doubled. Win rate: trending up, though it was too early to call it statistically significant.
+
+Then she said something Mark didn't expect. "I spent last week renegotiating our primary steel supplier contract. Got a 4% reduction on 304 and 316 stainless. I haven't had time to do that in two years. That negotiation will save us about \$28,000 this year."
+
+Mark wrote the number down. The Sprint had produced a direct benefit — faster quotes, more jobs won — and a second-order benefit nobody had modeled: Elena doing the strategic work she'd been deferring for years because quoting consumed her week.
+
+Then the "what didn't work" conversation.
+
+Dave went first. "The historical matching still pulls jobs that aren't truly comparable about 15% of the time. It gets the material right but misses the complexity. A bracket with twelve bends and tight tolerances is not the same as a bracket with four bends and standard tolerances, even if they're both steel brackets."
+
+Elena confirmed. "I'm correcting about one in eight quotes because the agent matched to a simpler historical job than the new RFQ actually calls for. It's not dangerous — I catch it every time — but it adds review time."
+
+Ty raised the second issue. "The first two weeks, I submitted three RFQs the old way — just forwarded the email to Elena. Habit. She processed them manually and I didn't even realize the new system existed for those three. We need to kill the old inbox."
+
+Carlos added the third: "The materials database is still missing specialty alloys. Every Inconel or titanium job routes to Elena for manual pricing. That's maybe 10% of our work, but those are our highest-margin jobs."
+
+#### Artifact: Sprint Retrospective
+
+| Category | Detail |
+|---|---|
+| **What worked** | Agent handles standard quoting (70% of volume) accurately. Elena's review time dropped from 3 hours to 15-20 minutes per quote. Same-day turnaround on standard work. Structured intake form eliminated incomplete RFQ submissions after week one. ERP historical data proved more useful than expected — 800 jobs is a rich baseline for matching. Elena's recovered time produced immediate strategic value (supplier renegotiation: \$28K savings). |
+| **What didn't work** | Historical matching accuracy: ~85% — acceptable but not yet trustworthy enough to reduce review cadence. Agent matched on material and dimensions but missed complexity indicators (bend count, tolerance class, surface finish). Three RFQs submitted through old email workflow in week one — old inbox wasn't closed on day one. Specialty alloy pricing gaps: Inconel, titanium, and Hastelloy not in materials database, forcing manual pricing on ~10% of quotes. |
+| **What changes for next sprint** | One design change (see below): add complexity indicators to the matching algorithm. Operational fix: old email forwarding path officially closed — Elena's inbox auto-redirects RFQ-pattern emails to the intake form. Materials database: add specialty alloy pricing for the five most common non-standard materials. |
+| **New constraints surfaced** | Every quote the agent generates still has to be manually entered into the ERP for job tracking when the quote converts to an order. This was always true — but now that quoting is fast, the manual ERP entry is the new bottleneck. Also: 40% of Meridian's quotes go to three customers who negotiate the same terms every time. Those three relationships could be further streamlined with pre-negotiated pricing tiers. |
+| **Knowledge captured** | Elena's pricing exception database: cleaned from 147 to 112 rules, validated, version-controlled, and backed up. Dave's estimation framework: twelve-factor checklist documented and structured. Three years of ERP job costing data: indexed and queryable for the first time. Elena's quoting process: fully mapped end-to-end for the first time in company history. |
+| **HAC update** | Quoting row made permanent. Elena confirmed as Human Supervisor. Quote Research Agent, Quote Pricing Agent, and Quote Assembly Agent confirmed as the agent team. Level: AI-Assisted (no change — three-week target for move to on-the-loop on Assembly not yet met; matching accuracy needs to reach 95% before Elena reduces review frequency on Research). |
+
+**One design change for the next sprint:** Add fabrication complexity indicators — bend count, tolerance class, weld count, and surface finish — as matching criteria in the Quote Research Agent. Dave provides the classification framework. The agent uses it when selecting historical matches. The test: re-run the eight quotes from the last month where Elena corrected the agent's match, and confirm that the updated matching produces the correct comparable in at least seven of the eight cases. Install before sprint two kickoff.
+
+#### Artifact: Constraint Re-rank
+
+The quoting bottleneck had been the top constraint for two years. With the Sprint delivered, the team re-ranked.
+
+| Rank | Constraint | Pre-Sprint Rank | Post-Sprint Rank | Rationale |
+|---|---|---|---|---|
+| 1 | CRM-to-ERP data sync: quotes convert to jobs through manual re-entry | 3 | **1** | The sprint surfaced this as the new bottleneck. Fast quoting exposed slow job creation. Ty is entering the same data twice — once in the CRM quote, again in the ERP job record. |
+| 2 | Customer pricing standardization: three customers represent 40% of quotes, all with recurring negotiated terms | Not on list | **2** | New constraint surfaced during the sprint. Those three accounts could have pre-negotiated pricing tiers, eliminating Elena's review entirely for repeat work. |
+| 3 | Specialty materials pricing: non-standard alloys require manual lookup | 5 | **3** | Moved up because the sprint made it visible — 10% of quotes still require full manual processing. |
+| 4 | Production scheduling optimization: floor capacity planning is reactive | 2 | **4** | Moved down — not because it's less important, but because the quoting pipeline fix partially addressed it. Carlos now has pipeline visibility that enables proactive scheduling. |
+| 5 | Elena as single point of failure for operations management | 4 | **5** | Still present, but the sprint removed the largest single piece (quoting) from Elena's bottleneck. The remaining single-point-of-failure risk is in production management, which is the subject of a future sprint. |
+
+The next Sprint targets the CRM-to-ERP data sync. Mark assigned Elena as Human Orchestrator. Sprint kicks off at the next quarterly planning session.
+
+#### Artifact: Compounding Scorecard
+
+```
+DIMENSION                 BEFORE SPRINT    AFTER SPRINT    WHAT CHANGED
+---------------------------------------------------------------------------
+Constraint Clarity        Green            Green           Maintained.
+                                                          New constraint
+                                                          identified and
+                                                          ranked (CRM-ERP
+                                                          sync).
+
+Information Readiness     Red              Yellow          Elena's pricing
+                                                          knowledge: captured
+                                                          and structured.
+                                                          Dave's estimation
+                                                          method: documented.
+                                                          ERP data: indexed.
+                                                          Still Yellow because
+                                                          production management
+                                                          knowledge is still
+                                                          in Elena's head.
+
+Workflow Visibility       Yellow           Green           Quoting workflow:
+                                                          fully mapped,
+                                                          documented, and
+                                                          operating inside a
+                                                          designed system.
+                                                          Team agrees on
+                                                          every step.
+
+Decision Rights           Red              Yellow          Quoting: explicit
+                                                          assignments per
+                                                          role (agent drafts,
+                                                          Elena reviews, Ty
+                                                          delivers). Still
+                                                          Yellow because no
+                                                          other function has
+                                                          been designed.
+
+Measurement Discipline    Yellow           Green           Quoting metrics:
+                                                          tracked weekly
+                                                          (turnaround, volume,
+                                                          accuracy, win rate).
+                                                          Constraint cost
+                                                          validated against
+                                                          real data. Sprint
+                                                          outcome measured
+                                                          and reported.
+```
+
+Before the Sprint: one Green, two Yellows, two Reds.
+After the Sprint: two Greens, two Yellows, one Red.
+
+The single Red that remains — Information Readiness — is the dimension that takes the longest to move. The Sprint moved it from Red to Yellow by capturing Elena's quoting knowledge and Dave's estimation method. Getting it to Green requires doing the same for production management, supplier relationships, and the other organic knowledge Elena holds. That's multiple sprints of Source work.
+
+The two new Greens — Workflow Visibility and Measurement Discipline — are permanent. The quoting workflow is documented and designed. The metrics are tracked. These don't slide back. They're infrastructure.
+
+Mark closed the session by reading the Sprint outcome sentence back to the room:
+
+"The Meridian Rapid Quote System reduced standard quoting turnaround from 3.8 days to 4.2 hours, recovered ten hours per week of VP-level time, doubled quoting throughput, and produced \$47K in new revenue in its first month from bids that would have been lost to speed."
+
+Elena looked at the ceiling. "We should have done this two years ago."
+
+Mark said: "We didn't know how."
+
+The next Sprint starts Monday.

@@ -1,5 +1,10 @@
 # What to do *next*.
 
+:::{.callout-important}
+## In Brief
+You've read the model, the Sequence, and the Rhythm. The work from here is operational. This chapter gives you a scored starting point based on your AI Readiness Scorecard, three questions that form your minimum viable Signal, a team roster, and a one-page plan you can act on Monday morning. The only thing left is to write it down and go.
+:::
+
 I'm on a call with a CEO I'll call Katie. She came in knowing exactly what was wrong with her business. She'd been thinking about it for months. She had a list, and she was ready to talk about it.
 
 I'm watching the clock because we've got thirty minutes and I know how these calls move. We get about eight minutes in and I ask her: "What does this problem cost you? Not in frustration, not in lost revenue abstractly — in dollars, per year, if nothing changes next year."
@@ -15,11 +20,6 @@ The same thing happened the following week with a different CEO — I'll call he
 Thirty minutes. Neither of them had to run a workshop or hire a consultant to get there. They had to be asked the right question in the right order and refuse the temptation to answer it with the first thing that came to mind.
 
 This chapter is for one thing: the first move.
-
-:::{.callout-important}
-## In Brief
-You've read the model, the Sequence, and the Rhythm. The work from here is operational. This chapter gives you a scored starting point based on your AI Readiness Scorecard, three questions that form your minimum viable Signal, a team roster, and a one-page plan you can act on Monday morning. The only thing left is to write it down and go.
-:::
 
 You have the language to describe what a Co-Intelligent Company is, the Sequence to build one, and the Rhythm to keep it compounding. The only real question left is where you start — and the answer depends on where you already are.
 

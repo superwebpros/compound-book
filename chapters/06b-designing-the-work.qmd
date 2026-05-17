@@ -1,11 +1,11 @@
 # *Designing the Work*.
 
-The framework tells you what Design produces. This chapter is where it becomes concrete — the instruments, the decomposition, the visual tools that make your design legible, and the gate that separates Design from Build.
-
 :::{.callout-important}
 ## In Brief
 Design has two instruments: Work Deconstruction (classify every task in the constraint workflow) and the Hybrid Accountability Chart entry (assign ownership to every accountability). Run them in sequence. Then prove the design works before you build it. Nothing enters Build until the Design Gate is locked — five items, all checked.
 :::
+
+The framework tells you what Design produces. This chapter is where it becomes concrete — the instruments, the decomposition, the visual tools that make your design legible, and the gate that separates Design from Build.
 
 ## The two *instruments*.
 
@@ -14,13 +14,6 @@ Design has two instruments: Work Deconstruction and Hybrid Accountability Chart.
 *Work Deconstruction* is how you run it. Pull the actual accountability list for a role — not the job description, which is always cleaner than reality, but the real list of things that person touches every week. Then go task by task and classify each one using four categories.
 
 {{< excalidraw ch06b-work-deconstruction-populated "Work Deconstruction: four categories — Human judgment required, Agent-assisted, Fully automatable, Workflow automation only" >}}
-
-| Category | What it means | Review model |
-|---|---|---|
-| **Human judgment required** | Context-dependent. Requires empathy, relationship history, or novel reasoning. An agent cannot reliably do this. | Human owns the work. No agent involved. |
-| **Agent-assisted** | Agent drafts, compiles, or recommends. A human reviews every output before it goes anywhere. | Human-in-the-loop: reviews every output. |
-| **Fully automatable** | Rules-based, repetitive, well-defined inputs and outputs. Agent executes. Human audits on a schedule, not per output. | Human-on-the-loop: monitors by exception. |
-| **Workflow automation only** | No agent needed. Routing or integration problem — better tooling handles it. Zapier-level, not agent-level. | Standard automation. No agent team required. |
 
 For every task, ask one sorting question: "If I gave a well-briefed agent this task with the right data, would the output need human review every time, or only when something goes wrong?" If every time: agent-assisted. If only on exceptions: fully automatable. If the agent adds no value and it's just a handoff: workflow automation only. If the answer depends on who the client is, what happened last week, or a judgment call with no clear rule: human judgment required.
 
@@ -54,8 +47,9 @@ When you do this on your own role, look for the same pattern: what percentage of
 
 That work became a designed agent team. It landed in the Hybrid Accountability Chart as an AI-assisted entry — she reviewed every output to start, the right call when the team is new and trust hasn't been established. The remaining accountability — the client relationships, the judgment calls, the situations that required someone who knew the history — stayed with her. Her role became more strategic, not because we gave her a new title, but because we gave her back the hours that the low-judgment work had been consuming.
 
-The junior coordinator listing was never posted. One row in the chart. One sprint. One avoided hire.
+The junior coordinator listing was never posted. One row in the chart replaced a $24K hire.
 
+<!-- TODO: Update this example to use Meridian Manufacturing once the case study is finalized -->
 ### Populated example: manufacturing quoting
 
 Here's what a completed Work Deconstruction looks like for a different constraint — manufacturing quoting, where design engineers were spending four to six hours producing initial designs for every bid, including the 50%+ that wouldn't convert, at an estimated cost of $180K/year in misallocated engineering time.
@@ -98,7 +92,7 @@ Three tools make the design visible. You don't need all three for every sprint, 
 
 **Swim lane diagrams** are for mapping information flows between humans and agents. Draw two lanes — one for human work, one for agent work. Walk the workflow from trigger to output and draw each step in the lane where it happens. Every time the work crosses from one lane to the other, that's a handoff. Every handoff is a design decision: what format does the output need to be in? Who reviews it? What happens when the handoff fails? Swim lanes force you to answer those questions because the crossing points are visible. If your swim lane diagram has fifteen crossings for a six-step workflow, you've designed something that will be fragile in production. Simplify before you build.
 
-**Flowcharts** are for mapping decision logic. When the workflow has branching paths — if the quote is above a dollar threshold, route to VP; if the customer segment is new, flag for manual review — a flowchart makes the logic inspectable. You can build these in any diagramming tool — Lucidchart, Miro, or even a whiteboard photo. Mermaid is also worth knowing about: it's a text-based diagramming format where you describe the logic in plain language and the tool draws the diagram. Every major AI assistant can generate Mermaid from a description, and it renders in most documentation tools. You can describe your workflow to the Design Agent and get a Mermaid diagram back in the same conversation. That's useful because the diagram becomes a checkpoint — if the flowchart doesn't match what you intended, the design has a gap you can fix now instead of in Build.
+**Flowcharts** are for mapping decision logic. When the workflow has branching paths — if the quote is above a dollar threshold, route to VP; if the customer segment is new, flag for manual review — a flowchart makes the logic inspectable. You can build these in any diagramming tool — Lucidchart, Miro, or even a whiteboard photo. Mermaid is also worth knowing about: it's a text-based diagramming format where you describe the logic in plain language and the tool draws the diagram. Every major AI assistant can generate Mermaid from a description, and it renders in most documentation tools. You can describe your workflow to an AI assistant and get a Mermaid diagram back in the same conversation. That's useful because the diagram becomes a checkpoint — if the flowchart doesn't match what you intended, the design has a gap you can fix now instead of in Build.
 
 **Visual design tools** — Figma, Claude's artifact system, Excalidraw — are for when the workflow produces something a stakeholder needs to see. If the agent team is generating customer-facing quotes, draft what the quote looks like. If it's producing reports, mock up the report format. The visual artifact gives the stakeholder something concrete to react to, which is faster and more honest than asking them to imagine the output from a written spec.
 
@@ -126,7 +120,7 @@ Constant prototyping is the discipline. Not one big reveal at the end of Design,
 
 ## Design is the *gate*.
 
-Nothing in Execute & Compound begins until Design is locked. That's not bureaucracy. It's the structural reason Build moves fast when other approaches stall.
+Nothing past Design begins until Design is locked. That's not bureaucracy. It's the structural reason Build moves fast when other approaches stall.
 
 Teams that find Build slow or complicated are almost always teams that moved through Design too quickly — they discovered mid-build that there were decisions nobody had made, handoffs nobody had specified, supervision arrangements nobody had named. Every one of those discoveries is a piece of Design surfacing where it doesn't belong, where it costs five times as much to resolve. The gate exists to prevent that.
 

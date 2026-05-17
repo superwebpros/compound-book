@@ -1,5 +1,10 @@
 # The *Framework*.
 
+:::{.callout-important}
+## In Brief
+This chapter maps the rest of the book. You'll learn four vocabulary terms (Framework, Sequence, Rhythm, Sprint), the six stages of the Compound Sprint, the Diagnose/Execute split that prevents the most common failure mode, and the Sprint Planning Canvas that turns all of it into a one-page starting point. Treat this as the page you flip back to when you forget which word means what.
+:::
+
 She's on the screen and I can tell from the way she's sitting that she's already made up her mind. We've been talking for maybe twenty minutes — her company, her bottlenecks, what she's hoping AI can fix — and then she leans forward and says it: "Can we just build it? I just need this thing built."
 
 I know exactly what she means. She's seen demos. She's read the case studies. She has a clear picture in her head of the tool that's going to solve her problem, and she wants to stop talking about it and start building it. That's not impatience — that's the instinct of someone who has run a business. When you know what you want, you build it.
@@ -9,11 +14,6 @@ But I've also watched what happens when you start there. The build does not go w
 I didn't tell her that on the call. I said: let's start at Signal. She said: okay. We did. What she found there surprised her. The constraint she'd been carrying around in her head for six months wasn't the real constraint — it was a symptom of something two steps upstream. If we'd built what she came in asking for, we'd have solved the symptom beautifully and left the actual problem running.
 
 That is the conversation this chapter exists to prevent you from having with yourself.
-
-:::{.callout-important}
-## In Brief
-This chapter maps the rest of the book. You'll learn four vocabulary terms (Framework, Sequence, Rhythm, Sprint), the six stages of the Compound Sprint, the Diagnose/Execute split that prevents the most common failure mode, and the Sprint Planning Canvas that turns all of it into a one-page starting point. Treat this as the page you flip back to when you forget which word means what.
-:::
 
 ## The order is the *argument*.
 
