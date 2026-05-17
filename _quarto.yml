@@ -16,17 +16,28 @@ book:
   favicon: assets/logo-mark-dark.svg
   chapters:
     - index.qmd
-    - chapters/01-diagnosis.qmd
-    - chapters/02-co-operating-model.qmd
-    - chapters/03-the-framework.qmd
-    - chapters/04-signal.qmd
-    - chapters/05-source.qmd
-    - chapters/06-design.qmd
-    - chapters/07-build.qmd
-    - chapters/08-deliver.qmd
-    - chapters/09-compound.qmd
-    - chapters/10-the-rhythm.qmd
-    - chapters/11-what-to-do-next.qmd
+    - part: "Part I: The Framework"
+      chapters:
+        - chapters/01-diagnosis.qmd
+        - chapters/02-co-operating-model.qmd
+        - chapters/03-the-framework.qmd
+    - part: "Part II: Strategy"
+      chapters:
+        - chapters/04-signal.qmd
+        - chapters/05-source.qmd
+    - part: "Part III: Designing the System"
+      chapters:
+        - chapters/06-designing-the-system.qmd
+        - chapters/06b-designing-the-work.qmd
+    - part: "Part IV: Launching"
+      chapters:
+        - chapters/07-build.qmd
+        - chapters/08-deliver.qmd
+    - part: "Part V: Learn to Compound"
+      chapters:
+        - chapters/09-compound.qmd
+        - chapters/10-the-rhythm.qmd
+        - chapters/11-what-to-do-next.qmd
     - chapters/appendix-prompt-engineering.qmd
 
 format:
