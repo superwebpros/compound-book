@@ -6,9 +6,7 @@ I know exactly what she means. She's seen demos. She's read the case studies. Sh
 
 But I've also watched what happens when you start there. The build goes well. The tool gets deployed. The team learns to use it. And six or eight weeks later she's back on a call, quieter this time, trying to explain to her team why the output doesn't match what they actually needed. The workflow solves something — just not the right thing. And when we trace it back, the answer is always the same: we skipped Signal. We assumed we knew what the constraint was. We built against an assumption, not a diagnosis. The foundation was never poured. The walls went up anyway.
 
-```jf-note:
-In that case, its not just signal that was skipped, but a lot of steps. I think the point is that everyone wants to start with 'build' but most people dont have the literacty to know what's involved in building. More often than note, its no that the build goes well or gets deployed or people learn to use it. More often, the build does not go well. Edge cases creep in that nobody thought of. Requirements change mid-stream. The tool (maybe) gets deployed...eventually. And the team never really adopts. People are remarkably stymied by technical friction. And not understanding what people do or the outcomes they're intending to obtain is a major cuase of friction.
-```
+<!-- TODO: Expand the "skipped Signal" point — most people skip many steps, not just Signal. The typical failure is that the build doesn't go well: edge cases, mid-stream requirement changes, poor adoption, technical friction. Root cause is not understanding what people do or the outcomes they need. -->
 
 I didn't tell her that on the call. I said: let's start at Signal. She said: okay. We did. What she found there surprised her. The constraint she'd been carrying around in her head for six months wasn't the real constraint — it was a symptom of something two steps upstream. If we'd built what she came in asking for, we'd have solved the symptom beautifully and left the actual problem running.
 
@@ -20,9 +18,7 @@ This is the chapter that maps the rest of the book. The first two chapters named
 
 Most AI initiatives skip the diagnosis and start at Build. A tool gets chosen, a vendor gets paid, a pilot gets launched — and around month nine the CEO is sitting in a board meeting trying to explain why the AI line item produced no operational result. The cause is not the tool. The cause is the order.
 
-```jf-note:
-I have umbridge with the idea that 'tool gets chosen, vendor gets paid, pilot gets launched.' Most people are just buying a subscription to claude or chatgpt and that is 'doing AI.' Smaller and mid-sized companies aren't really doing pilots. They are tinkering and then hitting a ceiling early. Or feeling like they could be doing more 'could AI do...' I think more often than not, people have a _sense_ for more and just aren't sure what 'more' looks like. But part of that is because they also haven't taken time to decide what the 'ideal' outcome would be. Most signals start as 'hunches'. Part of what we want to do is formalize that 'hunch' and using our frameworks from previous chapter (which we may need to flesh out more) deconstruct the outcome into 'tasks' to do, 'processes' to manage, and direction to lead.
-```
+<!-- TODO: Revise the "tool/vendor/pilot" framing — SMBs don't run pilots, they tinker and hit a ceiling. Most signals start as hunches. The goal is to formalize the hunch and deconstruct the desired outcome into tasks, processes, and direction. May need to flesh out preceding-chapter frameworks. -->
 
 Building before diagnosing is the same mistake as framing a house before pouring the foundation. The walls go up. The roof goes on. It looks like progress right up until the moment the structure has to carry weight — and then it does not. Construction has rules about the order of operations because the order is load-bearing. So does this.
 
@@ -34,14 +30,14 @@ That is the argument. Now the vocabulary.
 
 ## Four *words*, defined once.
 
-This book uses four words constantly and they are easy to conflate. Each names a different thing. Read them once, and then refer back when one of them feels slippery. `jf-note: This is seems patronizing. Can we make this more helpful?`
+This book uses four words constantly and they are easy to conflate. Each names a different thing. Here is what each one means — and what it does not.
 
 <!-- DIAGRAM: Four-term relationship map — Framework contains Sequence; Sequence runs on a Sprint; Sprints repeat at the Rhythm. Show the nesting/hierarchy of all four terms so readers can hold the vocabulary in one glance. -->
 <!-- FORMAT: diagram -->
 <!-- PRIORITY: nice-to-have -->
 
 - **Framework** — the whole six-step shape. When we say "the Framework" or "the Compound Framework," we mean the entire system: the order, the stages, the grouping, the cadence, and the unit of work. It is the noun for everything described in this book.
-- **Sequence** — the ordered steps inside the Framework: **Signal → Source → Design → Build → Deliver → Compound**. Always all six. Always in that order. Always written with arrows, because the arrows are the point. The Sequence is the operational claim — that *this* order is the one that produces results. `jf-note: this sentence is super condescending.`
+- **Sequence** — the ordered steps inside the Framework: **Signal → Source → Design → Build → Deliver → Compound**. Always all six. Always in that order. Always in that order, because the order is load-bearing — each stage produces something the next stage requires.
 - **Rhythm** — the cadence. Running the Framework over and over. Quarterly. The Rhythm is what turns a single sprint into a compounding business outcome — the same way a weekly L10 is what turns a quarterly Rock into a company that actually executes.
 - **Sprint** — one pass through the Sequence on one validated constraint, roughly six to eight weeks. The Sprint is the unit of work this book describes and the unit of work you will run. You do not "implement the Framework." You run a Sprint, and then you run another one, and the Rhythm is what holds them together.
 
@@ -49,7 +45,7 @@ The reason to be precise here is that the looser versions of these words are exa
 
 ## The six *stages*, at a glance.
 
-The Sequence is six stages and you will spend one chapter on each. For navigation, here is the role of each in one line. Nothing more — the rest is owned by the chapters that follow. `jf-note: this prose is too telgraphy.`
+The Sequence is six stages. Each gets its own chapter. Here is the role of each one — enough to orient you, with the full depth coming in the chapters that follow.
 
 1. **Signal** — you find the one operational constraint worth solving first, and quantify what it costs.
 2. **Source** — you map what the work actually requires: the knowledge, the data, the judgment, the context.
@@ -68,13 +64,11 @@ Six stages. One Sprint. Then again.
 
 The Sequence splits into two halves, and the split is more important than the stages themselves. The first half is **Diagnose**: Signal and Source. The second half is **Execute & Compound**: Design, Build, Deliver, Compound.
 
-```jf-note:
-This needs a visual
-```
+<!-- TODO: Add a visual for the Diagnose / Execute & Compound split. -->
 
 A Sprint that gets stuck in Build almost never has a Build problem. It has a Diagnose problem that surfaced late. Going back to Signal is not failure — it is the Framework doing its job, refusing to let undisclosed assumptions hide inside execution.
 
-Diagnose is the work most companies skip. They skip it because it does not look like progress — no deliverable, no demo, nothing to show the board. It looks like talking. It is the part of the work that determines whether everything downstream is solving the right problem against a real map of what the company knows. Skip it and you Build beautifully against the wrong constraint, using data you assumed existed. `jf-note: justify. doesn't seem possible. seems like youd buuild a disaster.`
+Diagnose is the work most companies skip. They skip it because it does not look like progress — no deliverable, no demo, nothing to show the board. It looks like talking. It is the part of the work that determines whether everything downstream is solving the right problem against a real map of what the company knows. Skip it and you Build against the wrong constraint, using data you assumed existed — and the result is not a beautiful workflow that misses the mark. It is a disaster that took six weeks to produce.
 
 <!-- DIAGRAM: Sequence split into two labeled halves — DIAGNOSE (Signal, Source) on the left and EXECUTE & COMPOUND (Design, Build, Deliver, Compound) on the right, with a dividing line and brief rationale for each half. -->
 <!-- FORMAT: diagram -->
@@ -86,9 +80,7 @@ Design is downstream work. It depends entirely on what Signal and Source produce
 
 This book teaches you to run the Framework yourself. The Sequence is self-implementing — the same way *Traction* teaches you to run EOS without a facilitator, this book gives you the order of operations and the tools to execute it inside your own company. You do not need a consultant, a vendor, or a Compound engagement to run your first Sprint. You need the order, the discipline, and a real constraint to work against.
 
-```jf-note:
-This is too literal; yes we want people to be able to self-implement, but dont need to be so on the nose. Also, we would like them to hire us so lets not go over the top "on you don't need help"...
-```
+<!-- TODO: Soften the self-implementation framing — too on-the-nose. Don't oversell "you don't need help"; leave room for Compound engagement as a natural accelerant. -->
 
 Two additional layers exist that accelerate the work without changing it. They are not required to run a Sprint; they make each Sprint faster and less expensive than it would be without them. Each is introduced briefly here and then carried by the stage chapters that follow.
 
@@ -96,15 +88,13 @@ The first is **the Compound Bench** — six AI coaching agents, one per stage of
 
 The second is **the Skills Library** — twelve installable instruments, two per stage of the Sequence, that you port into your own AI stack. The Library is the durable artifact. Where the Bench is a coach you bring in for a Sprint, the instruments are tools you keep — drop-ins that make each stage faster on the second Sprint than it was on the first, and faster again on the third. The stage chapters introduce each pair of instruments as the stage that owns them is taught. The Library is also available through Compound membership.
 
-```jf-note:
-The preceding are features of the compound program; they aren't universally available to someone trying to self-impelemnt. And we dont define agents or skills here; if we're going to use the term(s), we need to define them.
-````
+<!-- TODO: Clarify that Bench and Skills Library are Compound membership features, not self-serve. Also define "agents" and "skills" before using the terms. -->
 
 <!-- DIAGRAM: Three-layer stack — Framework (base, self-run), Bench (middle, one-per-stage coaching agents), Skills Library (top, installable instruments). Show which layers are included with Compound membership vs. self-service. -->
 <!-- FORMAT: diagram -->
 <!-- PRIORITY: nice-to-have -->
 
-The shorthand worth holding in your head: the Framework is yours to run. ~~The Bench runs the Sequence with you. The Library makes the Sequence permanently yours.~~
+The shorthand worth holding in your head: the Framework is yours to run. The Bench and Library accelerate it.
 
 ## You learn this on a *Sprint*.
 
@@ -112,7 +102,8 @@ You do not learn the Framework by reading about it. You learn it by running one 
 
 The project coordinator story — the one where we mapped the work instead of posting a job — walks all six stages of the Framework in sequence. You will see it in full in Chapter 6. What it proves here is specific: not that the Sequence is theoretically sound, but that each stage produces something the next stage requires. Signal named the constraint. Source mapped what the role actually required. Design allocated the work between human and agent. Build produced the workflow. Deliver shipped it into the team's environment. Compound captured what the next Sprint would inherit. Remove any one of those steps and the chain breaks. One constraint. Six stages. One documented outcome.
 
-The Sprint is roughly six to eight weeks, Signal included. `jf-note: could be more, could be less. It's occuring to me that we really want to help compnaies that aren't software companies to start thinking about this in more 'agile' terms. That's all new vocab for them. We need to be helpful in defining things and steering them. I'm telling you this not because i want to see it literally implemented as I state it but because I want us to think through where/how we should be introducign the terminology and creating the cognitive bridges for understanding.` It is narrow on purpose — one validated constraint, one designed workflow, one measurable result against the cost that Signal quantified. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. Six to eight weeks, one constraint, one documented outcome. That is the bar.
+<!-- TODO: Sprint duration is variable (days to quarters, not always 6–8 weeks). Also: non-software companies need cognitive bridges to "agile" vocabulary — be deliberate about where/how that terminology is introduced. -->
+The Sprint is roughly six to eight weeks, Signal included. It is narrow on purpose — one validated constraint, one designed workflow, one measurable result against the cost that Signal quantified. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. Six to eight weeks, one constraint, one documented outcome. That is the bar.
 
 The Rhythm is what turns that one Sprint into a compounding business. Quarterly, you run another one. The Hybrid Accountability Chart gets one more entry. The knowledge maps get richer. The team's design judgment improves. The Sprints themselves get cheaper and faster, because the infrastructure each Sprint leaves behind accelerates the next one. *Co-Intelligence + Rhythm = Compound.* The Equation is not a slogan — it is a description of what happens to a company that runs this work on a cadence.
 
@@ -122,4 +113,3 @@ The first Sprint is where the Framework stops being something you read about and
 
 Every Sprint begins in the same place. Before Source can map anything, before Design can allocate anything, before Build can specify anything — Signal has to name the one constraint that this Sprint will spend six to eight weeks solving. The discipline of refusing to move forward until that constraint is named, quantified, and validated is the single most important habit the Framework teaches. Most companies will not do it. The ones that do are the ones that compound.
 
-~~The next chapter is Signal.~~ `jf-note: we dont need to telegraph.
