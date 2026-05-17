@@ -4,11 +4,16 @@ My integrator is on a weekly call and she's not building up to it. "She's not ke
 
 I know the feeling on both ends of that sentence. The project coordinator had been with us long enough to know things — where the client files actually lived, which contacts needed extra lead time, what the unwritten rules were for each account. That knowledge doesn't transfer with a two-week notice. It walks out the door and you spend the next three months paying a new person to relearn it while the work piles up. We'd been around this loop before and I could feel myself reaching for the job description template.
 
-I stopped and asked a different question. Not "who should we hire?" but "what does this role actually do?" We opened a blank document and listed the sources of information that fed the job — the CRM, the project tracker, the report templates she'd built, the client check-in cadence she managed from memory. Then we ran the accountability list through Work Deconstruction, task by task: which items required genuine judgment and relationships, and which were high-volume, low-judgment work that looked like operations because it lived inside the operations function? The shape of the role changed in front of us. What had looked like one job was actually two — and one of those jobs, we could design an agent team for. We never posted the listing. The work shipped. That question — "what is this work, actually?" — is the question Design exists to ask.
+I stopped and asked a different question. Not "who should we hire?" but "what does this role actually do?" We opened a blank document and listed the sources of information that fed the job — the CRM, the project tracker, the report templates she'd built, the client check-in cadence she managed from memory. Then we mapped every accountability against a simple filter: which items required genuine judgment and relationships, and which were high-volume, low-judgment work that looked like operations because it lived inside the operations function? The shape of the role changed in front of us. What had looked like one job was actually two — and one of those jobs, we could design an agent team for. We never posted the listing. The work shipped. The role got more strategic, not because we gave her a new title, but because we gave her back the hours that the low-judgment work had been consuming.
 
-Design is the stage where the constraint and the knowledge map turn into a workflow with named owners. Signal told you what to solve. Source told you what the work requires. Design decides who does what — and writes that decision down in a form the rest of the company can read, build against, and improve.
+That question — "what is this work, actually?" — is the question Design exists to ask. And the framework for answering it is what this chapter introduces.
 
-This is the first stage of *Execute & Compound*. Everything before this was diagnosis. Everything after this is shipping. Design is the gate between the two — and the reason every sprint either compounds or stalls.
+:::{.callout-important}
+## In Brief
+Design is the stage where your constraint and knowledge map become a workflow with named owners — human and AI. It produces two things: a Hybrid Accountability Chart entry that assigns every accountability to a named supervisor, and a governance framework (autonomy levels, guardrails, escalation paths) that makes the system safe to operate. This chapter covers the frameworks for thinking about system design. The next chapter covers the instruments and execution.
+:::
+
+Design is the first stage of *Execute & Compound*. Everything before this was diagnosis. Everything after this is shipping. Design is the gate between the two — and the reason every sprint either compounds or stalls.
 
 ## What Design *produces*.
 
@@ -26,12 +31,12 @@ The Hybrid Accountability Chart is the instrument that makes Design concrete. If
 
 You build it one row at a time, one sprint at a time. For each accountability your sprint is addressing, you answer four questions — and you write the answers into the chart before Build begins:
 
-1. What role or function does this team perform?
-2. What is the name of the agent team, if applicable?
-3. Who is the human supervisor?
-4. Is this accountability *AI-assisted* — meaning a human is in the loop on every output — or *Automated* — meaning the agent team executes and the human reviews on a schedule?
+1. **What role or function does this team perform?** Not the task — the outcome this person or team is responsible for. "Produce accurate initial quotes within 2 hours of request" is an accountability. "Look up pricing" is a task.
+2. **What is the name of the agent team, if applicable?** Name it. Scope it. A team called "AI Helper" is not designed. A team called "Quote Generation Team" with a defined input (bid request + customer segment data) and output (draft quote with confidence score) is designed.
+3. **Who is the human supervisor?** Every row must have one. No exceptions. No "TBD." No "the team." A name. If you can't name the supervisor, the design is not done.
+4. **Is this accountability *AI-assisted* or *Automated*?** AI-assisted means human-in-the-loop — reviews every output. Automated means human-on-the-loop — monitors by exception, reviews on schedule.
 
-Here is what your chart looks like after a handful of sprints — one row per sprint, built up over time:
+Here's what your chart looks like after a handful of sprints — one row per sprint, built up over time:
 
 <!-- DIAGRAM: Hybrid Accountability Chart — four-column table showing Role/function, Agent team name, Human supervisor, AI-Assisted or Automated; rendered as a styled reference artifact with the "every row has a named supervisor" rule called out visually -->
 <!-- FORMAT: table -->
@@ -44,19 +49,65 @@ Here is what your chart looks like after a handful of sprints — one row per sp
 | Client Onboarding | Onboarding Agent | Ops Manager | AI-Assisted |
 | Financial Reporting | Reporting Team | CFO | AI-Assisted |
 
-Every agent team in the chart has a human supervisor — every row, no exceptions. There are no unowned teams. This is a structural rule of the chart, not a soft principle — and the rule that separates organizations that have deployed AI from organizations that have *designed* with AI. Every accountability in the Human+AI workforce has a name beside it, the same way every accountability in a healthy human org chart has a name beside it. If you cannot put a name beside it, the design is not done.
+Every agent team in the chart has a human supervisor — every row, no exceptions. There are no unowned teams. This is a structural rule of the chart, not a soft principle — and the rule that separates organizations that have deployed AI from organizations that have *designed* with AI.
+
+:::{.callout-tip}
+## Pro Tip
+If you run EOS, you already have the muscle for this. Your Accountability Chart says every seat has a name. The Hybrid Accountability Chart says every agent team does too. Same principle, extended to a workforce that includes non-human workers.
+:::
 
 The four questions are not a template to fill in once and forget. They are a design discipline. Every sprint adds one row, and every row forces the four answers — including the harder ones. "Who supervises this team?" is uncomfortable when the agent team is producing work nobody on the leadership team has owned before. That discomfort is the point. The chart surfaces it before any code is written.
 
+## The *information flow* question.
+
+Before the chart makes sense, you have to answer a question most leadership teams never ask: how does information actually move through this part of the company?
+
+Every accountability in your business is, at its core, an information problem. The project coordinator isn't "managing projects." She's taking information from one system, combining it with information from another system, applying rules she carries in her head, and producing an output that moves to the next person in the chain. The quoting process isn't "creating quotes." It's pulling customer data from the CRM, matching it against pricing tables in the ERP, applying exception rules that live in a spreadsheet on someone's desktop, and assembling the result into a format the customer can read. When you see the work as information flow, the design question changes. You stop asking "what tool should we use?" and start asking "what information does this work need, where does it live, and how should it move?"
+
+That question produces what I call a *requirement doc* — not a software requirements document in the traditional sense, but a specification of the information flow for one accountability. It names:
+
+- What data feeds the work (and which systems hold it)
+- What transformations happen to that data (lookups, comparisons, calculations, formatting)
+- What decisions get made along the way (and whether each decision is rule-based or judgment-based)
+- What the output is and where it goes next
+
+Most people don't think about their company this way. They think in terms of roles and tasks. But roles are containers for information work, and tasks are steps in an information flow. When you write the flow down, you see where the bottlenecks actually live — and more importantly, you see which parts of the flow an agent can handle and which parts genuinely require a person.
+
+:::{.callout-note}
+## Action Step
+Pick one accountability from your constraint workflow. Write down the information flow: what data comes in, from where, what happens to it, what goes out, to whom. Don't describe the role — describe the information. This is the foundation for everything Design produces.
+:::
+
+## How AI connects to *information*.
+
+Once you can see the information flow, you need to know your options for connecting AI to it. There are five patterns, and the right one depends on what kind of information problem you're solving.
+
+**1. Skills reinforcing SOPs.** The knowledge lives in people's heads. It's been captured (or will be captured in Source) as documented process — standard operating procedures, decision frameworks, institutional knowledge. The AI uses that documentation as context for brainstorming, iteration, and drafting. This is the co-operation pattern: you work alongside the AI in a conversational interface (Claude, ChatGPT), and the quality of the output depends on the quality of the documented knowledge. Most companies start here. It's the lowest infrastructure lift and the fastest to show value.
+
+**2. RAG — retrieval-augmented generation.** The knowledge lives in documents, records, or databases. The AI retrieves relevant chunks at runtime and uses them to generate answers, drafts, or analyses. This is how you make an agent that "knows" your company — it doesn't memorize everything, it looks up what it needs when it needs it. RAG requires decisions about chunking (how you break documents into retrievable pieces), metadata (how you tag those pieces so the right ones surface), and freshness (how often the retrieval index updates). It's more infrastructure than skills-on-SOPs, but it unlocks agent teams that can operate against your actual data without you manually feeding context every time.
+
+**3. Data pipelines.** The knowledge lives in systems that need to talk to each other. The AI isn't generating content here; it's processing, routing, or transforming data between systems. The project coordinator's report generation — pulling data from the CRM, formatting it, dropping it into a template — is a pipeline problem. No conversation needed. Just data in, transformation, data out. Tools like n8n, Make, or Zapier handle this kind of plumbing without requiring custom code.
+
+**4. Low-code integration tools.** Platforms like Zapier, Make, or Power Automate that connect systems without writing code. These handle the "workflow automation only" category from Work Deconstruction — the routing and handoff problems that don't need intelligence, just connectivity. They're not AI, but they're part of the design because they handle the pieces the agent team doesn't need to touch.
+
+**5. Service layers and APIs.** The AI operates as a service — accepting requests, processing them against defined logic, returning structured outputs. This is the most engineered pattern and the one that scales agent teams into production workflows. Your Build team (internal or external) implements this when the design calls for an agent team that operates reliably, at volume, with defined inputs and outputs.
+
+You don't need all five. Most first sprints use patterns one and two, with some pattern four for the routing work. The point is knowing what's available so the design matches the information problem — not the other way around.
+
+:::{.callout-tip}
+## Pro Tip
+Don't pick the technology pattern first. Map the information flow first, then ask which pattern fits. A skills-on-SOPs approach for a data pipeline problem wastes everyone's time. A full service layer for a brainstorming use case is overengineered. Let the information tell you what it needs.
+:::
+
 ## AI-assisted or *automated*.
 
-The fourth question is the one operators get wrong most often. They treat it as a technology decision when it is a design decision.
+The fourth question on the HAC is the one operators get wrong most often. They treat it as a technology decision when it's a design decision.
 
 Most accountabilities start AI-assisted. A human is in the loop on every output — reviewing accuracy, format, completeness, judgment. As the design matures, as the data cleans up, as the leadership team builds trust in the agent's behavior on a class of decisions, the accountability moves toward automated — the agent executes, the human reviews on a schedule, the bottleneck of per-output review goes away.
 
 This is a spectrum, not a binary. And it shifts over time. The Quote Generation Team that started AI-assisted in sprint one might be reviewed every-other-quote by sprint four, and reviewed weekly-in-batch by sprint eight. Nothing about the agent changed in those eight sprints. What changed was the design — the leadership team learned which decisions the agent gets right reliably, which it does not, and where the human's judgment adds value.
 
-When you are deciding where to start your own accountability on this spectrum, use these triggers:
+When you're deciding where to start your own accountability on this spectrum, use these triggers:
 
 <!-- DIAGRAM: AI-assisted → Automated spectrum — horizontal spectrum bar showing the two poles, with the "Start AI-assisted when" and "Move toward automated when" decision triggers annotated at each end; optionally shows the Quote Generation Team example moving along the bar across sprint 1 / sprint 4 / sprint 8 -->
 <!-- FORMAT: diagram -->
@@ -66,19 +117,62 @@ When you are deciding where to start your own accountability on this spectrum, u
 
 **Move toward automated when:** the agent has been right on a class of decisions consistently across multiple sprints, the inputs are clean and well-defined, and the cost of per-output review outweighs the risk of occasional error.
 
+The autonomy level is a governance decision, not a capability decision. The agent may be perfectly capable of running unsupervised. The question is whether your organization has the monitoring, the escalation paths, and the discipline to let it. Start with more guardrails than you think you need. Loosening them is easy. Recovering from a bad output that went unreviewed is expensive.
+
+:::{.callout-note}
+## Action Step
+For each accountability in your constraint workflow, place it on the AI-assisted-to-automated spectrum. Write down your rationale — not just the label, but why. "AI-assisted because the exception rules aren't fully documented yet" is a rationale. "AI-assisted" by itself is a checkbox.
+:::
+
 Design is where that call gets made deliberately, with the Human Orchestrator's name attached to it — not three months after deployment when the team has quietly stopped reviewing outputs and nobody remembers deciding that.
+
+## Governance and *guardrails*.
+
+The autonomy spectrum only works if there's governance underneath it. Governance answers one question: what is this system allowed to do, and what is it not allowed to do?
+
+This is where most operators go wrong. They build the agent team first and figure out permissions later. By "later" I mean after the wrong person has pulled data they shouldn't have, or the agent has drafted a client-facing email nobody reviewed. Governance is not a compliance layer you add at the end. It's a design decision you make before Build begins.
+
+There are five questions to answer for every agent team. Write the answers down. If any answer is "we haven't decided yet," that's the decision you make now — not in Build, and not after deployment.
+
+**1. What data can agents access? What's off-limits?** Name the systems, databases, and document sets the agent can read. Name what it can't touch — customer PII, financial records above a threshold, strategic plans, anything regulated. Lock access down at the source, not at processing time. If the agent can reach the data, assume it will use the data. Design the boundary before you build the connection.
+
+**2. What actions can agents take without approval? What requires human sign-off?** "Draft a quote" is different from "send a quote to a customer." "Generate a report" is different from "distribute a report to the leadership team." Draw the line at the point where the output leaves internal review.
+
+**3. What happens when an agent encounters something it wasn't designed for?** Define the escalation path. Who gets the flag? How fast? What does the agent do while it waits — pause, use a default, or continue with a warning?
+
+**4. How will you monitor output quality?** Full review of every output (AI-assisted), spot checks on a sample (transition zone), or dashboard with exception flags (automated). Pick one and write it down.
+
+**5. What would cause you to shut down an agent workflow immediately?** Define the kill switch. Agent sends customer-facing communication without review. Agent accesses data outside its permitted systems. Error rate exceeds a defined threshold. These aren't hypothetical — they're the conditions under which the system stops, and everybody on the team knows it.
+
+:::{.callout-tip}
+## Pro Tip
+The question "does this workflow need an interface?" is a governance question in disguise. If the accountability is fully automated, it probably doesn't need one — data in, data out, humans monitor by exception. If it's AI-assisted with a human in the loop, the human needs a way to interact. That interaction might be co-operative (working alongside the AI in Claude or ChatGPT) or notification-based (approvals via Slack or Teams). The interface decision follows from the autonomy level, not the other way around.
+:::
 
 ## The *Human Orchestrator*.
 
 Design produces a workflow and a chart entry. It also produces a role: the *Human Orchestrator* for this accountability.
 
-The Human Orchestrator is Compound's answer to the question every operator eventually asks: what does the human do when the AI does the work? The answer is a different job — and more strategic.
+The Human Orchestrator is Compound's answer to the question every operator eventually asks: what does the human do when the AI does the work? The answer is a different job — and a more strategic one.
 
-The Human Orchestrator sets the goals for the agent team. They design the workflow the agent team executes against. They own the outcome — the sprint's measurable result against the constraint from Signal. They review the agent team at the goal level, not the task level — not checking every output line by line, but asking whether the team is moving the constraint in the right direction. And they make the design improvements between sprints. After every Compound phase, the Human Orchestrator looks at what the team produced and asks: what one design change would make the next sprint better? Eight sprints of one good design change each produces an agent team substantially more capable than the one that shipped in sprint one. That is the compounding mechanism.
+The Human Orchestrator sets the goals for the agent team. They design the workflow the agent team executes against. They own the outcome — the sprint's measurable result against the constraint from Signal. They review the agent team at the goal level, not the task level — not checking every output line by line, but asking whether the team is moving the constraint in the right direction. And they make the design improvements between sprints. After every Compound phase, the Human Orchestrator looks at what the team produced and asks: what one design change would make the next sprint better? Eight sprints of one good design change each produces an agent team substantially more capable than the one that shipped in sprint one. That's the compounding mechanism.
 
 You met a version of this role in Chapter 2 — our marketing lead running four agent teams in parallel, each working a different piece of the same content project. Each one had a named tool, a scoped task, and her as the supervisor reviewing outputs. What I didn't show you there is the Design work that made that shift possible. Someone had to sit down and ask what she was actually accountable for. Which parts of her job required her judgment, and which parts required execution that any well-designed agent could handle? Which teams needed to surface decisions to her, and at what frequency? Those questions got answered in a Design session before a single agent was built. The four-tab setup wasn't improvised. It was designed — and because it was designed, her role didn't shrink when the agents came in. It changed shape into something the original offer letter didn't have a name for.
 
-This is a more strategic role than executing inside the function. It is also a role most leaders were not hired for. The operations lead who got the job because she was excellent at executing operations work is now being asked to design the operations function instead of running it. Not a smaller role. A different one — and developing the capability is deliberate work, not a personality change. The Design stage names the role; the Rhythm builds the muscle.
+### Finding the right *person*.
+
+The Human Orchestrator role isn't a title you assign to whoever's available. It requires specific capabilities, and identifying the right person is part of the design work.
+
+Look for three things. First, authority over the workflow and the constraint outcome. This person needs to be able to make decisions about how the work gets done — not a project manager who coordinates, but an owner who decides. Second, comfort with ambiguity. The first few sprints will surface problems nobody anticipated. The Orchestrator needs to adjust the design without freezing. Third, willingness to shift from executing to designing. The best candidate is usually the person closest to the work who's also frustrated by the parts of it that don't require their skill.
+
+That third trait is the development gap. The operations lead who got the job because she was excellent at executing operations work is now being asked to design the operations function instead of running it. Not a smaller role. A different one — and developing the capability is deliberate work, not a personality change.
+
+What does ramp-up look like? The first sprint is supervised — the Orchestrator runs Design with guidance, either from a Compound partner or from the Bench agents that enforce the same question sequence. By the second sprint, they're running the process. By the fourth, they're improving it. The skill isn't learned in a training session. It's learned by doing the work, one sprint at a time, with the framework holding the structure while the person builds the muscle.
+
+:::{.callout-note}
+## Action Step
+Identify your Human Orchestrator candidate. Ask: does this person have authority over the constraint outcome? Are they willing to shift from executing to designing? Write down the name. If there's a development gap, name it — and plan the first sprint as the ramp-up, not as a test they need to pass.
+:::
 
 ## The *Agent Coordinator*.
 
@@ -86,6 +180,55 @@ Beneath the Human Orchestrator sits an operational role: the *Agent Coordinator*
 
 The Agent Coordinator manages the agent team day-to-day. Inputs clean. Outputs reviewed at the appropriate frequency. Judgment-call escalations surfaced to the Human Orchestrator when the agent produces something outside its designed scope. Flagging when the design is drifting — inputs degrading, outputs trending off, a class of decisions no longer being handled cleanly. The Agent Coordinator is to an agent team what a team lead is to a group of junior employees: not the strategist, but the person who makes sure the work is on track and that problems surface before they become expensive.
 
-In a 25-person company, this is part of someone's existing role — often the operations lead, often the same person who championed the first sprint. In a 100-person company, it may be a dedicated position. The staffing decision is less important than the fact that *someone owns it*. Companies that deploy agent teams without an Agent Coordinator discover within weeks that the team has drifted — inputs no longer reviewed, outputs no longer trusted, the workflow back to "we just do it the old way." The fix is naming the role and giving it the hours.
+In a 25-person company, this is part of someone's existing role — the operations lead, or whoever championed the first sprint. In a 100-person company, it may be a dedicated position. The staffing decision is less important than the fact that *someone owns it*. Companies that deploy agent teams without an Agent Coordinator discover within weeks that the team has drifted — inputs no longer reviewed, outputs no longer trusted, the workflow back to "we just do it the old way." The fix is naming the role and giving it the hours.
 
 The Human Orchestrator and the Agent Coordinator are two different jobs. They can live in the same person at small scale. They cannot live nowhere.
+
+## The *Design Team*.
+
+In a company of 25, the Design session might be the CEO and one direct report at a whiteboard. In a company of 100, Design needs more structure — and that structure is a cross-functional Design Team with a charter.
+
+The Design Team is a functional team, not a committee. It's owned by leadership — typically the integrator or COO — and it has a defined scope: research the constraint, analyze it from multiple angles, benchmark against what's possible, build a roadmap, and maintain a prioritized backlog of design work. The team includes whoever is closest to the work being designed (the Human Orchestrator candidate), whoever understands the data (often the Agent Coordinator candidate), and whoever has authority to make decisions about the workflow.
+
+The charter is short. It says: this team owns the design of Human+AI workflows for the company. It meets on a cadence (weekly during active sprints, biweekly between sprints). It produces Hybrid Accountability Chart entries and workflow specifications. It does not build — Build is a separate stage with separate roles. And it does not operate in isolation — the constraint comes from Signal, the knowledge map comes from Source, and the design hands off to Build with everything Build needs to execute.
+
+This matters because Design decisions affect multiple functions. The quoting workflow touches sales, operations, and engineering. The content production workflow touches marketing and client delivery. A Design Team with cross-functional representation catches the dependencies that a single-function design session misses — and produces workflows that the whole company can operate against, not just the function that requested the sprint.
+
+:::{.callout-tip}
+## Pro Tip
+If you run EOS, the Design Team maps naturally to your L10 structure. The constraint comes out of your Quarterly Rocks. The Design Team meets during or adjacent to the L10. The Hybrid Accountability Chart becomes a living artifact that leadership reviews the same way they review the Accountability Chart — because it is the Accountability Chart, extended.
+:::
+
+## The populated *example*.
+
+Here's what the Hybrid Accountability Chart looks like for a real constraint — the manufacturing quoting workflow from the previous chapters.
+
+**Constraint (from Signal):** Design engineers spend 4-6 hours producing initial designs for every bid, including the 50%+ that won't convert, at an estimated cost of $180K/year in misallocated engineering time.
+
+**Knowledge Map (from Source):** CRM with win/loss history (manual pipeline), ERP with materials pricing (not connected to quoting), quoting spreadsheet with 200+ exception rules on one person's desktop, two organic sources (ops manager Maria, senior engineer Dave), two missing sources (historical quote accuracy, segment conversion rates).
+
+### Hybrid Accountability Chart
+
+| Role / Function | Agent Team | Human Supervisor | Level |
+|---|---|---|---|
+| Bid intake and CRM logging | None (workflow automation) | Sales Director | N/A — standard automation |
+| Customer data retrieval and segment analysis | Quote Research Team | Maria (Ops Manager) | Automated |
+| Draft quote generation (pricing + exceptions + assembly) | Quote Generation Team | Maria (Ops Manager) | AI-Assisted |
+| Design feasibility estimation | None | Dave (Senior Engineer) | N/A — human judgment |
+| Quote delivery and customer negotiation | None | Sales Director | N/A — human judgment |
+
+### Human Roles
+
+**Human Orchestrator:** VP of Operations. Owns the constraint outcome (reduce engineering hours on non-converting bids). Sets the target: cut initial quote turnaround from 4-6 hours to under 1 hour for standard bids. Reviews sprint results against that target. Makes the call on when to move Quote Generation Team from AI-Assisted to Automated.
+
+**Agent Coordinator:** Maria, Ops Manager. Currently does manual reconciliation between CRM and ERP for every quote. Knows the exception rules. Configures and monitors the Quote Research Team and Quote Generation Team day-to-day. Reviews every draft quote in sprint one. Flags edge cases to the VP of Operations.
+
+### Guardrails
+
+1. **Data access:** Agent teams can read CRM deal records, ERP pricing tables, and the exception rules database. Off-limits: customer payment history, contract terms marked confidential, and any data in the HR system.
+2. **Actions without approval:** Agents can draft quotes, pull data, and flag exceptions. Agents cannot send any communication to a customer, modify pricing tables, or create CRM records beyond the initial bid log.
+3. **Escalation path:** When the agent encounters an input it wasn't designed for (unknown customer segment, missing ERP data, spec outside historical range), it pauses the quote, flags Maria, and holds until she resolves or routes to the VP of Operations.
+4. **Quality monitoring:** AI-Assisted phase — Maria reviews every draft quote. Target: 95% of draft quotes require no substantive correction over 3 consecutive sprints before considering the move to Automated.
+5. **Kill switch:** Agent sends or stages a quote for external delivery without human review. Agent accesses data outside its permitted systems. Error rate on pricing exceeds 10% in any sprint.
+
+That's one constraint, one sprint, five chart rows, two named humans, and five guardrail answers. The next chapter covers the instruments and execution mechanics — Work Deconstruction, the Design Agent on the Bench, and the gate checklist that separates Design from Build.

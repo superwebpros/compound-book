@@ -8,7 +8,10 @@ There is a second agent — a content production workflow that a different team 
 
 The reason I'm telling you this is because the Guardrails Checklist isn't a compliance exercise. It's the moment in Build where you decide what the system is allowed to touch. If you do that work before the build executes, it costs almost nothing. If you discover it after something goes sideways — after the wrong person pulls the wrong data — it costs everything. The spec either includes the guardrail or it doesn't. And if it doesn't, Build isn't done yet.
 
-Build is the stage where the locked design becomes a working, deployed system. It is the narrowest stage of the Sequence — and the fastest, when the diagnostic work was done properly. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
+:::{.callout-important}
+## In Brief
+Build is the stage where the locked design becomes a working, deployed system. It is the narrowest stage of the Sequence — and the fastest, when the diagnostic work was done properly. Build produces one thing: a deployed solution to the validated constraint, specified by an eight-section Build Spec, stress-tested against a seven-question Guardrails Checklist, and confirmed done only when it handles real work under real supervision. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
+:::
 
 ## What *Build* produces.
 
@@ -34,15 +37,37 @@ This is not a limitation. It is the structural reason Build is fast. A team that
 
 If, mid-Build, the team finds themselves negotiating new requirements, that is a Design-debt conversation, not a Build conversation. The right move is to stop, go back, fix the design, and resume — not to absorb the ambiguity into Build and hope it works out. It will not work out.
 
-## Build is fast when *Design* was thorough.
+:::{.callout-tip}
+## Pro Tip
+Favor the smallest possible solution that satisfies the spec. The team that ships a Claude project with three skills in a week beats the team that spends six weeks architecting an agentic pipeline — if the design only called for a skill. Build to the design, not to the architecture you wish you had.
+:::
 
-The teams who run Build cleanly are the teams who refused to advance past Signal until they had one constraint with a dollar number on it. Who refused to advance past Source until they had a Knowledge Map that named what the work actually requires. Who refused to advance past Design until the Hybrid Accountability Chart specified who owns what, what the handoffs are, where the human supervisor enters, and what the agent does inside the bounds the supervisor has set.
+## Build lives outside IT.
 
-When all of that is true, Build is mostly translation work. The specification already exists; Build encodes it.
+This is the sentence that makes technical people uncomfortable and everyone else relieved: Build does not require developers.
 
-When any of that is not true, Build is where the unresolved questions surface — at the worst possible moment, expensive, and disguised as a technical problem when they are actually a design problem. The mid-build "wait, we didn't decide that" conversation is not a Build problem. It is Design debt arriving on the worst possible balance sheet.
+Not always. Not for every path. But the assumption that Build means "hand it to engineering" kills more sprints than bad specs do. The team waits for a developer. The developer is three projects deep. The sprint stalls. The constraint keeps costing what it costs.
 
-The Diagnose half of the Sequence — Signal and Source — and the gate at the end of Design exist to prevent that conversation from ever happening.
+Here's what actually happened. I teach social science students at Michigan State — not computer science majors, not engineers. Within a semester, those students are building functional data pipelines. Pulling data from APIs, transforming it through agents, writing it back to systems. They don't think of themselves as technical. They are.
+
+Anyone on your team who is smart and diligent can learn to make a skill. That's not a motivational claim. It's an observation about the current state of the tools. Claude's project interface lets you build a working skill in a conversation. Replit lets a non-developer ship a working app by describing what they want. n8n lets you wire automations by dragging blocks. The barrier to low-code building is lower than most leadership teams realize — and it drops every quarter.
+
+IT's role in this picture is real and essential, but it's different from what most teams assume. IT controls the keys — permissions, access, security policies, system credentials. When Build needs a connection to the CRM or read access to the ERP, IT gates that. When the data sensitivity requires enterprise-grade authentication, IT specs it. But IT does not need to be the one prototyping the workflow, writing the skill, or assembling the automation. The person closest to the work builds it. IT makes sure it's safe.
+
+:::{.callout-note}
+## Action Step
+Before your next Build, ask: does the builder need to be a developer, or does the builder need to be the person who knows the work? If the answer is the second, put them in front of the tool and let them build. Pair them with IT for access and security — not for construction.
+:::
+
+## The complexity spectrum.
+
+Not every build is the same size, and the gap between the simplest and most complex is enormous. Understanding where your build sits on that spectrum prevents two failure modes: overbuilding simple things and underbuilding complex ones.
+
+At the simple end: a shared AI environment. Claude Teams or ChatGPT Enterprise with shared projects and skills. Your team logs in, the skills are there, the context is loaded, the guardrails are set. The "build" is configuration — writing the skills, setting the project context, defining what the agent can access. A competent person does this in an afternoon.
+
+At the complex end: fully agentic workflows. Multiple agents coordinating across systems, making decisions in sequence, passing outputs between stages, running on schedules without a human in the loop for routine operations. These involve orchestration platforms, API integrations, error handling at every junction, monitoring dashboards. They take weeks, sometimes months.
+
+Between those poles is where most builds land — a workflow that pulls from one or two systems, runs data through an agent with a defined skill, and delivers the output to a human for review. Low-code tools handle this well. The thinking is the same at every point on the spectrum: Design covers the what, Build covers the how. The spec tells you where you are on the spectrum. Build it there. Not one step further.
 
 ## The build *paths*.
 
@@ -50,11 +75,11 @@ The team enters Build with a designed workflow. They exit Build with that workfl
 
 Three paths cover almost every Compound sprint:
 
-- **Off-the-shelf tool.** Existing software that maps cleanly to the designed workflow with light configuration. The work is selection, configuration, and integration into the team's existing flow — not building from scratch. This is the right path when the workflow is well-served by a mature product category and the design does not require anything the product does not already do.
+- **Off-the-shelf tool.** Existing software that maps cleanly to the designed workflow with light configuration. The work is selection, configuration, and integration into the team's existing flow — not building from scratch. Use this path when a mature product category already does what the design requires, with no custom behavior needed.
 
-- **Low-code or no-code build.** A workflow assembled in something like Zapier, Make, Airtable, n8n, or a Claude project with skills and connectors. No external engineering. The team owns it directly — they can see how it works, change it, and extend it. This is the right path when the workflow is custom enough that no off-the-shelf product fits, but is composed of standard primitives — pulling from a system, transforming with an agent, writing back to a system, notifying a person.
+- **Low-code or no-code build.** A workflow assembled in something like Zapier, Make, Airtable, n8n, or a Claude project with skills and connectors. No external engineering. The team owns it directly — they can see how it works, change it, and extend it. Use this path when the workflow is custom but built from standard primitives: pull from a system, run through an agent, write back, notify someone.
 
-- **Hand-built integration.** Custom code, usually involving an API to a system of record, often with an engineer in the loop. Slower than low-code, higher return, harder to change later. This is the right path when the workflow runs at a scale or against a system that low-code tools cannot reach — or when the integration touches data the company will not put through a third-party automation platform.
+- **Hand-built integration.** Custom code involving an API to a system of record, with an engineer in the loop. Slower than low-code, higher return, harder to change later. Use this path when the workflow runs at a scale or against a system that low-code tools cannot reach — or when the integration touches data the company will not route through a third-party platform.
 
 <!-- DIAGRAM: Three build paths — off-the-shelf / low-code / hand-built — as a decision flowchart, showing the qualifying questions that route the reader to each path -->
 <!-- FORMAT: flowchart -->
@@ -72,23 +97,91 @@ To pick the right path for your design, run through these questions in order:
 
 The Design phase determines the path. Build executes it. A team that picks a path because of a vendor relationship, an internal preference, or a fashion in the market is making a Design decision under the cover of Build — and they will pay for it.
 
-### Sprint · the three-week quoting workflow.
+:::{.callout-note}
+## Action Step
+Pull the designed workflow from Design. Run the three-question decision tree above. Write down which path you're on and why. If you can't answer the questions without guessing, Design isn't done — go back.
+:::
 
-A 60-person professional services firm came into a sprint with a Signal that was almost embarrassing in its clarity — quotes were taking five business days, the principal was the bottleneck on every one, and the constraint was costing them roughly $200K a year in lost or stale deals. Source mapped the inputs: the inbound brief, the historical quote library, the rate card, the scoping checklist. Design produced a workflow where an agent drafted the quote, the project lead reviewed and edited it, and the principal signed off only on the final number.
+## Technical literacy — what you need to know, nothing more.
 
-The build path was low-code. No engineer needed. The team assembled the workflow themselves in three weeks, using tools they already had licenses for. Quotes started going out the same day they came in. The principal got their week back. The cost of the build was a rounding error against what the constraint had been costing.
+You don't need to become a technologist. You need to know enough to make decisions without deferring to someone who doesn't understand your constraint. This section gives you exactly that.
 
-Before the build started, the team completed the spec and ran the Guardrails Checklist. The spec told the builder: inputs are the inbound brief and the historical quote library; outputs are a draft quote landing in the project lead's review queue; the agent drafts, the project lead edits, the principal signs off on the final number only. The checklist locked the access layer before they built anything else — the account manager's quoting data stayed with the account manager. Those were ten-minute decisions. They made three weeks of build work unambiguous.
+### Models and providers.
 
-The story isn't that low-code is magic. The story is that Design gave them a workflow simple enough to build in low-code in three weeks, and a spec clear enough that the builder never had to invent anything. That is what a thorough diagnose produces.
+An AI model is the engine. A provider is the company that built and hosts it. The major providers right now: Anthropic (Claude), OpenAI (GPT), Google (Gemini), Meta (Llama — open source), and smaller players like Groq and DeepSeek that compete on speed or cost.
 
-The low-code path goes further than most people expect. I was in a strategy session with a client team — a professional services firm, small leadership group — and one of them mentioned, almost in passing, that he was already writing LinkedIn posts at his kid's soccer game. Sitting in the bleachers, pulling out his phone, typing a prompt into ChatGPT, and two minutes later he had a post. Doing it consistently. Getting results he liked.
+Each provider makes trade-offs. Claude is strong at reasoning and tool use — it follows complex instructions well and works reliably inside structured workflows. GPT is widely adopted with a large ecosystem. Groq is fast but limited in depth. DeepSeek is cheap but raises data residency questions for companies with compliance requirements.
 
-For a single person's workflow — one skill, one use case, no organizational handoffs — the Sequence compresses to a conversation. You run through Signal, Source, and Design in your head in the time it takes to describe what you want. I said: go into Claude. Use Claude's built-in project setup. Copy in your three best posts. Tell it what worked about each one. Ten minutes — by the time the half is over — you've built a skill. You've got a pipeline.
+You don't pick a provider the way you pick a vendor for a five-year contract. You pick the model that fits the task in your spec. Some builds use one provider for drafting and a different one for classification. The spec determines the fit.
 
-That is not what a Compound sprint looks like. A sprint involves a team, shared systems, and a designed workflow with named supervisors and handoffs. The soccer-game build is a personal-productivity exception — one person, one tool, no one else's workflow affected. The reason it works without a full Sequence is because the stakes and complexity are bounded to a single seat. When the work crosses a handoff — when someone else has to use the output, when the data is shared, when the system touches a record of consequence — that is when the Sequence disciplines the build and prevents the failure modes this chapter describes.
+### Tokens and pricing.
 
-Build doesn't require an engineer. It requires a design that names the shape. When Design has done its job, the build path reveals itself.
+Tokens are to AI what minutes are to a phone plan. Every interaction with a model — every prompt you send, every response it generates — consumes tokens. A token is roughly three-quarters of a word. A 1,000-word document is about 1,300 tokens.
+
+Pricing is per token, and it varies by provider and model. As of this writing, the range runs from fractions of a cent per thousand tokens on smaller models to a few cents per thousand on the most capable ones. Input tokens (what you send) and output tokens (what the model generates) are priced differently — output is usually more expensive.
+
+Why this matters for your build: a workflow that processes 500 documents a day at 2,000 tokens each is consuming a million tokens daily. At a few dollars per million tokens on a mid-tier model, that's manageable. At top-tier pricing, it's a line item. I learned this the hard way — our Anthropic API usage hit four figures in days when we first started building production workflows. We didn't have a problem with the model. We had a problem with not understanding the meter.
+
+The fix is straightforward: use the most capable model where judgment matters (the agent's core reasoning), and a cheaper, faster model where it doesn't (classification, summarization, routing). Your spec's agent scope section tells you which is which.
+
+:::{.callout-tip}
+## Pro Tip
+Ask your builder to estimate monthly token cost before the build starts, not after the first invoice arrives. The calculation is simple: average tokens per interaction, times interactions per day, times price per token, times 30.
+:::
+
+### Open source vs. proprietary.
+
+Proprietary models (Claude, GPT, Gemini) run on the provider's servers. You send data to their API, they process it, they send results back. The upside: they're the most capable models available, they're maintained and updated by the provider, and you don't manage infrastructure. The downside: your data travels through their systems, and you're subject to their pricing, rate limits, and terms of service.
+
+Open-source models (Llama, Mistral, and others) can run on your own servers. The upside: your data never leaves your environment, you control the infrastructure, and there are no per-token costs beyond your compute bill. The downside: you need someone to host, maintain, and update them — and the most capable open-source models still trail the top proprietary ones on complex reasoning tasks.
+
+For most Compound sprints, proprietary models are the right call. The data sensitivity question from the Guardrails Checklist is what determines the exception. If the data cannot leave your environment — regulatory, contractual, or policy — open source on your own infrastructure is the path.
+
+### Fine-tuning vs. RAG.
+
+Two terms that come up in every vendor conversation. Here's what they mean and when each one applies.
+
+*Fine-tuning* is retraining a model on your data so it behaves differently by default. Think of it as teaching the model your company's dialect — it changes how the model thinks. Fine-tuning is expensive, slow, and hard to update. It makes sense when you need the model to behave in a fundamentally different way than it does out of the box, across thousands of interactions, with the same specialized pattern.
+
+*RAG* — retrieval-augmented generation — is giving the model access to your data at the moment it needs it, without changing the model itself. Think of it as handing the model a reference binder before it answers each question. The model stays general-purpose; your data provides the specifics. RAG is cheaper, faster to set up, and easy to update — you change the reference material, not the model.
+
+For most builds in a Compound sprint, RAG is the right approach. Your quoting agent doesn't need a fine-tuned model. It needs a general-purpose model with access to your historical quotes and rate card. The Knowledge Map from Source already tells you what data the model needs access to. RAG makes that access possible without retraining anything.
+
+:::{.callout-note}
+## Action Step
+When a vendor or builder proposes fine-tuning, ask: "Could we get the same result by giving the model access to our data at query time?" If the answer is yes, you've just saved weeks and thousands of dollars. RAG first. Fine-tune only when RAG can't get you there.
+:::
+
+### Deployment: where the build runs.
+
+Three options, increasing in complexity:
+
+**Provider-hosted (API).** Your build calls the model through the provider's API. The model runs on their servers. This is the default for most builds — simplest to set up, no infrastructure to manage, and where most low-code platforms connect.
+
+**Your own server.** You host the model (usually open source) on your infrastructure or a cloud provider you control. Full data control. Higher setup cost. Requires someone to maintain it.
+
+**Serverless / edge.** The model runs on distributed infrastructure that scales automatically. Useful for high-volume workflows where you need speed and don't want to manage capacity. Overkill for most first sprints.
+
+Your spec's data sensitivity classification and the volume estimate from your workflow design determine which deployment fits. Start with provider-hosted unless the Guardrails Checklist tells you the data can't leave your environment.
+
+## Agile concepts for the rest of us.
+
+If you've run a software team, you know this language. If you haven't, here's what matters for Build.
+
+**Sprint.** A fixed time box — in our case, the Compound Sprint from Chapter 3. Build happens inside that time box. It has a start, an end, and a defined deliverable. The discipline of the time box prevents Build from expanding to fill whatever time is available.
+
+**Backlog.** A prioritized list of work items that need to get done. In a Compound Build, the backlog is the spec — eight sections, each one a work item. The builder works through them in order. New items don't get added mid-build unless Design reopens.
+
+**QA (quality assurance).** Testing the build against real inputs before declaring it done. In our framework, this is the "Done" test — last week's real data through the system, four questions answered. QA is not a phase you skip when you're running short on time. It's the phase that determines whether Build is actually done.
+
+**Accountability.** Every work item has an owner. Every test has a person who signs off. Every failure has someone who fixes it. This maps directly to the Hybrid Accountability Chart — the human supervisor named there is the person accountable for Build's output.
+
+The Compound Sprint from Chapter 3 is the strategic container. Build's sprint discipline is the tactical version — same principle of time-boxed, scoped, accountable work, applied to the construction of a single workflow.
+
+:::{.callout-tip}
+## Pro Tip
+If your Build is running past the time box, the instinct is to extend the deadline. The right move is to cut scope — ship the version that handles 80% of inputs and build the remaining 20% in the next sprint. A deployed system that handles most of the work beats a perfect system that handles none of it because it's still in development.
+:::
 
 ## The two instruments — *Build Spec Writer* and *Guardrails Checklist*.
 
@@ -111,27 +204,90 @@ A complete spec covers eight sections:
 <!-- FORMAT: table -->
 <!-- PRIORITY: must-have -->
 
+Here's what those sections look like filled in. This is from a manufacturing firm — 60 people, quoting bottleneck costing $180K a year in engineering time. Signal nailed the constraint, Source mapped the data, Design produced the workflow. Build started with this spec:
+
+**Section 1 — Workflow Summary:** When a new bid request arrives in the CRM, the quoting agent drafts a rapid cost estimate using the historical quote library, rate card, and customer segment data. The estimate lands in the project lead's review queue within 15 minutes. The project lead reviews, edits if needed, and routes: high-confidence estimates go to the principal for final sign-off; low-confidence estimates get flagged for full engineering review.
+
+**Section 2 — Inputs:** Inbound bid brief (submitted via web form, parsed into CRM as a new deal record), historical quote library (3 years, indexed by project type and final price), current rate card (maintained by finance in ERP), customer segment data (CRM field — existing, new, or strategic account), and win/loss history (CRM conversion rates by segment).
+
+**Section 3 — Outputs:** A rapid cost estimate landing in the project lead's CRM queue as a draft record — containing estimated price range, line-item breakdown, confidence flag (high/medium/low), and the three most similar historical quotes. Plus a routing recommendation the project lead confirms or overrides.
+
+**Section 4 — Agent Scope:** The agent matches the brief to three similar historical quotes, applies rate card pricing, flags confidence level, and drafts the estimate. The agent does not set a final price, override the rate card, apply customer-specific exceptions, or send anything to the client.
+
+**Section 5 — Human Supervisor Role:** Project lead reviews every estimate. Reviews for scope interpretation, pricing range, confidence flag, and routing. Expected review: 10-15 minutes per estimate vs. 4-6 hours for the old process. Escalation: low-confidence goes to engineering, pricing exceptions go to ops, anything over $50K goes to principal.
+
+**Section 6 — Systems and Integrations:** CRM (read/write), ERP rate card (read only), shared drive quote library (read only, needs indexing before build), email (read only, via existing CRM integration). Sensitivity: pricing data is medium; everything else is low.
+
+**Section 7 — Failure Modes:** No similar quotes found — route directly to engineering. Rate card stale — flag line item, notify finance. CRM down — briefs queue in email, manual entry, agent processes when connection restores. Estimate off by 25%+ — confidence flag should catch it; project lead review is the safety net.
+
+**Section 8 — Build Path and Constraints:** Low-code via Make (existing license). Under $500/month in tooling. Three weeks from spec to deployment. All data stays in existing systems. Quote library must be indexed before build begins — prerequisite, not build task.
+
+That spec gave the builder everything. No ambiguity meetings. No mid-build design decisions. Three weeks, start to finish.
+
 Build Spec Writer is the Library instrument that produces the template and method. The Build Agent on the Bench runs you through it interactively, in conversation — that is the distinction between the two. Both produce the same artifact; the Library gives you the form, the Bench walks you through filling it. If you are working without either instrument, these eight sections are the spec. Fill them in that order before you hand anything to a builder.
+
+:::{.callout-note}
+## Action Step
+Open a document. Write the eight section headers. Fill in Sections 1-3 from your Design artifacts — if you can't fill them without guessing, Design isn't done. Then complete Sections 4-8 using the Hybrid Accountability Chart and Knowledge Map. Every section must have content before the spec goes to a builder.
+:::
+
+## The Implementation Mistakes Checklist.
+
+Before building starts, audit the spec against these seven failures. Each one has ended a sprint early or produced a system that got shut down within weeks.
+
+1. **Reinventing existing capabilities.** Search before you build. Does a tool, feature, or integration already exist that does what this section of the spec describes? Fifteen minutes of searching saves weeks of building. This is the most common implementation failure — and it's not technical. It's a research failure.
+
+2. **Using the wrong tool for the job.** Match the tool to the build path, not the other way around. If the spec calls for low-code and someone proposes a custom API integration because "it would be cleaner," the spec wins.
+
+3. **Building before the spec is complete.** Every empty section in the spec is a decision the builder will make on the fly. Builders are not designers. The decisions they make under build pressure will not match what Design intended.
+
+4. **Ignoring the handoff.** The output must land where the work already lives. If the output lands in a new tool the team has never opened, adoption is zero.
+
+5. **Skipping failure modes.** If Section 7 is empty, the build handles the happy path and breaks on the first edge case. Every workflow has edge cases. Name them before they name themselves.
+
+6. **Building for the demo instead of the workflow.** A demo shows the happy path. A build handles the edge cases, the missing data, the system outages, the weird inputs, the supervisor who's on vacation.
+
+7. **Declaring done before testing against real inputs.** Pull last week's actual data — the real records, the real requests — and run them through the build. Synthetic data and cherry-picked examples are not tests.
+
+:::{.callout-note}
+## Action Step
+Walk through all seven items with the builder present. Check each one against the completed spec. Any item that can't be checked off is a gap that must be resolved before build begins.
+:::
+
+## The *Guardrails Checklist*.
 
 **Guardrails Checklist** is the set of quality, privacy, and oversight decisions that must be locked before the solution goes live. The checklist is not bureaucracy. It is the difference between an AI solution your company can stand behind and an AI solution your company is one mistake away from regretting publicly. The work of completing it is small. The work of skipping it is enormous and arrives late.
 
 Run through these questions before the build executes, not after:
 
-- **Data access.** What data is the system permitted to touch? What is it explicitly not permitted to touch? Who made that decision, and where is it documented?
-- **Review cadence.** Who reviews the agent's outputs? How often? Is that review manual for every output, sampled, or triggered by exceptions?
-- **Escalation path.** When the agent produces output that requires human judgment — an edge case, a confidence flag, an anomaly — who does it go to? In what form? On what timeline?
-- **Error handling.** How does the system surface a failure? Who is notified? What is the fallback if the workflow breaks?
-- **Logging.** What gets logged? Where does the log live? Who has access to it?
-- **Rollback.** If the system produces a bad output at scale before anyone catches it — what does rollback look like? Can you stop it? Can you reverse the outputs that went out?
-- **Access control.** Who can see the outputs? Who can run the workflow? Is that aligned with what the Design phase decided about data sensitivity and who needs to know what?
+1. **Data access.** What data is the system permitted to touch? What is it explicitly not permitted to touch? Who made that decision, and where is it documented?
+2. **Agent autonomy.** What can the agent do without human approval? What requires human sign-off before the agent acts? Write it at the level of specificity your supervisor needs to verify it.
+3. **Unrecognized inputs.** When the agent encounters an input it was not designed for, what does it do? Refuse and escalate? Attempt and flag? The answer must be designed, not discovered.
+4. **Quality measurement.** How is output quality measured? Not "we'll review it" — what specific checks, against what baseline, measured how?
+5. **Escalation path.** When the agent produces output that requires human judgment, who does it go to? In what form? On what timeline?
+6. **Accountability.** Who is responsible when the agent produces a bad output? A named person — not a team, not a department, not "the AI." This is the human supervisor from the Hybrid Accountability Chart.
+7. **Kill switch.** What would cause you to shut down the agent workflow immediately? Define the conditions now, when you're thinking clearly — not in the moment when something has already gone wrong. What error rate? What type of error? What data exposure?
 
 <!-- DIAGRAM: Guardrails Checklist — the seven questions as a scannable checklist reference, suitable for use as a pre-deploy gate -->
 <!-- FORMAT: table -->
 <!-- PRIORITY: must-have -->
 
+Here's what the Guardrails looked like for the quoting agent:
+
+- **Data access:** CRM deal records (read/write), ERP rate card (read), historical quote library (read). No access to financial reporting, employee data, client contracts, or any system not listed.
+- **Agent autonomy:** Can match quotes, apply rate card, generate drafts, assign confidence flags, place in review queue. Cannot send anything to a client, apply pricing exceptions, or commit a quote.
+- **Unrecognized inputs:** If the brief doesn't contain enough information to match against history, the agent flags it as "insufficient for rapid estimate" and routes to the project lead.
+- **Quality measurement:** Weekly comparison of rapid estimates to final quoted prices on converted deals. Target: within 15% on high-confidence quotes.
+- **Escalation path:** Low confidence to engineering, pricing exceptions to ops, anything over $50K to principal.
+- **Accountability:** Project lead owns every estimate the agent produces, the same way they'd own it if a junior team member drafted it.
+- **Kill switch:** Three estimates off by 30%+ in one week, any estimate sent without human review, or any data access outside defined scope. Ops manager holds the switch.
+
 If you cannot answer all seven, the system is not ready to deploy. These are not edge cases. They are the conditions under which the human supervisor can actually supervise.
 
-The two instruments produce a build that is specified clearly and constrained safely. Both run before the build executes — not after.
+:::{.callout-note}
+## Action Step
+Answer all seven questions in writing. Attach the answers to the Build Spec as a companion document. If any question can't be answered, the build is not ready to deploy — resolve the gap before going live.
+:::
 
 ## The *Build Agent*.
 
@@ -143,15 +299,37 @@ The Build Agent is not the builder. It is the specifier.
 
 Most Compound members don't use Compound to build. Your build gets done by your own people, by the vendor you already have a relationship with, by a contract engineer, or — on the low-code path — by your team directly. The Build Agent's job is to give whoever is building a spec clear enough that they can execute against it without inventing the design on the fly. Most teams have the technical resources to build. What they have never had is a clean spec to hand the builder. The Build Agent is what changes that. If you are working without Compound membership, the eight-section spec above is the substitute — and it works the same way. The spec is the mechanism. The agent is just a faster path to filling it.
 
+## Sprint: the three-week quoting workflow.
+
+A 60-person professional services firm came into a sprint with a Signal that was almost embarrassing in its clarity — quotes were taking five business days, the principal was the bottleneck on every one, and the constraint was costing them roughly $200K a year in lost or stale deals. Source mapped the inputs: the inbound brief, the historical quote library, the rate card, the scoping checklist. Design produced a workflow where an agent drafted the quote, the project lead reviewed and edited it, and the principal signed off only on the final number.
+
+The build path was low-code. No engineer needed. The team assembled the workflow themselves in three weeks, using tools they already had licenses for. Quotes started going out the same day they came in. The principal got their week back. The cost of the build was a rounding error against what the constraint had been costing.
+
+Before the build started, the team completed the spec and ran the Guardrails Checklist. The spec told the builder: inputs are the inbound brief and the historical quote library; outputs are a draft quote landing in the project lead's review queue; the agent drafts, the project lead edits, the principal signs off on the final number only. The checklist locked the access layer before they built anything else — the account manager's quoting data stayed with the account manager. Those were ten-minute decisions. They made three weeks of build work unambiguous.
+
+The story isn't that low-code is magic. The story is that Design gave them a workflow simple enough to build in low-code in three weeks, and a spec clear enough that the builder never had to invent anything. Build doesn't require an engineer. It requires a design that names the shape.
+
 ## What *done* looks like.
 
-Build is done when there is a deployed solution producing outputs against real inputs, reviewed by the human supervisor named in the Hybrid Accountability Chart. The supervisor is using it. The team is using it. The work the constraint named is being done, by the system the design specified, inside the operating environment of the business.
+Build is done when there is a deployed solution producing outputs against real inputs, reviewed by the human supervisor named in the Hybrid Accountability Chart. The supervisor is using it. The team is using it. The constraint that Signal named is being addressed by the system Design specified, running inside the actual business — not a sandbox, not a demo.
 
 Deployed and producing against real work — past the demo stage, past the sandbox pilot, past the prototype the team keeps promising to "really roll out" after some unspecified additional work.
 
-If you are uncertain whether Build is done, the test is simple. Pull the last week of inputs the workflow was supposed to handle. Did the system handle them? Did the supervisor review the outputs? Did the work move forward? If yes, Build is done. If no, your team is not in Deliver yet.
+The "Done" test is four questions. Pull the last week of actual inputs the workflow was supposed to handle — the real records, the real requests, the real data — and run them through the build:
 
-There's a moment later in this book where I describe closing my laptop at 5:30 and going home for dinner. That moment is the human payoff of what Build produces. But we're not there yet — Build is the mechanism, not the feeling.
+1. **Did it produce the expected outputs?** Compare agent output to what a competent person would have produced. Not identical — but within the quality range the supervisor would accept from a team member.
+2. **Did it handle the edge cases?** Every failure mode you named in Section 7 of the spec — did the build handle it as specified?
+3. **Did it escalate correctly?** Feed it inputs that should trigger escalation. Did the right person get notified, in the right form, on the right timeline?
+4. **Could the supervisor understand the output without a walkthrough?** Show the output to the named supervisor. No explanation. Can they evaluate it and make a decision?
+
+If yes to all four: Build is done. Hand off to Deliver.
+
+If no to any: fix what failed. Run the test again. Do not advance past Build on a partial pass.
+
+:::{.callout-note}
+## Action Step
+Pull last week's real inputs. Run the full four-question test. Document the results. Fix any failures and retest. The test results are part of the Build handoff to Deliver.
+:::
 
 ## Hand off to *Deliver*.
 

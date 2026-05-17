@@ -1,23 +1,42 @@
 # *Designing the Work*.
 
-The previous chapter established the framework: what Design produces, who owns it, and how the Hybrid Accountability Chart makes those decisions visible. This chapter is how you do the work — the instruments, the decomposition, and the gate that separates Design from Build.
+The framework tells you what Design produces. This chapter is where it becomes concrete — the instruments, the decomposition, the visual tools that make your design legible, and the gate that separates Design from Build.
+
+:::{.callout-important}
+## In Brief
+Design has two instruments: Work Deconstruction (classify every task in the constraint workflow) and the Hybrid Accountability Chart entry (assign ownership to every accountability). Run them in sequence. Then prove the design works before you build it. Nothing enters Build until the Design Gate is locked — five items, all checked.
+:::
 
 ## The two *instruments*.
 
 Design has two Skills Library instruments: Work Deconstruction and Hybrid Accountability Chart. Both are available through Compound membership. You can run the process now.
 
-*Work Deconstruction* is how you run it: pull the actual accountability list for a role — not the job description, which is always cleaner than reality, but the real list of things that person touches every week. Then go task by task and classify each one using four categories:
+*Work Deconstruction* is how you run it. Pull the actual accountability list for a role — not the job description, which is always cleaner than reality, but the real list of things that person touches every week. Then go task by task and classify each one using four categories.
 
 <!-- DIAGRAM: Work Deconstruction four-category classification — two-column layout or 2×2 grid showing the four categories (Human judgment required / Agent-assisted / Fully automatable / Workflow automation only) with one-line descriptions and the distinguishing criteria for each -->
 <!-- FORMAT: diagram -->
 <!-- PRIORITY: nice-to-have -->
 
-1. **Human judgment required** — This task depends on knowing the client, reading the room, drawing on relationship history, or making a call that is genuinely ambiguous. An agent cannot reliably do this.
-2. **Agent-assisted** — An agent can draft, compile, or generate the output, but a human needs to review every result before it goes anywhere. Accuracy matters and the stakes are real.
-3. **Fully automatable** — High-volume, well-defined, clean inputs, predictable outputs. The agent executes and the human reviews on a schedule, not per output.
-4. **Workflow automation only** — This is a routing or integration problem, not an intelligence problem. A simple automation handles it. No agent needed.
+| Category | What it means | Review model |
+|---|---|---|
+| **Human judgment required** | Context-dependent. Requires empathy, relationship history, or novel reasoning. An agent cannot reliably do this. | Human owns the work. No agent involved. |
+| **Agent-assisted** | Agent drafts, compiles, or recommends. A human reviews every output before it goes anywhere. | Human-in-the-loop: reviews every output. |
+| **Fully automatable** | Rules-based, repetitive, well-defined inputs and outputs. Agent executes. Human audits on a schedule, not per output. | Human-on-the-loop: monitors by exception. |
+| **Workflow automation only** | No agent needed. Routing or integration problem — better tooling handles it. Zapier-level, not agent-level. | Standard automation. No agent team required. |
 
-The classification is the work. Most accountabilities, when deconstructed this way, have a different shape than the leader assumed. The "judgment-heavy role" is actually 70% routing and documentation. The "low-skill operational task" depends on a relationship the agent cannot replicate. You do not know which is which until you decompose the role honestly, task by task. Do this on paper or in a shared doc. It takes sixty to ninety minutes for a real role.
+For every task, ask one sorting question: "If I gave a well-briefed agent this task with the right data, would the output need human review every time, or only when something goes wrong?" If every time: agent-assisted. If only on exceptions: fully automatable. If the agent adds no value and it's just a handoff: workflow automation only. If the answer depends on who the client is, what happened last week, or a judgment call with no clear rule: human judgment required.
+
+:::{.callout-tip}
+## Pro Tip
+"Agent-assisted" is where most things start. "Fully automatable" is where they move after the agent has proved itself over multiple sprints. Autonomy is earned, not assigned.
+:::
+
+The classification is the work. Most accountabilities, when deconstructed this way, have a different shape than the leader assumed. The "judgment-heavy role" is actually 70% routing and documentation. The "low-skill operational task" depends on a relationship the agent can't replicate. You don't know which is which until you decompose the role honestly, task by task.
+
+:::{.callout-note}
+## Action Step
+List every task in the constraint workflow. Sort each one into the four categories. Count the tasks in each bucket. If more than half land in "Human judgment required," challenge each one: is this genuinely judgment, or is it judgment because nobody has written down the rules? The exercise takes sixty to ninety minutes for a real role. Do it on paper or in a shared doc.
+:::
 
 *Hybrid Accountability Chart* is what you build once the deconstruction is done — the chart entry described in the previous chapter. One accountability, one agent team name, one supervisor, one position on the AI-assisted-to-automated spectrum. The two instruments run in sequence: Work Deconstruction is the thinking, the chart entry is what makes the thinking durable.
 
@@ -25,15 +44,15 @@ A deconstruction without a chart entry is a one-time analysis. With a chart entr
 
 ## The role, *deconstructed*.
 
-The project coordinator story from the opening of the previous chapter is also the clearest illustration of what Work Deconstruction produces — because we ran it in real time, on a real role, with a pending hiring decision on the table. Run the same sequence on your role, or a role on your team, and you will get the same kind of result.
+The project coordinator story from the opening of the previous chapter is also the clearest illustration of what Work Deconstruction produces — because we ran it in real time, on a real role, with a pending hiring decision on the table.
 
-We pulled her accountability list. Not her job description — those are always cleaner than reality. Her actual list: the items she owned, the work she touched every week. Start there with your own role: write down every accountability, not the aspirational version, but the actual weekly work. Then run every item through the four-category classification, task by task. Every item gets a label. Does this require judgment — the kind that depends on knowing the client, knowing the history, reading a room? Does it benefit from agent assistance, with a human reviewing every output? Or is it fully automatable — high-volume, well-defined, clean inputs, predictable outputs?
+We pulled her accountability list. Not her job description — those are always cleaner than reality. Her actual list: the items she owned, the work she touched every week. Start there with your own role: write down every accountability, not the aspirational version, but the actual weekly work. Then run every item through the four-category classification. Every item gets a label. Does this require judgment — the kind that depends on knowing the client, knowing the history, reading a room? Does it benefit from agent assistance, with a human reviewing every output? Or is it fully automatable — high-volume, well-defined, clean inputs, predictable outputs?
 
 <!-- DIAGRAM: Coordinator role deconstruction — before/after illustration showing the project coordinator's accountability list split into two columns: tasks that stayed with her (judgment, relationships, history) vs. tasks that became the agent team (routing, scheduling, documentation); percentage breakdown optional -->
 <!-- FORMAT: illustration -->
 <!-- PRIORITY: nice-to-have -->
 
-The classification took ninety minutes. What it revealed: a substantial fraction of her work was routing and documentation. Scheduling client check-ins. Updating the project tracker after calls. Generating the weekly status reports from data that already lived in the CRM. That work looked like operations because it happened inside the operations function — but it was not operations judgment. It was operations administration. The kind of work that eats a skilled person's hours and leaves them with no time for the parts of the role that actually require them.
+The classification took ninety minutes. What it revealed: a substantial fraction of her work was routing and documentation. Scheduling client check-ins. Updating the project tracker after calls. Generating the weekly status reports from data that already lived in the CRM. That work looked like operations because it happened inside the operations function — but it wasn't operations judgment. It was operations administration. The kind of work that eats a skilled person's hours and leaves them with no time for the parts of the role that actually require them.
 
 When you do this on your own role, look for the same pattern: what percentage of your weekly hours go to tasks that are well-defined, data-driven, and repeatable? That percentage is your design opportunity.
 
@@ -41,30 +60,103 @@ That work became a designed agent team. It landed in the Hybrid Accountability C
 
 The junior coordinator listing was never posted. One row in the chart. One sprint. One avoided hire.
 
-This is also the answer to a pattern I described earlier: the headcount line that tracks revenue dollar for dollar, the AI investment on the P&L that produces no observable change. That pattern exists because the AI dropped into the organization had no seat — no designed workflow, no named owner, no accountability structure to receive what it produced. Work Deconstruction is how you give it a seat. The Hybrid Accountability Chart is what makes that seat visible, owned, and improvable over time.
+### Populated example: manufacturing quoting
+
+Here's what a completed Work Deconstruction looks like for a different constraint — manufacturing quoting, where design engineers were spending four to six hours producing initial designs for every bid, including the 50%+ that wouldn't convert, at an estimated cost of $180K/year in misallocated engineering time.
+
+| Task | Category | Rationale |
+|---|---|---|
+| Receive bid request, log in CRM | Workflow automation only | Routing problem. Trigger on inbound email, auto-create CRM record. No agent needed. |
+| Pull customer history and segment data | Fully automatable | Structured lookup. Agent queries CRM, returns customer profile and win rate for segment. Human audits weekly. |
+| Look up materials pricing in ERP | Fully automatable | Structured lookup against known tables. Agent retrieves, flags anything out of stock or above threshold. |
+| Apply pricing exceptions for customer terms | Agent-assisted | 200+ exception rules, many undocumented. Agent applies known rules and drafts pricing. Human reviews every output until rules are fully captured. |
+| Estimate design feasibility and engineering hours | Human judgment required | Requires thirty years of experience reading specs and knowing what's buildable at what cost. Can't be automated until historical accuracy data exists. |
+| Generate initial quote document | Agent-assisted | Agent assembles the quote from components above. Human reviews every quote before it reaches the customer. |
+| Route quote for internal approval | Workflow automation only | Approval routing based on dollar threshold. Standard automation. |
+| Send quote to customer, handle follow-up | Human judgment required | Customer relationship. Requires reading the negotiation, knowing the account history, deciding what to offer on margin. |
+
+Task count: Human judgment required — 2. Agent-assisted — 2. Fully automatable — 2. Workflow automation only — 2. That distribution is typical. The role that felt like "engineering work" was half engineering judgment and half data retrieval, document assembly, and routing that a well-designed agent team could handle.
+
+The Hybrid Accountability Chart entries that came out of this deconstruction:
+
+| Role / Function | Agent Team | Human Supervisor | Level |
+|---|---|---|---|
+| Bid intake and CRM logging | None (workflow automation) | Sales Director | N/A |
+| Customer data retrieval and segment analysis | Quote Research Team | Maria (Ops Manager) | Automated |
+| Draft quote generation (pricing + exceptions + assembly) | Quote Generation Team | Maria (Ops Manager) | AI-Assisted |
+| Design feasibility estimation | None | Dave (Senior Engineer) | N/A |
+| Quote delivery and customer negotiation | None | Sales Director | N/A |
+
+Every row has a name. Every agent team has a supervisor. The accountability that stays human stays human — not because we couldn't try to automate it, but because the deconstruction made clear that the judgment is irreducible.
+
+:::{.callout-tip}
+## Pro Tip
+The difference between AI-Assisted and Automated is the review cadence. AI-Assisted: every output gets a human eye before it ships. Automated: outputs ship, and a human reviews a sample or responds to flags. If you're not sure which to pick, start AI-Assisted. Moving toward Automated is a promotion the agent earns. Moving the other direction means something already went wrong.
+:::
+
+## Seeing the *design*.
+
+A good workflow design is legible — you can look at it and trace the path from input to output, see where humans decide and where agents execute, and spot the gaps before Build discovers them for you.
+
+Three tools make the design visible. You don't need all three for every sprint, but you should know they exist and reach for the right one.
+
+**Swim lane diagrams** are for mapping information flows between humans and agents. Draw two lanes — one for human work, one for agent work. Walk the workflow from trigger to output and draw each step in the lane where it happens. Every time the work crosses from one lane to the other, that's a handoff. Every handoff is a design decision: what format does the output need to be in? Who reviews it? What happens when the handoff fails? Swim lanes force you to answer those questions because the crossing points are visible. If your swim lane diagram has fifteen crossings for a six-step workflow, you've designed something that will be fragile in production. Simplify before you build.
+
+**Flowcharts** are for mapping decision logic. When the workflow has branching paths — if the quote is above a dollar threshold, route to VP; if the customer segment is new, flag for manual review — a flowchart makes the logic inspectable. You can build these in any diagramming tool — Lucidchart, Miro, or even a whiteboard photo. Mermaid is also worth knowing about: it's a text-based diagramming format where you describe the logic in plain language and the tool draws the diagram. Every major AI assistant can generate Mermaid from a description, and it renders in most documentation tools. You can describe your workflow to the Design Agent and get a Mermaid diagram back in the same conversation. That's useful because the diagram becomes a checkpoint — if the flowchart doesn't match what you intended, the design has a gap you can fix now instead of in Build.
+
+**Visual design tools** — Figma, Claude's artifact system, Excalidraw — are for when the workflow produces something a stakeholder needs to see. If the agent team is generating customer-facing quotes, draft what the quote looks like. If it's producing reports, mock up the report format. The visual artifact gives the stakeholder something concrete to react to, which is faster and more honest than asking them to imagine the output from a written spec.
+
+:::{.callout-note}
+## Action Step
+Pick the workflow you're designing. Draw a swim lane diagram with two lanes — human and agent. Map every step. Count the handoff crossings. If the count is higher than the number of steps, redesign the handoffs before moving to Build.
+:::
+
+## Prototype before you *build*.
+
+Design is not finished when the workflow looks right on paper. It's finished when you've confirmed that the people who'll use the output understand what they're getting and agree it solves the constraint.
+
+This is MVP prototyping — minimum viable projects, not minimum viable products. You're not shipping to the market. You're shipping to the stakeholders who will live with this workflow every day: the Human Orchestrator, the Agent Coordinator, the team members whose roles change when the agent team goes live. Their reaction to a prototype tells you more than any spec review.
+
+Run the agent workflow on one real input. Take an actual bid request from last week and run it through the designed quoting workflow. Show the Human Orchestrator the draft quote the agent produced. Show the Agent Coordinator the handoff format. Ask two questions: Does this output look right? Does this workflow match how you'd actually use it?
+
+The answers will surprise you. The quote format makes sense to you but confuses the sales team. The handoff between the agent and the human reviewer doesn't include a field the reviewer needs. The escalation trigger fires on cases that don't actually need escalation. Every one of those findings is a design fix that costs minutes now and would cost hours in Build.
+
+:::{.callout-tip}
+## Pro Tip
+Stakeholder surveys work here too — especially when the agent team's output reaches people outside the immediate workflow. If the quoting agent produces something a customer will see, ask three customers what they'd think of the new format. Five responses are enough to catch the design gaps that internal review misses.
+:::
+
+Constant prototyping is the discipline. Not one big reveal at the end of Design, but a steady loop: design a piece, prototype it, get feedback, adjust. The Compound Sprint is short enough — two weeks for most teams — that this loop runs naturally if you start prototyping early. Teams that wait until the design feels "complete" before testing it are the teams that discover in Build that the design doesn't match reality. Test early. Adjust while adjusting is cheap.
 
 ## The *Design Agent*.
 
 The third agent on the Compound Bench is the Design Agent. You bring in two things: the validated constraint statement from Signal and the Knowledge Map from Source. What comes back is a structured conversation that won't let you skip the hard questions. Which tasks require a human judgment call? Which benefit from agent assistance with a human in the loop? Which can be fully automated? Who supervises? Where on the AI-assisted-to-automated spectrum does this accountability start?
 
-Those are the same questions I ask when I'm in the room. The Design Agent runs them in the same sequence, every time, with no shortcuts. The leadership team still owns every decision — the agent does not make calls. What it does is keep the four questions from disappearing into "we'll figure that out in Build," which is where design debt gets expensive. Every row that leaves the Design session has a named human supervisor beside it.
+Those are the same questions I ask when I'm in the room. The Design Agent runs them in the same sequence, every time, with no shortcuts. The leadership team still owns every decision — the agent doesn't make calls. What it does is keep the four questions from disappearing into "we'll figure that out in Build," which is where design debt gets expensive. Every row that leaves the Design session has a named human supervisor beside it.
 
 That discipline is what the Bench is for. The operator running their first sprint gets the same four questions, in the same order, with the same insistence on completeness, as a company on its fortieth. The conversation scales. The judgment stays with the team.
 
 ## Design is the *gate*.
 
-Nothing in Execute & Compound begins until Design is locked. That is not bureaucracy. It is the structural reason Build moves fast when other approaches stall.
+Nothing in Execute & Compound begins until Design is locked. That's not bureaucracy. It's the structural reason Build moves fast when other approaches stall.
 
-Teams that find Build slow or complicated are almost always teams that moved through Design too quickly — they discovered mid-build that there were decisions nobody had made, handoffs nobody had specified, supervision arrangements nobody had named. Every one of those discoveries is a piece of Design surfacing where it does not belong, where it costs five times as much to resolve. The gate exists to prevent that. Teams that respect the gate ship fast in Build because Build is what is left when the thinking has already been done.
+Teams that find Build slow or complicated are almost always teams that moved through Design too quickly — they discovered mid-build that there were decisions nobody had made, handoffs nobody had specified, supervision arrangements nobody had named. Every one of those discoveries is a piece of Design surfacing where it doesn't belong, where it costs five times as much to resolve. The gate exists to prevent that.
 
 A locked Design has five things. Before you move to Build, check your own Design against this list:
 
-- [ ] The workflow names specific inputs, steps, handoffs, and outputs — not a sketch, but a specification
-- [ ] The Hybrid Accountability Chart has a row for this accountability with all four fields filled in
-- [ ] A Human Orchestrator is named — one person who owns the outcome
-- [ ] An Agent Coordinator is named — one person (or part of one role) who manages the team day-to-day
-- [ ] The AI-assisted vs. automated call is documented, with a rationale, not just a box checked
+- [ ] Every task in the constraint workflow is classified — Work Deconstruction complete, four categories, no unclassified items
+- [ ] Every accountability has a Hybrid Accountability Chart entry with all four fields filled and a named supervisor
+- [ ] The Human Orchestrator and Agent Coordinator are named — with irreducible decisions and escalation triggers documented
+- [ ] AI-Assisted vs. Automated is decided for each agent team, with a rationale — not just a box checked
+- [ ] Guardrails are defined: data access boundaries, action permissions, escalation paths, quality monitoring cadence, and a kill switch
 
-When those five are in place, Build can begin. Until they are, it cannot. Holding that line is what separates the operators who run the Sequence from the operators who buy AI tools and hope.
+That fifth item deserves emphasis. Before the design is locked, define what the agents are *not* allowed to do. What data is off-limits. What actions require human sign-off. What happens when the agent encounters something outside its designed scope. What error rate triggers a shutdown. These are governance decisions, and they belong in Design — not discovered in Build after something goes wrong.
 
-The next chapter is Build — the phase where the designed workflow becomes a deployable system, specified at the level of detail a developer can execute against, with the guardrails and oversight decisions Design locked in already set.
+:::{.callout-note}
+## Action Step
+Run the five-item Design Gate checklist against your current sprint's design. If any item has a gap, that gap is your next working session — not your next Build discovery. Fix it now.
+:::
+
+When those five are in place, Build can begin. Until they are, it can't. Holding that line is what separates the operators who run the Sequence from the operators who buy AI tools and hope.
+
+The next chapter is Build — the phase where the designed workflow becomes a deployable system, specified at the level of detail a developer can execute against, with the guardrails and oversight decisions Design locked already set.
