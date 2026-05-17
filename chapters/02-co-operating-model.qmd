@@ -4,7 +4,7 @@ I'm sitting across from a CEO looking at her P&L and her headcount report side b
 
 She has done everything right. She identified the problem, bought a credible solution, and deployed it. And the headcount curve didn't bend.
 
-I've seen this enough times to know what it is. She dropped a highly capable synthetic worker into an organization designed exclusively for humans. Think about that as a hiring scenario: if you brought on a new employee but gave them no seat on the org chart, no defined handoffs, and no accountability for any outcome, that employee's work would die in the gap. Every piece of output they produced would dissolve somewhere between their desk and the person who needed it. The AI is failing for the exact same reason. Not because the tool doesn't work. Because the business wasn't designed for a non-human worker.
+I've seen this enough times to know what it is. She dropped a highly capable synthetic worker into an organization designed exclusively for humans. Think about that as a hiring scenario: if you brought on a new employee but gave them no seat on the org chart, no defined handoffs, and no accountability for any outcome, that employee's work would die in the gap. Every piece of output they produced would dissolve somewhere between their desk and the person who needed it. The AI is failing for the exact same reason — the business was never designed for a non-human worker.
 
 That is an operating design failure. And the Co-Operating Model is the answer to it.
 
@@ -14,7 +14,7 @@ The diagnosis was the easy part. You have an operating-model problem, not a tech
 
 Three terms in that paragraph are doing specific work and they are easy to blur together. Here is what each one means.
 
-The **Co-Intelligent Company** is the identity layer — what a company becomes when humans and AI work as one system, not two parallel tracks. Not a company that uses AI tools. Not a company that has an AI strategy. A company where the human and the synthetic are integrated into a single operating system, designed to run together from the start.
+The **Co-Intelligent Company** is the identity layer — what a company becomes when humans and AI work as one system, not two parallel tracks. The bar is higher than "uses AI tools" or "has an AI strategy." It means the human and the synthetic are integrated into a single operating system, designed to run together from the start.
 
 **Co-Intelligent Co-operation** is the relational frame — the activity of humans and AI working the same problems together, inside the same loop, against the same outcome. Not relegated to a sprint or a project — it is what the company does, continuously, as its default way of working.
 
@@ -161,7 +161,7 @@ Most companies miss this because they adopt agents the way they adopted every to
 
 A Co-Operating Model is designed for parallel from the start. When you map the work against the two columns — human owns, agent executes — you are also mapping what can run simultaneously. Every row in the agent column is a potential parallel workstream. The design question is not "should we add this agent?" It is "what runs at the same time, and who is steering?"
 
-She was steering four workstreams at once. That is the job. Not vaguely elevated. Not abstractly strategic. Four parallel outputs moving simultaneously, one human directing the whole system toward a single standard of quality.
+She was steering four workstreams at once. That is the job — concrete, operational. Four parallel outputs moving simultaneously, one human directing the whole system toward a single standard of quality.
 
 That is the ownership split made visible. The agents are doing exactly what the right column says they should do — drafting, documenting, synthesizing, executing on a defined output. She is doing exactly what the left column says the human should do — directing the work, pricing what's good enough, owning the outcome. What used to be a solo production workflow is now a team she manages. The team just doesn't have business cards.
 

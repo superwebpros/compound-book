@@ -14,9 +14,9 @@ The same thing happened the following week with a different CEO — I'll call he
 
 Thirty minutes. Neither of them had to run a workshop or hire a consultant to get there. They had to be asked the right question in the right order and refuse the temptation to answer it with the first thing that came to mind.
 
-That is what this chapter is for. Not to give you more to think about. To give you the first move.
+This chapter is for one thing: the first move.
 
-You have the diagnosis. You have the framework. You have the mechanism. You have the language to describe what a Co-Intelligent Company is, the Sequence to build one, and the Rhythm to keep it compounding. The work from here is not theoretical. It is operational. The only real question left is where you start.
+You have the language to describe what a Co-Intelligent Company is, the Sequence to build one, and the Rhythm to keep it compounding. The work from here is operational. The only real question left is where you start.
 
 ## Start by running *Signal* on yourself.
 
@@ -70,9 +70,9 @@ Either path works when the team already has operating discipline in place. The o
 
 The headcount paradox does not pause while you decide. Every quarter you stay inside the old operating model is a quarter you keep adding people to absorb work that AI could be doing, while watching margin compress and the work itself get harder to hire for.
 
-There is no version of the next three years where you opt out of this. There are only versions where you are inside the new operating model early enough to compound, and versions where you are inside it late enough that the compounding is happening to your competitors instead of you.
+There is no version of the next three years where you opt out of this. There are only versions where you are inside the new operating model early enough to compound, and versions where you waited long enough that the quarters you could have compounded are simply gone.
 
-The companies that will look obvious in five years are the ones that started running the Sequence in the next ninety days. Not because ninety days produces a Co-Intelligent Company — it does not. It produces the first sprint. The first sprint is what produces the second. The second is what produces the Rhythm. The Rhythm is what produces the company.
+The companies that will look obvious in five years are the ones that started running the Sequence in the next ninety days. Ninety days produces the first sprint. The first sprint produces the second. And the second is where the Rhythm begins.
 
 You do not need to see the whole staircase. You need the next step, clearly named, with a cost attached.
 
@@ -80,7 +80,7 @@ The book gives you that. The Clarity Call accelerates it. Either way, the constr
 
 This book started with a developer leaving and a company playing chutes and ladders — paying for the ladder and absorbing the cost of the chute. Every dollar of training, every hour of onboarding, every mistake paid for, walking out the door when the person did. That problem forced a question: what is the actual constraint? Not what tool do I buy, not what position do I post, but what is the problem I am trying to solve and what does it cost me if I don't? That question is the framework. The framework is in your hands.
 
-We went from thirteen people to eight in one year. Billings up. Profitability up. Not because we cut costs — because the Rhythm changed which question we asked about every capacity problem. The math is not theoretical. It works. The question is only whether you run it on your organization this quarter or let your competitors run it on theirs first.
+We went from thirteen people to eight in one year. Billings up. Profitability up. The Rhythm changed which question we asked about every capacity problem. The math is not theoretical. It works. The question is only whether you run it on your organization this quarter or let your competitors run it on theirs first.
 
 ---
 

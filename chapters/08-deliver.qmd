@@ -36,7 +36,7 @@ Deliver is the stage that closes that gap. It is operational, not technical. The
 
 Your deliverable at the close of Deliver is a documented sprint outcome — the result against the constraint Signal named, expressed in the measurable terms Signal quantified.
 
-Not "the agent team ran 200 tasks." Not "the system is in production and stable." The deliverable is a sentence that mirrors the Signal statement: the quoting process that took three days now takes four hours. The eight hours of manual routing per week now run without a person in the loop. The on-call escalation that used to fire twice a night now fires twice a quarter.
+The deliverable is a sentence that mirrors the Signal statement — not a task count, not a status report. The quoting process that took three days now takes four hours. The eight hours of manual routing per week now run without a person in the loop. The on-call escalation that used to fire twice a night now fires twice a quarter.
 
 The specificity is the point. It is what creates accountability for the sprint's claim. It gives the leadership team the confidence — and the evidence — to commit to a second sprint. It closes the loop between the cost Signal named at the start and the recovery the Sequence produced at the end.
 
@@ -125,7 +125,7 @@ The result: those eight hours come back to the operator every week. The workflow
 
 A well-run Deliver phase changes the work the people in the function do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that is now automated either get reinvested — in the strategic work Design identified as the higher-return use of their time — or they come out of the org over time, as the headcount math gets rerun against the new operating reality.
 
-That is the test of whether Deliver delivered. Not whether the agent is running. Not whether the dashboard exists. Whether the people whose work was supposed to change can describe, concretely, what they now do that they did not do before, and what they no longer do that they used to. If they can, the sprint produced. If they cannot, the sprint deployed a tool — and you are looking at the failure mode this stage exists to prevent.
+That is the test of whether Deliver delivered: can the people whose work was supposed to change describe, concretely, what they now do that they did not do before, and what they no longer do that they used to? The agent running and the dashboard existing are table stakes. If they can, the sprint produced. If they cannot, the sprint deployed a tool — and you are looking at the failure mode this stage exists to prevent.
 
 ## End of the sprint as a *project*. Start of it as *infrastructure*.
 

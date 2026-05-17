@@ -2,7 +2,7 @@
 
 When our account manager opens the quoting agent, it knows everything. Past projects, what we charged, how we scoped them, what capacity we had left, what the client asked for in the last engagement. She types a brief and it drafts a quote — real numbers, real scope, real pricing — in minutes.
 
-Nobody else on the team has access to that agent. Not because we don't trust them. Because the design said this information doesn't need to go further than the person who owns it. We built that access layer in before we built anything else. Not as an afterthought. As part of the spec.
+Nobody else on the team has access to that agent. The design said this information doesn't need to go further than the person who owns it — trust had nothing to do with it. We built that access layer in before we built anything else, as part of the spec.
 
 There is a second agent — a content production workflow that a different team member runs. That one is open to anyone. Different data, different stakes, different guardrails. Same sprint. Two agents, two different access levels, both decisions made in Design before Build executed either one.
 
@@ -14,7 +14,7 @@ Build is the stage where the locked design becomes a working, deployed system. I
 
 Build produces one thing: a working, deployed solution to the validated constraint.
 
-*Working* means the solution has been tested against real inputs and produces outputs the human supervisor can review and trust. Not synthetic inputs. Not a demo dataset. The actual records, emails, quote requests, customer files — whatever the design specified as input. The outputs land in a form the supervisor can evaluate the same way they would evaluate a person's work.
+*Working* means the solution has been tested against real inputs — the actual records, emails, quote requests, customer files, whatever the design specified — and produces outputs the human supervisor can review and trust. The outputs land in a form the supervisor can evaluate the same way they would evaluate a person's work.
 
 *Deployed* means the solution is operating inside the actual business environment — connected to the systems it needs, used by the people who need to use it, producing outputs that flow into the next handoff. A demo in a sandbox is not the deliverable. A working system that the team is using on real work is the deliverable.
 
@@ -28,7 +28,7 @@ The single most common Build failure is scope drift — the moment the engineer 
 
 That is not Build. That is a different project pretending to be Build.
 
-The Build phase is scoped exactly — and only — to the workflow the Design phase produced. Not the surrounding workflow. Not the system of record it integrates with. Not the team's other AI ambitions. The solution for the validated constraint, built to the specifications the Design phase committed to, and nothing else.
+The Build phase is scoped exactly — and only — to the workflow the Design phase produced. The solution for the validated constraint, built to the specifications the Design phase committed to, and nothing else. The surrounding workflow, the system of record, the team's other AI ambitions — all of that stays outside the fence.
 
 This is not a limitation. It is the structural reason Build is fast. A team that built a quoting workflow in three weeks did not do it because they were clever. They did it because Design gave them a workflow narrow enough to build in three weeks. The discipline of scope is upstream of the speed of execution.
 
@@ -147,7 +147,7 @@ Most Compound members don't use Compound to build. Your build gets done by your 
 
 Build is done when there is a deployed solution producing outputs against real inputs, reviewed by the human supervisor named in the Hybrid Accountability Chart. The supervisor is using it. The team is using it. The work the constraint named is being done, by the system the design specified, inside the operating environment of the business.
 
-Not a demo. Not a pilot in a sandbox. Not a working prototype the team is waiting to "really roll out" after some unspecified additional work. Deployed and producing against real work.
+Deployed and producing against real work — past the demo stage, past the sandbox pilot, past the prototype the team keeps promising to "really roll out" after some unspecified additional work.
 
 If you are uncertain whether Build is done, the test is simple. Pull the last week of inputs the workflow was supposed to handle. Did the system handle them? Did the supervisor review the outputs? Did the work move forward? If yes, Build is done. If no, your team is not in Deliver yet.
 

@@ -16,7 +16,7 @@ The hire never got posted. The work shipped.
 
 That is the sentence I want you to read twice. The hire never got posted. The work shipped.
 
-We went from thirteen people to eight over the following year. Not because we ran one sprint. Because by the fourth and fifth sprint, running Signal before writing a requisition was not a deliberate practice anymore. It was the default. The question that used to be automatic — *who fills this?* — had been replaced by a different automatic question. That replacement is what this chapter is about.
+We went from thirteen people to eight over the following year — and by the fourth and fifth sprint, running Signal before writing a requisition was not a deliberate practice anymore. It was the default. The question that used to be automatic — *who fills this?* — had been replaced by a different automatic question. That replacement is what this chapter is about.
 
 One sprint is a project. Two sprints is a habit. Six sprints is an operating system. This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on. The Rhythm is not a new step. It is the same six stages — Signal → Source → Design → Build → Deliver → Compound — run quarterly, on the next constraint, on top of whatever operating system the company already uses. The Rhythm is doing it over and over and over. It is the point in the framework where the headcount math from Chapter 1 finally breaks in the company's favor.
 
@@ -77,7 +77,7 @@ Companies that default to designing before hiring build a different cost structu
 <!-- FORMAT: diagram -->
 <!-- PRIORITY: must-have -->
 
-The coordinator story that opened this chapter ends here. Not with the sprint that shipped. With the question that stopped getting asked. The hire that never got posted was not a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That is the Rhythm doing its job. Not making you smarter on any single call. Making the default behavior of the organization smarter across every call that follows.
+The coordinator story that opened this chapter ends here — with the question that stopped getting asked. The hire that never got posted was not a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That is the Rhythm doing its job: changing the default behavior of the organization across every call that follows.
 
 In Chapter 4, I described an L10 where a clinic director's scorecard had been red for nine consecutive weeks and she could not explain why any metric was off track. The meeting was real. The cadence was real. But the discipline that turns a red number into a named constraint — and a named constraint into a sprint — was absent. Nine weeks of red scorecards means the cadence exists and the Rhythm does not. What the Rhythm adds is not a new meeting. It is the four things the meeting produces: an outcome reviewed, a backlog updated, a constraint committed, a chart current. Without all four, the session is theater.
 
@@ -103,9 +103,9 @@ We're on a call, and I stop mid-conversation and say to our marketing lead: let'
 
 The year before, we had launched nothing new. We were at capacity. We had twice the headcount. That year, we launched two new business lines. Half the staff.
 
-Not because we cut our way to growth. Because we ran the Sequence enough times that the design infrastructure compounding in the background was doing real work — work that used to require bodies, now running on agent teams with named human supervisors overseeing the outputs. Her role shifted from being the doer of marketing content to the orchestrator of agent teams producing it. That shift was not planned on a slide. It accumulated, one sprint at a time, until one day it was simply what the job was.
+We did not cut our way to growth. We ran the Sequence enough times that the design infrastructure compounding in the background was doing real work — work that used to require bodies, now running on agent teams with named human supervisors overseeing the outputs. Her role shifted from being the doer of marketing content to the orchestrator of agent teams producing it. That shift was not planned on a slide. It accumulated, one sprint at a time, until one day it was simply what the job was.
 
-That is what sprint six looks like from the inside. Not a dashboard. A team member managing capability that didn't exist a year ago, running at a pace that would have required three more hires twelve months earlier.
+That is what sprint six looks like from the inside: a team member managing capability that didn't exist a year ago, running at a pace that would have required three more hires twelve months earlier.
 
 ### Sprint · the company that was already ready.
 

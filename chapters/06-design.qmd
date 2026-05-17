@@ -14,7 +14,7 @@ This is the first stage of *Execute & Compound*. Everything before this was diag
 
 Design has two deliverables, and they ship together.
 
-The first is a *designed workflow* — specific enough that Build can execute against it without ambiguity. Not a sketch. Not a Miro board with sticky notes. A workflow specification that names the inputs, the steps, the handoffs, the outputs, and the points where a human decides versus an agent executes. If Build has to ask "what did you mean here?" the workflow was described, not designed.
+The first is a *designed workflow* — specific enough that Build can execute against it without ambiguity. A workflow specification that names the inputs, the steps, the handoffs, the outputs, and the points where a human decides versus an agent executes. A sketch or a Miro board with sticky notes is not this. If Build has to ask "what did you mean here?" the workflow was described, not designed.
 
 The second is an entry in the *Hybrid Accountability Chart* for the specific accountability this sprint is addressing. One row. One accountability. One named agent team. One named human supervisor. One decision about whether this work is AI-assisted or automated. Over many sprints, the chart fills in. After one sprint, it has a single row — the first piece of structural evidence that your company is operating as a Co-Intelligent Company rather than a human company that happens to use AI tools.
 

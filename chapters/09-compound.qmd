@@ -20,7 +20,7 @@ The reason I'm telling you this is not to make a claim about work-life balance. 
 
 And because it ran, I could stop.
 
-That is what compounding feels like from the inside. Not a dashboard metric. Not a headcount number on a slide. An evening home, on a Tuesday, when eighteen months earlier that was not something I was capable of choosing.
+That is what compounding feels like from the inside: an evening home, on a Tuesday, when eighteen months earlier that was not something I was capable of choosing.
 
 Compound is the sixth stage of the Sequence and the one that closes the loop. Signal found the constraint. Source mapped what the work required. Design wrote down who does what. Build produced the spec and the workflow. Deliver shipped it inside the company and measured it against the cost Signal named. Compound is what happens after the win is documented — the stage that turns a delivered sprint into the foundation of the next one.
 
@@ -114,7 +114,7 @@ The coordinator's knowledge base I described in the Design chapter — the one w
 
 Every vendor uses "scale" to sell more of the same thing. It is a quantity claim with no architecture behind it.
 
-Compound is specific. The cost per sprint decreases, because Source is faster, Design is faster, Build is sharper, and Deliver inherits training material from the previous sprints. The return per sprint increases, because the constraints get more strategic as the easy ones come off the backlog and the leadership team's design judgment improves. The gap between revenue growth and headcount growth — the headcount math from the opening of this book — starts to look like a solved problem. Not because revenue stops growing. Because revenue can grow without the head count line growing with it, and the company that runs the Rhythm long enough watches that gap widen on purpose.
+Compound is specific. The cost per sprint decreases, because Source is faster, Design is faster, Build is sharper, and Deliver inherits training material from the previous sprints. The return per sprint increases, because the constraints get more strategic as the easy ones come off the backlog and the leadership team's design judgment improves. The gap between revenue growth and headcount growth — the headcount math from the opening of this book — starts to look like a solved problem, because revenue keeps growing while the headcount line does not. The company that runs the Rhythm long enough watches that gap widen on purpose.
 
 <!-- DIAGRAM: Scale vs. Compound — two-column comparison: Scale repeats the same sprint with the same cost and same return; Compound shows decreasing cost per sprint and increasing strategic return per sprint as artifacts accumulate -->
 <!-- FORMAT: table -->
