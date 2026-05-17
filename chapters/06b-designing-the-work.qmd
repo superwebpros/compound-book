@@ -9,7 +9,7 @@ Design has two instruments: Work Deconstruction (classify every task in the cons
 
 ## The two *instruments*.
 
-Design has two Skills Library instruments: Work Deconstruction and Hybrid Accountability Chart. Both are available through Compound membership. You can run the process now.
+Design has two instruments: Work Deconstruction and Hybrid Accountability Chart. You can run both right now using the methods described in this chapter.
 
 *Work Deconstruction* is how you run it. Pull the actual accountability list for a role — not the job description, which is always cleaner than reality, but the real list of things that person touches every week. Then go task by task and classify each one using four categories.
 
@@ -127,14 +127,6 @@ Stakeholder surveys work here too — especially when the agent team's output re
 :::
 
 Constant prototyping is the discipline. Not one big reveal at the end of Design, but a steady loop: design a piece, prototype it, get feedback, adjust. The Compound Sprint is short enough — two weeks for most teams — that this loop runs naturally if you start prototyping early. Teams that wait until the design feels "complete" before testing it are the teams that discover in Build that the design doesn't match reality. Test early. Adjust while adjusting is cheap.
-
-## The *Design Agent*.
-
-The third agent on the Compound Bench is the Design Agent. You bring in two things: the validated constraint statement from Signal and the Knowledge Map from Source. What comes back is a structured conversation that won't let you skip the hard questions. Which tasks require a human judgment call? Which benefit from agent assistance with a human in the loop? Which can be fully automated? Who supervises? Where on the AI-assisted-to-automated spectrum does this accountability start?
-
-Those are the same questions I ask when I'm in the room. The Design Agent runs them in the same sequence, every time, with no shortcuts. The leadership team still owns every decision — the agent doesn't make calls. What it does is keep the four questions from disappearing into "we'll figure that out in Build," which is where design debt gets expensive. Every row that leaves the Design session has a named human supervisor beside it.
-
-That discipline is what the Bench is for. The operator running their first sprint gets the same four questions, in the same order, with the same insistence on completeness, as a company on its fortieth. The conversation scales. The judgment stays with the team.
 
 ## Design is the *gate*.
 

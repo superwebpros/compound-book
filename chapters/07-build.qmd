@@ -185,7 +185,7 @@ If your Build is running past the time box, the instinct is to extend the deadli
 
 ## The two instruments — *Build Spec Writer* and *Guardrails Checklist*.
 
-Build is supported by two instruments in the Skills Library.
+Build is supported by two instruments.
 
 **Build Spec Writer** translates the designed workflow into a developer-ready specification. The spec is the artifact a builder — engineer, vendor, low-code assembler — works from. Its job is to remove ambiguity. If the spec is right, the build is mostly execution. If the spec is wrong, the build is mostly negotiation.
 
@@ -224,7 +224,7 @@ Here's what those sections look like filled in. This is from a manufacturing fir
 
 That spec gave the builder everything. No ambiguity meetings. No mid-build design decisions. Three weeks, start to finish.
 
-Build Spec Writer is the Library instrument that produces the template and method. The Build Agent on the Bench runs you through it interactively, in conversation — that is the distinction between the two. Both produce the same artifact; the Library gives you the form, the Bench walks you through filling it. If you are working without either instrument, these eight sections are the spec. Fill them in that order before you hand anything to a builder.
+These eight sections are the spec. Fill them in that order before you hand anything to a builder.
 
 :::{.callout-note}
 ## Action Step
@@ -288,16 +288,6 @@ If you cannot answer all seven, the system is not ready to deploy. These are not
 ## Action Step
 Answer all seven questions in writing. Attach the answers to the Build Spec as a companion document. If any question can't be answered, the build is not ready to deploy — resolve the gap before going live.
 :::
-
-## The *Build Agent*.
-
-The Build Agent is the fourth of the six coaching agents on the Compound Bench.
-
-You bring it the designed workflow and the Hybrid Accountability Chart entry from Design. It walks you through the Build Spec Writer interactively — surfacing the Guardrails Checklist questions, filling the spec section by section, flagging what is missing before the builder starts. What comes out is the developer-ready specification: the document the builder works from.
-
-The Build Agent is not the builder. It is the specifier.
-
-Most Compound members don't use Compound to build. Your build gets done by your own people, by the vendor you already have a relationship with, by a contract engineer, or — on the low-code path — by your team directly. The Build Agent's job is to give whoever is building a spec clear enough that they can execute against it without inventing the design on the fly. Most teams have the technical resources to build. What they have never had is a clean spec to hand the builder. The Build Agent is what changes that. If you are working without Compound membership, the eight-section spec above is the substitute — and it works the same way. The spec is the mechanism. The agent is just a faster path to filling it.
 
 ## Sprint: the three-week quoting workflow.
 

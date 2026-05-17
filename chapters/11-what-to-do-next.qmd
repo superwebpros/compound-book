@@ -122,13 +122,7 @@ Once you have a constraint named clearly enough to commit a sprint to it, you ha
 
 Set the quarterly rhythm from Chapter 10 to make it repeatable. A disciplined operating team with EOS or Scaling Up already in place can execute a first sprint on its own. Many will. We wrote the book so they could.
 
-**Path B: Run it with Compound.** The same Sequence, paired with weekly retros, a cohort of peer CEOs running the same framework against constraints in their own companies, and Compound operators coaching you through each stage. The membership includes:
-
-- **The Compound Bench** — six coaching agents, one per sprint phase, running the same logic as the instruments in this book
-- **The Skills Library** — twelve structured instruments that automate the analytical work behind each phase
-- **A Clarity Call** (30 minutes, no cost) — an operator walks through your constraint with you and tells you whether it's sprint-ready
-
-The tools run the same methodology. They run it faster and more persistently than paper can. The membership is for operators who'd rather not run the first one alone.
+**Path B: Run it with Compound.** The same Sequence, paired with weekly retros, a cohort of peer CEOs running the same framework against constraints in their own companies, and Compound operators coaching you through each stage. The membership includes tools that run the same methodology — faster and more persistently than paper can — along with a Clarity Call (30 minutes, no cost) where an operator walks through your constraint with you and tells you whether it's sprint-ready. The membership is for operators who'd rather not run the first one alone.
 
 Either path works when the team already has operating discipline in place. The one that doesn't work is the one most companies are still on: buying more tools and hoping a structure will emerge from them.
 

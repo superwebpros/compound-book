@@ -39,7 +39,7 @@ The Rhythm has a meeting. One to two hours, your leadership team, every quarter,
 
 **Step 2: Update the Signal Backlog.** Pull the re-ranked backlog from the Compound phase. Review each candidate: still relevant? Cost changed? New information? Add any new constraints that emerged during the quarter. Remove any that were resolved as side effects. What has shifted in priority since last quarter? The Signal Backlog is the running inventory of your company's most expensive operational problems, ranked. It is the input to every quarterly conversation.
 
-**Step 3: Commit the next sprint.** Pick the top constraint from the updated backlog. Name the Human Orchestrator. Confirm the team has the resources — people, tools, budget. Set the sprint start date. One validated constraint. One constraint owner. A specific six-to-eight-week window. The Signal Agent's one-page constraint statement is the artifact. Your team leaves the session knowing exactly what the next sprint is about and who owns it.
+**Step 3: Commit the next sprint.** Pick the top constraint from the updated backlog. Name the Human Orchestrator. Confirm the team has the resources — people, tools, budget. Set the sprint start date. One validated constraint. One constraint owner. A specific six-to-eight-week window. The one-page constraint statement from Signal is the artifact. Your team leaves the session knowing exactly what the next sprint is about and who owns it.
 
 **Step 4: Update the Hybrid Accountability Chart.** Make permanent any HAC rows from the completed sprint that are staying. Remove or revise any that didn't work. Note which roles have shifted since last quarter. If an agent team's scope changed, if the Agent Coordinator handoffs moved — record it. The chart is a living document, not a workshop output from eighteen months ago. This becomes the new Hybrid Org Today baseline.
 
@@ -125,7 +125,7 @@ Return to where this book started. Revenue growing. Headcount growing with it. A
 
 After six to eight sprints on the Rhythm, the math moves. Not overnight — but the pattern is broken. The behavioral marker is specific. Your first response to a capacity problem is no longer *who do we hire?* It is *what does Signal say about this?*
 
-Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked with the Signal Agent, against the Signal Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the sprint that addresses it ships a designed workflow instead of a job posting.
+Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked against the Signal Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the sprint that addresses it ships a designed workflow instead of a job posting.
 
 Companies that default to designing before hiring build a different cost structure than companies that default to adding people. Companies that run Signal before requisitions get compounding returns on the infrastructure they build. Companies that add people to absorb demand grow costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
 

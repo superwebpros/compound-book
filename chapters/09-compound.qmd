@@ -127,16 +127,6 @@ If you're picking the same constraint for sprint two that you picked for sprint 
 
 Pull the Signal Backlog. Re-rank it using the four questions. Name the top constraint. Assign a Human Orchestrator for the next sprint. Write both down before you leave the room.
 
-## The *Compound Agent*.
-
-The sixth agent on the Compound Bench is the one I run at the end of every sprint. Its job is to make the Sprint Retrospective and Constraint Re-rank impossible to skip.
-
-I've watched leadership teams end a sprint, celebrate the outcome, and move immediately to whatever's next. The retrospective gets scheduled for "sometime next week." The backlog doesn't get re-ranked. The one design change nobody names. Three months later, the next sprint runs into the same friction the last sprint identified and never fixed. If you've run a sprint and felt that — if the lessons dissolved before they landed — the Compound Agent exists to close that gap before you close the laptop.
-
-What it does: it takes the documented sprint outcome from Deliver and holds it against the original constraint cost from Signal — the dollar figure or hour figure that opened the sprint. The quoting cycle that was supposed to take four hours; did it? The gap is the data. The agent runs the Sprint Retrospective questions with the leadership team — structured, fast, the same questions every time — and produces the design changes that come out of it. It runs Constraint Re-rank against the Signal Backlog and surfaces the candidates for next sprint.
-
-What it doesn't do is decide what to work on next. That's the Human Orchestrator's call — made now with one more sprint's worth of evidence, not with the map the company had eight weeks ago. The agent's job is to make sure none of the questions get skipped and the decision gets made before momentum from this sprint dissipates.
-
 ## Update the living documents.
 
 Three artifacts get updated at the end of every Compound session. Don't skip this. The documents are the institutional memory that makes compounding possible.

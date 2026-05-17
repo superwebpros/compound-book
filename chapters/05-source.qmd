@@ -2,6 +2,10 @@
 
 I'm walking Julie through what a Knowledge Map actually looks like, using our own business as the example. I'm pointing at the screen. Google Drive — that's where client work lives. Pro HQ — that's our CRM, our ERP, it has an API, our ops lead owns it. Our internal knowledge base — that's where documented process lives. And then I get to our client's senior engineer. Sixty years in his industry. Sixty years of relationships, judgment calls, institutional memory that nobody has ever written down. I type his name into the fourth box on the map — same box, same format as any database — and I say: he doesn't have an API.
 
+```jf-note:
+Isn't true it feels like an aggregation of a lot of different transcripts. We definitely yeah this makes it sound like it's all one consistent conversation and it wasn't. We also don't define what a knowledge map is and we don't really have client work live in Google Drive. I guess we kind of do that's fine if we leave it there I don't really care I guess the transition though to the clients senior engineer is clumsy and wrong. He hasn't been there 60 years maybe 40 but I'm not clear point you're trying to make here is the point you're trying to make about a client's engineer that he doesn't have an API like we're overlapping knowledge basis so I'm not really sure what we're trying to accomplish here and it would be it would be more accurate to talk about how Ahmed did not have an API than Mike...we're crossing orgs. The better story here is probably the preamble to Nguyen Marina and I were trying to decide what to do about Donna because she and I had a very explicit conversation around the six steps in in particular source when we have this conversation that's probably a better way to start the chapter.
+```
+
 That's the whole problem in one sentence. The most valuable source of knowledge in that engagement has no connector, no endpoint to call, no schema to query. The only way to get at what he knows is to sit with him long enough, ask the right questions, and write it down before he decides he's done. The Knowledge Map treats him exactly the same way it treats a database, because operationally he is one. Pretending otherwise is why most Source work fails before it starts.
 
 :::{.callout-important}
@@ -13,9 +17,9 @@ Signal named the constraint. Source maps what you have before anyone designs aga
 
 ## Diagnosis is not done until you know what you *have*.
 
-The temptation at the end of Signal is to move straight into design. The constraint is named. The cost is quantified. The team feels the momentum and wants to start building. That instinct is the most expensive instinct in the Sequence.
+The temptation at the end of Signal is to move straight into design. The constraint is named. The cost is quantified. The team feels the momentum and wants to start building. That instinct is the most expensive instinct in the Sequence. `jf-note: that sentence is hyperbolic.`
 
-Designing a Human + AI workflow requires knowing what you're working with — which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and the Design phase becomes a guessing exercise — beautiful diagrams sitting on top of data nobody has verified and judgment nobody has captured. The build that follows will be technically correct and operationally useless.
+Designing a Human + AI workflow `jf-note: i thought we were talking about co-intelligent co-operation` requires knowing what you're working with — which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and the Design phase becomes a guessing exercise — beautiful diagrams sitting on top of data nobody has verified and judgment nobody has captured. The build that follows will be technically correct and operationally useless.
 
 This is why Source belongs in Diagnose, not Execute. The diagnosis includes the information environment. A constraint without a Source map is a hypothesis. A constraint with a Source map is a design problem.
 
@@ -132,20 +136,12 @@ This matters for AI workflows in a way it never mattered for traditional documen
 
 The practical move: when your Knowledge Map flags an organic source as at-risk, the first Source action is a structured interview. Not a casual conversation. A deliberate session with specific questions: What decisions do you make that nobody else makes? Which exceptions have you handled that aren't written down? What rule of thumb do you use that you've never had to explain? The output is a transcript that feeds directly into the Knowledge Map as captured institutional knowledge.
 
-The Source Agent on the Compound Bench runs exactly this kind of session. But the method doesn't require the tool. A constraint owner, a recording, and the right questions will get you there. The transcript is the artifact. The map is where it lives.
+A constraint owner, a recording, and the right questions will get you there. The transcript is the artifact. The map is where it lives.
 
 :::{.callout-note}
 ## Action Step
 Identify the highest-risk organic source on your Knowledge Map — the person whose knowledge is most at risk of leaving. Schedule a structured interview this week. Ask: what decisions do you make that nobody else makes? Record it. Transcribe it. Add the output to the map.
 :::
-
-## The *Source Agent*.
-
-The Source Agent is the second agent on the Compound Bench. I use it two ways: at the start of a sprint to accelerate the Source phase, and whenever someone with deep institutional knowledge is about to leave. Most operators discover the second use case too late.
-
-What the Agent actually does is ask the questions that never get asked in a normal interview or onboarding handoff. What decisions do you make that nobody else on the team makes? Which exceptions have you handled that aren't written down anywhere? Which customers, vendors, or systems behave differently than the documentation says? What rule of thumb do you use that you've never had to explain to anyone? The output is a structured set of notes — captured judgment, captured exceptions, captured decisions — that feeds directly into the Knowledge Map. The Agent doesn't build the map; it surfaces the raw material the map would otherwise miss.
-
-Run it before a sprint and a week of stakeholder interviews becomes a two-hour session. Run it when someone is about to walk out the door and you protect the company from a category of loss that no post-hoc documentation project recovers.
 
 ### Sprint · Knowledge Capture.
 

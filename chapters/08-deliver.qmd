@@ -199,14 +199,6 @@ If all three are yes, the sprint delivered. If not, you deployed. There is a dif
 If you can't fill in the "Result After Sprint" line with a number, go back to the operational log and figure out what you need to measure. The sprint hasn't delivered until a number moved.
 :::
 
-## The *Deliver Agent*.
-
-The Deliver Agent is the fifth of the six coaching agents on the Compound Bench. I run it after Build has shipped — with the Hybrid Accountability Chart from Design and the deployed workflow from Build as inputs.
-
-Here is what it does. It walks the HAC and surfaces every role whose handoffs have changed — including the ones the team tends to miss because the change looks small on paper but lands hard on Monday morning. It drafts the runbook against the specific workflow, not a generic template. It names how the result gets measured: what Signal quantified, what Build's instrumentation actually captures in production, and what the gap between those two numbers means for the sprint's claim. It confirms that the rollback plan Build prepared answers the right questions — not just "who can invoke it" but "what exactly does the work do during the pause."
-
-The Agent doesn't deploy. I do. The Agent's job is to produce the structure that makes my deploy operational rather than just technical — a single artifact that says: here is what changes for whom, here is how we'll know it worked, and here is what we do if it doesn't.
-
 ### Sprint · Process Automation.
 
 A workflow inside Compound was costing the operator about eight hours per week. Manual operations work — the kind of high-volume routing-and-documentation work that should never have stayed with a person but had been there long enough that nobody had been able to carve out the design time to move it.

@@ -167,7 +167,7 @@ Look for three things. First, authority over the workflow and the constraint out
 
 That third trait is the development gap. The operations lead who got the job because she was excellent at executing operations work is now being asked to design the operations function instead of running it. Not a smaller role. A different one — and developing the capability is deliberate work, not a personality change.
 
-What does ramp-up look like? The first sprint is supervised — the Orchestrator runs Design with guidance, either from a Compound partner or from the Bench agents that enforce the same question sequence. By the second sprint, they're running the process. By the fourth, they're improving it. The skill isn't learned in a training session. It's learned by doing the work, one sprint at a time, with the framework holding the structure while the person builds the muscle.
+What does ramp-up look like? The first sprint is supervised — the Orchestrator runs Design with guidance, either from a Compound partner or by working through the framework's question sequence step by step. By the second sprint, they're running the process. By the fourth, they're improving it. The skill isn't learned in a training session. It's learned by doing the work, one sprint at a time, with the framework holding the structure while the person builds the muscle.
 
 :::{.callout-note}
 ## Action Step
@@ -231,7 +231,7 @@ Here's what the Hybrid Accountability Chart looks like for a real constraint —
 4. **Quality monitoring:** AI-Assisted phase — Maria reviews every draft quote. Target: 95% of draft quotes require no substantive correction over 3 consecutive sprints before considering the move to Automated.
 5. **Kill switch:** Agent sends or stages a quote for external delivery without human review. Agent accesses data outside its permitted systems. Error rate on pricing exceeds 10% in any sprint.
 
-That's one constraint, one sprint, five chart rows, two named humans, and five guardrail answers. The next chapter covers the instruments and execution mechanics — Work Deconstruction, the Design Agent on the Bench, and the gate checklist that separates Design from Build.
+That's one constraint, one sprint, five chart rows, two named humans, and five guardrail answers. The next chapter covers the instruments and execution mechanics — Work Deconstruction, the visual tools for making the design legible, and the gate checklist that separates Design from Build.
 
 ## Reflection Questions
 
