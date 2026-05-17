@@ -12,14 +12,14 @@ That's the moment I understood something: the issues list was empty not because 
 
 :::{.callout-important}
 ## In Brief
-Signal is the discipline of refusing to move forward until one constraint has been identified precisely, confirmed against actual numbers, and quantified in dollars or hours. Not five problems. One — described in a single sentence, anchored in a number, owned by someone who can speak to it. By the time you finish this stage, you have a one-page constraint statement that names the problem, where it lives, how long it has existed, and what it has cost. Everything in the rest of the Sequence is designed to answer the question Signal asks.
+Signal is the discipline of refusing to move forward until one constraint has been identified precisely, confirmed against actual numbers, and quantified in dollars or hours. By the time you finish this stage, you have a one-page constraint statement that names the problem, where it lives, how long it has existed, and what it has cost. Everything in the rest of the Sequence is designed to answer the question Signal asks.
 :::
 
 That room wasn't full of bad managers. It was full of people who had never been taught to distinguish between a symptom and a constraint. They could read a number. They could not trace it to a cause. Signal is the discipline that makes that tracing possible. The question "why is it off track?" sounds simple. It is not. It is the hardest question in operations — and most teams have never been asked to answer it out loud, in a room, with a number on the wall.
 
 ## The deliverable is *one sentence*.
 
-Signal produces a single artifact: a one-page constraint statement anchored in one sentence. The sentence carries the constraint — the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The page surrounds it with the evidence that validates it: the data you checked, the people you talked to, the number you confirmed. One sentence. One page. One constraint.
+Signal produces a single artifact: a one-page constraint statement anchored in one sentence. The sentence carries the constraint — the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The page surrounds it with the evidence that validates it: the data you checked, the people you talked to, the number you confirmed.
 
 Here's the template. You'll fill it in by the end of this chapter.
 
@@ -53,13 +53,11 @@ If you can't put a number on the cost, you haven't found the constraint yet. Kee
 
 ## The gate is real. You don't get past it by *declaring* it complete.
 
-Signal is a gate. You do not move to Source until the constraint is locked. There is no graceful workaround for this. You either have one validated constraint statement with a number on it, or you do not — and if you do not, the Sprint has not started.
+Signal is a gate. You don't move to Source until the constraint is locked — one validated constraint statement with a number on it.
 
-The most common failure mode here is not technical. It is political. Leadership teams can't agree on which constraint is the constraint, so they punt — they pick three, or they pick the one the loudest VP wants, or they write something so abstract it can't be disagreed with and can't be acted on. None of these get you to Source. All of them produce the same outcome — another deck explaining why the AI investment didn't move the numbers.
+The most common failure mode is political, not technical. Leadership teams can't agree on which constraint is the constraint, so they punt — they pick three, or they pick the one the loudest VP wants, or they write something so abstract it can't be acted on. If your team can't pick one, you've learned something important before a single line of the Sprint has been built: the leadership team is unclear about priorities. That's upstream of anything in this book.
 
-The inability to agree on one constraint is itself diagnostic. It means the leadership team is unclear about priorities. That's a leadership problem, not a technology problem — and no AI tool resolves it. If your team can't pick one, you've learned something important before a single line of the Sprint has been built. The fix is upstream of anything in this book.
-
-When a team does land on one constraint and commits to it, the energy in the room changes. You're no longer arguing about the surface of the problem. You're arguing about the math of solving it. That is the moment Signal is locked.
+When a team does land on one constraint and commits to it, you're no longer arguing about the surface of the problem. You're arguing about the math of solving it. That's the moment Signal is locked.
 
 ## *Symptom* is not the same as *constraint*.
 
@@ -124,31 +122,15 @@ The expansion plan was a symptom. The scheduling loop was the constraint. The ga
 
 Here's what the one-page constraint statement looked like for that clinic:
 
-```
-CONSTRAINT: Patient cancellation slots are filled manually by front desk
-staff, leaving 37-42% of cancellation slots unfilled despite a backlog
-of patients waiting for appointments.
+| Field | Detail |
+|---|---|
+| **Constraint** | Patient cancellation slots are filled manually by front desk staff, leaving 37-42% of slots unfilled despite a backlog of patients waiting for appointments. |
+| **Where it lives** | Front desk → scheduling workflow → manual process of matching cancellations to the waitlist. All 5 locations. |
+| **Duration** | ~2 years (since third location opened). Workaround normalized — staff treats manual slot-filling as their job, not as a broken process. |
+| **Quantified cost** | Efficiency at 58-63% vs. 83% expansion threshold. ~$420K/year in unrealized revenue (22 unfilled slots/week x $75 avg visit x 5 locations x 50 weeks). Blocking planned 6th location — est. $200K+ in delayed expansion revenue. |
+| **Validating evidence** | Efficiency calculated live in leadership meeting. Front desk confirmed manual process. Waitlist exists in EHR but not connected to cancellation notifications. No staff member disputed the gap. |
 
-WHERE IT LIVES: Front desk → scheduling workflow → the manual process
-of matching cancellations to the waitlist. Crosses all 5 clinic locations.
-
-DURATION: Since the practice opened its third location (~2 years).
-Workaround normalized — staff treats manual slot-filling as their job,
-not as a broken process.
-
-QUANTIFIED COST: Clinical efficiency running at 58-63% vs. 83% industry
-threshold for expansion. Gap represents approximately $420K/year in
-unrealized revenue across 5 locations (est. 22 unfilled slots/week ×
-$75 avg visit × 5 locations × 50 weeks). Also blocking a planned 6th
-location — estimated $200K+ in delayed expansion revenue.
-
-VALIDATING EVIDENCE: Efficiency calculated live in leadership meeting.
-Front desk confirmed manual process. Waitlist exists in EHR but is not
-connected to cancellation notifications. No staff member disputed the
-gap once calculated.
-```
-
-That's the artifact. One page, one sentence at the top, math underneath. Anybody in that company could read it and understand what the Sprint was solving without asking a follow-up question.
+That's the artifact. Anybody in that company could read it and understand what the Sprint was solving without asking a follow-up question.
 
 ## How to run Signal yourself.
 
@@ -227,7 +209,7 @@ If any of these are true, go back. The gate is real. Passing through it with a b
 
 ## Where the constraint comes from inside an *EOS or Scaling Up shop*.
 
-If your company runs on EOS, Scaling Up, or a similar operating system, you already have most of Signal's inputs sitting on a whiteboard or in a shared doc. You just have to know where to look — and then run the constraint questions against what you find.
+If your company runs on EOS, Scaling Up, or a similar operating system, you already have most of Signal's inputs sitting on a whiteboard or in a shared doc. You just have to know where to look — and then run the constraint questions against what you find. (If your team hasn't yet built the muscle of identifying and articulating issues, Mark O'Donnell's *Issues!* is the place to start. Read that first, then come back here.)
 
 **The issues list** is the most obvious input. Every L10, every weekly tactical, every quarterly review produces a list of issues the team has been carrying. Most of them are symptoms. A few of them, traced honestly, are constraints. Walk that list and ask, for each one: is this the thing, or is this how the thing shows up? When you find one that survives that question — one you can locate in a specific workflow, with a duration and a cost — run the five constraint questions against it. That becomes your constraint candidate.
 
@@ -240,25 +222,11 @@ If your company runs on EOS, Scaling Up, or a similar operating system, you alre
 Pull your current issues list, your stalled rocks, and any open headcount requests. Pick the one that feels most expensive and run it through the five constraint questions. If you can put a real number on it, you have a constraint worth a Sprint. If you can't, keep walking the list.
 :::
 
-## The *Signal Agent* and the Compound Bench.
+## The failure mode that looks like work.
 
-The Signal Agent is the first agent on the Compound Bench (introduced in the previous chapter). You run it when the scorecard is red and the room is nodding and nobody has named the constraint underneath it — when the team is describing symptoms and calling it diagnosis.
+Skipping Signal doesn't look like failure. It looks like procrastination dressed up as activity — tools being evaluated, demos on Fridays, somebody prompting in Slack. None of it is Signal. The org hasn't named a single constraint it's committed to solving.
 
-The Signal Agent asks the questions I would ask if I sat down with you for two hours. What is slow? What is expensive? What workaround did your team build three years ago that everyone forgot was a workaround? What would change — actually change, in dollars or hours — if this one thing got faster? It does not let you stop at the symptom. It keeps asking until you land on the constraint underneath and put a number on what it's costing.
-
-If you don't have the Signal Agent yet, the five constraint questions and the failure mode checklist in this chapter run the same logic. The Agent is a faster, more persistent version of the same conversation — it doesn't let authority or silence short-circuit the process, which is the main thing facilitation has to defend against.
-
-## The *failure mode* is comfortable. That is what makes it dangerous.
-
-Skipping Signal looks like progress. The team is busy. Tools are being evaluated. There are demos on Fridays. Somebody is prompting. The Slack channel has activity. None of it is Signal. All of it can be happening while the org has not named a single constraint it's committed to solving.
-
-Ungoverned AI experimentation produces another demo. Signal produces a validated problem statement, a number, and the foundation for everything in Source, Design, Build, and Deliver to land on. The two things look identical in the first week and diverge violently after that.
-
-The reason the comfortable path stays comfortable is that nobody has to disagree out loud. Without a constraint, there is no priority to argue over. Every team keeps working on whatever they were already working on, and the AI investment becomes a quiet line item everyone agrees is "still finding its footing." Signal makes the disagreement explicit. It forces the team to pick one — and picking one is what produces the result.
-
-There's a specific version of this failure that shows up in even well-run EOS shops. The leadership team sits down to work through the issues list. Someone with authority — the loudest voice, or the most senior title, or just the person who fills silence fastest — names the problem. One sentence. Confident. The room nods. They move to solutions. Nobody asks whether the named problem is actually the problem.
-
-What just happened is not Signal. It's a performance of Signal. The dominant personality resolved the discomfort of ambiguity. The underlying constraint is still there, unnamed, costing the business the same amount it was costing before the meeting started.
+Watch for the version that shows up in well-run EOS shops: the leadership team sits down to work through the issues list. Someone with authority names the problem. The room nods. They move to solutions. Nobody asks whether the named problem is actually the problem. That's not Signal. It's a performance of Signal. The dominant personality resolved the discomfort of ambiguity, and the underlying constraint is still there, unnamed, costing the same amount it was costing before the meeting started.
 
 ## With the constraint locked, you can map *what surrounds it*.
 
