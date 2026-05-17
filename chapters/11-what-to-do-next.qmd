@@ -216,3 +216,10 @@ The book gives you the Sequence. The Clarity Call accelerates it. The plan on th
 ---
 
 Start *compounding*.
+
+## Reflection Questions
+
+1. Fill in the First Sprint Plan on the page above — constraint in one sentence, estimated annual cost, three team roles named, path chosen, first step checked. Can you complete it in the next ten minutes? If not, which field is blocking you, and what would it take to fill it in before Monday?
+2. Run your minimum viable Signal: what is the one operational problem costing you the most money or time right now, what does it cost per year, and what would have to be true for it to be solved? If you can answer all three, you have a sprint. If you can't, your first sprint is getting to where you can.
+3. The chapter describes Katie and Jill — both CEOs who discovered their real constraint wasn't the one they walked in with. What is the problem on your list that you've been carrying for months? Have you actually run Five Whys on it, or are you working on the symptom because it's more comfortable than finding the constraint underneath?
+4. What is your Monday morning action — the specific, named move that starts the sprint? Is it scheduling the Signal session with your team? Booking the Clarity Call? Writing the constraint statement? Name the action, name the person who owns it, and name the date it happens by.

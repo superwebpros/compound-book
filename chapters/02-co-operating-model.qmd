@@ -257,3 +257,10 @@ The Equation does the same work for us that *Vision + Traction* does for an EOS 
 ## What's *next*.
 
 You now have the *what*. The next chapter gives you the *how* — the Framework that runs the Co-Operating Model in practice, the Sequence of six stages that carry a sprint from a validated constraint through Signal, Source, Design, Build, Deliver, and Compound, the Rhythm that runs that Sequence quarter after quarter, and the Sprint as the unit of work where all of it lands. The Framework is the answer to the question every CEO asks next: *fine, on Monday morning, what do we actually do?*
+
+## Reflection Questions
+
+1. Pick one role in your company and sort its weekly tasks into Column A (Human Intelligence) and Column B (Agent Intelligence). What percentage of that role's week lands in Column B — and what does that number tell you about where your highest design opportunity is?
+2. The chapter draws a clear line: humans own deciding, directing, pricing, and coaching; agents own drafting, recommending, documenting, and executing. Where in your company is that line currently blurred — and what's the most expensive place where humans are doing agent work?
+3. Compound's marketing lead went from linear production to managing four parallel agent workstreams simultaneously. Which function in your company could most benefit from parallel workstreams — and who is the person doing linear work today that parallel design would free?
+4. "Getting an agent to produce something is not the same as doing good work." Where in your current AI usage is your team accepting agent output without holding it to the standard a human would set? What would it take to raise that bar?

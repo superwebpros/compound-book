@@ -232,3 +232,10 @@ Here's what the Hybrid Accountability Chart looks like for a real constraint —
 5. **Kill switch:** Agent sends or stages a quote for external delivery without human review. Agent accesses data outside its permitted systems. Error rate on pricing exceeds 10% in any sprint.
 
 That's one constraint, one sprint, five chart rows, two named humans, and five guardrail answers. The next chapter covers the instruments and execution mechanics — Work Deconstruction, the Design Agent on the Bench, and the gate checklist that separates Design from Build.
+
+## Reflection Questions
+
+1. For the constraint your sprint is targeting, fill in the four Hybrid Accountability Chart questions for at least one accountability: what is the role's outcome (not task), what would you name the agent team, who is the named human supervisor, and is it AI-assisted or automated? If any field is blank, that blank is your Design session.
+2. When you look at the information flow for your constraint workflow — data in, transformations, decisions, data out — how many of the decision points are rule-based versus judgment-based? Which of the five connection patterns (skills on SOPs, RAG, data pipelines, low-code integration, service layer) fits the rule-based portion?
+3. Who in your company is the right Human Orchestrator for this sprint — the person with authority over the constraint outcome who is willing to shift from executing to designing? Name them out loud. If you have a development gap to fill before they can run the role, what does that ramp look like?
+4. Answer all five governance questions for your sprint's agent team right now: what data can it access, what actions can it take without approval, what happens on unrecognized input, how will you monitor quality, and what triggers the kill switch? Any unanswered question is a Design gap that will surface in Build at five times the cost.

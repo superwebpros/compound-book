@@ -244,3 +244,11 @@ The Co-Intelligent Company is not a vision. It is the company built — quarter 
 There is nothing aspirational left. Every term is operational. Every artifact is a document the leadership team can produce on a Tuesday. Every behavior is something a CEO can run in their next quarterly session.
 
 The framework is yours to run. The next chapter is about the one thing Compound does that you should not run alone.
+
+## Reflection Questions
+
+1. Look at your last four quarters of headcount decisions. How many requisitions were written before anyone asked "what does Signal say about this?" How many constraints were design problems disguised as headcount problems? Run the math: what did those hires cost against what a sprint would have cost?
+2. Set up your Compounding Scorecard today. Fill in the first row with your current or most recent sprint. For each sprint you have completed, what is the cumulative delta? Is the compounding visible yet, or is this your first data point?
+3. Your quarterly operating session has four steps: review the previous sprint at the outcome level, update the Signal Backlog, commit the next sprint, and update the Hybrid Accountability Chart. Is that 90-minute session on your calendar this quarter — with all four steps on the agenda and the right people in the room?
+4. The Hybrid Org Today document maps what people own, what AI handles, what is solved, and what is next. Could you fill in that one-page template for your company right now? What would the "Completed Sprints" section say, and what would the "Active Sprint" section say?
+5. The chapter describes executives who, after eighteen months, make design-improvement decisions between sprints without being prompted. What would have to be true about your leadership team's operating model for that behavior to become automatic — not deliberate — within two years?

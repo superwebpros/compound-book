@@ -267,3 +267,11 @@ The one-page constraint statement is the handoff to Source. With the constraint 
 If you can't hand someone that one page and have them understand what the Sprint is solving without asking a follow-up question, you're not done with Signal. Go back. The gate is real.
 
 That is Chapter 5.
+
+## Reflection Questions
+
+1. Run the Issue Surfacer questions on your company right now: what process would you never let a customer watch? Where does your team keep losing the same person or role? What conversation keeps coming up in L10s but never gets resolved? Which answer feels most expensive?
+2. The PT clinic was forty-five minutes into planning a sixth location before someone asked what clinical efficiency rating was. Where in your company is your team solving a symptom while the actual constraint runs untouched underneath it?
+3. Apply the Five Whys to your top constraint candidate. Does the fifth "why" point to a workflow, a handoff, or a structural gap — or does it point to a person? If it points to a person, reframe: what system failure put that person in the position of being the only one who knows?
+4. Can you fill in all four fields of the one-page constraint statement template today — constraint sentence, location, duration, and quantified cost with math? If the cost field is empty, what data would you need to fill it in, and who owns that data?
+5. If you polled your leadership team individually and asked "what is the ONE operational problem AI should solve for us?" — how many different answers would you get? Run the poll before your next L10 and compare results.

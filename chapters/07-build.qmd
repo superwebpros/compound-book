@@ -334,3 +334,10 @@ Pull last week's real inputs. Run the full four-question test. Document the resu
 ## Hand off to *Deliver*.
 
 Build makes it work. Deliver puts it into the company's actual operating rhythm — trains the people who need to use it, changes the handoffs that need to change around it, measures the result against the dollar cost Signal put on the constraint, and makes sure the system is owned, not orphaned. A solution that runs is not yet a solution the business has absorbed.
+
+## Reflection Questions
+
+1. For your sprint's designed workflow, run the three-question build path decision tree: does a mature product already do this with light configuration? Is it custom but composed of standard moves? Does it touch a system or data sensitivity that requires hand-built integration? Which path does the answer point to — and does that match where your team assumed you'd end up?
+2. Before Build begins, fill in all seven Guardrails Checklist questions for your workflow. Which question is hardest to answer — and is that difficulty a sign that Design needs another session, or that you genuinely haven't decided yet?
+3. The chapter says the team that ships a Claude project with three skills in a week beats the team that spends six weeks architecting a pipeline — if the design only called for a skill. Where in your current build is scope creep already showing up? What does the spec actually say, versus what the builder is proposing?
+4. Run the four-question "Done" test against your build using last week's real inputs. Did the build produce expected outputs? Did it handle edge cases? Did escalation fire correctly? Could the supervisor evaluate the output without a walkthrough? Which question did you fail?

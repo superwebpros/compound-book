@@ -1,0 +1,197 @@
+---
+title: "Key Terminology"
+---
+
+This glossary defines the vocabulary used throughout the book — both terms we coined and technical terms we borrowed from AI and software practice. If a term stopped you mid-sentence, flip here.
+
+## Compound Framework Terms
+
+**Agent Coordinator**
+: The operational role responsible for managing an agent team day-to-day — keeping inputs clean, reviewing outputs at the appropriate frequency, surfacing judgment-call escalations to the Human Orchestrator, and flagging when the design is drifting. Distinct from the Human Orchestrator, who owns outcomes. (First introduced: Chapter 6)
+
+**AI Readiness Scorecard**
+: A five-dimension diagnostic tool — Constraint Clarity, Information Readiness, Workflow Visibility, Decision Rights, and Measurement Discipline — scored Red/Yellow/Green to show a leadership team exactly where their AI readiness gaps are before starting a sprint. (First introduced: Chapter 1)
+
+**At-Risk Source**
+: Institutional knowledge that lives in one person's head and is about to leave the organization through departure, retirement, or role change. Named and prioritized during Source so it can be captured before it walks out the door. (First introduced: Chapter 5)
+
+**Clarity Call**
+: A 30-minute, no-cost conversation with a Compound operator designed to pressure-test a constraint and determine whether it is sprint-ready. Not a sales pitch; the output is a named constraint you can act on. (First introduced: Chapter 11)
+
+**Co-Intelligence**
+: The designed structure where human and agent intelligence work together against the same problems inside the same operating loop — not relegated to separate tracks. The system half of the equation *Co-Intelligence + Rhythm = Compound.* (First introduced: Chapter 2)
+
+**Co-Intelligent Co-operation**
+: The activity of humans and AI working the same problems together, inside the same loop, against the same outcome — as the company's default way of working rather than a project or initiative. (First introduced: Chapter 2)
+
+**Co-Intelligent Company**
+: What a company becomes when humans and AI work as one system, not two parallel tracks. A higher bar than "uses AI tools" or "has an AI strategy." (First introduced: Chapter 1)
+
+**Co-Operating Model**
+: The explicit design of who brings what intelligence to the work and who owns which operating responsibility — the structure that makes Co-Intelligent Co-operation possible. The answer to the operating-model problem most companies have. (First introduced: Chapter 2)
+
+**Compound (stage)**
+: The sixth and final stage of the Sequence. After a sprint is delivered, Compound runs the Sprint Retrospective, re-ranks the Signal Backlog, installs one design change, updates the Hybrid Accountability Chart, and names the next constraint — turning a shipped project into the foundation of the next sprint. (First introduced: Chapter 3)
+
+**Compound Bench**
+: Six AI coaching agents — one per stage of the Sequence — that run the framework *with* you during a sprint: interrogating constraints, surfacing knowledge gaps, running Work Deconstruction, specifying builds, structuring rollouts, and closing the retrospective. Available through Compound membership. (First introduced: Chapter 3)
+
+**Compound Sprint**
+: One complete pass through the six-stage Sequence (Signal → Source → Design → Build → Deliver → Compound) on one validated constraint. The unit of work this book teaches. (First introduced: Chapter 3)
+
+**Compounding Scorecard**
+: A running table that tracks the cost delta for each sprint across quarters — constraint solved, cost before, cost after, delta, and cumulative impact — so leadership can see the compounding returns building over time. (First introduced: Chapter 10)
+
+**Constraint Statement**
+: The one-page artifact that Signal produces: a single sentence naming the operational constraint, plus the location in the org, its duration, the quantified cost, and the validating evidence. The handoff from Signal to Source. (First introduced: Chapter 4)
+
+**Decision Rights**
+: One of the five dimensions of the AI Readiness Scorecard. The degree to which a leadership team has explicitly assigned which tasks AI handles versus which stay with humans, and who has authority to change the boundary. (First introduced: Chapter 1)
+
+**Design Gate**
+: The five-item checklist that must be fully checked before a sprint moves from Design into Build: Work Deconstruction complete, all HAC fields filled with named supervisors, Human Orchestrator and Agent Coordinator named, AI-Assisted vs. Automated decided with rationale, and guardrails defined. (First introduced: Chapter 6b)
+
+**Diagnose / Execute & Compound**
+: The two halves of the Sequence. Diagnose = Signal + Source (the work most companies skip). Execute & Compound = Design + Build + Deliver + Compound (ships only when Diagnose is solid). (First introduced: Chapter 3)
+
+**Human Orchestrator**
+: The person who runs a sprint day-to-day — owns execution (not outcomes), sets agent team goals, reviews at the goal level, and makes the design improvements between sprints. Different from the leadership sponsor, who owns the outcome. (First introduced: Chapter 3)
+
+**Hybrid Accountability Chart (HAC)**
+: An extension of a traditional accountability chart that includes agent teams alongside humans. Every row names a role or function, the agent team responsible, the human supervisor, and the AI-Assisted vs. Automated level. Every row has a named supervisor — no exceptions. Built one sprint at a time. (First introduced: Chapter 6)
+
+**Hybrid Org Today**
+: A one-page living document that gives the current operational picture of the Co-Intelligent Company: active sprint status, Signal Backlog ranked by cost, Hybrid Accountability Chart entries, completed sprint outcomes, and the next quarterly review date. Updated during each quarterly operating session. (First introduced: Chapter 10)
+
+**Knowledge Map**
+: The one-page Source deliverable that shows what the organization knows about the validated constraint — every relevant data source, its owner, its status (Clean/Needs Work/Missing), and its pipeline connectivity. Includes Digital sources, Organic sources (people), and Missing sources. (First introduced: Chapter 5)
+
+**Organizational Memory**
+: The layer of connected knowledge — CRM records, SOPs, transcripts, client history — that makes an agent "know" a company rather than just the world. Built deliberately through Source and maintained sprint by sprint. Prevents the loss of institutional knowledge when people leave. (First introduced: Chapter 2)
+
+**Parallel Workstreams**
+: Multiple agent-driven work tracks running simultaneously under one human's direction. The design pattern that collapses calendar time and produces compounding output — contrasted with linear work, where tasks run sequentially because all workers are human. (First introduced: Chapter 2)
+
+**Rhythm**
+: The quarterly cadence of running sprints. What turns a single sprint into a compounding business outcome. Running the Sequence over and over — with a quarterly operating session to review the previous sprint, update the Signal Backlog, commit the next sprint, and update the HAC. (First introduced: Chapter 3)
+
+**Sequence**
+: The ordered six stages inside the Framework: Signal → Source → Design → Build → Deliver → Compound. Always all six. Always in that order, because each stage produces something the next stage requires. (First introduced: Chapter 3)
+
+**Signal (stage)**
+: Stage 1 of the Sequence. The discipline of identifying the one operational constraint worth solving, tracing symptoms to root cause, and quantifying the cost in dollars or hours before committing a sprint to it. Produces a one-page Constraint Statement. (First introduced: Chapter 3)
+
+**Signal Backlog**
+: The running, ranked list of validated operational constraints the organization is working through. Updated during every Compound session as new information emerges. The top entry becomes the input for the next sprint's Signal conversation. (First introduced: Chapter 9)
+
+**Skills Library**
+: Twelve pre-built, installable workflow instruments — two per stage of the Sequence — that stay inside a company's systems after a sprint ends and make each subsequent sprint faster. Where the Bench coaches you through the method, the Library is your toolkit for the output. Available through Compound membership. (First introduced: Chapter 3)
+
+**Source (stage)**
+: Stage 2 of the Sequence. Maps the information environment around the validated constraint — what knowledge exists, where it lives, who holds it, what's missing, and what's at risk of leaving. Produces the Knowledge Map. (First introduced: Chapter 3)
+
+**Sprint Planning Canvas**
+: A one-page artifact completed before Signal begins: names the constraint, maps a first-pass answer to each stage, identifies the team, sets the Human Orchestrator, and books the quarterly review. Intentionally incomplete — Signal will refine it. (First introduced: Chapter 3)
+
+**Sprint Retrospective**
+: The structured review that runs inside the Compound stage: what worked, what didn't (with each "didn't work" reframed as a design question), and what one design change would make the next sprint better. Run with the Human Orchestrator and all sprint accountability owners. (First introduced: Chapter 9)
+
+**Work Deconstruction**
+: The Design-stage instrument that classifies every task in a constraint workflow into four categories — Human judgment required, Agent-assisted, Fully automatable, or Workflow automation only — to determine what the agent team handles and what stays with a human. (First introduced: Chapter 6b)
+
+---
+
+## Technical Terms
+
+**API (Application Programming Interface)**
+: How software systems talk to each other. Think of a waiter carrying orders between a kitchen and a table: the API carries requests from one system and brings structured answers back from another. When a system "has an API," other software can query it and get data in return without anyone typing it manually.
+
+**Backlog**
+: A prioritized list of work items to be completed. In software development this is a task list for a development team; in the Compound Sprint context, the Signal Backlog is the prioritized list of operational constraints the company is working through.
+
+**Chunking**
+: How documents are broken into smaller pieces for storage and retrieval in a RAG system. The size and structure of chunks affects how accurately the AI finds and uses information when answering questions against a knowledge base.
+
+**Connector**
+: A pre-built integration between two specific software systems. Platforms like Zapier, Make, and n8n offer thousands of connectors that link one tool to another without writing custom code — for example, automatically creating a project record in a PM tool when a deal closes in a CRM.
+
+**Context Window**
+: The maximum amount of text an AI model can "see" at one time — the combined length of what you send it plus what it generates back. Longer context windows let the model work with larger documents or longer conversations before losing track of earlier content.
+
+**CRM (Customer Relationship Management)**
+: Software that stores and manages a company's relationships with customers and prospects — contact records, deal history, communication logs. Examples: HubSpot, Salesforce.
+
+**Data Pipeline**
+: An automated flow that moves data from one system to another, often transforming or processing it along the way. A data pipeline might pull records from a CRM, run them through an AI model, and write the results to a spreadsheet — without anyone doing it manually.
+
+**Embeddings**
+: A way of representing words, sentences, or documents as lists of numbers so a computer can measure how similar two pieces of text are. Used in vector databases and RAG systems to find the most relevant documents for a given question.
+
+**ERP (Enterprise Resource Planning)**
+: Software that manages a company's core business processes — inventory, finance, supply chain, manufacturing. Examples: SAP, NetSuite, QuickBooks Enterprise.
+
+**ETL (Extract, Transform, Load)**
+: A data process that pulls data from one system (Extract), reshapes it into the right format (Transform), and stores it in another system (Load). Common in data engineering when connecting systems that store information differently.
+
+**Fine-tuning**
+: Retraining an AI model on your company's own data so it behaves differently by default — changing how the model "thinks." Expensive, slow to set up, and hard to update. Appropriate only when you need fundamentally different default behavior across thousands of interactions. Contrast with RAG, which is faster and more flexible for most business use cases.
+
+**Hallucination**
+: When an AI model produces a confident, plausible-sounding answer that is factually wrong. The model generates text based on patterns, not verified facts, so it can "make up" details — especially when asked about specific facts, names, or figures it doesn't have reliable data on. A core reason human review of agent output matters.
+
+**Knowledge Base**
+: A structured collection of documents, articles, SOPs, or records that an AI can search and reference when answering questions. The company's institutional knowledge made accessible to agents through a retrieval system.
+
+**Large Language Model (LLM)**
+: The AI technology underneath tools like Claude, ChatGPT, and Gemini. Trained on enormous amounts of text, an LLM learns to recognize and generate language at scale. The same underlying technology powers both simple chatbots and sophisticated agent workflows — what differs is the architecture built around it.
+
+**Low-code / No-code**
+: Software development approaches that let non-developers build functional workflows and applications using visual interfaces, drag-and-drop tools, and pre-built components rather than writing code from scratch. Examples: Zapier, Make, Airtable, n8n, Power Automate.
+
+**MCP (Model Context Protocol)**
+: How an AI model connects to your company's tools and live data. An API lets systems talk to systems; an MCP lets an AI model talk to your systems — reaching into your CRM, reading your knowledge base, or checking a project management tool in real time during a workflow. Without MCPs, an AI model only knows what you paste into the prompt.
+
+**Metadata**
+: Data about data. In a knowledge base or document library, metadata tags each document with information like date, author, topic, or status — so retrieval systems can find the right documents and know whether they're current or archived.
+
+**Open Source (model)**
+: AI models whose underlying code and weights are publicly available, allowing companies to run them on their own servers rather than sending data to a provider's API. Examples: Llama (Meta), Mistral. The key advantage is data control; the trade-off is that someone must maintain the infrastructure.
+
+**Orchestration (agent)**
+: Coordinating multiple AI agents so they work together on a task — passing outputs from one agent to another, managing sequencing, handling errors. In advanced workflows, an Agent Coordinator performs this role.
+
+**Prompt**
+: The instruction you give an AI model — the text that tells it what to do, in what format, with what constraints. Prompt quality directly affects output quality. A well-constructed prompt includes the agent's role, what it receives as input, what it should produce as output, and the constraints and edge cases it should handle.
+
+**Prompt Engineering**
+: The skill of writing precise, testable instructions for an AI model so it reliably produces the output you need. Most useful once you know what the agent is accountable for — which is the output of Signal, Source, and Design.
+
+**Proprietary Model**
+: AI models built and hosted by a company (Anthropic, OpenAI, Google) and accessed via their API. You send data to their servers; they process it and return results. Most capable models are proprietary. The trade-off versus open source is that data travels through the provider's systems.
+
+**QA (Quality Assurance)**
+: Testing a built workflow against real inputs to confirm it produces the expected outputs, handles edge cases correctly, and escalates appropriately — before declaring it done. In the Compound Sprint, this is the "Done test" in Build: four questions answered against last week's actual data.
+
+**RAG (Retrieval-Augmented Generation)**
+: Giving an AI model access to your company's specific documents and data at the moment it needs them, without retraining the model itself. Think of handing the model a reference binder before each question. The model stays general-purpose; your knowledge provides the specifics. Faster and cheaper to set up than fine-tuning, and easy to update as your information changes.
+
+**Serverless / Edge Deployment**
+: A way to run software (including AI workflows) on distributed infrastructure that scales automatically based on demand, without managing dedicated servers. Useful for high-volume, unpredictable workloads.
+
+**SOP (Standard Operating Procedure)**
+: A documented, step-by-step description of how a process is performed. A well-written SOP is the foundation for an AI agent that executes that process — it is the knowledge the agent needs to do the work consistently.
+
+**Structured vs. Unstructured Data**
+: Structured data lives in defined fields — database columns, spreadsheet rows, CRM records. AI can use it immediately. Unstructured data is free-form — emails, PDFs, meeting transcripts, Slack messages. AI needs processing and classification before it can reliably reason against it.
+
+**Swim Lane Diagram**
+: A visual workflow map divided into horizontal or vertical lanes, one per actor (human or agent), showing which steps each party owns and where handoffs cross between them. Used in Design to make the workflow legible and spot fragile handoffs before they become problems in Build.
+
+**Token**
+: The basic unit AI models use to process text — roughly three-quarters of a word. Every prompt you send and every response generated consumes tokens, and providers charge per token. A 1,000-word document is approximately 1,300 tokens. Understanding token volume matters for estimating the cost of production AI workflows.
+
+**Vector Database**
+: A type of database that stores information as embeddings (numerical representations) rather than rows and columns, allowing fast similarity searches — "find me documents most related to this question." Used in RAG systems so agents can quickly retrieve relevant knowledge from large document collections.
+
+**Webhook**
+: A mechanism that lets one software system automatically notify another when something happens — for example, when a form is submitted, a payment is received, or a status changes. Webhooks are the "if this, then that" triggers that power many workflow automations without manual intervention.

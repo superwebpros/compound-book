@@ -216,3 +216,10 @@ At the end of Source, you have two things on one sheet of paper: the constraint 
 With those two things in hand, the team moves into Design — the phase where ownership decisions get made, where the Hybrid Accountability Chart entry for this sprint gets built, and where the work crosses from Diagnose into Execute. Source is the bridge. It's the last thing you do before you're allowed to design.
 
 The next chapter is Design.
+
+## Reflection Questions
+
+1. Build a first-pass Knowledge Map for your top constraint right now. List the digital sources that touch that workflow. How many of them are Connected vs. Manual vs. Broken in the Pipeline column? What does that ratio tell you about the design work ahead?
+2. Who on your Knowledge Map is an organic source — someone whose judgment is load-bearing for the constraint workflow? Is that person a single point of failure? If they left tomorrow, what would break first?
+3. The chapter describes the developer who walked out with everything he knew. Is there someone in your company right now whose departure would create the same chute? Have you scheduled a structured interview to extract what they know before they go?
+4. When you classify the sources on your map, what share of your information is structured vs. unstructured? What is the most valuable piece of unstructured knowledge in the constraint workflow — and what would it take to make it AI-usable?

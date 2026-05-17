@@ -39,6 +39,8 @@ book:
         - chapters/10-the-rhythm.qmd
         - chapters/11-what-to-do-next.qmd
     - chapters/appendix-prompt-engineering.qmd
+    - chapters/appendix-glossary.qmd
+    - chapters/appendix-action-steps.qmd
 
 format:
   html:

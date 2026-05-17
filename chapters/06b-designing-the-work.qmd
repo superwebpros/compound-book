@@ -160,3 +160,10 @@ Run the five-item Design Gate checklist against your current sprint's design. If
 When those five are in place, Build can begin. Until they are, it can't. Holding that line is what separates the operators who run the Sequence from the operators who buy AI tools and hope.
 
 The next chapter is Build — the phase where the designed workflow becomes a deployable system, specified at the level of detail a developer can execute against, with the guardrails and oversight decisions Design locked already set.
+
+## Reflection Questions
+
+1. Run Work Deconstruction on one real role in your company — not the job description, the actual weekly work. What percentage of tasks land in "Human judgment required" versus the other three categories? If more than half land in "Human judgment required," challenge each one: is it genuinely judgment, or is it judgment because no one has written the rules down?
+2. Draw a swim lane diagram for your constraint workflow — one lane for human work, one for agent work. How many handoff crossings does the diagram show? If the crossing count is higher than the number of steps, what two handoffs could you eliminate to make the design more reliable in production?
+3. Run the five-item Design Gate checklist against your current sprint's design. Which item is hardest to check off — and what would have to happen in the next working session to clear it?
+4. The chapter says prototyping before building catches gaps that cost minutes now and hours in Build. Have you shown the designed output to the stakeholder who will live with it daily? What surprised them?

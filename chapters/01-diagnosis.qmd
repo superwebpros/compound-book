@@ -287,3 +287,11 @@ The next chapter defines the Co-Intelligent Company precisely enough that you ca
 ## Action Step
 Before you turn the page, fill in the scorecard. All five dimensions. Write the scores down — don't just read the descriptions and nod. The scorecard travels with you through the rest of the book, and every chapter will ask you to reference it. Sixty minutes with your leadership team. Do it before your next L10.
 :::
+
+## Reflection Questions
+
+1. Which of the five AI Readiness Scorecard dimensions scored lowest for your company — and does your leadership team agree on that score, or would each person give a different number?
+2. The chapter describes Meridian Consulting Group: two Reds and three Yellows. Where does your company land — and which specific Yellow could you turn Green this quarter with existing resources, no new tools required?
+3. Are you running the wrong question? When your team discusses AI, does the conversation start with "what tasks could AI help with?" or "what outcomes are we accountable for, and how should human + AI deliver them?" Which framing dominated your last AI conversation?
+4. The headcount paradox says revenue and headcount are still tracking together despite AI investment. Pull your own numbers: what is your headcount-to-revenue ratio today versus two years ago? Has the AI line item bent that ratio at all?
+5. If AI were an employee and you had to write its scorecard today — what would its current score be? What would need to be true about your operating model for that score to be Green?

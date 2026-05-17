@@ -232,3 +232,10 @@ Deliver is where the sprint ends as a project and begins as infrastructure. The 
 <!-- PRIORITY: nice-to-have -->
 
 That artifact set — the outcome, the log, the runbook, the updated Hybrid Accountability Chart entry — is what the next stage works against. Compound is where the team turns it into the inputs that accelerate the next sprint. That is the next chapter.
+
+## Reflection Questions
+
+1. Run the Deploy Readiness Audit on your current sprint before you flip the switch. Which of the four gates — training, escalation path, real-data testing, supervisor cadence on calendar — is the hardest to confirm as Pass? What specific task would close it?
+2. Write the per-role runbook entry for the person whose daily work changes most because of this sprint. Does the runbook pass the vacation test — could someone who missed the entire sprint sit down with that document and know exactly what changed about their job?
+3. The chapter describes a teammate who kept routing to the old inbox because nobody explicitly told her to stop. Is there an old inbox, old process, or old system in your sprint that will stay open after deploy unless someone actively closes it? Who closes it, and when?
+4. Fill in the sprint outcome measurement template: Signal statement, cost at start, result after sprint, delta, outcome in one sentence. If you cannot fill in "result after sprint" with a real number, what measurement do you need to set up before Deliver begins — not after?

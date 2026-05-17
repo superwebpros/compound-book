@@ -240,3 +240,10 @@ Pick your constraint. Fill in the Sprint Planning Canvas. Book the quarterly rev
 ## Begin at *Signal*.
 
 Every Sprint begins in the same place. Before Source can map anything, before Design can allocate anything, before Build can specify anything — Signal has to name the one constraint this Sprint will solve. The discipline of refusing to move forward until that constraint is named, quantified, and validated is the single most important habit the Framework teaches. Most companies will not do it. The ones that do are the ones that compound.
+
+## Reflection Questions
+
+1. The chapter opens with a CEO who wanted to "just build it." Have you or your team jumped to Build before running Signal and Source? What did that cost — in time, money, or a tool the team stopped using?
+2. Fill in the Sprint Planning Canvas for your top constraint candidate right now. Which rows produce a confident first-pass answer and which rows are blank? The blank rows are your diagnostic: what do you not know yet that Signal and Source must answer?
+3. The Framework splits the Sequence into Diagnose (Signal + Source) and Execute & Compound (Design + Build + Deliver + Compound). If your last AI initiative stalled, which half did it fail in — and what was the specific stage where things went sideways?
+4. Who in your company would be the Human Orchestrator for your first sprint — the person who owns execution, not just outcomes? Is that person's name already written down, or is that seat still vacant?
