@@ -34,7 +34,7 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : The sixth and final stage of the Sequence. After a sprint is delivered, Compound runs the Sprint Retrospective, re-ranks the Signal Backlog, installs one design change, updates the Hybrid Accountability Chart, and names the next constraint — turning a shipped project into the foundation of the next sprint. (First introduced: Chapter 3)
 
 **Compound Bench**
-: Six AI coaching agents — one per stage of the Sequence — that run the framework *with* you during a sprint: interrogating constraints, surfacing knowledge gaps, running Work Deconstruction, specifying builds, structuring rollouts, and closing the retrospective. Available through Compound membership. (First introduced: Chapter 3)
+: Six AI coaching agents — one per stage of the Sequence — that run the framework *with* you during a sprint: interrogating constraints, surfacing knowledge gaps, running Work Deconstruction, specifying builds, structuring rollouts, and closing the retrospective. Available through Compound membership.
 
 **Compound Sprint**
 : One complete pass through the six-stage Sequence (Signal → Source → Design → Build → Deliver → Compound) on one validated constraint. The unit of work this book teaches. (First introduced: Chapter 3)
@@ -85,7 +85,7 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : The running, ranked list of validated operational constraints the organization is working through. Updated during every Compound session as new information emerges. The top entry becomes the input for the next sprint's Signal conversation. (First introduced: Chapter 9)
 
 **Skills Library**
-: Twelve pre-built, installable workflow instruments — two per stage of the Sequence — that stay inside a company's systems after a sprint ends and make each subsequent sprint faster. Where the Bench coaches you through the method, the Library is your toolkit for the output. Available through Compound membership. (First introduced: Chapter 3)
+: Twelve pre-built, installable workflow instruments — two per stage of the Sequence — that stay inside a company's systems after a sprint ends and make each subsequent sprint faster. Where the Bench coaches you through the method, the Library is your toolkit for the output. Available through Compound membership.
 
 **Source (stage)**
 : Stage 2 of the Sequence. Maps the information environment around the validated constraint — what knowledge exists, where it lives, who holds it, what's missing, and what's at risk of leaving. Produces the Knowledge Map. (First introduced: Chapter 3)
