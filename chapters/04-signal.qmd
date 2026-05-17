@@ -6,7 +6,7 @@ I stop the reporting out. I say: let's go back around. Three questions. Why is y
 
 The room changes. Not in a good way. People look at the table. They look at each other. They look at the screen. You would have thought I'd asked them to prove a theorem.
 
-I look at the clinic director. I say: you own six metrics that move revenue forward. You have reported them red for nine consecutive weeks. And you cannot tell me why they're off track.
+I look at the ~~clinic director~~ client. I say: you own six metrics that move revenue forward. You have reported them red for nine consecutive weeks. And you cannot tell me why they're off track.
 
 That's the moment I understood something: the issues list was empty not because there were no issues. It was empty because nobody had learned how to look.
 
@@ -18,9 +18,17 @@ This is the work most companies skip, which is why most AI investments produce n
 
 Everything in the rest of the Sequence is designed to answer the question Signal asks. Skip it, and the rest of the Sequence has nothing to bite on.
 
+```jf-note:
+This is missing a lot of important context: first, you should search the prohq transcripts for the 'Issues' book and take away the core ideas of how to identify an issue. Then, we need to think through how to go from issue to outcome (that's not in the book). We also need to distinguish between operational issues that can be solved with AI vs ones that can't (eg 'we need to refinance a loan'; a key customer threatned to cancel. Id' look and see if we can find my transcript with/from Innovare where I use the Issues List as the entry point for thinking about how AI could solve the issue and then use(d) AI to implment a co-intelligent solution. If not, don't worry about it, the preceding context is fine.
+```
+
 ## The deliverable is *one sentence*.
 
 Signal produces a single artifact: a one-page constraint statement anchored in one sentence. The sentence carries the constraint — the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The page surrounds it with the evidence that validates it: the data you checked, the people you talked to, the number you confirmed. One sentence. One page. One constraint.
+
+```jf-note:
+We should probably include a prompt that a reader can copy/paste to help with identifying signals -> constraints. Maybe that's an appendix item, but it would be helpful. Normal books have workbooks, we can provide something much more powerful...
+```
 
 <!-- DIAGRAM: One-page constraint statement template — five labeled fields: (1) Constraint in one sentence, (2) Where it lives (team / workflow / handoff), (3) Duration, (4) Quantified cost, (5) Validating evidence. Show as a clean single-page layout, blank/placeholder text. -->
 <!-- FORMAT: illustration -->
@@ -37,6 +45,10 @@ The quantified cost is also non-negotiable. "It's a big problem" is not a Signal
 Signal is a gate. You do not move to Source until the constraint is locked. There is no graceful workaround for this. You either have one validated constraint statement with a number on it, or you do not — and if you do not, the Sprint has not started.
 
 The most common failure mode here is not technical. It is political. Leadership teams cannot agree on which constraint is the constraint, so they punt — they pick three, or they pick the one the loudest VP wants, or they write something so abstract that it is impossible to disagree with and impossible to act on. None of these get you to Source. All of them produce the same outcome eighteen months later — another deck explaining why the AI investment did not move the numbers.
+
+```jf-note:
+Again i think the issues book in prohq transcripts can speak to this.
+```
 
 The inability to agree on one constraint is itself a design signal. It almost always means the leadership team is unclear about priorities. That is a leadership design problem, not a technology problem — and no AI tool is going to resolve it for you. If your team cannot pick one, you have learned something important before a single line of the Sprint has been built. The fix is upstream of anything in this book.
 
@@ -74,6 +86,10 @@ The expansion plan was a symptom. The scheduling loop was the constraint. The ga
 
 Signal is a facilitated conversation. You can run it with your leadership team in a single working session — two to three hours the first time, faster once the pattern is familiar. The structure is a sequence of questions, asked in order, and you do not move to the next question until the current one has a real answer.
 
+```jf-note:
+we need to remove all these sort of "and you do not move to the next question until the current one has a real answer." patronizing claims. We're so on the nose that it reads like we think customers are stupid.
+```
+
 **Start by listing candidates.** Before you can pick one constraint, you need a honest inventory of what is broken or slow. Ask the room: what are we working around? What process exists because something upstream failed? What does a new person always find confusing in their first ninety days? Write everything down without filtering. This is the Issue Surfacer conversation — it does not require a tool, it requires a room that is willing to name things.
 
 **Then walk each candidate through the constraint questions:**
@@ -94,6 +110,10 @@ The question that separates Signal from a regular problem-solving conversation i
 
 The Compound Skills Library includes two structured instruments — the **Constraint Finder** and the **Issue Surfacer** — that run this process as AI-guided facilitation, pulling from your data and your team's answers in real time. If you have access to them, use them. If you do not, the five questions above run the same logic. The method is the thing. The tool is a faster version of the method.
 
+```jf-note: 
+Those documents need to be reviewed and artifacts inlcuded in the appendix. TBD. I'm not sure how they are different from just a really good 'issues list prioritizer' prompt.
+```
+
 ## The *Signal Agent*.
 
 The first agent on the Compound Bench is the Signal Agent. You run it when something feels off but you can't name it yet — when the scorecard is red and the team is nodding and nobody is saying the thing that needs to be said.
@@ -101,6 +121,10 @@ The first agent on the Compound Bench is the Signal Agent. You run it when somet
 The Signal Agent asks the questions I would ask if I sat down with you for two hours. What is slow? What is expensive? What workaround did your team build three years ago that everyone forgot was a workaround? What would change — actually change, in dollars or hours — if this one thing got faster? It does not let you stop at the symptom. It keeps asking until you land on the constraint underneath it and put a number on what that constraint is costing you. If you do not have the Signal Agent yet, the five questions in the section above run the same logic. The Agent is a faster, more persistent version of the same conversation — it does not let authority or silence short-circuit the process, which is the main thing facilitation has to defend against.
 
 You leave the session with a one-page constraint statement anchored in a single sentence. That is the artifact you bring to Source. It is also the artifact you bring to your next leadership meeting when someone asks "what are we actually solving for this quarter," because Signal is not just the start of a Sprint. It is the most honest version of a strategy conversation your team has had in a while.
+
+```jf-note:
+We already said this; its redundant
+```
 
 ## Where the constraint comes from inside an *EOS or Scaling Up shop*.
 
@@ -112,6 +136,10 @@ Quarterly rocks that are not moving are another input. A rock that has been carr
 
 The headcount conversation is the third — and the most expensive when you miss it. Every time the org reaches for a hire, there is a constraint hiding underneath. The work is real. The team is stretched. The default move is to add a person. But under that conversation is a workflow that was never designed for the volume it is now carrying. Before you post the role, run the Signal questions: what is the constraint generating the demand for a new hire? Where does it live? What has it cost you this quarter? Half the time, naming it changes what you do next. The other half, you still hire — but you hire against a redesigned workflow rather than the one already failing.
 
+```jf-note:
+As I read this, it becomes clear that AI is espeically suited to "People" problems w/r/t productivity (eg cant really help much with not a culture fit) and with "Process" components of EOS. 
+```
+
 ### Sprint · a manufacturing company on EOS.
 
 A manufacturing company came in the way most companies do — asking which AI tool they should buy. They run on EOS, well-run, with the L10 cadence and accountability chart already in place.
@@ -120,11 +148,19 @@ The first useful work was not tool evaluation. It was Signal. They already had a
 
 Only after the constraint was named did the conversation turn to what to build. You can do this with any issues list. Pick the issue that feels most expensive, run it through the five questions, and see whether you can put a real number on it. If you can, you have a constraint worth a Sprint. If you cannot, keep walking the list until you find one you can.
 
+```jf-note:
+What is teh value of the preceding section?
+```
+
 ### Sprint · Three hours, one *root cause*.
 
 One client's leadership team spent three hours moving through the Signal questions on a single problem. What is the constraint? Where does it live? Quantify the cost. Validate against real data. Map what connects to it. Each question had to be answered before the next one was asked — not answered in the abstract, but answered with a number or a name or a date someone in the room could verify.
 
 Three hours of facilitated conversation, on one issue, to get to a root cause that the team could agree on and put a number against. That is the price of doing Signal honestly the first time. Your first session will feel slow. That is not a sign the process is broken — it is a sign the problem has never been examined at this resolution before.
+
+```jf-note:
+NObody should spend 3 hours on something like this; it flies in the face of IDS. If its taking that long, the meeting is sloppy.
+```
 
 It is also cheap. The alternative — the one most companies pick by default — is eighteen months of deploying tools against unnamed constraints, watching the dashboards not move, and explaining to the board why the AI line item is not paying for itself. Three hours up front, against that. The math is not close.
 
@@ -136,6 +172,10 @@ Six weeks of ungoverned AI experimentation produces another demo. Six weeks thro
 
 The reason the comfortable path stays comfortable is that nobody has to disagree out loud. Without a constraint, there is no priority to argue over. Every team gets to keep working on whatever they were already working on, and the AI investment becomes a quiet line item that everyone agrees is "still finding its footing." Signal makes the disagreement explicit. It forces the team to pick one — and picking one is what produces the result.
 
+```jf-note
+This is starting to feel redundant.
+```
+
 There is a specific version of this failure that shows up in even well-run EOS shops. The leadership team sits down to work through the issues list. Someone with authority — the loudest voice, or the most senior title, or just the person who fills silence fastest — names the problem. One sentence. Confident. The room nods. They move to solutions. Nobody asks whether the named problem is actually the problem. Nobody traces it further.
 
 What just happened is not Signal. It's a performance of Signal. The dominant personality resolved the discomfort of ambiguity. The underlying constraint is still there, unnamed, costing the business the same amount it was costing before the meeting started.
@@ -145,3 +185,7 @@ Without a process that forces the constraint to surface through questions rather
 ## With the constraint locked, you can map *what surrounds it*.
 
 The one-page constraint statement is the handoff to Source. With the constraint named, quantified, and validated, the next move is to map the knowledge and data that surround it — what the organization actually knows about the problem, where that knowledge lives, who holds it, and what is missing. That is Chapter 5.
+
+```jf-note:
+we talk about the constraint stamtement but never define it or show an example or even walk through the workbook stepps. we need to rectify.
+```
