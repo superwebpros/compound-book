@@ -165,7 +165,17 @@ The single most-flagged structural tell. AI loves the "It's not just X — it's 
 
 **Why it's a tell:** the structure manufactures a pseudo-insight by setting up a contrast. Often the X and Y aren't actually opposites — the structure just makes them sound profound.
 
-**Rewrite direction:** rewrite as a direct claim. "It's not just about the beat; it's about the atmosphere" → "The atmosphere matters more than the beat." Or, if the contrast is fake, cut the X half and just state Y.
+**Triplet variant — "Not X. Not Y. Z."**
+
+A buildup where two negations set up a dramatic reveal. Examples:
+
+> "Not three changes. Not a wish list. One."
+> "Not a strategy deck. Not a committee. A decision."
+> "No committee. No approval chain. One person who owns the outcome."
+
+The triplet version is especially AI-flavored because it combines negative parallelism with the rule-of-three default. Flag when the two negations add no information — they exist only to create rhythm before the punchline.
+
+**Rewrite direction:** rewrite as a direct claim. "It's not just about the beat; it's about the atmosphere" → "The atmosphere matters more than the beat." Or, if the contrast is fake, cut the X half and just state Y. For the triplet variant, cut the negations and lead with the positive claim — "One change. The one that would have the highest impact." The negations are stage-setting the reader doesn't need.
 
 ---
 

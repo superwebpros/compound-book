@@ -14,3 +14,4 @@ _book/
 .claude/skills/*/.tmp/
 .claude/output/
 .wrangler/
+index.tex
