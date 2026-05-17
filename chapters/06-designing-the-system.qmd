@@ -6,6 +6,10 @@ I know the feeling on both ends of that sentence. The project coordinator had be
 
 I stopped and asked a different question. Not "who should we hire?" but "what does this role actually do?" We opened a blank document and listed the sources of information that fed the job — the CRM, the project tracker, the report templates she'd built, the client check-in cadence she managed from memory. Then we mapped every accountability against a simple filter: which items required genuine judgment and relationships, and which were high-volume, low-judgment work that looked like operations because it lived inside the operations function? The shape of the role changed in front of us. What had looked like one job was actually two — and one of those jobs, we could design an agent team for. We never posted the listing. The work shipped. The role got more strategic, not because we gave her a new title, but because we gave her back the hours that the low-judgment work had been consuming.
 
+```jf-note:
+About the sources of information, we actually asked about the role and we separated out the parts that were human task are required human oversight, and then the parts that were just about data flows. The way we position this sounds like it was just about sources, but it was more than that; it was sources and _outcomes._
+```
+
 That question — "what is this work, actually?" — is the question Design exists to ask. And the framework for answering it is what this chapter introduces.
 
 :::{.callout-important}
@@ -38,9 +42,7 @@ You build it one row at a time, one sprint at a time. For each accountability yo
 
 Here's what your chart looks like after a handful of sprints — one row per sprint, built up over time:
 
-<!-- DIAGRAM: Hybrid Accountability Chart — four-column table showing Role/function, Agent team name, Human supervisor, AI-Assisted or Automated; rendered as a styled reference artifact with the "every row has a named supervisor" rule called out visually -->
-<!-- FORMAT: table -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch06-hybrid-accountability-chart "Hybrid Accountability Chart: Role, Agent Team, Human Supervisor, and AI-Assisted or Automated — every row has a named supervisor" >}}
 
 | Role / function | Agent team name | Human supervisor | AI-Assisted or Automated |
 |---|---|---|---|
@@ -56,17 +58,17 @@ Every agent team in the chart has a human supervisor — every row, no exception
 If you run EOS, you already have the muscle for this. Your Accountability Chart says every seat has a name. The Hybrid Accountability Chart says every agent team does too. Same principle, extended to a workforce that includes non-human workers.
 :::
 
-The four questions are not a template to fill in once and forget. They are a design discipline. Every sprint adds one row, and every row forces the four answers — including the harder ones. "Who supervises this team?" is uncomfortable when the agent team is producing work nobody on the leadership team has owned before. That discomfort is the point. The chart surfaces it before any code is written.
+The four questions are not a template to fill in once and forget. They are a design discipline. Every sprint adds one row `jf-note: adds a row? to what?`, and every row forces the four answers — including the harder ones. "Who supervises this team?" is uncomfortable when the agent team is producing work nobody on the leadership team has owned before. That discomfort is the point. The chart surfaces it before any code is written.
 
 ## The *information flow* question.
 
 Before the chart makes sense, you have to answer a question most leadership teams never ask: how does information actually move through this part of the company?
 
-Every accountability in your business is, at its core, an information problem. The project coordinator isn't "managing projects." She's taking information from one system, combining it with information from another system, applying rules she carries in her head, and producing an output that moves to the next person in the chain. The quoting process isn't "creating quotes." It's pulling customer data from the CRM, matching it against pricing tables in the ERP, applying exception rules that live in a spreadsheet on someone's desktop, and assembling the result into a format the customer can read. When you see the work as information flow, the design question changes. You stop asking "what tool should we use?" and start asking "what information does this work need, where does it live, and how should it move?"
+Every accountability in your business is, at its core, an information problem `jf-note: at least as it pertains to knowledge work; this wouldn't be true for automated manufacturing...unless we're talking about the management of it i suppose.`. The project coordinator isn't "managing projects." She's taking information from one system, combining it with information from another system, applying rules she carries in her head, and producing an output that moves to the next person in the chain. The quoting process isn't "creating quotes." It's pulling customer data from the CRM, matching it against pricing tables in the ERP, applying exception rules that live in a spreadsheet on someone's desktop, and assembling the result into a format the customer can read. When you see the work as information flow, the design question changes. You stop asking "what tool should we use?" and start asking "what information does this work need, where does it live, and how should it move?"
 
-That question produces what I call a *requirement doc* — not a software requirements document in the traditional sense, but a specification of the information flow for one accountability. It names:
+That question produces what I call a *requirement doc* — not a software requirements document in the traditional sense `jf-note: not helpful; readers have lkely never made a software req doc.`, but a specification of the information flow for one accountability. It names:
 
-- What data feeds the work (and which systems hold it)
+- What data feeds the work (and which systems hold it) `jf-note: how is this different from knowledge map?`
 - What transformations happen to that data (lookups, comparisons, calculations, formatting)
 - What decisions get made along the way (and whether each decision is rule-based or judgment-based)
 - What the output is and where it goes next
@@ -80,7 +82,15 @@ Pick one accountability from your constraint workflow. Write down the informatio
 
 ## How AI connects to *information*.
 
+```jf-note:
+To think of a way to provide some prompts that will help lead people through understanding these things that they can copy and put into ChatGPT or Claude or something.
+```
+
 Once you can see the information flow, you need to know your options for connecting AI to it. There are five patterns, and the right one depends on what kind of information problem you're solving.
+
+```jf-note:
+I think at the end we're gonna need a summary table on when to use what people aren't gonna have a muscle for knowing when to pick which item it's not obvious
+```
 
 **1. Skills reinforcing SOPs.** The knowledge lives in people's heads. It's been captured (or will be captured in Source) as documented process — standard operating procedures, decision frameworks, institutional knowledge. The AI uses that documentation as context for brainstorming, iteration, and drafting. This is the co-operation pattern: you work alongside the AI in a conversational interface (Claude, ChatGPT), and the quality of the output depends on the quality of the documented knowledge. Most companies start here. It's the lowest infrastructure lift and the fastest to show value.
 
@@ -109,9 +119,7 @@ This is a spectrum, not a binary. And it shifts over time. The Quote Generation 
 
 When you're deciding where to start your own accountability on this spectrum, use these triggers:
 
-<!-- DIAGRAM: AI-assisted → Automated spectrum — horizontal spectrum bar showing the two poles, with the "Start AI-assisted when" and "Move toward automated when" decision triggers annotated at each end; optionally shows the Quote Generation Team example moving along the bar across sprint 1 / sprint 4 / sprint 8 -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: nice-to-have -->
+{{< excalidraw ch06-ai-assisted-automated-spectrum "AI-assisted to Automated spectrum: decision triggers at each pole, with sprint progression example" >}}
 
 **Start AI-assisted when:** the stakes of a wrong output are high, the inputs are ambiguous or variable, or the agent team is new and trust has not been established.
 
@@ -130,7 +138,7 @@ Design is where that call gets made deliberately, with the Human Orchestrator's 
 
 The autonomy spectrum only works if there's governance underneath it. Governance answers one question: what is this system allowed to do, and what is it not allowed to do?
 
-This is where most operators go wrong. They build the agent team first and figure out permissions later. By "later" I mean after the wrong person has pulled data they shouldn't have, or the agent has drafted a client-facing email nobody reviewed. Governance is not a compliance layer you add at the end. It's a design decision you make before Build begins.
+This is where most operators go wrong. They build the agent team first and figure out permissions later. `jf-note: I know i've done this...im not sure that most companies with IT departments do this. in fact, they're more likely to be slowed by IT stalling this before anything gets built. Blessing and a curse...` By "later" I mean after the wrong person has pulled data they shouldn't have, or the agent has drafted a client-facing email nobody reviewed. Governance is not a compliance layer you add at the end. It's a design decision you make before Build begins.
 
 There are five questions to answer for every agent team. Write the answers down. If any answer is "we haven't decided yet," that's the decision you make now — not in Build, and not after deployment.
 
@@ -151,7 +159,7 @@ The question "does this workflow need an interface?" is a governance question in
 
 ## The *Human Orchestrator*.
 
-Design produces a workflow and a chart entry. It also produces a role: the *Human Orchestrator* for this accountability.
+Design produces a workflow and a chart entry `jf-note: what does this mean?`. It also produces a role: the *Human Orchestrator* for this accountability.
 
 The Human Orchestrator is Compound's answer to the question every operator eventually asks: what does the human do when the AI does the work? The answer is a different job — and a more strategic one.
 
@@ -159,9 +167,14 @@ The Human Orchestrator sets the goals for the agent team. They design the workfl
 
 You met a version of this role in Chapter 2 — our marketing lead running four agent teams in parallel, each working a different piece of the same content project. Each one had a named tool, a scoped task, and her as the supervisor reviewing outputs. What I didn't show you there is the Design work that made that shift possible. Someone had to sit down and ask what she was actually accountable for. Which parts of her job required her judgment, and which parts required execution that any well-designed agent could handle? Which teams needed to surface decisions to her, and at what frequency? Those questions got answered in a Design session before a single agent was built. The four-tab setup wasn't improvised. It was designed — and because it was designed, her role didn't shrink when the agents came in. It changed shape into something the original offer letter didn't have a name for.
 
+
 ### Finding the right *person*.
 
 The Human Orchestrator role isn't a title you assign to whoever's available. It requires specific capabilities, and identifying the right person is part of the design work.
+
+```jf-note:
+I think one of the things we believe is that everyone will eventually need to become an orchestrate at some level so we should definitely talk about the skills involved in being an orchestrated, chiefly context management, knowing what good looks like, and the ability to communicate clearly across different agents in different platforms.. and a working understanding of the tools and information different agents need to be successful. It's essentially not that different than good management great conditions for the people you're responsible for to be successful...
+```
 
 Look for three things. First, authority over the workflow and the constraint outcome. This person needs to be able to make decisions about how the work gets done — not a project manager who coordinates, but an owner who decides. Second, comfort with ambiguity. The first few sprints will surface problems nobody anticipated. The Orchestrator needs to adjust the design without freezing. Third, willingness to shift from executing to designing. The best candidate is usually the person closest to the work who's also frustrated by the parts of it that don't require their skill.
 
@@ -176,7 +189,7 @@ Identify your Human Orchestrator candidate. Ask: does this person have authority
 
 ## The *Agent Coordinator*.
 
-Beneath the Human Orchestrator sits an operational role: the *Agent Coordinator*.
+Beneath the Human Orchestrator sits an operational role: the *Agent Coordinator*. `jf-note: not clear whether this is a human or an agent...`
 
 The Agent Coordinator manages the agent team day-to-day. Inputs clean. Outputs reviewed at the appropriate frequency. Judgment-call escalations surfaced to the Human Orchestrator when the agent produces something outside its designed scope. Flagging when the design is drifting — inputs degrading, outputs trending off, a class of decisions no longer being handled cleanly. The Agent Coordinator is to an agent team what a team lead is to a group of junior employees: not the strategist, but the person who makes sure the work is on track and that problems surface before they become expensive.
 
@@ -199,7 +212,15 @@ This matters because Design decisions affect multiple functions. The quoting wor
 If you run EOS, the Design Team maps naturally to your L10 structure. The constraint comes out of your Quarterly Rocks. The Design Team meets during or adjacent to the L10. The Hybrid Accountability Chart becomes a living artifact that leadership reviews the same way they review the Accountability Chart — because it is the Accountability Chart, extended.
 :::
 
+```jf-note:
+i'm not sure the aboe is true.
+```
+
 ## The populated *example*.
+
+```jf-note:
+should use the same meridian example all the way through...
+```
 
 Here's what the Hybrid Accountability Chart looks like for a real constraint — the manufacturing quoting workflow from the previous chapters.
 

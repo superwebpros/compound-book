@@ -25,9 +25,7 @@ The **Co-Intelligent Company** is the identity layer — what a company becomes 
 
 The **Co-Operating Model** is the system frame — the structure that makes Co-Intelligent Co-operation possible. It is the explicit design of who brings what intelligence to the work and who owns which operating responsibility inside it.
 
-<!-- DIAGRAM: Three nested or stacked layers — Co-Intelligent Company (identity) / Co-Intelligent Co-operation (activity) / Co-Operating Model (structure) — showing how the terms relate hierarchically -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: nice-to-have -->
+{{< excalidraw ch02-three-layer-identity "Three layers of the Co-Operating Model: identity, activity, and structure" >}}
 
 The CEO in the opening story has a company that uses AI. She does not yet have a Co-Intelligent Company. The difference is not the tools she bought. It is the operating model she hasn't built yet.
 
@@ -82,9 +80,7 @@ The human's job in the Co-Operating Model is not to be creative while the agent 
 
 Get that transmission right and the agent produces work that is hard to distinguish from what a skilled person would produce. Get it wrong — give the agent a task without context, a question without background, a deliverable without a definition of good — and you get the equivalent of that badly briefed employee. Technically busy. Contextually adrift.
 
-<!-- DIAGRAM: Two-column visual contrast — Human intelligence (judgment, context, strategy/taste/ethics) vs. Agent intelligence (memory at scale, pattern recognition, tireless synthesis) — styled to make the split feel definitive, not hierarchical -->
-<!-- FORMAT: table -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch02-intelligence-table "What humans bring vs. what agents bring" >}}
 
 | The Human brings the intelligence of | The Agent brings the intelligence of |
 |---|---|
@@ -115,9 +111,7 @@ Once she decides, the agent takes the brief and produces the first draft — cop
 
 That distinction sounds small. It is not. When output and outcome get confused — when the agent is treated as the decision-maker, or the human is kept inside the execution — the outcomes drift. That's how you get AI slop at best, and real damage at worst. There are gray areas. Some tasks legitimately flip the columns — the agent surfaces decisions (themes from a transcript, patterns in a dataset) and the human executes the creative work (designing brand artifacts, writing the narrative). The principle isn't rigid for every task. It's that the split should be deliberate, not accidental. When in doubt, keep the human closer to the execution rather than further from it.
 
-<!-- DIAGRAM: Two-column ownership table — Human (decide, direct, price, own, coach) vs. Agent (draft, recommend, document, monitor, execute) — verbs should be visually prominent; this is the structural heart of the chapter -->
-<!-- FORMAT: table -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch02-ownership-table "Human owns judgment and direction; agent owns execution and capture" >}}
 
 The operating principle: humans own judgment and direction, agents own execution and capture. The split won't be identical for every task, but it should always be deliberate.
 
@@ -172,9 +166,7 @@ Claude Design was working on the visual assets — generating layout options, it
 
 Four agent teams. Four workstreams. All pointed at the same output. And she was not editing a video. She was not writing a caption. She was deciding whether the outputs were right. She was steering.
 
-<!-- DIAGRAM: Before/after illustration — "Before": one person connected to a stack of tasks; "After": one person at the center directing four named agent workstreams (Claude Design, Claude AI, NotebookLM, HeyGen) all pointing at a single output -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch02-four-agent-teams "One human directing four parallel agent workstreams toward a single output" >}}
 
 Her job did not get smaller. It got higher.
 
@@ -253,9 +245,7 @@ The best operating systems have a one-line version that carries the whole archit
 
 Ours is **Co-Intelligence + Rhythm = Compound.**
 
-<!-- DIAGRAM: The Equation as a typographic/visual treatment — "Co-Intelligence + Rhythm = Compound" with brief labels under each term (system / cadence / outcome); mirrors the EOS equation referenced in the preceding sentence -->
-<!-- FORMAT: illustration -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch02-the-equation "Co-Intelligence + Rhythm = Compound" >}}
 
 **Co-Intelligence** is the system half — the Co-Operating Model you just read, the designed structure where human and agent intelligence do their respective work against the same problems. It is the *what*.
 

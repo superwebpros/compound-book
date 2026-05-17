@@ -36,9 +36,7 @@ If you've tried an AI project and it stalled, trace backward. The failure almost
 
 This book uses four words constantly and they are easy to conflate. Each names a different thing. Here is what each one means — and what it does not.
 
-<!-- DIAGRAM: Four-term relationship map — Framework contains Sequence; Sequence runs on a Sprint; Sprints repeat at the Rhythm. Show the nesting/hierarchy of all four terms so readers can hold the vocabulary in one glance. -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: nice-to-have -->
+{{< excalidraw ch03-four-term-hierarchy "Framework contains Sequence; Sequence runs on a Sprint; Sprints repeat at the Rhythm." >}}
 
 - **Framework** — the whole system. When we say "the Framework" or "the Compound Framework," we mean everything described in this book: the order, the stages, the cadence, the unit of work, and the acceleration layers that make each cycle faster. It is the noun for the entire architecture.
 - **Sequence** — the ordered stages inside the Framework: **Signal → Source → Design → Build → Deliver → Compound**. Always all six. Always in that order, because the order is load-bearing — each stage produces something the next stage requires.
@@ -63,9 +61,7 @@ The Sequence is six stages. Each gets its own chapter. Here is the role of each 
 5. **Deliver** — you ship it inside the org, train the people whose handoffs change, and measure the result against what Signal said it cost.
 6. **Compound** — you capture the learning, update the infrastructure the next Sprint will use, and rank what comes next.
 
-<!-- DIAGRAM: The Sequence — Signal → Source → Design → Build → Deliver → Compound — rendered as a left-to-right arrow chain with a one-line role label under each stage node. This is the single most important diagram in the book. -->
-<!-- FORMAT: flowchart -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch03-the-sequence "The six-stage Sequence: Signal → Source → Design → Build → Deliver → Compound." >}}
 
 Six stages. One Sprint. Then again.
 
@@ -73,9 +69,7 @@ Six stages. One Sprint. Then again.
 
 The Sequence splits into two halves. The first half is **Diagnose**: Signal and Source. The second half is **Execute & Compound**: Design, Build, Deliver, Compound.
 
-<!-- DIAGRAM: Sequence split into two labeled halves — DIAGNOSE (Signal, Source) on the left and EXECUTE & COMPOUND (Design, Build, Deliver, Compound) on the right, with a dividing line and brief rationale for each half. -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch03-diagnose-execute-split "The Sequence splits into Diagnose (Signal, Source) and Execute & Compound (Design, Build, Deliver, Compound)." >}}
 
 Diagnose is the work most companies skip. They skip it because there's no structured way to approach it. The inputs are abstract — information flows, data architecture, knowledge taxonomies — and without a framework, people default to what's concrete: building. In a physical process, a burned egg on the stove is obvious. Something went wrong and you can see it. In an information process, a misclassified taxonomy in a knowledge base causing an agent to query the wrong data and hallucinate answers — that's invisible until the damage is done. The Sequence exists to make the abstract concrete. Diagnose gives you the structure to see what you'd otherwise skip past, and everything downstream depends on what it finds.
 
@@ -152,9 +146,7 @@ That canvas took thirty minutes to fill. It is wrong in at least two places — 
 
 The Sprint Planning Canvas is designed as a single visual page — think Business Model Canvas or Lean Canvas, not a spreadsheet. One page, all five parts visible at once, the constraint at the top and the pre-flight checklist at the bottom.
 
-<!-- DIAGRAM: Sprint Planning Canvas — one-page visual layout in the style of a Business Model Canvas. Constraint at top, six-stage grid in the middle, team/rhythm/pre-flight at the bottom. See excalidraw/ch03-sprint-planning-canvas.excalidraw. -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch03-sprint-planning-canvas "Sprint Planning Canvas: constraint at top, six-stage grid in the middle, team/rhythm/pre-flight at the bottom." >}}
 
 :::{.callout-note}
 ## Action Step

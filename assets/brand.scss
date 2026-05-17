@@ -202,3 +202,25 @@ table th {
 table td {
   border-bottom: 1px solid #{$compound-paper-rule};
 }
+
+// Excalidraw diagrams — responsive, centered, with optional caption
+.excalidraw-figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+.excalidraw-diagram svg {
+  max-width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #{$compound-paper-rule};
+  border-radius: 4px;
+  padding: 1rem;
+}
+.excalidraw-figure figcaption {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #{$compound-paper-dim};
+  margin-top: 0.75rem;
+}

@@ -54,11 +54,7 @@ Here's how it resolved for us. My company, Compound, went from thirteen people t
 The headcount paradox doesn't break by adding AI to the existing org chart. It breaks by redesigning the org chart so AI has a seat on it.
 :::
 
-<!-- DIAGRAM: Two-line chart showing revenue growth vs. headcount growth tracking in parallel over time, with a third line for AI spend that rises but produces no gap between the first two lines. The expected scenario (headcount curve bending away from revenue) shown as a dashed line that never materializes. -->
-
-<!-- FORMAT: chart -->
-
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch01-headcount-paradox "The Headcount Paradox" >}}
 
 The reflexive move is to blame the tools — to assume the technology was oversold or next quarter's version will finally do the thing. The tools are more capable than most operators realize. The problem is that there is no defined relationship between the AI system and the work it is supposed to do. No designed workflow. No clear accountability. No governance. The tool is ambient. It helps individuals occasionally. It changes nothing structurally — and structural is the only kind of change that fixes the math.
 
@@ -102,11 +98,7 @@ You cannot get to the second question by working harder at the first. They are d
 If your AI initiative starts with "what tasks can AI do?" you'll get a list of tasks. If it starts with "what outcomes do we need, and who — human or AI — should own each one?" you'll get an operating model.
 :::
 
-<!-- DIAGRAM: Two-column or two-path comparison. Left: "Wrong question — Which tasks could AI help with?" → path leads to scattered prompts, AI layered on unchanged workflow, inconsistent results, no structural change. Right: "Right question — What outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?" → path leads to defined ownership, designed handoffs, measured results, compounding output. -->
-
-<!-- FORMAT: diagram -->
-
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch01-wrong-vs-right-question "The Wrong Question vs. The Right Question" >}}
 
 ## Where you actually *stand*.
 

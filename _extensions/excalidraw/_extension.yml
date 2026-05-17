@@ -1,0 +1,6 @@
+title: Excalidraw
+author: Compound
+version: 1.0.0
+contributes:
+  shortcodes:
+    - excalidraw.lua

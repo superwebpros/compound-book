@@ -219,9 +219,7 @@ That is the test of whether Deliver delivered: can the people whose work was sup
 
 Deliver is where the sprint ends as a project and begins as infrastructure. The workflow is live. The team is trained. The result is measured. The log of what didn't work is captured. The constraint Signal named is — depending on the sprint — either resolved, materially reduced, or honestly described in terms of how much of it the sprint moved and how much remains.
 
-<!-- DIAGRAM: Build → Deliver → Compound handoff flow — three-stage linear sequence showing what each stage produces and passes forward: Build outputs (deployed workflow, Guardrails Checklist) → Deliver outputs (measured outcome, operational log, runbook, updated HAC) → Compound inputs -->
-<!-- FORMAT: flowchart -->
-<!-- PRIORITY: nice-to-have -->
+{{< excalidraw ch08-build-deliver-compound-handoff "Build → Deliver → Compound handoff: what each stage produces and passes forward." >}}
 
 That artifact set — the outcome, the log, the runbook, the updated Hybrid Accountability Chart entry — is what the next stage works against. Compound is where the team turns it into the inputs that accelerate the next sprint. That is the next chapter.
 

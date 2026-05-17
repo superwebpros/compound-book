@@ -81,9 +81,7 @@ Three paths cover almost every Compound sprint:
 
 - **Hand-built integration.** Custom code involving an API to a system of record, with an engineer in the loop. Slower than low-code, higher return, harder to change later. Use this path when the workflow runs at a scale or against a system that low-code tools cannot reach — or when the integration touches data the company will not route through a third-party platform.
 
-<!-- DIAGRAM: Three build paths — off-the-shelf / low-code / hand-built — as a decision flowchart, showing the qualifying questions that route the reader to each path -->
-<!-- FORMAT: flowchart -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch07-build-path-decision "Decision flowchart: three build paths — off-the-shelf, low-code, and hand-built — with qualifying questions routing to each." >}}
 
 Our marketing lead's four-agent setup — the one from Chapter 2 — didn't require a line of code. It was a low-code build: skills wired, projects connected, tools configured. That's what Build looks like when Design has done its job.
 
@@ -200,9 +198,7 @@ A complete spec covers eight sections:
 7. **Failure modes.** What happens when the agent produces output that needs escalation. Who it goes to. In what form. On what timeline. What the builder needs to wire to make that possible.
 8. **Build path and constraints.** Which of the three paths this build uses, and why. Any constraints the builder must observe — data residency, existing licenses, internal security requirements.
 
-<!-- DIAGRAM: Build Spec Writer — the eight sections as a structured reference table, with section name and a one-line description of what belongs in each -->
-<!-- FORMAT: table -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch07-build-spec-sections "Build Spec Writer: eight sections with section name and a one-line description of what belongs in each." >}}
 
 Here's what those sections look like filled in. This is from a manufacturing firm — 60 people, quoting bottleneck costing $180K a year in engineering time. Signal nailed the constraint, Source mapped the data, Design produced the workflow. Build started with this spec:
 
@@ -268,9 +264,7 @@ Run through these questions before the build executes, not after:
 6. **Accountability.** Who is responsible when the agent produces a bad output? A named person — not a team, not a department, not "the AI." This is the human supervisor from the Hybrid Accountability Chart.
 7. **Kill switch.** What would cause you to shut down the agent workflow immediately? Define the conditions now, when you're thinking clearly — not in the moment when something has already gone wrong. What error rate? What type of error? What data exposure?
 
-<!-- DIAGRAM: Guardrails Checklist — the seven questions as a scannable checklist reference, suitable for use as a pre-deploy gate -->
-<!-- FORMAT: table -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch07-guardrails-checklist "Guardrails Checklist: seven questions as a scannable pre-deploy gate." >}}
 
 Here's what the Guardrails looked like for the quoting agent:
 

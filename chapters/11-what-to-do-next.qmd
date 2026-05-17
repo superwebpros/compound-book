@@ -107,9 +107,7 @@ Book it at **[compoundorg.com/clarity-call](https://compoundorg.com/clarity-call
 
 Once you have a constraint named clearly enough to commit a sprint to it, you have two paths forward. They produce the same artifact — a Co-Intelligent Company, sprint by sprint — at different speeds and with different levels of support.
 
-<!-- DIAGRAM: Fork diagram showing two paths from "Named Constraint + First Sprint" — left branch: "Independent" (self-directed, existing operating discipline, book as guide); right branch: "Compound Membership" (weekly retros, peer cohort, operator coaching). Both branches converge at "Co-Intelligent Company." -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch11-two-paths-forward "Two paths forward from a named constraint: self-guided (left) or with Compound membership (right), both converging at the Co-Intelligent Company." >}}
 
 **Path A: Run it yourself.** The framework is in this book. The Sequence is here. The instruments — the Knowledge Map, the Hybrid Accountability Chart, the Hybrid Org Today — are defined in the chapters behind you. Use the chapter instruments to guide each phase:
 

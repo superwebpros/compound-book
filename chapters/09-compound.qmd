@@ -37,9 +37,7 @@ The second is an updated *Hybrid Accountability Chart*. The chart had one new ro
 
 The third is a commitment to the next sprint's focus — the constraint, the accountability, the human owner. Not "we'll start the next sprint sometime." A named next constraint, taken from the re-ranked backlog, with the Human Orchestrator already assigned. You leave the session with the next sprint started in name, even if the work is weeks away.
 
-<!-- DIAGRAM: Three Compound deliverables — Signal Backlog update, Hybrid Accountability Chart permanent row, named next constraint — as a labeled list or three-column table showing what each deliverable is, where it lives, and who owns it -->
-<!-- FORMAT: table -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch09-compound-deliverables "Three Compound deliverables: Signal Backlog update, permanent HAC row, and named next constraint — with location and owner." >}}
 
 These three deliverables slot into the living document I'll describe in the next chapter — the Hybrid Org Today, the current operational picture of the Co-Intelligent Company. The Signal Backlog and the Hybrid Accountability Chart are both slices of it. Compound is where those slices get updated.
 
@@ -95,9 +93,7 @@ The manufacturing company's one design change: add the ops manager's pricing exc
 
 That change gets installed before the next sprint begins. It becomes a piece of how the company operates, not a note in a doc. Lessons that don't change the design aren't lessons. They're notes.
 
-<!-- DIAGRAM: "One design change" rule — contrast two paths: left side shows a long undifferentiated lessons list that never gets installed; right side shows a single named change that becomes a permanent operating rule before the next sprint begins -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch09-one-design-change "One design change rule: long lessons list that never installs (left) vs. single named change that becomes a permanent operating rule (right)." >}}
 
 One design change per sprint is small. Eight sprints of one good design change each is substantial — that's the operating system getting deliberately better at running the Sequence, with the improvements compounding the same way a well-run quarterly Rock produces a company that executes a year later. Disciplined improvement over many sprints produces an agent team dramatically more capable after eight sprints than after one. Undisciplined improvement produces the same agent team it always was, with longer meeting notes.
 
@@ -154,9 +150,7 @@ Sprint one's Source phase produced a Knowledge Map for the client delivery funct
 
 The same is true of every artifact in the Sequence. The Hybrid Accountability Chart has one row after sprint one and a dozen rows after sprint twelve — every new sprint inherits the chart's existing rows as context for the design decisions it has to make. The Build Spec Writer learned the company's conventions in sprint one and applies them automatically in sprint two. The leadership team that was new to Work Deconstruction in sprint one runs it with judgment in sprint four. The training material from sprint three's Deliver phase becomes the onboarding for sprint seven. These are real artifacts, sitting inside the company, accelerating the next sprint.
 
-<!-- DIAGRAM: Sprint-to-sprint compounding loop — circular or linear flow showing how Compound stage outputs (updated backlog, permanent chart row, one design change) feed directly into the next sprint's Signal/Source/Design phases as inherited artifacts, reducing cost and increasing sharpness with each pass -->
-<!-- FORMAT: flowchart -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch09-compounding-loop "Sprint-to-sprint compounding loop: Compound outputs feed into the next sprint as inherited artifacts, reducing cost and increasing sharpness each pass." >}}
 
 A company six sprints in finds the Source phase of their seventh sprint taking days instead of weeks. The constraint they're working on now is sharper, because three sprints' worth of Sprint Retrospectives taught them what kinds of constraints actually move the headcount math. The Hybrid Accountability Chart entry they draft in Design takes an afternoon, because they've drafted six of them. That's the infrastructure compounding. It's what the work feels like in the seventh sprint, compared to the first.
 
@@ -180,9 +174,7 @@ Every vendor uses "scale" to sell more of the same thing. It's a quantity claim 
 
 Compound is specific. The cost per sprint decreases, because Source is faster, Design is faster, Build is sharper, and Deliver inherits training material from the previous sprints. The return per sprint increases, because the constraints get more strategic as the easy ones come off the backlog and the leadership team runs Design with more precision each time it does. The gap between revenue growth and headcount growth — the headcount math from the opening of this book — starts to look like a solved problem, because revenue keeps growing while the headcount line doesn't. The company that runs the Rhythm long enough watches that gap widen on purpose.
 
-<!-- DIAGRAM: Scale vs. Compound — two-column comparison: Scale repeats the same sprint with the same cost and same return; Compound shows decreasing cost per sprint and increasing strategic return per sprint as artifacts accumulate -->
-<!-- FORMAT: table -->
-<!-- PRIORITY: nice-to-have -->
+{{< excalidraw ch09-scale-vs-compound "Scale vs. Compound: scale repeats at flat cost and return; Compound shows decreasing cost and increasing strategic return as artifacts accumulate." >}}
 
 ## The brand and the *stage* share a name on purpose.
 

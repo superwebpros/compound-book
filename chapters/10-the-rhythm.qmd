@@ -55,13 +55,9 @@ This session replaces no existing meetings. If you run EOS, it layers onto your 
 Put the quarterly operating session on the calendar for the end of this quarter. Book 90 minutes. Invite the leadership team. Set the agenda using the four steps above.
 :::
 
-<!-- DIAGRAM: Quarterly session agenda — 4 numbered steps (Review → Update Backlog → Commit → Update Chart) with brief annotation of input/output for each step -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch10-quarterly-session-agenda "Quarterly session agenda: four steps (Review → Update Backlog → Commit → Update Chart) with input/output annotations." >}}
 
-<!-- DIAGRAM: The Rhythm as a layer on top of EOS/Scaling Up — stacked visual: base layer labeled "Your OS (EOS / Scaling Up / 4DX)" with quarterly cadence shown; layer above labeled "Compound Sprint Session" feeding sprint commitment down into existing rocks/L10 rhythm -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: nice-to-have -->
+{{< excalidraw ch10-rhythm-layer-stack "The Rhythm as a layer on top of EOS/Scaling Up: base OS layer with quarterly cadence, Compound Sprint Session layer above feeding commitment into existing rocks/L10." >}}
 
 ### How it maps to your operating system.
 
@@ -113,9 +109,7 @@ NEXT QUARTERLY REVIEW: [date]
 
 You update the Hybrid Org Today in the quarterly session. Not by a Notion-curator on a Thursday afternoon. Not at year-end planning. By your leadership team, during the meeting, as part of the four things the session does. That is the discipline that prevents the document from becoming the wiki page that rots — a thing every operator has watched happen with every other "living" document the company has tried to maintain.
 
-<!-- DIAGRAM: Hybrid Org Today as a living document — two-slice view showing the Hybrid Accountability Chart (structural layer) and Signal Backlog (constraint inventory) as components, with the quarterly session as the update trigger -->
-<!-- FORMAT: illustration -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch10-hybrid-org-today "Hybrid Org Today: HAC (structural layer) and Signal Backlog (constraint inventory) as two slices, updated by the quarterly session." >}}
 
 When a new executive joins, the Hybrid Org Today is the briefing. When a customer asks how you are using AI, it is the answer — concrete, current, in your own vocabulary. When the board asks what the AI investments have produced, it is the receipt.
 
@@ -129,9 +123,7 @@ Some constraints are headcount constraints, and the answer is to hire. The shift
 
 Companies that default to designing before hiring build a different cost structure than companies that default to adding people. Companies that run Signal before requisitions get compounding returns on the infrastructure they build. Companies that add people to absorb demand grow costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
 
-<!-- DIAGRAM: Headcount math before/after — two-column or before/after comparison: left side shows headcount growing in step with revenue (linear); right side shows revenue continuing to grow while headcount flattens after sprint cadence takes hold -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch10-headcount-math "Headcount math before/after: headcount grows linearly with revenue (left) vs. headcount flattens while revenue grows after sprint cadence takes hold (right)." >}}
 
 The coordinator story that opened this chapter ends here — with the question that stopped getting asked. The hire that never got posted was not a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That is the Rhythm doing its job: changing the default behavior of the organization across every call that follows.
 
@@ -159,9 +151,7 @@ Create the Compounding Scorecard. Fill in the first row with your current sprint
 
 A company is six to eight sprints in. What has actually changed?
 
-<!-- DIAGRAM: Sprint compounding over time — timeline from Sprint 1 to Sprint 6 showing decreasing Source phase duration and accumulating design infrastructure (knowledge maps, agent teams, HAC updates) as each sprint builds on the last -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: must-have -->
+{{< excalidraw ch10-sprint-compounding-timeline "Sprint compounding over time: Sprint 1–6 timeline showing decreasing Source phase duration and accumulating design infrastructure with each sprint." >}}
 
 The Source phase of the first sprint took three weeks. The team did not have a knowledge map for that function; building one was the work. The Source phase of the current sprint, in the same function, takes three days — because the knowledge map already exists, has been updated twice since, and is sitting in the Hybrid Org Today.
 

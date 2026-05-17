@@ -13,9 +13,7 @@ Design has two instruments: Work Deconstruction and Hybrid Accountability Chart.
 
 *Work Deconstruction* is how you run it. Pull the actual accountability list for a role — not the job description, which is always cleaner than reality, but the real list of things that person touches every week. Then go task by task and classify each one using four categories.
 
-<!-- DIAGRAM: Work Deconstruction four-category classification — two-column layout or 2×2 grid showing the four categories (Human judgment required / Agent-assisted / Fully automatable / Workflow automation only) with one-line descriptions and the distinguishing criteria for each -->
-<!-- FORMAT: diagram -->
-<!-- PRIORITY: nice-to-have -->
+{{< excalidraw ch06b-work-deconstruction-populated "Work Deconstruction: four categories — Human judgment required, Agent-assisted, Fully automatable, Workflow automation only" >}}
 
 | Category | What it means | Review model |
 |---|---|---|
@@ -48,9 +46,7 @@ The project coordinator story from the opening of the previous chapter is also t
 
 We pulled her accountability list. Not her job description — those are always cleaner than reality. Her actual list: the items she owned, the work she touched every week. Start there with your own role: write down every accountability, not the aspirational version, but the actual weekly work. Then run every item through the four-category classification. Every item gets a label. Does this require judgment — the kind that depends on knowing the client, knowing the history, reading a room? Does it benefit from agent assistance, with a human reviewing every output? Or is it fully automatable — high-volume, well-defined, clean inputs, predictable outputs?
 
-<!-- DIAGRAM: Coordinator role deconstruction — before/after illustration showing the project coordinator's accountability list split into two columns: tasks that stayed with her (judgment, relationships, history) vs. tasks that became the agent team (routing, scheduling, documentation); percentage breakdown optional -->
-<!-- FORMAT: illustration -->
-<!-- PRIORITY: nice-to-have -->
+{{< excalidraw ch06-coordinator-before-after "Coordinator role before/after: tasks that stayed human vs. tasks that became the agent team" >}}
 
 The classification took ninety minutes. What it revealed: a substantial fraction of her work was routing and documentation. Scheduling client check-ins. Updating the project tracker after calls. Generating the weekly status reports from data that already lived in the CRM. That work looked like operations because it happened inside the operations function — but it wasn't operations judgment. It was operations administration. The kind of work that eats a skilled person's hours and leaves them with no time for the parts of the role that actually require them.
 
