@@ -36,15 +36,13 @@ If, mid-Build, the team finds themselves negotiating new requirements, that is a
 
 ## Build is fast when *Design* was thorough.
 
-Read this as the gate-discipline payoff.
-
 The teams who run Build cleanly are the teams who refused to advance past Signal until they had one constraint with a dollar number on it. Who refused to advance past Source until they had a Knowledge Map that named what the work actually requires. Who refused to advance past Design until the Hybrid Accountability Chart specified who owns what, what the handoffs are, where the human supervisor enters, and what the agent does inside the bounds the supervisor has set.
 
 When all of that is true, Build is mostly translation work. The specification already exists; Build encodes it.
 
 When any of that is not true, Build is where the unresolved questions surface — at the worst possible moment, expensive, and disguised as a technical problem when they are actually a design problem. The mid-build "wait, we didn't decide that" conversation is not a Build problem. It is Design debt arriving on the worst possible balance sheet.
 
-The Diagnose half of the Sequence — Signal and Source — and the gate at the end of Design exist to prevent that conversation from ever happening. Teams that internalize this stop experiencing Build as a struggle. They experience it as the short, mechanical stage between deciding and shipping.
+The Diagnose half of the Sequence — Signal and Source — and the gate at the end of Design exist to prevent that conversation from ever happening.
 
 ## The build *paths*.
 
@@ -133,7 +131,7 @@ Run through these questions before the build executes, not after:
 
 If you cannot answer all seven, the system is not ready to deploy. These are not edge cases. They are the conditions under which the human supervisor can actually supervise.
 
-The two instruments produce a build that is specified clearly and constrained safely. Both have to be done before the build path executes — not after.
+The two instruments produce a build that is specified clearly and constrained safely. Both run before the build executes — not after.
 
 ## The *Build Agent*.
 
@@ -157,4 +155,4 @@ There's a moment later in this book where I describe closing my laptop at 5:30 a
 
 ## Hand off to *Deliver*.
 
-Build makes it work. Deliver puts it into the company's actual operating rhythm — trains the people who need to use it, changes the handoffs that need to change around it, measures the result against the dollar cost Signal put on the constraint, and makes sure the system is owned, not orphaned. A solution that runs is not yet a solution the business has absorbed. That is the next stage.
+Build makes it work. Deliver puts it into the company's actual operating rhythm — trains the people who need to use it, changes the handoffs that need to change around it, measures the result against the dollar cost Signal put on the constraint, and makes sure the system is owned, not orphaned. A solution that runs is not yet a solution the business has absorbed.

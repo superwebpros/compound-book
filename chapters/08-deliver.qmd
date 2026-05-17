@@ -38,7 +38,7 @@ Your deliverable at the close of Deliver is a documented sprint outcome — the 
 
 Not "the agent team ran 200 tasks." Not "the system is in production and stable." The deliverable is a sentence that mirrors the Signal statement: the quoting process that took three days now takes four hours. The eight hours of manual routing per week now run without a person in the loop. The on-call escalation that used to fire twice a night now fires twice a quarter.
 
-The specificity is the point. It is what creates accountability for the sprint's claim. It is what gives the leadership team the confidence — and the evidence — to commit to a second sprint. And it is what closes the loop between the cost Signal named at the start and the recovery the Sequence produced at the end.
+The specificity is the point. It is what creates accountability for the sprint's claim. It gives the leadership team the confidence — and the evidence — to commit to a second sprint. It closes the loop between the cost Signal named at the start and the recovery the Sequence produced at the end.
 
 If your team cannot produce that sentence, one of two things is true. Either the sprint did not produce, or Signal did not quantify the constraint precisely enough to measure against. Both outcomes are useful — but they are different problems, and naming which one is in play is part of your team's job at this stage.
 
@@ -68,7 +68,9 @@ Both categories get written down. Not in a formal incident-report shape — in a
 
 <!-- DIAGRAM: Operational log structure — four-column entry format: Date | What happened | Category (unplanned intervention / data gap) | What it signals -->
 <!-- FORMAT: table -->
-<!-- PRIORITY: must-have --> You are not writing a postmortem — you are leaving a trail that Compound can read when it asks: what would we do differently next time?
+<!-- PRIORITY: must-have -->
+
+You are not writing a postmortem — you are leaving a trail that Compound can read when it asks: what would we do differently next time?
 
 That log is operational: it captures what happened in real time, as the sprint runs in production. It is distinct from the documented sprint outcome Deliver produces at the close — the summary of what the sprint changed, measured against Signal's quantified cost — which is the artifact Compound works against.
 
@@ -87,7 +89,7 @@ The **Deploy Readiness Audit** is the pre-flight check. Before your team flips t
 - Are the escalation paths defined, named, and acknowledged by the humans who own them?
 - Does the rollback plan Build's Guardrails Checklist produced contain the specific steps the team takes if the new workflow produces results the organization cannot accept — and is it clear who has the authority to invoke it?
 
-The Audit's job is to verify these answers exist before the switch flips — it checks what Build prepared, it does not author it fresh. If any answer is missing, that item blocks the deploy. You resolve it first, then re-run the check. Most failed deploys can be traced back to a question that nobody asked at this gate.
+The Audit's job is to verify these answers exist before the switch flips — it checks what Build prepared, it does not author it fresh. If any answer is missing, that item blocks the deploy. You resolve it first, then re-run the check. Most failed deploys trace back to a question nobody asked at this gate.
 
 The **Training Set Generator** produces the training material for the team whose work is changing. Not a slide deck about AI. Not a generic onboarding doc. The specific runbook for the new workflow: what inputs to send the agent, what outputs to expect back, what to do when the agent produces something unexpected, who to escalate to and how, what the new handoffs look like, what the new reporting looks like. It is operator documentation, written for the people who now have to work the new way. The Generator's job is to produce that runbook in the shape the team uses — a one-pager, a Loom, a checklist inside the tool they already work in — not a format that requires anyone to leave their workflow to consult it.
 
@@ -95,7 +97,9 @@ Whether or not you have access to the Generator instrument, your team can produc
 
 <!-- DIAGRAM: Training Set structure — per-role runbook template: Role | Input (what they send) | Output (what comes back) | Escalation path — shown as a repeating one-page card -->
 <!-- FORMAT: table -->
-<!-- PRIORITY: must-have --> Get it in the tool they already live in — the project management system, the shared doc, the Slack channel — before the workflow goes live, not after.
+<!-- PRIORITY: must-have -->
+
+Get it in the tool they already live in — the project management system, the shared doc, the Slack channel — before the workflow goes live, not after.
 
 The two instruments answer two different questions. The Audit asks: are we ready to flip the switch? The Generator answers: now that the switch is flipped, how does the team work?
 
@@ -119,7 +123,7 @@ The result: those eight hours come back to the operator every week. The workflow
 
 ## The change is not the *launch*. The change is the *week*.
 
-A well-run Deliver phase changes the work the people in the function do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that is now automated either get reinvested — in the strategic work Design identified as the higher-return use of their time — or they get pulled out of the org over time, as the headcount math gets re-computed against the new operating reality.
+A well-run Deliver phase changes the work the people in the function do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that is now automated either get reinvested — in the strategic work Design identified as the higher-return use of their time — or they come out of the org over time, as the headcount math gets rerun against the new operating reality.
 
 That is the test of whether Deliver delivered. Not whether the agent is running. Not whether the dashboard exists. Whether the people whose work was supposed to change can describe, concretely, what they now do that they did not do before, and what they no longer do that they used to. If they can, the sprint produced. If they cannot, the sprint deployed a tool — and you are looking at the failure mode this stage exists to prevent.
 

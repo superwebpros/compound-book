@@ -20,7 +20,7 @@ You dabbled somewhere in the last two years. A ChatGPT subscription for the team
 
 Consider what I saw on a discovery call with an EOS company we were talking to. They had AI subscriptions across the team. Their marketing lead had built an agent in Microsoft Copilot — she mentioned it almost in passing, as a side note. She had been working on it the night before the call, trying to get it to draft content and post it automatically. She called it "lower level," which was honest. Meanwhile, the rest of the staff was using AI as a sounding board — asking it questions, getting answers, moving on. No workflow had changed. No output was different. When I asked who in the organization could be the internal driver of their AI initiative, there was a pause. Then the owner said four words: "I don't have that person."
 
-Their marketing lead was already working nights. The effort was real. The adoption was real. And none of it was producing structural change — because one person working harder inside a system that was never designed for AI is not adoption. It's effort without leverage.
+Their marketing lead was already working nights. The effort was real. The adoption was real. And none of it was producing structural change — because one person working harder inside a system that was never designed for AI is not adoption.
 
 The instinct is to blame adoption — or to blame the tool itself. *AI can't do X. It's not ready for our industry.* Your team resisted. They didn't take the training seriously. They went back to their habits. That diagnosis is comfortable because it puts the problem on the floor instead of in the operating model — but it is the wrong diagnosis, and acting on it produces exactly one outcome: another training session that also doesn't work.
 
@@ -46,8 +46,6 @@ The reflexive move is to blame the tools — to assume the technology was overso
 
 ## It looks like a *technology* problem. It's actually an *operating* problem.
 
-Read that headline again, because it is the load-bearing sentence of this whole book.
-
 The reason your AI investments aren't producing returns is an operating-model problem — not a technology problem. Specifically, a Co-Intelligent Co-Operation problem.
 
 This is the diagnostic phrase, and it matters that it is precise. Not a *culture* problem: your culture is fine, your people are willing. Not a *training* problem — most teams have never had real training, and the ones who did got training on the tool, not on the work. Not a *tool selection* problem — the tools you have can do far more than you are currently asking of them. It is an operating-model problem. The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker — synthetic, capable, available — and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, no defined handoff. So it produces nothing the organization can compound on.
@@ -72,7 +70,7 @@ The wrong question is task-orientation: *which of our existing tasks could AI he
 
 The right question is goal-orientation: *what outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?* That question does not start with the tools. It starts with outcomes — and then with accountability for those outcomes. It produces a deliberate design — who owns what, what the human reviews, what the agent team executes, where the handoff lives, how the result gets measured. It produces results because the design was built to produce them.
 
-The distinction sounds minor on the page. It is the difference between an AI program that adds line items and an AI program that changes the math. Nearly every failed implementation you have ever seen — yours and everyone else's — is running the first question. Every implementation that compounds is running the second.
+It is the difference between an AI program that adds line items and an AI program that changes the math. Nearly every failed implementation you have ever seen — yours and everyone else's — is running the first question. Every implementation that compounds is running the second.
 
 You cannot get to the second question by working harder at the first. They are different starting points. They lead to different organizations.
 
@@ -86,4 +84,4 @@ There is a name for the company that runs on the second question. We call it the
 
 This book gives you the operating system to build that company. Not a framework to hand to a consultant. Not a set of principles to absorb and apply loosely. A specific sequence of stages — Signal, Source, Design, Build, Deliver, Compound — with defined outputs at each step and a sprint model you can run inside your existing meeting rhythms. One company went from 13 employees to 8 with double-digit growth on billings and profitability by working through exactly this sequence. The chapters ahead will show you what they did and give you the tools to replicate it.
 
-What this chapter has done is name the diagnosis — the headcount paradox, the operating-model misread, the wrong question — so the rest of the book has something concrete to answer. The next chapter defines the Co-Intelligent Company precisely enough that you can locate yourself on the map and know where you are starting from. After that, you build.
+The next chapter defines the Co-Intelligent Company precisely enough that you can locate yourself on the map and know where you are starting from. After that, you build.

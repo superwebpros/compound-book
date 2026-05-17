@@ -6,7 +6,7 @@ If you have read this book and you are interested in prompt engineering, your ti
 
 ## What effective prompting looks like in the *sprint context*.
 
-In the Design phase, when Work Deconstruction has identified the specific tasks your agent team will execute, prompt design is the activity of writing precise, testable instructions for each task — instructions that depend on the constraint Signal surfaced and the knowledge map Source produced. The best prompts in a sprint context have three characteristics: they are specific about the input format the agent receives, explicit about the output format the agent should produce, and they include the constraints and edge cases your human supervisor identified during Design.
+In the Design phase, when Work Deconstruction has identified the specific tasks your agent team will execute, prompt design is the activity of writing precise, testable instructions for each task — instructions that depend on the constraint Signal surfaced and the knowledge map Source produced. The best prompts in a sprint context are specific about the input format the agent receives, explicit about the output format it should produce, and include the constraints and edge cases your human supervisor identified during Design.
 
 Here is what that looks like in practice. Suppose your sprint constraint (from Signal) is *"Our proposal win rate drops when the executive summary exceeds one page."* Work Deconstruction assigns an agent the task of drafting executive summaries. A prompt built against that accountability reads differently than a generic "write a summary" instruction:
 
@@ -43,12 +43,8 @@ EDGE CASES
 
 Your prompt will differ — the accountability, the input sources, the constraints are all specific to your sprint. This template is the structure. Fill it from your Signal constraint, your Source knowledge map, and the edge cases your supervisor flagged in Design. A prompt built this way gives the agent a target it can hit and gives you a result you can evaluate. Prompts built in the abstract give you neither.
 
-Prompts built during Design — against a specific accountability, with a known input and output — produce more consistent output and require fewer mid-sprint corrections than prompts written in the abstract.
-
 After the Deliver phase, the Sprint Retrospective will surface cases where the agent produced unexpected output. Those cases are prompt design signals — they indicate where the instruction was ambiguous or where an edge case was not anticipated. The Compound phase is where those signals become prompt improvements, then Design improvements, then better sprint performance in the next cycle.
 
 <!-- DIAGRAM: Prompt improvement feedback loop — cyclic flowchart: Design (write prompt) → Build/Deliver (agent runs) → Retrospective (unexpected output flagged) → Compound (prompt revised) → Design (next sprint, better prompt) -->
 <!-- FORMAT: flowchart -->
 <!-- PRIORITY: must-have -->
-
-Prompt engineering, in this context, is a design feedback loop inside the Sequence.

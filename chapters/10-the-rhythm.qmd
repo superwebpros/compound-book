@@ -26,8 +26,6 @@ The Equation is *Co-Intelligence + Rhythm = Compound*. The first term is the sys
 
 The Rhythm is quarterly. Not because the calendar is sacred, but because a sprint takes six to eight weeks and the leadership team needs one focused session per quarter to commit the next one. Faster than that and the sprint becomes a slogan. Slower than that and the design infrastructure built in the last sprint starts to drift before the next one begins.
 
-Once an operator commits to the Rhythm, the Sprint stops being a discrete project on the strategic plan and becomes the operating mechanism of the Co-Intelligent Company.
-
 ## The quarterly operating *session*.
 
 The Rhythm has a meeting. One to two hours, your leadership team, every quarter, on the calendar before the year starts. You do four things, in this order:
@@ -47,7 +45,7 @@ That is the entire session. The agenda is stable. The inputs are the Signal Back
 <!-- FORMAT: diagram -->
 <!-- PRIORITY: nice-to-have -->
 
-For the audience this book is written for — CEOs running on EOS, Scaling Up, 4DX, or a homegrown operating cadence — the Compound quarterly session is *not* a competitor. It is the AI operating layer that runs on top of the operating system you already use. Your quarterly off-site still happens. Your rocks still get set. Your L10s still run. The sprint session is the focused hour that decides what your AI workforce is doing this quarter, and that decision arrives at your existing meetings as real data — what your largest constraint is, in dollars — instead of opinion.
+If you are running EOS, Scaling Up, 4DX, or a homegrown operating cadence, the Compound quarterly session is *not* a competitor. It is the AI operating layer that runs on top of the operating system you already use. Your quarterly off-site still happens. Your rocks still get set. Your L10s still run. The sprint session is the focused hour that decides what your AI workforce is doing this quarter, and that decision arrives at your existing meetings as real data — what your largest constraint is, in dollars — instead of opinion.
 
 EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm makes them executable by a Human+AI workforce. The two stack.
 
@@ -71,7 +69,7 @@ Return to where this book started. Revenue growing. Headcount growing with it. A
 
 After six to eight sprints on the Rhythm, the math moves. Not overnight — but the pattern is broken. The behavioral marker is specific. Your first response to a capacity problem is no longer *who do we hire?* It is *what does Signal say about this?*
 
-That is the shift. Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked with the Signal Agent, against the Signal Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the sprint that addresses it ships a designed workflow instead of a job posting.
+Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked with the Signal Agent, against the Signal Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the sprint that addresses it ships a designed workflow instead of a job posting.
 
 Companies that default to designing before hiring build a different cost structure than companies that default to adding people. The former gets compounding returns on the design infrastructure it already built. The latter grows costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
 
@@ -91,11 +89,11 @@ A company is six to eight sprints in. What has actually changed?
 <!-- FORMAT: diagram -->
 <!-- PRIORITY: must-have -->
 
-The Source phase of the first sprint took three weeks. The team did not have a knowledge map for that function; building one was the work. The Source phase of the current sprint, in the same function, takes three days — because the knowledge map already exists, has been updated twice since, and is sitting in the Hybrid Org Today. The design infrastructure built in earlier sprints is accelerating the current one.
+The Source phase of the first sprint took three weeks. The team did not have a knowledge map for that function; building one was the work. The Source phase of the current sprint, in the same function, takes three days — because the knowledge map already exists, has been updated twice since, and is sitting in the Hybrid Org Today.
 
 The Hybrid Accountability Chart has been updated four times. The organization has named agent teams with documented levels of automation, each with a human supervisor. The Agent Coordinator role is written into two people's job descriptions — not as a side project but as the operational responsibility it became. The Signal Backlog appears on the quarterly agenda alongside revenue and rocks.
 
-And the leaders themselves have changed. Executives who, eighteen months ago, had no mental model for directing an agent team are now making design-improvement decisions between sprints without being prompted. The Co-Operating Model from Chapter 2 — humans and AI as one system, not two parallel tracks — has stopped being a concept on a page and become how the leadership team thinks about work.
+And the leaders themselves have changed. Executives who, eighteen months ago, had no mental model for directing an agent team are now making design-improvement decisions between sprints without being prompted. The Co-Operating Model from Chapter 2 is no longer a concept. It is how the leadership team thinks about work.
 
 ### Two business lines, half the staff.
 
@@ -111,13 +109,13 @@ That is what sprint six looks like from the inside. Not a dashboard. A team memb
 
 ### Sprint · the company that was already ready.
 
-A mid-market company growing 30% year over year, running EOS at high fidelity. Real accountability chart. Scorecards on the wall. IDS in every L10. The operating machine is humming. That kind of company does not need to learn the Rhythm — it already has the muscle. The discipline of running a focused session, committing to a measurable outcome, and reviewing it on a cadence is its default state.
+A mid-market company growing 30% year over year, running EOS at high fidelity. Real accountability chart. Scorecards on the wall. IDS in every L10. The operating machine is humming. That kind of company does not need to learn the Rhythm — it already has the muscle. Running a focused session, committing to a measurable outcome, and reviewing it on cadence is its default state.
 
 What that company needs is to install the Sequence as the AI layer on top of the operating system it already runs. The Rhythm in companies like that is fast, because the operating discipline is already there. The first sprint ships in a quarter. The second sprint ships in the next. By the fourth quarter the leadership team is running the quarterly session as naturally as the L10.
 
 ## The *Co-Intelligent Company*.
 
-The Co-Intelligent Company is not a vision the reader is working toward. It is the company built — quarter by quarter, sprint by sprint — by running the Sequence on the Rhythm. The framework is the shape. The Sequence is the order. The Sprint is the unit. The Rhythm is the cadence. The Signal Backlog: the inventory. The Hybrid Accountability Chart: the structure. The Hybrid Org Today: the receipt. The Co-Intelligent Company is what you have when all of it is running.
+The Co-Intelligent Company is not a vision. It is the company built — quarter by quarter, sprint by sprint — by running the Sequence on the Rhythm. The framework is the shape. The Sequence is the order. The Sprint is the unit. The Rhythm is the cadence. The Signal Backlog: the inventory. The Hybrid Accountability Chart: the structure. The Hybrid Org Today: the receipt. The Co-Intelligent Company is what you have when all of it is running.
 
 There is nothing aspirational left in this list. Every term is operational. Every artifact is a document the leadership team can produce on a Tuesday. Every behavior is something a CEO can run in their next quarterly session.
 
