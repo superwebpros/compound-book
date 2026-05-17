@@ -311,3 +311,42 @@ When deciding HIGH / MEDIUM / LOW confidence:
 - **LOW** — borderline; only worth flagging because it compounds with other tells, or because the writer specifically asked for a thorough scan.
 
 If the whole draft is dense with HIGH-confidence tells, lead with those in the report and group the rest. Don't bury HIGH issues under a wall of LOW noise.
+
+---
+
+## Scanning hints
+
+Regex patterns that reliably surface tells during a scan. Use these as a first pass before close reading.
+
+**Negative parallelism (two-sentence form):**
+```
+(is not|are not|isn't|aren't|It's not|This isn't).{1,40}\. (It is|It's|They are|They're|That's)
+```
+
+**Triplet variant ("Not X. Not Y. Z."):**
+```
+Not .{3,40}\. Not .{3,40}\.
+```
+
+**Editorializing framing phrases:**
+```
+(It's important to note|It's worth noting|It should be noted|It bears mentioning|one cannot overstate)
+```
+
+**Inflated symbolism:**
+```
+(stands as a testament|plays a (vital|pivotal|significant) role|leaves a lasting|enduring legacy|captured the imagination)
+```
+
+**-ing tags at clause end:**
+```
+, (ensuring|highlighting|emphasizing|reflecting|showcasing|underscoring|demonstrating|solidifying|cementing)
+```
+
+These are starting points, not exhaustive. The close read catches what regex misses — especially cross-file pattern density, which only shows up when scanning a collection.
+
+---
+
+## Few-shot examples
+
+See `references/rewrite-examples.md` for before/after pairs from real scans. Use these to calibrate rewrite voice and judgment — especially for negative parallelism variants, which have the most structural diversity.

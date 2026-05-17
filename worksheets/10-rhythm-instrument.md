@@ -90,9 +90,9 @@ How the quarterly operating session maps to your existing operating system:
 | HAC update | Accountability Chart review | Function Accountability Chart |
 | Quarterly operating session | Quarterly Planning | Quarterly Planning |
 
-The Compound Rhythm doesn't replace your operating system. It adds a layer specifically for AI-enabled workflow transformation. The sprint IS a rock. The HAC IS part of your accountability chart. The Signal Backlog IS your strategic issues list, focused on operational constraints AI can address.
+The Compound Rhythm doesn't replace your operating system. It adds a layer specifically for AI-enabled workflow transformation. The sprint is a rock. The HAC is part of your accountability chart. The Signal Backlog is your strategic issues list, focused on operational constraints AI can address.
 
-**Pro Tip:** If you run EOS and this feels like a second operating system, you're doing it wrong. The sprint is a rock. The quarterly operating session is a 30-minute addition to your quarterly planning. The HAC is a column on your accountability chart. Same system, new capability.
+**Pro Tip:** If you run EOS and this feels like a second operating system, you're doing it wrong. The sprint is a rock. The quarterly operating session is a 30-minute addition to your quarterly planning. The HAC is a column on your accountability chart. Your operating system gains a new capability; it does not gain a competitor.
 
 ---
 

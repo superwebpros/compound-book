@@ -70,7 +70,7 @@ For each person, describe what they know that isn't in any digital source. Be sp
 
 **The at-risk question:** For each organic source, ask: is this person a single point of failure? Could they leave in the next 12 months (retirement, role change, burnout, opportunity)? Mark at-risk sources explicitly.
 
-> **Pro Tip:** The most valuable source of knowledge in most organizations is a person. And a person doesn't have an API. The Knowledge Map treats people as sources in the formal sense — named, located, described — because operationally they are. Pretending otherwise is why most data audits produce libraries that don't match the business.
+> **Pro Tip:** The most valuable source of knowledge in most organizations is a person. And a person doesn't have an API. The Knowledge Map treats people as sources in the formal sense — named, located, described — because operationally they are. Data audits that skip organic sources produce libraries nobody uses.
 
 > **Action Step:** Name every person whose judgment is load-bearing for the constraint. For each one, write specifically what they know that no system holds. Flag anyone who's a single point of failure.
 
@@ -125,7 +125,7 @@ Think of three tiers of knowledge, each consumed differently by AI:
 
 For each source on your map, consider which tier it falls into. This classification will directly inform Design — it determines how the AI system will access and weight each source.
 
-> **Pro Tip:** An AI workflow that treats everything as equally current is an AI workflow that will confidently cite your deprecated pricing from 2019. The tiers exist to prevent this.
+> **Pro Tip:** An AI workflow that treats everything as equally current will confidently cite your deprecated pricing from 2019. The tiers exist to prevent this.
 
 > **Action Step:** Review each source on your map. Mark whether it's structured or unstructured, and which AI tier it belongs to (standing context, retrieved, or historical). This takes five minutes and saves Design hours of rework.
 

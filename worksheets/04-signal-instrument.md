@@ -69,7 +69,7 @@ For each candidate that survives the Is/Is Not test, trace it to root cause:
 
 **Stop rule:** You've reached the constraint when the answer points to a workflow, a handoff, a missing system, or a structural gap — not a person's behavior or a market condition.
 
-> **Pro Tip:** If your fifth "why" points to a person ("because Sarah is the only one who knows"), reframe: the constraint is not Sarah. It is the fact that critical knowledge lives in one person's head with no system to distribute it.
+> **Pro Tip:** If your fifth "why" points to a person ("because Sarah is the only one who knows"), reframe: the constraint is undistributed knowledge — critical information trapped in one person's head with no system to share it.
 
 > **Action Step:** Pick your top 3 candidates. Run Is/Is Not on each. Then run Five Whys on the survivors. Cross off anything that traces to a market condition, a personality, or a problem you can't put a number on.
 
@@ -211,7 +211,7 @@ If you cannot hand someone this one page and have them understand what the Sprin
 
 ## Pro Tips (collected)
 
-1. If your fifth "why" points to a person, reframe: the constraint is not the person. It's the fact that critical knowledge lives in one head with no system to distribute it.
+1. If your fifth "why" points to a person, reframe: the constraint is undistributed knowledge — critical information trapped in one head with no system to share it.
 2. Question 4 is where Signal lives or dies. The number tells you whether the constraint is worth a Sprint, and gives Deliver a target to measure against.
 3. The inability to agree on one constraint is itself diagnostic — it means the leadership team is unclear about priorities.
 

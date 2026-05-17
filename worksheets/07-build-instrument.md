@@ -14,7 +14,7 @@ Build translates a locked design into a working, deployed system. The Build Spec
 
 ## Part 1: Choose Your Build Path
 
-Before you write the spec, determine which build path fits the design. The design determines the path. Not a vendor relationship. Not an internal preference. Not a market trend.
+Before you write the spec, determine which build path fits the design. The design determines the path — not a vendor relationship, an internal preference, or a market trend.
 
 Run through these three questions in order. Stop at the first "yes."
 
@@ -109,7 +109,7 @@ Before building starts, audit the spec against these seven common failures. Each
 
 - [ ] **Declaring done before testing against real inputs.** Pull last week's actual data — the real records, the real emails, the real requests — and run them through the build. If you tested against synthetic data or cherry-picked examples, you have not tested.
 
-> **Pro Tip:** The most common implementation failure is not technical. It is building something that already exists because nobody searched first. Before every build, spend fifteen minutes asking: does this already exist as a feature in a tool we own?
+> **Pro Tip:** The most common implementation failure is building something that already exists because nobody searched first. Before every build, spend fifteen minutes asking: does this already exist as a feature in a tool we own?
 
 > **Action Step:** Walk through all seven items with the builder present. Check each one against the completed spec. Any item that cannot be checked off is a gap that must be resolved before build begins.
 
@@ -117,7 +117,7 @@ Before building starts, audit the spec against these seven common failures. Each
 
 ## Part 4: The Guardrails Checklist
 
-Seven questions. All must have documented answers before the solution goes live. These are not edge cases. They are the conditions under which the human supervisor can actually supervise.
+Seven questions. All must have documented answers before the solution goes live. These are the conditions under which the human supervisor can actually supervise.
 
 1. **What data does the agent access?**
    Explicit list. Not "whatever it needs" — name every data source, every system, every field. What is it permitted to read? What is it permitted to write? What is it explicitly not permitted to touch?
@@ -135,12 +135,12 @@ Seven questions. All must have documented answers before the solution goes live.
    Not "we'll review it." What specific checks? Accuracy against what baseline? Completeness measured how? Consistency verified against what standard? If the measurement is "someone looks at it," define what they are looking for.
 
 6. **Who is responsible when the agent produces a bad output?**
-   A named person. Not a team. Not a department. Not "the AI." A person who owns the output the same way they would own it if a direct report produced it. This is the human supervisor from the Hybrid Accountability Chart.
+   A named person — one human who owns the output the same way they would own it if a direct report produced it. This is the human supervisor from the Hybrid Accountability Chart.
 
 7. **What would cause you to shut down the agent workflow immediately?**
    Kill switch criteria. Define the conditions in advance — not in the moment when something has already gone wrong. What error rate? What type of error? What data exposure? What customer impact? Write the criteria now, when you are thinking clearly.
 
-> **Pro Tip:** Guardrails are not limitations. They are the reason you can trust the workflow enough to run it. An agent without guardrails is an agent you will shut down the first time something goes wrong — and then the constraint goes back to costing what it cost before.
+> **Pro Tip:** Guardrails are what make the workflow trustable. An agent without them gets shut down the first time something goes wrong — and then the constraint goes back to costing what it cost before.
 
 > **Action Step:** Answer all seven questions in writing. Attach the answers to the Build Spec as a ninth section or a companion document. If any question cannot be answered, the build is not ready to deploy — resolve the gap before going live.
 
@@ -284,8 +284,8 @@ The agent does NOT:
 ## Pro Tips (collected)
 
 1. The build path is chosen AFTER Design, not before. Most companies pick their tools first and then try to design a workflow around the tool's limitations. That is backwards.
-2. The most common implementation failure is not technical. It is building something that already exists because nobody searched first.
-3. Guardrails are not limitations. They are the reason you can trust the workflow enough to run it. An agent without guardrails is an agent you will shut down the first time something goes wrong.
+2. The most common implementation failure is building something that already exists because nobody searched first.
+3. Guardrails are what make the workflow trustable. An agent without them gets shut down the first time something goes wrong.
 
 ---
 

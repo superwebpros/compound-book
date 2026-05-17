@@ -14,7 +14,7 @@ Most companies skip diagnosis entirely. They buy tools, hire consultants, and la
 
 ## Part 1: Score the Five Dimensions
 
-For each dimension, read the three descriptions and circle the one that matches your company right now. Not where you want to be. Not where you were last quarter. Right now.
+For each dimension, read the three descriptions and circle the one that matches your company right now — as it actually operates today.
 
 ### Dimension 1: Constraint Clarity
 
@@ -34,7 +34,7 @@ _____________________________________________________________
 _____________________________________________________________
 ```
 
-> **Pro Tip:** If your leadership team can't agree on the constraint, that disagreement IS the diagnosis. It means priorities aren't aligned. No AI tool fixes misaligned priorities.
+> **Pro Tip:** If your leadership team can't agree on the constraint, you have your diagnosis: priorities aren't aligned. No AI tool fixes misaligned priorities.
 
 > **Action Step:** Poll your leadership team individually — not in a group. Ask each person: "What is the ONE operational problem AI should solve for us?" Write down their answers verbatim. If you get five different answers from five people, you have your diagnosis.
 
@@ -106,7 +106,7 @@ _____________________________________________________________
 _____________________________________________________________
 ```
 
-> **Pro Tip:** Decision rights aren't about AI capability. They're about organizational trust. The question isn't "Can AI do this?" — it's "Do we trust the output enough to act on it without a human checking?" That's a leadership decision, not a technology decision.
+> **Pro Tip:** Decision rights are a trust question: does the organization trust the output enough to act on it without a human checking? That's a leadership call, and AI capability doesn't answer it.
 
 > **Action Step:** List the five most frequent decisions in your constrained workflow. For each one, write down who currently makes the decision and whether it requires judgment or just follows a rule. The rule-based ones are AI-eligible. The judgment ones need a human-in-the-loop design.
 
@@ -130,7 +130,7 @@ _____________________________________________________________
 _____________________________________________________________
 ```
 
-> **Pro Tip:** If you can't measure what the constraint costs today, you can't measure whether AI made it better tomorrow. Measurement discipline is the difference between an AI initiative and an AI experiment. Experiments are optional. Initiatives have ROI targets.
+> **Pro Tip:** If you can't measure what the constraint costs today, you can't measure whether AI made it better tomorrow. Without measurement discipline, your AI initiative is an experiment — optional, unmeasured, and easy to kill.
 
 > **Action Step:** Attempt the math right now. Hours per week on the constraint, multiplied by loaded cost per hour, multiplied by 13 weeks. That's your quarterly cost floor. If you can't fill in the numbers, write down what data you'd need and where you'd get it.
 
@@ -230,10 +230,10 @@ Meridian's starting point: lock the constraint (turn Constraint Clarity from Yel
 
 ## Pro Tips (collected)
 
-1. If your leadership team can't agree on the constraint, that disagreement IS the diagnosis. It means priorities aren't aligned.
-2. If you're all Red, that's not a failure — it's the most honest answer most companies give. The book exists to move you from Red to Green.
-3. The scorecard isn't a test. It's a map of where to start. One Yellow is more actionable than five Reds — start there.
-4. Decision rights aren't about AI capability. They're about organizational trust.
+1. If your leadership team can't agree on the constraint, you have your diagnosis: priorities aren't aligned.
+2. All Red is the most honest answer most companies give. The book exists to move you from Red to Green.
+3. The scorecard is a map of where to start. One Yellow is more actionable than five Reds — start there.
+4. Decision rights are a trust question, not a capability question.
 5. If you can't measure what the constraint costs today, you can't measure whether AI made it better tomorrow.
 
 ---

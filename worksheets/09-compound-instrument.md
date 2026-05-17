@@ -42,7 +42,7 @@ For each item, the facilitator asks: **"What would have to be true for this to n
 
 ### Question 3: What one design change would make the next sprint better?
 
-Not three changes. Not a wish list. One. The change that, applied before the next sprint begins, would have the highest impact on sprint quality.
+One change — the one that, applied before the next sprint begins, would have the highest impact on sprint quality.
 
 **The one design change:**
 

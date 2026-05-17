@@ -56,7 +56,7 @@ Write it as a single number: "This role is __% Column B."
 
 Now multiply that percentage by the person's loaded annual cost (salary + benefits + overhead). That number is the annual operating cost of NOT redesigning this role. It is the dollar value of human intelligence being spent on agent-intelligence work.
 
-> **Pro Tip:** Most operators are shocked by the split. The Column B percentage is usually 40-60% for operational roles. That does not mean you fire the person — it means you redesign what they do. The human is not the cost. The misallocation of their intelligence is the cost.
+> **Pro Tip:** Most operators are shocked by the split. The Column B percentage is usually 40-60% for operational roles. That does not mean you fire the person — it means you redesign what they do. The cost is misallocated intelligence: human hours spent on agent-eligible work.
 
 > **Action Step:** Write the Column B percentage. Multiply by the role's loaded annual cost. That number is the annual cost of running agent-intelligence work on human hours.
 
@@ -72,7 +72,7 @@ Answer these three questions:
 2. Would they take on new responsibilities the organization needs but nobody has time for?
 3. Would they manage agent output — reviewing, correcting, and improving the work the agents produce?
 
-The answer is usually all three. This is the Co-Operating Model in miniature: same person, different allocation of intelligence. The role does not disappear. It transforms. The human stops doing what agents should do and starts doing what only humans can do.
+The answer is usually all three. This is the Co-Operating Model in miniature: same person, different allocation of intelligence. The role does not disappear. It transforms. The human's time shifts from agent-eligible tasks to the judgment, relationship, and strategy work that justified hiring them.
 
 > **Pro Tip:** The redesigned role is almost always more interesting for the person in it. The work that was grinding them down — the status updates, the data entry, the scheduling back-and-forth — is Column B. The work they are good at and wish they had more time for — the client relationships, the creative problem-solving, the strategic calls — is Column A. You are not taking their job. You are giving them a better one.
 

@@ -46,7 +46,7 @@ For every task, ask: "If I gave a well-briefed AI agent this task with the right
 4. What happens when this task goes wrong? What is the cost of an error?
 5. How often does this task happen? (Daily, weekly, per-transaction?)
 
-> **Pro Tip:** "Agent-assisted" is where most things start. "Fully automatable" is where things move after the agent has proven itself over multiple sprints. Autonomy is earned, not assigned. The question is not whether the AI *can* operate autonomously — it is whether you have the governance infrastructure to let it. Start restrictive. Widen based on demonstrated performance.
+> **Pro Tip:** "Agent-assisted" is where most things start. "Fully automatable" is where things move after the agent has proven itself over multiple sprints. Autonomy is earned — the gate is governance infrastructure, not AI capability. Can your monitoring, escalation paths, and review cadence support unsupervised operation? Start restrictive. Widen based on demonstrated performance.
 
 > **Action Step:** List every task in the constraint workflow. Sort each one into the four categories. Count the tasks in each bucket. If more than half land in "Human judgment required," challenge each one: is this genuinely judgment, or is it judgment because nobody has written down the rules?
 
@@ -92,7 +92,7 @@ The technical counterpart. Ensures agents are configured correctly, inputs are c
 3. **What decisions does the Orchestrator make that agents cannot?** List at least three. These are the judgment calls that stay human — pricing exceptions for strategic accounts, escalation to leadership, workflow redesign between sprints.
 4. **What triggers escalation from agent to Orchestrator?** Define at least two conditions. Examples: confidence score below threshold, input data missing or contradictory, output that affects a customer relationship, any decision above a dollar threshold.
 
-> **Pro Tip:** The Human Orchestrator role is more strategic than executing inside the function. The operations lead who got the job because she was excellent at executing operations work is now being asked to design the operations function. Not a smaller role — a different one. Name it explicitly so the person knows what they are signing up for.
+> **Pro Tip:** The Human Orchestrator role is more strategic than executing inside the function. The operations lead who got the job because she was excellent at executing operations work is now being asked to design the operations function — a role that requires different skills, not fewer. Name it explicitly so the person knows what they are signing up for.
 
 > **Action Step:** Name the Human Orchestrator and Agent Coordinator. Write down the Orchestrator's irreducible decisions and the escalation triggers. If you cannot fill these in, the workflow is not ready for agents.
 
@@ -114,7 +114,7 @@ Before moving to Build, define what the agents are NOT allowed to do. Guardrails
 
 5. **What would cause you to shut down an agent workflow immediately?** Define the kill switch. Examples: agent produces output that contradicts company policy, sends customer-facing communication without review, processes data it should not have access to, error rate exceeds a defined threshold.
 
-> **Pro Tip:** The autonomy level is a governance decision, not a capability decision. The agent may be capable of running unsupervised. The question is whether your organization has the monitoring, the escalation paths, and the cultural discipline to let it. Start with more guardrails than you think you need. Loosening them is easy. Recovering from a bad output that went unreviewed is not.
+> **Pro Tip:** The autonomy level is a governance decision. The agent may be capable of running unsupervised — the question is whether your organization has the monitoring, the escalation paths, and the cultural discipline to let it. Start with more guardrails than you think you need. Loosening them is easy; recovering from a bad output that went unreviewed is expensive.
 
 > **Action Step:** Answer all five guardrail questions in writing. If any answer is "we haven't decided yet," that is the decision you make now — not in Build, and not after deployment.
 
@@ -207,7 +207,7 @@ If all five are checked, Build can begin. If any one is missing, Design is not d
 1. "Agent-assisted" is where most things start. "Fully automatable" is where things move after the agent proves itself. Autonomy is earned, not assigned.
 2. The difference between AI-Assisted and Automated is the review cadence. If you are not sure, start AI-Assisted. Moving the other direction means something already went wrong.
 3. The Human Orchestrator role is more strategic than executing inside the function. Name it explicitly so the person knows what they are signing up for.
-4. The autonomy level is a governance decision, not a capability decision. Start with more guardrails than you think you need. Loosening them is easy. Recovering from a bad output that went unreviewed is not.
+4. The autonomy level is a governance decision. Start with more guardrails than you think you need. Loosening them is easy; recovering from a bad output that went unreviewed is expensive.
 
 ---
 

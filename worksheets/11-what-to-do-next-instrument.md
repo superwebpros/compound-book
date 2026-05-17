@@ -35,7 +35,7 @@ You are ready for a full sprint. Start with Signal, move through the Sequence. T
 Answer three questions. This is the minimum viable Signal — the seed that the full Signal process (Chapter 4) will refine.
 
 1. **What is the one operational problem that is costing you the most money or time right now?**
-   Write one sentence. Not a category. Not a department. One specific, observable problem.
+   Write one sentence — one specific, observable problem.
 
    _____________________________________________________________
 
@@ -172,7 +172,7 @@ Greenline is a $3M revenue home services company. The constraint is visible, mea
 
 ## Summary
 
-The First Sprint Planner reduces the entire book to a single decision: what are you going to do, with whom, and when. Everything before this page was education. This page is commitment.
+The First Sprint Planner reduces the entire book to a single decision: what are you going to do, with whom, and when.
 
 You now have a readiness score, a named constraint, a team, a path, and a target date. That is more than most organizations have after six months of AI strategy work. You built it in the time it took to read one chapter.
 
