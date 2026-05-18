@@ -5,29 +5,31 @@
 Source maps the information environment around the one constraint Signal validated. You're answering a specific question: what does our organization know about *this problem*, and where does that knowledge live? The deliverable is a one-page Knowledge Map — a six-column table (Source, Type, Owner, Status, Pipeline, Notes) that inventories every digital system, person, and gap relevant to the constraint. Skip Source and Design becomes a guessing exercise built on assumptions nobody verified.
 :::
 
-Marina and I were on a call deciding what to do about our project coordinator. The role was costing us twenty-four thousand a year. Work was falling behind. Billing was getting impacted. We both knew the role was going to be replaced by an agent team — that was the constraint Signal had already validated.
+Marina and I were on a call deciding what to do about our project coordinator. The role was costing us ~$24,000 a year. Work was falling behind. Billing was getting impacted. Signal had validated the constraint — this function was broken and it was costing us real money.
 
-But before we could design anything, I stopped the conversation. "We can't build agents for this role until we know what she actually does. Not what's in the job description — what she actually touches, what systems she's in, what decisions she makes that nobody else makes, and what's in her head that isn't written down anywhere."
+But before we could decide *what* to do about it — hire, restructure, automate — I stopped the conversation. "We need to understand what she actually does. Not what's in the job description — what she actually touches, what systems she's in, what decisions she makes that nobody else makes, and what's in her head that isn't written down anywhere."
 
-Marina agreed. That conversation — the one where we mapped what our coordinator knew before we designed anything — was Source. We didn't call it that at the time. But it was the step that kept us from building an agent team against assumptions instead of against reality.
+That question changed the shape of the conversation. It stopped being about whether to replace the coordinator and started being about how information moved through her role. Every task she performed consumed information from somewhere — a project management tool, a client email, a subcontractor's status update — and produced information that went somewhere else. Mapping that flow was Source. We didn't call it that at the time. But it was the step that kept us from acting on assumptions instead of acting on reality.
 
-Signal named the constraint. Source maps what you have before anyone designs against it — the information environment around the validated constraint, so Design is grounded in what is real instead of what is assumed. The diagnosis is not finished when the constraint is named. It's finished when the team can see — on a single page — every asset, every gap, and every piece of institutional knowledge that the constraint depends on.
+Every modern company is an information company, whether it recognizes itself as one or not. Your CRM, your ERP, your shared drives, your inboxes — all of it is information used to make decisions. Source makes that information environment visible. Signal named the constraint. Source maps what the organization knows about it — and where that knowledge lives — before anyone designs against it. The diagnosis is not finished when the constraint is named. It's finished when the team can see — on a single page — every asset, every gap, and every piece of institutional knowledge that the constraint depends on.
 
 ## Diagnosis is not done until you know what you *have*.
 
-The temptation at the end of Signal is to move straight into design. The constraint is named. The cost is quantified. The team feels the momentum and wants to start building. That instinct costs more than most teams realize.
+The temptation at the end of Signal is to act. The constraint is named. The cost is quantified. The team feels the momentum and wants to move — hire someone, buy a tool, build something, anything. That instinct costs more than most teams realize.
 
-Co-intelligent co-operation requires knowing what you're working with — which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and you won't get past the first design conversation, because nobody in the room will agree on what data exists, where it lives, or who holds the judgment the workflow depends on.
+To become a co-intelligent company capable of co-intelligent co-operation requires knowing what you're working with — which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and you won't get past the first design conversation, because nobody in the room will agree on what data exists, where it lives, or who holds the judgment the workflow depends on.
 
 This is why Source belongs in Diagnose, not Execute. The diagnosis includes the information environment. Until you've mapped what you have, the constraint is a named problem without a buildable path forward. Once the map exists, it becomes a design problem — scoped, specific, and grounded in reality.
 
-## What Source *produces*.
+## Create a *Knowledge Map*
 
 The deliverable of Source is a **Knowledge Map**: a structured inventory of every information source relevant to the validated constraint. It is a table — six columns (Source, Type, Owner, Status, Pipeline, Notes), one row per source — that fits on a single page. Digital systems, people, and gaps all appear as rows in the same table, because a workflow consumes all of them the same way. The Knowledge Map is not a diagram or a narrative. It is a structured reference that makes the information environment legible at a glance.
 
-A good Knowledge Map fits on one page. It doesn't catalog every database in the company. It catalogs everything relevant to the constraint Signal validated, and nothing else. If the constraint is the quoting cycle, the Knowledge Map describes what is known about quoting — the pricing rules, the historical quotes, the exception handling, the customer-specific terms, the institutional memory of who decided what and why. It doesn't describe the company's HR records, its accounting close, or its marketing analytics, because those aren't in the path of the constraint.
+For a given Sprint and a given constraint, a good Knowledge Map fits on one page. It doesn't catalog every database in the company. It catalogs everything relevant to the constraint Signal validated, and nothing else. If the constraint is the quoting cycle, the Knowledge Map describes what is known about quoting — the pricing rules, the historical quotes, the exception handling, the customer-specific terms, the institutional memory of who decided what and why. It doesn't describe the company's HR records, its accounting close, or its marketing analytics, because those aren't in the path of the constraint. Over multiple Sprints, you'll accumulate multiple maps — and over time, those maps build into a broader picture of where your organization's knowledge lives. But each individual map stays scoped to one constraint.
 
-The test for a good Knowledge Map is simple: could someone who wasn't in the room use this map to architect a workflow against the constraint? When Marina and I mapped what our project coordinator did, the map didn't catalog every system in the company. It cataloged what the coordinator touched, what she decided, and what would break if she disappeared tomorrow. That map was enough for Design. Anything more would have been a data audit.
+The test for a good Knowledge Map is simple: could someone who wasn't in the room use this map to architect a workflow against the constraint? When Marina and I mapped what our project coordinator did, the map didn't catalog every system in the company. It cataloged what the coordinator touched, what she decided, and what would break if she disappeared tomorrow. 
+
+<!-- TODO: Replace ch05-knowledge-map-table with PM case study Knowledge Map excalidraw (ch05-knowledge-map-pm-case-study) -->
 
 :::{.callout-tip}
 ## Pro Tip
@@ -103,7 +105,7 @@ If you're going to map where knowledge lives, you need to understand how it move
 
 :::{.callout-note}
 ## A note on terminology
-Different platforms use different names for the same underlying ideas. Anthropic (Claude) calls its system integrations "MCP connectors" or just "connectors." OpenAI calls them "tools." Automation platforms call them "integrations" or "actions." The labels vary. The fundamental concept does not: something that lets one system read from or write to another. When you're filling in the Pipeline column, focus on whether the connection exists, not what the vendor calls it.
+Different platforms use different names for the same underlying ideas. Anthropic (Claude) calls its system integrations "MCP connectors" or just "connectors." OpenAI calls them "tools." Automation platforms call them "integrations" or "actions." The labels vary. The fundamental concept does not: something that lets one system read from or write to another.
 :::
 
 The Pipeline column on your Knowledge Map is where these terms become operational. *Connected* means an API, MCP, or connector already carries data between that source and the systems around the constraint. *Manual* means a person is carrying data that a connection could carry. *Broken* means the data doesn't move at all — it sits in one place and nobody can reach it programmatically. Design will decide what to build. Source makes the current state visible.
@@ -148,6 +150,8 @@ Identify the highest-risk organic source on your Knowledge Map — the person wh
 
 ### Sprint · Source at Meridian.
 
+<!-- TODO: Add Elena's completed Knowledge Map excalidraw (ch05-knowledge-map-elena) after the Meridian narrative section -->
+
 Elena Ruiz cleared her Thursday afternoon, sat down with Mark, Ty, and Dave, and asked a simple question: when an RFQ hits my inbox, what do I actually do?
 
 Her answer took forty-five minutes. She described a process nobody else in the company had ever watched end-to-end — cross-referencing customer history, material requirements, and labor estimates simultaneously, then pulling up a file called "Customer Notes.xlsx" on her desktop to check whether the customer had negotiated terms that overrode the standard rate card. The spreadsheet had 147 rows of pricing exceptions. It had never been shared, backed up, or version-controlled.
@@ -170,9 +174,13 @@ Source inverts this. The constraint comes first. The Knowledge Map is built only
 
 Garbage in, garbage out. That phrase gets thrown around like a cliche, but it's the foundational axiom of Source work. Your company's data is a massive asset — *if* you can get it into a format AI can actually use. An agent pointed at dirty data, outdated records, or unstructured knowledge with no classification doesn't produce bad answers occasionally. It produces bad answers confidently and at scale. Source is where you confront the quality of what you have before you build anything on top of it.
 
-I watched this play out with a client running an AI workflow against their internal knowledge base. The system kept surfacing the same wrong information — old pricing, a deprecated process, a policy superseded two revisions back. We'd correct it. It would surface the same thing again. Thirty iterations before anyone asked the right question: why does it keep showing old information?
+I learned this the hard way inside my own company. Early on, we weren't clear about taxonomies, knowledge hygiene, or how we vectorized work — and the agents kept surfacing wrong information. Old pricing, deprecated processes, policies superseded two revisions back. We'd correct it. It would surface the same thing again. It took more iterations than I want to admit before we asked the right question: why does it keep showing old information?
 
-I went into the knowledge base and found the answer. Everything he had ever stored was indexed together — current and expired, active and archived, no distinction. The AI had no way to know what was old. Nobody had told it otherwise. If the data was in the database, the system assumed it was meant to be there. The AI was doing exactly what it was designed to do. The problem was not the AI. Nobody had done the Source work before pointing the AI at the data.
+The answer was simple and brutal. Everything we had ever stored was indexed together — current and expired, active and archived, no distinction. The AI had no way to know what was old. Nobody had told it otherwise. If the data was in the knowledge base, the system assumed it was meant to be there.
+
+We saw the same pattern at a client site. They deployed an application against their internal knowledge base and it kept surfacing expired information — for the exact same reason. Current and outdated content living side by side with no process for managing which was which.
+
+The AI was doing exactly what it was designed to do in both cases. The problem was not the AI. Nobody had done the Source work before pointing the AI at the data. This is part of what needs to get worked out in Design: how information will be consumed, classified, and retired. The downstream effects — especially for retrieval-augmented generation — are real and expensive. One emerging role worth considering is a knowledge manager: someone accountable for the quality, currency, and governance of the information your agents run on. It's a role that didn't exist five years ago. It will be standard within five more.
 
 Source is not where data infrastructure gets built. Source names the gaps. Whether to fill them, capture the judgment, or design around the limitation is a Design decision. Confusing the two phases is how Source bloats into a year-long data project that never produces a workflow.
 
@@ -192,9 +200,7 @@ Before you call Source done, run six checks:
 Run the six-item completeness test against your Knowledge Map. Fix any gaps. Then put the constraint statement from Signal at the top of the page and the Knowledge Map below it. That one page is what you hand to Design.
 :::
 
-## A populated *example*.
-
-Here's what a finished Knowledge Map looks like. This is from Meridian Manufacturing — a custom metal fabrication shop where the VP of Operations was the sole quoting bottleneck, costing the company an estimated $558K/year in lost revenue, misallocated time, and floor underutilization. (Meridian is a fictional composite. The pattern is real.)
+Here is Meridian's completed Knowledge Map — the artifact that session produced:
 
 | Source | Type | Owner | Status | Pipeline | Notes |
 |---|---|---|---|---|---|
@@ -214,9 +220,7 @@ At the end of Source, you have two things on one sheet of paper: the constraint 
 
 {{< excalidraw ch05-source-to-design-handoff "Source-to-Design handoff: constraint statement above, Knowledge Map below" >}}
 
-With those two things in hand, the team moves into Design — the phase where ownership decisions get made, where the Hybrid Accountability Chart entry for this sprint gets built, and where the work crosses from Diagnose into Execute. Source is the bridge. It's the last thing you do before you're allowed to design.
-
-The next chapter is Design.
+With those two things in hand, the team moves into Design — the phase where ownership decisions get made, where the Hybrid Accountability Chart entry for this sprint gets built, and where the work crosses from Diagnose into Execute. Source is the bridge. It's the last thing you do before you're start to design your system.
 
 ## Reflection Questions
 

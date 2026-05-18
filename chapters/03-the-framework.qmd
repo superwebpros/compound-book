@@ -11,7 +11,7 @@ I know exactly what she means. She's seen demos. She's read the case studies. Sh
 
 But I've also watched what happens when you start there. The build does not go well. The requirements shift two weeks in because nobody mapped what the work actually required — so the spec changes, the scope expands, and the thing that was supposed to take three weeks is now in week seven and still not done. Edge cases surface that nobody anticipated because nobody understood the process well enough to anticipate them. The tool gets deployed eventually, in some version of what was originally scoped, and then the team doesn't use it — it doesn't fit how the work actually moves. Nobody understood what people do or what outcomes they're driving toward, and you cannot design around a process you haven't mapped.
 
-I didn't tell her that on the call. I said: let's start at Signal. She said: okay. We did. What she found there surprised her. The constraint she'd been carrying around in her head for six months wasn't the real constraint — it was a symptom of something two steps upstream. If we'd built what she came in asking for, we'd have solved the symptom beautifully and left the actual problem running.
+I didn't tell her that on the call. I said: let's start at Signal. She said: okay. We did. What she found there surprised her. The constraint she'd been carrying around in her head for six months wasn't the real constraint — it was a symptom of something two steps upstream. If we'd built what she came in asking for, we'd have solved the wrong problem and charged a lot to do it.
 
 That is the conversation this chapter exists to prevent you from having with yourself.
 
@@ -40,7 +40,7 @@ This book uses four words constantly and they are easy to conflate. Each names a
 
 - **Framework** — the whole system. When we say "the Framework" or "the Compound Framework," we mean everything described in this book: the order, the stages, the cadence, the unit of work, and the acceleration layers that make each cycle faster. It is the noun for the entire architecture.
 - **Sequence** — the ordered stages inside the Framework: **Signal → Source → Design → Build → Deliver → Compound**. Always all six. Always in that order, because the order is load-bearing — each stage produces something the next stage requires.
-- **Sprint** — one pass through the Sequence on one validated constraint. The term comes from software development, where a sprint is a fixed-length work cycle; here it means a focused unit of work with a defined scope, a clear start, and a measurable end. Duration is set in Design — a Sprint can close in days, run for weeks, or stretch across a quarter, depending on what the constraint requires. You do not "implement the Framework." You run a Sprint, and then you run another one.
+- **Sprint** — one pass through the Sequence on one validated constraint. The term comes from software development, where a sprint is a fixed-length work cycle; here it means a focused unit of work with a defined scope, a clear start, and a measurable end. Duration is set in Design — a Sprint can close in days, run for weeks, or stretch across a quarter, depending on what the constraint requires. You do not "implement the Framework." You run a Sprint, and then you run another one. But, like a software sprint, they are designed to move _quickly_.
 - **Rhythm** — the cadence. Running the Framework over and over. Quarterly. The Rhythm is what turns a single Sprint into a compounding business outcome — the same way a weekly L10 (EOS's weekly leadership meeting) is what turns a quarterly Rock into a company that actually executes.
 
 The reason to be precise here is that the looser versions of these words are exactly how this kind of work fails. "We're running an AI framework" can mean anything. "We are mid-Sprint, in Design, on the quoting-cycle constraint" is a sentence that locates the work in space and time — and everyone in that room knows what happens Monday.
@@ -103,7 +103,7 @@ The canvas has five parts.
 | **Deliver** | How do you know it worked? What number moved? | |
 | **Compound** | What did you learn? What changes for next sprint? | |
 
-**Part 3: Identify Your Team.** A Sprint is not a committee. You need three to five people: a **Human Orchestrator** — the person who runs the Sprint day-to-day, owns the cadence, and holds the handoffs together — plus the two or three people closest to the constraint workflow, plus one technical resource who can build what Design specifies. The Human Orchestrator is not the leadership sponsor. The sponsor owns the outcome. The Orchestrator owns the execution.
+**Part 3: Identify Your Team.** A Sprint is not a committee. You need three to five people: a **Human Orchestrator** — the person who runs the Sprint day-to-day, owns the cadence, and holds the handoffs together — plus the two or three people closest to the constraint workflow. A dedicated technical resource may be needed for complex integrations, but well-designed Sprints often produce workflows that a non-technical person can build and deliver. The tools have caught up. Curiosity and systems thinking matter more than a programming background. The Human Orchestrator is not the leadership sponsor. The sponsor owns the outcome. The Orchestrator owns the execution.
 
 **Part 4: Set the Rhythm.** A Sprint that has no review date has no deadline. Name the start date, the quarterly operating session where you'll review the outcome, and who will be in that review. Book the review before you start Signal — the Sprint is real when the review is scheduled.
 
@@ -146,11 +146,15 @@ That canvas took thirty minutes to fill. It is wrong in at least two places — 
 
 The Sprint Planning Canvas is designed as a single visual page — think Business Model Canvas or Lean Canvas, not a spreadsheet. One page, all five parts visible at once, the constraint at the top and the pre-flight checklist at the bottom.
 
-{{< excalidraw ch03-sprint-planning-canvas "Sprint Planning Canvas: constraint at top, six-stage grid in the middle, team/rhythm/pre-flight at the bottom." >}}
+<!-- TODO: Add blank Sprint Planning Canvas excalidraw graphic (ch03-sprint-planning-canvas-blank) at first mention (~line 89), keep this populated Meridian version here -->
+{{< excalidraw ch03-sprint-planning-canvas "Sprint Planning Canvas — Meridian Manufacturing's populated example." >}}
 
 :::{.callout-note}
 ## Action Step
 Fill in a Sprint Planning Canvas for your company. Constraint in one sentence. One first-pass answer per stage. Name the Orchestrator. Book the review. A wrong first guess is better than a blank row — blanks stay blank, guesses get corrected.
+
+<!-- TODO: Add actual download link for Sprint Planning Canvas PDF -->
+[Download the blank Sprint Planning Canvas (PDF) →](https://compound.co/resources/sprint-planning-canvas)
 :::
 
 This chapter introduced vocabulary that the rest of the book uses constantly. The full glossary lives in the Key Terminology appendix — flip there when you need to.

@@ -1,5 +1,7 @@
 # *Designing the System*.
 
+<!-- STRUCTURAL: Ch06/06b order under review — see .claude/output/ch06-swap-analysis.md -->
+
 :::{.callout-important}
 ## In Brief
 Design is the stage where your constraint and knowledge map become a workflow with named owners — human and AI. It produces two things: Hybrid Accountability Chart entries that assign every accountability to a named supervisor, and a governance framework (autonomy levels, guardrails, escalation paths) that makes the system safe to operate. This chapter covers the frameworks for designing the system. The next chapter covers designing the work itself.
@@ -94,7 +96,7 @@ This conversation works best when you give the AI enough context to reason about
 
 **3. Data pipelines.** The knowledge lives in systems that need to talk to each other. The AI isn't generating content here; it's processing, routing, or transforming data between systems. The project coordinator's report generation — pulling data from the CRM, formatting it, dropping it into a template — is a pipeline problem. No conversation needed. Just data in, transformation, data out. Tools like n8n, Make, or Zapier handle this kind of plumbing without requiring custom code.
 
-**4. Low-code integration tools.** Platforms like Zapier, Make, or Power Automate that connect systems without writing code. These handle the "workflow automation only" category from Work Deconstruction — the routing and handoff problems that don't need intelligence, just connectivity. They're not AI, but they're part of the design because they handle the pieces the agent team doesn't need to touch.
+**4. Low-code integration tools.** Platforms like Zapier, Make, or Power Automate that connect systems without writing code. These handle the routing and handoff problems that don't need intelligence, just connectivity. They're not AI, but they're part of the design because they handle the pieces the agent team doesn't need to touch.
 
 **5. Service layers and APIs.** The AI operates as a service — accepting requests, processing them against defined logic, returning structured outputs. This is the most engineered pattern and the one that scales agent teams into production workflows. Your Build team (internal or external) implements this when the design calls for an agent team that operates reliably, at volume, with defined inputs and outputs.
 

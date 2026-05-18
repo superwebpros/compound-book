@@ -5,11 +5,11 @@
 Build is the stage where the locked design becomes a working, deployed system. It is the narrowest stage of the Sequence — and the fastest, when the diagnostic work was done properly. Build produces one thing: a deployed solution to the validated constraint, specified by an eight-section Build Spec, stress-tested against a seven-question Guardrails Checklist, and confirmed done only when it handles real work under real supervision. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
 :::
 
-When our account manager opens the quoting agent, it knows everything. Past projects, what we charged, how we scoped them, what capacity we had left, what the client asked for in the last engagement. She types a brief and it drafts a quote — real numbers, real scope, real pricing — in minutes.
+When we built the project management agent team — the five agents that replaced our $24,000-a-year coordinator role — the first thing we locked was not the workflow. It was the access layer.
 
-Nobody else on the team has access to that agent. The design said this information doesn't need to go further than the person who owns it — trust had nothing to do with it. We built that access layer in before we built anything else, as part of the spec.
+One agent handled client-facing task updates. It had read/write access to our project management system. Another agent compiled internal performance reports — billable hours, delivery velocity, resource allocation. That one could see data the first agent had no business touching. A third routed subcontractor communications. Different data, different stakes, different guardrails. Same sprint. Five agents, five different access levels, every boundary decided in Design before Build executed any of them.
 
-There is a second agent — a content production workflow that a different team member runs. That one is open to anyone. Different data, different stakes, different guardrails. Same sprint. Two agents, two different access levels, both decisions made in Design before Build executed either one.
+Sofia, our VP of Operations, reviewed every output the agents produced in those first weeks. The agents drafted. She approved. Rachel, the subcontractor who had been doing the coordination work, shifted to exception handling — the judgment calls the agents couldn't make.
 
 The reason I'm telling you this is because the Guardrails Checklist isn't a compliance exercise. It's the moment in Build where you decide what the system is allowed to touch. If you do that work before the build executes, it costs almost nothing. If you discover it after something goes sideways — after the wrong person pulls the wrong data — it costs everything. The spec either includes the guardrail or it doesn't. And if it doesn't, Build isn't done yet.
 
@@ -37,7 +37,7 @@ The Build phase is scoped exactly — and only — to the workflow the Design ph
 
 This is not a limitation. It is the structural reason Build is fast. A team that built a quoting workflow in three weeks did not do it because they were clever. They did it because Design gave them a workflow narrow enough to build in three weeks. The discipline of scope is upstream of the speed of execution.
 
-If, mid-Build, the team finds themselves negotiating new requirements, that is a Design-debt conversation, not a Build conversation. The right move is to stop, go back, fix the design, and resume — not to absorb the ambiguity into Build and hope it works out. It will not work out.
+If, mid-Build, the team finds themselves negotiating new requirements, there are two possibilities. The first is a genuine design gap — something Design should have addressed but didn't. That's a Design-debt conversation: stop, go back, fix the gap, and resume. The second is scope expansion — people's eyes get bigger when they see things working, and they start imagining what else the system could do. That's natural, and it's healthy, but it doesn't belong in the current sprint. Log it. Put it in the backlog for the next Sprint's Signal phase. Do not absorb new scope into Build and hope it works out. It will not work out.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -50,7 +50,9 @@ Build does not require developers.
 
 Not always. Not for every path. But the assumption that Build means "hand it to engineering" kills more sprints than bad specs do. The team waits for a developer. The developer is three projects deep. The sprint stalls. The constraint keeps costing what it costs.
 
-Here's what actually happened. I teach social science students at Michigan State — not computer science majors, not engineers. Within a semester, those students are building functional data pipelines. Pulling data from APIs, transforming it through agents, writing it back to systems. They don't think of themselves as technical. They are.
+The real requirement is curiosity and systems thinking. The rest is teachable. I teach social science students at Michigan State — not computer science majors, not engineers. Within a semester, those students are building functional data pipelines. Pulling data from APIs, transforming it through agents, writing it back to systems. They learned because the tools have been designed to make high-value work accessible to non-engineers. Your team will have to learn new tools. Some of them will have to start thinking in systems. That is the bar — not a computer science degree.
+
+"I'm not technical" is no longer a valid excuse. Everyone entering the workforce today grew up with computers. The tools are designed for people who aren't engineers. The Sprint cycle itself cultivates the experimentation culture that makes learning stick — each build is a bounded opportunity to try, fail safely, and get better. The companies that compound fastest are the ones where curiosity is a job requirement, not a personality trait.
 
 Anyone on your team who is smart and diligent can learn to make a skill. That's not a motivational claim. It's an observation about the current state of the tools. Claude's project interface lets you build a working skill in a conversation. Replit lets a non-developer ship a working app by describing what they want. n8n lets you wire automations by dragging blocks. The barrier to low-code building is lower than most leadership teams realize — and it drops every quarter.
 
@@ -104,9 +106,11 @@ The Design phase determines the path. Build executes it. A team that picks a pat
 Pull the designed workflow from Design. Run the three-question decision tree above. Write down which path you're on and why. If you can't answer the questions without guessing, Design isn't done — go back.
 :::
 
-## Technical literacy — what you need to know, nothing more.
+## Technical literacy — what you need to know.
 
-You don't need to become a technologist. You need to know enough to make decisions without deferring to someone who doesn't understand your constraint.
+You are running a technology company. Every company that employs synthetic workers — agents — is a technology company, whether it started that way or not. You need to know enough about the technology to make decisions without deferring to someone who doesn't understand your constraint. That doesn't mean becoming an engineer. It means understanding the vocabulary, the trade-offs, and the cost structure well enough to hold your own in the room where the build gets scoped.
+
+<!-- TODO: Verify 'agent' is formally defined in Ch02 or glossary. Ch02 has a working definition ("an AI system that holds a goal, takes a sequence of steps toward it...") — confirm this is sufficient or add a formal definition to the glossary. -->
 
 ### Models and providers.
 
@@ -308,6 +312,8 @@ Before the build started, Elena completed the spec and ran the Guardrails Checkl
 Low-code worked because Design gave Elena a workflow narrow enough to build without custom engineering, and a spec clear enough that the freelance developer never had to invent anything. Standard quotes went from 3.8 days to 4.2 hours. Elena got ten hours of her week back.
 
 ## What *done* looks like.
+
+<!-- TODO: Add Meridian Build Spec and Guardrails excalidraw visuals (ch07-meridian-build-spec, ch07-meridian-guardrails) -->
 
 Build is done when there is a deployed solution producing outputs against real inputs, reviewed by the human supervisor named in the Hybrid Accountability Chart. The supervisor is using it. The team is using it. The constraint that Signal named is being addressed by the system Design specified, running inside the actual business — not a sandbox, not a demo.
 

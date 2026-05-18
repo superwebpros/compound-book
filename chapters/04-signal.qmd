@@ -9,7 +9,9 @@ We were in our own L10 — not a client's, ours — reviewing the scorecard for 
 
 I asked the room a question I ask clients all the time: what is this costing us? Not the subcontractor's invoice. The actual cost — the late billing, the missed deliverables, the hours our VP of Operations was spending chasing task updates instead of running operations.
 
-Nobody had the number. We'd been living with the problem long enough that it felt like weather — just the way project coordination worked at our size. The coordinator wasn't failing. The role was. The work required someone to be in the system all day, every day, updating tasks, sending reminders, flagging overdue items, generating reports. No part-time subcontractor was going to do that reliably, and hiring a full-time person for the role meant $50,000 or more for work that was largely mechanical.
+Nobody had the number. We'd been living with the problem long enough that it felt like weather — just the way project coordination worked at our size. The coordinator was failing — but the role was also inadequate. The work required someone to be in the system all day, every day, updating tasks, sending reminders, flagging overdue items, generating reports. No part-time subcontractor was going to sustain that, and hiring a full-time person meant $50,000 or more for work that was largely mechanical.
+
+The real question was whether this was a capacity problem, a capability problem, or whether we could redesign the work itself. Is the coordinator behind because there aren't enough hours? Because they lack the skill? Or because the work shouldn't be structured this way at all? That question — *is this about adding more hours, finding a better person, or changing how the work gets done?* — is what launched us down the path that became Source and Design.
 
 That conversation was the first time we named the constraint instead of describing the symptom. The symptom was "tasks are falling behind." The constraint was structural: the project coordination function required constant, systematic attention that no human in the role — at the price point we could justify — was going to sustain. Signal is the discipline that makes that distinction possible. Most teams never make it. They replace the person, or add a person, or build a workaround — and the constraint stays exactly where it was.
 
@@ -19,22 +21,15 @@ Signal produces a single artifact: a one-page constraint statement anchored in o
 
 Here's the template. You'll fill it in by the end of this chapter.
 
-```
-CONSTRAINT (one sentence):
-_____________________________________________________________
+<!-- TODO: Convert constraint statement template to excalidraw (ch04-constraint-statement-template) -->
 
-WHERE IT LIVES (team / workflow / handoff):
-_____________________________________________________________
-
-DURATION (how long it has existed):
-_____________________________________________________________
-
-QUANTIFIED COST (dollars, hours, or margin — with math):
-_____________________________________________________________
-
-VALIDATING EVIDENCE (data checked, people consulted, numbers confirmed):
-_____________________________________________________________
-```
+| Field | Entry |
+|-------|-------|
+| **Constraint** (one sentence) | |
+| **Where it lives** (team / workflow / handoff) | |
+| **Duration** (how long it has existed) | |
+| **Quantified cost** (dollars, hours, or margin — with math) | |
+| **Validating evidence** (data checked, people consulted, numbers confirmed) | |
 
 The discipline of insisting on one is the entire point. Most leadership teams arrive at this conversation with five candidates and a tendency to argue for whichever one is loudest in the room that week. The job of Signal is to refuse the list. You pick one — the constraint that, if removed, would change the math most meaningfully — and you commit to it for the length of the Sprint.
 

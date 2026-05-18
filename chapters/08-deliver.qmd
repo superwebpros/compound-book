@@ -153,13 +153,13 @@ An honest measurement beats a precise one. The leadership team needs to know wha
 
 The structure is straightforward. Pull out your Signal statement — the sentence with the number. Write the production result next to it. Compute the delta. Then write the sprint outcome sentence:
 
-```
-SIGNAL STATEMENT:    [the one-sentence constraint from Signal]
-COST AT START:       [the quantified cost — dollars, hours, or margin]
-RESULT AFTER SPRINT: [what actually happened — same metric, same unit]
-DELTA:               [the change — quantified]
-OUTCOME IN ONE SENTENCE: [what this sprint produced, stated plainly]
-```
+| Field | Entry |
+|-------|-------|
+| **Signal statement** | [the one-sentence constraint from Signal] |
+| **Cost at start** | [the quantified cost — dollars, hours, or margin] |
+| **Result after sprint** | [what actually happened — same metric, same unit] |
+| **Delta** | [the change — quantified] |
+| **Outcome in one sentence** | [what this sprint produced, stated plainly] |
 
 At Meridian:
 
@@ -206,16 +206,6 @@ Every unchecked box is a task, not a judgment call. Check them all and the sprin
 ## Pro Tip
 If you can't fill in the "Result After Sprint" line with a number, go back to the operational log and figure out what you need to measure. The sprint hasn't delivered until a number moved.
 :::
-
-### Sprint · Process Automation.
-
-A workflow inside Compound was costing the operator about eight hours per week. Manual operations work — the kind of high-volume routing-and-documentation work that should never have stayed with a person but had been there long enough that nobody had carved out the design time to move it.
-
-The team ran the full Sequence on the workflow. Signal: name the hours and what they cost. Source: map the systems and the decisions — what got routed where, what triggered an exception, which calls had to stay with a human. Design: classify the components. Most of the eight hours was deterministic routing with clear inputs and clear outputs; the rest was judgment calls that had to stay with the operator. Build: a low-code workflow stitched together inside the tools the team already used, with a Compound agent doing the routing and the operator reviewing exceptions instead of handling the volume.
-
-Then Deliver. Deploy it inside the operating rhythm. Retrain the operator on what their week now looked like — what the agent did, what arrived in their queue, what they were now responsible for and what they were not. Change the upstream handoff so the work flowed into the new system instead of the old inbox. Measure the recovered hours against the Signal number.
-
-The result: those eight hours come back to the operator every week. The workflow runs without a person in the loop. The operator's week now includes the design work that used to be impossible to make room for — which is itself an input to the next sprint.
 
 ## The change is not the *launch*. The change is the *week*.
 
