@@ -38,6 +38,10 @@ book:
         - chapters/09-compound.qmd
         - chapters/10-the-rhythm.qmd
         - chapters/11-what-to-do-next.qmd
+    - part: "Case Studies"
+      chapters:
+        - chapters/case-study-meridian.qmd
+        - chapters/case-study-pm-agent-team.qmd
     - chapters/appendix-prompt-engineering.qmd
     - chapters/appendix-glossary.qmd
     - chapters/appendix-action-steps.qmd

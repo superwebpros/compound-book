@@ -107,11 +107,11 @@ The IS NOT column sharpened the constraint. The problem wasn't Elena's competenc
 
 5. **What is the root cause?** The quoting function was designed as a single-person workflow at \$2M in revenue and never redesigned as the company grew to \$7.2M. Critical pricing, materials, and estimation knowledge lives exclusively in one person's head and one unshared spreadsheet, creating structural dependency on a single individual.
 
-The root cause pointed to a workflow and a knowledge gap — not a person. Elena was the symptom. The missing system was the constraint.
+The root cause pointed to a workflow and a knowledge gap — not a person.
 
 ### Source
 
-Elena cleared her Thursday afternoon. She sat down with Mark, Ty, and the Compound partner running the Sprint, and they walked through what she actually knew, where it lived, and what was missing.
+Elena cleared her Thursday afternoon. She'd spent her coaching call earlier that week walking through the Source instruments with her Compound coach — what to ask, what to capture, and how to run the session without losing the thread. The coach helped her plan the interview structure, but Elena ran it herself. She sat down with Mark, Ty, and the Bench's Source instruments open on her laptop, and they walked through what she actually knew, where it lived, and what was missing.
 
 The exercise started with a simple question: "Elena, when an RFQ hits your inbox, what do you do first?"
 
@@ -174,25 +174,25 @@ The ERP held job costing history — every completed job had a record with actua
 
 ### Design
 
-The design session ran on a Friday morning. Elena, Mark, Ty, Dave, and the Compound partner sat in the conference room with the constraint statement and Knowledge Map printed on the whiteboard.
+The design session ran on a Friday morning. Elena had prepared with her Compound coach the day before, walking through the Design instruments and rehearsing how to lead the work deconstruction. Elena, Mark, Ty, and Dave sat in the conference room with the constraint statement and Knowledge Map printed on the whiteboard. Elena ran the session using the Bench's Design instruments to guide the classification.
 
-The first question was the sorting question: which parts of the quoting process genuinely require Elena's judgment, and which parts require data she happens to hold?
+The first question was the sorting question: which parts of the quoting process require Elena's judgment, and which parts require data she happens to hold?
 
 They walked the quoting workflow task by task. Eight steps. Elena described each one. The room classified each one using the four Work Deconstruction categories.
 
 What emerged surprised Elena. She'd assumed the whole process required her judgment. When they broke it down, roughly 65% of her quoting work was data retrieval and document assembly — looking up historical jobs, pulling material prices, applying known pricing rules, and formatting the quote document. Those tasks didn't require her judgment. They required her access.
 
-The remaining 35% was genuinely judgment-heavy: evaluating whether a new RFQ was similar enough to a historical job to use as a pricing reference, deciding how to handle a spec that pushed the shop's capabilities, and making the call on custom pricing for strategic accounts.
+The remaining 35% was judgment-heavy: evaluating whether a new RFQ was similar enough to a historical job to use as a pricing reference, deciding how to handle a spec that pushed the shop's capabilities, and making the call on custom pricing for strategic accounts.
 
 Mark wanted one thing above all: the ability to get a first-pass quote to a client within hours, not days. Not a final quote — a rapid estimate accurate enough that the client would stay engaged while the detailed quote followed.
 
 Elena resisted at first. "I'm not comfortable sending a number I haven't personally reviewed."
 
-The Compound partner reframed: "What if you reviewed every estimate before it went out? The agent does the assembly — pulls the historical data, applies the rate card, formats the document — and you review it in fifteen minutes instead of building it from scratch in three hours."
+Dave asked the question that moved it forward: "What if you still reviewed every estimate before it went out? The agent does the assembly — pulls the historical data, applies the rate card, formats the document — and you review it in fifteen minutes instead of building it from scratch in three hours."
 
 Elena paused. "That's different. If I'm reviewing it, that's different."
 
-That exchange defined the design. AI-assisted, not automated. Elena reviews every output. The agent handles the 65% that's data retrieval and assembly. Elena handles the 35% that's judgment. And the turnaround drops from days to hours because Elena's reviewing a draft rather than building from scratch.
+That exchange defined the design. AI-assisted, not automated. Elena reviews every output.
 
 #### Artifact: Work Deconstruction
 
@@ -209,6 +209,10 @@ That exchange defined the design. AI-assisted, not automated. Elena reviews ever
 | Quote delivery to customer | Ty (emails PDF to client) | Workflow automation only | Approved quote auto-sent to Ty for delivery | Standard routing. After Elena approves, the quote PDF routes to Ty's CRM queue for customer delivery. |
 
 Task count: Human judgment required — 2. Agent-assisted — 2. Fully automatable — 3. Workflow automation only — 2.
+
+The team mapped the full quoting workflow as a swim lane diagram — two lanes, human and agent, showing where data moves between them. The human lane tracked Elena's reviews, Dave's labor estimates, and Ty's delivery. The agent lane tracked research, pricing assembly, and document generation. The handoff points made the design concrete: every time work crossed from agent lane to human lane, that was a review gate. Every time it crossed from human lane to agent lane, that was structured input the agent needed to proceed.
+
+{{< excalidraw cs-meridian-swim-lane "Swim lane diagram: Meridian quoting workflow — human lane (Elena reviews, Dave estimates, Ty delivers) and agent lane (research, pricing, assembly) with handoff points" >}}
 
 #### Artifact: Roles, Tasks, and Accountability Deconstruction
 
@@ -228,7 +232,7 @@ The quoting load was consuming 37% of her week. Production management consumed 5
 - Production management: ~20 hours/week (unchanged in this sprint)
 - Strategic operations: ~16 hours/week (recovered from quoting reduction)
 
-Elena's role didn't shrink. It shifted. She went from building every quote to reviewing agent-generated drafts and spending the recovered hours on the strategic work that had been perpetually deferred — capacity planning, supplier renegotiations, and the process improvements the shop needed.
+Elena's role shifted.
 
 #### Artifact: Hybrid Accountability Chart Entry
 
@@ -240,9 +244,7 @@ Elena's role didn't shrink. It shifted. She went from building every quote to re
 | Draft quote generation and review | Reviews every draft quote; approves, edits, or escalates | Elena (VP Ops) | Assembles complete quote document from upstream outputs | Quote Assembly Agent |
 | Quote delivery and follow-up | Delivers quote to customer, handles negotiation | Ty (Sales Lead) | Routes approved quote to sales queue | Delivery Automation (workflow, not agent) |
 
-**Human Orchestrator:** Elena Ruiz, VP of Operations. Owns the constraint outcome: reduce quote turnaround from 3-5 days to same-day for standard work.
-
-**Agent Coordinator:** Ty Banfield, Sales Lead. Monitors intake quality, flags quotes stuck in the pipeline, reports on turnaround times weekly.
+**Human Orchestrator:** Elena Ruiz, VP of Operations. Owns the constraint outcome: reduce quote turnaround from 3-5 days to same-day for standard work. Monitors intake quality, flags quotes stuck in the pipeline, reports on turnaround times weekly.
 
 #### Artifact: Agent Description to Definition
 
@@ -256,7 +258,7 @@ Elena's role didn't shrink. It shifted. She went from building every quote to re
 
 - [x] Every task in the constraint workflow is classified — Work Deconstruction complete, four categories, no unclassified items
 - [x] Every accountability has a Hybrid Accountability Chart entry with all four fields filled and a named supervisor
-- [x] The Human Orchestrator (Elena) and Agent Coordinator (Ty) are named — with irreducible decisions and escalation triggers documented
+- [x] The Human Orchestrator (Elena) is named — with irreducible decisions and escalation triggers documented
 - [x] AI-Assisted vs. Automated is decided for each agent team, with a rationale: all agent outputs are AI-Assisted (Elena reviews every quote) because the exception rules aren't fully captured and the agent is new
 - [x] Guardrails are defined: data access boundaries (CRM + ERP read, no financial reporting or HR), action permissions (draft only, never send to customer), escalation paths (low-confidence to Elena, unknown material to Carlos), quality monitoring (Elena reviews 100% in sprint one), and kill switch (any quote sent without review, pricing error >20% on three quotes in a week, or data access outside defined scope)
 
@@ -274,15 +276,28 @@ The design includes a planned progression:
 
 The progression is earned, not scheduled. Moving from in-the-loop to on-the-loop requires that Elena's review produces zero substantive corrections for three consecutive weeks on that agent's output.
 
+#### Artifact: Design Brief
+
+**Workflow summary:** An incoming RFQ enters through a standardized intake form, which creates a CRM record and triggers the quoting workflow. The agent researches customer history and matches the RFQ against historical jobs in the ERP, then assembles a draft price using the rate card, Dave's labor estimate, and applicable pricing exceptions. The assembled draft lands in Elena's review queue as a formatted PDF. Elena reviews, edits if needed, and approves. The approved quote routes to Ty for customer delivery.
+
+| Section | Detail |
+|---|---|
+| **Stakeholders** | Elena Ruiz — Human Orchestrator, reviewer, and final authority on every quote. Ty Banfield — intake and delivery. Dave Kowalski — labor hour estimates. Mark Ellison — final authority on strategic account pricing. Carlos Medina — capacity input on high-volume quotes. |
+| **Systems involved** | HubSpot CRM (customer records, RFQ intake, quote pipeline, delivery queue), JobBOSS ERP (historical job costing, rate card, materials pricing), Claude Team workspace (single project with research, pricing, and assembly workflows), n8n (workflow orchestration and system connectors). |
+| **Data requirements** | ERP job costing history (800+ completed jobs, 3 years), CRM customer records and win/loss data, cleaned pricing exceptions database (112 validated rules), standard rate card (labor, overhead, margin targets), Dave's twelve-factor estimation framework, material supplier pricing (centralized from PDFs and emails). |
+| **Success criteria** | Quote turnaround under 4 hours for standard work. Elena's review time under 20 minutes per quote. Quoting throughput doubled from current capacity. |
+| **Constraints and guardrails** | All outputs are drafts until Elena approves. No customer-facing communication generated or sent by agents. Kill switch conditions: any quote reaching a customer without human review, pricing errors exceeding 20% on three quotes in any week, or data access outside defined scope. |
+| **V1 artifact** | A working rapid quote system that produces draft PDF quotes in Elena's CRM review queue, triggered automatically by new RFQ intake, with full audit trail from research through pricing to assembly. |
+
 ### Build
 
 The Build conversation started with a question from Mark: "How much is this going to cost to build?"
 
 The answer was less than he expected. Meridian wasn't building custom software. They were assembling existing tools into a workflow shaped by the Design.
 
-The build path was low-code. The team used Claude as the AI backbone — a Claude Team workspace with three configured projects (one per agent), each loaded with the relevant knowledge from Source. The workflow orchestration ran through n8n, which Meridian already had a license for from a previous automation attempt that never went anywhere. The CRM (HubSpot) and ERP (JobBOSS) both had APIs.
+The build path was low-code. Elena set up a single Claude Team project as the AI backbone — one project with well-structured instructions and all the relevant knowledge files from Source loaded into it: the cleaned pricing exceptions database, Dave's estimation framework, the rate card, and historical job costing data from the ERP. The three "agents" from the Design — Research, Pricing, Assembly — became three defined workflows within that one project, each triggered by different inputs. The workflow orchestration ran through n8n, which Meridian already had a license for from a previous automation attempt that never went anywhere. The CRM (HubSpot) and ERP (JobBOSS) both had APIs, and n8n connected them to the Claude project.
 
-The build took three and a half weeks. The Compound partner handled the technical assembly. Elena spent four hours in structured interviews — what the Source chapter calls the transcript extraction — walking through her pricing exception logic, her material estimation heuristics, and her process for evaluating RFQ complexity. Those transcripts became the core knowledge base for the Quote Research and Quote Pricing agents.
+The build took three and a half weeks. Elena handled the technical assembly herself using the Bench's build tools, with her coach reviewing the configuration on their weekly calls. She hired a freelance n8n developer for three days to wire the API connections to HubSpot and JobBOSS — the coach helped her scope the contract and evaluate the developer's work. Elena spent four hours in structured interviews — what the Source chapter calls the transcript extraction — walking through her pricing exception logic, her material estimation heuristics, and her process for evaluating RFQ complexity. Those transcripts became the core knowledge base loaded into the Claude project.
 
 The hardest part of Build wasn't the technology. It was Elena's pricing spreadsheet.
 
@@ -290,9 +305,11 @@ When the team went to load "Customer Notes.xlsx" into the agent's knowledge base
 
 Elena spent a full day cleaning the spreadsheet. She reduced it from 147 rows to 112 validated, current exception rules. That day of cleanup was the most valuable day of the entire Build. Without it, the agent would have been confidently applying expired discounts and contradictory terms.
 
-The second friction point was the ERP integration. JobBOSS's API documentation was sparse and outdated. The Compound partner spent three days getting the historical job data to extract reliably. When it finally worked, they discovered that roughly 15% of the job costing records had incomplete materials data — jobs where someone had entered the labor hours but not the materials breakdown. The team decided to flag those records rather than exclude them — the labor data was still useful for estimation, even without complete materials.
+The second friction point was the ERP integration. JobBOSS's API documentation was sparse and outdated. The n8n developer spent three days getting the historical job data to extract reliably. When it finally worked, they discovered that roughly 15% of the job costing records had incomplete materials data — jobs where someone had entered the labor hours but not the materials breakdown. The team decided to flag those records rather than exclude them — the labor data was still useful for estimation, even without complete materials.
 
 Dave's contribution was the simplest and the most irreplaceable. He sat down for a ninety-minute recorded interview and described how he estimates fabrication hours. His method turned out to be remarkably systematic — he used a mental checklist of twelve factors (material thickness, number of bends, weld count, tolerance requirements, surface finish, fixturing complexity, and six others he'd never written down). The transcript became a structured estimation framework the agent could reference, though the agent still couldn't replace Dave's judgment on non-standard work. For standard jobs, the framework was good enough to produce estimates within Dave's 10% accuracy range.
+
+Dave's estimation method became a structured skill within the Claude project — a twelve-factor checklist the project references when processing labor estimates for standard work. Elena built it using the Bench's skill-authoring tools, and her coach reviewed the logic on their next call.
 
 #### Artifact: Build Spec
 
@@ -301,7 +318,7 @@ Dave's contribution was the simplest and the most irreplaceable. He sat down for
 | **Solution name** | Meridian Rapid Quote System |
 | **Constraint addressed** | VP of Operations is the sole bottleneck for quoting, resulting in 3-5 day turnaround vs. 24-48 hour industry standard, costing ~\$558K/year in lost revenue, misallocated time, and floor underutilization. |
 | **Systems connected** | HubSpot CRM (read/write — customer records, RFQ intake, quote delivery), JobBOSS ERP (read — historical job costing, rate card, materials pricing), Claude Team workspace (AI processing), n8n (workflow orchestration) |
-| **Tools/platforms** | Claude Team (3 agent projects), n8n (workflow triggers and routing), HubSpot API, JobBOSS API, Google Workspace (document generation and storage) |
+| **Tools/platforms** | Claude Team (single project with three defined workflows), n8n (workflow triggers and routing), HubSpot API, JobBOSS API, Google Workspace (document generation and storage) |
 | **Agent capabilities** | Quote Research Agent: match incoming RFQs to historical jobs, surface customer context and pricing terms. Quote Pricing Agent: calculate draft pricing using historical matches, rate card, labor estimates, and exception rules. Quote Assembly Agent: generate formatted PDF quote document in Meridian's standard template. |
 | **Access/permissions** | Agents can read: CRM deal records, ERP job costing history, ERP rate card, cleaned pricing exceptions database, Dave's estimation framework. Agents cannot access: financial reporting, employee records, customer payment history, supplier contracts, or any system not listed. No agent can send external communications. |
 | **Guardrails** | All outputs are drafts until Elena approves. Agent flags any RFQ it can't match to historical work (confidence below 60%). Agent flags any pricing deviation >15% from closest historical match. Agent cannot apply undocumented exceptions. Kill switch: any quote reaching a customer without human review, pricing errors >20% on three quotes in any week, or data access outside defined scope. Elena holds the kill switch. |
@@ -311,7 +328,7 @@ Dave's contribution was the simplest and the most irreplaceable. He sat down for
 
 Elena flipped the switch on a Monday. The first RFQ came in at 9:14 AM — a repeat customer requesting quotes on a batch of steel mounting brackets, sixty units.
 
-The intake form captured the specs. The Quote Research Agent pulled the customer's history: twelve previous jobs over four years, three of them bracket work. It matched against historical jobs and surfaced the closest comparables with pricing. The Quote Pricing Agent applied the rate card, applied the customer's documented 8% volume discount, and produced a draft at \$14,200. Elena received the draft in her review queue eleven minutes after the RFQ was submitted.
+The intake form captured the specs and created a new RFQ record in HubSpot. The n8n workflow was watching for exactly that — when a new RFQ record appeared in the CRM, n8n triggered the quoting workflow in the Claude project automatically. The research workflow pulled the customer's history: twelve previous jobs over four years, three of them bracket work. It matched against historical jobs and surfaced the closest comparables with pricing. The pricing workflow applied the rate card, applied the customer's documented 8% volume discount, and produced a draft at \$14,200. Elena received the draft in her review queue eleven minutes after the RFQ was submitted.
 
 She opened it. Looked at the historical matches. Looked at the pricing breakdown. Looked at the exception rule the agent had applied. She made one edit — she adjusted the material cost for 304 stainless steel down by 6% because she'd just negotiated a new supplier rate the previous week that wasn't in the system yet. She approved the quote. Total review time: fourteen minutes.
 
@@ -471,7 +488,7 @@ After the Sprint: two Greens, two Yellows, one Red.
 
 The single Red that remains — Information Readiness — is the dimension that takes the longest to move. The Sprint moved it from Red to Yellow by capturing Elena's quoting knowledge and Dave's estimation method. Getting it to Green requires doing the same for production management, supplier relationships, and the other organic knowledge Elena holds. That's multiple sprints of Source work.
 
-The two new Greens — Workflow Visibility and Measurement Discipline — are permanent. The quoting workflow is documented and designed. The metrics are tracked. These don't slide back. They're infrastructure.
+The two new Greens — Workflow Visibility and Measurement Discipline — are permanent. The quoting workflow is documented and designed. The metrics are tracked. They're infrastructure.
 
 Mark closed the session by reading the Sprint outcome sentence back to the room:
 
