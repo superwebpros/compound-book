@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-Compound is the sixth stage of the Sequence — the one that turns a delivered sprint into the foundation of the next one. You run a Sprint Retrospective, re-rank your Signal Backlog against what the sprint taught you, install one design change, and name the next constraint. Without this stage, you shipped a project. With it, you built infrastructure that makes every future sprint faster and sharper.
+Compound is the sixth stage of the Sequence — the one that turns a delivered sprint into the foundation of the next one. You run a Sprint Retrospective, re-rank your Signal Backlog against what the sprint taught you, install one design change, and name the next constraint. The sprint that skips this stage shipped a project. The sprint that runs it built infrastructure that makes every future sprint faster and sharper.
 :::
 
 I am a compulsive worker. I've always known this about myself — it's not a character flaw I've conquered, it's a fact I manage. For most of my career, "done for the day" was not a state I inhabited. It was a fiction I told myself when I ran out of energy. The list never cleared. The inbox never reached zero. There was always another thread to pull, another problem to sit with, another thing that would get worse if I left it overnight.
@@ -23,25 +23,23 @@ If I were to count the number of times I left at 5:30 in the eighteen months bef
 
 And because it ran, I could stop.
 
-That's what compounding feels like from the inside: an evening home, on a Tuesday, when eighteen months earlier that was not something I was capable of choosing.
-
-Compound is the sixth stage of the Sequence — the one that turns a delivered sprint into the foundation of the next one. Without this stage, you've shipped a project. With it, you've built infrastructure. This is the stage the word in our company name points at: the brand is *Compound* because what the work produces is compounding — not as metaphor, but as the structural property of running the Sequence on a cadence.
+Compound is the sixth stage of the Sequence — the one that turns a delivered sprint into the foundation of the next one. This is the stage the word in our company name points at: the brand is *Compound* because what the work produces is compounding — not as metaphor, but as the structural property of running the Sequence on a cadence.
 
 ## What *Compound* produces.
 
 Compound has three deliverables, and they ship together — in a single session, before your team closes the laptop on this sprint.
 
-The first is an updated *Signal Backlog* — the running, prioritized list of validated constraints your organization is working through. Signal generated the constraint that drove this sprint; the sprint generated new information about the rest of the backlog. Compound is where you re-rank the backlog against what you now know.
+An updated *Signal Backlog* — the running, prioritized list of validated constraints your organization is working through. Signal generated the constraint that drove this sprint; the sprint generated new information about the rest of the backlog. Compound is where you re-rank the backlog against what you now know.
 
-The second is an updated *Hybrid Accountability Chart*. The chart had one new row when Design produced it for this sprint's accountability. By the end of Deliver that row was real — a named agent team, a named human supervisor, a position on the AI-assisted-to-automated spectrum, and a documented outcome against the constraint. In Compound, you make that row permanent and review any neighboring rows for second-order effects from the sprint that just shipped.
+An updated *Hybrid Accountability Chart*. The chart gained entries when Design produced accountabilities for this sprint. By the end of Deliver those entries were real — named agent teams, named human supervisors, positions on the AI-assisted-to-automated spectrum, and documented outcomes against the constraint. In Compound, you make those entries permanent and review any neighboring rows for second-order effects from the sprint that just shipped.
 
-The third is a commitment to the next sprint's focus — the constraint, the accountability, the human owner. Not "we'll start the next sprint sometime." A named next constraint, taken from the re-ranked backlog, with the Human Orchestrator already assigned. You leave the session with the next sprint started in name, even if the work is weeks away.
+A commitment to the next sprint's focus — the constraint, the accountability, the human owner. Not "we'll start the next sprint sometime." A named next constraint, taken from the re-ranked backlog, with the Human Orchestrator already assigned. You leave the session with the next sprint started in name, even if the work is weeks away.
 
 {{< excalidraw ch09-compound-deliverables "Three Compound deliverables: Signal Backlog update, permanent HAC row, and named next constraint — with location and owner." >}}
 
 These three deliverables slot into the living document I'll describe in the next chapter — the Hybrid Org Today, the current operational picture of the Co-Intelligent Company. The Signal Backlog and the Hybrid Accountability Chart are both slices of it. Compound is where those slices get updated.
 
-If your sprint ends and the backlog isn't updated, the chart hasn't gained a permanent row `jf-note: what? this doesn't make sense.`, and no next constraint is named, the sprint didn't finish. It stopped. Those are different states. Compound is the discipline of finishing.
+If your sprint ends and the backlog isn't re-ranked, the chart hasn't been updated, and no next constraint is named — the sprint didn't finish. It stopped. Those are different states. Compound is the discipline of finishing.
 
 :::{.callout-note}
 ## Action Step
@@ -56,8 +54,7 @@ The Sprint Retrospective is one of two instruments in the Compound stage. It's t
 
 **Question two: what didn't work?** The handoffs that broke, the inputs that turned out dirtier than Source claimed, the supervisor reviews that got skipped because the cadence was wrong. For each item, the facilitator asks one question: *"What would have to be true for this to not happen again?"* That question reframes blame into design. You're not asking who failed. You're asking what the system needs to look like so the failure can't recur.
 
-<!-- TODO: Update to Meridian Manufacturing -->
-A manufacturing company I worked with ran its first sprint on quoting speed. In the retrospective, two items landed in the "didn't work" column: three edge cases where the estimate was off by more than 15% — all involving legacy pricing exceptions the agent didn't have — and two instances where sales reps bypassed the new workflow for "urgent" quotes in week one. The reframe for the first: the agent's knowledge base would need the ops manager's pricing exception spreadsheet, not just standard pricing tables. The reframe for the second: the workflow would need to be faster than the old method for every case, or the escalation path would need to be clearer.
+Meridian's retrospective surfaced three items in the "didn't work" column. Dave Kowalski, the senior design engineer, went first: the agent's historical matching pulled comparable jobs correctly about 85% of the time, but missed complexity — a bracket with twelve bends and tight tolerances is not the same as a bracket with four bends and standard tolerances, even if they're both steel brackets. Elena was correcting about one in eight quotes. The reframe: the agent needed fabrication complexity indicators — bend count, tolerance class, surface finish — not just material and dimensions. Second, Ty admitted he'd forwarded three RFQs to Elena the old way in week one out of habit. The reframe: the old email path needed to be killed on day one, not left open as a fallback. Third, Carlos flagged that every Inconel or titanium job still routed to Elena for manual pricing because the materials database didn't cover specialty alloys. The reframe: the five most common non-standard materials needed to be added before sprint two.
 
 **Question three: what one design change would make the next sprint better?** I'll give this its own section below, because the discipline behind it is load-bearing.
 
@@ -72,14 +69,13 @@ If your retrospective produces zero "what didn't work" items, you didn't run it 
 
 Beyond the sprint outcome you measured in Deliver, Compound asks three additional questions. The answers are the compound interest.
 
-<!-- TODO: Update to Meridian Manufacturing -->
-*What does the organization know now that it didn't know before this sprint?* The manufacturing company learned which quote types the agent handles cleanly — standard specs — and which need human review — legacy pricing exceptions. Before the sprint, they assumed all quotes were equally complex. That assumption is gone. That's knowledge the next sprint inherits.
+*What does the organization know now that it didn't know before this sprint?* Meridian learned that Elena's Customer Notes spreadsheet — 147 rows of pricing exceptions on her desktop — contained only 112 validated rules. Thirty-five were duplicates or outdated. They learned which quote types the agent handles cleanly (standard specs, about 70% of volume) and which still need Elena's review (complex fabrication, specialty alloys). Before the sprint, every quote looked equally hard. That assumption is gone. That's knowledge the next sprint inherits.
 
-*What capability exists now that didn't exist before?* A working rapid-estimate agent that handles 85% of incoming quote requests without human intervention. That capability doesn't disappear when the sprint ends. It's infrastructure.
+*What capability exists now that didn't exist before?* A working quoting agent team that cut standard quote turnaround from 3.8 days to 4.2 hours. Elena's quoting time dropped from fifteen hours a week to five. Throughput doubled. That capability doesn't disappear when the sprint ends. It's infrastructure — and it produced $47,000 in new revenue in the first month.
 
-*What is the next sprint starting with that the first sprint didn't have?* A trained agent, a documented exception list, and sales reps who've used the new workflow for two weeks. Sprint two starts from that baseline, not from zero.
+*What is the next sprint starting with that the first sprint didn't have?* Three trained agents, 112 validated pricing rules, three years of indexed ERP job data, and a sales team that's been using the new intake workflow for six weeks. Sprint two starts from that baseline, not from zero.
 
-If you can't answer these three questions, the sprint delivered output but didn't compound. Output without compounding is a project. Output with compounding is infrastructure. The distinction matters because projects have to be rebuilt each time. Infrastructure accumulates.
+If you can't answer these three questions, the sprint delivered output but didn't compound. The distinction matters because projects have to be rebuilt each time. Infrastructure accumulates.
 
 ## The one design change *rule*.
 
@@ -91,14 +87,13 @@ The temptation after a good sprint is to list every observation the team made an
 
 The discipline of one design change defeats that failure mode. The Human Orchestrator looks across everything the sprint surfaced — the Source phase that ran too thin, the supervisor cadence that was wrong, the handoff between the agent team and the human reviewer that broke once, the input format that turned out to need cleaning nobody scoped — and names the *single* change that will most improve the next sprint.
 
-<!-- TODO: Update to Meridian Manufacturing -->
-The manufacturing company's one design change: add the ops manager's pricing exception spreadsheet — 47 exception rules — to the agent's knowledge base before sprint two. The ops manager formats the spreadsheet. The IT lead uploads it to the agent's knowledge index (the database of documents the agent can search when answering questions). You know it's working when you run the three failed edge cases through the updated agent and all three produce estimates within 5% of the manually corrected price. Installed before sprint two's kickoff on Monday.
+Meridian's one design change: add fabrication complexity indicators — bend count, tolerance class, weld count, and surface finish — as matching criteria in the Quote Research Agent. Dave Kowalski provides the classification framework from his thirty-one years of fabrication experience. The agent uses it when selecting historical matches. You know it's working when you re-run the eight quotes from the previous month where Elena corrected the agent's match, and at least seven of eight produce the correct comparable. Installed before sprint two kickoff.
 
 That change gets installed before the next sprint begins. It becomes a piece of how the company operates, not a note in a doc. Lessons that don't change the design aren't lessons. They're notes.
 
 {{< excalidraw ch09-one-design-change "One design change rule: long lessons list that never installs (left) vs. single named change that becomes a permanent operating rule (right)." >}}
 
-One design change per sprint is small. Eight sprints of one good design change each is substantial — that's the operating system getting deliberately better at running the Sequence, with the improvements compounding the same way a well-run quarterly Rock produces a company that executes a year later. Disciplined improvement over many sprints produces an agent team dramatically more capable after eight sprints than after one. Undisciplined improvement produces the same agent team it always was, with longer meeting notes.
+One design change per sprint is small. Eight sprints of one good design change each is substantial — that's the Co-Operating Model getting deliberately better at running the Sequence. Disciplined improvement over many sprints produces an agent team dramatically more capable after eight sprints than after one. Skip the discipline and you get the same agent team it always was, with longer meeting notes.
 
 :::{.callout-note}
 ## Action Step
@@ -111,14 +106,13 @@ The second instrument in Compound is the Constraint Re-rank. The Signal Backlog 
 
 Four questions drive the re-rank:
 
-<!-- TODO: Update to Meridian Manufacturing -->
-*Did the sprint reveal new information about any of the other constraints?* Solving one constraint frequently exposes the real cost of another. The manufacturing company's quoting sprint exposed that every quote the agent generated still had to be manually entered into the ERP. The CRM-to-ERP data sync — previously ranked third on the backlog — jumped to first. That's information you only get from operators who just finished a sprint.
+*Did the sprint reveal new information about any of the other constraints?* Solving one constraint frequently exposes the real cost of another. Meridian's quoting sprint exposed that every quote the agent generated still had to be manually entered into JobBOSS — their ERP — when the quote converted to a job. Ty was entering the same data twice: once in HubSpot for the quote, again in JobBOSS for the job record. The HubSpot-to-JobBOSS data sync — previously ranked third on the backlog — jumped to first. That's information you only get from the people who just finished a sprint.
 
-*Did any constraints get partially resolved as a side effect of this sprint?* Sometimes they did. Customer onboarding was second on that company's backlog, unchanged in urgency but less pressing now that quoting was faster. Some constraints move down not because they got less important, but because the sprint that just shipped quietly reduced their cost.
+*Did any constraints get partially resolved as a side effect of this sprint?* Production scheduling had been ranked second. It didn't get less important, but the quoting sprint partially addressed it — Carlos now had pipeline visibility from faster quotes that enabled proactive scheduling instead of reactive. It moved to fourth.
 
-*Did any new constraints surface during the sprint that weren't on the original list?* Occasionally, a constraint that was nowhere on the backlog emerges as the next most important — the kind of insight you only get from running the work.
+*Did any new constraints surface during the sprint that weren't on the original list?* Meridian discovered that 40% of their quotes went to three customers who negotiated the same terms every time. Customer pricing standardization — pre-negotiated tiers for those three accounts — hadn't been on the backlog at all. It entered at rank two.
 
-*Given what you now know, which constraint should the next sprint solve?* The constraint at rank one becomes the input for the next Signal conversation.
+*Given what you now know, which constraint should the next sprint solve?* The constraint at rank one becomes the input for the next Signal conversation. Meridian's answer: the HubSpot-to-JobBOSS data sync. Mark assigned Elena as Human Orchestrator. Sprint two kicks off at the next quarterly planning session.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -131,12 +125,11 @@ Pull the Signal Backlog. Re-rank it using the four questions. Name the top const
 
 Three artifacts get updated at the end of every Compound session. Don't skip this. The documents are the institutional memory that makes compounding possible.
 
-<!-- TODO: Update to Meridian Manufacturing -->
-The *Hybrid Accountability Chart* — any row that was temporary for the sprint becomes permanent if the workflow is staying. Any row that didn't work gets revised. The manufacturing company added a permanent row: AI agent owns rapid estimate generation; ops manager owns exception review.
+The *Hybrid Accountability Chart* — any entry that was temporary for the sprint becomes permanent if the workflow is staying. Any entry that didn't work gets revised. Meridian made the quoting row permanent: three agents — Quote Research, Quote Pricing, Quote Assembly — with Elena confirmed as Human Supervisor at the AI-Assisted level. They also reviewed neighboring rows for second-order effects: Carlos's production scheduling entry got a note that faster quoting was creating more jobs, and scheduling hadn't kept pace.
 
-The *Signal Backlog* — re-ranked per the Constraint Re-rank. CRM-to-ERP sync moved to the top.
+The *Signal Backlog* — re-ranked per the Constraint Re-rank. HubSpot-to-JobBOSS data sync moved to the top. Customer pricing standardization entered at second. Specialty materials pricing moved up to third.
 
-The *Sprint Outcome Record* — the one-sentence outcome from Deliver, filed for future reference. "Quote turnaround reduced from 4 hours to 20 minutes for standard specs, 85% of volume. Edge cases identified and documented."
+The *Sprint Outcome Record* — the one-sentence outcome from Deliver, filed for future reference. "Standard quote turnaround reduced from 3.8 days to 4.2 hours. Elena's quoting time from 15 hrs/wk to 5. Throughput doubled. $47K new revenue in month one."
 
 These updates take fifteen minutes. They're the difference between a company that remembers what it learned and one that runs the same discovery phase from scratch every quarter.
 

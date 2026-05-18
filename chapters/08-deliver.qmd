@@ -19,10 +19,6 @@ The sprint produces on Monday. When the operator whose week was supposed to chan
 
 The difference is operational, not technical.
 
-```jf-note:
-So far everything I've read is completely made up. We have a really solid case study for our PM team that we can use as a real evidence. I think that should be our Northstar. I would revise this chapter with that example in mind because the concepts are fine, but the specifics are really wrong.
-```
-
 ## *Deployed* is not the same as *delivered*.
 
 Build ends with a working agent running in production. That is a real milestone. It is also incomplete. The agent is doing the work it was designed to do; the organization around it has not yet adjusted to receive what the agent now produces.
@@ -55,9 +51,7 @@ If the result is not 4/4, you are not ready to deploy. Every "Fail" is a task. A
 
 The Audit checks what Build prepared — it does not author anything fresh. If any answer is missing, that item blocks the deploy. Failed deploys trace back to a question nobody asked at this gate.
 
-<!-- TODO: Update to Meridian Manufacturing — the quoting sprint example below is a placeholder. -->
-
-In the manufacturing quoting sprint I'll describe later in this chapter, the team ran this audit before going live. Each design engineer completed a 90-minute hands-on session building quotes with the new rapid-estimate workflow — not a slide deck, not a walkthrough email. Hands on keys. The escalation path was documented: any quote flagged as "low confidence" routed to the senior design engineer via Slack with a two-hour response SLA. The workflow was tested against 47 real RFQs from the prior two weeks; 44 produced accurate estimates, and 3 edge cases were identified and added to the escalation criteria. The ops manager's review cadence was booked on the calendar — Monday and Thursday at 9 AM, recurring, with a documented review checklist. Four gates passed. Clear to deploy.
+At Meridian Manufacturing, Elena and Dave completed hands-on training with the three-agent quoting pipeline before the workflow went live. Not a walkthrough email — Elena ran real quotes through the system while Dave reviewed the agent's historical job matching against specs he knew by heart. The escalation path was documented in the Claude Team workspace: any quote flagged as low confidence routed to Dave for non-standard materials, with Elena reviewing every assembled quote before it went to the customer. The workflow was tested against real RFQs pulled from HubSpot — actual customer requests from the prior two weeks, not demo data. Elena's review cadence was booked on the calendar: Monday and Thursday mornings, recurring. Systems verified: HubSpot connected, JobBOSS connected, CustomerNotes.xlsx with 112 validated pricing rules loaded into the agent's context. Four gates passed. Clear to deploy.
 
 :::{.callout-note}
 ## Action Step
@@ -81,17 +75,15 @@ For each role, answer four questions:
 
 Sit down with the Hybrid Accountability Chart from Design and work through each role whose handoffs changed. For each role, write three things: what they send to the agent (the trigger or input), what comes back to them (the output and its format), and what they do when something lands outside the expected range (the escalation path). One page per role.
 
-<!-- TODO: Update to Meridian Manufacturing — the quoting sprint runbook below is a placeholder. -->
-
-In the quoting sprint, the per-role runbook looked like this:
+At Meridian, the per-role runbook looked like this:
 
 | Role | Input | Output | Escalation |
 |------|-------|--------|------------|
-| Design Engineer | Agent-generated rapid estimate with material specs, unit costs, and confidence score | Reviewed and approved quote, or flagged revision with specific line-item corrections | Flag any quote where confidence score is below 85% or material spec doesn't match the RFQ bill of materials. Route to senior design engineer in #quoting-escalations. |
-| Ops Manager | Dashboard of all quotes generated in the review period, with status (approved / flagged / pending) | Bi-weekly review summary: volume, approval rate, average turnaround, escalation count | Flag if approval rate drops below 90% for any rolling 5-day window. Escalate to sprint lead. |
-| Sales Rep | Approved quote PDF in shared drive, notification in CRM | Customer-facing proposal sent within 24 hours of quote approval | Flag if quote doesn't match customer requirements or turnaround exceeds 48 hours from RFQ receipt. Notify ops manager. |
+| Dave Kowalski (Sr. Design Engineer) | Specs flagged by the Quote Research Agent for non-standard materials or tight tolerances | Manual pricing for flagged line items; confirmation or correction of agent's historical job match | Consulted on any quote involving Inconel, titanium, or exotic alloys. Receives Claude Team notifications when the agent flags a match it cannot confirm. |
+| Elena Ruiz (VP Ops) | Agent-assembled draft quote in her CRM review queue, with confidence score and historical matches | Approved quote (or edited and approved), updated CustomerNotes.xlsx when new exceptions arise | Reviews every assembled quote. Monitors confidence score distribution. Updates pricing rules for new exceptions. Works from Claude Team workspace and JobBOSS. |
+| Ty Banfield (Sales) | Approved quote delivered via HubSpot notification | Customer-facing proposal sent same-day for standard work | Reports customer feedback to Elena. Flags any quote that does not match what the customer requested. Submits all RFQs through the standardized intake form — no email forwards. |
 
-What changed per role: The design engineer previously built quotes from scratch — four to six hours each. Now she reviews agent-generated estimates in twenty minutes. The ops manager previously tracked quoting by asking engineers for status updates. Now he reads a dashboard with real-time data. The sales rep previously waited three to five days for engineering to produce a quote. Now she receives approved quotes within 24 hours.
+What changed per role: Dave used to give Elena verbal labor-hour estimates when she asked. Now he reviews the agent's historical matching weekly and gets pulled in only for non-standard materials — the work that actually requires thirty-one years of fabrication knowledge. Elena used to build every quote from scratch, fifteen hours a week. Now she reviews agent-generated drafts in fifteen to twenty minutes each, spending the recovered hours on production planning and supplier negotiations. Ty used to wait three to five days for Elena to produce a quote, then forward it to the customer. Now he receives approved quotes same-day for standard work and can see every quote's status in the CRM pipeline.
 
 Get the runbook in the tool the team already lives in — the project management system, the shared doc, the Slack channel — before the workflow goes live. Not after.
 
@@ -126,17 +118,14 @@ Four categories. Use exactly these:
 
 In Chapter 5, I described a client whose AI kept surfacing expired information because nobody audited the knowledge base before indexing it. That's what Deliver's logging phase catches — the gaps that Source couldn't see because they only become visible in production.
 
-<!-- TODO: Update to Meridian Manufacturing — the quoting sprint operational log below is a placeholder. -->
-
-Here's what the quoting sprint's first two weeks looked like:
+Here's what Meridian's first two weeks looked like:
 
 | Date | What happened | Category | What it signals |
 |------|---------------|----------|-----------------|
-| Day 2 | Agent generated a quote for a custom alloy not in the material database. Defaulted to standard steel pricing. Engineer caught it in review. | Edge case | Material database needs custom alloy entries. Add to Source backlog. |
-| Day 4 | New sales rep submitted an RFQ without attaching the customer's drawing. Agent produced an estimate based on incomplete specs. | User confusion | Onboarding materials need to include the new RFQ submission process. Runbook gap for new hires. |
-| Day 7 | Agent produced a quote with 92% confidence, but unit cost was 15% above the rate card — quantity tier was misread from the RFQ. | Unplanned intervention | Quantity-tier parsing needs refinement. Design task for next sprint. |
-| Day 9 | Ops manager's Thursday review surfaced 3 quotes stuck in "pending" — approval notification didn't fire. | Data gap | Notification trigger depends on a CRM field that isn't consistently populated. Integration fix needed. |
-| Day 12 | Design engineer approved a quote without checking the confidence score because "they all look fine now." Skipped the review checklist. | User confusion | Review discipline is slipping. Ops manager to reinforce the checklist in the next bi-weekly review. |
+| Day 2 | Agent hit an Inconel 718 specification not in CustomerNotes.xlsx. It flagged low confidence and escalated to Dave — but also attempted to estimate using 316 stainless as the closest match, producing a price 40% below actual Inconel cost. Elena caught it in review. | Edge case | Agent must produce no price estimate for unknown materials — flag as "manual pricing required" and stop. Guardrail added same day. |
+| Day 4 | Ty submitted an RFQ without the customer's drawing attached. Agent produced an estimate based on the text description alone, which was too vague to be usable. Elena rejected it. | User confusion | Intake form needs a required field for drawings on custom fabrication work. Ty pushed back ("sometimes the customer calls in a description over the phone"); Elena held the line: "If there's no drawing, you sketch what they described and attach it." Required field added. |
+| Day 7 | Dave sat in on Elena's review and challenged the agent's historical matching on a weldment quote. The agent matched on material and dimensions but missed that the tolerances were tighter, which doubled the labor. Side-by-side comparison showed the agent was correct on four of five specs — Dave caught the one tolerance error that mattered. | Unplanned intervention | Tolerance class needs to be a matching criterion, not just material and dimensions. Design task for next sprint. |
+| Day 10 | Ty reported that a customer praised Meridian's same-day turnaround on a standard bracket quote — first time Meridian had ever delivered a quote that fast. Customer submitted a second RFQ the same afternoon. | — (positive signal) | Speed is producing repeat inbound. Track whether faster turnaround correlates with increased RFQ volume from existing customers. |
 
 At the end of week two, tally entries by category. The category with the most entries is the first thing to fix — and the strongest signal for where the next sprint should aim.
 
@@ -172,24 +161,28 @@ DELTA:               [the change — quantified]
 OUTCOME IN ONE SENTENCE: [what this sprint produced, stated plainly]
 ```
 
-<!-- TODO: Update to Meridian Manufacturing — the quoting sprint measurement below is a placeholder. -->
-
-In the quoting sprint:
+At Meridian:
 
 ```
-SIGNAL STATEMENT:    Design engineers spend 4-6 hours per quote, creating a bottleneck
-                     that delays proposals and deprioritizes high-probability bids.
-COST AT START:       ~30 engineering hours/week on quoting; average quote turnaround
-                     of 4.2 days; win rate on quoted deals: 22%.
-RESULT AFTER SPRINT: ~5 engineering hours/week on quote review; average quote turnaround
-                     of 0.8 days; win rate on quoted deals after 3 months: 32%.
-DELTA:               25 engineering hours/week recovered; turnaround reduced by 81%;
-                     win rate increased 10 percentage points.
-OUTCOME IN ONE SENTENCE: Rapid-estimate workflow freed design engineers from quote
-                     creation, cut turnaround from 4 days to under 1, and produced a
-                     10-point win rate increase by letting the team focus engineering
-                     time on high-probability bids.
+SIGNAL STATEMENT:    Elena Ruiz is the sole quoting bottleneck. Every quote runs
+                     through her — $558K/year in lost revenue, misallocated time,
+                     and shop floor underutilization.
+COST AT START:       Average quote turnaround: 3.8 days. Elena's time on quoting:
+                     ~15 hours/week. Throughput limited to 8-10 quotes/week by
+                     Elena's capacity alone.
+RESULT AFTER SPRINT: Average quote turnaround on standard work: 4.2 hours. Elena's
+                     time on quoting: ~5 hours/week. Throughput doubled to 18-22
+                     quotes/week. $47K in new revenue in the first month from bids
+                     that would previously have arrived too late.
+DELTA:               Turnaround reduced by 89%. Elena recovered 10 hours/week.
+                     Quote volume doubled. First-month revenue recovery: $47K.
+OUTCOME IN ONE SENTENCE: Three-agent quoting pipeline removed Elena as the
+                     bottleneck on standard work, cut turnaround from 3.8 days to
+                     4.2 hours, and produced $47K in new revenue in month one by
+                     letting Meridian quote fast enough to win jobs they used to lose.
 ```
+
+Leading indicators the team tracked weekly: quote volume per week, confidence score distribution across the agent pipeline, and escalation frequency to Dave on non-standard materials. Those leading indicators matter because the outcome sentence is a trailing measurement — it tells you what happened. The leading indicators tell you whether it will keep happening.
 
 That outcome sentence mirrors the Signal statement. It is the artifact Compound works against. If you can't produce it, stop and diagnose before declaring the sprint done.
 
@@ -200,13 +193,14 @@ Go back to your Signal instrument. Copy the constraint statement and quantified 
 
 ## The *delivery test*.
 
-Three questions separate "deployed" from "delivered."
+The delivery test is a checklist, not a conversation. Run it before you declare the sprint complete:
 
-1. Can the people whose work changed describe, concretely, what they now do differently?
-2. Has the workflow produced results on real inputs for at least two weeks without reverting to the old process?
-3. Can you show the leadership team a number that moved — tied directly to the constraint Signal identified?
+- [ ] The people whose work changed can describe, concretely, what they now do differently — and the old process is closed, not running in parallel.
+- [ ] The workflow has produced results on real inputs for at least two weeks without anyone reverting to the previous method.
+- [ ] You can show the leadership team a number that moved — tied directly to the constraint Signal identified.
+- [ ] The operational log exists, is owned by a named person, and has been reviewed at least twice.
 
-If all three are yes, the sprint delivered. If not, you deployed. There is a difference.
+Every unchecked box is a task, not a judgment call. Check them all and the sprint delivered. Leave any unchecked and you deployed a tool — the organization has not changed yet.
 
 :::{.callout-tip}
 ## Pro Tip

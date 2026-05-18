@@ -40,7 +40,7 @@ If you haven't completed the AI Readiness Scorecard yet, go back to Chapter 1 an
 
 ## Run *Signal* on yourself.
 
-Not next quarter. Not after the offsite. Not after you finish the next tool evaluation. Now.
+Not after the offsite or the next tool evaluation. Now.
 
 The first move is to run Signal on your own organization — the same discipline this book describes. Find the real constraint. Name it precisely. Quantify what it costs you in dollars and hours and headcount over a year.
 
@@ -78,18 +78,18 @@ You need three roles filled. Not three hires. Three seats at the table.
 
 :::{.callout-tip}
 ## Pro Tip
-You don't need permission from IT. You don't need an AI strategy document. You need one constraint, one orchestrator, and one builder. Everything else follows.
+You don't need permission from IT or an AI strategy document. You need a constraint, an orchestrator, and a builder — everything else follows.
 :::
 
 ## The *Clarity Call*.
 
 If you want a peer to pressure-test that constraint with you before you spend a quarter on it, we offer one mechanism. It's called the **Clarity Call**.
 
-30 minutes. At no cost. With an operator, not a salesperson. `jf-note: that fucking triplet. also, it will be with a compound strategist.`
+Book a free 30-minute Clarity Call with a Compound strategist who will diagnose your constraint, not pitch you a product.
 
 I was on a discovery call with a physical therapy practice owner — one of the top private practices in the country, by his own description, and I believed him. He'd just come back from a foundation retreat and he was lit up. His vision: an automated executive suite. AI agents for every C-suite function. Budgeting, forecasting, marketing, KPI management — all of it running on agents trained on his institutional knowledge. He wanted to package that knowledge and take it to the world.
 
-It was a genuinely impressive vision. So I asked the only question that mattered: "Who on your team would build this?"
+It was an impressive vision. So I asked the only question that mattered: "Who on your team would build this?"
 
 He went quiet. Then: "I don't have that person."
 
@@ -120,7 +120,7 @@ Once you have a constraint named clearly enough to commit a sprint to it, you ha
 
 Set the quarterly rhythm from Chapter 10 to make it repeatable. A disciplined operating team with EOS or Scaling Up already in place can execute a first sprint on its own. Many will. We wrote the book so they could.
 
-**Path B: Run it with Compound.** The same Sequence, paired with weekly retros, a cohort of peer CEOs running the same framework against constraints in their own companies, and Compound operators coaching you through each stage. The membership includes tools that run the same methodology — faster and more persistently than paper can — along with a Clarity Call (30 minutes, no cost) where an operator walks through your constraint with you and tells you whether it's sprint-ready. The membership is for operators who'd rather not run the first one alone.
+**Path B: Run it with Compound.** The same Sequence, paired with weekly retros, a cohort of peer CEOs running the same framework against constraints in their own companies, and a Compound strategist coaching you through each stage. The membership includes tools that run the same methodology — faster and more persistently than paper can — along with a Clarity Call (30 minutes, no cost) where a strategist walks through your constraint with you and tells you whether it's sprint-ready. The membership is for leaders who'd rather not run the first one alone.
 
 Either path works when the team already has operating discipline in place. The one that doesn't work is the one most companies are still on: buying more tools and hoping a structure will emerge from them.
 
@@ -131,9 +131,7 @@ Decide which path you're taking. Write it down. If Path A, schedule the Signal s
 
 ## Your one-page *plan*.
 
-```jf-note:
-this needs to be an excalidraw
-```
+{{< excalidraw ch11-first-sprint-plan "First Sprint Plan template: constraint, estimated annual cost, team roster, path choice, first step, target quarter." >}}
 
 This is the deliverable. Everything before this section was education. This is commitment.
 
@@ -163,7 +161,7 @@ FIRST STEP:
 TARGET QUARTER: _______________
 ```
 
-Here's what it looks like filled in.
+Here's what it looks like filled in. Greenline Home Services is an illustrative example built from patterns across multiple Compound engagements.
 
 ```
 FIRST SPRINT PLAN — Greenline Home Services
@@ -207,7 +205,7 @@ This book started with a developer leaving and a company playing chutes and ladd
 
 We went from thirteen people to eight in one year. Billings up. Profitability up. The Rhythm changed which question we asked about every capacity problem. The math is not theoretical. It works. The question is when you start — and the answer is determined by how expensive the current constraint is per quarter you leave it unaddressed.
 
-The book gives you the Sequence. The Clarity Call accelerates it. The plan on this page makes it real. The constraint is the first move — and the first move is available to you right now.
+You have the Sequence, and the Clarity Call can accelerate the first sprint if you want a peer in the room. The constraint is the first move — and the first move is available to you right now.
 
 ---
 

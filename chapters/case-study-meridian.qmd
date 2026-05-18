@@ -1,5 +1,7 @@
 # Meridian Manufacturing: A Complete Compound Sprint
 
+*Meridian Manufacturing is a fictional composite built from patterns across multiple Compound engagements. The characters, company details, and specific numbers are illustrative — but the constraint, the process, and the results reflect real outcomes we have seen repeated.*
+
 Meridian Manufacturing is a custom metal fabrication shop in Grand Rapids, Michigan. \$7.2M in revenue. Twenty-seven employees — fourteen on the shop floor, thirteen in the office. They make custom parts and assemblies for industrial clients: brackets, housings, structural frames, one-offs and short runs. Every job is different. The work is won through competitive bidding — clients send RFQs, Meridian quotes them, and the fastest accurate quote usually wins the job.
 
 The company runs EOS. Mark Ellison is the CEO and visionary — he built the business from a two-person garage shop eighteen years ago and still holds the key customer relationships. Elena Ruiz is the VP of Operations and integrator — she runs the floor, manages scheduling, and is the only person in the company who can produce a complete quote. They have a sales lead (Ty Banfield), a senior design engineer (Dave Kowalski, thirty-one years in fabrication), and a shop floor supervisor (Carlos Medina). The rest of the team is project managers, junior engineers, welders, machinists, and admin.

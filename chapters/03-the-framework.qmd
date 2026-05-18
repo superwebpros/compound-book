@@ -119,26 +119,26 @@ Walk the checklist with your leadership sponsor. Every unchecked box is a blocke
 
 ### What a populated canvas looks like.
 
-Remember Meridian Consulting Group from Chapter 1? \$5M revenue, twenty-eight people, professional services, running EOS. Two partners, one ops manager, four project leads. Their AI Readiness Scorecard showed two Reds and three Yellows — and Information Readiness was Red because the ops manager *was* the documentation. She ran onboarding from memory, managed delivery timelines in her head, and was the only person who knew how invoicing logic worked.
+Remember Meridian Manufacturing from Chapter 1? \$7.2M revenue, twenty-seven employees, custom metal fabrication in Grand Rapids, running EOS. Mark Ellison is the CEO and visionary; Elena Ruiz is the VP of Operations and integrator — and the only person in the company who can produce a complete quote. Quotes take three to five business days. Competitors turn them in twenty-four to forty-eight hours. Meridian is losing bids not on price but on speed, and the bottleneck is Elena.
 
 Here's what Meridian's first Sprint Planning Canvas looks like.
 
-**Constraint:** The ops manager is the single point of failure for onboarding, delivery scheduling, and invoicing — knowledge that exists only in her head, costing an estimated \$150K in lost capacity and creating existential risk if she leaves.
+**Constraint:** Elena Ruiz is the sole quoting bottleneck — every quote flows through her, costing an estimated \$558K/year in delayed and lost revenue.
 
-**Leadership sponsor:** Managing Partner. **Human Orchestrator:** Ops Manager. **Quarter:** Q3.
+**Leadership sponsor:** Mark Ellison (CEO/Visionary). **Human Orchestrator:** Elena Ruiz (VP Ops/Integrator). **Quarter:** Q3.
 
 | Stage | Key Question | Answer |
 |---|---|---|
-| **Signal** | What is the ONE constraint, and what does it cost? | One person holds onboarding, scheduling, and invoicing knowledge with no backup. Partner estimate: \$150K/year in lost capacity. Three deliverables slipped during her last two-week absence. |
-| **Source** | What does the org know about this problem? | The ops manager knows the workflows — but they're not written down. Project leads know their own client processes but can't describe each other's. Handoff from sales to delivery is different every time. No single system of record. |
-| **Design** | What does the human + AI workflow look like? | AI handles intake documentation, delivery timeline generation, and invoicing logic based on captured SOPs. Ops manager owns judgment calls and exception handling. Orchestrator reviews AI output before it routes to project leads. |
-| **Build** | What gets built? | Knowledge capture sessions with the ops manager, structured into an operational knowledge base. Low-code automation for onboarding handoffs and delivery scheduling via existing PM tool. Claude-powered invoicing assistant that follows documented logic. |
-| **Deliver** | How do you know it worked? | A second person can run onboarding end-to-end without the ops manager in the room. Delivery timelines no longer slip when she's out. Invoicing logic is documented and executable by the system. |
-| **Compound** | What did you learn? | Review whether the knowledge-capture pattern applies to other single-point-of-failure roles. Document what Source revealed that Signal missed. Feed the operational knowledge base into the next Sprint's infrastructure. |
+| **Signal** | What is the ONE constraint, and what does it cost? | Elena is the only person who can produce a complete quote. Quoting takes 3.8 days average. Competitors close in 24–48 hours. Estimated cost: \$558K/year in delayed and lost bids. |
+| **Source** | What does the org know about this problem? | Elena holds the quoting logic. Dave Kowalski (Sr Design Engineer, 31 years) holds the fabrication knowledge that informs material and labor estimates. Ty Banfield (Sales Lead) owns HubSpot CRM and sees the RFQs first. The critical artifact is "Customer Notes.xlsx" — 147 rows of pricing exceptions Elena maintains by hand. JobBOSS ERP holds job history but is not connected to CRM. |
+| **Design** | What does the human + AI workflow look like? | AI drafts quotes by pulling customer history from HubSpot, job data from JobBOSS, and exception rules from Customer Notes.xlsx. Elena reviews and approves — she owns judgment on non-standard jobs. Ty routes inbound RFQs and validates final quotes before they go to the customer. |
+| **Build** | What gets built? | Knowledge capture sessions with Elena and Dave, structured into a quoting knowledge base. n8n workflow connecting HubSpot → JobBOSS → Claude for quote generation. Claude-powered quoting assistant that applies documented pricing logic and flags exceptions for Elena's review. |
+| **Deliver** | How do you know it worked? | Quote turnaround drops from 3.8 days to under eight hours. Ty can initiate a draft quote without Elena in the room. Exception flags catch non-standard jobs before they go out. Win rate on competitive bids improves. |
+| **Compound** | What did you learn? | Review whether the knowledge-capture pattern applies to other Elena-dependent workflows (scheduling, vendor negotiation). Document what Source revealed that Signal missed. Feed the quoting knowledge base into the next Sprint's infrastructure. |
 
-**Team:** Ops manager (holds the knowledge being captured), senior project lead (downstream of the bottleneck), one partner (sponsor and validator). **Technical resource:** External Compound partner.
+**Team:** Elena Ruiz (domain owner, holds the quoting knowledge), Dave Kowalski (knowledge source, fabrication and estimating expertise), Ty Banfield (Sales Lead, CRM owner, downstream of the bottleneck). **Technical resource:** Freelance n8n developer for API integrations.
 
-**Review:** Quarterly operating session, end of Q3. Attendees: both partners, ops manager, project leads. Calendar invite sent before Signal begins.
+**Review:** Quarterly operating session, end of Q3. Attendees: Mark Ellison, Elena Ruiz, Ty Banfield, Dave Kowalski. Calendar invite sent before Signal begins.
 
 **Pre-flight:** All five boxes checked. Sprint is live.
 
@@ -163,7 +163,7 @@ The project coordinator story — the one where we mapped the work instead of po
 
 The Sprint is bounded by scope, not by a fixed calendar. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. One constraint, one documented outcome. That is the bar.
 
-The Rhythm is what turns that one Sprint into a compounding business. Quarterly, you run another one. The Hybrid Accountability Chart gets one more entry. The knowledge maps get richer. The team's design judgment improves. The Sprints themselves get cheaper and faster, because the infrastructure each Sprint leaves behind accelerates the next one. *Co-Intelligence + Rhythm = Compound.* The Equation is not a slogan — it is a description of what happens to a company that runs this work on a cadence.
+The Rhythm is what turns that one Sprint into a compounding business. Quarterly, you run another one. The Hybrid Accountability Chart gains new entries. The knowledge maps get richer. The team's design judgment improves. The Sprints themselves get cheaper and faster, because the infrastructure each Sprint leaves behind accelerates the next one. *Co-Intelligence + Rhythm = Compound.* The Equation is not a slogan — it is a description of what happens to a company that runs this work on a cadence.
 
 The first Sprint is where the Framework stops being something you read about and starts being something your organization can do. Every Sprint after that is what makes the change permanent.
 

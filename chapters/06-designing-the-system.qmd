@@ -23,7 +23,7 @@ The first is a *designed workflow* — specific enough that Build can execute ag
 
 The second is a set of entries in the *Hybrid Accountability Chart* for the accountabilities this sprint is addressing. Each entry names the function, the agent team (if applicable), the human supervisor, and whether the work is AI-assisted or automated. A single sprint often produces multiple entries — the PM workflow we ran internally generated five in its first pass. Over many sprints, the chart fills in. After one sprint, it has its first rows — the first piece of structural evidence that your company is operating as a Co-Intelligent Company rather than a human company that happens to use AI tools.
 
-Design produces both or it has produced nothing. A workflow without an accountability entry is a process map without an owner. An accountability entry without a designed workflow is an org chart row with nothing behind it. The two deliverables are the same artifact viewed from two angles — one is the operational shape of the work, the other is the structural shape of the responsibility.
+Design produces both or it has produced nothing. A workflow without an accountability entry is a process map nobody owns. An accountability entry without a designed workflow is an org chart row with nothing behind it. The two deliverables are the same artifact viewed from two angles — one is the operational shape of the work, the other is the structural shape of the responsibility.
 
 ## The *Hybrid Accountability Chart*.
 
@@ -129,7 +129,7 @@ This is a spectrum, not a binary. And it shifts over time. Nothing about the age
 
 **Move toward automated when:** the human is rubber-stamping more often than not. When the review consistently confirms what the agent already produced, the design is ready to shift the human's role back — toward exception handling and final approval rather than line-by-line review.
 
-The autonomy level is a governance decision, not a capability decision. The agent may be perfectly capable of running unsupervised. The question is whether your organization has the monitoring, the escalation paths, and the discipline to let it. Start with more guardrails than you think you need. Loosening them is easy. Recovering from a bad output that went unreviewed is expensive.
+The autonomy level is a governance decision, not a capability decision. The agent may be perfectly capable of running unsupervised. The question is whether your organization has the monitoring, the escalation paths, and the discipline to let it. Start with more guardrails than you think you need. Loosening guardrails is easy. Recovering from a bad output that went unreviewed is expensive.
 
 :::{.callout-note}
 ## Action Step
@@ -176,15 +176,15 @@ You met a version of this role in Chapter 2 — our marketing lead running four 
 
 The Human Orchestrator role isn't a title you assign to whoever's available. It requires specific capabilities, and identifying the right person is part of the design work.
 
-We believe everyone in a knowledge business will eventually need to become an orchestrator at some level. The skills involved are not exotic: context management — knowing what information each agent needs and when. Knowing what good looks like — being able to evaluate output quality without redoing the work yourself. The ability to communicate clearly across different agents and platforms. And a working understanding of the tools and information different agents need to be successful. If this sounds familiar, it should. It's not that different from good management — creating the conditions for the people you're responsible for to succeed. Orchestration is management extended to a workforce that includes agents. Not a new discipline. The same discipline, applied to a larger team.
+Everyone in a knowledge business will eventually need to become an orchestrator at some level. The skills involved are not exotic: context management — knowing what information each agent needs and when. Knowing what good looks like — being able to evaluate output quality without redoing the work yourself. The ability to communicate clearly across different agents and platforms. And a working understanding of the tools and information different agents need to be successful. If this sounds familiar, it should. It's not that different from good management — creating the conditions for the people you're responsible for to succeed. Orchestration is management extended to a workforce that includes agents. The same discipline, applied to a larger team.
 
-Look for three things. First, authority over the workflow and the constraint outcome. This person needs to be able to make decisions about how the work gets done — not a project manager who coordinates, but an owner who decides. Second, comfort with ambiguity. The first few sprints will surface problems nobody anticipated. The Orchestrator needs to adjust the design without freezing. Third, willingness to shift from executing to designing. The best candidate is usually the person closest to the work who's also frustrated by the parts of it that don't require their skill.
+The right person has authority over the workflow and the constraint outcome — not a project manager who coordinates, but an owner who decides. They need comfort with ambiguity, because the first few sprints will surface problems nobody anticipated and the Orchestrator has to adjust the design without freezing. And they need willingness to shift from executing to designing. The best candidate is usually the person closest to the work who's also frustrated by the parts of it that don't require their skill.
 
 That third trait is the development gap. The operations lead who got the job because she was excellent at executing operations work is now being asked to design the operations function instead of running it. It's a different role, and developing the capability is deliberate work, not a personality change.
 
 This shift requires investment. Upskilling employees to work in an orchestration environment — learning the available tools, understanding what agents can and cannot do, and building the habit of thinking through problems systematically rather than executing them directly — is not optional. Budget for it. The operations lead who became an orchestrator did not wake up with those capabilities. She developed them over several sprints with deliberate support.
 
-What does ramp-up look like? The first sprint is guided — the Orchestrator runs Design with support, either from a Compound partner or by working through the framework's question sequence step by step. Someone experienced sits alongside them, not to do the work, but to coach the process. By the second sprint, they're running the process independently. By the fourth, they're improving it. The skill isn't learned in a training session. It's learned by doing the work, one sprint at a time, with the framework holding the structure while the person builds the muscle.
+What does ramp-up look like? The first sprint is guided — the Orchestrator runs Design with support, either from a Compound coach or by working through the framework's question sequence step by step. Someone experienced sits alongside them, not to do the work, but to coach the process. By the second sprint, they're running the process independently. By the fourth, they're improving it. The skill isn't learned in a training session. It's learned by doing the work, one sprint at a time, with the framework holding the structure while the person builds the muscle.
 
 :::{.callout-note}
 ## Action Step
@@ -207,40 +207,38 @@ The artifact that comes out of the Design Team's work is a *Design Brief* — a 
 
 :::{.callout-tip}
 ## Pro Tip
-If you run EOS, you may find overlap between your L10 cadence and Design Team meetings — the constraint often comes out of your Quarterly Rocks, and the review rhythm is similar. But they're not the same thing. The L10 drives the operating system. The Design Team designs the Human+AI workflows. Keep them distinct even if they share participants and timing.
+If you run EOS, you may find overlap between your L10 cadence and Design Team meetings — the constraint often comes out of your Quarterly Rocks, and the review rhythm is similar. But they're not the same thing. The L10 drives the operating model. The Design Team designs the Human+AI workflows. Keep them distinct even if they share participants and timing.
 :::
 
 ## The populated *example*.
 
-<!-- NOTE: This example uses a manufacturing quoting scenario. Once the Meridian case study is finalized, update names and details to match. -->
+Here's what the Hybrid Accountability Chart looks like for a real constraint — Meridian Manufacturing's quoting workflow from the previous chapters.
 
-Here's what the Hybrid Accountability Chart looks like for a real constraint — the manufacturing quoting workflow from the previous chapters.
+**Constraint (from Signal):** Elena Ruiz, VP of Operations, is the sole bottleneck for quoting — pricing exceptions, material lead times, labor estimates, and customer-specific terms all require her direct involvement, resulting in 3–5 day quote turnaround versus the 24–48 hour industry standard. Estimated annual cost: $558K in lost revenue, misallocated time, and floor underutilization.
 
-**Constraint (from Signal):** Design engineers spend 4-6 hours producing initial designs for every bid, including the 50%+ that won't convert, at an estimated cost of $180K/year in misallocated engineering time.
-
-**Knowledge Map (from Source):** CRM with win/loss history (manual pipeline), ERP with materials pricing (not connected to quoting), quoting spreadsheet with 200+ exception rules on one person's desktop, two organic sources (ops manager Maria, senior engineer Dave), two missing sources (historical quote accuracy, segment conversion rates).
+**Knowledge Map (from Source):** HubSpot CRM with win/loss history (manual pipeline), JobBOSS ERP with job costing history and rate card (not connected to quoting), "Customer Notes.xlsx" — 147 rows of pricing exceptions on Elena's desktop (cleaned to 112 validated rules during Build), two organic sources (Elena for pricing judgment, Dave Kowalski for fabrication hour estimation), two missing sources (historical quote-to-actual accuracy, customer segment profitability).
 
 ### Hybrid Accountability Chart
 
 | Role / Function | Agent Team | Human Supervisor | Level |
 |---|---|---|---|
-| Bid intake and CRM logging | None (workflow automation) | Sales Director | N/A — standard automation |
-| Customer data retrieval and segment analysis | Quote Research Team | Maria (Ops Manager) | Automated |
-| Draft quote generation (pricing + exceptions + assembly) | Quote Generation Team | Maria (Ops Manager) | AI-Assisted |
-| Design feasibility estimation | None | Dave (Senior Engineer) | N/A — human judgment |
-| Quote delivery and customer negotiation | None | Sales Director | N/A — human judgment |
+| Customer data retrieval and history matching | Quote Research Agent | Elena Ruiz (VP Ops) | AI-Assisted |
+| Material and labor pricing assembly | Quote Pricing Agent | Elena Ruiz (VP Ops) | AI-Assisted |
+| Draft quote generation and review | Quote Assembly Agent | Elena Ruiz (VP Ops) | AI-Assisted |
+| Quote delivery and customer negotiation | None | Ty Banfield (Sales Lead) | N/A — human judgment |
+| Non-standard material and tolerance consultation | None | Dave Kowalski (Sr Design Engineer) | N/A — human judgment |
 
 ### Human Roles
 
-**Human Orchestrator:** VP of Operations. Owns the constraint outcome (reduce engineering hours on non-converting bids). Sets the target: cut initial quote turnaround from 4-6 hours to under 1 hour for standard bids. Reviews sprint results against that target. Makes the call on when to move Quote Generation Team from AI-Assisted to Automated. Day-to-day monitoring of the Quote Research Team and Quote Generation Team is delegated to Maria (Ops Manager), who currently does manual reconciliation between CRM and ERP for every quote and knows the exception rules. Maria reviews every draft quote in sprint one and flags edge cases to the VP of Operations.
+**Human Orchestrator:** Elena Ruiz, VP of Operations. Owns the constraint outcome: reduce quote turnaround from 3–5 days to same-day for standard work. Sets the target: standard quotes delivered within four hours of RFQ receipt, with Elena's review time under twenty minutes per quote. Reviews sprint results against that target. Makes the call on when to move any agent from AI-Assisted toward Automated. Elena reviews every draft quote in sprint one — all three agents start human-in-the-loop. Dave Kowalski provides labor hour estimates for non-standard work and is consulted when the agent encounters materials or tolerances outside its historical range.
 
 ### Guardrails
 
-1. **Data access:** Agent teams can read CRM deal records, ERP pricing tables, and the exception rules database. Off-limits: customer payment history, contract terms marked confidential, and any data in the HR system.
-2. **Actions without approval:** Agents can draft quotes, pull data, and flag exceptions. Agents cannot send any communication to a customer, modify pricing tables, or create CRM records beyond the initial bid log.
-3. **Escalation path:** When the agent encounters an input it wasn't designed for (unknown customer segment, missing ERP data, spec outside historical range), it pauses the quote, flags Maria, and holds until she resolves or routes to the VP of Operations.
-4. **Quality monitoring:** AI-Assisted phase — Maria reviews every draft quote. Target: 95% of draft quotes require no substantive correction over 3 consecutive sprints before considering the move to Automated.
-5. **Kill switch:** Agent sends or stages a quote for external delivery without human review. Agent accesses data outside its permitted systems. Error rate on pricing exceeds 10% in any sprint.
+1. **Data access:** Agent teams can read HubSpot CRM deal records, JobBOSS ERP job costing history and rate card, and the cleaned pricing exceptions database (112 rules). Off-limits: financial reporting, employee records, customer payment history, supplier contracts, and any system not listed.
+2. **Actions without approval:** Agents can draft quotes, pull data, and flag exceptions. Agents cannot send any communication to a customer, modify pricing tables, or apply undocumented pricing exceptions.
+3. **Escalation path:** When the agent encounters an input it wasn't designed for — unknown material, missing ERP data, RFQ confidence below 60%, or pricing deviation greater than 15% from the closest historical match — it flags Elena and holds until she resolves or routes to Dave (materials) or Mark Ellison (strategic account pricing).
+4. **Quality monitoring:** AI-Assisted phase — Elena reviews every draft quote. Target: zero substantive corrections for three consecutive weeks on an agent's output before considering the move to human-on-the-loop.
+5. **Kill switch:** Any quote reaching a customer without Elena's review. Agent accesses data outside its permitted systems. Pricing errors exceed 20% on three quotes in any week.
 
 That's one constraint, one sprint, five chart rows, a named Human Orchestrator, and five guardrail answers. The next chapter covers the work itself — Work Deconstruction, populated examples, prototyping, the Design Brief, and the gate checklist that separates Design from Build.
 

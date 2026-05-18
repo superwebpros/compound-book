@@ -35,7 +35,7 @@ The project coordinator story from the opening of the previous chapter is also t
 
 We pulled her accountability list. Not her job description — those are always cleaner than reality. Her actual list: the items she owned, the work she touched every week. Start there with your own role: write down every accountability, not the aspirational version, but the actual weekly work. Then run every item through the four-category classification. Every item gets a label. Does this require judgment — the kind that depends on knowing the client, knowing the history, reading a room? Does it benefit from agent assistance, with a human reviewing every output? Or is it fully automatable — high-volume, well-defined, clean inputs, predictable outputs?
 
-<!-- TODO: Excalidraw agent — the coordinator before/after diagram currently uses a triplet pattern. Redesign to avoid the three-item rhetorical structure. -->
+<!-- PRODUCTION: Excalidraw agent — the coordinator before/after diagram currently uses a triplet pattern. Redesign to avoid the three-item rhetorical structure. -->
 {{< excalidraw ch06-coordinator-before-after "Coordinator role before/after: tasks that stayed human vs. tasks that became the agent team" >}}
 
 The classification took ninety minutes. What it revealed: a substantial fraction of her work was routing and documentation. Scheduling client check-ins. Updating the project tracker after calls. Generating the weekly status reports from data that already lived in the CRM. That work looked like operations because it happened inside the operations function — but it wasn't operations judgment. It was operations administration. The kind of work that eats a skilled person's hours and leaves them with no time for the parts of the role that actually require them.
@@ -46,46 +46,44 @@ That work became a designed agent team. It landed in the Hybrid Accountability C
 
 The junior coordinator listing was never posted. One row in the chart replaced a $24K hire.
 
-<!-- TODO: Update this example to use Meridian Manufacturing once the case study is finalized -->
-### Populated example: manufacturing quoting
+### Populated example: Meridian Manufacturing quoting
 
-Here's what a completed Work Deconstruction looks like for a different constraint — manufacturing quoting, where design engineers were spending four to six hours producing initial designs for every bid, including the 50%+ that wouldn't convert, at an estimated cost of $180K/year in misallocated engineering time.
+Here's what a completed Work Deconstruction looks like for the Meridian quoting constraint — where Elena Ruiz, the VP of Operations, was the sole bottleneck for every quote. She spent fifteen hours a week building quotes from scratch because she was the only person who held the customer-specific pricing, material lead-time knowledge, and historical job context. The estimated annual cost of the bottleneck was $558K in lost revenue, misallocated time, and floor underutilization.
 
-| Task | Category | Rationale |
-|---|---|---|
-| Receive bid request, log in CRM | Workflow automation only | Routing problem. Trigger on inbound email, auto-create CRM record. No agent needed. |
-| Pull customer history and segment data | Fully automatable | Structured lookup. Agent queries CRM, returns customer profile and win rate for segment. Human audits weekly. |
-| Look up materials pricing in ERP | Fully automatable | Structured lookup against known tables. Agent retrieves, flags anything out of stock or above threshold. |
-| Apply pricing exceptions for customer terms | Agent-assisted | 200+ exception rules, many undocumented. Agent applies known rules and drafts pricing. Human reviews every output until rules are fully captured. |
-| Estimate design feasibility and engineering hours | Human judgment required | Requires thirty years of experience reading specs and knowing what's buildable at what cost. Can't be automated until historical accuracy data exists. |
-| Generate initial quote document | Agent-assisted | Agent assembles the quote from components above. Human reviews every quote before it reaches the customer. |
-| Route quote for internal approval | Workflow automation only | Approval routing based on dollar threshold. Standard automation. |
-| Send quote to customer, handle follow-up | Human judgment required | Customer relationship. Requires reading the negotiation, knowing the account history, deciding what to offer on margin. |
+| Task | Category | Source / Input | Output / Destination | Rationale |
+|---|---|---|---|---|
+| Receive RFQ, log in CRM | Workflow automation only | Inbound RFQ email from client | CRM record in HubSpot, triggers quoting workflow | Routing problem. Standardized intake form auto-creates the CRM record. No agent needed. |
+| Pull customer history from HubSpot | Fully automatable | HubSpot CRM (customer records, win/loss data) → Quote Research Agent | Customer profile, past jobs, pricing terms → Quote Pricing Agent | Structured lookup. Agent queries CRM and returns customer context. Elena audits weekly. |
+| Look up material pricing in JobBOSS | Fully automatable | JobBOSS ERP (materials database, supplier pricing) → Quote Pricing Agent | Material costs, lead times, out-of-stock flags → Quote Pricing Agent | Structured lookup against known tables. Agent retrieves current pricing and flags anything unavailable or above threshold. |
+| Cross-reference Customer Notes.xlsx for pricing exceptions | Agent-assisted | Customer Notes.xlsx (112 validated rules) → Quote Pricing Agent | Applicable exception rules with confidence flags → Elena for review | 112 customer-specific pricing rules — some simple discounts, others complex terms with context the spreadsheet doesn't fully capture. Agent applies documented rules. Elena reviews every output until the exception set is fully validated. |
+| Calculate final price and assemble quote | Agent-assisted | All upstream agent outputs + Dave's labor hour estimate + rate card → Quote Assembly Agent | Draft PDF quote in Meridian's standard format → Elena's review queue in HubSpot | Agent assembles the complete quote from research, pricing, and labor inputs. Elena reviews every draft — fifteen to twenty minutes instead of building from scratch in three hours. |
+| Review and approve quote | Human judgment required | Agent-assembled draft quote → Elena | Approved quote → Ty for delivery | The design decision that makes everything else work. Elena holds final authority on every number. Her judgment catches what the exception rules miss — strategic account considerations, spec ambiguities, margin calls on edge cases. |
+| Deliver quote to customer | Human judgment required | Approved quote PDF → Ty via HubSpot sales queue | Quote delivered to customer, follow-up tracked in CRM | Customer relationship. Ty reads the negotiation, knows the account history, decides timing and positioning. The handoff from Elena to Ty is structured — the approved quote lands in his CRM queue with context notes. |
 
-Task count: Human judgment required — 2. Agent-assisted — 2. Fully automatable — 2. Workflow automation only — 2. The role that felt like "engineering work" was half engineering judgment and half data retrieval, document assembly, and routing that a well-designed agent team could handle.
+Task count: Human judgment required — 2. Agent-assisted — 2. Fully automatable — 2. Workflow automation only — 1. The role that felt like "Elena's judgment" was roughly 65% data retrieval and document assembly — work that required her *access*, not her judgment. The remaining 35% stayed with her because the deconstruction made clear that the judgment was irreducible.
 
 The Hybrid Accountability Chart entries that came out of this deconstruction:
 
 | Role / Function | Agent Team | Human Supervisor | Level |
 |---|---|---|---|
-| Bid intake and CRM logging | None (workflow automation) | Sales Director | N/A |
-| Customer data retrieval and segment analysis | Quote Research Team | Maria (Ops Manager) | Automated |
-| Draft quote generation (pricing + exceptions + assembly) | Quote Generation Team | Maria (Ops Manager) | AI-Assisted |
-| Design feasibility estimation | None | Dave (Senior Engineer) | N/A |
-| Quote delivery and customer negotiation | None | Sales Director | N/A |
+| RFQ intake and CRM logging | None (workflow automation) | Ty Banfield (Sales Lead) | N/A |
+| Customer data retrieval and history matching | Quote Research Agent | Elena Ruiz (VP Ops) | AI-Assisted |
+| Material and labor pricing assembly | Quote Pricing Agent | Elena Ruiz (VP Ops) + Dave Kowalski (labor estimates) | AI-Assisted |
+| Draft quote generation and review | Quote Assembly Agent | Elena Ruiz (VP Ops) | AI-Assisted |
+| Quote delivery and customer follow-up | None | Ty Banfield (Sales Lead) | N/A |
 
-Every row has a name. Every agent team has a supervisor. The accountability that stays human stays human — not because we couldn't try to automate it, but because the deconstruction made clear that the judgment is irreducible.
+Every row has a name. Every agent team has a supervisor. All agent outputs start AI-Assisted — Elena reviews every quote. The accountability that stays human stays human — not because they couldn't try to automate it, but because the deconstruction made clear that the judgment is irreducible.
 
 :::{.callout-tip}
 ## Pro Tip
-The difference between AI-Assisted and Automated is the review cadence. AI-Assisted: every output gets a human eye before it ships. Automated: outputs ship, and a human reviews a sample or responds to flags. If you're not sure which to pick, start AI-Assisted. Moving toward Automated is a promotion the agent earns. Moving the other direction means something already went wrong.
+The difference between AI-Assisted and Automated is the human's role, not the review frequency. AI-Assisted: the human reviews every output and holds final authority. Automated: outputs ship, and the human's role shifts to handling exceptions, monitoring aggregate quality, and making final decisions on edge cases. If you're not sure which to pick, start AI-Assisted. Moving toward Automated is a promotion the agent earns — it happens when the human is rubber-stamping more often than correcting. Moving the other direction means something already went wrong.
 :::
 
 ## Seeing the *design*.
 
 A good workflow design is legible — you can look at it and trace the path from input to output, see where humans decide and where agents execute, and spot the gaps before Build discovers them for you.
 
-Three tools make the design visible. You don't need all three for every sprint, but you should know they exist and reach for the right one.
+The right visualization depends on what you're designing. You don't need every tool for every sprint, but you should know what's available and reach for the right one.
 
 **Swim lane diagrams** are for mapping information flows between humans and agents. Draw two lanes — one for human work, one for agent work. Walk the workflow from trigger to output and draw each step in the lane where it happens. Every time the work crosses from one lane to the other, that's a handoff. Every handoff is a design decision: what format does the output need to be in? Who reviews it? What happens when the handoff fails? Swim lanes force you to answer those questions because the crossing points are visible. If your swim lane diagram has fifteen crossings for a six-step workflow, you've designed something that will be fragile in production. Simplify before you build.
 

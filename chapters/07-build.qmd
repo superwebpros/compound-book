@@ -75,7 +75,7 @@ Between those poles is where most builds land — a workflow that pulls from one
 
 The team enters Build with a designed workflow. They exit Build with that workflow operating in production. Between those two points is a choice — and the design already made it. The choice is which path fits the design, nothing else.
 
-Three paths cover almost every Compound sprint:
+The build paths that cover almost every Compound sprint:
 
 - **Off-the-shelf tool.** Existing software that maps cleanly to the designed workflow with light configuration. The work is selection, configuration, and integration into the team's existing flow — not building from scratch. Use this path when a mature product category already does what the design requires, with no custom behavior needed.
 
@@ -141,7 +141,7 @@ For most Compound sprints, proprietary models are the right call. The data sensi
 
 ### Making AI work with your data.
 
-Every team wants the same thing from AI: access their data, sound like them, reduce hallucinations. Three approaches solve those problems, and the trade-offs between them determine a significant piece of your build.
+Every team wants the same thing from AI: access their data and reduce hallucinations. The approaches that solve those problems — and the trade-offs between them — determine a significant piece of your build.
 
 *Fine-tuning* is retraining a model on your data so it behaves differently by default. Think of it as teaching the model your company's dialect — it changes how the model thinks. Fine-tuning is expensive, slow to set up, and hard to update. When your data changes, you retrain. It makes sense when you need the model to behave differently than it does out of the box, across thousands of interactions, with the same specialized pattern. For most organizations, fine-tuning is rare.
 
@@ -164,7 +164,7 @@ When a vendor or builder proposes fine-tuning, ask: "Could we get the same resul
 
 Once you know what the build does and which model powers it, the next decision is where it runs. Deployment determines who controls the infrastructure, how the data moves, and what happens when usage scales. Most leaders don't need to manage deployment directly, but you need to understand the options well enough to ask the right questions — because the wrong deployment choice can blow up a build that was technically sound in every other respect.
 
-Three options, increasing in complexity:
+The options, increasing in complexity:
 
 **Provider-hosted (API).** Your build calls the model through the provider's API. The model runs on their servers. This is the default for most builds — simplest to set up, no infrastructure to manage, and where most low-code platforms connect.
 
@@ -214,25 +214,25 @@ A complete spec covers eight sections:
 
 {{< excalidraw ch07-build-spec-sections "Build Spec Writer: eight sections with section name and a one-line description of what belongs in each." >}}
 
-Here's what those sections look like filled in. This is from a manufacturing firm — 60 people, quoting bottleneck costing $180K a year in engineering time. Signal nailed the constraint, Source mapped the data, Design produced the workflow. Build started with this spec:
+Here's what those sections look like filled in. This is from Meridian Manufacturing — twenty-seven employees, custom metal fabrication, quoting bottleneck costing $558K a year in lost revenue, misallocated VP time, and shop floor underutilization. Signal nailed the constraint, Source mapped the data, Design produced the workflow. Build started with this spec:
 
-**Section 1 — Workflow Summary:** When a new bid request arrives in the CRM, the quoting agent drafts a rapid cost estimate using the historical quote library, rate card, and customer segment data. The estimate lands in the project lead's review queue within 15 minutes. The project lead reviews, edits if needed, and routes: high-confidence estimates go to the principal for final sign-off; low-confidence estimates get flagged for full engineering review.
+**Section 1 — Workflow Summary:** When a new RFQ arrives through the standardized intake form, a CRM record is created and the quoting workflow triggers automatically. The Quote Research Agent pulls customer history and matches the RFQ against three years of historical jobs in the ERP. The Quote Pricing Agent applies the rate card, the senior engineer's labor estimate, and the applicable pricing exceptions. The Quote Assembly Agent formats the draft as a PDF and places it in the VP of Operations' review queue. She reviews, edits if needed, and approves. The approved quote routes to the sales lead for customer delivery.
 
-**Section 2 — Inputs:** Inbound bid brief (submitted via web form, parsed into CRM as a new deal record), historical quote library (3 years, indexed by project type and final price), current rate card (maintained by finance in ERP), customer segment data (CRM field — existing, new, or strategic account), and win/loss history (CRM conversion rates by segment).
+**Section 2 — Inputs:** Inbound RFQ (submitted via standardized intake form, parsed into HubSpot CRM as a new deal record), ERP job costing history (three years, roughly 800 completed jobs), current rate card (maintained by finance in JobBOSS ERP), cleaned pricing exceptions database (112 validated customer-specific rules, sourced from the VP's spreadsheet), senior engineer's labor hour estimate (submitted via structured form), and CRM customer history including win/loss records.
 
-**Section 3 — Outputs:** A rapid cost estimate landing in the project lead's CRM queue as a draft record — containing estimated price range, line-item breakdown, confidence flag (high/medium/low), and the three most similar historical quotes. Plus a routing recommendation the project lead confirms or overrides.
+**Section 3 — Outputs:** A draft PDF quote in Meridian's standard format, landing in the VP of Operations' CRM review queue — containing line-item breakdown (materials, labor, overhead, margin), confidence score (high/medium/low), the closest historical job matches with pricing, and any exception rules applied. Plus a flag for any input the agent could not resolve.
 
-**Section 4 — Agent Scope:** The agent matches the brief to three similar historical quotes, applies rate card pricing, flags confidence level, and drafts the estimate. The agent does not set a final price, override the rate card, apply customer-specific exceptions, or send anything to the client.
+**Section 4 — Agent Scope:** Quote Research matches the RFQ to historical jobs by spec, materials, and complexity, and surfaces customer context and pricing terms. Quote Pricing calculates the draft price using historical matches, rate card, labor estimates, and exception rules. Quote Assembly generates the formatted PDF. No agent sets a final price, overrides the rate card, applies undocumented exceptions, or sends anything to a customer.
 
-**Section 5 — Human Supervisor Role:** Project lead reviews every estimate. Reviews for scope interpretation, pricing range, confidence flag, and routing. Expected review: 10-15 minutes per estimate vs. 4-6 hours for the old process. Escalation: low-confidence goes to engineering, pricing exceptions go to ops, anything over $50K goes to principal.
+**Section 5 — Human Supervisor Role:** Elena Ruiz, VP of Operations, reviews every draft quote. Reviews for scope interpretation, pricing accuracy, confidence score, and exception rule application. Expected review: fifteen to twenty minutes per quote, down from three hours when she built quotes from scratch. Escalation: low-confidence quotes get her full manual review; non-standard materials route to the senior engineer; strategic account pricing goes to the CEO.
 
-**Section 6 — Systems and Integrations:** CRM (read/write), ERP rate card (read only), shared drive quote library (read only, needs indexing before build), email (read only, via existing CRM integration). Sensitivity: pricing data is medium; everything else is low.
+**Section 6 — Systems and Integrations:** HubSpot CRM (read/write — customer records, RFQ intake, quote pipeline, delivery queue), JobBOSS ERP (read — historical job costing, rate card, materials pricing), Claude Team workspace (single project with three defined workflows), n8n (workflow orchestration and system connectors). Sensitivity: pricing data is medium; everything else is low.
 
-**Section 7 — Failure Modes:** No similar quotes found — route directly to engineering. Rate card stale — flag line item, notify finance. CRM down — briefs queue in email, manual entry, agent processes when connection restores. Estimate off by 25%+ — confidence flag should catch it; project lead review is the safety net.
+**Section 7 — Failure Modes:** No similar historical jobs found — agent flags as "insufficient for rapid estimate" and routes to the VP for full manual review. Unknown material (e.g., Inconel) — agent produces no price estimate for that line item, flags as "manual pricing required." ERP API down — RFQs queue in the CRM, agent processes when connection restores. Confidence score below 60% — draft routes to the VP with a warning flag. Pricing deviation greater than 15% from closest historical match — agent flags the deviation and the VP investigates before approving.
 
-**Section 8 — Build Path and Constraints:** Low-code via Make (existing license). Under $500/month in tooling. Three weeks from spec to deployment. All data stays in existing systems. Quote library must be indexed before build begins — prerequisite, not build task.
+**Section 8 — Build Path and Constraints:** Low-code via n8n (existing license) and Claude Team. Freelance n8n developer for three days of API wiring to HubSpot and JobBOSS. Three and a half weeks from spec to deployment. All data stays in existing systems. Pricing exceptions spreadsheet must be cleaned and validated before build begins — prerequisite, not build task.
 
-That spec gave the builder everything. No ambiguity meetings. No mid-build design decisions. Three weeks, start to finish.
+That spec gave Elena and the freelance developer everything. No ambiguity meetings. No mid-build design decisions. Three and a half weeks, start to finish.
 
 These eight sections are the spec. Fill them in that order before you hand anything to a builder.
 
@@ -280,15 +280,15 @@ Run through these questions before the build executes, not after:
 
 {{< excalidraw ch07-guardrails-checklist "Guardrails Checklist: seven questions as a scannable pre-deploy gate." >}}
 
-Here's what the Guardrails looked like for the quoting agent:
+Here's what the Guardrails looked like for Meridian's quoting agents:
 
-- **Data access:** CRM deal records (read/write), ERP rate card (read), historical quote library (read). No access to financial reporting, employee data, client contracts, or any system not listed.
-- **Agent autonomy:** Can match quotes, apply rate card, generate drafts, assign confidence flags, place in review queue. Cannot send anything to a client, apply pricing exceptions, or commit a quote.
-- **Unrecognized inputs:** If the brief doesn't contain enough information to match against history, the agent flags it as "insufficient for rapid estimate" and routes to the project lead.
-- **Quality measurement:** Weekly comparison of rapid estimates to final quoted prices on converted deals. Target: within 15% on high-confidence quotes.
-- **Escalation path:** Low confidence to engineering, pricing exceptions to ops, anything over $50K to principal.
-- **Accountability:** Project lead owns every estimate the agent produces, the same way they'd own it if a junior team member drafted it.
-- **Kill switch:** Three estimates off by 30%+ in one week, any estimate sent without human review, or any data access outside defined scope. Ops manager holds the switch.
+- **Data access:** HubSpot CRM deal records (read/write), JobBOSS ERP job costing and rate card (read), cleaned pricing exceptions database (read). No access to financial reporting, employee records, customer payment history, supplier contracts, or any system not listed.
+- **Agent autonomy:** Can match RFQs to historical jobs, apply rate card pricing, apply documented exception rules, generate draft PDFs, assign confidence scores, place drafts in review queue. Cannot send anything to a customer, apply undocumented exceptions, override the rate card, or commit a quote.
+- **Unrecognized inputs:** If the RFQ references a material not in the pricing exceptions database or the ERP materials list — particularly specialty alloys like Inconel — the agent produces no price estimate for that line item, flags it as "manual pricing required," and routes to the senior engineer. If the RFQ lacks sufficient spec detail to match against history, the agent flags it as "insufficient for rapid estimate" and routes to Elena.
+- **Quality measurement:** Weekly comparison of agent-drafted prices to Elena's final approved prices on all quotes. Target: substantive corrections on fewer than 10% of drafts within eight weeks. Historical match accuracy tracked separately — target 95% before Elena reduces review cadence on the Research Agent.
+- **Escalation path:** Low-confidence quotes to Elena for full manual review. Non-standard materials to Dave Kowalski (senior engineer). Strategic account pricing to Mark Ellison (CEO). Any quote where the calculated price deviates more than 15% from the closest historical match gets flagged for Elena's investigation before approval.
+- **Accountability:** Elena Ruiz, VP of Operations, owns every quote the agents produce — the same way she'd own it if she'd built it from scratch. She is the named human supervisor in the Hybrid Accountability Chart.
+- **Kill switch:** Pricing errors exceeding 20% on three quotes in any week, any quote reaching a customer without Elena's review, or any data access outside defined scope. Elena holds the switch.
 
 If you cannot answer all seven, the system is not ready to deploy. These are not edge cases. They are the conditions under which the human supervisor can actually supervise.
 
@@ -299,19 +299,19 @@ Answer all seven questions in writing. Attach the answers to the Build Spec as a
 
 ## Sprint: the three-week quoting workflow.
 
-A 60-person professional services firm came into a sprint with a Signal that was almost embarrassing in its clarity — quotes were taking five business days, the principal was the bottleneck on every one, and the constraint was costing them roughly $200K a year in lost or stale deals. Source mapped the inputs: the inbound brief, the historical quote library, the rate card, the scoping checklist. Design produced a workflow where an agent drafted the quote, the project lead reviewed and edited it, and the principal signed off only on the final number.
+Meridian Manufacturing came into Build with a Signal that was almost embarrassing in its clarity — quotes were taking 3.8 days, Elena was the bottleneck on every one, and the constraint was costing them $558K a year in lost revenue, misallocated VP time, and shop floor underutilization. Source mapped the inputs: the inbound RFQ, three years of job costing history in the ERP, the rate card, and a pricing exceptions spreadsheet on Elena's desktop that had never been shared or backed up. Design produced a workflow where three agents — Quote Research, Quote Pricing, Quote Assembly — drafted the quote inside a single Claude project, and Elena reviewed every output before Ty delivered it to the customer.
 
-The build path was low-code. No engineer needed. The team assembled the workflow themselves in three weeks, using tools they already had licenses for. Quotes started going out the same day they came in. The principal got their week back. The cost of the build was a rounding error against what the constraint had been costing.
+The build path was low-code. Elena assembled the workflow herself using Claude Team and n8n, which Meridian already had a license for. She hired a freelance n8n developer for three days to wire the API connections to HubSpot and JobBOSS. The hardest part was not the technology — it was cleaning the pricing exceptions spreadsheet. Thirty-one of the 147 rows had conflicting entries. Fourteen referenced customers Meridian had not worked with in three years. Elena spent a full day reducing it to 112 validated rules. That day of cleanup was the most valuable day of the entire Build.
 
-Before the build started, the team completed the spec and ran the Guardrails Checklist. The spec told the builder: inputs are the inbound brief and the historical quote library; outputs are a draft quote landing in the project lead's review queue; the agent drafts, the project lead edits, the principal signs off on the final number only. The checklist locked the access layer before they built anything else — the account manager's quoting data stayed with the account manager. Those were ten-minute decisions. They made three weeks of build work unambiguous.
+Before the build started, Elena completed the spec and ran the Guardrails Checklist. The spec told the developer: inputs are the inbound RFQ and ERP job costing history; outputs are a draft PDF landing in Elena's CRM review queue; the agents draft, Elena edits and approves, Ty delivers. The checklist locked the access layer before they built anything else — pricing data stayed within the defined scope, no agent could send anything to a customer, and the kill switch was defined before the first workflow ran. Those were ten-minute decisions. They made three and a half weeks of build work unambiguous.
 
-Low-code isn't magic. Design gave them a workflow simple enough to build in low-code in three weeks, and a spec clear enough that the builder never had to invent anything. Build doesn't require an engineer. It requires a design that names the shape.
+Low-code worked because Design gave Elena a workflow narrow enough to build without custom engineering, and a spec clear enough that the freelance developer never had to invent anything. Standard quotes went from 3.8 days to 4.2 hours. Elena got ten hours of her week back.
 
 ## What *done* looks like.
 
 Build is done when there is a deployed solution producing outputs against real inputs, reviewed by the human supervisor named in the Hybrid Accountability Chart. The supervisor is using it. The team is using it. The constraint that Signal named is being addressed by the system Design specified, running inside the actual business — not a sandbox, not a demo.
 
-Deployed and producing against real work — past the demo stage, past the sandbox pilot, past the prototype the team keeps promising to "really roll out" after some unspecified additional work.
+Deployed and producing against real work — past the demo stage, past the prototype the team keeps promising to "really roll out" after some unspecified additional work.
 
 The "Done" test is four questions. Pull the last week of actual inputs the workflow was supposed to handle — the real records, the real requests, the real data — and run them through the build:
 

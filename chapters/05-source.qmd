@@ -2,34 +2,32 @@
 
 :::{.callout-important}
 ## In Brief
-Source maps the information environment around the one constraint Signal validated. You're answering a specific question: what does our organization know about *this problem*, and where does that knowledge live? The deliverable is a one-page Knowledge Map — assets, flow, gaps, and the people whose heads hold what's never been written down. Skip Source and Design becomes a guessing exercise built on assumptions nobody verified.
+Source maps the information environment around the one constraint Signal validated. You're answering a specific question: what does our organization know about *this problem*, and where does that knowledge live? The deliverable is a one-page Knowledge Map — a six-column table (Source, Type, Owner, Status, Pipeline, Notes) that inventories every digital system, person, and gap relevant to the constraint. Skip Source and Design becomes a guessing exercise built on assumptions nobody verified.
 :::
 
-I'm walking Julie through what a Knowledge Map actually looks like, using our own business as the example. I'm pointing at the screen. Google Drive — that's where client work lives. Pro HQ — that's our CRM, our ERP, it has an API, our ops lead owns it. Our internal knowledge base — that's where documented process lives. And then I get to our client's senior engineer. Sixty years in his industry. Sixty years of relationships, judgment calls, institutional memory that nobody has ever written down. I type his name into the fourth box on the map — same box, same format as any database — and I say: he doesn't have an API.
+Marina and I were on a call deciding what to do about our project coordinator. The role was costing us twenty-four thousand a year. Work was falling behind. Billing was getting impacted. We both knew the role was going to be replaced by an agent team — that was the constraint Signal had already validated.
 
-```jf-note:
-Isn't true it feels like an aggregation of a lot of different transcripts. We definitely yeah this makes it sound like it's all one consistent conversation and it wasn't. We also don't define what a knowledge map is and we don't really have client work live in Google Drive. I guess we kind of do that's fine if we leave it there I don't really care I guess the transition though to the clients senior engineer is clumsy and wrong. He hasn't been there 60 years maybe 40 but I'm not clear point you're trying to make here is the point you're trying to make about a client's engineer that he doesn't have an API like we're overlapping knowledge basis so I'm not really sure what we're trying to accomplish here and it would be it would be more accurate to talk about how Ahmed did not have an API than Mike...we're crossing orgs. The better story here is probably the preamble to Nguyen Marina and I were trying to decide what to do about Donna because she and I had a very explicit conversation around the six steps in in particular source when we have this conversation that's probably a better way to start the chapter.
-```
+But before we could design anything, I stopped the conversation. "We can't build agents for this role until we know what she actually does. Not what's in the job description — what she actually touches, what systems she's in, what decisions she makes that nobody else makes, and what's in her head that isn't written down anywhere."
 
-That's the whole problem in one sentence. The most valuable source of knowledge in that engagement has no connector, no endpoint to call, no schema to query. The only way to get at what he knows is to sit with him long enough, ask the right questions, and write it down before he decides he's done. The Knowledge Map treats him exactly the same way it treats a database, because operationally he is one. Pretending otherwise is why most Source work fails before it starts.
+Marina agreed. That conversation — the one where we mapped what our coordinator knew before we designed anything — was Source. We didn't call it that at the time. But it was the step that kept us from building an agent team against assumptions instead of against reality.
 
-Signal named the constraint. Source maps what you have before anyone designs against it — the information environment around the validated constraint, so Design is grounded in what is real instead of what is assumed. The diagnosis is not finished when the constraint is named. It's finished when the team can see — on a single page — what they have, what they don't, and what's sitting inside one person's head waiting to leave the company.
+Signal named the constraint. Source maps what you have before anyone designs against it — the information environment around the validated constraint, so Design is grounded in what is real instead of what is assumed. The diagnosis is not finished when the constraint is named. It's finished when the team can see — on a single page — every asset, every gap, and every piece of institutional knowledge that the constraint depends on.
 
 ## Diagnosis is not done until you know what you *have*.
 
-The temptation at the end of Signal is to move straight into design. The constraint is named. The cost is quantified. The team feels the momentum and wants to start building. That instinct is the most expensive instinct in the Sequence. `jf-note: that sentence is hyperbolic.`
+The temptation at the end of Signal is to move straight into design. The constraint is named. The cost is quantified. The team feels the momentum and wants to start building. That instinct costs more than most teams realize.
 
-Designing a Human + AI workflow `jf-note: i thought we were talking about co-intelligent co-operation` requires knowing what you're working with — which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and the Design phase becomes a guessing exercise — beautiful diagrams sitting on top of data nobody has verified and judgment nobody has captured. The build that follows will be technically correct and operationally useless. `jf-note: this whole thing is wrong. It won't be technically correct it will definitely be operational useless. And if you're not thinking through the sources, you won't get any diagrams so again this feels a bit contrived.`
+Co-intelligent co-operation requires knowing what you're working with — which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and you won't get past the first design conversation, because nobody in the room will agree on what data exists, where it lives, or who holds the judgment the workflow depends on.
 
-This is why Source belongs in Diagnose, not Execute. The diagnosis includes the information environment. A constraint without a Source map is a hypothesis. A constraint with a Source map is a design problem. `jf-note: what? i dont get what we're trying to communicate here.`
+This is why Source belongs in Diagnose, not Execute. The diagnosis includes the information environment. Until you've mapped what you have, the constraint is a named problem without a buildable path forward. Once the map exists, it becomes a design problem — scoped, specific, and grounded in reality.
 
 ## What Source *produces*.
 
-The deliverable of Source is a Knowledge Map: a single, legible picture of what the organization knows about the validated constraint — what data exists, where it lives, what's missing, and what's locked in one person's head.
+The deliverable of Source is a **Knowledge Map**: a structured inventory of every information source relevant to the validated constraint. It is a table — six columns (Source, Type, Owner, Status, Pipeline, Notes), one row per source — that fits on a single page. Digital systems, people, and gaps all appear as rows in the same table, because a workflow consumes all of them the same way. The Knowledge Map is not a diagram or a narrative. It is a structured reference that makes the information environment legible at a glance.
 
 A good Knowledge Map fits on one page. It doesn't catalog every database in the company. It catalogs everything relevant to the constraint Signal validated, and nothing else. If the constraint is the quoting cycle, the Knowledge Map describes what is known about quoting — the pricing rules, the historical quotes, the exception handling, the customer-specific terms, the institutional memory of who decided what and why. It doesn't describe the company's HR records, its accounting close, or its marketing analytics, because those aren't in the path of the constraint.
 
-The map is judged by usefulness, not completeness. The right question isn't "does this document everything?" but "could a designer look at this and know what they're designing against?" If yes, Source is done. If not, Source isn't done — no matter how many spreadsheets have been produced. `jf-note: this is clear ai tell. and its nonsense. also, it makes it sound like a 'designer' is a person like a graphic design vs the way we mean it, which is more architectural...Again, i'd refer you to mine and marina's conversation around Donna when we decided to replace her with an agent team.`
+The test for a good Knowledge Map is simple: could someone who wasn't in the room use this map to architect a workflow against the constraint? When Marina and I mapped what our project coordinator did, the map didn't catalog every system in the company. It cataloged what the coordinator touched, what she decided, and what would break if she disappeared tomorrow. That map was enough for Design. Anything more would have been a data audit.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -40,22 +38,18 @@ If your Source output doesn't fit on one page, it's not scoped to the constraint
 
 **Building your Knowledge Map.** Start with a blank page and the constraint statement Signal produced. Draw six columns: *Source*, *Type*, *Owner*, *Status*, *Pipeline*, *Notes*. The first four columns are the Knowledge Map. The fifth — Pipeline — is the Data Pipeline Audit. Run them together, not as separate exercises. Then work through three passes.
 
-**Pass 1 — Digital.** List every digital source that touches the constraint — the CRM records, the process logs, the shared drives, the inboxes, the spreadsheets. For each one, write the name, mark it as Digital, name the person who owns or maintains it, and mark its status: Clean, Needs Work, or Missing. `jf-note: what does 'clean' mean here?` Then answer four Pipeline Audit questions: Does this source connect to the other systems that touch the constraint, or does data move by manual export? Can a workflow read data from this source directly, or does someone have to export and re-enter it first? Who owns the handoff — a person, a scheduled job, or nobody? When was the data last verified as accurate? Mark each digital source's pipeline as *Connected*, *Manual*, or *Broken*. (If the terms "API," "MCP," and "connector" are new to you, the section "How systems talk to each other" later in this chapter defines each one in plain language. You do not need to understand the engineering to fill in this column.)
-
-```jf-note:
-Some prompts that we can give users that will help to create these documents. I think it would also be really good for you cause it would show you how many things are just full of shit.
-```
+**Pass 1 — Digital.** List every digital source that touches the constraint — the CRM records, the process logs, the shared drives, the inboxes, the spreadsheets. For each one, write the name, mark it as Digital, name the person who owns or maintains it, and mark its status: Clean (data is accurate, current, and usable as-is), Needs Work (data exists but has quality or format problems), or Missing (the data should exist but doesn't). Then answer four Pipeline Audit questions: Does this source connect to the other systems that touch the constraint, or does data move by manual export? Can a workflow read data from this source directly, or does someone have to export and re-enter it first? Who owns the handoff — a person, a scheduled job, or nobody? When was the data last verified as accurate? Mark each digital source's pipeline as *Connected*, *Manual*, or *Broken*. (If the terms "API," "MCP," and "connector" are new to you, the section "How systems talk to each other" later in this chapter defines each one in plain language. You do not need to understand the engineering to fill in this column.)
 
 :::{.callout-note}
 ## Action Step
 Open the constraint statement from Signal. List every digital system that touches the constraint workflow. For each one, fill in all six columns — Source, Type, Owner, Status, Pipeline, Notes. Don't filter. If it touches the constraint, it goes on the map.
 :::
 
-**Pass 2 — Organic.** List every person whose judgment is load-bearing for this constraint `jf-note: what does 'load-bearing' mean?` — the ops lead who handles the exceptions, the account manager who knows the customer's actual tolerance, the senior engineer who hasn't written anything down. Each person is a row on the same map, marked Organic. Name them, name what they know that isn't documented anywhere, and assess whether their knowledge is at risk of leaving. Be specific — not "she knows the quoting process" but "she knows the three pricing exceptions for legacy customers that override the rate card."
+**Pass 2 — Organic.** List every person whose judgment the constraint workflow depends on — meaning if they disappeared tomorrow, the work would stop or degrade. The ops lead who handles the exceptions, the account manager who knows the customer's actual tolerance, the senior engineer who hasn't written anything down. Each person is a row on the same map, marked Organic. Name them, name what they know that isn't documented anywhere, and assess whether their knowledge is at risk of leaving. Be specific — not "she knows the quoting process" but "she knows the three pricing exceptions for legacy customers that override the rate card."
 
 :::{.callout-note}
 ## Action Step
-Name every person whose judgment is load-bearing for the constraint. For each one, write specifically what they know that no system holds. Flag anyone who's a single point of failure.
+Name every person whose judgment the constraint workflow depends on. For each one, write specifically what they know that no system holds. Flag anyone who's a single point of failure.
 :::
 
 **Pass 3 — Missing.** Look at what's absent. What would a designer need to know to solve this constraint that isn't represented anywhere in the first two passes? What question would someone ask about this workflow that your current sources can't answer? What decision is currently made by gut feel that should be made by data? Add those rows as Missing sources, and note what type they *should* be — digital system, documented process, captured expertise — and what it would take to create them.
@@ -71,11 +65,11 @@ When you're done, you have a Knowledge Map — one page, one constraint, everyth
 
 ## Classify what you *find*.
 
-Not all knowledge is the same. Once the map is built, classify each source along two axes and one tier system. This takes five minutes and saves Design hours of rework.
+Not all knowledge is the same. Once the map is built, classify each source along two axes and one tier system.
 
 **Structured vs. unstructured.** Database fields, tagged articles, CRM records, spreadsheets with defined columns — that's structured. AI can use it immediately. Emails, meeting transcripts, PDFs, Slack threads, "ask Sarah" — that's unstructured. AI needs processing before it's useful. The more structured your information is, the more useful it is to an AI workflow. If a source is unstructured but valuable, flag it — that's a Design decision about whether to structure it.
 
-**Durable vs. ephemeral.** Brand guidelines, pricing rules, process SOPs, regulatory requirements — durable. This week's to-do list, meeting notes, brainstorm output, first-pass drafts — ephemeral. Only durable knowledge belongs on the Knowledge Map. If it won't matter in 90 days, it doesn't belong. `jf-note: We never define knowledge map; we certainly dont visualize it. and i think we're mixing the term up. It's not clear to me how we're using it.`
+**Durable vs. ephemeral.** Brand guidelines, pricing rules, process SOPs, regulatory requirements — durable. This week's to-do list, meeting notes, brainstorm output, first-pass drafts — ephemeral. Only durable knowledge belongs on the Knowledge Map. If it won't matter in 90 days, it doesn't belong.
 
 **AI tiers.** Think of three tiers, each consumed differently:
 
@@ -90,7 +84,7 @@ For each source on your map, mark which tier it falls into. This classification 
 An AI workflow that treats everything as equally current is an AI workflow that will confidently cite your deprecated pricing from 2019. The tiers exist to prevent this.
 :::
 
-The classification pass takes five minutes per source and saves Design hours of rework. Do it now, while the map is fresh.
+Run the classification while the map is fresh — it goes fast and directly informs what Design builds.
 
 :::{.callout-note}
 ## Action Step
@@ -99,15 +93,20 @@ Review each source on your map. Mark whether it's structured or unstructured, du
 
 ## How systems *talk to each other*.
 
-If you're going to map where knowledge lives, you need to understand how it moves. Three terms come up constantly in AI implementation work. They sound technical. They aren't.
+If you're going to map where knowledge lives, you need to understand how it moves. Three terms come up constantly in AI implementation work, and they're worth defining in plain language.
 
 **APIs** — application programming interfaces — are how systems talk to each other. Think of a waiter taking orders between a kitchen and a table. The table (one system) sends a request. The kitchen (another system) sends back food. The waiter (the API) carries the message both directions in a format both sides understand. Your CRM has an API. Your ERP has an API. When we say a system "has an API," we mean other software can ask it questions and get structured answers back.
 
 **MCPs** — model context protocols — are how AI connects to your tools and data. An API lets systems talk to systems. An MCP lets an AI model talk to your systems. It's the bridge that allows a language model to pull information from your CRM, read your knowledge base, or check a status in your project management tool — in real time, during a conversation or a workflow. Without MCPs, an AI model only knows what you paste into the prompt. With them, it can reach into your actual business systems.
 
-**Connectors** are pre-built integrations between specific systems. Zapier, Make, n8n — these platforms offer thousands of connectors that link one system to another without writing code. A connector between your CRM and your project management tool means a closed deal automatically creates a project. Connectors are useful. They're also the most common thing companies buy before doing Source work, which means they've wired systems together without knowing whether those systems hold the right data in the first place. `jf-note: I'm here because in claude's interface on the web anthropic calls MCP connectors just connectors even though they are MCP connections and open AI calls them tools. I think we need to be really clear either in a call out or similar what these things mean across different platforms can vary, but the fundamental idea and the fundamental technology is what matters`
+**Connectors** are pre-built integrations between specific systems. Zapier, Make, n8n — these platforms offer thousands of connectors that link one system to another without writing code. A connector between your CRM and your project management tool means a closed deal automatically creates a project. Connectors are useful. They're also the most common thing companies buy before doing Source work, which means they've wired systems together without knowing whether those systems hold the right data in the first place.
 
-The Pipeline column on your Knowledge Map is where these terms become operational. When you mark a digital source as *Connected*, you're saying an API, an MCP, or a connector already carries data between that source and the systems around the constraint. When you mark it *Manual*, you're saying a person carries data that a connector could carry. When you mark it *Broken*, you're saying the data doesn't move at all. Design will decide what to build. Source makes the current state visible.
+:::{.callout-note}
+## A note on terminology
+Different platforms use different names for the same underlying ideas. Anthropic (Claude) calls its system integrations "MCP connectors" or just "connectors." OpenAI calls them "tools." Automation platforms call them "integrations" or "actions." The labels vary. The fundamental concept does not: something that lets one system read from or write to another. When you're filling in the Pipeline column, focus on whether the connection exists, not what the vendor calls it.
+:::
+
+The Pipeline column on your Knowledge Map is where these terms become operational. *Connected* means an API, MCP, or connector already carries data between that source and the systems around the constraint. *Manual* means a person is carrying data that a connection could carry. *Broken* means the data doesn't move at all — it sits in one place and nobody can reach it programmatically. Design will decide what to build. Source makes the current state visible.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -116,7 +115,7 @@ You don't need to understand the engineering behind APIs, MCPs, or connectors. Y
 
 ## People don't have *APIs*.
 
-There are three kinds of sources. The mistake most operators make — possibly you included — is to recognize only the first. `jf-note: I don't think this is a common mistake most operators make. I don't think they even know what these words mean - until we tell them. i have tons of calls where people ask me 'what is an api?' or they use the word wrongly.`
+There are three kinds of sources. Most teams and leaders default to the first — digital — because those are the ones with names and login screens. The other two categories are less obvious and more consequential.
 
 Digital sources are the ones an audit naturally finds — the CRM, the ERP, the file shares, the analytics warehouse, the inbox archives. They're the easiest to enumerate because they have names and URLs. They're the smallest part of the actual information environment, because most of what makes the work run is not stored in any of them.
 
@@ -126,15 +125,17 @@ At-risk sources are the third category and the highest-stakes piece of Source wo
 
 When you're building your map, ask explicitly: who on this list is a single point of failure? Which organic sources are held by one person with no backup, no documentation, and a reason they might not be here in twelve months? Name them. Mark them. That marking is what makes the at-risk category actionable — because once it's on the map, Design can decide what to do about it.
 
-Remember the developer who walked out with everything he knew? Source exists to prevent that. If I had mapped where the knowledge lived before he left, the chute would have been a step, not a slide. `jf-note: I don't think it exists purely to prevent that it exists to provide contacts which we talked about previously to the system, and the agents and the humans that are running in it so that they can complete their work efficiently. Not losing the information is certainly a part of that, but it's not the only instance or use case.`
+Remember the developer who walked out with everything he knew? Source provides context — to the systems, agents, and humans that need to complete their work efficiently. Preventing knowledge loss is part of that. But the primary purpose is to give Design a complete picture of what's available, so the workflow that gets built has access to the right information at the right time. If I had mapped where the knowledge lived before that developer left, the handoff would have been a step instead of a slide.
 
 ## Transcripts: the *closest thing* a person has to an API.
 
-People don't have APIs. But they do have transcripts. `jf-note: they don't, but you should make them. its a good way to get high-fidelit information out of someone. In fact, I'd argue. It's the best way more often than not because if you try and ask people to do data entry or type summaries or anything like that, they're inherently Losey and as a result, you don't get the rich context that agents and AI can use to help you help it. As the cost of speech to text drops to effectively zero it's more costly (in terms of data loss and time) to type than it is to talk. After all humans evolved a really sophisticated communication system through their voices over thousands upon thousands of years hundreds of thousands of years; typing has been decades. Leverage our natural architecture`
+People don't have APIs. But you can make them transcripts — and a transcript is the highest-fidelity extraction method available.
 
-A transcript is what you get when you sit someone down, ask the right questions, and record what they say. It's the extraction method for organic sources — the process of converting what lives in one person's head into something the rest of the organization can use.
+Here's why. When you ask someone to type a summary or fill out a form, they compress. They leave out the context, the exceptions, the reasoning behind the decision. Data entry is inherently lossy, because typing is slow and people edit as they go. But when you sit someone down, ask the right questions, and record what they say, you get the full picture — the judgment, the edge cases, the "well, except when" qualifiers that make institutional knowledge actually useful.
 
-This matters for AI workflows in a way it never mattered for traditional documentation. A well-structured transcript — a senior operator walking through her decision-making process for handling exceptions, a salesperson explaining why three customers get different terms, an engineer describing the judgment calls behind a design estimate — becomes raw material an AI can reference, retrieve, and reason against. The transcript doesn't replace the person's judgment. It makes that judgment available when the person isn't in the room.
+Humans evolved a sophisticated communication system through voice over hundreds of thousands of years. Typing has existed for decades. As the cost of speech-to-text drops to effectively zero, it is cheaper in both time and information quality to talk than to type. Leverage the natural architecture.
+
+A well-structured transcript — an ops lead walking through her exception-handling process, a salesperson explaining why specific customers get different terms, an engineer describing the estimation logic behind a quote — becomes raw material an AI can reference, retrieve, and reason against. The transcript doesn't replace the person's judgment. It makes that judgment available when the person isn't in the room.
 
 The practical move: when your Knowledge Map flags an organic source as at-risk, the first Source action is a structured interview. Not a casual conversation. A deliberate session with specific questions: What decisions do you make that nobody else makes? Which exceptions have you handled that aren't written down? What rule of thumb do you use that you've never had to explain? The output is a transcript that feeds directly into the Knowledge Map as captured institutional knowledge.
 
@@ -145,45 +146,41 @@ A constraint owner, a recording, and the right questions will get you there. The
 Identify the highest-risk organic source on your Knowledge Map — the person whose knowledge is most at risk of leaving. Schedule a structured interview this week. Ask: what decisions do you make that nobody else makes? Record it. Transcribe it. Add the output to the map.
 :::
 
-### Sprint · Knowledge Capture.
+### Sprint · Source at Meridian.
 
-```jf-note:
-The example below is completely contrived. I think I would stick to our Meridian case study if anything.
-```
+Elena Ruiz cleared her Thursday afternoon, sat down with Mark, Ty, and Dave, and asked a simple question: when an RFQ hits my inbox, what do I actually do?
 
-A senior person at Compound was leaving. Her head was the documentation — years of decisions, relationships, exceptions, and judgment that had never been written down. The default move was a frantic two-week handoff with someone shadowing her, plus a brittle wiki that would rot the moment she walked out the door.
+Her answer took forty-five minutes. She described a process nobody else in the company had ever watched end-to-end — cross-referencing customer history, material requirements, and labor estimates simultaneously, then pulling up a file called "Customer Notes.xlsx" on her desktop to check whether the customer had negotiated terms that overrode the standard rate card. The spreadsheet had 147 rows of pricing exceptions. It had never been shared, backed up, or version-controlled.
 
-We ran the full Sequence against the at-risk knowledge as a single sprint. Signal named what was at risk and what it would cost the company if it walked out the door. Source mapped what was in her head: the systems she touched, the decisions only she could make, the people who depended on her judgment, the exceptions that lived nowhere except in her working memory. In practice, this meant sitting down with the Knowledge Map structure and filling it in together — naming each thing she knew, marking it Organic, and flagging every row where no one else held the same knowledge. That exercise took two hours. It produced a list of eleven things the company had never written down. Design figured out which pieces had to stay with a human, which became documented workflows for the rest of the team, and which were candidates for an AI workflow that could surface her judgment when someone needed it. Then Build, then Deliver.
+Dave added his piece — thirty-one years of fabrication experience compressed into a gut feel for estimated hours, accurate to within 10% on standard work. But he couldn't estimate materials costs, didn't know customer-specific pricing, and had no access to the ERP's job costing history. Ty described what he saw from the sales side: he forwarded RFQs to Elena and waited. He had no visibility into where a quote stood.
 
-By the end of the sprint, the handoff was not a fire drill. It was a documented, partially-automated system that the rest of the team could run. The constraint had been validated in Signal, but Source was the phase where the at-risk asset became visible — and once it was visible, it could be protected. That's the whole argument for Source as part of Diagnose. Until you've mapped what you have, you can't tell what you're about to lose.
+The Knowledge Map that emerged from that session made the information environment visible for the first time. HubSpot CRM — Connected, but holding win/loss records with no link to quotes. JobBOSS ERP — Connected to invoicing, but nobody queried it for quoting. Customer Notes.xlsx — Broken, living on Elena's desktop with no sync. Elena herself — Organic, at-risk, the only person who could reconcile all the sources. Dave — Organic, at-risk, four years to retirement with an undocumented estimation method.
 
-If someone on your team is at risk of leaving — or if you're about to run a sprint on a constraint tangled up with one person's institutional memory — run Source before you do anything else. The map will tell you whether you have a design problem or a knowledge capture problem. Those are not the same sprint.
+That single session produced the map that made Design possible. Without it, the team would have started building agents against assumptions about what Elena did — instead of against what she actually did and what systems she actually touched. Source is the difference between those two starting points.
 
-## Why the old *data audit* approach fails.
+## Knowledge management in an *agentic* world.
 
-```jf-note:
-A more productive section would be on the evolution of knowledge management. That's not something people think that much about or take that seriously but an increasingly agentic world. It's something people really need to put some discipline around. There needs to be process around knowledge management - when things get added, by who, when they get retired, how to know when the system hallucinates and a mediation plan...
-```
+Most companies treat knowledge management as a low-priority back-office function — a shared drive somebody organizes once a year, a wiki that rots the moment the person who built it moves on. That was tolerable when humans were the only consumers of organizational knowledge, because humans are good at compensating for disorganized information. They know which documents are stale. They know who to ask.
 
-Every operator reading this has been through some version of a data audit — an initiative that produces a clean-looking deliverable and changes nothing about how the company actually works. Source is not that. The difference is structural.
+Agents are not good at this. An agent treats every piece of information it can access as equally valid unless you tell it otherwise. In an agentic world, knowledge management requires discipline: process around what gets added, by whom, when it gets retired, how to detect when the system hallucinates against outdated information, and what the mediation plan is when it does. Source is where that discipline starts.
 
-The old data audit fails because it runs without a design question. The team inventories everything and organizes it by category — sales data, operations data, finance data, customer data — and produces a tidy library nobody can use. The library is correct. It is also useless, because the data was organized for humans browsing it instead of for a specific workflow consuming it. You end up with a clean catalog and no design progress.
+The old data audit approach — inventory everything, organize by category, produce a tidy library — fails because it runs without a design question. The team catalogs sales data, operations data, finance data, customer data, and produces a clean deliverable nobody can use. The data was organized for humans browsing it, not for a specific workflow consuming it.
 
-Source inverts this. The constraint comes first. The Knowledge Map is built only against the constraint Signal validated, in the specific shape a Human + AI workflow would need to consume it. The scope is narrow on purpose — one constraint, one map. The map exists to serve a design decision that's about to get made, not to satisfy a documentation goal.
+Source inverts this. The constraint comes first. The Knowledge Map is built only against the constraint Signal validated, scoped to what the workflow will actually need to consume. One constraint, one map. The map exists to serve a design decision that's about to get made, not to satisfy a documentation goal.
 
-Garbage in, garbage out. That phrase gets thrown around like a cliche, but it's the foundational axiom of Source work. Your company's data is a massive asset — *if* you can get it into a format AI can actually use. An AI workflow pointed at dirty data, outdated records, or unstructured knowledge with no classification doesn't produce bad answers occasionally. It produces bad answers confidently and at scale. Source is where you confront the quality of what you have before you build anything on top of it.
+Garbage in, garbage out. That phrase gets thrown around like a cliche, but it's the foundational axiom of Source work. Your company's data is a massive asset — *if* you can get it into a format AI can actually use. An agent pointed at dirty data, outdated records, or unstructured knowledge with no classification doesn't produce bad answers occasionally. It produces bad answers confidently and at scale. Source is where you confront the quality of what you have before you build anything on top of it.
 
 I watched this play out with a client running an AI workflow against their internal knowledge base. The system kept surfacing the same wrong information — old pricing, a deprecated process, a policy superseded two revisions back. We'd correct it. It would surface the same thing again. Thirty iterations before anyone asked the right question: why does it keep showing old information?
 
 I went into the knowledge base and found the answer. Everything he had ever stored was indexed together — current and expired, active and archived, no distinction. The AI had no way to know what was old. Nobody had told it otherwise. If the data was in the database, the system assumed it was meant to be there. The AI was doing exactly what it was designed to do. The problem was not the AI. Nobody had done the Source work before pointing the AI at the data.
 
-Source is not where data infrastructure gets built. Source maps what you have. If a gap exists — a data set that doesn't exist, a system that doesn't connect to another, a piece of judgment that lives only in one person's head — Source names it. Whether to fill that gap, capture that judgment, or design around it is a Design decision. Source's job is to make the gap visible before Design has to make the call. Confusing the two phases is how Source bloats into a year-long data project that never produces a workflow.
+Source is not where data infrastructure gets built. Source names the gaps. Whether to fill them, capture the judgment, or design around the limitation is a Design decision. Confusing the two phases is how Source bloats into a year-long data project that never produces a workflow.
 
 ## The *completeness test*.
 
 Before you call Source done, run six checks:
 
-1. **Designer test.** Could someone who wasn't in the room look at this map and know what they're designing against — what data exists, where it lives, what's missing, and what's at risk? `jf-note: its still not clear to me what a 'map' is...`
+1. **Architect test.** Could someone who wasn't in the room look at this Knowledge Map table and know what they're designing against — what data exists, where it lives, what's missing, and what's at risk?
 2. **Constraint scope test.** Every row on the map connects to the constraint. If a row doesn't, cut it.
 3. **Pipeline test.** Every digital source has a pipeline status — Connected, Manual, or Broken. No blanks.
 4. **At-risk test.** You explicitly asked: who on this list is a single point of failure? The answer is on the map.
@@ -197,19 +194,19 @@ Run the six-item completeness test against your Knowledge Map. Fix any gaps. The
 
 ## A populated *example*.
 
-Here's what a finished Knowledge Map looks like. The constraint is from a manufacturing company we worked with — design engineers spending 4–6 hours producing initial designs for every bid, including the 50%+ that won't convert, at an estimated cost of $180K/year in misallocated engineering time.
+Here's what a finished Knowledge Map looks like. This is from Meridian Manufacturing — a custom metal fabrication shop where the VP of Operations was the sole quoting bottleneck, costing the company an estimated $558K/year in lost revenue, misallocated time, and floor underutilization. (Meridian is a fictional composite. The pattern is real.)
 
 | Source | Type | Owner | Status | Pipeline | Notes |
 |---|---|---|---|---|---|
-| CRM (deal records, win/loss history) | Digital | Sales ops | Clean | Manual — CSV export to ops team weekly | Has win rates by segment but not linked to quoting system |
-| ERP (materials pricing, job costing) | Digital | Finance | Needs Work | Connected to invoicing, not to quoting | Pricing data exists but requires manual lookup for quotes |
-| Quoting spreadsheet (pricing exceptions) | Digital | Ops manager | Needs Work | Broken — lives on one person's desktop, no sync | 200+ exception rules, undocumented logic |
-| Ops manager (exception handling, customer-specific terms) | Organic | Maria (ops) | — | — | Knows which exceptions apply to which customers. Only person who reconciles CRM + ERP for quotes. **AT RISK: single point of failure** |
-| Senior engineer (design judgment for quick estimates) | Organic | Dave (engineering) | — | — | 30 years experience. Can estimate feasibility in minutes vs. hours. Knowledge undocumented. **AT RISK: 3 years to retirement** |
-| Historical quote accuracy (which quick estimates matched final designs) | Missing | Nobody | Missing | — | Would validate whether a fast-estimate workflow produces acceptable accuracy. Data exists in CRM + ERP but has never been compared |
-| Customer segment conversion rates by quote complexity | Missing | Nobody | Missing | — | Would allow routing: high-probability bids get full engineering, low-probability get rapid estimate. Requires joining CRM win/loss to engineering hours |
+| HubSpot CRM (win/loss records, deal sizes) | Digital | Ty (Sales) | Needs Work | Manual — Ty tracks outcomes but doesn't link to quotes | Has win rates by customer and job type. Missing: quote amounts on lost bids. |
+| JobBOSS ERP (job costing history, 800+ jobs) | Digital | Finance / ERP admin | Clean | Manual — Elena queries by memory, not systematically | Best source for historical pricing. Structured and queryable, but nobody uses it for quoting. |
+| "Customer Notes.xlsx" (pricing exceptions) | Digital | Elena (VP Ops) | Needs Work | Broken — lives on Elena's desktop, no backup, no version control | 147 customer-specific pricing rules. Mix of simple discounts and complex terms. Never validated against current contracts. |
+| Elena — pricing exceptions, customer history, quoting judgment | Organic | Elena (VP Ops) | — | — | Holds the complete picture for every quote. Only person who can reconcile all sources. **AT RISK: single point of failure. No backup, no documentation.** |
+| Dave — fabrication hour estimation | Organic | Dave (Sr Design Eng, 31 yrs) | — | — | Estimates accurate to ~10% on standard work. Has never documented his estimation method. **AT RISK: 4 years to retirement.** |
+| Historical quote-to-actual accuracy | Missing | Nobody | Missing | — | Would validate whether rapid estimates are reliable. Data exists in ERP (actuals) and Elena's files (quotes) but has never been compared. |
+| Customer segment profitability | Missing | Nobody | Missing | — | Would enable prioritized quoting — fast-track high-margin segments. Requires joining CRM win/loss to ERP job costing. |
 
-Look at what this map makes visible. Two organic sources are flagged at risk. A critical spreadsheet lives on one person's desktop with no sync. The CRM and ERP hold the data you'd need to build a routing workflow, but nobody has ever joined them. Two pieces of information that don't exist yet — historical accuracy and conversion rates by complexity — are the exact inputs a designer would need to decide whether a rapid-estimate workflow is viable. Every one of those findings came from working the three passes against a single constraint. None of them would surface in a general data audit.
+Look at what this map makes visible. Two organic sources are flagged at risk — Elena as a single point of failure, Dave with four years to retirement. A critical spreadsheet with 147 pricing rules lives on one person's desktop with no sync. The CRM and ERP hold the data you'd need to build a quoting workflow, but nobody has ever joined them. Two pieces of information that don't exist yet — historical accuracy and segment profitability — are the exact inputs the team would need to decide whether an agent-assisted quoting workflow is viable. Every one of those findings came from working the three passes against a single constraint. None of them would surface in a general data audit.
 
 ## Hand off to *Design*.
 
@@ -224,6 +221,6 @@ The next chapter is Design.
 ## Reflection Questions
 
 1. Build a first-pass Knowledge Map for your top constraint right now. List the digital sources that touch that workflow. How many of them are Connected vs. Manual vs. Broken in the Pipeline column? What does that ratio tell you about the design work ahead?
-2. Who on your Knowledge Map is an organic source — someone whose judgment is load-bearing for the constraint workflow? Is that person a single point of failure? If they left tomorrow, what would break first?
+2. Who on your Knowledge Map is an organic source — someone whose judgment the constraint workflow depends on? Is that person a single point of failure? If they left tomorrow, what would break first?
 3. The chapter describes the developer who walked out with everything he knew. Is there someone in your company right now whose departure would create the same chute? Have you scheduled a structured interview to extract what they know before they go?
 4. When you classify the sources on your map, what share of your information is structured vs. unstructured? What is the most valuable piece of unstructured knowledge in the constraint workflow — and what would it take to make it AI-usable?

@@ -63,6 +63,16 @@ Signal → Source → Design → Build → Deliver → Compound
 - **Result**: $24K/year → ~$6K/year (75% cost reduction). Coordinator role eliminated. Sofia got hours back weekly.
 - **Autonomy levels**: Human-in-the-loop (reviews every output), Human-on-the-loop (reviews exceptions/samples), Human-over-the-loop (reviews aggregate metrics)
 
+## Threading Strategy
+
+Both case studies must be threaded through the entire book arc:
+
+1. **Meridian Manufacturing** (fictional) — threaded Ch01 through Ch10. Introduces in Ch01 (scorecard), deepens in Ch04 (Signal), carries through Source/Design/Build/Deliver/Compound. Full case study in appendix.
+
+2. **PM Agent Team** (real, anonymized) — threaded Ch02 through Ch10. Opens Ch06 (coordinator deconstruction), referenced in Ch07 (build contrast), carries through Deliver/Compound/Rhythm. Full case study in appendix. Use real prohq_transcripts for sourcing — especially Marina transcripts for Ch02 opening and Ch05 content.
+
+**Rule: Do NOT fabricate examples when real transcript sources exist.** Search prohq_transcripts before inventing anything.
+
 ## Story Index (sourced stories in the book)
 
 | Story | Source | Chapters |
@@ -78,11 +88,35 @@ Signal → Source → Design → Build → Deliver → Compound
 | Ahmed and context management | Real — transcript reference | Ch02 |
 | Meridian Manufacturing quoting sprint | Fictional composite | Case study, threaded through Ch04-Ch10 |
 | 45-minute Source session on video call | Real — Compound internal | Ch09 |
-| "Meridian Consulting Group" | NEEDS RENAME — conflicts with Meridian Manufacturing | Ch01, Ch03 |
+| Discovery call — manufacturing company, three tools, zero coordination | Real — Jesse client call | Ch01 opening |
+| Ch02 CEO with flat headcount curve | FABRICATED — replace with Marina/Donna transcript | Ch02 opening |
+| Ch04 L10 with nine red weeks | FABRICATED — replace with PM Agent Team real source | Ch04 opening |
+| Ch05 Jesse/Julie Knowledge Map opening | FABRICATED composite — replace with Marina/Donna transcript | Ch05 opening |
+| Greenline Home Services (Sprint Plan example) | FABRICATED — disclose as illustrative or replace | Ch11 |
+| "Meridian Consulting Group" scorecard | RESOLVED — rewrite as Meridian Manufacturing | Ch01, Ch03 |
 
 ## Fabricated Examples to Replace
 
-These exist in Ch08-Ch11 and need replacement with Meridian, PM case study, or real transcript sources:
+These exist across multiple chapters. Replace with Meridian, PM case study, or real transcript sources.
+
+**Additional fabricated content identified in Phase 1 audit (not just Ch08-Ch11):**
+
+| Location | What's there | Replacement source |
+|---|---|---|
+| Ch01 lines 235-283 | "Meridian Consulting Group" scorecard example ($5M consulting) | Rewrite as Meridian Manufacturing scorecard using Elena/Mark characters |
+| Ch02 lines 8-14 | CEO with flat headcount curve (fabricated) | Real Marina/Donna transcript from prohq_transcripts |
+| Ch04 lines 8-18 | L10 with nine red weeks (fabricated) | PM Agent Team case study — real transcript source |
+| Ch05 lines 8-14 | Jesse/Julie Knowledge Map opening (fabricated composite) | Marina/Donna conversation from prohq_transcripts |
+| Ch05 lines 154-160 | Contrived sprint story (Jesse flagged explicitly) | Meridian Source work |
+| Ch05 lines 200-212 | Ghost populated Knowledge Map ($180K, Maria, Dave) | Meridian Manufacturing canon |
+| Ch06 lines 214-245 | Ghost populated example ($180K, Maria, Dave) | Meridian Manufacturing canon |
+| Ch06b lines 50-76 | Ghost WD table + HAC (Maria, Dave, $180K) | Meridian Manufacturing canon |
+| Ch07 lines 217-235 | Ghost Build Spec (60-person firm, $180K) | Meridian Manufacturing canon |
+| Ch07 lines 284-291 | Ghost Guardrails Checklist | Meridian Manufacturing canon |
+| Ch07 lines 302-308 | Ghost sprint story (60-person professional services, $200K) | Meridian Manufacturing canon |
+| Ch11 lines 169-194 | Greenline Home Services (fabricated Sprint Plan example) | Disclose as illustrative or replace |
+
+**Original Ch08-Ch11 fabricated content:
 
 | Location | What's there | Replacement source |
 |---|---|---|

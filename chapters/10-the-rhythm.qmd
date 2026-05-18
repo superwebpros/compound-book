@@ -7,7 +7,7 @@ One sprint is a project. A rhythm of sprints is a transformation. The Rhythm is 
 
 This time last year, I had thirteen people. I'm looking at the current roster and there are eight.
 
-Five people are gone — not lost to attrition, not cut in a crisis, not managed out because the company was struggling. Gone because the work they were doing is now being done differently. And we are growing. Double-digit growth on billings and profitability. The fewer people are the reason.
+Five people are gone — not cut in a crisis, not managed out because the company was struggling. Gone because the work they were doing is now being done differently. And we are growing. Double-digit growth on billings and profitability. The fewer people are the reason.
 
 The shift did not happen because we adopted a new platform or made a strategic decision to run lean. It happened because we ran Signal before we wrote requisitions. That is the behavioral change. It sounds small. It is not.
 
@@ -19,17 +19,15 @@ So we ran Signal. What is the actual constraint? What does this role touch? We m
 
 The hire never got posted. The work shipped.
 
-That is the sentence I want you to read twice. The hire never got posted. The work shipped.
-
 We went from thirteen people to eight over the following year — and by the fourth and fifth sprint, running Signal before writing a requisition was not a deliberate practice anymore. It was the default. The question that used to be automatic — *who fills this?* — had been replaced by a different automatic question. That replacement is what this chapter is about.
 
-One sprint is a project. Two sprints is a habit. Six sprints is an operating system. `jf-note: i dont want to use operating system; we use operating model. operating system belongs to teh likes of EOS.` This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on.
+One sprint is a project. Two sprints is a habit. Six sprints is an operating model. This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on.
 
 ## What *Rhythm* means in this book.
 
 The Equation is *Co-Intelligence + Rhythm = Compound*. The first term is the system — humans and AI working as one workforce, designed deliberately, owned by named people. The second term is the cadence. Without the cadence, the system is a one-time project that produced one improved workflow and then went dormant. With the cadence, every quarter takes the next constraint, runs it through the same six stages, and adds the result to a stack of designed work the organization now operates on.
 
-The Rhythm is quarterly. Not because the calendar is sacred, but because a sprint takes six to eight weeks and the leadership team needs one focused session per quarter to commit the next one. Faster than that and the sprint becomes a slogan `jf-note: what?`. Slower than that and the design infrastructure built in the last sprint starts to degrade before the next one begins — agents operating without updates, supervisors reviewing less, edge cases accumulating without a retrospective to process them `jf-note: I dont know if this is true either`.
+The Rhythm is quarterly. Not because the calendar is sacred, but because a sprint takes six to eight weeks and the leadership team needs one focused session per quarter to commit the next one. Faster than that and the sprint loses the depth that makes it pay off. Slower than that and the design infrastructure built in the last sprint starts to degrade before the next one begins — edge cases accumulating without a retrospective to process them.
 
 ## The quarterly operating *session*.
 
@@ -41,13 +39,13 @@ The Rhythm has a meeting. One to two hours, your leadership team, every quarter,
 
 **Step 3: Commit the next sprint.** Pick the top constraint from the updated backlog. Name the Human Orchestrator. Confirm the team has the resources — people, tools, budget. Set the sprint start date. One validated constraint. One constraint owner. A specific six-to-eight-week window. The one-page constraint statement from Signal is the artifact. Your team leaves the session knowing exactly what the next sprint is about and who owns it.
 
-**Step 4: Update the Hybrid Accountability Chart.** Make permanent any HAC rows from the completed sprint that are staying. Remove or revise any that didn't work. Note which roles have shifted since last quarter. If an agent team's scope changed, if the Agent Coordinator handoffs moved — record it. The chart is a living document, not a workshop output from eighteen months ago. This becomes the new Hybrid Org Today baseline.
+**Step 4: Update the Hybrid Accountability Chart.** Make permanent any HAC rows from the completed sprint that are staying. Remove or revise any that didn't work. Note which roles have shifted since last quarter. If an agent team's scope changed, if the Human Orchestrator's handoffs moved — record it. The chart is a living document, not a workshop output from eighteen months ago. This becomes the new Hybrid Org Today baseline.
 
 That is the entire session. The agenda is stable. The inputs are the Signal Backlog and the previous sprint's scorecard. The output is a commitment and an updated chart.
 
 :::{.callout-tip}
 ## Pro Tip
-This session replaces no existing meetings. If you run EOS, it layers onto your quarterly planning — Signal Backlog maps to rocks, HAC maps to your accountability chart, sprint review maps to your quarterly review. Same cadence, new layer. If it feels like a second operating system, you're doing it wrong. The sprint *is* a rock. The quarterly session is a 30-minute addition to your quarterly planning.
+This session replaces no existing meetings. If you run EOS, it layers onto your quarterly planning — Signal Backlog maps to rocks, HAC maps to your accountability chart, sprint review maps to your quarterly review. Same cadence, new layer. If it feels like a second operating system, you're doing it wrong. A sprint can become a Rock when committed in quarterly planning, but it is a sprint first — a focused unit of time designed to address a specific signal. The quarterly session is a 30-minute addition to your quarterly planning.
 :::
 
 The session only works if it's on the calendar before the quarter starts — not penciled in as a maybe, but booked with the same discipline as any other quarterly commitment.
@@ -75,17 +73,13 @@ Here is how the pieces map:
 | HAC update | Accountability Chart review | Function Accountability Chart |
 | Quarterly operating session | Quarterly Planning | Quarterly Planning |
 
-The sprint IS a rock. The HAC IS part of your accountability chart. The Signal Backlog IS your strategic issues list, focused on operational constraints AI can address. EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm makes them executable by a Human+AI workforce. The two stack.
-
-```jf-note:
-The Sprint is not a rock it could be, but it's not necessarily one. The Sprint is a focused unit of time in which a specific implementation happens designed to address a given signal. We need to use our terms consistently.
-```
+A sprint can become a Rock when committed in quarterly planning. The HAC layers onto your accountability chart. The Signal Backlog is your strategic issues list, focused on operational constraints AI can address. EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm makes them executable by a Human+AI workforce. The two stack.
 
 ## The *Hybrid Org Today*.
 
 Once you are running the Rhythm, you maintain one living document: the Hybrid Org Today. It is the current operational picture of your Co-Intelligent Company.
 
-The Hybrid Org Today maps four things — what people own, what AI handles, what is solved, what is next. The Hybrid Accountability Chart from Chapter 6 is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
+The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. The Hybrid Accountability Chart from Chapter 6 is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
 
 Here is the template. It should fit on one page. If it doesn't, you're tracking too much. The Hybrid Org Today is a dashboard, not a filing cabinet.
 
@@ -113,15 +107,13 @@ COMPLETED SPRINTS
 NEXT QUARTERLY REVIEW: [date]
 ```
 
-```jf-note: 
-We need an excalidraw of the above and not the above; its redundant. That said, there are areas that are supposed to be 'tables' and the excalidraw is displaying them like markdown, not like tables.
-```
+<!-- PRODUCTION: Replace the markdown template above with an Excalidraw visual. Tables within the diagram should render as proper tables, not markdown. -->
 
 You update the Hybrid Org Today in the quarterly session. Not by a Notion-curator on a Thursday afternoon. Not at year-end planning. By your leadership team, during the meeting, as part of the four things the session does. That is the discipline that prevents the document from becoming the wiki page that rots — a thing every operator has watched happen with every other "living" document the company has tried to maintain.
 
 {{< excalidraw ch10-hybrid-org-today "Hybrid Org Today: HAC (structural layer) and Signal Backlog (constraint inventory) as two slices, updated by the quarterly session." >}}
 
-When a new executive joins, the Hybrid Org Today is the briefing. When a customer asks how you are using AI, it is the answer — concrete, current, in your own vocabulary. When the board asks what the AI investments have produced, it is the receipt.
+When a new executive joins, the Hybrid Org Today is the briefing. When the board asks what the AI investments have produced, it is the receipt — concrete, current, in your own vocabulary.
 
 ## The headcount paradox, *resolved*.
 
@@ -137,11 +129,7 @@ Companies that default to designing before hiring build a different cost structu
 
 The coordinator story that opened this chapter ends here — with the question that stopped getting asked. The hire that never got posted was not a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That is the Rhythm doing its job: changing the default behavior of the organization across every call that follows.
 
-In Chapter 4, I described an L10 where a clinic director's scorecard had been red for nine consecutive weeks and she could not explain why any metric was off track. The meeting was real. The cadence was real. But the discipline that turns a red number into a named constraint — and a named constraint into a sprint — was absent. Nine weeks of red scorecards means the cadence exists and the Rhythm does not. What the Rhythm adds is not a new meeting. It is the four things the meeting produces: an outcome reviewed, a backlog updated, a constraint committed, a chart current. Without all four, the session is theater.
-
-```jf-note: 
-Did we keep the clinic director story? I dont think we did.
-```
+Most teams already have a meeting cadence — the L10, the weekly standup, the quarterly review. The cadence is real. But the discipline that turns a red number into a named constraint — and a named constraint into a sprint — is usually absent. Weeks of red scorecards mean the cadence exists and the Rhythm does not. What the Rhythm adds is not a new meeting. It is the four things the meeting produces: an outcome reviewed, a backlog updated, a constraint committed, a chart current. Without all four, the session is theater.
 
 ## The *Compounding Scorecard*.
 
@@ -163,17 +151,13 @@ Create the Compounding Scorecard. Fill in the first row with your current sprint
 
 ## What compounding looks like, *sprint six*.
 
-```jf-note:
-The following is completely fabricated. We can refer to meridian.
-```
-
 A company is six to eight sprints in. What has actually changed?
 
 {{< excalidraw ch10-sprint-compounding-timeline "Sprint compounding over time: Sprint 1–6 timeline showing decreasing Source phase duration and accumulating design infrastructure with each sprint." >}}
 
 The Source phase of the first sprint took three weeks. The team did not have a knowledge map for that function; building one was the work. The Source phase of the current sprint, in the same function, takes three days — because the knowledge map already exists, has been updated twice since, and is sitting in the Hybrid Org Today.
 
-The Hybrid Accountability Chart has been updated four times. The organization has named agent teams with documented levels of automation, each with a human supervisor. The Agent Coordinator role is written into two people's job descriptions — not as a side project but as the operational responsibility it became. The Signal Backlog appears on the quarterly agenda alongside revenue and rocks.
+The Hybrid Accountability Chart has been updated four times. The organization has named agent teams with documented levels of automation, each with a human supervisor. The Human Orchestrator responsibility is written into two people's job descriptions — not as a side project but as the operational role it became. The Signal Backlog appears on the quarterly agenda alongside revenue and rocks.
 
 And the leaders themselves have changed. Executives who, eighteen months ago, had no mental model for directing an agent team are now making design-improvement decisions between sprints without being prompted. The Co-Operating Model from Chapter 2 is no longer a concept. It is how the leadership team thinks about work.
 
@@ -187,37 +171,36 @@ The year before, we had launched nothing new. We were at capacity. We had twice 
 
 We did not cut our way to growth. We ran the Sequence enough times that the design infrastructure compounding in the background was doing real work — work that used to require bodies, now running on agent teams with named human supervisors overseeing the outputs. Her role shifted from being the doer of marketing content to the orchestrator of agent teams producing it. That shift was not planned on a slide. It accumulated, one sprint at a time, until one day it was simply what the job was.
 
-### Sprint six · a populated example.
+### Three sprints · Meridian Manufacturing.
 
-<!-- TODO: Update to Meridian Manufacturing -->
-Here is what this looks like on paper. Ridgeline Media Group, a 40-person marketing agency, ran three sprints over three quarters. This is their Hybrid Org Today document and Compounding Scorecard at the end of Q1 2027.
+Here is what this looks like on paper. Meridian Manufacturing — the $7.2M custom fabrication shop from the case study — ran three sprints over three quarters. Elena Ruiz, the VP of Operations, was the Human Orchestrator for all three. This is their Hybrid Org Today document and Compounding Scorecard at the end of Sprint 3.
 
 ```
-HYBRID ORG TODAY — Ridgeline Media Group — Q1 2027
+HYBRID ORG TODAY — Meridian Manufacturing — Q1 2027
 
 ACTIVE SPRINT
-  Constraint: Proposal generation requires 12 hours of senior strategist
-    time per prospect, limiting new business capacity to 4 proposals/week
-  Human Orchestrator: Dana Rios (VP Strategy)
-  Status: Design
+  Constraint: Customer onboarding workflow requires manual handoff across
+    HubSpot, JobBOSS, and shop floor — 6 touchpoints, 3 systems, no single
+    owner. New customers take 11 days to first production start.
+  Human Orchestrator: Elena Ruiz (VP Operations)
+  Status: Build
 
 SIGNAL BACKLOG (ranked)
-  1. Media buying reconciliation — est. cost: $340K/yr — last validated: 2027-01-15
-  2. Freelancer onboarding and briefing — est. cost: $185K/yr — last validated: 2027-01-15
-  3. Campaign performance alerting — est. cost: $120K/yr — last validated: 2026-12-20
+  1. Engineering change orders — est. cost: $89K/yr — last validated: 2027-01-10
+  2. Scheduling visibility gap (floor vs. office) — est. cost: $62K/yr — last validated: 2027-01-10
 
 HYBRID ACCOUNTABILITY CHART
-  Client Onboarding Coordinator | Onboarding Agent Suite  | Sarah Chen (Client Ops)    | 3
-  Content Production Manager    | Content Pipeline Agent  | Marcus Webb (Creative Dir) | 2
-  Client Reporting Analyst      | Reporting Agent Team    | Priya Nair (Analytics Mgr) | 3
+  Quoting Workflow       | Quote Agent Team (Research, Pricing, Assembly) | Elena Ruiz (VP Ops)    | AI-Assisted
+  CRM-to-ERP Data Sync  | HubSpot-JobBOSS Sync Agent                    | Ty Banfield (Sales)    | Automated
+  Customer Onboarding    | Onboarding Workflow Agent                      | Elena Ruiz (VP Ops)    | AI-Assisted
 
 COMPLETED SPRINTS
-  Sprint 1: Client onboarding bottleneck → Onboarding reduced from 3 weeks
-    to 5 days, saving $756K/yr across 120 clients — Q3 2026
-  Sprint 2: Senior strategist time consumed by content production → 15 hrs/wk
-    of strategist time freed, reallocated to new business — Q4 2026
-  Sprint 3: Analyst time consumed by client reporting → 8 hrs/wk of analyst
-    time freed, reallocated to insight generation — Q1 2027
+  Sprint 1: Quoting bottleneck (Elena sole quoter) → Standard quotes
+    3.8 days to 4.2 hours. $47K new revenue in first month — Q3 2026
+  Sprint 2: CRM-ERP data sync (exposed by Sprint 1 — HubSpot and JobBOSS
+    holding conflicting customer records) → 147 manual reconciliations/month
+    eliminated, sync automated via n8n — Q4 2026
+  Sprint 3: Customer onboarding handoff → In progress — Q1 2027
 
 NEXT QUARTERLY REVIEW: 2027-04-14
 ```
@@ -226,12 +209,11 @@ And the scorecard:
 
 | Quarter | Constraint Solved | Cost Before | Cost After | Delta | Cumulative Impact |
 |---|---|---|---|---|---|
-| Q3 2026 | Client onboarding: 3 weeks per client | $984K/yr | $228K/yr | $756K/yr | $756K/yr |
-| Q4 2026 | Content production: senior strategist bottleneck | $117K/yr | $23K/yr | $94K/yr | $850K/yr |
-| Q1 2027 | Client reporting: manual analyst assembly | $35K/yr | $4K/yr | $31K/yr | $881K/yr |
-| Q2 2027 | | | | | |
+| Q3 2026 | Quoting bottleneck: Elena sole quoter, 3.8-day turnaround | $558K/yr | $112K/yr | $446K/yr | $446K/yr |
+| Q4 2026 | CRM-ERP sync: HubSpot and JobBOSS conflicting records | $74K/yr | $8K/yr | $66K/yr | $512K/yr |
+| Q1 2027 | Customer onboarding: 11-day manual handoff across 3 systems | | | | |
 
-Three sprints. Three quarters. $881K in annualized cost reduction, with the freed capacity redirected to revenue-generating work. The first sprint produced the largest delta — that is normal. The compounding is in the cumulative column: each sprint builds on the operational foundation the previous sprints created.
+Two sprints completed. A third in flight. $512K in annualized cost reduction, with Elena's freed capacity redirected from producing quotes to designing workflows. The first sprint produced the largest delta — that is normal. The compounding is in the cumulative column: Sprint 2 only existed because Sprint 1 exposed the data sync problem that had been invisible when Elena was the sole quoter. Each sprint builds on the operational foundation the previous sprints created.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -246,7 +228,7 @@ What that company needs is to install the Sequence as the AI layer on top of the
 
 ## The *Co-Intelligent Company*.
 
-The Co-Intelligent Company is not a vision. It is the company built — quarter by quarter, sprint by sprint — by running the Sequence on the Rhythm.
+The Co-Intelligent Company is the company built — quarter by quarter, sprint by sprint — by running the Sequence on the Rhythm.
 
 There is nothing aspirational left. Every term is operational — a document the leadership team can produce on a Tuesday, a behavior a CEO can run in the next quarterly session.
 
