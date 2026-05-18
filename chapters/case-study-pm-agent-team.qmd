@@ -1,10 +1,10 @@
 # Case Study: The PM Agent Team
 
-This is the story of one Compound Sprint, start to finish, with every artifact shown. We replaced a project coordinator role with an agent team — five AI agents handling the coordination work that had consumed twenty hours a week of human labor. It took about six weeks from Signal to Deliver, with a platform pivot in the middle that nearly derailed the whole thing. Every stage of the Compound Sprint is here, every instrument filled in, every design decision documented. If you've read the framework chapters and wondered what a full sprint looks like in practice, this is it.
+This is the story of one Compound Sprint, start to finish, with every artifact shown. We replaced a project coordinator role with an agent team — five AI agents handling the coordination work that had consumed twenty hours a week of human labor. It took about six weeks from Signal to Deliver, with a platform pivot in the middle that nearly derailed the whole thing. Every stage of the Compound Sprint is here with its artifacts and design decisions. If you've read the framework chapters and wondered what a full sprint looks like in practice, this is it.
 
 The role belonged to a subcontractor we'll call Rachel. She was hired in August 2024 for graphic design and content management, then transitioned into project coordination by September. The transition happened fast — within weeks she'd moved from creating visual assets to owning the operational backbone of how work moved through our project management system. By the time we decided to replace the role with agents, her responsibilities had expanded to cover project tracking, scorecard updates, meeting facilitation, social media scheduling, task creation from transcripts, video editing coordination, and QA work alongside our VP of Operations, Sofia.
 
-The decision to replace the role wasn't just structural. The work was overwhelmingly rule-based — the kind of work agents handle well. And Rachel's performance had become a problem. She was slow, non-responsive, and increasingly free with her time without explanation. Sofia flagged it directly in one of our design sessions: "A lot of things are not done properly" and "it's becoming a habit for her to be very free with her time and not give any explanations." The constraint was the combination: rule-based work that agents can handle, performance issues with the person doing it, and $24K/year in subcontractor cost while we were falling behind on projects.
+The decision to replace the role wasn't just structural. The work was overwhelmingly rule-based — the kind of work agents handle well. And Rachel's performance had become a problem. She was slow, non-responsive, and increasingly free with her time without explanation. Sofia flagged it directly in one of our design sessions: "A lot of things are not done properly" and "it's becoming a habit for her to be very free with her time and not give any explanations." The constraint was the combination: rule-based work that agents can handle, performance issues with the person doing it, and \$24K/year in subcontractor cost while we were falling behind on projects.
 
 ## Signal: Naming the Constraint
 
@@ -18,8 +18,8 @@ There wasn't a single "this is the constraint" moment. The signal accumulated. R
 
 | Field | Detail |
 |--------------------------------|----------------------------------------|
-| Constraint | A $24K/year subcontractor role is consuming budget on work that is 70-80% rule-based data operations (CRM updates, scorecard maintenance, task creation, scheduling), while the person in the role is underperforming and the company is falling behind on project delivery — causing billing delays and cash flow pressure. |
-| Cost | $24K/year subcontractor cost + opportunity cost of not reallocating that budget to revenue-generating work + cost of slow/missed coordination on active projects |
+| Constraint | A \$24K/year subcontractor role is consuming budget on work that is 70-80% rule-based data operations (CRM updates, scorecard maintenance, task creation, scheduling), while the person in the role is underperforming and the company is falling behind on project delivery — causing billing delays and cash flow pressure. |
+| Cost | \$24K/year subcontractor cost + opportunity cost of not reallocating that budget to revenue-generating work + cost of slow/missed coordination on active projects |
 | Owner | Jesse Flores / Sofia Reyes (VP of Operations, Human Orchestrator) |
 | Evidence | Multiple leadership conversations documenting staffing issues, cash flow impact from delayed project delivery, and Sofia flagging Rachel's performance and time management |
 
@@ -36,23 +36,23 @@ But when we started listing what Rachel "did," we realized we were conflating di
 ### Artifact: Roles, Tasks, and Accountability Deconstruction
 
 | Role (from Accountability Chart) | Tasks within Role | Task Type | Judgment Required | Current Owner |
-|---|---|---|---|---|
+|---------------|---------------|---------------|---------------|---------------|
 | **Project Coordination** | Update CRM project records | Data entry | None — rule-based | Rachel |
-| | Create tasks from project charters | Pattern extraction | Low — follows templates | Rachel |
-| | Assign tasks to team members | Decision-making | Medium — requires capacity awareness | Rachel / Sofia |
-| | Flag overdue and blocked work | Monitoring | None — data-driven | Rachel |
-| | Manage project handoff process | Process execution | Low — follows checklist | Rachel |
+|  | Create tasks from project charters | Pattern extraction | Low — follows templates | Rachel |
+|  | Assign tasks to team members | Decision-making | Medium — requires capacity awareness | Rachel / Sofia |
+|  | Flag overdue and blocked work | Monitoring | None — data-driven | Rachel |
+|  | Manage project handoff process | Process execution | Low — follows checklist | Rachel |
 | **Scorecard & Reporting** | Pull weekly scorecard numbers | Data aggregation | None — rule-based | Rachel |
-| | Enter numbers into scorecard template | Data entry | None — rule-based | Rachel |
-| | Interpret variance and flag issues | Analysis | Medium — requires context | Sofia |
+|  | Enter numbers into scorecard template | Data entry | None — rule-based | Rachel |
+|  | Interpret variance and flag issues | Analysis | Medium — requires context | Sofia |
 | **Meeting Support** | Schedule and send agendas | Scheduling | None — rule-based | Rachel |
-| | Capture action items from transcripts | Extraction | Low — pattern matching | Rachel |
-| | Create CRM tasks from action items | Data entry | None — rule-based | Rachel |
+|  | Capture action items from transcripts | Extraction | Low — pattern matching | Rachel |
+|  | Create CRM tasks from action items | Data entry | None — rule-based | Rachel |
 | **Content & Asset Management** | Create visual assets | Creative production | High — brand judgment | Rachel / Lucas |
-| | Schedule social media posts | Scheduling | Low — follows calendar | Rachel |
-| | Coordinate video editing workflow | Creative coordination | Medium — editorial judgment | Rachel / Lucas |
+|  | Schedule social media posts | Scheduling | Low — follows calendar | Rachel |
+|  | Coordinate video editing workflow | Creative coordination | Medium — editorial judgment | Rachel / Lucas |
 | **Client Operations** | Support client onboarding process | Relationship + process | High — relationship context | Rachel / Sofia |
-| | Manage client communication cadence | Relationship | High — trust and context | Sofia |
+|  | Manage client communication cadence | Relationship | High — trust and context | Sofia |
 | **Quality Assurance** | Execute QA checklists | Process execution | Medium — judgment calls | Rachel / Sofia |
 
 The deconstruction made the design decision obvious. The roles that looked like one job were actually a collection of tasks with wildly different judgment requirements. The low-judgment, rule-based tasks clustered together — and they were the majority of Rachel's hours.
@@ -88,7 +88,7 @@ The deconstruction made the design decision obvious. The roles that looked like 
 ### Artifact: Source Completeness Test
 
 | Check | Result |
-|---|---|
+|------------------------------------|------------------------------------|
 | **Designer test.** Could someone who wasn't in the room look at this map and know what they're designing against? | Yes — sources, types, owners, and pipeline status are all named. The Roles/Tasks deconstruction makes it clear which work is rule-based and which requires judgment. |
 | **Constraint scope test.** Every row connects to the constraint. | Yes — every source feeds Rachel's coordination work. No extraneous systems included. |
 | **Pipeline test.** Every digital source has a pipeline status. | Yes — CRM is Connected, scorecard is Manual, transcripts are Manual, assets are Connected. |
@@ -115,7 +115,7 @@ In that session, I designed four agents on a whiteboard. I didn't just describe 
 ### Artifact: Agent Description to Definition
 
 | Agent | Described (Conceptual) | Defined (Spec'd) |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | **Task Agent** | "We need something that creates tasks from project charters" | **Input:** Project charter + milestone definitions from CRM API. **Output:** Complete task descriptions with SMART outcomes, point estimates, dependency ordering — written back to CRM via API. **Trigger:** Daily poll at 7:15am for projects needing tasks. **Guardrails:** Cannot modify existing tasks; creates only. All generated tasks posted to Slack for review. |
 | **Coordination Agent** | "We need something that assigns work and flags problems" | **Input:** All open tasks + team capacity data + skills matrix from CRM. **Output:** Task assignments, conflict flags, daily summary posted to Slack, review task for Sofia. **Trigger:** Daily at 7:45am. **Guardrails:** Cannot override Sofia's manual assignments. Excluded users list (Sofia, Jesse). Creates a daily review task so Sofia sees everything before the team does. |
 | **Reporting Agent** | "We need something that generates scorecards automatically" | **Input:** CRM project data + time tracking data (Kimai). **Output:** Daily reports (completed tasks, overdue items, open cases) + weekly reports (cost variance, schedule variance, team productivity). Uses earned value management: EV = estimated points x completion %, AC = hours logged. **Trigger:** Daily at 7:30am, weekly summary on Fridays. **Guardrails:** Read-only access to source systems. Reports posted to Slack, not sent to clients. |
@@ -127,19 +127,19 @@ I named the whole thing on the whiteboard: "PM Agent Team." Sofia would take the
 
 ### Artifact: Work Deconstruction
 
-| Task | Before (Owner) | After (Owner) | Rationale |
-|------------------|------------------|------------------|------------------|
-| CRM record updates | Rachel (manual) | Agent — Task Agent + Coordination Agent | Rule-based data entry; structured source, API available |
-| Scorecard maintenance | Rachel (manual pull + entry) | Agent — Reporting Agent | Data aggregation from known sources; no judgment required |
-| Task creation from transcripts | Rachel (manual) | Agent — Task Agent | Pattern extraction from project charters; AI handles well |
-| Social media scheduling | Rachel (manual) | Agent — Content Scheduling Agent | Calendar-based; content decisions stay human, scheduling doesn't |
-| Meeting coordination | Rachel | Agent — Coordination Agent | Scheduling and agenda prep are rule-based; facilitation judgment stays human |
-| Client onboarding coordination | Rachel / Sofia | Human (Sofia) + Agent assist | Relationship component stays human; checklist execution goes agent |
-| QA coordination | Rachel / Sofia | Human (Sofia) | Judgment-driven; Sofia retained full ownership |
-| Visual asset creation | Rachel | Agent with Lucas review | AI generates, human reviews for brand consistency |
-| Video editing coordination | Rachel | Human (Lucas) | Creative coordination requires relationship and editorial judgment |
-| Project handoff management | Rachel | Agent — Coordination Agent | Process-driven; automated if procedures are documented |
-| Client relationship management | Rachel | Human (Sofia / account manager) | Judgment, trust, context — stays human |
+| Task | Before (Owner) | After (Owner) | Source / Input | Output / Destination | Rationale |
+|------------------|------------------|------------------|------------------|------------------|------------------|
+| CRM record updates | Rachel (manual) | Agent — Task Agent + Coordination Agent | Project charters, milestone definitions via CRM API | Updated CRM records, Slack confirmation post | Rule-based data entry; structured source, API available |
+| Scorecard maintenance | Rachel (manual pull + entry) | Agent — Reporting Agent | CRM project data + Kimai time tracking data | Scorecard reports posted to Slack + archived in CRM | Data aggregation from known sources; no judgment required |
+| Task creation from transcripts | Rachel (manual) | Agent — Task Agent | Project charters in CRM | SMART task descriptions written to CRM via API + Slack summary | Pattern extraction from project charters; AI handles well |
+| Social media scheduling | Rachel (manual) | Agent — Content Scheduling Agent | Content calendar + approved assets in Google Drive | Scheduled posts in social platform + confirmation to Slack | Calendar-based; content decisions stay human, scheduling doesn't |
+| Meeting coordination | Rachel | Agent — Coordination Agent | Calendar events + agenda templates | Agendas sent to attendees + action items extracted to CRM tasks | Scheduling and agenda prep are rule-based; facilitation judgment stays human |
+| Client onboarding coordination | Rachel / Sofia | Human (Sofia) + Agent assist | Client intake form + onboarding checklist in CRM | CRM client record + welcome sequence triggered + onboarding tasks created | Relationship component stays human; checklist execution goes agent |
+| QA coordination | Rachel / Sofia | Human (Sofia) | QA checklists + project deliverables | QA sign-off records in CRM | Judgment-driven; Sofia retained full ownership |
+| Visual asset creation | Rachel | Agent with Lucas review | Brand guidelines + creative brief | Draft assets in Google Drive for Lucas review | AI generates, human reviews for brand consistency |
+| Video editing coordination | Rachel | Human (Lucas) | Raw footage + editorial direction from Sofia | Edited video delivered to client | Creative coordination requires relationship and editorial judgment |
+| Project handoff management | Rachel | Agent — Coordination Agent | Handoff checklist + project records in CRM | Handoff completion record in CRM + notification to receiving team | Process-driven; automated if procedures are documented |
+| Client relationship management | Rachel | Human (Sofia / account manager) | Client communication history + CRM contact records | Client emails, meeting notes logged in CRM | Judgment, trust, context — stays human |
 
 ### Artifact: Hybrid Accountability Chart Entry
 
@@ -154,6 +154,84 @@ I named the whole thing on the whiteboard: "PM Agent Team." Sofia would take the
 | Visual assets | Reviews for brand consistency | Lucas | Generates drafts | AI generation tools |
 | Video editing | Full ownership of creative direction | Lucas | None | N/A |
 | Strategic decisions | Capacity allocation, project prioritization | Jesse / Sofia | Provides data for decisions | Reporting Agent |
+
+### Artifact: Information Flow — Client Communication
+
+The Client Communication row in the Hybrid Accountability Chart involves the tightest collaboration between human and agent. Sofia owns all client relationships, but the Coordination Agent drafts status updates, pulls project data, and prepares the information Sofia needs to communicate. The swim lane below shows how information moves through that accountability.
+
+{{< excalidraw cs-pm-swim-lane "Swim lane diagram: Client Communication accountability — human lane and agent lane with handoff points" >}}
+
+The handoff points are where governance matters most. The Coordination Agent can pull data and draft — it cannot send anything to a client. Sofia reviews every outbound communication. That boundary is non-negotiable.
+
+### Artifact: Governance and Guardrails
+
+| Domain | What Agents Can Do | What Agents Cannot Do | Escalation Trigger | Review Cadence | Kill Switch Condition |
+|------------------|------------------|------------------|------------------|------------------|------------------|
+| Task creation | Generate task descriptions with SMART outcomes, point estimates, and dependency ordering from project charters | Modify or delete existing tasks; override manually created tasks | Task Agent generates a task with zero confidence on scope or estimation | Sofia reviews generated tasks daily via Slack summary | Agent enters an infinite loop or generates more than 50 tasks in a single run |
+| Work assignment | Assign tasks based on skills matrix and capacity data; flag conflicts | Override Sofia's manual assignments; assign work to excluded users (Sofia, Jesse) | Coordination Agent detects a scheduling conflict it cannot resolve | Sofia reviews assignments daily before the team sees them | Agent assigns work to excluded users or assigns the same task to multiple people |
+| Reporting | Generate daily and weekly variance reports using earned value management | Send reports directly to clients; modify source data in CRM or time tracking | Report shows variance exceeding 20% on cost or schedule | Jesse and Sofia review weekly reports every Friday | API token spend exceeds $50 in a single day or agent fails to post for two consecutive days |
+| Data quality | Scan for incomplete descriptions, missing estimates, and data quality issues | Modify any data — flagging only | Garbage Collector flags more than 30% of active tasks as deficient | Sofia reviews flagged items weekly | Agent attempts a write operation on any record |
+| Client communication | Draft status updates; pull project data for Sofia's review | Send any communication to a client; access client email directly | Draft contains language Sofia hasn't approved or references confidential data | Sofia reviews every draft before sending | Agent sends any outbound communication without human approval |
+| Reminders | Send personalized Slack DMs to team members listing overdue and blocked tasks | Contact anyone outside the internal team; escalate on its own | Team member reports receiving inaccurate or duplicate reminders | Sofia reviews reminder logs weekly | Agent sends more than 10 DMs to a single person in one day |
+
+### Artifact: Design Brief — PM Agent Team
+
+::: {.callout-note appearance="simple"}
+**Design Brief — PM Agent Team**
+
+This is the design brief as it existed when we moved from Design into Build. It captures the full picture of what the agent team would do, who it affected, and what it needed to work.
+:::
+
+**Workflow Summary**
+
+The PM Agent Team replaces the coordination work previously done by a subcontractor. Five agents run on weekday mornings between 7:00am and 7:45am, each handling a specific coordination function: task creation from project charters, daily work assignment and conflict flagging, variance reporting with earned value management, personalized reminders for overdue and blocked work, and data quality scanning. All agent output posts to Slack for human review. Sofia Reyes supervises the team as Human Orchestrator, monitoring by exception rather than approving every action.
+
+**Stakeholders**
+
+| Stakeholder | Relationship to Agent Team |
+|------------------|------------------|
+| Sofia Reyes (VP of Operations) | Human Orchestrator — supervises all agents, reviews output daily, intervenes on exceptions, owns client relationships |
+| Jesse Flores | Strategic oversight — sets policy, reviews weekly reports, makes capacity allocation decisions based on agent-generated data |
+| Lucas (Creative Lead) | Receives task assignments from Coordination Agent; reviews AI-generated visual assets for brand consistency |
+| Delivery team members | Receive daily Slack reminders and task assignments; interact with agent output without needing to know it's agent-generated |
+| Clients | Indirect — receive faster status updates and more consistent project delivery; never interact with agents directly |
+
+**Systems Involved**
+
+| System | Role in Agent Team | Access Method |
+|------------------|------------------|------------------|
+| CRM (EspoCRM-based) | System of record for all projects, tasks, contacts, and cases | REST API with scoped API keys per agent |
+| Kimai (time tracking) | Source of actual hours logged; feeds earned value calculations | API integration |
+| Slack | Output channel for all agent summaries, reminders, and flags | Slack API with bot token |
+| Claude API | AI reasoning for task generation, estimation, assignment, and reporting | Direct HTTPS calls; Sonnet for Task Agent, Opus for Coordination Agent |
+| Google Drive / Canva | Storage for visual assets and brand materials | Connected via existing integrations |
+| Node.js agent server | Runtime environment for all agents; handles scheduling, API calls, error recovery | Self-hosted; each agent runs as a standalone service |
+
+**Data Requirements**
+
+| Data | Source | Freshness Required | Access |
+|------------------|------------------|------------------|------------------|
+| Project charters and milestone definitions | CRM | Real-time (API poll) | Task Agent reads at 7:15am daily |
+| Open tasks with status, assignee, and estimates | CRM | Real-time | Coordination Agent reads at 7:45am daily |
+| Team skills matrix and capacity data | CRM | Updated weekly by Sofia | Coordination Agent reads for assignment logic |
+| Hours logged per task | Kimai | Previous day's entries | Reporting Agent reads at 7:30am daily |
+| Task and project descriptions | CRM | Real-time | Garbage Collector reads at 7:00am daily |
+| Overdue and blocked task flags | CRM | Real-time | Reminder Agent reads at 7:00am daily |
+
+**Success Criteria**
+
+| Criterion | Measurement | Target |
+|------------------|------------------|------------------|
+| Cost reduction | Annual spend on coordination work | From $24K/year to under $8K/year |
+| Report timeliness | Daily reports posted to Slack by 8:00am | 95% on-time delivery |
+| Task creation accuracy | Percentage of agent-generated tasks Sofia approves without edits | Above 80% within first month |
+| Assignment accuracy | Percentage of assignments Sofia does not override | Above 85% within first month |
+| Data quality improvement | Percentage of active tasks with complete descriptions and estimates | Increase from baseline within 60 days |
+| Team satisfaction | Qualitative feedback from delivery team on task clarity and communication speed | Positive or neutral — no degradation from previous state |
+
+**Constraints and Guardrails**
+
+Agents operate on fixed schedules only — no event-driven triggers in v1. All agent output posts to Slack before reaching the team. Agents cannot modify existing data unless explicitly designed to do so (Task Agent creates only; Garbage Collector flags only). No agent communicates with clients. Sofia reviews all output daily. API token spend is monitored; any single-day spend exceeding $50 triggers an alert. If an agent enters an infinite loop, exhausts memory, or generates runaway API calls, it is killed and does not restart until Sofia or Jesse investigates.
 
 **Autonomy level:** Automated (human-on-the-loop). Sofia monitors by exception.
 
@@ -171,7 +249,7 @@ We started the PM Agent Team at human-on-the-loop. Sofia reviews agent output da
 
 | Gate Item | Status | Notes |
 |------------------------|------------------------|------------------------|
-| Constraint validated with numbers | Yes | Cash flow impact from delayed project delivery + $24K/yr subcontractor cost documented |
+| Constraint validated with numbers | Yes | Cash flow impact from delayed project delivery + \$24K/yr subcontractor cost documented |
 | Knowledge Map complete | Yes | Sources mapped across digital and organic; Completeness Test passed |
 | Every accountability assigned (human or agent) | Yes | Work Deconstruction table complete; all items assigned |
 | Human Orchestrator named | Yes | Sofia Reyes |
@@ -219,7 +297,7 @@ I also laid out the governance model in that same conversation: "The human respo
 | Section | Detail |
 |------------------------------------|------------------------------------|
 | Solution name | PM Agent Team |
-| Constraint addressed | $24K/yr subcontractor cost on rule-based coordination work + performance issues + billing delays from slow project delivery |
+| Constraint addressed | \$24K/yr subcontractor cost on rule-based coordination work + performance issues + billing delays from slow project delivery |
 | Systems connected | CRM (EspoCRM-based) via API, time tracking system, Slack (notifications + DMs), code repositories, Claude API (Sonnet for Task Agent, Opus for Coordination Agent) |
 | Tools / platforms | Node.js agent server (five agents), scheduled CRM agent (operates as first-class CRM user), n8n (Garbage Collector only) |
 | Agent capabilities | Task generation + estimation, daily work assignment + conflict flagging, daily/weekly variance reporting, personalized reminders, data quality scanning |
@@ -239,13 +317,13 @@ We tracked the same metrics we'd always tracked: cost variance, time variance, s
 
 The biggest early adjustment was the n8n-to-agent-server migration itself. We tried n8n first. It was brittle. The webhook architecture worked for simple triggers but couldn't handle the chaining, context management, and error recovery that production agent work demands. The decision to rebuild as a dedicated agent server — each agent as a standalone Node.js service with its own cron, its own system prompt, its own CRM user — was the build-phase pivot that made everything else possible.
 
-The cost comparison tells the story. Agent tooling runs about $500/month — roughly $200 for server hosting and $300 for Claude API tokens. That's about $6K/year. Rachel's role cost $24K/year. A 75% cost reduction, and the agents don't call in sick, don't need management, and don't deteriorate over time.
+The cost comparison tells the story. Agent tooling runs about \$500/month — roughly \$200 for server hosting and \$300 for Claude API tokens. That's about \$6K/year. Rachel's role cost \$24K/year. A 75% cost reduction, and the agents don't call in sick or deteriorate over time.
 
 ### Artifact: Delivery Metrics
 
 | Metric | Before (with Rachel) | After (PM Agent Team) | Delta |
 |------------------|------------------|------------------|------------------|
-| Coordinator cost | $24K/year (subcontractor) | ~$6K/year (~$500/mo for server + Claude API) | 75% cost reduction |
+| Coordinator cost | \$24K/year (subcontractor) | \~\$6K/year (\~\$500/mo for server + Claude API) | 75% cost reduction |
 | Report generation | Manual, self-reported, weekly | Automated daily + weekly, earned value math | From lagging self-reports to daily automated variance tracking |
 | Task creation | Manual — Rachel read charters and transcripts | Automated — Task Agent generates from charters with SMART outcomes | From hours of manual work to minutes of agent processing |
 | Work assignment | Manual — Rachel/Sofia assigned tasks by hand | Automated — Coordination Agent assigns daily based on skills/capacity | From ad-hoc delegation to systematic daily assignment |
@@ -263,7 +341,7 @@ Work assignment and capacity management were the surprise. We'd marked those as 
 
 The PM Agent Team sprint was one of several sprints that contributed to our headcount reduction from 13 to 8. We lost the coordinator role entirely. Sofia got significant time back — hours each week that had been consumed by coordination and reporting now handled by agents. Communication flowed faster to the team: what was past due, what was priority, what needed attention today. That information used to pass through a human bottleneck. Now it flows directly.
 
-Email triage emerged as the next coordination challenge — how to categorize and route incoming email so agents could handle more of the coordination automatically. That became the next Compound Sprint. The rhythm from n8n to the PM Agent Team to expanding the agent team's scope is continuous — each sprint inherits from the last and feeds the next.
+Email triage emerged as the next coordination challenge — how to categorize and route incoming email so agents could handle more of the coordination automatically. That became the next Compound Sprint. That became the next Compound Sprint.
 
 ### Artifact: Sprint Retrospective
 

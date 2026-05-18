@@ -18,14 +18,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "The Coordinator Role: Before and After Work Deconstruction",
+      "text": "A Role Before and After Work Deconstruction",
       "fontSize": 28,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 28,
       "containerId": null,
-      "originalText": "The Coordinator Role: Before and After Work Deconstruction"
+      "originalText": "A Role Before and After Work Deconstruction"
     },
     {
       "id": "divider-line",
@@ -403,14 +403,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 60,
-      "text": "Stays with coordinator (judgment required):",
+      "text": "Stayed human (judgment required):",
       "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "Stays with coordinator (judgment required):"
+      "originalText": "Stayed human (judgment required):"
     },
     {
       "id": "after-human-tasks",
@@ -502,14 +502,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Agent Team (AI-Assisted)",
+      "text": "Became the Agent Team",
       "fontSize": 20,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 20,
       "containerId": null,
-      "originalText": "Agent Team (AI-Assisted)"
+      "originalText": "Became the Agent Team"
     },
     {
       "id": "after-agent-tasks",
@@ -630,14 +630,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Result: One sprint. One HAC row. One avoided hire. Role became more strategic — same title, different shape.",
+      "text": "Result: The role became more strategic. Same title, different shape. An avoided hire paid for the sprint.",
       "fontSize": 20,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 20,
       "containerId": null,
-      "originalText": "Result: One sprint. One HAC row. One avoided hire. Role became more strategic — same title, different shape."
+      "originalText": "Result: The role became more strategic. Same title, different shape. An avoided hire paid for the sprint."
     }
   ],
   "appState": {
