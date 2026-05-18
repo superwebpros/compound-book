@@ -88,6 +88,8 @@ When a Sprint stalls in Build, don't troubleshoot the build. Go back to Signal a
 
 Before you run your first Sprint, you sketch it. The Sprint Planning Canvas is a one-page artifact that names the constraint, maps your first-pass answers to each stage, identifies the team, and locks the review date. It is intentionally incomplete — you'll refine every section as you work through the chapters. The point is to start with a compass, not a blank page.
 
+{{< excalidraw ch03-sprint-planning-canvas-blank "The Sprint Planning Canvas — blank template." >}}
+
 The canvas has five parts.
 
 **Part 1: Name the Sprint.** Every Sprint starts with a constraint. Write it in one sentence. Name the leadership sponsor — the person accountable for the outcome, not the person doing the work. Pick the quarter.
@@ -146,7 +148,6 @@ That canvas took thirty minutes to fill. It is wrong in at least two places — 
 
 The Sprint Planning Canvas is designed as a single visual page — think Business Model Canvas or Lean Canvas, not a spreadsheet. One page, all five parts visible at once, the constraint at the top and the pre-flight checklist at the bottom.
 
-<!-- TODO: Add blank Sprint Planning Canvas excalidraw graphic (ch03-sprint-planning-canvas-blank) at first mention (~line 89), keep this populated Meridian version here -->
 {{< excalidraw ch03-sprint-planning-canvas "Sprint Planning Canvas — Meridian Manufacturing's populated example." >}}
 
 :::{.callout-note}

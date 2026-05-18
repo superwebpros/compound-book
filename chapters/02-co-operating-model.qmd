@@ -177,7 +177,6 @@ Claude Design was working on the visual assets — generating layout options, it
 
 Four agent teams. Four workstreams. All pointed at the same output. And she was not editing a video. She was not writing a caption. She was deciding whether the outputs were right. She was steering.
 
-<!-- TODO: Fix ch02-four-agent-teams excalidraw — Claude Design/AI arrows should point to Output, left-side order should be Research→Design→Content→Video -->
 {{< excalidraw ch02-four-agent-teams "One human directing four parallel agent workstreams toward a single output" >}}
 
 Her job did not get smaller. It got higher.

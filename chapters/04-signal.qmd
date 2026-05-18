@@ -21,15 +21,7 @@ Signal produces a single artifact: a one-page constraint statement anchored in o
 
 Here's the template. You'll fill it in by the end of this chapter.
 
-<!-- TODO: Convert constraint statement template to excalidraw (ch04-constraint-statement-template) -->
-
-| Field | Entry |
-|-------|-------|
-| **Constraint** (one sentence) | |
-| **Where it lives** (team / workflow / handoff) | |
-| **Duration** (how long it has existed) | |
-| **Quantified cost** (dollars, hours, or margin — with math) | |
-| **Validating evidence** (data checked, people consulted, numbers confirmed) | |
+{{< excalidraw ch04-constraint-statement-template "Constraint statement template: one sentence, location, duration, quantified cost, and validating evidence." >}}
 
 The discipline of insisting on one is the entire point. Most leadership teams arrive at this conversation with five candidates and a tendency to argue for whichever one is loudest in the room that week. The job of Signal is to refuse the list. You pick one — the constraint that, if removed, would change the math most meaningfully — and you commit to it for the length of the Sprint.
 

@@ -54,7 +54,6 @@ Here's how it resolved for us. My software development company, SuperWebPros, we
 The headcount paradox doesn't break by adding AI to the existing org chart. It breaks by redesigning the org chart so AI has a seat on it.
 :::
 
-<!-- TODO: Replace ch01-headcount-paradox with before/after design graphic (ch01-headcount-before-after) — show one design vs another design, not AI spend -->
 {{< excalidraw ch01-headcount-before-after "The Headcount Paradox: one operating design vs. another." >}}
 
 The reflexive move is to blame the tools — to assume the technology was oversold or next quarter's version will finally do the thing. The tools are more capable than most operators realize. The problem is that there is no defined relationship between the AI system and the work it is supposed to do. No designed workflow. No clear accountability. No governance. The tool is ambient. It helps individuals occasionally. It changes nothing structurally — and structural is the only kind of change that fixes the math.

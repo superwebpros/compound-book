@@ -313,7 +313,9 @@ Low-code worked because Design gave Elena a workflow narrow enough to build with
 
 ## What *done* looks like.
 
-<!-- TODO: Add Meridian Build Spec and Guardrails excalidraw visuals (ch07-meridian-build-spec, ch07-meridian-guardrails) -->
+{{< excalidraw ch07-meridian-build-spec "Meridian's Build Spec — eight sections, from workflow summary through build path." >}}
+
+{{< excalidraw ch07-meridian-guardrails "Meridian's Guardrails Checklist — seven pre-deploy gates." >}}
 
 Build is done when there is a deployed solution producing outputs against real inputs, reviewed by the human supervisor named in the Hybrid Accountability Chart. The supervisor is using it. The team is using it. The constraint that Signal named is being addressed by the system Design specified, running inside the actual business — not a sandbox, not a demo.
 

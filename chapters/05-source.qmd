@@ -29,7 +29,7 @@ For a given Sprint and a given constraint, a good Knowledge Map fits on one page
 
 The test for a good Knowledge Map is simple: could someone who wasn't in the room use this map to architect a workflow against the constraint? When Marina and I mapped what our project coordinator did, the map didn't catalog every system in the company. It cataloged what the coordinator touched, what she decided, and what would break if she disappeared tomorrow. 
 
-<!-- TODO: Replace ch05-knowledge-map-table with PM case study Knowledge Map excalidraw (ch05-knowledge-map-pm-case-study) -->
+{{< excalidraw ch05-knowledge-map-pm-case-study "Knowledge Map: PM Agent Team case study — six-column inventory of information sources." >}}
 
 :::{.callout-tip}
 ## Pro Tip
@@ -150,7 +150,7 @@ Identify the highest-risk organic source on your Knowledge Map — the person wh
 
 ### Sprint · Source at Meridian.
 
-<!-- TODO: Add Elena's completed Knowledge Map excalidraw (ch05-knowledge-map-elena) after the Meridian narrative section -->
+{{< excalidraw ch05-knowledge-map-elena "Elena's completed Knowledge Map — every source, gap, and at-risk dependency in one view." >}}
 
 Elena Ruiz cleared her Thursday afternoon, sat down with Mark, Ty, and Dave, and asked a simple question: when an RFQ hits my inbox, what do I actually do?
 
