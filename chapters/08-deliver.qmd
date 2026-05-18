@@ -19,6 +19,10 @@ The sprint produces on Monday. When the operator whose week was supposed to chan
 
 The difference is operational, not technical.
 
+```jf-note:
+So far everything I've read is completely made up. We have a really solid case study for our PM team that we can use as a real evidence. I think that should be our Northstar. I would revise this chapter with that example in mind because the concepts are fine, but the specifics are really wrong.
+```
+
 ## *Deployed* is not the same as *delivered*.
 
 Build ends with a working agent running in production. That is a real milestone. It is also incomplete. The agent is doing the work it was designed to do; the organization around it has not yet adjusted to receive what the agent now produces.

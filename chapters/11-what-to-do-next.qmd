@@ -85,7 +85,7 @@ You don't need permission from IT. You don't need an AI strategy document. You n
 
 If you want a peer to pressure-test that constraint with you before you spend a quarter on it, we offer one mechanism. It's called the **Clarity Call**.
 
-30 minutes. At no cost. With an operator, not a salesperson.
+30 minutes. At no cost. With an operator, not a salesperson. `jf-note: that fucking triplet. also, it will be with a compound strategist.`
 
 I was on a discovery call with a physical therapy practice owner — one of the top private practices in the country, by his own description, and I believed him. He'd just come back from a foundation retreat and he was lit up. His vision: an automated executive suite. AI agents for every C-suite function. Budgeting, forecasting, marketing, KPI management — all of it running on agents trained on his institutional knowledge. He wanted to package that knowledge and take it to the world.
 
@@ -130,6 +130,10 @@ Decide which path you're taking. Write it down. If Path A, schedule the Signal s
 :::
 
 ## Your one-page *plan*.
+
+```jf-note:
+this needs to be an excalidraw
+```
 
 This is the deliverable. Everything before this section was education. This is commitment.
 

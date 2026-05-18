@@ -11,7 +11,7 @@ Five people are gone — not lost to attrition, not cut in a crisis, not managed
 
 The shift did not happen because we adopted a new platform or made a strategic decision to run lean. It happened because we ran Signal before we wrote requisitions. That is the behavioral change. It sounds small. It is not.
 
-Here is the specific moment I can point to. We had a project coordinator who was underperforming. The reports weren't getting done. Client follow-ups were slipping. Capacities weren't being updated. Our VP of Operations was frustrated — had been bringing the same complaint to every meeting for weeks. We knew what the next step was supposed to be: let her go, write a job description, post for a replacement, spend two months hiring and onboarding the next version of the same role.
+Here is the specific moment I can point to. We had a project coordinator who was underperforming. The reports weren't getting done. Client follow-ups were slipping. Capacities weren't being updated. Our ~~VP of Operations~~ Integrator was frustrated — had been bringing the same complaint to every meeting for weeks. We knew what the next step was supposed to be: let her go, write a job description, post for a replacement, spend two months hiring and onboarding the next version of the same role.
 
 We stopped before we did that. Not because we had some principled objection to hiring. Because by that point we had run enough sprints that the first question had changed. Not *who do we hire?* but *what does Signal say about this?*
 
@@ -23,13 +23,13 @@ That is the sentence I want you to read twice. The hire never got posted. The wo
 
 We went from thirteen people to eight over the following year — and by the fourth and fifth sprint, running Signal before writing a requisition was not a deliberate practice anymore. It was the default. The question that used to be automatic — *who fills this?* — had been replaced by a different automatic question. That replacement is what this chapter is about.
 
-One sprint is a project. Two sprints is a habit. Six sprints is an operating system. This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on.
+One sprint is a project. Two sprints is a habit. Six sprints is an operating system. `jf-note: i dont want to use operating system; we use operating model. operating system belongs to teh likes of EOS.` This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on.
 
 ## What *Rhythm* means in this book.
 
 The Equation is *Co-Intelligence + Rhythm = Compound*. The first term is the system — humans and AI working as one workforce, designed deliberately, owned by named people. The second term is the cadence. Without the cadence, the system is a one-time project that produced one improved workflow and then went dormant. With the cadence, every quarter takes the next constraint, runs it through the same six stages, and adds the result to a stack of designed work the organization now operates on.
 
-The Rhythm is quarterly. Not because the calendar is sacred, but because a sprint takes six to eight weeks and the leadership team needs one focused session per quarter to commit the next one. Faster than that and the sprint becomes a slogan. Slower than that and the design infrastructure built in the last sprint starts to degrade before the next one begins — agents operating without updates, supervisors reviewing less, edge cases accumulating without a retrospective to process them.
+The Rhythm is quarterly. Not because the calendar is sacred, but because a sprint takes six to eight weeks and the leadership team needs one focused session per quarter to commit the next one. Faster than that and the sprint becomes a slogan `jf-note: what?`. Slower than that and the design infrastructure built in the last sprint starts to degrade before the next one begins — agents operating without updates, supervisors reviewing less, edge cases accumulating without a retrospective to process them `jf-note: I dont know if this is true either`.
 
 ## The quarterly operating *session*.
 
@@ -77,6 +77,10 @@ Here is how the pieces map:
 
 The sprint IS a rock. The HAC IS part of your accountability chart. The Signal Backlog IS your strategic issues list, focused on operational constraints AI can address. EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm makes them executable by a Human+AI workforce. The two stack.
 
+```jf-note:
+The Sprint is not a rock it could be, but it's not necessarily one. The Sprint is a focused unit of time in which a specific implementation happens designed to address a given signal. We need to use our terms consistently.
+```
+
 ## The *Hybrid Org Today*.
 
 Once you are running the Rhythm, you maintain one living document: the Hybrid Org Today. It is the current operational picture of your Co-Intelligent Company.
@@ -109,6 +113,10 @@ COMPLETED SPRINTS
 NEXT QUARTERLY REVIEW: [date]
 ```
 
+```jf-note: 
+We need an excalidraw of the above and not the above; its redundant. That said, there are areas that are supposed to be 'tables' and the excalidraw is displaying them like markdown, not like tables.
+```
+
 You update the Hybrid Org Today in the quarterly session. Not by a Notion-curator on a Thursday afternoon. Not at year-end planning. By your leadership team, during the meeting, as part of the four things the session does. That is the discipline that prevents the document from becoming the wiki page that rots — a thing every operator has watched happen with every other "living" document the company has tried to maintain.
 
 {{< excalidraw ch10-hybrid-org-today "Hybrid Org Today: HAC (structural layer) and Signal Backlog (constraint inventory) as two slices, updated by the quarterly session." >}}
@@ -131,6 +139,10 @@ The coordinator story that opened this chapter ends here — with the question t
 
 In Chapter 4, I described an L10 where a clinic director's scorecard had been red for nine consecutive weeks and she could not explain why any metric was off track. The meeting was real. The cadence was real. But the discipline that turns a red number into a named constraint — and a named constraint into a sprint — was absent. Nine weeks of red scorecards means the cadence exists and the Rhythm does not. What the Rhythm adds is not a new meeting. It is the four things the meeting produces: an outcome reviewed, a backlog updated, a constraint committed, a chart current. Without all four, the session is theater.
 
+```jf-note: 
+Did we keep the clinic director story? I dont think we did.
+```
+
 ## The *Compounding Scorecard*.
 
 The Hybrid Org Today tells you where you stand. The Compounding Scorecard tells you whether the Rhythm is working.
@@ -150,6 +162,10 @@ Create the Compounding Scorecard. Fill in the first row with your current sprint
 :::
 
 ## What compounding looks like, *sprint six*.
+
+```jf-note:
+The following is completely fabricated. We can refer to meridian.
+```
 
 A company is six to eight sprints in. What has actually changed?
 

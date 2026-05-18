@@ -41,7 +41,7 @@ The third is a commitment to the next sprint's focus — the constraint, the acc
 
 These three deliverables slot into the living document I'll describe in the next chapter — the Hybrid Org Today, the current operational picture of the Co-Intelligent Company. The Signal Backlog and the Hybrid Accountability Chart are both slices of it. Compound is where those slices get updated.
 
-If your sprint ends and the backlog isn't updated, the chart hasn't gained a permanent row, and no next constraint is named, the sprint didn't finish. It stopped. Those are different states. Compound is the discipline of finishing.
+If your sprint ends and the backlog isn't updated, the chart hasn't gained a permanent row `jf-note: what? this doesn't make sense.`, and no next constraint is named, the sprint didn't finish. It stopped. Those are different states. Compound is the discipline of finishing.
 
 :::{.callout-note}
 ## Action Step
