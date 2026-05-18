@@ -43,6 +43,7 @@ book:
         - chapters/case-study-meridian.qmd
         - chapters/case-study-pm-agent-team.qmd
     - chapters/appendix-prompt-engineering.qmd
+    - chapters/appendix-prompts.qmd
     - chapters/appendix-glossary.qmd
     - chapters/appendix-action-steps.qmd
 

@@ -1,6 +1,8 @@
-# Appendix: prompt *engineering* {.unnumbered}
+# Appendix: prompt engineering & context engineering {.unnumbered}
 
 Prompt engineering is a real skill, and it is worth developing once your agent teams are designed and operational — which is why it belongs here, at the back of a book about the Co-Operating Model, rather than at the front. It is not, however, the skill to develop first. Writing effective prompts for an agent team is only useful when you know what the agent team is accountable for — which is the output of Signal, Source, and Design. An excellent prompt that is pointed at the wrong accountability, or that operates within a workflow that was never designed, will produce excellent output that changes nothing.
+
+Prompt engineering and context engineering are complementary skills. Prompting is the instruction — what you tell the agent to do. Context engineering is the information environment that instruction runs inside — what the agent has access to, how that information is structured, and where it lives. Most people spend their time refining the instruction when the real leverage is in the information environment. This appendix covers both, starting with prompting and then moving to the context stack that makes prompting work.
 
 If you have read this book and you are interested in prompt engineering, your timing is right: you now have the design context that makes prompt skill meaningful. If you are reading this appendix before you have run a sprint, go back to Signal. The design work comes first.
 
@@ -44,3 +46,92 @@ Your prompt will differ — the accountability, the input sources, the constrain
 After the Deliver phase, the Sprint Retrospective will surface cases where the agent produced unexpected output. Those cases are prompt design signals — they indicate where the instruction was ambiguous or where an edge case was not anticipated. The Compound phase is where those signals become prompt improvements, then Design improvements, then better sprint performance in the next cycle.
 
 {{< excalidraw appendix-feedback-loop "Prompt improvement feedback loop: Design → Build/Deliver → Retrospective → Compound → Design (next sprint, better prompt)." >}}
+
+## Context engineering — what it is and why it matters more than prompting.
+
+Here is the pattern we see in every company that starts using AI agents. The team writes a prompt. The agent produces mediocre output. The team rewrites the prompt. The output improves slightly. The team rewrites it again, adds more detail, adds examples, adds warnings. The output plateaus. The team concludes that AI "isn't ready" for their use case.
+
+The prompt was never the problem. The agent didn't have access to the right information.
+
+Context engineering is the practice of designing what information an AI model has access to and how that information is structured. It is the difference between telling an agent "write an accurate quote for this RFQ" and giving the agent access to the pricing rules, the historical job data, the customer-specific exceptions, and the material lead times it needs to actually produce one. The first is a prompt. The second is a context environment. The prompt without the context produces confident garbage. The prompt with the context produces useful work.
+
+If you have run the Source phase of a Compound Sprint, you have already done context engineering — you just called it something else. The Knowledge Map is a context engineering artifact. The Source Classification is a context engineering decision framework. The AI tiers — standing context, retrieved knowledge, historical record — are context engineering architecture. This section makes that connection explicit.
+
+{{< excalidraw appendix-context-stack "The context engineering stack: five layers from prompt to tool connections, with Compound Sprint artifacts mapped to each layer." >}}
+
+### The context stack.
+
+An AI agent's context has five layers, stacked from simplest to most complex. Each layer adds capability. Most teams work only in the first layer and wonder why results are limited.
+
+**Layer 1 — The prompt.** The instruction itself. "Produce a rapid quote estimate for this RFQ." This is what prompt engineering focuses on — role, input format, output format, constraints, edge cases. It matters. It is also the smallest piece of the stack. A perfect prompt operating on zero context is a perfect instruction to someone who has never seen your business.
+
+**Layer 2 — System prompt and project instructions.** Persistent instructions that shape every interaction the agent has, not just a single task. This is where you put the agent's role ("you are a quoting analyst for a custom metal fabrication shop"), its constraints ("never send a quote without human review"), its output standards ("all estimates must include a confidence level and the historical jobs used as reference"). System instructions run behind every task. They are the agent's standing orders.
+
+**Layer 3 — Project context and knowledge files.** Documents loaded into the agent's project that it can reference on every interaction. This is where Knowledge Map outputs go — the durable, structured information the agent needs for every task it runs. Company SOPs. Rate cards. Pricing exception rules. Customer-specific terms. Templates. Elena's "Customer Notes.xlsx," once it's been cleaned and structured, lives here. The agent doesn't retrieve this information — it already has it, loaded and available.
+
+**Layer 4 — RAG (retrieval-augmented generation).** Dynamic retrieval from a larger knowledge base at the moment a query runs. For data too large to load into every interaction or too varied for the agent to hold all at once. This is where Meridian's 800 completed jobs in the ERP go — the agent doesn't hold all 800 records in memory, but when an RFQ comes in for a structural steel housing, it queries the historical job data and retrieves the five most similar past jobs as reference. The knowledge base is large. The retrieval is targeted.
+
+**Layer 5 — Tool use and live connections.** The agent reads from or writes to external systems in real time. CRM lookups. ERP queries. Calendar access. Project management updates. Email sends. This is the layer where the agent stops being a text processor and starts operating inside the workflow. At Meridian, this is the agent pulling current material pricing from the supplier portal, checking Carlos's shop floor capacity in the scheduling system, and posting the completed estimate into the CRM for Ty to see.
+
+Each layer is more powerful and more complex to set up than the one below it. Most teams stop at Layer 1. Teams that run the Compound Sprint build through Layer 3 by default and reach Layers 4 and 5 when the constraint requires it.
+
+### How sprint artifacts map to the context stack.
+
+The Compound Sprint produces the inputs for context engineering. The mapping is direct.
+
+**The Knowledge Map tells you what goes in the stack.** Every row on the Knowledge Map is a candidate for one of the five layers. If you built the map in Source, you have already inventoried the information your agent needs. The context engineering question is: which layer does each source belong in?
+
+**Source Classification tells you which layer.** The two axes — structured vs. unstructured, durable vs. ephemeral — and the three AI tiers — standing context, retrieved knowledge, historical record — map directly to the context stack.
+
+- Sources classified as **standing context** go in Layer 3 (project context). They are always loaded. The agent always has them. Elena's pricing exception rules, the standard rate card, the company's quoting SOP — these are durable, structured, and relevant to every interaction. They belong in the project files.
+- Sources classified as **retrieved knowledge** go in Layer 4 (RAG). They are queried when relevant, not loaded by default. The 800 historical jobs in the ERP, Dave's captured estimation framework, supplier pricing archives — too large to hold in every interaction, but essential when the right query triggers retrieval.
+- Sources classified as **historical record** stay in Layer 4 but with lower retrieval priority. Meeting transcripts, archived decisions, old email threads — available if needed, never treated as current truth.
+- Sources with a pipeline status of **Connected** or that require live reads and writes go in Layer 5 (tool connections). The CRM, the ERP for real-time lookups, the scheduling system, the supplier portal — these are systems the agent connects to, not documents it reads.
+
+**The Design Brief specifies Layers 4 and 5.** When Design identifies which systems the agent connects to and which data sources it queries, those decisions are context engineering decisions. The Design Brief is a context architecture document — it specifies the agent's information environment as much as its task flow.
+
+### What goes where — practical guidance.
+
+When you are building an agent and deciding where to put each piece of information, use this framework.
+
+**In the prompt (Layer 1):** The specific task instruction for this interaction. The output format. The constraints that apply to this particular task but not to every task the agent runs. If Elena's quoting agent is producing a rapid estimate, the prompt says "produce a rapid estimate for this RFQ in the attached format" — not "here are all 147 customer pricing exceptions." The prompt is the task. The context is everything else.
+
+**In the system prompt (Layer 2):** The agent's role and identity. Constraints that apply to every interaction — review requirements, output standards, things the agent should never do. Quality thresholds. Escalation rules. "You are Meridian Manufacturing's quoting analyst. Every estimate requires human review before delivery. If confidence is below 70%, flag the estimate and explain why." These instructions run on every task.
+
+**In project context (Layer 3):** Company-specific knowledge that is relevant to every interaction the agent handles. This is the most underused layer and the highest-leverage one for most teams. Elena's cleaned pricing exceptions spreadsheet. The standard rate card. The quoting SOP. The customer-specific terms that apply to repeat clients. The RFQ intake template. If the agent needs it on every task, it belongs here — not in the prompt, where it clutters the instruction, and not in RAG, where it might not get retrieved.
+
+**In RAG (Layer 4):** Large datasets the agent queries selectively. Historical records. Document libraries. Knowledge bases. Anything too large to load into every interaction. The 800 ERP jobs. The supplier pricing archive. Dave's estimation reference tables. The agent queries these when the task requires it and retrieves only what's relevant.
+
+**In tool connections (Layer 5):** Live data the agent needs to read or write. Systems of record. The CRM for customer lookup and quote delivery. The ERP for real-time job costing. The scheduling system for shop floor capacity. The supplier portal for current material pricing. If the data changes between interactions, it belongs in a live connection, not a static file.
+
+:::{.callout-tip}
+## Pro Tip
+If you find yourself pasting the same information into prompts repeatedly, that information belongs in Layer 2 or Layer 3 — the system prompt or project context. Repetitive pasting is a signal that you're doing context engineering by hand instead of by design.
+:::
+
+### The diagnostic test.
+
+When an agent produces bad output, the instinct is to rewrite the prompt. Resist the instinct. Run this diagnostic instead.
+
+**Step 1: Check the Knowledge Map.** Is the information the agent needed to produce good output represented on the Knowledge Map? If not, Source was incomplete. Go back and add the missing source.
+
+**Step 2: Check the context layer.** If the source is on the Knowledge Map, is it in the right layer of the context stack? A pricing exception spreadsheet that's in RAG (Layer 4) instead of project context (Layer 3) might not get retrieved on every quote — and it needs to be. A live inventory check that's loaded as a static file (Layer 3) instead of a tool connection (Layer 5) will be stale by the time the agent uses it.
+
+**Step 3: Check the source status.** If the source is on the map and in the right layer, is it Clean? Needs Work? A source marked "Needs Work" on the Knowledge Map will produce "needs work" output from the agent. The agent is only as good as the information it has access to.
+
+**Step 4: Now check the prompt.** If the source is on the map, in the right layer, and Clean — then yes, the prompt might be the problem. Rewrite it. But this is the fourth check, not the first.
+
+In our experience, roughly 80% of agent output problems trace to Layers 2 through 5 — the context environment — not Layer 1. The prompt is where most teams look. The context stack is where most problems live.
+
+:::{.callout-note}
+## Action Step
+Take your most recent agent interaction that produced disappointing output. Run the four-step diagnostic. Was the problem in the prompt, or in the context? If you don't have a Knowledge Map for the constraint the agent was working on, that's your answer — the context was never designed.
+:::
+
+### Context engineering is a design discipline.
+
+Prompt engineering is a writing skill. Context engineering is a design discipline. The difference matters because design disciplines have artifacts, processes, and iteration cycles — and writing skills don't.
+
+The Compound Sprint gives you the design discipline. Signal tells you what the agent is accountable for. Source maps the information environment and classifies it. Design specifies how the agent accesses that information — which layers, which connections, which retrieval patterns. Build implements the context stack. Deliver tests whether the agent had the right information to produce the right output. Compound improves the stack for the next cycle.
+
+If you have run the sprint, you have done context engineering. The vocabulary is new. The work is not.
