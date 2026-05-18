@@ -14,7 +14,8 @@ by Arjun Dutt, Gene Rapoport, Aaron “Ronnie” Chatterji, Gawesha Weeratunga a
 April 30, 2026
 
 Illustration by Mandy Tsou
-Summary.   Many companies are investing heavily in AI but failing to translate isolated productivity gains into meaningful business results. The problem is a “micro-productivity trap,” where firms optimize tasks without rethinking workflows or value creation, preventing organization-wide impact. This article outlines four steps to escape this trap—strategically narrowing use cases, reimagining cross-functional workflows, engaging frontline employees, and measuring outcomes tied to business value—illustrated through examples from companies like Lowe’s and a Fortune 1000 manufacturing firm.close
+Summary.   
+Many companies are investing heavily in AI but failing to translate isolated productivity gains into meaningful business results. The problem is a “micro-productivity trap,” where firms optimize tasks without rethinking workflows or value creation, preventing organization-wide impact. This article outlines four steps to escape this trap—strategically narrowing use cases, reimagining cross-functional workflows, engaging frontline employees, and measuring outcomes tied to business value—illustrated through examples from companies like Lowe’s and a Fortune 1000 manufacturing firm.close
 
 
 Gift Article
