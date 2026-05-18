@@ -1,0 +1,116 @@
+# Co-Intelligent Co-Operation — Source of Truth
+
+This document is the canonical reference for editing agents working on the book. When in doubt, this document wins.
+
+## Structural Decisions (Current as of 2026-05-17)
+
+1. **Human Orchestrator and Agent Coordinator are ONE role.** "Agent Coordinator" no longer exists. The Human Orchestrator owns both irreducible human decisions AND agent team supervision. All references to Agent Coordinator must be removed or merged.
+
+2. **HAC supports multiple rows per sprint.** A single sprint can produce multiple Hybrid Accountability Chart entries. Do NOT say "one row per sprint."
+
+3. **AI-assisted → automated progression:** Always start AI-assisted. Humans move toward exceptions and final decisions (not reduced review frequency). Move toward automated when the human is rubber-stamping more often than not.
+
+4. **Design Brief is a framework artifact.** Introduced in Ch06b. Comprehensive document capturing: workflow summary, stakeholders, systems, data requirements, success criteria, constraints/guardrails, V1 artifact description. Upstream input to the Build Spec.
+
+5. **Work Deconstruction includes inputs/outputs.** Each task row shows Source/Input and Output/Destination columns alongside the four-category classification.
+
+6. **Compound has a coaching program, NOT on-site implementers.** Members work with a Compound coach on weekly coaching calls (remote). Members also have access to the Compound Bench — AI agents and skills that help walk through the Sprint process independently. Coach = human support. Bench = agent support.
+
+7. **Sprint ≠ Rock.** A sprint is a focused unit of time for implementing a signal. It CAN become a quarterly Rock if committed in planning, but it is not inherently one. Do not equate them.
+
+8. **"Compound strategist" not "operator"** for the person on Clarity Calls and in client-facing references.
+
+9. **"Operating model" not "operating system."** Operating system belongs to EOS/Scaling Up. Compound uses "Co-Operating Model."
+
+10. **Meridian Manufacturing is fictional.** Must be disclosed early so readers understand it's an illustrative composite. The PM Agent Team case study is real (anonymized).
+
+11. **No Bench/Skills Library references in the main book text.** The Bench is mentioned only in the glossary and where Elena uses it in the Meridian case study. Skills Library has been removed entirely.
+
+12. **No triplet patterns.** Three-item rhetorical lists like "One X. One Y. One Z." are the #1 AI-tell Jesse catches.
+
+13. **All stories first person. All names anonymized.** Except Meridian characters (fictional) and public figures referenced with permission.
+
+## The Sequence (six stages)
+
+Signal → Source → Design → Build → Deliver → Compound
+
+- **Signal**: Identify the one constraint, trace to root cause, quantify cost. Produces: Constraint Statement, Is/Is Not, Five Whys, AI Readiness Scorecard.
+- **Source**: Map what the org knows about the constraint. Produces: Knowledge Map, Source Classification.
+- **Design**: Architect the solution. Produces: Work Deconstruction, HAC entries, Information Flow Spec, Design Brief, Design Gate checklist.
+- **Build**: Construct and deploy. Produces: Build Spec (8 sections), Guardrails Checklist (7 questions).
+- **Deliver**: Make the org actually use it. Produces: Deploy Readiness Audit, Per-Role Runbooks, Operational Log, Sprint Outcome Measurement.
+- **Compound**: Turn shipped sprint into foundation for next. Produces: Sprint Retrospective, Constraint Re-rank, one design change, updated HAC, updated Signal Backlog.
+
+## Case Study: Meridian Manufacturing (FICTIONAL)
+
+- **Company**: Custom metal fabrication, Grand Rapids MI
+- **Size**: $7.2M revenue, 27 employees (14 shop floor, 13 office)
+- **Constraint**: VP of Operations (Elena Ruiz) is sole quoting bottleneck — $558K/year cost (lost revenue + misallocated time + floor underutilization)
+- **Characters**: Mark Ellison (CEO/Visionary), Elena Ruiz (VP Ops/Integrator), Ty Banfield (Sales Lead), Dave Kowalski (Sr Design Engineer, 31 yrs), Carlos Medina (Shop Floor Supervisor)
+- **Key artifact**: "Customer Notes.xlsx" — 147 rows of pricing exceptions on Elena's desktop, cleaned to 112 validated rules during Build
+- **Systems**: HubSpot CRM, JobBOSS ERP, Claude Team workspace, n8n
+- **Agents**: Quote Research Agent, Quote Pricing Agent, Quote Assembly Agent (all in one Claude project with three workflows)
+- **Result**: Standard quote turnaround 3.8 days → 4.2 hours. Elena's quoting time 15 hrs/wk → 5 hrs/wk. Throughput doubled. $47K new revenue in first month.
+- **Support model**: Elena is a Compound member. Works with Compound coach on weekly calls. Uses Bench tools for artifact building. Hired freelance n8n developer for API work.
+
+## Case Study: PM Agent Team (REAL, anonymized)
+
+- **Company**: Compound (anonymized as unnamed)
+- **Constraint**: Project coordinator role costing $24K/year, work falling behind, billing impacted
+- **Characters**: Rachel (subcontractor being replaced), Sofia (VP Ops who becomes orchestrator), Lucas (team member)
+- **Agents**: 5 agents — Task Management, Reporting, Client Communication, Reminders/Follow-ups, QA
+- **Platform pivot**: Started on n8n (brittle), rebuilt as dedicated agent server (Node.js services with own cron/system prompt/CRM user)
+- **Result**: $24K/year → ~$6K/year (75% cost reduction). Coordinator role eliminated. Sofia got hours back weekly.
+- **Autonomy levels**: Human-in-the-loop (reviews every output), Human-on-the-loop (reviews exceptions/samples), Human-over-the-loop (reviews aggregate metrics)
+
+## Story Index (sourced stories in the book)
+
+| Story | Source | Chapters |
+|---|---|---|
+| Project coordinator replacement (Rachel/Sofia) | Real — Compound internal, anonymized | Ch06 opening, PM case study |
+| Marketing lead with four agent teams | Real — Compound internal | Ch02, Ch06, Ch07 |
+| Jesse's 5:30 PM epiphany (closing laptop) | Real — Jesse personal | Ch09 opening |
+| 13→8 headcount shift | Real — Compound internal | Ch10 opening |
+| MSU social science students building pipelines | Real — Jesse teaching | Ch07 |
+| Katie discovery call (constraint unnamed) | Real — Jesse client call | Ch11 opening |
+| Jill discovery call (same pattern) | Real — Jesse client call | Ch11 |
+| PT clinic owner (automated executive suite vision) | Real — Jesse discovery call | Ch11 |
+| Ahmed and context management | Real — transcript reference | Ch02 |
+| Meridian Manufacturing quoting sprint | Fictional composite | Case study, threaded through Ch04-Ch10 |
+| 45-minute Source session on video call | Real — Compound internal | Ch09 |
+| "Meridian Consulting Group" | NEEDS RENAME — conflicts with Meridian Manufacturing | Ch01, Ch03 |
+
+## Fabricated Examples to Replace
+
+These exist in Ch08-Ch11 and need replacement with Meridian, PM case study, or real transcript sources:
+
+| Location | What's there | Replacement source |
+|---|---|---|
+| Ch08 lines 58-60 | Ghost manufacturing quoting example (design engineers, 90-min sessions) | Meridian Deliver story |
+| Ch08 lines 84-94 | Ghost quoting runbook (design engineer, ops manager, sales rep) | Meridian per-role runbook |
+| Ch08 lines 129-139 | Ghost operational log | Meridian Deliver friction stories (Inconel, missing drawings, Dave's skepticism) |
+| Ch08 lines 175-192 | Ghost sprint measurement ($180K, 4.2 days, 22% win rate) | Meridian metrics |
+| Ch09 lines 59-60 | Ghost retrospective (legacy pricing exceptions, sales reps bypassing) | Meridian retrospective |
+| Ch09 lines 75-80 | Ghost compounding measurement | Meridian compounding |
+| Ch09 lines 94-95 | Ghost one design change (47 exception rules) | Meridian one design change (complexity indicators) |
+| Ch09 lines 114-121 | Ghost constraint re-rank | Meridian constraint re-rank |
+| Ch09 lines 134-139 | Ghost living document updates | Meridian updates |
+| Ch10 lines 166-233 | Fabricated "Ridgeline Media Group" example | Meridian multi-sprint progression OR cut |
+| Ch10 line 44 | "Agent Coordinator handoffs" | Remove — role collapsed |
+| Ch10 line 176 | "Agent Coordinator role" | Remove — role collapsed |
+| Ch10 line 140 | Clinic director reference | Verify if story was kept in Ch04; if not, remove |
+
+## Terminology Quick-Reference
+
+| Term | Correct usage | Common error |
+|---|---|---|
+| Human Orchestrator | Single role owning decisions + agent supervision | Splitting into Orchestrator + Coordinator |
+| HAC | Multiple entries per sprint | "One row per sprint" |
+| Co-Operating Model | Our term for the operating model | "Operating system" (belongs to EOS) |
+| Compound Sprint | Focused unit of time, Signal→Compound | Equating with "Rock" |
+| AI-Assisted → Automated | Humans move to exceptions/final decisions | "Review frequency decreases" |
+| Compound strategist | Person on Clarity Calls | "Operator" |
+| Compound coach | Weekly remote coaching calls | "Compound partner" (implies on-site) |
+| Compound Bench | AI agents/skills for members | "Skills Library" (removed) |
+| Design Brief | Comprehensive pre-Build artifact | Not mentioning it at all |
+| Work Deconstruction | 4 categories + inputs/outputs | Missing inputs/outputs columns |
