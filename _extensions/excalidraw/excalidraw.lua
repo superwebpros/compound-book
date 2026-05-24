@@ -61,9 +61,16 @@ local function render_svg_via_kroki(excalidraw_path, svg_path)
   return true
 end
 
-local function convert_svg_to_png(svg_path, png_path)
+local function has_rsvg_convert()
+  local handle = io.popen("which rsvg-convert 2>/dev/null")
+  local result = handle:read("*a")
+  handle:close()
+  return result and result:match("rsvg%-convert") ~= nil
+end
+
+local function convert_svg_to_png_local(svg_path, png_path)
   local cmd = string.format(
-    '/opt/homebrew/bin/rsvg-convert -o "%s" --dpi-x 192 --dpi-y 192 "%s" 2>&1',
+    'rsvg-convert -o "%s" --dpi-x 192 --dpi-y 192 "%s" 2>&1',
     png_path, svg_path
   )
   local handle = io.popen(cmd)
@@ -71,6 +78,28 @@ local function convert_svg_to_png(svg_path, png_path)
   handle:close()
   if not file_exists(png_path) then
     io.stderr:write("excalidraw shortcode: rsvg-convert failed: " .. result .. "\n")
+    return false
+  end
+  return true
+end
+
+local function render_png_via_kroki(excalidraw_path, png_path)
+  local url = "https://kroki.io/excalidraw/png"
+  local cmd = string.format(
+    'curl -s -X POST "%s" '
+    .. '-H "Content-Type: text/plain" '
+    .. '--data-binary @"%s" '
+    .. '-o "%s" '
+    .. '--max-time 30',
+    url, excalidraw_path, png_path
+  )
+  local ok = os.execute(cmd)
+  if not ok then
+    io.stderr:write("excalidraw shortcode: curl failed for PNG via Kroki\n")
+    return false
+  end
+  if not file_exists(png_path) then
+    io.stderr:write("excalidraw shortcode: Kroki PNG returned empty for " .. excalidraw_path .. "\n")
     return false
   end
   return true
@@ -95,23 +124,29 @@ local function ensure_svg_cached(source_path, svg_path, name)
 end
 
 local function ensure_png_cached(source_path, svg_path, png_path, name)
-  -- PNG depends on SVG; ensure SVG exists first
-  if not ensure_svg_cached(source_path, svg_path, name) then
-    return false
-  end
-  -- Check if PNG is up-to-date relative to SVG
   local needs_convert = true
   if file_exists(png_path) then
-    local svg_time = file_mtime(svg_path)
+    local src_time = file_mtime(source_path)
     local png_time = file_mtime(png_path)
-    if png_time > 0 and png_time >= svg_time then
+    if png_time > 0 and png_time >= src_time then
       needs_convert = false
     end
   end
   if needs_convert then
-    io.stderr:write("excalidraw: converting " .. name .. " svg→png via rsvg-convert...\n")
-    local ok = convert_svg_to_png(svg_path, png_path)
-    if not ok then return false end
+    if has_rsvg_convert() then
+      -- Local: SVG via Kroki, then PNG via rsvg-convert (higher quality)
+      if not ensure_svg_cached(source_path, svg_path, name) then
+        return false
+      end
+      io.stderr:write("excalidraw: converting " .. name .. " svg→png via rsvg-convert...\n")
+      local ok = convert_svg_to_png_local(svg_path, png_path)
+      if not ok then return false end
+    else
+      -- CI/remote: PNG directly from Kroki
+      io.stderr:write("excalidraw: rendering " .. name .. " as png via Kroki...\n")
+      local ok = render_png_via_kroki(source_path, png_path)
+      if not ok then return false end
+    end
     io.stderr:write("excalidraw: cached " .. name .. ".png\n")
   end
   return true
