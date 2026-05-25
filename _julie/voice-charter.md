@@ -18,52 +18,27 @@ The book diagnoses. It does not exhort. No "your competitors are already doing t
 Numbers are load-bearing. Names of artifacts, tools, people (anonymized or composite) are concrete. When a generic claim appears, a specific instance follows. Example (07-build.qmd:8): *"the five agents that replaced our $24,000-a-year coordinator role."*
 
 **4. Mechanical / structural framing.**
-The work is plumbing, not philosophy. Words like *workflow, handoff, accountability, structural, designed, gate, deliverable* carry the weight. Example (01-diagnosis.qmd:81): *"The pattern is mechanical. The diagnosis is mechanical. The fix is mechanical."*
-
-```jf-note:
-The principle is correct, but that example reads like AI
-```
+The work is plumbing, not philosophy. Words like *workflow, handoff, accountability, structural, designed, gate, deliverable* carry the weight. The sampled triplet "*The pattern is mechanical. The diagnosis is mechanical. The fix is mechanical.*" (01-diagnosis.qmd:81) reads as AI cadence (triplet pileup, A3 below) and should not be imitated — the *principle* lives, the *construction* doesn't.
 
 **5. Embedded story, never decorative anecdote.**
-Stories arrive at the moment they make a point and end the moment the point is made. They are first-person, specific, and quantified where possible. They do not begin with "Imagine if..." or "Picture a company..." Example (04-signal.qmd:92): the PT clinic story opens *"I sat in on a meeting with a PT clinic operator that was forty-five minutes into a conversation about opening their sixth location."*
+Stories arrive at the moment they make a point and end the moment the point is made. They are first-person, specific, and quantified where possible. They do not begin with "Imagine if..." or "Picture a company..." First-person tag follows the dual-author rule (Jesse:/Julie: when a story belongs to one of them; "we" when it belongs to both). Example (04-signal.qmd:92): the PT clinic story opens *"I sat in on a meeting with a PT clinic operator that was forty-five minutes into a conversation about opening their sixth location."*
 
-```jf-note:
-Correct, but with "we" language or "Jesse/Julie" distinction when appropraite
-```
-
-**6. Refuses summary rituals.**
-No "In this chapter we covered...", no "To recap...", no "Taken together...". Chapters end on a handoff to what comes next — usually one paragraph, sometimes a one-line transition. Example (07-build.qmd:342): *"Build makes it work. Deliver puts it into the company's actual operating rhythm..."*
-
-```jf-note:
-All chapters should be ending with reflection questions to keep the reader engaged
- and thinking about their busienss.
- ```
+**6. Refuses recap rituals; ends with reflection questions.**
+No "In this chapter we covered...", no "To recap...", no "Taken together...". Chapters end with **reflection questions that engage the reader to apply the chapter to their own business** — typically 2–4 short questions in a `### Reflect on your operation` style block (or equivalent), followed by a one-line handoff to the next chapter. Example handoff (07-build.qmd:342): *"Build makes it work. Deliver puts it into the company's actual operating rhythm..."*
 
 **7. Education through redefinition.**
 When introducing a new term (agent, RAG, token, sprint), the book defines it in plain language *before* using it operationally, and the definition is an analogy a non-technical operator can hold. Example (07-build.qmd:125): *"Tokens are to AI what minutes are to a phone plan."*
 
-**8. Peer authority, not consultant authority.**
-Evidence is grounded in lived operating experience — "We learned...", "I've watched...", "In my company..." — not citations, not "studies show," not appeals to authority. Example (01-diagnosis.qmd:49): *"My software development company, SuperWebPros, went from thirteen people to eight."*
-
-```jf-note:
-Both/and. When there is research to substantiate our perspectives, we want to use it.
-```
+**8. Peer authority — with sourced research where it substantiates.**
+Evidence is grounded in lived operating experience first — "We learned...", "I've watched...", "In my company..." — not detached citations. **Both/and: when published research substantiates a claim, name it inline with a specific reference (author, work, what it found)**. The forbidden form is "studies show" without specifics. The allowed form is "Mark O'Donnell's *Issues!* names this exact pattern as..." (one line, no bibliography theater). Example: 01-diagnosis.qmd:49 — *"My software development company, SuperWebPros, went from thirteen people to eight."*
 
 ---
 
 ## Section 2 — Cadence and structural rules
 
-**Sentence-length mix.** Short punchy (3–8 words) interleaved with medium (15–25 words). Long sentences (30+) appear sparingly and use em-dashes to carry the breath. *Example:* 01-diagnosis.qmd:29 — *"One person working harder inside a system that was never designed for AI is not adoption."* (Single load-bearing sentence as its own paragraph.)
+**Sentence-length mix.** Short punchy (3–8 words) interleaved with medium (15–25 words). Long sentences (30+) appear sparingly and use commas, semicolons, or sentence breaks to carry the breath. *Example:* 01-diagnosis.qmd:29 — *"One person working harder inside a system that was never designed for AI is not adoption."* (Single load-bearing sentence as its own paragraph.)
 
-```jf-note:
-No em-dashes.
-```
-
-**Em-dashes are the editorial rhythm.** Used freely. They replace bullet lists for parenthetical/expansive content. *Example:* 04-signal.qmd:8 — *"...a subcontractor we were paying $24,000 a year — and the work was still falling behind."*
-
-```jf-note:
-See above; em-dashes are generally an AI-tell. We should use them sparingly. See the 'voice' skill
-```
+**Em-dashes are an AI tell — use sparingly, calculated, never as default rhythm.** This is a revision from earlier brief guidance. Em-dashes were previously called "the editorial rhythm" and "used freely"; that produced AI-cadence drift. Going forward: em-dashes appear only when no other punctuation works (parenthetical aside that breaks the sentence's spine; a deliberate beat). Default rhythm uses periods, commas, and semicolons. The existing manuscript has em-dashes from the prior rule that are grandfathered in, but **new edits do not add em-dashes** unless they're the only option. The voice scanner flags em-dash density.
 
 **Paragraph rhythm.** Most paragraphs are 3–6 sentences. Single-sentence paragraphs land as hammer blows after a longer setup. *Example:* 01-diagnosis.qmd:19 — *"That company is not unusual. It might be yours."* (two short sentences, full paragraph.)
 
@@ -109,15 +84,17 @@ Authoritative source: `book-rewrite-brief.md` lines 27–137. Confirmed consiste
 
 - *transformation, transformative, transform* (audience-exhausted)
 - *leverage, synergy, alignment* (corporate filler — "the meeting kind" of alignment is fine)
-- *AI-powered, AI-enabled, cutting-edge, revolutionary, game-changer, paradigm shift*
-- *augmentation* (use *co-intelligence*) `jf-note: AI-powered and AI-enabled are fine.`
+- *cutting-edge, revolutionary, game-changer, paradigm shift*
+- *augmentation* (use *co-intelligence*)
 - *hybrid* alone — only inside locked phrases *Hybrid Accountability Chart*, *Hybrid Org Today*
-- *organizational design* in headings/mastheads `jf-note: Rarely; most entrepreneurs don't think about org design; Julie's experience in HR is heavily enterprise-coded, but smaller/mid-market companies don't think or talk like that. We need to use plain words. Org design should be sparing and only when necessary.`
-- *movement, join us, revolution* `jf-note: Movement is fine. Community is better.`
+- *organizational design* in **any** mid-market-operator context (use plain words: "how the work is set up," "who owns what," "the way the team runs"). Mid-market CEOs don't think or talk in HR-enterprise vocabulary. Allowed only in narrow technical context where no plain equivalent exists, and never in headings.
+- *join us, revolution* (movement is allowed but **community is better**)
 - "Learn more," "Discover," "Find out how," "Schedule a demo," "Dive in," "Navigate," "Unlock"
 - "It's important to note," "rapidly evolving landscape"
-- "studies show" (without specifics), "(Author, Year)", "In [Book] by [Author]..."
+- "studies show" without specifics; "(Author, Year)" citation format; "In [Book] by [Author]..." book-report openers (the *form* is forbidden — a sourced research reference inline with author, work, and what it found is fine; see Pillar 8)
 - Emoji. Anywhere.
+
+**Allowed** (clarified from earlier brief): *AI-powered, AI-enabled* are fine when they describe a concrete capability ("AI-enabled workflow"). They are not the same as the audience-exhausted *transformation/transformative* family.
 
 ### Retired (do not resurrect)
 
@@ -157,9 +134,7 @@ Each entry: **(a)** the pattern, **(b)** why forbidden, **(c)** what NOT to writ
 **Don't write:** *"This represents a transformative opportunity to fundamentally reimagine how organizations approach the integration of artificial intelligence within their operational frameworks."*
 **Do instead:** One claim, one piece of evidence, one number.
 
-```jf-note:
-We have a skill to help detect AI-voice. Needs to be run on a per-chapter basis in order to make sure anti-patterns aren't missed in a context window.
-```
+**Tooling note.** The `ai-tell-scan` skill exists to catch this category at scale. It must be run **per chapter** (not just at the end of a batch) to prevent context-window blindness from missing anti-patterns that accumulate gradually across paragraphs.
 
 ### A6. Fear-based or competitive-threat urgency
 **Why:** Existing voice rule (`voice-scanner.md`). Audience is exhausted by it.

@@ -36,8 +36,12 @@ PDF builds require a LaTeX install. If missing, `quarto install tinytex` provide
 
 ## Editorial notes
 
+- **Voice canon: `_julie/voice-charter.md`.** Read it before any prose edit. The charter codifies pillars, cadence, vocabulary, and 12 auto-reject anti-patterns extracted from the de-AI'd manuscript.
 - The book is a four-stage model (Explore → Organize → Integrate → Compound) plus a "Compound Sprint" operational mechanism. Chapters cross-reference these stages and phases; when editing one chapter, check that terminology (stage names, sprint phase names like Signal/Source/Design/Build/Deliver/Compound) stays consistent with the others.
 - Author voice is declarative and unhedged (see `chapters/01-introduction.qmd` for the established tone). Avoid softening edits that introduce qualifiers the surrounding prose doesn't use.
+- **Em-dashes: use sparingly** (revised rule — see voice charter). They were previously the "editorial rhythm"; now they're a calculated tool, not a default.
+- **Chapters end with reflection questions** (2–4 short questions that engage the reader to apply the chapter to their business), followed by a one-line handoff. No recap-style summaries.
+- **Dual-author convention:** "Jesse:" / "Julie:" when a story belongs to one of them; "we" when both. Blended authorial voice for analysis.
 - Diagrams will (soon) be authored as Excalidraw drawings. Default to **black and white** unless the chapter context explicitly calls for color.
 
 ## Related skills
