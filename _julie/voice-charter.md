@@ -171,6 +171,26 @@ Each entry: **(a)** the pattern, **(b)** why forbidden, **(c)** what NOT to writ
 **Don't write:** *"A Fortune 500 company we worked with saw 47% improvement..."* (no such engagement exists).
 **Do instead:** Use the named real composites (Meridian Manufacturing, Greenline Home Services) or generic-by-design ("a 60-person professional services firm"). The Compound internal sprints (Knowledge Capture, Process Automation, Performance Gap) and Saint Clair, Jill, Donna, the mobile home distributor are the only named engagements available.
 
+### A13. Means/ends conflation
+**Why:** The book exists to produce operator-recognizable outcomes — top-line and bottom-line growth, headcount math working in the operator's favor, fires reduced. The framework / Sequence / Sprint / design discipline are *means*, not ends. Drafts that describe the system as the destination ("This book is about the design work...") treat the means as the end and bury the value the reader actually buys. Caught by Jesse on the Preface trial (paragraph 13).
+**Don't write:** *"This book is about the design work that has to happen before any tool gets deployed."* *"What we offer is a framework for organizational design."* (System framed as end.)
+**Do instead:** Lead with the operator outcome the framework produces, then name the framework as the means. *"This book is about a framework, not a tool. Run it and you get top-line and bottom-line growth without adding headcount... Operating design is how you get there."*
+
+### A14. Metaphor literalism violation
+**Why:** Every metaphor must literally apply to all the things it's attached to. Extending a metaphor past its semantic boundary makes the prose feel "loose" — like the writer is reaching for cadence over meaning. Caught by Jesse on the Preface trial: "no seat for the developer's knowledge" failed because knowledge doesn't have seats.
+**Don't write:** *"No seat for the developer's knowledge, no seat for a coherent operating model..."* (Seats apply to workers; not to knowledge, not to operating models.) *"You'll leave with the Sequence..."* (Books are not places you leave.)
+**Do instead:** Either restrict the metaphor to where it literally applies (the AI worker has a seat; the developer's knowledge had a place — a different metaphor), or describe each referent in its own terms.
+
+### A15. Unqualified AI agency
+**Why:** The book argues that AI's effectiveness depends entirely on the design that constrains and enables it. Sentences that describe AI as choosing / deciding / acting without grounding in operator-designed context contradict the book's own argument and read as the "magical AI" framing the audience is exhausted by. Caught by Jesse on the Preface trial: "Neither chooses. AI does." overstated AI autonomy.
+**Don't write:** *"AI decides what comes next."* *"The agent chooses the right path."* *"AI does."* (without qualification)
+**Do instead:** Qualify with the design constraint. *"AI does, inside whatever context you design for it."* *"The agent decides — but only within the scope the operator has defined."*
+
+### A16. Book-as-location metaphor
+**Why:** Books are artifacts with pages and a finish point. They are not locations a reader enters, occupies, or leaves. "Leave with," "walk away from," "inside this book" treat the book as a place — false metaphor. Caught by Jesse on the Preface trial: "You'll leave with..."
+**Don't write:** *"You'll leave with the framework..."* *"Walk away from this book with..."* *"Inside this book, you'll find..."*
+**Do instead:** Use verbs that match the book's actual ontology. *"By the last page, you'll have..."* *"When you finish, you'll have..."* *"You'll close this book with..."* *"You'll put this book down with..."*
+
 ---
 
 ## Section 5 — How to use this charter (operator instructions for implementer agents)

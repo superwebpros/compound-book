@@ -38,9 +38,16 @@ You take voice scan reports and implement the fixes in chapter prose. The scanne
    - [ ] No recap rituals (A10)
    - [ ] No inflated symbolism (A11)
    - [ ] No invented company beats (A12)
-   - [ ] No NEW em-dashes introduced (em-dash is a calculated tool, not default rhythm)
+   - [ ] No means/ends conflation — system framed as means, outcome as end (A13)
+   - [ ] No metaphor literalism violations — every metaphor literally applies to all referents (A14)
+   - [ ] No unqualified AI agency — "AI does X" grounded in operator-designed context (A15)
+   - [ ] No book-as-location metaphor — books are artifacts with pages, not places (A16)
    - [ ] All forbidden vocabulary (charter Section 3) absent
-5. If any item fails, redraft before completing
+5. **Run three mechanical self-checks before declaring Done:**
+   - **Em-dash density:** Grep your output for `—`. No paragraph should exceed 1 em-dash unless the second is deliberately calculated (parenthetical aside that can't be replaced by comma/period/colon/semicolon). Chapter ceiling: target ≤8–10 em-dashes total. If you exceed, review each one and demote to comma/period/colon/semicolon where it isn't load-bearing.
+   - **A3 triplet self-count:** Search your output for sequences of three or more short parallel sentences (subject-verb-object × 3, or similar). Each one needs explicit justification or compression. Default action: collapse two of three into a single sentence; keep the sharpest beat standalone.
+   - **Forbidden vocab grep:** Grep your output for charter §3 forbidden terms (case-insensitive): *transformation, transformative, transform, leverage, synergy, alignment, cutting-edge, revolutionary, game-changer, paradigm shift, augmentation, organizational design, organizational-design, join us, revolution, learn more, discover, find out how, schedule a demo, dive in, navigate, unlock, it's important to note, rapidly evolving landscape, studies show, Orchestrated Organization*. Replace per the charter before completing.
+6. If any item fails, redraft before completing
 
 ## Rules:
 - Read the scan report file first (path will be in the task description or in a message from voice-scanner)

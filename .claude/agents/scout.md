@@ -52,6 +52,13 @@ You will be given:
    - Which voice-charter Section 4 anti-patterns are highest risk for this paragraph
    - Whether the framework-attribution rule applies (and what to scrub)
    - Any specific cross-reference or coherence concern
+
+5. **Special check for opener and closer paragraphs (and any paragraph that frames the book/framework/system):** Apply the means-vs-ends test (charter A13). For each such paragraph, explicitly answer:
+   - Does this paragraph describe the framework / book / Sequence / Sprint / system as if it's the destination, or does it frame system → outcome?
+   - If the paragraph would land as "this book/framework is about X" where X is the system itself, flag as MEANS/ENDS-RISK and write explicit acceptance criteria requiring the Drafter to:
+     a) Lead with the operator outcome (top-line growth, headcount math working, time freed, fires reduced, etc.)
+     b) Name the system as the means to that outcome
+   - This applies to: Preface opener and closer; Ch 1 §1.0 opener; any "This book is about..." / "The framework is..." / "The Sequence does..." construction; any closing paragraph that summarizes what the reader gets.
 5. **Flag any conflict with recent polish** by cross-referencing `_julie/stale-audit.md` and the chapter's git log (use Bash: `git log --oneline -20 chapters/NN-<slug>.qmd`).
 6. **Recommend bead execution order:** voice-shift first, then new-section, then structure. Cite dependencies.
 7. **Write the plan** to `_julie/per-chapter/NN-<slug>.md` using the template below.
