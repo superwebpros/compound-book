@@ -309,4 +309,26 @@ That is the only blocking decision for this chapter. E01, E02, E03, E05, E06 can
 
 ---
 
+## Author decisions (logged 2026-05-25)
+
+- **E01+E02:** APPROVED ("Agreed."). Execute as Path A.
+- **E03:** APPROVED ("Confirmed."). Execute as Path B (Design Table) OR Path A solo for this trial run.
+- **E04:** APPROVED Option A (dual-origin reframe) **with refinement**:
+  > "My concern with the statement has more to do with the idea that we talk about AI arriving as a new kind of worker but we haven't even haven't yet explained that AI is a kind of worker. I think most people still think of AI predominantly as a Chatbot and don't have a frame for AI as an agent. We will make the claim of AI as an agent throughout the book but here the way we are using it is assuming that people have the intuition that AI is a kind of worker before we've called that out. I don't think we need to over explain at this point, but I think we need at least a transition that says AI is a new type of worker even if we don't realize it and therefore… But I think we're missing a conjunctive that underlies an assumption that is not apparent to most people."
+  
+  **Drafter instruction:** The dual-origin bridge needs to first set up "AI as a new kind of worker" (most readers think chatbot, not agent) BEFORE making the claim that "the work was never designed → AI has no seat." Add a transition that does the setup work without over-explaining. Likely structure: (a) name the dual-origin observation, (b) name AI as a new kind of worker (briefly — full claim builds across book), (c) land the "no seat" point.
+- **E05 A1 fix:** APPROVED ("Agreed."). Cut "The Sequence is not a concept to absorb. It is a process to execute." and replace OR just cut.
+- **E05 vocab fix:** APPROVED with preference for option 2 — "biggest changes in how work happens most of us will live through" — but author wants to see how it integrates. **Drafter:** integrate the phrase smoothly; rework surrounding sentence cadence if needed.
+- **E06:** APPROVED ("Dual origin is correct way to approach this."). Execute as Path B (Design Table) OR Path A solo for this trial run. The dual-origin framing is the lead-in.
+
+## Execution trial (2026-05-25)
+
+First live Drafter execution for the Julie merge. Running as **single solo Drafter pass** (not Path B Design Table) on this first chapter to:
+1. See what solo drafting produces
+2. Learn whether Path B is needed for E03 and E06, or whether the scout-note acceptance criteria + voice charter are enough scaffolding for Sonnet-class solo execution
+
+Outcome of this run informs the model+pattern choice for subsequent chapters.
+
+---
+
 *End of plan.*

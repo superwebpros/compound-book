@@ -1,230 +1,29 @@
 # Preface {.unnumbered}
 
-```scout-note:
-[E01+E02] · LAND-WITH-MODIFICATION · PATH A · Voice Shifter (solo, single bead)
+We came to the same conclusion from opposite directions.
 
-WHAT: Insert a dual-author opening line before this paragraph, plus in-prose
-attribution for the developer-departure story below.
+Jesse was in his office when a developer who had been with him for years put in his notice. Sitting there, he realized he'd just lost something he couldn't replace — not just the person, but their *knowledge*. Every system the developer understood, every shortcut he'd built, every decision embedded in the codebase: walking out the door in a banker's box. Jesse had paid for years of that climb. And then the chute opened. That's when he understood his business was a game of "Chutes and Ladders:" he paid for the ladder and absorbed the cost of the chute. It was awful. And it had nothing to do with AI — AI was barely accessible technology at the time.
 
-PROPOSED OPENING LINE (Julie's source, lands CLEAN per risk map):
-  > We came to the same conclusion from opposite directions.
+What that moment gave Jesse was something more foundational: he understood that knowledge in an organization is not ephemeral. It is an asset. And he had been treating it like air — always there until it wasn't. That realization started a years-long effort to treat knowledge as a first-class citizen. He built knowledge management systems. He trained the team to think about documentation, institutional memory, and structured information as real infrastructure — not an afterthought. When AI entered the mainstream, he was ready. The architecture was already in place. The practices were already habits. Combined with the discipline of running on EOS and the technical fluency of a software team, he had the raw ingredients for something that has since evolved into the system this book teaches.
 
-ATTRIBUTION APPROACH (per Q-E21 research): blended "we" voice with
-in-prose attribution. NOT inline "Jesse:" / "Julie:" tags. Example
-phrasing for the paragraph below:
-  > Jesse was in his office when a developer who had been with him
-  > for years put in his notice...
+In 2022, Julie was Global CHRO at a global food safety company when it completed the acquisition of a major division from a Fortune 500 company. Overnight, the organization expanded across 44 countries. The challenge wasn't technology. It was that the work — who owned what, how decisions moved, what knowledge lived where — had never been explicitly designed in either company before the acquisition. It lived in people's heads. When Julie asked leadership teams to describe their operating model, they described their org chart. Those aren't the same thing. The org chart names the boxes. The operating model names how work actually moves through those boxes.
 
-PRESERVE: The entire chutes-and-ladders body below verbatim — sourced
-canonical content per commit 7bfc51b (stale-audit §3.2 protected).
-
-ANTI-PATTERN RISK: A3 triplet pileup, A2 coined terms before stakes
-(do NOT introduce "co-intelligence" / "Co-Operating Model" in setup).
-
-CASCADE NOTE: This bead establishes the dual-author convention used by
-every downstream chapter. Ch1 Scout dispatch gates on this landing.
-```
+Both stories point to the same gap. Before we can talk about AI, we need to say something most people haven't been told: AI is a new kind of worker. Not a chatbot you query — a worker you assign. It takes a task, produces an output, hands it off. When AI arrives inside your company, it arrives the same way a new employee does: looking for a seat, a scope, a set of handoffs. The problem is that the work was never explicitly designed in the first place. There's no seat for AI to occupy — for the same reason there was no seat for the developer's knowledge once he walked out, and no seat for a coherent operating model once the acquisition closed. That is why this book exists.
 
 ```jf-note:
-
-```
-
-A developer who has been with me for years puts in his notice. I'm sitting there realizing I've just lost something I can't replace — not just the person, but their *knowledge*. Every system he understood, every shortcut he'd built, every decision embedded in the codebase: walking out the door in a banker's box. I had paid for years of that climb. And then the chute opened. That's when I understood my business was a game of chutes and ladders: I paid for the ladder and absorbed the cost of the chute. It was awful. And it had nothing to do with AI — AI was barely accessible technology at the time.
-
-What that moment gave me was something more foundational: I understood that knowledge in an organization is not ephemeral. It is an asset. And I had been treating it like air — always there until it wasn't. That realization started a years-long effort to treat knowledge as a first-class citizen. We built knowledge management systems. We trained the team to think about documentation, institutional memory, and structured information as real infrastructure — not an afterthought. When AI entered the mainstream, we were ready. The architecture was already in place. The practices were already habits. Combined with the discipline of running on EOS and the technical fluency of a software team, we had the raw ingredients for something that has since evolved into the system this book teaches.
-
-```scout-note:
-[E03] · LAND-WITH-MODIFICATION · PATH B · Design Table
-
-WHAT: New paragraph(s) inserted here — Julie's parallel founding story
-that mirrors Jesse's chutes-and-ladders origin.
-
-SUBSTANCE TO PRESERVE (from _julie/julie-redline.md:110-130):
-- 2022, Julie was Global CHRO at the global food safety company
-- Acquisition of a Fortune 500 division
-- Overnight expansion to 44 countries
-- Structural insight: "who owned what, how decisions moved, what
-  knowledge lived where" was never explicitly designed in either
-  company — lived in heads, informal relationships, tribal processes
-- LOAD-BEARING CLAIM: "the org chart names the boxes; the operating
-  model names how work actually moves"
-
-MUST SCRUB (Julie's source is HEAVY REWRITE per risk map):
-- A3 triplet: "the accountability structure, the knowledge architecture,
-  and the operating model" — collapse to one specific instance
-- A3 triplet: "in people's heads, in informal relationships, in tribal
-  processes" — collapse to one
-- A5 closer: "making AI investments disappear without a trace in most
-  companies today" — generic AI smell; cut
-- Framework-attribution: phrase as Julie's discovery in parallel to
-  Jesse's, NOT as "Julie's 20 years of CHRO practice produced this
-  insight" (frameworks are joint IP per global rule)
-
-A2 TRAP: Do NOT formally define "operating model" here. Reader hasn't
-earned the term yet. Use as a phrase the reader can absorb naturally;
-the formal definition comes in Ch 2.
-
-E60 ANONYMIZATION: "the global food safety company" — already in
-Julie's source per the convention. No further substitution.
-```
-
-```jf-note:
-
-```
-
-```scout-note:
-[E04] · NEEDS-AUTHOR · then LAND-WITH-MODIFICATION (Path A) or SKIP
-
-WHAT: Replace this single-line pivot ("That moment is why this book
-exists.") with a dual-origin closer bridging Jesse's and Julie's
-founding stories to the same diagnosis.
-
-JULIE'S PROPOSED CLOSER (from julie-redline.md:132-141):
-  > Both of those moments — Jesse's developer departure and Julie's
-  > acquisition integration — pointed to the same root cause.
-  > Organizations are not designed for the work they are actually
-  > doing. They are designed around the people who happen to be doing
-  > it. When the people change, the design breaks. When AI arrives as
-  > a new kind of worker, the design breaks in exactly the same way,
-  > for exactly the same reason. That is why this book exists.
-
-SUBSTANCE OBJECTION (per JF note at _julie/julie-final.md:53):
-The "AI breaks the design" framing is causally wrong. AI doesn't break
-the design — the work was never explicitly designed in the first
-place, so there's no seat for AI to slot into. Different causal claim.
-
-DECISION REQUIRED (one of three):
-[ ] OPTION A — Approve reframe: bridge lands as "both stories reveal
-    the same root cause: the work was never explicitly designed, so
-    AI has no seat to occupy." Cut to ≤3 sentences. Preserve the
-    hammer-blow rhythm (currently a single-line paragraph).
-[ ] OPTION B — Kill E04: drop the bridge entirely. E03 (Julie's
-    founding story) bleeds directly into the design-before-deploy
-    paragraph below. Risk: attribution mismatch with E01's dual-author
-    opener (the preface opens "we" but the pivot stays "I").
-[ ] OPTION C — Alternative reframe (specify in JF: below).
-
-RECOMMENDED DEFAULT (from Scout): Option A.
-```
-
-```jf-note:
-
-```
-
-That moment is why this book exists.
+I think we do a better job here now I'm talking about AI's new kind of worker but now there's another gap. And both the stories proceeding this paragraph we talk about knowledge and yet when we introduce AI, we don't talk about knowledge and then we subsequently don't talk about it either. I did one of the lines that we need to connect or at least the paradigm I have in my mind is that AI is both a new type of worker and it's a new type of worker that is most competent when connected to knowledge and systems. I think we need to make this transition from knowledge to agent a bit clearer I'm comfortable with you using elements of your training set or web search to draw on that parallel or even to find a source we can site if you feel like that that's appropriate. But my experience is that knowledmge management is a pre-requisite to quality agentification (hence the reason "source" is a key element of our process)
+``
 
 This book is about the design work — the operating design — that has to happen before any tool gets deployed. If you've bought tools and seen no return, this is why. If you want to know exactly what to do instead, read on.
 
-```scout-note:
-[E05 opportunistic — A1 ANTI-PATTERN FIX] · PATH A · Voice Shifter
-
-WHAT: The final sentence of the paragraph below ("The Sequence is not
-a concept to absorb. It is a process to execute.") is the EXACT A1
-anti-pattern example flagged at _julie/julie-final.md:102 — abstract-
-noun-equals-abstract-noun. Auto-reject per voice charter Section 4.
-
-DIRECTION: Cut the sentence, or replace with one operator-weighted
-line about what running the Sequence costs / produces / requires.
-
-PRESERVE: The six-stage list with arrow syntax —
-  Signal → Source → Design → Build → Deliver → Compound
-(canonical per charter §2: arrow is →, always six in order)
-
-ALSO PRESERVE (E05 audit): "you've" stays as-is. Julie's redline
-asks for "you've → you have" but charter §2 mandates contractions
-("absence of contractions is an AI tell"). Charter wins; auto-reject
-that part of Julie's instruction.
-```
-
-```jf-note:
-
-```
-
-What you will leave with is a six-step Sequence — Signal, Source, Design, Build, Deliver, Compound — and the sprint structure to run it. You can pick this book up and run the framework yourself. The Sequence is not a concept to absorb. It is a process to execute.
+What you will leave with is a six-step Sequence — Signal, Source, Design, Build, Deliver, Compound — and the sprint structure to run it. You can pick this book up and run the framework yourself.
 
 When the design is right, 5:30 arrives and everything that needed to get done is done. You close the laptop and go home.
 
-```scout-note:
-[E05 opportunistic — FORBIDDEN VOCAB FIX] · PATH A · Voice Shifter
+Your company is not just a business. It is a container for information — mediated by humans and, increasingly, by AI agents. The software you run, the databases you maintain, the documents your team creates — those are the neurons. The people who manage them are the operators. We are sitting at the precipice of one of the biggest changes in how work happens most of us will live through, and most of us already lived through the advent of the internet. This one is different. It changes not just how we operate, but the future of work itself — the future of teams, and the relationship humans have with machines that can think.
 
-WHAT: The phrase "biggest transformations most of us will live
-through" contains "transformations" — on the auto-reject vocabulary
-list (voice charter §3: "audience-exhausted").
-
-DIRECTION: Replace with plain language. Options:
-  - "biggest shifts most of us will live through"
-  - "biggest changes in how work happens most of us will live through"
-  - "biggest re-orderings of how work gets done"
-(Pick whichever lands in the paragraph's cadence.)
-```
+Jesse has spent his career at the intersection of technology and operations, from enterprise software to startup builds, developing AI systems inside real companies before teaching them to anyone else. He's also faculty at Michigan State University. Julie spent twenty years as a practitioner and executive in human capital and org design, most recently as Global CHRO at a global food safety company, where she led HR integration across a 44-country acquisition; prior to that, VP-level HR leadership at a global automotive supplier and earlier roles at a large furniture company and a precision manufacturer. Between the two of us: AI isn't a technology problem. It's a problem of how the work is set up. Fix the design before you deploy the tool. Design Before Deploy. Hence: co-intelligent co-operation.
 
 ```jf-note:
-
+I think a better sentence would be that between the two of us we've seen all sorts of problems and all sorts of systems at companies of all sizes. Or something to affect and then we can talk about AI as merely this sort of next evolution or next step. What makes it particular unique is that there is the technology component that is common to almost all change management, but there's also the HR component which is endemic to managing a resource that has discretion. That part is what's interesting and new and why the two of us with our different backgrounds are coming together to create the system because this is the first technology where we can treat it like an employee and so best practices around the universe of management matters over and above or rather alongside best practices with implementing new technical structures in an organization.
 ```
-
-Your company is not just a business. It is a container for information — mediated by humans and, increasingly, by AI agents. The software you run, the databases you maintain, the documents your team creates — those are the neurons. The people who manage them are the operators. We are sitting at the precipice of one of the biggest transformations most of us will live through, and most of us already lived through the advent of the internet. This one is different. It changes not just how we operate, but the future of work itself — the future of teams, and the relationship humans have with machines that can think.
-
-```scout-note:
-[E06] · LAND-WITH-MODIFICATION · PATH B · Design Table
-
-WHAT: Rewrite this entire closing paragraph as the equal-weight
-authorship/bio paragraph that closes the Preface.
-
-SUBSTANCE TO PRESERVE (from _julie/julie-redline.md:174-201):
-- Jesse: technical + operations, enterprise software → startup
-  builds, "developing AI systems inside real companies before
-  teaching them to anyone else"
-  [JF NOTE FROM julie-final.md:17: include MSU faculty detail —
-   instructor/faculty at Michigan State University]
-- Julie: 20yr practitioner + executive in org design / human capital;
-  Global CHRO at the global food safety company; 44-country
-  acquisition integration; prior VP/HR leadership at three
-  anonymized employers (large furniture and workplace design company,
-  global automotive supplier, mid-market precision manufacturing
-  company)
-- JOINT CLAIM: "AI is not a technology problem. It is an
-  organizational design problem." (Central thesis — load-bearing.)
-  [Per charter: avoid "organizational design" in mid-market operator
-   context. Find plain-language phrasing that lands the same claim:
-   "AI is not a technology problem. It's a problem of how the work
-   is set up." or similar.]
-- JOINT CLAIM: "designing the work before deploying the technology"
-  = canonical "Design Before Deploy" (charter §3)
-- KEEP THE TITLE-DROP: "co-intelligent co-operation" at the end —
-  load-bearing canonical vocabulary per charter §3
-
-MUST SCRUB:
-- A3 triplet of prior employers — lead with strongest credential
-  (44-country acquisition), then enumerate prior roles in one
-  sentence WITHOUT parallel cadence
-- A5 AI-tell mission-statement closer — "the companies that solve it
-  will solve it by..." reads as AI puffery
-- Current paragraph's existing A1 anti-pattern: "It is not about the
-  machines. It is about the machines and the humans..." (negation-
-  contrast hammer that goes nowhere new). Cut entirely.
-- Current paragraph's "transformation" — forbidden vocab (charter §3)
-- A11 inflated symbolism if "joint expertise" framing leans abstract
-- Framework-attribution: bio should NOT read as "Julie brings HR;
-  Jesse brings tech → together built X framework." Frameworks (HAC,
-  TML, etc.) are joint IP. Phrase as practitioner experience that
-  informs joint work.
-
-A2 COORDINATION (with E04 decision):
-- If E04 is approved (Option A): this paragraph can lean on the
-  dual-origin bridge already established
-- If E04 is killed (Option B): this paragraph carries the entire
-  "AI is org design" thesis alone → higher A2 risk → may need to
-  expand stakes-setup before the thesis lands
-
-PATH B JUSTIFICATION: NEW-SECTION + HEAVY REWRITE + multi-beat
-substance preservation + tight A2/A3/A11 traps + central thesis
-placement. Substance Lead extracts intent. Voice Lead defends against
-the traps. Reader Lead validates that the CEO can absorb the central
-thesis here without prior chapters.
-```
-
-```jf-note:
-
-```
-
-I have spent my career at the intersection of technology and business — from enterprise software to startup prototypes, building for myself, for clients, and for large companies. Julie brings decades of experience in organizational design, human resources, change management, and leadership strategy. Together we built an approach that recognizes a simple truth: AI is not about the technology. It is about the transformation. It is not about the machines. It is about the machines and the humans working together — each bringing their own intelligence, their own capability. Hence: co-intelligent co-operation.

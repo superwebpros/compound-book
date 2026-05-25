@@ -4,7 +4,11 @@ This is the operating model for executing the Julie Mann merge. Modeled on Compo
 
 The Human Orchestrator (Jesse) runs the chart. AI agents are supervised by it.
 
-**Execution model is hybrid.** Mechanical work runs solo + linear. Substantive content work (NEW-SECTION / FRAMEWORK-ADD with HEAVY-REWRITE verdict) runs through a **Design Table** — persistent specialist teammates iterating on a shared design memo before a Drafter executes the settled plan. This is the closest agent analog to the way Jesse and Julie actually collaborate.
+**Execution model: solo Drafter by default; Path B (Design Table) reserved.**
+
+Initial design proposed a hybrid where Path B ran on every HEAVY-REWRITE bead. The Preface trial (2026-05-25) demonstrated that solo Drafter execution against the voice-charter + scout-note acceptance criteria + author jf-note decisions produced strong output — including on Julie's founding story (E03) and the closing bio (E06), both originally tagged as Path B candidates. Author verdict: **default to solo Drafter; reserve Path B (Design Table) for cases where substance is genuinely contested or the scout-note + jf-note inputs are not enough scaffolding.**
+
+Path B remains a defined pattern in this doc (§3 Path B, §5.5 protocol) but is not the default execution model. Re-evaluate per bead based on substance contestation, not bead type or risk verdict alone.
 
 ---
 
