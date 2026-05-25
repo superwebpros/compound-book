@@ -300,11 +300,16 @@ def build_report(chapter_path: Path, paragraphs: list, vale_result: dict,
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python3 .claude/tools/voice-scan.py <chapter.qmd>", file=sys.stderr)
-        sys.exit(1)
+    import argparse
+    ap = argparse.ArgumentParser(description="Hybrid voice scanner: Vale + cross-paragraph deterministic + OpenAI embeddings.")
+    ap.add_argument("chapter", help="Path to chapter .qmd")
+    ap.add_argument("--similarity", type=float, default=SIMILARITY_THRESHOLD,
+                    help=f"Cosine similarity threshold for semantic redundancy flag (default {SIMILARITY_THRESHOLD})")
+    ap.add_argument("--ngram", type=int, default=NGRAM_SIZE,
+                    help=f"N-gram size for phrase repetition detection (default {NGRAM_SIZE})")
+    args = ap.parse_args()
 
-    chapter_path = Path(sys.argv[1])
+    chapter_path = Path(args.chapter)
     if not chapter_path.is_absolute():
         chapter_path = REPO_ROOT / chapter_path
     if not chapter_path.exists():
@@ -319,7 +324,7 @@ def main():
     vale_result = run_vale(chapter_path)
 
     # Layer 2: n-gram repetition
-    ngram_findings = find_ngram_repetition(paragraphs)
+    ngram_findings = find_ngram_repetition(paragraphs, n=args.ngram)
 
     # Layer 3: semantic similarity
     api_key = env.get("OPENAI_API_KEY")
@@ -329,7 +334,7 @@ def main():
         vectors = embed_paragraphs(paragraphs, api_key)
         if vectors:
             embeddings_used = True
-            semantic_findings = find_semantic_redundancy(paragraphs, vectors)
+            semantic_findings = find_semantic_redundancy(paragraphs, vectors, threshold=args.similarity)
 
     # Layer 4: report
     report = build_report(chapter_path, paragraphs, vale_result, ngram_findings,

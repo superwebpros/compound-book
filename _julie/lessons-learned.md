@@ -71,9 +71,81 @@ The voice scanner caught categories 3 reactively. To shift these to proactive (c
 
 ---
 
-## Chapter: TBD (Ch 1)
+## Chapter: Ch 1 — The Diagnosis (`chapters/01-diagnosis.qmd`)
 
-*(To be added after Ch 1 execution.)*
+**Executed:** 2026-05-25 → 2026-05-26
+**Scout plan:** `_julie/per-chapter/01-diagnosis.md`
+**Execution mode:** Solo Path A Drafter (general-purpose Agent, Sonnet)
+**Voice scanner pass:** yes (LLM-only first; then Vale + Python pipeline introduced mid-execution)
+**Iterations:** 5+ (initial Drafter → 1st voice-scanner LLM scan → 3 fixes → author redundancy/triplet review → pipeline build → 2nd scan via pipeline → triage pending)
+**Final commit:** TBD (in triage)
+
+### What caught what
+
+| Layer | Catches |
+|---|---|
+| Author review (Category 1 substance) | Means/ends conflation in E14 opener (Drafter missed despite Scout flag); cross-paragraph redundancy ("three people, three tools, zero coordination" repeated; "The effort was real" repeated); cumulative antithesis pileup; long paragraphs hurting skim; 20-vs-30 years numerical inconsistency |
+| LLM-only voice-scanner (whole-chapter pass) | 9 issues total: 1 em-dash overrun in E09, 1 A3 triplet in E09, 3 A5 AI smell patches, 1 "augment" forbidden vocab, 1 E14 means/ends FAIL, 1 negative parallelism cumulative count, 1 E15 author-confirmation flag |
+| **Vale + Python pipeline (introduced mid-Ch1)** | **54 deterministic flags**: 24 em-dash density paragraphs, 22 missing contractions, 5 antithesis constructions, 3 long paragraphs (>150 words), plus 4 n-gram phrase repetitions across non-adjacent paragraphs |
+
+### Critical lesson — whole-chapter LLM scanning misses cumulative patterns
+
+The LLM-only scanner caught 9 issues. The Vale + Python pipeline caught 54 (6× more signal). The gap is structural:
+
+- **Counting is hard for LLMs** at 5K-word scale. "Negative parallelism appearing > 3 times" is deterministic; LLM estimates. Em-dash density per paragraph is exact; LLM samples.
+- **Cross-paragraph pattern detection is weak** in a single LLM pass. The same phrase appearing in paragraph 17 AND paragraph 39 is a comparison task; LLMs lose paragraph 17 from active attention by the time they read 39.
+- **Authors catch the substance; deterministic tools catch the patterns.** The pipeline should split the work: Vale + Python for what's deterministic; LLM for judgment (A1/A2/A4/A5/A12/A13/A14/A15); author for substance/coherence.
+
+### Pipeline architecture introduced (encoded in CLAUDE.md)
+
+Three-layer hybrid:
+1. **Vale** (deterministic, per-paragraph + document-level) — 13 rules in `.vale/styles/Compound/*.yml`. Catches A3 antithesis, A6 fear/urgency, A7 book-report citations, A8 conjunctive-adverb pileup, A9 -ing tags, A10 recap rituals, A11 inflated symbolism, A16 book-as-location + em-dash density, paragraph length, forbidden vocab, missing contractions, exclamations.
+2. **Python wrapper** (`.claude/tools/voice-scan.py`) — runs Vale subprocess + cross-paragraph n-gram phrase repetition + OpenAI text-embedding-3-small + cosine similarity. Outputs unified Markdown report at `.claude/output/voice-scan-<chapter>.md`.
+3. **`voice-scanner` agent (LLM)** — judges only the patterns deterministic can't: A1, A2, A4, A5, A12, A13, A14, A15.
+
+### Semantic similarity threshold calibration
+
+- **0.85**: 0 findings on Ch 1. Genuine paraphrased redundancy is rare at this threshold.
+- **0.80**: still 0 findings on Ch 1.
+- **0.70**: 4 findings, all in 0.70–0.75 range — these are **topic overlap, not redundancy** (paragraphs in the same section discussing related ideas).
+
+Verdict: **0.85 is the right default.** Lower thresholds surface noise. The n-gram layer catches the genuine exact-phrase repetitions that matter most.
+
+### Grandfathered content nuance
+
+54 Vale flags includes both:
+- **Genuine fixes** (new prose with em-dash overruns, paragraphs that became too long during Drafter execution, antithesis cumulative count)
+- **Grandfathered content** (em-dashes in Meridian case study narrative, formal phrasing in callout boxes, structured dialogue)
+
+The voice charter §2 says existing manuscript em-dashes are grandfathered; new edits do not add. The pipeline doesn't know which is which — it flags everything. **Triage step required: author marks fix-or-grandfather per cluster.**
+
+### Mechanical Drafter self-checks unreliable
+
+The Drafter claimed in its self-check:
+- "Zero triplets in new paragraphs" — wrong, E09 had one
+- "Em-dashes were fine" — wrong, E09 had 2 (vs. 1-max rule)
+- "A13 means/ends addressed" — wrong, E14 failed it explicitly
+
+**Lesson:** The Drafter's pre-completion checklist (added after Preface) is not a substitute for the scanner. **The voice scanner MUST be a mandatory verification step**, not optional. Update AGENT-TEAM.md workflow accordingly.
+
+### Cross-chapter pattern watch (updated)
+
+| Pattern | Preface | Ch 1 |
+|---|---|---|
+| Means/ends conflation | ✓ (para 13) | ✓ (E14) |
+| Metaphor literalism violation | ✓ | (not yet observed) |
+| Unqualified AI agency | ✓ | (not yet observed) |
+| Book-as-location metaphor | ✓ | (not yet observed) |
+| Em-dash overuse | ✓ (16→7 fixed) | ✓ (24 flags still pending triage) |
+| A3 triplet pileup | ✓ | ✓ (5 antithesis + 1 mechanical in E09) |
+| Forbidden vocab leakage | ✓ (transformations, leverage, org design) | ✓ (augment, plus 22 missing contractions including some in author-introduced edits) |
+| Hedged constructions | ✓ | partial (some) |
+| A4 boastful biography | ✓ | ✓ ("every operating-model engagement" in E14) |
+| Canonical capitalization | ✓ | (not yet observed) |
+| Cross-paragraph phrase repetition | not yet measured | ✓ ("the work before the tool" L17 ↔ L39) |
+| Long paragraph skim issue | not yet measured | ✓ (3 paragraphs >150 words) |
+
+**Recurrence signal:** Means/ends conflation (A13) is now confirmed recurring across 2/2 chapters. Em-dash overuse and A3 triplet are recurring. Forbidden vocab leakage is recurring (mostly author-introduced). The new rules (A13–A16) and the Vale pipeline are doing real work.
 
 ---
 
