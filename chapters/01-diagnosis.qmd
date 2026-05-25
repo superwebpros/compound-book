@@ -59,7 +59,7 @@ Path: A (Voice Shifter solo).
 ```
 
 ```jf-note:
-
+Approved
 ```
 
 I asked them one question. The answer told me everything.
@@ -134,7 +134,7 @@ Path: A (solo Drafter).
 ```
 
 ```jf-note:
-
+approved.
 ```
 
 That company is not unusual. It might be yours.
@@ -270,7 +270,7 @@ the MEANS/ENDS-RISK + dual-triplet substance is the heaviest lift.
 ```
 
 ```jf-note:
-
+Direction approved
 ```
 
 Here's how it resolved for us. My software development company, SuperWebPros, went from thirteen people to eight. Not through layoffs — through redesign. We mapped every function, identified what required human judgment and what didn't, built agent teams for the work that followed rules, and kept humans on the work that required taste, relationships, and strategic decisions. Billings went up. Profitability went up. The five roles that went away weren't eliminated — they were *redesigned out of existence* because the work they did was absorbed by systems we built deliberately. That's the headcount math finally moving the way it was supposed to move. The rest of this book shows you how we did it and gives you the tools to replicate it.
@@ -345,6 +345,7 @@ Path: A (solo Drafter).
 ```
 
 ```jf-note:
+Direction approved
 
 ```
 
@@ -390,7 +391,7 @@ Path: A (Voice Shifter solo, light verification pass; likely no-op on L71 itself
 ```
 
 ```jf-note:
-
+Direction approved.
 ```
 
 If you walked into any function in your company today and asked the same three questions you would ask of a human team — what is this function accountable for, what is its scorecard, who reviews the output and on what cadence — you would get clean answers for the humans and blank stares for the AI. That is the diagnosis in one move. The AI in your company has no seat on the chart. It has no number it is hitting. It has no review rhythm. You would never run a function that way if it were staffed by people. You are running it that way because you have not yet decided that AI is staff.
@@ -462,7 +463,7 @@ Path: A (solo Drafter).
 ```
 
 ```jf-note:
-
+Direction approved
 ```
 
 The question that unlocks real value is goal-oriented: *what outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?* That question does not start with the tools. It starts with outcomes — and then with accountability for those outcomes. It produces a deliberate design — who owns what, what the human reviews, what the agent team executes, where the handoff lives, how the result gets measured. Writing a social post is a task. Building a sustainable content production workflow that reinforces itself regardless of who's sitting in the seat — that's a bigger problem with a much bigger payoff. Goal-orientation produces results because the design was built to produce them.
@@ -535,7 +536,7 @@ Path: A (solo Drafter). Escalate to Path B only if author rejects on review.
 ```
 
 ```jf-note:
-
+Direction approved
 ```
 
 ### Dimension 1: Constraint Clarity
