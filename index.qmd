@@ -1,7 +1,7 @@
 # Preface {.unnumbered}
 
-<!--
-SCOUT [E01+E02] · LAND-WITH-MODIFICATION · PATH A · Voice Shifter (solo, single bead)
+```scout-note:
+[E01+E02] · LAND-WITH-MODIFICATION · PATH A · Voice Shifter (solo, single bead)
 
 WHAT: Insert a dual-author opening line before this paragraph, plus in-prose
 attribution for the developer-departure story below.
@@ -23,16 +23,18 @@ ANTI-PATTERN RISK: A3 triplet pileup, A2 coined terms before stakes
 
 CASCADE NOTE: This bead establishes the dual-author convention used by
 every downstream chapter. Ch1 Scout dispatch gates on this landing.
+```
 
-JF:
--->
+```jf-note:
+
+```
 
 A developer who has been with me for years puts in his notice. I'm sitting there realizing I've just lost something I can't replace — not just the person, but their *knowledge*. Every system he understood, every shortcut he'd built, every decision embedded in the codebase: walking out the door in a banker's box. I had paid for years of that climb. And then the chute opened. That's when I understood my business was a game of chutes and ladders: I paid for the ladder and absorbed the cost of the chute. It was awful. And it had nothing to do with AI — AI was barely accessible technology at the time.
 
 What that moment gave me was something more foundational: I understood that knowledge in an organization is not ephemeral. It is an asset. And I had been treating it like air — always there until it wasn't. That realization started a years-long effort to treat knowledge as a first-class citizen. We built knowledge management systems. We trained the team to think about documentation, institutional memory, and structured information as real infrastructure — not an afterthought. When AI entered the mainstream, we were ready. The architecture was already in place. The practices were already habits. Combined with the discipline of running on EOS and the technical fluency of a software team, we had the raw ingredients for something that has since evolved into the system this book teaches.
 
-<!--
-SCOUT [E03] · LAND-WITH-MODIFICATION · PATH B · Design Table
+```scout-note:
+[E03] · LAND-WITH-MODIFICATION · PATH B · Design Table
 
 WHAT: New paragraph(s) inserted here — Julie's parallel founding story
 that mirrors Jesse's chutes-and-ladders origin.
@@ -64,12 +66,14 @@ the formal definition comes in Ch 2.
 
 E60 ANONYMIZATION: "the global food safety company" — already in
 Julie's source per the convention. No further substitution.
+```
 
-JF:
--->
+```jf-note:
 
-<!--
-SCOUT [E04] · NEEDS-AUTHOR · then LAND-WITH-MODIFICATION (Path A) or SKIP
+```
+
+```scout-note:
+[E04] · NEEDS-AUTHOR · then LAND-WITH-MODIFICATION (Path A) or SKIP
 
 WHAT: Replace this single-line pivot ("That moment is why this book
 exists.") with a dual-origin closer bridging Jesse's and Julie's
@@ -101,16 +105,18 @@ DECISION REQUIRED (one of three):
 [ ] OPTION C — Alternative reframe (specify in JF: below).
 
 RECOMMENDED DEFAULT (from Scout): Option A.
+```
 
-JF:
--->
+```jf-note:
+
+```
 
 That moment is why this book exists.
 
 This book is about the design work — the operating design — that has to happen before any tool gets deployed. If you've bought tools and seen no return, this is why. If you want to know exactly what to do instead, read on.
 
-<!--
-SCOUT [E05 opportunistic — A1 ANTI-PATTERN FIX] · PATH A · Voice Shifter
+```scout-note:
+[E05 opportunistic — A1 ANTI-PATTERN FIX] · PATH A · Voice Shifter
 
 WHAT: The final sentence of the paragraph below ("The Sequence is not
 a concept to absorb. It is a process to execute.") is the EXACT A1
@@ -128,16 +134,18 @@ ALSO PRESERVE (E05 audit): "you've" stays as-is. Julie's redline
 asks for "you've → you have" but charter §2 mandates contractions
 ("absence of contractions is an AI tell"). Charter wins; auto-reject
 that part of Julie's instruction.
+```
 
-JF:
--->
+```jf-note:
+
+```
 
 What you will leave with is a six-step Sequence — Signal, Source, Design, Build, Deliver, Compound — and the sprint structure to run it. You can pick this book up and run the framework yourself. The Sequence is not a concept to absorb. It is a process to execute.
 
 When the design is right, 5:30 arrives and everything that needed to get done is done. You close the laptop and go home.
 
-<!--
-SCOUT [E05 opportunistic — FORBIDDEN VOCAB FIX] · PATH A · Voice Shifter
+```scout-note:
+[E05 opportunistic — FORBIDDEN VOCAB FIX] · PATH A · Voice Shifter
 
 WHAT: The phrase "biggest transformations most of us will live
 through" contains "transformations" — on the auto-reject vocabulary
@@ -148,14 +156,16 @@ DIRECTION: Replace with plain language. Options:
   - "biggest changes in how work happens most of us will live through"
   - "biggest re-orderings of how work gets done"
 (Pick whichever lands in the paragraph's cadence.)
+```
 
-JF:
--->
+```jf-note:
+
+```
 
 Your company is not just a business. It is a container for information — mediated by humans and, increasingly, by AI agents. The software you run, the databases you maintain, the documents your team creates — those are the neurons. The people who manage them are the operators. We are sitting at the precipice of one of the biggest transformations most of us will live through, and most of us already lived through the advent of the internet. This one is different. It changes not just how we operate, but the future of work itself — the future of teams, and the relationship humans have with machines that can think.
 
-<!--
-SCOUT [E06] · LAND-WITH-MODIFICATION · PATH B · Design Table
+```scout-note:
+[E06] · LAND-WITH-MODIFICATION · PATH B · Design Table
 
 WHAT: Rewrite this entire closing paragraph as the equal-weight
 authorship/bio paragraph that closes the Preface.
@@ -211,8 +221,10 @@ substance preservation + tight A2/A3/A11 traps + central thesis
 placement. Substance Lead extracts intent. Voice Lead defends against
 the traps. Reader Lead validates that the CEO can absorb the central
 thesis here without prior chapters.
+```
 
-JF:
--->
+```jf-note:
+
+```
 
 I have spent my career at the intersection of technology and business — from enterprise software to startup prototypes, building for myself, for clients, and for large companies. Julie brings decades of experience in organizational design, human resources, change management, and leadership strategy. Together we built an approach that recognizes a simple truth: AI is not about the technology. It is about the transformation. It is not about the machines. It is about the machines and the humans working together — each bringing their own intelligence, their own capability. Hence: co-intelligent co-operation.
