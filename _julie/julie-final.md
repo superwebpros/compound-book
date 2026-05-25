@@ -14,14 +14,14 @@ We came to the same conclusion from opposite directions.
 
 Jesse spent his career at the intersection of technology and operations,
 building AI systems inside real companies before teaching them to anyone
-else. When a developer who had been with his company for years put in
+else `jf-note: including students at michigan state unviersity, where he is an instructor/faculty`. When a developer who had been with his company for years put in
 his notice, the full weight of the problem became visible in a way it
 never had before. It was not just the person leaving. It was the
 knowledge. Every system he understood, every shortcut he had built,
 every decision embedded in the codebase: walking out the door in a
 banker\'s box. Jesse had paid for years of that climb. And then the
 chute opened. That is when he understood his business was a game of
-chutes and ladders: he paid for the ladder and absorbed the cost of the
+chutes and ladders `jf-note: Proper noun`: he paid for the ladder and absorbed the cost of the
 chute. That moment started a years-long effort to treat knowledge as a
 first-class citizen, building knowledge management systems, training the
 team to think about documentation and institutional memory as real
@@ -50,6 +50,10 @@ around the people who happen to be doing it. When the people change, the
 design breaks. When AI arrives as a new kind of worker, the design
 breaks in exactly the same way, for exactly the same reason.
 
+```jf-note:
+I'm not sure that AI breaks the design; I think part of the reason people don't know "where" to slot it is because the work isnt' designed.
+```
+
 There is a third thread connecting both moments. In 2009, before
 Compound existed and before Lead With Collective existed, Julie had a
 small consulting practice and a conviction she could not let go of: that
@@ -63,6 +67,10 @@ podcast. Live radio on Wednesday mornings. Distributed across five
 platforms. One hundred and twenty-one episodes produced while
 simultaneously running a global HR function. Not because there was time.
 Because there was obligation.
+
+```jf-note:
+the above **reeks** of AI writing. 
+```
 
 Compound is the third iteration of that same conviction, built on better
 infrastructure and aimed at the most expensive structural failure of
@@ -91,12 +99,20 @@ What you will leave with is a six-step Sequence: Signal, Source, Design,
 Build, Deliver, Compound. And the sprint structure to run it. The
 Sequence is not a concept to absorb. It is a process to execute.
 
+```jf-note:
+The above reads like AI and is confusing. You get a sequence, so what?
+```
+
 Between the two of us, we bring the technical architecture and the human
 capital discipline required to install co-intelligence into a real
 company. Jesse\'s background is in building AI systems inside real
 operations. Julie\'s is in designing the accountability structures and
 managing the human transitions that make those systems hold. Neither
 alone produces a company that compounds. Both together do.
+
+```jf-note:
+We use the term 'co-intelligence' above without defining it in any way. it's a bran new term with no context and no 'stakes.' needs revision.
+```
 
 Co-Intelligence + Rhythm = Compound. That is the equation this book
 exists to prove.
@@ -113,6 +129,10 @@ and two of his direct reports were on the screen. We asked how they were
 using AI. The CEO said ChatGPT. One director said Claude. The other said
 Poe, an aggregator that lets you sample models without committing to
 one.
+
+```jf-note:
+Before I even _consider_ reading this relative to the manfiest and other docs to implement, we have to de-AI the voice and run a coherance check. I have no desire to read AI voice repleat with these weird triplets and contrived examples.
+```
 
 Three people. One company. Three different tools. No shared accounts or
 projects, no shared workflow. Each of them had gone out and found
