@@ -16,6 +16,8 @@ We asked what they were hoping AI would do for the business. The answer was hone
 
 That's not a technology problem. That's a design problem. And it's the most common version of the AI problem we see: three people, three tools, zero coordination, zero structural change. The effort was real, but no one designed the work before the tool arrived.
 
+The design we mean is the *operating model*: how work actually moves through your company. Who decides what gets done, who hands what to whom, what each function is accountable for. The org chart names the boxes; the operating model is the wiring underneath. Every AI initiative either fits into that wiring or doesn't.
+
 We've watched this same pattern for two decades, long before AI entered the conversation. A mid-market company would complete an acquisition and absorb the new entity without redesigning how work actually moved. The acquired operation got bolted onto the existing structure, with the same managers handling expanded volume. The accountability map was never rebuilt to match the expanded scope. AI is just the latest technology to expose a problem that's been visible the whole time.
 
 That company isn't unusual. It might be yours.
@@ -47,6 +49,8 @@ You've bought some AI: a ChatGPT subscription, maybe an automation tool, maybe a
 Meanwhile your integrator or COO is on the calendar asking to approve the next two roles. The numbers in the request aren't unreasonable: the work is real, the team is stretched, the demand is there. You sign off, because the alternative is throttling growth, and throttling growth isn't a strategy. But you sign off knowing the AI investment was supposed to make at least one of those requisitions unnecessary, and you can't point to the reason it didn't.
 
 This is the headcount paradox. AI was supposed to change the math of scaling. It hasn't. Revenue and headcount are still moving together. The cost of one keeps climbing. And the investment you made to break the link is sitting on the books producing nothing structural.
+
+### How the math finally moves.
 
 Here's how it resolved at Jesse's company. SuperWebPros, his software development firm, went from thirteen people to eight. Not through layoffs — through redesign. We mapped every function, identified what required human judgment and what didn't, built agent teams for the work that followed rules, and kept humans on the work that required taste, relationships, and strategic decisions. Billings went up. Profitability went up. The five roles that went away weren't eliminated; they were *redesigned out of existence* because the work they did was absorbed by systems we built deliberately. That's the headcount math finally moving the way it was supposed to move. The rest of this book shows you how we did it and gives you the tools to replicate it.
 
@@ -237,9 +241,13 @@ Fill in your scorecard:
 
 ### What it looks like in practice.
 
-To make the Sequence tangible, we built a fictional company from the real patterns we've seen across dozens of engagements. Meridian Manufacturing will follow you through every chapter of this book — the same constraint, the same team, the same Sprint — so you can see each stage applied to one continuous example. The full case study is available in the appendix if you want to read it straight through.
+To make the Sequence tangible, we built a fictional company from the real patterns we've seen across dozens of engagements. Meridian Manufacturing will follow you through every chapter of this book — the same company, the same constraint, the same team — so you can see each stage applied to one continuous example. The full case study is in the appendix if you want to read it straight through.
 
-**Meridian Manufacturing** — \$7.2M revenue, twenty-seven employees, custom metal fabrication. Runs EOS. CEO (visionary), VP of Operations (integrator), a sales lead, a senior design engineer, and a shop floor supervisor.
+Meet Meridian Manufacturing. Seven-point-two million in revenue, twenty-seven employees, custom metal fabrication for industrial clients. Mark Ellison is the CEO. He built the business from a two-person garage shop eighteen years ago and still holds the key customer relationships. Elena Ruiz is his VP of Operations and integrator — she runs the floor, manages scheduling, and is the only person in the company who can produce a complete quote. The rest of the leadership team: Ty Banfield in sales, Dave Kowalski as senior design engineer (thirty-one years in fabrication), and Carlos Medina running the shop floor.
+
+Meridian runs EOS. Accountability chart, scorecards, L10s, the works. They've grown profitably for years. But here's the constraint they keep circling: their quotes take three to five days to turn around. Industry standard is twenty-four to forty-eight hours. Over the last four quarters, eleven bids walked away citing turnaround time. Average job value: \$38,000. That's \$418,000 in named lost revenue, and the actual number is higher because most clients who go elsewhere don't explain. The bottleneck has a face: Elena. Pricing exceptions live on her desktop. Material lead-times live in her head. She's the only one who can close a quote, and she's getting buried.
+
+Six months ago, Mark bought a ChatGPT subscription. He uses it for emails. He suspects AI could help with the quoting problem but has no idea how to start. That's where we meet them.
 
 | Dimension | Score | What We Found |
 |-----------|-------|---------------|
@@ -272,7 +280,7 @@ The next chapter defines the Co-Intelligent Company precisely enough that you ca
 ::: callout-note
 ## Action Step
 
-Before you turn the page, fill in the scorecard. All five dimensions. Write the scores down — don't just read the descriptions and nod. The scorecard travels with you through the rest of the book, and every chapter will ask you to reference it. Sixty minutes with your leadership team. Do it before your next L10.
+The scorecard is the input every other chapter references. Take an hour with your leadership team, ideally before your next L10, to score each dimension and write the scores down. Every chapter ahead will ask you to come back to them.
 :::
 
 ## Reflection Questions
@@ -281,4 +289,4 @@ Before you turn the page, fill in the scorecard. All five dimensions. Write the 
 2.  The chapter describes Meridian Manufacturing: two Reds and three Yellows. Where does your company land — and which specific Yellow could you turn Green this quarter with existing resources, no new tools required?
 3.  Are you running the wrong question? When your team discusses AI, does the conversation start with "what tasks could AI help with?" or "what outcomes are we accountable for, and how should human + AI deliver them?" Which framing dominated your last AI conversation?
 4.  The headcount paradox says revenue and headcount are still tracking together despite AI investment. Pull your own numbers: what is your headcount-to-revenue ratio today versus two years ago? Has the AI line item bent that ratio at all?
-5.  If AI were an employee and you had to write its scorecard today — what would its current score be? What would need to be true about your operating model for that score to be Green?
+5.  Describe your operating model in three sentences: how work actually moves through your company, not the org chart. If you can't do it in three sentences, what does that tell you about where AI would even plug in?
