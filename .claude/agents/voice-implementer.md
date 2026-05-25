@@ -43,11 +43,17 @@ You take voice scan reports and implement the fixes in chapter prose. The scanne
    - [ ] No unqualified AI agency — "AI does X" grounded in operator-designed context (A15)
    - [ ] No book-as-location metaphor — books are artifacts with pages, not places (A16)
    - [ ] All forbidden vocabulary (charter Section 3) absent
-5. **Run three mechanical self-checks before declaring Done:**
-   - **Em-dash density:** Grep your output for `—`. No paragraph should exceed 1 em-dash unless the second is deliberately calculated (parenthetical aside that can't be replaced by comma/period/colon/semicolon). Chapter ceiling: target ≤8–10 em-dashes total. If you exceed, review each one and demote to comma/period/colon/semicolon where it isn't load-bearing.
-   - **A3 triplet self-count:** Search your output for sequences of three or more short parallel sentences (subject-verb-object × 3, or similar). Each one needs explicit justification or compression. Default action: collapse two of three into a single sentence; keep the sharpest beat standalone.
-   - **Forbidden vocab grep:** Grep your output for charter §3 forbidden terms (case-insensitive): *transformation, transformative, transform, leverage, synergy, alignment, cutting-edge, revolutionary, game-changer, paradigm shift, augmentation, organizational design, organizational-design, join us, revolution, learn more, discover, find out how, schedule a demo, dive in, navigate, unlock, it's important to note, rapidly evolving landscape, studies show, Orchestrated Organization*. Replace per the charter before completing.
-6. If any item fails, redraft before completing
+5. **MANDATORY scanner gate before declaring Done.** This is not a "self-check claim." This is an actual tool invocation. Before you report back, run:
+
+   ```bash
+   /usr/bin/python3 .claude/tools/voice-scan.py <chapter_path>
+   ```
+
+   Then read the report at `.claude/output/voice-scan-<chapter-stem>.md`. Compare flag counts to the pre-edit baseline (if you don't have one, the prior commit's chapter is your baseline — git diff is your friend). If you have introduced any NEW flags in any category (em-dash density, antithesis, forbidden vocab, missing contractions, paragraph length, n-gram repetition, semantic similarity), fix them before declaring Done. **Do not declare Done with new flags present.** Report the before/after flag counts in your handoff message.
+
+   Two prior Drafter passes (Preface, Ch 1) claimed "checks all pass" without running the scanner and missed real flags. This step exists because that pattern is structural — LLM self-checks at chapter scale are unreliable. The scanner is deterministic; it doesn't miss.
+
+6. If any item fails the scanner OR the 17-item checklist, redraft before completing.
 
 ## Rules:
 - Read the scan report file first (path will be in the task description or in a message from voice-scanner)
