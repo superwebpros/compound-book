@@ -33,6 +33,43 @@ Generated: 2026-05-24
 
 ## Section 2 — Edit Manifest
 
+### Approval status (set 2026-05-24 from author notes)
+
+**Status legend:**
+- **APPROVED** — ready to bead and execute
+- **REVIEW** — directionally approved, requires author eyes on prose before bead activates
+- **QUESTION** — needs research before deciding (research lane assigned in §6)
+- **BLOCKED** — needs Julie's input (definition, source material, intent)
+- **REJECTED** — do not create bead; rationale logged
+
+**Per-row status:**
+
+| Status | E-rows |
+|---|---|
+| APPROVED | E01, E02, E03, E04, E05, E06, E08, E10, E11, E12, E13, E14, E16, E18, E19, E24, E28, E30, E31, E35, E36, E40, E42, E46, E50, E58, E59, E60 |
+| REVIEW | E07, E09, E15, E17, E20, E22, E25, E27, E29, E32, E41, E44, E45, E47, E48, E50, E55 |
+| QUESTION (research lane) | E21, E23, E26, E39, E43 |
+| BLOCKED (needs Julie) | E37 (Pattern Drag definition), E49 (COE governance model), E52 (15-year thread intent), E56 (Pro Services case study expansion), E57 (People Ops case study expansion) |
+| REJECTED | E33 (Ch6 opening reframing), E34 (HAC origin attribution), E38 (Ch7 governance-attribution), E51 (Clarity Call personal-voice), E53 (Ch11 Work Matters subsection), E54 (Ch11 JMann subsection) |
+
+### Global anti-pattern (applies to all framework-add rows)
+
+**Framework components do not get individual author attribution.** Both authors share IP on every framework in the book. Julie's redline frequently attributes HAC, TML, Right Seat Evaluation, Pattern Method, and COE to her individual practice. We reject this framing globally. Frameworks themselves can land; the "this came from Julie's 20-year practice" framing cannot.
+
+Affected rows that need framing scrubbed before bead activation: **E29, E31, E34 (rejected), E36, E37 (blocked), E44, E46, E49 (blocked), E55.**
+
+### Voice anti-patterns flagged from `julie-final.md` (must be scrubbed before any prose lands)
+
+- Abstract-noun-equals-abstract-noun ("Sequence is a process to execute")
+- Coined terms used before definition (e.g. "co-intelligence" without stakes)
+- Triplet pileups / parallel-construction overload
+- Contrived examples (the "121 episodes simultaneous with global HR" beat)
+- Reading "like AI" — verbose, hedged, no operator weight
+
+These become forbidden patterns in the voice charter (Phase 1.5).
+
+---
+
 Columns: ID | Julie ch | Target file | Type | Risk | Instruction (≤25 words) | Prose given? | Conflict flags | Source lines
 
 | ID | Julie ch | Target file | Type | Risk | Instruction | Prose? | Conflict | Lines | JF-Note |

@@ -26,7 +26,20 @@ Julie's redline doesn't know about recent edits. Three categories of risk:
 - **New content:** 2 case studies, 7 glossary terms, About the Authors, 15-year content thread
 - **Conflict flags:** 1 touches polished work (E24 → CH04-L10, voice-shift only, low-impact). 0 touch Meridian / PM-Agent / Greenline.
 
-## Open decisions to resolve before execution
+## Decisions resolved (set 2026-05-24)
+
+| # | Decision | Resolution |
+|---|---|---|
+| Q1 | Ch 12–15 structure | **Keep current.** Julie's Ch 12–13 → new case studies in appendix. Ch 14 → existing case-study files. Ch 15 → existing glossary. |
+| Q2 | Ch 6 split | **Keep current split.** 06 (human/HAC) + 06b (hybrid/work). Most novel & foundational section of the book — preserve. |
+| Q3 | Ch 11 §11.1/§11.2 | **TBD pending Ch 11 re-read.** Work Matters / JMann content likely doesn't fit. Joint "Compound Conversations" podcast is the more likely placement if any. |
+| Q4 | E24 CH04-L10 | **Voice-shift only, no destructive change.** |
+| Q5 | Case study expansions | **Move to appendix with TODO.** Will likely need Julie's source material to complete. |
+| Q6 | Jesse About-the-Authors | **Move all About-the-Authors content to appendix.** Jesse to author his own entry. |
+| Q7 | Anonymization convention | **Confirmed.** Julie's biographical refs use "global food safety company," etc. Meridian + PM-Agent stay as-is (fictional composites). |
+| Q8 | Framework intros | **Consolidate.** Define once (likely glossary + first appearance), reference thereafter. Subagent in Phase 4 enforces consistency with how current frameworks are introduced. |
+
+## Original decision table (with author notes preserved for reference)
 
 | # | Decision | Recommendation | JF-Notes |
 |---|---|---|---|
@@ -43,11 +56,43 @@ Julie's redline doesn't know about recent edits. Three categories of risk:
 
 > Phase 0 (setup) and Phase 1 (manifest extraction) are **complete**. Branch exists, files staged, manifest written. Phases 2–5 require your approval before starting.
 
+### Phase 1.5 — Codify the current voice (proactive voice protection)
+
+Run `voice-scanner` on representative current chapters (Ch 1, 4, 7, 11) to extract the **live voice profile** — what Jesse's de-AI'd manuscript actually sounds like, ignoring the I/we variable.
+
+Output: `_julie/voice-charter.md` — codified voice profile + forbidden AI patterns (from `julie-final.md` review). Every implementer agent writes **to** this charter, not just gets scanned against it.
+
+This converts voice protection from reactive (catch drift after) to proactive (write to spec).
+
+### Phase 1.6 — De-AI risk map on Julie's proposed prose
+
+Julie's redline gives substantial "proposed prose" verbatim for most NEW-SECTION E-rows. Author review of `_julie/julie-final.md` confirms this prose has AI smell that must be scrubbed before integration.
+
+Run `ai-tell-scan` on `_julie/julie-final.md` and the NEW-SECTION paragraphs in `_julie/julie-redline.md`. Output: `_julie/julie-prose-risk-map.md` — per-paragraph risk verdict (Clean / Light edit / Heavy rewrite / Reject).
+
+Feeds Phase 2 so each NEW-SECTION bead inherits an inline rewrite requirement.
+
+### Phase 1.7 — Stale-reference audit
+
+Subagent runs `git log --grep`, `git log -S`, and repo grep for previously-struck terms (Greenline, "Ahmed", any pre-rename Meridian variants). Cross-checks persistent memory (`ch11-greenline-fabricated`, `meridian-consulting-group-is-meridian-manufacturing`, `ahmed-story-is-chutes-and-ladders`) against current prose.
+
+Output: `_julie/stale-audit.md` — list of stale references + recent decision context that the merge must not regress.
+
+### Phase 1.8 — Author-question research
+
+Single subagent answers 5 research-tractable questions before bead activation (E21, E23, E26, E39, E43). Output: `_julie/author-questions-answered.md`. Remaining BLOCKED rows go to Julie directly.
+
+### Global rule — framework components do not get individual attribution
+
+Both authors share IP on every framework. Reject all "this came from Julie's 20-year practice" framings around HAC, TML, Right Seat Evaluation, Pattern Method, COE. Frameworks themselves can land; the attribution framing cannot.
+
+Applies to: E29, E31, E34 (already rejected), E36, E37, E44, E46, E49, E55. Each of these beads requires framing scrubbed in acceptance criteria.
+
 ### Phase 2 — Per-chapter reconciliation (analysis only)
 
-Spawn one subagent per chapter affected. Each reads the current `.qmd`, the relevant E-numbered rows, and produces `_julie/per-chapter/NN-chapter.md`:
+Spawn one subagent per chapter affected. Each reads the current `.qmd`, the relevant E-numbered rows, the voice charter, the prose risk map, and the stale audit — then produces `_julie/per-chapter/NN-chapter.md`:
 
-`jf-note: How does the above "work" when the chapters aren't synced? Is syncing/merging something we do before E-numbering?`
+**On the "syncing" question:** No syncing needed. Current `.qmd` is canonical source of truth. Phase 2 is **non-destructive overlay analysis** — each subagent reads the chapter as-is, overlays the E-rows from the manifest, and tightens landing points. The chapter doesn't move during Phase 2. Edits happen only in Phase 4, governed by beads.
 
 - Confirms or revises the target line ranges (manifest gave best-guess; chapter-aware pass tightens)
 - Classifies each E-row per chapter: ALREADY-DONE / SAFE-ACCEPT / VOICE-IMPLEMENTABLE / STRUCTURAL-NEEDS-AUTHOR / CONFLICT
