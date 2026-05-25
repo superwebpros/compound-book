@@ -28,16 +28,16 @@ Julie's redline doesn't know about recent edits. Three categories of risk:
 
 ## Open decisions to resolve before execution
 
-| # | Decision | Recommendation |
-|---|---|---|
-| Q1 | Ch 12–15 as numbered chapters vs. existing appendix/case-study structure | **Keep current structure.** Map Julie's Ch 12–13 → two new `case-study-*.qmd` files. Julie's Ch 14 → existing case-study files. Julie's Ch 15 → `appendix-glossary.qmd` additions. |
-| Q2 | Ch 6 split (Julie = 1 chapter; ours = 06 + 06b) | **Keep current split.** HAC + Right Seat → 06 (E33–35). TML + Pattern Drag at Design Gate → 06b (E36–37). |
-| Q3 | Ch 11 §11.1/§11.2 collision (Julie wants Work Matters / JMann as §11.1/§11.2, conflicting with current flow) | **Integrate as subsections under Clarity Call**, not as top-level §11.1/§11.2. Preserve existing First-Sprint-Plan-centric flow. |
-| Q4 | E24 touches CH04-L10 polished opening | **Voice-shift only, no destructive change.** Verify with author after voice-implementer pass; do NOT rewrite the L10 story itself. |
-| Q5 | New case studies (E56/E57) given as single dense paragraphs vs. existing fully-structured case-study format | **Outline → expansion required.** Julie's paragraphs are seed outlines. Expansion likely needs author input to avoid fabrication. Treat as separate workstream — do NOT ship as-is. |
-| Q6 | Jesse's About-the-Authors entry referenced but missing | **Confirm with author.** Either it exists somewhere not in repo, or it needs authoring. |
-| Q7 | Anonymization convention ("global food safety company", "global automotive supplier", etc.) | **Adopt Julie's convention for her biographical references.** Meridian/PM-Agent are already fictional composites — leave them. |
-| Q8 | Framework intros (TML, PIS, Pattern Method, Right Seat, COE) repeat across 6+ chapters in Julie's redline | **Consolidate.** Introduce once with full definition (likely in 06 or glossary), reference thereafter. Avoid Julie's repetition pattern. |
+| # | Decision | Recommendation | JF-Notes |
+|---|---|---|---|
+| Q1 | Ch 12–15 as numbered chapters vs. existing appendix/case-study structure | **Keep current structure.** Map Julie's Ch 12–13 → two new `case-study-*.qmd` files. Julie's Ch 14 → existing case-study files. Julie's Ch 15 → `appendix-glossary.qmd` additions. | Agree; keep current structure. Case studies belong in appendix |
+| Q2 | Ch 6 split (Julie = 1 chapter; ours = 06 + 06b) | **Keep current split.** HAC + Right Seat → 06 (E33–35). TML + Pattern Drag at Design Gate → 06b (E36–37). | Keep our split; design as 2 separate chapters makes sense given the volume and distinction b/w the 'human' and 'technical' sides of work |
+| Q3 | Ch 11 §11.1/§11.2 collision (Julie wants Work Matters / JMann as §11.1/§11.2, conflicting with current flow) | **Integrate as subsections under Clarity Call**, not as top-level §11.1/§11.2. Preserve existing First-Sprint-Plan-centric flow. | I need to review this; TBD |
+| Q4 | E24 touches CH04-L10 polished opening | **Voice-shift only, no destructive change.** Verify with author after voice-implementer pass; do NOT rewrite the L10 story itself. | Agreed |
+| Q5 | New case studies (E56/E57) given as single dense paragraphs vs. existing fully-structured case-study format | **Outline → expansion required.** Julie's paragraphs are seed outlines. Expansion likely needs author input to avoid fabrication. Treat as separate workstream — do NOT ship as-is. | Agreed; let's stick in appendix with a todo |
+| Q6 | Jesse's About-the-Authors entry referenced but missing | **Confirm with author.** Either it exists somewhere not in repo, or it needs authoring. | About the authos should be in the appendix |
+| Q7 | Anonymization convention ("global food safety company", "global automotive supplier", etc.) | **Adopt Julie's convention for her biographical references.** Meridian/PM-Agent are already fictional composites — leave them. | Agreed |
+| Q8 | Framework intros (TML, PIS, Pattern Method, Right Seat, COE) repeat across 6+ chapters in Julie's redline | **Consolidate.** Introduce once with full definition (likely in 06 or glossary), reference thereafter. Avoid Julie's repetition pattern. | This is a bit more complex; should definitely be in the glossary. I would introduce once, reference thereafter. _Where_ we reference will have to be delegated to an agent in order to make sure we keep consistent with how we introduce other frameworks. |
 
 ## Phased execution plan
 
@@ -46,6 +46,8 @@ Julie's redline doesn't know about recent edits. Three categories of risk:
 ### Phase 2 — Per-chapter reconciliation (analysis only)
 
 Spawn one subagent per chapter affected. Each reads the current `.qmd`, the relevant E-numbered rows, and produces `_julie/per-chapter/NN-chapter.md`:
+
+`jf-note: How does the above "work" when the chapters aren't synced? Is syncing/merging something we do before E-numbering?`
 
 - Confirms or revises the target line ranges (manifest gave best-guess; chapter-aware pass tightens)
 - Classifies each E-row per chapter: ALREADY-DONE / SAFE-ACCEPT / VOICE-IMPLEMENTABLE / STRUCTURAL-NEEDS-AUTHOR / CONFLICT
@@ -83,7 +85,7 @@ Process chapters in this order to manage dependencies and let voice land cleanly
 
 Per-chapter loop:
 
-1. `voice-implementer` agent picks up VOICE-SHIFT and ATTRIBUTION beads
+1. `voice-implementer` agent picks up VOICE-SHIFT and ATTRIBUTION beads `jf-note: We may want to do a voice scan in advance to make sure that we keep the overall voice (eg code it) so that we have a pro-active approach to voice as opposed to just a reactive one.`
 2. `editor` agent picks up NEW-SECTION and FRAMEWORK-ADD beads
 3. Quality gates run (see below)
 4. If gates pass, commit chapter changes; close beads
@@ -136,9 +138,9 @@ When created in Phase 3:
 
 ## Context-window efficiency notes
 
-- Each chapter is a separable session — no need to load the whole book per task
+- Each chapter is a separable session — no need to load the whole book per task `jf-note: We have a skill for coherance check; we'll need to run that on a per-chapter basis, but also across the book once it executes.`
 - Beads carry full inline context so execution sessions don't reload the manifest
-- Per-chapter reconciliation files are throwaway scaffolding; once beads are created, they can be archived
+- Per-chapter reconciliation files are throwaway scaffolding; once beads are created, they can be archived `jf-note: I'd argue the same is true for "_julie" folder once we've completed the work.`
 - Subagent delegation pattern: scanner / implementer / reader are scoped tools — main session orchestrates, agents do the work
 
 ## What's done so far
