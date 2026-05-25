@@ -26,6 +26,10 @@ The dominant convention in modern co-authored business books is **blended "we" v
 
 Sources: [BE 2.0 — Amazon](https://www.amazon.com/BE-2-0-Beyond-Entrepreneurship-Business/dp/0399564233); [Trillion Dollar Coach — Audible](https://www.audible.com/pd/Trillion-Dollar-Coach-Audiobook/0062839276); [Co-Piloting — S&S](https://www.simonandschuster.com/books/Co-Piloting/Jim-Haslam/9781948677585); [Built to Last — Wikipedia](https://en.wikipedia.org/wiki/Built_to_Last:_Successful_Habits_of_Visionary_Companies); [PublishDrive guide on co-authoring](https://publishdrive.com/how-to-co-author-a-book.html).
 
+```jf-note:
+Approved
+```
+
 ---
 
 ## Q-E23 — "Order is the Argument"
@@ -45,6 +49,10 @@ Julie's redline (line 660) preserves the heading verbatim and inserts a supporti
 **Recommendation: APPROVE.** Julie's redline correctly anchors to the existing section. Jesse's confusion was about the *phrase* — but it is his own, and the existing prose at `chapters/03-the-framework.qmd:18-28` explains it adequately. No change to the heading needed. Julie's added paragraph (lines 668-677 of redline) is a strong reinforcement.
 
 Source: `/Users/jesseflores/compound/sites/compound-book/chapters/03-the-framework.qmd:18-28`.
+
+```jf-note:
+If I made a phrase and don't remember it, its not a good phrase. NEeds to be revised.
+```
 
 ---
 
@@ -68,6 +76,10 @@ Julie's editorial note (redline:762-768) states the template "should include at 
 
 Source: `/Users/jesseflores/compound/sites/compound-book/chapters/04-signal.qmd:92-115`.
 
+```jf-note:
+fine
+```
+
 ---
 
 ## Q-E39 — Build Spec accountability column
@@ -90,6 +102,10 @@ So Jesse's instinct ("I thought we had that already?") is **correct**. What Juli
 **Recommendation: APPROVE-WITH-MODIFICATIONS.** Do NOT add an accountability column (the spec is sections, not a table — the structure doesn't fit). The supervisor-role section and the HAC linkage already exist. The genuinely new contribution in Julie's paragraph is the **HAC-consistency verification step** during Build review: "for every step in the specification, that a named supervisor exists in the HAC who is accountable for that step's output." Fold that one sentence into §7.1 as a discipline-level note, or into the Guardrails Checklist as a check before the seven questions. Reject Julie's full insertion as written; tell Julie the structure conflict and the existing coverage.
 
 Source: `/Users/jesseflores/compound/sites/compound-book/chapters/07-build.qmd:208-218, 231, 282-294`.
+
+```jf-note:
+fine
+```
 
 ---
 
@@ -118,5 +134,9 @@ The measurability concern (Jesse's note) is real but tractable for $5M-$50M comp
 These two clarifications convert Julie's paragraph from a principle into a measurable instrument. Otherwise APPROVE the insertion.
 
 Sources: [Worklytics — Measuring AI Adoption](https://www.worklytics.co/resources/measuring-ai-adoption-facilitation-index-manager-kpi-copilot-era); [Larridin — Logins vs. Impact](https://larridin.com/blog/ai-adoption-vs-impact-metric); [Worklytics — 10 AI Adoption KPIs 2025](https://www.worklytics.co/resources/top-10-kpis-ai-adoption-dashboard-2025-dax-formulas); [Microsoft — Measuring AI Adoption whitepaper](https://adoption.microsoft.com/files/copilot/Unlocking-AIs-Impact-whitepaper.pdf).
+
+```jf-note:
+fine
+```
 
 ---

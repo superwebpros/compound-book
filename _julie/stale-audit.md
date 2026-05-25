@@ -40,6 +40,10 @@ Decision needed from Jesse: keep with current disclosure, strengthen the disclos
 | SuperWebPros | Jesse's real company | Named directly in `chapters/01-diagnosis.qmd:49` — intentional. |
 | Marina (Integrator, Ch02 opener) | Real person, first name only | No explicit anonymization disclosure; first name only. See §4. |
 
+```jf-note:
+Greenline isn't real; needs to be scrubbed EVERYWHERE
+```
+
 ---
 
 ## Section 2 — Recent decision context (from git log)
@@ -64,6 +68,10 @@ Key insight: the L10 / $24K subcontractor opening in Ch04 (currently on lines 8�
 
 Similarly, Ch02 opening with Marina + marketing coordinator is the sourced replacement from `6c99346`. The original fabricated CEO-flat-headcount opening is fully gone.
 
+```jf-note:
+Marina/Donna and chutes-and-ladders were NOT fictional; they were/are real.
+```
+
 ---
 
 ## Section 3 — Risks the Julie merge must respect
@@ -72,7 +80,15 @@ These are places where Julie's redline lands on top of polished, struck-and-repl
 
 1. **E24 (Ch04 L10 opening) — CH04-L10 conflict flag.** Julie's voice-shift adds "Jesse:" and converts "I asked" → "we asked" in the body. Risk: a careless edit could regress to the older fabricated "nine red weeks" framing if the agent generating the edit relies on Julie's redline as the source-of-record instead of the current `chapters/04-signal.qmd`. Mitigation: explicitly point Phase 4 execution at the current qmd as the substrate; Julie's edit is voice-shift only, not story replacement.
 
+```jf-note:
+I think we need to treat Julie's contributes as additive and our current manuscript as the eexising canon. What we may need to do is have an agent review the 'unique' elements of Julie's experience and narrative and then decide an _integrative_ rather than _redactive_ approach. 
+```
+
 2. **E01/E02/E04 (Preface) — index.qmd full restructure.** Julie restructures the preface to a dual-author opening ("We came to the same conclusion from opposite directions") and adds her 2022 global food safety company founding story (E03). Risk: the current preface's chutes-and-ladders developer story (lines 3–5) is the canonical version of that anecdote. Julie's restructure must preserve the developer-departure story content; only the framing wrapper changes. Persistent memory flagged `ch02-opening-fabricated-replace-with-marina` and the chutes-and-ladders story as load-bearing and sourced.
+
+```jf-note:
+Her preface is fine; it adds much content than mine does not, but it reads like AI. Again, the _content_ is fine (unless otherwise noted) - its the tone that's not.
+```
 
 3. **E60 (Anonymization convention) — collision risk with PM Agent Team case study.** Julie's convention introduces anonymized employer descriptors ("global food safety company", "global automotive supplier", "mid-market precision manufacturing company"). These are for **Julie's biographical references** per the manifest note. Risk: if applied book-wide without scoping, it could:
    - Re-anonymize SuperWebPros (intentionally named in Ch01:49)
@@ -104,6 +120,10 @@ These are named entities currently in the prose that may warrant author decision
 Note: The book also names SuperWebPros (Ch01:49) and Jesse Flores (multiple) directly. These are intentional and should NOT be anonymized.
 
 Additionally, the PM Agent Team case study (`chapters/case-study-pm-agent-team.qmd`) has **no italicized "this is a real story / names changed" disclosure** at the top, unlike `case-study-meridian.qmd` which opens with a clear composite disclaimer. Recommendation: add a one-line disclosure at the top of that case study clarifying which names are pseudonyms (Rachel) and which are real (Sofia, Lucas, Jesse) — consistent with the Meridian convention.
+
+```jf-note:
+Sofia is the anonymized name for marina or donna; i don't remember. Same with Lucas. Anything in _my_ appendix should already be treated as canon.
+```
 
 ---
 

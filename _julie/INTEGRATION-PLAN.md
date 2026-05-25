@@ -32,12 +32,16 @@ Julie's redline doesn't know about recent edits. Three categories of risk:
 |---|---|---|
 | Q1 | Ch 12–15 structure | **Keep current.** Julie's Ch 12–13 → new case studies in appendix. Ch 14 → existing case-study files. Ch 15 → existing glossary. |
 | Q2 | Ch 6 split | **Keep current split.** 06 (human/HAC) + 06b (hybrid/work). Most novel & foundational section of the book — preserve. |
-| Q3 | Ch 11 §11.1/§11.2 | **TBD pending Ch 11 re-read.** Work Matters / JMann content likely doesn't fit. Joint "Compound Conversations" podcast is the more likely placement if any. |
+| Q3 | Ch 11 §11.1/§11.2 | **RESOLVED.** Julie's podcast / content-thread content → About-the-Authors / Julie's bio area (in appendix per Q6). Compound Conversations joint podcast = only Ch11 reference worth keeping. Affects E07, E52, E53, E54, E20 — see manifest RELOCATED row. |
 | Q4 | E24 CH04-L10 | **Voice-shift only, no destructive change.** |
 | Q5 | Case study expansions | **Move to appendix with TODO.** Will likely need Julie's source material to complete. |
 | Q6 | Jesse About-the-Authors | **Move all About-the-Authors content to appendix.** Jesse to author his own entry. |
 | Q7 | Anonymization convention | **Confirmed.** Julie's biographical refs use "global food safety company," etc. Meridian + PM-Agent stay as-is (fictional composites). |
 | Q8 | Framework intros | **Consolidate.** Define once (likely glossary + first appearance), reference thereafter. Subagent in Phase 4 enforces consistency with how current frameworks are introduced. |
+
+```jf-note:
+Julie's reference of her podcast, content should go to her author/bio area
+```
 
 ## Original decision table (with author notes preserved for reference)
 

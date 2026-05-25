@@ -50,7 +50,8 @@ Generated: 2026-05-24
 | REVIEW | E07, E09, E15, E17, E20, E22, E25, E27, E29, E32, E41, E44, E45, E47, E48, E50, E55 |
 | QUESTION (research lane) | E21, E23, E26, E39, E43 |
 | BLOCKED (needs Julie) | E37 (Pattern Drag definition), E49 (COE governance model), E52 (15-year thread intent), E56 (Pro Services case study expansion), E57 (People Ops case study expansion) |
-| REJECTED | E33 (Ch6 opening reframing), E34 (HAC origin attribution), E38 (Ch7 governance-attribution), E51 (Clarity Call personal-voice), E53 (Ch11 Work Matters subsection), E54 (Ch11 JMann subsection) |
+| REJECTED | E33 (Ch6 opening reframing), E34 (HAC origin attribution), E38 (Ch7 governance-attribution), E51 (Clarity Call personal-voice), E53 (Ch11 Work Matters subsection — substance moved to About-Authors bio), E54 (Ch11 JMann subsection — substance moved to About-Authors bio) |
+| RELOCATED (substance moves to About-Authors bio, not original placement) | E07 (15-year content thread, Preface → bio), E52 (15-year content thread, Ch11 → bio), E20 (Ch2 §2.6 parallel-workstreams 121-episodes beat → bio or cut; flagged contrived in risk map) |
 
 ### Global anti-pattern (applies to all framework-add rows)
 
