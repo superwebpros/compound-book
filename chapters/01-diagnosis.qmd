@@ -6,6 +6,62 @@
 This chapter is a diagnostic. You'll name what's actually broken in your company's AI approach — and it's not the tools, the training, or the team. It's the operating model. By the end you'll have a scored AI Readiness Scorecard across five dimensions, a clear picture of where to start, and the honest answer to a question most leadership teams avoid: are we actually ready to operate differently?
 :::
 
+```scout-note:
+E08 (VOICE-SHIFT, LAND-WITH-MODIFICATION) — discovery-call section I→we.
+
+Target lines: the discovery-call section below (opening line through "That company is
+not unusual. It might be yours.").
+
+This row is FIRST in the recommended bead order. It establishes the chapter's blended-
+we voice; every downstream row writes into the voice this row sets.
+
+Substance to PRESERVE (DO NOT touch the three-tools story content):
+- The three-tools / three-people discovery-call beat is REAL per persistent memory
+  `ch01-three-tools-story-real` (confirmed by author). Do NOT flag as fabricated; do
+  NOT rewrite the content.
+- The opening line cadence — hammer-blow opener the chapter trades on.
+- The "ChatGPT / Claude / Poe" enumeration — three real tools mentioned by three real
+  people. NOT a contrived triplet for cadence (real call content).
+- "Three people. One company. Three different tools." beat.
+- The design-problem pivot ("That's not a technology problem. That's a design problem.").
+- Hammer line: "That company is not unusual. It might be yours."
+
+Modification from Julie's instruction (redline:224–262):
+- Land the I→we conversion at "I asked" (twice) → "we asked"; "the most common version
+  of the AI problem I see" → "we see."
+- MODIFY THE OPENING LINE: Julie proposes "The answer to one question told us everything
+  we needed to know." Risk-map verdict on that phrasing: LIGHT EDIT — the "told us
+  everything we needed to know" closer is AI-tell direct-address cadence. Risk-map
+  direction (line 56): tighten to "One question told us everything." That preserves the
+  hammer-blow rhythm and drops the AI-tell.
+- REJECT inline `Jesse:` tag per Q-E21 and Preface execution pattern. The section lands
+  in blended-we throughout. The chapter is a SHARED diagnostic, not a transcript of
+  Jesse's call.
+- OPTIONAL in-prose attribution: if the Drafter wants to signal this as Jesse-led, do
+  it in-prose ("We were on a discovery call — one Jesse was leading…") — only if it
+  lands cleanly without disrupting cadence. Default is blended-we.
+
+Anti-pattern risk:
+- A3: low for existing content (the ChatGPT/Claude/Poe triplet is genuine call content).
+  Do NOT introduce new triplets during conversion.
+- A5: high on the opening line. Tighten per risk-map direction above.
+- A15 (unqualified AI agency): not triggered here; AI is a tool the operators are using,
+  not an agent making decisions.
+
+Framework-attribution rule: N/A.
+
+Coherence:
+- Sets the blended-we voice for the entire chapter. Execute first.
+- The "most common version of the AI problem we see" must remain operator-direct weight.
+  Don't soften.
+
+Path: A (Voice Shifter solo).
+```
+
+```jf-note:
+
+```
+
 I asked them one question. The answer told me everything.
 
 We were on a discovery call with a long-time client — a mid-size manufacturing company, about fifty people, eight-figure revenue. The CEO and two of his direct reports were on the screen. I asked how they were using AI. The CEO said ChatGPT. One director said Claude. The other said Poe — an aggregator that lets you sample models without committing to one.
@@ -15,6 +71,71 @@ Three people. One company. Three different tools. No shared accounts or projects
 I asked what they were hoping AI would do for the business. The answer was honest: they had a gut sense that AI could be doing more for the company, but they did not know what was even possible. They booked the call precisely because they did not know what they wanted — only that they were leaving something on the table.
 
 That's not a technology problem. That's a design problem. And it's the most common version of the AI problem I see: three people, three tools, zero coordination, zero structural change. The effort was real — but no one designed the work before the tool arrived.
+
+```scout-note:
+E09 (NEW-SECTION, LAND-WITH-MODIFICATION) — pattern predates AI by 20 years.
+
+Insertion point: NEW paragraph HERE, between the design-problem pivot above and the
+"That company is not unusual. It might be yours." hammer line below.
+
+This is where Julie's voice first enters Ch 1. The blended-we from E08 has already
+landed; E09's job is to extend the diagnosis backward in time and credibly.
+
+Substance to preserve (from julie-redline.md:272–283):
+- The pattern of organizational gap-after-new-capability has existed 20+ years — pre-AI.
+- The three classes of prior examples: acquisitions, restructurings, operating-model
+  redesigns. (These are the substance; the triplet construction is the AI tell — see
+  below.)
+- Structural insight: a new capability arrives (merged company / new function / new
+  technology) and the organization tries to absorb it WITHOUT changing the structure
+  designed to receive it. Accountability never reassigned. Workflows never redesigned.
+  New capability sits next to existing structure and produces nothing structural.
+- Hammer claim: AI is not creating a new organizational problem. It is exposing an old one.
+
+Acceptance criteria:
+- Framework-attribution rule SOFT APPLIES. No framework named here, but Julie's source
+  opens "Julie has been watching a version of this pattern for twenty years." REJECT
+  third-person attribution. Land in blended-we with in-prose attribution drawing on
+  Julie's CHRO background ("We've watched a version of this pattern for two decades,
+  long before AI…" or similar). Frame as shared diagnosis credibility, not Julie's
+  individual IP.
+- A3 (triplet): Julie's source "acquisitions, restructurings, operating model redesigns"
+  is a literal triplet. The substance is real (three distinct prior contexts). Collapse:
+  pick ONE acquisition or restructuring with a specific operating consequence, not three
+  abstractions in a row.
+- A5 (AI smell): Julie's smoothing closer "the failure mode was always the same" is
+  generic-AI cadence. Risk-map line 61 direction: lead with the concrete — name one
+  specific change context, the structural failure, and the cost. Drop "the failure mode
+  has been identical."
+- A5 / Pattern 4: Julie's hammer "AI is not creating a new organizational problem. It is
+  exposing an old one" uses "Not X. It is Y" antithesis cadence. Substance is load-
+  bearing — preserve. Rework cadence to single declarative or two-clause sentence.
+- FORBIDDEN VOCAB: Julie's source uses "transformation" — auto-reject (charter §3).
+  Reframe as "operating-model change" / "restructuring" / "integration" / "acquisition."
+- Ch 1 author note: "not too EOS focused — it's not our IP." Don't use EOS-branded
+  examples for the 20-year pattern; use plain operator language.
+- A2: NO new coined book vocabulary (Co-Intelligent Company, Co-Operating Model, HAC).
+  Chapter still hasn't earned them. "Operating model" as plain prose is fine; the
+  capitalized terms are not.
+- A4 (boastful biographical): low risk; 20-year span is operator-credentialing, not the
+  "121 episodes" beat. Land as a clipped credential, not a tour.
+- A11 (inflated symbolism): guard against "every major transformation" / "every
+  leadership team" generalizations. Specific instance, named context.
+
+Coherence:
+- Foreshadows §1.2's operating-model frame (L61–L71). Do not contradict L65 (Culture
+  matters / Training matters / Tool selection matters — necessary, not sufficient; the
+  deeper problem is the operating model). E09's pattern observation should set up that
+  frame, not pre-empt it.
+- "That company is not unusual. It might be yours." (the line below) must still land as
+  the hammer-blow closer to the section. E09 should not steal its rhythm.
+
+Path: A (solo Drafter).
+```
+
+```jf-note:
+
+```
 
 That company is not unusual. It might be yours.
 
@@ -46,6 +167,112 @@ Meanwhile your integrator or COO is on the calendar asking to approve the next t
 
 This is the headcount paradox. AI was supposed to change the math of scaling. It hasn't. Revenue and headcount are still moving together. The cost of one keeps climbing. And the investment you made to break the link is sitting on the books producing nothing structural.
 
+```scout-note:
+E10 + E11 (PAIRED BEAD — ATTRIBUTION + NEW-SECTION, LAND-WITH-MODIFICATION) — Jesse's
+13→8 attribution + Julie's parallel global HR redesign.
+
+Target: existing SuperWebPros paragraph below (E10 lands as an attribution wrapper on
+that paragraph; E11 lands as a NEW paragraph immediately after it).
+
+This is ONE bead, not two. The rhetorical move is the pairing — two operators arrived
+at the same headcount math from different scales. Splitting strands the parallel.
+
+==================
+E10 (ATTRIBUTION, LAND-WITH-MODIFICATION)
+==================
+
+Substance to PRESERVE on existing paragraph below:
+- Entire paragraph body is sourced canonical content. Preserve verbatim or near-verbatim.
+- "13 to 8" framing must remain CUMULATIVE ("over the following year" framing per
+  stale-audit Risk #6 / persistent memory `13-to-8 headcount shift is a real observation`).
+- "Not through layoffs — through redesign" beat.
+- The mapped-every-function / agent-teams / billings-up / profitability-up arc.
+- The "five roles redesigned out of existence" closer.
+- "The rest of this book shows you how we did it and gives you the tools to replicate it"
+  closer — cumulative-we is correct there.
+
+Modification from Julie's instruction:
+- Julie's redline (lines 303–317) proposes "Here is how it resolved for us" → "for Jesse"
+  and "My software development company" → "His software development company." REJECT
+  the third-person shift per Q-E21 — it breaks the blended-we voice and reads as
+  transcript-style.
+- Land the attribution differently: open the paragraph with an in-prose phrase that
+  names this as Jesse's company specifically without breaking the we-voice. Example:
+  "Here's how it resolved at Jesse's company. SuperWebPros, his software development
+  firm, went from thirteen people to eight…" — naming SuperWebPros once and "his" once
+  is enough; the rest of the paragraph stays in blended-we.
+- SuperWebPros REMAINS NAMED per stale-audit §1 (intentionally named at this point).
+  Do not anonymize.
+
+A4 (boastful biographical): moderate risk; mitigated by concrete operator-relevant result.
+A3 (triplet): "mapped every function, identified..., built agent teams..." is borderline
+but load-bearing concrete process language. Preserve.
+
+==================
+E11 (NEW-SECTION, LAND-WITH-MODIFICATION)
+==================
+
+Substance to preserve (from julie-redline.md:319–332):
+- Julie's parallel: global food safety company completed Fortune-500-division acquisition.
+- Integration instinct was to add headcount (HR business partners, regional managers,
+  coordination roles).
+- Alternative path: redesign the operating model. Explicit decisions about which
+  functions required local human judgment, which could be standardized across regions,
+  which could be systematized entirely.
+- HEADCOUNT OUTCOME: the redesigned global HR function served 44 countries with a
+  SMALLER PROPORTIONAL TEAM than the pre-acquisition domestic function. Not because
+  headcount was cut. Because the work was designed before it was staffed.
+- This last claim is the load-bearing operator beat — same math working at different
+  scale, different industry.
+
+Acceptance criteria:
+- LLM ARTIFACT IN SOURCE: Julie's redline line 320 contains "the the acquired division
+  acquisition" — canonical doubled-article artifact (risk-map Pattern 1). Direct
+  evidence the paragraph was LLM-drafted. REPLACE WHOLESALE. Do not transcribe Julie's
+  prose; extract substance and rewrite.
+- A3 (triplet, instance 1): "more HR business partners, more regional managers, more
+  coordination roles" is constructed symmetry. Collapse to ONE specific role + the
+  headcount math (e.g., "more HR business partners by region" — single instance).
+- A3 (triplet, instance 2): "explicit decisions about which functions required local
+  human judgment, which could be standardized across regions, and which could be
+  systematized entirely" — three parallel clauses. Collapse to a single concrete
+  example of one decision that turned on judgment-vs-system.
+- MEANS/ENDS-RISK (scout.md §5 special check): paragraph frames "redesign" as the
+  move and "smaller proportional team" as the outcome. That's correct means→ends order.
+  Drafter MUST NOT slide into "the redesign produced leverage" / "design produced
+  compounding" abstract-noun closers that frame design as destination. Acceptance: the
+  operator outcome (headcount math, ratio, dollar-equivalent freed capacity) LEADS;
+  redesign is named as the means. Do not close on "design" as the destination.
+- Framework-attribution rule: SOFT applies. Biographical attribution is fair (Julie was
+  the CHRO; she ran the redesign). Reject framework-attribution language ("this is the
+  org-design framework Julie brings to the book"). This is one operator's parallel story
+  to Jesse's 13→8, not framework provenance.
+- E60 anonymization: "a global food safety company" already conforms; preserve.
+- Forbidden vocab: NEVER let "transformation" land; use "redesign," "restructure,"
+  "integration."
+- A4 (boastful biographical): moderate. 44-countries / Fortune-500-division is
+  credentialing. Mitigated because (a) Preface E03 already established Julie's
+  credentials and (b) the headcount-math claim earns the credentialing. Don't dwell on
+  scale; cash it out as the operator beat.
+
+Coherence:
+- The transition between E10's Jesse paragraph and E11's Julie paragraph is the
+  rhetorical work. Drafter writes the bridge: "Here's how it resolved at Jesse's
+  company [...] And here's the same math at a different scale, in a different industry
+  [...]."
+- L51 callout-tip ("The headcount paradox doesn't break by adding AI…") follows.
+  Verify it still reads after the E10+E11 reframe.
+- Excalidraw at L57 (`ch01-headcount-before-after`) is the visual of the headcount
+  paradox — both stories are operating examples. No diagram change.
+
+Path: A (solo Drafter). Strongest Path B candidate in the chapter if voice-gate fails;
+the MEANS/ENDS-RISK + dual-triplet substance is the heaviest lift.
+```
+
+```jf-note:
+
+```
+
 Here's how it resolved for us. My software development company, SuperWebPros, went from thirteen people to eight. Not through layoffs — through redesign. We mapped every function, identified what required human judgment and what didn't, built agent teams for the work that followed rules, and kept humans on the work that required taste, relationships, and strategic decisions. Billings went up. Profitability went up. The five roles that went away weren't eliminated — they were *redesigned out of existence* because the work they did was absorbed by systems we built deliberately. That's the headcount math finally moving the way it was supposed to move. The rest of this book shows you how we did it and gives you the tools to replicate it.
 
 ::: callout-tip
@@ -64,9 +291,107 @@ The reason your AI investments aren't producing returns is an operating-model pr
 
 This is the diagnostic phrase, and it matters that it is precise. Culture matters — a team that resists change will stall any initiative. Training matters — people need to know what the tools can do. Tool selection matters — the wrong platform creates its own drag. All of those are real, and none of them are sufficient. The deeper problem is the operating model. The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker — synthetic, capable, available — and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, no defined handoff. So it produces nothing the organization can compound on. Culture, training, and tools are necessary conditions. Structural redesign is the missing one.
 
+```scout-note:
+E12 (NEW-SECTION, LAND-WITH-MODIFICATION) — thirty years of operating-model failures.
+
+Insertion point: NEW paragraph HERE, between the existing operating-model paragraph
+above and the chatbot-vs-agent paragraph below. E12 extends the diagnosis backward
+across thirty years of prior tech / process introductions.
+
+Substance to preserve (from julie-redline.md:352–361):
+- Operating-model failures predate AI by decades.
+- The structural error has the same shape across multiple prior tech/process introductions.
+- The capability arrived; the structure never changed to receive it; the new thing sat
+  next to the old structure; produced nothing structural.
+- AI is the latest version of the same failure pattern.
+
+Acceptance criteria:
+- FORBIDDEN VOCAB — AUTO-REJECT: Julie's source uses "transformation initiative" twice
+  (charter §3). Reframe as "operating-model change," "restructuring," "integration,"
+  "major rollout." NEVER let "transformation" land.
+- Ch 1 author note: "we want to make sure we aren't too EOS focused — it's not our IP."
+  E12 must not lean on EOS specifically; plain operator language for the prior failure
+  examples.
+- A3 (triplet): Julie's source "ERP implementations, lean manufacturing rollouts,
+  post-merger integrations" is a constructed triplet. Risk-map direction (line 73): pick
+  ONE failure with a number, not three with rhythm. Land one named system (e.g., ERP
+  rollouts with a concrete operator cost) and reference the others briefly without
+  parallel cadence.
+- A5: Julie's closer "The technology is different. The structural error is identical."
+  is the antithesis cadence (charter §4 Pattern 4). Preserve substance (structural-
+  error-is-identical is load-bearing) but rework cadence away from "X is different. Y
+  is identical."
+- A1: guard against "operating model is X. Organizational design is Y" definitional
+  cadence.
+- A2: do NOT introduce capitalized framework vocabulary (Co-Intelligent Co-Operation
+  appears at L63 already as the chapter's first naming — leave it; don't stack more on
+  top).
+
+OPPORTUNISTIC CLEANUP IN SAME PASS:
+- L81 currently reads: "The pattern is mechanical. The diagnosis is mechanical. The fix
+  is mechanical." This is the EXACT triplet pileup flagged in voice-charter §1 Pillar 4
+  as auto-reject AI cadence. Drafter has authority per charter §5 to cut/replace in this
+  same pass. Direction: preserve principle (the pattern is mechanical, not philosophical);
+  cut triplet to a single declarative or two-clause sentence.
+
+Coherence:
+- E12 sits inside §1.2 (operating problem). It must connect to the L69 EOS shape
+  paragraph (which says you know what happens to work added without ownership). E12 +
+  L69 should read as: same pattern across history AND inside disciplined operating
+  systems — different evidence for the same diagnosis.
+- Verify L81 reads cleanly after the A3 fix; the section closes there before §1.3.
+
+Path: A (solo Drafter).
+```
+
+```jf-note:
+
+```
+
 Most people still think of AI as a chatbot — a thing you type questions into and read answers from. That's like thinking of electricity as a flashlight. And in most companies, that's exactly the relationship: one human, one chat window, one task at a time. The human is micromanaging the AI the same way they'd micromanage a junior employee — hovering over every output, typing every instruction. It might be slightly more productive, but it's not compounding anything because the human is still the bottleneck. People are terrible at multitasking. Agents aren't. The real capability is in agents: AI systems that take actions, follow workflows, and produce deliverables without a human typing every prompt. An agent can research, draft, route, check, escalate, and deliver — inside a designed system. And agents can run in parallel. While you're reviewing one deliverable, three other workstreams are moving. The gap between "chatbot" and "agent" is the gap between a tool that answers questions and a workforce that does work. If your mental model of AI is still the chatbot, your imagination about what's possible is too small by an order of magnitude.
 
 Operators who run on EOS, Scaling Up, or any disciplined system already know this shape. You did not get the results you have now by accident. You built an accountability chart. You wrote scorecards. You ran the L10 — EOS's weekly leadership meeting — or the equivalent. You know exactly what happens to a company that adds work without naming who owns it — the work dies in the gap. AI is no different. It is a new kind of worker that has been added to the system without anyone naming who owns it, what it is accountable for, or where the handoffs live. So it dies in the gap, predictably, the same way any unowned function dies in the gap.
+
+```scout-note:
+E13 (ATTRIBUTION, LAND-WITH-MODIFICATION → effectively SKIP at L71) — three-questions
+accountability-chart check.
+
+Target line: existing three-questions paragraph below (L71 in pre-scout-note baseline).
+
+Julie's redline (lines 381–392) proposes replacing "the same three questions you would
+ask of a human team" with "the same three questions Julie asks of every leadership team
+she advises." REJECT this rewrite.
+
+Rationale for SKIP at literal target:
+- Framework-attribution rule (manifest §line 57) APPLIES DIRECTLY. The three-questions
+  accountability check is a generic org-design diagnostic — joint IP, framework
+  component. Per the global rule, framework components do not get individual author
+  attribution.
+- Q-E21 convention: blended-we + in-prose attribution, not third-person "Julie asks" tags.
+- The chapter's blended-we is already established by E08. Julie's CHRO frame is
+  established upstream by E09, E11, E12 — by the time the reader reaches this paragraph,
+  the dual-author rhythm carries the credibility without an inline tag.
+
+Acceptance criteria:
+- Voice Shifter VERIFIES this paragraph still reads cleanly in blended-we voice after
+  E09, E11, E12 have landed upstream. If yes, no edit at L71.
+- Reject any rewrite that introduces "Julie asks" or "Jesse's three questions" framing.
+- A3 (triplet) — the three questions ARE a literal triplet but they're operative
+  enumeration (the framework's three checks), not constructed cadence. Charter §4 rare
+  exception. Preserve.
+- A4: would be triggered by "every leadership team she advises" (generalizing scope).
+  Avoided by keeping the existing phrasing.
+
+This is NOT a NEEDS-AUTHOR row. The framework-attribution rule is canon; rejection is
+mechanical. Author has implicitly already approved (manifest E13 status = Approved on
+the substance; the literal rewrite is what rejection targets).
+
+Path: A (Voice Shifter solo, light verification pass; likely no-op on L71 itself).
+```
+
+```jf-note:
+
+```
 
 If you walked into any function in your company today and asked the same three questions you would ask of a human team — what is this function accountable for, what is its scorecard, who reviews the output and on what cadence — you would get clean answers for the humans and blank stares for the AI. That is the diagnosis in one move. The AI in your company has no seat on the chart. It has no number it is hitting. It has no review rhythm. You would never run a function that way if it were staffed by people. You are running it that way because you have not yet decided that AI is staff.
 
@@ -85,6 +410,60 @@ The pattern is mechanical. The diagnosis is mechanical. The fix is mechanical. N
 There is one specific trap every organization falls into at the start of its AI effort: it looks exactly like the right approach.
 
 The first question most teams ask is task-oriented: *which of our existing tasks could AI help with?* It sounds reasonable. It sounds practical. And it's not wrong — it gets you some of the way there. You'll find prompt tips, a few useful shortcuts, some real time saved. Using AI to write a social media post is a fine task. But task-orientation is woefully insufficient. It adds AI on top of the existing workflow. The existing workflow was designed for humans. So the gains stay small, the wins stay scattered, and nothing changes structurally.
+
+```scout-note:
+E14 (NEW-SECTION, LAND-WITH-MODIFICATION) — outcome-first / design-second / tool-third
+discipline.
+
+Insertion point: NEW paragraph(s) HERE, between the task-orientation critique above and
+the existing goal-orientation reveal below. E14 is the bridge that names the discipline
+which produces the goal-orientation result.
+
+Substance to preserve (from julie-redline.md:418–427):
+- The discipline: start with the outcome the organization is accountable for, then design
+  the work backward from that outcome.
+- Within that discipline: who owns what; what requires judgment; what can be systematized;
+  where the handoffs live.
+- The order: outcome first, design second, tool or role third.
+- The hammer: AI didn't invent this discipline — it made the cost of skipping it
+  catastrophically visible.
+
+Acceptance criteria:
+- Framework-attribution rule APPLIES. The outcome-first/design-second/tool-third
+  discipline is JOINT IP. Reject Julie's redline phrasing ("Julie has asked a version of
+  this question in every organizational design engagement for twenty years"). Reframe in
+  blended-we. Julie's CHRO frame is established upstream by E09, E11, E12 — no need to
+  re-credential here.
+- MEANS/ENDS-RISK (scout.md §5 special check): the existing closer at L89 ("Goal-orientation
+  produces results because the design was built to produce them") is design-as-result
+  adjacent. E14 must REINFORCE outcome-leads-design ordering, not flip it. Lead with the
+  operator outcome the discipline produces (cost of skipping made visible, the math
+  working); name outcome-first design as the means.
+- A3 (triplet): Julie's source has four parallel one-clause sentences ("Who owns what.
+  What requires judgment. What can be systematized. Where the handoffs live."). Collapse
+  to a single concrete example OR a single sentence that lists them without staccato cadence.
+- A5: Julie's closer ("AI did not invent this discipline. It made the cost of skipping it
+  catastrophically visible") uses the "Not X. Y." antithesis cadence. The substance is
+  load-bearing; one instance allowed per charter §4. Preserve.
+- A4: avoid "twenty years of engagements" framing — reframe in blended-we drawing on
+  Julie's CHRO background.
+- A2: no new coined book vocabulary (Co-Operating Model, design discipline capitalized).
+  Plain language.
+- Forbidden vocab: watch for "transformation"; use plain operator language.
+
+Coherence:
+- Lands between L87 (task-orientation paragraph) and L89 (existing goal-orientation
+  paragraph). E14 is the bridge; do not duplicate L89's closer.
+- L91–L95 callout-tip ("If your AI initiative starts with 'what tasks…'") is the section
+  CTA. Preserve.
+- Excalidraw at L97 (ch01-wrong-vs-right-question) — no change.
+
+Path: A (solo Drafter).
+```
+
+```jf-note:
+
+```
 
 The question that unlocks real value is goal-oriented: *what outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?* That question does not start with the tools. It starts with outcomes — and then with accountability for those outcomes. It produces a deliberate design — who owns what, what the human reviews, what the agent team executes, where the handoff lives, how the result gets measured. Writing a social post is a task. Building a sustainable content production workflow that reinforces itself regardless of who's sitting in the seat — that's a bigger problem with a much bigger payoff. Goal-orientation produces results because the design was built to produce them.
 
@@ -105,6 +484,59 @@ The AI Readiness Scorecard covers five dimensions of operational readiness. For 
 Do this with whoever would be in the room if you were deciding whether to invest in AI. Not just you — the team.
 
 A note before you start: you may not be able to answer all five of these cleanly. That's expected — and that's ok. The scorecard isn't testing whether you're ready. It's showing you where you're starting. If you score Red on something, that's not failure. It's the honest starting point most companies are at, and the rest of this book is built to move you from that starting point forward. We'll define every term as we go. For now, a "constraint" just means the one operational bottleneck that's costing you the most money right now — the thing your team keeps circling in meetings, the process that breaks when one person is out, the workflow where you feel the drag every week.
+
+```scout-note:
+E15 (NEW-SECTION, LAND-WITH-MODIFICATION) — scorecard intro with discipline-split attribution.
+
+Insertion point: NEW paragraph(s) HERE, between the existing scorecard preamble above
+and `### Dimension 1` below. Lands as the explicit origin-credit framing for the five
+dimensions before the reader meets them one by one.
+
+Author flag from manifest: "Requires review." This bead executes LAST in the recommended
+bead order; the author reviews the diff before ship. If framing rejected, escalate to
+Path B (Design Table) for a single convergence pass.
+
+Substance to preserve (from julie-redline.md:445–456):
+- Five dimensions developed from both directions: technical systems experience +
+  organizational design experience.
+- Information Readiness + Workflow Visibility are informed by the technical preconditions
+  that determine whether an AI agent can do the work.
+- Constraint Clarity + Decision Rights + Measurement Discipline are informed by the
+  org-design preconditions that determine whether the organization will accept and hold
+  the change.
+- A company can be technically ready and organizationally unready (or vice versa); both
+  halves must be green for a sprint to succeed.
+
+Acceptance criteria:
+- Framework-attribution rule DIRECTLY APPLIES. The scorecard itself is JOINT IP. Origin
+  credit ("which discipline informed which dimension") is fine; ownership claim ("Jesse
+  owns these / Julie owns those") is auto-reject.
+- MEANS/ENDS-RISK (scout.md §5 special check): scorecard is means — diagnostic
+  instrument. The end is the operator outcome (knowing where you actually stand → leverage
+  point for the sprint to start where the math turns). Acceptance: lead with operator
+  outcome the scorecard reveals; name the scorecard as the means.
+- A1 risk: do NOT redefine each dimension here. The `### Dimension N` subsections below
+  carry the definitions. E15 only frames the origin.
+- A3 risk: the dimension names themselves are operative enumeration, not constructed
+  cadence — preserve. Do not add additional parallel clauses around them.
+- A2: no new coined book vocabulary (Co-Operating Model, etc.). Plain operator language.
+- A4 (boastful biographical): the Preface already established credentials. Don't
+  re-credential. Frame as informed-by, not earned-from.
+- Forbidden vocab: watch for "transformations." None expected here.
+
+Coherence:
+- The Meridian scorecard at L227–245 is sourced and protected. E15 does NOT touch it.
+- The five `### Dimension N` subsections (L109–L203) are sourced and protected. E15 does
+  NOT touch them.
+- "All Green: skip to Chapter 4 and run the Sprint" at L225 should still read cleanly
+  after E15 lands above.
+
+Path: A (solo Drafter). Escalate to Path B only if author rejects on review.
+```
+
+```jf-note:
+
+```
 
 ### Dimension 1: Constraint Clarity
 
