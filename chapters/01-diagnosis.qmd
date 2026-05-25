@@ -8,51 +8,47 @@ This chapter is a diagnostic. You'll name what's actually broken in your company
 
 One question told us everything.
 
-We were on a discovery call with a long-time client — a mid-size manufacturing company, about fifty people, eight-figure revenue. The CEO and two of his direct reports were on the screen. We asked how they were using AI. The CEO said ChatGPT. One director said Claude. The other said Poe — an aggregator that lets you sample models without committing to one.
+We were on a discovery call with a long-time client, a mid-size manufacturing company, about fifty people, eight-figure revenue. The CEO and two of his direct reports were on the screen. We asked how they were using AI. The CEO said ChatGPT. One director said Claude. The other said Poe, an aggregator that lets you sample models without committing to one.
 
 Three people. One company. Three different tools. No shared accounts or projects, no shared workflow. Each of them had gone out and found something on their own, the same way someone downloads a new app to try it out. And each of them was using it the same way: individually, occasionally, for whatever felt useful in the moment.
 
-We asked what they were hoping AI would do for the business. The answer was honest: they had a gut sense that AI could be doing more for the company, but they did not know what was even possible. They booked the call precisely because they did not know what they wanted — only that they were leaving something on the table.
+We asked what they were hoping AI would do for the business. The answer was honest: they had a gut sense that AI could be doing more for the company, but they didn't know what was even possible. They booked the call precisely because they didn't know what they wanted, only that they were leaving something on the table.
 
-That's not a technology problem. That's a design problem. And it's the most common version of the AI problem we see: three people, three tools, zero coordination, zero structural change. The effort was real — but no one designed the work before the tool arrived.
+That's not a technology problem. That's a design problem. And it's the most common version of the AI problem we see: three people, three tools, zero coordination, zero structural change. The effort was real, but no one designed the work before the tool arrived.
 
-We've watched this same pattern for two decades, long before AI entered the conversation. A mid-market company would complete an acquisition and absorb the new entity without redesigning how work actually moved. The acquired operation got bolted onto the existing structure, with the same managers handling expanded volume. The accountability map was never rebuilt to match the expanded scope. AI is just the latest technology to expose a problem that's been visible for thirty years.
+We've watched this same pattern for two decades, long before AI entered the conversation. A mid-market company would complete an acquisition and absorb the new entity without redesigning how work actually moved. The acquired operation got bolted onto the existing structure, with the same managers handling expanded volume. The accountability map was never rebuilt to match the expanded scope. AI is just the latest technology to expose a problem that's been visible the whole time.
 
-```jf-note:
-20 or 30? which is it?
-```
-
-That company is not unusual. It might be yours.
+That company isn't unusual. It might be yours.
 
 > You know AI matters. You just don't know what it can actually do inside your company — or where to start.
 
-That sentence isn't a secret. CEOs say it all the time — to their boards, their coaches, their peers at dinner. They're not hiding. They're grasping. They know AI matters, they've started looking, and they still can't find the entry point that makes sense for the business they actually run. This book exists to provide that clarity. We've watched this happen inside our own companies and inside the companies we work with: agents doing real work, smaller teams shipping more, the cost curve of knowledge work bending in ways that no longer feel theoretical. But the gap between that reality and what you are supposed to *do* on a Tuesday morning — inside the company you actually run, with the people you actually employ, against the P&L you actually own — is where most operators get stuck.
+That sentence isn't a secret. CEOs say it all the time: to their boards, their coaches, their peers at dinner. They're not hiding. They're grasping. They know AI matters, they've started looking, and they still can't find the entry point that makes sense for the business they actually run. This book exists to provide that clarity. We've watched this happen inside our own companies and inside the companies we work with: agents doing real work, smaller teams shipping more, the cost curve of knowledge work bending in ways that no longer feel theoretical. But the gap between that reality and what you're supposed to *do* on a Tuesday morning, inside the company you actually run, with the people you actually employ, against the P&L you actually own, is where most operators get stuck.
 
-It's not for lack of effort. You've been trying. You bought subscriptions. Maybe you ran a pilot or two. Maybe you brought in a consultant or sat through a vendor demo that made the future look inevitable. The effort was real — and what you have to show for it is a tool your team clumsily muddles through, a handful of scattered use cases that never scaled, and a quiet suspicion that something is wrong — but not the thing everyone keeps telling you is wrong. The problem isn't that you didn't show up. It's that nobody showed you how to design the work.
+It's not for lack of effort. You've been trying. You bought subscriptions. Maybe you ran a pilot or two. Maybe you brought in a consultant or sat through a vendor demo that made the future look inevitable. The effort was real, and what you've got to show for it is a tool your team clumsily muddles through, a handful of scattered use cases that never scaled, and a quiet suspicion that something is wrong but not the thing everyone keeps telling you is wrong. Nobody showed you how to design the work.
 
-We were on a call with a company that runs on EOS — the Entrepreneurial Operating System. Accountability chart, scorecards, L10 meetings, the works. This is a disciplined company. They already have an operating model in place. And even here, they couldn't frame the AI problem, let alone implement a solution. They had AI subscriptions across the team. One marketing lead was building an agent in Microsoft Copilot on her own time, after hours — an agent being a configured workflow that takes actions and runs steps on its own, without a human typing every prompt. Everyone else was using AI as a sounding board. No workflow had changed. No output was different. When we asked who in the organization could drive their AI initiative, the owner paused and said four words: "I don't have that person." The issue isn't discipline — it's that AI requires a different kind of design than anything their operating model was built to handle.
+We were on a call with a company that runs on EOS (the Entrepreneurial Operating System): accountability chart, scorecards, L10 meetings, the works. A disciplined company. And even here, they couldn't frame the AI problem, let alone implement a solution. They had AI subscriptions across the team. One marketing lead was building an agent in Microsoft Copilot on her own time, after hours. An agent is a configured workflow that takes actions and runs steps on its own, without a human typing every prompt. Everyone else was using AI as a sounding board. No workflow had changed. No output was different. When we asked who in the organization could drive their AI initiative, the owner paused and said four words: "I don't have that person." AI requires a different kind of design than anything their operating model was built to handle.
 
-One person working harder inside a system that was never designed for AI is not adoption.
+One person working harder inside a system that was never designed for AI isn't adoption.
 
 The instinct is to blame adoption — or to blame the tool itself. *AI can't do X. It's not ready for our industry.* That diagnosis is comfortable because it puts the problem on the floor instead of in the operating model. Acting on it produces exactly one outcome: another training session that also doesn't work.
 
-The real problem is upstream of adoption. Nobody redesigned the work before the tool arrived. The company has no designed structure for a non-human worker to operate inside.
+The real problem is upstream of adoption. The company has no designed structure for a non-human worker to operate inside. Nobody built that before the AI subscriptions started.
 
-There's a deeper layer here, too. To harness AI and become a co-intelligent organization, traditionally non-technical and bricks-and-mortar businesses have to learn structures that software companies have used for years — workflows as systems, knowledge as an indexed asset, handoffs as designed interfaces. That means new terms, new processes, and a different understanding of how knowledge flows through an organization in digital form. Part of the evolution is education. This book is partly that education — combining the best practices you've always run on with the operating patterns of the fastest-growing tech-enabled companies on the planet.
+There's a deeper layer here, too. To harness AI and become a co-intelligent organization, traditionally non-technical and bricks-and-mortar businesses have to learn structures that software companies have used for years: workflows as systems, knowledge as an indexed asset, handoffs as designed interfaces. That means new terms, new processes, and a different understanding of how knowledge flows through an organization in digital form. Part of the evolution is education. This book is partly that education, combining the best practices you've always run on with the operating patterns of the fastest-growing tech-enabled companies on the planet.
 
 ## The *headcount* paradox.
 
-Here is the math you are living right now.
+Here is the math you're living right now.
 
-The company is growing. The pipeline is healthy. And your leadership team is doing what leadership teams do when demand is up: they are asking to hire. Another account manager. Another ops person. Another engineer. The assumption is baked in so deep it doesn't even feel like an assumption — to grow means to add people. Automation is familiar in manufacturing, where machines replaced repetitive physical work. It is less familiar in the information economy, where the work requires judgment. And it is almost entirely unfamiliar in what we are now entering: an intelligence economy, where decisions themselves can be assisted or handled by a non-human worker. Most operators have not yet made that leap. They think about moving data between systems — maybe Zapier, maybe an integration. They are not yet thinking about AI for work that requires decisions. But now they can.
+The company is growing. The pipeline is healthy. And your leadership team is doing what leadership teams do when demand is up: they're asking to hire. Another account manager. Another ops person. Another engineer. The assumption is baked in so deep it doesn't even feel like an assumption: to grow means to add people. Automation is familiar in manufacturing, where machines replaced repetitive physical work. It is less familiar in the information economy, where the work requires judgment. And it is almost entirely unfamiliar in what we're now entering: an intelligence economy, where decisions themselves can be assisted or handled by a non-human worker. Most operators haven't yet made that leap. They think about moving data between systems, maybe Zapier, maybe an integration. They aren't yet thinking about AI for work that requires decisions. But now they can.
 
-You bought some AI — a ChatGPT subscription, maybe an automation tool, maybe a consultant for a few hours. You didn't bet the farm. Most operators haven't. The spend so far has been small: dipping toes in, trying things, seeing what sticks. And here's what makes this a paradox: you're willing to invest more. The budget is there. The intent is there. But you don't know where to aim. You don't know what's possible, so you don't know what to buy, what to build, or what return to expect. The headcount curve hasn't bent — not because AI failed you, but because you haven't been able to connect AI spend to operating change. The gap between revenue growth and headcount growth never appeared. Headcount is tracking revenue, line for line, the same way it did in 2022 — and the AI line item on the P&L, small as it is, isn't producing anything structural.
+You've bought some AI: a ChatGPT subscription, maybe an automation tool, maybe a consultant for a few hours. You didn't bet the farm. Most operators haven't. The spend has been small: dipping toes in, trying things, seeing what sticks. And here's what makes this a paradox: you're willing to invest more. The budget is there. The intent is there. But you don't know where to aim. You don't know what's possible, so you don't know what to buy, what to build, or what return to expect. The headcount curve hasn't bent, not because AI failed you, but because you haven't been able to connect AI spend to operating change. The gap between revenue growth and headcount growth never appeared. Headcount is tracking revenue, line for line, the same way it did in 2022, and the AI line item on the P&L, small as it is, isn't producing anything structural.
 
-Meanwhile your integrator or COO is on the calendar asking to approve the next two roles. The numbers in the request are not unreasonable — the work is real, the team is stretched, the demand is there. You sign off, because the alternative is throttling growth, and throttling growth is not a strategy. But you sign off knowing the AI investment was supposed to make at least one of those requisitions unnecessary, and you cannot point to the reason it didn't.
+Meanwhile your integrator or COO is on the calendar asking to approve the next two roles. The numbers in the request aren't unreasonable: the work is real, the team is stretched, the demand is there. You sign off, because the alternative is throttling growth, and throttling growth isn't a strategy. But you sign off knowing the AI investment was supposed to make at least one of those requisitions unnecessary, and you can't point to the reason it didn't.
 
 This is the headcount paradox. AI was supposed to change the math of scaling. It hasn't. Revenue and headcount are still moving together. The cost of one keeps climbing. And the investment you made to break the link is sitting on the books producing nothing structural.
 
-Here's how it resolved at Jesse's company. SuperWebPros, his software development firm, went from thirteen people to eight. Not through layoffs — through redesign. We mapped every function, identified what required human judgment and what didn't, built agent teams for the work that followed rules, and kept humans on the work that required taste, relationships, and strategic decisions. Billings went up. Profitability went up. The five roles that went away weren't eliminated — they were *redesigned out of existence* because the work they did was absorbed by systems we built deliberately. That's the headcount math finally moving the way it was supposed to move. The rest of this book shows you how we did it and gives you the tools to replicate it.
+Here's how it resolved at Jesse's company. SuperWebPros, his software development firm, went from thirteen people to eight. Not through layoffs — through redesign. We mapped every function, identified what required human judgment and what didn't, built agent teams for the work that followed rules, and kept humans on the work that required taste, relationships, and strategic decisions. Billings went up. Profitability went up. The five roles that went away weren't eliminated; they were *redesigned out of existence* because the work they did was absorbed by systems we built deliberately. That's the headcount math finally moving the way it was supposed to move. The rest of this book shows you how we did it and gives you the tools to replicate it.
 
 That same math can work at very different scales. When a global food safety company completed a Fortune 500 division acquisition, Julie was the CHRO overseeing the integration across 44 countries. The instinct in every integration conversation was to add HR business partners by region. The alternative was to redesign the operating model first — making a deliberate decision about which HR functions required local human judgment and which could run on a standardized system. The resulting global HR function served 44 countries with a smaller proportional team than the pre-acquisition domestic function had. Not because headcount was cut. Because the work was designed before it was staffed.
 
@@ -63,21 +59,23 @@ The headcount paradox doesn't break by adding AI to the existing org chart. It b
 
 {{< excalidraw ch01-headcount-before-after "The Headcount Paradox: one operating design vs. another." >}}
 
-The reflexive move is to blame the tools — to assume the technology was oversold or next quarter's version will finally do the thing. The tools are more capable than most operators realize. The problem is that there is no defined relationship between the AI system and the work it is supposed to do. No designed workflow. No clear accountability. No governance. The tool is ambient. It helps individuals occasionally. It changes nothing structurally — and structural is the only kind of change that fixes the math.
+The reflexive move is to blame the tools, to assume the technology was oversold or next quarter's version will finally do the thing. The tools are more capable than most operators realize. The problem is that there is no defined relationship between the AI system and the work it is supposed to do. No designed workflow. No clear accountability. No governance. The tool is ambient. It helps individuals occasionally. It changes nothing structurally, and structural is the only kind of change that fixes the math.
 
 ## It looks like a *technology* problem. It's actually an *operating* problem.
 
 The reason your AI investments aren't producing returns is an operating-model problem — not a technology problem. Specifically, a Co-Intelligent Co-Operation problem.
 
-This is the diagnostic phrase, and it matters that it is precise. Culture matters — a team that resists change will stall any initiative. Training matters — people need to know what the tools can do. Tool selection matters — the wrong platform creates its own drag. All of those are real, and none of them are sufficient. The deeper problem is the operating model. The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker — synthetic, capable, available — and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, no defined handoff. So it produces nothing the organization can compound on. Culture, training, and tools are necessary conditions. Structural redesign is the missing one.
+This is the diagnostic phrase, and it matters that it is precise. Culture matters: a team that resists change will stall any initiative. Training matters: people need to know what the tools can do. Tool selection matters: the wrong platform creates its own drag. All of those are real, and none of them are sufficient. The deeper problem is the operating model. The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker, synthetic, capable, available, and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, no defined handoff. So it produces nothing the organization can compound on. Culture, training, and tools are necessary conditions. Structural redesign is the missing one.
 
 This failure has the same shape across thirty years of operating-model changes, long before AI. ERP rollouts are the clearest example: companies spent eight-figure sums to install new systems, then left the old reporting structures and decision rights exactly as they were. The system sat live while people worked around it. The pattern isn't that the technology failed. The capability arrived and the structure never changed to receive it. The new thing sat next to the old structure and produced nothing structural. AI is the latest technology to run into the same wall — the only difference is the speed and cost of the collision.
 
-Most people still think of AI as a chatbot — a thing you type questions into and read answers from. That's like thinking of electricity as a flashlight. And in most companies, that's exactly the relationship: one human, one chat window, one task at a time. The human is micromanaging the AI the same way they'd micromanage a junior employee — hovering over every output, typing every instruction. It might be slightly more productive, but it's not compounding anything because the human is still the bottleneck. People are terrible at multitasking. Agents aren't. The real capability is in agents: AI systems that take actions, follow workflows, and produce deliverables without a human typing every prompt. An agent can research, draft, route, check, escalate, and deliver — inside a designed system. And agents can run in parallel. While you're reviewing one deliverable, three other workstreams are moving. The gap between "chatbot" and "agent" is the gap between a tool that answers questions and a workforce that does work. If your mental model of AI is still the chatbot, your imagination about what's possible is too small by an order of magnitude.
+Most people still think of AI as a chatbot, a thing you type questions into and read answers from. That's like thinking of electricity as a flashlight. And in most companies, that's exactly the relationship: one human, one chat window, one task at a time. The human is micromanaging the AI the same way they'd micromanage a junior employee, hovering over every output, typing every instruction. It might be slightly more productive, but it's not compounding anything because the human is still the bottleneck. People are terrible at multitasking. Agents aren't.
 
-Operators who run on EOS, Scaling Up, or any disciplined system already know this shape. You did not get the results you have now by accident. You built an accountability chart. You wrote scorecards. You ran the L10 — EOS's weekly leadership meeting — or the equivalent. You know exactly what happens to a company that adds work without naming who owns it — the work dies in the gap. AI is no different. It is a new kind of worker that has been added to the system without anyone naming who owns it, what it is accountable for, or where the handoffs live. So it dies in the gap, predictably, the same way any unowned function dies in the gap.
+The real capability is in agents — the kind defined earlier: workflows that take actions and run steps on their own, no human in the loop for every move. An agent can research, draft, route, check, escalate, and deliver, all inside a designed system. And agents can run in parallel. While you're reviewing one deliverable, three other workstreams are moving. The gap between "chatbot" and "agent" is the gap between a tool that answers questions and a workforce that does work. If your mental model of AI is still the chatbot, your imagination about what's possible is too small by an order of magnitude.
 
-If you walked into any function in your company today and asked the same three questions you would ask of a human team — what is this function accountable for, what is its scorecard, who reviews the output and on what cadence — you would get clean answers for the humans and blank stares for the AI. That is the diagnosis in one move. The AI in your company has no seat on the chart. It has no number it is hitting. It has no review rhythm. You would never run a function that way if it were staffed by people. You are running it that way because you have not yet decided that AI is staff.
+Operators who run on EOS, Scaling Up, or any disciplined system already know this shape. You didn't get the results you've got now by accident. You built an accountability chart. You wrote scorecards. You ran the L10 (EOS's weekly leadership meeting) or the equivalent. You know exactly what happens to a company that adds work without naming who owns it: the work dies in the gap. AI is no different. It is a new kind of worker that has been added to the system without anyone naming who owns it, what it is accountable for, or where the handoffs live. So it dies in the gap, predictably, the same way any unowned function dies in the gap.
+
+If you walked into any function in your company today and asked the same three questions you'd ask of a human team (what is this function accountable for, what is its scorecard, who reviews the output and on what cadence), you'd get clean answers for the humans and blank stares for the AI. That's the diagnosis in one move. The AI in your company has no seat on the chart. It has no number it is hitting. It has no review rhythm. You'd never run a function that way if it were staffed by people. You're running it that way because you haven't yet decided that AI is staff.
 
 ::: callout-note
 ## Action Step
@@ -97,7 +95,7 @@ The first question most teams ask is task-oriented: *which of our existing tasks
 
 Companies that get this right end up with the headcount math working in their favor — revenue and profitability moving while the team stays the same size. The discipline behind that result is straightforward: start with the outcome the organization is accountable for, then design the work backward from that outcome. A single question drives the whole exercise: who owns what step, and does that step require judgment or follow a rule? The answer tells you where AI belongs and where it doesn't. Outcome first, design second, tool or role third. Skipping the first two steps and going straight to tools is what produces the scattered use cases and the stalled pilots. The AI era didn't invent this discipline. It made the cost of skipping it catastrophically visible.
 
-The question that unlocks real value is goal-oriented: *what outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?* That question does not start with the tools. It starts with outcomes — and then with accountability for those outcomes. It produces a deliberate design — who owns what, what the human reviews, what the agent team executes, where the handoff lives, how the result gets measured. Writing a social post is a task. Building a sustainable content production workflow that reinforces itself regardless of who's sitting in the seat — that's a bigger problem with a much bigger payoff. Goal-orientation produces results because the design was built to produce them.
+The question that unlocks real value is goal-oriented: *what outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?* That question does not start with the tools. It starts with outcomes, and then with accountability for those outcomes. It produces a deliberate design: who owns what, what the human reviews, what the agent team executes, where the handoff lives, how the result gets measured. Writing a social post is a task. Building a sustainable content production workflow that reinforces itself regardless of who's sitting in the seat — that's a bigger problem with a much bigger payoff. Goal-orientation produces results because the design was built to produce them.
 
 ::: callout-tip
 ## Pro Tip
@@ -115,9 +113,9 @@ The AI Readiness Scorecard covers five dimensions of operational readiness. For 
 
 Do this with whoever would be in the room if you were deciding whether to invest in AI. Not just you — the team.
 
-A note before you start: you may not be able to answer all five of these cleanly. That's expected — and that's ok. The scorecard isn't testing whether you're ready. It's showing you where you're starting. If you score Red on something, that's not failure. It's the honest starting point most companies are at, and the rest of this book is built to move you from that starting point forward. We'll define every term as we go. For now, a "constraint" just means the one operational bottleneck that's costing you the most money right now — the thing your team keeps circling in meetings, the process that breaks when one person is out, the workflow where you feel the drag every week.
+A note before you start: you may not be able to answer all five of these cleanly. That's expected, and that's ok. The scorecard isn't testing whether you're ready. It's showing you where you're starting. If you score Red on something, that's not failure. It's the honest starting point most companies are at, and the rest of this book is built to move you from that starting point forward. We'll define every term as we go. For now, a "constraint" just means the one operational bottleneck that's costing you the most money right now: the thing your team keeps circling in meetings, the process that breaks when one person is out, the workflow where you feel the drag every week.
 
-The five dimensions came from two directions. Information Readiness and Workflow Visibility reflect the technical preconditions that determine whether an AI agent can actually do the work — whether the knowledge exists in a form the system can reach, and whether the workflow is mapped clearly enough to be handed off. Constraint Clarity, Decision Rights, and Measurement Discipline reflect the operating-model preconditions that determine whether your organization will hold the change once it's deployed — whether your team agrees on what to solve, who decides what AI touches, and whether you can measure the result. A company can score Green on the technical side and Red on the operating side. It can have leadership clarity and no documented workflow. Both halves have to be Green before a sprint will hold.
+The five dimensions came from two directions. Information Readiness and Workflow Visibility reflect the technical preconditions that determine whether an AI agent can actually do the work: whether the knowledge exists in a form the system can reach, and whether the workflow is mapped clearly enough to be handed off. Constraint Clarity, Decision Rights, and Measurement Discipline reflect the operating-model preconditions that determine whether your organization will hold the change once it's deployed: whether your team agrees on what to solve, who decides what AI touches, and whether you can measure the result. A company can score Green on the technical side and Red on the operating side. It can have leadership clarity and no documented workflow. Both halves have to be Green before a sprint will hold.
 
 ### Dimension 1: Constraint Clarity
 
@@ -125,17 +123,17 @@ The five dimensions came from two directions. Information Readiness and Workflow
 
 | Score | What it looks like |
 |------------------------------------|------------------------------------|
-| **Red** | No clear constraint. The team talks about AI in general terms — "we should use AI" — but cannot name a specific operational problem it would solve. |
+| **Red** | No clear constraint. The team talks about AI in general terms ("we should use AI") but can't name a specific operational problem it would solve. |
 | **Yellow** | Multiple candidates, no priority. The issues list has several items that "could benefit from AI," but the team hasn't ranked them or committed to one. |
 | **Green** | One validated constraint with a cost. The team can name the constraint in one sentence and attach a dollar figure to it. |
 
 ::: callout-note
 ## Action Step
 
-Poll your leadership team individually — not in a group. Ask each person: "What is the ONE operational problem AI should solve for us?" Write down their answers verbatim. If you get five different answers from five people, you have your diagnosis.
+Poll your leadership team individually, not in a group. Ask each person: "What is the ONE operational problem AI should solve for us?" Write down their answers verbatim. If you get five different answers from five people, you've got your diagnosis.
 :::
 
-The poll results tell you more than any scorecard row. Agreement means you have a starting point. Disagreement means the constraint isn't the workflow — it's the leadership team's alignment on what matters most.
+The poll results tell you more than any scorecard row. Agreement means you've got a starting point. Disagreement means the constraint isn't the workflow; it's the leadership team's alignment on what matters most.
 
 ::: callout-tip
 ## Pro Tip
@@ -150,7 +148,7 @@ If your leadership team can't agree on the constraint, that disagreement IS the 
 | Score | What it looks like |
 |------------------------------------|------------------------------------|
 | **Red** | Mostly tribal. The way things get done lives in the heads of a few key people. When they're out, things slow down or break. |
-| **Yellow** | Partially documented. Some processes are written down, but the critical knowledge — pricing logic, client history, escalation paths — still depends on specific individuals. |
+| **Yellow** | Partially documented. Some processes are written down, but the critical knowledge (pricing logic, client history, escalation paths) still depends on specific individuals. |
 | **Green** | Documented and indexed. Processes, decisions, and institutional knowledge are written down, stored in systems the team can access, and maintained regularly. |
 
 Here's the test: if your best operations person quit tomorrow, how long before the replacement could run the workflow without calling them? If the answer is "months," you're Red regardless of what's in your wiki.
@@ -171,7 +169,7 @@ Pick your most critical workflow. Ask the person who owns it: "If you had to han
 | **Yellow** | Someone knows it but it's not documented. One or two people could walk you through the workflow, but it lives in their heads and has never been drawn, validated, or shared. |
 | **Green** | Documented with ownership. The workflow is mapped, each step has an owner, handoffs are identified, and the team agrees on where it breaks. |
 
-The gap between Yellow and Green here is not documentation — it's agreement. A workflow that one person can describe is a story. A workflow the team has validated is a map. AI needs the map.
+The gap between Yellow and Green here isn't documentation; it's agreement. A workflow that one person can describe is a story. A workflow the team has validated is a map. AI needs the map.
 
 ::: callout-note
 ## Action Step
@@ -185,11 +183,11 @@ Whiteboard your most constrained workflow in fifteen minutes. Put every handoff 
 
 | Score | What it looks like |
 |------------------------------------|------------------------------------|
-| **Red** | No conversation has happened. The team has not discussed which tasks AI could take over, which require human judgment, and who makes that call. |
+| **Red** | No conversation has happened. The team hasn't discussed which tasks AI could take over, which require human judgment, and who makes that call. |
 | **Yellow** | Vague ideas. People have opinions about what AI "should" do, but there are no explicit assignments, no written boundaries, and no agreement on who decides. |
 | **Green** | Explicit assignments per role. The team has defined which decisions and tasks are AI-eligible, which stay human, and who has authority to change the boundary. |
 
-Decision rights aren't about AI capability. They're about organizational trust. The question isn't "Can AI do this?" — it's "Do we trust the output enough to act on it without a human checking?" That's a leadership decision, not a technology decision. And not every workflow should aim for full automation. Some workflows should keep a human in the loop — the point is to make that a deliberate choice based on the goal, not a default because nobody designed the alternative.
+Decision rights aren't about AI capability. They're about organizational trust. The question isn't "Can AI do this?" It's "Do we trust the output enough to act on it without a human checking?" That's a leadership decision, not a technology decision. And not every workflow should aim for full automation. Some workflows should keep a human in the loop: the point is to make that a deliberate choice based on the goal, not a default because nobody designed the alternative.
 
 ::: callout-note
 ## Action Step
@@ -203,9 +201,9 @@ List the five most frequent decisions in your constrained workflow. For each one
 
 | Score | What it looks like |
 |------------------------------------|------------------------------------|
-| **Red** | Can't quantify. The team knows something is expensive or slow, but cannot produce a number. |
+| **Red** | Can't quantify. The team knows something is expensive or slow, but can't produce a number. |
 | **Yellow** | Rough estimate. Someone can say "it probably costs us around \$X" but the number isn't validated, isn't tracked, and wouldn't survive scrutiny. |
-| **Green** | Validated number with data. The cost is calculated from real data — hours tracked, margin analyzed, revenue measured — and the team can show the math. |
+| **Green** | Validated number with data. The cost is calculated from real data (hours tracked, margin analyzed, revenue measured) and the team can show the math. |
 
 If you can't measure what the constraint costs today, you can't measure whether AI made it better tomorrow. Measurement discipline is the difference between an AI initiative and an AI experiment. Experiments are optional. Initiatives have ROI targets.
 
@@ -227,9 +225,9 @@ Fill in your scorecard:
 | Decision Rights | [ R / Y / G ] |
 | Measurement Discipline | [ R / Y / G ] |
 
-**All Red:** You are not ready for an AI initiative. You are ready for this book. The Compound Sprint framework exists to move you from Red to Green, dimension by dimension.
+**All Red:** You aren't ready for an AI initiative. You are ready for this book. The Compound Sprint framework exists to move you from Red to Green, dimension by dimension.
 
-**Mixed Red/Yellow:** Start with whichever dimension scored Yellow. Yellow means you have something to build on — a partial answer, an existing document, a person who already knows the workflow but hasn't written it down. Red means you're building from scratch. That's why your Yellow is your best starting point: the foundation already exists, and turning Yellow to Green is clarification work, not creation work.
+**Mixed Red/Yellow:** Start with whichever dimension scored Yellow. Yellow means you've got something to build on: a partial answer, an existing document, a person who already knows the workflow but hasn't written it down. Red means you're building from scratch. That's why your Yellow is your best starting point: the foundation already exists, and turning Yellow to Green is clarification work, not creation work.
 
 **Mostly Yellow:** You're closer than you think. The work is clarification and commitment, not creation from scratch. The Sprint framework will move fast for you.
 
@@ -260,16 +258,16 @@ Meridian's starting point: lock the quoting bottleneck as the constraint (turn C
 ::: callout-tip
 ## Pro Tip
 
-The scorecard isn't a test. It's a map of where to start. If you're all Red, that's not a failure — it's the most honest answer most companies give. If you have a Yellow, start there — you've already got something to build on.
+The scorecard isn't a test. It's a map of where to start. If you're all Red, that's not a failure; it's the most honest answer most companies give. If you've got a Yellow, start there. You've already got something to build on.
 :::
 
 ## What this *book* is for.
 
-There is a name for the company that runs on the second question. We call it the Co-Intelligent Company — a company where humans and AI operate as one system rather than two parallel tracks, where the work has been designed before the tool was deployed. That is where the headcount math moves — because the design makes it move.
+There is a name for the company that runs on the second question. We call it the Co-Intelligent Company: a company where humans and AI operate as one system rather than two parallel tracks, where the work has been designed before the tool was deployed. That's where the headcount math moves, because the design makes it move.
 
-This book gives you the Co-Operating Model to build that company — a specific sequence of stages with defined outputs at each step and a sprint model you can run inside your existing meeting rhythms. The chapters ahead will show you what we did and give you the tools to replicate it.
+This book gives you the Co-Operating Model to build that company: a specific sequence of stages with defined outputs at each step and a sprint model you can run inside your existing meeting rhythms. The chapters ahead will show you what we did and give you the tools to replicate it.
 
-The next chapter defines the Co-Intelligent Company precisely enough that you can locate yourself on the map and know where you are starting from. After that, you build.
+The next chapter defines the Co-Intelligent Company precisely enough that you can locate yourself on the map and know where you're starting from. After that, you build.
 
 ::: callout-note
 ## Action Step
