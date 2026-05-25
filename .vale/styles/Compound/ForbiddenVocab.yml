@@ -1,0 +1,37 @@
+extends: existence
+message: "Forbidden vocabulary: '%s' is auto-reject per voice charter §3."
+level: error
+ignorecase: true
+link: '_julie/voice-charter.md'
+tokens:
+  - transformation
+  - transformative
+  - transformations
+  - transforms?
+  - leverage
+  - leveraging
+  - leveraged
+  - synergy
+  - synergies
+  - cutting-edge
+  - revolutionary
+  - game-changer
+  - paradigm shift
+  - augmentation
+  - augment
+  - augmenting
+  - organizational design
+  - organisational design
+  - 'join us'
+  - revolution
+  - 'learn more'
+  - discover
+  - 'find out how'
+  - 'schedule a demo'
+  - 'dive in'
+  - 'navigate'
+  - 'unlock'
+  - "it's important to note"
+  - 'rapidly evolving landscape'
+  - 'studies show'
+  - 'Orchestrated Organization'

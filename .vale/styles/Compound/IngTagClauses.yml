@@ -1,0 +1,18 @@
+extends: existence
+message: "AI-tell -ing tag clause ('%s'): voice charter A9. End the sentence; the next sentence carries the next idea."
+level: warning
+ignorecase: true
+link: '_julie/voice-charter.md'
+# Match comma followed by -ing verbs that act as soft trailing closers
+tokens:
+  - ", ensuring [a-z]"
+  - ", highlighting [a-z]"
+  - ", underscoring [a-z]"
+  - ", demonstrating [a-z]"
+  - ", facilitating [a-z]"
+  - ", enabling [a-z]"
+  - ", allowing [a-z]"
+  - ", providing [a-z]"
+  - ", reflecting [a-z]"
+  - ", showcasing [a-z]"
+  - ", emphasizing [a-z]"

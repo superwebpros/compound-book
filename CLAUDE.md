@@ -44,6 +44,18 @@ PDF builds require a LaTeX install. If missing, `quarto install tinytex` provide
 - **Dual-author convention:** "Jesse:" / "Julie:" when a story belongs to one of them; "we" when both. Blended authorial voice for analysis.
 - Diagrams will (soon) be authored as Excalidraw drawings. Default to **black and white** unless the chapter context explicitly calls for color.
 
+## Voice scanning pipeline
+
+Three-layer hybrid scanner for chapter voice compliance:
+
+1. **Vale** (deterministic, per-paragraph + document-level). Config: `.vale.ini`. Custom rules: `.vale/styles/Compound/*.yml`. Catches em-dash density per paragraph, antithesis patterns, forbidden vocabulary, paragraph length, missing contractions, conjunctive adverb pileup, -ing tag clauses, recap rituals, inflated symbolism, book-as-location, fear/urgency, book-report citations. Install: `brew install vale`. Docs: <https://docs.vale.sh>.
+2. **Python wrapper** (`.claude/tools/voice-scan.py`). Runs Vale subprocess, adds cross-paragraph n-gram phrase repetition (≥5-word overlap) and OpenAI embedding-based semantic similarity (cosine ≥ 0.85). Outputs unified Markdown report at `.claude/output/voice-scan-<chapter>.md`. Requires `OPENAI_API_KEY` in `.claude/.env` (gitignored) for the semantic layer; falls back to deterministic-only if missing.
+3. **`voice-scanner` agent** (`.claude/agents/voice-scanner.md`). LLM judgment layer. Reads the Markdown report, judges patterns deterministic scanning can't catch: A1 abstract-noun=abstract-noun, A2 coined-term-before-stakes, A4 boastful biographical, A5 AI smell, A12 invented company beats, A13 means/ends conflation, A14 metaphor literalism, A15 unqualified AI agency.
+
+Run: `/usr/bin/python3 .claude/tools/voice-scan.py chapters/01-diagnosis.qmd` (the system Python 3.9 — Homebrew's python@3.13/3.14 have a broken expat as of 2026-05).
+
+Voice charter (canonical voice spec): `_julie/voice-charter.md`. Update the Compound style rules in `.vale/styles/Compound/` when adding new anti-patterns.
+
 ## Related skills
 
 `.claude/skills/compound-design-system/` is available via the `compound-design-system` skill for Compound-branded visual assets (covers, diagrams, marketing mocks). Not needed for prose edits.

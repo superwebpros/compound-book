@@ -1,0 +1,7 @@
+extends: occurrence
+message: "Conjunctive-adverb pileup: %s instances in this paragraph (max 1). Voice charter A8."
+level: warning
+scope: paragraph
+max: 1
+link: '_julie/voice-charter.md'
+token: '\b(?:However|Moreover|Furthermore|Additionally|Consequently|Therefore|Nevertheless|Nonetheless)\b'

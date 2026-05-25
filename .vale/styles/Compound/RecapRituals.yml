@@ -1,0 +1,17 @@
+extends: existence
+message: "Recap ritual ('%s'): voice charter A10. Trust the reader; use a handoff or reflection question, not a summary."
+level: warning
+ignorecase: true
+link: '_julie/voice-charter.md'
+tokens:
+  - 'In summary'
+  - 'To recap'
+  - 'To summarize'
+  - 'In conclusion'
+  - 'Taken together'
+  - 'In this chapter we'
+  - 'We have covered'
+  - 'As we have seen'
+  - 'As discussed (?:above|earlier)'
+  - 'The key takeaway'
+  - 'The bottom line is'

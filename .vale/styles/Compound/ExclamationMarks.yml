@@ -1,0 +1,6 @@
+extends: existence
+message: "Exclamation mark detected. Voice charter §2: no exclamation marks."
+level: error
+link: '_julie/voice-charter.md'
+tokens:
+  - '!'

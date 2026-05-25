@@ -1,0 +1,21 @@
+extends: existence
+message: "Inflated symbolism ('%s'): voice charter A11. Say what it does, not what it 'stands as'."
+level: warning
+ignorecase: true
+link: '_julie/voice-charter.md'
+tokens:
+  - 'stands as a testament'
+  - 'plays a pivotal role'
+  - 'serves as a cornerstone'
+  - 'represents a fundamental'
+  - 'embodies the'
+  - 'epitomizes'
+  - 'paves the way'
+  - 'ushers in'
+  - 'at the precipice'
+  - 'on the cusp of'
+  - 'the future of work itself'
+  - 'machines that can think'
+  - 'a new era'
+  - 'unprecedented opportunity'
+  - 'transformative journey'

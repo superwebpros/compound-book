@@ -1,0 +1,14 @@
+extends: existence
+message: "Fear/urgency framing ('%s'): voice charter A6. Use math (numbers, costs, headcount), not urgency."
+level: warning
+ignorecase: true
+link: '_julie/voice-charter.md'
+tokens:
+  - "don't get left behind"
+  - 'your competitors are already'
+  - 'before it.s too late'
+  - 'time is running out'
+  - "you can't afford to wait"
+  - 'the AI race'
+  - 'falling behind in AI'
+  - "if you don't act now"

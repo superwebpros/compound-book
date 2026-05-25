@@ -1,0 +1,13 @@
+extends: existence
+message: "Antithesis construction ('%s'): voice charter A3 — flag for cumulative chapter count. Allowed sparingly, but check chapter-level frequency (see ChapterAntithesisCount metric)."
+level: suggestion
+ignorecase: false
+link: '_julie/voice-charter.md'
+# Detect "Not X — It's Y" / "It's not X. It's Y." / "X isn't Y. It's Z." constructions
+tokens:
+  - "It's not [a-z]+\\. It's [a-z]+"
+  - "It is not [a-z]+\\. It is [a-z]+"
+  - "[A-Z][a-z]+ isn't [a-z]+\\. (?:It's|That's) [a-z]+"
+  - "Not [a-z]+(?: [a-z]+){0,3} — [a-z]+(?: [a-z]+){0,3}"
+  - "That's not [a-z]+(?: [a-z]+){0,3}\\. That's [a-z]+"
+  - "The (?:problem|issue|real problem|real issue) (?:isn't|is not)"
