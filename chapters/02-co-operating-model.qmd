@@ -2,80 +2,22 @@
 
 :::{.callout-important}
 ## In Brief
-This chapter defines the Co-Operating Model — the structure that makes humans and AI work as one system instead of two parallel tracks. You'll learn the specific ownership split between human intelligence and agent intelligence, see what parallel workstreams look like in practice, and leave with an equation you can put on your wall: *Co-Intelligence + Rhythm = Compound.* By the end, you'll have mapped at least one role in your company against the model.
+This chapter defines the Co-Operating Model — the structure that makes humans and AI work as one system instead of two parallel tracks. You'll learn the specific ownership split between human intelligence and agent intelligence, see what parallel workstreams look like in practice, and finish with an equation you can put on your wall: *Co-Intelligence + Rhythm = Compound.* By the end, you'll have mapped at least one role in your company against the model.
 :::
 
-```scout-note:
-E16 (ATTRIBUTION → LAND-WITH-MODIFICATION) — opener blended-we + in-prose attribution
+Jesse was in a management meeting — Marina, his Integrator, and a direct report — going through the accountability chart. We had a team member, a marketing coordinator, who was good at organization. She could manage processes, track content calendars, coordinate subcontractors. But she was not revenue-positive and had not been for months. She was spending most of her time on content production — editing videos, formatting posts — work that took her hours and still was not shipping fast enough to keep up with the pace we needed. The work was piling up behind her, not because she was not working hard, but because the role as designed required one person to do what should have been running in parallel across multiple workstreams.
 
-Apply Q-E21 convention: blended-we + a single in-prose attribution naming Jesse once at this opener (or as a post-story hinge before L16). REJECT Julie's literal `Jesse:` inline tag (redline:482) and her "at Jesse's company" mid-sentence insertion (redline:489) — those violate Q-E21 / blended-we / no-inline-tag convention canonical since the Preface execution.
-
-Preserve verbatim: the entire Marina + marketing-coordinator story (sourced per `ch02-opening-fabricated-replace-with-marina` memory and commit 6c99346 — this is the REAL replacement for the earlier fabricated CEO opener; do NOT flag as fabricated). Marina by first name (stale-audit §4 — first-name-only is established convention; no further anonymization). The accountability-chart framing, the linear-vs-parallel-production pivot at L10, the operating-model-failure hammer at L12, and the chapter-thesis paragraph at L16.
-
-Two acceptable attribution patterns (Drafter picks based on cadence):
-- Pattern A (preferred): "Jesse was in a management meeting — Marina, his Integrator, and one of his direct reports — going through the accountability chart..." Single Jesse-named opener; convert the rest of L8–L12 to blended-we ("we had a team member," "we looked at the chart and asked the real question").
-- Pattern B: Keep "We were in a management meeting" as written; insert a single hinge sentence before L16 attributing the company once ("That conversation happened at Jesse's company.").
-
-L46–L54 developer-departure paragraph (Jesse's story, cross-references Preface): inherits Preface attribution. Do NOT add additional attribution there. Voice Shifter MAY opportunistically shift the most singular-first-person sentences ("I had this moment" / "I had no way to capture") to blended-we if it lands cleanly, but it is NOT required for E16.
-
-A4/A3/A5 risks: low. The story is operator-direct concrete content; the I→we conversion should not introduce new triplets or padding.
-
-Dependencies: none upstream; E16 lands first and sets the voice for E17/E18/E19.
-
-Plan: _julie/per-chapter/02-co-operating-model.md
-```
-
-```jf-note:
-Direction approved.
-```
-
-We were in a management meeting — Marina, my Integrator, and I — going through the accountability chart. We had a team member, a marketing coordinator, who was good at organization. She could manage processes, track content calendars, coordinate subcontractors. But she was not revenue-positive and had not been for months. She was spending most of her time on content production — editing videos, formatting posts — work that took her hours and still was not shipping fast enough to keep up with the pace we needed. The work was piling up behind her, not because she was not working hard, but because the role as designed required one person to do what should have been running in parallel across multiple workstreams.
-
-Marina and I looked at the accountability chart and asked the real question: what if we stopped designing this seat for a human doing linear production work, and started designing it for a human managing agent-driven workstreams? What if the coordinator's job was not to create the content but to direct the agents creating it, manage the quality, and make sure it shipped?
+Marina and Jesse looked at the accountability chart and asked the real question: what if we stopped designing this seat for a human doing linear production work, and started designing it for a human managing agent-driven workstreams? What if the coordinator's job was not to create the content but to direct the agents creating it, manage the quality, and make sure it shipped?
 
 That conversation changed the shape of the role. It also changed how we thought about every other role on the chart. The problem was never the person — it was the operating model underneath her. The company had not been designed for a non-human worker. There was no seat on the org chart for an agent, no defined handoffs, no accountability structure that accounted for synthetic work. Every piece of AI-generated output dissolved somewhere between the tool and the person who needed it.
 
 That is an operating model failure. And the Co-Operating Model is the answer to it.
 
-```scout-note:
-E17 (NEW-SECTION → LAND-WITH-MODIFICATION) — Julie's "work deconstruction" response (HEAVY REWRITE per risk map)
+What happened in that meeting is the move Julie has watched leadership teams defer for years across her org-design practice. It's the move that, when skipped, guarantees the graft will fail. We looked at the work, asked what required judgment and what followed rules, and redesigned the seat around the answer. The coordinator's role wasn't broken because she was underperforming. It was broken because no one had ever asked which parts of the job required her and which parts didn't.
 
-Land a new joint blended-we paragraph between L14 (the "operating model failure" hammer) and L16 (the chapter-thesis paragraph that names the trio).
+Most companies have never asked that question explicitly. They've grown roles by layering tasks onto people until the person becomes the system. When the person leaves, the system collapses. When AI arrives, it has no designed relationship to the work because the work was never designed at all. It was just assigned. The rest of this book is the discipline of asking that question deliberately, role by role, constraint by constraint, and building the structure that answers it. That structure has a name.
 
-Substance to preserve (from Julie's source at _julie/julie-redline.md:521–536):
-- Marina + Jesse's accountability-chart move was an explicit design decision — separating tasks by the type of intelligence required.
-- Most organizations have never done this work explicitly; they layered tasks onto people until the person became the system.
-- When that person leaves, the system collapses. When AI arrives, it has no designed relationship to the work because the work was never designed at all — it was just assigned.
-- The forward claim: the rest of this book is the discipline of doing this design move deliberately.
-
-FRAMEWORK-ATTRIBUTION RULE — DIRECT APPLICATION (highest-priority Ch 2 application):
-- DO NOT name "work deconstruction" in this paragraph. Per manifest §57 + voice charter §3, "Work Deconstruction" is one of the twelve canonical instruments; it is formally introduced in chapters/06b-designing-the-work.qmd (E36 mapping). Naming it here is BOTH (a) over-attribution to a discipline ("organizational designers call it work deconstruction") AND (b) coined vocab used before its proper introduction (A2 trap).
-- Strip "organizational designers call X" / "the discipline of org design names this" framing. The move is JOINT IP. Land it as something we have watched fail many times and the rest of the book teaches deliberately — without coining or crediting org-design as the source.
-
-A1 (abstract-noun-equals-abstract-noun) — auto-reject: Julie's source has the textbook-definition cadence "work deconstruction: the explicit process of separating tasks by the type of intelligence required" (risk map line 86: "Cut the textbook definition"). Replace with an operator-direct description of what Marina and Jesse did in the meeting (looked at the chart, asked what required judgment vs. what required rules, redesigned the seat).
-
-A3 (triplet) — collapse: Julie's source has "judgment, taste, context, and accountability" (four-clause) and "rules, patterns, and defined outputs" (three-clause). Pick a single concrete example or land it as one sentence without staccato cadence.
-
-A2 (downstream coined vocab): "Compound Sprint" forward-reference is fine; do NOT lead with it as a defined term carrying load. Plain phrasing: "the discipline this book runs" / "what the next chapters teach" is fine.
-
-MEANS/ENDS-RISK (per scout.md §5 special check) — direct application: lead with the operator beat (what running the discipline produces — the role redesigned, the seat that now exists for the agent-managing coordinator, the work that ships) and name the design discipline as the means. Do NOT close on "the design decision most orgs have been deferring" as the destination.
-
-In-prose attribution (per Q-E21): single in-prose attribution sentence signaling Julie's CHRO/org-design experience as the lens. Suggested phrasing: "the move Julie has watched leadership teams defer for years" (single attribution; reject inline `Julie:` tag from Julie's redline:518).
-
-A4 (boastful biographical) — moderate risk if the attribution dwells on Julie's 20-year CHRO span. Mitigated because the Preface E03 and Ch 1 E11 have already established her credentials. Single line; do not credentialing-tour here.
-
-Coherence:
-- Hinge between Marina story (above) and chapter-thesis paragraph at L16 (below). MUST NOT introduce or anticipate any of the three coined terms staked at L16 / defined in §2.1 (Co-Intelligent Company, Co-Intelligent Co-Operation, Co-Operating Model). Those belong to L16/§2.1.
-- After E16 + E17 land, the L8 → E17 → L16 → §2.1 flow must read: Marina story (E16) → "we have run this design move before; the rest of the book is the discipline" (E17) → "the right operating model has a name" (L16) → "what each term means" (§2.1). Single forward motion.
-
-Plan: _julie/per-chapter/02-co-operating-model.md
-```
-
-```jf-note:
-I'm not saying its a hard and fast rule not to include 'work deconstruction' - just if we do, we have to call it out with a one sentence description and call out that we'll talk more about it later. The boundary is making sure that we don't use terms without making them clear to the user.
-```
-
-The diagnosis was the easy part. You have an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. A structure you can draw on a whiteboard and start running against on Monday. That structure has a name in this book. We call it the Co-Operating Model. It is what a Co-Intelligent Company is built on, and it is what makes *Co-Intelligent Co-operation* — humans and AI working the same problems together — something other than an accident.
+The diagnosis was the easy part. You have an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. That structure has a name in this book. We call it the Co-Operating Model. It is what a Co-Intelligent Company is built on, and it is what makes *Co-Intelligent Co-operation* — humans and AI working the same problems together — something other than an accident.
 
 ## What a *Co-Intelligent Company* is.
 
@@ -83,46 +25,7 @@ Three terms in that paragraph are doing specific work and they're easy to blur t
 
 The **Co-Intelligent Company** is the identity layer — what a company becomes when humans and AI work as one system, not two parallel tracks. The bar is higher than "uses AI tools" or "has an AI strategy." It means the human and the synthetic are integrated into a single Co-Operating Model, designed to run together from the start.
 
-```scout-note:
-E18 (NEW-SECTION → LAND-WITH-MODIFICATION) — accountability-design extension of Co-Intelligent Company definition (HEAVY REWRITE per risk map)
-
-Land a new paragraph after L22 (Co-Intelligent Company definition) and BEFORE the Co-Intelligent Co-Operation definition that follows. Tight, single paragraph — do NOT bloat the L20–L26 trio definition rhythm.
-
-A2 TRAP — ACUTE: "Co-Intelligent Company" is being defined directly above this insertion. Julie's source (redline:562) opens "From an organizational design perspective, a Co-Intelligent Company is one where the accountability chart has been explicitly extended..." — this risks re-defining the term immediately after its first stake. REJECT the "from an organizational design perspective" framing entirely. E18 must DEEPEN the L22 definition (cash out one structural implication of "designed to run together from the start"), NOT re-define the term. Lead with the structural specifics — every AI-handled function has a named human supervisor, a defined scope of work, a review cadence — not with the bar metaphor.
-
-Substance to preserve (from _julie/julie-redline.md:562–570):
-- The accountability chart has been explicitly extended to include AI agent teams.
-- Every AI-handled function has: a named human supervisor, a defined scope of work, a review cadence.
-- The bar is not "uses AI tools"; the bar is "has designed the organization to receive AI as a class of worker with defined accountability."
-- Most companies using AI today have not crossed that bar.
-
-REDUNDANCY WITH L22 — coherence trap: L22 already raises "the bar is higher than 'uses AI tools'." Julie's source restates "the bar is not / the bar is" — DIRECT echo of L22 phrasing. DO NOT repeat the bar-raising cadence. The structural cash-out (supervisor / scope / review cadence) IS the new content; the bar is already raised.
-
-A2 (downstream coined vocab):
-- DO NOT capitalize "Hybrid Accountability Chart" or "HAC" — the chart is introduced in chapters/06-designing-the-system.qmd (E35 mapping). Use lowercase "accountability chart" / "the chart" only.
-- "Compound Sprint" forward-reference is fine; do not lead with it as load-bearing carrier.
-
-FRAMEWORK-ATTRIBUTION RULE: Strip "from an organizational design perspective." The accountability-chart extension claim is JOINT book IP. The bar-raising claim belongs to the book, not to org-design as a discipline.
-
-A1 (abstract-noun-equals-abstract-noun): one antithesis cadence per section allowed per charter §4. Verify no other antithesis cadence in §2.1 collides if E18 closes on "X is not / X is" form (already-grandfathered L22 covers this; don't double).
-
-A3 (operative vs constructed enumeration): Julie's source lists "named human supervisor, defined scope of work, review cadence" — three OPERATIVE checks, not constructed cadence. Preserve. Don't add additional parallel clauses around them.
-
-MEANS/ENDS-RISK (per scout.md §5 special check): Julie's source closes "The Compound Sprint is the process that crosses [the bar]." Process-as-destination cadence. If E18 closes on Compound Sprint, the close must land the operator outcome (the AI-handled function with named supervisor / defined scope / review rhythm; the work that ships) — not Sprint-as-destination.
-
-In-prose attribution: this paragraph extends a definition, not a story. Blended-we voice carries; no specific attribution beyond what E17 establishes upstream.
-
-Coherence:
-- Lands inside the trio-definition list (L20→L22→[E18]→L24→L26). The L30 callback to the Marina story ("the coordinator was inside a company that uses AI. But the company did not yet have a Co-Operating Model.") is rhetorically powerful and depends on the trio reading tightly — verify E18 doesn't disrupt that callback.
-- The excalidraw at L28 (ch02-three-layer-identity) visualizes the trio; E18 lands above it. No diagram change.
-
-Plan: _julie/per-chapter/02-co-operating-model.md
-```
-
-```jf-note:
-Also this sentence "A structure you can draw on a whiteboard and start running against on Monday." smacks of AI because it makes it sound like someone will literally go to a white board and draw this out and then it'll magically start working. That's not realistic.
-
-```
+In the accountability chart, that means every AI-handled function has a named human supervisor, a defined scope of work, and a review cadence. The work has somewhere to land, because someone owns the handoff. Most companies using AI today haven't designed it that way. The tools are running; the accountability structure hasn't caught up. The work ships with someone's name on the outcome only when each function's human-agent split is explicitly designed — not by adding a policy layer on top. A Compound Sprint (defined in the next chapter) is how you do that work.
 
 **Co-Intelligent Co-operation** is the relational frame — the activity of humans and AI working the same problems together, inside the same loop, against the same outcome. Not relegated to a sprint or a project — it is what the company does, continuously, as its default way of working.
 
@@ -138,7 +41,7 @@ Most executives have met one kind of AI: a chat window. You type something, it r
 
 A **chatbot** is an interface. You ask a question, you get an answer, the interaction ends. Input, output, done. Every tool you've used for the last thirty years works this way — a spreadsheet, a search engine, a CRM. You supply something and the system returns something. The loop does not continue unless you start it again.
 
-An **agent** is different. An agent is an AI system that holds a goal, takes a sequence of steps toward it, evaluates its own output, and adjusts — without you re-prompting it between steps. It does not wait. It works. When I run an agent team on a content build, I'm not typing questions and reading answers. I'm managing a production process. I set the direction. The agents run the work. I review, redirect, and ship. The loop closes when the outcome is right, not when the timer runs out.
+An **agent** is different. An agent is an AI system that holds a goal, takes a sequence of steps toward it, evaluates its own output, and adjusts — without you re-prompting it between steps. It does not wait. It works. When you run an agent team on a content build, you're not typing questions and reading answers. You're managing a production process. You set the direction. The agents run the work. You review, redirect, and ship. The loop closes when the outcome is right, not when the timer runs out.
 
 That distinction — chatbot as input/output tool, agent as iterative co-worker — is the one that matters for operating design. A chatbot gives you a productivity improvement localized to the person typing. An agent gives you a structural change, because the loop can run without the human inside every step. And once an agent is connected to your systems and your data, it can access and reason across more of your company's knowledge than any individual human holds. From a knowledge standpoint, it's significantly more capable. But it still can't direct the work.
 
@@ -146,15 +49,15 @@ The technology underneath both is the same: **large language models** (LLMs) —
 
 One more concept matters for the operating model: **organizational memory**. Most AI tools, out of the box, have no knowledge of your company. They know the general information on which they were trained; they do not know you. There are technologies that fix this — they connect an agent to your CRM, your transcripts, your SOPs, so it can search and reason against your own documents instead of just general training. The result is a system that reasons against your actual context. An agent that knows your pricing rules, your client history, your standard escalation paths — not because you paste that context in every time, but because the connection was designed in.
 
-I think of this as the organizational brain — the knowledge that used to live in people's heads, in files no one could find, in systems that didn't talk to each other — made accessible to the agents running the work.
+We think of this as the organizational brain — the knowledge that used to live in people's heads, in files no one could find, in systems that didn't talk to each other — made accessible to the agents running the work.
 
-Here is why this matters. We are a software company. Our inventory is our people — what they know how to build, how they think about problems, the decisions embedded in the codebase. A couple of years ago, a developer I had been working with for years left. And I had this moment where I realized my business was a game of chutes and ladders. I had paid for the ladder — years of training, years of competency building, years of context accumulating inside one person's head. And then the chute opened. He left, and the knowledge left with him. I had no way to capture what he already knew. No system, no process, no designed mechanism to make sure that the investment I had made in his learning stayed inside the business when he did not.
+Here is why this matters. Compound is a software company. The inventory is people — what they know how to build, how they think about problems, the decisions embedded in the codebase. A couple of years ago, a developer Jesse had been working with for years left. That was when Jesse understood the business was a game of chutes and ladders. He'd paid for the ladder — years of training, competency building, context accumulating inside one person's head. And then the chute opened. The developer left, and the knowledge left with him. There was no way to capture what he already knew. No system, no process, no designed mechanism to make sure that the investment in his learning stayed inside the business when he did not.
 
 That issue — *I do not own my knowledge in my own business* — surfaced during a normal issues meeting. It became the first structural problem we solved. We mapped the sources of information we had — where they lived, what was tracked, what existed only in people's heads. Then we built a knowledge management system to make sure the team was contributing knowledge back into the business in a structured way. That was the foundation. The AI layer came later, once the technology was mature enough to connect to what we'd built. When it did, everything accelerated — the knowledge base became the backbone of our agent systems, and the agents could reason against our actual context instead of starting from scratch. The whole arc — identify the structural failure, map the knowledge, build the system, then connect intelligence to it when the technology caught up — was the seed of the framework this book teaches. It started because one departure exposed a vulnerability that no tool purchase could have prevented.
 
 An organization with a well-built memory layer does not have that exposure. The knowledge stays because it was designed to stay.
 
-The humans in that system are not outside it. They are nodes — the ones who supply judgment, direction, and correction that no model can supply from training data alone. I work alongside my agents or manage agent teams, and together we iterate toward an outcome that is not predictable from the inputs the way a spreadsheet result is predictable. It is arrived at through cycles of generation, review, and adjustment. It is better for having gone through them.
+The humans in that system are not outside it. They are nodes — the ones who supply judgment, direction, and correction that no model can supply from training data alone. They work alongside agents or manage agent teams, iterating toward an outcome that is not predictable from the inputs the way a spreadsheet result is predictable. It is arrived at through cycles of generation, review, and adjustment. It is better for having gone through them.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -167,52 +70,7 @@ The reason most companies that have invested in AI have no compounding return is
 
 The last decade of enterprise software pitched a graft — a productivity layer bolted on top of the existing org. The metaphor was addition. You had a worker; now the worker has a tool. The shape of the work, the shape of the org, the shape of the accountabilities — none of that changed much. You just expect more output from the same structure. If anything changed, it was the number of places people had to enter data.
 
-```scout-note:
-E19 (NEW-SECTION → LAND-WITH-MODIFICATION) — Julie's graft-vs-redesign parallel from the global food safety company integration (HEAVY REWRITE per risk map; highest anti-pattern density in Ch 2)
-
-Land a new paragraph after L65 (graft definition) and BEFORE L67 (the "Co-Intelligence is different" alternative). Position is the PAIRED graft example to Jesse's developer-departure / KM story from §2.2 — same graft failure, different industry, different scale.
-
-Substance to preserve (from _julie/julie-redline.md:590–605):
-- Post-acquisition context: a global food safety company integrated an acquired Fortune-500 division (per Preface E03 anchor).
-- First instinct from every function: graft new responsibilities onto existing roles without redesigning the operating model.
-- The org chart expanded; the operating model did not change.
-- Result: grafted responsibilities performed inconsistently, people stretched past capacity, WITHIN EIGHTEEN MONTHS the organization had to restructure anyway — this time by actually redesigning the work.
-- THE LOAD-BEARING OPERATOR BEAT: the redesign produced a MORE CAPABLE organization with LOWER TOTAL HEADCOUNT than the graft had required. This is the parallel to Jesse's KM/developer story and to Ch 1's 13→8 / 44-countries paired stories. Same math, different scale, different industry.
-- The connective claim: AI is the same choice (graft vs. redesign), made at a different layer.
-
-LLM ARTIFACT IN SOURCE: redline line 591 contains "the the acquired Fortune 500 division" (doubled article — Pattern 1 from risk map line 187). Unresolved LLM placeholder. REPLACE WHOLESALE; do not paste cadence from source.
-
-A3 DUAL-TRIPLET — AUTO-REJECT (highest priority): Julie's source has the canonical constructed-symmetry beat: "An existing HR business partner now covered three additional countries. An existing procurement lead now managed two additional supplier networks." Risk map line 91 flags this directly. PICK ONE: HR business partners covering additional countries (substantive — connects to Julie's CHRO role). DROP procurement-lead supplier-networks parallel. Constructed symmetry kills the operator weight.
-
-A5 CLOSER — AUTO-REJECT: Julie's source closes "The graft produced cost. The redesign produced leverage." Antithesis cadence — pure AI smell. REPLACE with concrete operator math: lead the close with "lower total headcount than the graft had required" or equivalent.
-
-MEANS/ENDS-RISK (per scout.md §5 special check) — DIRECT APPLICATION, highest risk in chapter: §2.3 is the framework-section that argues "redesign produces compounding." E19 must NOT close on "redesign" or "design discipline" as the destination. Lead with the operator outcome (the company that emerged with fewer people and more capability); name redesign as the means. Acceptance criterion: the close lands the concrete result, not the abstract noun.
-
-A4 (boastful biographical) — moderate: 44-country / 18-month / Fortune-500-division scale-language is credentialing-adjacent. Mitigated because Preface E03 and Ch 1 E11 already established Julie's bona fides; E19 inherits them. Single in-prose attribution sentence; do NOT credentialing-tour.
-
-In-prose attribution (per Q-E21): single attribution naming Julie's CHRO role. Suggested: "Julie watched this play out at the global food safety company where she was Global CHRO during the Fortune-500-division integration..." REJECT inline `Julie:` tag from Julie's redline:590.
-
-E60 anonymization: "global food safety company" already conforms per Preface E03 and manifest E60. PRESERVE VERBATIM. Do not name the actual company.
-
-A2 (downstream coined vocab): DO NOT capitalize "Hybrid Accountability Chart" or "HAC." Use lowercase "the chart" / "accountability chart." HAC introduction lives in chapters/06-designing-the-system.qmd.
-
-A1 (abstract-noun-equals-abstract-noun): strip "the graft is X / the redesign is Y" formulations. Operator math, not abstract pairing.
-
-Forbidden vocab grep: zero "transformation" / "augment" / "leverage" / "synergy"; "alignment" only in the harmless "leadership alignment" sense if at all (charter §3 flags it as corporate filler in operator contexts — safer to use "agreement" / "shared commitment" / specific operator language).
-
-Coherence:
-- E19 is a PARALLEL graft example to Jesse's §2.2 developer-departure / KM story. It does NOT replace or pre-empt the L71 cross-chapter callback to the Preface ("the knowledge management story from the preface is the graft model in full"). Two graft examples + one Preface callback = three coherent demonstrations of the same failure mode.
-- After E19 lands, the L63 → L65 → E19 → L67 → L69 → L71 flow must read: graft as metaphor → what graft looks like → same graft failure at a different scale (E19) → Co-Intelligence is the alternative → absorbs vs. re-runs change-management → "the KM story from the preface is the graft model in full" (L71 closer). E19 must reinforce L71, not bury it.
-- L67 "Co-Intelligence is different" must still read as the answer to BOTH graft examples — Jesse's KM and Julie's HR. Verify E19 sets that up cleanly.
-
-Path B candidate if Drafter fails voice-gate twice (highest anti-pattern density in chapter: A3 + A5 + A13 + A4 + LLM artifact + framework-attribution soft).
-
-Plan: _julie/per-chapter/02-co-operating-model.md
-```
-
-```jf-note:
-It's also important to note the "I" vs "we" language that a skill should (have) cauth/catch. I don't see a note to this effect from Scout.
-```
+Julie watched this exact failure in a non-AI context. At the global food safety company where she was Global CHRO, the company integrated a newly acquired Fortune-500 division. The first instinct from every function was the same: graft the new responsibilities onto existing roles. HR business partners picked up additional countries without any redesign of how the HR function ran. The org chart expanded. The operating model didn't change. Within eighteen months, the company had to restructure anyway — this time by actually redesigning the work instead of adding to it. The function that emerged ran with lower total headcount than the graft had required, and it ran more consistently because each role had a defined scope and the capacity to execute it. AI is the same choice made at a different layer.
 
 Co-Intelligence is different. The human and the agent are both inside the loop. The work itself gets re-shaped around the fact that two kinds of intelligence are now executing it. The structure is built to evolve — because the agent gets smarter every quarter, the human's task space shifts as a result, and the design has to keep pace. The *Co* is what gives the company the mechanism to keep improving — as the agent gets smarter, the design adjusts with it. A graft produces a frozen artifact. Co-Intelligence produces a living system.
 
@@ -258,13 +116,13 @@ Pick one role in your company — yours, or a direct report's. Estimate: what pe
 
 Ownership is where most companies stall, and it is the variable that most determines whether the work compounds.
 
-The way I use "ownership" here is specific. It does not mean who is aware of a task or who is cc'd on the outcome. It means who is accountable for the decision, the quality, and the next move if something goes wrong. One person — or one agent — per responsibility. Not shared. Not "we'll figure it out in the meeting." A single owner who picks up the work and does not put it down until the handoff is complete. In the Co-Operating Model, a human always holds ultimate ownership. They might delegate to an agent or a team of agents, but organizations hold humans responsible for outcomes — even in fully automated processes.
+The way we use "ownership" here is specific. It does not mean who is aware of a task or who is cc'd on the outcome. It means who is accountable for the decision, the quality, and the next move if something goes wrong. One person — or one agent — per responsibility. Not shared. Not "we'll figure it out in the meeting." A single owner who picks up the work and does not put it down until the handoff is complete. In the Co-Operating Model, a human always holds ultimate ownership. They might delegate to an agent or a team of agents, but organizations hold humans responsible for outcomes — even in fully automated processes.
 
 If you've worked inside Tiago Forte's PARA system — Projects, Areas, Resources, Archives — you already have a useful frame. Forte separates work into things with a finish line (Projects) and things that are ongoing (Areas), and makes the case that most knowledge-work gets lost because people treat ongoing responsibilities as if they were projects, and vice versa. The ownership split in the Co-Operating Model works the same way. Some responsibilities have a finish line: a draft gets written, an analysis gets delivered, a campaign gets published. Others are ongoing: the human owns the outcome across time, coaches the system as it learns, and is accountable if the work drifts.
 
 Here is what that looks like in practice.
 
-Compound runs a weekly content cycle. At the start of the week, our marketing lead has decided what we're publishing — which topic, which angle, which channel. That decision is hers. Not the agent's. The agent doesn't know what conversation I had at a conference last Thursday, or what landed badly with the audience two weeks ago, or which piece of content our best clients have been forwarding to their own teams. She does.
+Compound runs a weekly content cycle. At the start of the week, our marketing lead has decided what we're publishing — which topic, which angle, which channel. That decision is hers. Not the agent's. The agent doesn't know what conversation she had at a conference last Thursday, or what landed badly with the audience two weeks ago, or which piece of content our best clients have been forwarding to their own teams. She does.
 
 Once she decides, the agent takes the brief and produces the first draft — copy, visual direction, distribution plan. She does not write the first sentence. She reads the output, marks what is right and what is wrong, and the agent revises. The draft never leaves her without her judgment on it. She owns the outcome. The agent owns the output that precedes it.
 
@@ -287,9 +145,9 @@ The two columns are the load-bearing logic of the model. A company that lets age
 
 When you get the split right, the company compounds. The human's hours flow into the work only humans can do: deciding, directing, pricing, owning, coaching. The agent's hours flow into everything else, at a cost and speed that re-prices the underlying economics of the business. Both sides get compounding returns every quarter, because the structure was built to absorb improvement on both sides.
 
-```jf-note:
-I'm a bit surprised there isn't more content/context from Julie here. This is her lane of expertise. I want to make sure we aren't missing valuable content/context.
-```
+There's a version of the left column that's easy to underestimate until you've watched it fail. The world model isn't just knowledge; it's judgment, and judgment isn't one thing. A number landing in a report means something different depending on which client it's attached to, what happened in the last call, and whether the relationship is solid or fraying. A client three weeks from churning doesn't show up in the data that way. You hear it in the tone of their emails. You know which project will die in the next planning cycle because the champion doesn't have the standing to push it through. The agent sees the data. The human sees what the data means inside the actual situation.
+
+That's the split that matters. Julie spent years watching executive teams hand decisions off to process layers and lose this exactly: the relational and contextual judgment that no system can hold, that only the person inside the work can supply. You can automate the research, the drafting, the documentation, and the follow-up. You can't automate the read of the room.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -353,9 +211,11 @@ She was steering four workstreams at once. That is the job — concrete, operati
 
 The agents were doing exactly what the right column says they should do — drafting, documenting, synthesizing, executing on a defined output. She was doing exactly what the left column says the human should do — directing the work, pricing what's good enough, owning the outcome. What used to be a solo production workflow is now a team she manages. The team just doesn't have business cards.
 
+### Set the standard.
+
 There is one more thing she brings to that arrangement that the ownership table doesn't capture: a standard. She knows what good looks like. She knows when the copy is sharp and when it is blunt. She knows which frame of the video holds and which one doesn't. She knows what goes out with Compound's name on it and what stays internal. That knowledge is not in any of the four agent workstreams. It lives in her, and she applies it every time she reviews an output.
 
-The failure mode I see most often is not people who refuse to use agents. It is people who use agents and then accept whatever comes back — because output feels like progress. Getting an agent to produce something is not the same as doing good work. It is a first draft. The human who directs agent work has to know the difference between a draft and a result, and has to be willing to call the draft a draft until the result is actually there.
+The failure mode we see most often is not people who refuse to use agents. It is people who use agents and then accept whatever comes back — because output feels like progress. Getting an agent to produce something is not the same as doing good work. It is a first draft. The human who directs agent work has to know the difference between a draft and a result, and has to be willing to call the draft a draft until the result is actually there.
 
 The standard is not something the agent sets. The human sets it before the work starts and holds it through every review cycle. Without that standard, the output is AI slop with a professional's name on it. With it, the output is the work the human would have done — at the speed and scale only the agent can provide.
 
@@ -364,7 +224,7 @@ The standard is not something the agent sets. The human sets it before the work 
 Set the standard before the work starts. Hold it through every review cycle. The agent does not know what "good" looks like for your company — you do, and that knowledge is what separates directed output from AI slop.
 :::
 
-We had to design that before we could run it. We had to answer, explicitly, which tasks the agent would own and which she would keep. We had to define the handoffs — what she reviews, what she approves, what goes out without her touching it. That design work is what made the model real. Without it, the tools would have been four separate tabs she opened when she felt like it, and the outcome would have looked exactly like the accountability chart problem I described at the start of this chapter — a role designed for linear work, producing linear results, no matter how many tools were on the screen.
+We had to design that before we could run it. We had to answer, explicitly, which tasks the agent would own and which she would keep. We had to define the handoffs — what she reviews, what she approves, what goes out without her touching it. That design work is what made the model real. Without it, the tools would have been four separate tabs she opened when she felt like it, and the outcome would have looked exactly like the accountability chart problem we described at the start of this chapter — a role designed for linear work, producing linear results, no matter how many tools were on the screen.
 
 :::{.callout-note}
 ## Action Step: Calculate Your Design Opportunity
