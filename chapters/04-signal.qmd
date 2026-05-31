@@ -5,6 +5,42 @@
 Signal is the discipline of refusing to move forward until one constraint has been identified precisely, confirmed against actual numbers, and quantified in dollars or hours. By the time you finish this stage, you have a one-page constraint statement that names the problem, where it lives, how long it has existed, and what it has cost. Everything in the rest of the Sequence is designed to answer the question Signal asks.
 :::
 
+```scout-note:
+**E24 (ATTRIBUTION, LAND-WITH-MODIFICATION) — opener blended-we + in-prose attribution; CH04-L10 conflict flag.**
+
+**CRITICAL: CH04-L10 conflict flag.** The L10 / $24K subcontractor story at L8–L16 is the canonical polished sourced replacement per persistent memory `ch04-l10-opening-fabricated` and commit `7709ea8` ("Author review round 2: resolve all 33 jf-notes across 8 chapters"). The earlier fabricated "nine red weeks" framing is fully gone. **Preserve the L10 story verbatim. Do NOT regress; do NOT restructure; do NOT alter operator math.**
+
+**Scope:** Voice-shift only — Jesse in-prose attribution at the opener + mechanical I→we conversion in the body. Also applies to PT clinic story at L92–L114 (Jesse's second anchor in the chapter).
+
+**Required preservation:**
+- L10 setup verbatim ("We were in our own L10 — not a client's, ours — reviewing the scorecard for our project management function").
+- "Blank" cadence triplet at L8 ("Tasks were being created... Client deliverables were slipping... Billing was late...") — grandfathered operator-direct A3-adjacent cadence; do not modify.
+- $24,000-a-year project coordinator anchor (load-bearing operator math; cross-chapter reference in Ch 7 "$24,000-a-year coordinator role").
+- "Felt like weather" canonical chapter metaphor at L10 (echoed at L53 closer of §4.3 and again in E27 closer).
+- $50,000-or-more-for-full-time math anchor at L12.
+- L14 italicized capacity/capability/redesign frame question verbatim ("*is this about adding more hours, finding a better person, or changing how the work gets done?*") — hands off to Source and Design.
+- L16 closer verbatim ("Signal is the discipline that makes that distinction possible. Most teams never make it. They replace the person, or add a person, or build a workaround — and the constraint stays exactly where it was.") — §4.0 chapter-thesis hammer.
+- L92–L114 PT clinic story content verbatim (including the $420K/year cost anchor, the 58–63% vs. 83% efficiency-gap math, and the full one-page constraint statement table at L108–L114 — canonical non-manufacturing worked example per Q-E26).
+
+**Modification from Julie's instruction:**
+- Reject Julie's inline `Jesse:` underline tag (per Q-E21 convention; not the book's convention — blended-we + in-prose attribution is canon per Preface E01/E02, Ch 1 E08–E11, Ch 2 E16, Ch 3 E21).
+- Pattern A (preferred): Open with single in-prose attribution at L8 — "Jesse was in our own L10 — not a client's, ours — reviewing the scorecard..." Then sustain blended-we across L8 → L10 → L14 → L16.
+- L10 mechanical conversion: "I asked the room a question I ask clients all the time" → "We asked the room a question we ask clients all the time" (per Julie's redline line 712).
+- L92 PT clinic opener: apply same Pattern A — "Jesse sat in on a meeting with a PT clinic operator..." Subsequent I-phrases in L92–L100 may shift to "we" or stay singular-I depending on which preserves story narrative drive — Drafter chooses; voice-shift only, no substance change.
+- Pattern B fallback (closer to Ch 1 §1.0 voice): keep singular-I for story but add one in-prose attribution sentence at L8 and L92.
+- **Contractions: preserve current chapter contractions; do not regress to Julie's no-contractions source.**
+
+**Anti-pattern risk:** A4 low (concrete operator stories, not credentialing); A3 grandfathered (L8 blank-cadence triplet, L10 enumeration — do not modify); A5 low (opener already operator-direct; keep attribution sentence terse); A13 CLEAN (story-based opener, L16 closer cashes out to operator-outcome math); A14 CLEAN (weather metaphor literally applies); A16 CLEAN (no book-as-location language).
+
+**Framework-attribution rule:** N/A (voice-shift only).
+
+**Coherence:** Execute first; sets voice E25 + E27 write into. Inherits Q-E21 blended-we + in-prose attribution convention from Preface / Ch 1 / Ch 2 / Ch 3 upstream beads. Cross-chapter references to $24,000 subcontractor (Ch 7) and Meridian Manufacturing (Ch 1 / Ch 3 / Ch 6 / Ch 7 / Ch 8 / Ch 9 / Ch 10) must remain consistent.
+```
+
+```jf-note:
+
+```
+
 We were in our own L10 — not a client's, ours — reviewing the scorecard for our project management function. The numbers weren't red. They were worse than red. They were blank. Tasks were being created but not updated. Client deliverables were slipping by days without anyone flagging it. Billing was late because nobody could confirm what had been delivered and what hadn't. We had a project coordinator — a subcontractor we were paying $24,000 a year — and the work was still falling behind.
 
 I asked the room a question I ask clients all the time: what is this costing us? Not the subcontractor's invoice. The actual cost — the late billing, the missed deliverables, the hours our VP of Operations was spending chasing task updates instead of running operations.
@@ -14,6 +50,54 @@ Nobody had the number. We'd been living with the problem long enough that it fel
 The real question was whether this was a capacity problem, a capability problem, or whether we could redesign the work itself. Is the coordinator behind because there aren't enough hours? Because they lack the skill? Or because the work shouldn't be structured this way at all? That question — *is this about adding more hours, finding a better person, or changing how the work gets done?* — is what launched us down the path that became Source and Design.
 
 That conversation was the first time we named the constraint instead of describing the symptom. The symptom was "tasks are falling behind." The constraint was structural: the project coordination function required constant, systematic attention that no human in the role — at the price point we could justify — was going to sustain. Signal is the discipline that makes that distinction possible. Most teams never make it. They replace the person, or add a person, or build a workaround — and the constraint stays exactly where it was.
+
+```scout-note:
+**E25 (NEW-SECTION, LAND-WITH-MODIFICATION) — Julie's parallel Signal story: post-acquisition talent gap → matrix-reporting structural cause → no replacements needed.**
+
+**Landing:** New paragraph after L16 (Jesse-L10 closer "Signal is the discipline that makes that distinction possible..."), before §4.1 heading "The deliverable is *one sentence*."
+
+**Substance to preserve (from `_julie/julie-redline.md:720–751`):**
+- Post-acquisition talent gap at a global food safety company — presenting problem was leadership-team underperformance in the acquired division; business instinct was to replace several key leaders.
+- Signal-as-applied: Julie ran the diagnostic equivalent of Signal before any replacement decisions were made.
+- **Is/Is Not analysis** (canonical instrument; forward reference acceptable — defined at §4.3 L55–L66) revealed the underperformance was concentrated in roles where two reporting lines crossed — matrix structures inherited from the Fortune 500 parent with no clear decision authority assigned.
+- Structural cause: the leaders were not underperforming. They were operating inside an accountability structure that made it impossible to perform.
+- **Load-bearing operator outcome:** Signal prevented a series of expensive, wrong decisions and produced an organizational redesign that resolved the performance gap **without replacing a single person.**
+- Hook to chapter thesis: that is what Signal does — it refuses to let you solve the visible problem until you have named the structural cause underneath it.
+
+**Modification (Drafter must apply):**
+
+1. **Framework-attribution scrub (DIRECT):** "The most instructive Signal conversation of my career" → joint blended-we with single in-prose Julie-anchor. **Preferred:** "Julie has watched the same discipline land outside any AI context. In a post-acquisition integration at a global food safety company, the presenting problem was a talent gap..." Single attribution sentence → blended-we / third-person for the story body. Signal is canonical joint book IP, not Julie's individual career instrument.
+
+2. **A3 triplet collapse:** Three rhetorical diagnostic questions in Julie's source ("What was the actual constraint? What was it costing? Where did it live in the organization and where did it not?"). **Pattern A (preferred):** Collapse to ONE rhetorical question + brief gesture — "Julie ran the equivalent of Signal — what was the actual constraint, where did it live, what was it costing?" (single sentence, one breath). **Pattern B (safer):** Strip the rhetorical-question form to declarative — "Julie ran the equivalent of Signal. The Is/Is Not analysis surfaced what looked like a talent gap as a matrix-reporting structural failure." Try A first; fall back to B if voice-gate flags A3.
+
+3. **A1 antithesis pileup collapse:** TWO antitheses in Julie's source — "The constraint was not talent. It was org design." AND "The leaders were not underperforming. They were operating inside an accountability structure that made it impossible to perform." **Keep ONE antithesis** (the "not talent / it was [how the work was set up]" closer — operator-load-bearing). **Convert the other to declarative:** "The leaders were operating inside an accountability structure that made it impossible to perform."
+
+4. **Forbidden vocab — "org design" / "organizational design":** STRIP per voice charter §3. Acceptable plain operator replacements: "how the work was set up," "who owned what," "the way the team ran," "the way authority was assigned," "how accountability was structured," "the operating model" (canonical book vocabulary, allowed). Recurring 3/3 chapter pattern per lessons-learned — Drafter scanner gate must catch zero.
+
+5. **A4 (boastful biographical) — strip "of my career" credentialing.** 20-year CHRO credentialing already established in Preface + Ch 1 §1.0; do not re-establish. Single in-prose attribution maximum.
+
+6. **MEANS/ENDS-RISK (chapter-opener-adjacent landing, HIGH risk per scout.md §5):** Close on operator outcome (no replacements needed, performance gap resolved); name Signal as the means. Preserve Julie's source closer order: post-acquisition talent gap → Signal-as-applied → Is/Is Not surfaces matrix-reporting cause → operator outcome (redesign worked, no replacements) → Signal-as-discipline hook. Verify Drafter does not invert.
+
+7. **Cross-chapter n-gram check:** Ch 1 L57 reads "When a global food safety company completed a Fortune 500 division acquisition, Julie was the CHRO overseeing the integration across 44 countries." E25 must NOT echo "Julie was the CHRO overseeing the integration across 44 countries" exact phrasing. Acceptable E25 framing: "In a post-acquisition integration at a global food safety company..." (focuses on the Signal-application context; does not re-introduce CHRO scope).
+
+8. **A2 discipline:** No "Constraint Statement" capitalized as load-bearing term (definition lands at §4.1; E25 is BEFORE §4.1) — plain "constraint" only. "Is/Is Not" forward reference acceptable single instance (definition at §4.3 L55). Do NOT introduce HAC / TML / Right Seat / Pattern Drag / other Ch 5+ vocabulary. "Accountability structure" is plain operator language (NOT canonical HAC capitalization) — acceptable.
+
+9. **In-prose attribution:** First Julie-voice paragraph in the chapter. Single in-prose attribution sentence at opening; blended-we / third-person for the body. Per Q-E21; reject Julie's redline inline `Julie:` tag at L728.
+
+10. **E60 anonymization:** "a global food safety company" and "Fortune 500 parent" already conform.
+
+**Anti-pattern risk (highest):** A3 (three rhetorical questions); A1 (TWO antitheses — collapse to one); A4 ("of my career" credentialing); A2 (Is/Is Not forward reference — acceptable single instance); A13 (chapter-opener-adjacent MEANS/ENDS-RISK = HIGH); framework-attribution direct; forbidden vocab "org design" recurrence.
+
+**Framework-attribution rule:** **Applies directly.** Signal is canonical joint book IP. Strip "of my career" individual credentialing.
+
+**Coherence:** Must read as a **parallel demonstration** of the Jesse-L10 opener (tech-ops / pricing constraint) — Julie story shows Signal applied to a human-capital / accountability-design constraint. Together they bracket §4.0 as the discipline working across both contexts. Do NOT duplicate L16 chapter-thesis pivot; close on Julie-specific operator outcome (redesign worked without replacements) and a single sentence anchoring back to Signal as named in L16. Do NOT pre-empt §4.1 deliverable definition.
+
+**Dependency:** E24 (chapter voice established at opener and PT clinic).
+```
+
+```jf-note:
+
+```
 
 ## The deliverable is *one sentence*.
 
@@ -47,6 +131,59 @@ When a team does land on one constraint and commits to it, you're no longer argu
 Most organizations bring symptoms to the table. "Our quoting takes too long." "Our onboarding is messy." These are real, and the people raising them are not wrong — but neither of them, as stated, is a constraint a Sprint can solve.
 
 Signal traces the symptom to the underlying constraint. Quoting takes too long because three different systems hold pieces of the customer record, and the ops manager is the only person who knows how to reconcile them. Onboarding is messy because the handoff between sales and delivery is undefined, and every new customer triggers a custom escalation chain.
+
+```scout-note:
+**E27 (NEW-SECTION, LAND-WITH-MODIFICATION) — Julie's symptom-vs-constraint paragraph applied to human-capital constraints.**
+
+**Landing:** New paragraph after L49 (two-example operational symptom→constraint paragraph: quoting / onboarding), before L51 (Meridian Manufacturing extended example) inside §4.3 "Symptom is not the same as constraint."
+
+**Substance to preserve (from `_julie/julie-redline.md:777–788`):**
+- The symptom-vs-constraint distinction applies as cleanly to human-capital / accountability-design contexts as to operational / process contexts.
+- Canonical symptom: "Our managers are not developing their people" — a presenting symptom leadership teams almost always misdiagnose as a personnel/training problem rather than a structural one.
+- Two structural-cause options: **(a)** managers have no time for development conversations because their operational workload has grown to absorb every hour; **(b)** the performance management system creates no accountability for development outcomes, so development conversations never happen because nothing bad happens when they don't.
+- Hook: Signal traces the symptom to the structural cause; until you have the structural cause and its cost, you are treating weather.
+- The "treating weather" closer is **canonical chapter vocabulary** — callback to L10 ("felt like weather — just the way project coordination worked at our size") and L53 ("you are still describing the weather"). E27 closer makes weather the third reference in the chapter, earning its place as the controlling metaphor for problems leadership teams have normalized.
+
+**Modification (Drafter must apply):**
+
+1. **Framework-attribution scrub (DIRECT):** "Julie has applied this distinction in organizational design contexts for decades" → joint blended-we with single in-prose attribution. **Preferred:** "Julie has watched the same distinction matter in human-capital contexts." OR (if E25's Julie-anchor already lands clean) an implicit attribution via context: "The same distinction matters in human-capital contexts. 'Our managers are not developing their people' is a symptom we've watched leadership teams treat as a personnel problem for years." Symptom-vs-constraint is canonical §4.3 joint book IP, not Julie's individual instrument.
+
+2. **A3 third-option triplet conversion risk:** Julie's source uses a TWO-option observational structural-cause framing ("Or the constraint might be that..."). This is NOT a constructed triplet — it's an observational two-option diagnostic move (same structure as §4.4 Step 3 Question 1 testing). **PRESERVE Julie's two-option structure verbatim. Do NOT add a third structural-cause option.** A third converts the observational frame into A3 trap.
+
+3. **Forbidden vocab — "organizational design contexts":** STRIP per voice charter §3. Acceptable plain operator replacements: "human-capital contexts," "how the work is set up," "people-systems," "the way authority is assigned." Recurring 3/3 chapter pattern per lessons-learned — Drafter scanner gate must catch zero "org design" / "organizational design" / "transformation" / "leverage" / "synergy" / "alignment." "Performance management system" and "operational workload" are plain operator language — acceptable.
+
+4. **A4 (boastful biographical) — strip "for decades" credentialing.** Mitigated by Preface + Ch 1 setup + E25 landing earlier in the chapter. Single in-prose attribution maximum; lighter than E25 (second Julie-voice paragraph in chapter).
+
+5. **A1 check:** Julie's "treating weather" closer is metaphor + declarative, not antithesis-formal. **CLEAN.** Preserve.
+
+6. **Weather metaphor discipline:** E27 closer "you are treating weather" is the THIRD weather reference in the chapter (L10 / L53 / E27). This is a deliberate chapter motif — preserve as canonical. **Do NOT introduce a fourth weather reference elsewhere (do not let E25 frame the matrix-reporting structural-cause discovery as weather — that's E27's territory).** A fourth weather reference would be motif-overload.
+
+7. **N-gram check:** §4.4 Step 1 Issue Surfacer Question 4 at L129 reads "Where do we keep losing the same person or role? Turnover clusters around constraints." E27's "managers not developing people" example is conceptually adjacent. **Verify no phrase echo** on "losing the same person" / "turnover clusters" / "Where do we keep losing." Julie's source phrasing ("managers have no time for development conversations because their operational workload has grown to absorb every hour") is already differentiated from Q4 phrasing — preserve.
+
+8. **MEANS/ENDS-RISK low:** E27 reinforces §4.3 existing thesis, not chapter framing. Closer ("treating weather") is metaphor + declarative — operator-direct. CLEAN.
+
+9. **EC1 canonical-definition verification:** E27 lands as a THIRD illustration of §4.3 symptom-vs-constraint (after the two-example quoting/onboarding paragraph at L49 and BEFORE the Meridian extended example at L51). Verify Drafter does NOT redefine "constraint" or "symptom" — those are canonically defined at §4.3 L47–L49 + L51. E27 is an illustration, not a redefinition.
+
+10. **In-prose attribution:** Second Julie-voice paragraph in the chapter. **Lighter than E25** — single attribution sentence OR implicit via context (the human-capital lens does the attribution work). Per Q-E21; reject any inline `Julie:` tag.
+
+**Anti-pattern risk (highest):** A3 (third-option triplet conversion risk — must preserve two-option observational frame); framework-attribution direct; forbidden vocab "organizational design contexts" recurrence; A4 ("for decades" credentialing); weather-metaphor over-deployment (chapter discipline); n-gram repetition with Issue Surfacer Q4.
+
+**Framework-attribution rule:** **Applies directly.** Symptom-vs-constraint is canonical §4.3 joint book IP. Strip "Julie has applied... for decades" individual framing.
+
+**Coherence:** Must read as a **third concrete symptom→constraint example** — first two are operational (quoting, onboarding); E27 is human-capital (managers not developing people); the progression closes into the fully worked Meridian example at L51. Verify "treating weather" closer earns its place as the second-of-three weather references; do not introduce a fourth elsewhere.
+
+**Dependency:** E24 (chapter voice established), E25 (Julie's voice established in chapter; E27 inherits calibrated attribution frequency).
+
+---
+
+**E26 (OTHER, SKIP-ALREADY-DONE) — NOTE FOR AUTHOR REVIEW**
+
+Per Q-E26 (resolved): Julie's editorial note at redline L762–L768 asked for "at least one [example] from Julie's professional services or organizational design experience, not only manufacturing and software examples." **Factually addressed by the existing chapter:** the PT clinic operator worked example at L92–L114 (healthcare / multi-location services / $420K/year unfilled-slot constraint with the FULL one-page constraint statement table at L108–L114) is the canonical non-manufacturing services worked example. Julie's note appears to have missed it. Author's manifest note acknowledges: *"Maybe; is that a best practice? I think our readers should be able to figure it out... don't want to be too presumptive."* **Verdict: SKIP. No inline scout-note inserted at L24/L26 or L47/L49.** Optional light additive (1–2 sentences noting that constraints can be human-capital / accountability / knowledge-silo, not just process bottlenecks) flagged for author decision in plan file `_julie/per-chapter/04-signal.md` — **recommendation: skip** (author's instinct correct; the PT clinic + E25 + E27 examples already over-deliver on the non-manufacturing applicability dimension).
+```
+
+```jf-note:
+
+```
 
 Consider Meridian Manufacturing — the fictional composite we introduced earlier. The symptom their team brought to the table: "Our quoting takes too long." The constraint underneath it: Elena Ruiz, the VP of Operations, was the sole quoting bottleneck. Every quote passed through her because she was the only person who held the customer-specific pricing, material lead-time knowledge, and historical job context simultaneously. The cost: $558K per year in lost revenue, misallocated time, and floor underutilization. That is the difference between a symptom and a constraint. The symptom describes what you feel. The constraint names the structural cause — and puts a number on it.
 
