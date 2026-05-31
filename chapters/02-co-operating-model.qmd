@@ -153,6 +153,8 @@ That's the split that matters. Julie spent years watching executive teams hand d
 If you're not sure which column a task belongs in, ask: would I trust a well-briefed new hire to do it competently within 30 days? If yes, it can probably be an agent task. The things that take years to learn — reading a room, knowing when a client is about to churn, choosing which battle to fight — those stay with the human.
 :::
 
+Meridian Manufacturing from Chapter 1 is the same logic landed inside one role. Elena Ruiz is the bottleneck for quoting because the pricing rules, the material lead-times, and the customer history all live in her head. The work she does on each quote splits the same way the table does. Choosing which exceptions to honor for a long-standing customer is Column A judgment. Pulling material costs from JobBOSS and assembling the line items against documented pricing logic is Column B execution. The first half stays with Elena. The second half can move to an agent, with Elena reviewing the draft before it goes to the customer. Same two columns, applied to one specific role inside one specific company — and that's how the headcount math at Meridian starts to move.
+
 The ownership table is a design instrument, not a philosophical exercise. The next step is to apply it to a real role in your company — one task at a time.
 
 :::{.callout-note}

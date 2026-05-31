@@ -58,21 +58,37 @@ Write down the constraint you'd solve first. One sentence. If it takes more than
 
 The Sequence is six stages. Each gets its own chapter. Here is the role of each — enough to orient you, with the full depth in the chapters that follow.
 
-1. **Signal** — you find the one operational constraint worth solving next, and quantify what it costs. A constraint without a dollar figure attached is not yet a constraint; it's a hypothesis. Signal produces a constraint statement specific enough that the rest of the Sprint can be designed against it. For Meridian, Signal named *"Elena Ruiz is the sole quoting bottleneck — every quote flows through her, costing an estimated \$558K/year in delayed and lost revenue."* That sentence is what the rest of the Sprint runs against.
-
-2. **Source** — you map what the work actually requires: the knowledge, the data, the judgment, the context. Source produces a **Knowledge Map** — what exists, what's missing, who holds what in their head. An AI workflow built without Source has nothing reliable to reason against; you get hallucinations, gaps, and a system that breaks the first time a non-standard case shows up. For Meridian, Source surfaced that Elena's pricing logic lived in a 147-row spreadsheet on her desktop, that Dave Kowalski's fabrication knowledge lived in his head after thirty-one years, and that JobBOSS held the job history but had no connection to the CRM. None of that was visible to anyone but the person holding it.
-
-3. **Design** — you decide who does what across the Human+AI workforce for this specific constraint. Design produces the Hybrid Accountability Chart entries for this Sprint: which functions stay human, which move to agents, where the handoffs live, who supervises the agent's output, and how exceptions get routed. Design is where the operating model gets explicit — and where most companies trying to "just build it" discover they had no operating model to begin with.
-
-4. **Build** — you produce the spec and deploy the workflow into the system your team already uses. Build produces a working implementation: agent prompts, integrations, guardrails, observability, the whole working machine. The discipline of Build is that it's executing against the Design output, not improvising — the questions Build answers are *how*, not *what*. Skipping Design and starting here is the most common AI failure mode in the field.
-
-5. **Deliver** — you ship it inside the org, train the people whose handoffs change, and measure the result against what Signal said it cost. Deliver is where the workflow stops being a pilot and starts being how the work gets done. Without it, you have a demo, a Slack channel, and a slide deck. With it, you have a measurable change to your operating model.
-
-6. **Compound** — you capture the learning, update the infrastructure the next Sprint will use, and rank what comes next. Compound is what turns a single Sprint into a Rhythm. The investment in this Sprint accelerates the next one — because the Knowledge Map exists, because the design discipline is in place, because the team has run the full cycle once and can run it faster the second time.
-
 {{< excalidraw ch03-the-sequence "The six-stage Sequence: Signal → Source → Design → Build → Deliver → Compound." >}}
 
-What makes this a Framework — and not just a list — is that each stage produces something the next stage cannot do without. Signal produces a constraint statement; Source produces a Knowledge Map about that constraint; Design produces an accountability split that depends on both; Build executes against the Design; Deliver installs Build into the operating rhythm; Compound captures what was learned and feeds it into the next Sprint's Signal. Skip a stage and the next one has nothing real to work against — which is why this is a Framework rather than a checklist.
+### *Signal*.
+
+You find the one operational constraint worth solving next, and quantify what it costs. A constraint without a dollar figure attached is not yet a constraint; it's a hypothesis. Signal produces a constraint statement specific enough that the rest of the Sprint can be designed against it. For Meridian, Signal named *"Elena Ruiz is the sole quoting bottleneck — every quote flows through her, costing an estimated \$558K/year in delayed and lost revenue."* That sentence is what the rest of the Sprint runs against.
+
+### *Source*.
+
+You map what the work actually requires: the knowledge, the data, the judgment, the context. Source produces a **Knowledge Map** — what exists, what's missing, who holds what in their head. An AI workflow built without Source has nothing reliable to reason against; you get hallucinations, gaps, and a system that breaks the first time a non-standard case shows up. For Meridian, Source surfaced that Elena's pricing logic lived in a 147-row spreadsheet on her desktop, that Dave Kowalski's fabrication knowledge lived in his head after thirty-one years, and that JobBOSS held the job history but had no connection to the CRM. None of that was visible to anyone but the person holding it.
+
+### *Design*.
+
+You decide who does what across the Human+AI workforce for this specific constraint. Design produces the Hybrid Accountability Chart entries for this Sprint: which functions stay human, which move to agents, where the handoffs live, who supervises the agent's output, and how exceptions get routed. Design is where the operating model gets explicit — and where most companies trying to "just build it" discover they had no operating model to begin with.
+
+### *Build*.
+
+You produce the spec and deploy the workflow into the system your team already uses. Build produces a working implementation: agent prompts, integrations, guardrails, observability, the whole working machine. The discipline of Build is that it's executing against the Design output, not improvising — the questions Build answers are *how*, not *what*. Skipping Design and starting here is the most common AI failure mode in the field.
+
+### *Deliver*.
+
+You ship it inside the org, train the people whose handoffs change, and measure the result against what Signal said it cost. Deliver is where the workflow stops being a pilot and starts being how the work gets done. Without it, you have a demo, a Slack channel, and a slide deck. With it, you have a measurable change to your operating model.
+
+### *Compound*.
+
+You capture the learning, update the infrastructure the next Sprint will use, and rank what comes next. Compound is what turns a single Sprint into a Rhythm. The investment in this Sprint accelerates the next one — because the Knowledge Map exists, because the design discipline is in place, because the team has run the full cycle once and can run it faster the second time.
+
+### How the stages *connect*.
+
+What makes this a Framework is that each stage produces something the next stage cannot do without. Signal produces a constraint statement; Source produces a Knowledge Map about that constraint; Design produces an accountability split that depends on both; Build executes against the Design; Deliver installs Build into the operating rhythm; Compound captures what was learned and feeds it into the next Sprint's Signal. Skip a stage and the next one has nothing real to work against — which is why this is a Framework rather than a checklist.
+
+{{< excalidraw ch03-stage-dependencies "Stage dependencies: each stage's output is the next stage's input. Signal produces a constraint statement; Source produces a Knowledge Map; Design produces an accountability split; Build produces a working implementation; Deliver produces an operating change; Compound produces infrastructure the next Sprint inherits." >}}
 
 Run a Sprint. Then run another. Then another. That's the Rhythm — quarterly cadence, one constraint at a time. Compound by compound, the operating model gets more explicit; each Sprint inherits the design discipline and infrastructure the previous Sprints left behind, and the work gets faster, cheaper, and more durable as it goes. *Co-Intelligence + Rhythm = Compound* — and what compounds is the operating model itself.
 
@@ -168,8 +184,7 @@ The format doesn't matter much: a spreadsheet works, a Word doc works, a literal
 ## Action Step
 Fill in a Sprint Planning Canvas for your company. Constraint in one sentence. One first-pass answer per stage. Name the Orchestrator. Book the review. A wrong first guess is better than a blank row — blanks stay blank, guesses get corrected.
 
-<!-- TODO: Add actual download link for Sprint Planning Canvas PDF -->
-[Download the blank Sprint Planning Canvas (PDF) →](https://compound.co/resources/sprint-planning-canvas)
+A blank Sprint Planning Canvas template — and the rest of the Compound resources library — will be available at *compound.co/resources* when it launches. Until then, copy the five-part structure into the tool of your choice.
 :::
 
 This chapter introduced vocabulary that the rest of the book uses constantly. The full glossary lives in the Key Terminology appendix — flip there when you need to.
