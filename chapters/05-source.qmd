@@ -5,6 +5,26 @@
 Source maps the information environment around the one constraint Signal validated. You're answering a specific question: what does our organization know about *this problem*, and where does that knowledge live? The deliverable is a one-page Knowledge Map — a six-column table (Source, Type, Owner, Status, Pipeline, Notes) that inventories every digital system, person, and gap relevant to the constraint. Skip Source and Design becomes a guessing exercise built on assumptions nobody verified.
 :::
 
+```scout-note:
+E28 (ATTRIBUTION + NEW-SECTION, LAND-WITH-MODIFICATION) — Jesse Marina/coordinator opener attribution + Julie's parallel global food safety company tribal-knowledge story.
+
+CASCADE PART A (Jesse-side attribution, this paragraph + L10 + L12 + L30 + L130):
+- Apply blended-we + single in-prose Jesse attribution at L8 opener; cascade I→we at L10, L12, L30, L130. Pattern A (preferred): "Jesse and Marina were on a call..." OR "Marina and Jesse were on a call..." Then sustain blended-we across L10 → L12 → L14. Cross-chapter consistency: Ch 2 L8 uses "Jesse was in a management meeting with Marina, his Integrator..."; Ch 4 L8 uses "Jesse was in our own L10..." — same pattern.
+- L8 contractions PRESERVE (current chapter contractions are canonical; do not regress to Julie's no-contractions source).
+- L10 "I stopped the conversation. 'We need to understand what she actually does..." → "We stopped the conversation..." or restructure to preserve cadence (Drafter choice).
+- L30 "When Marina and I mapped..." → "When we mapped..." (collective blended-we; Jesse-anchor already established at L8).
+- L130 "If I had mapped..." → "If we had mapped..." (collective blended-we); preserve developer-chutes-and-ladders cross-reference per `ahmed-story-is-chutes-and-ladders` and `pm-case-study-thread-through-book` memories; italicize *Chutes and Ladders* ONLY if proper noun reintroduced (recommend preserve current phrasing without re-introduction).
+- REJECT Julie's inline `Jesse:` and `Julie:` underline tags from redline (per Q-E21 convention).
+- PRESERVE Marina + $24K coordinator story verbatim (canonical polished replacement per commit `6c99346`).
+
+CASCADE PART B (Julie's parallel story, lands AFTER L14 closer "Mapping that flow was Source...") — see scout-note block before §5.0 H2 heading.
+
+EC1 cross-chapter: Marina anchor must inherit Ch 2 L8 attribution convention (Marina = Integrator; same canonical reference).
+```
+
+```jf-note:
+```
+
 Marina and I were on a call deciding what to do about our project coordinator. The role was costing us ~$24,000 a year. Work was falling behind. Billing was getting impacted. Signal had validated the constraint — this function was broken and it was costing us real money.
 
 But before we could decide *what* to do about it — hire, restructure, automate — I stopped the conversation. "We need to understand what she actually does. Not what's in the job description — what she actually touches, what systems she's in, what decisions she makes that nobody else makes, and what's in her head that isn't written down anywhere."
@@ -13,13 +33,139 @@ That question changed the shape of the conversation. It stopped being about whet
 
 Every modern company is an information company, whether it recognizes itself as one or not. Your CRM, your ERP, your shared drives, your inboxes — all of it is information used to make decisions. Source makes that information environment visible. Signal named the constraint. Source maps what the organization knows about it — and where that knowledge lives — before anyone designs against it. The diagnosis is not finished when the constraint is named. It's finished when the team can see — on a single page — every asset, every gap, and every piece of institutional knowledge that the constraint depends on.
 
+```scout-note:
+E28 CASCADE PART B (NEW-SECTION) — Julie's parallel global food safety company tribal-knowledge story.
+
+LANDING: NEW PARAGRAPH between L14 (chapter-thesis pivot) and L16 (§5.0 H2 heading "Diagnosis is not done until you know what you *have*.").
+
+SUBSTANCE (from `_julie/julie-redline.md:1505-1519`):
+- In M&A integration work, inherited knowledge is entirely tribal. At a global food safety company (post-Fortune-500 acquisition), process experts who had been with the parent company for twenty years held institutional memory that existed nowhere in any system. Their expertise was the documentation.
+- Load-bearing diagnostic question (PRESERVE verbatim or near-verbatim): "if this person were not here tomorrow, what would stop working?"
+- Load-bearing operator outcome (PRESERVE): "The answers were almost always more alarming than anyone expected."
+- Substance hook to chapter thesis (substance preserved; framing reworked): "The gap between what organizations think they know and what they actually have in documented, accessible form is the single most consistent finding of every... [REWORK]. Source closes that gap before it becomes a sprint failure."
+
+MODIFICATIONS:
+- FRAMEWORK-ATTRIBUTION (indirect): "every organizational design engagement I have run" → joint observational reframe with single in-prose Julie anchor. Recommended pattern: "Julie has watched the same gap land in M&A integration work outside any AI context. At a global food safety company..." or similar.
+- FORBIDDEN VOCAB (HIGH — recurring 3/3+ chapter pattern): strip "organizational design engagement"; reframe as "every M&A integration" / "every post-acquisition redesign" / "every people-systems engagement" / plain operator language.
+- CROSS-CHAPTER N-GRAM CHECK (HIGH — FOUR PRIOR a global food safety company anchors): must NOT verbatim-echo:
+  - Preface L9 (44-country / Fortune-500 / "challenge wasn't technology")
+  - Ch 1 L57 ("smaller proportional team than the pre-acquisition domestic function")
+  - Ch 2 §2.3 (graft-vs-redesign / countries / supplier networks)
+  - Ch 4 L18 (matrix-reporting / two reporting lines crossed / leaders operating inside an accountability structure)
+  DIFFERENTIATING ANGLE: inherited tribal knowledge / process experts whose expertise was the documentation / "if this person were not here tomorrow, what would stop working?" diagnostic question. Do NOT re-introduce 44-country scope or CHRO title (those are Preface + Ch 1 + Ch 4 anchors).
+- A3 (LOW): clean substance, no triplet construction; verify Drafter introduces zero.
+- A1 (CLEAN): closer "Source closes that gap before it becomes a sprint failure" is operator-direct declarative; preserve.
+- A4 (MED): "every... I have run" credentialing → strip per framework-attribution scrub; single in-prose attribution per author maximum.
+- A2 (LOW): "Source" already staked; do NOT pre-empt "Knowledge Map" capitalized naming before §5.1 defines (use plain "knowledge" / "the inventory" / "what people know").
+- A13 MEANS/ENDS-RISK (MED): chapter-opener-adjacent landing; close on operator outcome (alarming answers / gap closed before sprint failure / tribal knowledge surfaced before integration failure); name Source as the means. Julie's source already does this — preserve order: inherited tribal knowledge → diagnostic question → operator outcome → §5.0 thesis hook.
+- E60 anonymization: "a global food safety company" already conforms; "Fortune 500 parent / division" already conforms.
+- IN-PROSE ATTRIBUTION (per Q-E21): Single Julie anchor at opening; blended-we / third-person for story body. FIRST Julie-voice paragraph in Ch 5; subsequent E30 / E31 / E32 anchors should be lighter or implicit.
+
+EC1: "Source" usage matches canon (per Ch 3 §3.3 + Ch 5 In Brief) — PASS.
+
+COHERENCE: lands chapter-opener-adjacent; must read as a parallel demonstration of Source applied to M&A integration (different context from Marina/coordinator opener); single forward motion from Jesse opener → information-flow framing → Source naming → Julie's parallel → §5.0 thesis.
+```
+
+```jf-note:
+```
+
 ## Diagnosis is not done until you know what you *have*.
 
 The temptation at the end of Signal is to act. The constraint is named. The cost is quantified. The team feels the momentum and wants to move — hire someone, buy a tool, build something, anything. That instinct costs more than most teams realize.
 
 To become a Co-Intelligent Company capable of Co-Intelligent Co-Operation requires knowing what you're working with — which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and you won't get past the first design conversation, because nobody in the room will agree on what data exists, where it lives, or who holds the judgment the workflow depends on.
 
+```scout-note:
+E29 (FRAMEWORK-ADD, LAND-WITH-MODIFICATION) — TML Framework as Knowledge Map categorization. [HIGHEST PRIORITY / HIGHEST EC1 RISK IN CHAPTER]
+
+LANDING: NEW PARAGRAPH inside §5.1, between L20 (current paragraph closer "Source produces that ground truth. Skip it...") and L22 (next paragraph "This is why Source belongs in Diagnose...") — Pattern A (preferred). Alternative landing: new H3 between L22 and L24 (Pattern B fallback).
+
+SUBSTANCE (from `_julie/julie-redline.md:1535-1551`):
+Knowledge sorts into three layers:
+- TASK knowledge = documented steps, SOPs, process maps — work that can be written down and followed.
+- MANAGEMENT knowledge = decision rights, escalation paths, governance rules.
+- LEADERSHIP knowledge = judgment, relationships, context, pattern recognition.
+
+Empirical pattern: Task knowledge easiest to capture (most common in systems); Management knowledge partially documented (inconsistently followed); Leadership knowledge almost never exists outside the people who hold it.
+
+LOAD-BEARING CANONICAL-DEFINITION CLOSING CLAUSE (PRESERVE — matches manifest E36 canon): "AI can reliably handle Task knowledge, can assist with Management knowledge, and requires human oversight for Leadership knowledge at every step."
+
+EC1 CANONICAL-DEFINITION VERIFICATION (MANDATORY per scout.md §5 + Ch 2 lessons-learned EC1 update):
+- Canonical TML per manifest E36 + voice charter §3 + Ch 2 L259 forward-reference: Task → Fully Automatable; Management → AI-Assisted; Leadership → Human Judgment.
+- Julie's E29 source TML (knowledge lens): Task knowledge / Management knowledge / Leadership knowledge + AI-handling mapping (handle / assist / oversight).
+- EC1 VERDICT: PASS. Names match canon. AI-handling mapping matches canon. Lens difference (knowledge categorization in Ch 5 vs. work categorization in Ch 6b) is COMPLEMENTARY, NOT CONTRADICTORY. Both lenses are valid applications of the same canonical framework.
+- NO AUTHOR DECISION REQUIRED at this gate. Drafter executes per acceptance criteria below.
+
+MODIFICATIONS:
+- FRAMEWORK-ATTRIBUTION (DIRECT — HIGH): "Julie's TML framework gives Source its diagnostic structure" → joint canonical-vocabulary introduction. Recommended: "The **TML framework** (Task / Management / Leadership) gives Source its diagnostic structure." OR "Knowledge sorts into three layers — Task, Management, Leadership. The **TML framework** is the lens." TML is joint book IP per manifest §57 global rule + framework-attribution-rule memory. Origin-credit to Julie's CHRO practice acceptable as one sentence but never as her individual instrument; recommend skip individual attribution at framework-introduction sentence.
+- A2 FIRST-DEFINITION LOAD-BEARING (CRITICAL): TML is being first-introduced load-bearing in Ch 5 (Ch 2 L259 was forward-reference). Definition must be precise enough to support Ch 6b's work-lens application (E36 separate bead). Acceptance criteria: (a) define TML as three-category framework with Task/Management/Leadership names verbatim; (b) define each category by what it is and how AI handles it; (c) frame as knowledge lens; (d) signal that the same framework applies to work in Ch 6b (forward reference acceptable single instance).
+- A3 STACKED TRIPLET (MED): three-layer framework definition acceptable (it IS the framework). SECOND WAVE of parallel description ("Task knowledge is the easiest to capture... Management knowledge is partially documented... Leadership knowledge almost never exists...") is A3 trap. RESOLUTION: collapse to SINGLE SENTENCE with semicolon bridges — "Task knowledge is the easiest to capture and the most common to find in systems; Management knowledge is partially documented and inconsistently followed; Leadership knowledge almost never exists outside the people who hold it."
+- A1 (CLEAN): no antithesis closer; preserve operator-direct closing.
+- FORBIDDEN VOCAB (MED): strip "organizational design foundation of the knowledge mapping work" → "the design logic of Source" / "the foundation of the knowledge mapping work" / remove entirely.
+- A4 (LOW): framework-attribution scrub addresses; no individual credentialing.
+- A13 MEANS/ENDS-RISK (LOW): close on AI-handling mapping (operator outcome — what AI handles, assists, oversees) rather than abstract "diagnostic structure" (system-as-destination); Julie's source already lands this; preserve.
+- IN-PROSE ATTRIBUTION: light; framework lands as joint vocabulary.
+
+CROSS-CHAPTER COHERENCE (flagged for separate Drafter pass, NOT BLOCKING E29 landing):
+- Ch 2 L259 forward-reference currently says "Chapter 6 introduces the full design instrument — the **TML framework** (Task / Management / Leadership)..." After E29 lands TML in Ch 5, this forward-reference needs update to: "Chapter 5 introduces the **TML framework** (Task / Management / Leadership) as the lens for organizing what the company knows; Chapter 6 applies the same framework to the work itself."
+- Ch 6b currently uses four-category Work Deconstruction (Human judgment required / Agent-assisted / Fully automatable / Workflow automation only). E36 bead (separate execution) will align Ch 6b's work-lens to TML's three categories (Task→Fully Automatable, Management→AI-Assisted, Leadership→Human Judgment). Until E36 lands, both can co-exist; Ch 5 E29 is the canonical source-of-record.
+- Glossary E58 will add canonical TML definition; inherits from Ch 5 E29.
+
+A2 DISCIPLINE: "Knowledge Map" capitalized is acceptable in E29 IF the §5.1 H2 heading is treated as defining the deliverable in the paragraph immediately following. Drafter discretion. Do NOT pre-empt PIS (defined via E31).
+
+LANDING PATTERN CHOICE:
+- Pattern A (RECOMMENDED): paragraph inside §5.1, between L20 and L22. TML lands as the lens that explains HOW Source produces ground truth.
+- Pattern B (fallback): new H3 between L22 and L24, titled "Three layers of *knowledge*" or "The *TML* lens".
+```
+
+```jf-note:
+```
+
 This is why Source belongs in Diagnose, not Execute. The diagnosis includes the information environment. Until you've mapped what you have, the constraint is a named problem without a buildable path forward. Once the map exists, it becomes a design problem — scoped, specific, and grounded in reality.
+
+```scout-note:
+E31 (FRAMEWORK-ADD, LAND-WITH-MODIFICATION) — PIS Framework: Source = Identify phase of Problem/Identify/Solution.
+
+LANDING: NEW H2 between L22 (§5.0 closer "Once the map exists, it becomes a design problem...") and L24 (§5.1 H2 heading "Create a *Knowledge Map*") — Pattern A (PREFERRED, because PIS is a framework deserving its own H2 visual hierarchy). Alternative landing: paragraph in §5.0 between L22 and L24 (Pattern B fallback). H2 TITLE FLAGGED FOR DRAFTER: "The *PIS* lens." or "Source is the *Identify* phase." or similar (sentence case + period + one italic emphasized word per voice charter §2).
+
+SUBSTANCE (from `_julie/julie-redline.md:1590-1604`):
+- PIS = Problem / Identify / Solution three-phase diagnostic.
+- PHASE MAPPING (PRESERVE verbatim or near-verbatim):
+  - PROBLEM = Signal (the validated constraint).
+  - IDENTIFY = Source (everything the organization knows about that problem — where the knowledge lives, who holds it, what is at risk if they leave, and what is missing that Build will need).
+  - SOLUTION = Design + Build (Solution comes later).
+- Sequencing discipline (PRESERVE): "Running Source without having completed Signal is the [same discipline as / structural equivalent of] prescribing before diagnosing. The constraint has to be named before the knowledge inventory begins, because the inventory is shaped by the constraint."
+- Operator-direct closer (PRESERVE verbatim): "A Source run on the wrong constraint is a well-organized inventory of the wrong problem."
+
+EC1 CANONICAL-DEFINITION VERIFICATION (MANDATORY per scout.md §5):
+- Canonical PIS per manifest E31: Source = the **I**dentify phase of **P**roblem/**I**dentify/**S**olution.
+- Julie's E31 source: Problem = Signal-validated constraint; Identify = Source; Solution = Design + Build.
+- EC1 VERDICT: PASS. Phase names match. Phase-to-Compound-stage mapping matches.
+- NO AUTHOR DECISION REQUIRED at this gate.
+
+MODIFICATIONS:
+- FRAMEWORK-ATTRIBUTION (DIRECT — HIGH): "Julie's Problem/Identify/Solution framework gives the Source conversation its structure" → joint canonical-vocabulary introduction. Recommended: "The **Problem/Identify/Solution (PIS) framework** gives the Source conversation its structure." OR "Source maps onto a three-phase diagnostic: Problem / Identify / Solution. **PIS** is the framework name." PIS is joint book IP per manifest §57 global rule.
+- A2 FIRST-DEFINITION LOAD-BEARING (HIGH): PIS is being first-introduced load-bearing in Ch 5 (no prior references). Acceptance criteria: (a) define PIS by three phases verbatim (Problem / Identify / Solution); (b) map each phase to its Compound stage(s); (c) frame as diagnostic lens underneath the first three stages of the Sequence.
+- A3 (LOW): three-phase enumeration is observational framework; do NOT add second wave of parallel structure.
+- A1 (CLEAN): closer is operator-direct declarative; preserve.
+- FORBIDDEN VOCAB (MED): strip "organizational design equivalent of prescribing before diagnosing" → "the same discipline as prescribing before diagnosing" (RECOMMENDED) or "the structural equivalent of."
+- A4 (LOW): framework-attribution scrub addresses; no individual credentialing.
+- A13 MEANS/ENDS-RISK (MED — chapter-framing-adjacent landing): close on operator outcome (wrong-problem inventory = wasted Sprint); name PIS as the means; Julie's source already lands this — preserve order.
+- IN-PROSE ATTRIBUTION: light; framework lands as joint vocabulary. Acceptable single origin-credit to Julie's CHRO practice but not required.
+
+CROSS-CHAPTER COHERENCE (flagged for separate Drafter pass, NOT BLOCKING E31 landing):
+- Glossary E58 will add canonical PIS definition; inherits from Ch 5 E31.
+- Ch 3 §3.3 Sequence (Signal/Source/Design/Build/Deliver/Compound) is NOT re-introduced in E31. PIS is a complementary three-phase lens, not a replacement of Ch 3's six-stage framework. Reference is one-line ("Signal names the Problem; Source Identifies what is known; Design and Build are the Solution").
+
+A2 DISCIPLINE: do NOT pre-empt Knowledge Map naming (defined at §5.1 L24 immediately after). Reference is "the inventory" / "what the organization knows" / "the Identify phase produces."
+
+LANDING PATTERN CHOICE:
+- Pattern A (RECOMMENDED): NEW H2 between L22 and L24. PIS gets its own H2 visual hierarchy as the diagnostic-sequencing lens that frames the rest of the chapter.
+- Pattern B (fallback): paragraph in §5.0 between L22 and L24.
+```
+
+```jf-note:
+```
 
 ## Create a *Knowledge Map*
 
@@ -55,6 +201,43 @@ Name every person whose judgment the constraint workflow depends on. For each on
 :::
 
 **Pass 3 — Missing.** Look at what's absent. What would a designer need to know to solve this constraint that isn't represented anywhere in the first two passes? What question would someone ask about this workflow that your current sources can't answer? What decision is currently made by gut feel that should be made by data? Add those rows as Missing sources, and note what type they *should* be — digital system, documented process, captured expertise — and what it would take to create them.
+
+```scout-note:
+E32 (NEW-SECTION, LAND-WITH-MODIFICATION) — Julie's "Missing sources column is most important" framing.
+
+LANDING: NEW PARAGRAPH inside §5.1, between L57 (Pass 3 — Missing paragraph closer "Add those rows as Missing sources, and note what type they *should* be...") and L59 (Action Step "Review your map from Pass 1 and Pass 2...").
+
+SUBSTANCE (from `_julie/julie-redline.md:1611-1623`):
+- The Missing sources column is the most important of the three Knowledge Map sections — because Missing sources are where the highest-risk gaps live.
+- TWO CATEGORIES OF MISSING SOURCES (observational two-option, NOT triplet — PRESERVE):
+  - Decisions made by leaders who have since left = MANAGEMENT KNOWLEDGE loss.
+  - Customer/market intelligence never systematically captured = LEADERSHIP KNOWLEDGE that existed in individuals no longer available.
+- Operator outcome (PRESERVE verbatim): "The Knowledge Map's missing sources column is where the sprint finds its highest-risk gaps. Every missing source is a potential sprint failure mode."
+- Operator-direct closer (A1 CLEAN — PRESERVE verbatim): "Name them before Build begins, not after deployment reveals them."
+
+MODIFICATIONS:
+- FRAMEWORK-ATTRIBUTION (DIRECT — MED): "From an organizational design perspective" + "Julie's practice in every organizational design engagement" DOUBLE individual attribution → joint observational with single in-prose Julie anchor. Recommended pattern: "From a people-systems lens, the Missing sources column is the most important. Julie has watched every M&A integration produce the same finding: the highest-risk gaps are what the organization does not know it does not know."
+- FORBIDDEN VOCAB (HIGH — recurring 3/3+ chapter pattern): strip BOTH "organizational design perspective" AND "organizational design engagement"; replace with "people-systems lens" / "knowledge inventory practice" / "every M&A integration" / "every post-acquisition assessment" / plain operator language. Drafter scanner gate MUST catch zero "organizational design" instances.
+- A3 THIRD-OPTION TRIPLET CONVERSION RISK (MED): PRESERVE Julie's two-category Missing sources frame (Management knowledge loss + Leadership knowledge in individuals no longer available). Do NOT add a third category (e.g., do not introduce "Task knowledge that was never documented" as a third Missing category — Task knowledge is rarely Missing per TML empirical pattern).
+- A1 (CLEAN): closer is operator-direct declarative; preserve verbatim.
+- A4 (LOW): "Julie's practice in every... engagement" credentialing → strip; mitigated by Preface + Ch 1 + Ch 4 + E28 + E30 attribution setup.
+- A2 (CLEAN): "Missing sources" canonical at L57; "Management knowledge" + "Leadership knowledge" canonical post-E29 landing. Verify Drafter does NOT redefine.
+- A13 MEANS/ENDS-RISK (LOW): closer lands operator outcome (every missing source = potential sprint failure mode); name Build as the means by which deployment reveals them. CLEAN.
+
+TML CROSS-REFERENCE (CRITICAL — post-E29 landing):
+E32 explicitly invokes TML categories (Management knowledge loss + Leadership knowledge in individuals no longer available). Post-E29 landing, the TML framework is canonical. E32 should REFERENCE TML EXPLICITLY to anchor cross-section coherence — e.g., "Per the TML framework introduced earlier, Missing sources cluster in two of the three layers: Management knowledge (decisions made by leaders who have since left) and Leadership knowledge (customer or market intelligence that existed in individuals no longer available). Task knowledge, by contrast, is the layer most commonly captured in systems — its absence is usually a documentation gap, not a knowledge loss."
+
+CROSS-CHAPTER N-GRAM CHECK: verify no verbatim echo with §5.7 closer at L185 ("Source is not where data infrastructure gets built. Source names the gaps.") — closest semantic ground. Check for overlap on "gap" / "Source names" / "Build begins".
+
+IN-PROSE ATTRIBUTION: light; implicit via context PREFERRED. E32 is the FOURTH Julie-voice paragraph in the chapter (after E28, E29 origin-credit if any, E30); attribution frequency must compress.
+
+EC1: "Missing sources" canonical per L57 — PASS; E32 elaborates, does NOT redefine.
+
+DEPENDENCY: E29 must execute first (TML vocabulary canonical for E32's reference).
+```
+
+```jf-note:
+```
 
 :::{.callout-note}
 ## Action Step
@@ -124,6 +307,43 @@ Digital sources are the ones an audit naturally finds — the CRM, the ERP, the 
 Organic sources are people. The ops manager is the source of truth for how the quoting process runs — including the three exceptions she handles every week that have never been documented. The salesperson who has worked the top account for nine years is the source of truth for that customer's pricing tolerance. The Knowledge Map treats these people as sources in the formal sense — named, located, and described — because operationally they are. Pretending otherwise is the reason data audits produce libraries that don't match the business.
 
 At-risk sources are the third category and the highest-stakes piece of Source work. An at-risk source is institutional knowledge that lives in one person's head and is about to leave — through a planned exit, a retirement, a role change, or a reorg. The cost of losing it is invisible until it's gone. By the time the gap shows up in the work, the person who could have filled it is no longer reachable. Source is where at-risk sources get named, prioritized, and captured before they walk out the door. For most operating companies this is the single most consequential thing Source does.
+
+```scout-note:
+E30 (NEW-SECTION, LAND-WITH-MODIFICATION) — Julie's senior pricing strategist At-Risk Source story.
+
+LANDING: NEW PARAGRAPH inside §5.4 "People don't have *APIs*", between L126 (at-risk-source paragraph closer "For most operating companies this is the single most consequential thing Source does.") and L128 (next paragraph "When you're building your map, ask explicitly...").
+
+SUBSTANCE (from `_julie/julie-redline.md:1565-1580`):
+- Insight from M&A integration practice: in every acquisition, the most at-risk knowledge is NEVER the knowledge anyone thought to protect. Documented processes were protected. Undocumented judgment calls were not.
+- Concrete story anchor: at a global food safety company, the single highest-risk knowledge asset in the acquired integration was A SENIOR PRICING STRATEGIST who held in his head TWENTY YEARS of customer-specific pricing exceptions — decisions made individually over decades, never consolidated into any system.
+- Source-discipline outcome (PRESERVE verbatim or near-verbatim): "He was not identified as an at-risk knowledge source until Source was run. When he was identified, the team had FOUR WEEKS to work with him before he retired. They captured everything."
+- Structural cost-of-avoidance math (PRESERVE): "The Source discipline prevented a loss that would have taken TWO YEARS to reconstruct and would have produced PRICING ERRORS THROUGHOUT THE TRANSITION PERIOD."
+
+MODIFICATIONS:
+- FRAMEWORK-ATTRIBUTION (INDIRECT — MED): "Julie's M&A integration practice identified a specific pattern in every acquisition" → joint observational with single in-prose Julie anchor. Recommended: "Julie has watched the same pattern in every M&A integration: the most at-risk knowledge is never the knowledge anyone thought to protect."
+- A1 AI-TELL CLOSER FIX (HIGH): Julie's source closer "That is what At-Risk Source does: it names what nobody knew they were about to lose." is the AI-tell mission-statement closer pattern (forbidden per voice charter §4 A1 / A3-tag-closer). PRESERVE SUBSTANCE (At-Risk Source names what nobody knew they were about to lose); CUT "That is what" cadence. Acceptable rewrites: "At-Risk Source names what nobody knew they were about to lose." (simple declarative) OR combine with operator-math closer: "Source prevented a two-year reconstruction and pricing errors throughout the transition. That's the operator math of At-Risk Source."
+- N-GRAM COHERENCE CHECK (MED): verify no verbatim echo with Ch 5 L161 Meridian Sprint beat ("Dave — Organic, at-risk, four years to retirement with an undocumented estimation method"). Differentiate by specifics:
+  - E30: TWENTY YEARS / pricing exceptions / FOUR WEEKS / two years to reconstruct.
+  - L161 Dave: FOUR YEARS to retirement / fabrication estimation / 31 years experience.
+- A3 (LOW): clean substance, no triplet construction; verify Drafter introduces zero.
+- A4 (MED): "Julie's M&A integration practice" credentialing → strip per framework-attribution scrub; mitigated by Preface + Ch 1 + Ch 4 + E28 setup.
+- A2 (CLEAN): "At-Risk Source" canonical at L126 (E30 lands AFTER L126); "Source" canonical; verify Drafter does NOT redefine.
+- A13 MEANS/ENDS-RISK (LOW): closer lands operator outcome (two years to reconstruct avoided / pricing errors avoided / four weeks captured everything); CLEAN per Julie's source — preserve order.
+- FORBIDDEN VOCAB: "M&A integration practice" / "acquisition" / "transition period" — plain operator language; acceptable. "Organizational design" NOT present in this source. Watch for "transformation" / "leverage" / "synergy" / "alignment" — none in source; verify Drafter introduces zero.
+- E60 anonymization: "a global food safety company" already conforms.
+- IN-PROSE ATTRIBUTION: light; implicit via context PREFERRED (global food safety company anchor already established as Julie's CHRO context per Preface + Ch 1 + Ch 2 + Ch 4 + E28). Single Julie anchor maximum. THIRD Julie-voice paragraph in chapter (after E28 + E29 origin-credit if any); attribution frequency compresses.
+
+DO NOT PRE-EMPT:
+- §5.5 "Transcripts" framing (L132-L149): "team had four weeks to work with him... they captured everything" is implicitly a transcripts-as-extraction beat, but explicit transcripts framing lands at §5.5. Verify Drafter does NOT introduce "transcript" / "structured interview" vocabulary in E30.
+- §5.7 "Knowledge management" framing (L165-L185): "pricing errors throughout the transition period" is implicitly a knowledge-management beat, but explicit knowledge-management framing lands at §5.7.
+
+DEPENDENCY: E28 (Julie-voice anchor established); E29 (TML vocabulary canonical — E30 reinforces At-Risk Source as a Leadership-knowledge case by implicit reference if needed).
+
+EC1: "At-Risk Source" canonical per L126 — PASS; E30 elaborates with concrete story, does NOT redefine. "Source" canonical — PASS.
+```
+
+```jf-note:
+```
 
 When you're building your map, ask explicitly: who on this list is a single point of failure? Which organic sources are held by one person with no backup, no documentation, and a reason they might not be here in twelve months? Name them. Mark them. That marking is what makes the at-risk category actionable — because once it's on the map, Design can decide what to do about it.
 
