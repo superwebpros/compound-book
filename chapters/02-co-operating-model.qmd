@@ -26,7 +26,7 @@ Plan: _julie/per-chapter/02-co-operating-model.md
 ```
 
 ```jf-note:
-
+Direction approved.
 ```
 
 We were in a management meeting — Marina, my Integrator, and I — going through the accountability chart. We had a team member, a marketing coordinator, who was good at organization. She could manage processes, track content calendars, coordinate subcontractors. But she was not revenue-positive and had not been for months. She was spending most of her time on content production — editing videos, formatting posts — work that took her hours and still was not shipping fast enough to keep up with the pace we needed. The work was piling up behind her, not because she was not working hard, but because the role as designed required one person to do what should have been running in parallel across multiple workstreams.
@@ -72,7 +72,7 @@ Plan: _julie/per-chapter/02-co-operating-model.md
 ```
 
 ```jf-note:
-
+I'm not saying its a hard and fast rule not to include 'work deconstruction' - just if we do, we have to call it out with a one sentence description and call out that we'll talk more about it later. The boundary is making sure that we don't use terms without making them clear to the user.
 ```
 
 The diagnosis was the easy part. You have an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. A structure you can draw on a whiteboard and start running against on Monday. That structure has a name in this book. We call it the Co-Operating Model. It is what a Co-Intelligent Company is built on, and it is what makes *Co-Intelligent Co-operation* — humans and AI working the same problems together — something other than an accident.
@@ -120,6 +120,7 @@ Plan: _julie/per-chapter/02-co-operating-model.md
 ```
 
 ```jf-note:
+Also this sentence "A structure you can draw on a whiteboard and start running against on Monday." smacks of AI because it makes it sound like someone will literally go to a white board and draw this out and then it'll magically start working. That's not realistic.
 
 ```
 
@@ -210,7 +211,7 @@ Plan: _julie/per-chapter/02-co-operating-model.md
 ```
 
 ```jf-note:
-
+It's also important to note the "I" vs "we" language that a skill should (have) cauth/catch. I don't see a note to this effect from Scout.
 ```
 
 Co-Intelligence is different. The human and the agent are both inside the loop. The work itself gets re-shaped around the fact that two kinds of intelligence are now executing it. The structure is built to evolve — because the agent gets smarter every quarter, the human's task space shifts as a result, and the design has to keep pace. The *Co* is what gives the company the mechanism to keep improving — as the agent gets smarter, the design adjusts with it. A graft produces a frozen artifact. Co-Intelligence produces a living system.
@@ -221,7 +222,7 @@ The knowledge management story from the preface is the graft model in full: froz
 
 ## What each one *brings*.
 
-The agent is idle until someone tells it what to do. It has no curiosity. It has no agenda. It does not know what quarter you're in, what your biggest customer is threatening, or what "good" looks like for your company this year. It knows none of that until you transmit it.
+The agent is idle until triggered. It has no curiosity. It has no agenda. It takes no initiative. It does not know what quarter you're in, what your biggest customer is threatening, or what "good" looks like for your company this year. It knows none of that until you transmit it.
 
 Humans carry a **world model** — the accumulated understanding we build constantly from every conversation, every mistake, every relationship, every quarter we've lived inside the business. That model tells us what matters, what a decision costs, what a number means when it lands inside the context of everything else we know. We use it so automatically we forget it is there.
 
@@ -285,6 +286,10 @@ The human side is almost entirely verbs of judgment and direction — *decides, 
 The two columns are the load-bearing logic of the model. A company that lets agents start deciding what's worth solving has lost the plot — the agent does not know what business you are in, what your reputation is worth, or what a bad week feels like with your largest customer. A company that keeps the human inside the documentation and the first-pass drafting has wasted the model — that work has just moved sideways at high cost.
 
 When you get the split right, the company compounds. The human's hours flow into the work only humans can do: deciding, directing, pricing, owning, coaching. The agent's hours flow into everything else, at a cost and speed that re-prices the underlying economics of the business. Both sides get compounding returns every quarter, because the structure was built to absorb improvement on both sides.
+
+```jf-note:
+I'm a bit surprised there isn't more content/context from Julie here. This is her lane of expertise. I want to make sure we aren't missing valuable content/context.
+```
 
 :::{.callout-tip}
 ## Pro Tip
