@@ -29,6 +29,7 @@ Coherence: must land FIRST (sets voice for E22 + E23). L26 callback preserves "c
 ```
 
 ```jf-note:
+Approved
 
 ```
 
@@ -63,6 +64,7 @@ Dependency: E21 (blended-we voice established).
 ```
 
 ```jf-note:
+Approved
 
 ```
 
@@ -97,7 +99,7 @@ Dependency: E21 (chapter voice established), E22 (Julie's voice established; E23
 ```
 
 ```jf-note:
-
+"The order is the argument" still doesn't make sense to me. Can we find a way to rephrase this? Otherwise, teh rest is approved.
 ```
 
 Building before diagnosing is the same mistake as framing a house before pouring the foundation. The walls go up. The roof goes on. It looks like progress right up until the moment the structure has to carry weight — and then it does not. Construction has rules about the order of operations because the order is load-bearing. So does this.
