@@ -5,6 +5,33 @@
 This chapter maps the rest of the book. You'll learn four vocabulary terms (Framework, Sequence, Rhythm, Sprint), the six stages of the Compound Sprint, the Diagnose/Execute split that prevents the most common failure mode, and the Sprint Planning Canvas that turns all of it into a one-page starting point. Treat this as the page you flip back to when you forget which word means what.
 :::
 
+```scout-note:
+E21 — ATTRIBUTION (LAND-WITH-MODIFICATION)
+Type: Voice shift on opener (L8–L14) plus L26 callback. Path A — Voice Shifter solo.
+
+Apply Q-E21 convention: blended-we + single in-prose attribution naming Jesse once.
+Reject Julie's inline `Jesse:` tag (julie-redline.md:631).
+
+Substance to preserve verbatim: full discovery-call story (the prospective client on a video call, 20-minute conversation, "Can we just build it? I just need this thing built." beat); L10 "She's seen demos / She's read the case studies" cadence (grandfathered triplet, do NOT modify); L12 build-first failure-mode paragraph; L14 "I didn't tell her... let's start at Signal" pivot; L14 closer "If we'd built what she came in asking for, we'd have solved the wrong problem and charged a lot to do it."
+
+Pattern A (preferred, parallels Ch 2 E16): "Jesse was on a discovery call. She's on the screen and he can tell from the way she's sitting that she's already made up her mind. We've been talking for maybe twenty minutes..." — single Jesse-named opener, then sustain blended-we / third-person through L10, L12, L14.
+Pattern B (alternative): "Jesse was on a discovery call. [existing L8 prose as-is in first-person singular]" — single attribution sentence prefix, preserve existing cadence.
+
+L26 cascading shifts:
+- "the chutes-and-ladders problem I described at the start of this book" → "the chutes-and-ladders problem we described at the start of this book" (joint Preface authorship).
+- "the only reason what came next worked is because I solved the problem in a specific order" → "...because Jesse solved the problem in a specific order" (light in-prose attribution).
+
+Preserve current chapter contractions; do NOT regress to Julie's no-contraction source phrasing.
+
+Anti-pattern risk: A4 low; A3 grandfathered at L10 (do not modify, do not introduce new triplets in the I→we conversion); A5 low; A13 indirect (L16 chapter-thesis line grandfathered).
+Framework-attribution rule: N/A.
+Coherence: must land FIRST (sets voice for E22 + E23). L26 callback preserves "chutes-and-ladders" phrase verbatim (canonical name per memory `ahmed-story-is-chutes-and-ladders`).
+```
+
+```jf-note:
+
+```
+
 She's on the screen and I can tell from the way she's sitting that she's already made up her mind. We've been talking for maybe twenty minutes — her company, her bottlenecks, what she's hoping AI can fix — and then she leans forward and says it: "Can we just build it? I just need this thing built."
 
 I know exactly what she means. She's seen demos. She's read the case studies. She has a clear picture in her head of the tool that's going to solve her problem, and she wants to stop talking about it and start building it. That's not impatience — that's the instinct of someone who has run a business. When you know what you want, you build it.
@@ -13,11 +40,65 @@ But I've also watched what happens when you start there. The build does not go w
 
 I didn't tell her that on the call. I said: let's start at Signal. She said: okay. We did. What she found there surprised her. The constraint she'd been carrying around in her head for six months wasn't the real constraint — it was a symptom of something two steps upstream. If we'd built what she came in asking for, we'd have solved the wrong problem and charged a lot to do it.
 
+```scout-note:
+E22 — NEW-SECTION (LAND-WITH-MODIFICATION)
+Type: Julie's "20 years of ERP / restructuring / acquisition failures" response paragraph. Path A — Drafter solo. HEAVY REWRITE per risk-map line 110.
+
+Source: julie-redline.md:640–658.
+
+Substance to preserve: 20-year pattern observation (the instinct to move to solution before diagnosis is not unique to AI; it is the most common and most expensive mistake in organizational change); the diagnosis-as-invisible-work claim (diagnosis gets skipped because it feels slow, abstract, and like something that does not produce visible output); the operator-math closer (twelve months later, they discovered they had built the wrong thing at great expense); the Signal forward reference: "Signal exists to prevent that. It is the discipline of refusing to build until the problem has been precisely named and its cost has been quantified." (canonical Signal deliverable language — preserve verbatim).
+
+Modifications (mandatory):
+1. Framework-attribution scrub: reframe "I have had a version of this conversation in every major organizational initiative I have ever led" → joint blended-we ("We've watched...", "Every major implementation failure we've been called in to salvage..."). Diagnosis-before-build is joint book IP, not Julie's individual instrument.
+2. A3 triplet collapse: ERP / restructurings / acquisitions enumeration → Pattern B (one example + generalizing list) OR Pattern C (strip entirely). Risk-map directive: "Cut the failure-pattern hedge-list. Lead with one specific company."
+3. MEANS/ENDS-RISK (§5 mandatory): close on operator outcome (twelve months in, built the wrong thing at great expense), name Signal as the means. Do NOT duplicate L16 chapter-thesis pivot ("the conversation this chapter exists to prevent").
+4. Cross-chapter n-gram avoidance: must NOT duplicate Ch 1 L21 "We've watched this same pattern for two decades" verbatim. Differentiated phrasing required.
+5. Single in-prose attribution anchoring Julie's CHRO/org-design lens (single per author maximum); no inline `Julie:` tag.
+6. Forbidden vocab grep mandatory: zero "transformation/transformative" (3/3 chapter pattern per lessons-learned), "leverage", "synergy", "alignment", "augment".
+
+A2 discipline: forward-reference "Signal" only (already named at L14, defined at L57). NO Framework / Sequence / Sprint / Rhythm / HAC / TML / Compound Sprint as load-bearing carriers (defined at L41–L44 / downstream chapters).
+Anti-pattern risk highest: A3 + A4 (credentialing-adjacent) + A5 closer cadence + A13 means/ends + framework-attribution + forbidden vocab leakage.
+Coherence: lands between L14 ("let's start at Signal" pivot) and L16 (chapter-thesis pivot). Close at the *stage* level (Signal); leave the *chapter* level for L16.
+Dependency: E21 (blended-we voice established).
+```
+
+```jf-note:
+
+```
+
 That is the conversation this chapter exists to prevent you from having with yourself.
 
 ## The order is the *argument*.
 
 Most AI initiatives skip the diagnosis and start at Build. A tool gets chosen, a budget gets spent, a workflow gets launched — and around month nine the CEO is sitting in a meeting trying to explain why the AI line item produced no operational result. The cause is not the tool. The cause is the order.
+
+```scout-note:
+E23 — NEW-SECTION (LAND-WITH-MODIFICATION)
+Type: Julie's "diagnose before prescribe / thirty-year-old org-design principle" extension. Path A — Drafter solo. HEAVY REWRITE per risk-map lines 111–112. HIGHEST anti-pattern density of any Ch 3 E-row.
+
+Source: julie-redline.md:668–678.
+
+Per Q-E23 (resolved): "The order is the *argument*" at L18 is Jesse's existing coined section heading; Julie is EXTENDING the argument, not importing the phrase. Heading stays. Author jf-note signal ("If I made a phrase and don't remember it, its not a good phrase. NEeds to be revised.") is a soft post-merge author follow-up on the heading phrase itself — NOT a blocker on E23 substance landing.
+
+Substance to preserve: the diagnose-before-build principle is not new and is not a technology insight — it is an organizational design principle that is at least thirty years old; the principle anchors the §3.1 argument substantively before the construction metaphor (L22) cashes it out as image and the chutes-and-ladders callback (L26) cashes it out as concrete operator history.
+
+Modifications (mandatory):
+1. A3 triplet collapse (ACUTE): "Diagnose before you prescribe. Understand the system before you change it. Map the work before you redesign it." → "Diagnose before you prescribe." only. Cut the two paraphrases. Risk-map directive: "cut the triplet."
+2. Framework-attribution scrub (paired Julie/Jesse personal-discovery framing): Julie's source has "Julie has applied this principle in every organizational design engagement she has led. Jesse discovered it when he ran his own company's first sprint and found that the constraint he thought he was solving was a symptom of a different constraint two steps upstream." This is BOTH an A3 constructed parallel AND a framework-attribution violation. The diagnose-before-prescribe principle is org-design field canon — neither author invented it. Reframe to joint book IP extending the field's principle. Pattern B preferred: single in-prose anchor per author maximum (Julie's org-design context + Jesse's first-sprint discovery), no "applied... in every engagement" or "discovered it when..." individual-discovery framing.
+3. MEANS/ENDS-RISK (§5 mandatory): closer "The order is not a preference. The order is the reason it works." → "The order is not a preference. The order is the reason the work compounds." (operator outcome; vocabulary-consistent with canonical Equation at L171).
+4. A1 antithesis discipline: "X is not A. X is B" closer acceptable as single instance in §3.1 (verify no second antithesis in E23 body).
+5. A2 coined-term discipline: NO Framework / Sequence / Sprint / Rhythm / HAC / TML / Compound Sprint capitalized as load-bearing carriers (first capitalized "Framework" appears at L24, AFTER E23's landing). Plain operator language: "the order" / "the principle" / "the work" / "the result."
+6. Forbidden vocab grep mandatory: zero "transformation/transformative", "leverage", "synergy", "alignment"; "organizational design" allowed sparingly in body, NEVER in heading.
+
+Coherence: lands AFTER L20 (the "cause is the order" hammer) and BEFORE L22 (the construction metaphor). Must NOT pre-empt construction metaphor (no "build before X" / "construct before Y" cadence in E23; use org-design verbs only). Must NOT pre-empt chutes-and-ladders callback at L26 — E23's Jesse-anchor is *the first sprint at his company* (the discovery moment), distinct from the chutes-and-ladders/developer-departure Preface story (the origin moment). Preserve both anchors; do not blend.
+
+Anti-pattern risk highest: dual A3 (principle triplet + paired-attribution parallel) + framework-attribution + A13 means/ends + A1 antithesis discipline + A2 coined-term discipline + A4 credentialing-adjacent.
+Dependency: E21 (chapter voice established), E22 (Julie's voice established; E23 inherits calibrated attribution frequency, lighter attribution to avoid over-credentialing).
+```
+
+```jf-note:
+
+```
 
 Building before diagnosing is the same mistake as framing a house before pouring the foundation. The walls go up. The roof goes on. It looks like progress right up until the moment the structure has to carry weight — and then it does not. Construction has rules about the order of operations because the order is load-bearing. So does this.
 
