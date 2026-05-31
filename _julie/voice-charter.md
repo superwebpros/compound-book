@@ -64,10 +64,16 @@ Authoritative source: `book-rewrite-brief.md` lines 27–137. Confirmed consiste
 
 ### Canonical (use these)
 
-- **Co-Intelligent Company** — what the reader's company becomes.
-- **Co-intelligence** — humans + AI as one system, not two parallel tracks.
-- **Co-Intelligent Co-Operation** — the relational frame (and the book title).
-- **Co-Operating Model** — the structural frame.
+**Capitalization rule (locked 2026-05-31):** every "Co-Intelligent" / "Co-Intelligence" / "Co-Operation" / "Co-Operating" form uses **capital I and capital O**. The capital-letter family is the canonical Compound brand convention. Author flagged inconsistency between earlier charter wording ("Co-intelligence" lowercase i) and the glossary + Equation ("Co-Intelligence" capital I); resolved to capital I across the board.
+
+- **Co-Intelligent Company** — what the reader's company becomes (capital I).
+- **Co-Intelligence** — humans + AI as one system, not two parallel tracks. The system half of the Equation. Capital I.
+- **Co-Intelligent Co-Operation** — the relational frame (and the book title). Capital I, capital O.
+- **Co-Operating Model** — the structural frame. Capital O.
+
+**Adjectival form:** *Co-Intelligent organization* (capital I, lowercase noun) is acceptable when "organization" is the noun. *Co-Intelligent Company* is preferred when "Company" is doing branded work.
+
+Voice scanner / editorial-coherence: flag any lowercase "co-intelligent" / "co-intelligence" / "co-operation" instance in body prose (callouts, glossary, equation contexts excluded only when already canonical).
 - **Framework / Sequence / Rhythm / Sprint** — four distinct words. Not interchangeable.
 - **Stages:** Signal → Source → Design → Build → Deliver → Compound.
 - **Grouping:** Diagnose (Signal + Source) ⟂ Execute & Compound (Design + Build + Deliver + Compound).

@@ -36,7 +36,7 @@ The instinct is to blame adoption — or to blame the tool itself. *AI can't do 
 
 The real problem is upstream of adoption. The company has no designed structure for a non-human worker to operate inside. Nobody built that before the AI subscriptions started.
 
-There's a deeper layer here, too. To harness AI and become a co-intelligent organization, traditionally non-technical and bricks-and-mortar businesses have to learn structures that software companies have used for years: workflows as systems, knowledge as an indexed asset, handoffs as designed interfaces. That means new terms, new processes, and a different understanding of how knowledge flows through an organization in digital form. Part of the evolution is education. This book is partly that education, combining the best practices you've always run on with the operating patterns of the fastest-growing tech-enabled companies on the planet.
+There's a deeper layer here, too. To harness AI and become a Co-Intelligent organization, traditionally non-technical and bricks-and-mortar businesses have to learn structures that software companies have used for years: workflows as systems, knowledge as an indexed asset, handoffs as designed interfaces. That means new terms, new processes, and a different understanding of how knowledge flows through an organization in digital form. Part of the evolution is education. This book is partly that education, combining the best practices you've always run on with the operating patterns of the fastest-growing tech-enabled companies on the planet.
 
 ## The *headcount* paradox.
 
