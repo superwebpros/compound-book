@@ -149,22 +149,103 @@ The Drafter claimed in its self-check:
 
 ---
 
+## Chapter: Ch 2 — The Co-Operating Model (`chapters/02-co-operating-model.qmd`)
+
+**Executed:** 2026-05-25 → 2026-05-31  ·  **Scout plan:** `_julie/per-chapter/02-co-operating-model.md`  ·  **Final commit:** `b53ca0d`
+**Iterations:** 3 (Drafter → editorial-coherence + surgical pass → author second/third-read fixes). **Down from Ch 1's 5–6.** New pipeline materially compressed iteration count.
+
+### Canonical workflow (replicable for Ch 3 onward)
+
+Sequence that produced clean Ch 2 in 3 iterations:
+
+1. **Create Scout sub-bead** under `book-ff63.9`. Title: `Scout: Ch N <title> (NN-<slug>.qmd)`. Include in-scope E-rows, RELOCATED/REJECTED rows explicitly noted as out-of-scope, author manifest annotations, persistent-memory context.
+2. **Dispatch Scout** (`general-purpose`, Opus). Reads: scout.md role, voice-charter A1–A16, manifest, prose risk map, stale audit, author-questions-answered, AGENT-TEAM, lessons-learned, the chapter, adjacent committed chapters for voice calibration, Julie's source paragraphs by line range, `bd memories`. §5 means-vs-ends check MANDATORY on opener/closer/concept-definition paragraphs. Output: plan file + inline `scout-note:` + empty `jf-note:` blocks. Render-verify. Close bead.
+3. **Commit Scout output** (chapter with scout-notes + plan file).
+4. **Author reads chapter** in editor, drops `jf-note:` responses inline, pushes back.
+5. **Commit author jf-notes** as audit trail.
+6. **Dispatch Drafter** (`general-purpose`, Sonnet). Reads voice-implementer.md (mandatory scanner gate), voice-charter, chapter with jf-notes, Scout plan, Julie's source paragraphs, adjacent chapters, lessons-learned, `bd memories`. Per-E-row author decisions explicit in prompt. Critical rules called out: MEANS/ENDS-RISK, A2 traps, framework-attribution, dual-author convention. Scanner BEFORE editing to baseline; AFTER editing to verify no new flags. Strip all scout-notes + jf-notes. Render-verify.
+7. **Verify Drafter output** independently (residuals, render, scanner).
+8. **Dispatch editorial-coherence** (`general-purpose`, Opus). Reads editorial-coherence.md role, voice-charter, Scout plan, chapter, scanner report. PRIMARY: substance preservation per E-row. SECONDARY: EC1–EC7 + manual I/we sweep. Output: report at `.claude/output/editorial-coherence-<chapter-stem>.md`.
+9. **Apply surgical fixes** to top-priority editorial-coherence findings + I/we sweeps + structural fixes.
+10. **Run scanner once more** to verify no regression.
+11. **Commit cleanup pass.**
+12. **Author second read** — typically surfaces 3–6 additional catches (substantive + AI-coded vocab + missed forward-references).
+13. **Address author second-read notes** — smaller surgical fixes.
+14. **Final commit + push.**
+15. **Triage remaining Vale alerts** at cluster level (em-dash fix-all vs grandfather; contractions body-prose-only). Optional — depends on author appetite for chapter cleanup vs moving forward.
+
+### Skills / agents per step
+
+| Step | Tool | Model | What |
+|---|---|---|---|
+| 1, 5, 11, 13 | beads (`bd create/update/close`) | n/a | scoping + audit trail |
+| 2 | Scout (via `general-purpose` + role file) | **Opus** | plan + inline notes |
+| 6 | Drafter (via `general-purpose` + voice-implementer.md role) | **Sonnet** | revised chapter |
+| 6 (within) | `voice-scan.py` mandatory gate | n/a | flag report |
+| 8 | Editorial-coherence (via `general-purpose` + role file) | **Opus** | substance + EC report |
+| 9 | Direct editor (main session) | Opus | surgical fixes |
+| 10 | `voice-scan.py` verification | n/a | confirm no regression |
+
+**Total spawned-agent runs per chapter: 3** (Scout, Drafter, editorial-coherence). Scanner invoked ≥2× (Drafter mandatory + my verification).
+
+### What caught what on Ch 2
+
+| Catch | Source |
+|---|---|
+| §5 MEANS/ENDS-RISK flags upfront (E17, E18, E19) | Scout |
+| A2 traps (work deconstruction, HAC capitalization, Co-Intelligent Company redefinition risk) | Scout |
+| Drafter intro'd 3 em-dashes / 2 long paragraphs / 2 n-gram repetitions → self-fixed | Drafter scanner gate |
+| E17 Julie attribution dropped (chapter went 73 lines without her voice) | Editorial-coherence PRIMARY |
+| E18 close inversion (means/ends regression) | Editorial-coherence PRIMARY + EC |
+| E19 antithesis residue ("graft produced strain / redesign produced...") | Editorial-coherence PRIMARY |
+| §2.6 80-line block needs H3 | Editorial-coherence EC5 |
+| 7 I/we paragraphs Drafter missed | Editorial-coherence manual sweep |
+| EC1 Compound Sprint forward-deployed | Editorial-coherence EC1 |
+| EC2 TML Split Action Step redundancy | Editorial-coherence EC2 |
+| EC4 mild "expect a reaction" patronizing | Editorial-coherence EC4 |
+| L18–L24 "has a name" fragmentation | Author 2nd read |
+| "Load-bearing" as AI-coded word | Author 2nd read |
+| Missing table-to-prose transition L151 | Author 2nd read |
+| L159/L165 redundancy | Author 2nd read |
+| Action Step "CIA investigation" patronizing language | Author 2nd read |
+| **TML acronym wrongly expanded (M+L gloss vs canonical Task/Management/Leadership)** | **Author 3rd read** — editorial-coherence missed because it verdicted "TML Split CLEAN" without checking definition against canon |
+
+### Key lesson: EC1 canonical-definition verification (encoded 2026-05-31)
+
+Editorial-coherence originally verified that *a* definition exists per coined term. Ch 2's TML proved this is insufficient — a wrong definition can pass the check. **Updated:** EC1 now requires verifying the definition matches the canonical definition from manifest, charter §3, glossary, or framework canon. See `.claude/agents/editorial-coherence.md` EC1 section.
+
+### Iteration count compression confirmed
+
+Ch 1: 5–6 iterations. Most catches surfaced in author review.
+Ch 2: 3 iterations. Editorial-coherence + Drafter mandatory scanner gate caught most issues before author review. Author still surfaced ~6 catches on second/third read — some informed agent updates (TML canonical-definition catch led to EC1 refinement).
+
+**This is the canonical workflow for the remaining 9 chapters.**
+
+---
+
 ## Cross-chapter pattern watch
 
 Patterns that appear in **multiple chapters** are stronger signals for charter updates than one-off catches. Tracking:
 
 | Pattern | Preface | Ch 1 | Ch 2 | Ch 3 | Ch 4 | Ch 5 | Ch 6 | Ch 6b | Ch 7 | Ch 8 | Ch 9 | Ch 10 | Ch 11 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Means/ends conflation | ✓ | | | | | | | | | | | | |
-| Metaphor literalism violation | ✓ | | | | | | | | | | | | |
-| Unqualified AI agency | ✓ | | | | | | | | | | | | |
-| Book-as-location metaphor | ✓ | | | | | | | | | | | | |
-| Em-dash overuse | ✓ | | | | | | | | | | | | |
-| A3 triplet pileup | ✓ | | | | | | | | | | | | |
-| Forbidden vocab leakage | ✓ | | | | | | | | | | | | |
+| A13 Means/ends conflation | ✓ | ✓ | ✓ | | | | | | | | | | |
+| A14 Metaphor literalism violation | ✓ | | | | | | | | | | | | |
+| A15 Unqualified AI agency | ✓ | | | | | | | | | | | | |
+| A16 Book-as-location metaphor | ✓ | | | | | | | | | | | | |
+| Em-dash overuse | ✓ | ✓ | ✓ | | | | | | | | | | |
+| A3 triplet pileup | ✓ | ✓ | ✓ | | | | | | | | | | |
+| Forbidden vocab leakage | ✓ | ✓ | ✓ | | | | | | | | | | |
 | Hedged constructions | ✓ | | | | | | | | | | | | |
-| A4 boastful biography | ✓ | | | | | | | | | | | | |
+| A4 boastful biography | ✓ | ✓ | | | | | | | | | | | |
 | Canonical capitalization | ✓ | | | | | | | | | | | | |
+| A2 coined-term-before-defined | | ✓ | ✓ | | | | | | | | | | |
+| Cross-paragraph phrase repetition | n/m | ✓ | ✓ | | | | | | | | | | |
+| Long paragraph skim issue | n/m | ✓ | ✓ | | | | | | | | | | |
+| Concept fragmentation across paragraphs | | | ✓ | | | | | | | | | | |
+| Table-to-prose transition missing | | | ✓ | | | | | | | | | | |
+| AI-coded vocab (load-bearing, etc.) | | | ✓ | | | | | | | | | | |
+| Wrong canonical definition (vs glossary) | | | ✓ | | | | | | | | | | |
 
 ---
 

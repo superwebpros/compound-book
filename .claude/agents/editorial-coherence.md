@@ -56,13 +56,16 @@ For each chapter you review:
 
 These are the catches the Ch 1 author review surfaced. Run all of them on every chapter:
 
-### EC1 — Coined term used before defined
-Build a list of coined terms used in the chapter (operating model, Co-Operating Model, Co-Intelligent Co-Operation, Hybrid Accountability Chart, Sequence, Sprint, Compound Bench, Constraint Statement, etc.). For each term:
+### EC1 — Coined term used before defined (with canonical-definition verification)
+Build a list of coined terms used in the chapter (operating model, Co-Operating Model, Co-Intelligent Co-Operation, Hybrid Accountability Chart, Sequence, Sprint, Compound Bench, Constraint Statement, TML, etc.). For each term:
 - Where is its first use in the chapter?
 - Where is the closest preceding definition (in this chapter or in a preceding chapter)?
-- If the term is used as load-bearing concept before a tight, locatable definition, flag it.
+- **Verify the definition matches the canonical definition** — cross-reference against `_julie/voice-charter.md` Section 3 (Canonical vocabulary), `_julie/edit-manifest.md` framework rows, `chapters/appendix-glossary.qmd`, and the book brief. A "definition exists" verdict is NOT enough — the definition must match the canonical framework.
+- If the term is used as load-bearing concept before a tight, locatable canonical definition, flag it.
 
 The definition can be in-prose ("the operating model is how work actually moves through your company") or in a callout. It must be in a place a reader who started this chapter cold could find it.
+
+**Canonical-definition catch (added 2026-05-31):** Ch 2's first draft defined "TML Split" as *"The human Manages, the agent does the Labor"* — but the canonical TML framework (per manifest E36, introduced fully in Ch 6b) is *Task / Management / Leadership* (three categories). The prior editorial-coherence pass verdicted "TML Split CLEAN" because *a* definition existed — but the definition was wrong. Always verify against the canon, not just the presence of definition prose.
 
 ### EC2 — Callouts assuming context the reader doesn't yet have
 Read every `::: callout-*` block and every Reflection Question. For each:
