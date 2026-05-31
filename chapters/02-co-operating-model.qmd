@@ -15,9 +15,9 @@ That is an operating model failure. And the Co-Operating Model is the answer to 
 
 What happened in that meeting is the move Julie has watched leadership teams defer for years across her org-design practice. It's the move that, when skipped, guarantees the graft will fail. We looked at the work, asked what required judgment and what followed rules, and redesigned the seat around the answer. The coordinator's role wasn't broken because she was underperforming. It was broken because no one had ever asked which parts of the job required her and which parts didn't.
 
-Most companies have never asked that question explicitly. They've grown roles by layering tasks onto people until the person becomes the system. When the person leaves, the system collapses. When AI arrives, it has no designed relationship to the work because the work was never designed at all. It was just assigned. The rest of this book is the discipline of asking that question deliberately, role by role, constraint by constraint, and building the structure that answers it. That structure has a name.
+Most companies have never asked that question explicitly. They've grown roles by layering tasks onto people until the person becomes the system. When the person leaves, the system collapses. When AI arrives, it has no designed relationship to the work because the work was never designed at all. It was just assigned. The rest of this book is the discipline of asking that question deliberately, role by role, constraint by constraint, and building the structure that answers it. We call that structure the **Co-Operating Model**.
 
-The diagnosis was the easy part. You have an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. That structure has a name in this book. We call it the Co-Operating Model. It is what a Co-Intelligent Company is built on, and it is what makes *Co-Intelligent Co-operation* — humans and AI working the same problems together — something other than an accident.
+The diagnosis was the easy part: you have an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. The Co-Operating Model is what a Co-Intelligent Company is built on. It is what makes *Co-Intelligent Co-operation* — humans and AI working the same problems together — something other than an accident.
 
 ## What a *Co-Intelligent Company* is.
 
@@ -51,7 +51,7 @@ One more concept matters for the operating model: **organizational memory**. Mos
 
 We think of this as the organizational brain — the knowledge that used to live in people's heads, in files no one could find, in systems that didn't talk to each other — made accessible to the agents running the work.
 
-Here is why this matters. Compound is a software company. The inventory is people — what they know how to build, how they think about problems, the decisions embedded in the codebase. A couple of years ago, a developer Jesse had been working with for years left. That was when Jesse understood the business was a game of chutes and ladders. He'd paid for the ladder — years of training, competency building, context accumulating inside one person's head. And then the chute opened. The developer left, and the knowledge left with him. There was no way to capture what he already knew. No system, no process, no designed mechanism to make sure that the investment in his learning stayed inside the business when he did not.
+Here is why this matters. SuperWebPros is a software company. The inventory is people — what they know how to build, how they think about problems, the decisions embedded in the codebase. A couple of years ago, a developer Jesse had been working with for years left. That was when Jesse understood the business was a game of chutes and ladders. He'd paid for the ladder — years of training, competency building, context accumulating inside one person's head. And then the chute opened. The developer left, and the knowledge left with him. There was no way to capture what he already knew. No system, no process, no designed mechanism to make sure that the investment in his learning stayed inside the business when he did not.
 
 That issue — *I do not own my knowledge in my own business* — surfaced during a normal issues meeting. It became the first structural problem we solved. We mapped the sources of information we had — where they lived, what was tracked, what existed only in people's heads. Then we built a knowledge management system to make sure the team was contributing knowledge back into the business in a structured way. That was the foundation. The AI layer came later, once the technology was mature enough to connect to what we'd built. When it did, everything accelerated — the knowledge base became the backbone of our agent systems, and the agents could reason against our actual context instead of starting from scratch. The whole arc — identify the structural failure, map the knowledge, build the system, then connect intelligence to it when the technology caught up — was the seed of the framework this book teaches. It started because one departure exposed a vulnerability that no tool purchase could have prevented.
 
@@ -66,7 +66,7 @@ AI is not one thing. A chatbot answers questions. An agent works problems. The C
 
 The reason most companies that have invested in AI have no compounding return is that they jumped to the activity without ever building the structure. They put a tool next to the existing workflow and asked the team to figure it out. The Co-Operating Model is the work they skipped.
 
-## Why the *Co* is load-bearing.
+## Why the *Co* is the difference.
 
 The last decade of enterprise software pitched a graft — a productivity layer bolted on top of the existing org. The metaphor was addition. You had a worker; now the worker has a tool. The shape of the work, the shape of the org, the shape of the accountabilities — none of that changed much. You just expect more output from the same structure. If anything changed, it was the number of places people had to enter data.
 
@@ -130,7 +130,6 @@ That distinction sounds small. It is not. When output and outcome get confused �
 
 {{< excalidraw ch02-ownership-table "Human owns judgment and direction; agent owns execution and capture" >}}
 
-The split won't be identical for every task, but it should always be deliberate.
 
 | The Human owns the operating responsibility of | The Agent owns the operating responsibility of |
 |---|---|
@@ -141,11 +140,11 @@ The split won't be identical for every task, but it should always be deliberate.
 
 The human side is almost entirely verbs of judgment and direction — *decides, directs, prices, owns, coaches*. The agent side is almost entirely verbs of execution and capture — *drafts, recommends, documents, monitors, executes*. The human is not in the workflow as a faster operator. The human is in the workflow as the operator of the operators. That is the shift that makes the math work.
 
-The two columns are the load-bearing logic of the model. A company that lets agents start deciding what's worth solving has lost the plot — the agent does not know what business you are in, what your reputation is worth, or what a bad week feels like with your largest customer. A company that keeps the human inside the documentation and the first-pass drafting has wasted the model — that work has just moved sideways at high cost.
+Read those two columns as the structural logic of the model, not just a sort. A company that lets agents start deciding what's worth solving has lost the plot — the agent does not know what business you are in, what your reputation is worth, or what a bad week feels like with your largest customer. A company that keeps the human inside the documentation and the first-pass drafting has wasted the model — that work has just moved sideways at high cost.
 
 When you get the split right, the company compounds. The human's hours flow into the work only humans can do: deciding, directing, pricing, owning, coaching. The agent's hours flow into everything else, at a cost and speed that re-prices the underlying economics of the business. Both sides get compounding returns every quarter, because the structure was built to absorb improvement on both sides.
 
-There's a version of the left column that's easy to underestimate until you've watched it fail. The world model isn't just knowledge; it's judgment, and judgment isn't one thing. A number landing in a report means something different depending on which client it's attached to, what happened in the last call, and whether the relationship is solid or fraying. A client three weeks from churning doesn't show up in the data that way. You hear it in the tone of their emails. You know which project will die in the next planning cycle because the champion doesn't have the standing to push it through. The agent sees the data. The human sees what the data means inside the actual situation.
+The world model is judgment. A client three weeks from churning doesn't show up in the data that way — you hear it in the tone of their emails. You know which project will die in the next planning cycle because the champion doesn't have the standing to push it through.
 
 That's the split that matters. Julie spent years watching executive teams hand decisions off to process layers and lose this exactly: the relational and contextual judgment that no system can hold, that only the person inside the work can supply. You can automate the research, the drafting, the documentation, and the follow-up. You can't automate the read of the room.
 
@@ -158,7 +157,7 @@ The ownership table is a design instrument, not a philosophical exercise. The ne
 
 :::{.callout-note}
 ## Action Step: Map One Role Against the Two Columns
-Take the role you picked earlier. List 10–15 tasks that person actually does in a typical week — not what the job description says, what they do. Pull their calendar. Check their sent folder. Then sort every task into Column A (Human Intelligence: judgment that changes based on context a machine can't observe) or Column B (Agent Intelligence: processing that follows rules a machine could learn). Some tasks will split — "managing scope change requests" includes reading client politics (Column A) and updating the change log (Column B). Split those and sort each part.
+Pick the role you flagged earlier. Think through what that person actually spends their week on — the work as it happens, not the work as the job description writes it. Then sort each task into Column A (Human Intelligence: judgment that changes based on context a machine can't observe) or Column B (Agent Intelligence: processing that follows rules a machine could learn). Some tasks will split — "managing scope change requests" includes reading client politics (Column A) and updating the change log (Column B). Split those and sort each part.
 
 Consider a typical professional services role — a Project Coordinator at a mid-sized firm. (This is an illustrative composite, not a specific client.) Here is what the sort looks like:
 
@@ -174,6 +173,7 @@ Consider a typical professional services role — a Project Coordinator at a mid
 
 Column B accounts for roughly 55% of this coordinator's week. At a loaded annual cost of $65,000, that is $36,000 per year of human intelligence allocated to work that follows learnable rules.
 :::
+
 
 When you get the ownership wrong — and most companies get it wrong on first attempt — you get the failure mode we keep seeing in the field: two parallel tracks producing nothing structural. The team has its workflow. The agents have theirs. The handoff is undefined. The outcome belongs to no one. The dashboard shows tool adoption and the P&L shows nothing.
 
