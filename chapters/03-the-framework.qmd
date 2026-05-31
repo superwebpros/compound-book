@@ -5,13 +5,13 @@
 This chapter maps the rest of the book. You'll learn four vocabulary terms (Framework, Sequence, Rhythm, Sprint), the six stages that make up the Sequence, the Diagnose/Execute split that prevents the most common failure mode, and the Sprint Planning Canvas that turns all of it into a one-page starting point. Treat this as the page you flip back to when you forget which word means what.
 :::
 
-We were on a discovery call — Jesse, Julie, and a CEO on the other side of the screen. She'd been talking for twenty minutes about her company, her bottlenecks, what she was hoping AI could fix. Then she leaned forward and said it: "Can we just build it? I just need this thing built."
+We were on a discovery call: Jesse, Julie, and a CEO on the other side of the screen. She'd been talking for twenty minutes about her company, her bottlenecks, what she was hoping AI could fix. Then she leaned forward and said it: "Can we just build it? I just need this thing built."
 
 We knew exactly what she meant. She'd seen demos. She'd read the case studies. She had a clear picture in her head of the tool that was going to solve her problem, and she wanted to stop talking about it and start building it. That's not impatience — that's the instinct of someone who has run a business. When you know what you want, you build it.
 
 But we've also watched what happens when you start there. The build doesn't go well. The requirements shift two weeks in because nobody mapped what the work actually required, so the spec changes, the scope expands, and the thing that was supposed to take three weeks is now in week seven and still not done. Edge cases surface that nobody anticipated because nobody understood the process well enough to anticipate them. The tool gets deployed eventually, in some version of what was originally scoped, and then the team doesn't use it because it doesn't fit how the work actually moves. Nobody understood what people do or what outcomes they're driving toward, and you can't design around a process you haven't mapped.
 
-That's what we told her on the call: you can't start at Build. The diagnosis has to come first. The conversation ended with us agreeing to quote a focused diagnostic engagement — what this book calls a Signal sprint — and walking away from the assumption that the tool she came in wanting was the right place to start. We've seen enough versions of this pattern to know what would have happened if we'd built what she asked for. A tool gets shipped. The team patches around it for months. Somewhere along the way the actual constraint surfaces, usually one or two steps upstream from where she'd been looking.
+That's what we told her on the call: you can't start at Build. The diagnosis has to come first. The conversation ended with us agreeing to quote a focused diagnostic engagement (what this book calls a Signal sprint), and walking away from the assumption that the tool she came in wanting was the right place to start. We've seen enough versions of this pattern to know what would have happened if we'd built what she asked for. A tool gets shipped. The team patches around it for months. Somewhere along the way the actual constraint surfaces, usually one or two steps upstream from where she'd been looking.
 
 The instinct to move to solution before diagnosis isn't unique to AI. It's the most common and most expensive mistake in organizational change, and it's the pattern Julie has watched across two decades of org-design work. An ERP rollout that nobody used. A post-merger integration that broke the company it was supposed to fix. The pattern repeated across restructurings and acquisitions — different industries, same root cause: the solution got built before the problem was understood. The diagnosis got skipped because it felt slow, abstract, and like something that didn't produce visible output. So everyone moved to what felt like progress, which was building, and discovered twelve months later that they'd built the wrong thing at great expense. Signal exists to prevent that. It means refusing to build until the problem has been precisely named and its cost has been quantified.
 
@@ -25,11 +25,11 @@ This isn't a technology insight. It's a principle that's at least thirty years o
 
 Building before diagnosing is the same mistake as framing a house before pouring the foundation. The walls go up. The roof goes on. It looks like progress right up until the moment the structure has to carry weight — and then it doesn't. Construction has rules about the order because each step prepares what comes after. So does this framework.
 
-The Framework exists because there is a correct sequence for installing Co-Intelligence into a company, and that sequence is the entire reason the result compounds instead of evaporating. Skip the first two steps and you are buying a tool. Run all six in order and you are changing how the work is owned.
+The Framework exists because there is a correct sequence for installing Co-Intelligence into a company, and that sequence is the entire reason the result compounds instead of evaporating. Skip the first two steps and you're buying a tool. Run all six in order and you're changing how the work is owned.
 
-The Framework you are about to learn was born from the *Chutes and Ladders* problem we described at the start of this book. The developer left. The knowledge left with him. And the only reason what came next worked is because Jesse solved the problem in a specific order.
+The Framework you're about to learn was born from the *Chutes and Ladders* problem we described at the start of this book. The developer left. The knowledge left with him. And the only reason what came next worked is because Jesse solved the problem in a specific order.
 
-That is why the order matters. Now the vocabulary.
+That's why the order matters. Now the vocabulary.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -38,13 +38,13 @@ If you've tried an AI project and it stalled, trace backward. The failure almost
 
 ## Four *words*, defined once.
 
-This book uses four words constantly and they are easy to conflate. Each names a different thing. Here is what each one means — and what it does not.
+This book uses four words constantly and they're easy to conflate. Each names a different thing. Here is what each one means, and what it doesn't.
 
 {{< excalidraw ch03-four-term-hierarchy "Framework contains Sequence; Sequence runs on a Sprint; Sprints repeat at the Rhythm." >}}
 
 - **Framework** — the whole system. When we say "the Framework" or "the Compound Framework," we mean everything described in this book: the order, the stages, the cadence, the unit of work, and the acceleration layers that make each cycle faster. It is the noun for the entire architecture.
 - **Sequence** — the ordered stages inside the Framework: **Signal → Source → Design → Build → Deliver → Compound**. Always all six. Always in that order, because each stage produces something the next stage requires.
-- **Sprint** — one pass through the Sequence on one validated constraint. The term comes from software development, where a sprint is a fixed-length work cycle; here it means a focused unit of work with a defined scope, a clear start, and a measurable end. Duration is set in Design — a Sprint can close in days, run for weeks, or stretch across a quarter, depending on what the constraint requires. You do not "implement the Framework." You run a Sprint, and then you run another one. But, like a software sprint, they are designed to move _quickly_.
+- **Sprint** — one pass through the Sequence on one validated constraint. The term comes from software development, where a sprint is a fixed-length work cycle; here it means a focused unit of work with a defined scope, a clear start, and a measurable end. Duration is set in Design — a Sprint can close in days, run for weeks, or stretch across a quarter, depending on what the constraint requires. You don't "implement the Framework." You run a Sprint, and then you run another one. But, like a software sprint, they're designed to move _quickly_.
 - **Rhythm** — the cadence. Running the Framework over and over. Quarterly. The Rhythm is what turns a single Sprint into a compounding business outcome — the same way a weekly L10 (EOS's weekly leadership meeting) is what turns a quarterly Rock into a company that actually executes.
 
 The reason to be precise here is that the looser versions of these words are exactly how this kind of work fails. "We're running an AI framework" can mean anything. "We are mid-Sprint, in Design, on the quoting-cycle constraint" is a sentence that locates the work in space and time — and everyone in that room knows what happens Monday.
@@ -62,7 +62,7 @@ The Sequence is six stages. Each gets its own chapter. Here is the role of each 
 
 ### *Signal*.
 
-You find the one operational constraint worth solving next, and quantify what it costs. A constraint without a dollar figure attached is not yet a constraint; it's a hypothesis. Signal produces a constraint statement specific enough that the rest of the Sprint can be designed against it. For Meridian, Signal named *"Elena Ruiz is the sole quoting bottleneck — every quote flows through her, costing an estimated \$558K/year in delayed and lost revenue."* That sentence is what the rest of the Sprint runs against.
+You find the one operational constraint worth solving next, and quantify what it costs. A constraint without a dollar figure attached isn't yet a constraint; it's a hypothesis. Signal produces a constraint statement specific enough that the rest of the Sprint can be designed against it. For Meridian, Signal named *"Elena Ruiz is the sole quoting bottleneck — every quote flows through her, costing an estimated \$558K/year in delayed and lost revenue."* That sentence is what the rest of the Sprint runs against.
 
 ### *Source*.
 
@@ -78,7 +78,7 @@ You produce the spec and deploy the workflow into the system your team already u
 
 ### *Deliver*.
 
-You ship it inside the org, train the people whose handoffs change, and measure the result against what Signal said it cost. Deliver is where the workflow stops being a pilot and starts being how the work gets done. Without it, you have a demo, a Slack channel, and a slide deck. With it, you have a measurable change to your operating model.
+You ship it inside the org, train the people whose handoffs change, and measure the result against what Signal said it cost. Deliver is where the workflow stops being a pilot and starts being how the work gets done. Without it, you've got a demo, a Slack channel, and a slide deck. With it, you've got a measurable change to your operating model.
 
 ### *Compound*.
 
@@ -86,11 +86,11 @@ You capture the learning, update the infrastructure the next Sprint will use, an
 
 ### How the stages *connect*.
 
-What makes this a Framework is that each stage produces something the next stage cannot do without. Signal produces a constraint statement; Source produces a Knowledge Map about that constraint; Design produces an accountability split that depends on both; Build executes against the Design; Deliver installs Build into the operating rhythm; Compound captures what was learned and feeds it into the next Sprint's Signal. Skip a stage and the next one has nothing real to work against — which is why this is a Framework rather than a checklist.
+What makes this a Framework is that each stage produces something the next stage can't do without. Signal produces a constraint statement; Source produces a Knowledge Map about that constraint; Design produces an accountability split that depends on both; Build executes against the Design; Deliver installs Build into the operating rhythm; Compound captures what was learned and feeds it into the next Sprint's Signal. Skip a stage and the next one has nothing real to work against — which is why this is a Framework rather than a checklist.
 
 {{< excalidraw ch03-stage-dependencies "Stage dependencies: each stage's output is the next stage's input. Signal produces a constraint statement; Source produces a Knowledge Map; Design produces an accountability split; Build produces a working implementation; Deliver produces an operating change; Compound produces infrastructure the next Sprint inherits." >}}
 
-Run a Sprint. Then run another. Then another. That's the Rhythm — quarterly cadence, one constraint at a time. Compound by compound, the operating model gets more explicit; each Sprint inherits the design discipline and infrastructure the previous Sprints left behind, and the work gets faster, cheaper, and more durable as it goes. *Co-Intelligence + Rhythm = Compound* — and what compounds is the operating model itself.
+Run a Sprint. Then run another. Then another. That's the Rhythm: quarterly cadence, one constraint at a time. Compound by compound, the operating model gets more explicit; each Sprint inherits the design discipline and infrastructure the previous Sprints left behind, and the work gets faster, cheaper, and more durable as it goes. *Co-Intelligence + Rhythm = Compound* — and what compounds is the operating model itself.
 
 Six stages. One Sprint. Then again.
 
@@ -100,13 +100,13 @@ The Sequence splits into two groups. The first group is **Diagnose**: Signal and
 
 {{< excalidraw ch03-diagnose-execute-split "The Sequence splits into Diagnose (Signal, Source) and Execute & Compound (Design, Build, Deliver, Compound)." >}}
 
-Diagnose is the work most companies skip. They skip it because there's no structured way to approach it. The inputs are abstract — information flows, data architecture, knowledge taxonomies — and without a framework, people default to what's concrete: building. In a physical process, when something breaks, you can usually see it: the machine stops, the line backs up, the floor manager flags it. In an information process, a misclassified taxonomy in a knowledge base causing an agent to query the wrong data and hallucinate answers is invisible until the damage is done. The Sequence exists to make the abstract concrete. Diagnose gives you the structure to see what you'd otherwise skip past, and everything downstream depends on what it finds.
+Diagnose is the work most companies skip. They skip it because there's no structured way to approach it. The inputs are abstract (information flows, data architecture, knowledge taxonomies), and without a framework, people default to what's concrete: building. In a physical process, when something breaks, you can usually see it: the machine stops, the line backs up, the floor manager flags it. In an information process, a misclassified taxonomy in a knowledge base causing an agent to query the wrong data and hallucinate answers is invisible until the damage is done. The Sequence exists to make the abstract concrete. Diagnose gives you the structure to see what you'd otherwise skip past, and everything downstream depends on what it finds.
 
-A Sprint that gets stuck in Build almost never has a Build problem. It has a Diagnose problem that surfaced late. Going back to Signal is not failure — it is the Framework doing its job, refusing to let undisclosed assumptions hide inside execution.
+A Sprint that gets stuck in Build almost never has a Build problem. It has a Diagnose problem that surfaced late. Going back to Signal isn't failure — it's the Framework doing its job, refusing to let undisclosed assumptions hide inside execution.
 
-Design opens the Execute & Compound group for a reason. It depends entirely on what Signal and Source produced — which is why this book places Design inside Execute rather than inside Diagnose. Move it earlier and you are designing against nothing: no validated constraint, no knowledge map.
+Design opens the Execute & Compound group for a reason. It depends entirely on what Signal and Source produced — which is why this book places Design inside Execute rather than inside Diagnose. Move it earlier and you're designing against nothing: no validated constraint, no knowledge map.
 
-Signal and Source are separated as stages but connected in practice. In an information business, most constraints have a data or system dimension — sloppy data entry, wrong captures, poor data architecture — and Source is where that dimension surfaces. The constraint Signal names almost always has a digital source driving it. Chapters 4 and 5 go deep on each stage individually, but hold the connection: what Signal identifies, Source explains.
+Signal and Source are separated as stages but connected in practice. In an information business, most constraints have a data or system dimension (sloppy data entry, wrong captures, poor data architecture), and Source is where that dimension surfaces. The constraint Signal names almost always has a digital source driving it. Chapters 4 and 5 go deep on each stage individually, but hold the connection: what Signal identifies, Source explains.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -134,7 +134,7 @@ The canvas has five parts.
 | **Deliver** | How do you know it worked? What number moved? | |
 | **Compound** | What did you learn? What changes for next sprint? | |
 
-**Part 3: Identify Your Team.** A Sprint is not a committee. You need three to five people: a **Human Orchestrator** — the person who runs the Sprint day-to-day, owns the cadence, and holds the handoffs together — plus the two or three people closest to the constraint workflow. A dedicated technical resource may be needed for complex integrations, but well-designed Sprints often produce workflows that a non-technical person can build and deliver. The tools have caught up. Curiosity and systems thinking matter more than a programming background. The Human Orchestrator is not the leadership sponsor. The sponsor owns the outcome. The Orchestrator owns the execution.
+**Part 3: Identify Your Team.** A Sprint isn't a committee. You need three to five people: a **Human Orchestrator** (the person who runs the Sprint day-to-day, owns the cadence, and holds the handoffs together) plus the two or three people closest to the constraint workflow. A dedicated technical resource may be needed for complex integrations, but well-designed Sprints often produce workflows that a non-technical person can build and deliver. The tools have caught up. Curiosity and systems thinking matter more than a programming background. The Human Orchestrator isn't the leadership sponsor. The sponsor owns the outcome. The Orchestrator owns the execution.
 
 **Part 4: Set the Rhythm.** A Sprint that has no review date has no deadline. Name the start date, the quarterly operating session where you'll review the outcome, and who will be in that review. Book the review before you start Signal — the Sprint is real when the review is scheduled.
 
@@ -191,13 +191,13 @@ This chapter introduced vocabulary that the rest of the book uses constantly. Th
 
 ## You learn this on a *Sprint*.
 
-You do not learn the Framework by reading about it. You learn it by running one Sprint on one real constraint in your own company. That is the only teaching unit that works, because the Framework is not a model of how AI implementation could go — it is the structure of how the work moves when it moves correctly.
+You don't learn the Framework by reading about it. You learn it by running one Sprint on one real constraint in your own company. That's the only teaching unit that works, because the Framework isn't a model of how AI implementation could go — it's the structure of how the work moves when it moves correctly.
 
-The project coordinator story — the one where we mapped the work instead of posting a job — walks all six stages in sequence. You will see it in full in Chapter 6. What it proves here is specific: not that the Sequence is theoretically sound, but that each stage produces something the next stage requires. Signal named the constraint. Source mapped what the role actually required. Design allocated the work between human and agent. Build produced the workflow. Deliver shipped it into the team's environment. Compound captured what the next Sprint would inherit. Remove any one of those steps and the chain breaks.
+The project coordinator story (the one where we mapped the work instead of posting a job) walks all six stages in sequence. You will see it in full in Chapter 6. What it proves here is specific: not that the Sequence is theoretically sound, but that each stage produces something the next stage requires. Signal named the constraint. Source mapped what the role actually required. Design allocated the work between human and agent. Build produced the workflow. Deliver shipped it into the team's environment. Compound captured what the next Sprint would inherit. Remove any one of those steps and the chain breaks.
 
 The Sprint is bounded by scope, not by a fixed calendar. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. One constraint, one documented outcome. That is the bar.
 
-The Rhythm is what turns that one Sprint into a compounding business. Quarterly, you run another one. The Hybrid Accountability Chart gains new entries. The knowledge maps get richer. The team's design judgment improves. The Sprints themselves get cheaper and faster, because the infrastructure each Sprint leaves behind accelerates the next one. *Co-Intelligence + Rhythm = Compound.* The Equation is not a slogan — it is a description of what happens to a company that runs this work on a cadence.
+The Rhythm is what turns that one Sprint into a compounding business. Quarterly, you run another one. The Hybrid Accountability Chart gains new entries. The knowledge maps get richer. The team's design judgment improves. The Sprints themselves get cheaper and faster, because the infrastructure each Sprint leaves behind accelerates the next one. *Co-Intelligence + Rhythm = Compound.* The Equation isn't a slogan — it's a description of what happens to a company that runs this work on a cadence.
 
 The first Sprint is where the Framework stops being something you read about and starts being something your organization can do. Every Sprint after that is what makes the change permanent.
 
@@ -208,7 +208,7 @@ Pick your constraint. Fill in the Sprint Planning Canvas. Book the quarterly rev
 
 ## Begin at *Signal*.
 
-Every Sprint begins in the same place. Before Source can map anything, before Design can allocate anything, before Build can specify anything — Signal has to name the one constraint this Sprint will solve. The discipline of refusing to move forward until that constraint is named, quantified, and validated is the single most important habit the Framework teaches. Most companies will not do it. The ones that do are the ones that compound.
+Every Sprint begins in the same place. Before Source can map anything, before Design can allocate anything, before Build can specify anything — Signal has to name the one constraint this Sprint will solve. The discipline of refusing to move forward until that constraint is named, quantified, and validated is the single most important habit the Framework teaches. Most companies won't do it. The ones that do are the ones that compound.
 
 ## Reflection Questions
 
