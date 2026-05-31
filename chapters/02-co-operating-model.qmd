@@ -240,12 +240,12 @@ For the illustrative Project Coordinator: 55% Column B at $65,000 loaded cost = 
 You will do the same design work. Not for her role — for the roles in your company. The chapters that follow give you the structure to do it sprint by sprint, starting from whatever your actual constraints are today.
 
 :::{.callout-note}
-## Action Step: Start Your TML Split
-Now that you've split the role into Column A and Column B, map the hybrid version. This is your first draft of a **TML Split** — *The human Manages, the agent does the Labor* — a single view of who does what when human and agent share the role.
+## Action Step: Start Your Hybrid Split
+Now that you've split the role into Column A and Column B, map the hybrid version: who does what when human and agent share the role. The human manages; the agent does the labor that follows rules.
 
-Here is the illustrative Project Coordinator's TML Split:
+Here is the illustrative Project Coordinator's hybrid split:
 
-| The Human Manages | The Agent Labors |
+| Human Manages | Agent Labors |
 |---|---|
 | Scope change requests (reads client politics, judges which changes to push back on) | Schedules client and internal meetings |
 | Client-delivery coordination (navigates competing priorities, reads tension) | Sends weekly status update emails from templates |
@@ -254,7 +254,7 @@ Here is the illustrative Project Coordinator's TML Split:
 | Quality standard for all agent output — reviews before anything ships | Updates scope change logs (dates, costs, approvals) |
 | | Compiles lessons-learned documents from project notes |
 
-The TML Split becomes the operating instrument for the redesigned role. You'll build these out fully in the Design chapters ahead — for now, the two-column split is enough to see the shape of the work after redesign.
+This hybrid split is enough to see the shape of the redesigned role. Chapter 6 introduces the full design instrument — the **TML framework** (Task / Management / Leadership) — which sorts work into three categories rather than two; for now, the two-column version is the right starting point.
 
 If you have multiple roles touching the same constraint, repeat this process for each one. Compile the results into a single table: Role, Column B %, Loaded Cost, Annual Misallocation Cost. That table is the raw material for the sprint design work in the chapters ahead.
 :::
