@@ -11,7 +11,7 @@ My integrator is on a weekly call and she's not building up to it. "She's not ke
 
 I know the feeling on both ends of that sentence. The project coordinator had been with us long enough to know things — where the client files actually lived, which contacts needed extra lead time, what the unwritten rules were for each account. That knowledge doesn't transfer with a two-week notice. It walks out the door and you spend the next three months paying a new person to relearn it while the work piles up. We'd been around this loop before and I could feel myself reaching for the job description template.
 
-I stopped and asked a different question. Not "who should we hire?" but "what does this role actually do?" We opened a blank document and started pulling the role apart. We listed the sources of information that fed the job — the CRM, the project tracker, the report templates she'd built, the client check-in cadence she managed from memory. Then we listed the outcomes the role was responsible for — the reports delivered, the tasks created, the assignments made, the clients kept on track. And then we mapped every accountability against a simple filter: which items required human judgment and relationships, and which were data-flow operations — information moving from one system to another, following rules that didn't require a person in the middle? The shape of the role changed in front of us. What had looked like one job was actually two — and one of those jobs, we could design an agent team for. We never posted the listing. The work shipped. The role got more strategic, not because we gave her a new title, but because we gave her back the hours that the low-judgment work had been consuming.
+I stopped and asked a different question. Not "who should we hire?" but "what does this role actually do?" We opened a blank document and started pulling the role apart. We listed the sources of information that fed the job: the CRM, the project tracker, the report templates she'd built, the client check-in cadence she managed from memory. Then we listed the outcomes the role was responsible for: the reports delivered, the tasks created, the assignments made, the clients kept on track. And then we mapped every accountability against a simple filter: which items required human judgment and relationships, and which were data-flow operations. Information moving from one system to another, following rules that didn't require a person in the middle. The shape of the role changed in front of us. What had looked like one job was actually two — and one of those jobs, we could design an agent team for. We never posted the listing. The work shipped. The role got more strategic, not because we gave her a new title, but because we gave her back the hours that the low-judgment work had been consuming.
 
 That question — "what is this work, actually?" — is the question Design exists to ask. And the framework for answering it is what this chapter introduces.
 
@@ -21,7 +21,7 @@ Design is the first stage of *Execute & Compound*. Everything before this was di
 
 Design has two deliverables, and they ship together.
 
-The first is a *designed workflow* — specific enough that Build can execute against it without ambiguity. A workflow specification that names the inputs, the steps, the handoffs, the outputs, and the points where a human decides versus an agent executes. A sketch or a Miro board with sticky notes is not this. If Build has to ask "what did you mean here?" the workflow was described, not designed.
+The first is a *designed workflow* — specific enough that Build can execute against it without ambiguity. A workflow specification that names the inputs, the steps, the handoffs, the outputs, and the points where a human decides versus an agent executes. A sketch or a Miro board with sticky notes isn't this. If Build has to ask "what did you mean here?" the workflow was described, not designed.
 
 The second is a set of entries in the *Hybrid Accountability Chart* for the accountabilities this sprint is addressing. Each entry names the function, the agent team (if applicable), the human supervisor, and whether the work is AI-assisted or automated. A single sprint often produces multiple entries — the PM workflow we ran internally generated five in its first pass. Over many sprints, the chart fills in. After one sprint, it has its first rows — the first piece of structural evidence that your company is operating as a Co-Intelligent Company rather than a human company that happens to use AI tools.
 
@@ -34,73 +34,30 @@ The Hybrid Accountability Chart is the instrument that makes Design concrete. If
 You build it one sprint at a time. For each accountability your sprint is addressing, you answer four questions — and you write the answers into the chart before Build begins:
 
 1. **What role or function does this team perform?** Not the task — the outcome this person or team is responsible for. "Produce accurate initial quotes within 2 hours of request" is an accountability. "Look up pricing" is a task.
-2. **What is the name of the agent team, if applicable?** Name it. Scope it. A team called "AI Helper" is not designed. A team called "Quote Generation Team" with a defined input (bid request + customer segment data) and output (draft quote with confidence score) is designed.
-3. **Who is the human supervisor?** Every row must have one. No exceptions. No "TBD." No "the team." A name. If you can't name the supervisor, the design is not done.
+2. **What is the name of the agent team, if applicable?** Name it. Scope it. A team called "AI Helper" isn't designed. A team called "Quote Generation Team" with a defined input (bid request + customer segment data) and output (draft quote with confidence score) is designed.
+3. **Who is the human supervisor?** Every row must have one. No exceptions. No "TBD." No "the team." A name. If you can't name the supervisor, the design isn't done.
 4. **Is this accountability *AI-assisted* or *Automated*?** AI-assisted means human-in-the-loop — reviews every output. Automated means human-on-the-loop — monitors by exception, reviews on schedule.
 
 Here's what your chart looks like after a handful of sprints — built up over time, with multiple rows per sprint when the constraint workflow touches multiple functions:
 
 {{< excalidraw ch06-hybrid-accountability-chart "Hybrid Accountability Chart: Role, Agent Team, Human Supervisor, and AI-Assisted or Automated — every row has a named supervisor" >}}
 
-Every agent team in the chart has a human supervisor — every row, no exceptions. There are no unowned teams. This is a structural rule of the chart, not a soft principle. The reason is straightforward: humans are still responsible for making sure the organization accomplishes its goals. There needs to be a person you can talk to, work with, and hold accountable in the real world — someone who ensures the agents are performing on track and who owns the outcome when they are not.
+Every agent team in the chart has a human supervisor — every row, no exceptions. There are no unowned teams. This is a structural rule of the chart, not a soft principle. The reason is straightforward: humans are still responsible for making sure the organization accomplishes its goals. There needs to be a person you can talk to, work with, and hold accountable in the real world. Someone who ensures the agents are performing on track and who owns the outcome when they're not.
 
-```scout-note:
-**E35 LANDING (FRAMEWORK-ADD, LAND-WITH-MODIFICATION) — Right Seat Evaluation: Sees It / Wants It / Suited for It**
+Selecting the right human supervisor for an agent team is a design decision, not a staffing decision. The ***Right Seat Evaluation*** is the three-test discipline that makes the call:
 
-Insert a new paragraph here introducing the **Right Seat Evaluation** as the three-test discipline for choosing the human supervisor named at HAC Question 3 (L38). Canonical Compound vocabulary, first load-bearing introduction in the manuscript.
+- ***Sees It*** — does this person understand the work the agent does well enough to evaluate whether the output is correct, or will they rubber-stamp because they can't tell the difference?
+- ***Wants It*** — are they genuinely accountable for the outcome, or do they treat the agent team as someone else's problem with their name attached?
+- ***Suited for It*** — do they have the judgment, context, and authority to override the agent when it drifts and make the calls the agent can't?
 
-**Substance to preserve (from `_julie/julie-redline.md:1691–1717`):**
-- Choosing the supervisor is a design decision, not a staffing decision.
-- The three canonical tests, in canonical order, with canonical names:
-  - ***Sees It*** — understands the work deeply enough to evaluate whether the agent's output is correct, or will they rubber-stamp because they can't tell the difference?
-  - ***Wants It*** — genuinely accountable for the outcome, or treats the agent team as someone else's responsibility with their name attached?
-  - ***Suited for It*** — has the judgment, context, and authority to override the agent when it drifts?
-- Operator outcome: supervisor seat is filled by someone who can actually catch errors, redirect the agent, and own the outcome.
-
-**Modifications from Julie's source (per Scout plan `_julie/per-chapter/06-designing-the-system.md`):**
-
-1. **Framework-attribution scrub (DIRECT).** Julie's source opens "Julie's Right Seat Evaluation framework applies three tests..." Reject the "Julie's framework" individual-instrument framing. Right Seat Evaluation is **joint book IP** per the framework-attribution rule (same rule that rejected E34 HAC origin attribution). **Use Pattern A:** declarative canonical-vocabulary-first introduction — "Selecting the right human supervisor for an agent team is a design decision, not a staffing decision. The ***Right Seat Evaluation*** is the three-test discipline that makes the call."
-
-2. **A2 first-definition discipline.** Italicize ***Right Seat Evaluation*** on first appearance (chapter convention; see L20 *designed workflow*, L26 *Hybrid Accountability Chart*, L60 *information flow specification*, L168 *Human Orchestrator*). Italicize each canonical criterion on first appearance: ***Sees It*** / ***Wants It*** / ***Suited for It***. Subsequent references need not re-italicize.
-
-3. **A3 stacked-triplet relief.** Julie's source stacks "Does this person Sees It... Does this person Want It... Is this person Suited for It..." parallel construction. Vary cadence — use **Pattern A bullet enumeration** (matches HAC four-question discipline at L34–L39) with one operationalizing question per criterion, no repeating anchor phrase.
-
-4. **A1 AI-tell binary closer — CUT.** Julie's source closes "A human supervisor who fails any of these three tests is not a supervisor. They are a liability." Per voice-charter §4 A1 + `_julie/julie-prose-risk-map.md:97` verdict, this binary X-is-not-X / X-is-Y pronouncement is forbidden. **Preferred rewrite (Rewrite C from Scout plan):** "If the supervisor candidate fails any of the three tests, the HAC has a name in the supervisor column but no supervision happening underneath it. Choose someone else, or build the development plan that gets the candidate to all three tests passing before the sprint runs." (Operator outcome forward + actionable next-step; bridges to the L185–L189 development-gap framing for the Human Orchestrator.)
-
-5. **MEANS/ENDS-RISK closer discipline.** Close on the operator outcome the framework produces (errors caught, agent redirected, outcome owned), not on the structural rule itself. Forbidden closers: "This is what Right Seat does." / "Right Seat is the discipline that produces this." Acceptable closers: operator outcome forward, framework named as the means.
-
-6. **Forbidden vocab.** "Organizational design decision" → strip "organizational"; use "design decision" (canon-clean per L36, L38, L120, L141). Verify zero "leverage" / "transformation" / "synergy" / "alignment" / "augment" introduced.
-
-7. **Attribution per Q-E21.** Pattern A landing carries **zero in-prose Julie attribution** — matches the chapter's existing voice for canonical-artifact introductions (L26 HAC, L60 information flow specification, L168 Human Orchestrator — all declared without individual attribution). The chapter has no prior Julie-anchored paragraph; do not introduce one here.
-
-8. **Target paragraph length:** 80–130 words. Cadence: matches HAC-section paragraph rhythm at L32 / L45 / L52.
-
-**EC1 verification: PASS.** Julie's three-criteria canon (Sees It / Wants It / Suited for It) matches manifest E35 + E58 glossary canon verbatim. Drafter must preserve names + order exactly.
-
-**Coherence flags:**
-- Do NOT retro-fit Right Seat language into the Meridian populated example at L215–L245. Elena Ruiz already passes Right Seat implicitly per L235 ("owns the constraint outcome" / reviews every draft / makes the AI-Assisted → Automated call); explicit retro-fit breaks chapter narrative flow.
-- Do NOT extend Right Seat into the L177–L189 "Finding the right *person*" Human Orchestrator section. Right Seat applies to the per-row HAC supervisor (Q3 at L38); the Human Orchestrator selection criteria at L181–L185 apply to the constraint-outcome owner. Two different selection-test layers — keep scoped.
-- Cross-chapter forward references: Ch 11 E55 will reference Right Seat in First Sprint Plan review; E58 will add Right Seat to glossary. Ch 6 E35 must establish the canonical definition precisely enough to support both.
-
-**Opportunistic polish (Drafter handles during E35 pass):**
-- Em-dash density triage at cluster level (Vale flags expected on L14 / L24 / L45 — three em-dashes each).
-- Contractions sweep across chapter (Vale `Compound.Contractions` rule).
-- Verify zero forbidden vocab introductions; verify zero new triplets beyond the framework's structural three.
-- N-gram check: E35 prose should reference L45 framing without verbatim re-quotation ("every row, no exceptions" / "named supervisor" / "structural rule of the chart").
-
-**Path verdict:** Path A (solo Drafter). Single landing row; well-controlled framework-attribution + A1/A2/A3 scrub patterns inherited from Preface + Ch 1 + Ch 2 + Ch 3 + Ch 4 + Ch 5.
-```
-
-```jf-note:
-
-```
+If the supervisor candidate fails any of the three tests, the HAC has a name in the supervisor column but no supervision happening underneath it. Choose someone else, or build the development plan that gets the candidate to all three tests passing before the sprint runs.
 
 :::{.callout-tip}
 ## Pro Tip
 If you run EOS, you already have the muscle for this. Your Accountability Chart says every seat has a name. The Hybrid Accountability Chart says every agent team does too. Same principle, extended to a workforce that includes non-human workers.
 :::
 
-The four questions are not a template to fill in once and forget. They are a design discipline. Every sprint forces the four answers for every row — including the harder ones. "Who supervises this team?" is uncomfortable when the agent team is producing work nobody on the leadership team has owned before. That discomfort is the point. The chart surfaces it before any code is written.
+The four questions aren't a template to fill in once and forget. They are a design discipline. Every sprint forces the four answers for every row — including the harder ones. "Who supervises this team?" is uncomfortable when the agent team is producing work nobody on the leadership team has owned before. That discomfort is the point. The chart surfaces it before any code is written.
 
 ## The *information flow* question.
 
@@ -170,7 +127,7 @@ Don't pick the technology pattern first. Map the information flow first, then as
 
 The fourth question on the HAC is the one operators get wrong most often. They treat it as a technology decision when it's a design decision.
 
-Always start AI-assisted. Every accountability, every agent team, every sprint — begin with a human in the loop reviewing every output. No exceptions. The progression toward automation is not about reducing review frequency. It is about moving the human's role toward exceptions and final decisions.
+Always start AI-assisted. Every accountability, every agent team, every sprint — begin with a human in the loop reviewing every output. No exceptions. The progression toward automation isn't about reducing review frequency. It is about moving the human's role toward exceptions and final decisions.
 
 Here is what that progression actually looks like. The Quote Generation Team starts with a human reviewing every draft quote and sending the email to the customer. After the agent has proved reliable over several sprints, the next iteration shifts: the agent drafts and sends, but the human approves before the email goes out. Eventually, the design might move toward an agent on the website that fully automates quotes — subject to human approval before any contract is signed. The human never leaves the workflow. The human's position in the workflow changes — from reviewing every output to approving final decisions and handling exceptions.
 
@@ -178,7 +135,7 @@ This is a spectrum, not a binary. And it shifts over time. Nothing about the age
 
 {{< excalidraw ch06-ai-assisted-automated-spectrum "AI-assisted to Automated spectrum: human role shifts from reviewing every output toward exceptions and final decisions" >}}
 
-**Start AI-assisted** — always. Humans in the loop, reviewing every output, conservative by default. This is not a judgment call. It is the starting position.
+**Start AI-assisted** — always. Humans in the loop, reviewing every output, conservative by default. This isn't a judgment call. It is the starting position.
 
 **Move toward automated when:** the human is rubber-stamping more often than not. When the review consistently confirms what the agent already produced, the design is ready to shift the human's role back — toward exception handling and final approval rather than line-by-line review.
 
@@ -229,13 +186,13 @@ You met a version of this role in Chapter 2 — our marketing lead running four 
 
 The Human Orchestrator role isn't a title you assign to whoever's available. It requires specific capabilities, and identifying the right person is part of the design work.
 
-Everyone in a knowledge business will eventually need to become an orchestrator at some level. The skills involved are not exotic: context management — knowing what information each agent needs and when. Knowing what good looks like — being able to evaluate output quality without redoing the work yourself. The ability to communicate clearly across different agents and platforms. And a working understanding of the tools and information different agents need to be successful. If this sounds familiar, it should. It's not that different from good management — creating the conditions for the people you're responsible for to succeed. Orchestration is management extended to a workforce that includes agents. The same discipline, applied to a larger team.
+Everyone in a knowledge business will eventually need to become an orchestrator at some level. The skills involved aren't exotic: context management — knowing what information each agent needs and when. Knowing what good looks like — being able to evaluate output quality without redoing the work yourself. The ability to communicate clearly across different agents and platforms. And a working understanding of the tools and information different agents need to be successful. If this sounds familiar, it should. It's not that different from good management — creating the conditions for the people you're responsible for to succeed. Orchestration is management extended to a workforce that includes agents. The same discipline, applied to a larger team.
 
 The right person has authority over the workflow and the constraint outcome — not a project manager who coordinates, but an owner who decides. They need comfort with ambiguity, because the first few sprints will surface problems nobody anticipated and the Orchestrator has to adjust the design without freezing. And they need willingness to shift from executing to designing. The best candidate is usually the person closest to the work who's also frustrated by the parts of it that don't require their skill.
 
 That third trait is the development gap. The operations lead who got the job because she was excellent at executing operations work is now being asked to design the operations function instead of running it. It's a different role, and developing the capability is deliberate work, not a personality change.
 
-This shift requires investment. Upskilling employees to work in an orchestration environment — learning the available tools, understanding what agents can and cannot do, and building the habit of thinking through problems systematically rather than executing them directly — is not optional. Budget for it. The operations lead who became an orchestrator did not wake up with those capabilities. She developed them over several sprints with deliberate support.
+This shift requires investment. Upskilling employees to work in an orchestration environment — learning the available tools, understanding what agents can and can't do, and building the habit of thinking through problems systematically rather than executing them directly — isn't optional. Budget for it. The operations lead who became an orchestrator did not wake up with those capabilities. She developed them over several sprints with deliberate support.
 
 What does ramp-up look like? The first sprint is guided — the Orchestrator runs Design with support, either from a Compound coach or by working through the framework's question sequence step by step. Someone experienced sits alongside them, not to do the work, but to coach the process. By the second sprint, they're running the process independently. By the fourth, they're improving it. The skill isn't learned in a training session. It's learned by doing the work, one sprint at a time, with the framework holding the structure while the person builds the muscle.
 
@@ -288,7 +245,7 @@ Here's what the Hybrid Accountability Chart looks like for a real constraint —
 ### Guardrails
 
 1. **Data access:** Agent teams can read HubSpot CRM deal records, JobBOSS ERP job costing history and rate card, and the cleaned pricing exceptions database (112 rules). Off-limits: financial reporting, employee records, customer payment history, supplier contracts, and any system not listed.
-2. **Actions without approval:** Agents can draft quotes, pull data, and flag exceptions. Agents cannot send any communication to a customer, modify pricing tables, or apply undocumented pricing exceptions.
+2. **Actions without approval:** Agents can draft quotes, pull data, and flag exceptions. Agents can't send any communication to a customer, modify pricing tables, or apply undocumented pricing exceptions.
 3. **Escalation path:** When the agent encounters an input it wasn't designed for — unknown material, missing ERP data, RFQ confidence below 60%, or pricing deviation greater than 15% from the closest historical match — it flags Elena and holds until she resolves or routes to Dave (materials) or Mark Ellison (strategic account pricing).
 4. **Quality monitoring:** AI-Assisted phase — Elena reviews every draft quote. Target: zero substantive corrections for three consecutive weeks on an agent's output before considering the move to human-on-the-loop.
 5. **Kill switch:** Any quote reaching a customer without Elena's review. Agent accesses data outside its permitted systems. Pricing errors exceed 20% on three quotes in any week.
@@ -299,5 +256,5 @@ That's one constraint, one sprint, five chart rows, a named Human Orchestrator, 
 
 1. For the constraint your sprint is targeting, fill in the four Hybrid Accountability Chart questions for at least one accountability: what is the role's outcome (not task), what would you name the agent team, who is the named human supervisor, and is it AI-assisted or automated? If any field is blank, that blank is your Design session.
 2. When you look at the information flow for your constraint workflow — data in, transformations, decisions, data out — how many of the decision points are rule-based versus judgment-based? Which of the five connection patterns (skills on SOPs, RAG, data pipelines, low-code integration, service layer) fits the rule-based portion?
-3. Who in your company is the right Human Orchestrator for this sprint — the person with authority over the constraint outcome who is willing to shift from executing to designing? Name them out loud. If you have a development gap to fill before they can run the role, what does that ramp look like?
+3. Who in your company is the right Human Orchestrator for this sprint — the person with authority over the constraint outcome who is willing to shift from executing to designing? Name them out loud. If there's a development gap to fill before they can run the role, what does that ramp look like?
 4. Answer all five governance questions for your sprint's agent team right now: what data can it access, what actions can it take without approval, what happens on unrecognized input, how will you monitor quality, and what triggers the kill switch? Any unanswered question is a Design gap that will surface in Build at five times the cost.
