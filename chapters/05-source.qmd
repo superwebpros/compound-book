@@ -5,175 +5,45 @@
 Source maps the information environment around the one constraint Signal validated. You're answering a specific question: what does our organization know about *this problem*, and where does that knowledge live? The deliverable is a one-page Knowledge Map — a six-column table (Source, Type, Owner, Status, Pipeline, Notes) that inventories every digital system, person, and gap relevant to the constraint. Skip Source and Design becomes a guessing exercise built on assumptions nobody verified.
 :::
 
-```scout-note:
-E28 (ATTRIBUTION + NEW-SECTION, LAND-WITH-MODIFICATION) — Jesse Marina/coordinator opener attribution + Julie's parallel global food safety company tribal-knowledge story.
+Jesse and Marina were on a call deciding what to do about our project coordinator. The role was costing us ~$24,000 a year. Work was falling behind. Billing was getting impacted. Signal had validated the constraint. This function was broken and it was costing us real money.
 
-CASCADE PART A (Jesse-side attribution, this paragraph + L10 + L12 + L30 + L130):
-- Apply blended-we + single in-prose Jesse attribution at L8 opener; cascade I→we at L10, L12, L30, L130. Pattern A (preferred): "Jesse and Marina were on a call..." OR "Marina and Jesse were on a call..." Then sustain blended-we across L10 → L12 → L14. Cross-chapter consistency: Ch 2 L8 uses "Jesse was in a management meeting with Marina, his Integrator..."; Ch 4 L8 uses "Jesse was in our own L10..." — same pattern.
-- L8 contractions PRESERVE (current chapter contractions are canonical; do not regress to Julie's no-contractions source).
-- L10 "I stopped the conversation. 'We need to understand what she actually does..." → "We stopped the conversation..." or restructure to preserve cadence (Drafter choice).
-- L30 "When Marina and I mapped..." → "When we mapped..." (collective blended-we; Jesse-anchor already established at L8).
-- L130 "If I had mapped..." → "If we had mapped..." (collective blended-we); preserve developer-chutes-and-ladders cross-reference per `ahmed-story-is-chutes-and-ladders` and `pm-case-study-thread-through-book` memories; italicize *Chutes and Ladders* ONLY if proper noun reintroduced (recommend preserve current phrasing without re-introduction).
-- REJECT Julie's inline `Jesse:` and `Julie:` underline tags from redline (per Q-E21 convention).
-- PRESERVE Marina + $24K coordinator story verbatim (canonical polished replacement per commit `6c99346`).
+But before we could decide *what* to do about it, we stopped the conversation. "We need to understand what she actually does. Not what's in the job description. What she actually touches, what systems she's in, what decisions she makes that nobody else makes, and what's in her head that isn't written down anywhere."
 
-CASCADE PART B (Julie's parallel story, lands AFTER L14 closer "Mapping that flow was Source...") — see scout-note block before §5.0 H2 heading.
+That question changed the shape of the conversation. It stopped being about whether to replace the coordinator and started being about how information moved through her role. Every task she performed consumed information from somewhere: a project management tool, a client email, a subcontractor's status update. It produced information that went somewhere else. Mapping that flow was Source. We didn't call it that at the time. But it was the step that kept us from acting on assumptions instead of acting on reality.
 
-EC1 cross-chapter: Marina anchor must inherit Ch 2 L8 attribution convention (Marina = Integrator; same canonical reference).
-```
+Every modern company is an information company, whether it recognizes itself as one or not. Your CRM, your ERP, your shared drives, your inboxes: all of it is information used to make decisions. Source makes that information environment visible. Signal named the constraint. Source maps what the organization knows about it and where that knowledge lives before anyone designs against it. The diagnosis isn't finished when the constraint is named. It's finished when the team can see on a single page every asset, every gap, and the institutional knowledge the constraint depends on.
 
-```jf-note:
-```
-
-Marina and I were on a call deciding what to do about our project coordinator. The role was costing us ~$24,000 a year. Work was falling behind. Billing was getting impacted. Signal had validated the constraint — this function was broken and it was costing us real money.
-
-But before we could decide *what* to do about it — hire, restructure, automate — I stopped the conversation. "We need to understand what she actually does. Not what's in the job description — what she actually touches, what systems she's in, what decisions she makes that nobody else makes, and what's in her head that isn't written down anywhere."
-
-That question changed the shape of the conversation. It stopped being about whether to replace the coordinator and started being about how information moved through her role. Every task she performed consumed information from somewhere — a project management tool, a client email, a subcontractor's status update — and produced information that went somewhere else. Mapping that flow was Source. We didn't call it that at the time. But it was the step that kept us from acting on assumptions instead of acting on reality.
-
-Every modern company is an information company, whether it recognizes itself as one or not. Your CRM, your ERP, your shared drives, your inboxes — all of it is information used to make decisions. Source makes that information environment visible. Signal named the constraint. Source maps what the organization knows about it — and where that knowledge lives — before anyone designs against it. The diagnosis is not finished when the constraint is named. It's finished when the team can see — on a single page — every asset, every gap, and every piece of institutional knowledge that the constraint depends on.
-
-```scout-note:
-E28 CASCADE PART B (NEW-SECTION) — Julie's parallel global food safety company tribal-knowledge story.
-
-LANDING: NEW PARAGRAPH between L14 (chapter-thesis pivot) and L16 (§5.0 H2 heading "Diagnosis is not done until you know what you *have*.").
-
-SUBSTANCE (from `_julie/julie-redline.md:1505-1519`):
-- In M&A integration work, inherited knowledge is entirely tribal. At a global food safety company (post-Fortune-500 acquisition), process experts who had been with the parent company for twenty years held institutional memory that existed nowhere in any system. Their expertise was the documentation.
-- Load-bearing diagnostic question (PRESERVE verbatim or near-verbatim): "if this person were not here tomorrow, what would stop working?"
-- Load-bearing operator outcome (PRESERVE): "The answers were almost always more alarming than anyone expected."
-- Substance hook to chapter thesis (substance preserved; framing reworked): "The gap between what organizations think they know and what they actually have in documented, accessible form is the single most consistent finding of every... [REWORK]. Source closes that gap before it becomes a sprint failure."
-
-MODIFICATIONS:
-- FRAMEWORK-ATTRIBUTION (indirect): "every organizational design engagement I have run" → joint observational reframe with single in-prose Julie anchor. Recommended pattern: "Julie has watched the same gap land in M&A integration work outside any AI context. At a global food safety company..." or similar.
-- FORBIDDEN VOCAB (HIGH — recurring 3/3+ chapter pattern): strip "organizational design engagement"; reframe as "every M&A integration" / "every post-acquisition redesign" / "every people-systems engagement" / plain operator language.
-- CROSS-CHAPTER N-GRAM CHECK (HIGH — FOUR PRIOR a global food safety company anchors): must NOT verbatim-echo:
-  - Preface L9 (44-country / Fortune-500 / "challenge wasn't technology")
-  - Ch 1 L57 ("smaller proportional team than the pre-acquisition domestic function")
-  - Ch 2 §2.3 (graft-vs-redesign / countries / supplier networks)
-  - Ch 4 L18 (matrix-reporting / two reporting lines crossed / leaders operating inside an accountability structure)
-  DIFFERENTIATING ANGLE: inherited tribal knowledge / process experts whose expertise was the documentation / "if this person were not here tomorrow, what would stop working?" diagnostic question. Do NOT re-introduce 44-country scope or CHRO title (those are Preface + Ch 1 + Ch 4 anchors).
-- A3 (LOW): clean substance, no triplet construction; verify Drafter introduces zero.
-- A1 (CLEAN): closer "Source closes that gap before it becomes a sprint failure" is operator-direct declarative; preserve.
-- A4 (MED): "every... I have run" credentialing → strip per framework-attribution scrub; single in-prose attribution per author maximum.
-- A2 (LOW): "Source" already staked; do NOT pre-empt "Knowledge Map" capitalized naming before §5.1 defines (use plain "knowledge" / "the inventory" / "what people know").
-- A13 MEANS/ENDS-RISK (MED): chapter-opener-adjacent landing; close on operator outcome (alarming answers / gap closed before sprint failure / tribal knowledge surfaced before integration failure); name Source as the means. Julie's source already does this — preserve order: inherited tribal knowledge → diagnostic question → operator outcome → §5.0 thesis hook.
-- E60 anonymization: "a global food safety company" already conforms; "Fortune 500 parent / division" already conforms.
-- IN-PROSE ATTRIBUTION (per Q-E21): Single Julie anchor at opening; blended-we / third-person for story body. FIRST Julie-voice paragraph in Ch 5; subsequent E30 / E31 / E32 anchors should be lighter or implicit.
-
-EC1: "Source" usage matches canon (per Ch 3 §3.3 + Ch 5 In Brief) — PASS.
-
-COHERENCE: lands chapter-opener-adjacent; must read as a parallel demonstration of Source applied to M&A integration (different context from Marina/coordinator opener); single forward motion from Jesse opener → information-flow framing → Source naming → Julie's parallel → §5.0 thesis.
-```
-
-```jf-note:
-```
+Julie has watched the same gap surface in M&A integration work, well outside any AI context. When the acquired division closed at a global food safety company, the inherited assets included process experts who had been with the parent for twenty years. Their institutional memory existed nowhere in any system. Their expertise was the documentation. The first question Julie asked every integration team was the same question Source asks: if this person were not here tomorrow, what would stop working? The answers were almost always more alarming than anyone expected. The gap between what a company thinks it knows and what it actually has in documented, accessible form is the most consistent finding in every post-acquisition integration. Source closes that gap before it becomes a sprint failure.
 
 ## Diagnosis is not done until you know what you *have*.
 
 The temptation at the end of Signal is to act. The constraint is named. The cost is quantified. The team feels the momentum and wants to move — hire someone, buy a tool, build something, anything. That instinct costs more than most teams realize.
 
-To become a Co-Intelligent Company capable of Co-Intelligent Co-Operation requires knowing what you're working with — which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and you won't get past the first design conversation, because nobody in the room will agree on what data exists, where it lives, or who holds the judgment the workflow depends on.
+To become a Co-Intelligent Company capable of Co-Intelligent Co-Operation requires knowing what you're working with: which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and you won't get past the first design conversation, because nobody in the room will agree on what data exists, where it lives, or who holds the judgment the workflow depends on.
 
-```scout-note:
-E29 (FRAMEWORK-ADD, LAND-WITH-MODIFICATION) — TML Framework as Knowledge Map categorization. [HIGHEST PRIORITY / HIGHEST EC1 RISK IN CHAPTER]
+Knowledge sorts into three layers. The **TML framework** (Task / Management / Leadership) is the lens Source uses to categorize what the inventory finds.
 
-LANDING: NEW PARAGRAPH inside §5.1, between L20 (current paragraph closer "Source produces that ground truth. Skip it...") and L22 (next paragraph "This is why Source belongs in Diagnose...") — Pattern A (preferred). Alternative landing: new H3 between L22 and L24 (Pattern B fallback).
+**Task knowledge** is the documented steps: the SOPs, the process maps, the work that can be written down and followed. **Management knowledge** is the decision rights, the escalation paths, the governance rules that determine who approves what. **Leadership knowledge** is the judgment, the relationships, the context, the pattern recognition that only comes from years inside the business.
 
-SUBSTANCE (from `_julie/julie-redline.md:1535-1551`):
-Knowledge sorts into three layers:
-- TASK knowledge = documented steps, SOPs, process maps — work that can be written down and followed.
-- MANAGEMENT knowledge = decision rights, escalation paths, governance rules.
-- LEADERSHIP knowledge = judgment, relationships, context, pattern recognition.
+Task knowledge is the easiest to capture and the most common to find in systems; Management knowledge is partially documented and inconsistently followed; Leadership knowledge almost never exists outside the people who hold it. Each layer requires a different capture and transfer approach. AI can reliably handle Task knowledge, can assist with Management knowledge, and requires human oversight for Leadership knowledge at every step. The same framework applies to the work itself in Chapter 6, where TML becomes the lens for deconstructing what each role actually does.
 
-Empirical pattern: Task knowledge easiest to capture (most common in systems); Management knowledge partially documented (inconsistently followed); Leadership knowledge almost never exists outside the people who hold it.
+This is why Source belongs in Diagnose, not Execute. The diagnosis includes the information environment. Until you've mapped what you've got, the constraint is a named problem without a buildable path forward. Once the map exists, it becomes a design problem: scoped, specific, and grounded in reality.
 
-LOAD-BEARING CANONICAL-DEFINITION CLOSING CLAUSE (PRESERVE — matches manifest E36 canon): "AI can reliably handle Task knowledge, can assist with Management knowledge, and requires human oversight for Leadership knowledge at every step."
+## Source is the *Identify* phase.
 
-EC1 CANONICAL-DEFINITION VERIFICATION (MANDATORY per scout.md §5 + Ch 2 lessons-learned EC1 update):
-- Canonical TML per manifest E36 + voice charter §3 + Ch 2 L259 forward-reference: Task → Fully Automatable; Management → AI-Assisted; Leadership → Human Judgment.
-- Julie's E29 source TML (knowledge lens): Task knowledge / Management knowledge / Leadership knowledge + AI-handling mapping (handle / assist / oversight).
-- EC1 VERDICT: PASS. Names match canon. AI-handling mapping matches canon. Lens difference (knowledge categorization in Ch 5 vs. work categorization in Ch 6b) is COMPLEMENTARY, NOT CONTRADICTORY. Both lenses are valid applications of the same canonical framework.
-- NO AUTHOR DECISION REQUIRED at this gate. Drafter executes per acceptance criteria below.
+The **Problem/Identify/Solution (PIS) framework** gives the Source conversation its structure. The Problem has already been named by Signal: the validated constraint. Source is the Identify phase. Everything the organization knows about that problem: where the knowledge lives, who holds it, what's at risk if they leave, and what's missing that Build will need. Solution comes later, in Design and Build.
 
-MODIFICATIONS:
-- FRAMEWORK-ATTRIBUTION (DIRECT — HIGH): "Julie's TML framework gives Source its diagnostic structure" → joint canonical-vocabulary introduction. Recommended: "The **TML framework** (Task / Management / Leadership) gives Source its diagnostic structure." OR "Knowledge sorts into three layers — Task, Management, Leadership. The **TML framework** is the lens." TML is joint book IP per manifest §57 global rule + framework-attribution-rule memory. Origin-credit to Julie's CHRO practice acceptable as one sentence but never as her individual instrument; recommend skip individual attribution at framework-introduction sentence.
-- A2 FIRST-DEFINITION LOAD-BEARING (CRITICAL): TML is being first-introduced load-bearing in Ch 5 (Ch 2 L259 was forward-reference). Definition must be precise enough to support Ch 6b's work-lens application (E36 separate bead). Acceptance criteria: (a) define TML as three-category framework with Task/Management/Leadership names verbatim; (b) define each category by what it is and how AI handles it; (c) frame as knowledge lens; (d) signal that the same framework applies to work in Ch 6b (forward reference acceptable single instance).
-- A3 STACKED TRIPLET (MED): three-layer framework definition acceptable (it IS the framework). SECOND WAVE of parallel description ("Task knowledge is the easiest to capture... Management knowledge is partially documented... Leadership knowledge almost never exists...") is A3 trap. RESOLUTION: collapse to SINGLE SENTENCE with semicolon bridges — "Task knowledge is the easiest to capture and the most common to find in systems; Management knowledge is partially documented and inconsistently followed; Leadership knowledge almost never exists outside the people who hold it."
-- A1 (CLEAN): no antithesis closer; preserve operator-direct closing.
-- FORBIDDEN VOCAB (MED): strip "organizational design foundation of the knowledge mapping work" → "the design logic of Source" / "the foundation of the knowledge mapping work" / remove entirely.
-- A4 (LOW): framework-attribution scrub addresses; no individual credentialing.
-- A13 MEANS/ENDS-RISK (LOW): close on AI-handling mapping (operator outcome — what AI handles, assists, oversees) rather than abstract "diagnostic structure" (system-as-destination); Julie's source already lands this; preserve.
-- IN-PROSE ATTRIBUTION: light; framework lands as joint vocabulary.
+The PIS sequencing discipline enforces the same logic the Compound Sequence enforces: you don't move to solution until you've identified what you're actually working with. Running Source without having completed Signal is the same discipline as prescribing before diagnosing. The constraint has to be named before the knowledge inventory begins, because the inventory is shaped by the constraint.
 
-CROSS-CHAPTER COHERENCE (flagged for separate Drafter pass, NOT BLOCKING E29 landing):
-- Ch 2 L259 forward-reference currently says "Chapter 6 introduces the full design instrument — the **TML framework** (Task / Management / Leadership)..." After E29 lands TML in Ch 5, this forward-reference needs update to: "Chapter 5 introduces the **TML framework** (Task / Management / Leadership) as the lens for organizing what the company knows; Chapter 6 applies the same framework to the work itself."
-- Ch 6b currently uses four-category Work Deconstruction (Human judgment required / Agent-assisted / Fully automatable / Workflow automation only). E36 bead (separate execution) will align Ch 6b's work-lens to TML's three categories (Task→Fully Automatable, Management→AI-Assisted, Leadership→Human Judgment). Until E36 lands, both can co-exist; Ch 5 E29 is the canonical source-of-record.
-- Glossary E58 will add canonical TML definition; inherits from Ch 5 E29.
+A Source run on the wrong constraint is a well-organized inventory of the wrong problem.
 
-A2 DISCIPLINE: "Knowledge Map" capitalized is acceptable in E29 IF the §5.1 H2 heading is treated as defining the deliverable in the paragraph immediately following. Drafter discretion. Do NOT pre-empt PIS (defined via E31).
+## Create a *Knowledge Map*.
 
-LANDING PATTERN CHOICE:
-- Pattern A (RECOMMENDED): paragraph inside §5.1, between L20 and L22. TML lands as the lens that explains HOW Source produces ground truth.
-- Pattern B (fallback): new H3 between L22 and L24, titled "Three layers of *knowledge*" or "The *TML* lens".
-```
+The deliverable of Source is a **Knowledge Map**: a structured inventory of every information source relevant to the validated constraint. It's a table: six columns (Source, Type, Owner, Status, Pipeline, Notes), one row per source, that fits on a single page. Digital systems, people, and gaps all appear as rows in the same table, because a workflow consumes all of them the same way. The Knowledge Map isn't a diagram or a narrative. It's a structured reference that makes the information environment legible at a glance.
 
-```jf-note:
-```
+For a given Sprint and a given constraint, a good Knowledge Map fits on one page. It doesn't catalog every database in the company. It catalogs everything relevant to the constraint Signal validated, and nothing else. If the constraint is the quoting cycle, the Knowledge Map describes what is known about quoting: the pricing rules, the historical quotes, the exception handling, the customer-specific terms, the institutional memory of who decided what and why. It doesn't describe the company's HR records, its accounting close, or its marketing analytics, because those aren't in the path of the constraint. Over multiple Sprints, you'll accumulate multiple maps, and over time those maps build into a broader picture of where your organization's knowledge lives. But each individual map stays scoped to one constraint.
 
-This is why Source belongs in Diagnose, not Execute. The diagnosis includes the information environment. Until you've mapped what you have, the constraint is a named problem without a buildable path forward. Once the map exists, it becomes a design problem — scoped, specific, and grounded in reality.
-
-```scout-note:
-E31 (FRAMEWORK-ADD, LAND-WITH-MODIFICATION) — PIS Framework: Source = Identify phase of Problem/Identify/Solution.
-
-LANDING: NEW H2 between L22 (§5.0 closer "Once the map exists, it becomes a design problem...") and L24 (§5.1 H2 heading "Create a *Knowledge Map*") — Pattern A (PREFERRED, because PIS is a framework deserving its own H2 visual hierarchy). Alternative landing: paragraph in §5.0 between L22 and L24 (Pattern B fallback). H2 TITLE FLAGGED FOR DRAFTER: "The *PIS* lens." or "Source is the *Identify* phase." or similar (sentence case + period + one italic emphasized word per voice charter §2).
-
-SUBSTANCE (from `_julie/julie-redline.md:1590-1604`):
-- PIS = Problem / Identify / Solution three-phase diagnostic.
-- PHASE MAPPING (PRESERVE verbatim or near-verbatim):
-  - PROBLEM = Signal (the validated constraint).
-  - IDENTIFY = Source (everything the organization knows about that problem — where the knowledge lives, who holds it, what is at risk if they leave, and what is missing that Build will need).
-  - SOLUTION = Design + Build (Solution comes later).
-- Sequencing discipline (PRESERVE): "Running Source without having completed Signal is the [same discipline as / structural equivalent of] prescribing before diagnosing. The constraint has to be named before the knowledge inventory begins, because the inventory is shaped by the constraint."
-- Operator-direct closer (PRESERVE verbatim): "A Source run on the wrong constraint is a well-organized inventory of the wrong problem."
-
-EC1 CANONICAL-DEFINITION VERIFICATION (MANDATORY per scout.md §5):
-- Canonical PIS per manifest E31: Source = the **I**dentify phase of **P**roblem/**I**dentify/**S**olution.
-- Julie's E31 source: Problem = Signal-validated constraint; Identify = Source; Solution = Design + Build.
-- EC1 VERDICT: PASS. Phase names match. Phase-to-Compound-stage mapping matches.
-- NO AUTHOR DECISION REQUIRED at this gate.
-
-MODIFICATIONS:
-- FRAMEWORK-ATTRIBUTION (DIRECT — HIGH): "Julie's Problem/Identify/Solution framework gives the Source conversation its structure" → joint canonical-vocabulary introduction. Recommended: "The **Problem/Identify/Solution (PIS) framework** gives the Source conversation its structure." OR "Source maps onto a three-phase diagnostic: Problem / Identify / Solution. **PIS** is the framework name." PIS is joint book IP per manifest §57 global rule.
-- A2 FIRST-DEFINITION LOAD-BEARING (HIGH): PIS is being first-introduced load-bearing in Ch 5 (no prior references). Acceptance criteria: (a) define PIS by three phases verbatim (Problem / Identify / Solution); (b) map each phase to its Compound stage(s); (c) frame as diagnostic lens underneath the first three stages of the Sequence.
-- A3 (LOW): three-phase enumeration is observational framework; do NOT add second wave of parallel structure.
-- A1 (CLEAN): closer is operator-direct declarative; preserve.
-- FORBIDDEN VOCAB (MED): strip "organizational design equivalent of prescribing before diagnosing" → "the same discipline as prescribing before diagnosing" (RECOMMENDED) or "the structural equivalent of."
-- A4 (LOW): framework-attribution scrub addresses; no individual credentialing.
-- A13 MEANS/ENDS-RISK (MED — chapter-framing-adjacent landing): close on operator outcome (wrong-problem inventory = wasted Sprint); name PIS as the means; Julie's source already lands this — preserve order.
-- IN-PROSE ATTRIBUTION: light; framework lands as joint vocabulary. Acceptable single origin-credit to Julie's CHRO practice but not required.
-
-CROSS-CHAPTER COHERENCE (flagged for separate Drafter pass, NOT BLOCKING E31 landing):
-- Glossary E58 will add canonical PIS definition; inherits from Ch 5 E31.
-- Ch 3 §3.3 Sequence (Signal/Source/Design/Build/Deliver/Compound) is NOT re-introduced in E31. PIS is a complementary three-phase lens, not a replacement of Ch 3's six-stage framework. Reference is one-line ("Signal names the Problem; Source Identifies what is known; Design and Build are the Solution").
-
-A2 DISCIPLINE: do NOT pre-empt Knowledge Map naming (defined at §5.1 L24 immediately after). Reference is "the inventory" / "what the organization knows" / "the Identify phase produces."
-
-LANDING PATTERN CHOICE:
-- Pattern A (RECOMMENDED): NEW H2 between L22 and L24. PIS gets its own H2 visual hierarchy as the diagnostic-sequencing lens that frames the rest of the chapter.
-- Pattern B (fallback): paragraph in §5.0 between L22 and L24.
-```
-
-```jf-note:
-```
-
-## Create a *Knowledge Map*
-
-The deliverable of Source is a **Knowledge Map**: a structured inventory of every information source relevant to the validated constraint. It is a table — six columns (Source, Type, Owner, Status, Pipeline, Notes), one row per source — that fits on a single page. Digital systems, people, and gaps all appear as rows in the same table, because a workflow consumes all of them the same way. The Knowledge Map is not a diagram or a narrative. It is a structured reference that makes the information environment legible at a glance.
-
-For a given Sprint and a given constraint, a good Knowledge Map fits on one page. It doesn't catalog every database in the company. It catalogs everything relevant to the constraint Signal validated, and nothing else. If the constraint is the quoting cycle, the Knowledge Map describes what is known about quoting — the pricing rules, the historical quotes, the exception handling, the customer-specific terms, the institutional memory of who decided what and why. It doesn't describe the company's HR records, its accounting close, or its marketing analytics, because those aren't in the path of the constraint. Over multiple Sprints, you'll accumulate multiple maps — and over time, those maps build into a broader picture of where your organization's knowledge lives. But each individual map stays scoped to one constraint.
-
-The test for a good Knowledge Map is simple: could someone who wasn't in the room use this map to architect a workflow against the constraint? When Marina and I mapped what our project coordinator did, the map didn't catalog every system in the company. It cataloged what the coordinator touched, what she decided, and what would break if she disappeared tomorrow. 
+The test for a good Knowledge Map is simple: could someone who wasn't in the room use this map to architect a workflow against the constraint? When we mapped what our project coordinator did, the map didn't catalog every system in the company. It cataloged what the coordinator touched, what she decided, and what would break if she disappeared tomorrow.
 
 {{< excalidraw ch05-knowledge-map-pm-case-study "Knowledge Map: PM Agent Team case study — six-column inventory of information sources." >}}
 
@@ -184,67 +54,32 @@ If your Source output doesn't fit on one page, it's not scoped to the constraint
 
 {{< excalidraw ch05-knowledge-map-table "Knowledge Map: six-column structure with sample rows for Digital, Organic, and Missing sources" >}}
 
-**Building your Knowledge Map.** Start with a blank page and the constraint statement Signal produced. Draw six columns: *Source*, *Type*, *Owner*, *Status*, *Pipeline*, *Notes*. The first four columns are the Knowledge Map. The fifth — Pipeline — is the Data Pipeline Audit. Run them together, not as separate exercises. Then work through three passes.
+**Building your Knowledge Map.** Start with a blank page and the constraint statement Signal produced. Draw six columns: *Source*, *Type*, *Owner*, *Status*, *Pipeline*, *Notes*. The first four columns are the Knowledge Map. The fifth (Pipeline) is the Data Pipeline Audit. Run them together, not as separate exercises. Then work through three passes.
 
-**Pass 1 — Digital.** List every digital source that touches the constraint — the CRM records, the process logs, the shared drives, the inboxes, the spreadsheets. For each one, write the name, mark it as Digital, name the person who owns or maintains it, and mark its status: Clean (data is accurate, current, and usable as-is), Needs Work (data exists but has quality or format problems), or Missing (the data should exist but doesn't). Then answer four Pipeline Audit questions: Does this source connect to the other systems that touch the constraint, or does data move by manual export? Can a workflow read data from this source directly, or does someone have to export and re-enter it first? Who owns the handoff — a person, a scheduled job, or nobody? When was the data last verified as accurate? Mark each digital source's pipeline as *Connected*, *Manual*, or *Broken*. (If the terms "API," "MCP," and "connector" are new to you, the section "How systems talk to each other" later in this chapter defines each one in plain language. You do not need to understand the engineering to fill in this column.)
+**Pass 1 — Digital.** List every digital source that touches the constraint: the CRM records, the process logs, the shared drives, the inboxes, the spreadsheets. For each one, write the name, mark it as Digital, name the person who owns or maintains it, and mark its status: Clean (data is accurate, current, and usable as-is), Needs Work (data exists but has quality or format problems), or Missing (the data should exist but doesn't). Then answer four Pipeline Audit questions: Does this source connect to the other systems that touch the constraint, or does data move by manual export? Can a workflow read data from this source directly, or does someone have to export and re-enter it first? Who owns the handoff: a person, a scheduled job, or nobody? When was the data last verified as accurate? Mark each digital source's pipeline as *Connected*, *Manual*, or *Broken*. (If the terms "API," "MCP," and "connector" are new to you, the section "How systems talk to each other" later in this chapter defines each one in plain language. You don't need to understand the engineering to fill in this column.)
 
 :::{.callout-note}
 ## Action Step
 Open the constraint statement from Signal. List every digital system that touches the constraint workflow. For each one, fill in all six columns — Source, Type, Owner, Status, Pipeline, Notes. Don't filter. If it touches the constraint, it goes on the map.
 :::
 
-**Pass 2 — Organic.** List every person whose judgment the constraint workflow depends on — meaning if they disappeared tomorrow, the work would stop or degrade. The ops lead who handles the exceptions, the account manager who knows the customer's actual tolerance, the senior engineer who hasn't written anything down. Each person is a row on the same map, marked Organic. Name them, name what they know that isn't documented anywhere, and assess whether their knowledge is at risk of leaving. Be specific — not "she knows the quoting process" but "she knows the three pricing exceptions for legacy customers that override the rate card."
+**Pass 2 — Organic.** List every person whose judgment the constraint workflow depends on: if they disappeared tomorrow, the work would stop or degrade. The ops lead who handles the exceptions, the account manager who knows the customer's actual tolerance, the senior engineer who hasn't written anything down. Each person is a row on the same map, marked Organic. Name them, name what they know that isn't documented anywhere, and assess whether their knowledge is at risk of leaving. Be specific. Not "she knows the quoting process" but "she knows the three pricing exceptions for legacy customers that override the rate card."
 
 :::{.callout-note}
 ## Action Step
 Name every person whose judgment the constraint workflow depends on. For each one, write specifically what they know that no system holds. Flag anyone who's a single point of failure.
 :::
 
-**Pass 3 — Missing.** Look at what's absent. What would a designer need to know to solve this constraint that isn't represented anywhere in the first two passes? What question would someone ask about this workflow that your current sources can't answer? What decision is currently made by gut feel that should be made by data? Add those rows as Missing sources, and note what type they *should* be — digital system, documented process, captured expertise — and what it would take to create them.
+**Pass 3 — Missing.** Look at what's absent. What would a designer need to know to solve this constraint that isn't represented anywhere in the first two passes? What question would someone ask about this workflow that your current sources can't answer? What decision is currently made by gut feel that should be made by data? Add those rows as Missing sources, and note what type they *should* be: digital system, documented process, captured expertise. Note what it would take to create them.
 
-```scout-note:
-E32 (NEW-SECTION, LAND-WITH-MODIFICATION) — Julie's "Missing sources column is most important" framing.
-
-LANDING: NEW PARAGRAPH inside §5.1, between L57 (Pass 3 — Missing paragraph closer "Add those rows as Missing sources, and note what type they *should* be...") and L59 (Action Step "Review your map from Pass 1 and Pass 2...").
-
-SUBSTANCE (from `_julie/julie-redline.md:1611-1623`):
-- The Missing sources column is the most important of the three Knowledge Map sections — because Missing sources are where the highest-risk gaps live.
-- TWO CATEGORIES OF MISSING SOURCES (observational two-option, NOT triplet — PRESERVE):
-  - Decisions made by leaders who have since left = MANAGEMENT KNOWLEDGE loss.
-  - Customer/market intelligence never systematically captured = LEADERSHIP KNOWLEDGE that existed in individuals no longer available.
-- Operator outcome (PRESERVE verbatim): "The Knowledge Map's missing sources column is where the sprint finds its highest-risk gaps. Every missing source is a potential sprint failure mode."
-- Operator-direct closer (A1 CLEAN — PRESERVE verbatim): "Name them before Build begins, not after deployment reveals them."
-
-MODIFICATIONS:
-- FRAMEWORK-ATTRIBUTION (DIRECT — MED): "From an organizational design perspective" + "Julie's practice in every organizational design engagement" DOUBLE individual attribution → joint observational with single in-prose Julie anchor. Recommended pattern: "From a people-systems lens, the Missing sources column is the most important. Julie has watched every M&A integration produce the same finding: the highest-risk gaps are what the organization does not know it does not know."
-- FORBIDDEN VOCAB (HIGH — recurring 3/3+ chapter pattern): strip BOTH "organizational design perspective" AND "organizational design engagement"; replace with "people-systems lens" / "knowledge inventory practice" / "every M&A integration" / "every post-acquisition assessment" / plain operator language. Drafter scanner gate MUST catch zero "organizational design" instances.
-- A3 THIRD-OPTION TRIPLET CONVERSION RISK (MED): PRESERVE Julie's two-category Missing sources frame (Management knowledge loss + Leadership knowledge in individuals no longer available). Do NOT add a third category (e.g., do not introduce "Task knowledge that was never documented" as a third Missing category — Task knowledge is rarely Missing per TML empirical pattern).
-- A1 (CLEAN): closer is operator-direct declarative; preserve verbatim.
-- A4 (LOW): "Julie's practice in every... engagement" credentialing → strip; mitigated by Preface + Ch 1 + Ch 4 + E28 + E30 attribution setup.
-- A2 (CLEAN): "Missing sources" canonical at L57; "Management knowledge" + "Leadership knowledge" canonical post-E29 landing. Verify Drafter does NOT redefine.
-- A13 MEANS/ENDS-RISK (LOW): closer lands operator outcome (every missing source = potential sprint failure mode); name Build as the means by which deployment reveals them. CLEAN.
-
-TML CROSS-REFERENCE (CRITICAL — post-E29 landing):
-E32 explicitly invokes TML categories (Management knowledge loss + Leadership knowledge in individuals no longer available). Post-E29 landing, the TML framework is canonical. E32 should REFERENCE TML EXPLICITLY to anchor cross-section coherence — e.g., "Per the TML framework introduced earlier, Missing sources cluster in two of the three layers: Management knowledge (decisions made by leaders who have since left) and Leadership knowledge (customer or market intelligence that existed in individuals no longer available). Task knowledge, by contrast, is the layer most commonly captured in systems — its absence is usually a documentation gap, not a knowledge loss."
-
-CROSS-CHAPTER N-GRAM CHECK: verify no verbatim echo with §5.7 closer at L185 ("Source is not where data infrastructure gets built. Source names the gaps.") — closest semantic ground. Check for overlap on "gap" / "Source names" / "Build begins".
-
-IN-PROSE ATTRIBUTION: light; implicit via context PREFERRED. E32 is the FOURTH Julie-voice paragraph in the chapter (after E28, E29 origin-credit if any, E30); attribution frequency must compress.
-
-EC1: "Missing sources" canonical per L57 — PASS; E32 elaborates, does NOT redefine.
-
-DEPENDENCY: E29 must execute first (TML vocabulary canonical for E32's reference).
-```
-
-```jf-note:
-```
+The Missing sources column is the most important column on the Knowledge Map. That's where the highest-risk gaps live. Per the TML framework, Missing sources cluster in two of the three layers. Management knowledge loss: decisions made by leaders who have since left, governance rules that existed nowhere except a person's memory and walked out with them. Leadership knowledge loss: customer or market intelligence that was never systematically captured, context that existed in individuals no longer available. Task knowledge is the layer most commonly captured in systems. Its absence is usually a documentation gap, not a knowledge loss. The Knowledge Map's Missing column is where the sprint finds its highest-risk gaps. Every missing source is a potential sprint failure mode. Name them before Build begins, not after deployment reveals them.
 
 :::{.callout-note}
 ## Action Step
 Review your map from Pass 1 and Pass 2. Write down every gap — every question a designer would ask that your current sources can't answer. Add them to the map as Missing sources.
 :::
 
-When you're done, you have a Knowledge Map — one page, one constraint, everything relevant. If a row doesn't connect to the constraint, it doesn't belong on the map.
+When you're done, you've got a Knowledge Map: one page, one constraint, everything relevant. If a row doesn't connect to the constraint, it doesn't belong on the map.
 
 {{< excalidraw ch05-three-pass-build "Three-pass build: Digital, Organic, and Missing passes feeding into a completed one-page Knowledge Map" >}}
 
@@ -252,24 +87,24 @@ When you're done, you have a Knowledge Map — one page, one constraint, everyth
 
 Not all knowledge is the same. Once the map is built, classify each source along two axes and one tier system.
 
-**Structured vs. unstructured.** Database fields, tagged articles, CRM records, spreadsheets with defined columns — that's structured. AI can use it immediately. Emails, meeting transcripts, PDFs, Slack threads, "ask Sarah" — that's unstructured. AI needs processing before it's useful. The more structured your information is, the more useful it is to an AI workflow. If a source is unstructured but valuable, flag it — that's a Design decision about whether to structure it.
+**Structured vs. unstructured.** Database fields, tagged articles, CRM records, spreadsheets with defined columns: structured. AI can use it immediately. Emails, meeting transcripts, PDFs, Slack threads, "ask Sarah": unstructured. AI needs processing before it's useful. The more structured your information is, the more useful it is to an AI workflow. If a source is unstructured but valuable, flag it. That's a Design decision about whether to structure it.
 
-**Durable vs. ephemeral.** Brand guidelines, pricing rules, process SOPs, regulatory requirements — durable. This week's to-do list, meeting notes, brainstorm output, first-pass drafts — ephemeral. Only durable knowledge belongs on the Knowledge Map. If it won't matter in 90 days, it doesn't belong.
+**Durable vs. ephemeral.** Brand guidelines, pricing rules, process SOPs, regulatory requirements: durable. This week's to-do list, meeting notes, brainstorm output, first-pass drafts: ephemeral. Only durable knowledge belongs on the Knowledge Map. If it won't matter in 90 days, it doesn't belong.
 
 **AI tiers.** Think of three tiers, each consumed differently:
 
-- **Standing context** — core facts that are always true (brand rules, product definitions, org structure). Loaded automatically. AI always has it.
-- **Retrieved knowledge** — documents, articles, detailed procedures. Retrieved on demand when relevant to a query.
-- **Historical record** — transcripts, meeting notes, archived decisions. Lowest priority. Flagged as historical, never treated as current truth.
+- **Standing context:** core facts that are always true (brand rules, product definitions, org structure). Loaded automatically. AI always has it.
+- **Retrieved knowledge:** documents, articles, detailed procedures. Retrieved on demand when relevant to a query.
+- **Historical record:** transcripts, meeting notes, archived decisions. Lowest priority. Flagged as historical, never treated as current truth.
 
-For each source on your map, mark which tier it falls into. This classification directly informs Design — it determines how the AI system will access and weight each source.
+For each source on your map, mark which tier it falls into. This classification directly informs Design: it determines how the AI system will access and weight each source.
 
 :::{.callout-tip}
 ## Pro Tip
 An AI workflow that treats everything as equally current is an AI workflow that will confidently cite your deprecated pricing from 2019. The tiers exist to prevent this.
 :::
 
-Run the classification while the map is fresh — it goes fast and directly informs what Design builds.
+Run the classification while the map is fresh. It goes fast and directly informs what Design builds.
 
 :::{.callout-note}
 ## Action Step
@@ -280,15 +115,15 @@ Review each source on your map. Mark whether it's structured or unstructured, du
 
 If you're going to map where knowledge lives, you need to understand how it moves. Three terms come up constantly in AI implementation work, and they're worth defining in plain language.
 
-**APIs** — application programming interfaces — are how systems talk to each other. Think of a waiter taking orders between a kitchen and a table. The table (one system) sends a request. The kitchen (another system) sends back food. The waiter (the API) carries the message both directions in a format both sides understand. Your CRM has an API. Your ERP has an API. When we say a system "has an API," we mean other software can ask it questions and get structured answers back.
+**APIs** (application programming interfaces) are how systems talk to each other. Think of a waiter taking orders between a kitchen and a table. The table (one system) sends a request. The kitchen (another system) sends back food. The waiter (the API) carries the message both directions in a format both sides understand. Your CRM has an API. Your ERP has an API. When we say a system "has an API," we mean other software can ask it questions and get structured answers back.
 
-**MCPs** — model context protocols — are how AI connects to your tools and data. An API lets systems talk to systems. An MCP lets an AI model talk to your systems. It's the bridge that allows a language model to pull information from your CRM, read your knowledge base, or check a status in your project management tool — in real time, during a conversation or a workflow. Without MCPs, an AI model only knows what you paste into the prompt. With them, it can reach into your actual business systems.
+**MCPs** (model context protocols) are how AI connects to your tools and data. An API lets systems talk to systems. An MCP lets an AI model talk to your systems. It's the bridge that allows a language model to pull information from your CRM, read your knowledge base, or check a status in your project management tool in real time, during a conversation or a workflow. Without MCPs, an AI model only knows what you paste into the prompt. With them, it can reach into your actual business systems.
 
-**Connectors** are pre-built integrations between specific systems. Zapier, Make, n8n — these platforms offer thousands of connectors that link one system to another without writing code. A connector between your CRM and your project management tool means a closed deal automatically creates a project. Connectors are useful. They're also the most common thing companies buy before doing Source work, which means they've wired systems together without knowing whether those systems hold the right data in the first place.
+**Connectors** are pre-built integrations between specific systems. Zapier, Make, n8n: these platforms offer thousands of connectors that link one system to another without writing code. A connector between your CRM and your project management tool means a closed deal automatically creates a project. Connectors are useful. They're also the most common thing companies buy before doing Source work, which means they've wired systems together without knowing whether those systems hold the right data in the first place.
 
 :::{.callout-note}
 ## A note on terminology
-Different platforms use different names for the same underlying ideas. Anthropic (Claude) calls its system integrations "MCP connectors" or just "connectors." OpenAI calls them "tools." Automation platforms call them "integrations" or "actions." The labels vary. The fundamental concept does not: something that lets one system read from or write to another.
+Different platforms use different names for the same underlying ideas. Anthropic (Claude) calls its system integrations "MCP connectors" or just "connectors." OpenAI calls them "tools." Automation platforms call them "integrations" or "actions." The labels vary. The fundamental concept doesn't change: something that lets one system read from or write to another.
 :::
 
 The Pipeline column on your Knowledge Map is where these terms become operational. *Connected* means an API, MCP, or connector already carries data between that source and the systems around the constraint. *Manual* means a person is carrying data that a connection could carry. *Broken* means the data doesn't move at all — it sits in one place and nobody can reach it programmatically. Design will decide what to build. Source makes the current state visible.
@@ -300,64 +135,29 @@ You don't need to understand the engineering behind APIs, MCPs, or connectors. Y
 
 ## People don't have *APIs*.
 
-There are three kinds of sources. Most teams and leaders default to the first — digital — because those are the ones with names and login screens. The other two categories are less obvious and more consequential.
+There are three kinds of sources. Most teams and leaders default to the first one: digital, because those are the ones with names and login screens. The other two categories are less obvious and more consequential.
 
-Digital sources are the ones an audit naturally finds — the CRM, the ERP, the file shares, the analytics warehouse, the inbox archives. They're the easiest to enumerate because they have names and URLs. They're the smallest part of the actual information environment, because most of what makes the work run is not stored in any of them.
+Digital sources are the ones an audit naturally finds: the CRM, the ERP, the file shares, the analytics warehouse, the inbox archives. They're the easiest to enumerate because they have names and URLs. They're also the smallest part of the actual information environment, because most of what makes the work run isn't stored in any of them.
 
-Organic sources are people. The ops manager is the source of truth for how the quoting process runs — including the three exceptions she handles every week that have never been documented. The salesperson who has worked the top account for nine years is the source of truth for that customer's pricing tolerance. The Knowledge Map treats these people as sources in the formal sense — named, located, and described — because operationally they are. Pretending otherwise is the reason data audits produce libraries that don't match the business.
+Organic sources are people. The ops manager is the source of truth for how the quoting process runs, including the three exceptions she handles every week that have never been documented. The salesperson who has worked the top account for nine years is the source of truth for that customer's pricing tolerance. The Knowledge Map treats these people as sources in the formal sense: named, located, and described. Because operationally they're sources. Pretending otherwise is the reason data audits produce libraries that don't match the business.
 
-At-risk sources are the third category and the highest-stakes piece of Source work. An at-risk source is institutional knowledge that lives in one person's head and is about to leave — through a planned exit, a retirement, a role change, or a reorg. The cost of losing it is invisible until it's gone. By the time the gap shows up in the work, the person who could have filled it is no longer reachable. Source is where at-risk sources get named, prioritized, and captured before they walk out the door. For most operating companies this is the single most consequential thing Source does.
+At-risk sources are the third category and the highest-stakes piece of Source work. An at-risk source is institutional knowledge that lives in one person's head and is about to leave: through a planned exit, a retirement, a role change, or a reorg. The cost of losing it is invisible until it's gone. By the time the gap shows up in the work, the person who could have filled it is no longer reachable. Source is where at-risk sources get named, prioritized, and captured before they walk out the door. For most operating companies this is the single most consequential thing Source does.
 
-```scout-note:
-E30 (NEW-SECTION, LAND-WITH-MODIFICATION) — Julie's senior pricing strategist At-Risk Source story.
+The pattern in every acquisition is the same: the most at-risk knowledge is never the knowledge anyone thought to protect. The documented processes were protected. The undocumented judgment calls were not. At the same global food safety company, the single highest-risk knowledge asset in the acquired integration was a senior pricing strategist who held in his head twenty years of customer-specific pricing exceptions — decisions that had been made individually over decades and never consolidated into any system. He was not identified as an at-risk knowledge source until Source was run. When he was identified, the team had four weeks to work with him before he retired. They captured everything. Source prevented a loss that would have taken two years to reconstruct and would have produced pricing errors throughout the transition. That's the operator math of At-Risk Source.
 
-LANDING: NEW PARAGRAPH inside §5.4 "People don't have *APIs*", between L126 (at-risk-source paragraph closer "For most operating companies this is the single most consequential thing Source does.") and L128 (next paragraph "When you're building your map, ask explicitly...").
+When you're building your map, ask explicitly: who on this list is a single point of failure? Which organic sources are held by one person with no backup, no documentation, and a reason they might not be here in twelve months? Name them. Mark them. Once it's on the map, Design has something to act on.
 
-SUBSTANCE (from `_julie/julie-redline.md:1565-1580`):
-- Insight from M&A integration practice: in every acquisition, the most at-risk knowledge is NEVER the knowledge anyone thought to protect. Documented processes were protected. Undocumented judgment calls were not.
-- Concrete story anchor: at a global food safety company, the single highest-risk knowledge asset in the acquired integration was A SENIOR PRICING STRATEGIST who held in his head TWENTY YEARS of customer-specific pricing exceptions — decisions made individually over decades, never consolidated into any system.
-- Source-discipline outcome (PRESERVE verbatim or near-verbatim): "He was not identified as an at-risk knowledge source until Source was run. When he was identified, the team had FOUR WEEKS to work with him before he retired. They captured everything."
-- Structural cost-of-avoidance math (PRESERVE): "The Source discipline prevented a loss that would have taken TWO YEARS to reconstruct and would have produced PRICING ERRORS THROUGHOUT THE TRANSITION PERIOD."
-
-MODIFICATIONS:
-- FRAMEWORK-ATTRIBUTION (INDIRECT — MED): "Julie's M&A integration practice identified a specific pattern in every acquisition" → joint observational with single in-prose Julie anchor. Recommended: "Julie has watched the same pattern in every M&A integration: the most at-risk knowledge is never the knowledge anyone thought to protect."
-- A1 AI-TELL CLOSER FIX (HIGH): Julie's source closer "That is what At-Risk Source does: it names what nobody knew they were about to lose." is the AI-tell mission-statement closer pattern (forbidden per voice charter §4 A1 / A3-tag-closer). PRESERVE SUBSTANCE (At-Risk Source names what nobody knew they were about to lose); CUT "That is what" cadence. Acceptable rewrites: "At-Risk Source names what nobody knew they were about to lose." (simple declarative) OR combine with operator-math closer: "Source prevented a two-year reconstruction and pricing errors throughout the transition. That's the operator math of At-Risk Source."
-- N-GRAM COHERENCE CHECK (MED): verify no verbatim echo with Ch 5 L161 Meridian Sprint beat ("Dave — Organic, at-risk, four years to retirement with an undocumented estimation method"). Differentiate by specifics:
-  - E30: TWENTY YEARS / pricing exceptions / FOUR WEEKS / two years to reconstruct.
-  - L161 Dave: FOUR YEARS to retirement / fabrication estimation / 31 years experience.
-- A3 (LOW): clean substance, no triplet construction; verify Drafter introduces zero.
-- A4 (MED): "Julie's M&A integration practice" credentialing → strip per framework-attribution scrub; mitigated by Preface + Ch 1 + Ch 4 + E28 setup.
-- A2 (CLEAN): "At-Risk Source" canonical at L126 (E30 lands AFTER L126); "Source" canonical; verify Drafter does NOT redefine.
-- A13 MEANS/ENDS-RISK (LOW): closer lands operator outcome (two years to reconstruct avoided / pricing errors avoided / four weeks captured everything); CLEAN per Julie's source — preserve order.
-- FORBIDDEN VOCAB: "M&A integration practice" / "acquisition" / "transition period" — plain operator language; acceptable. "Organizational design" NOT present in this source. Watch for "transformation" / "leverage" / "synergy" / "alignment" — none in source; verify Drafter introduces zero.
-- E60 anonymization: "a global food safety company" already conforms.
-- IN-PROSE ATTRIBUTION: light; implicit via context PREFERRED (global food safety company anchor already established as Julie's CHRO context per Preface + Ch 1 + Ch 2 + Ch 4 + E28). Single Julie anchor maximum. THIRD Julie-voice paragraph in chapter (after E28 + E29 origin-credit if any); attribution frequency compresses.
-
-DO NOT PRE-EMPT:
-- §5.5 "Transcripts" framing (L132-L149): "team had four weeks to work with him... they captured everything" is implicitly a transcripts-as-extraction beat, but explicit transcripts framing lands at §5.5. Verify Drafter does NOT introduce "transcript" / "structured interview" vocabulary in E30.
-- §5.7 "Knowledge management" framing (L165-L185): "pricing errors throughout the transition period" is implicitly a knowledge-management beat, but explicit knowledge-management framing lands at §5.7.
-
-DEPENDENCY: E28 (Julie-voice anchor established); E29 (TML vocabulary canonical — E30 reinforces At-Risk Source as a Leadership-knowledge case by implicit reference if needed).
-
-EC1: "At-Risk Source" canonical per L126 — PASS; E30 elaborates with concrete story, does NOT redefine. "Source" canonical — PASS.
-```
-
-```jf-note:
-```
-
-When you're building your map, ask explicitly: who on this list is a single point of failure? Which organic sources are held by one person with no backup, no documentation, and a reason they might not be here in twelve months? Name them. Mark them. That marking is what makes the at-risk category actionable — because once it's on the map, Design can decide what to do about it.
-
-Remember the developer who walked out with everything he knew? Source provides context — to the systems, agents, and humans that need to complete their work efficiently. Preventing knowledge loss is part of that. But the primary purpose is to give Design a complete picture of what's available, so the workflow that gets built has access to the right information at the right time. If I had mapped where the knowledge lived before that developer left, the handoff would have been a step instead of a slide.
+Remember the developer who walked out with everything he knew? Source provides context to the systems, agents, and humans that need to complete their work efficiently. Preventing knowledge loss is part of that. But the primary purpose is to give Design a complete picture of what's available, so the workflow that gets built has access to the right information at the right time. If we had mapped where the knowledge lived before that developer left, the handoff would have been a step instead of a slide.
 
 ## Transcripts: the *closest thing* a person has to an API.
 
-People don't have APIs. But you can make them transcripts — and a transcript is the highest-fidelity extraction method available.
+People don't have APIs. But you can make them transcripts. A transcript is the highest-fidelity extraction method available.
 
-Here's why. When you ask someone to type a summary or fill out a form, they compress. They leave out the context, the exceptions, the reasoning behind the decision. Data entry is inherently lossy, because typing is slow and people edit as they go. But when you sit someone down, ask the right questions, and record what they say, you get the full picture — the judgment, the edge cases, the "well, except when" qualifiers that make institutional knowledge actually useful.
+Here's why. When you ask someone to type a summary or fill out a form, they compress. They leave out the context, the exceptions, the reasoning behind the decision. Data entry is inherently lossy, because typing is slow and people edit as they go. But when you sit someone down, ask the right questions, and record what they say, you get the full picture: the judgment, the edge cases, the "well, except when" qualifiers that make institutional knowledge actually useful.
 
-Humans evolved a sophisticated communication system through voice over hundreds of thousands of years. Typing has existed for decades. As the cost of speech-to-text drops to effectively zero, it is cheaper in both time and information quality to talk than to type. Leverage the natural architecture.
+Humans evolved a sophisticated communication system through voice over hundreds of thousands of years. Typing has existed for decades. As the cost of speech-to-text drops to effectively zero, it is cheaper in both time and information quality to talk than to type. Use the natural architecture.
 
-A well-structured transcript — an ops lead walking through her exception-handling process, a salesperson explaining why specific customers get different terms, an engineer describing the estimation logic behind a quote — becomes raw material an AI can reference, retrieve, and reason against. The transcript doesn't replace the person's judgment. It makes that judgment available when the person isn't in the room.
+A well-structured transcript becomes raw material an AI can reference, retrieve, and reason against. An ops lead walking through her exception-handling process. A salesperson explaining why specific customers get different terms. An engineer describing the estimation logic behind a quote. The transcript doesn't replace the person's judgment. It makes that judgment available when the person isn't in the room.
 
 The practical move: when your Knowledge Map flags an organic source as at-risk, the first Source action is a structured interview. Not a casual conversation. A deliberate session with specific questions: What decisions do you make that nobody else makes? Which exceptions have you handled that aren't written down? What rule of thumb do you use that you've never had to explain? The output is a transcript that feeds directly into the Knowledge Map as captured institutional knowledge.
 
@@ -374,45 +174,45 @@ Identify the highest-risk organic source on your Knowledge Map — the person wh
 
 Elena Ruiz cleared her Thursday afternoon, sat down with Mark, Ty, and Dave, and asked a simple question: when an RFQ hits my inbox, what do I actually do?
 
-Her answer took forty-five minutes. She described a process nobody else in the company had ever watched end-to-end — cross-referencing customer history, material requirements, and labor estimates simultaneously, then pulling up a file called "Customer Notes.xlsx" on her desktop to check whether the customer had negotiated terms that overrode the standard rate card. The spreadsheet had 147 rows of pricing exceptions. It had never been shared, backed up, or version-controlled.
+Her answer took forty-five minutes. She described a process nobody else in the company had ever watched end-to-end: cross-referencing customer history, material requirements, and labor estimates simultaneously, then pulling up a file called "Customer Notes.xlsx" on her desktop to check whether the customer had negotiated terms that overrode the standard rate card. The spreadsheet had 147 rows of pricing exceptions. It had never been shared, backed up, or version-controlled.
 
-Dave added his piece — thirty-one years of fabrication experience compressed into a gut feel for estimated hours, accurate to within 10% on standard work. But he couldn't estimate materials costs, didn't know customer-specific pricing, and had no access to the ERP's job costing history. Ty described what he saw from the sales side: he forwarded RFQs to Elena and waited. He had no visibility into where a quote stood.
+Dave added his piece. Thirty-one years of fabrication experience compressed into a gut feel for estimated hours, accurate to within 10% on standard work. But he couldn't estimate materials costs, didn't know customer-specific pricing, and had no access to the ERP's job costing history. Ty described what he saw from the sales side: he forwarded RFQs to Elena and waited. He had no visibility into where a quote stood.
 
-The Knowledge Map that emerged from that session made the information environment visible for the first time. HubSpot CRM — Connected, but holding win/loss records with no link to quotes. JobBOSS ERP — Connected to invoicing, but nobody queried it for quoting. Customer Notes.xlsx — Broken, living on Elena's desktop with no sync. Elena herself — Organic, at-risk, the only person who could reconcile all the sources. Dave — Organic, at-risk, four years to retirement with an undocumented estimation method.
+The Knowledge Map that emerged from that session made the information environment visible for the first time. HubSpot CRM: Connected, but holding win/loss records with no link to quotes. JobBOSS ERP: Connected to invoicing, but nobody queried it for quoting. Customer Notes.xlsx: Broken, living on Elena's desktop with no sync. Elena herself: Organic, at-risk, the only person who could reconcile all the sources. Dave: Organic, at-risk, four years to retirement with an undocumented estimation method.
 
-That single session produced the map that made Design possible. Without it, the team would have started building agents against assumptions about what Elena did — instead of against what she actually did and what systems she actually touched. Source is the difference between those two starting points.
+That single session produced the map that made Design possible. Without it, the team would have started building agents against assumptions about what Elena did, not against what she actually did and what systems she actually touched. Source is the difference between those two starting points.
 
 ## Knowledge management in an *agentic* world.
 
-Most companies treat knowledge management as a low-priority back-office function — a shared drive somebody organizes once a year, a wiki that rots the moment the person who built it moves on. That was tolerable when humans were the only consumers of organizational knowledge, because humans are good at compensating for disorganized information. They know which documents are stale. They know who to ask.
+Most companies treat knowledge management as a low-priority back-office function: a shared drive somebody organizes once a year, a wiki that rots the moment the person who built it moves on. That was tolerable when humans were the only consumers of organizational knowledge, because humans are good at compensating for disorganized information. They know which documents are stale. They know who to ask.
 
-Agents are not good at this. An agent treats every piece of information it can access as equally valid unless you tell it otherwise. In an agentic world, knowledge management requires discipline: process around what gets added, by whom, when it gets retired, how to detect when the system hallucinates against outdated information, and what the mediation plan is when it does. Source is where that discipline starts.
+Agents aren't good at this. An agent treats every piece of information it can access as equally valid unless you tell it otherwise. In an agentic world, knowledge management requires discipline: process around what gets added, by whom, when it gets retired, how to detect when the system hallucinates against outdated information, and what the mediation plan is when it does. Source is where that discipline starts.
 
-The old data audit approach — inventory everything, organize by category, produce a tidy library — fails because it runs without a design question. The team catalogs sales data, operations data, finance data, customer data, and produces a clean deliverable nobody can use. The data was organized for humans browsing it, not for a specific workflow consuming it.
+The old data audit approach fails because it runs without a design question. Inventory everything, organize by category, produce a tidy library. The team catalogs sales data, operations data, finance data, customer data, and produces a clean deliverable nobody can use. The data was organized for humans browsing it, not for a specific workflow consuming it.
 
 Source inverts this. The constraint comes first. The Knowledge Map is built only against the constraint Signal validated, scoped to what the workflow will actually need to consume. One constraint, one map. The map exists to serve a design decision that's about to get made, not to satisfy a documentation goal.
 
-Garbage in, garbage out. That phrase gets thrown around like a cliche, but it's the foundational axiom of Source work. Your company's data is a massive asset — *if* you can get it into a format AI can actually use. An agent pointed at dirty data, outdated records, or unstructured knowledge with no classification doesn't produce bad answers occasionally. It produces bad answers confidently and at scale. Source is where you confront the quality of what you have before you build anything on top of it.
+Garbage in, garbage out. That phrase gets thrown around like a cliche, but it's the foundational axiom of Source work. Your company's data is a massive asset, *if* you can get it into a format AI can actually use. An agent pointed at dirty data, outdated records, or unstructured knowledge with no classification doesn't produce bad answers occasionally. It produces bad answers confidently and at scale. Source is where you confront the quality of what you've got before you build anything on top of it.
 
-I learned this the hard way inside my own company. Early on, we weren't clear about taxonomies, knowledge hygiene, or how we vectorized work — and the agents kept surfacing wrong information. Old pricing, deprecated processes, policies superseded two revisions back. We'd correct it. It would surface the same thing again. It took more iterations than I want to admit before we asked the right question: why does it keep showing old information?
+We learned this the hard way inside our own company. Early on, we weren't clear about taxonomies, knowledge hygiene, or how we vectorized work. The agents kept surfacing wrong information. Old pricing, deprecated processes, policies superseded two revisions back. We'd correct it. It would surface the same thing again. It took more iterations than we want to admit before we asked the right question: why does it keep showing old information?
 
-The answer was simple and brutal. Everything we had ever stored was indexed together — current and expired, active and archived, no distinction. The AI had no way to know what was old. Nobody had told it otherwise. If the data was in the knowledge base, the system assumed it was meant to be there.
+The answer was simple and brutal. Everything we had ever stored was indexed together: current and expired, active and archived, no distinction. The AI had no way to know what was old. Nobody had told it otherwise. If the data was in the knowledge base, the system assumed it was meant to be there.
 
-We saw the same pattern at a client site. They deployed an application against their internal knowledge base and it kept surfacing expired information — for the exact same reason. Current and outdated content living side by side with no process for managing which was which.
+We saw the same pattern at a client site. They deployed an application against their internal knowledge base and it kept surfacing expired information, for the exact same reason. Current and outdated content living side by side with no process for managing which was which.
 
-The AI was doing exactly what it was designed to do in both cases. The problem was not the AI. Nobody had done the Source work before pointing the AI at the data. This is part of what needs to get worked out in Design: how information will be consumed, classified, and retired. The downstream effects — especially for retrieval-augmented generation — are real and expensive. One emerging role worth considering is a knowledge manager: someone accountable for the quality, currency, and governance of the information your agents run on. It's a role that didn't exist five years ago. It will be standard within five more.
+The AI was doing exactly what it was designed to do in both cases. The problem was not the AI. Nobody had done the Source work before pointing the AI at the data. This is part of what needs to get worked out in Design: how information will be consumed, classified, and retired. The downstream effects, especially for retrieval-augmented generation, are real and expensive. One emerging role worth considering is a knowledge manager: someone accountable for the quality, currency, and governance of the information your agents run on. It's a role that didn't exist five years ago. It will be standard within five more.
 
-Source is not where data infrastructure gets built. Source names the gaps. Whether to fill them, capture the judgment, or design around the limitation is a Design decision. Confusing the two phases is how Source bloats into a year-long data project that never produces a workflow.
+Source isn't where data infrastructure gets built. Source names the gaps. Whether to fill them, capture the judgment, or design around the limitation is a Design decision. Confusing the two phases is how Source bloats into a year-long data project that never produces a workflow.
 
 ## The *completeness test*.
 
 Before you call Source done, run six checks:
 
-1. **Architect test.** Could someone who wasn't in the room look at this Knowledge Map table and know what they're designing against — what data exists, where it lives, what's missing, and what's at risk?
+1. **Architect test.** Could someone who wasn't in the room look at this Knowledge Map table and know what they're designing against: what data exists, where it lives, what's missing, and what's at risk?
 2. **Constraint scope test.** Every row on the map connects to the constraint. If a row doesn't, cut it.
-3. **Pipeline test.** Every digital source has a pipeline status — Connected, Manual, or Broken. No blanks.
+3. **Pipeline test.** Every digital source has a pipeline status: Connected, Manual, or Broken. No blanks.
 4. **At-risk test.** You explicitly asked: who on this list is a single point of failure? The answer is on the map.
-5. **Gap test.** The Missing column isn't empty. If you have zero missing sources, you haven't looked hard enough.
+5. **Gap test.** The Missing column isn't empty. If you've got zero missing sources, you haven't looked hard enough.
 6. **One-page test.** The map fits on one page. If it doesn't, you've drifted from the constraint.
 
 :::{.callout-note}
@@ -432,15 +232,15 @@ Here is Meridian's completed Knowledge Map — the artifact that session produce
 | Historical quote-to-actual accuracy | Missing | Nobody | Missing | — | Would validate whether rapid estimates are reliable. Data exists in ERP (actuals) and Elena's files (quotes) but has never been compared. |
 | Customer segment profitability | Missing | Nobody | Missing | — | Would enable prioritized quoting — fast-track high-margin segments. Requires joining CRM win/loss to ERP job costing. |
 
-Look at what this map makes visible. Two organic sources are flagged at risk — Elena as a single point of failure, Dave with four years to retirement. A critical spreadsheet with 147 pricing rules lives on one person's desktop with no sync. The CRM and ERP hold the data you'd need to build a quoting workflow, but nobody has ever joined them. Two pieces of information that don't exist yet — historical accuracy and segment profitability — are the exact inputs the team would need to decide whether an agent-assisted quoting workflow is viable. Every one of those findings came from working the three passes against a single constraint. None of them would surface in a general data audit.
+Look at what this map makes visible. Two organic sources are flagged at risk: Elena as a single point of failure, Dave with four years to retirement. A critical spreadsheet with 147 pricing rules lives on one person's desktop with no sync. The CRM and ERP hold the data you'd need to build a quoting workflow, but nobody has ever joined them. Two pieces of information that don't exist yet (historical accuracy and segment profitability) are the exact inputs the team would need to decide whether an agent-assisted quoting workflow is viable. Every one of those findings came from working the three passes against a single constraint. None of them would surface in a general data audit.
 
 ## Hand off to *Design*.
 
-At the end of Source, you have two things on one sheet of paper: the constraint Signal validated, and the Knowledge Map that describes the information environment around it — assets, flow, and gaps together. That is the input Design needs. Constraint plus map.
+At the end of Source, you've got two things on one sheet of paper: the constraint Signal validated, and the Knowledge Map that describes the information environment around it. Assets, flow, and gaps together. That's the input Design needs. Constraint plus map.
 
 {{< excalidraw ch05-source-to-design-handoff "Source-to-Design handoff: constraint statement above, Knowledge Map below" >}}
 
-With those two things in hand, the team moves into Design — the phase where ownership decisions get made, where the Hybrid Accountability Chart entry for this sprint gets built, and where the work crosses from Diagnose into Execute. Source is the bridge. It's the last thing you do before you're start to design your system.
+With those two things in hand, the team moves into Design: the phase where ownership decisions get made, where the Hybrid Accountability Chart entry for this sprint gets built, and where the work crosses from Diagnose into Execute. Source is the bridge. It's the last thing you do before you start to design your system.
 
 ## Reflection Questions
 

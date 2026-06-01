@@ -256,7 +256,7 @@ Here is the illustrative Project Coordinator's hybrid split:
 | Quality standard for all agent output — reviews before anything ships | Updates scope change logs (dates, costs, approvals) |
 | | Compiles lessons-learned documents from project notes |
 
-This hybrid split is enough to see the shape of the redesigned role. Chapter 6 introduces the full design instrument — the **TML framework** (Task / Management / Leadership) — which sorts work into three categories rather than two; for now, the two-column version is the right starting point.
+This hybrid split is enough to see the shape of the redesigned role. Chapter 5 introduces the full design instrument — the **TML framework** (Task / Management / Leadership) — which sorts work into three categories rather than two; for now, the two-column version is the right starting point.
 
 If you have multiple roles touching the same constraint, repeat this process for each one. Compile the results into a single table: Role, Column B %, Loaded Cost, Annual Misallocation Cost. That table is the raw material for the sprint design work in the chapters ahead.
 :::
