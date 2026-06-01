@@ -7,6 +7,57 @@ The previous chapter designed the system — information flows, roles, the Hybri
 
 The previous chapter gave you the system: the information flow, the accountability structure, the governance framework, the Human Orchestrator. This chapter is where you design the actual work — decomposing the constraint workflow task by task, populating the chart with real entries, building a Design Brief, prototyping, and locking the gate that separates Design from Build.
 
+```scout-note:
+E36 LAND-WITH-MODIFICATION — Highest-risk bead in the Julie merge to date. Six controls intersect: EC1 canonical-definition (TML names + AI-handling mapping must match Ch 5 §5.0 canon verbatim), A2 first-load-bearing work-lens application, framework-attribution scrub (joint book IP, not "Julie's TML framework"), MEANS/ENDS-RISK at Design Gate closer, structural restructure of an existing polished chapter (4 categories → 3 TML categories), cross-chapter coherence with Ch 5 forward-reference + Ch 2 Hybrid Split bridge + Ch 6 HAC framework.
+
+EC1 verification: Julie's E36 source (julie-redline.md:1726-1745) presents TML as the work-lens application — Task → Fully Automatable / Management → AI-Assisted / Leadership → Human Judgment Required. Three-category names match Ch 5 §5.0 L24 canon verbatim (Task / Management / Leadership). AI-handling mapping matches: Ch 5 says "AI can reliably handle Task knowledge, can assist with Management knowledge, and requires human oversight for Leadership knowledge"; Ch 6b expresses the same mapping operationally (Fully Automatable / AI-Assisted / Human Judgment Required). Lens difference (Ch 5 = knowledge; Ch 6b = work) is complementary, not contradictory. EC1 VERDICT: PASS.
+
+Cross-chapter expectations the reader arrives with:
+- Ch 5 §5.0 L28 forward-reference: "The same framework applies to the work itself in Chapter 6, where TML becomes the lens for deconstructing what each role actually does."
+- Ch 2 L259 Hybrid Split → TML bridge: "Chapter 5 introduces the full design instrument — the TML framework (Task / Management / Leadership) — which sorts work into three categories rather than two; for now, the two-column version is the right starting point."
+- Reader arrives expecting THREE categories. Current chapter uses FOUR. E36 collapses to three.
+
+Structural restructure cascade (15+ landing points; Drafter must update every one):
+1. L5 In Brief — add TML reference.
+2. L10 §"Work Deconstruction" opening — bridge from Ch 5 TML knowledge lens to Ch 6b TML work lens; replace "four categories" with "the TML framework from Source: Task, Management, Leadership."
+3. L14 Excalidraw alt-text — update to three TML categories ("Work Deconstruction: three TML categories with source inputs and outputs — Task (Fully Automatable), Management (AI-Assisted), Leadership (Human Judgment Required)"). NOTE: the .excalidraw file itself may need redrawing — flag separately, not blocking E36 prose.
+4. L16 sorting question — collapse four-branch decision tree to three TML branches. Fold "workflow automation only" into Task (Julie's E36 canon includes "Task work follows defined rules, produces predictable outputs, and can be executed by an agent without human input at each step" — pure workflow automation fits inside Task).
+5. L18–L21 Pro Tip — update terminology: "AI-Assisted is where most things start. Fully Automatable is where they move..." → reframe with TML category names (Management / Task) or keep current phrasing but anchor to TML mapping.
+6. L23 closer — substance preserved; verify no orphan four-category references.
+7. L26–L28 Action Step — "the four categories" → "the three TML categories (Task / Management / Leadership)"; "Human judgment required" → "Leadership (Human Judgment Required)."
+8. L36 three-branch question — already three branches; light edit to name each branch as Leadership / Management / Task explicitly.
+9. L49–L63 Meridian populated example — update Category column for all 7 task rows to TML vocabulary: "Workflow automation only" → "Task (workflow automation)" or fold into Task; "Fully automatable" → "Task (Fully Automatable)"; "Agent-assisted" → "Management (AI-Assisted)"; "Human judgment required" → "Leadership (Human Judgment Required)." Substance preserved row-by-row; rationale column language updates to TML vocabulary where it currently uses four-category vocabulary.
+10. L63 task count statistic — recompute under three-category scheme: Leadership = 2, Management = 2, Task = 3 (if workflow automation folds in) or 2+1 (if kept as sub-category).
+11. L65–L75 HAC entries table — verify autonomy levels (AI-Assisted / N/A) align with TML categorization upstream; no autonomy-level changes needed (HAC autonomy is orthogonal to TML categorization).
+12. L77–L80 Pro Tip on AI-Assisted vs. Automated — this is about HAC governance decision, not TML categorization. Verify Drafter does NOT conflate. Can stand as-is.
+13. L138–L144 Design Gate checklist (first item) — "four categories, no unclassified items" → "three TML categories (Task / Management / Leadership), no unclassified items."
+
+Framework-attribution scrub (CRITICAL): Julie's source opens "Julie's Task/Management/Leadership framework provides the design logic for Work Deconstruction." This is individual attribution of joint book IP. REJECT framing. Reframe joint: "The TML framework (Task / Management / Leadership) provides the design logic for Work Deconstruction" OR (PREFERRED) "Work Deconstruction applies the TML lens from Source to the work itself. Where Source used TML to categorize what the organization knows, Design uses TML to categorize what the work requires." Zero individual attribution at the work-lens introduction; TML was Julie-credentialed (or not, per Ch 5 scout decision) at the Ch 5 §5.0 knowledge-lens introduction.
+
+Load-bearing operator beat to preserve (from Julie E36 source, near-verbatim): "TML doesn't tell you which column is right for every task — it gives you the lens to ask the right question about each one. Not 'can the AI do this?' but 'what type of intelligence does this work require, and which type is AI reliably capable of providing at the quality standard this organization needs?'" This is an A1 "Not X but Y" antithesis closer but carries argumentative weight (the framework's lens-function) — acceptable per A1 rule; preserve.
+
+Forbidden vocab: Julie's source contains zero forbidden vocab. Verify Drafter introduces zero.
+
+A3 risk: three-category enumeration IS the framework (acceptable per A3 rule "one parallel construction per section, only when it carries argumentative weight"). Verify Drafter does NOT introduce a second triplet on top — e.g., avoid stacked "Task is X / Management is Y / Leadership is Z" + "AI handles A / AI assists B / AI oversees C" stacked-triplet cadence. Collapse the AI-handling mapping to a single semicolon-bridged sentence.
+
+A2 first-application discipline: TML's first work-lens application is load-bearing here. Reader was forward-referenced from Ch 5 L28 + Ch 2 L259 to expect this bridge. Must define the work-lens application precisely enough that the entire chapter's classification logic stands on canonical three-category TML.
+
+Cross-chapter coherence:
+- Ch 5 L28 forward-reference: "in Chapter 6" — correctly points to Part III: Designing the System (Ch 6 + Ch 6b). NO UPDATE needed to Ch 5.
+- Ch 2 L259: "Chapter 5 introduces the full design instrument" — correctly points to Ch 5 first-introduction (knowledge lens). NO UPDATE needed to Ch 2.
+- Ch 6 HAC framework (parallel Scout book-ff63.9.7) — Ch 6b extends Ch 6's HAC with TML categorization. TML categorization is orthogonal to HAC autonomy level: Task-classified task → Fully Automatable HAC autonomy; Management-classified → AI-Assisted; Leadership-classified → not an agent-team-supervised HAC entry. Verify Drafter preserves the orthogonality.
+- Ch 6 Right Seat Evaluation (E35, parallel Scout) — Ch 6b's L65–L75 HAC entries reference named supervisors who would have passed Right Seat. Verify Drafter does NOT redefine Right Seat here.
+- Glossary E58 — TML entry must align with both Ch 5 (knowledge lens) + Ch 6b (work lens). Flagged for E58 bead alignment; not blocking.
+
+Meridian threading (per pm-case-study-thread-through-book + meridian-consulting-group-is-meridian-manufacturing memories): preserve all Meridian-canonical details verbatim (Elena Ruiz VP Ops, $558K annual cost, fifteen hours/week, Customer Notes.xlsx 112 validated rules, Ty Banfield Sales Lead, Dave Kowalski labor estimates, JobBOSS ERP, HubSpot CRM). TML restructure updates ONLY the Category column + task count statistic. Workflow/source/output/rationale columns stay canonically Meridian.
+
+Project coordinator section (L32–L47): canonical reference to Ch 6's opener (Marina + $24K). Light edit at L36 three-branch question to make TML naming explicit. Preserve L47 "$24K hire never posted" closer verbatim.
+
+Path verdict: Default Path A solo Drafter. If chapter scanner pipeline fails twice on E36, escalate to Path B (Design Table). Higher Path B fallback likelihood than any prior bead due to restructure-cascade load.
+
+Plan: _julie/per-chapter/06b-designing-the-work.md
+```
+
 ## Work *Deconstruction*.
 
 *Work Deconstruction* is the method. Pull the actual accountability list for a role — not the job description, which is always cleaner than reality, but the real list of things that person touches every week. Then go task by task and classify each one using four categories. For every task, also document the *source inputs* (where the data comes from — which system, which person, which document) and the *outputs* (where the result goes next). If you have done the Source work properly, you already know these. Writing them into the deconstruction makes the information flow from the previous chapter concrete at the task level.
@@ -126,6 +177,27 @@ Stakeholder surveys work here too — especially when the agent team's output re
 :::
 
 Constant prototyping is the discipline. Not one big reveal at the end of Design, but a steady loop: design a piece, prototype it, get feedback, adjust. The Compound Sprint is short enough — two weeks for most teams — that this loop runs naturally if you start prototyping early. Teams that wait until the design feels "complete" before testing it are the teams that discover in Build that the design doesn't match reality. Test early. Adjust while adjusting is cheap.
+
+```scout-note:
+E37 BLOCKED-NEEDS-JULIE-DEFINITION — Pattern Drag at Design Gate. Julie's redline (julie-redline.md:1758-1773) proposes Pattern Drag as a 6th item on the five-item Design Gate checklist: "Pattern Drag is the invisible force that will resist the Design after Build deploys it... Name it before Build. Build the governance to counter it before Deliver. The sprint that does not anticipate Pattern Drag will find it waiting in production."
+
+Status: BLOCKED per book-ff63.15 substance-reject queue. Author manifest annotation on E37: "Requires review - not sure what this means." Pattern Drag (and Pattern Gap / Pattern Lift — the three-lens Pattern Method introduced in Ch 9 Compound retrospective per E46) has not been authoritatively defined by Julie. Per A2 (coined term before stakes), Pattern Drag cannot be load-bearing-introduced at the Design Gate without canonical definition. Per the framework-attribution rule, Pattern Drag is joint book IP (not Julie's individual instrument), but the canonical joint definition must be established first.
+
+No Drafter action on E37 in this scout phase. The Design Gate section below stays at five items, not six.
+
+Sequence to unblock:
+1. Julie defines Pattern Drag + Pattern Gap + Pattern Lift authoritatively (out of scope for this scout).
+2. Author reviews and approves the three-lens framework canonical definition.
+3. Ch 9 E46 lands Pattern Method three-lens retrospective (separate execution).
+4. Glossary E58 entries land for the three Pattern terms.
+5. Then E37 unblocks; Design Gate sixth-item can land in Ch 6b.
+
+One-question prompt for Julie (when she chooses to define): "What is the canonical Compound definition of Pattern Drag — independent of any prior individual practice — that the book can use at both Design Gate (Ch 6b) and Compound retrospective (Ch 9)?"
+
+No jf-note expected from author at this gate — the block is upstream of author review for this chapter. Author may opt to define Pattern Drag at a later sprint cycle.
+
+The Design Gate section that follows is otherwise scout-CLEAN for E36 purposes. MEANS/ENDS-RISK = MED at L150-L153 closer: "Holding that line is what separates the operators who run the Sequence from the operators who buy AI tools and hope" frames Sequence-running as borderline-destination per A13 recurring pattern (3/3 prior chapters caught). Drafter judgment call — acceptable to preserve current closer (consistent with book's operator-vs-buyer framing in Ch 1 / Ch 3 / Ch 11) OR optionally strengthen with explicit operator-outcome clause: "Holding that line is the difference between sprints that produce a designed workflow you can compound on and sprints that produce code nobody uses." Flag for Drafter awareness; not a forced rewrite.
+```
 
 ## Design is the *gate*.
 

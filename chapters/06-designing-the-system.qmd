@@ -44,6 +44,57 @@ Here's what your chart looks like after a handful of sprints — built up over t
 
 Every agent team in the chart has a human supervisor — every row, no exceptions. There are no unowned teams. This is a structural rule of the chart, not a soft principle. The reason is straightforward: humans are still responsible for making sure the organization accomplishes its goals. There needs to be a person you can talk to, work with, and hold accountable in the real world — someone who ensures the agents are performing on track and who owns the outcome when they are not.
 
+```scout-note:
+**E35 LANDING (FRAMEWORK-ADD, LAND-WITH-MODIFICATION) — Right Seat Evaluation: Sees It / Wants It / Suited for It**
+
+Insert a new paragraph here introducing the **Right Seat Evaluation** as the three-test discipline for choosing the human supervisor named at HAC Question 3 (L38). Canonical Compound vocabulary, first load-bearing introduction in the manuscript.
+
+**Substance to preserve (from `_julie/julie-redline.md:1691–1717`):**
+- Choosing the supervisor is a design decision, not a staffing decision.
+- The three canonical tests, in canonical order, with canonical names:
+  - ***Sees It*** — understands the work deeply enough to evaluate whether the agent's output is correct, or will they rubber-stamp because they can't tell the difference?
+  - ***Wants It*** — genuinely accountable for the outcome, or treats the agent team as someone else's responsibility with their name attached?
+  - ***Suited for It*** — has the judgment, context, and authority to override the agent when it drifts?
+- Operator outcome: supervisor seat is filled by someone who can actually catch errors, redirect the agent, and own the outcome.
+
+**Modifications from Julie's source (per Scout plan `_julie/per-chapter/06-designing-the-system.md`):**
+
+1. **Framework-attribution scrub (DIRECT).** Julie's source opens "Julie's Right Seat Evaluation framework applies three tests..." Reject the "Julie's framework" individual-instrument framing. Right Seat Evaluation is **joint book IP** per the framework-attribution rule (same rule that rejected E34 HAC origin attribution). **Use Pattern A:** declarative canonical-vocabulary-first introduction — "Selecting the right human supervisor for an agent team is a design decision, not a staffing decision. The ***Right Seat Evaluation*** is the three-test discipline that makes the call."
+
+2. **A2 first-definition discipline.** Italicize ***Right Seat Evaluation*** on first appearance (chapter convention; see L20 *designed workflow*, L26 *Hybrid Accountability Chart*, L60 *information flow specification*, L168 *Human Orchestrator*). Italicize each canonical criterion on first appearance: ***Sees It*** / ***Wants It*** / ***Suited for It***. Subsequent references need not re-italicize.
+
+3. **A3 stacked-triplet relief.** Julie's source stacks "Does this person Sees It... Does this person Want It... Is this person Suited for It..." parallel construction. Vary cadence — use **Pattern A bullet enumeration** (matches HAC four-question discipline at L34–L39) with one operationalizing question per criterion, no repeating anchor phrase.
+
+4. **A1 AI-tell binary closer — CUT.** Julie's source closes "A human supervisor who fails any of these three tests is not a supervisor. They are a liability." Per voice-charter §4 A1 + `_julie/julie-prose-risk-map.md:97` verdict, this binary X-is-not-X / X-is-Y pronouncement is forbidden. **Preferred rewrite (Rewrite C from Scout plan):** "If the supervisor candidate fails any of the three tests, the HAC has a name in the supervisor column but no supervision happening underneath it. Choose someone else, or build the development plan that gets the candidate to all three tests passing before the sprint runs." (Operator outcome forward + actionable next-step; bridges to the L185–L189 development-gap framing for the Human Orchestrator.)
+
+5. **MEANS/ENDS-RISK closer discipline.** Close on the operator outcome the framework produces (errors caught, agent redirected, outcome owned), not on the structural rule itself. Forbidden closers: "This is what Right Seat does." / "Right Seat is the discipline that produces this." Acceptable closers: operator outcome forward, framework named as the means.
+
+6. **Forbidden vocab.** "Organizational design decision" → strip "organizational"; use "design decision" (canon-clean per L36, L38, L120, L141). Verify zero "leverage" / "transformation" / "synergy" / "alignment" / "augment" introduced.
+
+7. **Attribution per Q-E21.** Pattern A landing carries **zero in-prose Julie attribution** — matches the chapter's existing voice for canonical-artifact introductions (L26 HAC, L60 information flow specification, L168 Human Orchestrator — all declared without individual attribution). The chapter has no prior Julie-anchored paragraph; do not introduce one here.
+
+8. **Target paragraph length:** 80–130 words. Cadence: matches HAC-section paragraph rhythm at L32 / L45 / L52.
+
+**EC1 verification: PASS.** Julie's three-criteria canon (Sees It / Wants It / Suited for It) matches manifest E35 + E58 glossary canon verbatim. Drafter must preserve names + order exactly.
+
+**Coherence flags:**
+- Do NOT retro-fit Right Seat language into the Meridian populated example at L215–L245. Elena Ruiz already passes Right Seat implicitly per L235 ("owns the constraint outcome" / reviews every draft / makes the AI-Assisted → Automated call); explicit retro-fit breaks chapter narrative flow.
+- Do NOT extend Right Seat into the L177–L189 "Finding the right *person*" Human Orchestrator section. Right Seat applies to the per-row HAC supervisor (Q3 at L38); the Human Orchestrator selection criteria at L181–L185 apply to the constraint-outcome owner. Two different selection-test layers — keep scoped.
+- Cross-chapter forward references: Ch 11 E55 will reference Right Seat in First Sprint Plan review; E58 will add Right Seat to glossary. Ch 6 E35 must establish the canonical definition precisely enough to support both.
+
+**Opportunistic polish (Drafter handles during E35 pass):**
+- Em-dash density triage at cluster level (Vale flags expected on L14 / L24 / L45 — three em-dashes each).
+- Contractions sweep across chapter (Vale `Compound.Contractions` rule).
+- Verify zero forbidden vocab introductions; verify zero new triplets beyond the framework's structural three.
+- N-gram check: E35 prose should reference L45 framing without verbatim re-quotation ("every row, no exceptions" / "named supervisor" / "structural rule of the chart").
+
+**Path verdict:** Path A (solo Drafter). Single landing row; well-controlled framework-attribution + A1/A2/A3 scrub patterns inherited from Preface + Ch 1 + Ch 2 + Ch 3 + Ch 4 + Ch 5.
+```
+
+```jf-note:
+
+```
+
 :::{.callout-tip}
 ## Pro Tip
 If you run EOS, you already have the muscle for this. Your Accountability Chart says every seat has a name. The Hybrid Accountability Chart says every agent team does too. Same principle, extended to a workforce that includes non-human workers.
