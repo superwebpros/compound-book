@@ -56,23 +56,30 @@ If your Source output doesn't fit on one page, it's not scoped to the constraint
 
 **Building your Knowledge Map.** Start with a blank page and the constraint statement Signal produced. Draw six columns: *Source*, *Type*, *Owner*, *Status*, *Pipeline*, *Notes*. The first four columns are the Knowledge Map. The fifth (Pipeline) is the Data Pipeline Audit. Run them together, not as separate exercises. Then work through three passes.
 
-**Pass 1 — Digital.** List every digital source that touches the constraint: the CRM records, the process logs, the shared drives, the inboxes, the spreadsheets. For each one, write the name, mark it as Digital, name the person who owns or maintains it, and mark its status: Clean (data is accurate, current, and usable as-is), Needs Work (data exists but has quality or format problems), or Missing (the data should exist but doesn't). Then answer four Pipeline Audit questions: Does this source connect to the other systems that touch the constraint, or does data move by manual export? Can a workflow read data from this source directly, or does someone have to export and re-enter it first? Who owns the handoff: a person, a scheduled job, or nobody? When was the data last verified as accurate? Mark each digital source's pipeline as *Connected*, *Manual*, or *Broken*. (If the terms "API," "MCP," and "connector" are new to you, the section "How systems talk to each other" later in this chapter defines each one in plain language. You don't need to understand the engineering to fill in this column.)
+### Pass 1: *Digital*.
+
+List every digital source that touches the constraint: the CRM records, the process logs, the shared drives, the inboxes, the spreadsheets. For each one, write the name, mark it as Digital, name the person who owns or maintains it, and mark its status: Clean (data is accurate, current, and usable as-is), Needs Work (data exists but has quality or format problems), or Missing (the data should exist but doesn't). Then answer four Pipeline Audit questions: Does this source connect to the other systems that touch the constraint, or does data move by manual export? Can a workflow read data from this source directly, or does someone have to export and re-enter it first? Who owns the handoff: a person, a scheduled job, or nobody? When was the data last verified as accurate? Mark each digital source's pipeline as *Connected*, *Manual*, or *Broken*. (If the terms "API," "MCP," and "connector" are new to you, the section "How systems talk to each other" later in this chapter defines each one in plain language. You don't need to understand the engineering to fill in this column.)
 
 :::{.callout-note}
 ## Action Step
 Open the constraint statement from Signal. List every digital system that touches the constraint workflow. For each one, fill in all six columns — Source, Type, Owner, Status, Pipeline, Notes. Don't filter. If it touches the constraint, it goes on the map.
 :::
 
-**Pass 2 — Organic.** List every person whose judgment the constraint workflow depends on: if they disappeared tomorrow, the work would stop or degrade. The ops lead who handles the exceptions, the account manager who knows the customer's actual tolerance, the senior engineer who hasn't written anything down. Each person is a row on the same map, marked Organic. Name them, name what they know that isn't documented anywhere, and assess whether their knowledge is at risk of leaving. Be specific. Not "she knows the quoting process" but "she knows the three pricing exceptions for legacy customers that override the rate card."
+### Pass 2: *Organic*.
+
+List every person whose judgment the constraint workflow depends on: if they disappeared tomorrow, the work would stop or degrade. The ops lead who handles the exceptions, the account manager who knows the customer's actual tolerance, the senior engineer who hasn't written anything down. Each person is a row on the same map, marked Organic. Name them, name what they know that isn't documented anywhere, and assess whether their knowledge is at risk of leaving. Be specific. Not "she knows the quoting process" but "she knows the three pricing exceptions for legacy customers that override the rate card."
 
 :::{.callout-note}
 ## Action Step
 Name every person whose judgment the constraint workflow depends on. For each one, write specifically what they know that no system holds. Flag anyone who's a single point of failure.
 :::
 
-**Pass 3 — Missing.** Look at what's absent. What would a designer need to know to solve this constraint that isn't represented anywhere in the first two passes? What question would someone ask about this workflow that your current sources can't answer? What decision is currently made by gut feel that should be made by data? Add those rows as Missing sources, and note what type they *should* be: digital system, documented process, captured expertise. Note what it would take to create them.
+### Pass 3: *Missing*.
+
+Look at what's absent. What would a designer need to know to solve this constraint that isn't represented anywhere in the first two passes? What question would someone ask about this workflow that your current sources can't answer? What decision is currently made by gut feel that should be made by data? Add those rows as Missing sources, and note what type they *should* be: digital system, documented process, captured expertise. Note what it would take to create them.
 
 The Missing sources column is the most important column on the Knowledge Map. That's where the highest-risk gaps live. Per the TML framework, Missing sources cluster in two of the three layers. Management knowledge loss: decisions made by leaders who have since left, governance rules that existed nowhere except a person's memory and walked out with them. Leadership knowledge loss: customer or market intelligence that was never systematically captured, context that existed in individuals no longer available. Task knowledge is the layer most commonly captured in systems. Its absence is usually a documentation gap, not a knowledge loss. The Knowledge Map's Missing column is where the sprint finds its highest-risk gaps. Every missing source is a potential sprint failure mode. Name them before Build begins, not after deployment reveals them.
+
 
 :::{.callout-note}
 ## Action Step
@@ -87,11 +94,17 @@ When you're done, you've got a Knowledge Map: one page, one constraint, everythi
 
 Not all knowledge is the same. Once the map is built, classify each source along two axes and one tier system.
 
-**Structured vs. unstructured.** Database fields, tagged articles, CRM records, spreadsheets with defined columns: structured. AI can use it immediately. Emails, meeting transcripts, PDFs, Slack threads, "ask Sarah": unstructured. AI needs processing before it's useful. The more structured your information is, the more useful it is to an AI workflow. If a source is unstructured but valuable, flag it. That's a Design decision about whether to structure it.
+### Structured vs. *unstructured*.
 
-**Durable vs. ephemeral.** Brand guidelines, pricing rules, process SOPs, regulatory requirements: durable. This week's to-do list, meeting notes, brainstorm output, first-pass drafts: ephemeral. Only durable knowledge belongs on the Knowledge Map. If it won't matter in 90 days, it doesn't belong.
+Database fields, tagged articles, CRM records, spreadsheets with defined columns: structured. AI can use it immediately. Emails, meeting transcripts, PDFs, Slack threads, "ask Sarah": unstructured. AI needs processing before it's useful. The more structured your information is, the more useful it is to an AI workflow. If a source is unstructured but valuable, flag it. That's a Design decision about whether to structure it.
 
-**AI tiers.** Think of three tiers, each consumed differently:
+### Durable vs. *ephemeral*.
+
+Brand guidelines, pricing rules, process SOPs, regulatory requirements: durable. This week's to-do list, meeting notes, brainstorm output, first-pass drafts: ephemeral. Only durable knowledge belongs on the Knowledge Map. If it won't matter in 90 days, it doesn't belong.
+
+### AI *tiers*.
+
+Think of three tiers, each consumed differently:
 
 - **Standing context:** core facts that are always true (brand rules, product definitions, org structure). Loaded automatically. AI always has it.
 - **Retrieved knowledge:** documents, articles, detailed procedures. Retrieved on demand when relevant to a query.
@@ -115,11 +128,18 @@ Review each source on your map. Mark whether it's structured or unstructured, du
 
 If you're going to map where knowledge lives, you need to understand how it moves. Three terms come up constantly in AI implementation work, and they're worth defining in plain language.
 
-**APIs** (application programming interfaces) are how systems talk to each other. Think of a waiter taking orders between a kitchen and a table. The table (one system) sends a request. The kitchen (another system) sends back food. The waiter (the API) carries the message both directions in a format both sides understand. Your CRM has an API. Your ERP has an API. When we say a system "has an API," we mean other software can ask it questions and get structured answers back.
+### *APIs*.
 
-**MCPs** (model context protocols) are how AI connects to your tools and data. An API lets systems talk to systems. An MCP lets an AI model talk to your systems. It's the bridge that allows a language model to pull information from your CRM, read your knowledge base, or check a status in your project management tool in real time, during a conversation or a workflow. Without MCPs, an AI model only knows what you paste into the prompt. With them, it can reach into your actual business systems.
+Application programming interfaces are how systems talk to each other. Think of a waiter taking orders between a kitchen and a table. The table (one system) sends a request. The kitchen (another system) sends back food. The waiter (the API) carries the message both directions in a format both sides understand. Your CRM has an API. Your ERP has an API. When we say a system "has an API," we mean other software can ask it questions and get structured answers back.
 
-**Connectors** are pre-built integrations between specific systems. Zapier, Make, n8n: these platforms offer thousands of connectors that link one system to another without writing code. A connector between your CRM and your project management tool means a closed deal automatically creates a project. Connectors are useful. They're also the most common thing companies buy before doing Source work, which means they've wired systems together without knowing whether those systems hold the right data in the first place.
+### *MCPs*.
+
+Model context protocols are how AI connects to your tools and data. An API lets systems talk to systems. An MCP lets an AI model talk to your systems. It's the bridge that allows a language model to pull information from your CRM, read your knowledge base, or check a status in your project management tool in real time, during a conversation or a workflow. Without MCPs, an AI model only knows what you paste into the prompt. With them, it can reach into your actual business systems.
+
+### *Connectors*.
+
+Pre-built integrations between specific systems. Zapier, Make, n8n: these platforms offer thousands of connectors that link one system to another without writing code. A connector between your CRM and your project management tool means a closed deal automatically creates a project. Connectors are useful. They're also the most common thing companies buy before doing Source work, which means they've wired systems together without knowing whether those systems hold the right data in the first place.
+
 
 :::{.callout-note}
 ## A note on terminology
@@ -137,9 +157,15 @@ You don't need to understand the engineering behind APIs, MCPs, or connectors. Y
 
 There are three kinds of sources. Most teams and leaders default to the first one: digital, because those are the ones with names and login screens. The other two categories are less obvious and more consequential.
 
+### *Digital* sources.
+
 Digital sources are the ones an audit naturally finds: the CRM, the ERP, the file shares, the analytics warehouse, the inbox archives. They're the easiest to enumerate because they have names and URLs. They're also the smallest part of the actual information environment, because most of what makes the work run isn't stored in any of them.
 
+### *Organic* sources.
+
 Organic sources are people. The ops manager is the source of truth for how the quoting process runs, including the three exceptions she handles every week that have never been documented. The salesperson who has worked the top account for nine years is the source of truth for that customer's pricing tolerance. The Knowledge Map treats these people as sources in the formal sense: named, located, and described. Because operationally they're sources. Pretending otherwise is the reason data audits produce libraries that don't match the business.
+
+### *At-risk* sources.
 
 At-risk sources are the third category and the highest-stakes piece of Source work. An at-risk source is institutional knowledge that lives in one person's head and is about to leave: through a planned exit, a retirement, a role change, or a reorg. The cost of losing it is invisible until it's gone. By the time the gap shows up in the work, the person who could have filled it is no longer reachable. Source is where at-risk sources get named, prioritized, and captured before they walk out the door. For most operating companies this is the single most consequential thing Source does.
 
@@ -192,6 +218,8 @@ The old data audit approach fails because it runs without a design question. Inv
 
 Source inverts this. The constraint comes first. The Knowledge Map is built only against the constraint Signal validated, scoped to what the workflow will actually need to consume. One constraint, one map. The map exists to serve a design decision that's about to get made, not to satisfy a documentation goal.
 
+
+## Garbage in, Garbage Out.
 Garbage in, garbage out. That phrase gets thrown around like a cliche, but it's the foundational axiom of Source work. Your company's data is a massive asset, *if* you can get it into a format AI can actually use. An agent pointed at dirty data, outdated records, or unstructured knowledge with no classification doesn't produce bad answers occasionally. It produces bad answers confidently and at scale. Source is where you confront the quality of what you've got before you build anything on top of it.
 
 We learned this the hard way inside our own company. Early on, we weren't clear about taxonomies, knowledge hygiene, or how we vectorized work. The agents kept surfacing wrong information. Old pricing, deprecated processes, policies superseded two revisions back. We'd correct it. It would surface the same thing again. It took more iterations than we want to admit before we asked the right question: why does it keep showing old information?
