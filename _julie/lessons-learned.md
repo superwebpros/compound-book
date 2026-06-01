@@ -229,23 +229,116 @@ Patterns that appear in **multiple chapters** are stronger signals for charter u
 
 | Pattern | Preface | Ch 1 | Ch 2 | Ch 3 | Ch 4 | Ch 5 | Ch 6 | Ch 6b | Ch 7 | Ch 8 | Ch 9 | Ch 10 | Ch 11 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| A13 Means/ends conflation | ✓ | ✓ | ✓ | | | | | | | | | | |
-| A14 Metaphor literalism violation | ✓ | | | | | | | | | | | | |
+| A13 Means/ends conflation | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | | | | | | |
+| A14 Metaphor literalism violation | ✓ | | | | ✓ | | | | | | | | |
 | A15 Unqualified AI agency | ✓ | | | | | | | | | | | | |
 | A16 Book-as-location metaphor | ✓ | | | | | | | | | | | | |
-| Em-dash overuse | ✓ | ✓ | ✓ | | | | | | | | | | |
-| A3 triplet pileup | ✓ | ✓ | ✓ | | | | | | | | | | |
-| Forbidden vocab leakage | ✓ | ✓ | ✓ | | | | | | | | | | |
+| Em-dash overuse | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | | | | | | |
+| A3 triplet pileup | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | | | | | | |
+| Forbidden vocab leakage | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | | | | | | |
 | Hedged constructions | ✓ | | | | | | | | | | | | |
-| A4 boastful biography | ✓ | ✓ | | | | | | | | | | | |
-| Canonical capitalization | ✓ | | | | | | | | | | | | |
-| A2 coined-term-before-defined | | ✓ | ✓ | | | | | | | | | | |
-| Cross-paragraph phrase repetition | n/m | ✓ | ✓ | | | | | | | | | | |
-| Long paragraph skim issue | n/m | ✓ | ✓ | | | | | | | | | | |
+| A4 boastful biography | ✓ | ✓ | | | | ✓ | | | | | | | |
+| Canonical capitalization | ✓ | | | ✓ | | | | | | | | | |
+| A2 coined-term-before-defined | | ✓ | ✓ | ✓ | | ✓ | | | | | | | |
+| Cross-paragraph phrase repetition | n/m | ✓ | ✓ | ✓ | | ✓ | | | | | | | |
+| Long paragraph skim issue | n/m | ✓ | ✓ | ✓ | | ✓ | | | | | | | |
 | Concept fragmentation across paragraphs | | | ✓ | | | | | | | | | | |
 | Table-to-prose transition missing | | | ✓ | | | | | | | | | | |
-| AI-coded vocab (load-bearing, etc.) | | | ✓ | | | | | | | | | | |
+| AI-coded vocab (load-bearing, etc.) | | | ✓ | ✓ | | | | | | | | | |
 | Wrong canonical definition (vs glossary) | | | ✓ | | | | | | | | | | |
+| Factual content error (story attribution / facts) | | | | ✓ | ✓ | | | | | | | | |
+| Skimmability — H3s needed in taxonomy sections | | | | ✓ | | ✓ | | | | | | | |
+
+**Recurrence headline:** A13 means/ends + em-dash overuse + A3 triplet + forbidden vocab leakage now 6/6 chapters. The voice charter A13–A16 rules + scanner pipeline are doing real work across every chapter.
+
+---
+
+## Chapter: Ch 3 — The Framework (`chapters/03-the-framework.qmd`)
+
+**Executed:** 2026-05-25 → 2026-05-26  ·  **Scout plan:** `_julie/per-chapter/03-the-framework.md`  ·  **Final commit:** `0fad966`
+**Iterations:** 3 (Scout → Drafter+EC → author 2nd read with 7 jf-notes → author 3rd read with TML acronym catch). Author surfaced more issues than Ch 4/5 because the chapter was the most thinly written (six-stage section was a sparse 6-bullet list).
+
+### Key catches
+- **A13 means/ends on chapter opener and Sequence-introduction** (Scout caught upfront via §5 check)
+- **Author second-read flagged 7 substantive issues** that no agent caught: "halves" math error (2/4 ≠ halves of 6), burned-egg over-specific example, "Design sits at the top of the Execute half" inconsistency, Pro Tip missing Design as upstream, Business Model Canvas prescription, "thin chapter" critique (Six Stages section expanded ~450 words), Meridian-in-Ch-2 oversight discovery
+- **Author third-read TML catch**: TML acronym wrongly expanded as M+L gloss instead of canonical Task/Management/Leadership. **Triggered EC1 canonical-definition verification refinement** (editorial-coherence agent updated to verify definitions match canon, not just verify a definition exists). This is the most consequential agent update of the merge.
+- **Cross-book consistency sweep**: Co-Intelligence capital-I locked across charter + 3 chapters; *Chutes and Ladders* italicized proper-noun across Preface + 3 chapters
+
+### What was added beyond the manifest
+- **Six Stages section expansion** (each stage gained H3 with concrete examples, Meridian references, what-it-produces beat)
+- **`### How the stages connect.`** section explaining why this is a Framework not a checklist
+- **Sprint Planning Canvas PDF + resources library bead** (`book-ff63.20`) — broken link removed, replaced with placeholder
+- **Excalidraw diagram bead** (`book-ff63.21`) — for ch03-stage-dependencies
+
+### Architecture lesson
+EC1 canonical-definition verification refinement. Editorial-coherence now verifies each coined term's definition matches the canonical source (manifest, charter §3, glossary), not just that a definition exists. Encoded in `.claude/agents/editorial-coherence.md` EC1 section.
+
+---
+
+## Chapter: Ch 4 — Signal (`chapters/04-signal.qmd`)
+
+**Executed:** 2026-05-31  ·  **Scout plan:** `_julie/per-chapter/04-signal.md`  ·  **Final commit:** `ef45c46`
+**Iterations:** 2 (Scout + Drafter+EC in single combined pass + author 1 sparse jf-note). **Cleanest workflow execution so far.**
+
+### What caught what
+- Scout: E26 SKIP-ALREADY-DONE (PT clinic example already serves Julie's "non-manufacturing example" ask — Q-E26 research findings applied upfront)
+- Scout: CH04-L10 conflict protection (L10 / $24K subcontractor story preserved verbatim through E24 voice-shift)
+- Drafter mandatory scanner gate caught and self-fixed introductions during execution
+- Editorial-coherence: all 4 E-rows PASS substance; 0 NEEDS-REVISION; 3 optional advisory polishes
+- **Author single catch on 2nd read**: PT clinic story is JULIE's, not Jesse's (factual correction — Q-E26 research had incorrectly attributed it). Cross-chapter attribution memory not yet codified — author judgment still ground truth for who-did-what.
+
+### Architectural pattern validated
+**Drafter does both Scout work AND opening polish in one pass.** Author quote: *"the opening story is riddled with em-dash and ai-sounding repetition. its hard for me to read. just implement scout's feedback and give me a clean pass before i go through and read this version."*
+
+This pattern (Ch 4 onward) compressed iteration count from Ch 1's 5–6 → 1–2 before author read. Now canonical per `canonical-chapter-workflow` memory.
+
+---
+
+## Chapter: Ch 5 — Source (`chapters/05-source.qmd`)
+
+**Executed:** 2026-05-31  ·  **Scout plan:** `_julie/per-chapter/05-source.md`  ·  **Final commits:** `def37b9` (Drafter+EC), `af08f3d` (H3 skimmability)
+**Iterations:** 2 (Drafter+EC pass + author second-read with H3 skimmability ask). All EC1 canonical-definition checks PASS.
+
+### What caught what
+- **EC1 canonical-definition: 4/4 PASS** on Knowledge Map, TML, PIS, Source. **Ch 2 TML failure mode did NOT recur.** The Ch 3 author catch (TML acronym wrong gloss) led to the EC1 refinement, which paid off immediately on Ch 5's dual-framework introduction.
+- Scanner: 35 baseline → 3 final Vale alerts (**91% reduction** — steepest of any chapter)
+- Em-dash count: ~48 → ~12 chapter-wide
+- Cross-chapter coherence: E28 differentiated from 4 prior global food safety company anchors (Preface L9, Ch 1 L57, Ch 2 §2.3, Ch 4 L18) without verbatim n-gram echo
+- **Cross-chapter cascade catch**: Ch 2 L259 forward-reference said "Chapter 6 introduces TML framework" but TML now lands first in Ch 5. Editorial-coherence caught the stale forward-reference; surgical fix applied to Ch 2.
+
+### Architectural pattern validated
+**Parallel taxonomy H3 pattern.** Ch 5 has 4 sections that each introduce a 3-item taxonomy (Passes 1/2/3; Structured vs. unstructured + Durable vs. ephemeral + AI tiers; APIs/MCPs/Connectors; Digital/Organic/At-risk sources). Author asked for H3s on the Passes section explicitly; I applied the same pattern across all 4 taxonomy sections (12 new H3s total). Consistent reader skim across the chapter.
+
+### Architecture lesson
+Cross-chapter forward-reference cascades. When a framework's first-introduction moves chapter (TML moved from Ch 6 → Ch 5), every downstream chapter that referenced its location must be updated. Editorial-coherence's cross-chapter coherence check catches these. Worth a systematic pre-publication pass at Phase 5.
+
+---
+
+## Parallelization test (Ch 6 + Ch 6b)
+
+**Initiated:** 2026-05-31. Test case: dispatch both Scouts in parallel, then sequential Drafter+EC (Ch 6 first, then Ch 6b).
+
+### Hypothesis
+Parallel Scouts cleanly parallelize because (a) no content changes during Scout, (b) Scout reads canonical sources that don't change during the parallel dispatch, (c) chapter files are distinct. Sequential Drafter+EC preserves the cross-chapter coherence catches that have been load-bearing.
+
+### Risks
+- Cross-Scout interference if Ch 6b Scout's TML treatment depends on Ch 6's HAC introduction — mitigated by spec'ing Ch 5 as the TML canon source (Ch 6 doesn't introduce TML; Ch 6b extends it to work-lens).
+- File collisions: none (Scouts write to distinct files).
+- Bead collisions: none (Dolt handles concurrent writes).
+
+### Preliminary results (Phase 1 — Scout parallel)
+Both Scouts completed within similar wall-clock windows (~10 min for Ch 6, ~15 min for Ch 6b). Both report cleanly:
+- Ch 6 EC1 PASS for Right Seat Evaluation; Path A solo Drafter
+- Ch 6b EC1 PASS for TML at work-lens (matches Ch 5 canon); Path A default but Path B fallback more likely than any prior bead (15-point restructure cascade for E36)
+- Critical Ch 6b catch: chapter currently has 4 TML categories; E36 collapses to canonical 3 — exact kind of cross-chapter coherence work the test was designed to validate
+
+### Next: Drafter+EC sequential
+- Ch 6 Drafter+EC first (establishes HAC + Right Seat that Ch 6b references)
+- Ch 6b Drafter+EC second (with Ch 6 settled, no cross-chapter ambiguity)
+- Evaluate after both committed: did sequential Drafter+EC preserve the cross-chapter coherence catches that mattered?
+
+### Decision criterion for scaling
+If Ch 6 + Ch 6b lands clean in 1–2 iterations each (matching Ch 4/Ch 5 pattern), parallel Scouts are validated. Then consider parallel Scout dispatch on Ch 7+Ch 8 or Ch 9+Ch 10.
 
 ---
 
