@@ -332,13 +332,48 @@ Both Scouts completed within similar wall-clock windows (~10 min for Ch 6, ~15 m
 - Ch 6b EC1 PASS for TML at work-lens (matches Ch 5 canon); Path A default but Path B fallback more likely than any prior bead (15-point restructure cascade for E36)
 - Critical Ch 6b catch: chapter currently has 4 TML categories; E36 collapses to canonical 3 — exact kind of cross-chapter coherence work the test was designed to validate
 
-### Next: Drafter+EC sequential
-- Ch 6 Drafter+EC first (establishes HAC + Right Seat that Ch 6b references)
-- Ch 6b Drafter+EC second (with Ch 6 settled, no cross-chapter ambiguity)
-- Evaluate after both committed: did sequential Drafter+EC preserve the cross-chapter coherence catches that mattered?
+### Phase 2 results (Drafter+EC sequential — 2026-06-01)
 
-### Decision criterion for scaling
-If Ch 6 + Ch 6b lands clean in 1–2 iterations each (matching Ch 4/Ch 5 pattern), parallel Scouts are validated. Then consider parallel Scout dispatch on Ch 7+Ch 8 or Ch 9+Ch 10.
+**Both chapters EC PASS with 0 surgical fixes on first pass.** Sequential Drafter+EC preserved every cross-chapter coherence catch the test was designed to validate.
+
+**Ch 6 (E35 Right Seat Evaluation):**
+- Pattern A landing (declarative canonical-vocabulary-first introduction) — zero individual attribution
+- ***Right Seat Evaluation*** + ***Sees It*** / ***Wants It*** / ***Suited for It*** italicized on first use
+- A1 binary closer cut ("is not a supervisor. They are a liability." → Rewrite C operator-outcome bridge to L185-L189 development-gap framing)
+- EC1 PASS: three criteria match manifest E35 + E58 glossary canon verbatim
+- EC3 PASS: Meridian L215-L245 untouched (Elena's implicit Right Seat pass preserved); Human Orchestrator section untouched (different selection-test layer)
+- Scanner: 38→24 alerts (37% reduction); no new flags from E35
+- Commit: dc6869b
+
+**Ch 6b (E36 TML 4→3 category restructure — highest-risk bead in merge):**
+- 15-location restructure cascade landed clean on first pass
+- Cross-chapter bridge sentence opens §Work Deconstruction: "Work Deconstruction applies the TML lens from Source to the work itself. Where Source used TML to categorize what the organization knows, Design uses TML to categorize what the work requires." — closes Ch 5 §5.0 L28 forward-reference word-aligned
+- Workflow automation folded into Task as parenthetical sub-category (per Julie's E36 canon)
+- TML names match Ch 5 §5.0 canon verbatim (Task / Management / Leadership)
+- HAC entries autonomy levels UNCHANGED (orthogonal to TML — Drafter did not conflate)
+- L223 Design Gate closer STRENGTHENED per Scout recommendation (A13 fix: "Holding that line is the difference between sprints that produce a designed workflow you can compound on and sprints that produce code nobody uses" — replaces Sequence-as-destination framing)
+- Framework-attribution scrub: zero "Julie's TML framework" individual-instrument language
+- EC1 PASS verbatim; EC3 PASS on all five cross-chapter checks (Ch 5 forward-ref / Ch 2 L259 Hybrid Split bridge / Ch 6 HAC orthogonality / Ch 6 Right Seat reference-not-redefinition / E58 glossary alignment)
+- Scanner: 13→11 alerts; no new flags from E36
+- Commit: 83791a5
+- Path B not invoked; Path A solo Drafter sufficed on first pass for the most cross-referenced framework in the book
+
+### Validation summary
+
+**Parallel Scouts: VALIDATED.** Both Scouts produced independent plans without coordination issues. Wall-clock parallel (~10 + ~15 min). Cross-Scout coordination handled via explicit Scout-plan annotations naming which canonical instruments live in which chapter (Ch 6 owns HAC + Right Seat; Ch 6b owns TML work-lens application; Ch 6 introduces Right Seat that Ch 6b references but does not redefine).
+
+**Sequential Drafter+EC: VALIDATED.** Both chapters PASS EC on first pass with 0 surgical fixes. Sequential ordering (Ch 6 first to lock HAC + Right Seat canon; Ch 6b second to extend) eliminated cross-chapter ambiguity. Highest-risk bead (E36 restructure cascade across 15 landing points) landed clean — Path B fallback not needed.
+
+**Pattern table update:** All 8 committed chapters (Preface + Ch 1-5 + Ch 6 + Ch 6b) now have A13 means/ends catches in the cross-chapter pattern. A13 recurrence pattern stands at 8/8 chapters — the most persistent anti-pattern in the merge.
+
+### Decision: scale parallel Scouts to remaining chapters
+
+Validation criterion met. Recommend parallel Scout dispatch for the remaining 5 chapters (Ch 7 Build, Ch 8 Deliver, Ch 9 Compound, Ch 10 The Rhythm, Ch 11 What to Do Next). Possible groupings:
+
+- **Group A (3 chapters parallel):** Ch 7 Build + Ch 8 Deliver + Ch 9 Compound (Build/Deliver/Compound triple — each independent; Compound has Pattern Method E46 substance-overlap with E37 BLOCKED, watch for unblock first)
+- **Group B (2 chapters parallel):** Ch 10 The Rhythm + Ch 11 What to Do Next
+
+Sequential Drafter+EC remains the convention. Path B fallback ready if any single bead (e.g., Ch 9 E46 Pattern Method three-lens retrospective, if it lands as canonical first-introduction with cross-bead alignment to E37 + E58) requires Design Table triangulation.
 
 ---
 
