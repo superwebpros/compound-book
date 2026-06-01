@@ -23,6 +23,56 @@ If I were to count the number of times I left at 5:30 in the eighteen months bef
 
 And because it ran, I could stop.
 
+```scout-note:
+E45 (NEW-SECTION, LAND-WITH-MODIFICATION) — Julie chapter-opener: Compound = where org learning happens; quarterly retro as universal business discipline (NOT EOS-specific).
+
+LANDING: Insert new paragraph here (after "And because it ran, I could stop." and BEFORE the canonical brand-stage-verb framing at "Compound is the sixth stage..."). Pattern A landing (declarative + canonical-vocabulary-first; preserves existing L24 → L26 cadence pivot from concrete operator outcome to chapter thesis).
+
+SUBSTANCE TO LAND (per `_julie/julie-redline.md:1993-2007`):
+- Compound is where organizational learning happens
+- The difference between orgs that sustained change vs. reverted was the mechanism to learn from implementation + carry that learning into the next cycle
+- The discipline: stop, look at what the last cycle produced, identify what the design got wrong, install one specific improvement, carry it forward
+- Voice mix note from author §3 follow-up (Approved): "retrospective reviews THE DESIGN, not the people" — the orientation that affects E45 + E47 together
+
+CRITICAL MODIFICATION 1 — STRIP EOS-EQUIVALENT FRAMING (per author manifest annotation):
+- Julie's source says: "EOS calls this the same system in the quarterly operating session."
+- Author manifest: "Need to not lean too much into EOS; all successful businesses should be on a quarterly rhythm."
+- REFRAME as universal business discipline: "Successful businesses run on a quarterly rhythm" OR name EOS / Scaling Up / 4DX / homegrown as parallel examples (NOT as THE rhythm). Compound's retrospective is the same beat applied to the Co-Operating Model.
+
+CRITICAL MODIFICATION 2 — FRAMEWORK-ATTRIBUTION SCRUB:
+- Julie's source opens with "In every operating model transformation I have led" — individual-attribution Julie-anchor.
+- Strip per framework-attribution rule + Q-E21 blended-we convention. Recommend strip entirely; if Drafter judges Julie-anchor adds operator credibility, single in-prose attribution sentence only ("Julie has watched the same failure across two decades of operating-model redesigns...").
+
+CRITICAL MODIFICATION 3 — A13 MEANS/ENDS RISK = HIGH (Ch 9 chapter-opener; A13 recurrence 8/8 chapters):
+- Ch 9 is the payoff chapter; Compound is the book's outcome stage; the opener is EXTREMELY high-risk for framework-as-destination temptation.
+- Verify the new paragraph lands operator outcome (continuous design iteration that produces compounding ops gains: faster Source the next time, sharper Build, accumulated artifacts, the headcount math working in the operator's favor).
+- DO NOT write framework-as-destination ("the compound effect," "the organizational learning loop," "this is what running a learning organization looks like," "now you're compounded," "Co-Intelligence reached").
+- Ground the org-learning frame in the operator outcome the chapter already lands at L22 (infrastructure running in parallel that used to wait for the operator) — Compound is where you make that infrastructure-accumulation deliberate.
+
+VOICE MIX NOTE — LAND THE DESIGN-NOT-PEOPLE ORIENTATION HERE:
+- Recommended phrasing pattern: "The retrospective looks at the design — the chart entries, the workflow, the Source map — not at the people. The question is not who didn't perform. It's what the design assumed that turned out to be wrong."
+- This orientation distinguishes the Compound Sprint Retrospective from a personnel-review post-mortem.
+
+ANTI-PATTERN CONTROLS:
+- A1 (acceptable): Julie's source closer "Organizations that do this get better every quarter. Organizations that skip it repeat the same design errors indefinitely." carries argumentative weight; preserve or near-preserve.
+- A3 (LOW): Julie's two-clause parallel ("not the quality of the initial implementation. It was whether the organization built a mechanism...") is acceptable; do NOT add a third parallel clause.
+- A4: strip the Julie-anchor "I have led" framing per global rule.
+- A5 (MED): Julie's source is dense; collapse to operator-direct beats per voice charter §2 (short punchy interleaved with medium-length structural).
+- Forbidden vocab: NO "organizational design" / "transformation" / "leverage" / "synergy" / "alignment" / "augmentation" / un-locked "hybrid".
+- Contractions: ALWAYS (current chapter convention; Julie's source is contraction-free — fix).
+
+EC1: N/A (no new canonical vocabulary; "Compound" canon already established at L26 + Ch 3).
+
+A2: LOW risk ("Compound" already canonical).
+
+Acceptance criteria: substance preserved; EOS-strip applied per author annotation; design-not-people orientation lands explicitly; framework-attribution scrubbed; A13 verified clean (operator outcome, not framework-as-destination); voice charter A1-A16 all clean.
+
+See `_julie/per-chapter/09-compound.md` E45 section for full acceptance criteria.
+```
+
+```jf-note:
+```
+
 Compound is the sixth stage of the Sequence — the one that turns a delivered sprint into the foundation of the next one. This is the stage the word in our company name points at: the brand is *Compound* because what the work produces is compounding — not as metaphor, but as the structural property of running the Sequence on a cadence.
 
 ## What *Compound* produces.
@@ -47,6 +97,54 @@ Before the sprint enters Build, put the Compound session on the calendar. A 90-m
 :::
 
 ## The Sprint Retrospective.
+
+```scout-note:
+E46 (FRAMEWORK-ADD) — Pattern Method three-lens retrospective structure: Pattern Drag / Pattern Gap / Pattern Lift.
+
+STATUS: **BLOCKED-NEEDS-JULIE-DEFINITION** per `book-ff63.15` substance-reject queue + author manifest annotation on E37 (Ch 6b, same framework, same block): "Requires review - not sure what this means."
+
+WHY BLOCKED:
+1. A2 (coined term before stakes): Pattern Drag / Pattern Gap / Pattern Lift are coined Compound vocabulary. The first-load-bearing introduction at Ch 9 §9.1 cannot land without canonical definitions.
+2. Framework-attribution rule: Pattern Method is canonical Compound vocabulary (joint book IP, NOT "Julie's Pattern Method"). Julie's source attributes individually ("Julie's Pattern Method provides three retrospective lenses"). Strip required + canonical joint definition must be established.
+3. Julie has not authoritatively defined Pattern Drag / Pattern Gap / Pattern Lift independent of any prior individual practice.
+
+E46 IS THE UPSTREAM CANONICAL DEFINITION FOR:
+- E37 (Ch 6b §Design is the gate, sixth checklist item — Pattern Drag prospective check) — currently BLOCKED per Ch 6b Scout `book-ff63.9.8`
+- E44 (Ch 8 Deliver outcome — Pattern Lift measurement of humans-in-higher-leverage-work) — same upstream block per parallel Ch 8 Scout
+- E58 (Glossary entries: Pattern Drag / Pattern Gap / Pattern Lift, three entries)
+
+SUBSTANCE JULIE PROPOSES (per `_julie/julie-redline.md:2011-2029`, for reference when E46 unblocks):
+- Pattern Drag: where did old habits resist the new design? Which team members routed around the agent workflow? Which supervisors approved without reviewing? Which process owners reverted to manual work at the first friction point? Name every instance — each is a design improvement opportunity.
+- Pattern Gap: where is the workflow as actually being run different from the workflow as designed? Every gap is information. Some gaps mean the design was wrong; some mean the training was wrong; some mean the guardrails were in the wrong place.
+- Pattern Lift: what higher-leverage work are the humans now doing with the time and capacity the agent returned to them? If the lift is happening, name it. If the lift is not happening, understand why — the capacity may not have been actually freed, or the org may not have higher-leverage work to absorb it.
+
+PROVISIONAL LANDING PLAN (activates when E46 unblocks):
+1. E46 lands FIRST at Ch 9 §9.1 as the canonical first-load-bearing introduction. Pattern A landing (declarative canonical-vocabulary-first); zero individual attribution; framework-attribution scrub applied; reframes the existing Sprint Retrospective three questions (what worked / what didn't work / what one design change) through the three lenses.
+2. E37 (Ch 6b Design Gate) lands second: brief on-page Pattern Drag definition + forward-reference to Ch 9 §9.1.
+3. E44 (Ch 8 Deliver outcome) lands third: brief on-page Pattern Lift definition + forward-reference to Ch 9 §9.1.
+4. Glossary E58 lands in parallel: three entries aligned to Ch 9 §9.1 canon.
+
+PATH B (DESIGN TABLE) MANDATORY at E46 landing: substance contestation upstream (canonical definition pending); Substance Lead load-bearing on canonical-definition discipline; Voice Lead load-bearing on A2 + framework-attribution scrub; Reader Lead load-bearing on earns-its-space test for three lenses vs. two.
+
+THE ONE-QUESTION PROMPT TO SURFACE TO JULIE (recommended phrasing):
+
+"To unblock the Pattern Method framework for the book — Pattern Drag, Pattern Gap, Pattern Lift — we need the canonical Compound definitions independent of any prior individual practice. In 2–3 operator-direct sentences each, what is Pattern Drag, what is Pattern Gap, and what is Pattern Lift? Each definition should be specific enough that a CEO can recognize the pattern in their own org and abstract enough to apply across industries. Pattern Drag will land at Ch 6b Design Gate (predict before Build), Pattern Lift will land at Ch 8 Deliver outcome (measure after Deliver), and all three will structure Ch 9's Sprint Retrospective."
+
+This phrasing:
+- Names the four-row cascade (Ch 6b + Ch 8 + Ch 9 + glossary) so Julie sees the downstream cross-chapter coordination.
+- Asks for operator-direct definitions (per voice charter Pillar 1 + Pillar 4) rather than abstract framework language.
+- Specifies canonical Compound definitions independent of prior individual practice (per framework-attribution rule).
+- Constrains to 2–3 sentences per lens (per voice charter cadence rules) to avoid LLM-cadence dense-paragraph patterns that need full rewrite.
+
+CROSS-SCOUT COORDINATION (Ch 8 parallel Scout E44 BLOCKED scout-note + Ch 9 Scout E46 BLOCKED scout-note):
+- Both flag the same upstream block (Julie's Pattern Method definition).
+- Both recommend the same one-question prompt.
+- Both align on canonical Pattern Method definition discipline (joint book IP, declarative Pattern A landing when unblocked, A2 first-definition discipline at Ch 9 §9.1).
+
+NO jf-note: required for E46. The block is upstream of author review for this chapter; the author opts to define Pattern Method at a later sprint cycle. This scout-note serves as both block documentation AND provisional landing plan placeholder.
+
+See `_julie/per-chapter/09-compound.md` §"E46 unblock dependency graph" for full cross-chapter coordination plan + provisional acceptance criteria.
+```
 
 The Sprint Retrospective is one of two instruments in the Compound stage. It's the structured review of the sprint that just shipped, and it asks the same three questions every time.
 
@@ -84,6 +182,80 @@ After every sprint, you answer one question as the Human Orchestrator: *what one
 One. Not five. Not a list of improvements. One.
 
 The temptation after a good sprint is to list every observation the team made and call the list "lessons learned." That list never lands. It's too long to install, too unprioritized to argue about, and too vague to enforce. By the time the next sprint begins, the lessons file is closed and the same mistakes are being made in slightly different colors.
+
+```scout-note:
+E47 (NEW-SECTION, LAND-WITH-MODIFICATION pending author review) — One design change per retro discipline (additive paragraph OR minimum-viable two-sentence insert).
+
+LANDING: Insert here, between L86 ("...same mistakes are being made in slightly different colors.") and L88 ("The discipline of one design change defeats that failure mode.") — additive to existing §The one design change rule.
+
+AUTHOR MANIFEST ANNOTATION: "Needs Review." Drafter must verify additive substance vs. redundant against the existing §80–L101 prose before landing.
+
+GENUINELY ADDITIVE SUBSTANCE (verified against existing section):
+(a) STAGE-COMPLETION CRITERION: "The Compound stage is not complete until the one design change is installed." — sharpens the existing discipline by binding stage-completion to installation. The current §80–L101 frames the rule as a discipline; E47 adds the binding rule.
+(b) RETROSPECTIVE-VS-POST-MORTEM DISTINCTION: "An insight without an installation is a post-mortem, not a retrospective." — sharpens the difference between Compound and a generic post-mortem culture. The Compound retrospective is mechanism-producing (installed change), not insight-producing (closed Notion page).
+(c) VOICE MIX NOTE OPERATIONALIZED: "The change is a design change — a chart entry revised, a workflow step added, a guardrail tightened, a Source map updated. Not a person reassigned. Not a meeting added." — operationalizes the design-not-people orientation introduced in E45.
+
+SUBSTANCE NOT ADDITIVE (already covered in existing prose, do NOT duplicate):
+- "One. Not five. Not a list of improvements." (L84) — already lands
+- "The temptation after a good sprint is to list every observation..." (L86) — already lands; this is THE existing diagnostic frame
+- "That list never lands. It's too long to install, too unprioritized to argue about, and too vague to enforce." (L86) — already lands
+- "Disciplined improvement over many sprints produces an agent team dramatically more capable after eight sprints than after one." (L96) — already lands the compounding-outcome closer
+
+CRITICAL MODIFICATION 1 — FRAMEWORK-ATTRIBUTION SCRUB (DIRECT APPLICATION):
+- Julie's source (`_julie/julie-redline.md:2036-2050`) attributes the discipline to "Every multi-system transformation Julie has led" individual practice + "from organizational design practice."
+- Per framework-attribution rule + manifest line 57 global rule: STRIP "from org-change-management practice" individual attribution. The one-design-change rule is canonical Compound retrospective discipline (joint book IP).
+- Reframe as universal retrospective discipline: "Lists become backlogs that never get done." (Note: this generic operator-direct framing is already partially in the chapter at L86; verify E47's framing is additive, not duplicative.)
+
+CRITICAL MODIFICATION 2 — A3 COLLAPSE:
+- Julie's source has four-clause cascade: "none of the improvements were made. The list became the backlog. The backlog accumulated. The next sprint began with the same design failures as the last one." A3 pile-up.
+- Collapse to two clauses max OR replace with single declarative.
+- Recommended: "Lists become backlogs that never get done. The next sprint begins with the same design failures as the last." (Two clauses, no triplet pile-up.) But verify against existing L86 ("That list never lands. It's too long to install...") — may be redundant.
+
+CRITICAL MODIFICATION 3 — A1 ACCEPTABLE OR COLLAPSE (Drafter judgment):
+- Julie's source closer "An insight without an installation is not a retrospective. It is a post-mortem." — A1 antithesis form. Carries argumentative weight (the diagnostic distinction is load-bearing).
+- Acceptable A1 if Drafter judges argumentative weight justifies. Otherwise collapse to single declarative ("An insight that doesn't get installed is a post-mortem, not a retrospective.")
+
+CRITICAL MODIFICATION 4 — VOICE MIX NOTE REINFORCEMENT (per author §3 follow-up "Approved"):
+- If E45 lands the design-not-people orientation at the chapter-opener (recommended), E47 reinforces lightly in the one-design-change context: "The change is a design change — a chart entry revised, a workflow step added, a guardrail tightened, a Source map updated. Not a person reassigned."
+- If E45 does NOT land the voice mix note, E47 MUST land it (one of E45/E47 must carry the design-not-people reorientation explicitly).
+
+CRITICAL MODIFICATION 5 — A13 RISK (MED):
+- The one-design-change rule is MEANS; the operator outcome is COMPOUNDING SPRINTS (each sharper than the last).
+- DO NOT write "the one-design-change rule is what separates the operators who run the Sequence from the operators who don't" (A13 framework-as-destination pattern).
+- The operator outcome is the design getting better sprint by sprint, not the rule itself.
+- The existing closer at L96 lands A13 clean ("Disciplined improvement over many sprints produces an agent team dramatically more capable after eight sprints than after one. Skip the discipline and you get the same agent team it always was, with longer meeting notes.") — preserve.
+
+MINIMUM-VIABLE LANDING (if author rejects additive verdict):
+Two-sentence insert: "Compound is not done until the one design change is installed. An insight that doesn't get installed is a post-mortem, not a retrospective." Both sentences are additive against the existing prose; both align with author E47 annotation "Needs Review."
+
+ANTI-PATTERN CONTROLS:
+- A1: see Modification 3 above.
+- A2: LOW risk (Compound / Sprint Retrospective / design change / HAC / Knowledge Map all canonical).
+- A3: see Modification 2 above.
+- A4: see Modification 1 above.
+- A5 (LOW–MED): Julie's source is dense; collapse to operator-direct beats.
+- A12: LOW (no specific company beats; existing Meridian anchor at L90 stays canonical; E47 lands BEFORE L90).
+- A13: see Modification 5 above.
+- Forbidden vocab: no "organizational design" / "transformation" / "leverage" etc. — Julie's source uses none, verify Drafter introduces none.
+- Contractions: ALWAYS (current chapter convention; Julie's source is contraction-free — fix).
+
+EC1: N/A (no new canonical vocabulary).
+
+COHERENCE:
+- E47 must land AFTER E45 (E45 establishes the org-learning + design-not-people orientation that E47 operationalizes).
+- Existing §The one design change rule at L80–L101 must remain canonical. E47 inserts inside the section between L86 and L88 — additive only.
+- Meridian fabrication-complexity-indicators worked example at L90 must remain canonical. E47 lands BEFORE L90; do NOT modify.
+- L94 excalidraw shortcode (ch09-one-design-change) and L100 Action Step callout must remain canonical.
+- Cross-chapter coherence: Ch 6b Design Brief + HAC entries + Knowledge Map are the canonical artifacts the "design change" comprises. Use canonical artifact vocabulary.
+- Cross-chapter coherence: Ch 10 §10.1 quarterly operating session does NOT include "install the one design change" as a quarterly step — the installation is a Compound-STAGE criterion, not a quarterly-SESSION step. Preserve the stage-vs-session distinction.
+
+PATH B FALLBACK: If author rejects additive verdict (E47 = redundant), drop to single-sentence minimum-viable insert OR drop entirely. If author approves additive verdict + voice-gate fails twice, escalate to Path B.
+
+See `_julie/per-chapter/09-compound.md` E47 section for full acceptance criteria.
+```
+
+```jf-note:
+```
 
 The discipline of one design change defeats that failure mode. The Human Orchestrator looks across everything the sprint surfaced — the Source phase that ran too thin, the supervisor cadence that was wrong, the handoff between the agent team and the human reviewer that broke once, the input format that turned out to need cleaning nobody scoped — and names the *single* change that will most improve the next sprint.
 
