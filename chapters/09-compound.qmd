@@ -23,55 +23,9 @@ If I were to count the number of times I left at 5:30 in the eighteen months bef
 
 And because it ran, I could stop.
 
-```scout-note:
-E45 (NEW-SECTION, LAND-WITH-MODIFICATION) — Julie chapter-opener: Compound = where org learning happens; quarterly retro as universal business discipline (NOT EOS-specific).
+That's what Compound is for. Every successful business runs on some kind of quarterly rhythm: EOS calls it the quarterly operating session, Scaling Up calls it quarterly planning, 4DX has its own cadence. The Compound stage is the AI operating layer running the same beat: stop, look at what the last sprint produced, identify what the design got wrong, install one specific improvement, and carry it into the next sprint. The difference between companies that sustain this kind of change and companies that revert isn't the quality of the initial implementation. It's whether the organization built a mechanism to learn from the work and carry that learning forward.
 
-LANDING: Insert new paragraph here (after "And because it ran, I could stop." and BEFORE the canonical brand-stage-verb framing at "Compound is the sixth stage..."). Pattern A landing (declarative + canonical-vocabulary-first; preserves existing L24 → L26 cadence pivot from concrete operator outcome to chapter thesis).
-
-SUBSTANCE TO LAND (per `_julie/julie-redline.md:1993-2007`):
-- Compound is where organizational learning happens
-- The difference between orgs that sustained change vs. reverted was the mechanism to learn from implementation + carry that learning into the next cycle
-- The discipline: stop, look at what the last cycle produced, identify what the design got wrong, install one specific improvement, carry it forward
-- Voice mix note from author §3 follow-up (Approved): "retrospective reviews THE DESIGN, not the people" — the orientation that affects E45 + E47 together
-
-CRITICAL MODIFICATION 1 — STRIP EOS-EQUIVALENT FRAMING (per author manifest annotation):
-- Julie's source says: "EOS calls this the same system in the quarterly operating session."
-- Author manifest: "Need to not lean too much into EOS; all successful businesses should be on a quarterly rhythm."
-- REFRAME as universal business discipline: "Successful businesses run on a quarterly rhythm" OR name EOS / Scaling Up / 4DX / homegrown as parallel examples (NOT as THE rhythm). Compound's retrospective is the same beat applied to the Co-Operating Model.
-
-CRITICAL MODIFICATION 2 — FRAMEWORK-ATTRIBUTION SCRUB:
-- Julie's source opens with "In every operating model transformation I have led" — individual-attribution Julie-anchor.
-- Strip per framework-attribution rule + Q-E21 blended-we convention. Recommend strip entirely; if Drafter judges Julie-anchor adds operator credibility, single in-prose attribution sentence only ("Julie has watched the same failure across two decades of operating-model redesigns...").
-
-CRITICAL MODIFICATION 3 — A13 MEANS/ENDS RISK = HIGH (Ch 9 chapter-opener; A13 recurrence 8/8 chapters):
-- Ch 9 is the payoff chapter; Compound is the book's outcome stage; the opener is EXTREMELY high-risk for framework-as-destination temptation.
-- Verify the new paragraph lands operator outcome (continuous design iteration that produces compounding ops gains: faster Source the next time, sharper Build, accumulated artifacts, the headcount math working in the operator's favor).
-- DO NOT write framework-as-destination ("the compound effect," "the organizational learning loop," "this is what running a learning organization looks like," "now you're compounded," "Co-Intelligence reached").
-- Ground the org-learning frame in the operator outcome the chapter already lands at L22 (infrastructure running in parallel that used to wait for the operator) — Compound is where you make that infrastructure-accumulation deliberate.
-
-VOICE MIX NOTE — LAND THE DESIGN-NOT-PEOPLE ORIENTATION HERE:
-- Recommended phrasing pattern: "The retrospective looks at the design — the chart entries, the workflow, the Source map — not at the people. The question is not who didn't perform. It's what the design assumed that turned out to be wrong."
-- This orientation distinguishes the Compound Sprint Retrospective from a personnel-review post-mortem.
-
-ANTI-PATTERN CONTROLS:
-- A1 (acceptable): Julie's source closer "Organizations that do this get better every quarter. Organizations that skip it repeat the same design errors indefinitely." carries argumentative weight; preserve or near-preserve.
-- A3 (LOW): Julie's two-clause parallel ("not the quality of the initial implementation. It was whether the organization built a mechanism...") is acceptable; do NOT add a third parallel clause.
-- A4: strip the Julie-anchor "I have led" framing per global rule.
-- A5 (MED): Julie's source is dense; collapse to operator-direct beats per voice charter §2 (short punchy interleaved with medium-length structural).
-- Forbidden vocab: NO "organizational design" / "transformation" / "leverage" / "synergy" / "alignment" / "augmentation" / un-locked "hybrid".
-- Contractions: ALWAYS (current chapter convention; Julie's source is contraction-free — fix).
-
-EC1: N/A (no new canonical vocabulary; "Compound" canon already established at L26 + Ch 3).
-
-A2: LOW risk ("Compound" already canonical).
-
-Acceptance criteria: substance preserved; EOS-strip applied per author annotation; design-not-people orientation lands explicitly; framework-attribution scrubbed; A13 verified clean (operator outcome, not framework-as-destination); voice charter A1-A16 all clean.
-
-See `_julie/per-chapter/09-compound.md` E45 section for full acceptance criteria.
-```
-
-```jf-note:
-```
+The retrospective looks at the design, not the people. The chart entries, the workflow, the Source map — those get reviewed. The question isn't who didn't perform. It's what the design assumed that turned out to be wrong. Companies that do this get better every quarter. Companies that skip it repeat the same design errors in slightly different configurations.
 
 Compound is the sixth stage of the Sequence — the one that turns a delivered sprint into the foundation of the next one. This is the stage the word in our company name points at: the brand is *Compound* because what the work produces is compounding — not as metaphor, but as the structural property of running the Sequence on a cadence.
 
@@ -183,79 +137,7 @@ One. Not five. Not a list of improvements. One.
 
 The temptation after a good sprint is to list every observation the team made and call the list "lessons learned." That list never lands. It's too long to install, too unprioritized to argue about, and too vague to enforce. By the time the next sprint begins, the lessons file is closed and the same mistakes are being made in slightly different colors.
 
-```scout-note:
-E47 (NEW-SECTION, LAND-WITH-MODIFICATION pending author review) — One design change per retro discipline (additive paragraph OR minimum-viable two-sentence insert).
-
-LANDING: Insert here, between L86 ("...same mistakes are being made in slightly different colors.") and L88 ("The discipline of one design change defeats that failure mode.") — additive to existing §The one design change rule.
-
-AUTHOR MANIFEST ANNOTATION: "Needs Review." Drafter must verify additive substance vs. redundant against the existing §80–L101 prose before landing.
-
-GENUINELY ADDITIVE SUBSTANCE (verified against existing section):
-(a) STAGE-COMPLETION CRITERION: "The Compound stage is not complete until the one design change is installed." — sharpens the existing discipline by binding stage-completion to installation. The current §80–L101 frames the rule as a discipline; E47 adds the binding rule.
-(b) RETROSPECTIVE-VS-POST-MORTEM DISTINCTION: "An insight without an installation is a post-mortem, not a retrospective." — sharpens the difference between Compound and a generic post-mortem culture. The Compound retrospective is mechanism-producing (installed change), not insight-producing (closed Notion page).
-(c) VOICE MIX NOTE OPERATIONALIZED: "The change is a design change — a chart entry revised, a workflow step added, a guardrail tightened, a Source map updated. Not a person reassigned. Not a meeting added." — operationalizes the design-not-people orientation introduced in E45.
-
-SUBSTANCE NOT ADDITIVE (already covered in existing prose, do NOT duplicate):
-- "One. Not five. Not a list of improvements." (L84) — already lands
-- "The temptation after a good sprint is to list every observation..." (L86) — already lands; this is THE existing diagnostic frame
-- "That list never lands. It's too long to install, too unprioritized to argue about, and too vague to enforce." (L86) — already lands
-- "Disciplined improvement over many sprints produces an agent team dramatically more capable after eight sprints than after one." (L96) — already lands the compounding-outcome closer
-
-CRITICAL MODIFICATION 1 — FRAMEWORK-ATTRIBUTION SCRUB (DIRECT APPLICATION):
-- Julie's source (`_julie/julie-redline.md:2036-2050`) attributes the discipline to "Every multi-system transformation Julie has led" individual practice + "from organizational design practice."
-- Per framework-attribution rule + manifest line 57 global rule: STRIP "from org-change-management practice" individual attribution. The one-design-change rule is canonical Compound retrospective discipline (joint book IP).
-- Reframe as universal retrospective discipline: "Lists become backlogs that never get done." (Note: this generic operator-direct framing is already partially in the chapter at L86; verify E47's framing is additive, not duplicative.)
-
-CRITICAL MODIFICATION 2 — A3 COLLAPSE:
-- Julie's source has four-clause cascade: "none of the improvements were made. The list became the backlog. The backlog accumulated. The next sprint began with the same design failures as the last one." A3 pile-up.
-- Collapse to two clauses max OR replace with single declarative.
-- Recommended: "Lists become backlogs that never get done. The next sprint begins with the same design failures as the last." (Two clauses, no triplet pile-up.) But verify against existing L86 ("That list never lands. It's too long to install...") — may be redundant.
-
-CRITICAL MODIFICATION 3 — A1 ACCEPTABLE OR COLLAPSE (Drafter judgment):
-- Julie's source closer "An insight without an installation is not a retrospective. It is a post-mortem." — A1 antithesis form. Carries argumentative weight (the diagnostic distinction is load-bearing).
-- Acceptable A1 if Drafter judges argumentative weight justifies. Otherwise collapse to single declarative ("An insight that doesn't get installed is a post-mortem, not a retrospective.")
-
-CRITICAL MODIFICATION 4 — VOICE MIX NOTE REINFORCEMENT (per author §3 follow-up "Approved"):
-- If E45 lands the design-not-people orientation at the chapter-opener (recommended), E47 reinforces lightly in the one-design-change context: "The change is a design change — a chart entry revised, a workflow step added, a guardrail tightened, a Source map updated. Not a person reassigned."
-- If E45 does NOT land the voice mix note, E47 MUST land it (one of E45/E47 must carry the design-not-people reorientation explicitly).
-
-CRITICAL MODIFICATION 5 — A13 RISK (MED):
-- The one-design-change rule is MEANS; the operator outcome is COMPOUNDING SPRINTS (each sharper than the last).
-- DO NOT write "the one-design-change rule is what separates the operators who run the Sequence from the operators who don't" (A13 framework-as-destination pattern).
-- The operator outcome is the design getting better sprint by sprint, not the rule itself.
-- The existing closer at L96 lands A13 clean ("Disciplined improvement over many sprints produces an agent team dramatically more capable after eight sprints than after one. Skip the discipline and you get the same agent team it always was, with longer meeting notes.") — preserve.
-
-MINIMUM-VIABLE LANDING (if author rejects additive verdict):
-Two-sentence insert: "Compound is not done until the one design change is installed. An insight that doesn't get installed is a post-mortem, not a retrospective." Both sentences are additive against the existing prose; both align with author E47 annotation "Needs Review."
-
-ANTI-PATTERN CONTROLS:
-- A1: see Modification 3 above.
-- A2: LOW risk (Compound / Sprint Retrospective / design change / HAC / Knowledge Map all canonical).
-- A3: see Modification 2 above.
-- A4: see Modification 1 above.
-- A5 (LOW–MED): Julie's source is dense; collapse to operator-direct beats.
-- A12: LOW (no specific company beats; existing Meridian anchor at L90 stays canonical; E47 lands BEFORE L90).
-- A13: see Modification 5 above.
-- Forbidden vocab: no "organizational design" / "transformation" / "leverage" etc. — Julie's source uses none, verify Drafter introduces none.
-- Contractions: ALWAYS (current chapter convention; Julie's source is contraction-free — fix).
-
-EC1: N/A (no new canonical vocabulary).
-
-COHERENCE:
-- E47 must land AFTER E45 (E45 establishes the org-learning + design-not-people orientation that E47 operationalizes).
-- Existing §The one design change rule at L80–L101 must remain canonical. E47 inserts inside the section between L86 and L88 — additive only.
-- Meridian fabrication-complexity-indicators worked example at L90 must remain canonical. E47 lands BEFORE L90; do NOT modify.
-- L94 excalidraw shortcode (ch09-one-design-change) and L100 Action Step callout must remain canonical.
-- Cross-chapter coherence: Ch 6b Design Brief + HAC entries + Knowledge Map are the canonical artifacts the "design change" comprises. Use canonical artifact vocabulary.
-- Cross-chapter coherence: Ch 10 §10.1 quarterly operating session does NOT include "install the one design change" as a quarterly step — the installation is a Compound-STAGE criterion, not a quarterly-SESSION step. Preserve the stage-vs-session distinction.
-
-PATH B FALLBACK: If author rejects additive verdict (E47 = redundant), drop to single-sentence minimum-viable insert OR drop entirely. If author approves additive verdict + voice-gate fails twice, escalate to Path B.
-
-See `_julie/per-chapter/09-compound.md` E47 section for full acceptance criteria.
-```
-
-```jf-note:
-```
+Compound isn't done until the one design change is installed. The change is a design change: a chart entry revised, a workflow step added, a guardrail tightened, a Source map updated. Not a person reassigned. Not a meeting added. Something structural that the next sprint inherits. An insight that doesn't get installed is a post-mortem, not a retrospective.
 
 The discipline of one design change defeats that failure mode. The Human Orchestrator looks across everything the sprint surfaced — the Source phase that ran too thin, the supervisor cadence that was wrong, the handoff between the agent team and the human reviewer that broke once, the input format that turned out to need cleaning nobody scoped — and names the *single* change that will most improve the next sprint.
 
