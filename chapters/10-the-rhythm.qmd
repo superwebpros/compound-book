@@ -2,14 +2,14 @@
 
 :::{.callout-important}
 ## In Brief
-One sprint is a project. A rhythm of sprints is a transformation. The Rhythm is the Sequence — Signal → Source → Design → Build → Deliver → Compound — run quarterly, on the next constraint, on top of whatever operating system you already use. This chapter gives you the quarterly session agenda, the living document that tracks where your hybrid org actually stands, and the scorecard that proves the compounding is real.
+One sprint is a project. A rhythm of sprints is a compounding operating model. The Rhythm is the Sequence — Signal → Source → Design → Build → Deliver → Compound — run quarterly, on the next constraint, on top of whatever operating system you already use. This chapter gives you the quarterly session agenda, the living document that tracks where your hybrid org actually stands, and the scorecard that proves the compounding is real.
 :::
 
 This time last year, I had thirteen people. I'm looking at the current roster and there are eight.
 
-Five people are gone — not cut in a crisis, not managed out because the company was struggling. Gone because the work they were doing is now being done differently. And we are growing. Double-digit growth on billings and profitability. The fewer people are the reason.
+Five people are gone — not cut in a crisis, not managed out because the company was struggling. Gone because the work they were doing is now being done differently. And we're growing. Double-digit growth on billings and profitability. The fewer people are the reason.
 
-The shift did not happen because we adopted a new platform or made a strategic decision to run lean. It happened because we ran Signal before we wrote requisitions. That is the behavioral change. It sounds small. It is not.
+The shift did not happen because we adopted a new platform or made a strategic decision to run lean. It happened because we ran Signal before we wrote requisitions. That's the behavioral change. It sounds small. It's not.
 
 Here is the specific moment I can point to. We had a project coordinator who was underperforming. The reports weren't getting done. Client follow-ups were slipping. Capacities weren't being updated. Our ~~VP of Operations~~ Integrator was frustrated — had been bringing the same complaint to every meeting for weeks. We knew what the next step was supposed to be: let her go, write a job description, post for a replacement, spend two months hiring and onboarding the next version of the same role.
 
@@ -27,87 +27,15 @@ One sprint is a project. Two sprints is a habit. Six sprints is an operating mod
 
 The Equation is *Co-Intelligence + Rhythm = Compound*. The first term is the system — humans and AI working as one workforce, designed deliberately, owned by named people. The second term is the cadence. Without the cadence, the system is a one-time project that produced one improved workflow and then went dormant. With the cadence, every quarter takes the next constraint, runs it through the same six stages, and adds the result to a stack of designed work the organization now operates on.
 
-The Rhythm is quarterly. Not because the calendar is sacred, but because a sprint takes six to eight weeks and the leadership team needs one focused session per quarter to commit the next one. Faster than that and the sprint loses the depth that makes it pay off. Slower than that and the design infrastructure built in the last sprint starts to degrade before the next one begins — edge cases accumulating without a retrospective to process them.
-
-```scout-note:
-E48 (NEW-SECTION) — Julie chapter-opener: quarterly cadence = natural tempo of org change.
-
-VERDICT: REJECTED-AS-OPENER · LAND-AS-SUBSECTION (1-2 sentence additive beat folded into this paragraph, OR at end of §The quarterly operating session after L51).
-
-OPENER REJECTION RATIONALE (per author manifest annotation explicit: "Not sure its an opener; I really want openers focused on stories to anchor the reader"):
-Every approved chapter opener in the merge anchors in a concrete operator-outcome story — Preface developer-departure, Ch 1 three-tools, Ch 2 Marina, Ch 3 "Can we just build it", Ch 4 PT clinic L10, Ch 5 banker's box, Ch 6 project-coordinator HAC, Ch 9 5:30 finish, Ch 10 (CURRENT L8-L24) 13->8 / requisition-that-never-got-posted, Ch 11 Katie + Jill. Julie's E48 source (`_julie/julie-redline.md:2064-2088`) is story-less, definitional, abstract-noun-heavy ("the quarterly cadence is not arbitrary. It is the tempo at which organizational change can be absorbed, validated, and extended"). Cannot displace the current L8-L24 opener (strongest Jesse-anchored chapter opener in the book; the operator-outcome anchor for §The headcount paradox, resolved at L118-L132).
-
-LAND-AS-SUBSECTION RATIONALE:
-The existing L30 already lands 80% of E48 substance (faster=sprint loses depth, slower=design infrastructure degrades). The genuinely additive substance Julie offers is the ORGANIZATIONAL-ABSORPTION LENS — quarterly matches the team's capacity to absorb change; faster than that and the team can't internalize the new design before the next change arrives.
-
-RECOMMENDED LANDING (Pattern A, preferred): 1-2 sentence additive beat folded into L30. Example phrasing: "Quarterly also matches the team's capacity to absorb the change. Run a new design every six weeks and the people executing it can't internalize the last one before the next arrives. The shift never holds." (Two sentences, additive, operator-direct, no abstract-noun pileup, A13-clean.)
-
-PATTERN B (alternative): brief beat at end of §The quarterly operating session after L51. Less natural — absorption framing is cadence-rationale, not session-mechanics.
-
-CRITICAL CONSTRAINTS:
-- Framework-attribution strip: "In every operating model transformation I have led" -> strip per `framework-attribution-rule` global rule. Reframe as joint observation OR strip biographical setup entirely. Recommend: strip.
-- Per Ch 9 just-committed E45 universal-rhythm framing at Ch 9 L26: if EOS mentioned in landing, alongside Scaling Up + 4DX as parallel examples (NOT THE rhythm). For LAND-AS-SUBSECTION beat: no EOS mention needed — absorption framing is universal-business-discipline.
-- Per `pattern-drag-canon` (2026-06-02 author decision DITCH THE JARGON Option A): NO Pattern Drag/Gap/Lift/Method language. Julie's source mentions "absorbed" -> use plain operator language ("absorb the new design" / "absorption" / "internalize") per Ch 8 just-committed E43 "absorption problem" precedent.
-- HEAVY REWRITE per risk map. Julie's source is 13-sentence dense paragraph; Drafter compresses to 2 operator-direct sentences max.
-- A3 collapse: "absorbed, validated, and extended" three-verb cascade -> collapse to one or two verbs.
-- A4 strip: individual-credentialing pattern.
-- MEANS/ENDS-RISK = MED. Verify Drafter does not write "the quarterly rhythm is the cadence that turns the Sequence into a program" (A13 framework-as-destination). The operator outcome is sprints that compound + the team absorbing each design.
-
-COHERENCE:
-- E48 LAND-AS-SUBSECTION at L30 must NOT preview or duplicate the L8-L24 13->8 chapter opener.
-- E48 at L30 must NOT pull headcount math forward from §The headcount paradox, resolved at L118-L132.
-- E48 at L30 must NOT duplicate or contradict L48 Pro Tip / L64-L76 EOS comparison table / L225 §The company that was already ready EOS treatment.
-
-See `_julie/per-chapter/10-the-rhythm.md` for full acceptance criteria.
-```
-
-```jf-note:
-
-```
+The Rhythm is quarterly. A sprint takes six to eight weeks; the leadership team needs one focused session per quarter to commit the next one and confirm the work is moving in the right direction. Faster than that and the sprint loses the depth that makes it pay off. Slower than that and the design infrastructure built in the last sprint starts to degrade before the next one begins. Quarterly also matches the team's capacity to absorb the change. Run a new design every six weeks and the people executing it can't internalize the last one before the next arrives. The shift never holds.
 
 ## The quarterly operating *session*.
 
 The Rhythm has a meeting. One to two hours, your leadership team, every quarter, on the calendar before the year starts. You do four things, in this order:
 
-```scout-note:
-E49 (FRAMEWORK-ADD) — COE governance model template for Quarterly Operating Session structure.
+The structure of the quarterly operating session draws on the ***Center of Excellence (COE) Operating Model*** — Dave Ulrich's three-pillar HR framework from *Human Resource Champions* (1997), where specialized expertise centers coordinate across the business with defined governance and a recurring meeting cadence. The governance discipline is the point: a fixed agenda, committed outputs, an updated accountability chart, and a specific next-quarter commitment made before the session closes. What the four steps below add is how that discipline runs inside a Compound sprint cycle.
 
-STATUS: **NEEDS-AUTHOR** per author manifest annotation explicit ("What is this?").
-
-Julie's E49 source (`_julie/julie-redline.md:2090-2106`) proposes COE (Centers of Excellence) governance model — from Julie's "global food safety company operating model redesign" — as the template for the 4-step quarterly operating session structure. Author does not recognize the COE acronym — this is **diagnostic signal that COE is jargon, not vocabulary the reader will know.**
-
-Per `pattern-drag-canon` Option A precedent (DITCH THE JARGON) just-decided by author 2026-06-02 for Pattern Drag / Pattern Gap / Pattern Lift / Pattern Method on the same diagnostic ("Julie-coined via her CHRO practice; framework-attribution rule applies; adding a fourth coined Compound framework on top of HAC/TML/Right Seat/PIS would dilute the framework set"), **default verdict is REJECT for COE.**
-
-HOWEVER: Centers of Excellence IS genuine corporate vocabulary — verifiable in standard HR / org-design literature (unlike Pattern Drag, which was Julie-coined and verified absent from ADKAR/Kotter/Prosci per `pattern-drag-canon`). Whether COE earns its space as canonical Compound vocabulary is the author's call.
-
-THE ONE-QUESTION PROMPT FOR AUTHOR (please respond in the jf-note below):
-
-> "Is COE (Center of Excellence) standard governance vocabulary you want canonized like HAC/TML/Right Seat/PIS, or jargon to ditch like Pattern Method? Julie's E49 source proposes COE as the template for the quarterly operating session. If canonize: it joins the canonical framework set and lands here with a brief operator-direct definition + glossary E58 entry. If ditch: substance (quarterly alignment session structure) survives without naming — the existing 4-step agenda below already lands it operationally."
-
-DEFAULT VERDICT (if author elects DITCH): **REJECT.** No landing needed. The existing §The quarterly operating session at L32-L60 already lands the COE governance structure without the label:
-- Fixed agenda (the 4 steps below at L36-L42)
-- Fixed length (90 min per the L53 Action Step)
-- Quarterly alignment (cadence)
-- Review-validate-commit-update structure mapping exactly to COE 4-step: Step 1 Review ↔ COE "review sprint results"; Step 2 Update Signal Backlog ↔ COE "validate next-quarter priorities"; Step 3 Commit ↔ COE "commit"; Step 4 Update HAC ↔ COE "update governance framework"
-
-IF AUTHOR ELECTS CANONIZE:
-- BLOCKED-NEEDS-JULIE-DEFINITION pattern (Pattern Method precedent) — canonical Compound definition required from Julie, independent of any prior individual practice.
-- Brief 2-3 sentence COE definition would land between L34 (4-step intro) and L36 (Step 1).
-- Glossary E58 entry required (COE Operating Model is one of 7 E58 additions per manifest).
-- Path B (Design Table) MANDATORY if CANONIZE elected: substance contestation upstream; Substance Lead load-bearing on canonical-definition discipline; Voice Lead load-bearing on A2 + framework-attribution scrub.
-- Framework-attribution rule applies DIRECTLY: strip "Julie's COE governance model from her a global food safety company operating model redesign" individual framing.
-- A1/A2/A4/A5 anti-pattern risks all HIGH if canonized.
-
-NO DRAFTER ACTION on E49 until author resolves CANONIZE vs. DITCH below.
-
-See `_julie/per-chapter/10-the-rhythm.md` §E49 for full acceptance criteria + Path B escalation protocol if CANONIZE elected.
-```
-
-```jf-note:
-
-```
-
-**Step 1: Review the previous sprint at the outcome level.** Read the sprint outcome statement from Deliver. Review the retrospective findings from Compound. Did the constraint move? By how much? What changed in the cost your team quantified during Signal? This is not a status update on the agent team's activity — that conversation happens elsewhere, more often. This is the outcome question. The Hybrid Accountability Chart names a constraint owner; that owner reports the result. And you answer one question that determines what happens next: is the workflow permanent, or does it need another sprint?
+**Step 1: Review the previous sprint at the outcome level.** Read the sprint outcome statement from Deliver. Review the retrospective findings from Compound. Did the constraint move? By how much? What changed in the cost your team quantified during Signal? This isn't a status update on the agent team's activity — that conversation happens elsewhere, more often. This is the outcome question. The Hybrid Accountability Chart names a constraint owner; that owner reports the result. And you answer one question that determines what happens next: is the workflow permanent, or does it need another sprint?
 
 **Step 2: Update the Signal Backlog.** Pull the re-ranked backlog from the Compound phase. Review each candidate: still relevant? Cost changed? New information? Add any new constraints that emerged during the quarter. Remove any that were resolved as side effects. What has shifted in priority since last quarter? The Signal Backlog is the running inventory of your company's most expensive operational problems, ranked. It is the input to every quarterly conversation.
 
@@ -135,7 +63,7 @@ Put the quarterly operating session on the calendar for the end of this quarter.
 
 ### How it maps to your operating system.
 
-If you are running EOS, Scaling Up, 4DX, or a homegrown operating cadence, the Compound quarterly session is *not* a competitor. It is the AI operating layer that runs on top of the operating system you already use. Your quarterly off-site still happens. Your rocks still get set. Your L10s still run. The sprint session is the focused hour that decides what your AI workforce is doing this quarter, and that decision arrives at your existing meetings as real data — what your largest constraint is, in dollars — instead of opinion.
+If you're running EOS, Scaling Up, 4DX, or a homegrown operating cadence, the Compound quarterly session is *not* a competitor. It's the AI operating layer that runs on top of the operating system you already use. Your quarterly off-site still happens. Your rocks still get set. Your L10s still run. The sprint session is the focused hour that decides what your AI workforce is doing this quarter, and that decision arrives at your existing meetings as real data — what your largest constraint is, in dollars — instead of opinion.
 
 Here is how the pieces map:
 
@@ -151,7 +79,7 @@ A sprint can become a Rock when committed in quarterly planning. The HAC layers 
 
 ## The *Hybrid Org Today*.
 
-Once you are running the Rhythm, you maintain one living document: the Hybrid Org Today. It is the current operational picture of your Co-Intelligent Company.
+Once you're running the Rhythm, you maintain one living document: the Hybrid Org Today. It is the current operational picture of your Co-Intelligent Company.
 
 The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. The Hybrid Accountability Chart from Chapter 6 is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
 
@@ -191,7 +119,7 @@ When a new executive joins, the Hybrid Org Today is the briefing. When the board
 
 ## The headcount paradox, *resolved*.
 
-Return to where this book started. Revenue growing. Headcount growing with it. AI investments producing no measurable gap between the two. The CEO knows the math is wrong and cannot find the lever that moves it.
+Return to where this book started. Revenue growing. Headcount growing with it. AI investments producing no measurable gap between the two. The CEO knows the math is wrong and can't find the lever that moves it.
 
 After six to eight sprints on the Rhythm, the math moves. Not overnight — but the pattern is broken. The behavioral marker is specific. Your first response to a capacity problem is no longer *who do we hire?* It is *what does Signal say about this?*
 
@@ -201,55 +129,15 @@ Companies that default to designing before hiring build a different cost structu
 
 {{< excalidraw ch10-headcount-math "Headcount math before/after: headcount grows linearly with revenue (left) vs. headcount flattens while revenue grows after sprint cadence takes hold (right)." >}}
 
-The coordinator story that opened this chapter ends here — with the question that stopped getting asked. The hire that never got posted was not a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That is the Rhythm doing its job: changing the default behavior of the organization across every call that follows.
+The coordinator story that opened this chapter ends here — with the question that stopped getting asked. The hire that never got posted wasn't a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That's the Rhythm doing its job: changing the default behavior of the organization across every call that follows.
 
-Most teams already have a meeting cadence — the L10, the weekly standup, the quarterly review. The cadence is real. But the discipline that turns a red number into a named constraint — and a named constraint into a sprint — is usually absent. Weeks of red scorecards mean the cadence exists and the Rhythm does not. What the Rhythm adds is not a new meeting. It is the four things the meeting produces: an outcome reviewed, a backlog updated, a constraint committed, a chart current. Without all four, the session is theater.
+Most teams already have a meeting cadence — the L10, the weekly standup, the quarterly review. The cadence is real. But the discipline that turns a red number into a named constraint — and a named constraint into a sprint — is usually absent. Weeks of red scorecards mean the cadence exists and the Rhythm does not. What the Rhythm adds isn't a new meeting. It's the four things the meeting produces: an outcome reviewed, a backlog updated, a constraint committed, a chart current. Without all four, the session is theater.
 
 ## The *Compounding Scorecard*.
 
 The Hybrid Org Today tells you where you stand. The Compounding Scorecard tells you whether the Rhythm is working.
 
-```scout-note:
-E50 (NEW-SECTION) — Compounding Scorecard as design-validation document, not financial document.
-
-VERDICT: **LAND-WITH-MODIFICATION.** Approved per author manifest annotation ("Approved.").
-
-Julie's E50 source (`_julie/julie-redline.md:2108-2129`) reframes the Compounding Scorecard from a financial/ROI document to a **design-validation document** — each sprint's result either confirms the Design correctly identified the constraint and correctly allocated the work, OR reveals a gap between what was designed and what was produced. Compounding pattern (deltas growing or staying large at lower cost) = design improving + infrastructure accumulating. Flat pattern (deltas shrinking) = solving surface constraints rather than structural ones. **"The scorecard tells you which pattern you are running. The retrospective tells you why."**
-
-INSERTION POINT (recommended Pattern A): 2-3 sentence additive paragraph HERE — between L136 (canonical scorecard-as-receipt framing) and L138 (cumulative business-case framing). Natural pivot from outcome-tracking definition to cumulative-business-case framing; design-validation lens reinforces and extends both.
-
-ADDITIVE SUBSTANCE Julie offers (Drafter verifies all three earn their space):
-- (a) Design-validation framing — genuinely additive to existing L134-L150 prose.
-- (b) Compounding-vs-flat pattern diagnostic — genuinely additive; existing Pro Tip at L218-L221 partly covers but lacks design-validation lens.
-- (c) Scorecard-vs-retrospective handoff ("scorecard tells you which pattern, retrospective tells you why") — genuinely additive; reinforces Ch 9 just-committed E45 retrospective-reviews-the-design orientation.
-
-MINIMUM-VIABLE LANDING (if Drafter judges (b) duplicative of L218-L221 Pro Tip): (a)+(c) as 2 sentences. Example: "The Compounding Scorecard is a design-validation document, not a financial one. Each sprint's delta tells you whether the design correctly identified the constraint and correctly allocated the work — the scorecard tells you which pattern you're running, the retrospective tells you why."
-
-CRITICAL CONSTRAINTS:
-- Framework-attribution rule — DIRECT APPLICATION: strip "Julie's practice in every significant operating model change she has led" individual attribution per `framework-attribution-rule`. Recommend strip biographical setup entirely.
-- HEAVY REWRITE per risk map. Julie's source 200+ words dense abstract-noun paragraph. Drafter compresses to 2-3 operator-direct sentences max.
-- A1 antithesis closer ("It is not a financial document. It is a design validation document.") is **acceptable A1** if argumentative weight carries (load-bearing operator beat of E50). Voice charter A1 permits "not X but Y" form when argumentative weight justifies (Ch 6 Right Seat / Ch 1 Wrong Question / Ch 3 Order is the Argument precedents).
-- A3 risk: watch for Drafter introducing a third clause on top of Julie's compounding-vs-flat two-clause parallel.
-- A13 risk: scorecard = means; operator outcome = better Design next sprint. Verify Drafter does not write "the Compounding Scorecard is the discipline that validates the Sequence" (A13 framework-as-destination).
-- Voice mix coordination (per Ch 9 just-committed E45): Ch 9 E45 lands "The retrospective looks at the design, not the people." E50 reinforces at scorecard level — scorecard tells whether design is improving. Drafter aligns E50 with Ch 9 E45 retrospective-reviews-the-design orientation.
-- Per `pattern-drag-canon` (2026-06-02): NO Pattern Drag/Gap/Lift/Method language.
-
-EC1 CANONICAL-DEFINITION VERIFICATION (MANDATORY):
-"Compounding Scorecard" canon at current L134-L150 must remain canonical. New design-validation framing EXTENDS existing canon; does not redefine. Drafter verifies existing scorecard-as-cumulative-business-case + new scorecard-as-design-validation read as **ONE coherent definition**, not two competing. Reconciliation: scorecard tracks dollars (existing) AND validates design (new); both are operator-direct framings of same instrument. Glossary E58 alignment.
-
-COHERENCE:
-- Ch 9 E45 retrospective-reviews-the-design: E50 reinforces at scorecard level.
-- Ch 9 E47 one-design-change rule: E50 scorecard-vs-retrospective handoff reinforces design-iteration loop.
-- Ch 11 First Sprint Plan (Ch 11 Scout running parallel): Compounding Scorecard is downstream artifact consuming First Sprint Plan's first row. E50 must support Ch 11's landing.
-- Ch 10 existing §What compounding looks like, sprint six at L152-L222: canonical Meridian sprint-three worked example at L174-L221. E50 must NOT modify Meridian.
-- Ch 1 AI Readiness Scorecard: NOT the same instrument as Compounding Scorecard. Don't conflate.
-
-See `_julie/per-chapter/10-the-rhythm.md` §E50 for full acceptance criteria.
-```
-
-```jf-note:
-
-```
+The Compounding Scorecard is a design-validation document, not a financial one. Each sprint's delta tells you whether the design correctly identified the constraint and correctly allocated the work. The scorecard tells you which pattern you're running; the retrospective tells you why.
 
 Each sprint produces a delta — the measurable difference between what the constraint cost before and what it costs after. The scorecard tracks those deltas across quarters. After four sprints, the cumulative column is the business case for continuing.
 
@@ -281,7 +169,7 @@ And the leaders themselves have changed. Executives who, eighteen months ago, ha
 
 Here is what sprint six looked like for us, concretely.
 
-I'm on a call with our marketing lead, and I stop mid-conversation and say: let's get a little meta about what's happening right now. Four agents are running in parallel. One handling design. One handling content synthesis. One doing research. One producing video. She is not doing any of those things. She is directing the team that does all of them. Her title hasn't changed. Her job has become unrecognizable from what it was a year ago.
+I'm on a call with our marketing lead, and I stop mid-conversation and say: let's get a little meta about what's happening right now. Four agents are running in parallel. One handling design. One handling content synthesis. One doing research. One producing video. She isn't doing any of those things. She is directing the team that does all of them. Her title hasn't changed. Her job has become unrecognizable from what it was a year ago.
 
 The year before, we had launched nothing new. We were at capacity. We had twice the headcount. That year, we launched two new business lines. Half the staff.
 
@@ -353,7 +241,7 @@ The framework is yours to run. The next chapter is about the one thing Compound 
 ## Reflection Questions
 
 1. Look at your last four quarters of headcount decisions. How many requisitions were written before anyone asked "what does Signal say about this?" How many constraints were design problems disguised as headcount problems? Run the math: what did those hires cost against what a sprint would have cost?
-2. Set up your Compounding Scorecard today. Fill in the first row with your current or most recent sprint. For each sprint you have completed, what is the cumulative delta? Is the compounding visible yet, or is this your first data point?
+2. Set up your Compounding Scorecard today. Fill in the first row with your current or most recent sprint. For each sprint you've completed, what is the cumulative delta? Is the compounding visible yet, or is this your first data point?
 3. Your quarterly operating session has four steps: review the previous sprint at the outcome level, update the Signal Backlog, commit the next sprint, and update the Hybrid Accountability Chart. Is that 90-minute session on your calendar this quarter — with all four steps on the agenda and the right people in the room?
 4. The Hybrid Org Today document maps what people own, what AI handles, what is solved, and what is next. Could you fill in that one-page template for your company right now? What would the "Completed Sprints" section say, and what would the "Active Sprint" section say?
 5. The chapter describes executives who, after eighteen months, make design-improvement decisions between sprints without being prompted. What would have to be true about your leadership team's operating model for that behavior to become automatic — not deliberate — within two years?
