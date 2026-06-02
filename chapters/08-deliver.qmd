@@ -7,7 +7,7 @@ Build deployed the workflow. Deliver makes the organization actually use it. The
 
 We flip the switch on a Wednesday.
 
-The workflow goes live. The agent starts pulling tickets from the queue, routing them, logging its decisions. I'm watching the dashboard. Left side: everything working the way we designed it. Right side: flags. Not catastrophic — the system isn't down — but the agent is handling a category of inputs we didn't map fully in Source, and it's doing things we didn't expect.
+The workflow goes live. The agent starts pulling tickets from the queue, routing them, logging its decisions. I'm watching the dashboard. Left side: everything working the way we designed it. Right side: flags. Not catastrophic. The system isn't down. But the agent is handling a category of inputs we didn't map fully in Source, and it's doing things we didn't expect.
 
 I tell my co-founder: "Pretty buggy over here. But it's doing a great job over there."
 
@@ -23,16 +23,11 @@ The difference is operational, not technical.
 
 Build ends with a working agent running in production. That is a real milestone. It is also incomplete. The agent is doing the work it was designed to do; the organization around it has not yet adjusted to receive what the agent now produces.
 
-```scout-note:
-E41 (STRUCTURE, LAND-WITH-MODIFICATION) lands HERE — a new paragraph between the L24 "still incomplete" framing above and the L26 "their calendar, their queue, their handoffs" cascade below. Substance: Deliver is the stage operators most often skip the work of; every implementation that succeeded at Deliver did three things before go-live — named exactly who was affected and how their daily work would change, trained those people on the new handoffs before they encountered them in production, and established a measurement baseline against the cost Signal identified. The three preconditions land as plain operator language (NOT canonical Compound vocabulary; no italicization, no glossary entry). Pattern A preferred (declarative joint-book voice; zero individual attribution; framework-attribution scrub of Julie's "twenty-year change-mgmt practice / every organizational transformation I have led" framing per `framework-attribution-rule` memory + manifest line 57 global rule). CRITICAL CUTS: (1) "every organizational transformation I have led" → forbidden vocab "transformation" + A4 boastful biographical → drop entirely OR substitute "every implementation I have led" if Pattern B chosen. (2) "ERP rollouts / post-acquisition integrations / operating model redesigns" triplet → A4 boastful biographical (canonical contrived-symmetry pattern flagged in Ch 1 §1.2 already-cut precedent) → drop entirely. (3) "they are not optional steps. They are the stage." → A1 binary closer + A13 means/ends (system-as-destination) → drop entirely; let the operator-outcome line ("...discovered the gap in production, where fixing it was expensive") carry the close, then the chapter's next H2 §"The *Deploy Readiness Audit*" carries the operational follow-through. (4) Three "they had..." stacked parallel sentences → A3 triplet cadence → resolve to single-sentence prose list. MEANS/ENDS-RISK = HIGH (chapter-opener-adjacent + section-internal framework introduction); closer must land operator outcome (gap discovered in production / cost of fixing-in-production), not system-as-destination. Forward-reference setup to the L39 four-gate Audit acceptable in single in-paragraph clause (e.g., "The Deploy Readiness Audit below operationalizes the three."). Lines ranges: L24 → INSERT BETWEEN → L26. Pattern A landing carries zero Julie-attribution; if Pattern B chosen, ≤1 sentence Julie-anchor and chapter total Julie-attribution across E41+E42+E43 ≤1 sentence. Italicization: none required (three preconditions are not coined vocabulary). Author manifest annotation: "Likely approved" with "I will likely defer." See `_julie/per-chapter/08-deliver.md` E41 acceptance criteria for full pattern, EC1 verification (N/A — no coined term), cross-chapter coherence (preserves L8-L20 cold-open verbatim per chapter-opener-consistency precedent / `julie-merge-rejected-rows` memory; preserves L39-L59 four-gate Audit verbatim; preserves L54 Meridian populated example verbatim).
-```
-
-```jf-note:
-```
+Deliver is the stage operators most often skip the work of. The technology side is built; the organizational side is assumed. Every implementation that succeeded at Deliver did three things before the go-live date: named exactly who was affected and how their daily work would change, trained those people on the new handoffs before they encountered them in production, and established a measurement baseline against the cost Signal identified. Every implementation that failed at Deliver skipped one or more — and discovered the gap in production, where fixing it was expensive. The Deploy Readiness Audit below operationalizes all three.
 
 The person whose week used to include four hours of manual routing now has those four hours back — but only if their calendar, their queue, and their handoffs have been re-set to reflect that. The colleague who used to send them tickets needs to know to send the tickets somewhere else. The manager who used to see the weekly summary needs the new reporting wired up. The escalation path for the exceptions the agent flags needs to land on a human who has been told it will land on them.
 
-If you skip that work, the deployed system still functions — but the organization continues to behave as if the old workflow is in place. People route around the new system because they were never told to route through it. The agent does its job. The hours do not come back. The cost Signal quantified does not get recovered. The sprint did not produce.
+If you skip that work, the deployed system still functions — but the organization continues to behave as if the old workflow is in place. People route around the new system because they were never told to route through it. The agent does its job. The hours don't come back. The cost Signal quantified doesn't get recovered. The sprint didn't produce.
 
 I learned this in my own shop before I understood it as a principle. We finished a sprint, deployed a workflow, wrote the runbook. Two weeks later I watched a teammate do the task manually — the exact task the agent now handles — because she'd never been explicitly told to stop. The workflow was in production. The old inbox was still open. She was routing to both, hedging, not sure which one was "real." *We built the tool to do this. Why are you still doing it this way?* I said it out loud. I was, in a meaningful sense, talking to myself — because I was the one who never closed the old inbox.
 
@@ -54,9 +49,9 @@ Before your team flips the switch, you run a pre-flight check. Four binary gates
 | 3 | Has the workflow been tested against real data from the last two weeks? Not demo data — actual inputs from your operation. | Pass / Fail |
 | 4 | Is the Human Orchestrator's review cadence defined and on the calendar? Recurring. Non-negotiable. | Pass / Fail |
 
-If the result is not 4/4, you are not ready to deploy. Every "Fail" is a task. Assign it, complete it, re-run the audit.
+If the result is not 4/4, you're not ready to deploy. Every "Fail" is a task. Assign it, complete it, re-run the audit.
 
-The Audit checks what Build prepared — it does not author anything fresh. If any answer is missing, that item blocks the deploy. Failed deploys trace back to a question nobody asked at this gate.
+The Audit checks what Build prepared — it doesn't author anything fresh. If any answer is missing, that item blocks the deploy. Failed deploys trace back to a question nobody asked at this gate.
 
 At Meridian Manufacturing, Elena and Dave completed hands-on training with the three-agent quoting pipeline before the workflow went live. Not a walkthrough email — Elena ran real quotes through the system while Dave reviewed the agent's historical job matching against specs he knew by heart. The escalation path was documented in the Claude Team workspace: any quote flagged as low confidence routed to Dave for non-standard materials, with Elena reviewing every assembled quote before it went to the customer. The workflow was tested against real RFQs pulled from HubSpot — actual customer requests from the prior two weeks, not demo data. Elena's review cadence was booked on the calendar: Monday and Thursday mornings, recurring. Systems verified: HubSpot connected, JobBOSS connected, CustomerNotes.xlsx with 112 validated pricing rules loaded into the agent's context. Four gates passed. Clear to deploy.
 
@@ -80,12 +75,7 @@ For each role, answer four questions:
 3. How does this person review agent output?
 4. What triggers an escalation?
 
-```scout-note:
-E42 (NEW-SECTION, LAND-WITH-MODIFICATION) lands HERE — a new paragraph between the L74 four-question runbook list above and the L76 "Sit down with the Hybrid Accountability Chart" HAC walkthrough below. Substance: Deliver training has a specific principle that distinguishes it from technology training — ***train the boundary, not the tool***. Most technology training focuses on how to use the new system; the training that prevents adoption failure focuses on where the human's work ends and the agent's work begins — the handoff. The handoff is the moment of highest failure risk in any human-AI workflow. Every person whose handoff changes must be able to answer two questions before the workflow goes live: (1) "What do I do differently now?" (2) "What does the agent do that I used to do?" If they cannot answer both, the training is incomplete — and the runbook is not done (forward-reference setup to the L92 vacation-test Pro Tip via the shared "not done" predicate). ITALICIZATION: ***Train the boundary, not the tool*** italicized as memorable operator-beat principle (parallel to Ch 4 *one sentence*, Ch 5 *what gets logged*, Ch 8 L22 *deployed* vs. *delivered*) — NOT as canonical Compound framework vocabulary (no E58 glossary entry; lower-stakes than HAC/TML/Right Seat first-introductions). Pattern A preferred (declarative joint-book voice; zero individual attribution per `framework-attribution-rule` memory). CRITICAL CUTS: (1) "Julie's organizational design practice produces a specific training principle" → forbidden vocab "organizational design" + individual attribution of joint book IP → drop entirely OR substitute joint-book opener ("Deliver training has a specific principle..."). (2) Two-question gate: PRESERVE as binary (not triplet); Drafter must NOT pad to a third question. (3) Operator-outcome closer ("the training is incomplete") PRESERVE verbatim or near-verbatim per acceptance criteria — operator-direct, NOT A1 binary X-is-not-X. MEANS/ENDS-RISK = MED (section-internal; closer must land operator outcome — person can pass handoff / training-completeness gate, not principle-as-destination). Lines ranges: L74 → INSERT BETWEEN → L76. Coordination with E41/E43: chapter total Julie-attribution across E41+E42+E43 ≤1 sentence; if E41 used Pattern B, E42 must use Pattern A. Author manifest annotation: "Approved." See `_julie/per-chapter/08-deliver.md` E42 acceptance criteria for full pattern, cross-chapter coherence (preserves L61-L74 four-question list verbatim; preserves L80-L86 Meridian per-role runbook verbatim; preserves L88-L100 Pro Tip + Action Step verbatim).
-```
-
-```jf-note:
-```
+Deliver training has a specific principle that distinguishes it from technology training: ***train the boundary, not the tool***. Most technology training focuses on how to use the new system. The training that prevents adoption failure focuses on where the human's work ends and the agent's work begins — the handoff. The handoff is the moment of highest failure risk in any human-AI workflow. It's where the human either completes the output correctly and passes it to the agent, or does it incorrectly and compromises everything the agent produces downstream. Every person whose handoff changes should be able to answer two questions before go-live: what do I do differently now, and what does the agent do that I used to do? If they can't answer both, the training is incomplete, and the runbook isn't done.
 
 Sit down with the Hybrid Accountability Chart from Design and work through each role whose handoffs changed. For each role, write three things: what they send to the agent (the trigger or input), what comes back to them (the output and its format), and what they do when something lands outside the expected range (the escalation path). One page per role.
 
@@ -115,7 +105,7 @@ Pick one role from your Hybrid Accountability Chart whose handoffs changed. Writ
 
 ## What gets *logged*.
 
-Deliver also surfaces what did not work. This is not a postmortem — the retrospective belongs to Compound, and that is the next chapter. This is the operational log that captures, in real time, the gaps between what was designed and what production actually revealed.
+Deliver also surfaces what did not work. This isn't a postmortem — the retrospective belongs to Compound, and that's the next chapter. This is the operational log that captures, in real time, the gaps between what was designed and what production actually revealed.
 
 Create the log on day one of deployment. Assign one person to own it — named, accountable. Set a daily check-in for the first two weeks: review the log, categorize new entries, note patterns.
 
@@ -145,7 +135,7 @@ At the end of week two, tally entries by category. The category with the most en
 
 :::{.callout-tip}
 ## Pro Tip
-The operational log is not a complaint box. It's a sensor. Every entry tells Design something about the next sprint. If the same category keeps appearing, that category is the next constraint.
+The operational log isn't a complaint box. It's a sensor. Every entry tells Design something about the next sprint. If the same category keeps appearing, that category is the next constraint.
 :::
 
 The log has to exist before the workflow goes live — not as an afterthought, but as part of the deployment itself.
@@ -159,7 +149,7 @@ Create the log template — four columns: Date, What happened, Category, What it
 
 Deliver's first responsibility is to measure the sprint against Signal's quantified cost. Signal said the constraint costs $150K a year. Deliver shows a workflow that recovers 80% of that. The sprint produced. The math is legible. The next sprint earns the right to start.
 
-That is the clean case. The interesting cases are the ones where the measurement is harder. The sprint clearly changed the work — the operator's week looks different, the bottleneck is gone, the log shows unplanned interventions dropping week over week — but the dollar figure is hard to pin down because the original Signal quantification was looser than it should have been. That is not a Deliver failure. That is a Signal lesson, and it goes into the Compound stage as an input to how the next sprint gets framed.
+That's the clean case. The interesting cases are the ones where the measurement is harder. The sprint clearly changed the work — the operator's week looks different, the bottleneck is gone, the log shows unplanned interventions dropping week over week — but the dollar figure is hard to pin down because the original Signal quantification was looser than it should have been. That's not a Deliver failure. That's a Signal lesson, and it goes into the Compound stage as an input to how the next sprint gets framed.
 
 The discipline is to write the number down anyway. Even an imperfect measurement beats a vibe. If the constraint cost was estimated at "around 8 hours a week" and Deliver shows the work now takes 30 minutes a week, the recovery is real and the math is good enough to report. Refuse the trap of declaring victory without evidence — and the equally bad trap of letting imperfect evidence become an excuse to claim nothing happened.
 
@@ -175,12 +165,11 @@ The structure is straightforward. Pull out your Signal statement — the sentenc
 | **Delta** | [the change — quantified] |
 | **Outcome in one sentence** | [what this sprint produced, stated plainly] |
 
-```scout-note:
-E43 (NEW-SECTION, LAND-WITH-MODIFICATION) lands HERE — a new paragraph between the five-row measurement table closer above and the "At Meridian:" populated example below. Substance: the operational result (the existing Signal-cost-recovered measurement, captured by the five-row table) is one of two measurement components; the second is adoption rate — what percentage of affected roles are using the new workflow as designed, not the old workflow out of habit. A workflow that works technically but is adopted by 60% of the team is producing 40% less value than the sprint was designed to generate. Both numbers reported together. CRITICAL DRAFTER ADDITION beyond Julie's source (per Q-E43 research synthesis + author manifest annotation "How easy is it to measure this? I'm intrigued"): include the operator-tractable measurement mechanic IN THE PROSE, not as a footnote: (1) DENOMINATOR = the named roles from the Hybrid Accountability Chart whose handoffs changed in this sprint (not enterprise-wide users; not licensed seats — for a 27-person Meridian-scale company, adoption is countable by name). (2) NUMERATOR = the named people observably using the new workflow as designed, observable in the operational log (§"What gets *logged*" L102-L142 already prescribes this). "Use" = the affected person's work went through the designed workflow, not around it. (3) WINDOW = "as of week N after launch" — sprint-level number tied to a specific point in time, typically reported at the end of the operational log's first two-week review cadence. Diagnostic interpretation (substance preserved with E44 BLOCKED cut): "high adoption + modest operational result = Design problem (the constraint was named correctly but the workflow was not designed to solve it at the cost the sprint projected); low adoption + good operational result on the work that did flow through it = an absorption problem (the design works; the organization has not adopted it). The next-sprint design adjusts the change-management approach, not the workflow." CRITICAL CUT: Julie's source calls "low adoption + good result" a "Pattern Drag problem" — Pattern Drag reference MUST BE CUT per E44 BLOCKED. Substitute "absorption problem" / "adoption problem" / "change-discipline problem" — all plain operator language. Pattern A preferred (declarative joint-book voice; zero individual attribution per `framework-attribution-rule` memory). CRITICAL CUTS: (1) "Julie's measurement discipline from organizational design practice" → forbidden vocab "organizational design" + individual attribution → drop entirely. (2) "Pattern Drag problem" → BLOCKED forward-reference → substitute plain operator language. (3) Operator-outcome closer ("One number alone is incomplete") PRESERVE — operator-direct, NOT A1 binary. (4) Two-case diagnostic ("high adoption + modest result" / "low adoption + good result") PRESERVE as binary (NOT triplet). MEANS/ENDS-RISK = MED; closer must land operator outcome (leadership sees both numbers; next sprint design adjusts). Lines ranges: insert BETWEEN measurement-table closer above AND "At Meridian:" line below. Recommend NOT modifying Meridian populated outcome record (L166-L183) — instead, reference the HAC-roster denominator + operational-log numerator + week-N window in the new paragraph via a single sentence (e.g., "At Meridian, an adoption-rate companion number would show what percentage of Elena, Dave, and Ty's affected handoffs ran through the designed workflow each week of the operational-log review window."). This names the mechanic without regressing Meridian-canonical L166-L183. Coordination with E41/E42: chapter total Julie-attribution ≤1 sentence; if E41 + E42 used Pattern A, E43 may optionally use Pattern B — recommend Pattern A throughout for cleanest joint-book voice. NO E58 glossary entry for "adoption rate" (industry-standard term, not coined Compound vocabulary). Author manifest annotation: "How easy is it to measure this? I'm intrigued." See `_julie/per-chapter/08-deliver.md` E43 acceptance criteria for full pattern, Q-E43 research findings, cross-chapter coherence (preserves L102-L142 operational log verbatim; preserves L144-L162 five-row measurement table verbatim; preserves L166-L183 Meridian outcome record verbatim; preserves L185-L192 leading-indicators paragraph + Action Step verbatim).
-```
+The five-row table captures the operational result — the cost Signal named against the result Deliver produced. That's one of two numbers the sprint outcome requires. The second is adoption rate: what percentage of the affected roles are using the new workflow as designed, not the old workflow out of habit. A workflow that works technically but is adopted by 60% of the team is producing 40% less value than the sprint was designed to generate.
 
-```jf-note:
-```
+Adoption rate is countable at the scale most operators run. The denominator is the named roles from the Hybrid Accountability Chart whose handoffs changed in this sprint — not enterprise-wide users, not licensed seats, but the specific people whose work changed. The numerator is the named people observably running their work through the designed workflow, visible in the operational log. "Use" means the affected person's work went through the designed path, not around it. Report the number as of week two after launch, the same window the operational log's first review cadence closes on.
+
+The two numbers together tell the story. High adoption with modest operational improvement is a Design problem: the constraint was named correctly but the workflow wasn't built to solve it at the projected cost. Low adoption with strong operational improvement on the work that did flow through is an absorption problem: the design works, but the organization hasn't adopted it yet. The next sprint adjusts accordingly — either the workflow design or the change-management approach, depending on which number is low. One number alone is incomplete.
 
 At Meridian:
 
@@ -205,7 +194,7 @@ OUTCOME IN ONE SENTENCE: Three-agent quoting pipeline removed Elena as the
 
 Leading indicators the team tracked weekly: quote volume per week, confidence score distribution across the agent pipeline, and escalation frequency to Dave on non-standard materials. Those leading indicators matter because the outcome sentence is a trailing measurement — it tells you what happened. The leading indicators tell you whether it will keep happening.
 
-That outcome sentence mirrors the Signal statement. It is the artifact Compound works against. If you can't produce it, stop and diagnose before declaring the sprint done.
+That outcome sentence mirrors the Signal statement. It's the artifact Compound works against. If you can't produce it, stop and diagnose before declaring the sprint done.
 
 :::{.callout-note}
 ## Action Step
@@ -225,7 +214,7 @@ The delivery test is a checklist, not a conversation. Run it before you declare 
 - [ ] You can show the leadership team a number that moved — tied directly to the constraint Signal identified.
 - [ ] The operational log exists, is owned by a named person, and has been reviewed at least twice.
 
-Every unchecked box is a task, not a judgment call. Check them all and the sprint delivered. Leave any unchecked and you deployed a tool — the organization has not changed yet.
+Every unchecked box is a task, not a judgment call. Check them all and the sprint delivered. Leave any unchecked and you deployed a tool — the organization hasn't changed yet.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -234,9 +223,9 @@ If you can't fill in the "Result After Sprint" line with a number, go back to th
 
 ## The change is not the *launch*. The change is the *week*.
 
-A well-run Deliver phase changes the work the people in the function do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that is now automated either get reinvested — in the strategic work Design identified as the higher-return use of their time — or they come out of the org over time, as the headcount math gets rerun against the new operating reality.
+A well-run Deliver phase changes the work the people in the function do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that's now automated either get reinvested — in the strategic work Design identified as the higher-return use of their time — or they come out of the org over time, as the headcount math gets rerun against the new operating reality.
 
-That is the test of whether Deliver delivered: can the people whose work was supposed to change describe, concretely, what they now do that they didn't do before, and what they no longer do that they used to? The agent running and the dashboard existing are table stakes.
+That's the test of whether Deliver delivered: can the people whose work was supposed to change describe, concretely, what they now do that they didn't do before, and what they no longer do that they used to? The agent running and the dashboard existing are table stakes.
 
 ## End of the sprint as a *project*. Start of it as *infrastructure*.
 
@@ -244,7 +233,7 @@ Deliver is where the sprint ends as a project and begins as infrastructure. The 
 
 {{< excalidraw ch08-build-deliver-compound-handoff "Build → Deliver → Compound handoff: what each stage produces and passes forward." >}}
 
-That artifact set — the outcome, the log, the runbook, the updated Hybrid Accountability Chart entry — is what the next stage works against. Compound is where the team turns it into the inputs that accelerate the next sprint. That is the next chapter.
+That artifact set — the outcome, the log, the runbook, the updated Hybrid Accountability Chart entry — is what the next stage works against. Compound is where the team turns it into the inputs that accelerate the next sprint. That's the next chapter.
 
 ## Reflection Questions
 
