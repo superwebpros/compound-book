@@ -13,24 +13,6 @@ Sofia, our VP of Operations, reviewed every output the agents produced in those 
 
 The reason I'm telling you this is because the Guardrails Checklist isn't a compliance exercise. It's the moment in Build where you decide what the system is allowed to touch. If you do that work before the build executes, it costs almost nothing. If you discover it after something goes sideways — after the wrong person pulls the wrong data — it costs everything. The spec either includes the guardrail or it doesn't. And if it doesn't, Build isn't done yet.
 
-```scout-note:
-E38 REJECTED — Julie governance-attribution paragraph at chapter open.
-
-Source: `_julie/julie-redline.md:1795-1818` (Julie's proposed paragraph attributing Build governance — Guardrails Checklist, accountability discipline, the "who reviews / what standard / who signs off" structure — to her CHRO COE-operating-model practice at a global food safety company).
-
-Rationale for rejection:
-1. Author manifest annotation E38: "Likely rejected" (`_julie/edit-manifest.md` line 115).
-2. Global framework-attribution rule (`_julie/edit-manifest.md` Section 2 line 57 + `framework-attribution-rule` persistent memory): framework components do NOT get individual author attribution. Build governance — Guardrails Checklist + Done Test + accountability discipline — is joint book IP, like HAC, TML, Right Seat Evaluation, Pattern Method, COE Model, PIS. Julie's redline editorial annotation at L1795-L1798 makes the individual attribution explicit ("Governance structure is Julie") — direct rule violation.
-3. `julie-merge-rejected-rows` persistent memory enumerates E38 in the REJECTED set (E33 + E34 + E38 + E51 + E53 + E54).
-4. Forbidden vocab in source: "organizational design work applied to technical deployment" (L1803). Per voice-charter §3, "organizational design" is forbidden in mid-market-operator context.
-
-Author's manifest §3 directional follow-up question: "Ch 7 stays primarily Jesse's voice for technical spec; add Julie voice to governance/guardrails/escalation sections. Is there a way to abstract voice?"
-
-Scout answer: yes, the abstraction is the Q-E21 blended-"we" + in-prose-attribution convention (`_julie/author-questions-answered.md` Q-E21). The book does NOT use inline `Jesse:` / `Julie:` tags as section openers — that's a transcript-style convention foreign to co-authored business-book genre. The book uses blended "we" / "us" / "our" for framework arguments + names the actor in prose only when the story belongs to one author specifically ("In one of Julie's CHRO engagements..."). Ch 7's existing voice is already consistent with this: chapter opener at L8-L14 is first-person Jesse story-anchor with "we" / "our" (PM Agent Team / $24K coordinator story); §"Build lives outside IT" L47-L64 uses operator-direct "you" + one Jesse-anchor at L53 (Michigan State teaching); §"Technical literacy" L109-L179 uses operator-direct "you" + one Jesse-anchor at L129 (Anthropic API four-figures bill); §"The two instruments" L202-L247 + §"Guardrails Checklist" L271-L302 are blended-we / operator-direct in framework-introduction voice. The governance / guardrails / escalation content is ALREADY joint book IP articulated in joint voice. No Julie-individual-attribution paragraph is required — and adding one at chapter open would shift the chapter's voice register at the moment the chapter must land cleanly on the PM Agent Team operator beat.
-
-No Drafter action for E38. Chapter opens cleanly at L8 with the PM Agent Team operator anchor; no Julie governance-attribution paragraph lands.
-```
-
 ## What *Build* produces.
 
 Build is the most variable stage in the Sequence. The problem being solved, the organization's systems, the team's technical comfort, the data involved — all of it shapes what Build actually looks like in practice. What stays constant is the spec discipline: every build starts from a complete specification and ends with a deployed system that handles real work. This chapter gives you the vocabulary, the decision frameworks, and the build paths. It does not give you a rigid formula, because no honest formula could survive contact with the range of builds a Compound sprint produces.
@@ -206,7 +188,7 @@ If you've run a software team, you know this language. If you haven't, here's wh
 
 When new signals, issues, or ideas surface during Build — and they will — they do not derail the current sprint. They get logged as Signal items for the next sprint's backlog. This is the discipline that keeps Build on track. The only exception is a Design-debt discovery that makes the current build impossible to complete. In that case, the right move is to stop, go back to Design, and fix the gap before resuming.
 
-**QA (quality assurance).** Testing the build against real inputs before declaring it done. In our framework, this is the "Done" test — last week's real data through the system, four questions answered. QA is not a phase you skip when you're running short on time. It's the phase that determines whether Build is actually done.
+**QA (quality assurance).** Testing the build against real inputs before declaring it done. In our framework, this is the "Done" test — last week's real data through the system, five questions answered. QA is not a phase you skip when you're running short on time. It's the phase that determines whether Build is actually done.
 
 **Accountability.** Every work item has an owner. Every test has a person who signs off. Every failure has someone who fixes it. This maps directly to the Hybrid Accountability Chart — the human supervisor named there is the person accountable for Build's output.
 
@@ -222,34 +204,6 @@ If your Build is running past the time box, the instinct is to extend the deadli
 Build is supported by two instruments.
 
 **Build Spec Writer** translates the designed workflow into a developer-ready specification. The upstream input is the Design Brief from the previous chapter — the Build Spec takes what Design committed to and converts it into the level of detail a builder needs to execute. The spec is the artifact a builder — engineer, vendor, low-code assembler — works from. Its job is to remove ambiguity. If the spec is right, the build is mostly execution. If the spec is wrong, the build is mostly negotiation.
-
-```scout-note:
-E39 SKIP-ALREADY-DONE — Julie's proposed "accountability column" requirement on the Build Spec.
-
-Source: `_julie/julie-redline.md:1825-1843` (Julie's proposed paragraph requiring every Build Spec row to map to a HAC supervisor, with a Build-review verification step checking HAC consistency).
-
-Author manifest annotation E39: "I thought we had that already?" (`_julie/edit-manifest.md` line 116).
-
-Verification: author instinct is correct. Q-E39 research finding (`_julie/author-questions-answered.md` lines 86-108) plus Scout independent re-verification confirms accountability is already enforced at eight separate locations:
-
-- L26: "Build is done when work the team used to do is now being done by the designed system, supervised by the person the Hybrid Accountability Chart names."
-- L193 (Agile concepts § Accountability): "Every work item has an owner... This maps directly to the Hybrid Accountability Chart — the human supervisor named there is the person accountable for Build's output."
-- L214: Build Spec Section 5 — "Human supervisor role. Who reviews the output. What they are reviewing for..." (the per-spec accountability slot).
-- L231: Meridian Section 5 worked example — Elena Ruiz named as the supervisor.
-- L243-L246 Action Step: "Then complete Sections 4-8 using the Hybrid Accountability Chart and Knowledge Map. Every section must have content before the spec goes to a builder." (Structurally enforces HAC consistency at Spec completion.)
-- L282: Guardrails Checklist question 6 — "Accountability. A named person — not a team, not a department, not 'the AI.' This is the human supervisor from the Hybrid Accountability Chart."
-- L294: Guardrails Meridian worked example — Elena Ruiz named as "the named human supervisor in the Hybrid Accountability Chart."
-- L320: Done section opener — "Build is done when there is a deployed solution producing outputs against real inputs, reviewed by the human supervisor named in the Hybrid Accountability Chart."
-
-Structural mismatch: the Build Spec is structured as eight numbered sections, NOT a column-based table. "Accountability column" doesn't fit. Section 5 is the per-spec accountability slot; the Action Step at L243-L246 directs builders to fill Sections 4-8 using the HAC, which structurally enforces the "every spec row maps to a HAC supervisor" semantic intent of Julie's proposal.
-
-Q-E39 also flagged a genuinely-new sub-instruction in Julie's redline: the HAC-consistency verification step ("for every step in the specification, that a named supervisor exists in the HAC who is accountable for that step's output"). Scout verdict: the L243-L246 Action Step already implicitly requires HAC consistency. Adding a separate verification gate would be redundant.
-
-No Drafter action for E39. Build Spec stays at eight sections. No accountability column added. No HAC-consistency verification step inserted. No surgical edit anywhere in the chapter for E39.
-```
-
-```jf-note:
-```
 
 A complete spec covers eight sections:
 
@@ -367,81 +321,21 @@ Build is done when there is a deployed solution producing outputs against real i
 
 Deployed and producing against real work — past the demo stage, past the prototype the team keeps promising to "really roll out" after some unspecified additional work.
 
-The "Done" test is four questions. Pull the last week of actual inputs the workflow was supposed to handle — the real records, the real requests, the real data — and run them through the build:
+The "Done" test is five questions. Pull the last week of actual inputs the workflow was supposed to handle — the real records, the real requests, the real data — and run them through the build:
 
 1. **Did it produce the expected outputs?** Compare agent output to what a competent person would have produced. Not identical — but within the quality range the supervisor would accept from a team member.
 2. **Did it handle the edge cases?** Every failure mode you named in Section 7 of the spec — did the build handle it as specified?
 3. **Did it escalate correctly?** Feed it inputs that should trigger escalation. Did the right person get notified, in the right form, on the right timeline?
 4. **Could the supervisor understand the output without a walkthrough?** Show the output to the named supervisor. No explanation. Can they evaluate it and make a decision?
+5. **Has the team been briefed on what changes?** A technically complete build deployed into a team that wasn't told it was coming produces adoption failure, workarounds, and quiet abandonment within six weeks. The ***Human Orchestrator*** identifies every person whose handoff changes, briefs them on what changes and why, and confirms they're ready to operate the new workflow on day one. If the answer is no, the build is not done.
 
-```scout-note:
-E40 LAND-WITH-MODIFICATION — 5th Done Test question: organizational readiness.
-
-Source: `_julie/julie-redline.md:1857-1869` (Julie's proposed 5th Done Test question — has the Human Orchestrator identified every person whose handoff changes, briefed them on what changes and why, and confirmed they're ready to operate the new workflow on deploy day?).
-
-Author manifest annotation E40: "Approved" (`_julie/edit-manifest.md` line 117).
-
-Landing point: insert a new numbered bullet 5 between the current bullet 4 above ("Could the supervisor understand the output without a walkthrough?") and the closer below ("If yes to all four: Build is done"). The 5th question lands as **technical readiness (1-4) + organizational readiness (5)** — clean 4+1 split.
-
-Cascade updates required (four surgical fixes within this section):
-1. L324 ("The 'Done' test is four questions") → "The 'Done' test is five questions"
-2. L331 ("If yes to all four: Build is done. Hand off to Deliver") → "If yes to all five: Build is done. Hand off to Deliver"
-3. L337 Action Step ("Run the full four-question test") → "Run the full five-question test"
-4. L349 Reflection Question 4 (currently lists the 4 done-test questions verbatim + "Which question did you fail?") — extend the list to include the 5th organizational-readiness question; keep "Which question did you fail?" closer.
-
-Substance to preserve (from Julie's source L1857-L1869):
-- The 5th question tests **organizational readiness**: a technically complete build deployed into an organizationally unprepared team produces adoption failure, workarounds, and quiet abandonment within six weeks.
-- The Human Orchestrator (Ch 6 §L174-L204 canonical) does the briefing — not the developer, not the operator.
-- Three-action enumeration inside the question body: identified, briefed, confirmed (acceptable as workflow steps; A3 risk only if a constructed triplet stacks on top).
-- "If the answer is no, the build is not done" — same gate discipline as questions 1-4.
-- DROP: Julie's Build-vs-Deliver distinction closer at L1866-L1868 ("Delivering is not deploying. Deploying puts the tool in production. Delivering changes how the work gets done. Those are different milestones..."). The existing §"Hand off to *Deliver*" section at L340-L342 already does this work in joint-voice; the closer at L342 ("A solution that runs is not yet a solution the business has absorbed") is cleaner than Julie's source. Don't double the beat.
-
-EC1 canonical-definition verification — Human Orchestrator:
-- Canonical Ch 6 §L174-L204: Human Orchestrator is "the role" Design produces; sets goals; designs the workflow; owns the outcome; reviews at goal level; makes design improvements between sprints; owns day-to-day operation; named on the HAC; selected via authority + comfort-with-ambiguity + willingness-to-shift-from-executing-to-designing criteria at Ch 6 §"Finding the right person" L185-L196.
-- Julie's E40 source uses Human Orchestrator at L1862 consistently with this canon (the Human Orchestrator does the briefing — fits L204's "owns the day-to-day operation" canonical function).
-- EC1 PASS. No author decision needed at this gate.
-
-Critical modifications required:
-1. **Framework-attribution scrub (HIGH)** — Julie's source L1857 attributes "Julie adds a fifth from organizational design practice." The 5th Done Test question is joint book IP, not Julie's individual practice. Per `framework-attribution-rule` memory + manifest §2 line 57 + Ch 6 E35 / Ch 6b E36 / Ch 5 E29 + E31 precedent, strip the "Julie adds" individual-instrument framing. Pattern A (preferred): declarative canonical-vocabulary land — "The four questions above test whether the build works correctly. The fifth tests whether the team is ready to use it." Zero attribution. Pattern B (acceptable): single passing Julie-anchor in story-grounded context. Drafter prefer Pattern A.
-
-2. **A1 binary closer scrub (HIGH)** — Julie's source closes with two stacked A1 binary cadences ("Delivering is not deploying" + "Those are different milestones..."). Direct hit per voice-charter §4 A1. Recommended Rewrite A: drop the Build-vs-Deliver distinction from the 5th question; let the existing L340-L342 handoff section carry it (already does this work in joint-voice). The 5th question is then purely the organizational-readiness check.
-
-3. **A3 sequence-of-three (MED)** — three-action enumeration inside the question body (identified + briefed + confirmed) is acceptable; constructed triplet framing on top of it is forbidden. Pattern A flat-declarative framing avoids the stack.
-
-4. **MEANS/ENDS-RISK (MED) — chapter-closer-adjacent landing** — 5th question closer must land on operator outcome (team uses the system; no six-week adoption failure), not "what readiness means for Build" or "what the framework demands." Recommended closer matches existing L333 cadence: "If the answer is no, the build is not done." (Matches the four existing questions' implicit closer at L333.)
-
-5. **Forbidden vocab scrub (HIGH)** — "organizational design practice" at L1858 is forbidden per voice-charter §3 (mid-market-operator context). Pattern A already drops "Julie adds a fifth from organizational design practice." Plain operator alternatives if a residual reference is desired: "change-management discipline" / "team-readiness check" / "the briefing discipline" / drop the framing-noun entirely.
-
-6. **EC1 italicization for Human Orchestrator first appearance in Ch 7** — Ch 7 has zero prior Human Orchestrator references. The 5th Done Test question is the first appearance in this chapter; italicize ***Human Orchestrator*** on first use per chapter convention (canonical Compound vocabulary italicized on first appearance in each chapter — see L18 *Working*, L22 *Deployed*, L202 *Build Spec Writer* and *Guardrails Checklist*).
-
-Target word count: 50-90 words for the question body (matches Q1-Q4 cadence at 22-32 words plus the additional Human Orchestrator + briefing framing); 80-130 words total including Pattern A framing sentence. Hard upper bound: 130 words.
-
-Cross-chapter coherence:
-- Human Orchestrator: Ch 6 §L174-L204 canonical (verified PASS, canonical-coherent).
-- HAC: implicit reference via Human Orchestrator (named on HAC per Ch 6 canon); no new HAC framing required.
-- Forward seed to Ch 8: Ch 8 Scout owns Ch 8 E41-E42 (train-the-boundary) references back to E40's "every person whose handoff changes" framing. E40 must define the briefing discipline precisely enough that Ch 8 can reference without re-defining. Verified PASS for Pattern A landing.
-- No Pattern Method dependency (BLOCKED on Julie at Ch 8 E44 + Ch 9 E46 — does not affect E40).
-- Meridian threading at L221-L239 / L287-L295 / L304-L312 is UNTOUCHED by E40. Drafter must NOT retro-fit a Meridian worked example for the 5th question.
-
-Voice register: Pattern A flat-declarative joint-voice. Zero in-prose Julie attribution. Matches the chapter's existing four-question Done Test introduction at L324 ("The 'Done' test is four questions"). The chapter currently has zero Julie-anchored paragraphs; adding one at the closer would shift the chapter's voice register at the moment the chapter must land cleanly on Build complete → Deliver handoff.
-
-Sample landing (Pattern A; Drafter may refine cadence):
-
-"5. **Has the team been briefed on what changes?** A technically complete build deployed into a team that wasn't told it was coming produces adoption failure, workarounds, and quiet abandonment within six weeks. The ***Human Orchestrator*** identifies every person whose handoff changes, briefs them on what changes and why, and confirms they're ready to operate the new workflow on day one. If the answer is no, the build is not done."
-
-(Sample is ~78 words; lands within target range; uses Pattern A flat-declarative framing inside the bullet itself; preserves the three-action enumeration in the question body; closes on L333-matching cadence; italicizes ***Human Orchestrator*** on first Ch 7 appearance; zero individual attribution; zero forbidden vocab; no A1 binary stacking; no A3 constructed triplet on top of the workflow enumeration. Drafter to refine within these constraints.)
-```
-
-```jf-note:
-```
-
-If yes to all four: Build is done. Hand off to Deliver.
+If yes to all five: Build is done. Hand off to Deliver.
 
 If no to any: fix what failed. Run the test again. Do not advance past Build on a partial pass.
 
 :::{.callout-note}
 ## Action Step
-Pull last week's real inputs. Run the full four-question test. Document the results. Fix any failures and retest. The test results are part of the Build handoff to Deliver.
+Pull last week's real inputs. Run the full five-question test. Document the results. Fix any failures and retest. The test results are part of the Build handoff to Deliver.
 :::
 
 ## Hand off to *Deliver*.
@@ -453,4 +347,4 @@ Build makes it work. Deliver puts it into the company's actual operating rhythm 
 1. For your sprint's designed workflow, run the three-question build path decision tree: does a mature product already do this with light configuration? Is it custom but composed of standard moves? Does it touch a system or data sensitivity that requires hand-built integration? Which path does the answer point to — and does that match where your team assumed you'd end up?
 2. Before Build begins, fill in all seven Guardrails Checklist questions for your workflow. Which question is hardest to answer — and is that difficulty a sign that Design needs another session, or that you genuinely haven't decided yet?
 3. The chapter says the team that ships a Claude project with three skills in a week beats the team that spends six weeks architecting a pipeline — if the design only called for a skill. Where in your current build is scope creep already showing up? What does the spec actually say, versus what the builder is proposing?
-4. Run the four-question "Done" test against your build using last week's real inputs. Did the build produce expected outputs? Did it handle edge cases? Did escalation fire correctly? Could the supervisor evaluate the output without a walkthrough? Which question did you fail?
+4. Run the five-question "Done" test against your build using last week's real inputs. Did the build produce expected outputs? Did it handle edge cases? Did escalation fire correctly? Could the supervisor evaluate the output without a walkthrough? Has the Human Orchestrator confirmed the team is briefed and ready? Which question did you fail?
