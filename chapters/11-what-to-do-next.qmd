@@ -83,6 +83,18 @@ You don't need permission from IT or an AI strategy document. You need a constra
 
 ## The *Clarity Call*.
 
+```scout-note:E51-E52
+E51 — Julie Clarity Call in personal voice — REJECTED.
+
+Author manifest annotation: "Rejected; we won't be doing clarity calls personally." Per `compound-does-not-have-on-site-implementers-like` memory + `julie-merge-rejected-rows` memory. Compound's Clarity Call is conducted by "a Compound strategist" (current L88 framing) — NOT personally by Julie or Jesse. Current chapter framing is canon-clean — no Drafter action; no jf-note.
+
+E52 — 15-year content thread context — BLOCKED-PENDING-RELOCATION to About-Authors bio per `book-ff63.17`.
+
+Author manifest annotation: "What's the point of this?" Per edit-manifest §2 RELOCATED row: 15-year thread substance (JMann radio 2009-2012 + Work Matters 2019-2021 + Compound 2026) relocates to About-the-Authors bio (E59 territory), not Ch 11. `book-ff63.17` is the dedicated relocation bead. NOT Ch 11 Drafter scope. No Drafter action on Ch 11; no jf-note.
+
+(Cross-bead visibility flag: Greenline at L164-L192 is the chapter's only stale finding per stale-audit Section 1 + `ch11-greenline-fabricated` memory + jf-note "Greenline isn't real; needs to be scrubbed EVERYWHERE." Handled by separate cleanup bead — NOT Ch 11 Scout scope. Flagged here for orchestrator visibility.)
+```
+
 If you want a peer to pressure-test that constraint with you before you spend a quarter on it, we offer one mechanism. It's called the **Clarity Call**.
 
 Book a free 30-minute Clarity Call with a Compound strategist who will diagnose your constraint, not pitch you a product.
@@ -102,6 +114,16 @@ The Clarity Call is not Signal — Signal is the rigorous diagnostic process des
 Whether you ever talk to us again or not, what you walk away with is yours.
 
 Book it at **[compoundorg.com/clarity-call](https://compoundorg.com/clarity-call)**.
+
+```scout-note:E53-E54
+E53 — §11.1 "Work Matters — The Bridge" subsection — REJECTED.
+
+Julie's redline L1205-L1280 proposed §11.1 with platform-facts metrics table (121 episodes / 5 platforms / $15M HR budget / 44 countries) + bridge paragraphs. Author manifest: "Likely rejected; fit?" Substance does not fit Ch 11's actionable-first-move thesis (L22). Platform-facts table reads as A4 boastful biographical per julie-prose-risk-map Section 5 (canonical contrived-example "121 episodes simultaneous with global HR"). Substance survives only relocated to About-Authors bio via `book-ff63.17`. No Drafter action; no jf-note.
+
+E54 — §11.2 "JMann Consulting Group Radio Platform" subsection — REJECTED.
+
+Julie's redline L1282-L1324 proposed §11.2 on Julie's 2009-2012 regional radio program. Same rationale as E53. No Drafter action; no jf-note.
+```
 
 ## Two paths *forward*.
 
@@ -192,6 +214,52 @@ TARGET QUARTER: Q3 2026
 Greenline is a $3M revenue home services company. The constraint is visible, measurable, and owned by someone in the room. Dana scheduled the Signal session for the following Monday. The office manager and lead technician — the two people who feel the constraint every day — will be there. No committee. No strategy deck. One constraint, one team, one Monday.
 
 That plan took ten minutes to fill out. It contains more operational clarity than most organizations produce after six months of AI strategy work.
+
+```scout-note:E55
+E55 — 3-test First Sprint Plan review — LAND-WITH-MODIFICATION pending author confirmation.
+
+Source: `_julie/julie-redline.md:2166-2181`. Author manifest annotation: "Requires review."
+
+**Insertion point:** New paragraph between this point (after "ten minutes / operational clarity" closer) and below (before §"The math is *still* moving" book closer).
+
+**Three tests reference (NEVER redefine) canonical instruments:**
+
+- **Test 1 — constraint vs symptom.** Ch 4 Signal canon: L49 section heading `## *Symptom* is not the same as *constraint*.` + L51-L53 + L57-L59 Meridian + L194 failure mode. EC1 PASS.
+- **Test 2 — Human Orchestrator passes Right Seat Evaluation.** Ch 6 L47-L53 (commit dc6869b — Sees It / Wants It / Suited for It with three operationalizing questions) + Ch 7 L330 (commit 17c0a41 / bffe3b5 — 5th Done Test Human Orchestrator briefing: identifies / briefs / confirms). EC1 PASS.
+- **Test 3 — leadership sponsor commitment.** HAC accountability (Ch 6) + Done Test (Ch 7) + Design Gate (Ch 6b). **NEEDS-AUTHOR sub-decision:** "Sponsor" is NOT canonical Compound vocabulary (verified absent from charter §3, glossary E58, all chapters). Per A2 cannot land load-bearing without prior definition.
+
+**Framework-attribution scrub (DIRECT):** Strip "Julie reviews every First Sprint Plan personally" + "from her organizational design practice" individual-instrument framing. Three-test review = joint book IP. Zero in-prose Julie attribution. Pattern A declarative landing.
+
+**Pattern Method REJECTED globally** per `pattern-drag-canon` 2026-06-02. Julie's E55 source does NOT use Pattern Method vocabulary (verified L2166-L2181). Forward-looking guard: Drafter must NOT introduce Pattern Drag/Gap/Lift during expansion.
+
+**MEANS/ENDS-RISK = HIGHEST IN BOOK** (last load-bearing addition before book closer; A13 recurrence 9/9). Closer must land operator outcome (caught gaps → averted wasted quarters), NOT framework-as-destination.
+
+**Recommended landing (Pattern A — declarative canonical introduction):**
+
+> Before the plan commits, the plan deserves a three-test review — a second set of eyes that catches the gaps before they become sprint failures.
+>
+> Is the constraint real, or is it a symptom? [reference Ch 4 canon — single sentence on symptom-traces-to-constraint without re-defining]
+>
+> Does the named Human Orchestrator pass the Right Seat Evaluation? [reference Ch 6 canon — Sees It / Wants It / Suited for It — without re-defining; cross-reference Ch 7 5th Done Test briefing-readiness]
+>
+> Is the leader with authority committed? [Option A substitution; reference Ch 6 HAC + Ch 6b Design Gate as the decision-point where uncommitted authority shows up]
+>
+> The three tests cost ten minutes. They catch the gaps that turn into wasted quarters.
+
+**Cross-chapter EC1 PASS verified on all canonical references** (constraint / symptom / Right Seat Evaluation / Sees It / Wants It / Suited for It / Human Orchestrator / HAC / Done Test / Design Gate). Path A solo Drafter sufficient.
+```
+
+```jf-note:E55
+(author decides — four questions:)
+
+(a) Does E55 land at all? (Manifest annotation: "Requires more review from me, but directionally aligned.")
+
+(b) Pattern A (declarative canonical-three-test introduction) or Pattern B (reader-applied self-check matching L53-L60 minimum-viable-Signal cadence)?
+
+(c) Sponsor vocabulary: Option A (substitute "sponsor" → "leader with authority"), Option B (use "sponsor" with inline definition), or Option C (drop Test 3 as redundant with Test 2 Right Seat Wants It criterion)?
+
+(d) Name the review (***First Sprint Plan review***, italicized canonical first-introduction) or leave unnamed (three review questions, no italics)?
+```
 
 ## The math is *still* moving.
 
