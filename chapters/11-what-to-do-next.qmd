@@ -25,13 +25,13 @@ You have the language to describe what a Co-Intelligent Company is, the Sequence
 
 ## Pull your *Scorecard*.
 
-In Chapter 1 you took the AI Readiness Scorecard. Five dimensions. Red, yellow, green. That score is your routing mechanism. It tells you how much of the Sequence to attempt in your first sprint.
+In Chapter 1 you took the AI Readiness Scorecard. Five dimensions. Red, yellow, green. That score is your routing mechanism. It tells you how much of the Sequence to attempt in your first Sprint.
 
-**If you scored mostly Red:** start with Signal alone. Name one constraint. Put a dollar figure on it. That is your entire first sprint. Don't try to run the full Sequence — get one clean Signal and build from there. The constraint is the deliverable.
+**If you scored mostly Red:** start with Signal alone. Name one constraint. Put a dollar figure on it. That is your entire first Sprint. Don't try to run the full Sequence — get one clean Signal and build from there. The constraint is the deliverable.
 
-**If you scored a mix of Red and Yellow:** start with Signal and Source. Name the constraint, then map what you already know about it — the workflows, the people, the data. Two phases. One sprint. You're building the foundation for a Design phase in sprint two.
+**If you scored a mix of Red and Yellow:** start with Signal and Source. Name the constraint, then map what you already know about it — the workflows, the people, the data. Two phases. One Sprint. You're building the foundation for a Design phase in Sprint two.
 
-**If you scored mostly Yellow and Green:** you're ready for the full Sequence. Signal through Compound, one sprint, using the instruments from Chapters 4 through 9. You have enough structural discipline in place that the framework won't outrun you.
+**If you scored mostly Yellow and Green:** you're ready for the full Sequence. Signal through Compound, one Sprint, using the instruments from Chapters 4 through 9. You have enough structural discipline in place that the framework won't outrun you.
 
 :::{.callout-note}
 ## Action Step
@@ -54,12 +54,12 @@ Three questions. This is your minimum viable Signal — the seed that the full S
 Write one sentence. Not a category. Not a department. One specific, observable problem.
 
 **2. What does it cost per year?**
-Write a number. Even a rough estimate works. If you can't estimate it, that tells you something — your first sprint goal might be measuring it.
+Write a number. Even a rough estimate works. If you can't estimate it, that tells you something — your first Sprint goal might be measuring it.
 
 **3. What would have to be true for it to be solved?**
-Write one sentence. This tells you whether the constraint is sprint-solvable or whether something upstream needs to move first.
+Write one sentence. This tells you whether the constraint is Sprint-solvable or whether something upstream needs to move first.
 
-If you can answer all three, you have the seed of a Signal. If you can't, that's your first sprint: getting to where you can.
+If you can answer all three, you have the seed of a Signal. If you can't, that's your first Sprint: getting to where you can.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -95,9 +95,9 @@ He went quiet. Then: "I don't have that person."
 
 The vision was not the obstacle. The gap between the vision and the first step was the obstacle. He was staring at the vision and the first step kept not appearing, and so the quarter ended and nothing moved. That's not a failure of ambition. It's a failure of sequencing. The Clarity Call exists to close that gap — not to shrink the vision, but to find the step.
 
-"I don't have that person" and "I don't have that structure" are the same constraint wearing different clothes. Both resolve with a named first sprint, not a better platform.
+"I don't have that person" and "I don't have that structure" are the same constraint wearing different clothes. Both resolve with a named first Sprint, not a better platform.
 
-The Clarity Call is not Signal — Signal is the rigorous diagnostic process described in Chapter 4. The call is a 30-minute conversation that gives you a head start on it: it surfaces the constraint category, sharpens the question you take into the full process, and tells you whether your first sprint candidate is real. You walk away with clarity about where AI fits in *your* organization — your team, your industry, your headcount math, your numbers. The output is not a software recommendation. It is not a sales pitch. It is a constraint you can act on.
+The Clarity Call is not Signal — Signal is the rigorous diagnostic process described in Chapter 4. The call is a 30-minute conversation that gives you a head start on it: it surfaces the constraint category, sharpens the question you take into the full process, and tells you whether your first Sprint candidate is real. You walk away with clarity about where AI fits in *your* organization — your team, your industry, your headcount math, your numbers. The output is not a software recommendation. It is not a sales pitch. It is a constraint you can act on.
 
 Whether you ever talk to us again or not, what you walk away with is yours.
 
@@ -105,7 +105,7 @@ Book it at **[compoundorg.com/clarity-call](https://compoundorg.com/clarity-call
 
 ## Two paths *forward*.
 
-Once you have a constraint named clearly enough to commit a sprint to it, you have two paths forward. They produce the same artifact — a Co-Intelligent Company, sprint by sprint — at different speeds and with different levels of support.
+Once you have a constraint named clearly enough to commit a Sprint to it, you have two paths forward. They produce the same artifact — a Co-Intelligent Company, Sprint by Sprint — at different speeds and with different levels of support.
 
 {{< excalidraw ch11-two-paths-forward "Two paths forward from a named constraint: self-guided (left) or with Compound membership (right), both converging at the Co-Intelligent Company." >}}
 
@@ -118,9 +118,9 @@ Once you have a constraint named clearly enough to commit a sprint to it, you ha
 - **Deliver** (Chapter 8) — Deploy and validate
 - **Compound** (Chapter 9) — Extract the reusable pattern
 
-Set the quarterly rhythm from Chapter 10 to make it repeatable. A disciplined operating team with EOS or Scaling Up already in place can execute a first sprint on its own. Many will. We wrote the book so they could.
+Set the quarterly rhythm from Chapter 10 to make it repeatable. A disciplined operating team with EOS or Scaling Up already in place can execute a first Sprint on its own. Many will. We wrote the book so they could.
 
-**Path B: Run it with Compound.** The same Sequence, paired with weekly retros, a cohort of peer CEOs running the same framework against constraints in their own companies, and a Compound strategist coaching you through each stage. The membership includes tools that run the same methodology — faster and more persistently than paper can — along with a Clarity Call (30 minutes, no cost) where a strategist walks through your constraint with you and tells you whether it's sprint-ready. The membership is for leaders who'd rather not run the first one alone.
+**Path B: Run it with Compound.** The same Sequence, paired with weekly retros, a cohort of peer CEOs running the same framework against constraints in their own companies, and a Compound strategist coaching you through each stage. The membership includes tools that run the same methodology — faster and more persistently than paper can — along with a Clarity Call (30 minutes, no cost) where a strategist walks through your constraint with you and tells you whether it's Sprint-ready. The membership is for leaders who'd rather not run the first one alone.
 
 Either path works when the team already has operating discipline in place. The one that doesn't work is the one most companies are still on: buying more tools and hoping a structure will emerge from them.
 
@@ -131,7 +131,7 @@ Decide which path you're taking. Write it down. If Path A, schedule the Signal s
 
 ## Your one-page *plan*.
 
-{{< excalidraw ch11-first-sprint-plan "First Sprint Plan template: constraint, estimated annual cost, team roster, path choice, first step, target quarter." >}}
+{{< excalidraw ch11-first-Sprint-plan "First Sprint Plan template: constraint, estimated annual cost, team roster, path choice, first step, target quarter." >}}
 
 This is the deliverable. Everything before this section was education. This is commitment.
 
@@ -140,10 +140,10 @@ Fill it in. The plan takes ten minutes. It contains more operational clarity tha
 Before the plan commits, two questions catch the gaps that turn into wasted quarters.
 
 **1. Is the constraint real, or is it a symptom?**
-Signal traces the symptom to the underlying constraint; if the constraint you've named is the most visible problem rather than the structural cause underneath it, the sprint will solve the wrong thing.
+Signal traces the symptom to the underlying constraint; if the constraint you've named is the most visible problem rather than the structural cause underneath it, the Sprint will solve the wrong thing.
 
 **2. Does the named Human Orchestrator pass the *Right Seat Evaluation*?**
-Run the three-criteria *Right Seat Evaluation* from Chapter 6 (*Sees It*, *Wants It*, *Suited for It*) against the person you've named; if they can't evaluate the agent's output, won't own the outcome, or lack the authority to override when it drifts, name someone else before the sprint starts.
+Run the three-criteria *Right Seat Evaluation* from Chapter 6 (*Sees It*, *Wants It*, *Suited for It*) against the person you've named; if they can't evaluate the agent's output, won't own the outcome, or lack the authority to override when it drifts, name someone else before the Sprint starts.
 
 If you can't answer both, the plan isn't yet ready to ship.
 
@@ -151,7 +151,7 @@ If you can't answer both, the plan isn't yet ready to ship.
 
 The headcount paradox does not pause while you decide. Every quarter you stay inside the old operating model is a quarter you keep adding people to absorb work that AI could be doing, while watching margin compress and the work itself get harder to hire for.
 
-Ninety days produces the first sprint. The first sprint produces the second. The second is where the Rhythm begins.
+Ninety days produces the first Sprint. The first Sprint produces the second. The second is where the Rhythm begins.
 
 You don't need to see the whole staircase. You need the next step, clearly named, with a cost attached.
 
@@ -159,7 +159,7 @@ This book started with a developer leaving and a company playing *Chutes and Lad
 
 We went from thirteen people to eight in one year. Billings up. Profitability up. The Rhythm changed which question we asked about every capacity problem. The math is not theoretical. It works. The question is when you start — and the answer is determined by how expensive the current constraint is per quarter you leave it unaddressed.
 
-You have the Sequence, and the Clarity Call can accelerate the first sprint if you want a peer in the room. The constraint is the first move — and the first move is available to you right now.
+You have the Sequence, and the Clarity Call can accelerate the first Sprint if you want a peer in the room. The constraint is the first move — and the first move is available to you right now.
 
 ---
 
@@ -168,6 +168,6 @@ It's time to start *compounding*.
 ## Reflection Questions
 
 1. Fill in the First Sprint Plan on the page above — constraint in one sentence, estimated annual cost, three team roles named, path chosen, first step checked. Can you complete it in the next ten minutes? If not, which field is blocking you, and what would it take to fill it in before Monday?
-2. Run your minimum viable Signal: what is the one operational problem costing you the most money or time right now, what does it cost per year, and what would have to be true for it to be solved? If you can answer all three, you have a sprint. If you can't, your first sprint is getting to where you can.
+2. Run your minimum viable Signal: what is the one operational problem costing you the most money or time right now, what does it cost per year, and what would have to be true for it to be solved? If you can answer all three, you have a Sprint. If you can't, your first Sprint is getting to where you can.
 3. The chapter describes Katie and Jill — both CEOs who discovered their real constraint wasn't the one they walked in with. What is the problem on your list that you've been carrying for months? Have you actually run Five Whys on it, or are you working on the symptom because it's more comfortable than finding the constraint underneath?
-4. What is your Monday morning action — the specific, named move that starts the sprint? Is it scheduling the Signal session with your team? Booking the Clarity Call? Writing the constraint statement? Name the action, name the person who owns it, and name the date it happens by.
+4. What is your Monday morning action — the specific, named move that starts the Sprint? Is it scheduling the Signal session with your team? Booking the Clarity Call? Writing the Constraint Statement? Name the action, name the person who owns it, and name the date it happens by.

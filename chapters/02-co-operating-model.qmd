@@ -2,12 +2,12 @@
 
 :::{.callout-important}
 ## In Brief
-This chapter defines the Co-Operating Model — the structure that makes humans and AI work as one system instead of two parallel tracks. You'll learn the specific ownership split between human intelligence and agent intelligence, see what parallel workstreams look like in practice, and finish with an equation you can put on your wall: *Co-Intelligence + Rhythm = Compound.* By the end, you'll have mapped at least one role in your company against the model.
+This chapter defines the Co-Operating Model — the structure that makes humans and AI work as one system instead of two parallel tracks. You'll learn the specific ownership split between human intelligence and agent intelligence, see what Parallel Workstreams look like in practice, and finish with an equation you can put on your wall: *Co-Intelligence + Rhythm = Compound.* By the end, you'll have mapped at least one role in your company against the model.
 :::
 
-Jesse was in a management meeting with Marina, his Integrator, and a direct report, going through the accountability chart. We had a team member, a marketing coordinator, who was good at organization. She could manage processes, track content calendars, coordinate subcontractors. But she wasn't revenue-positive and hadn't been for months. She was spending most of her time on content production (editing videos, formatting posts), work that took her hours and still wasn't shipping fast enough to keep up with the pace we needed. The work was piling up behind her, not because she wasn't working hard, but because the role as designed required one person to do what should have been running in parallel across multiple workstreams.
+Jesse was in a management meeting with Sofia, his Integrator, and a direct report, going through the accountability chart. We had a team member, a marketing coordinator, who was good at organization. She could manage processes, track content calendars, coordinate subcontractors. But she wasn't revenue-positive and hadn't been for months. She was spending most of her time on content production (editing videos, formatting posts), work that took her hours and still wasn't shipping fast enough to keep up with the pace we needed. The work was piling up behind her, not because she wasn't working hard, but because the role as designed required one person to do what should have been running in parallel across multiple workstreams.
 
-Marina and Jesse looked at the accountability chart and asked the real question: what if we stopped designing this seat for a human doing linear production work, and started designing it for a human managing agent-driven workstreams? What if the coordinator's job wasn't to create the content but to direct the agents creating it, manage the quality, and make sure it shipped?
+Sofia and Jesse looked at the accountability chart and asked the real question: what if we stopped designing this seat for a human doing linear production work, and started designing it for a human managing agent-driven workstreams? What if the coordinator's job wasn't to create the content but to direct the agents creating it, manage the quality, and make sure it shipped?
 
 That conversation changed the shape of the role. It also changed how we thought about every other role on the chart. The problem was never the person — it was the operating model underneath her. The company had not been designed for a non-human worker. There was no seat on the org chart for an agent, no defined handoffs, no accountability structure that accounted for synthetic work. Every piece of AI-generated output dissolved somewhere between the tool and the person who needed it.
 
@@ -17,7 +17,7 @@ What happened in that meeting is the move Julie has watched leadership teams def
 
 Most companies have never asked that question explicitly. They've grown roles by layering tasks onto people until the person becomes the system. When the person leaves, the system collapses. When AI arrives, it has no designed relationship to the work because the work was never designed at all. It was just assigned. The rest of this book is the discipline of asking that question deliberately, role by role, constraint by constraint, and building the structure that answers it. We call that structure the **Co-Operating Model**.
 
-The diagnosis was the easy part: you've got an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. The Co-Operating Model is what a Co-Intelligent Company is built on. It's what makes *Co-Intelligent Co-operation*, humans and AI working the same problems together, something other than an accident.
+The diagnosis was the easy part: you've got an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. The Co-Operating Model is what a Co-Intelligent Company is built on. It's what makes *Co-Intelligent Co-Operation*, humans and AI working the same problems together, something other than an accident.
 
 ## What a *Co-Intelligent Company* is.
 
@@ -27,9 +27,9 @@ The **Co-Intelligent Company** is the identity layer — what a company becomes 
 
 In the accountability chart, that means every AI-handled function has a named human supervisor, a defined scope of work, and a review cadence. The work has somewhere to land, because someone owns the handoff. Most companies using AI today haven't designed it that way. The tools are running; the accountability structure hasn't caught up. The work ships with someone's name on the outcome only when each function's human-agent split is explicitly designed — not by adding a policy layer on top. A Compound Sprint (defined in the next chapter) is how you do that work.
 
-**Co-Intelligent Co-operation** is the relational frame: the activity of humans and AI working the same problems together, inside the same loop, against the same outcome. Not relegated to a sprint or a project. It's what the company does, continuously, as its default way of working.
+**Co-Intelligent Co-Operation** is the relational frame: the activity of humans and AI working the same problems together, inside the same loop, against the same outcome. Not relegated to a Sprint or a project. It's what the company does, continuously, as its default way of working.
 
-The **Co-Operating Model** is the system frame — the structure that makes Co-Intelligent Co-operation possible. It is the explicit design of who brings what intelligence to the work and who owns which operating responsibility inside it.
+The **Co-Operating Model** is the system frame — the structure that makes Co-Intelligent Co-Operation possible. It is the explicit design of who brings what intelligence to the work and who owns which operating responsibility inside it.
 
 {{< excalidraw ch02-three-layer-identity "Three layers of the Co-Operating Model: identity, activity, and structure" >}}
 
@@ -47,7 +47,7 @@ That distinction matters for operating design: chatbot as input/output tool, age
 
 The technology underneath both is the same: **large language models** (LLMs), AI systems trained on massive amounts of text to recognize and generate language at scale. What separates a chatbot from an agent isn't the model. It's the architecture around the model: how it's instructed, what tools it has access to, how it evaluates its own output, and how it hands work back to a human or to another agent.
 
-One more concept matters for the operating model: **organizational memory**. Most AI tools, out of the box, have no knowledge of your company. They know the general information on which they were trained; they don't know you. There are technologies that fix this: they connect an agent to your CRM, your transcripts, your SOPs, so it can search and reason against your own documents instead of just general training. The result is a system that reasons against your actual context. An agent that knows your pricing rules, your client history, your standard escalation paths — not because you paste that context in every time, but because the connection was designed in.
+One more concept matters for the operating model: **Organizational Memory**. Most AI tools, out of the box, have no knowledge of your company. They know the general information on which they were trained; they don't know you. There are technologies that fix this: they connect an agent to your CRM, your transcripts, your SOPs, so it can search and reason against your own documents instead of just general training. The result is a system that reasons against your actual context. An agent that knows your pricing rules, your client history, your standard escalation paths — not because you paste that context in every time, but because the connection was designed in.
 
 We think of this as the organizational brain: the knowledge that used to live in people's heads, in files no one could find, in systems that didn't talk to each other, made accessible to the agents running the work.
 
@@ -195,7 +195,7 @@ Four agent teams. Four workstreams. All pointed at the same output. And she wasn
 
 Her job didn't get smaller. It got higher.
 
-That shift has a structural name: **parallel workstreams**, multiple agent-driven work tracks running simultaneously under one human's direction. It's not optional in a well-designed Co-Operating Model.
+That shift has a structural name: **Parallel Workstreams**, multiple agent-driven work tracks running simultaneously under one human's direction. It's not optional in a well-designed Co-Operating Model.
 
 Linear work — finish this before starting that — made sense when all the workers were human. A person can only work one task at a time. The constraint was biological, so the operating model was built around it.
 
@@ -203,7 +203,7 @@ Agents don't have that constraint. Four agents can run simultaneously. The desig
 
 That is what was happening on her screen. Claude Design, Claude AI, NotebookLM, and HeyGen were not running in sequence. They were running at once, each on its own workstream, all pointed at the same output. The production cycle that used to take a week didn't get faster because any one tool was faster. It got faster because the four pieces of it were happening simultaneously.
 
-The compounding math is direct. Parallelism reduces calendar time for every sprint. Reduced sprint time means more sprints per quarter. More sprints means more learning cycles, more infrastructure built, more returns compounding on each other. The operating model that runs parallel workstreams doesn't just produce output faster. It compounds faster.
+The compounding math is direct. Parallelism reduces calendar time for every Sprint. Reduced Sprint time means more Sprints per quarter. More Sprints means more learning cycles, more infrastructure built, more returns compounding on each other. The operating model that runs Parallel Workstreams doesn't just produce output faster. It compounds faster.
 
 Most companies miss this because they adopt agents the way they adopted every tool before, one at a time, bolted onto the existing workflow. A single agent assistant added to a linear process produces a linear process that's slightly faster in one step. That's the AI subscription that changes nothing on the P&L.
 
@@ -239,7 +239,7 @@ Now multiply that percentage by the person's loaded annual cost (salary + benefi
 For the illustrative Project Coordinator: 55% Column B at $65,000 loaded cost = $36,000/year spent on work that follows learnable rules. That is the dollar value of human intelligence being spent on agent-intelligence work.
 :::
 
-You will do the same design work. Not for her role — for the roles in your company. The chapters that follow give you the structure to do it sprint by sprint, starting from whatever your actual constraints are today.
+You will do the same design work. Not for her role — for the roles in your company. The chapters that follow give you the structure to do it Sprint by Sprint, starting from whatever your actual constraints are today.
 
 :::{.callout-note}
 ## Action Step: Start Your Hybrid Split
@@ -258,7 +258,7 @@ Here is the illustrative Project Coordinator's hybrid split:
 
 This hybrid split is enough to see the shape of the redesigned role. Chapter 5 introduces the full design instrument — the **TML framework** (Task / Management / Leadership) — which sorts work into three categories rather than two; for now, the two-column version is the right starting point.
 
-If you have multiple roles touching the same constraint, repeat this process for each one. Compile the results into a single table: Role, Column B %, Loaded Cost, Annual Misallocation Cost. That table is the raw material for the sprint design work in the chapters ahead.
+If you have multiple roles touching the same constraint, repeat this process for each one. Compile the results into a single table: Role, Column B %, Loaded Cost, Annual Misallocation Cost. That table is the raw material for the Sprint design work in the chapters ahead.
 :::
 
 When the numbers land, expect a reaction. The Column B percentage is usually larger than anyone in the room predicted.
@@ -280,19 +280,19 @@ The left side of the equation holds two halves that are useless without each oth
 
 **Co-Intelligence** is the system half — the Co-Operating Model you just read, the designed structure where human and agent intelligence do their respective work against the same problems.
 
-**Rhythm** is the cadence half — running the system on a quarterly beat, sprint by sprint, against your real operational constraints. The quarterly beat is the evaluation cadence: the cycle where you assess what the last sprint built and what the next one should target. Sprint duration itself is a design decision and can range from days to a full quarter depending on the work.
+**Rhythm** is the cadence half — running the system on a quarterly beat, Sprint by Sprint, against your real operational constraints. The quarterly beat is the evaluation cadence: the cycle where you assess what the last Sprint built and what the next one should target. Sprint duration itself is a design decision and can range from days to a full quarter depending on the work.
 
-Together they produce the right side of the equation: **Compound** — used as a verb, in the precise sense your CFO means it. Each sprint produces a return; the infrastructure built in that sprint reduces the cost of the next sprint; the design improvements made between sprints accelerate every sprint that follows. The company compounds on its AI investment the same way a balance sheet compounds on retained earnings. The gains start small. They don't stay small.
+Together they produce the right side of the equation: **Compound** — used as a verb, in the precise sense your CFO means it. Each Sprint produces a return; the infrastructure built in that Sprint reduces the cost of the next Sprint; the design improvements made between Sprints accelerate every Sprint that follows. The company compounds on its AI investment the same way a balance sheet compounds on retained earnings. The gains start small. They don't stay small.
 
 You can put it on the wall. You can use it to diagnose what's missing. A company with the model but no rhythm has a slide deck; no work shipped. A company with rhythm but no model has activity; no compounding. Both halves, on the same beat, against real constraints: that produces the outcome.
 
 ## What's *next*.
 
-You now have the *what*. The next chapter gives you the *how* — the Framework that runs the Co-Operating Model in practice, the Sequence of six stages that carry a sprint from a validated constraint through Signal, Source, Design, Build, Deliver, and Compound, the Rhythm that runs that Sequence quarter after quarter, and the Sprint as the unit of work where all of it lands. The Framework is the answer to the question every CEO asks next: *fine, on Monday morning, what do we actually do?*
+You now have the *what*. The next chapter gives you the *how* — the Framework that runs the Co-Operating Model in practice, the Sequence of six stages that carry a Sprint from a validated constraint through Signal, Source, Design, Build, Deliver, and Compound, the Rhythm that runs that Sequence quarter after quarter, and the Sprint as the unit of work where all of it lands. The Framework is the answer to the question every CEO asks next: *fine, on Monday morning, what do we actually do?*
 
 ## Reflection Questions
 
 1. Pick one role in your company and sort its weekly tasks into Column A (Human Intelligence) and Column B (Agent Intelligence). What percentage of that role's week lands in Column B — and what does that number tell you about where your highest design opportunity is?
 2. The chapter draws a clear line: humans own deciding, directing, pricing, and coaching; agents own drafting, recommending, documenting, and executing. Where in your company is that line currently blurred — and what's the most expensive place where humans are doing agent work?
-3. Compound's marketing lead went from linear production to managing four parallel agent workstreams simultaneously. Which function in your company could most benefit from parallel workstreams — and who is the person doing linear work today that parallel design would free?
+3. Compound's marketing lead went from linear production to managing four parallel agent workstreams simultaneously. Which function in your company could most benefit from Parallel Workstreams — and who is the person doing linear work today that parallel design would free?
 4. "Getting an agent to produce something is not the same as doing good work." Where in your current AI usage is your team accepting agent output without holding it to the standard a human would set? What would it take to raise that bar?

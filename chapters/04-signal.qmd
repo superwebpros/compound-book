@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-Signal is the discipline of refusing to move forward until one constraint has been identified precisely, confirmed against actual numbers, and quantified in dollars or hours. By the time you finish this stage, you have a one-page constraint statement that names the problem, where it lives, how long it has existed, and what it has cost. Everything in the rest of the Sequence is designed to answer the question Signal asks.
+Signal is the discipline of refusing to move forward until one constraint has been identified precisely, confirmed against actual numbers, and quantified in dollars or hours. By the time you finish this stage, you have a one-page Constraint Statement that names the problem, where it lives, how long it has existed, and what it has cost. Everything in the rest of the Sequence is designed to answer the question Signal asks.
 :::
 
 Jesse was in our own L10, reviewing the scorecard for our project management function. The numbers weren't red, they were blank. Tasks were being created but not updated. Client deliverables were slipping by days without anyone flagging it. Billing was late because nobody could confirm what had been delivered and what hadn't. We were paying a project coordinator $24,000 a year as a subcontractor, and the work was still falling behind.
@@ -21,11 +21,11 @@ The leaders were operating inside an accountability structure that made it impos
 
 ## The deliverable is *one sentence*.
 
-Signal produces a single artifact: a one-page constraint statement anchored in one sentence. The sentence carries the constraint — the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The page surrounds it with the evidence that validates it: the data you checked, the people you talked to, the number you confirmed.
+Signal produces a single artifact: a one-page Constraint Statement anchored in one sentence. The sentence carries the constraint — the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The page surrounds it with the evidence that validates it: the data you checked, the people you talked to, the number you confirmed.
 
 Here's the template. You'll fill it in by the end of this chapter.
 
-{{< excalidraw ch04-constraint-statement-template "Constraint statement template: one sentence, location, duration, quantified cost, and validating evidence." >}}
+{{< excalidraw ch04-constraint-statement-template "Constraint Statement template: one sentence, location, duration, quantified cost, and validating evidence." >}}
 
 The discipline of insisting on one is the entire point. Most leadership teams arrive at this conversation with five candidates and a tendency to argue for whichever one is loudest in the room that week. The job of Signal is to refuse the list. You pick one — the constraint that, if removed, would change the math most meaningfully — and you commit to it for the length of the Sprint.
 
@@ -40,7 +40,7 @@ If you can't put a number on the cost, you haven't found the constraint yet. Kee
 
 ## The gate is real. You don't get past it by *declaring* it complete.
 
-Signal is a gate. You don't move to Source until the constraint is locked — one validated constraint statement with a number on it.
+Signal is a gate. You don't move to Source until the constraint is locked — one validated Constraint Statement with a number on it.
 
 The most common failure mode is political, not technical. Leadership teams can't agree on which constraint is the constraint, so they punt — they pick three, or they write something so abstract it can't be acted on. If your team can't pick one, you've learned something important before a single line of the Sprint has been built: the leadership team is unclear about priorities. That's upstream of anything in this book.
 
@@ -109,7 +109,7 @@ The room agreed. That's the moment Signal locks. Not the insight — the agreeme
 
 The expansion plan was a symptom. The scheduling loop was the constraint. The gap between 60 and 83 is the number that tells you which one to work on.
 
-Here's what the one-page constraint statement looked like for that clinic:
+Here's what the one-page Constraint Statement looked like for that clinic:
 
 | Field | Detail |
 |---|---|
@@ -180,7 +180,7 @@ Read the completed statement back to the room. Ask: "Is this the thing?" If anyo
 
 :::{.callout-note}
 ## Action Step
-Fill in the one-page constraint statement template for your chosen constraint. Read it aloud to the team. If the room can't agree that this is the one constraint worth a Sprint, you're not done. Keep working until you have real agreement — the kind where people nod because the math convinced them, not because the meeting has gone long.
+Fill in the one-page Constraint Statement template for your chosen constraint. Read it aloud to the team. If the room can't agree that this is the one constraint worth a Sprint, you're not done. Keep working until you have real agreement — the kind where people nod because the math convinced them, not because the meeting has gone long.
 :::
 
 ### Step 5: Run the failure mode checklist.
@@ -194,7 +194,7 @@ Before you call Signal complete, check for these common failure modes:
 - **Solved the symptom.** Your constraint sentence describes what you feel, not what causes it. Run Five Whys one more time.
 - **Can't be solved by a Sprint.** The constraint is "our market is shrinking" or "our founder won't delegate." These are real, but they're upstream of this book. Signal is for operational constraints a Sprint can address.
 
-If any of these are true, go back. The gate is real. Passing through it with a bad constraint statement costs more than the time it takes to fix it.
+If any of these are true, go back. The gate is real. Passing through it with a bad Constraint Statement costs more than the time it takes to fix it.
 
 ## Where the constraint comes from inside an *EOS or Scaling Up shop*.
 
@@ -219,7 +219,7 @@ Watch for the version that shows up in well-run EOS shops: the leadership team s
 
 ## With the constraint locked, you can map *what surrounds it*.
 
-The one-page constraint statement is the handoff to Source. With the constraint named, quantified, and validated, the next move is to map the knowledge and data that surround it — what the organization actually knows about the problem, where that knowledge lives, who holds it, and what is missing.
+The one-page Constraint Statement is the handoff to Source. With the constraint named, quantified, and validated, the next move is to map the knowledge and data that surround it — what the organization actually knows about the problem, where that knowledge lives, who holds it, and what is missing.
 
 If you can't hand someone that one page and have them understand what the Sprint is solving without asking a follow-up question, you're not done with Signal. Go back. The gate is real.
 
@@ -230,5 +230,5 @@ That is Chapter 5.
 1. Run the Issue Surfacer questions on your company right now: what process would you never let a customer watch? Where does your team keep losing the same person or role? What conversation keeps coming up in L10s but never gets resolved? Which answer feels most expensive?
 2. The PT clinic was forty-five minutes into planning a sixth location before someone asked what clinical efficiency rating was. Where in your company is your team solving a symptom while the actual constraint runs untouched underneath it?
 3. Apply the Five Whys to your top constraint candidate. Does the fifth "why" point to a workflow, a handoff, or a structural gap — or does it point to a person? If it points to a person, reframe: what system failure put that person in the position of being the only one who knows?
-4. Can you fill in all four fields of the one-page constraint statement template today — constraint sentence, location, duration, and quantified cost with math? If the cost field is empty, what data would you need to fill it in, and who owns that data?
+4. Can you fill in all four fields of the one-page Constraint Statement template today — constraint sentence, location, duration, and quantified cost with math? If the cost field is empty, what data would you need to fill it in, and who owns that data?
 5. If you polled your leadership team individually and asked "what is the ONE operational problem AI should solve for us?" — how many different answers would you get? Run the poll before your next L10 and compare results.

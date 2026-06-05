@@ -2,7 +2,7 @@
 title: "Action Step Index"
 ---
 
-This appendix collects every Action Step from the book in sequence. Use it as a checklist — work through the steps that match wherever you are in the Sequence. If you're running your first sprint, start with the Signal steps and work forward. If you're mid-rhythm, use this as a review to catch anything you skipped.
+This appendix collects every Action Step from the book in sequence. Use it as a checklist — work through the steps that match wherever you are in the Sequence. If you're running your first Sprint, start with the Signal steps and work forward. If you're mid-rhythm, use this as a review to catch anything you skipped.
 
 ## Chapter 1: Diagnosis
 
@@ -88,12 +88,12 @@ If Column B tasks were handled by agents, what would this person do with the fre
 
 Here is the Project Coordinator's hybrid version: *Monday morning starts with reviewing agent-generated status reports and flagging anything that needs a human conversation. The rest of the week goes to managing two difficult scope negotiations, sitting in on a client call where the relationship is at risk, and coordinating a cross-functional delivery problem that involves competing priorities between three teams. Meeting summaries write themselves. Overdue items surface automatically. The coordinator's calendar is no longer consumed by administrative motion — it is consumed by judgment calls, relationship management, and the kind of coordination that keeps clients from leaving.*
 
-If you have multiple roles touching the same constraint, repeat this process for each one. Compile the results into a single table: Role, Column B %, Loaded Cost, Annual Misallocation Cost. That table is the raw material for the sprint design work in the chapters ahead.
+If you have multiple roles touching the same constraint, repeat this process for each one. Compile the results into a single table: Role, Column B %, Loaded Cost, Annual Misallocation Cost. That table is the raw material for the Sprint design work in the chapters ahead.
 :::
 
 ## Chapter 3: The Framework
 
-These steps produce your first Sprint Planning Canvas — a compass for the sprint before Signal begins.
+These steps produce your first Sprint Planning Canvas — a compass for the Sprint before Signal begins.
 
 :::{.callout-note}
 ## Action Step
@@ -112,7 +112,7 @@ Pick your constraint. Fill in the Sprint Planning Canvas. Book the quarterly rev
 
 ## Chapter 4: Signal
 
-These steps walk you through the full Signal process — surfacing constraint candidates, tracing symptoms to root causes, quantifying costs, and locking the one constraint the sprint will solve.
+These steps walk you through the full Signal process — surfacing constraint candidates, tracing symptoms to root causes, quantifying costs, and locking the one constraint the Sprint will solve.
 
 :::{.callout-note}
 ## Action Step
@@ -126,7 +126,7 @@ Open a whiteboard or shared doc. Spend twenty minutes listing candidates using t
 
 :::{.callout-note}
 ## Action Step
-Fill in the one-page constraint statement template for your chosen constraint. Read it aloud to the team. If the room can't agree that this is the one constraint worth a Sprint, you're not done. Keep working until you have real agreement — the kind where people nod because the math convinced them, not because the meeting has gone long.
+Fill in the one-page Constraint Statement template for your chosen constraint. Read it aloud to the team. If the room can't agree that this is the one constraint worth a Sprint, you're not done. Keep working until you have real agreement — the kind where people nod because the math convinced them, not because the meeting has gone long.
 :::
 
 :::{.callout-note}
@@ -140,7 +140,7 @@ These steps produce the Knowledge Map — a one-page picture of what your organi
 
 :::{.callout-note}
 ## Action Step
-Open the constraint statement from Signal. List every digital system that touches the constraint workflow. For each one, fill in all six columns — Source, Type, Owner, Status, Pipeline, Notes. Don't filter. If it touches the constraint, it goes on the map.
+Open the Constraint Statement from Signal. List every digital system that touches the constraint workflow. For each one, fill in all six columns — Source, Type, Owner, Status, Pipeline, Notes. Don't filter. If it touches the constraint, it goes on the map.
 :::
 
 :::{.callout-note}
@@ -165,7 +165,7 @@ Identify the highest-risk organic source on your Knowledge Map — the person wh
 
 :::{.callout-note}
 ## Action Step
-Run the six-item completeness test against your Knowledge Map. Fix any gaps. Then put the constraint statement from Signal at the top of the page and the Knowledge Map below it. That one page is what you hand to Design.
+Run the six-item completeness test against your Knowledge Map. Fix any gaps. Then put the Constraint Statement from Signal at the top of the page and the Knowledge Map below it. That one page is what you hand to Design.
 :::
 
 ## Chapter 6: Designing the System
@@ -184,7 +184,7 @@ For each accountability in your constraint workflow, place it on the AI-assisted
 
 :::{.callout-note}
 ## Action Step
-Identify your Human Orchestrator candidate. Ask: does this person have authority over the constraint outcome? Are they willing to shift from executing to designing? Write down the name. If there's a development gap, name it — and plan the first sprint as the ramp-up, not as a test they need to pass.
+Identify your Human Orchestrator candidate. Ask: does this person have authority over the constraint outcome? Are they willing to shift from executing to designing? Write down the name. If there's a development gap, name it — and plan the first Sprint as the ramp-up, not as a test they need to pass.
 :::
 
 ## Chapter 6b: Designing the Work
@@ -193,7 +193,7 @@ These steps run Work Deconstruction on your constraint workflow, visualize the d
 
 :::{.callout-note}
 ## Action Step
-List every task in the constraint workflow. Sort each one into the four categories. Count the tasks in each bucket. If more than half land in "Human judgment required," challenge each one: is this genuinely judgment, or is it judgment because nobody has written down the rules? The exercise takes sixty to ninety minutes for a real role. Do it on paper or in a shared doc.
+List every task in the constraint workflow. Sort each one into the three TML categories — Task, Management, Leadership. Count the tasks in each bucket. If more than half land in Leadership (Human Judgment Required), challenge each one: is this genuinely judgment, or is it judgment because nobody has written down the rules? The exercise takes sixty to ninety minutes for a real role. Do it on paper or in a shared doc.
 :::
 
 :::{.callout-note}
@@ -203,7 +203,7 @@ Pick the workflow you're designing. Draw a swim lane diagram with two lanes — 
 
 :::{.callout-note}
 ## Action Step
-Run the five-item Design Gate checklist against your current sprint's design. If any item has a gap, that gap is your next working session — not your next Build discovery. Fix it now.
+Run the five-item Design Gate checklist against your current Sprint's design. If any item has a gap, that gap is your next working session — not your next Build discovery. Fix it now.
 :::
 
 ## Chapter 7: Build
@@ -242,16 +242,16 @@ Answer all seven questions in writing. Attach the answers to the Build Spec as a
 
 :::{.callout-note}
 ## Action Step
-Pull last week's real inputs. Run the full four-question test. Document the results. Fix any failures and retest. The test results are part of the Build handoff to Deliver.
+Pull last week's real inputs. Run the full five-question test. Document the results. Fix any failures and retest. The test results are part of the Build handoff to Deliver.
 :::
 
 ## Chapter 8: Deliver
 
-These steps close the gap between "deployed" and "delivered" — training affected roles, logging what production reveals, measuring the sprint outcome, and confirming the change has actually taken hold.
+These steps close the gap between "deployed" and "delivered" — training affected roles, logging what production reveals, measuring the Sprint outcome, and confirming the change has actually taken hold.
 
 :::{.callout-note}
 ## Action Step
-Pull up your Hybrid Accountability Chart from Design. List every person whose daily work changes because of this sprint. For each one, confirm they've completed hands-on training — not a meeting, not an email. If anyone hasn't, that's your first task before deploy.
+Pull up your Hybrid Accountability Chart from Design. List every person whose daily work changes because of this Sprint. For each one, confirm they've completed hands-on training — not a meeting, not an email. If anyone hasn't, that's your first task before deploy.
 :::
 
 :::{.callout-note}
@@ -266,16 +266,16 @@ Create the log template — four columns: Date, What happened, Category, What it
 
 :::{.callout-note}
 ## Action Step
-Go back to your Signal instrument. Copy the constraint statement and quantified cost exactly as written. Measure the same metric now — same unit, same timeframe, same source. Calculate the delta. Write the outcome in one sentence. No spin.
+Go back to your Signal instrument. Copy the Constraint Statement and quantified cost exactly as written. Measure the same metric now — same unit, same timeframe, same source. Calculate the delta. Write the outcome in one sentence. No spin.
 :::
 
 ## Chapter 9: Compound
 
-These steps run the Sprint Retrospective, install the one design change, re-rank the Signal Backlog, and update the three living documents — turning the delivered sprint into the foundation of the next one.
+These steps run the Sprint Retrospective, install the one design change, re-rank the Signal Backlog, and update the three living documents — turning the delivered Sprint into the foundation of the next one.
 
 :::{.callout-note}
 ## Action Step
-Before the sprint enters Build, put the Compound session on the calendar. A 90-minute block with the Human Orchestrator and every supervisor who owned a sprint accountability. If it's not scheduled before the sprint ships, it won't happen after.
+Before the Sprint enters Build, put the Compound session on the calendar. A 90-minute block with the Human Orchestrator and every supervisor who owned a Sprint accountability. If it's not scheduled before the Sprint ships, it won't happen after.
 :::
 
 :::{.callout-note}
@@ -285,7 +285,7 @@ After the retrospective, write the one design change on a card with four fields:
 
 :::{.callout-note}
 ## Action Step
-At the end of the Compound session, update all three living documents before anyone leaves the room. Chart row made permanent, backlog re-ranked, sprint outcome recorded in one sentence. Fifteen minutes. No exceptions.
+At the end of the Compound session, update all three living documents before anyone leaves the room. Chart row made permanent, backlog re-ranked, Sprint outcome recorded in one sentence. Fifteen minutes. No exceptions.
 :::
 
 ## Chapter 10: The Rhythm
@@ -299,7 +299,7 @@ Put the quarterly operating session on the calendar for the end of this quarter.
 
 :::{.callout-note}
 ## Action Step
-Create the Compounding Scorecard. Fill in the first row with your current sprint. Tape it to the wall next to your accountability chart.
+Create the Compounding Scorecard. Fill in the first row with your current Sprint. Tape it to the wall next to your accountability chart.
 :::
 
 ## Chapter 11: What to Do Next

@@ -5,7 +5,7 @@
 Source maps the information environment around the one constraint Signal validated. You're answering a specific question: what does our organization know about *this problem*, and where does that knowledge live? The deliverable is a one-page Knowledge Map — a six-column table (Source, Type, Owner, Status, Pipeline, Notes) that inventories every digital system, person, and gap relevant to the constraint. Skip Source and Design becomes a guessing exercise built on assumptions nobody verified.
 :::
 
-Jesse and Marina were on a call deciding what to do about our project coordinator. The role was costing us ~$24,000 a year. Work was falling behind. Billing was getting impacted. Signal had validated the constraint. This function was broken and it was costing us real money.
+Jesse and Sofia were on a call deciding what to do about our project coordinator. The role was costing us ~$24,000 a year. Work was falling behind. Billing was getting impacted. Signal had validated the constraint. This function was broken and it was costing us real money.
 
 But before we could decide *what* to do about it, we stopped the conversation. "We need to understand what she actually does. Not what's in the job description. What she actually touches, what systems she's in, what decisions she makes that nobody else makes, and what's in her head that isn't written down anywhere."
 
@@ -13,7 +13,7 @@ That question changed the shape of the conversation. It stopped being about whet
 
 Every modern company is an information company, whether it recognizes itself as one or not. Your CRM, your ERP, your shared drives, your inboxes: all of it is information used to make decisions. Source makes that information environment visible. Signal named the constraint. Source maps what the organization knows about it and where that knowledge lives before anyone designs against it. The diagnosis isn't finished when the constraint is named. It's finished when the team can see on a single page every asset, every gap, and the institutional knowledge the constraint depends on.
 
-Julie has watched the same gap surface in M&A integration work, well outside any AI context. When the acquired division closed at a global food safety company, the inherited assets included process experts who had been with the parent for twenty years. Their institutional memory existed nowhere in any system. Their expertise was the documentation. The first question Julie asked every integration team was the same question Source asks: if this person were not here tomorrow, what would stop working? The answers were almost always more alarming than anyone expected. The gap between what a company thinks it knows and what it actually has in documented, accessible form is the most consistent finding in every post-acquisition integration. Source closes that gap before it becomes a sprint failure.
+Julie has watched the same gap surface in M&A integration work, well outside any AI context. When the acquired division closed at a global food safety company, the inherited assets included process experts who had been with the parent for twenty years. Their institutional memory existed nowhere in any system. Their expertise was the documentation. The first question Julie asked every integration team was the same question Source asks: if this person were not here tomorrow, what would stop working? The answers were almost always more alarming than anyone expected. The gap between what a company thinks it knows and what it actually has in documented, accessible form is the most consistent finding in every post-acquisition integration. Source closes that gap before it becomes a Sprint failure.
 
 ## Diagnosis is not done until you know what you *have*.
 
@@ -54,7 +54,7 @@ If your Source output doesn't fit on one page, it's not scoped to the constraint
 
 {{< excalidraw ch05-knowledge-map-table "Knowledge Map: six-column structure with sample rows for Digital, Organic, and Missing sources" >}}
 
-**Building your Knowledge Map.** Start with a blank page and the constraint statement Signal produced. Draw six columns: *Source*, *Type*, *Owner*, *Status*, *Pipeline*, *Notes*. The first four columns are the Knowledge Map. The fifth (Pipeline) is the Data Pipeline Audit. Run them together, not as separate exercises. Then work through three passes.
+**Building your Knowledge Map.** Start with a blank page and the Constraint Statement Signal produced. Draw six columns: *Source*, *Type*, *Owner*, *Status*, *Pipeline*, *Notes*. The first four columns are the Knowledge Map. The fifth (Pipeline) is the Data Pipeline Audit. Run them together, not as separate exercises. Then work through three passes.
 
 ### Pass 1: *Digital*.
 
@@ -62,7 +62,7 @@ List every digital source that touches the constraint: the CRM records, the proc
 
 :::{.callout-note}
 ## Action Step
-Open the constraint statement from Signal. List every digital system that touches the constraint workflow. For each one, fill in all six columns — Source, Type, Owner, Status, Pipeline, Notes. Don't filter. If it touches the constraint, it goes on the map.
+Open the Constraint Statement from Signal. List every digital system that touches the constraint workflow. For each one, fill in all six columns — Source, Type, Owner, Status, Pipeline, Notes. Don't filter. If it touches the constraint, it goes on the map.
 :::
 
 ### Pass 2: *Organic*.
@@ -78,7 +78,7 @@ Name every person whose judgment the constraint workflow depends on. For each on
 
 Look at what's absent. What would a designer need to know to solve this constraint that isn't represented anywhere in the first two passes? What question would someone ask about this workflow that your current sources can't answer? What decision is currently made by gut feel that should be made by data? Add those rows as Missing sources, and note what type they *should* be: digital system, documented process, captured expertise. Note what it would take to create them.
 
-The Missing sources column is the most important column on the Knowledge Map. That's where the highest-risk gaps live. Per the TML framework, Missing sources cluster in two of the three layers. Management knowledge loss: decisions made by leaders who have since left, governance rules that existed nowhere except a person's memory and walked out with them. Leadership knowledge loss: customer or market intelligence that was never systematically captured, context that existed in individuals no longer available. Task knowledge is the layer most commonly captured in systems. Its absence is usually a documentation gap, not a knowledge loss. The Knowledge Map's Missing column is where the sprint finds its highest-risk gaps. Every missing source is a potential sprint failure mode. Name them before Build begins, not after deployment reveals them.
+The Missing sources column is the most important column on the Knowledge Map. That's where the highest-risk gaps live. Per the TML framework, Missing sources cluster in two of the three layers. Management knowledge loss: decisions made by leaders who have since left, governance rules that existed nowhere except a person's memory and walked out with them. Leadership knowledge loss: customer or market intelligence that was never systematically captured, context that existed in individuals no longer available. Task knowledge is the layer most commonly captured in systems. Its absence is usually a documentation gap, not a knowledge loss. The Knowledge Map's Missing column is where the Sprint finds its highest-risk gaps. Every missing source is a potential Sprint failure mode. Name them before Build begins, not after deployment reveals them.
 
 
 :::{.callout-note}
@@ -245,7 +245,7 @@ Before you call Source done, run six checks:
 
 :::{.callout-note}
 ## Action Step
-Run the six-item completeness test against your Knowledge Map. Fix any gaps. Then put the constraint statement from Signal at the top of the page and the Knowledge Map below it. That one page is what you hand to Design.
+Run the six-item completeness test against your Knowledge Map. Fix any gaps. Then put the Constraint Statement from Signal at the top of the page and the Knowledge Map below it. That one page is what you hand to Design.
 :::
 
 Here is Meridian's completed Knowledge Map — the artifact that session produced:
@@ -266,9 +266,9 @@ Look at what this map makes visible. Two organic sources are flagged at risk: El
 
 At the end of Source, you've got two things on one sheet of paper: the constraint Signal validated, and the Knowledge Map that describes the information environment around it. Assets, flow, and gaps together. That's the input Design needs. Constraint plus map.
 
-{{< excalidraw ch05-source-to-design-handoff "Source-to-Design handoff: constraint statement above, Knowledge Map below" >}}
+{{< excalidraw ch05-source-to-design-handoff "Source-to-Design handoff: Constraint Statement above, Knowledge Map below" >}}
 
-With those two things in hand, the team moves into Design: the phase where ownership decisions get made, where the Hybrid Accountability Chart entry for this sprint gets built, and where the work crosses from Diagnose into Execute. Source is the bridge. It's the last thing you do before you start to design your system.
+With those two things in hand, the team moves into Design: the phase where ownership decisions get made, where the Hybrid Accountability Chart entry for this Sprint gets built, and where the work crosses from Diagnose into Execute. Source is the bridge. It's the last thing you do before you start to design your system.
 
 ## Reflection Questions
 

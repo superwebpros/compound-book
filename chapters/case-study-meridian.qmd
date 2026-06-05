@@ -176,7 +176,7 @@ The ERP held job costing history — every completed job had a record with actua
 
 ### Design
 
-The design session ran on a Friday morning. Elena had prepared with her Compound coach the day before, walking through the Design instruments and rehearsing how to lead the work deconstruction. Elena, Mark, Ty, and Dave sat in the conference room with the constraint statement and Knowledge Map printed on the whiteboard. Elena ran the session using the Bench's Design instruments to guide the classification.
+The design session ran on a Friday morning. Elena had prepared with her Compound coach the day before, walking through the Design instruments and rehearsing how to lead the work deconstruction. Elena, Mark, Ty, and Dave sat in the conference room with the Constraint Statement and Knowledge Map printed on the whiteboard. Elena ran the session using the Bench's Design instruments to guide the classification.
 
 The first question was the sorting question: which parts of the quoting process require Elena's judgment, and which parts require data she happens to hold?
 
@@ -231,7 +231,7 @@ The quoting load was consuming 37% of her week. Production management consumed 5
 **After the Sprint:**
 
 - Quoting: ~4 hours/week (review agent-generated drafts, handle edge cases, update pricing rules)
-- Production management: ~20 hours/week (unchanged in this sprint)
+- Production management: ~20 hours/week (unchanged in this Sprint)
 - Strategic operations: ~16 hours/week (recovered from quoting reduction)
 
 Elena's role shifted.
@@ -262,7 +262,7 @@ Elena's role shifted.
 - [x] Every accountability has a Hybrid Accountability Chart entry with all four fields filled and a named supervisor
 - [x] The Human Orchestrator (Elena) is named — with irreducible decisions and escalation triggers documented
 - [x] AI-Assisted vs. Automated is decided for each agent team, with a rationale: all agent outputs are AI-Assisted (Elena reviews every quote) because the exception rules aren't fully captured and the agent is new
-- [x] Guardrails are defined: data access boundaries (CRM + ERP read, no financial reporting or HR), action permissions (draft only, never send to customer), escalation paths (low-confidence to Elena, unknown material to Carlos), quality monitoring (Elena reviews 100% in sprint one), and kill switch (any quote sent without review, pricing error >20% on three quotes in a week, or data access outside defined scope)
+- [x] Guardrails are defined: data access boundaries (CRM + ERP read, no financial reporting or HR), action permissions (draft only, never send to customer), escalation paths (low-confidence to Elena, unknown material to Carlos), quality monitoring (Elena reviews 100% in Sprint one), and kill switch (any quote sent without review, pricing error >20% on three quotes in a week, or data access outside defined scope)
 
 #### Artifact: Human-in-the-Loop Spectrum
 
@@ -414,12 +414,12 @@ Carlos added the third: "The materials database is still missing specialty alloy
 |---|---|
 | **What worked** | Agent handles standard quoting (70% of volume) accurately. Elena's review time dropped from 3 hours to 15-20 minutes per quote. Same-day turnaround on standard work. Structured intake form eliminated incomplete RFQ submissions after week one. ERP historical data proved more useful than expected — 800 jobs is a rich baseline for matching. Elena's recovered time produced immediate strategic value (supplier renegotiation: \$28K savings). |
 | **What didn't work** | Historical matching accuracy: ~85% — acceptable but not yet trustworthy enough to reduce review cadence. Agent matched on material and dimensions but missed complexity indicators (bend count, tolerance class, surface finish). Three RFQs submitted through old email workflow in week one — old inbox wasn't closed on day one. Specialty alloy pricing gaps: Inconel, titanium, and Hastelloy not in materials database, forcing manual pricing on ~10% of quotes. |
-| **What changes for next sprint** | One design change (see below): add complexity indicators to the matching algorithm. Operational fix: old email forwarding path officially closed — Elena's inbox auto-redirects RFQ-pattern emails to the intake form. Materials database: add specialty alloy pricing for the five most common non-standard materials. |
+| **What changes for next Sprint** | One design change (see below): add complexity indicators to the matching algorithm. Operational fix: old email forwarding path officially closed — Elena's inbox auto-redirects RFQ-pattern emails to the intake form. Materials database: add specialty alloy pricing for the five most common non-standard materials. |
 | **New constraints surfaced** | Every quote the agent generates still has to be manually entered into the ERP for job tracking when the quote converts to an order. This was always true — but now that quoting is fast, the manual ERP entry is the new bottleneck. Also: 40% of Meridian's quotes go to three customers who negotiate the same terms every time. Those three relationships could be further streamlined with pre-negotiated pricing tiers. |
 | **Knowledge captured** | Elena's pricing exception database: cleaned from 147 to 112 rules, validated, version-controlled, and backed up. Dave's estimation framework: twelve-factor checklist documented and structured. Three years of ERP job costing data: indexed and queryable for the first time. Elena's quoting process: fully mapped end-to-end for the first time in company history. |
 | **HAC update** | Quoting row made permanent. Elena confirmed as Human Supervisor. Quote Research Agent, Quote Pricing Agent, and Quote Assembly Agent confirmed as the agent team. Level: AI-Assisted (no change — three-week target for move to on-the-loop on Assembly not yet met; matching accuracy needs to reach 95% before Elena reduces review frequency on Research). |
 
-**One design change for the next sprint:** Add fabrication complexity indicators — bend count, tolerance class, weld count, and surface finish — as matching criteria in the Quote Research Agent. Dave provides the classification framework. The agent uses it when selecting historical matches. The test: re-run the eight quotes from the last month where Elena corrected the agent's match, and confirm that the updated matching produces the correct comparable in at least seven of the eight cases. Install before sprint two kickoff.
+**One design change for the next Sprint:** Add fabrication complexity indicators — bend count, tolerance class, weld count, and surface finish — as matching criteria in the Quote Research Agent. Dave provides the classification framework. The agent uses it when selecting historical matches. The test: re-run the eight quotes from the last month where Elena corrected the agent's match, and confirm that the updated matching produces the correct comparable in at least seven of the eight cases. Install before Sprint two kickoff.
 
 #### Artifact: Constraint Re-rank
 
@@ -427,11 +427,11 @@ The quoting bottleneck had been the top constraint for two years. With the Sprin
 
 | Rank | Constraint | Pre-Sprint Rank | Post-Sprint Rank | Rationale |
 |---|---|---|---|---|
-| 1 | CRM-to-ERP data sync: quotes convert to jobs through manual re-entry | 3 | **1** | The sprint surfaced this as the new bottleneck. Fast quoting exposed slow job creation. Ty is entering the same data twice — once in the CRM quote, again in the ERP job record. |
-| 2 | Customer pricing standardization: three customers represent 40% of quotes, all with recurring negotiated terms | Not on list | **2** | New constraint surfaced during the sprint. Those three accounts could have pre-negotiated pricing tiers, eliminating Elena's review entirely for repeat work. |
-| 3 | Specialty materials pricing: non-standard alloys require manual lookup | 5 | **3** | Moved up because the sprint made it visible — 10% of quotes still require full manual processing. |
+| 1 | CRM-to-ERP data sync: quotes convert to jobs through manual re-entry | 3 | **1** | The Sprint surfaced this as the new bottleneck. Fast quoting exposed slow job creation. Ty is entering the same data twice — once in the CRM quote, again in the ERP job record. |
+| 2 | Customer pricing standardization: three customers represent 40% of quotes, all with recurring negotiated terms | Not on list | **2** | New constraint surfaced during the Sprint. Those three accounts could have pre-negotiated pricing tiers, eliminating Elena's review entirely for repeat work. |
+| 3 | Specialty materials pricing: non-standard alloys require manual lookup | 5 | **3** | Moved up because the Sprint made it visible — 10% of quotes still require full manual processing. |
 | 4 | Production scheduling optimization: floor capacity planning is reactive | 2 | **4** | Moved down — not because it's less important, but because the quoting pipeline fix partially addressed it. Carlos now has pipeline visibility that enables proactive scheduling. |
-| 5 | Elena as single point of failure for operations management | 4 | **5** | Still present, but the sprint removed the largest single piece (quoting) from Elena's bottleneck. The remaining single-point-of-failure risk is in production management, which is the subject of a future sprint. |
+| 5 | Elena as single point of failure for operations management | 4 | **5** | Still present, but the Sprint removed the largest single piece (quoting) from Elena's bottleneck. The remaining single-point-of-failure risk is in production management, which is the subject of a future Sprint. |
 
 The next Sprint targets the CRM-to-ERP data sync. Mark assigned Elena as Human Orchestrator. Sprint kicks off at the next quarterly planning session.
 
@@ -488,7 +488,7 @@ Measurement Discipline    Yellow           Green           Quoting metrics:
 Before the Sprint: one Green, two Yellows, two Reds.
 After the Sprint: two Greens, two Yellows, one Red.
 
-The single Red that remains — Information Readiness — is the dimension that takes the longest to move. The Sprint moved it from Red to Yellow by capturing Elena's quoting knowledge and Dave's estimation method. Getting it to Green requires doing the same for production management, supplier relationships, and the other organic knowledge Elena holds. That's multiple sprints of Source work.
+The single Red that remains — Information Readiness — is the dimension that takes the longest to move. The Sprint moved it from Red to Yellow by capturing Elena's quoting knowledge and Dave's estimation method. Getting it to Green requires doing the same for production management, supplier relationships, and the other organic knowledge Elena holds. That's multiple Sprints of Source work.
 
 The two new Greens — Workflow Visibility and Measurement Discipline — are permanent. The quoting workflow is documented and designed. The metrics are tracked. They're infrastructure.
 
