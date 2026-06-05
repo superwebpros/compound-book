@@ -52,53 +52,6 @@ Before the sprint enters Build, put the Compound session on the calendar. A 90-m
 
 ## The Sprint Retrospective.
 
-```scout-note:
-E46 (FRAMEWORK-ADD) — Pattern Method three-lens retrospective structure: Pattern Drag / Pattern Gap / Pattern Lift.
-
-STATUS: **BLOCKED-NEEDS-JULIE-DEFINITION** per `book-ff63.15` substance-reject queue + author manifest annotation on E37 (Ch 6b, same framework, same block): "Requires review - not sure what this means."
-
-WHY BLOCKED:
-1. A2 (coined term before stakes): Pattern Drag / Pattern Gap / Pattern Lift are coined Compound vocabulary. The first-load-bearing introduction at Ch 9 §9.1 cannot land without canonical definitions.
-2. Framework-attribution rule: Pattern Method is canonical Compound vocabulary (joint book IP, NOT "Julie's Pattern Method"). Julie's source attributes individually ("Julie's Pattern Method provides three retrospective lenses"). Strip required + canonical joint definition must be established.
-3. Julie has not authoritatively defined Pattern Drag / Pattern Gap / Pattern Lift independent of any prior individual practice.
-
-E46 IS THE UPSTREAM CANONICAL DEFINITION FOR:
-- E37 (Ch 6b §Design is the gate, sixth checklist item — Pattern Drag prospective check) — currently BLOCKED per Ch 6b Scout `book-ff63.9.8`
-- E44 (Ch 8 Deliver outcome — Pattern Lift measurement of humans-in-higher-leverage-work) — same upstream block per parallel Ch 8 Scout
-- E58 (Glossary entries: Pattern Drag / Pattern Gap / Pattern Lift, three entries)
-
-SUBSTANCE JULIE PROPOSES (per `_julie/julie-redline.md:2011-2029`, for reference when E46 unblocks):
-- Pattern Drag: where did old habits resist the new design? Which team members routed around the agent workflow? Which supervisors approved without reviewing? Which process owners reverted to manual work at the first friction point? Name every instance — each is a design improvement opportunity.
-- Pattern Gap: where is the workflow as actually being run different from the workflow as designed? Every gap is information. Some gaps mean the design was wrong; some mean the training was wrong; some mean the guardrails were in the wrong place.
-- Pattern Lift: what higher-leverage work are the humans now doing with the time and capacity the agent returned to them? If the lift is happening, name it. If the lift is not happening, understand why — the capacity may not have been actually freed, or the org may not have higher-leverage work to absorb it.
-
-PROVISIONAL LANDING PLAN (activates when E46 unblocks):
-1. E46 lands FIRST at Ch 9 §9.1 as the canonical first-load-bearing introduction. Pattern A landing (declarative canonical-vocabulary-first); zero individual attribution; framework-attribution scrub applied; reframes the existing Sprint Retrospective three questions (what worked / what didn't work / what one design change) through the three lenses.
-2. E37 (Ch 6b Design Gate) lands second: brief on-page Pattern Drag definition + forward-reference to Ch 9 §9.1.
-3. E44 (Ch 8 Deliver outcome) lands third: brief on-page Pattern Lift definition + forward-reference to Ch 9 §9.1.
-4. Glossary E58 lands in parallel: three entries aligned to Ch 9 §9.1 canon.
-
-PATH B (DESIGN TABLE) MANDATORY at E46 landing: substance contestation upstream (canonical definition pending); Substance Lead load-bearing on canonical-definition discipline; Voice Lead load-bearing on A2 + framework-attribution scrub; Reader Lead load-bearing on earns-its-space test for three lenses vs. two.
-
-THE ONE-QUESTION PROMPT TO SURFACE TO JULIE (recommended phrasing):
-
-"To unblock the Pattern Method framework for the book — Pattern Drag, Pattern Gap, Pattern Lift — we need the canonical Compound definitions independent of any prior individual practice. In 2–3 operator-direct sentences each, what is Pattern Drag, what is Pattern Gap, and what is Pattern Lift? Each definition should be specific enough that a CEO can recognize the pattern in their own org and abstract enough to apply across industries. Pattern Drag will land at Ch 6b Design Gate (predict before Build), Pattern Lift will land at Ch 8 Deliver outcome (measure after Deliver), and all three will structure Ch 9's Sprint Retrospective."
-
-This phrasing:
-- Names the four-row cascade (Ch 6b + Ch 8 + Ch 9 + glossary) so Julie sees the downstream cross-chapter coordination.
-- Asks for operator-direct definitions (per voice charter Pillar 1 + Pillar 4) rather than abstract framework language.
-- Specifies canonical Compound definitions independent of prior individual practice (per framework-attribution rule).
-- Constrains to 2–3 sentences per lens (per voice charter cadence rules) to avoid LLM-cadence dense-paragraph patterns that need full rewrite.
-
-CROSS-SCOUT COORDINATION (Ch 8 parallel Scout E44 BLOCKED scout-note + Ch 9 Scout E46 BLOCKED scout-note):
-- Both flag the same upstream block (Julie's Pattern Method definition).
-- Both recommend the same one-question prompt.
-- Both align on canonical Pattern Method definition discipline (joint book IP, declarative Pattern A landing when unblocked, A2 first-definition discipline at Ch 9 §9.1).
-
-NO jf-note: required for E46. The block is upstream of author review for this chapter; the author opts to define Pattern Method at a later sprint cycle. This scout-note serves as both block documentation AND provisional landing plan placeholder.
-
-See `_julie/per-chapter/09-compound.md` §"E46 unblock dependency graph" for full cross-chapter coordination plan + provisional acceptance criteria.
-```
 
 The Sprint Retrospective is one of two instruments in the Compound stage. It's the structured review of the sprint that just shipped, and it asks the same three questions every time.
 

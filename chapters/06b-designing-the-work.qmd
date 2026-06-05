@@ -131,27 +131,6 @@ Stakeholder surveys work here too — especially when the agent team's output re
 
 Constant prototyping is the discipline. Not one big reveal at the end of Design, but a steady loop: design a piece, prototype it, get feedback, adjust. The Compound Sprint is short enough — two weeks for most teams — that this loop runs naturally if you start prototyping early. Teams that wait until the design feels "complete" before testing it are the teams that discover in Build that the design doesn't match reality. Test early. Adjust while adjusting is cheap.
 
-```scout-note:
-E37 BLOCKED-NEEDS-JULIE-DEFINITION — Pattern Drag at Design Gate. Julie's redline (julie-redline.md:1758-1773) proposes Pattern Drag as a 6th item on the five-item Design Gate checklist: "Pattern Drag is the invisible force that will resist the Design after Build deploys it... Name it before Build. Build the governance to counter it before Deliver. The sprint that does not anticipate Pattern Drag will find it waiting in production."
-
-Status: BLOCKED per book-ff63.15 substance-reject queue. Author manifest annotation on E37: "Requires review - not sure what this means." Pattern Drag (and Pattern Gap / Pattern Lift — the three-lens Pattern Method introduced in Ch 9 Compound retrospective per E46) has not been authoritatively defined by Julie. Per A2 (coined term before stakes), Pattern Drag cannot be load-bearing-introduced at the Design Gate without canonical definition. Per the framework-attribution rule, Pattern Drag is joint book IP (not Julie's individual instrument), but the canonical joint definition must be established first.
-
-No Drafter action on E37 in this scout phase. The Design Gate section below stays at five items, not six.
-
-Sequence to unblock:
-1. Julie defines Pattern Drag + Pattern Gap + Pattern Lift authoritatively (out of scope for this scout).
-2. Author reviews and approves the three-lens framework canonical definition.
-3. Ch 9 E46 lands Pattern Method three-lens retrospective (separate execution).
-4. Glossary E58 entries land for the three Pattern terms.
-5. Then E37 unblocks; Design Gate sixth-item can land in Ch 6b.
-
-One-question prompt for Julie (when she chooses to define): "What is the canonical Compound definition of Pattern Drag — independent of any prior individual practice — that the book can use at both Design Gate (Ch 6b) and Compound retrospective (Ch 9)?"
-
-No jf-note expected from author at this gate — the block is upstream of author review for this chapter. Author may opt to define Pattern Drag at a later sprint cycle.
-
-The Design Gate section that follows is otherwise scout-CLEAN for E36 purposes. MEANS/ENDS-RISK = MED at L150-L153 closer: "Holding that line is what separates the operators who run the Sequence from the operators who buy AI tools and hope" frames Sequence-running as borderline-destination per A13 recurring pattern (3/3 prior chapters caught). Drafter judgment call — acceptable to preserve current closer (consistent with book's operator-vs-buyer framing in Ch 1 / Ch 3 / Ch 11) OR optionally strengthen with explicit operator-outcome clause: "Holding that line is the difference between sprints that produce a designed workflow you can compound on and sprints that produce code nobody uses." Flag for Drafter awareness; not a forced rewrite.
-```
-
 ## Design is the *gate*.
 
 Nothing past Design begins until Design is locked. That's not bureaucracy. It's the structural reason Build moves fast when other approaches stall.
