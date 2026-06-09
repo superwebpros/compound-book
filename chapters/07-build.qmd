@@ -110,7 +110,6 @@ Pull the designed workflow from Design. Run the three-question decision tree abo
 
 You are running a technology company. Every company that employs synthetic workers — agents — is a technology company, whether it started that way or not. You need to know enough about the technology to make decisions without deferring to someone who doesn't understand your constraint. That doesn't mean becoming an engineer. It means understanding the vocabulary, the trade-offs, and the cost structure well enough to hold your own in the room where the build gets scoped.
 
-<!-- TODO: Verify 'agent' is formally defined in Ch02 or glossary. Ch02 has a working definition ("an AI system that holds a goal, takes a sequence of steps toward it...") — confirm this is sufficient or add a formal definition to the glossary. -->
 
 ### Models and providers.
 

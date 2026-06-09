@@ -11,7 +11,7 @@ Five people are gone — not cut in a crisis, not managed out because the compan
 
 The shift did not happen because we adopted a new platform or made a strategic decision to run lean. It happened because we ran Signal before we wrote requisitions. That's the behavioral change. It sounds small. It's not.
 
-Here is the specific moment I can point to. We had a project coordinator who was underperforming. The reports weren't getting done. Client follow-ups were slipping. Capacities weren't being updated. Our Integrator was frustrated — had been bringing the same complaint to every meeting for weeks. We knew what the next step was supposed to be: let her go, write a job description, post for a replacement, spend two months hiring and onboarding the next version of the same role.
+Here is the specific moment I can point to. We had a project coordinator who was underperforming. The reports weren't getting done. Client follow-ups were slipping. Capacities weren't being updated. Our VP of Operations was frustrated — had been bringing the same complaint to every meeting for weeks. We knew what the next step was supposed to be: let her go, write a job description, post for a replacement, spend two months hiring and onboarding the next version of the same role.
 
 We stopped before we did that. Not because we had some principled objection to hiring. Because by that point we had run enough Sprints that the first question had changed. Not *who do we hire?* but *what does Signal say about this?*
 
@@ -129,7 +129,7 @@ Companies that default to designing before hiring build a different cost structu
 
 {{< excalidraw ch10-headcount-math "Headcount math before/after: headcount grows linearly with revenue (left) vs. headcount flattens while revenue grows after Sprint cadence takes hold (right)." >}}
 
-The coordinator story that opened this chapter ends here — with the question that stopped getting asked. The hire that never got posted wasn't a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That's the Rhythm doing its job: changing the default behavior of the organization across every call that follows.
+The coordinator story that opened this chapter ends here — with the question that stopped getting asked. The hire that never got posted wasn't a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That's the Rhythm doing its job: changing the default behavior of the organization across every call that follows. The thirteen-to-eight arc the Preface points at — the developer who left, the knowledge that walked out the door — closes in this chapter, in the same way: not at a single moment, but as a year of running this loop until the math moved.
 
 Most teams already have a meeting cadence — the L10, the weekly standup, the quarterly review. The cadence is real. But the discipline that turns a red number into a named constraint — and a named constraint into a Sprint — is usually absent. Weeks of red scorecards mean the cadence exists and the Rhythm does not. What the Rhythm adds isn't a new meeting. It's the four things the meeting produces: an outcome reviewed, a backlog updated, a constraint committed, a chart current. Without all four, the session is theater.
 

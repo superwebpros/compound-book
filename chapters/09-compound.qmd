@@ -76,7 +76,7 @@ Beyond the Sprint outcome you measured in Deliver, Compound asks three additiona
 
 *What does the organization know now that it didn't know before this Sprint?* Meridian learned that Elena's Customer Notes spreadsheet — 147 rows of pricing exceptions on her desktop — contained only 112 validated rules. Thirty-five were duplicates or outdated. They learned which quote types the agent handles cleanly (standard specs, about 70% of volume) and which still need Elena's review (complex fabrication, specialty alloys). Before the Sprint, every quote looked equally hard. That assumption is gone. That's knowledge the next Sprint inherits.
 
-*What capability exists now that didn't exist before?* A working quoting agent team that cut standard quote turnaround from 3.8 days to 4.2 hours. Elena's quoting time dropped from fifteen hours a week to five. Throughput doubled. That capability doesn't disappear when the Sprint ends. It's infrastructure — and it produced $47,000 in new revenue in the first month.
+*What capability exists now that didn't exist before?* A working quoting agent team that cut standard quote turnaround from 3.8 days to 4.2 hours. Elena's quoting time dropped from fifteen hours a week to five. Throughput doubled. That capability doesn't disappear when the Sprint ends. It's infrastructure — and it produced $47K in new revenue in the first month.
 
 *What is the next Sprint starting with that the first Sprint didn't have?* Three trained agents, 112 validated pricing rules, three years of indexed ERP job data, and a sales team that's been using the new intake workflow for six weeks. Sprint two starts from that baseline, not from zero.
 

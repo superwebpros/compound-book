@@ -157,7 +157,7 @@ Here's what Meridian's first Sprint Planning Canvas looks like.
 
 **Constraint:** Elena Ruiz is the sole quoting bottleneck — every quote flows through her, costing an estimated \$558K/year in delayed and lost revenue.
 
-**Leadership sponsor:** Mark Ellison (CEO/Visionary). **Human Orchestrator:** Elena Ruiz (VP Ops/Integrator). **Quarter:** Q3.
+**Leadership sponsor:** Mark Ellison (CEO). **Human Orchestrator:** Elena Ruiz (VP of Operations). **Quarter:** Q3.
 
 | Stage | Key Question | Answer |
 |---|---|---|
@@ -193,7 +193,7 @@ This chapter introduced vocabulary that the rest of the book uses constantly. Th
 
 You don't learn the Framework by reading about it. You learn it by running one Sprint on one real constraint in your own company. That's the only teaching unit that works, because the Framework isn't a model of how AI implementation could go — it's the structure of how the work moves when it moves correctly.
 
-The project coordinator story (the one where we mapped the work instead of posting a job) walks all six stages in sequence. You will see it in full in Chapter 6. What it proves here is specific: not that the Sequence is theoretically sound, but that each stage produces something the next stage requires. Signal named the constraint. Source mapped what the role actually required. Design allocated the work between human and agent. Build produced the workflow. Deliver shipped it into the team's environment. Compound captured what the next Sprint would inherit. Remove any one of those steps and the chain breaks.
+The project coordinator story (the one where we mapped the work instead of posting a job) walks all six stages in sequence. You will see it in full in Chapter 6 and the PM Agent Team case study. What it proves here is specific: not that the Sequence is theoretically sound, but that each stage produces something the next stage requires. Signal named the constraint. Source mapped what the role actually required. Design allocated the work between human and agent. Build produced the workflow. Deliver shipped it into the team's environment. Compound captured what the next Sprint would inherit. Remove any one of those steps and the chain breaks.
 
 The Sprint is bounded by scope, not by a fixed calendar. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. One constraint, one documented outcome. That is the bar.
 
