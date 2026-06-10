@@ -10,12 +10,12 @@ These steps establish your operational baseline — naming where the AI problem 
 
 :::{.callout-note}
 ## Action Step
-Walk into your next L10 or leadership meeting with this question: "If AI were an employee, what would its scorecard say?" Write down whatever the room produces. If the answer is silence, that silence is the diagnosis.
+Walk into your next L10 or leadership meeting with this question: "If AI were an employee, what would its scorecard say?" Write down whatever the room produces. If the room can't answer — if there's no scorecard, no number, no owner — that's your answer. There is no scorecard. And that's exactly the problem.
 :::
 
 :::{.callout-note}
 ## Action Step
-Poll your leadership team individually — not in a group. Ask each person: "What is the ONE operational problem AI should solve for us?" Write down their answers verbatim. If you get five different answers from five people, you have your diagnosis.
+Poll your leadership team individually, not in a group. Ask each person: "What is the ONE operational problem AI should solve for us?" Write down their answers verbatim. If you get five different answers from five people, you've got your diagnosis.
 :::
 
 :::{.callout-note}
@@ -40,7 +40,7 @@ Do the math right now. Hours per week spent on the constraint, multiplied by loa
 
 :::{.callout-note}
 ## Action Step
-Before you turn the page, fill in the scorecard. All five dimensions. Write the scores down — don't just read the descriptions and nod. The scorecard travels with you through the rest of the book, and every chapter will ask you to reference it. Sixty minutes with your leadership team. Do it before your next L10.
+The scorecard is the input every other chapter references. Take an hour with your leadership team, ideally before your next L10, to score each dimension and write the scores down. Every chapter ahead will ask you to come back to them.
 :::
 
 ## Chapter 2: The Co-Operating Model
@@ -54,9 +54,9 @@ Pick one role in your company — yours, or a direct report's. Estimate: what pe
 
 :::{.callout-note}
 ## Action Step: Map One Role Against the Two Columns
-Take the role you picked earlier. List 10–15 tasks that person actually does in a typical week — not what the job description says, what they do. Pull their calendar. Check their sent folder. Then sort every task into Column A (Human Intelligence: judgment that changes based on context a machine can't observe) or Column B (Agent Intelligence: processing that follows rules a machine could learn). Some tasks will split — "managing scope change requests" includes reading client politics (Column A) and updating the change log (Column B). Split those and sort each part.
+Pick the role you flagged earlier. Think through what that person actually spends their week on — the work as it happens, not the work as the job description writes it. Then sort each task into Column A (Human Intelligence: judgment that changes based on context a machine can't observe) or Column B (Agent Intelligence: processing that follows rules a machine could learn). Some tasks will split — "managing scope change requests" includes reading client politics (Column A) and updating the change log (Column B). Split those and sort each part.
 
-Here is what this looks like for a Project Coordinator at a professional services firm:
+Consider a typical professional services role — a Project Coordinator at a mid-sized firm. (This is an illustrative composite, not a specific client.) Here is what the sort looks like:
 
 | Column A (Human Intelligence) | Column B (Agent Intelligence) |
 |---|---|
@@ -79,14 +79,22 @@ Write it as a single number: "This role is __% Column B."
 
 Now multiply that percentage by the person's loaded annual cost (salary + benefits + overhead). That number is the annual operating cost of not redesigning this role.
 
-For the Project Coordinator example: 55% Column B at $65,000 loaded cost = $36,000/year spent on work that follows learnable rules. That is the dollar value of human intelligence being spent on agent-intelligence work.
+For the illustrative Project Coordinator: 55% Column B at $65,000 loaded cost = $36,000/year spent on work that follows learnable rules. That is the dollar value of human intelligence being spent on agent-intelligence work.
 :::
 
 :::{.callout-note}
-## Action Step: Describe the Hybrid Version
-If Column B tasks were handled by agents, what would this person do with the freed capacity? Write a one-paragraph description of a typical day — not a vision statement.
+## Action Step: Start Your Hybrid Split
+Now that you've split the role into Column A and Column B, map the hybrid version: who does what when human and agent share the role. The human manages; the agent does the labor that follows rules.
 
-Here is the Project Coordinator's hybrid version: *Monday morning starts with reviewing agent-generated status reports and flagging anything that needs a human conversation. The rest of the week goes to managing two difficult scope negotiations, sitting in on a client call where the relationship is at risk, and coordinating a cross-functional delivery problem that involves competing priorities between three teams. Meeting summaries write themselves. Overdue items surface automatically. The coordinator's calendar is no longer consumed by administrative motion — it is consumed by judgment calls, relationship management, and the kind of coordination that keeps clients from leaving.*
+| Human Manages (Column A) | Agent Labors (Column B) |
+|---|---|
+| Reviews agent-generated status reports; flags items that need a human conversation | Generates weekly status reports from project data |
+| Manages scope negotiations (reads client politics, makes the judgment call) | Updates the change log after each negotiation |
+| Sits in on relationship-at-risk client calls | Drafts the follow-up notes and action items |
+| Coordinates cross-functional priorities between teams | Tracks task dependencies and surfaces blockers |
+| Decides whose pricing exception to honor | Applies documented exception rules and flags edge cases |
+
+This hybrid split is enough to see the shape of the redesigned role. Chapter 5 introduces the full design instrument — the TML framework (Task / Management / Leadership) — which sorts work into three categories rather than two; for now, the two-column version is the right starting point.
 
 If you have multiple roles touching the same constraint, repeat this process for each one. Compile the results into a single table: Role, Column B %, Loaded Cost, Annual Misallocation Cost. That table is the raw material for the Sprint design work in the chapters ahead.
 :::
@@ -97,12 +105,14 @@ These steps produce your first Sprint Planning Canvas — a compass for the Spri
 
 :::{.callout-note}
 ## Action Step
-Write down the constraint you'd solve first. One sentence. If it takes more than one breath to read aloud, it's too long. This is your draft Signal — you'll sharpen it in Chapter 4.
+Write down the constraint you'd solve first. One sentence. If it takes more than one breath to read aloud, it's too long. (You may not know your constraint yet — that's exactly what Signal in Chapter 4 is for. Write your best guess. Signal will sharpen it.) This is your draft Signal.
 :::
 
 :::{.callout-note}
 ## Action Step
 Fill in a Sprint Planning Canvas for your company. Constraint in one sentence. One first-pass answer per stage. Name the Orchestrator. Book the review. A wrong first guess is better than a blank row — blanks stay blank, guesses get corrected.
+
+A blank Sprint Planning Canvas template — and the rest of the Compound resources library — will be available at *compound.co/resources* when it launches. Until then, copy the five-part structure into the tool of your choice.
 :::
 
 :::{.callout-note}
@@ -145,7 +155,7 @@ Open the Constraint Statement from Signal. List every digital system that touche
 
 :::{.callout-note}
 ## Action Step
-Name every person whose judgment is load-bearing for the constraint. For each one, write specifically what they know that no system holds. Flag anyone who's a single point of failure.
+Name every person whose judgment the constraint workflow depends on. For each one, write specifically what they know that no system holds. Flag anyone who's a single point of failure.
 :::
 
 :::{.callout-note}
@@ -193,7 +203,7 @@ These steps run Work Deconstruction on your constraint workflow, visualize the d
 
 :::{.callout-note}
 ## Action Step
-List every task in the constraint workflow. Sort each one into the three TML categories — Task, Management, Leadership. Count the tasks in each bucket. If more than half land in Leadership (Human Judgment Required), challenge each one: is this genuinely judgment, or is it judgment because nobody has written down the rules? The exercise takes sixty to ninety minutes for a real role. Do it on paper or in a shared doc.
+List every task in the constraint workflow. Sort each one into the three TML categories — Task, Management, Leadership. Count the tasks in each bucket. If more than half land in **Leadership (Human Judgment Required)**, challenge each one: is this genuinely judgment, or is it judgment because nobody has written down the rules? The exercise takes sixty to ninety minutes for a real role. Do it on paper or in a shared doc.
 :::
 
 :::{.callout-note}
@@ -222,7 +232,7 @@ Pull the designed workflow from Design. Run the three-question decision tree abo
 
 :::{.callout-note}
 ## Action Step
-When a vendor or builder proposes fine-tuning, ask: "Could we get the same result by giving the model access to our data at query time?" If the answer is yes, you've just saved weeks and thousands of dollars. RAG first. Fine-tune only when RAG can't get you there.
+When a vendor or builder proposes fine-tuning, ask: "Could we get the same result by giving the model access to our data at query time?" If the answer is yes, you've just saved weeks and thousands of dollars. Start with context windows for small datasets. Move to RAG when the data outgrows the window. Fine-tune only when neither gets you there.
 :::
 
 :::{.callout-note}
@@ -314,4 +324,13 @@ If you haven't completed the AI Readiness Scorecard yet, go back to Chapter 1 an
 :::{.callout-note}
 ## Action Step
 Decide which path you're taking. Write it down. If Path A, schedule the Signal session with your team this week. If Path B, book the Clarity Call. The decision that doesn't work is the one you defer.
+:::
+
+## Appendix: Prompt Engineering
+
+This step closes the loop between agent output and the design discipline this book describes. If a prompt is producing weak output, the diagnosis usually lives upstream — in Source.
+
+:::{.callout-note}
+## Action Step
+Take your most recent agent interaction that produced disappointing output. Run the four-step diagnostic. Was the problem in the prompt, or in the context? If you don't have a Knowledge Map for the constraint the agent was working on, that's your answer — the context was never designed.
 :::
