@@ -5,7 +5,7 @@
 Build is the stage where the locked design becomes a working, deployed system. It is the narrowest stage of the Sequence — and the fastest, when the diagnostic work was done properly. Build produces one thing: a deployed solution to the validated constraint, specified by an eight-section Build Spec, stress-tested against a seven-question Guardrails Checklist, and confirmed done only when it handles real work under real supervision. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
 :::
 
-When we built the project management agent team — the five agents that replaced our $24,000-a-year coordinator role — the first thing we locked wasn't the workflow. It was the access layer.
+When we built the project management agent team — the five agents that replaced our $24,000-a-year coordinator role — the first thing we locked wasn't the workflow steps. The first lock was the Hybrid Accountability Chart entry: Sofia named as supervisor, every agent team starting AI-Assisted, her sign-off required on every output in Sprint one. Access boundaries, failure modes, and build path all followed from that accountability decision.
 
 One agent handled client-facing task updates. It had read/write access to our project management system. Another agent compiled internal performance reports — billable hours, delivery velocity, resource allocation. That one could see data the first agent had no business touching. A third routed subcontractor communications. Different data, different stakes, different guardrails. Same Sprint. Five agents, five different access levels, every boundary decided in Design before Build executed any of them.
 
@@ -39,7 +39,11 @@ The Build phase is scoped exactly — and only — to the workflow the Design ph
 
 This isn't a limitation. It's the structural reason Build is fast. A team that built a quoting workflow in three weeks didn't do it because they were clever. They did it because Design gave them a workflow narrow enough to build in three weeks. The discipline of scope is upstream of the speed of execution.
 
-If, mid-Build, the team finds themselves negotiating new requirements, there are two possibilities. The first is a genuine design gap — something Design should have addressed but didn't. That's a Design-debt conversation: stop, go back, fix the gap, and resume. The second is scope expansion — people's eyes get bigger when they see things working, and they start imagining what else the system could do. That's natural, and it's healthy, but it doesn't belong in the current Sprint. Log it. Put it in the backlog for the next Sprint's Signal phase. Do not absorb new scope into Build and hope it works out. It won't work out.
+If, mid-Build, the team finds themselves negotiating new requirements, there are two possibilities. The first is a genuine design gap — something Design should have addressed but didn't. This is design debt: a decision that belonged in the Design stage but wasn't made there, now surfacing in Build where it costs more to resolve. Design debt isn't a moral failing. It's information. The question is what you do with it.
+
+If the gap makes the current build impossible to complete correctly, stop. Go back to Design, fix the gap, and resume. If the gap is real but the build can proceed safely without resolving it now, log it as a Signal item for the next Sprint. Put it on the backlog with enough context that the team can pick it up in Signal. Don't try to absorb it quietly into the current build. That never works out cleanly, and it turns a defined gap into an invisible one.
+
+The second possibility is scope expansion. People's eyes get bigger when they see things working, and they start imagining what else the system could do. That's natural, and it's healthy, but it doesn't belong in the current Sprint. Log it. Put it in the backlog for the next Sprint's Signal phase.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -110,7 +114,9 @@ Pull the designed workflow from Design. Run the three-question decision tree abo
 
 ## Technical literacy — what you need to know.
 
-You are running a technology company. Every company that employs synthetic workers — agents — is a technology company, whether it started that way or not. You need to know enough about the technology to make decisions without deferring to someone who doesn't understand your constraint. That doesn't mean becoming an engineer. It means understanding the vocabulary, the trade-offs, and the cost structure well enough to hold your own in the room where the build gets scoped.
+Every company that manages information is a technology company. That's already true. It was true before you thought about AI. Your CRM, your ERP, your project management tool, your communication stack: each one was designed to make your company more efficient by moving information more reliably. You were running a technology company the moment information became the primary input and output of your work. The synthetic workers are a recognition of that, not a change in category.
+
+What that means for Build: you need to know enough about the technology to make decisions without deferring to someone who doesn't understand your constraint. That doesn't mean becoming an engineer. It means understanding the vocabulary, the trade-offs, and the cost structure well enough to hold your own in the room where the build gets scoped.
 
 
 ### Models and providers.
@@ -140,7 +146,7 @@ Ask your builder to estimate monthly token cost before the build starts, not aft
 
 Proprietary models (Claude, GPT, Gemini) run on the provider's servers. You send data to their API, they process it, they send results back. The upside: they're the most capable models available, they're maintained and updated by the provider, and you don't manage infrastructure. The downside: your data travels through their systems, and you're subject to their pricing, rate limits, and terms of service.
 
-Open-source models (Llama, Mistral, and others) can run on your own servers. The upside: your data never leaves your environment, you control the infrastructure, and there are no per-token costs beyond your compute bill. The downside: you need someone to host, maintain, and update them — and the most capable open-source models still trail the top proprietary ones on complex reasoning tasks.
+Open-source models (Llama, Mistral, and others) can run on your own servers. The upside: your data never leaves your environment, you control the infrastructure, and there are no per-token costs beyond your compute bill. The downside: you need someone to host, maintain, and update them — and the gap between the top open-source and top proprietary models on complex reasoning tasks continues to shift. Check current benchmarks before deciding; what's true when you read this may not be true when you run your next Sprint.
 
 For most Compound Sprints, proprietary models are the right call. The data sensitivity question from the Guardrails Checklist is what determines the exception. If the data can't leave your environment — regulatory, contractual, or policy — open source on your own infrastructure is the path.
 
@@ -202,6 +208,8 @@ If your Build is running past the time box, the instinct is to extend the deadli
 
 ## The two instruments — *Build Spec Writer* and *Guardrails Checklist*.
 
+{{< excalidraw ch07-design-brief-example "Example design brief: workflow specification, agent team scope, supervisor named, governance answers locked." >}}
+
 Build is supported by two instruments. Both are derived from the Design Brief that Design handed off. Neither restarts the design conversation.
 
 **Build Spec Writer** turns the Design Brief into a developer-ready specification. The Design Brief is the single upstream input. The Build Spec restates the workflow, systems, and data sections at developer-execution depth, and adds three sections Design doesn't own: agent scope at the call level, failure-mode behavior on edge cases and outages, and the build path with its implementation constraints. The duplicated sections aren't new decisions. They're tightened restatements. If the Build Spec and the Design Brief disagree on a workflow step or a system boundary, the Design Brief wins and the gap routes back to Design.
@@ -221,7 +229,11 @@ A complete spec covers eight sections:
 
 {{< excalidraw ch07-build-spec-sections "Build Spec Writer: eight sections with section name and a one-line description of what belongs in each." >}}
 
-Here's what those sections look like filled in. This is from Meridian Manufacturing — twenty-seven employees, custom metal fabrication, quoting bottleneck costing $558K a year in lost revenue, misallocated VP time, and shop floor underutilization. Signal nailed the constraint, Source mapped the data, Design produced the workflow. Build started with this spec:
+Here's what those sections look like filled in. This is from Meridian Manufacturing — twenty-seven employees, custom metal fabrication, quoting bottleneck costing $558K a year in lost revenue, misallocated VP time, and shop floor underutilization. Signal nailed the constraint, Source mapped the data, Design produced the workflow and the Design Brief that captured it. Build started from that Design Brief.
+
+{{< excalidraw ch07-design-brief-meridian "Meridian's design brief for the quoting Sprint: Quote Agent Team scope, Elena as supervisor, AI-Assisted autonomy, data access rules." >}}
+
+That Design Brief fed directly into the Build Spec. The Build Spec restated the workflow, systems, and data at developer-execution depth, and added the implementation content Design doesn't own. Here's what the spec looked like:
 
 **Section 1 — Workflow Summary:** When a new RFQ arrives through the standardized intake form, a CRM record is created and the quoting workflow triggers automatically. The Quote Research Agent pulls customer history and matches the RFQ against three years of historical jobs in the ERP. The Quote Pricing Agent applies the rate card, the senior engineer's labor estimate, and the applicable pricing exceptions. The Quote Assembly Agent formats the draft as a PDF and places it in the VP of Operations' review queue. She reviews, edits if needed, and approves. The approved quote routes to the sales lead for customer delivery.
 
@@ -273,31 +285,23 @@ Walk through all seven items with the builder present. Check each one against th
 
 ## The *Guardrails Checklist*.
 
-The **Guardrails Checklist** is the set of quality, privacy, and oversight decisions that must be locked before the solution goes live. It's the difference between an AI solution your company can stand behind and an AI solution your company is one mistake away from regretting publicly. The work of completing it is small. The work of skipping it is enormous and arrives late.
-
-Run through these questions before the build executes, not after:
-
-1. **Data access.** What data is the system permitted to touch? What is it explicitly not permitted to touch? Who made that decision, and where is it documented?
-2. **Agent autonomy.** What can the agent do without human approval? What requires human sign-off before the agent acts? Write it at the level of specificity your supervisor needs to verify it.
-3. **Unrecognized inputs.** When the agent encounters an input it was not designed for, what does it do? Refuse and escalate? Attempt and flag? The answer must be designed, not discovered.
-4. **Quality measurement.** How is output quality measured? Not "we'll review it" — what specific checks, against what baseline, measured how?
-5. **Escalation path.** When the agent produces output that requires human judgment, who does it go to? In what form? On what timeline?
-6. **Accountability.** Who is responsible when the agent produces a bad output? A named person — not a team, not a department, not "the AI." This is the human supervisor from the Hybrid Accountability Chart.
-7. **Kill switch.** What would cause you to shut down the agent workflow immediately? Define the conditions now, when you're thinking clearly — not in the moment when something has already gone wrong. What error rate? What type of error? What data exposure?
+The **Guardrails Checklist** is the set of quality, privacy, and oversight decisions that must be locked before the solution goes live. It's the difference between an AI solution your company can stand behind and an AI solution your company is one mistake away from regretting publicly. Answer all seven questions in writing before Build executes. If any question can't be answered, the build isn't ready.
 
 {{< excalidraw ch07-guardrails-checklist "Guardrails Checklist: seven questions as a scannable pre-deploy gate." >}}
 
-Here's what the Guardrails looked like for Meridian's quoting agents:
+Here are the seven questions and Meridian's answers side by side:
 
-- **Data access:** HubSpot CRM deal records (read/write), JobBOSS ERP job costing and rate card (read), cleaned pricing exceptions database (read). No access to financial reporting, employee records, customer payment history, supplier contracts, or any system not listed.
-- **Agent autonomy:** Can match RFQs to historical jobs, apply rate card pricing, apply documented exception rules, generate draft PDFs, assign confidence scores, place drafts in review queue. Cannot send anything to a customer, apply undocumented exceptions, override the rate card, or commit a quote.
-- **Unrecognized inputs:** If the RFQ references a material not in the pricing exceptions database or the ERP materials list — particularly specialty alloys like Inconel — the agent produces no price estimate for that line item, flags it as "manual pricing required," and routes to the senior engineer. If the RFQ lacks sufficient spec detail to match against history, the agent flags it as "insufficient for rapid estimate" and routes to Elena.
-- **Quality measurement:** Weekly comparison of agent-drafted prices to Elena's final approved prices on all quotes. Target: substantive corrections on fewer than 10% of drafts within eight weeks. Historical match accuracy tracked separately — target 95% before Elena reduces review cadence on the Research Agent.
-- **Escalation path:** Low-confidence quotes to Elena for full manual review. Non-standard materials to Dave Kowalski (senior engineer). Strategic account pricing to Mark Ellison (CEO). Any quote where the calculated price deviates more than 15% from the closest historical match gets flagged for Elena's investigation before approval.
-- **Accountability:** Elena Ruiz, VP of Operations, owns every quote the agents produce — the same way she'd own it if she'd built it from scratch. She is the named human supervisor in the Hybrid Accountability Chart.
-- **Kill switch:** Pricing errors exceeding 20% on three quotes in any week, any quote reaching a customer without Elena's review, or any data access outside defined scope. Elena holds the switch.
+| Question | Meridian's answer |
+|---|---|
+| **1. Data access.** What data is the system permitted to touch? What is explicitly off-limits? Who decided, and where is it documented? | HubSpot CRM deal records (read/write), JobBOSS ERP job costing and rate card (read), cleaned pricing exceptions database (read). Off-limits: financial reporting, employee records, customer payment history, supplier contracts, or any system not listed. |
+| **2. Agent autonomy.** What can the agent do without human approval? What requires human sign-off? | Can match RFQs to historical jobs, apply rate card pricing, apply documented exception rules, generate draft PDFs, assign confidence scores, place drafts in review queue. Cannot send anything to a customer, apply undocumented exceptions, override the rate card, or commit a quote. |
+| **3. Unrecognized inputs.** When the agent encounters an input it wasn't designed for, what does it do? | If the RFQ references a material not in the pricing exceptions database or ERP materials list — specialty alloys like Inconel — the agent produces no price estimate for that line item, flags it as "manual pricing required," and routes to the senior engineer. If the RFQ lacks sufficient spec detail, the agent flags it as "insufficient for rapid estimate" and routes to Elena. |
+| **4. Quality measurement.** What specific checks, against what baseline, measured how? | Weekly comparison of agent-drafted prices to Elena's final approved prices. Target: substantive corrections on fewer than 10% of drafts within eight weeks. Historical match accuracy tracked separately — target 95% before Elena reduces review cadence on the Research Agent. |
+| **5. Escalation path.** When the agent produces output that requires human judgment, who does it go to? In what form? On what timeline? | Low-confidence quotes to Elena for full manual review. Non-standard materials to Dave Kowalski (senior engineer). Strategic account pricing to Mark Ellison (CEO). Any quote where the calculated price deviates more than 15% from the closest historical match gets flagged for Elena's investigation before approval. |
+| **6. Accountability.** Who is responsible when the agent produces a bad output? | Elena Ruiz, VP of Operations, owns every quote the agents produce — the same way she'd own it if she'd built it from scratch. She is the named human supervisor in the Hybrid Accountability Chart. |
+| **7. Kill switch.** What would cause you to shut down the agent workflow immediately? | Pricing errors exceeding 20% on three quotes in any week, any quote reaching a customer without Elena's review, or any data access outside defined scope. Elena holds the switch. |
 
-If you can't answer all seven, the system isn't ready to deploy. These aren't edge cases. They are the conditions under which the human supervisor can actually supervise.
+These aren't edge cases. They are the conditions under which the human supervisor can actually supervise.
 
 :::{.callout-note}
 ## Action Step
