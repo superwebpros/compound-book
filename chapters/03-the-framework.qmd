@@ -5,7 +5,7 @@
 This chapter maps the rest of the book. You'll learn four vocabulary terms (Framework, Sequence, Rhythm, Sprint), the six stages that make up the Sequence, the Diagnose/Execute split that prevents the most common failure mode, and the Sprint Planning Canvas that turns all of it into a one-page starting point. Treat this as the page you flip back to when you forget which word means what.
 :::
 
-We were on a discovery call: Jesse, Julie, and a CEO on the other side of the screen. She'd been talking for twenty minutes about her company, her bottlenecks, what she was hoping AI could fix. Then she leaned forward and said it: "Can we just build it? I just need this thing built."
+We were on a discovery call: Jesse, Julie, and a CEO on the other side of the screen. She'd been talking for twenty minutes about her company, her bottlenecks, the AI-powered workflows she was hoping would fix the quoting problem that was eating her operations lead's time. Then she leaned forward and said it: "Can we just build the workflow? I just need this thing built."
 
 We knew exactly what she meant. She'd seen demos. She'd read the case studies. She had a clear picture in her head of the tool that was going to solve her problem, and she wanted to stop talking about it and start building it. That's not impatience — that's the instinct of someone who has run a business. When you know what you want, you build it.
 
@@ -36,9 +36,9 @@ That's why the order matters. Now the vocabulary.
 If you've tried an AI project and it stalled, trace backward. The failure almost certainly lives in a stage you skipped, not a tool you chose. If you haven't tried one yet — good. You get to start in the right order.
 :::
 
-## Four *words*, defined once.
+## This book uses four *words* constantly, and they're easy to conflate.
 
-This book uses four words constantly and they're easy to conflate. Each names a different thing. Here is what each one means, and what it doesn't.
+Each names a different thing. Here is what each one means.
 
 {{< excalidraw ch03-four-term-hierarchy "Framework contains Sequence; Sequence runs on a Sprint; Sprints repeat at the Rhythm." >}}
 
@@ -74,7 +74,7 @@ You decide who does what across the Human+AI workforce for this specific constra
 
 ### *Build*.
 
-You produce the spec and deploy the workflow into the system your team already uses. Build produces a working implementation: agent prompts, integrations, guardrails, observability, the whole working machine. The discipline of Build is that it's executing against the Design output, not improvising — the questions Build answers are *how*, not *what*. Skipping Design and starting here is the most common AI failure mode in the field.
+You produce the spec and deploy the workflow into the system your team already uses. Build produces a working implementation: agent prompts, integrations, guardrails, observability, the whole working machine. The discipline of Build is that it executes against what Design specified. Design answered the *how*; Build does the work. Skipping Design and starting here is the most common AI failure mode in the field.
 
 ### *Deliver*.
 
@@ -104,7 +104,7 @@ Diagnose is the work most companies skip. They skip it because there's no struct
 
 A Sprint that gets stuck in Build almost never has a Build problem. It has a Diagnose problem that surfaced late. Going back to Signal isn't failure — it's the Framework doing its job, refusing to let undisclosed assumptions hide inside execution.
 
-Design opens the Execute & Compound group for a reason. It depends entirely on what Signal and Source produced — which is why this book places Design inside Execute rather than inside Diagnose. Move it earlier and you're designing against nothing: no validated constraint, no knowledge map.
+Design belongs inside Execute & Compound, not inside Diagnose, because it depends entirely on what Signal and Source produced. Move Design earlier and you're designing against nothing: no validated constraint, no knowledge map.
 
 Signal and Source are separated as stages but connected in practice. In an information business, most constraints have a data or system dimension (sloppy data entry, wrong captures, poor data architecture), and Source is where that dimension surfaces. The constraint Signal names almost always has a digital source driving it. Chapters 4 and 5 go deep on each stage individually, but hold the connection: what Signal identifies, Source explains.
 
@@ -191,11 +191,11 @@ A blank Sprint Planning Canvas template — and the rest of the Compound resourc
 
 This chapter introduced vocabulary that the rest of the book uses constantly. The full glossary lives in the Key Terminology appendix — flip there when you need to.
 
-## You learn this on a *Sprint*.
+## The *Framework* is learned by running it.
 
-You don't learn the Framework by reading about it. You learn it by running one Sprint on one real constraint in your own company. That's the only teaching unit that works, because the Framework isn't a model of how AI implementation could go — it's the structure of how the work moves when it moves correctly.
+Reading about the six stages tells you the order. Running one Sprint on one real constraint in your own company is the only way to understand why the order matters. The stages aren't interchangeable steps in a checklist; each one produces something the next one can't work without, and that dependency only becomes real when you hit it.
 
-The project coordinator story (the one where we mapped the work instead of posting a job) walks all six stages in sequence. You will see it in full in Chapter 6 and the PM Agent Team case study. What it proves here is specific: not that the Sequence is theoretically sound, but that each stage produces something the next stage requires. Signal named the constraint. Source mapped what the role actually required. Design allocated the work between human and agent. Build produced the workflow. Deliver shipped it into the team's environment. Compound captured what the next Sprint would inherit. Remove any one of those steps and the chain breaks.
+The project coordinator story (the one where we mapped the work instead of posting a job) walks all six stages in sequence. You will see it in full in Chapter 6 and the PM Agent Team case study. What it demonstrates is specific: Signal named the constraint. Source mapped what the role actually required. Design allocated the work between human and agent. Build produced the workflow. Deliver shipped it into the team's environment. Compound captured what the next Sprint would inherit. Remove any one of those steps and the chain breaks.
 
 The Sprint is bounded by scope, not by a fixed calendar. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. One constraint, one documented outcome. That is the bar.
 
