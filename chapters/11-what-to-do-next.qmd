@@ -25,9 +25,21 @@ You have the language to describe what a Co-Intelligent Company is, the Sequence
 
 By the time you close this book, your leadership team has a filled-in Sprint Planning Canvas for your first Sprint, the next constraint already named, and the quarterly review on the calendar. This chapter is the worksheet for that page.
 
+## The *one* document you go back to.
+
+Before anything else in this chapter, name what you're actually building. The Hybrid Org Today, introduced in Chapter 10, is the single living document the Co-Intelligent Company runs on. It is the one page you go back to. Every other instrument in the book is a slice of it or a feeder into it.
+
+The Hybrid Org Today maps four things on one page: what your Active Sprint is, what your Signal Backlog ranks, what your Hybrid Accountability Chart names, and what your Completed Sprints have delivered. The Hybrid Accountability Chart is one slice. The Signal Backlog is another slice. The Compounding Scorecard sits beside it as the proof the Rhythm is working. Together they answer the only question your leadership team needs to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
+
+This is the document new executives are briefed on. This is the document the board is shown when it asks what the AI investments produced. It is concrete, current, and written in your own vocabulary. If a year from now you can point at one artifact and say *that is where we stand and what we are doing next*, that artifact is the Hybrid Org Today.
+
+Everything that follows in this chapter feeds it. Your Scorecard tells you which row of it to attempt first. Your minimum viable Signal becomes its Active Sprint constraint. Your three team roles become the Human Orchestrator and supervisors named on the chart. Your one-page plan is the first version of the document itself, the seed your leadership team commits to before the quarter starts. The Clarity Call is the optional accelerant for getting the first row right.
+
+We saved this for the front of the chapter on purpose. The first move you make is named in a single sentence on one page, and that page is the page every quarter comes back to.
+
 ## Pull your *Scorecard*.
 
-In Chapter 1 you took the AI Readiness Scorecard. Five dimensions. Red, yellow, green. That score is your routing mechanism. It tells you how much of the Sequence to attempt in your first Sprint.
+In Chapter 1 you took the AI Readiness Scorecard. Five dimensions. Red, yellow, green. That score is your routing mechanism. It tells you how much of the Sequence to attempt in your first Sprint — which is to say, how full the first version of your Hybrid Org Today is allowed to be.
 
 **If you scored mostly Red:** start with Signal alone. Name one constraint. Put a dollar figure on it. That is your entire first Sprint. Don't try to run the full Sequence — get one clean Signal and build from there. The constraint is the deliverable.
 
@@ -61,7 +73,7 @@ Write a number. Even a rough estimate works. If you can't estimate it, that tell
 **3. What would have to be true for it to be solved?**
 Write one sentence. This tells you whether the constraint is Sprint-solvable or whether something upstream needs to move first.
 
-If you can answer all three, you have the seed of a Signal. If you can't, that's your first Sprint: getting to where you can.
+If you can answer all three, you have the seed of a Signal. That answer goes in the *Active Sprint* row of your Hybrid Org Today. If you can't, that's your first Sprint: getting to where you can.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -70,7 +82,7 @@ The most common failure on question one is answering with a category instead of 
 
 ## Name your *team*.
 
-You need three roles filled. Not three hires. Three seats at the table.
+You need three roles filled. Not three hires. Three seats at the table. Their names land directly on your Hybrid Org Today: one becomes the Human Orchestrator on the Active Sprint, two or three populate the supervisor column of the Hybrid Accountability Chart.
 
 **Who owns the workflow where the constraint lives?** That person is your Human Orchestrator candidate. They don't need to be technical. They need to own the outcome.
 
@@ -107,7 +119,7 @@ Book it at **[compoundorg.com/clarity-call](https://compoundorg.com/clarity-call
 
 ## Two paths *forward*.
 
-Once you have a constraint named clearly enough to commit a Sprint to it, you have two paths forward. They produce the same artifact — a Co-Intelligent Company, Sprint by Sprint — at different speeds and with different levels of support.
+Once you have a constraint named clearly enough to commit a Sprint to it, you have two paths forward. Both produce the same artifact, Sprint by Sprint: a Hybrid Org Today that grows a new row each quarter until the design layer of the company is the company. The paths differ in speed and in how much support you want while you run the first one.
 
 {{< excalidraw ch11-two-paths-forward "Two paths forward from a named constraint: self-guided (left) or with Compound membership (right), both converging at the Co-Intelligent Company." >}}
 
@@ -135,7 +147,7 @@ Decide which path you're taking. Write it down. If Path A, schedule the Signal s
 
 {{< excalidraw ch11-first-Sprint-plan "First Sprint Plan template: constraint, estimated annual cost, team roster, path choice, first step, target quarter." >}}
 
-This is the deliverable. Everything before this section was education. This is commitment.
+This is the deliverable. Everything before this section was education. This is commitment. The plan is the first version of your Hybrid Org Today, written before the first Sprint starts: one Active Sprint row, three named roles, one estimated cost, one date. After the quarter, you update it. After the year, it has four Active Sprint rows behind it and the design layer of the company is on the page.
 
 Fill it in. The plan takes ten minutes. It contains more operational clarity than most organizations produce after six months of AI strategy work.
 
