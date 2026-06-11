@@ -23,7 +23,7 @@ This chapter fills in the Constraint section of your Sprint Planning Canvas, plu
 
 ## The deliverable is *one sentence*.
 
-Signal produces one artifact: a one-page Constraint Statement whose single anchoring sentence names the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin, surrounded by the evidence that validates it.
+Signal produces one artifact: a one-page Constraint Statement. Its single anchoring sentence names the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The rest of the page surrounds that sentence with the evidence that validates it.
 
 Here's the template. You'll fill it in by the end of this chapter.
 
@@ -127,7 +127,7 @@ That's the artifact. Anybody in that company could read it and understand what t
 
 ## How to run Signal yourself.
 
-Signal is a facilitated conversation. You can run it with your leadership team in a single working session.
+Signal is a facilitated conversation with your leadership team.
 
 ### Step 1: Surface the candidates.
 

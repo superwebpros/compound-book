@@ -142,7 +142,7 @@ The five dimensions sit inside two preconditions. Information Readiness and Work
 ::: callout-note
 ## Action Step
 
-Don't ask your leadership team what AI should solve. They don't know yet, and neither did you before you picked up this book. Ask them a question they *can* answer: "What is the one operational problem that costs us the most right now? The one we keep circling and never close?" Poll each person individually, write down the answers verbatim, and compare. If five people give five different answers, you've found something more useful than a constraint. You've found the leadership-team disagreement that any AI work would have run into anyway. Chapter 4 turns that raw answer into a usable constraint statement.
+Don't ask your leadership team what AI should solve. They don't know yet, and neither did you before you picked up this book. Ask them a question they *can* answer: "What is the one operational problem we keep circling and never close, the one that hurts the most, whether it shows up in dollars, hours, risk, or a person we can't afford to lose?" Poll each person individually, write down the answers verbatim, and compare. If five people give five different answers, you've found something more useful than a constraint. You've found the leadership-team disagreement that any AI work would have run into anyway. Chapter 4 turns that raw answer into a usable constraint statement.
 :::
 
 The poll results tell you more than any scorecard row. Agreement on the operational pain means you've got a starting point. Disagreement means the constraint isn't the workflow yet; it's the leadership team's agreement on what matters most.
@@ -277,7 +277,7 @@ Meridian had three Yellows on the board. Which one to attack first wasn't obviou
 2. **Highest pain inside reach.** Of the remaining Yellows, pick the one closest to the operational pain that brought you to the conversation. Not the most interesting Yellow, not the easiest Yellow, the one that sits on the workflow that's actually hurting.
 3. **Smallest gap to Green.** When two Yellows are roughly tied on pain, pick the one with the smallest distance to Green. Yellow means you've got partial answer, document, or person. Less distance means a faster Green, and a fast Green builds credibility for the harder work behind it.
 4. **Owner in the room.** Don't pick a Yellow that nobody on the leadership team owns. If you can't name the person who'll move it, you've picked a wish, not a constraint.
-5. **Two-quarter horizon.** Pick the Yellow you can plausibly turn Green inside two quarters with the team you've got. If it's longer than that, the work is too big to be a single Sprint and needs to be broken down (Chapter 4 walks that step).
+5. **Two-quarter horizon.** Pick the Yellow you can plausibly turn Green inside two quarters with the team you've got. If it's longer than that, the work is too big to be a single Sprint and needs to be broken down into a tighter constraint before Signal starts.
 
 Apply the rubric in order. The first Yellow that passes all five is where you start. For Meridian, that meant Constraint Clarity first (foundation), then Workflow Visibility (highest pain inside reach, smallest gap to Green, Elena owns it). Measurement Discipline waited. Chapter 4 turns the chosen Yellow into a written constraint statement the leadership team can hold each other to.
 
@@ -286,7 +286,7 @@ Meridian's starting point: lock the quoting bottleneck as the constraint (turn C
 ::: callout-tip
 ## Pro Tip
 
-The AI Readiness Scorecard isn't a test. It's a map of where to start. If you're all Red, that's not a failure; it's the most honest answer most companies give. If you've got a Yellow, run it through the five-question rubric above and start there. You've already got something to build on.
+The AI Readiness Scorecard isn't a test. It's a map of where to start. If you're all Red, that's not a failure; it's the most honest answer most companies give. If you've got a Yellow, run it through the five-criterion rubric above and start there. You've already got something to build on.
 :::
 
 ## Your map: the *Sprint Planning Canvas*.

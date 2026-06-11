@@ -5,7 +5,7 @@
 This chapter maps the rest of the book. You'll learn four vocabulary terms (Framework, Sequence, Rhythm, Sprint), the six stages that make up the Sequence, the Diagnose/Execute split that prevents the most common failure mode, and the Sprint Planning Canvas that turns all of it into a one-page starting point. Treat this as the page you flip back to when you forget which word means what.
 :::
 
-We were on a discovery call: Jesse, Julie, and a CEO on the other side of the screen. She'd been talking for twenty minutes about her company, her bottlenecks, the AI-powered workflows she was hoping would fix the quoting problem that was eating her operations lead's time. Then she leaned forward and said it: "Can we just build the workflow? I just need this thing built."
+We were mid-conversation with a CEO: Jesse, Julie, and her on the other side of the screen. She'd been talking for twenty minutes about her company, her bottlenecks, the AI-powered workflows she was hoping would fix the quoting problem that was eating her operations lead's time. Then she leaned forward and said it: "Can we just build the workflow? I just need this thing built."
 
 We knew exactly what she meant. She'd seen demos. She'd read the case studies. She had a clear picture in her head of the tool that was going to solve her problem, and she wanted to stop talking about it and start building it. That's not impatience — that's the instinct of someone who has run a business. When you know what you want, you build it.
 

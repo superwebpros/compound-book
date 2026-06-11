@@ -73,7 +73,7 @@ At the simple end: a shared AI environment. Claude Teams or ChatGPT Enterprise w
 
 At the complex end: fully agentic workflows. Multiple agents coordinating across systems, making bounded decisions in sequence inside the scope the design specified, passing outputs between stages, running on schedules with the human supervising by exception instead of approving every step. These involve orchestration platforms, API integrations, error handling at every junction, monitoring dashboards. They take weeks, sometimes months.
 
-Between those poles is where most builds land — a workflow that pulls from one or two systems, runs data through an agent with a defined skill, and delivers the output to a human for review. Low-code tools handle this well. The thinking is the same at every point on the spectrum: Design covers the what, Build covers the how. The spec tells you where you're on the spectrum. Build it there. Not one step further.
+Between those poles is where most builds land — a workflow that pulls from one or two systems, runs data through an agent with a defined skill, and delivers the output to a human for review. Low-code tools handle this well. The thinking is the same at every point on the spectrum: Design covers the how, Build does the work. The spec tells you where you're on the spectrum. Build it there. Not one step further.
 
 ## The build *paths*.
 
