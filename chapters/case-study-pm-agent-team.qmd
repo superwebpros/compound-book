@@ -237,7 +237,7 @@ Agents operate on fixed schedules only — no event-driven triggers in v1. All a
 
 Three ways a human can relate to an agent team's work:
 
-- **Human-in-the-loop.** The human approves every action before it executes. Nothing ships without a human sign-off. This is AI-assisted mode — the agent drafts, the human decides.
+- **Human-in-the-loop.** The human approves every action before it executes. Nothing ships without a human sign-off. This is AI-assisted mode — the agent makes the drafting decisions inside the scope it was given, the human decides whether the output ships.
 - **Human-on-the-loop.** The agents run autonomously on schedule. The human reviews output and intervenes when something is wrong. This is monitoring by exception — you're not approving every action, you're catching the ones that go sideways.
 - **Human-over-the-loop.** The human sets policy and strategy. Agents execute within those boundaries. The human reviews aggregate results periodically — weekly reports, monthly trends — not individual outputs.
 
