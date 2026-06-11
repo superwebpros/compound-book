@@ -98,7 +98,7 @@ Not all knowledge is the same. Once the map is built, classify each source along
 
 ### Structured vs. *unstructured*.
 
-Database fields, tagged articles, CRM records, spreadsheets with defined columns: structured. AI can use it immediately. Emails, meeting transcripts, PDFs, Slack threads, "ask Sarah": unstructured. AI needs processing before it's useful. The more structured your information is, the more useful it is to an AI workflow. If a source is unstructured but valuable, flag it. That's a Design decision about whether to structure it.
+Database fields, tagged articles, CRM records, spreadsheets with defined columns: structured. AI can use it directly, cheaply, and fast. Emails, meeting transcripts, PDFs, Slack threads, "ask Sarah": unstructured. One of the real values of AI is that it can reason against unstructured information that earlier software couldn't touch at all. It costs more in tokens, runs slower, and asks more of the system around it, but it works. The point is not to structure everything. The point is to be deliberate about your knowledge architecture: what gets structured, what stays as prose, what gets light structure layered on top of unstructured source material. Unstructured information with thoughtful structure around it is often the strongest combination. If a source is unstructured and valuable, flag it. That's a Design decision about how much structure to add and where.
 
 ### Durable vs. *ephemeral*.
 
@@ -221,16 +221,40 @@ The old data audit approach fails because it runs without a design question. Inv
 Source inverts this. The constraint comes first. The Knowledge Map is built only against the constraint Signal validated, scoped to what the workflow will actually need to consume. One constraint, one map. The map exists to serve a design decision that's about to get made, not to satisfy a documentation goal.
 
 
+## Knowledge management is the *foundation*.
+
+Most companies treat knowledge as something that takes care of itself. It doesn't. The shared drive somebody organized once a year, the wiki that rots the moment the person who built it moves on, the tribal knowledge that lives in three people's heads and walks out when one of them changes jobs: that is the default state of most operating companies. It worked, more or less, when the only consumers of that knowledge were humans who could compensate for the mess.
+
+It doesn't work anymore.
+
+Every claim in this book about what AI can do for an operating company depends on the knowledge that AI can reach. An agent is only as competent as the institutional context available to it: the SOPs, the historical records, the pricing rules, the customer history, the decisions captured in writing instead of left in someone's head. Give it clean, current, well-indexed knowledge and it operates at the standard you would expect from a well-briefed employee. Give it dirty, stale, or absent knowledge and it operates at the standard of an employee who was handed the job on their first morning with no onboarding. Confidently, plausibly, wrong.
+
+The compounding effect is what changes the math. A human handed bad information will usually ask a question, sense the disconnect, slow down. An agent handed bad information will execute against it, at scale, in parallel, every time you ask. The cost of bad knowledge management used to be measured in occasional mistakes. The cost in an agentic world is measured in how fast and how far a bad answer can propagate before anyone notices.
+
+This is also why context engineering, the discipline of designing what information an AI model can reach and how that information is structured, has emerged as the next problem after knowledge management. Context engineering is downstream of knowledge management. You can't engineer context out of a knowledge base that hasn't been curated. If your knowledge management is good, context engineering becomes solvable. If it isn't, both your humans and your agents will go down wrong paths, and the agents will do it faster.
+
+Treat knowledge management as a budget line, a named owner, and a regular review cadence. Treat it as infrastructure, not a project. Companies that take it seriously discover that every Sprint after the first one gets cheaper, because the *Knowledge Map* already exists for the part of the business the next constraint touches. Companies that don't take it seriously discover the opposite: every Sprint feels like the first one, because nobody captured what the last one learned.
+
+### The *knowledge manager*.
+
+Most companies don't have anyone whose job it is to do this work. The shared drive is owned by whoever set it up; the wiki is owned by whoever last cared enough to edit it; the question of what's current and what's archived is owned by nobody. That gap is the role that's missing.
+
+We use the working term *knowledge manager* for it. The job is to curate the institutional knowledge the rest of the company runs on: deciding what gets captured, what gets retired, what gets restructured, what gets connected to which agent. They are the person accountable for whether the knowledge base reflects how the business actually operates today, and for catching the moment it stops.
+
+The knowledge manager isn't the *Human Orchestrator*. The Human Orchestrator (Chapter 6) sets the goals for an agent team inside a single Sprint and reviews the agent team at the goal level. The knowledge manager works underneath every Sprint: making sure the inputs each Sprint depends on are clean, current, and reachable. A Human Orchestrator running a Sprint against a knowledge base nobody has curated is going to spend most of the Sprint debugging the data instead of designing the workflow. A Human Orchestrator's outcomes are only as good as the knowledge a knowledge manager made clear.
+
+Most companies don't have this role today. They will. The companies that introduce it early run their Sprints against knowledge they can trust; the companies that don't end up running their Sprints against whatever was in the drive when somebody asked.
+
 ## Garbage in, Garbage Out.
 Garbage in, garbage out. That phrase gets thrown around like a cliche, but it's the foundational axiom of Source work. Your company's data is a massive asset, *if* you can get it into a format AI can actually use. An agent pointed at dirty data, outdated records, or unstructured knowledge with no classification doesn't produce bad answers occasionally. It produces bad answers confidently and at scale. Source is where you confront the quality of what you've got before you build anything on top of it.
 
-We learned this the hard way inside our own company. Early on, we weren't clear about taxonomies, knowledge hygiene, or how we vectorized work. The agents kept surfacing wrong information. Old pricing, deprecated processes, policies superseded two revisions back. We'd correct it. It would surface the same thing again. It took more iterations than we want to admit before we asked the right question: why does it keep showing old information?
+We learned this the hard way inside our own company. Early on, we weren't clear about taxonomies (the naming and grouping system that tells you what each piece of knowledge is and where it belongs), knowledge hygiene (the discipline of keeping that system current and free of contradictory, stale, or duplicate entries), or how we vectorized work (the process of indexing documents into a format an AI can search and retrieve, defined in the glossary under *embeddings* and *vector database*). The agents kept surfacing wrong information. Old pricing, deprecated processes, policies superseded two revisions back. We'd correct it. It would surface the same thing again. It took more iterations than we want to admit before we asked the right question: why does it keep showing old information?
 
 The answer was simple and brutal. Everything we had ever stored was indexed together: current and expired, active and archived, no distinction. The AI had no way to know what was old. Nobody had told it otherwise. If the data was in the knowledge base, the system assumed it was meant to be there.
 
 We saw the same pattern at a client site. They deployed an application against their internal knowledge base and it kept surfacing expired information, for the exact same reason. Current and outdated content living side by side with no process for managing which was which.
 
-The AI was doing exactly what it was designed to do in both cases. The problem was not the AI. Nobody had done the Source work before pointing the AI at the data. This is part of what needs to get worked out in Design: how information will be consumed, classified, and retired. The downstream effects, especially for retrieval-augmented generation, are real and expensive. One emerging role worth considering is a knowledge manager: someone accountable for the quality, currency, and governance of the information your agents run on. It's a role that didn't exist five years ago. It will be standard within five more.
+The AI was doing exactly what it was designed to do in both cases. The problem was not the AI. Nobody had done the Source work before pointing the AI at the data. This is part of what needs to get worked out in Design: how information will be consumed, classified, and retired. The downstream effects, especially for retrieval-augmented generation, are real and expensive. This is the work the knowledge manager owns; we introduced the role earlier in this chapter.
 
 Source isn't where data infrastructure gets built. Source names the gaps. Whether to fill them, capture the judgment, or design around the limitation is a Design decision. Confusing the two phases is how Source bloats into a year-long data project that never produces a workflow.
 
