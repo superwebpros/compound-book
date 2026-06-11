@@ -149,7 +149,7 @@ If you can't answer both, the plan isn't yet ready to ship.
 
 ## The math is *still* moving.
 
-The headcount paradox does not pause while you decide. Every quarter you stay inside the old operating model is a quarter you keep adding people to absorb work that AI could be doing, while watching margin compress and the work itself get harder to hire for.
+The Headcount Paradox does not pause while you decide. Every quarter you stay inside the old operating model is a quarter you keep adding people to absorb work that AI could be doing, while watching margin compress and the work itself get harder to hire for.
 
 Ninety days produces the first Sprint. The first Sprint produces the second. The second is where the Rhythm begins.
 

@@ -179,7 +179,7 @@ The coordinator's knowledge base I described in the Design chapter — the one w
 
 Every vendor uses "scale" to sell more of the same thing. It's a quantity claim with no architecture behind it.
 
-Compound is specific. The cost per Sprint decreases — Source is faster, Build is sharper, Deliver inherits training material from previous Sprints. The return per Sprint increases, because the constraints get more strategic as the easy ones come off the backlog and the leadership team runs Design with more precision each pass. The gap between revenue growth and headcount growth — the headcount math from the opening of this book — starts to look like a solved problem, because revenue keeps growing while the headcount line doesn't. The company that runs the Rhythm long enough watches that gap widen on purpose.
+Compound is specific. The cost per Sprint decreases — Source is faster, Build is sharper, Deliver inherits training material from previous Sprints. The return per Sprint increases, because the constraints get more strategic as the easy ones come off the backlog and the leadership team runs Design with more precision each pass. The gap between revenue growth and headcount growth — the Headcount Math from the opening of this book — starts to look like a solved problem, because revenue keeps climbing while headcount grows on a much shallower slope. The company that runs the Rhythm long enough watches that gap widen on purpose.
 
 {{< excalidraw ch09-scale-vs-compound "Scale vs. Compound: scale repeats at flat cost and return; Compound shows decreasing cost and increasing strategic return as artifacts accumulate." >}}
 

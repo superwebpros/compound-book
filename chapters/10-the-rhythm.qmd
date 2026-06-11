@@ -117,17 +117,17 @@ You update the Hybrid Org Today in the quarterly session. Not by a Notion-curato
 
 When a new executive joins, the Hybrid Org Today is the briefing. When the board asks what the AI investments have produced, it is the receipt — concrete, current, in your own vocabulary.
 
-## The headcount paradox, *resolved*.
+## The Headcount Paradox, *resolved*.
 
-Return to where this book started. Revenue growing. Headcount growing with it. AI investments producing no measurable gap between the two. The CEO knows the math is wrong and can't find the lever that moves it.
+Return to where this book started. Revenue growing. Headcount growing alongside it on a steep slope. AI investments doing nothing to bend that slope. The CEO knows the math is wrong and can't find the lever that moves it.
 
-After six to eight Sprints on the Rhythm, the math moves. Not overnight — but the pattern is broken. The behavioral marker is specific. Your first response to a capacity problem is no longer *who do we hire?* It is *what does Signal say about this?*
+After six to eight Sprints on the Rhythm, the slope bends. Not overnight, but the pattern is broken. The behavioral marker is specific. Your first response to a capacity problem is no longer *who do we hire?* It is *what does Signal say about this?*
 
 Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked against the Signal Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the Sprint that addresses it ships a designed workflow instead of a job posting.
 
-Companies that default to designing before hiring build a different cost structure than companies that default to adding people. The ones running Signal before requisitions get compounding returns on the infrastructure they build. The ones adding people to absorb demand grow costs linearly with revenue, forever. That gap is the headcount math, working in the right direction.
+Companies that default to designing before hiring build a different slope than companies that default to adding people. The ones running Signal before requisitions get compounding returns on the infrastructure they build. The ones adding people to absorb demand grow headcount in lockstep with revenue, forever. That gap between the two slopes is the Headcount Math, working in the right direction.
 
-{{< excalidraw ch10-headcount-math "Headcount math before/after: headcount grows linearly with revenue (left) vs. headcount flattens while revenue grows after Sprint cadence takes hold (right)." >}}
+{{< excalidraw ch10-headcount-math "Headcount Math before/after: headcount climbs on a steep slope with revenue (left) vs. the slope bends — headcount still grows, but the marginal headcount per next dollar of revenue drops as design infrastructure compounds (right)." >}}
 
 The coordinator story that opened this chapter ends here — with the question that stopped getting asked. The hire that never got posted wasn't a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That's the Rhythm doing its job: changing the default behavior of the organization across every call that follows. The thirteen-to-eight arc the Preface points at — the developer who left, the knowledge that walked out the door — closes in this chapter, in the same way: not at a single moment, but as a year of running this loop until the math moved.
 
