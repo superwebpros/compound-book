@@ -54,7 +54,7 @@ Signal traces the symptom to the underlying constraint. Quoting takes too long b
 
 The same distinction matters in human-capital contexts. "Our managers aren't developing their people" is a symptom we've watched leadership teams treat as a personnel problem for years. The constraint underneath it might be that managers have no time for development conversations because their operational workload has grown to absorb every hour. Or the constraint might be that the performance management system creates no accountability for development outcomes, so development conversations never happen because nothing bad happens when they don't. Without the structural cause and a cost, you're treating weather.
 
-Consider Meridian Manufacturing — the fictional composite we introduced earlier. The symptom their team brought to the table: "Our quoting takes too long." The constraint underneath it: Elena Ruiz, the VP of Operations, was the sole quoting bottleneck. Every quote passed through her because she was the only person who held the customer-specific pricing, material lead-time knowledge, and historical job context simultaneously. The cost: $558K per year in lost revenue, misallocated time, and floor underutilization. That is the difference between a symptom and a constraint. The symptom describes what you feel. The constraint names the structural cause — and puts a number on it.
+Consider Meridian Manufacturing — the fictional company we introduced earlier. The symptom their team brought to the table: "Our quoting takes too long." The constraint underneath it: Elena Ruiz, the VP of Operations, was the sole quoting bottleneck. Every quote passed through her because she was the only person who held the customer-specific pricing, material lead-time knowledge, and historical job context simultaneously. The cost: $558K per year in lost revenue, misallocated time, and floor underutilization. That is the difference between a symptom and a constraint. The symptom describes what you feel. The constraint names the structural cause — and puts a number on it.
 
 Signal makes you stop at the symptom long enough to find the constraint underneath it — and then makes you put a number on what that constraint is costing. Until both moves are complete, you are not at Signal yet. You are still describing the weather.
 
@@ -127,7 +127,7 @@ Signal is a facilitated conversation. You can run it with your leadership team i
 
 ### Step 1: Surface the candidates.
 
-Before you can pick one constraint, you need an honest inventory of what's broken or slow. This is the Issue Surfacer conversation. Ask the room:
+Before you can pick one constraint, you need an honest inventory of what's broken or slow. This is the Issue Surfacer conversation. Ask the room questions like these (use them as a starting set, not a script):
 
 1. What are we working around? What manual process exists because something upstream failed?
 2. What does a new person always find confusing in their first ninety days?
@@ -176,7 +176,7 @@ Question 4 is where Signal lives or dies. "$558K per year in lost revenue, misal
 
 When you've walked the candidates through all five questions, one will have the strongest answers — the clearest location, the longest history, the largest cost. That is the constraint you bring to Source. Write it in a single sentence, surrounded by the evidence that validates it, using the one-page template from earlier in this chapter.
 
-Read the completed statement back to the room. Ask: "Is this the thing?" If anyone hesitates, you're not locked. Keep refining until the room agrees — not politely, but actually.
+Read the completed statement back to the room. Ask: "Is this the thing?" If anyone hesitates, you're not locked. Keep refining until the room agrees. Not politely — actually.
 
 :::{.callout-note}
 ## Action Step
@@ -200,7 +200,7 @@ If any of these are true, go back. The gate is real. Passing through it with a b
 
 If your company runs on EOS, Scaling Up, or a similar cadence-based management system, you already have most of Signal's inputs sitting on a whiteboard or in a shared doc. You just have to know where to look — and then run the constraint questions against what you find. (If your team hasn't yet built the muscle of identifying and articulating issues, Mark O'Donnell's *Issues!* is the place to start. Read that first, then come back here.)
 
-**The issues list** is the most obvious input. Every L10, every weekly tactical, every quarterly review produces a list of issues the team has been carrying. Most of them are symptoms. A few of them, traced honestly, are constraints. Walk that list and ask, for each one: is this the thing, or is this how the thing shows up? When you find one that survives that question — one you can locate in a specific workflow, with a duration and a cost — run the five constraint questions against it. That becomes your constraint candidate.
+**The Issues list** (an EOS term) is the most obvious input. Every L10, every weekly tactical, every quarterly review produces a list of issues the team has been carrying. Most of them are symptoms. A few of them, traced honestly, are constraints. Walk that list and ask, for each one: is this the thing, or is this how the thing shows up? When you find one that survives that question — one you can locate in a specific workflow, with a duration and a cost — run the five constraint questions against it. That becomes your constraint candidate.
 
 **Stalled rocks** are the second input. A rock that has been carried for three quarters without progress is almost always sitting on top of a constraint that nobody named. The rock is the symptom. The constraint is whatever is preventing the rock from moving. Ask: what would have to be true for this rock to move on its own? The answer to that question is usually the constraint.
 

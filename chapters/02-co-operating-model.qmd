@@ -5,9 +5,9 @@
 This chapter defines the Co-Operating Model — the structure that makes humans and AI work as one system instead of two parallel tracks. You'll learn the specific ownership split between human intelligence and agent intelligence, see what Parallel Workstreams look like in practice, and finish with an equation you can put on your wall: *Co-Intelligence + Rhythm = Compound.* By the end, you'll have mapped at least one role in your company against the model.
 :::
 
-Jesse was in a management meeting with Sofia, his VP of Operations, and a direct report, going through the accountability chart. We had a team member, a marketing coordinator, who was good at organization. She could manage processes, track content calendars, coordinate subcontractors. But she wasn't revenue-positive and hadn't been for months. She was spending most of her time on content production (editing videos, formatting posts), work that took her hours and still wasn't shipping fast enough to keep up with the pace we needed. The work was piling up behind her, not because she wasn't working hard, but because the role as designed required one person to do what should have been running in parallel across multiple workstreams.
+Jesse was in a management meeting with Sofia, his VP of Operations, and a direct report, going through the Accountability Chart. We had a team member, a marketing coordinator, who was good at organization. She could manage processes, track content calendars, coordinate subcontractors. But she wasn't revenue-positive and hadn't been for months. She was spending most of her time on content production (editing videos, formatting posts), work that took her hours and still wasn't shipping fast enough to keep up with the pace we needed. The work was piling up behind her, not because she wasn't working hard, but because the role as designed required one person to do what should have been running in parallel across multiple workstreams.
 
-Sofia and Jesse looked at the accountability chart and asked the real question: what if we stopped designing this seat for a human doing linear production work, and started designing it for a human managing agent-driven workstreams? What if the coordinator's job wasn't to create the content but to direct the agents creating it, manage the quality, and make sure it shipped?
+Sofia and Jesse looked at the Accountability Chart and asked the real question: what if we stopped designing this seat for a human doing linear production work, and started designing it for a human managing agent-driven workstreams? What if the coordinator's job wasn't to create the content but to direct the agents creating it, manage the quality, and make sure it shipped?
 
 That conversation changed the shape of the role. It also changed how we thought about every other role on the chart. The problem was never the person — it was the operating model underneath her. The company had not been designed for a non-human worker. There was no seat on the org chart for an agent, no defined handoffs, no accountability structure that accounted for synthetic work. Every piece of AI-generated output dissolved somewhere between the tool and the person who needed it.
 
@@ -25,7 +25,7 @@ Three terms in that paragraph are doing specific work and they're easy to blur t
 
 The **Co-Intelligent Company** is the identity layer — what a company becomes when humans and AI work as one system, not two parallel tracks. The bar is higher than "uses AI tools" or "has an AI strategy." It means the human and the synthetic are integrated into a single Co-Operating Model, designed to run together from the start.
 
-In the accountability chart, that means every AI-handled function has a named human supervisor, a defined scope of work, and a review cadence. The work has somewhere to land, because someone owns the handoff. Most companies using AI today haven't designed it that way. The tools are running; the accountability structure hasn't caught up. The work ships with someone's name on the outcome only when each function's human-agent split is explicitly designed — not by adding a policy layer on top. A Compound Sprint (defined in the next chapter) is how you do that work.
+In the Accountability Chart, that means every AI-handled function has a named human supervisor, a defined scope of work, and a review cadence. The work has somewhere to land, because someone owns the handoff. Most companies using AI today haven't designed it that way. The tools are running; the accountability structure hasn't caught up. The work ships with someone's name on the outcome only when each function's human-agent split is explicitly designed — not by adding a policy layer on top. A Compound Sprint (defined in the next chapter) is how you do that work.
 
 **Co-Intelligent Co-Operation** is the relational frame: the activity of humans and AI working the same problems together, inside the same loop, against the same outcome. Not relegated to a Sprint or a project. It's what the company does, continuously, as its default way of working.
 
@@ -96,8 +96,6 @@ Get that transmission right and the agent produces work that's hard to distingui
 
 This is why connecting your agents to your business intelligence systems matters. The same CRM, the same dashboards, the same data sources your humans use to make decisions — agents need access to that same ground truth. If your best salesperson checks the pipeline in HubSpot before making a call, the agent working that account needs the same view. Humans and agents performing well against the same goals requires them to operate from the same information.
 
-{{< excalidraw ch02-intelligence-table "What humans bring vs. what agents bring" >}}
-
 | The Human brings the intelligence of | The Agent brings the intelligence of |
 |---|---|
 | Judgment under ambiguity | Memory at scale |
@@ -128,8 +126,6 @@ Once she decides, the agent takes the brief and produces the first draft: copy, 
 
 That distinction sounds small. It isn't. When output and outcome get confused, when the agent is treated as the decision-maker or the human is kept inside the execution, the outcomes drift. That's how you get AI slop at best, and real damage at worst. There are gray areas. Some tasks legitimately flip the columns — the agent surfaces decisions (themes from a transcript, patterns in a dataset) and the human executes the creative work (designing brand artifacts, writing the narrative). The principle isn't rigid for every task. It's that the split should be deliberate, not accidental.
 
-{{< excalidraw ch02-ownership-table "Human owns judgment and direction; agent owns execution and capture" >}}
-
 
 | The Human owns the operating responsibility of | The Agent owns the operating responsibility of |
 |---|---|
@@ -144,8 +140,6 @@ Read those two columns as the structural logic of the model, not just a sort. A 
 
 When you get the split right, the company compounds. The human's hours flow into the work only humans can do: deciding, directing, pricing, owning, coaching. The agent's hours flow into everything else, at a cost and speed that re-prices the underlying economics of the business. Both sides get compounding returns every quarter, because the structure was built to absorb improvement on both sides.
 
-The world model is judgment. A client three weeks from churning doesn't show up in the data that way — you hear it in the tone of their emails. You know which project will die in the next planning cycle because the champion doesn't have the standing to push it through.
-
 That's the split that matters. Julie spent years watching executive teams hand decisions off to process layers and lose this exactly: the relational and contextual judgment that no system can hold, that only the person inside the work can supply. You can automate the research, the drafting, the documentation, and the follow-up. You can't automate the read of the room.
 
 :::{.callout-tip}
@@ -153,7 +147,9 @@ That's the split that matters. Julie spent years watching executive teams hand d
 If you're not sure which column a task belongs in, ask: would I trust a well-briefed new hire to do it competently within 30 days? If yes, it can probably be an agent task. The things that take years to learn — reading a room, knowing when a client is about to churn, choosing which battle to fight — those stay with the human.
 :::
 
-Meridian Manufacturing from Chapter 1 is the same logic landed inside one role. Elena Ruiz is the bottleneck for quoting because the pricing rules, the material lead-times, and the customer history all live in her head. The work she does on each quote splits the same way the table does. Choosing which exceptions to honor for a long-standing customer is Column A judgment. Pulling material costs from JobBOSS and assembling the line items against documented pricing logic is Column B execution. The first half stays with Elena. The second half can move to an agent, with Elena reviewing the draft before it goes to the customer. Same two columns, applied to one specific role inside one specific company — and that's how the headcount math at Meridian starts to move.
+### Meridian Manufacturing.
+
+Meridian Manufacturing from Chapter 1 is the same logic landed inside one role. Elena Ruiz is the bottleneck for quoting because the pricing rules, the material lead-times, and the customer history all live in her head. The work she does on each quote splits the same way the table does. Choosing which exceptions to honor for a long-standing customer is Column A judgment. Pulling material costs from JobBOSS and assembling the line items against documented pricing logic is Column B execution. The first half stays with Elena. The second half can move to an agent, with Elena reviewing the draft before it goes to the customer. Same two columns, applied to one specific role inside one specific company — and that's how the Headcount Math at Meridian starts to move.
 
 The ownership table is a design instrument, not a philosophical exercise. The next step is to apply it to a real role in your company — one task at a time.
 
@@ -203,7 +199,7 @@ Agents don't have that constraint. Four agents can run simultaneously. The desig
 
 That is what was happening on her screen. Claude Design, Claude AI, NotebookLM, and HeyGen were not running in sequence. They were running at once, each on its own workstream, all pointed at the same output. The production cycle that used to take a week didn't get faster because any one tool was faster. It got faster because the four pieces of it were happening simultaneously.
 
-The compounding math is direct. Parallelism reduces calendar time for every Sprint. Reduced Sprint time means more Sprints per quarter. More Sprints means more learning cycles, more infrastructure built, more returns compounding on each other. The operating model that runs Parallel Workstreams doesn't just produce output faster. It compounds faster.
+The compounding math is direct. Parallelism reduces calendar time for the work inside each Sprint. Faster Sprints mean more learning cycles per quarter. More Sprints means more learning cycles, more infrastructure built, more returns compounding on each other. The operating model that runs Parallel Workstreams doesn't just produce output faster. It compounds faster.
 
 Most companies miss this because they adopt agents the way they adopted every tool before, one at a time, bolted onto the existing workflow. A single agent assistant added to a linear process produces a linear process that's slightly faster in one step. That's the AI subscription that changes nothing on the P&L.
 
@@ -211,7 +207,7 @@ A Co-Operating Model is designed for parallel from the start. When you map the w
 
 She was steering four workstreams at once. That's the job: concrete, operational. Four parallel outputs moving simultaneously, one human directing the whole system toward a single standard of quality.
 
-The agents were doing exactly what the right column says they should do: drafting, documenting, synthesizing, executing on a defined output. She was doing exactly what the left column says the human should do: directing the work, pricing what's good enough, owning the outcome. What used to be a solo production workflow is now a team she manages. The team just doesn't have business cards.
+The agents were doing exactly what the right column says they should do: drafting, documenting, synthesizing, executing on a defined output. She was doing exactly what the left column says the human should do: directing the work, deciding what's good enough, owning the outcome. What used to be a solo production workflow is now a team she manages. The team just doesn't have business cards.
 
 ### Set the standard.
 
@@ -226,7 +222,7 @@ The standard isn't something the agent sets. The human sets it before the work s
 Set the standard before the work starts. Hold it through every review cycle. The agent does not know what "good" looks like for your company — you do, and that knowledge is what separates directed output from AI slop.
 :::
 
-We had to design that before we could run it. We had to answer, explicitly, which tasks the agent would own and which she would keep. We had to define the handoffs: what she reviews, what she approves, what goes out without her touching it. That design work is what made the model real. Without it, the tools would have been four separate tabs she opened when she felt like it, and the outcome would have looked exactly like the accountability chart problem we described at the start of this chapter: a role designed for linear work, producing linear results, no matter how many tools were on the screen.
+We had to design that before we could run it. We had to answer, explicitly, which tasks the agent would own and which she would keep. We had to define the handoffs: what she reviews, what she approves, what goes out without her touching it. That design work is what made the model real. Without it, the tools would have been four separate tabs she opened when she felt like it, and the outcome would have looked exactly like the Accountability Chart problem we described at the start of this chapter: a role designed for linear work, producing linear results, no matter how many tools were on the screen.
 
 :::{.callout-note}
 ## Action Step: Calculate Your Design Opportunity
