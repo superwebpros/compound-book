@@ -115,6 +115,8 @@ When a Sprint stalls in Build, don't troubleshoot the build. Go back to Signal, 
 
 ## The *Sprint Planning Canvas*.
 
+You saw the empty Canvas at the end of Chapter 1. This section defines it formally and shows the populated version Meridian Manufacturing used for its first Sprint.
+
 Before you run your first Sprint, you sketch it. The Sprint Planning Canvas is a one-page artifact that names the constraint, maps your first-pass answers to each stage, identifies the team, and locks the review date. It is intentionally incomplete — you'll refine every section as you work through the chapters. The point is to start with a compass, not a blank page.
 
 {{< excalidraw ch03-Sprint-planning-canvas-blank "The Sprint Planning Canvas — blank template." >}}

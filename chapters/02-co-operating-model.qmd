@@ -19,6 +19,8 @@ Most companies have never asked that question explicitly. They've grown roles by
 
 The diagnosis was the easy part: you've got an operating-model problem, not a technology problem. The harder question — the one this chapter answers — is what the right operating model looks like. The Co-Operating Model is what a Co-Intelligent Company is built on. It's what makes *Co-Intelligent Co-Operation*, humans and AI working the same problems together, something other than an accident.
 
+This chapter is also where you start filling in your Sprint Planning Canvas. The structure defined here is what the Constraint and Team sections of the Canvas sit inside.
+
 ## What a *Co-Intelligent Company* is.
 
 Three terms in that paragraph are doing specific work and they're easy to blur together. Here is what each one means.

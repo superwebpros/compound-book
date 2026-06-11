@@ -13,6 +13,8 @@ Sofia, our VP of Operations, reviewed every output the agents produced in those 
 
 The reason I'm telling you this is because the Guardrails Checklist isn't a compliance exercise. It's the moment in Build where you decide what the system is allowed to touch. If you do that work before the build executes, it costs almost nothing. If you discover it after something goes sideways — after the wrong person pulls the wrong data — it costs everything. The spec either includes the guardrail or it doesn't. And if it doesn't, Build isn't done yet.
 
+This chapter fills in the Build row of the Sequence first-pass on your Sprint Planning Canvas.
+
 ## What *Build* produces.
 
 Build is the most variable stage in the Sequence. The problem being solved, the organization's systems, the team's technical comfort, the data involved — all of it shapes what Build actually looks like in practice. What stays constant is the spec discipline: every build starts from a complete specification and ends with a deployed system that handles real work. This chapter gives you the vocabulary, the decision frameworks, and the build paths. It doesn't give you a rigid formula, because no honest formula could survive contact with the range of builds a Compound Sprint produces.

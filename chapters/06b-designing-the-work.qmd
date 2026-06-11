@@ -7,6 +7,8 @@ The previous chapter designed the system — information flows, roles, the Hybri
 
 The previous chapter gave you the system: the information flow, the accountability structure, the governance framework, the Human Orchestrator. This chapter is where you design the actual work — decomposing the constraint workflow task by task, populating the chart with real entries, building a Design Brief, prototyping, and locking the gate that separates Design from Build.
 
+Together with the previous chapter, this is the second half of the Design row on your Sprint Planning Canvas, and the work that locks in your Human Orchestrator.
+
 ## Work *Deconstruction*.
 
 Work Deconstruction applies the *TML* lens from Source to the work itself. Where Source used TML to categorize what the organization knows, Design uses TML to categorize what the work requires.

@@ -19,6 +19,8 @@ The Sprint produces on Monday. When the operator whose week was supposed to chan
 
 The difference is operational, not technical.
 
+This chapter fills in the Deliver row of the Sequence first-pass on your Sprint Planning Canvas.
+
 ## *Deployed* is not the same as *delivered*.
 
 Build ends with a working agent running in production. That is a real milestone. It is also incomplete. The agent is doing the work it was designed to do; the organization around it has not yet adjusted to receive what the agent now produces.

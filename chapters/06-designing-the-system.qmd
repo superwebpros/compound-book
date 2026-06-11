@@ -17,6 +17,8 @@ That question — "what is this work, actually?" — is the question Design exis
 
 Design is the first stage of *Execute & Compound*. Everything before this was diagnosis. Everything after this is shipping. Design is the gate between the two — and the reason every Sprint either compounds or stalls.
 
+This chapter and the next one fill in the Design row of the Sequence first-pass on your Sprint Planning Canvas. This one designs the system the work runs through. The next one designs the work itself.
+
 ## What Design *produces*.
 
 Design has two deliverables, and they ship together.

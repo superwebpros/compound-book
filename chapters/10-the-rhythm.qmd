@@ -23,6 +23,8 @@ We went from thirteen people to eight over the following year — and by the fou
 
 One Sprint is a project. Two Sprints is a habit. Six Sprints is an operating model. This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on.
 
+This chapter sets the Quarterly review on your Sprint Planning Canvas, and turns one Sprint into the rhythm that produces the next one.
+
 ## What *Rhythm* means in this book.
 
 The Equation is *Co-Intelligence + Rhythm = Compound*. The first term is the system — humans and AI working as one workforce, designed deliberately, owned by named people. The second term is the cadence. Without the cadence, the system is a one-time project that produced one improved workflow and then went dormant. With the cadence, every quarter takes the next constraint, runs it through the same six stages, and adds the result to a stack of designed work the organization now operates on.

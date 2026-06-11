@@ -19,6 +19,8 @@ Julie has watched the same discipline land outside any AI context. In a post-acq
 
 The leaders were operating inside an accountability structure that made it impossible to perform. The constraint was not talent. It was how authority was assigned. Signal prevented a series of expensive, wrong decisions and produced a redesign that resolved the performance gap without replacing a single person. That's what Signal does: it refuses to let you solve the visible problem until you've named the structural cause underneath it.
 
+This chapter fills in the Constraint section of your Sprint Planning Canvas, plus the first row of the Sequence first-pass.
+
 ## The deliverable is *one sentence*.
 
 Signal produces a single artifact: a one-page Constraint Statement anchored in one sentence. The sentence carries the constraint — the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The page surrounds it with the evidence that validates it: the data you checked, the people you talked to, the number you confirmed.

@@ -271,6 +271,26 @@ Meridian's starting point: lock the quoting bottleneck as the constraint (turn C
 The scorecard isn't a test. It's a map of where to start. If you're all Red, that's not a failure; it's the most honest answer most companies give. If you've got a Yellow, start there. You've already got something to build on.
 :::
 
+## Your map: the *Sprint Planning Canvas*.
+
+The scorecard tells you where you're starting. The next thing you need is a map of where you're going. That map is the Sprint Planning Canvas.
+
+If you run EOS, the Sprint Planning Canvas is the VTO equivalent. It is the single one-page document your leadership team fills in together as you work through the chapters ahead. The VTO is the one artifact that holds everything else in EOS together; the Sprint Planning Canvas plays the same role for Compound.
+
+The Canvas has five sections.
+
+1. **Constraint.** The one operational bottleneck you've decided to solve this Sprint, stated in one sentence with a dollar figure attached.
+2. **Sequence first-pass.** One honest first guess per stage of the six-stage Sequence (Signal → Source → Design → Build → Deliver → Compound). The Sequence is defined in Chapter 3.
+3. **Team.** Three to five people closest to the constraint workflow, plus a named Human Orchestrator who runs the Sprint day-to-day.
+4. **Human Orchestrator.** The role that owns execution: cadence, handoffs, and the decision-making boundary between you and the AI workforce.
+5. **Quarterly review.** The date you'll review the Sprint outcome with your leadership team. The Sprint is real when the review is on the calendar.
+
+{{< excalidraw ch01-sprint-planning-canvas-empty "The Sprint Planning Canvas, empty: a one-page document with five sections (Constraint, Sequence first-pass, Team, Human Orchestrator, Quarterly review) populated across the remaining chapters." >}}
+
+Every chapter from here forward fills in one section of this Canvas. Chapter 2 sets up the structural frame the Canvas sits inside. Chapter 3 defines the Canvas formally and shows a populated example. Chapters 4 through 9 walk the six stages of the Sequence, each one sharpening the row that stage owns. Chapter 10 sets the Quarterly review cadence. Chapter 11 hands you the worksheet for your first Sprint.
+
+By the last page of this book, your leadership team has a filled-in Sprint Planning Canvas for your first Sprint, the next constraint already named, and the quarterly review on the calendar. That is the deliverable. Everything else is the work of producing it.
+
 ## What this *book* is for.
 
 There is a name for the company that runs on the second question. We call it the Co-Intelligent Company: a company where humans and AI operate as one system rather than two parallel tracks, where the work has been designed before the tool was deployed. That's where the Headcount Math moves, because the design makes it move.

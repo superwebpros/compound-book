@@ -29,6 +29,8 @@ The retrospective looks at the design, not the people. The chart entries, the wo
 
 Compound is the sixth stage of the Sequence — the one that turns a delivered Sprint into the foundation of the next one. This is the stage the word in our company name points at: the brand is *Compound* because what the work produces is compounding — not as metaphor, but as the structural property of running the Sequence on a cadence.
 
+This chapter fills in the Compound row of the Sequence first-pass on your Sprint Planning Canvas, and closes the loop the Sprint opened.
+
 ## What *Compound* produces.
 
 Compound has three deliverables, and they ship together — in a single session, before your team closes the laptop on this Sprint.

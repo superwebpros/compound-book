@@ -23,6 +23,8 @@ This chapter is for one thing: the first move.
 
 You have the language to describe what a Co-Intelligent Company is, the Sequence to build one, and the Rhythm to keep it compounding. The only real question left is where you start — and the answer depends on where you already are.
 
+By the time you close this book, your leadership team has a filled-in Sprint Planning Canvas for your first Sprint, the next constraint already named, and the quarterly review on the calendar. This chapter is the worksheet for that page.
+
 ## Pull your *Scorecard*.
 
 In Chapter 1 you took the AI Readiness Scorecard. Five dimensions. Red, yellow, green. That score is your routing mechanism. It tells you how much of the Sequence to attempt in your first Sprint.
