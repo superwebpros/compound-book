@@ -23,13 +23,13 @@ This chapter fills in the Constraint section of your Sprint Planning Canvas, plu
 
 ## The deliverable is *one sentence*.
 
-Signal produces a single artifact: a one-page Constraint Statement anchored in one sentence. The sentence carries the constraint — the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The page surrounds it with the evidence that validates it: the data you checked, the people you talked to, the number you confirmed.
+Signal produces one artifact: a one-page Constraint Statement whose single anchoring sentence names the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin, surrounded by the evidence that validates it.
 
 Here's the template. You'll fill it in by the end of this chapter.
 
 {{< excalidraw ch04-constraint-statement-template "Constraint Statement template: one sentence, location, duration, quantified cost, and validating evidence." >}}
 
-The discipline of insisting on one is the entire point. Most leadership teams arrive at this conversation with five candidates and a tendency to argue for whichever one is loudest in the room that week. The job of Signal is to refuse the list. You pick one — the constraint that, if removed, would change the math most meaningfully — and you commit to it for the length of the Sprint.
+The discipline of insisting on one is the entire point. Most leadership teams arrive at this conversation with five candidates and no clear method for choosing among them. The job of Signal is to refuse the list. You pick one — the constraint that, if removed, would change the math most meaningfully — and you commit to it for the length of the Sprint.
 
 That commitment is structural. A Sprint that tries to solve three problems solves none of them. A Sprint that solves one produces a measurable result against a number you wrote down at the start, and that result becomes the proof point that earns the next Sprint. The narrowness is what makes the work pay.
 
@@ -46,7 +46,7 @@ Signal is a gate. You don't move to Source until the constraint is locked — on
 
 The most common failure mode is political, not technical. Leadership teams can't agree on which constraint is the constraint, so they punt — they pick three, or they write something so abstract it can't be acted on. If your team can't pick one, you've learned something important before a single line of the Sprint has been built: the leadership team is unclear about priorities. That's upstream of anything in this book.
 
-When a team does land on one constraint and commits to it, you're no longer arguing about the surface of the problem. You're arguing about the math of solving it. That's the moment Signal is locked.
+Signal is locked when the team has a Constraint Statement in writing and everyone in the room agrees that it names the right problem.
 
 ## *Symptom* is not the same as *constraint*.
 
@@ -127,7 +127,7 @@ That's the artifact. Anybody in that company could read it and understand what t
 
 ## How to run Signal yourself.
 
-Signal is a facilitated conversation. You can run it with your leadership team in a single working session — two to three hours the first time, faster once the pattern is familiar.
+Signal is a facilitated conversation. You can run it with your leadership team in a single working session.
 
 ### Step 1: Surface the candidates.
 
@@ -143,7 +143,7 @@ Write everything down without filtering. Aim for five to ten candidates. If you 
 
 :::{.callout-note}
 ## Action Step
-Open a whiteboard or shared doc. Spend twenty minutes listing candidates using the five questions above. No filtering, no debate about whether something belongs. Write everything down.
+Open a whiteboard or shared doc. List candidates using the five questions above. No filtering, no debate about whether something belongs. Write everything down.
 :::
 
 ### Step 2: Trace symptoms to constraints.
@@ -154,7 +154,7 @@ Most of your candidates are symptoms. Run the Is/Is Not test and the Five Whys (
 
 Walk each surviving candidate through these five questions, in order. Do not skip ahead.
 
-**Question 1: What is the problem in one sentence?** Force precision. "Our quoting process is slow" is not a sentence — it's a complaint. "The VP of Operations is the sole bottleneck for quoting — every quote requires her direct involvement, resulting in 3-5 day turnaround versus the 24-48 hour industry standard, costing $558K per year" is a sentence. Test: could someone outside your company read this sentence and understand the problem without a follow-up question?
+**Question 1: What is the problem in one sentence?** Force precision. "Our quoting process is slow" is not a good constraint statement. "The VP of Operations is the sole bottleneck for quoting — every quote requires her direct involvement, resulting in 3-5 day turnaround versus the 24-48 hour industry standard, costing $558K per year" is. Test: could someone outside your company read this sentence and understand the problem without a follow-up question?
 
 **Question 2: Where does it live in the organization?** Name the team, the workflow, and the handoff. If it crosses departments, name the boundary where the breakdown occurs. Test: could you walk to the place in your building where this problem lives?
 
@@ -208,7 +208,7 @@ If your company runs on EOS, Scaling Up, or a similar cadence-based management s
 
 **Stalled rocks** are the second input. A rock that has been carried for three quarters without progress is almost always sitting on top of a constraint that nobody named. The rock is the symptom. The constraint is whatever is preventing the rock from moving. Ask: what would have to be true for this rock to move on its own? The answer to that question is usually the constraint.
 
-**The headcount conversation** is the third — and the most expensive to miss. Every time the org reaches for a hire, a constraint is hiding underneath. The work is real. The team is stretched. The default move is to add a person. But under that conversation is a workflow that was never designed for the volume it's now carrying. Before you post the role, run the constraint questions: what is the constraint generating the demand for a new hire? Where does it live? What has it cost this quarter? Half the time, naming it changes what you do next. The other half, you still hire — but against a redesigned workflow rather than the one that's already failing.
+**The headcount conversation** is the third. Every time the org reaches for a hire, a constraint is hiding underneath. The work is real. The team is stretched. The default move is to add a person. But under that conversation is a workflow that was never designed for the volume it's now carrying. Before you post the role, run the constraint questions: what is the constraint generating the demand for a new hire? Where does it live? What has it cost this quarter? Half the time, naming it changes what you do next. The other half, you still hire — but against a redesigned workflow rather than the one that's already failing.
 
 :::{.callout-note}
 ## Action Step
