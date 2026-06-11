@@ -165,6 +165,8 @@ If you can't answer both, the plan isn't yet ready to ship.
 
 The Headcount Paradox does not pause while you decide. Every quarter you stay inside the old operating model is a quarter you keep adding people to absorb work that AI could be doing, while watching margin compress and the work itself get harder to hire for.
 
+The number to write down is revenue per employee. Pull it for the last four quarters. In most companies it sits roughly flat. The job of the operator running this framework is to compound that number Sprint over Sprint, by finding the places where the work doesn't actually require another body and shipping a designed workflow instead of a requisition. Your Hybrid Org Today is where that climb lives, quarter by quarter, in your own vocabulary.
+
 Ninety days produces the first Sprint. The first Sprint produces the second. The second is where the Rhythm begins.
 
 You don't need to see the whole staircase. You need the next step, clearly named, with a cost attached.

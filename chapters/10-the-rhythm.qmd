@@ -101,7 +101,7 @@ After six to eight Sprints on the Rhythm, the slope bends. Not overnight, but th
 
 Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked against the Signal Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the Sprint that addresses it ships a designed workflow instead of a job posting.
 
-Companies that default to designing before hiring build a different slope than companies that default to adding people. The ones running Signal before requisitions get compounding returns on the infrastructure they build. The ones adding people to absorb demand grow headcount in lockstep with revenue, forever. That gap between the two slopes is the Headcount Math, working in the right direction.
+Companies that default to designing before hiring build a different slope than companies that default to adding people. The ones running Signal before requisitions get compounding returns on the infrastructure they build. The ones adding people to absorb demand grow headcount in lockstep with revenue, forever. That gap between the two slopes is the Headcount Math, working in the right direction. The metric the quarterly review tracks is revenue per employee. Flat in most companies, climbing in yours, because each Sprint finds another place the work doesn't actually require another body.
 
 {{< excalidraw ch10-headcount-math "Headcount Math before/after: headcount climbs on a steep slope with revenue (left) vs. the slope bends — headcount still grows, but the marginal headcount per next dollar of revenue drops as design infrastructure compounds (right)." >}}
 
