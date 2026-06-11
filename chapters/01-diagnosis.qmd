@@ -34,7 +34,7 @@ One person working harder inside a system that was never designed for AI isn't a
 
 The instinct is to blame adoption — or to blame the tool itself. *AI can't do X. It's not ready for our industry.* That diagnosis is comfortable because it puts the problem on the floor instead of in the operating model. Acting on it produces exactly one outcome: another training session that also doesn't work.
 
-The real problem is upstream of adoption. The company has no designed structure for a non-human worker to operate inside. Nobody built that before the AI subscriptions started.
+The real problem is upstream of adoption, and it has two faces. The first: the company has no designed structure for a non-human worker to operate inside. Nobody built that before the AI subscriptions started. The second is just as common and rarely named out loud. Most operators don't yet know what AI can actually do inside a business like theirs. They've seen the demos. They've read the headlines. They haven't seen what a designed agent workflow looks like in their own operation, with their own data, hitting their own numbers. So the imagination ceiling is low, the asks stay small, and the design conversation never starts. You can't design for a capability you can't picture.
 
 There's a deeper layer here, too. To harness AI and become a Co-Intelligent organization, traditionally non-technical and bricks-and-mortar businesses have to learn structures that software companies have used for years: workflows as systems, knowledge as an indexed asset, handoffs as designed interfaces. That means new terms, new processes, and a different understanding of how knowledge flows through an organization in digital form. Part of the evolution is education. This book is partly that education, combining the best practices you've always run on with the operating patterns of the fastest-growing tech-enabled companies on the planet.
 
@@ -44,7 +44,9 @@ Here is the math you're living right now.
 
 The company is growing. The pipeline is healthy. And your leadership team is doing what leadership teams do when demand is up: they're asking to hire. Another account manager. Another ops person. Another engineer. The assumption is baked in so deep it doesn't even feel like an assumption: to grow means to add people. Automation is familiar in manufacturing, where machines replaced repetitive physical work. It is less familiar in the information economy, where the work requires judgment. And it is almost entirely unfamiliar in what we're now entering: an intelligence economy, where decisions themselves can be assisted or handled by a non-human worker. Most operators haven't yet made that leap. They think about moving data between systems, maybe Zapier, maybe an integration. They aren't yet thinking about AI for work that requires decisions. But now they can.
 
-You've bought some AI: a ChatGPT subscription, maybe an automation tool, maybe a consultant for a few hours. You didn't bet the farm. Most operators haven't. The spend has been small: dipping toes in, seeing what sticks. And here's what makes this a paradox: you're willing to invest more. The budget is there. The intent is there. But you don't know where to aim, what to buy, what to build, or what return to expect. Revenue and headcount run on a slope: every meaningful jump in revenue pulls a roughly proportional jump in headcount along with it. That slope was steep in 2022, and the AI line item on the P&L, small as it is, hasn't done anything to bend it.
+You've bought some AI: a ChatGPT subscription, maybe an automation tool, maybe a consultant for a few hours. You didn't bet the farm. Most operators haven't. The spend has been small: dipping toes in, seeing what sticks. And here's what makes this a paradox: you're willing to invest more. The budget is there. The intent is there. But you don't know where to aim, what to buy, what to build, or what return to expect.
+
+Revenue and headcount run on a slope: every meaningful jump in revenue pulls a roughly proportional jump in headcount along with it. That slope was steep in 2022, and for most mid-market operators the AI line item on the P&L, small as it is, hasn't done anything to bend it. A handful of enterprises that have taken this work seriously are already seeing the slope start to flatten in specific functions. The pattern hasn't reached the middle market yet, which is who this book is for.
 
 Meanwhile your integrator or COO is on the calendar asking to approve the next two roles. The numbers in the request aren't unreasonable: the work is real, the team is stretched, the demand is there. You sign off, because the alternative is throttling growth, and throttling growth isn't a strategy. But you sign off knowing the AI investment was supposed to bend that slope by now, and you can't point to the reason it didn't.
 
@@ -52,7 +54,9 @@ This is the Headcount Paradox. AI was supposed to bend the slope. It hasn't. Eac
 
 ### How the math finally moves.
 
-Here's how it resolved at Jesse's company. SuperWebPros, his software development firm, went from thirteen people to eight. Not through layoffs, through redesign. We mapped every function, identified what required human judgment and what didn't, built agent teams for rule-based work, and kept humans on work that required taste, relationships, and strategic decisions. Billings went up. Profitability went up. The five roles that went away weren't eliminated; they were *redesigned out of existence* because the work they did was absorbed by systems we built deliberately. The slope didn't just bend; it inverted. That's the dramatic version. The common version is less dramatic and just as valuable: the team grows slower than the top line, so the marginal headcount per next dollar of revenue drops. That's the Headcount Math finally moving the way it was supposed to. The book shows you how.
+Here's how it resolved at Jesse's company. SuperWebPros, his software development firm, went from thirteen people to eight. We mapped every function, identified what required human judgment and what didn't, built agent teams for rule-based work, and kept humans on work that required taste, relationships, and strategic decisions. Billings went up. Profitability went up.
+
+Five people left the company. That part is real, and worth saying plainly. They weren't laid off in a single round, and we worked to place several of them well, but the seats those five people sat in are gone because the work those seats existed to do is now done by systems we designed. That's the honest sentence. The slope didn't just bend; it inverted. That's the dramatic version. The common version is less dramatic and just as valuable: the team grows slower than the top line, so the marginal headcount per next dollar of revenue drops. That's the Headcount Math finally moving the way it was supposed to. The book shows you how.
 
 That same math can work at very different scales. When a global food safety company completed a Fortune 500 division acquisition, Julie was the CHRO overseeing the integration across 44 countries. The instinct in every integration conversation was to add HR business partners by region. The alternative was to redesign the operating model first — making a deliberate decision about which HR functions required local human judgment and which could run on a standardized system. The resulting global HR function served 44 countries with a smaller proportional team than the pre-acquisition domestic function had. Not because headcount was cut. Because the work was designed before it was staffed.
 
@@ -69,7 +73,9 @@ The reflexive move is to blame the tools, to assume the technology was oversold 
 
 The reason your AI investments aren't producing returns is an operating-model problem — not a technology problem. Specifically, a Co-Intelligent Co-Operation problem.
 
-This is the diagnostic phrase, and it matters that it is precise. Culture matters: a team that resists change will stall any initiative. Training matters: people need to know what the tools can do. Tool selection matters: the wrong platform creates its own drag. All of those are real, and none of them are sufficient. The deeper problem is the operating model. The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker, synthetic, capable, available, and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, no defined handoff. So it produces nothing the organization can compound on. Culture, training, and tools are necessary conditions. Structural redesign is the missing one.
+The phrase that does the diagnostic work is *Co-Intelligent Co-Operation problem*, and every word in it is load-bearing. *Co-Intelligent* names the actual workforce (humans and AI as one system, defined in Chapter 2). *Co-Operation* names the structural work of getting that workforce to operate together. *Problem* names the gap between the two.
+
+Culture matters: a team that resists change will stall any initiative. Training matters: people need to know what the tools can do. Tool selection matters: the wrong platform creates its own drag. All of those are real, and none of them are sufficient. The deeper problem is the operating model. The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker, synthetic, capable, available, and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, no defined handoff. So it produces nothing the organization can compound on. Culture, training, and tools are necessary conditions. Structural redesign is the missing one.
 
 This failure has the same shape across thirty years of operating-model changes, long before AI. ERP rollouts are the clearest example: companies spent eight-figure sums to install new systems, then left the old reporting structures and decision rights exactly as they were. The system sat live while people worked around it. The pattern isn't that the technology failed. The capability arrived and the structure never changed to receive it. The new thing sat next to the old structure and produced nothing structural. AI is the latest technology to run into the same wall — the only difference is the speed and cost of the collision.
 
@@ -117,9 +123,11 @@ The AI Readiness Scorecard covers five dimensions of operational readiness. For 
 
 Do this with whoever would be in the room if you were deciding whether to invest in AI. Not just you — the team.
 
-A note before you start: you may not be able to answer all five of these cleanly. That's expected, and that's ok. The scorecard isn't testing whether you're ready. It's showing you where you're starting. If you score Red on something, that's not failure. It's the honest starting point most companies are at, and the rest of this book is built to move you from that starting point forward. We'll define every term as we go. For now, a "constraint" just means the one operational bottleneck that's costing you the most money right now: the thing your team keeps circling in meetings, the process that breaks when one person is out, the workflow where you feel the drag every week.
+A note before you start: you may not be able to answer all five of these cleanly. That's expected, and that's ok. The scorecard isn't testing whether you're ready. It's showing you where you're starting. If you score Red on something, that's not failure. It's the honest starting point most companies are at, and the rest of this book is built to move you from that starting point forward.
 
-The five dimensions came from two directions. Information Readiness and Workflow Visibility reflect the technical preconditions that determine whether an AI agent can actually do the work: whether the knowledge exists in a form the system can reach, and whether the workflow is mapped clearly enough to be handed off. Constraint Clarity, Decision Rights, and Measurement Discipline reflect the operating-model preconditions that determine whether your organization will hold the change once it's deployed: whether your team agrees on what to solve, who decides what AI touches, and whether you can measure the result. A company can score Green on the technical side and Red on the operating side. It can have leadership clarity and no documented workflow. Both halves have to be Green before a Sprint will hold.
+We'll define every term as we go. For now, a "constraint" means the one operational pain point your company keeps hitting: the thing your team keeps circling in meetings, the process that breaks when one person is out, the workflow where you feel the drag every week. Sometimes that pain is the biggest dollar cost on the P&L. Often it isn't. It might be the risk that keeps you up at night, the bottleneck that caps growth in a key account, the dependency on one person that you can't afford to lose. The cost matters and we'll get to the math in Dimension 5. The pain is what tells you where to look first.
+
+The five dimensions sit inside two preconditions. Information Readiness and Workflow Visibility are the *technical preconditions* that determine whether an AI agent can actually do the work: whether the knowledge exists in a form the system can reach, and whether the workflow is mapped clearly enough to be handed off. Constraint Clarity, Decision Rights, and Measurement Discipline are the *operating-model preconditions* that determine whether your organization will hold the change once it's deployed: whether your team agrees on what to solve, who decides what AI touches, and whether you can measure the result. A company can score Green on the technical side and Red on the operating side. It can have leadership clarity and no documented workflow. Both halves have to be Green before a Sprint will hold.
 
 ### Dimension 1: Constraint Clarity
 
@@ -134,10 +142,10 @@ The five dimensions came from two directions. Information Readiness and Workflow
 ::: callout-note
 ## Action Step
 
-Poll your leadership team individually, not in a group. Ask each person: "What is the ONE operational problem AI should solve for us?" Write down their answers verbatim. If you get five different answers from five people, you've got your diagnosis.
+Don't ask your leadership team what AI should solve. They don't know yet, and neither did you before you picked up this book. Ask them a question they *can* answer: "What is the one operational problem that costs us the most right now? The one we keep circling and never close?" Poll each person individually, write down the answers verbatim, and compare. If five people give five different answers, you've found something more useful than a constraint. You've found the leadership-team disagreement that any AI work would have run into anyway. Chapter 4 turns that raw answer into a usable constraint statement.
 :::
 
-The poll results tell you more than any scorecard row. Agreement means you've got a starting point. Disagreement means the constraint isn't the workflow; it's the leadership team's alignment on what matters most.
+The poll results tell you more than any scorecard row. Agreement on the operational pain means you've got a starting point. Disagreement means the constraint isn't the workflow yet; it's the leadership team's agreement on what matters most.
 
 ::: callout-tip
 ## Pro Tip
@@ -209,7 +217,7 @@ List the five most frequent decisions in your constrained workflow. For each one
 | **Yellow** | Rough estimate. Someone can say "it probably costs us around \$X" but the number isn't validated, isn't tracked, and wouldn't survive scrutiny. |
 | **Green** | Validated number with data. The cost is calculated from real data (hours tracked, margin analyzed, revenue measured) and the team can show the math. |
 
-If you can't measure what the constraint costs today, you can't measure whether AI made it better tomorrow. Measurement discipline is the difference between an AI initiative and an AI experiment. Experiments are optional. Initiatives have ROI targets.
+If you can't measure what the constraint costs today, you can't measure whether AI made it better tomorrow. Cost here is broader than dollars. It can be hours lost, deals walked, errors caught late, customers who churned quietly, the risk you carry in one person's head. Dollar cost is the cleanest version, and where you can get to it the math earns its keep. Where you can't, pick the most honest unit you can defend and measure it the same way every quarter. Measurement discipline is the difference between an AI initiative and an AI experiment. Experiments are optional. Initiatives have targets.
 
 ::: callout-note
 ## Action Step
@@ -261,14 +269,24 @@ Six months ago, Mark bought a ChatGPT subscription. He uses it for emails. He su
 
 Two Reds, three Yellows. The Yellows told Meridian where to start. Constraint Clarity was Yellow because the quoting bottleneck was already showing up in every L10 — the team just hadn't committed to it as the single constraint. Workflow Visibility was Yellow because three people could each draw part of the quoting workflow — they just hadn't agreed on one map. Measurement Discipline was Yellow because the sales lead already had win/loss data — it just needed to be validated and turned into a real number.
 
-The Reds were the deeper problems. Information Readiness was Red because one person was the system — pricing exceptions on a desktop spreadsheet, lead-time knowledge in her head, customer-specific terms that no one else could access. AI can't operate inside a system that doesn't exist outside someone's head. Decision Rights was Red because the conversation hadn't started — and until it does, any AI tool they buy is a toy, not an investment.
+The Reds were the deeper problems. Information Readiness was Red because one person was the system — pricing exceptions on a desktop spreadsheet, lead-time knowledge in her head, customer-specific terms that no one else could access. AI can't operate inside a system that doesn't exist outside someone's head. Decision Rights was Red because the conversation hadn't started. Until a leadership team decides what AI is allowed to touch and who owns the call, every tool they buy sits in the same place: useful for individuals, invisible on the P&L.
+
+Meridian had three Yellows on the board. Which one to attack first wasn't obvious from the colors alone. Here's the rubric we used with them, and the one we use with every team that finds itself in the same spot.
+
+1. **Foundation first.** Some Yellows unblock the others. Constraint Clarity is almost always the foundation: until the leadership team agrees on the one bottleneck, every other dimension is being scored against a moving target. If a Yellow row is a precondition for the others, it goes first.
+2. **Highest pain inside reach.** Of the remaining Yellows, pick the one closest to the operational pain that brought you to the conversation. Not the most interesting Yellow, not the easiest Yellow, the one that sits on the workflow that's actually hurting.
+3. **Smallest gap to Green.** When two Yellows are roughly tied on pain, pick the one with the smallest distance to Green. Yellow means you've got partial answer, document, or person. Less distance means a faster Green, and a fast Green builds credibility for the harder work behind it.
+4. **Owner in the room.** Don't pick a Yellow that nobody on the leadership team owns. If you can't name the person who'll move it, you've picked a wish, not a constraint.
+5. **Two-quarter horizon.** Pick the Yellow you can plausibly turn Green inside two quarters with the team you've got. If it's longer than that, the work is too big to be a single Sprint and needs to be broken down (Chapter 4 walks that step).
+
+Apply the rubric in order. The first Yellow that passes all five is where you start. For Meridian, that meant Constraint Clarity first (foundation), then Workflow Visibility (highest pain inside reach, smallest gap to Green, Elena owns it). Measurement Discipline waited. Chapter 4 turns the chosen Yellow into a written constraint statement the leadership team can hold each other to.
 
 Meridian's starting point: lock the quoting bottleneck as the constraint (turn Constraint Clarity from Yellow to Green), then map the end-to-end quoting workflow around it (turn Workflow Visibility from Yellow to Green). Those two moves created the foundation for everything that followed.
 
 ::: callout-tip
 ## Pro Tip
 
-The scorecard isn't a test. It's a map of where to start. If you're all Red, that's not a failure; it's the most honest answer most companies give. If you've got a Yellow, start there. You've already got something to build on.
+The AI Readiness Scorecard isn't a test. It's a map of where to start. If you're all Red, that's not a failure; it's the most honest answer most companies give. If you've got a Yellow, run it through the five-question rubric above and start there. You've already got something to build on.
 :::
 
 ## Your map: the *Sprint Planning Canvas*.
@@ -293,7 +311,7 @@ By the last page of this book, your leadership team has a filled-in Sprint Plann
 
 ## What this *book* is for.
 
-There is a name for the company that runs on the second question. We call it the Co-Intelligent Company: a company where humans and AI operate as one system rather than two parallel tracks, where the work has been designed before the tool was deployed. That's where the Headcount Math moves, because the design makes it move.
+There is a name for the company that runs on the second question, the goal-oriented one from earlier in the chapter: *what outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?* We call that company the Co-Intelligent Company: a company where humans and AI operate as one system rather than two parallel tracks, where the work has been designed before the tool was deployed. That's where the Headcount Math moves, because the design makes it move.
 
 This book gives you the Co-Operating Model to build that company: a specific sequence of stages with defined outputs at each step and a Sprint model you can run inside your existing meeting rhythms. The chapters ahead will show you what we did and give you the tools to replicate it.
 
@@ -308,7 +326,7 @@ The scorecard is the input every other chapter references. Take an hour with you
 ## Reflection Questions
 
 1.  Which of the five AI Readiness Scorecard dimensions scored lowest for your company — and does your leadership team agree on that score, or would each person give a different number?
-2.  The chapter describes Meridian Manufacturing: two Reds and three Yellows. Where does your company land — and which specific Yellow could you turn Green this quarter with existing resources, no new tools required?
+2.  The chapter describes Meridian Manufacturing: two Reds and three Yellows. Walk into your next leadership meeting and ask the same question we asked Mark and Elena: what is the one operational problem this company keeps circling and never closes? Write down the answers verbatim, one per person. How much do they overlap, and what does that overlap (or its absence) tell you about whether you've got a constraint problem or an agreement problem?
 3.  Are you running the wrong question? When your team discusses AI, does the conversation start with "what tasks could AI help with?" or "what outcomes are we accountable for, and how should human + AI deliver them?" Which framing dominated your last AI conversation?
 4.  The Headcount Paradox says revenue and headcount move on a slope, and AI was supposed to bend it. Pull your own numbers: what is your headcount-to-revenue ratio today versus two years ago? Has the AI line item bent the slope at all?
 5.  Describe your operating model in three sentences: how work actually moves through your company, not the org chart. If you can't do it in three sentences, what does that tell you about where AI would even plug in?
