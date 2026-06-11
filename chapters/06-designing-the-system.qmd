@@ -7,7 +7,7 @@
 Design is the stage where your constraint and knowledge map become a workflow with named owners — human and AI. It produces two things: Hybrid Accountability Chart entries that assign every accountability to a named supervisor, and a governance framework (autonomy levels, guardrails, escalation paths) that makes the system safe to operate. This chapter covers the frameworks for designing the system. The next chapter covers designing the work itself.
 :::
 
-My integrator is on a weekly call and she's not building up to it. "She's not keeping up with clients. Reports are late. I think we need to let her go."
+My COO is on a weekly call and she's not building up to it. "She's not keeping up with clients. Reports are late. I think we need to let her go."
 
 I know the feeling on both ends of that sentence. The project coordinator had been with us long enough to know things — where the client files actually lived, which contacts needed extra lead time, what the unwritten rules were for each account. That knowledge doesn't transfer with a two-week notice. It walks out the door and you spend the next three months paying a new person to relearn it while the work piles up. We'd been around this loop before and I could feel myself reaching for the job description template.
 
@@ -15,13 +15,13 @@ I stopped and asked a different question. Not "who should we hire?" but "what do
 
 That question — "what is this work, actually?" — is the question Design exists to ask. And the framework for answering it is what this chapter introduces.
 
-Design is the first stage of *Execute & Compound*. Everything before this was diagnosis. Everything after this is shipping. Design is the gate between the two — and the reason every Sprint either compounds or stalls.
+Design is the first stage of *Execute & Compound*. Design is the gate, and the reason every Sprint either compounds or stalls.
 
 This chapter and the next one fill in the Design row of the Sequence first-pass on your Sprint Planning Canvas. This one designs the system the work runs through. The next one designs the work itself.
 
 ## What Design *produces*.
 
-Design has two deliverables, and they ship together.
+Design has two deliverables that land together.
 
 The first is a *designed workflow* — specific enough that Build can execute against it without ambiguity. A workflow specification that names the inputs, the steps, the handoffs, the outputs, and the points where a human decides versus an agent executes. A sketch or a Miro board with sticky notes isn't this. If Build has to ask "what did you mean here?" the workflow was described, not designed.
 
@@ -52,14 +52,14 @@ Selecting the right human supervisor for an agent team is a design decision, not
 - ***Wants It*** — are they genuinely accountable for the outcome, or do they treat the agent team as someone else's problem with their name attached?
 - ***Suited for It*** — do they have the judgment, context, and authority to override the agent when it drifts and make the calls the agent can't?
 
-If the supervisor candidate fails any of the three tests, the HAC has a name in the supervisor column but no supervision happening underneath it. Choose someone else, or build the development plan that gets the candidate to all three tests passing before the Sprint runs.
+If the supervisor candidate fails any of the three tests, the HAC has a name in the supervisor column but ineffective supervision happening underneath it. Choose someone else, or build the development plan that gets the candidate to all three tests passing before the Sprint runs.
 
 :::{.callout-tip}
 ## Pro Tip
 If you run EOS, you already have the muscle for this. Your Accountability Chart says every seat has a name. The Hybrid Accountability Chart says every agent team does too. Same principle, extended to a workforce that includes non-human workers.
 :::
 
-The four questions aren't a template to fill in once and forget. They are a design discipline. Every Sprint forces the four answers for every row — including the harder ones. "Who supervises this team?" is uncomfortable when the agent team is producing work nobody on the leadership team has owned before. That discomfort is the point. The chart surfaces it before any code is written.
+The four questions aren't a template to fill in once and forget. They are a design discipline. Every Sprint forces the four answers for every row — including the harder ones. "Who supervises this team?" is uncomfortable when the agent team is producing work nobody on the leadership team has owned before. The chart surfaces that question before any code is written.
 
 ## The *information flow* question.
 
@@ -110,7 +110,7 @@ This conversation works best when you give the AI enough context to reason about
 
 **5. Service layers and APIs.** The AI operates as a service — accepting requests, processing them against defined logic, returning structured outputs. This is the most engineered pattern and the one that scales agent teams into production workflows. Your Build team (internal or external) implements this when the design calls for an agent team that operates reliably, at volume, with defined inputs and outputs.
 
-You don't need all five. Most first Sprints use patterns one and two, with some pattern four for the routing work. The point is knowing what's available so the design matches the information problem — not the other way around.
+You don't necessarily need all five. Most first Sprints use patterns one and two, with some pattern four for the routing work. The point is knowing what's available so the design matches the information problem — not the other way around.
 
 | Pattern | Best For | Infrastructure Level | Example |
 |---|---|---|---|
@@ -209,7 +209,7 @@ The Human Orchestrator also owns the day-to-day operation of the agent team. Inp
 
 In a company of 25, the Design session might be the CEO and one direct report at a whiteboard. In a company of 100, Design needs more structure — and that structure is a cross-functional Design Team with a charter.
 
-The Design Team is a functional team, not a committee. It's owned by leadership — typically the integrator or COO — and it has a defined scope: research the constraint, analyze it from multiple angles, benchmark against what's possible, build a roadmap, and maintain a prioritized backlog of design work. The team includes the Human Orchestrator candidate, whoever understands the data and systems involved, and whoever has authority to make decisions about the workflow.
+The Design Team is a functional team, not a committee. It's owned by leadership, typically the COO (Integrator if you run EOS), and it has a defined scope: research the constraint, analyze it from multiple angles, benchmark against what's possible, build a roadmap, and maintain a prioritized backlog of design work. The team includes the Human Orchestrator candidate, whoever understands the data and systems involved, and whoever has authority to make decisions about the workflow.
 
 The charter is short. It says: this team owns the design of Human+AI workflows for the company. It meets on a cadence (weekly during active Sprints, biweekly between Sprints). It produces Hybrid Accountability Chart entries and workflow specifications. It does not build — Build is a separate stage with separate roles. And it does not operate in isolation — the constraint comes from Signal, the knowledge map comes from Source, and the design hands off to Build with everything Build needs to execute.
 

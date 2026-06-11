@@ -131,11 +131,11 @@ The answers will surprise you. The quote format makes sense to you but confuses 
 Stakeholder surveys work here too — especially when the agent team's output reaches people outside the immediate workflow. If the quoting agent produces something a customer will see, ask three customers what they'd think of the new format. Five responses are enough to catch the design gaps that internal review misses.
 :::
 
-Constant prototyping is the discipline. Not one big reveal at the end of Design, but a steady loop: design a piece, prototype it, get feedback, adjust. The Compound Sprint is short enough — two weeks for most teams — that this loop runs naturally if you start prototyping early. Teams that wait until the design feels "complete" before testing it are the teams that discover in Build that the design doesn't match reality. Test early. Adjust while adjusting is cheap.
+Constant prototyping is the discipline. Not one big reveal at the end of Design, but a steady loop: design a piece, prototype it, get feedback, adjust. The Compound Sprint is short enough that this loop runs naturally if you start prototyping early. Teams that wait until the design feels "complete" before testing it are the teams that discover in Build that the design doesn't match reality. Test early. Adjust while adjusting is cheap.
 
 ## Design is the *gate*.
 
-Nothing past Design begins until Design is locked. That's not bureaucracy. It's the structural reason Build moves fast when other approaches stall.
+Nothing past Design begins until Design is locked. That's the structural reason Build moves fast when other approaches stall.
 
 Teams that find Build slow or complicated are almost always teams that moved through Design too quickly — they discovered mid-build that there were decisions nobody had made, handoffs nobody had specified, supervision arrangements nobody had named. Every one of those discoveries is a piece of Design surfacing where it doesn't belong, where it costs five times as much to resolve. The gate exists to prevent that.
 

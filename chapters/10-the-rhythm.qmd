@@ -49,14 +49,14 @@ That is the entire session. The agenda is stable. The inputs are the Signal Back
 
 :::{.callout-tip}
 ## Pro Tip
-This session replaces no existing meetings. If you run EOS, it layers onto your quarterly planning — Signal Backlog maps to rocks, HAC maps to your accountability chart, Sprint review maps to your quarterly review. Same cadence, new layer. If it feels like a second operating system, you're doing it wrong. A Sprint can become a Rock when committed in quarterly planning, but it is a Sprint first — a focused unit of time designed to address a specific signal. The quarterly session is a 30-minute addition to your quarterly planning.
+This session replaces no existing meetings. If you run EOS, it layers onto your quarterly planning: Signal Backlog maps to Rocks, HAC maps to your Accountability Chart, Sprint review maps to your quarterly review. Same cadence, new layer. A Sprint can become a Rock when committed in quarterly planning, but it is a Sprint first, a focused unit of time designed to address a specific signal. The quarterly session is a short addition to your quarterly planning.
 :::
 
 The session only works if it's on the calendar before the quarter starts — not penciled in as a maybe, but booked with the same discipline as any other quarterly commitment.
 
 :::{.callout-note}
 ## Action Step
-Put the quarterly operating session on the calendar for the end of this quarter. Book 90 minutes. Invite the leadership team. Set the agenda using the four steps above.
+Put the quarterly operating session on the calendar for the end of this quarter. Invite the leadership team. Set the agenda using the four steps above.
 :::
 
 {{< excalidraw ch10-quarterly-session-agenda "Quarterly session agenda: four steps (Review → Update Backlog → Commit → Update Chart) with input/output annotations." >}}
@@ -85,33 +85,7 @@ Once you're running the Rhythm, you maintain one living document: the Hybrid Org
 
 The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. The Hybrid Accountability Chart from Chapter 6 is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
 
-Here is the template. It should fit on one page. If it doesn't, you're tracking too much. The Hybrid Org Today is a dashboard, not a filing cabinet.
-
-```
-HYBRID ORG TODAY — [Company Name] — [Quarter/Year]
-
-ACTIVE SPRINT
-  Constraint: [one sentence]
-  Human Orchestrator: [name]
-  Status: [Signal / Source / Design / Build / Deliver / Compound / Complete]
-
-SIGNAL BACKLOG (ranked)
-  1. [constraint] — est. cost: $X — last validated: [date]
-  2. [constraint] — est. cost: $X — last validated: [date]
-  3. [constraint] — est. cost: $X — last validated: [date]
-
-HYBRID ACCOUNTABILITY CHART
-  [Role/Function] | [Agent Team] | [Human Supervisor] | [Level]
-  ...
-
-COMPLETED SPRINTS
-  Sprint 1: [constraint] → [outcome in one sentence] — [date]
-  Sprint 2: [constraint] → [outcome in one sentence] — [date]
-
-NEXT QUARTERLY REVIEW: [date]
-```
-
-<!-- PRODUCTION: Replace the markdown template above with an Excalidraw visual. Tables within the diagram should render as proper tables, not markdown. -->
+The template should fit on one page. If it doesn't, you're tracking too much. The Hybrid Org Today is a dashboard, not a filing cabinet.
 
 You update the Hybrid Org Today in the quarterly session. Not by a Notion-curator on a Thursday afternoon. Not at year-end planning. By your leadership team, during the meeting, as part of the four things the session does. That is the discipline that prevents the document from becoming the wiki page that rots — a thing every operator has watched happen with every other "living" document the company has tried to maintain.
 
@@ -179,37 +153,9 @@ We did not cut our way to growth. We ran the Sequence enough times that the desi
 
 ### Three Sprints · Meridian Manufacturing.
 
-Here is what this looks like on paper. Meridian Manufacturing — the $7.2M custom fabrication shop from the case study — ran three Sprints over three quarters. Elena Ruiz, the VP of Operations, was the Human Orchestrator for all three. This is their Hybrid Org Today document and Compounding Scorecard at the end of Sprint 3.
+Here is what this looks like on paper. Meridian Manufacturing, the $7.2M custom fabrication shop from the case study, ran three Sprints over three quarters. Elena Ruiz, the VP of Operations, was the Human Orchestrator for all three. This is their Hybrid Org Today document and Compounding Scorecard at the end of Sprint 3.
 
-```
-HYBRID ORG TODAY — Meridian Manufacturing — Q1 2027
-
-ACTIVE SPRINT
-  Constraint: Customer onboarding workflow requires manual handoff across
-    HubSpot, JobBOSS, and shop floor — 6 touchpoints, 3 systems, no single
-    owner. New customers take 11 days to first production start.
-  Human Orchestrator: Elena Ruiz (VP Operations)
-  Status: Build
-
-SIGNAL BACKLOG (ranked)
-  1. Engineering change orders — est. cost: $89K/yr — last validated: 2027-01-10
-  2. Scheduling visibility gap (floor vs. office) — est. cost: $62K/yr — last validated: 2027-01-10
-
-HYBRID ACCOUNTABILITY CHART
-  Quoting Workflow       | Quote Agent Team (Research, Pricing, Assembly) | Elena Ruiz (VP Ops)    | AI-Assisted
-  CRM-to-ERP Data Sync  | HubSpot-JobBOSS Sync Agent                    | Ty Banfield (Sales)    | Automated
-  Customer Onboarding    | Onboarding Workflow Agent                      | Elena Ruiz (VP Ops)    | AI-Assisted
-
-COMPLETED SPRINTS
-  Sprint 1: Quoting bottleneck (Elena sole quoter) → Standard quotes
-    3.8 days to 4.2 hours. $47K new revenue in first month — Q3 2026
-  Sprint 2: CRM-ERP data sync (exposed by Sprint 1 — HubSpot and JobBOSS
-    holding conflicting customer records) → 147 manual reconciliations/month
-    eliminated, sync automated via n8n — Q4 2026
-  Sprint 3: Customer onboarding handoff → In progress — Q1 2027
-
-NEXT QUARTERLY REVIEW: 2027-04-14
-```
+{{< excalidraw ch10-hybrid-org-today-meridian "Meridian's Hybrid Org Today at end of Sprint 3: Active Sprint (customer onboarding), Signal Backlog (engineering change orders, scheduling visibility), Hybrid Accountability Chart (quoting, CRM-ERP sync, onboarding), and Completed Sprints (quoting bottleneck Q3 2026, CRM-ERP sync Q4 2026)." >}}
 
 And the scorecard:
 

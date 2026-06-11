@@ -11,7 +11,7 @@ One agent handled client-facing task updates. It had read/write access to our pr
 
 Sofia, our VP of Operations, reviewed every output the agents produced in those first weeks. The agents drafted. She approved. Rachel, the subcontractor who had been doing the coordination work, shifted to exception handling — the judgment calls the agents couldn't make.
 
-The reason I'm telling you this is because the Guardrails Checklist isn't a compliance exercise. It's the moment in Build where you decide what the system is allowed to touch. If you do that work before the build executes, it costs almost nothing. If you discover it after something goes sideways — after the wrong person pulls the wrong data — it costs everything. The spec either includes the guardrail or it doesn't. And if it doesn't, Build isn't done yet.
+The reason I'm telling you this is because the Guardrails Checklist isn't a compliance exercise. It's the moment in Build where you decide what the system is allowed to touch. If you do that work before the build executes, it costs almost nothing. If you discover it after something goes sideways, after the wrong person pulls the wrong data, the cost lands on the relationship the data was supposed to protect. The spec either includes the guardrail or it doesn't. And if it doesn't, Build isn't done yet.
 
 This chapter fills in the Build row of the Sequence first-pass on your Sprint Planning Canvas.
 
@@ -23,7 +23,7 @@ Build produces one thing: a working, deployed solution to the validated constrai
 
 *Working* means the solution has been tested against real inputs — the actual records, emails, quote requests, customer files, whatever the design specified — and produces outputs the human supervisor can review and trust. The outputs land in a form the supervisor can evaluate the same way they would evaluate a person's work.
 
-*Deployed* means the solution is operating inside the actual business environment — connected to the systems it needs, used by the people who need to use it, producing outputs that flow into the next handoff. A demo in a sandbox isn't the deliverable. A working system that the team is using on real work is the deliverable.
+*Deployed* means the solution is operating inside the actual business environment — connected to the systems it needs, used by the people who need to use it, producing outputs that flow into the next handoff. A working system that the team is using on real work is the deliverable.
 
 That bar is deliberately high. Build is done when work the team used to do is now being done by the designed system, supervised by the person the Hybrid Accountability Chart names. Anything less — a demo that impressed leadership, a prototype sitting in a sandbox, a workflow that works but nobody uses — is not done.
 
@@ -52,7 +52,7 @@ Build doesn't require developers.
 
 Not always. Not for every path. But the assumption that Build means "hand it to engineering" kills more Sprints than bad specs do. The team waits for a developer. The developer is three projects deep. The Sprint stalls. The constraint keeps costing what it costs.
 
-The real requirement is curiosity and systems thinking. The rest is teachable. I teach social science students at Michigan State — not computer science majors, not engineers. Within a semester, those students are building functional data pipelines. Pulling data from APIs, transforming it through agents, writing it back to systems. They learned because the tools have been designed to make high-value work accessible to non-engineers. Your team will have to learn new tools. Some of them will have to start thinking in systems. That is the bar — not a computer science degree.
+The real requirement is curiosity and systems thinking. The rest is teachable. I teach psychology, economics, and criminal justice majors at Michigan State, not engineers or computer scientists. Within a semester, those students are building functional data pipelines. Pulling data from APIs, transforming it through agents, writing it back to systems. They learned because the tools have been designed to make high-value work accessible to non-engineers. Your team will have to learn new tools. Some of them will have to start thinking in systems. That is the bar — not a computer science degree.
 
 "I'm not technical" is no longer a valid excuse. Everyone entering the workforce today grew up with computers. The tools are designed for people who aren't engineers. The Sprint cycle itself cultivates the experimentation culture that makes learning stick — each build is a bounded opportunity to try, fail safely, and get better. The companies that compound fastest are the ones where curiosity is a job requirement, not a personality trait.
 
@@ -273,7 +273,7 @@ Walk through all seven items with the builder present. Check each one against th
 
 ## The *Guardrails Checklist*.
 
-The **Guardrails Checklist** is the set of quality, privacy, and oversight decisions that must be locked before the solution goes live. The checklist isn't bureaucracy. It's the difference between an AI solution your company can stand behind and an AI solution your company is one mistake away from regretting publicly. The work of completing it is small. The work of skipping it is enormous and arrives late.
+The **Guardrails Checklist** is the set of quality, privacy, and oversight decisions that must be locked before the solution goes live. It's the difference between an AI solution your company can stand behind and an AI solution your company is one mistake away from regretting publicly. The work of completing it is small. The work of skipping it is enormous and arrives late.
 
 Run through these questions before the build executes, not after:
 

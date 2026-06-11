@@ -207,7 +207,7 @@ Go back to your Signal instrument. Copy the Constraint Statement and quantified 
 
 ## The *delivery test*.
 
-The delivery test is a checklist, not a conversation. Run it before you declare the Sprint complete:
+The delivery test is a checklist. Run it before you declare the Sprint complete:
 
 - [ ] The people whose work changed can describe, concretely, what they now do differently — and the old process is closed, not running in parallel.
 - [ ] The workflow has produced results on real inputs for at least two weeks without anyone reverting to the previous method.

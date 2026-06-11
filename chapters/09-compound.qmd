@@ -33,7 +33,7 @@ This chapter fills in the Compound row of the Sequence first-pass on your Sprint
 
 ## What *Compound* produces.
 
-Compound has three deliverables, and they ship together — in a single session, before your team closes the laptop on this Sprint.
+Compound has three deliverables. You produce all three in a single session, before your team closes the laptop on this Sprint.
 
 An updated *Signal Backlog* — the running, prioritized list of validated constraints your organization is working through. Signal generated the constraint that drove this Sprint; the Sprint generated new information about the rest of the backlog. Compound is where you re-rank the backlog against what you now know.
 
@@ -187,7 +187,7 @@ Compound is specific. The cost per Sprint decreases — Source is faster, Build 
 
 ## The brand and the *stage* share a name on purpose.
 
-By now you've noticed that the word *Compound* is doing more than one job in this book. It's the name of the company. It's the verb the work produces. It's the stage of the Sequence you're reading about now. The naming is load-bearing.
+By now you've noticed that the word *Compound* is doing more than one job in this book. It's the name of the company. It's the verb the work produces. It's the stage of the Sequence you're reading about now.
 
 Compound the stage is where the verb happens — where the previous Sprint's output stops being an outcome and becomes the next Sprint's accelerant. That mechanism is what Compound the company exists to install. The brand and the stage share a name because the company *is* the stage — the institutional answer to "who teaches you to run this last step, and to run it every time?"
 
