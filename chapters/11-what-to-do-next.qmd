@@ -145,11 +145,11 @@ Decide which path you're taking. Write it down. If Path A, schedule the Signal s
 
 ## Your one-page *plan*.
 
-{{< excalidraw ch11-first-Sprint-plan "First Sprint Plan template: constraint, estimated annual cost, team roster, path choice, first step, target quarter." >}}
+You already have the template. The Sprint Planning Canvas from Chapter 4 is the artifact. Pull it back out now and fill it in based on everything the chapters behind you have built: the constraint you named in Signal, the knowledge sources you identified in Source, the ownership structure that Design names on the Hybrid Accountability Chart, and the quarterly review date that Rhythm requires. The Canvas already has the rows. The work now is to write in the right answers for your company.
 
 This is the deliverable. Everything before this section was education. This is commitment. The plan is the first version of your Hybrid Org Today, written before the first Sprint starts: one Active Sprint row, three named roles, one estimated cost, one date. After the quarter, you update it. After the year, it has four Active Sprint rows behind it and the design layer of the company is on the page.
 
-Fill it in. The plan takes ten minutes. It contains more operational clarity than most organizations produce after six months of AI strategy work.
+Fill it in. The Canvas takes ten minutes. It contains more operational clarity than most organizations produce after six months of AI strategy work.
 
 Before the plan commits, two questions catch the gaps that turn into wasted quarters.
 
@@ -167,13 +167,13 @@ The Headcount Paradox does not pause while you decide. Every quarter you stay in
 
 The number to write down is revenue per employee. Pull it for the last four quarters. In most companies it sits roughly flat. The job of the operator running this framework is to compound that number Sprint over Sprint, by finding the places where the work doesn't actually require another body and shipping a designed workflow instead of a requisition. Your Hybrid Org Today is where that climb lives, quarter by quarter, in your own vocabulary.
 
-Ninety days produces the first Sprint. The first Sprint produces the second. The second is where the Rhythm begins.
+The first Sprint produces the second. After the second, the cadence belongs to the company, not the project.
 
 You don't need to see the whole staircase. You need the next step, clearly named, with a cost attached.
 
 This book started with a developer leaving and a company playing *Chutes and Ladders* — paying for the ladder and absorbing the cost of the chute. Every dollar of training, every hour of onboarding, every mistake paid for, walking out the door when the person did. That problem forced a question: what is the actual constraint? Not what tool do I buy, not what position do I post, but what is the problem I am trying to solve and what does it cost me if I don't? That question is the framework. The framework is in your hands.
 
-We went from thirteen people to eight in one year. Billings up. Profitability up. The Rhythm changed which question we asked about every capacity problem. The math is not theoretical. It works. The question is when you start — and the answer is determined by how expensive the current constraint is per quarter you leave it unaddressed.
+We went from thirteen people to eight in one year. We did let the project coordinator go. We never posted the listing for a replacement. The work got absorbed into the organization without a crisis, and the team didn't miss a beat. Billings up. Profitability up. The Rhythm changed which question we asked about every capacity problem. The math is not theoretical. It works. The question is when you start — and the answer is determined by how expensive the current constraint is per quarter you leave it unaddressed.
 
 You have the Sequence, and the Clarity Call can accelerate the first Sprint if you want a peer in the room. The constraint is the first move — and the first move is available to you right now.
 
@@ -183,7 +183,7 @@ It's time to start *compounding*.
 
 ## Reflection Questions
 
-1. Fill in the First Sprint Plan on the page above — constraint in one sentence, estimated annual cost, three team roles named, path chosen, first step checked. Can you complete it in the next ten minutes? If not, which field is blocking you, and what would it take to fill it in before Monday?
+1. Fill in the Sprint Planning Canvas — constraint in one sentence, estimated annual cost, three team roles named, path chosen, first step checked. Can you complete it in the next ten minutes? If not, which field is blocking you, and what would it take to fill it in before Monday?
 2. Run your minimum viable Signal: what is the one operational problem costing you the most money or time right now, what does it cost per year, and what would have to be true for it to be solved? If you can answer all three, you have a Sprint. If you can't, your first Sprint is getting to where you can.
 3. The chapter describes Katie and Jill — both CEOs who discovered their real constraint wasn't the one they walked in with. What is the problem on your list that you've been carrying for months? Have you actually run Five Whys on it, or are you working on the symptom because it's more comfortable than finding the constraint underneath?
 4. What is your Monday morning action — the specific, named move that starts the Sprint? Is it scheduling the Signal session with your team? Booking the Clarity Call? Writing the Constraint Statement? Name the action, name the person who owns it, and name the date it happens by.
