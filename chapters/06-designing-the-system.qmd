@@ -11,7 +11,11 @@ My COO is on a weekly call and she's not building up to it. "She's not keeping u
 
 I know the feeling on both ends of that sentence. The project coordinator had been with us long enough to know things — where the client files actually lived, which contacts needed extra lead time, what the unwritten rules were for each account. That knowledge doesn't transfer with a two-week notice. It walks out the door and you spend the next three months paying a new person to relearn it while the work piles up. We'd been around this loop before and I could feel myself reaching for the job description template.
 
-I stopped and asked a different question. Not "who should we hire?" but "what does this role actually do?" We opened a blank document and started pulling the role apart. We listed the sources of information that fed the job: the CRM, the project tracker, the report templates she'd built, the client check-in cadence she managed from memory. Then we listed the outcomes the role was responsible for: the reports delivered, the tasks created, the assignments made, the clients kept on track. And then we mapped every accountability against a simple filter: which items required human judgment and relationships, and which were data-flow operations. Information moving from one system to another, following rules that didn't require a person in the middle. The shape of the role changed in front of us. What had looked like one job was actually two — and one of those jobs, we could design an agent team for. We never posted the listing. The work shipped. The role got more strategic, not because we gave her a new title, but because we gave her back the hours that the low-judgment work had been consuming.
+Most operators in that moment reach for the job description. The instinct is to solve the personnel problem with a hire: find someone, get them trained, keep the work moving. My COO's instinct was the same. She didn't want to lose the knowledge, and she knew what replacing institutional memory costs. That instinct is understandable. It's also the reflex the Sequence is designed to interrupt.
+
+I stopped and asked a different question. Not "who should we hire?" but "what does this role actually do?" We opened a blank document and started pulling the role apart. We listed the sources of information that fed the job: the CRM, the project tracker, the report templates she'd built, the client check-in cadence she managed from memory. Then we listed the outcomes the role was responsible for: the reports delivered, the tasks created, the assignments made, the clients kept on track. And then we mapped every accountability against a simple filter: which items required human judgment and relationships, and which were data-flow operations. Information moving from one system to another, following rules that didn't require a person in the middle. The shape of the role changed in front of us. What had looked like one job was actually two — and one of those jobs, we could design an agent team for.
+
+We did let her go. We never posted the listing for a replacement. The work got absorbed into the organization without a crisis. The team didn't miss a beat. What the agent team took on was the administration: the routing, the formatting, the status updates. What stayed with people was the judgment. The role got more strategic, not because we gave anyone a new title, but because we gave them back the hours the low-judgment work had been consuming.
 
 That question — "what is this work, actually?" — is the question Design exists to ask. And the framework for answering it is what this chapter introduces.
 
@@ -23,7 +27,7 @@ This chapter and the next one fill in the Design row of the Sequence first-pass 
 
 Design has two deliverables that land together.
 
-The first is a *designed workflow* — specific enough that Build can execute against it without ambiguity. A workflow specification that names the inputs, the steps, the handoffs, the outputs, and the points where a human decides versus an agent executes. A sketch or a Miro board with sticky notes isn't this. If Build has to ask "what did you mean here?" the workflow was described, not designed.
+The first is a *designed workflow* — specific enough that Build can execute against it without ambiguity. A workflow specification that names the inputs, the steps, the handoffs, the outputs, and the points where a human decides versus an agent executes. If Build has to ask "what did you mean here?" the workflow was described, not designed.
 
 The second is a set of entries in the *Hybrid Accountability Chart* for the accountabilities this Sprint is addressing. Each entry names the function, the agent team (if applicable), the human supervisor, and whether the work is AI-assisted or automated. A single Sprint often produces multiple entries — the PM workflow we ran internally generated five in its first pass. Over many Sprints, the chart fills in. After one Sprint, it has its first rows — the first piece of structural evidence that your company is operating as a Co-Intelligent Company rather than a human company that happens to use AI tools.
 
@@ -31,18 +35,23 @@ Design produces both or it has produced nothing. A workflow without an accountab
 
 ## The *Hybrid Accountability Chart*.
 
-The Hybrid Accountability Chart is the instrument that makes Design concrete. If you run on EOS, you already have an Accountability Chart — one name against each accountability in the company. The Hybrid Accountability Chart extends that idea to a workforce that includes agent teams alongside humans.
+{{< excalidraw ch06-hybrid-accountability-chart-intro "Hybrid Accountability Chart: example showing Role/Function | Agent Team | Human Supervisor | Autonomy Level columns." >}}
+
+The Accountability Chart is the tool that maps who owns what inside your company. Each row names one accountability and the person responsible for it. One accountability, one name. No shared rows, no "the team." If you run EOS, you already have one: it maps your seats from Integrator down, with every role and its owner named. If you don't run EOS, think of it as a one-page org chart organized around outcomes rather than titles. Not "Director of Marketing" but "Generate qualified pipeline." Not "Operations Manager" but "Deliver client work on time and on scope." Every meaningful accountability your company has, with one name next to it.
+
+The Hybrid Accountability Chart extends that structure to include agent teams. Every row still names one accountability and one human supervisor. But now some rows also name the agent team doing the execution work underneath that supervisor. The accountability doesn't move from human to agent. The ownership stays with the supervisor. What changes is who does the execution work, and the chart makes that visible.
 
 You build it one Sprint at a time. For each accountability your Sprint is addressing, you answer four questions — and you write the answers into the chart before Build begins:
 
 1. **What role or function does this team perform?** Not the task — the outcome this person or team is responsible for. "Produce accurate initial quotes within 2 hours of request" is an accountability. "Look up pricing" is a task.
-2. **What is the name of the agent team, if applicable?** Name it. Scope it. A team called "AI Helper" isn't designed. A team called "Quote Generation Team" with a defined input (bid request + customer segment data) and output (draft quote with confidence score) is designed.
+2. **What is the name of the agent team, if applicable?** Name it and scope it. The name matters because accountability requires something to point to. Without a name, there's no clear owner, no clear scope, and no clear question to ask when something goes wrong. "Quote Generation Team" names who's doing what; "AI Helper" names nothing useful. The name is how the agent team shows up in the Hybrid Accountability Chart with a supervisor attached.
 3. **Who is the human supervisor?** Every row must have one. No exceptions. No "TBD." No "the team." A name. If you can't name the supervisor, the design isn't done.
 4. **Is this accountability *AI-assisted* or *Automated*?** AI-assisted means human-in-the-loop — reviews every output. Automated means human-on-the-loop — monitors by exception, reviews on schedule.
 
 Here's what your chart looks like after a handful of Sprints — built up over time, with multiple rows per Sprint when the constraint workflow touches multiple functions:
 
-{{< excalidraw ch06-hybrid-accountability-chart "Hybrid Accountability Chart: Role, Agent Team, Human Supervisor, and AI-Assisted or Automated — every row has a named supervisor" >}}
+<!-- TODO (F77/F88): Excalidraw redo — column A (Role/Function) must use outcome-based descriptions, not task labels. Mirror the §6.9.1 case-study chart quality: e.g. "Customer data retrieval and history matching" not "Look up pricing." Update this stub alt text when the diagram is rebuilt. -->
+{{< excalidraw ch06-hybrid-accountability-chart "Hybrid Accountability Chart: Role/Function (outcome-based accountability), Agent Team, Human Supervisor, Autonomy Level — every row names an outcome and a named supervisor" >}}
 
 Every agent team in the chart has a human supervisor — every row, no exceptions. There are no unowned teams. This is a structural rule of the chart, not a soft principle. The reason is straightforward: humans are still responsible for making sure the organization accomplishes its goals. There needs to be a person you can talk to, work with, and hold accountable in the real world. Someone who ensures the agents are performing on track and who owns the outcome when they're not.
 
@@ -65,7 +74,7 @@ The four questions aren't a template to fill in once and forget. They are a desi
 
 Before the chart makes sense, you have to answer a question most leadership teams never ask: how does information actually move through this part of the company?
 
-Every accountability in a knowledge business is an information problem. The project coordinator isn't "managing projects." She's taking information from one system, combining it with information from another system, applying rules she carries in her head, and producing an output that moves to the next person in the chain. The quoting process isn't "creating quotes." It's pulling customer data from the CRM, matching it against pricing tables in the ERP, applying exception rules that live in a spreadsheet on someone's desktop, and assembling the result into a format the customer can read. When you see the work as information flow, the design question changes. You stop asking "what tool should we use?" and start asking "what information does this work need, where does it live, and how should it move?"
+Every accountability in a knowledge business is, at some level, an information problem. The project coordinator isn't "managing projects." She's taking information from one system, combining it with information from another system, applying rules she carries in her head, and producing an output that moves to the next person in the chain. The quoting process isn't "creating quotes." It's pulling customer data from the CRM, matching it against pricing tables in the ERP, applying exception rules that live in a spreadsheet on someone's desktop, and assembling the result into a format the customer can read. When you see the work as information flow, the design question changes. You stop asking "what tool should we use?" and start asking "what information does this work need, where does it live, and how should it move?"
 
 That question produces what I call an *Information Flow Specification* — a spec for how information moves through one accountability. It names:
 
@@ -82,7 +91,7 @@ For information flows between humans and agents, two lanes are usually enough to
 
 How is this different from the Knowledge Map you built in Source? The Knowledge Map tells you *what* knowledge exists and *where* it lives — the inventory. The information flow spec tells you *how* that knowledge moves through a specific workflow — the transformations, the decisions, and the handoffs. The Knowledge Map is the atlas. The information flow spec is the route.
 
-Most people don't think about their company this way. They think in terms of roles and tasks. But roles are containers for information work, and tasks are steps in an information flow. When you write the flow down, you see where the bottlenecks actually live — and more importantly, you see which parts of the flow an agent can handle and which parts genuinely require a person.
+Most people don't think about their company this way. They start with roles and tasks. The value of the information flow is that it forces you to start with the outcome instead and work backwards. What does this accountability produce? Who receives it? What has to happen for that output to exist? When you answer those questions first, the roles and tasks fall into their correct positions in the flow. You see where the bottlenecks actually live, which parts of the flow an agent can handle, and which parts genuinely require a person.
 
 :::{.callout-note}
 ## Action Step
@@ -154,7 +163,7 @@ Design is where that call gets made deliberately, with the Human Orchestrator's 
 
 The autonomy spectrum only works if there's governance underneath it. Governance answers one question: what is this system allowed to do, and what is it not allowed to do?
 
-Companies fail at governance from both directions. Some build the agent team first and figure out permissions later — after the wrong person has pulled data they shouldn't have, or the agent has drafted a client-facing email nobody reviewed. Others let IT governance stall the project indefinitely, running review cycles that ensure nothing gets built at all. Both failure modes produce the same result: no working system. The framework is the middle path — define governance as a design decision before Build begins, but define it in the same session where you're designing the workflow, not in a separate compliance review that lives on its own timeline.
+Companies fail at governance from both directions. Some build the agent team first and figure out permissions later, after the wrong person has pulled data they shouldn't have, or the agent has drafted a client-facing email nobody reviewed. Others let IT governance stall the project indefinitely, running review cycles that ensure nothing gets built at all. Both failure modes produce the same result: no working system. This chapter argues for a third approach: define governance as a design decision, and make it in the same session where you're designing the workflow. Not a separate compliance review on its own timeline. Not a policy document that arrives after deployment. A set of answers you write down before Build begins.
 
 There are five questions to answer for every agent team. Write the answers down. If any answer is "we haven't decided yet," that's the decision you make now — not in Build, and not after deployment.
 
