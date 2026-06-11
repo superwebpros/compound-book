@@ -161,7 +161,7 @@ The same is true of every artifact in the Sequence. The Hybrid Accountability Ch
 
 {{< excalidraw ch09-compounding-loop "Sprint-to-Sprint compounding loop: Compound outputs feed into the next Sprint as inherited artifacts, reducing cost and increasing sharpness each pass." >}}
 
-A company six Sprints in finds the Source phase of their seventh Sprint taking days instead of weeks. The constraint they're working on now is sharper, because three Sprints' worth of Sprint Retrospectives taught them what kinds of constraints actually move the headcount math. The Hybrid Accountability Chart entry they draft in Design takes an afternoon, because they've drafted six of them. That's the infrastructure compounding. It's what the work feels like in the seventh Sprint, compared to the first.
+A company six Sprints in finds the Source phase of their seventh Sprint taking days instead of weeks. The constraint they're working on now is sharper, because three Sprints' worth of Sprint Retrospectives taught them what kinds of constraints actually move the Headcount Math. The Hybrid Accountability Chart entry they draft in Design takes an afternoon, because they've drafted six of them. That's the infrastructure compounding. It's what the work feels like in the seventh Sprint, compared to the first.
 
 ### The 45 minutes that saved weeks.
 

@@ -17,7 +17,7 @@ We stopped before we did that. Not because we had some principled objection to h
 
 So we ran Signal. What is the actual constraint? What does this role touch? We mapped the information sources — the CRM fields she used, the project management cadence she owned, the client follow-up patterns she was responsible for. We asked which parts of the work required human judgment and which parts were high-volume and structured. Then we designed a workflow without assuming a human had to sit in every seat. We built a set of AI agents that could handle the bulk of what she was doing — the routing, the reporting, the follow-up cadence. We deployed.
 
-The hire never got posted. The work shipped.
+The hire never got posted. We did let her go. The work got absorbed into the organization without a crisis, and the team didn't miss a beat.
 
 We went from thirteen people to eight over the following year — and by the fourth and fifth Sprint, running Signal before writing a requisition was not a deliberate practice anymore. It was the default. The question that used to be automatic — *who fills this?* — had been replaced by a different automatic question. That replacement is what this chapter is about.
 

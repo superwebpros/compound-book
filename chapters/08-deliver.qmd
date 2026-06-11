@@ -223,7 +223,7 @@ If you can't fill in the "Result After Sprint" line with a number, go back to th
 
 ## The change is not the *launch*. The change is the *week*.
 
-A well-run Deliver phase changes the work the people in the function do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that's now automated either get reinvested — in the strategic work Design identified as the higher-return use of their time — or they come out of the org over time, as the headcount math gets rerun against the new operating reality.
+A well-run Deliver phase changes the work the people in the function do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that's now automated either get reinvested — in the strategic work Design identified as the higher-return use of their time — or they come out of the org over time, as the Headcount Math gets rerun against the new operating reality.
 
 That's the test of whether Deliver delivered: can the people whose work was supposed to change describe, concretely, what they now do that they didn't do before, and what they no longer do that they used to? The agent running and the dashboard existing are table stakes.
 

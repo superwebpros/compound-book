@@ -30,7 +30,7 @@ TML doesn't tell you which column is right for every task — it gives you the l
 
 :::{.callout-note}
 ## Action Step
-List every task in the constraint workflow. Sort each one into the three TML categories — Task, Management, Leadership. Count the tasks in each bucket. If more than half land in **Leadership (Human Judgment Required)**, challenge each one: is this genuinely judgment, or is it judgment because nobody has written down the rules? The exercise takes sixty to ninety minutes for a real role. Do it on paper or in a shared doc.
+List every task in the constraint workflow. Sort each one into the three TML categories — Task, Management, Leadership. Count the tasks in each bucket. If more than half land in **Leadership (Human Judgment Required)**, challenge each one: is this genuinely judgment, or is it judgment because nobody has written down the rules? Do it on paper or in a shared doc.
 :::
 
 Once the deconstruction is done, the results flow directly into the *Hybrid Accountability Chart* you built in the previous chapter. Each classified task maps to a chart entry — the function, the agent team, the supervisor, the autonomy level. Work Deconstruction is the thinking. The chart entries are what makes the thinking durable and actionable for Build.
@@ -44,7 +44,7 @@ We listed every accountability she owned on the existing Accountability Chart �
 <!-- PRODUCTION: Excalidraw agent — the coordinator before/after diagram currently uses a triplet pattern. Redesign to avoid the three-item rhetorical structure. -->
 {{< excalidraw ch06-coordinator-before-after "Coordinator role before/after: tasks that stayed human vs. tasks that became the agent team" >}}
 
-The classification took ninety minutes. What it revealed: a substantial fraction of her work was routing and documentation. Scheduling client check-ins. Updating the project tracker after calls. Generating the weekly status reports from data that already lived in the CRM. That work looked like operations because it happened inside the operations function — but it wasn't operations judgment. It was operations administration. The kind of work that eats a skilled person's hours and leaves them with no time for the parts of the role that actually require them.
+The classification revealed a substantial fraction of her work was routing and documentation. Scheduling client check-ins. Updating the project tracker after calls. Generating the weekly status reports from data that already lived in the CRM. That work looked like operations because it happened inside the operations function — but it wasn't operations judgment. It was operations administration. The kind of work that eats a skilled person's hours and leaves them with no time for the parts of the role that actually require them.
 
 When you do this on your own role, look for the same pattern: what percentage of your weekly hours go to tasks that are well-defined, data-driven, and repeatable? That percentage is your design opportunity.
 
