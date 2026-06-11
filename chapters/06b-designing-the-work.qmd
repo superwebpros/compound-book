@@ -104,19 +104,19 @@ Pick the workflow you're designing. Draw a swim lane diagram with two lanes — 
 
 ## The *Design Brief*.
 
-Before you prototype, you need a document that captures everything the design has decided. The *Design Brief* is that document. It is the artifact that comes out of the Design stage — a comprehensive specification that reflects the design decisions, the stakeholders, the systems, and the constraints that Build will execute against.
+Before you prototype, you need a document that captures everything the design has decided. The *Design Brief* is that document. It's the single artifact Design produces. It captures the decisions, the stakeholders, the systems, and the governance that Build will inherit. It's Design's output and Build's input. No other channel.
 
 A Design Brief includes:
 
 - **Workflow summary.** The information flow from trigger to output, with each step, handoff, and decision point named. This is the swim lane or flowchart from the previous chapter, translated into written specification.
 - **Stakeholders.** The Human Orchestrator, the team members whose roles change, the downstream consumers of the agent team's output, and anyone with approval authority.
-- **Systems.** Every system the workflow touches — CRM, ERP, project management tool, communication platforms — with the specific data each system provides or receives.
+- **Systems.** Every system the workflow touches: CRM, ERP, project management tool, communication platforms. Name the specific data each system provides or receives.
 - **Data requirements.** What data the agent team needs, where it lives, what format it arrives in, and what happens when it's missing or malformed.
-- **Success criteria.** The measurable outcomes from Signal that this design is intended to move. Not vague improvement — specific targets the Sprint will be measured against.
+- **Success criteria.** The measurable outcomes from Signal that this design is intended to move. Not vague improvement, but specific targets the Sprint will be measured against.
 - **Constraints and guardrails.** The governance decisions from the previous chapter: data access boundaries, action permissions, escalation paths, quality monitoring cadence, kill switch conditions.
 - **V1 artifact description.** What will the first working version of this workflow actually produce? Is the output an interface? A formatted document? An automated pipeline? A dashboard? Name the artifact. If you can't describe what the first version looks like, the design isn't finished.
 
-The Design Brief connects directly to the Build Spec in the next chapter. Where the Design Brief says *what* the system should do and *why*, the Build Spec says *how* — at the level of detail a developer can execute against. A gap in the Design Brief becomes a question in Build. Close the gaps here.
+The Design Brief feeds the Build Spec in the next chapter. The Build Spec isn't a parallel artifact; it's derived from this one. Where the Design Brief says *what* the system should do and *why*, the Build Spec restates the relevant sections at developer-execution depth and adds the three things Design doesn't own: agent scope at the call level, failure-mode behavior, and the build path itself. A gap in the Design Brief becomes a question in Build. Close the gaps here.
 
 ## Prototype before you *build*.
 

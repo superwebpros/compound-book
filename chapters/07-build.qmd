@@ -202,9 +202,11 @@ If your Build is running past the time box, the instinct is to extend the deadli
 
 ## The two instruments — *Build Spec Writer* and *Guardrails Checklist*.
 
-Build is supported by two instruments.
+Build is supported by two instruments. Both are derived from the Design Brief that Design handed off. Neither restarts the design conversation.
 
-**Build Spec Writer** translates the designed workflow into a developer-ready specification. The upstream input is the Design Brief from the previous chapter — the Build Spec takes what Design committed to and converts it into the level of detail a builder needs to execute. The spec is the artifact a builder — engineer, vendor, low-code assembler — works from. Its job is to remove ambiguity. If the spec is right, the build is mostly execution. If the spec is wrong, the build is mostly negotiation.
+**Build Spec Writer** turns the Design Brief into a developer-ready specification. The Design Brief is the single upstream input. The Build Spec restates the workflow, systems, and data sections at developer-execution depth, and adds three sections Design doesn't own: agent scope at the call level, failure-mode behavior on edge cases and outages, and the build path with its implementation constraints. The duplicated sections aren't new decisions. They're tightened restatements. If the Build Spec and the Design Brief disagree on a workflow step or a system boundary, the Design Brief wins and the gap routes back to Design.
+
+The spec itself is the artifact a builder — engineer, vendor, low-code assembler — works from. Its job is to remove ambiguity. If the spec is right, the build is mostly execution. If the spec is wrong, the build is mostly negotiation.
 
 A complete spec covers eight sections:
 

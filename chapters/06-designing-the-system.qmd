@@ -215,7 +215,7 @@ The charter is short. It says: this team owns the design of Human+AI workflows f
 
 This matters because Design decisions affect multiple functions. The quoting workflow touches sales, operations, and engineering. The content production workflow touches marketing and client delivery. A Design Team with cross-functional representation catches the dependencies that a single-function design session misses — and produces workflows that the whole company can operate against, not just the function that requested the Sprint.
 
-The artifact that comes out of the Design Team's work is a *Design Brief* — a comprehensive document that captures the design decisions, stakeholders, systems, and specifications needed to move into Build. The next chapter introduces the Design Brief in detail and shows how it connects to the Build Spec that developers execute against.
+The artifact that comes out of the Design Team's work is a *Design Brief* — the single document that captures the design decisions, stakeholders, systems, and specifications Build will inherit. The next chapter introduces the Design Brief in detail. Chapter 7 then shows how the Build Spec is derived from it: restating the relevant sections at developer-execution depth, and adding the implementation-level content (agent scope, failure modes, build path) that Design does not own.
 
 :::{.callout-tip}
 ## Pro Tip

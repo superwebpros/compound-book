@@ -14,6 +14,9 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 **At-Risk Source** (Compound)
 : Institutional knowledge that lives in one person's head and is about to leave the organization through departure, retirement, or role change. Named and prioritized during *Source* so it can be captured before it walks out the door. (First introduced: Chapter 5)
 
+**Build Spec** (Compound)
+: The eight-section developer-ready specification produced in *Build*, derived from the *Design Brief*. The first three sections (workflow summary, inputs, outputs) and the systems and integrations section are restatements of Design Brief content at developer-execution depth. Four sections add what Design doesn't own: agent scope at the call level, human supervisor role, failure-mode behavior, and build path with implementation constraints. If the spec disagrees with the Design Brief, the Design Brief wins. Produced via the *Build Spec Writer* instrument. (First introduced: Chapter 7)
+
 **Center of Excellence (COE) Operating Model** (Compound)
 : The organizational design pattern that coordinates specialized functions across a large organization through defined governance, accountability, and recurring alignment sessions. Originates in Dave Ulrich's three-pillar HR framework — HR Business Partners, Centers of Excellence, Shared Services — from *Human Resource Champions* (1997). The Compound quarterly operating session borrows the COE governance discipline (fixed agenda, committed outputs, recurring cadence) and adds the four-step structure: review the previous Sprint, update the *Signal Backlog*, commit the next Sprint, update the *Hybrid Accountability Chart*. (First introduced: Chapter 10)
 
@@ -54,7 +57,7 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : One of the five dimensions of the AI Readiness Scorecard. The degree to which a leadership team has explicitly assigned which tasks AI handles versus which stay with humans, and who has authority to change the boundary. (First introduced: Chapter 1)
 
 **Design Brief** (Compound)
-: The comprehensive artifact produced in *Design* that captures all design decisions before prototyping and *Build*: workflow summary, stakeholders, systems involved, data requirements, success criteria, constraints/guardrails, and V1 artifact description. The upstream input to the *Build Spec*. (First introduced: Chapter 6b)
+: The single artifact *Design* produces. It captures every decision Design has committed to before prototyping and *Build*: workflow summary, stakeholders, systems involved, data requirements, success criteria, constraints and guardrails, and V1 artifact description. It's the sole upstream input to the *Build Spec*, and the source of truth on *what* the system should do and *why*. (First introduced: Chapter 6b)
 
 **Design Gate** (Compound)
 : The five-item checklist that must be fully checked before a Sprint moves from *Design* into *Build*: *Work Deconstruction* complete, all *HAC* fields filled with named supervisors, *Human Orchestrator* named, AI-Assisted vs. Automated decided with rationale, and guardrails defined. (First introduced: Chapter 6b)
