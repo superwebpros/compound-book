@@ -53,6 +53,8 @@ If the result is not 4/4, you're not ready to deploy. Every "Fail" is a task. As
 
 The Audit checks what Build prepared — it doesn't author anything fresh. If any answer is missing, that item blocks the deploy. Failed deploys trace back to a question nobody asked at this gate.
 
+### Meridian Manufacturing.
+
 At Meridian Manufacturing, Elena and Dave completed hands-on training with the three-agent quoting pipeline before the workflow went live. Not a walkthrough email — Elena ran real quotes through the system while Dave reviewed the agent's historical job matching against specs he knew by heart. The escalation path was documented in the Claude Team workspace: any quote flagged as low confidence routed to Dave for non-standard materials, with Elena reviewing every assembled quote before it went to the customer. The workflow was tested against real RFQs pulled from HubSpot — actual customer requests from the prior two weeks, not demo data. Elena's review cadence was booked on the calendar: Monday and Thursday mornings, recurring. Systems verified: HubSpot connected, JobBOSS connected, Customer Notes.xlsx with 112 validated pricing rules loaded into the agent's context. Four gates passed. Clear to deploy.
 
 :::{.callout-note}

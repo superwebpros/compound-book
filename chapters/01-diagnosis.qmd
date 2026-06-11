@@ -243,6 +243,8 @@ Fill in your scorecard:
 
 To make the Sequence tangible, we contrived a fictional company from the real patterns we've seen across dozens of engagements. Meridian Manufacturing will follow you through every chapter of this book — the same company, the same constraint, the same team — so you can see each stage applied to one continuous example. The full case study is in the appendix if you want to read it straight through.
 
+### Meridian Manufacturing.
+
 Meet Meridian Manufacturing. Seven-point-two million in revenue, twenty-seven employees, custom metal fabrication for industrial clients. Mark Ellison is the CEO. He built the business from a two-person garage shop eighteen years ago and still holds the key customer relationships. Elena Ruiz is his VP of Operations and integrator — she runs the floor, manages scheduling, and is the only person in the company who can produce a complete quote. The rest of the leadership team: Ty Banfield in sales, Dave Kowalski as senior design engineer (thirty-one years in fabrication), and Carlos Medina running the shop floor.
 
 Meridian runs EOS. Accountability chart, scorecards, L10s, the works. They've grown profitably for years. But here's the constraint they keep circling: their quotes take three to five days to turn around. Industry standard is twenty-four to forty-eight hours. The full cost of that constraint — walked bids citing turnaround time, misallocated senior time, and floor underutilization combined — runs to roughly \$558,000 a year, and the actual number is higher because most clients who go elsewhere don't explain. The bottleneck has a face: Elena. Pricing exceptions live on her desktop. Material lead-times live in her head. She's the only one who can close a quote, and she's getting buried.

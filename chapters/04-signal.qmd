@@ -54,6 +54,8 @@ Signal traces the symptom to the underlying constraint. Quoting takes too long b
 
 The same distinction matters in human-capital contexts. "Our managers aren't developing their people" is a symptom we've watched leadership teams treat as a personnel problem for years. The constraint underneath it might be that managers have no time for development conversations because their operational workload has grown to absorb every hour. Or the constraint might be that the performance management system creates no accountability for development outcomes, so development conversations never happen because nothing bad happens when they don't. Without the structural cause and a cost, you're treating weather.
 
+### Meridian Manufacturing.
+
 Consider Meridian Manufacturing — the fictional company we introduced earlier. The symptom their team brought to the table: "Our quoting takes too long." The constraint underneath it: Elena Ruiz, the VP of Operations, was the sole quoting bottleneck. Every quote passed through her because she was the only person who held the customer-specific pricing, material lead-time knowledge, and historical job context simultaneously. The cost: $558K per year in lost revenue, misallocated time, and floor underutilization. That is the difference between a symptom and a constraint. The symptom describes what you feel. The constraint names the structural cause — and puts a number on it.
 
 Signal makes you stop at the symptom long enough to find the constraint underneath it — and then makes you put a number on what that constraint is costing. Until both moves are complete, you are not at Signal yet. You are still describing the weather.

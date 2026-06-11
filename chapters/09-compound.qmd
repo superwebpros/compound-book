@@ -59,6 +59,8 @@ The Sprint Retrospective is one of two instruments in the Compound stage. It's t
 
 **Question two: what didn't work?** The handoffs that broke, the inputs that turned out dirtier than Source claimed, the supervisor reviews that got skipped because the cadence was wrong. For each item, the facilitator asks one question: *"What would have to be true for this to not happen again?"* That question reframes blame into design. You're not asking who failed. You're asking what the system needs to look like so the failure can't recur.
 
+### Meridian Manufacturing.
+
 Meridian's retrospective surfaced three items in the "didn't work" column. Dave Kowalski, the senior design engineer, went first: the agent's historical matching pulled comparable jobs correctly about 85% of the time, but missed complexity — a bracket with twelve bends and tight tolerances is not the same as a bracket with four bends and standard tolerances, even if they're both steel brackets. Elena was correcting about one in eight quotes. The reframe: the agent needed fabrication complexity indicators — bend count, tolerance class, surface finish — not just material and dimensions. Second, Ty admitted he'd forwarded three RFQs to Elena the old way in week one out of habit. The reframe: the old email path needed to be killed on day one, not left open as a fallback. Third, Carlos flagged that every Inconel or titanium job still routed to Elena for manual pricing because the materials database didn't cover specialty alloys. The reframe: the five most common non-standard materials needed to be added before Sprint two.
 
 **Question three: what one design change would make the next Sprint better?** I'll give this its own section below, because the discipline behind it is load-bearing.
