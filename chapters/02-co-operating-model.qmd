@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-This chapter defines the Co-Operating Model — the structure that makes humans and AI work as one system instead of two parallel tracks. You'll learn the specific ownership split between human intelligence and agent intelligence, see what Parallel Workstreams look like in practice, and finish with an equation you can put on your wall: *Co-Intelligence + Rhythm = Compound.* By the end, you'll have mapped at least one role in your company against the model.
+This chapter defines the Co-Operating Model — the structure that makes humans and AI work as one system instead of two disconnected tracks. You'll learn the specific ownership split between human intelligence and agent intelligence, see what Parallel Workstreams look like in practice, and finish with an equation you can put on your wall: *Co-Intelligence + Rhythm = Compound.* By the end, you'll have mapped at least one role in your company against the model.
 :::
 
 Jesse was in a management meeting with Sofia, his VP of Operations, and a direct report, going through the Accountability Chart. We had a team member, a marketing coordinator, who was good at organization. She could manage processes, track content calendars, coordinate subcontractors. But she wasn't revenue-positive and hadn't been for months. She was spending most of her time on content production (editing videos, formatting posts), work that took her hours and still wasn't shipping fast enough to keep up with the pace we needed. The work was piling up behind her, not because she wasn't working hard, but because the role as designed required one person to do what should have been running in parallel across multiple workstreams.
@@ -25,11 +25,11 @@ This chapter is also where you start filling in your Sprint Planning Canvas. The
 
 Three terms in that paragraph are doing specific work and they're easy to blur together. Here is what each one means.
 
-The **Co-Intelligent Company** is the identity layer — what a company becomes when humans and AI work as one system, not two parallel tracks. The bar is higher than "uses AI tools" or "has an AI strategy." It means the human and the synthetic are integrated into a single Co-Operating Model, designed to run together from the start.
+The **Co-Intelligent Company** is the identity layer — what a company becomes when humans and AI work as one system, not as two disconnected tracks. The bar is higher than "uses AI tools" or "has an AI strategy." It means the human and the synthetic are integrated into a single Co-Operating Model, designed to run together from the start.
 
 In the Accountability Chart, that means every AI-handled function has a named human supervisor, a defined scope of work, and a review cadence. The work has somewhere to land, because someone owns the handoff. Most companies using AI today haven't designed it that way. The tools are running; the accountability structure hasn't caught up. The work ships with someone's name on the outcome only when each function's human-agent split is explicitly designed — not by adding a policy layer on top. A Compound Sprint (defined in the next chapter) is how you do that work.
 
-**Co-Intelligent Co-Operation** is the relational frame: the activity of humans and AI working the same problems together, inside the same loop, against the same outcome. Not relegated to a Sprint or a project. It's what the company does, continuously, as its default way of working.
+**Co-Intelligent Co-Operation** is the relational frame: the activity of humans and AI working the same problems together, inside the same cycle of generation, review, and adjustment, against the same outcome. We call that cycle *the loop*, and the next section explains why both human and agent have to sit inside it. The work is not relegated to a Sprint or a project. It's what the company does, continuously, as its default way of working.
 
 The **Co-Operating Model** is the system frame — the structure that makes Co-Intelligent Co-Operation possible. It is the explicit design of who brings what intelligence to the work and who owns which operating responsibility inside it.
 
@@ -43,7 +43,7 @@ Most executives have met one kind of AI: a chat window. You type something, it r
 
 A **chatbot** is an interface. You ask a question, you get an answer, the interaction ends. Input, output, done. Every tool you've used for the last thirty years works this way: a spreadsheet, a search engine, a CRM. You supply something and the system returns something. The loop doesn't continue unless you start it again.
 
-An **agent** is different. An agent is an AI system that holds a goal, takes a sequence of steps toward it, evaluates its own output, and adjusts — without you re-prompting it between steps. It doesn't wait. It works. When you run an agent team on a content build, you're not typing questions and reading answers. You're managing a production process. You set the direction. The agents run the work. You review, redirect, and ship. The loop closes when the outcome is right, not when the timer runs out.
+An **agent** is different: an AI system that holds a goal, takes a sequence of steps toward it, evaluates its own output, and adjusts without you re-prompting it between steps. It doesn't wait. It works. When you run an agent team on a content build, you're not typing questions and reading answers. You're managing a production process. You set the direction. The agents run the work. You review, redirect, and ship. The loop closes when the outcome is right, not when the timer runs out.
 
 That distinction matters for operating design: chatbot as input/output tool, agent as iterative co-worker. A chatbot gives you a productivity improvement localized to the person typing. An agent gives you a structural change, because the loop can run without the human inside every step. And once an agent is connected to your systems and your data, it can access and reason across more of your company's knowledge than any individual human holds. From a knowledge standpoint, it's significantly more capable. But it still can't direct the work.
 
@@ -107,18 +107,15 @@ This is why connecting your agents to your business intelligence systems matters
 
 The left column is the world model. The right column is what becomes possible once the world model has been transmitted.
 
-:::{.callout-note}
-## Action Step: Identify Your Baseline
-Pick one role in your company — yours, or a direct report's. Estimate: what percentage of that person's week is spent on work that belongs in the right column? Write it down. That number is your baseline. You'll use it before the chapter ends.
-:::
+The columns also don't tell you yet how to apply them to a real role in your company. That comes after the next section, once we've added the ownership layer and shown what the sort actually looks like.
 
 ## What each one *owns*.
 
-Ownership is where most companies stall, and it is the variable that most determines whether the work compounds.
+Humans own outcomes. Agents own tasks, and the intermediate outputs those tasks produce. That single line is what this section is about, and it is the variable that most determines whether the work compounds.
 
-The way we use "ownership" here is specific. It doesn't mean who is aware of a task or who is cc'd on the outcome. It means who is accountable for the decision, the quality, and the next move if something goes wrong. One person, or one agent, per responsibility. Not shared. Not "we'll figure it out in the meeting." A single owner who picks up the work and doesn't put it down until the handoff is complete. In the Co-Operating Model, a human always holds ultimate ownership. They might delegate to an agent or a team of agents, but organizations hold humans responsible for outcomes, even in fully automated processes.
+The way we use "ownership" here is specific. It doesn't mean who is aware of a task or who is cc'd on the outcome. It means who is accountable for the decision, the quality, and the next move if something goes wrong. A human always holds that ultimate accountability for the outcome. A human can delegate the *tasks* underneath the outcome to an agent, or to a team of agents, and each task needs a single named owner (one person, or one agent, picks it up and doesn't put it down until the handoff). But the agent's ownership is always derived from a human's delegation, and the outcome stays on the human's name. Organizations hold humans responsible for outcomes, even in fully automated processes.
 
-If you've worked inside Tiago Forte's PARA system (Projects, Areas, Resources, Archives), you already have a useful frame. Forte separates work into things with a finish line (Projects) and things that are ongoing (Areas), and makes the case that most knowledge-work gets lost because people treat ongoing responsibilities as if they were projects, and vice versa. The ownership split in the Co-Operating Model works the same way. Some responsibilities have a finish line: a draft gets written, an analysis gets delivered, a campaign gets published. Others are ongoing: the human owns the outcome across time, coaches the system as it learns, and is accountable if the work drifts.
+A useful way to see this: separate the work into things with a finish line from things that are ongoing. Some responsibilities have a finish line: a draft gets written, an analysis gets delivered, a campaign gets published. Others are ongoing: the human owns the outcome across time, coaches the system as it learns, and is accountable if the work drifts. Most knowledge work falls apart because the two get treated the same way. They're not.
 
 Here is what that looks like in practice.
 
@@ -138,9 +135,9 @@ That distinction sounds small. It isn't. When output and outcome get confused, w
 
 The human side is almost entirely verbs of judgment and direction: *decides, directs, prices, owns, coaches*. The agent side is almost entirely verbs of execution and capture: *drafts, recommends, documents, monitors, executes*. The human isn't in the workflow as a faster operator. The human is in the workflow as the operator of the operators. That's the shift that makes the math work.
 
-Read those two columns as the structural logic of the model, not just a sort. Agents make decisions inside the scope a human designed for them. They don't decide what's worth solving in the first place, and a company that hands them that decision has lost the plot: the agent doesn't know what business you're in, what your reputation is worth, or what a bad week feels like with your largest customer. A company that keeps the human inside the documentation and the first-pass drafting has wasted the model. That work has just moved sideways at high cost.
+Read those two columns as the structural logic of the model, not just a sort. Agents execute inside the scope a human designed for them. They don't choose what's worth solving in the first place. That call stays with the human, because the agent doesn't know what business you're in, what your reputation is worth, or what a bad week feels like with your largest customer. A company that keeps the human inside the documentation and the first-pass drafting has wasted the model in the other direction. That work has just moved sideways at high cost.
 
-When you get the split right, the company compounds. The human's hours flow into the work only humans can do: deciding, directing, pricing, owning, coaching. The agent's hours flow into everything else, at a cost and speed that re-prices the underlying economics of the business. Both sides get compounding returns every quarter, because the structure was built to absorb improvement on both sides.
+When you get the split right, the company compounds and the people inside it are generally happier. The human's hours flow into the work only humans can do: deciding, directing, pricing, owning, coaching. That work also tends to be the work they were hired for, the work they take pride in, the work that does not feel like grinding. The agent's hours flow into everything else, at a cost and speed that re-prices the underlying economics of the business. Both sides get compounding returns every quarter, because the structure was built to absorb improvement on both sides. The human side of the company also stops resenting the work that used to eat their week.
 
 That's the split that matters. Julie spent years watching executive teams hand decisions off to process layers and lose this exactly: the relational and contextual judgment that no system can hold, that only the person inside the work can supply. You can automate the research, the drafting, the documentation, and the follow-up. You can't automate the read of the room.
 
@@ -149,17 +146,13 @@ That's the split that matters. Julie spent years watching executive teams hand d
 If you're not sure which column a task belongs in, ask: would I trust a well-briefed new hire to do it competently within 30 days? If yes, it can probably be an agent task. The things that take years to learn — reading a room, knowing when a client is about to churn, choosing which battle to fight — those stay with the human.
 :::
 
-### Meridian Manufacturing.
-
-Meridian Manufacturing from Chapter 1 is the same logic landed inside one role. Elena Ruiz is the bottleneck for quoting because the pricing rules, the material lead-times, and the customer history all live in her head. The work she does on each quote splits the same way the table does. Choosing which exceptions to honor for a long-standing customer is Column A judgment. Pulling material costs from JobBOSS and assembling the line items against documented pricing logic is Column B execution. The first half stays with Elena. The second half can move to an agent, with Elena reviewing the draft before it goes to the customer. Same two columns, applied to one specific role inside one specific company — and that's how the Headcount Math at Meridian starts to move.
-
-The ownership table is a design instrument, not a philosophical exercise. The next step is to apply it to a real role in your company — one task at a time.
+The ownership table is a design instrument, not a philosophical exercise. The way to learn it is to run it: pick a real role, sort it task by task, and read what the sort tells you.
 
 :::{.callout-note}
 ## Action Step: Map One Role Against the Two Columns
-Pick the role you flagged earlier. Think through what that person actually spends their week on — the work as it happens, not the work as the job description writes it. Then sort each task into Column A (Human Intelligence: judgment that changes based on context a machine can't observe) or Column B (Agent Intelligence: processing that follows rules a machine could learn). Some tasks will split — "managing scope change requests" includes reading client politics (Column A) and updating the change log (Column B). Split those and sort each part.
+Pick one role in your company — yours, or a direct report's. Think through what that person actually spends their week on (the work as it happens, not the work as the job description writes it). Then sort each task into Column A (Human Intelligence: judgment that changes based on context a machine can't observe) or Column B (Agent Intelligence: processing that follows rules a machine could learn). Some tasks will split. "Managing scope change requests" includes reading client politics (Column A) and updating the change log (Column B). Split those and sort each part.
 
-Consider a typical professional services role — a Project Coordinator at a mid-sized firm. (This is an illustrative composite, not a specific client.) Here is what the sort looks like:
+To make that concrete, here is the sort run on a typical professional services role: a Project Coordinator at a mid-sized firm. (Illustrative composite, not a specific client.)
 
 | Column A (Human Intelligence) | Column B (Agent Intelligence) |
 |---|---|
@@ -171,11 +164,14 @@ Consider a typical professional services role — a Project Coordinator at a mid
 | | Updating scope change logs (dates, costs, approvals) |
 | | Compiling lessons-learned documents from project notes |
 
-Column B accounts for roughly 55% of this coordinator's week. At a loaded annual cost of $65,000, that is $36,000 per year of human intelligence allocated to work that follows learnable rules.
+Column B accounts for roughly 55% of this coordinator's week. At a loaded annual cost of $65,000, that is $36,000 per year of human intelligence allocated to work that follows learnable rules. Run the same sort on the role you picked. You'll do the cost calculation a few pages from now.
 :::
 
+### Meridian Manufacturing.
 
-When you get the ownership wrong (and most companies get it wrong on first attempt), you get the failure mode we keep seeing in the field: two parallel tracks producing nothing structural. The team has its workflow. The agents have theirs. The handoff is undefined. The outcome belongs to no one. The dashboard shows tool adoption and the P&L shows nothing.
+The Project Coordinator above is the exercise. Meridian Manufacturing from Chapter 1 is the worked example: the same two columns landed inside one specific role at one specific company. Elena Ruiz is the bottleneck for quoting because the pricing rules, the material lead-times, and the customer history all live in her head. The work she does on each quote splits the same way. Choosing which exceptions to honor for a long-standing customer is Column A judgment. Pulling material costs from JobBOSS and assembling the line items against documented pricing logic is Column B execution. The first half stays with Elena. The second half can move to an agent, with Elena reviewing the draft before it goes to the customer. Same two columns, applied inside a real operating constraint, and that's how the Headcount Math at Meridian starts to move.
+
+When you get the ownership wrong (and most companies get it wrong on first attempt), you get the failure mode we keep seeing in the field: two disconnected tracks producing nothing structural. The team has its workflow. The agents have theirs. The handoff is undefined. The outcome belongs to no one. The dashboard shows tool adoption and the P&L shows nothing.
 
 Here is what it looks like when you get it right.
 
@@ -205,7 +201,7 @@ The compounding math is direct. Parallelism reduces calendar time for the work i
 
 Most companies miss this because they adopt agents the way they adopted every tool before, one at a time, bolted onto the existing workflow. A single agent assistant added to a linear process produces a linear process that's slightly faster in one step. That's the AI subscription that changes nothing on the P&L.
 
-A Co-Operating Model is designed for parallel from the start. When you map the work against the two columns, human owns and agent executes, you're also mapping what can run simultaneously. Every row in the agent column is a potential parallel workstream. The design question isn't "should we add this agent?" It's "what runs at the same time, and who is steering?"
+A Co-Operating Model is designed for parallel from the start. When you map the work against the two columns, human owns and agent executes, you're also mapping what can run simultaneously. Every row in the agent column is a potential parallel workstream. The design question isn't "should we add this agent?" It's "what runs at the same time, and who is steering?" The mechanics of designing for parallel show up in Chapter 6, *Design*: how to bound each workstream, how to set the handoffs, how to spec the agents. For now, the point is that parallelism is a design choice you make before the work runs, not a happy accident the tools produce on their own.
 
 She was steering four workstreams at once. That's the job: concrete, operational. Four parallel outputs moving simultaneously, one human directing the whole system toward a single standard of quality.
 
@@ -215,7 +211,7 @@ The agents were doing exactly what the right column says they should do: draftin
 
 There is one more thing she brings to that arrangement that the ownership table doesn't capture: a standard. She knows what good looks like. She knows when the copy is sharp and when it's blunt. She knows which frame of the video holds and which one doesn't. She knows what goes out with Compound's name on it and what stays internal. That knowledge isn't in any of the four agent workstreams. It lives in her, and she applies it every time she reviews an output.
 
-The failure mode we see most often isn't people who refuse to use agents. It's people who use agents and then accept whatever comes back, because output feels like progress. Getting an agent to produce something isn't the same as doing good work. It's a first draft. The human who directs agent work has to know the difference between a draft and a result, and has to be willing to call the draft a draft until the result is actually there.
+The failure mode we see most often isn't people who refuse to use agents. It's people who use agents and then accept whatever comes back, because output feels like progress. Getting an agent to produce something isn't the same as doing good work. It's a first draft. The human who directs agent work has to know the difference between a draft and a result, and has to be willing to call the draft a draft until the result is actually there. "Knowing the difference" is not automatic. It depends on skill, on experience, on having done the work long enough to recognize where the seams are. The operator who reviews agent output without that grounding is a different failure mode (and a real one), which is why the human assigned to steer a stream needs to actually know the work, not just sign off on it.
 
 The standard isn't something the agent sets. The human sets it before the work starts and holds it through every review cycle. Without that standard, the output is AI slop with a professional's name on it. With it, the output is the work the human would have done, at the speed and scale only the agent can provide.
 
@@ -238,7 +234,7 @@ We had to design that before we could run it. We had to answer, explicitly, whic
 
 :::{.callout-note}
 ## Action Step: Calculate Your Design Opportunity
-Take the Column A / Column B sort you did earlier. Count the tasks in each column. Estimate the hours per week for each. Calculate the percentage of the role's week that lives in Column B — that is your design opportunity, the share of the role that could be running on agent intelligence instead of human hours.
+This step builds on the sort you ran a few pages back. Take the Column A / Column B sort you did for the role you picked. Count the tasks in each column. Estimate the hours per week for each. Calculate the percentage of the role's week that lives in Column B. That is your design opportunity, the share of the role that could be running on agent intelligence instead of human hours.
 
 Write it as a single number: "This role is __% Column B."
 
@@ -292,7 +288,7 @@ The left side of the equation holds two halves that are useless without each oth
 
 Together they produce the right side of the equation: **Compound** — used as a verb, in the precise sense your CFO means it. Each Sprint produces a return; the infrastructure built in that Sprint reduces the cost of the next Sprint; the design improvements made between Sprints accelerate every Sprint that follows. The company compounds on its AI investment the same way a balance sheet compounds on retained earnings. The gains start small. They don't stay small.
 
-You can put it on the wall. You can use it to diagnose what's missing. A company with the model but no rhythm has a slide deck; no work shipped. A company with rhythm but no model has activity; no compounding. Both halves, on the same beat, against real constraints: that produces the outcome.
+The equation belongs on the wall as the headline. What actually diagnoses what's missing is the system underneath it: the Co-Operating Model on one side, the Rhythm on the other, and the constraint each Sprint is aimed at. A company with the model but no Rhythm has a slide deck; no work shipped. A company with Rhythm but no model has activity; no compounding. Both halves running together, on the same beat, against real constraints: that produces the outcome. The rest of the book is the diagnostic instrument that the equation only labels.
 
 ## What's *next*.
 
