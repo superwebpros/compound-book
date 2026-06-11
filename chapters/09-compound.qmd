@@ -5,29 +5,29 @@
 Compound is the sixth stage of the Sequence — the one that turns a delivered Sprint into the foundation of the next one. You run a Sprint Retrospective, re-rank your Signal Backlog against what the Sprint taught you, install one design change, and name the next constraint. The Sprint that skips this stage shipped a project. The Sprint that runs it built infrastructure that makes every future Sprint faster and sharper.
 :::
 
-I am a compulsive worker. I've always known this about myself — it's not a character flaw I've conquered, it's a fact I manage. For most of my career, "done for the day" was not a state I inhabited. It was a fiction I told myself when I ran out of energy. The list never cleared. The inbox never reached zero. There was always another thread to pull, another problem to sit with, another thing that would get worse if I left it overnight.
+I'm a compulsive worker. I've always known that about myself, and I manage it rather than fix it. For most of my career, I was never actually done for the day. "Done" was just what I said when I ran out of energy. The list never cleared. The inbox never reached zero. There was always another thread to pull, another problem to work, another thing that would get worse if I left it overnight.
 
 Then something changed.
 
-I'm looking at the clock. It says 5:30. I do what I always do — I scan the list of everything that was supposed to happen today. The reports that needed to ship. The reviews I was supposed to run. The decisions that had been sitting in my inbox waiting for me to be the bottleneck that resolved them.
+I'm looking at the clock. It says 5:30. I do what I always do: I scan the list of everything that was supposed to happen today. The reports that needed to ship. The reviews I was supposed to run. The decisions sitting in my inbox waiting for me to resolve them.
 
-It's done. Not most of it. Not the urgent half. All of it.
+It's done. All of it.
 
-I sit there for a moment, because this doesn't feel like the ordinary kind of done — the kind where you convinced yourself you finished by letting something slip. It feels like the day actually finished. Like the list closed on its own terms, not on mine.
+The list is empty. Every item is finished. Nothing slipped to tomorrow.
 
 I close the laptop. I go home. I have dinner with my family.
 
 It happens again the next night. And the night after that.
 
-If I were to count the number of times I left at 5:30 in the eighteen months before I started deploying these systems, versus the six months after — the gap is embarrassing. The work was the same. The industry was the same. I was still moving fast. What changed is that the infrastructure I'd built was doing work in parallel — work that used to wait for me, work that was queued behind my availability as a single-threaded human. Each Sprint I ran built on the last. The agents knew the company's conventions because they'd learned them in an earlier Sprint. The tools knew the formats because we'd built the templates. The Source maps from the first Sprint were sitting inside the system, accelerating the fifth. None of that had to be rebuilt. It just ran.
+If I counted the times I left at 5:30 in the eighteen months before I started deploying these systems versus the six months after, the gap is embarrassing. The work was the same. The industry was the same. I was still moving fast. What changed is that the infrastructure I'd built was doing work in parallel. That work used to wait for me. It was queued behind my availability. Each Sprint I ran built on the last. The agents knew the company's conventions because they'd learned them in an earlier Sprint. The tools knew the formats because we'd built the templates. The Source maps from the first Sprint were sitting inside the system, accelerating the fifth. None of that had to be rebuilt. It just ran.
 
-And because it ran, I could stop.
+I could stop because it ran.
 
-That's what Compound is for. Every successful business runs on some kind of quarterly rhythm: EOS calls it the quarterly operating session, Scaling Up calls it quarterly planning, 4DX has its own cadence. The Compound stage is the AI operating layer running the same beat: stop, look at what the last Sprint produced, identify what the design got wrong, install one specific improvement, and carry it into the next Sprint. The difference between companies that sustain this kind of change and companies that revert isn't the quality of the initial implementation. It's whether the organization built a mechanism to learn from the work and carry that learning forward.
+That's what Compound is for. Every successful business runs on some kind of quarterly rhythm: EOS calls it the quarterly operating session, Scaling Up calls it quarterly planning, 4DX has its own cadence. The Compound stage is the AI operating layer running the same beat: stop, look at what the last Sprint produced, identify what the design got wrong, install one specific improvement, and carry it into the next Sprint. Companies that sustain this kind of change and companies that revert don't differ on the quality of the initial implementation. They differ on whether the organization built a mechanism to learn from the work and carry that learning forward.
 
 The retrospective looks at the design, not the people. The chart entries, the workflow, the Source map — those get reviewed. The question isn't who didn't perform. It's what the design assumed that turned out to be wrong. Companies that do this get better every quarter. Companies that skip it repeat the same design errors in slightly different configurations.
 
-Compound is the sixth stage of the Sequence — the one that turns a delivered Sprint into the foundation of the next one. This is the stage the word in our company name points at: the brand is *Compound* because what the work produces is compounding — not as metaphor, but as the structural property of running the Sequence on a cadence.
+Compound is the sixth stage of the Sequence. It turns a delivered Sprint into the foundation of the next one. Running the Sequence on a cadence makes the work compound, which is where our company name comes from.
 
 This chapter fills in the Compound row of the Sequence first-pass on your Sprint Planning Canvas, and closes the loop the Sprint opened.
 
@@ -45,7 +45,7 @@ A *Sprint Outcome Record*: one sentence that captures what changed. The constrai
 
 These three deliverables slot into the living document I'll describe in the next chapter — the Hybrid Org Today, the current operational picture of the Co-Intelligent Company. The Signal Backlog and the Hybrid Accountability Chart are both slices of it. Compound is where those slices get updated.
 
-If your Sprint ends and the backlog isn't re-ranked, the chart hasn't been updated, and no next constraint is named — the Sprint didn't finish. It stopped. Those are different states. Compound is the discipline of finishing.
+If your Sprint ends and the backlog isn't re-ranked, the chart hasn't been updated, and no next constraint is named, the Sprint didn't finish. Compound is the stage where those three things get done.
 
 :::{.callout-note}
 ## Action Step
@@ -59,11 +59,11 @@ The Sprint Retrospective is one of two instruments in the Compound stage. It's t
 
 **Question one: what worked?** The specific design decisions that paid off. Not "the team did great." The workflow that cut quoting time from four hours to twenty minutes. The ops manager who served as Human Orchestrator because she knew every pricing exception. The agent's access to three years of historical data that made the estimates accurate. Name the mechanism, not the sentiment.
 
-**Question two: what didn't work?** The handoffs that broke, the inputs that turned out dirtier than Source claimed, the supervisor reviews that got skipped because the cadence was wrong. For each item, the facilitator asks one question: *"What would have to be true for this to not happen again?"* That question reframes blame into design. You're not asking who failed. You're asking what the system needs to look like so the failure can't recur.
+**Question two: what didn't work?** The handoffs that broke, the inputs that turned out dirtier than Source claimed, the supervisor reviews that got skipped because the cadence was wrong. For each item, the facilitator asks one question: *"What would have to be true for this to not happen again?"*
 
 ### Meridian Manufacturing.
 
-Meridian's retrospective surfaced three items in the "didn't work" column. Dave Kowalski, the senior design engineer, went first: the agent's historical matching pulled comparable jobs correctly about 85% of the time, but missed complexity — a bracket with twelve bends and tight tolerances is not the same as a bracket with four bends and standard tolerances, even if they're both steel brackets. Elena was correcting about one in eight quotes. The reframe: the agent needed fabrication complexity indicators — bend count, tolerance class, surface finish — not just material and dimensions. Second, Ty admitted he'd forwarded three RFQs to Elena the old way in week one out of habit. The reframe: the old email path needed to be killed on day one, not left open as a fallback. Third, Carlos flagged that every Inconel or titanium job still routed to Elena for manual pricing because the materials database didn't cover specialty alloys. The reframe: the five most common non-standard materials needed to be added before Sprint two.
+Meridian's retrospective surfaced three items in the "didn't work" column. Dave Kowalski, the senior design engineer, went first: the agent's historical matching pulled comparable jobs correctly about 85% of the time, but missed complexity. A bracket with twelve bends and tight tolerances is not the same as a bracket with four bends and standard tolerances, even if they're both steel brackets. Elena was correcting about one in eight quotes. The fix: the agent needed fabrication complexity indicators (bend count, tolerance class, surface finish), not just material and dimensions. Second, Ty admitted he'd forwarded three RFQs to Elena the old way in week one out of habit. The fix: the old email path needed to be killed on day one, not left open as a fallback. Third, Carlos flagged that every Inconel or titanium job still routed to Elena for manual pricing because the materials database didn't cover specialty alloys. The fix: the five most common non-standard materials needed to be added before Sprint two.
 
 **Question three: what one design change would make the next Sprint better?** I'll give this its own section below, because the discipline behind it is load-bearing.
 
@@ -78,7 +78,7 @@ If your retrospective produces zero "what didn't work" items, you didn't run it 
 
 Beyond the Sprint outcome you measured in Deliver, Compound asks three additional questions. The answers are the compound interest.
 
-*What does the organization know now that it didn't know before this Sprint?* Meridian learned that Elena's Customer Notes spreadsheet — 147 rows of pricing exceptions on her desktop — contained only 112 validated rules. Thirty-five were duplicates or outdated. They learned which quote types the agent handles cleanly (standard specs, about 70% of volume) and which still need Elena's review (complex fabrication, specialty alloys). Before the Sprint, every quote looked equally hard. That assumption is gone. That's knowledge the next Sprint inherits.
+*What does the organization know now that it didn't know before this Sprint?* Meridian learned that Elena's Customer Notes spreadsheet, 147 rows of pricing exceptions on her desktop, contained only 112 validated rules. Thirty-five were duplicates or outdated. They learned which quote types the agent handles cleanly (standard specs, about 70% of volume) and which still need Elena's review (complex fabrication, specialty alloys). Before the Sprint, they treated every quote as equally hard. Now they know it isn't.
 
 *What capability exists now that didn't exist before?* A working quoting agent team that cut standard quote turnaround from 3.8 days to 4.2 hours. Elena's quoting time dropped from fifteen hours a week to five. Throughput doubled. That capability doesn't disappear when the Sprint ends. It's infrastructure — and it produced $47K in new revenue in the first month.
 
@@ -94,9 +94,9 @@ The answer is one. One committed design change, installed before the next Sprint
 
 The temptation after a good Sprint is to list every observation the team made and call the list "lessons learned." That list never lands. It's too long to install, too unprioritized to argue about, and too vague to enforce. By the time the next Sprint begins, the lessons file is closed and the same mistakes are being made in slightly different configurations.
 
-Compound is finished when that one design change is installed. The change has to be structural: a chart entry revised, a workflow step added, a guardrail tightened, a Source map updated. It is something the next Sprint inherits as part of how the company now operates. An insight that doesn't change the design isn't a lesson. It's a note in a document nobody reads.
+Compound is finished when that one design change is installed. The change has to be structural: a chart entry revised, a workflow step added, a guardrail tightened, a Source map updated. It is something the next Sprint inherits as part of how the company now operates. An insight that doesn't change the design isn't worth recording.
 
-The discipline of one design change defeats that failure mode. The Human Orchestrator looks across everything the Sprint surfaced — the Source phase that ran too thin, the supervisor cadence that was wrong, the handoff between the agent team and the human reviewer that broke once, the input format that turned out to need cleaning nobody scoped — and names the *single* change that will most improve the next Sprint.
+The discipline of one design change defeats that failure mode. The Human Orchestrator looks across everything the Sprint surfaced: the Source phase that ran too thin, the supervisor cadence that was wrong, the handoff between the agent team and the human reviewer that broke once, the input format that turned out to need cleaning nobody scoped. Then the Orchestrator names the *single* change that will most improve the next Sprint.
 
 Meridian's one design change: add fabrication complexity indicators — bend count, tolerance class, weld count, and surface finish — as matching criteria in the Quote Research Agent. Dave Kowalski provides the classification framework from his thirty-one years of fabrication experience. The agent uses it when selecting historical matches. You know it's working when you re-run the eight quotes from the previous month where Elena corrected the agent's match, and at least seven of eight produce the correct comparable. Installed before Sprint two kickoff.
 
@@ -104,7 +104,7 @@ That change gets installed before the next Sprint begins. It becomes part of how
 
 {{< excalidraw ch09-one-design-change "One design change rule: long lessons list that never installs (left) vs. single named change that becomes a permanent operating rule (right)." >}}
 
-One design change per Sprint is small. Eight Sprints of one good design change each is substantial — that's the Co-Operating Model getting deliberately better at running the Sequence. Disciplined improvement over many Sprints produces an agent team dramatically more capable after eight Sprints than after one. Skip the discipline and you get the same agent team it always was, with longer meeting notes.
+One design change per Sprint is small. Eight Sprints of one good design change each is substantial. That's the Co-Operating Model: across the Sprints, it gets better at running the Sequence. Disciplined improvement over many Sprints produces an agent team dramatically more capable after eight Sprints than after one. Skip the discipline and you get the same agent team you always had.
 
 :::{.callout-note}
 ## Action Step
@@ -117,7 +117,7 @@ The second instrument in Compound is the Constraint Re-rank. The Signal Backlog 
 
 Four questions drive the re-rank:
 
-*Did the Sprint reveal new information about any of the other constraints?* Solving one constraint frequently exposes the real cost of another. Meridian's quoting Sprint exposed that every quote the agent generated still had to be manually entered into JobBOSS — their ERP — when the quote converted to a job. Ty was entering the same data twice: once in HubSpot for the quote, again in JobBOSS for the job record. The HubSpot-to-JobBOSS data sync — previously ranked third on the backlog — jumped to first. That's information you only get from the people who just finished a Sprint.
+*Did the Sprint reveal new information about any of the other constraints?* Solving one constraint frequently exposes the real cost of another. Meridian's quoting Sprint exposed that every quote the agent generated still had to be manually entered into JobBOSS, their ERP, when the quote converted to a job. Ty was entering the same data twice: once in HubSpot for the quote, again in JobBOSS for the job record. The HubSpot-to-JobBOSS data sync, previously ranked third on the backlog, jumped to first.
 
 *Did any constraints get partially resolved as a side effect of this Sprint?* Production scheduling had been ranked second. It didn't get less important, but the quoting Sprint partially addressed it — Carlos now had pipeline visibility from faster quotes that enabled proactive scheduling instead of reactive. It moved to fourth.
 
@@ -136,13 +136,13 @@ Pull the Signal Backlog. Re-rank it using the four questions. Name the top const
 
 Three artifacts get updated at the end of every Compound session. Don't skip this. The documents are the institutional memory that makes compounding possible.
 
-The *Hybrid Accountability Chart* — any entry that was temporary for the Sprint becomes permanent if the workflow is staying. Any entry that didn't work gets revised. Meridian made the quoting row permanent: three agents — Quote Research, Quote Pricing, Quote Assembly — with Elena confirmed as Human Supervisor at the AI-Assisted level. They also reviewed neighboring rows for second-order effects: Carlos's production scheduling entry got a note that faster quoting was creating more jobs, and scheduling hadn't kept pace.
+The *Hybrid Accountability Chart* — any entry that was temporary for the Sprint becomes permanent if the workflow is staying. Any entry that didn't work gets revised. Meridian made the quoting row permanent: three agents (Quote Research, Quote Pricing, Quote Assembly), with Elena confirmed as Human Supervisor at the AI-Assisted level. They also reviewed neighboring rows for second-order effects. Carlos's production scheduling entry got a note that faster quoting was creating more jobs, and scheduling hadn't kept pace.
 
 The *Signal Backlog* — re-ranked per the Constraint Re-rank. HubSpot-to-JobBOSS data sync moved to the top. Customer pricing standardization entered at second. Specialty materials pricing moved up to third.
 
 The *Sprint Outcome Record* — the one-sentence outcome from Deliver, filed for future reference. "Standard quote turnaround reduced from 3.8 days to 4.2 hours. Elena's quoting time from 15 hrs/wk to 5. Throughput doubled. $47K new revenue in month one."
 
-These updates take fifteen minutes. They're the difference between a company that remembers what it learned and one that runs the same discovery phase from scratch every quarter.
+These updates take fifteen minutes. Without them, you run the same discovery phase from scratch every quarter.
 
 :::{.callout-note}
 ## Action Step
@@ -151,11 +151,11 @@ At the end of the Compound session, update all three living documents before any
 
 ## Infrastructure *compounds*.
 
-This is the structural payoff of the whole Sequence. *Why does this work get cheaper and better with each Sprint, when most organizational initiatives get more expensive and worse?*
+This is the structural payoff of the whole Sequence. This work gets cheaper and better with each Sprint.
 
 Because the artifacts the Sequence produces are permanent, and they accumulate.
 
-Sprint one's Source phase produced a Knowledge Map for the client delivery function — three weeks of mapping what the function actually knows, where the data lives, what's undocumented, what depends on which person's head. That Knowledge Map doesn't disappear when the Sprint ends. It lives inside the company. Sprint six in the same function inherits it. The Source phase that took three weeks the first time takes three days the sixth time — not because Source got faster as a stage, but because the map already exists and the work is mostly updating the edges.
+Sprint one's Source phase produced a Knowledge Map for the client delivery function: three weeks of mapping what the function actually knows, where the data lives, what's undocumented, what depends on which person's head. That Knowledge Map doesn't disappear when the Sprint ends. It lives inside the company. Sprint six in the same function inherits it. The Source phase that took three weeks the first time takes three days the sixth time, because the map already exists and the work is mostly updating the edges.
 
 The same is true of every artifact in the Sequence. The Hybrid Accountability Chart has one row after Sprint one and a dozen after Sprint twelve — each new Sprint inherits the chart as context for the design decisions it has to make. The Build Spec Writer learned the company's conventions in Sprint one and applies them automatically in Sprint two. Training material from Sprint three's Deliver phase becomes the onboarding for Sprint seven. Real artifacts, sitting inside the company, accelerating the next Sprint.
 
@@ -167,7 +167,7 @@ A company six Sprints in finds the Source phase of their seventh Sprint taking d
 
 I'm running a Source session with a client group. Multiple people on a video call. The goal is to map where their information lives — what data they have, who owns it, how often it's updated, what an agent can actually access.
 
-I ask the first question. Someone answers. Someone else adds a correction. A third person remembers something they'd forgotten to include. The conversation does what group conversations do — it meanders productively, people interrupt each other, problems get added to the pile mid-session.
+I ask the first question. Someone answers. Someone else adds a correction. A third person remembers something they'd forgotten to include. People interrupt each other, and problems get added to the pile mid-session.
 
 But the whole time, the skill is building the document. Attendees. Problem inventory. Knowledge inventory. Current tools. Connected data sources. Key themes. All of it accumulating sentence by sentence as the conversation happens, without anyone in the room writing a word.
 
@@ -175,27 +175,27 @@ Forty-five minutes later, we're done. I pull up the document. It has everything 
 
 That document is still inside their company. The next Sprint they run, the Source phase starts from that map — not from zero. Three weeks of discovery that used to happen at the start of every engagement now happens once, and then gets updated at the edges. That's the 45-minute session doing compounding work across every Sprint that follows it.
 
-The coordinator's knowledge base I described in the Design chapter — the one we extracted before she left and built the agents on top of — that artifact is still working too. Not as a memory of the Sprint that produced it. As the living foundation the next Sprint runs on. The knowledge we mapped became infrastructure. The infrastructure compounded. The numbers in the next chapter — thirteen people to eight, double-digit growth on billings and profitability — those didn't come from a single Sprint. They came from the stack of infrastructure each Sprint left behind.
+The coordinator's knowledge base I described in the Design chapter, the one we extracted before she left and built the agents on top of, is still working too. The next Sprint runs on it. The knowledge we mapped became infrastructure that each Sprint added to. The numbers in the next chapter, thirteen people to eight, double-digit growth on billings and profitability, didn't come from a single Sprint. They came from the stack of infrastructure each Sprint left behind.
 
 ## Compound is not the same as *scale*.
 
 Every vendor uses "scale" to sell more of the same thing. It's a quantity claim with no architecture behind it.
 
-Compound is specific. The friction per Sprint decreases — Source runs on maps that already exist, Build applies conventions the company already validated, Deliver inherits training material from previous Sprints. You get faster and more practiced at each stage. The actual cost per Sprint depends on the size and complexity of the constraint you're solving; that number varies. What doesn't vary is the team getting better at doing the work. The return per Sprint increases, because the constraints get more strategic as the easy ones come off the backlog and the leadership team runs Design with more precision each pass. The gap between revenue growth and headcount growth — the Headcount Math from the opening of this book — starts to look like a solved problem, because revenue keeps climbing while headcount grows on a much shallower slope. The number that moves is revenue per employee, and Compound is where it gets re-measured Sprint over Sprint. The company that runs the Rhythm long enough watches that gap widen on purpose.
+Compound is specific. The friction per Sprint decreases. Source runs on maps that already exist, Build applies conventions the company already validated, Deliver inherits training material from previous Sprints. You get faster and more practiced at each stage. The actual cost per Sprint depends on the size and complexity of the constraint you're solving; that number varies. What doesn't vary is the team getting better at doing the work. The return per Sprint increases, because the constraints get more strategic as the easy ones come off the backlog and the leadership team runs Design with more precision each pass. The gap between revenue growth and headcount growth, the Headcount Math from the opening of this book, starts to look like a solved problem, because revenue keeps climbing while headcount grows on a much shallower slope. The number that moves is revenue per employee, and Compound is where it gets re-measured Sprint over Sprint. The longer the company runs the Rhythm, the wider that gap gets.
 
 {{< excalidraw ch09-scale-vs-compound "Scale vs. Compound: scale repeats at flat cost and return; Compound shows decreasing cost and increasing strategic return as artifacts accumulate." >}}
 
 ## The brand and the *stage* share a name on purpose.
 
-By now you've noticed that the word *Compound* is doing more than one job in this book. It's the name of the company. It's the verb the work produces. It's the stage of the Sequence you're reading about now.
+*Compound* is the name of the company. It's the verb the work produces. It's the stage of the Sequence you're reading about now.
 
-Compound the stage is where the verb happens — where the previous Sprint's output stops being an outcome and becomes the next Sprint's accelerant. That mechanism is what Compound the company exists to install. The brand and the stage share a name because the company *is* the stage — the institutional answer to "who teaches you to run this last step, and to run it every time?"
+Compound the stage is where the verb happens. The previous Sprint's output feeds the next Sprint. That mechanism is what Compound the company exists to install. The brand and the stage share a name because the company *is* the stage. The company teaches you to run this last step, and to run it every time.
 
 Operators get this on their second Sprint. The first Sprint feels like a project. The second Sprint, when the Source map already exists and the chart already has a row and the design conversation has a precedent — that's when the word starts to mean what it means. The mechanism is real. The infrastructure is there. The next Sprint runs on what this one built.
 
 ## One Sprint, one *Compound*.
 
-One Sprint produces one Compound stage. That's the unit. You run the Sequence on one validated constraint, you ship the work, and you close it — in a single session — with Compound: Sprint Retrospective run, compounding measured, Constraint Re-rank done, one design change installed, the backlog re-ranked, the chart updated, the living documents current, the next constraint named, the next Human Orchestrator assigned. That is a complete pass through the system, and at the end of it your company knows things, and owns things, it didn't at the start.
+One Sprint produces one Compound stage. That's the unit. You run the Sequence on one validated constraint, you ship the work, and you close it in a single session with Compound: Sprint Retrospective run, compounding measured, Constraint Re-rank done, one design change installed, the backlog re-ranked, the chart updated, the living documents current, the next constraint named, the next Human Orchestrator assigned. That is a complete pass through the system.
 
 The chapter that follows is *the Rhythm* — what happens when this stage runs *quarterly* and becomes how the company operates. One Compound stage proves the mechanism works on one Sprint. The Rhythm is what turns the mechanism into a business outcome. It's also where the headcount math from the opening of this book gets answered, in the language of a company that's been running the Sequence long enough that the answer is no longer hypothetical.
 

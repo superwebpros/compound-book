@@ -5,7 +5,7 @@
 The previous chapter designed the system — information flows, roles, the Hybrid Accountability Chart, governance. This chapter designs the work itself. Work Deconstruction classifies every task in the constraint workflow using the ***TML framework*** (***Task***, ***Management***, ***Leadership***) from Source. The Design Brief captures the full specification. A prototype proves the design works before Build begins. Nothing enters Build until the Design Gate is locked — five items, all checked.
 :::
 
-The previous chapter gave you the system: the information flow, the accountability structure, the governance framework, the Human Orchestrator. This chapter is where you design the actual work — decomposing the constraint workflow task by task, populating the chart with real entries, building a Design Brief, prototyping, and locking the gate that separates Design from Build.
+This chapter is where you design the actual work. You'll decompose the constraint workflow task by task, populate the chart with real entries, build a Design Brief, prototype, and lock the gate that separates Design from Build.
 
 Together with the previous chapter, this is the second half of the Design row on your Sprint Planning Canvas, and the work that locks in your Human Orchestrator.
 
@@ -13,7 +13,7 @@ Together with the previous chapter, this is the second half of the Design row on
 
 Work Deconstruction applies the *TML* lens from Source to the work itself. Where Source used TML to categorize what the organization knows, Design uses TML to categorize what the work requires.
 
-*Work Deconstruction* is the method. Pull the actual accountability list for a role — not the job description, which is always cleaner than reality, but the real list of things that person touches every week. Then go task by task and classify each one using the TML framework from Source: ***Task***, ***Management***, ***Leadership***. For every task, also document the *source inputs* (where the data comes from — which system, which person, which document) and the *outputs* (where the result goes next). If you've done the Source work properly, you already know these. Writing them into the deconstruction makes the information flow from the previous chapter concrete at the task level.
+*Work Deconstruction* is the method. Pull the actual accountability list for a role, not the job description. The job description is always cleaner than reality. You want the real list of things that person touches every week. Then go task by task and classify each one using the TML framework from Source: ***Task***, ***Management***, ***Leadership***. For every task, also document the *source inputs* (where the data comes from — which system, which person, which document) and the *outputs* (where the result goes next). If you've done the Source work properly, you already know these. Writing them into the deconstruction makes the information flow from the previous chapter concrete at the task level.
 
 {{< excalidraw ch06b-work-deconstruction-populated "Work Deconstruction: three TML categories with source inputs and outputs — Task (Fully Automatable), Management (AI-Assisted), Leadership (Human Judgment Required)" >}}
 
@@ -24,9 +24,9 @@ For every task, ask one sorting question: "If I gave a well-briefed agent this t
 AI-Assisted is where most things start. Fully Automatable is where they move after the agent proves itself over multiple Sprints. Autonomy is earned, not assigned.
 :::
 
-The classification is the work. Most accountabilities, when deconstructed this way, have a different shape than the leader assumed. The "judgment-heavy role" turns out to be 70% routing and documentation, while the "low-skill operational task" depends on a relationship the agent can't replicate — and you won't know which is which until you decompose the role honestly, task by task.
+Decompose the role honestly, task by task. Most accountabilities have a different shape than the leader assumed. The "judgment-heavy role" turns out to be 70% routing and documentation. The "low-skill operational task" depends on a relationship the agent can't replicate. You won't know which is which until you do the decomposition.
 
-TML doesn't tell you which column is right for every task — it gives you the lens to ask the right question about each one. Not "can the AI do this?" but "what type of intelligence does this work require, and which type is AI reliably capable of providing at the quality standard this organization needs?"
+TML doesn't tell you which column is right for every task. For each one, it makes you ask what type of intelligence the work requires, and which type AI is reliably capable of providing at the quality standard this organization needs.
 
 :::{.callout-note}
 ## Action Step
@@ -39,16 +39,16 @@ Once the deconstruction is done, the results flow directly into the *Hybrid Acco
 
 The project coordinator story from the opening of the previous chapter is also the clearest illustration of what Work Deconstruction produces — because we ran it in real time, on a real role, with a pending hiring decision on the table.
 
-We listed every accountability she owned on the existing Accountability Chart — not her job description, which was cleaner than reality. Her actual list: the items she owned, the work she touched every week. Start there with your own role: write down every accountability, not the aspirational version, but the actual weekly work. Then run every item through the TML classification. Every item gets a label. **Leadership** — does this require judgment that depends on knowing the client, knowing the history, reading a room? **Management** — does it benefit from agent assistance, with a human reviewing every output? **Task** — is it fully automatable, high-volume, well-defined, clean inputs, predictable outputs?
+We listed every accountability she owned on the existing Accountability Chart, not her job description, which was cleaner than reality. Her actual list was the items she owned, the work she touched every week. Start there with your own role: write down every accountability you actually do each week. Then run every item through the TML classification. Every item gets a label. **Leadership**: does this require judgment that depends on knowing the client, knowing the history, reading a room? **Management**: does it benefit from agent assistance, with a human reviewing every output? **Task**: is it fully automatable, high-volume, well-defined, clean inputs, predictable outputs?
 
 <!-- PRODUCTION: Excalidraw agent — the coordinator before/after diagram currently uses a triplet pattern. Redesign to avoid the three-item rhetorical structure. -->
 {{< excalidraw ch06-coordinator-before-after "Coordinator role before/after: tasks that stayed human vs. tasks that became the agent team" >}}
 
-The classification revealed a substantial fraction of her work was routing and documentation. Scheduling client check-ins. Updating the project tracker after calls. Generating the weekly status reports from data that already lived in the CRM. That work looked like operations because it happened inside the operations function — but it wasn't operations judgment. It was operations administration. The kind of work that eats a skilled person's hours and leaves them with no time for the parts of the role that actually require them.
+The classification revealed a substantial fraction of her work was routing and documentation. Scheduling client check-ins. Updating the project tracker after calls. Generating the weekly status reports from data that already lived in the CRM. That work looked like operations because it happened inside the operations function, but it was administration, not judgment. It ate a skilled person's hours and left no time for the parts of the role that required her.
 
-When you do this on your own role, look for the same pattern: what percentage of your weekly hours go to tasks that are well-defined, data-driven, and repeatable? That percentage is your design opportunity.
+When you run this on your own role, look at the same thing: what percentage of your weekly hours go to tasks that are well-defined, data-driven, and repeatable? Those are the hours you can design out.
 
-That work became a designed agent team. It landed in the Hybrid Accountability Chart as an AI-assisted entry — she reviewed every output to start, the right call when the team is new and trust hasn't been established. The remaining accountability — the client relationships, the judgment calls, the situations that required someone who knew the history — stayed with her. Her role became more strategic, not because we gave her a new title, but because we gave her back the hours that the low-judgment work had been consuming.
+That work became a designed agent team. It landed in the Hybrid Accountability Chart as an AI-assisted entry. She reviewed every output to start, the right call when the team is new and trust hasn't been established. The remaining accountability stayed with her: the client relationships, the judgment calls, the situations that required someone who knew the history. Her role became more strategic because we gave her back the hours that the low-judgment work had been consuming.
 
 The junior coordinator listing was never posted. One row in the chart replaced a $24K hire.
 
@@ -66,7 +66,7 @@ Here's what a completed Work Deconstruction looks like for the Meridian quoting 
 | Review and approve quote | Leadership (Human Judgment Required) | Agent-assembled draft quote → Elena | Approved quote → Ty for delivery | The design decision that makes everything else work. Elena holds final authority on every number. Her judgment catches what the exception rules miss — strategic account considerations, spec ambiguities, margin calls on edge cases. |
 | Deliver quote to customer | Leadership (Human Judgment Required) | Approved quote PDF → Ty via HubSpot sales queue | Quote delivered to customer, follow-up tracked in CRM | Customer relationship. Ty reads the negotiation, knows the account history, decides timing and positioning. The handoff from Elena to Ty is structured — the approved quote lands in his CRM queue with context notes. |
 
-Task count: Leadership (Human Judgment Required) — 2. Management (AI-Assisted) — 2. Task (Fully Automatable) — 3. The role that felt like "Elena's judgment" was roughly 65% data retrieval and document assembly — work that required her *access*, not her judgment. The remaining 35% stayed with her because the deconstruction made clear that the judgment was irreducible.
+Task count: Leadership (Human Judgment Required), 2. Management (AI-Assisted), 2. Task (Fully Automatable), 3. The role that felt like "Elena's judgment" was roughly 65% data retrieval and document assembly. That work required her *access*, not her judgment. The remaining 35% stayed with her because the deconstruction showed the judgment couldn't be removed.
 
 The Hybrid Accountability Chart entries that came out of this deconstruction:
 
@@ -78,7 +78,7 @@ The Hybrid Accountability Chart entries that came out of this deconstruction:
 | Draft quote generation and review | Quote Assembly Agent | Elena Ruiz (VP Ops) | AI-Assisted |
 | Quote delivery and customer follow-up | None | Ty Banfield (Sales Lead) | N/A |
 
-Every row has a name. Every agent team has a supervisor. All agent outputs start AI-Assisted — Elena reviews every quote. The accountability that stays human stays human — not because nobody tried to automate it, but because the Work Deconstruction showed the judgment can't be removed.
+Every row has a name. Every agent team has a supervisor. All agent outputs start AI-Assisted: Elena reviews every quote. The accountability that stays human stays human because the Work Deconstruction showed the judgment can't be removed.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -87,15 +87,15 @@ The difference between AI-Assisted and Automated is the human's role, not the re
 
 ## Seeing the *design*.
 
-A good workflow design is legible — you can look at it and trace the path from input to output, see where humans decide and where agents execute, and spot the gaps before Build discovers them for you.
+A good workflow design is legible. You can look at it, trace the path from input to output, see where humans decide and where agents execute, and spot the gaps before Build does.
 
 The right visualization depends on what you're designing. You don't need every tool for every Sprint, but you should know what's available and reach for the right one.
 
 **Swim lane diagrams** are for mapping information flows between humans and agents. Draw two lanes — one for human work, one for agent work. Walk the workflow from trigger to output and draw each step in the lane where it happens. Every time the work crosses from one lane to the other, that's a handoff. Every handoff is a design decision: what format does the output need to be in? Who reviews it? What happens when the handoff fails? Swim lanes force you to answer those questions because the crossing points are visible. If your swim lane diagram has fifteen crossings for a six-step workflow, you've designed something that will be fragile in production. Simplify before you build.
 
-**Flowcharts** are for mapping decision logic. When the workflow has branching paths — if the quote is above a dollar threshold, route to VP; if the customer segment is new, flag for manual review — a flowchart makes the logic inspectable. You can build these in any diagramming tool — Lucidchart, Miro, or even a whiteboard photo. Mermaid is also worth knowing about: it's a text-based diagramming format where you describe the logic in plain language and the tool draws the diagram. Every major AI assistant can generate Mermaid from a description, and it renders in most documentation tools. You can describe your workflow to an AI assistant and get a Mermaid diagram back in the same conversation. That's useful because the diagram becomes a checkpoint — if the flowchart doesn't match what you intended, the design has a gap you can fix now instead of in Build.
+**Flowcharts** are for mapping decision logic. When the workflow has branching paths (if the quote is above a dollar threshold, route to VP; if the customer segment is new, flag for manual review), a flowchart makes the logic inspectable. You can build these in any diagramming tool: Lucidchart, Miro, or even a whiteboard photo. Mermaid is also worth knowing about. It's a text-based diagramming format where you describe the logic in plain language and the tool draws the diagram. Every major AI assistant can generate Mermaid from a description, and it renders in most documentation tools. You can describe your workflow to an AI assistant and get a Mermaid diagram back in the same conversation. That's useful because the diagram becomes a checkpoint. If the flowchart doesn't match what you intended, the design has a gap you can fix now instead of in Build.
 
-**Visual design tools** — Figma, Claude's artifact system, Excalidraw — are for when the workflow produces something a stakeholder needs to see. If the agent team is generating customer-facing quotes, draft what the quote looks like. If it's producing reports, mock up the report format. The visual artifact gives the stakeholder something concrete to react to, which is faster and more honest than asking them to imagine the output from a written spec.
+**Visual design tools** (Figma, Claude's artifact system, Excalidraw) are for when the workflow produces something a stakeholder needs to see. If the agent team is generating customer-facing quotes, draft what the quote looks like. If it's producing reports, mock up the report format. The visual artifact gives the stakeholder something concrete to react to, which is faster and more honest than asking them to imagine the output from a written spec.
 
 :::{.callout-note}
 ## Action Step
@@ -131,7 +131,7 @@ The answers will surprise you. The quote format makes sense to you but confuses 
 Stakeholder surveys work here too — especially when the agent team's output reaches people outside the immediate workflow. If the quoting agent produces something a customer will see, ask three customers what they'd think of the new format. Five responses are enough to catch the design gaps that internal review misses.
 :::
 
-Constant prototyping is the discipline. Not one big reveal at the end of Design, but a steady loop: design a piece, prototype it, get feedback, adjust. The Compound Sprint is short enough that this loop runs naturally if you start prototyping early. Teams that wait until the design feels "complete" before testing it are the teams that discover in Build that the design doesn't match reality. Test early. Adjust while adjusting is cheap.
+Constant prototyping is the discipline. It's a steady loop: design a piece, prototype it, get feedback, adjust. The Compound Sprint is short enough that this loop runs naturally if you start prototyping early. If you wait until the design feels "complete" before testing it, you discover in Build that the design doesn't match reality. Test early.
 
 ## Design is the *gate*.
 

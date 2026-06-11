@@ -1,6 +1,6 @@
 # Case Study: The PM Agent Team
 
-This is the story of one Compound Sprint, start to finish, with every artifact shown. We replaced a project coordinator role with an agent team — five AI agents handling the coordination work that had consumed twenty hours a week of human labor. It took about six weeks from Signal to Deliver, with a platform pivot in the middle that nearly derailed the whole thing. Every stage of the Compound Sprint is here with its artifacts and design decisions. If you've read the framework chapters and wondered what a full Sprint looks like in practice, this is it.
+This is one Compound Sprint, start to finish, with every artifact shown. We replaced a project coordinator role with an agent team — five AI agents handling the coordination work that had consumed twenty hours a week of human labor. It took about six weeks from Signal to Deliver, with a platform pivot in the middle that nearly derailed the whole thing. Every stage of the Compound Sprint is here with its artifacts and design decisions.
 
 The role belonged to a subcontractor we'll call Rachel. She was hired in August 2024 for graphic design and content management, then transitioned into project coordination by September. The transition happened fast — within weeks she'd moved from creating visual assets to owning the operational backbone of how work moved through our project management system. By the time we decided to replace the role with agents, her responsibilities had expanded to cover project tracking, scorecard updates, meeting facilitation, social media scheduling, task creation from transcripts, video editing coordination, and QA work alongside our VP of Operations, Sofia.
 
@@ -25,13 +25,13 @@ There wasn't a single "this is the constraint" moment. The signal accumulated. R
 
 ## Source: Mapping the Knowledge
 
-Sofia was the key to this stage. She had trained Rachel, created her 90-day plan, and was accountable for operations and project delivery. If anyone knew what Rachel actually did — not the job description version, the real version — it was Sofia.
+Sofia was the key to this stage. She had trained Rachel, created her 90-day plan, and was accountable for operations and project delivery. If anyone knew what Rachel actually did day to day, it was Sofia.
 
 The source mapping happened organically through our design sessions. Sofia and I sat down for a two-hour working session that became the origin story for the PM Agent Team. We pulled up the Hybrid Accountability Chart, started walking through what needed to happen, and the picture became clear fast. Sofia summarized the shape of the work: "A lot of the effort that we expend is literally moving information from one place or one person to another. And there's not really a lot of — there's no value add other than coordination."
 
-That was the Source insight. The knowledge domains weren't exotic. They were data operations wrapped in a job title.
+That was the Source insight. The knowledge domains were data operations sitting under a job title.
 
-But when we started listing what Rachel "did," we realized we were conflating different things. Her accountability chart had roles on it — project coordination, QA support, content management — and those roles contained tasks, and the tasks had different characteristics. We needed to pull those apart before we could design anything.
+But when we started listing what Rachel "did," we realized we were conflating different things. Her accountability chart had roles on it: project coordination, QA support, content management. Those roles contained tasks, and the tasks had different characteristics. We needed to pull those apart before we could design anything.
 
 ### Artifact: Roles, Tasks, and Accountability Deconstruction
 
@@ -100,17 +100,17 @@ The deconstruction made the design decision obvious. The roles that looked like 
 
 The design happened across two sessions — both with Sofia, totaling about three hours.
 
-The first session was the big one. We pulled up the Hybrid Accountability Chart, started walking through every function, and Sofia started articulating the shape of the problem. The conversation wasn't "who should we hire?" It was "what does this role actually do, and how much of it requires a human?"
+The first session was the big one. We pulled up the Hybrid Accountability Chart, started walking through every function, and Sofia started articulating the shape of the problem. The conversation focused on what the role actually does and how much of it requires a human, not on who to hire.
 
-I framed it as a manufacturing problem. If you think about digital work the way you think about physical production — input, transformation, output — then most of what Rachel was doing was assembly-line work:
+I framed it as a manufacturing problem. If you think about digital work the way you think about physical production (input, transformation, output), then most of what Rachel was doing was assembly-line work:
 
 > "If you thought about digital work as being manufactured the same way you would physical work — if we thought about making a car — you've got to source raw materials, you've got to have some machining done, you've got to start assembling different pieces. The only reason robots work in a factory is because the processes are so well thought through that it's really easy for a robot to say, once something comes here, I get this thing, I do this thing, and then I move it over here. Input, transformation, output."
 
-That framing — the information factory — became the mental model for how we designed the agent team. If you could map the inputs, transformations, and outputs for each piece of Rachel's work, you could figure out which robots to build.
+That framing became the mental model for how we designed the agent team. If you could map the inputs, transformations, and outputs for each piece of Rachel's work, you could figure out which robots to build.
 
 Sofia got it immediately: "I think if this goes well, it will be only a matter of figuring out — yeah, doing a couple of iterations. But I think this is where you can see, man, there's so many interesting applications that could work for so many different kinds of companies." She also flagged the prerequisite: "It kind of depends how well you manage your initial data. We know we have almost everything in the CRM. So that makes it easier. I think other companies will have to face that question first — where's our information? How good is it?"
 
-In that session, I designed four agents on a whiteboard. I didn't just describe them — I *designed* them. The difference matters. Describing an agent is saying "we need something that creates tasks." Defining an agent means specifying its inputs, outputs, triggers, and guardrails. Every agent went through both stages in that session.
+In that session, I designed four agents on a whiteboard. Describing an agent is saying "we need something that creates tasks." Defining an agent means specifying its inputs, outputs, triggers, and guardrails. Every agent went through both stages in that session.
 
 ### Artifact: Agent Description to Definition
 
@@ -262,13 +262,13 @@ We started the PM Agent Team at human-on-the-loop. Sofia reviews agent output da
 
 The build happened in two phases, and the first one failed.
 
-**Phase 1: n8n (September 2025 - February 2026).** We started with n8n — a workflow automation tool — running scheduled workflows that fetched API data and fed it to AI for analysis. In the first design session, I was still designing around n8n. I drew the architecture on the whiteboard — a CRM workflow triggering an n8n webhook, an AI agent in n8n with tools for searching tasks and making API calls back to the CRM.
+**Phase 1: n8n (September 2025 - February 2026).** We started with n8n, a workflow automation tool, running scheduled workflows that fetched API data and fed it to AI for analysis. In the first design session, I was still designing around n8n. I drew the architecture on the whiteboard: a CRM workflow triggering an n8n webhook, with an AI agent in n8n that had tools for searching tasks and making API calls back to the CRM.
 
 It was brittle. The webhook approach worked for simple triggers but fell apart when we needed agents to chain decisions, maintain context across multiple API calls, and handle the kind of error recovery that production systems demand. We couldn't get it reliable enough to trust.
 
 **Phase 2: Agent Server (late February - March 2026).** We abandoned n8n and built a dedicated agent server. Sofia drove the build.
 
-Here's something worth pausing on: Sofia isn't a developer. She's an operations leader who learned how to use Claude Code and how agent teams work — enough to build this system. She had me to help, but she didn't need much. Once she learned the tools and had some pre-configured skills, her *domain expertise* let her build the suite better than I could have. She knew the CRM inside and out, understood every edge case in the coordination workflow, and could spec the agents' behavior from lived experience rather than documentation. The designs and even builds can happen with people who aren't traditionally technical — if they're willing to learn the tools and they have deep knowledge of the domain.
+Sofia isn't a developer. She's an operations leader who learned how to use Claude Code and how agent teams work, enough to build this system. She had me to help, but she didn't need much. Once she learned the tools and had some pre-configured skills, her *domain expertise* let her build the suite better than I could have. She knew the CRM inside and out, understood every edge case in the coordination workflow, and could spec the agents' behavior from lived experience rather than documentation. The designs and even the builds can happen with people who aren't traditionally technical, as long as they're willing to learn the tools and they have deep knowledge of the domain.
 
 The main agent suite consisted of five agents, each running as a standalone Node.js service with built-in cron scheduling:
 
@@ -290,7 +290,7 @@ Sofia was cautious about autonomy, and that was the right call: "I'm taking it s
 
 By mid-March, the agents were connected to the CRM and handling real work. I described the state of play in a team conversation: "Sofia is building a team of agents to help us with project task and capacity management. A lot of the things that Sofia spends time on and that Rachel was spending time on are things we've realized — okay, if we chain together AI agents, we can get most of that work done by the AI agents. And so we can spend our time on things that are more valuable, like actually communicating with customers, new products, all that kind of stuff."
 
-I also laid out the governance model in that same conversation: "The human responsibility at the moment should be that the team lead sends this email, AI reviews, creates tasks, associates to the project. The next person gets it in their queue tomorrow and is able to complete it. In that case, the human in the loop wasn't even you, it was the team member. Bypassing a lot of that delegation in the first place." The long-term vision: "Once we feel like the agent system prompt is working the way it's supposed to, the team is working, the agent team is working the way it's supposed to, then you look at it less and less and less, and all of that time that we spend on this starts to go away."
+I also laid out the governance model in that same conversation: "The human responsibility at the moment should be that the team lead sends this email, AI reviews, creates tasks, associates to the project. The next person gets it in their queue tomorrow and is able to complete it. In that case, the human in the loop wasn't even you, it was the team member. Bypassing a lot of that delegation in the first place." The long-term vision: "Once we feel like the agent system prompt is working the way it's supposed to, the team is working, the agent team is working the way it's supposed to, then you look at it less, and all of that time that we spend on this starts to go away."
 
 ### Artifact: Build Spec
 
@@ -307,7 +307,7 @@ I also laid out the governance model in that same conversation: "The human respo
 
 ## Deliver: Shipping It
 
-Rachel left right before the agent team went live. There was no parallel transition period — no window where Rachel and the agents ran side by side. Rachel was gone, and the agents picked up where she left off.
+Rachel left right before the agent team went live. There was no parallel transition period where Rachel and the agents ran side by side. Rachel was gone, and the agents took over her work.
 
 Only Sofia was trained on supervising the agent team. That's because she built it. She shared the system with me and documented everything in our knowledge base. There was no broader training needed — the rest of the team interacted with the agents' output (Slack messages, CRM tasks, daily reports) without needing to know or care that an agent generated them.
 
@@ -315,9 +315,9 @@ The team didn't notice the difference. What they noticed was that task managemen
 
 We tracked the same metrics we'd always tracked: cost variance, time variance, schedule variance. The Reporting Agent automated what Rachel had been doing manually with scorecards — and did it with actual earned value management math instead of self-reported numbers.
 
-The biggest early adjustment was the n8n-to-agent-server migration itself. We tried n8n first. It was brittle. The webhook architecture worked for simple triggers but couldn't handle the chaining, context management, and error recovery that production agent work demands. The decision to rebuild as a dedicated agent server — each agent as a standalone Node.js service with its own cron, its own system prompt, its own CRM user — was the build-phase pivot that made everything else possible.
+The biggest early adjustment was the n8n-to-agent-server migration itself. We tried n8n first. It was brittle. The webhook architecture worked for simple triggers but couldn't handle the chaining, context management, and error recovery that production agent work demands. So we rebuilt as a dedicated agent server: each agent as a standalone Node.js service with its own cron, its own system prompt, its own CRM user.
 
-The cost comparison tells the story. Agent tooling runs about \$500/month — roughly \$200 for server hosting and \$300 for Claude API tokens. That's about \$6K/year. Rachel's role cost \$24K/year. A 75% cost reduction, and the agents don't call in sick or deteriorate over time.
+Agent tooling runs about \$500/month — roughly \$200 for server hosting and \$300 for Claude API tokens. That's about \$6K/year. Rachel's role cost \$24K/year. That's a 75% cost reduction.
 
 ### Artifact: Delivery Metrics
 
@@ -333,7 +333,7 @@ The cost comparison tells the story. Agent tooling runs about \$500/month — ro
 
 ## Compound: What the Next Sprint Inherits
 
-The biggest learning from this Compound Sprint was that we could move even more work to agentic teams than we initially expected. When we started, we assumed things like work assignment and capacity management would stay human for a long time — they felt too nuanced for agents. Sofia proved that wrong. She figured out how to make those automatable sooner than either of us predicted. She's now focused on exceptions rather than coordination — which is exactly where a Human Orchestrator should be spending her time.
+The biggest learning from this Compound Sprint was that we could move even more work to agentic teams than we initially expected. When we started, we assumed things like work assignment and capacity management would stay human for a long time — they felt too nuanced for agents. Sofia proved that wrong. She figured out how to make those automatable sooner than either of us predicted. She's now focused on exceptions rather than coordination, which is where the role belongs.
 
 The scope expanded after initial deployment, and it continues to expand as agents become more powerful and Sofia gets better at identifying new signals worth solving. Every week she finds another coordination task that follows a pattern the agents can learn. The boundary between "requires human judgment" and "agents can handle this" keeps moving — not because the agents are getting smarter (though they are), but because Sofia is getting better at decomposing the work.
 

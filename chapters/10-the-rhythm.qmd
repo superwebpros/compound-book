@@ -7,7 +7,7 @@ One Sprint is a project. A rhythm of Sprints is a compounding operating model. T
 
 This time last year, I had thirteen people. I'm looking at the current roster and there are eight.
 
-Five people are gone — not cut in a crisis, not managed out because the company was struggling. Gone because the work they were doing is now being done differently. And we're growing. Double-digit growth on billings and profitability. The fewer people are the reason.
+Five people are gone. They weren't cut in a crisis or managed out because the company was struggling. They're gone because the work they were doing is now being done differently. And we're growing. Double-digit growth on billings and profitability. The fewer people are the reason.
 
 The shift did not happen because we adopted a new platform or made a strategic decision to run lean. It happened because we ran Signal before we wrote requisitions. That's the behavioral change. It sounds small. It's not.
 
@@ -15,13 +15,13 @@ Here is the specific moment I can point to. We had a project coordinator who was
 
 We stopped before we did that. Not because we had some principled objection to hiring. Because by that point we had run enough Sprints that the first question had changed. Not *who do we hire?* but *what does Signal say about this?*
 
-So we ran Signal. What is the actual constraint? What does this role touch? We mapped the information sources — the CRM fields she used, the project management cadence she owned, the client follow-up patterns she was responsible for. We asked which parts of the work required human judgment and which parts were high-volume and structured. Then we designed a workflow without assuming a human had to sit in every seat. We built a set of AI agents that could handle the bulk of what she was doing — the routing, the reporting, the follow-up cadence. We deployed.
+So we ran Signal. What is the actual constraint? What does this role touch? We mapped the information sources: the CRM fields she used, the project management cadence she owned, the client follow-up patterns she was responsible for. We asked which parts of the work required human judgment and which parts were high-volume and structured. Then we designed a workflow without assuming a human had to sit in every seat. We built a set of AI agents that could handle the bulk of what she was doing: the routing, the reporting, the follow-up cadence. We deployed.
 
 The hire never got posted. We did let her go. The work got absorbed into the organization without a crisis, and the team didn't miss a beat.
 
-We went from thirteen people to eight over the following year — and by the fourth and fifth Sprint, running Signal before writing a requisition was not a deliberate practice anymore. It was the default. The question that used to be automatic — *who fills this?* — had been replaced by a different automatic question. That replacement is what this chapter is about.
+We went from thirteen people to eight over the following year. By the fourth and fifth Sprint, running Signal before writing a requisition was not a deliberate practice anymore. It was the default. The question that used to be automatic, *who fills this?*, had been replaced by a different automatic question.
 
-One Sprint is a project. Two Sprints is a habit. Six Sprints is an operating model. This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on.
+This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on.
 
 This chapter sets the Quarterly review on your Sprint Planning Canvas, and turns one Sprint into the rhythm that produces the next one.
 
@@ -65,7 +65,7 @@ Put the quarterly operating session on the calendar for the end of this quarter.
 
 ### How it maps to your operating system.
 
-If you're running EOS, Scaling Up, 4DX, or a homegrown operating cadence, the Compound quarterly session is *not* a competitor. It's the AI operating layer that runs on top of the operating system you already use. Your quarterly off-site still happens. Your rocks still get set. Your L10s still run. The Sprint session is the focused hour that decides what your AI workforce is doing this quarter, and that decision arrives at your existing meetings as real data — what your largest constraint is, in dollars — instead of opinion.
+If you're running EOS, Scaling Up, 4DX, or a homegrown operating cadence, the Compound quarterly session runs on top of it. It doesn't replace the operating system you already use. Your quarterly off-site still happens, your rocks still get set, and your L10s still run. The Sprint session is the focused hour that decides what your AI workforce is doing this quarter. That decision arrives at your existing meetings as data: what your largest constraint is, in dollars.
 
 Here is how the pieces map:
 
@@ -97,17 +97,24 @@ When a new executive joins, the Hybrid Org Today is the briefing. When the board
 
 Return to where this book started. Revenue growing. Headcount growing alongside it on a steep slope. AI investments doing nothing to bend that slope. The CEO knows the math is wrong and can't find the lever that moves it.
 
-After six to eight Sprints on the Rhythm, the slope bends. Not overnight, but the pattern is broken. The behavioral marker is specific. Your first response to a capacity problem is no longer *who do we hire?* It is *what does Signal say about this?*
+After six to eight Sprints on the Rhythm, headcount growth slows. The behavioral marker is specific. When you hit a capacity problem, your first question is *what does Signal say about this?* rather than *who do we hire?*
 
 Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked against the Signal Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the Sprint that addresses it ships a designed workflow instead of a job posting.
 
-Companies that default to designing before hiring build a different slope than companies that default to adding people. The ones running Signal before requisitions get compounding returns on the infrastructure they build. The ones adding people to absorb demand grow headcount in lockstep with revenue, forever. That gap between the two slopes is the Headcount Math, working in the right direction. The metric the quarterly review tracks is revenue per employee. Flat in most companies, climbing in yours, because each Sprint finds another place the work doesn't actually require another body.
+Companies that default to designing before hiring build a different slope than companies that default to adding people. The ones running Signal before requisitions get compounding returns on the infrastructure they build. The ones adding people to absorb demand grow headcount in lockstep with revenue, forever. That gap between the two slopes is the Headcount Math. The metric the quarterly review tracks is revenue per employee. In most companies it stays flat. In yours it climbs, because each Sprint finds another place the work doesn't actually require another body.
 
 {{< excalidraw ch10-headcount-math "Headcount Math before/after: headcount climbs on a steep slope with revenue (left) vs. the slope bends — headcount still grows, but the marginal headcount per next dollar of revenue drops as design infrastructure compounds (right)." >}}
 
-The coordinator story that opened this chapter ends here — with the question that stopped getting asked. The hire that never got posted wasn't a one-time decision — it was the result of running Signal enough times that the requisition-first reflex had been overwritten. That's the Rhythm doing its job: changing the default behavior of the organization across every call that follows. The thirteen-to-eight arc the Preface points at — the developer who left, the knowledge that walked out the door — closes in this chapter, in the same way: not at a single moment, but as a year of running this loop until the math moved.
+The hire that never got posted wasn't a one-time decision. It came from running Signal enough times that the requisition-first reflex had been overwritten. That's the Rhythm working. The thirteen-to-eight arc the Preface points at — the developer who left, and the knowledge that left with them — closed over a year of running this loop until the math moved.
 
-Most teams already have a meeting cadence — the L10, the weekly standup, the quarterly review. The cadence is real. But the discipline that turns a red number into a named constraint — and a named constraint into a Sprint — is usually absent. Weeks of red scorecards mean the cadence exists and the Rhythm does not. What the Rhythm adds isn't a new meeting. It's the four things the meeting produces: an outcome reviewed, a backlog updated, a constraint committed, a chart current. Without all four, the session is theater.
+Most teams already have a meeting cadence: the L10, the weekly standup, the quarterly review. The cadence is real. What's usually missing is the discipline to turn a red number into a named constraint, and a named constraint into a Sprint. Weeks of red scorecards mean the cadence exists and the Rhythm does not. The Rhythm doesn't add a meeting. It adds four required outputs:
+
+1. an outcome reviewed
+2. a backlog updated
+3. a constraint committed
+4. a chart current
+
+Without all four, the session produces nothing.
 
 ## The *Compounding Scorecard*.
 
@@ -180,9 +187,9 @@ What that company needs is to install the Sequence as the AI layer on top of the
 
 ## The *Co-Intelligent Company*.
 
-The Co-Intelligent Company is the company built — quarter by quarter, Sprint by Sprint — by running the Sequence on the Rhythm.
+The Co-Intelligent Company is the company built by running the Sequence on the Rhythm, quarter by quarter, Sprint by Sprint.
 
-There is nothing aspirational left. Every term is operational — a document the leadership team can produce on a Tuesday, a behavior a CEO can run in the next quarterly session.
+Every term is operational. Each one is a document the leadership team can produce or a behavior a CEO can run in the next quarterly session.
 
 The framework is yours to run. The next chapter is about the one thing Compound does that you should not run alone.
 

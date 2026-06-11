@@ -13,11 +13,11 @@ I tell her: "Pretty buggy over here. But it's doing a great job over there."
 
 She nods. We're both looking at the same screen.
 
-Here's what I didn't understand yet, on that Wednesday: "live" is a technical claim. The agent is running. The workflow is in production. The ticket is about to get closed. None of that means the Sprint produced.
+"Live" is a technical claim. The agent is running. The workflow is in production. The ticket is about to get closed. None of that means the Sprint produced.
 
-The Sprint produces on Monday. When the operator whose week was supposed to change sits down, opens their queue, and finds that the eight hours of routing work they used to do is gone — not delegated, not reduced, gone — and they have something different to do instead. If that happens, the Sprint produced. If they're still routing manually, still sending work to the old inbox out of habit or because no one told them to stop, still working the system we were supposed to replace — then we deployed a tool. We didn't deliver anything.
+The Sprint produces on Monday. The operator whose week was supposed to change sits down, opens their queue, and the eight hours of routing work they used to do is gone. They have something different to do instead. If that happens, the Sprint produced. If they're still routing manually and sending work to the old inbox, still working the system we were supposed to replace, then we deployed a tool and didn't deliver anything.
 
-The difference is operational, not technical.
+The difference is operational.
 
 This chapter fills in the Deliver row of the Sequence first-pass on your Sprint Planning Canvas.
 
@@ -31,9 +31,9 @@ The person whose week used to include four hours of manual routing now has those
 
 If you skip that work, the deployed system still functions — but the organization continues to behave as if the old workflow is in place. People route around the new system because they were never told to route through it. The agent does its job. The hours don't come back. The cost Signal quantified doesn't get recovered. The Sprint produced less than it could have.
 
-I learned this in my own shop before I understood it as a principle. We finished a Sprint, deployed a workflow, wrote the runbook. Two weeks later I watched a teammate do the task manually — the exact task the agent now handles — because she'd never been explicitly told to stop. The workflow was in production. The old inbox was still open. She was routing to both, hedging, not sure which one was "real." *We built the tool to do this. Why are you still doing it this way?* I said it out loud. I was, in a meaningful sense, talking to myself — because I was the one who never closed the old inbox.
+I learned this in my own shop before I understood it as a principle. We finished a Sprint, deployed a workflow, wrote the runbook. Two weeks later I watched a teammate do the task manually, the exact task the agent now handles, because she'd never been explicitly told to stop. The workflow was in production. The old inbox was still open. She was routing to both, hedging, not sure which one was "real." I asked her why she was still doing it the old way when we'd built the tool to do it. But I was the one who never closed the old inbox.
 
-The failure isn't resistance. The failure is an unanswered question: who was supposed to tell her to stop? That's Deliver's job. Not the technology part — that part was done. The operational part: closing the old inbox, redirecting the upstream handoff, making the new workflow the only workflow. Until that happens, you have two systems running in parallel, one of them invisible, and people will choose the one they know.
+This wasn't resistance. Nobody told her to stop. That's Deliver's job. The technology was done; what wasn't done was the operational work: closing the old inbox, redirecting the upstream handoff, making the new workflow the only workflow. Until that happens, you have two systems running in parallel, one of them invisible, and people will choose the one they know.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -57,7 +57,7 @@ The Audit is a check on prior work, not new authoring. Every question points to 
 
 ### Meridian Manufacturing.
 
-At Meridian Manufacturing, Elena and Dave completed hands-on training with the three-agent quoting pipeline before the workflow went live. Not a walkthrough email — Elena ran real quotes through the system while Dave reviewed the agent's historical job matching against specs he knew by heart. The escalation path was documented in the Claude Team workspace: any quote flagged as low confidence routed to Dave for non-standard materials, with Elena reviewing every assembled quote before it went to the customer. The workflow was tested against real RFQs pulled from HubSpot — actual customer requests from the prior two weeks, not demo data. Elena's review cadence was booked on the calendar: Monday and Thursday mornings, recurring. Systems verified: HubSpot connected, JobBOSS connected, Customer Notes.xlsx with 112 validated pricing rules loaded into the agent's context. Four gates passed. Clear to deploy.
+At Meridian Manufacturing, Elena and Dave completed hands-on training with the three-agent quoting pipeline before the workflow went live. Elena ran real quotes through the system while Dave reviewed the agent's historical job matching against specs he knew by heart. The escalation path was documented in the Claude Team workspace: any quote flagged as low confidence routed to Dave for non-standard materials, with Elena reviewing every assembled quote before it went to the customer. The workflow was tested against real RFQs pulled from HubSpot, actual customer requests from the prior two weeks. Elena's review cadence was booked on the calendar: Monday and Thursday mornings, recurring. Systems verified: HubSpot connected, JobBOSS connected, Customer Notes.xlsx with 112 validated pricing rules loaded into the agent's context. Four gates passed. Clear to deploy.
 
 :::{.callout-note}
 ## Action Step
@@ -79,7 +79,7 @@ For each role, answer four questions:
 3. How does this person review agent output?
 4. What triggers an escalation?
 
-Deliver training has a specific principle that distinguishes it from technology training: ***train the boundary, not the tool***. Most technology training focuses on how to use the new system. The training that prevents adoption failure focuses on where the human's work ends and the agent's work begins — the handoff. The handoff is the moment of highest failure risk in any human-AI workflow. It's where the human either completes the output correctly and passes it to the agent, or does it incorrectly and compromises everything the agent produces downstream. Every person whose handoff changes should be able to answer two questions before go-live: what do I do differently now, and what does the agent do that I used to do? If they can't answer both, the training is incomplete, and the runbook isn't done.
+Deliver training is different from technology training. Most technology training covers how to use the new system. The training that prevents adoption failure covers the handoff: where the human's work ends and the agent's work begins. The handoff is the moment of highest failure risk in any human-AI workflow. It's where the human either completes the output correctly and passes it to the agent, or does it incorrectly and compromises everything the agent produces downstream. Every person whose handoff changes should be able to answer two questions before go-live: what do I do differently now, and what does the agent do that I used to do? If they can't answer both, the training is incomplete, and the runbook isn't done.
 
 Sit down with the Hybrid Accountability Chart from Design and work through each role whose handoffs changed. For each role, write three things: what they send to the agent (the trigger or input), what comes back to them (the output and its format), and what they do when something lands outside the expected range (the escalation path). One page per role.
 
@@ -93,7 +93,7 @@ At Meridian, the per-role runbook looked like this:
 
 What changed per role: Dave used to give Elena verbal labor-hour estimates when she asked. Now he reviews the agent's historical matching weekly and gets pulled in only for non-standard materials — the work that actually requires thirty-one years of fabrication knowledge. Elena used to build every quote from scratch, fifteen hours a week. Now she reviews agent-generated drafts in fifteen to twenty minutes each, spending the recovered hours on production planning and supplier negotiations. Ty used to wait three to five days for Elena to produce a quote, then forward it to the customer. Now he receives approved quotes same-day for standard work and can see every quote's status in the CRM pipeline.
 
-Get the runbook in the tool the team already lives in — the project management system, the shared doc, the Slack channel — before the workflow goes live. Not after.
+Get the runbook into the tool the team already uses, whether that's the project management system, the shared doc, or the Slack channel. Do it before the workflow goes live.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -109,7 +109,7 @@ Pick one role from your Hybrid Accountability Chart whose handoffs changed. Writ
 
 ## What gets *logged*.
 
-Deliver also surfaces what did not work. This isn't a postmortem — the retrospective belongs to Compound, and that's the next chapter. This is the operational log that captures, in real time, the gaps between what was designed and what production actually revealed.
+Deliver also surfaces what did not work. The full retrospective belongs to Compound, in the next chapter. This is the operational log that captures, in real time, the gaps between what was designed and what production actually revealed.
 
 Create the log on day one of deployment. Assign one person to own it — named, accountable. Set a daily check-in for the first two weeks: review the log, categorize new entries, note patterns.
 
@@ -142,7 +142,7 @@ At the end of week two, tally entries by category. The category with the most en
 The operational log isn't a complaint box. It's a sensor. Every entry tells Design something about the next Sprint. If the same category keeps appearing, that category is the next constraint.
 :::
 
-The log has to exist before the workflow goes live — not as an afterthought, but as part of the deployment itself.
+The log has to exist before the workflow goes live. Build it as part of the deployment.
 
 :::{.callout-note}
 ## Action Step
@@ -153,7 +153,7 @@ Create the log template — four columns: Date, What happened, Category, What it
 
 Deliver's first responsibility is to measure the Sprint against Signal's quantified cost. Signal said the constraint costs $150K a year. Deliver shows a workflow that recovers 80% of that. The Sprint produced. The math is legible. The next Sprint earns the right to start.
 
-That's the clean case. The interesting cases are the ones where the measurement is harder. The Sprint clearly changed the work — the operator's week looks different, the bottleneck is gone, the log shows unplanned interventions dropping week over week — but the dollar figure is hard to pin down because the original Signal quantification was looser than it should have been. That's not a Deliver failure. That's a Signal lesson, and it goes into the Compound stage as an input to how the next Sprint gets framed.
+That's the clean case. The harder cases are the ones where the measurement is harder. The Sprint clearly changed the work. The operator's week looks different, the bottleneck is gone, and the log shows unplanned interventions dropping week over week. But the dollar figure is hard to pin down because the original Signal quantification was looser than it should have been. That's a Signal lesson, not a Deliver failure, and it goes into the Compound stage as an input to how the next Sprint gets framed.
 
 The discipline is to write the number down anyway. Even an imperfect measurement beats a vibe. If the constraint cost was estimated at "around 8 hours a week" and Deliver shows the work now takes 30 minutes a week, the recovery is real and the math is good enough to report. Refuse the trap of declaring victory without evidence — and the equally bad trap of letting imperfect evidence become an excuse to claim nothing happened.
 
@@ -223,17 +223,17 @@ If you can't fill in the "Result After Sprint" line with a number, go back to th
 
 ## The change is not the *launch*. The change is the *week*.
 
-A well-run Deliver phase changes the work the people in the function do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that's now automated either get reinvested — in the strategic work Design identified as the higher-return use of their time — or they come out of the org over time, as the Headcount Math gets rerun against the new operating reality.
+A well-run Deliver phase changes the work the people in the function do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that's now automated either get reinvested in the strategic work Design identified as the higher-return use of their time, or they come out of the org over time, as the Headcount Math gets rerun against the new operating reality.
 
 That's the test of whether Deliver delivered: can the people whose work was supposed to change describe, concretely, what they now do that they didn't do before, and what they no longer do that they used to? The agent running and the dashboard existing are table stakes.
 
 ## End of the Sprint as a *project*. Start of it as *infrastructure*.
 
-Deliver is where the Sprint ends as a project and begins as infrastructure. The workflow is live. The team is trained. The result is measured. The log of what didn't work is captured. The constraint Signal named is — depending on the Sprint — either resolved, materially reduced, or honestly described in terms of how much of it the Sprint moved and how much remains.
+Deliver is where the Sprint stops being a project and becomes infrastructure. The workflow is live, the team is trained, the result is measured, and the log of what didn't work is captured. Depending on the Sprint, the constraint Signal named is either resolved, materially reduced, or honestly described in terms of how much of it the Sprint moved and how much remains.
 
 {{< excalidraw ch08-build-deliver-compound-handoff "Build → Deliver → Compound handoff: what each stage produces and passes forward." >}}
 
-That artifact set — the outcome, the log, the runbook, the updated Hybrid Accountability Chart entry — is what the next stage works against. Compound is where the team turns it into the inputs that accelerate the next Sprint. That's the next chapter.
+That artifact set is what the next stage works against: the outcome, the log, the runbook, the updated Hybrid Accountability Chart entry. Compound is where the team turns it into the inputs that accelerate the next Sprint. That's the next chapter.
 
 ## Reflection Questions
 

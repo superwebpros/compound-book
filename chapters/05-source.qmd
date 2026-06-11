@@ -11,7 +11,7 @@ But before we could decide *what* to do about it, we stopped the conversation. "
 
 That question changed the shape of the conversation. It stopped being about whether to replace the coordinator and started being about how information moved through her role. Every task she performed consumed information from somewhere: a project management tool, a client email, a subcontractor's status update. It produced information that went somewhere else. Mapping that flow was Source. We didn't call it that at the time. But it was the step that kept us from acting on assumptions instead of acting on reality.
 
-Every modern company is an information company, whether it recognizes itself as one or not. Your CRM, your ERP, your shared drives, your inboxes: all of it is information used to make decisions. Source makes that information environment visible. Signal named the constraint. Source maps what the organization knows about it and where that knowledge lives before anyone designs against it. The diagnosis isn't finished when the constraint is named. It's finished when the team can see on a single page every asset, every gap, and the institutional knowledge the constraint depends on.
+Source makes a company's information environment visible. Signal named the constraint. Source maps what the organization knows about it and where that knowledge lives before anyone designs against it. The diagnosis is finished when the team can see on a single page every asset, every gap, and the institutional knowledge the constraint depends on.
 
 Julie has watched the same gap surface in M&A integration work, well outside any AI context. When the acquired division closed at a global food safety company, the inherited assets included process experts who had been with the parent for twenty years. Their institutional memory existed nowhere in any system. Their expertise was the documentation. The first question Julie asked every integration team was the same question Source asks: if this person were not here tomorrow, what would stop working? The answers were almost always more alarming than anyone expected. The gap between what a company thinks it knows and what it actually has in documented, accessible form is the most consistent finding in every post-acquisition integration. Source closes that gap before it becomes a Sprint failure.
 
@@ -19,9 +19,9 @@ This chapter fills in the Source row of the Sequence first-pass on your Sprint P
 
 ## Diagnosis is not done until you know what you *have*.
 
-The temptation at the end of Signal is to act. The constraint is named. The cost is quantified. The team feels the momentum and wants to move — hire someone, buy a tool, build something, anything. That instinct costs more than most teams realize.
+The temptation at the end of Signal is to act. The constraint is named, the cost is quantified, and the team wants to move: hire someone, buy a tool, build something. Acting before you know what you already have wastes the spend.
 
-To become a Co-Intelligent Company capable of Co-Intelligent Co-Operation requires knowing what you're working with: which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and you won't get past the first design conversation, because nobody in the room will agree on what data exists, where it lives, or who holds the judgment the workflow depends on.
+Becoming a Co-Intelligent Company capable of Co-Intelligent Co-Operation requires knowing what you're working with: which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and you won't get past the first design conversation, because nobody in the room will agree on what data exists, where it lives, or who holds the judgment the workflow depends on.
 
 Knowledge sorts into three layers. The **TML framework** (Task / Management / Leadership) is the lens Source uses to categorize what the inventory finds.
 
@@ -37,7 +37,7 @@ The **Problem/Identify/Solution (PIS) framework** gives the Source conversation 
 
 The PIS sequencing discipline enforces the same logic the Compound Sequence enforces: you don't move to solution until you've identified what you're actually working with. Running Source without having completed Signal is the same discipline as prescribing before diagnosing. The constraint has to be named before the knowledge inventory begins, because the inventory is shaped by the constraint.
 
-A Source run on the wrong constraint is a well-organized inventory of the wrong problem.
+If you run Source on the wrong constraint, you get an inventory of information for a problem you don't have.
 
 ## Create a *Knowledge Map*.
 
@@ -60,7 +60,7 @@ If your Source output doesn't fit on one page, it's not scoped to the constraint
 
 ### Pass 1: *Digital*.
 
-List every digital source that touches the constraint: the CRM records, the process logs, the shared drives, the inboxes, the spreadsheets. For each one, write the name, mark it as Digital, name the person who owns or maintains it, and mark its status: Clean (data is accurate, current, and usable as-is), Needs Work (data exists but has quality or format problems), or Missing (the data should exist but doesn't). Then answer four Pipeline Audit questions: Does this source connect to the other systems that touch the constraint, or does data move by manual export? Can a workflow read data from this source directly, or does someone have to export and re-enter it first? Who owns the handoff: a person, a scheduled job, or nobody? When was the data last verified as accurate? Mark each digital source's pipeline as *Connected*, *Manual*, or *Broken*. (If the terms "API," "MCP," and "connector" are new to you, the section "How systems talk to each other" later in this chapter defines each one in plain language. You don't need to understand the engineering to fill in this column.)
+List every digital source that touches the constraint: the CRM records, the process logs, the shared drives, the inboxes, the spreadsheets. For each one, write the name, mark it as Digital, name the person who owns or maintains it, and mark its status: Clean (data is accurate, current, and usable as-is), Needs Work (data exists but has quality or format problems), or Missing (the data should exist but doesn't). Then answer four Pipeline Audit questions: Does this source connect to the other systems that touch the constraint, or does data move by manual export? Can a workflow read data from this source directly, or does someone have to export and re-enter it first? Who owns the handoff: a person, a scheduled job, or nobody? When was the data last verified as accurate? Mark each digital source's pipeline as *Connected*, *Manual*, or *Broken*. The section "How systems talk to each other" later in this chapter defines "API," "MCP," and "connector."
 
 :::{.callout-note}
 ## Action Step
@@ -80,7 +80,7 @@ Name every person whose judgment the constraint workflow depends on. For each on
 
 Look at what's absent. What would someone tasked with solving this constraint need to know that isn't represented anywhere in the first two passes? What question would someone ask about this workflow that your current sources can't answer? What decision is currently made by gut feel that should be made by data? Add those rows as Missing sources, and note what type they *should* be: digital system, documented process, captured expertise. Note what it would take to create them.
 
-The Missing sources column is the most important column on the Knowledge Map. That's where the highest-risk gaps live. Per the TML framework, Missing sources cluster in two of the three layers. Management knowledge loss: decisions made by leaders who have since left, governance rules that existed nowhere except a person's memory and walked out with them. Leadership knowledge loss: customer or market intelligence that was never systematically captured, context that existed in individuals no longer available. Task knowledge is the layer most commonly captured in systems. Its absence is usually a documentation gap, not a knowledge loss. The Knowledge Map's Missing column is where the Sprint finds its highest-risk gaps. Every missing source is a potential Sprint failure mode. Name them before Build begins, not after deployment reveals them.
+The Missing sources column is the most important column on the Knowledge Map. That's where the highest-risk gaps live. Per the TML framework, Missing sources cluster in two of the three layers. Management knowledge loss: decisions made by leaders who have since left, governance rules that existed nowhere except a person's memory and walked out with them. Leadership knowledge loss: customer or market intelligence that was never systematically captured, context that existed in individuals no longer available. Task knowledge is the layer most commonly captured in systems. Its absence is usually a documentation gap, not a knowledge loss. Every missing source is a potential Sprint failure mode. Name them before Build begins, not after deployment reveals them.
 
 
 :::{.callout-note}
@@ -132,11 +132,11 @@ If you're going to map where knowledge lives, you need to understand how it move
 
 ### *APIs*.
 
-Application programming interfaces are how systems talk to each other. Think of a waiter taking orders between a kitchen and a table. The table (one system) sends a request. The kitchen (another system) sends back food. The waiter (the API) carries the message both directions in a format both sides understand. Your CRM has an API. Your ERP has an API. When we say a system "has an API," we mean other software can ask it questions and get structured answers back.
+Application programming interfaces are how systems talk to each other. One system sends a request in a format the other understands, and gets a response back. Your CRM has an API. Your ERP has an API. When we say a system "has an API," we mean other software can ask it questions and get structured answers back.
 
 ### *MCPs*.
 
-Model context protocols are how AI connects to your tools and data. An API lets systems talk to systems. An MCP lets an AI model talk to your systems. It's the bridge that allows a language model to pull information from your CRM, read your knowledge base, or check a status in your project management tool in real time, during a conversation or a workflow. Without MCPs, an AI model only knows what you paste into the prompt. With them, it can reach into your actual business systems.
+Model context protocols are how AI connects to your tools and data. An API lets systems talk to systems. An MCP lets an AI model talk to your systems. It allows a language model to pull information from your CRM, read your knowledge base, or check a status in your project management tool in real time, during a conversation or a workflow. An AI model without an MCP only knows what you paste into the prompt. With one, it can reach into your actual business systems.
 
 ### *Connectors*.
 
@@ -171,17 +171,17 @@ Organic sources are people. The ops manager is the source of truth for how the q
 
 At-risk sources are the third category and the highest-stakes piece of Source work. An at-risk source is institutional knowledge that lives in one person's head and is about to leave: through a planned exit, a retirement, a role change, or a reorg. The cost of losing it is invisible until it's gone. By the time the gap shows up in the work, the person who could have filled it is no longer reachable. Source is where at-risk sources get named, prioritized, and captured before they walk out the door. For most operating companies this is the single most consequential thing Source does.
 
-The pattern in every acquisition is the same: the most at-risk knowledge is never the knowledge anyone thought to protect. The documented processes were protected. The undocumented judgment calls were not. At the same global food safety company, the single highest-risk knowledge asset in the acquired integration was a senior pricing strategist who held in his head twenty years of customer-specific pricing exceptions — decisions that had been made individually over decades and never consolidated into any system. He was not identified as an at-risk knowledge source until Source was run. When he was identified, the team had four weeks to work with him before he retired. They captured everything. Source prevented a loss that would have taken two years to reconstruct and would have produced pricing errors throughout the transition. That's the operator math of At-Risk Source.
+At the same global food safety company, the single highest-risk knowledge asset in the acquired integration was a senior pricing strategist who held in his head twenty years of customer-specific pricing exceptions — decisions that had been made individually over decades and never consolidated into any system. He was not identified as an at-risk knowledge source until Source was run. When he was identified, the team had four weeks to work with him before he retired. They captured everything. Source prevented a loss that would have taken two years to reconstruct and would have produced pricing errors throughout the transition.
 
 When you're building your map, ask explicitly: who on this list is a single point of failure? Which organic sources are held by one person with no backup, no documentation, and a reason they might not be here in twelve months? Name them. Mark them. Once it's on the map, Design has something to act on.
 
-Remember the developer who walked out with everything he knew? Source provides context to the systems, agents, and humans that need to complete their work efficiently. Preventing knowledge loss is part of that. But the primary purpose is to give Design a complete picture of what's available, so the workflow that gets built has access to the right information at the right time. If we had mapped where the knowledge lived before that developer left, the handoff would have been a step instead of a slide.
+Source provides context to the systems, agents, and humans that need to complete their work efficiently. Preventing knowledge loss is part of that. But the primary purpose is to give Design a complete picture of what's available, so the workflow that gets built has access to the right information at the right time. If we had mapped where the knowledge lived before that developer left, the handoff would have been controlled.
 
 ## Transcripts: the *closest thing* a person has to an API.
 
 People don't have APIs. But you can make them transcripts. A transcript is the highest-fidelity extraction method available.
 
-Here's why. When you ask someone to type a summary or fill out a form, they compress. They leave out the context, the exceptions, the reasoning behind the decision. Data entry is inherently lossy, because typing is slow and people edit as they go. But when you sit someone down, ask the right questions, and record what they say, you get the full picture: the judgment, the edge cases, the "well, except when" qualifiers that make institutional knowledge actually useful.
+When you ask someone to type a summary or fill out a form, they compress. They leave out the context, the exceptions, and the reasoning behind the decision. Data entry is lossy because typing is slow and people edit as they go. When you sit someone down, ask the right questions, and record what they say, you get the full picture: the judgment, the edge cases, and the qualifiers that make institutional knowledge useful.
 
 Humans evolved a sophisticated communication system through voice over hundreds of thousands of years. Typing has existed for decades. As the cost of speech-to-text drops to effectively zero, it is cheaper in both time and information quality to talk than to type. Use the natural architecture.
 
@@ -208,7 +208,7 @@ Dave added his piece. Thirty-one years of fabrication experience compressed into
 
 The Knowledge Map that emerged from that session made the information environment visible for the first time. HubSpot CRM: Connected, but holding win/loss records with no link to quotes. JobBOSS ERP: Connected to invoicing, but nobody queried it for quoting. Customer Notes.xlsx: Broken, living on Elena's desktop with no sync. Elena herself: Organic, at-risk, the only person who could reconcile all the sources. Dave: Organic, at-risk, four years to retirement with an undocumented estimation method.
 
-That single session produced the map that made Design possible. Without it, the team would have started building agents against assumptions about what Elena did, not against what she actually did and what systems she actually touched. Source is the difference between those two starting points.
+That single session produced the map that made Design possible. Without it, the team would have started building agents against assumptions about what Elena did, not against what she actually did and what systems she actually touched. Source gives you the second starting point.
 
 ## Knowledge management in an *agentic* world.
 
@@ -241,12 +241,12 @@ Most companies don't have anyone whose job it is to do this work. The shared dri
 
 We use the working term *knowledge manager* for it. The job is to curate the institutional knowledge the rest of the company runs on: deciding what gets captured, what gets retired, what gets restructured, what gets connected to which agent. They are the person accountable for whether the knowledge base reflects how the business actually operates today, and for catching the moment it stops.
 
-The knowledge manager isn't the *Human Orchestrator*. The Human Orchestrator (Chapter 6) sets the goals for an agent team inside a single Sprint and reviews the agent team at the goal level. The knowledge manager works underneath every Sprint: making sure the inputs each Sprint depends on are clean, current, and reachable. A Human Orchestrator running a Sprint against a knowledge base nobody has curated is going to spend most of the Sprint debugging the data instead of designing the workflow. A Human Orchestrator's outcomes are only as good as the knowledge a knowledge manager made clear.
+The Human Orchestrator (Chapter 6) sets the goals for an agent team inside a single Sprint and reviews the agent team at the goal level. The knowledge manager works underneath every Sprint, keeping the inputs each Sprint depends on clean, current, and reachable. A Human Orchestrator running a Sprint against a knowledge base nobody has curated will spend most of the Sprint debugging the data instead of designing the workflow. A Human Orchestrator's outcomes are only as good as the knowledge a knowledge manager made clear.
 
 Most companies don't have this role today. They will. The companies that introduce it early run their Sprints against knowledge they can trust; the companies that don't end up running their Sprints against whatever was in the drive when somebody asked.
 
 ## Garbage in, Garbage Out.
-Garbage in, garbage out. That phrase gets thrown around like a cliche, but it's the foundational axiom of Source work. Your company's data is a massive asset, *if* you can get it into a format AI can actually use. An agent pointed at dirty data, outdated records, or unstructured knowledge with no classification doesn't produce bad answers occasionally. It produces bad answers confidently and at scale. Source is where you confront the quality of what you've got before you build anything on top of it.
+Garbage in, garbage out. That's the foundational principle of Source work. Your company's data is a massive asset, *if* you can get it into a format AI can actually use. An agent pointed at dirty data, outdated records, or unstructured knowledge with no classification produces bad answers confidently and at scale. Source is where you confront the quality of what you've got before you build anything on top of it.
 
 We learned this the hard way inside our own company. Early on, we weren't clear about taxonomies (the naming and grouping system that tells you what each piece of knowledge is and where it belongs), knowledge hygiene (the discipline of keeping that system current and free of contradictory, stale, or duplicate entries), or how we vectorized work (the process of indexing documents into a format an AI can search and retrieve, defined in the glossary under *embeddings* and *vector database*). The agents kept surfacing wrong information. Old pricing, deprecated processes, policies superseded two revisions back. We'd correct it. It would surface the same thing again. It took more iterations than we want to admit before we asked the right question: why does it keep showing old information?
 
