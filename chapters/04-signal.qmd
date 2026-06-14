@@ -29,6 +29,10 @@ Here's the template. You'll fill it in by the end of this chapter.
 
 {{< excalidraw ch04-constraint-statement-template "Constraint Statement template: one sentence, location, duration, quantified cost, and validating evidence." >}}
 
+The anchoring sentence follows this structure: "[Function] cannot [desired outcome] because [root cause], which costs us approximately [X dollars] per [Y time period]."
+
+That form forces three things at once: it names the function that's failing, the outcome that's blocked, and the structural cause. Not the symptom. "Elena can't quote within 24 hours because she's the sole holder of customer pricing context, which costs us approximately $558K per year." That sentence isn't poetry. It's a constraint you can act on.
+
 The discipline of insisting on one is the entire point. You may arrive at this conversation with five candidates. The job of Signal is to refuse the list. You pick one constraint: the one that, if removed, would change the math most meaningfully. You commit to it for the length of the Sprint.
 
 That commitment is structural. A Sprint that tries to solve three problems solves none of them. A Sprint that solves one produces a measurable result against a number you wrote down at the start, and that result becomes the proof point that earns the next Sprint. The narrowness is what makes the work pay.
@@ -50,11 +54,23 @@ Signal is locked when the team has a Constraint Statement in writing and everyon
 
 ## *Symptom* is not the same as *constraint*.
 
+Symptoms are visible. Constraints are structural.
+
 Most organizations bring symptoms to the table. "Our quoting takes too long." "Our onboarding is messy." These are real. But neither one, as stated, is a constraint a Sprint can solve.
 
 Signal traces the symptom to the underlying constraint. Quoting takes too long because three different systems hold pieces of the customer record, and the ops manager is the only person who knows how to reconcile them. Onboarding is messy because the handoff between sales and delivery is undefined, and every new customer triggers a custom escalation chain.
 
 The same distinction matters in human-capital contexts. "Our managers aren't developing their people" is a symptom we've watched leadership teams treat as a personnel problem for years. The constraint underneath it might be that managers have no time for development conversations because their operational workload has grown to absorb every hour. Or the constraint might be that the performance management system creates no accountability for development outcomes, so development conversations never happen because nothing bad happens when they don't. Without the structural cause and a cost, you're treating weather.
+
+Four patterns reliably surface the structural constraint underneath the symptom:
+
+**Conversations that keep coming up but never get resolved.** If your team has been discussing the same issue for two quarters and nobody has fixed it, the issue is a symptom. The constraint is whatever makes the issue unresolvable. Ask: what would have to change structurally for this conversation to stop recurring?
+
+**Workarounds.** Every manual process that exists because something upstream failed is a constraint wearing a workaround as a costume. The workaround tells you the symptom is visible enough that someone built a patch for it. The patch points directly at the structural failure underneath.
+
+**Sausage-making.** Every organization has processes nobody would want a customer, a board member, or a new hire to watch. The discomfort you feel imagining that observation is pointing at the constraint. Name it.
+
+**Turnover.** When the same role keeps bouncing people out, the role is the symptom. The constraint is the structural failure the role was built on top of. Nobody can succeed in a role where the work was never designed to succeed.
 
 ### Meridian Manufacturing.
 
@@ -180,6 +196,12 @@ Question 4 is where Signal lives or dies. "$558K per year in lost revenue, misal
 
 When you've walked the candidates through all five questions, one will have the strongest answers — the clearest location, the longest history, the largest cost. That is the constraint you bring to Source. Write it in a single sentence, surrounded by the evidence that validates it, using the one-page template from earlier in this chapter.
 
+Two tests confirm you're at root constraint and not still looking at a symptom:
+
+**The lever test.** Look at your candidate list and ask: "If we solved this one, how many of the others get easier or go away on their own?" A root constraint is load-bearing. Solving it moves multiple problems. If the answer is "none of them," you're likely holding a symptom. If the answer is "several," you've found the right one.
+
+**The restate test.** Say out loud: "All of these problems stem from [your candidate]. This is actually the problem we need to solve." If the room resists and people reach for other causes, you don't have the root yet. Keep asking why. If the room nods because the math convinced them, not because the meeting has gone long, you're there.
+
 Read the completed statement back to the room. Ask: "Is this the thing?" If anyone hesitates, you're not locked. Keep refining until the room actually agrees.
 
 :::{.callout-note}
@@ -194,7 +216,8 @@ Before you call Signal complete, check for these common failure modes:
 - **Too abstract.** "We need better processes" is not a constraint. Can you point to a specific workflow?
 - **Too many.** You wrote down three constraints. Pick one. A Sprint that solves three problems solves none.
 - **No number.** The cost field is empty or says "significant." Go back to question four.
-- **Loudest voice won.** The constraint was named by the most senior person in the room and nobody pushed back. Ask: "Did we pick this because the data points here, or because [name] said it first?"
+- **Dominant personality resolved the ambiguity.** The most senior person in the room named the symptom first. Everyone nodded. The meeting moved on. The structural cause never surfaced. This is the most common Signal failure in well-run leadership teams. Ask: "Did we pick this because the data points here, or because the first person to speak named it?"
+- **Named the person instead of the structure.** "The constraint is Susie" is never the answer. Susie operates inside a structure. If Susie is failing, the structure failed first. The constraint is whatever the structure does that makes it impossible for anyone in Susie's position to succeed. This isn't a defense of poor performance. It's a discipline that keeps Signal from becoming a performance review.
 - **Solved the symptom.** Your constraint sentence describes what you feel, not what causes it. Run Five Whys one more time.
 - **Can't be solved by a Sprint.** The constraint is "our market is shrinking" or "our founder won't delegate." These are real, but they're upstream of this book. Signal is for operational constraints a Sprint can address.
 
