@@ -7,11 +7,11 @@ Before the framework will hold, four things have to be true for you. You're alre
 
 Marco Argenti, the CIO of Goldman Sachs, told a story in *Harvard Business Review* (June 2026). One of his senior bankers asked him a question: *"With AI getting better so fast, what's the 10% of my job AI will never be able to do — so I can hang on to it?"*
 
-It's a fair question. It's the wrong question.
+The banker was asking the wrong question.
 
-Argenti's answer to him: let go of that 10%. The 10% isn't the moat. The new 100% is something else entirely — review, judgment, debate with the team, calling the client before the client calls you. The job didn't get smaller. It got reshaped. The banker was asking how to defend an old role. Argenti was telling him the role had already changed.
+Argenti's answer: let go of that 10%. The 10% isn't the moat. The new 100% is review, judgment, debate with the team, calling the client before the client calls you. The job got reshaped. The banker was asking how to defend an old role. Argenti told him the role had already changed.
 
-That same question is sitting on a lot of mid-market operator desks right now, in a quieter form. *Where does AI fit on top of what I already do?* It's the same defensive frame, and it produces the same scattered pilots Chapter 1 just diagnosed. Before the rest of this book will hold, four things have to be true for you. Not as slogans. As beliefs you actually operate from.
+That same question is sitting on a lot of mid-market operator desks right now, in a quieter form. *Where does AI fit on top of what I already do?* It's the same defensive frame, and it produces the same scattered pilots Chapter 1 just diagnosed. Four things have to be true for you first. These are the four beliefs.
 
 We're not here to motivate you into them. The beliefs aren't aspirational. They're load-bearing. If you read past them without signing on, the framework that follows will feel like extra work for the same outcomes. With them in place, the framework is the cheapest path to outcomes you already want.
 
@@ -24,7 +24,7 @@ The four beliefs cascade. Belief 1 is the foundation. The other three follow fro
 
 ## You're already a *system* company.
 
-You're not becoming a technology company. You already are a system company. The question is whether you'll redesign work around the systems you already have, or keep paying humans to be the glue between them.
+You already run on systems. The question is whether you'll redesign work around the systems you already have, or keep paying humans to move information between them.
 
 Look at what's running inside your business right now. A CRM (HubSpot, Salesforce, Pipedrive). An ERP or accounting system (NetSuite, QuickBooks, Sage). A project management tool (Asana, Monday, ClickUp). A communications stack (Slack, Teams, Gmail). A document store (Google Drive, SharePoint, Dropbox). A few function-specific tools layered on top — a billing platform, a scheduling tool, a customer support system.
 
@@ -40,29 +40,29 @@ Mid-market companies are in the best position for this, and most don't see it. T
 
 > If your systems are running and your people are still the glue between them, you've got an operating-model gap, not a technology gap.
 
-Belief 1 changes which question you ask first. Not *which AI tool should we buy?* That's a tool question. The question Belief 1 puts on the table: *given the systems we already run, where is human labor doing the work the systems should be doing?* That's where AI goes. Everything else in the book is the discipline of finding those places.
+Belief 1 changes which question you ask first. The question isn't *which AI tool should we buy?* It's *given the systems we already run, where is human labor doing the work the systems should be doing?* That's where AI goes. Everything else in the book is the discipline of finding those places.
 
 The other three beliefs follow from this one.
 
 ## AI is a new kind of *worker*, not a tool.
 
-If Belief 1 is true, if your systems are the substrate, then the thing that operates inside those systems is the next question. The vocabulary you bring to that question decides what you can see.
+If Belief 1 is true and your systems are the substrate, the next question is what operates inside those systems. The vocabulary you bring to that question decides what you can see.
 
 Most operators bring software vocabulary: *deploy, integrate, license, train the model.* That language was right for the last thirty years. It described a tool you installed and used. Software didn't have a workday. It didn't have judgment. It didn't make handoffs to other parts of the org.
 
 The new vocabulary is management. You assign work. You supervise. You evaluate the output and adjust the assignment.
 
-That's not a metaphor. It's literal. An agent, defined in Chapter 1, holds a goal and runs the steps toward it without you typing every prompt. It has scope. It has access to specific data and tools. It produces deliverables on a cadence. A human reviews the output and adjusts the scope. The structure is identical to how you manage a competent junior employee. The interface is different. The work pattern is the same.
+An agent, defined in Chapter 1, holds a goal and runs the steps toward it without you typing every prompt. It has scope, access to specific data and tools, and it produces deliverables on a cadence. A human reviews the output and adjusts the scope. The structure is identical to how you manage a competent junior employee. The interface is different, but the work pattern is the same.
 
 Argenti named the shift in the same HBR piece: *"From individual contributor to supervisor and mentor."* The mindset move he asked the banker to make is the move every operator in your company will make. Not *what tasks can this tool do for me?* Instead, *what work am I assigning to this worker, and what does good look like?*
 
-Argenti also reaches for a metaphor to make the move concrete, and the metaphor is worth quoting directly because the substitution is doing the work: *"What's the 10% of horse-riding skills that they should hang on to in order to master driving? Probably none. What's the 100% of skills they should adapt to be a great driver? Their reflexes and instincts."*
+Argenti put it this way: *"What's the 10% of horse-riding skills that they should hang on to in order to master driving? Probably none. What's the 100% of skills they should adapt to be a great driver? Their reflexes and instincts."*
 
 The skills that transfer are the ones that were never about the saddle. Judgment, taste, knowing when an answer doesn't smell right, knowing when to escalate. Those carry into the new role. The hands-on craft of producing the deliverable, in many functions, doesn't.
 
-Sadun draws the same line from a different angle: *"AI isn't an oracle... a support system for, not really a replacement for, decision making."* The worker analogy holds in both directions. A worker has scope; an oracle doesn't. A worker can be wrong; an oracle isn't supposed to be. A worker reports to someone; an oracle doesn't. If your team is treating AI like an oracle, typing questions and reading answers as authoritative, they're stuck inside the chatbot loop Chapter 1 diagnosed. The move past that loop is treating AI as a worker.
+Sadun draws the same line from a different angle: *"AI isn't an oracle... a support system for, not really a replacement for, decision making."* The worker analogy holds here. A worker has scope, can be wrong, and reports to someone. An oracle has none of those. If your team is treating AI like an oracle, typing questions and reading answers as authoritative, they're stuck inside the chatbot loop Chapter 1 diagnosed. The move past that loop is treating AI as a worker.
 
-Software vocabulary keeps the gains small. Management vocabulary is what makes them structural.
+Software vocabulary keeps the gains small. To make them structural, you have to manage AI like a worker.
 
 ## The math can *bend*.
 
@@ -89,13 +89,13 @@ Calculate your revenue per employee today. Then ask the question that follows fr
 
 ## Your role is to *design* the work, not do it.
 
-If the math can bend, then the role of the operator at the top of the org chart changes too. Not in title. In where the hours go.
+If the math can bend, then the role of the operator at the top of the org chart changes too. The change shows up in where the hours go, not in the title.
 
-Belief 4 is the personal-role reframe. Not a bigger job. A different job. You direct. You design. You supervise. The execution work that used to anchor your week, the proposals you rewrote, the reports you reformatted, the routing you owned because no one else could be trusted with it — most of it isn't where your time produces the most value anymore. Not because you stopped being good at it. Because there's now a worker on the other side of the desk that handles it inside the design you set.
+Belief 4 is the personal-role reframe. The job changes. You direct, design, and supervise the work instead of doing it. The execution work that used to anchor your week — the proposals you rewrote, the reports you reformatted, the routing you owned because no one else could be trusted with it — most of it isn't where your time produces the most value anymore. Not because you stopped being good at it. Because there's now a worker on the other side of the desk that handles it inside the design you set.
 
 This is the belief that's easiest to misread. Read it wrong and it sounds like *every worker is now a manager of agents, on top of their existing job.* Bedard et al., writing in HBR (March 2026), flagged that exact misread: *"Labeling ICs 'managers' of agents... indirectly denotes an increase in one's level of responsibility."* Their study found that operators who treat AI oversight as an add-on to existing work suffer a 12% increase in mental fatigue and a 19% increase in information overload. One of their senior-engineering-manager respondents put it cleanly: *"I was working harder to manage the tools than to actually solve the problem."*
 
-Belief 4 isn't *more work*. It's *different work, not more work.* That distinction has to land before the framework will hold.
+Belief 4 is different work, not more work.
 
 The shift is in where attention goes, not in how much of it you've got to spend. If a coordinator used to spend twenty hours a week formatting reports and four hours reviewing them, the design move puts agents on the formatting and the human on the four hours of review — sharpened, scoped, with a clear deliverable. The job didn't grow. The composition changed. Bedard's data agrees: AI that *replaces toil* lowers burnout 15%. AI that *adds oversight load on top of the existing job* raises brain fry. The design decision is which one your operating model produces.
 

@@ -17,7 +17,7 @@ What happened in that meeting is the move Julie has watched leadership teams def
 
 Most companies have never asked that question explicitly. They've grown roles by layering tasks onto people. Because the work was never designed, only assigned, the role collapses when the person leaves, and AI has no defined relationship to it when it arrives. The rest of this book is the discipline of asking that question deliberately, role by role, constraint by constraint, and building the structure that answers it. We call that structure the **Co-Operating Model**.
 
-You've got an operating-model problem, not a technology problem. This chapter answers what the right operating model looks like. The Co-Operating Model is what a Co-Intelligent Company is built on. It's what makes *Co-Intelligent Co-Operation*, humans and AI working the same problems together, something other than an accident.
+You've got an operating-model problem, not a technology problem. This chapter answers what the right operating model looks like. The Co-Operating Model is what a Co-Intelligent Company is built on. It's what makes *Co-Intelligent Co-Operation*, humans and AI working the same problems together, intentional rather than accidental.
 
 ## What a *Co-Intelligent Company* is.
 
@@ -57,7 +57,7 @@ That issue surfaced during a normal issues meeting: *I do not own my knowledge i
 
 An organization with a well-built memory layer doesn't have that exposure. The knowledge stays because it was designed to stay.
 
-The humans in that system aren't outside it. They are nodes, the ones who supply judgment, direction, and correction that no model can supply from training data alone. They work alongside agents or manage agent teams, iterating toward an outcome that isn't predictable from the inputs the way a spreadsheet result is predictable. It's arrived at through cycles of generation, review, and adjustment. It's better for having gone through them.
+The humans in that system aren't outside it. They're nodes. They supply the judgment, direction, and correction that no model can supply from training data alone. They work alongside agents or manage agent teams, iterating toward an outcome that isn't predictable from the inputs the way a spreadsheet result is predictable. It's arrived at through cycles of generation, review, and adjustment.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -72,7 +72,7 @@ The last decade of enterprise software pitched a graft: a productivity layer bol
 
 Julie watched this exact failure in a non-AI context. At the global food safety company where she was Global CHRO, the company integrated a newly acquired Fortune-500 division. The first instinct from every function was the same: graft the new responsibilities onto existing roles. HR business partners picked up additional countries without any redesign of how the HR function ran. The org chart expanded. The operating model didn't change. Within eighteen months, the company had to restructure anyway — this time by actually redesigning the work instead of adding to it. The function that emerged ran with lower total headcount than the graft had required, and it ran more consistently because each role had a defined scope and the capacity to execute it. AI is the same choice made at a different layer.
 
-Co-Intelligence is different. The human and the agent are both inside the loop. The work itself gets re-shaped around the fact that two kinds of intelligence are now executing it. The structure is built to evolve: as the agent gets smarter every quarter, the human's task space shifts, and the design has to keep pace. The *Co* is what gives the company the mechanism to keep improving. A graft stays fixed. Co-Intelligence keeps changing as the technology does.
+Co-Intelligence is different. The human and the agent are both inside the loop. The work itself gets re-shaped around the fact that two kinds of intelligence are now executing it. The structure is built to evolve: as the agent gets smarter every quarter, the human's task space shifts, and the design has to keep pace. The *Co* is what lets the company keep improving as the technology does.
 
 It is the difference between a company that absorbs every model upgrade as a free improvement to its operating model, and a company that has to re-run a change-management project every time the technology takes a step.
 
@@ -121,7 +121,7 @@ Compound runs a weekly content cycle. At the start of the week, our marketing le
 
 Once she decides, the agent takes the brief and produces the first draft: copy, visual direction, distribution plan. She doesn't write the first sentence. She reads the output, marks what is right and what is wrong, and the agent revises. The draft never leaves her without her judgment on it. She owns the outcome. The agent owns the output that precedes it.
 
-When output and outcome get confused — when the agent is treated as the decision-maker or the human is kept inside the execution — the outcomes drift. That's how you get AI slop at best, and real damage at worst. There are gray areas. Some tasks legitimately flip the columns: the agent surfaces decisions (themes from a transcript, patterns in a dataset) and the human executes the creative work (designing brand artifacts, writing the narrative). The principle isn't rigid for every task. What matters is that you decide the split deliberately.
+When output and outcome get confused, the outcomes drift. That happens when the agent is treated as the decision-maker, or the human is kept inside the execution. That's how you get AI slop, and sometimes real damage. There are gray areas. Some tasks legitimately flip the columns: the agent surfaces decisions (themes from a transcript, patterns in a dataset) and the human executes the creative work (designing brand artifacts, writing the narrative). The principle isn't rigid for every task. What matters is that you decide the split deliberately.
 
 
 | The Human owns the operating responsibility of | The Agent owns the operating responsibility of |
@@ -207,7 +207,7 @@ There is one more thing she brings to that arrangement that the ownership table 
 
 The failure mode we see most often is people who use agents and then accept whatever comes back, because output feels like progress. Getting an agent to produce something isn't doing good work. It's a first draft. The human who directs agent work has to know the difference between a draft and a result, and has to call the draft a draft until the result is actually there. That knowledge isn't automatic. It depends on skill and on having done the work long enough to recognize where the seams are. An operator who reviews agent output without that grounding is its own failure mode, which is why the human assigned to steer a stream needs to actually know the work, not just sign off on it.
 
-The standard isn't something the agent sets. The human sets it before the work starts and holds it through every review cycle. Without that standard, the output is AI slop with a professional's name on it. The standard is what makes the output the work the human would have done, at the speed and scale only the agent can provide.
+The human sets the standard, not the agent. The human sets it before the work starts and holds it through every review cycle. Without that standard, the output is low-quality work with a professional's name on it. With it, the output is the work the human would have done, at the speed and scale only the agent can provide.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -296,7 +296,7 @@ Put it on the wall. Co-Intelligence is the Co-Operating Model you just read. Rhy
 
 ---
 
-With the destination clear, the next chapter is how you get there.
+The next chapter covers the mechanics.
 
 ## Reflection Questions
 
