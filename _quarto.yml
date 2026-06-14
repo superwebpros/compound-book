@@ -45,6 +45,7 @@ book:
         - chapters/case-study-pm-agent-team.qmd
     - chapters/appendix-prompt-engineering.qmd
     - chapters/appendix-prompts.qmd
+    - chapters/appendix-diagramming-primer.qmd
     - chapters/appendix-glossary.qmd
     - chapters/appendix-action-steps.qmd
 

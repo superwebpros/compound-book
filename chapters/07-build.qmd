@@ -2,10 +2,10 @@
 
 :::{.callout-important}
 ## In Brief
-Build is the stage where the locked Design Brief becomes a working, deployed system. Design has already made the hard calls: which constraint to solve, which workflow to build, which platform category fits. Build's job is narrower. It produces one thing: a deployed solution to the validated constraint, specified by an eight-section Build Spec, stress-tested against a seven-question Guardrails Checklist, and confirmed done only when it handles real work under real supervision. Once the spec and guardrails are locked, there's one question left: where does this agent actually live? That's the platform-decision — and it lives here, not in Design. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
+Build is the stage where the locked Design Brief becomes a working, deployed system. Design has already made the hard calls: which constraint to solve, which workflow to build, which category fits. Build's job is narrower. It produces one thing: a deployed solution to the validated constraint, specified by an eight-section Build Spec, stress-tested against a seven-question Guardrails Checklist, and confirmed done only when it handles real work under real supervision. Once the spec and guardrails are locked, there's one question left: where does this agent actually live? That's the environment decision — and it lives here, not in Design. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
 :::
 
-We built the project management agent team, the five agents that replaced our $24,000-a-year coordinator role. We locked the Hybrid Accountability Chart entry first, before the workflow steps: Sofia named as supervisor, every agent team starting AI-Assisted, her sign-off required on every output in Sprint one. Access boundaries, failure modes, and build path all followed from that accountability decision.
+We built the project management agent team, the five agents that replaced our $24,000-a-year coordinator role. We locked the Hybrid Accountability Chart entry first, before the workflow steps: Sofia named as supervisor, every agent team starting AI-Assisted, her sign-off required on every output in Sprint one. Access boundaries, failure modes, and environment all followed from that accountability decision.
 
 One agent handled client-facing task updates. It had read/write access to our project management system. Another agent compiled internal performance reports — billable hours, delivery velocity, resource allocation. That one could see data the first agent had no business touching. A third routed subcontractor communications. Different data, different stakes, different guardrails. Same Sprint. Five agents, five different access levels, every boundary decided in Design before Build executed any of them.
 
@@ -17,7 +17,7 @@ This chapter fills in the Build row of the Sequence first-pass on your Sprint Pl
 
 ## What *Build* produces.
 
-Build is the most variable stage in the Sequence. The problem being solved, the organization's systems, the team's technical comfort, the data involved — all of it shapes what Build actually looks like in practice. What stays constant is the spec discipline: every build starts from a complete specification and ends with a deployed system that handles real work. This chapter gives you the vocabulary, the decision frameworks, and the build paths. It doesn't give you a rigid formula, because no single formula fits every build a Compound Sprint produces.
+Build is the most variable stage in the Sequence. The problem being solved, the organization's systems, the team's technical comfort, the data involved — all of it shapes what Build actually looks like in practice. What stays constant is the spec discipline: every build starts from a complete specification and ends with a deployed system that handles real work. This chapter gives you the vocabulary, the decision frameworks, and the environment options inside the category Design picked. It doesn't give you a rigid formula, because no single formula fits every build a Compound Sprint produces.
 
 Build produces one thing: a working, deployed solution to the validated constraint.
 
@@ -169,7 +169,7 @@ If your Build is running past the time box, the instinct is to extend the deadli
 
 Build is supported by two instruments. Both are derived from the Design Brief that Design handed off. Neither restarts the design conversation.
 
-**Build Spec Writer** turns the Design Brief into a developer-ready specification. The Design Brief is the single upstream input. The Build Spec restates the workflow, systems, and data sections at developer-execution depth, and adds three sections Design doesn't own: agent scope at the call level, failure-mode behavior on edge cases and outages, and the build path with its implementation constraints. The duplicated sections aren't new decisions. They're tightened restatements. If the Build Spec and the Design Brief disagree on a workflow step or a system boundary, the Design Brief wins and the gap routes back to Design.
+**Build Spec Writer** turns the Design Brief into a developer-ready specification. The Design Brief is the single upstream input. The Build Spec restates the workflow, systems, and data sections at developer-execution depth, and adds three sections Design doesn't own: agent scope at the call level, failure-mode behavior on edge cases and outages, and the environment with its implementation constraints. The duplicated sections aren't new decisions. They're tightened restatements. If the Build Spec and the Design Brief disagree on a workflow step or a system boundary, the Design Brief wins and the gap routes back to Design.
 
 The spec itself is the artifact a builder works from, whether engineer, vendor, or low-code assembler. Its job is to remove ambiguity. If the spec is right, the build is mostly execution. If the spec is wrong, the build is mostly negotiation.
 
@@ -182,7 +182,7 @@ A complete spec covers eight sections:
 5. **Human supervisor role.** Who reviews the output. What they're reviewing for. What the handoff looks like — where the output lands, in what form, on what timeline.
 6. **Systems and integrations.** Every system the workflow touches. Read access, write access, or both. Authentication method. Data sensitivity classification for each.
 7. **Failure modes.** What happens when the agent produces output that needs escalation. Who it goes to. In what form. On what timeline. What the builder needs to wire to make that possible.
-8. **Build path and constraints.** Which of the three paths this build uses, and why. Any constraints the builder must observe — data residency, existing licenses, internal security requirements.
+8. **Environment and constraints.** Which specific environment inside Design's category (off-the-shelf, low-code, hand-built — see Chapter 7) this build runs on, and why. Any constraints the builder must observe — data residency, existing licenses, internal security requirements.
 
 {{< excalidraw ch07-build-spec-sections "Build Spec Writer: eight sections with section name and a one-line description of what belongs in each." >}}
 
@@ -206,7 +206,7 @@ That Design Brief fed directly into the Build Spec. The Build Spec restated the 
 
 **Section 7 — Failure Modes:** No similar historical jobs found: agent flags as "insufficient for rapid estimate" and routes to the VP for full manual review. Unknown material (e.g., Inconel): agent produces no price estimate for that line item and flags as "manual pricing required." ERP API down: RFQs queue in the CRM, and the agent processes them when the connection restores. Confidence score below 60%: draft routes to the VP with a warning flag. Pricing deviation greater than 15% from closest historical match: agent flags the deviation, and the VP investigates before approving.
 
-**Section 8 — Build Path and Constraints:** Low-code via n8n (existing license) and Claude Team. Freelance n8n developer for three days of API wiring to HubSpot and JobBOSS. Three and a half weeks from spec to deployment. All data stays in existing systems. The pricing exceptions spreadsheet must be cleaned and validated before build begins. That's a prerequisite, not a build task.
+**Section 8 — Environment and Constraints:** Low-code category, run via n8n (existing license) and Claude Team. Freelance n8n developer for three days of API wiring to HubSpot and JobBOSS. Three and a half weeks from spec to deployment. All data stays in existing systems. The pricing exceptions spreadsheet must be cleaned and validated before build begins. That's a prerequisite, not a build task.
 
 That spec gave Elena and the freelance developer everything. No ambiguity meetings. No mid-build design decisions. Three and a half weeks, start to finish.
 
@@ -223,7 +223,7 @@ Before building starts, audit the spec against these seven failures. Each one ha
 
 1. **Reinventing existing capabilities.** Search before you build. Does a tool, feature, or integration already exist that does what this section of the spec describes? Fifteen minutes of searching saves weeks of building. This is the most common implementation failure — and it's not technical. It's a research failure.
 
-2. **Using the wrong tool for the job.** Match the tool to the build path, not the other way around. If the spec calls for low-code and someone proposes a custom API integration because "it would be cleaner," the spec wins.
+2. **Using the wrong tool for the job.** Match the environment to Design's category, not the other way around. If the spec calls for low-code and someone proposes a custom API integration because "it would be cleaner," the spec wins.
 
 3. **Building before the spec is complete.** Every empty section in the spec is a decision the builder will make on the fly. Builders aren't designers. The decisions they make under build pressure won't match what Design intended.
 
@@ -269,9 +269,9 @@ Answer all seven questions in writing. Attach the answers to the Build Spec as a
 
 The spec names what the agent does. The Guardrails Checklist names what it's allowed to touch. The next question is where it actually runs.
 
-This is the platform decision, and it belongs in Build — not Design. Design picked a category: low-code workflow, shared AI environment, custom integration. Build picks the specific platform inside that category and configures the agent to run there. The distinction matters because platform options shift faster than workflow design principles do. What's named here is the category logic; the current products are examples. Check the market when you're running your Sprint, not when you read this.
+Design chose the category; Build picks the specific environment within it. Design picked one of three categories — off-the-shelf, low-code, or hand-built (see Chapter 7). Build picks the specific environment inside that category and configures the agent to run there. The distinction matters because environment options shift faster than workflow design principles do. What's named here is the environment logic; the current products are examples. Check the market when you're running your Sprint, not when you read this.
 
-The categories, with what fits and what doesn't:
+The environments, with what fits and what doesn't:
 
 **Claude Projects** fit skill-level work: a single agent, a defined knowledge base, one person or a small team using it co-operatively. The "build" is configuration — a system prompt, uploaded context, defined scope, guardrails set in the project settings. A competent person does this in an afternoon. This is the right environment when the designed workflow is one agent, one output stream, one supervisor reviewing every output. The marketing lead's four-agent setup from Chapter 3 started here. When a workflow grows past one agent or starts running programmatically, Claude Projects doesn't stretch to cover it.
 
@@ -285,24 +285,24 @@ The categories, with what fits and what doesn't:
 
 ### The span-of-control constraint.
 
-Before you finalize the platform decision, check the agent count against a finding from Bedard et al. (BCG, HBR, March 2026): productivity inverts after three concurrent agents under one supervisor. Up to three, adding agents produces compounding gains. Beyond three, the supervisor's cognitive budget runs out and error rates climb.
+Before you finalize the environment decision, check the agent count. Per Bedard's three-agent ceiling (see Chapter 7), productivity inverts after three concurrent agents under one supervisor. Up to three, adding agents produces compounding gains. Beyond three, the supervisor's cognitive budget runs out and error rates climb.
 
-The finding named it "AI brain fry" — mental fatigue from oversight load exceeding a person's capacity. The practical implication for Build: if the designed system puts four, five, or six agents under one human supervisor, the design has a structural problem. The platform decision doesn't fix that. You can run six agents on the best infrastructure available and still produce worse outcomes than three agents on a simpler setup, because the bottleneck is the supervisor's attention, not the platform's throughput.
+The practical implication for Build: if the designed system puts four, five, or six agents under one human supervisor, the design has a structural problem. The environment decision doesn't fix that. You can run six agents on the best infrastructure available and still produce worse outcomes than three agents on a simpler setup, because the bottleneck is the supervisor's attention, not the environment's throughput.
 
-If the platform decision is pushing toward a many-agent architecture, stop. Go back to Design. Either scope the system smaller (fewer agents per supervisor) or add a layer of agent-supervised parallel work, where a coordinator agent manages the subagents and the human supervisor reviews the coordinator's output rather than every individual agent's output. That pattern is named in Chapter 3: the quote-orchestrator that runs a team inside its own loop, with the human reviewing what the orchestrator surfaces, not what each subagent produced. Chapter 7, Design, is where that architectural decision gets made. Build inherits it.
+If the environment decision is pushing toward a many-agent architecture, stop. Go back to Design. Either scope the system smaller (fewer agents per supervisor) or add a layer of agent-supervised parallel work, where a coordinator agent manages the subagents and the human supervisor reviews the coordinator's output rather than every individual agent's output. That pattern is named in Chapter 3: the quote-orchestrator that runs a team inside its own loop, with the human reviewing what the orchestrator surfaces, not what each subagent produced. Chapter 7, Design, is where that architectural decision gets made. Build inherits it.
 
-The platform decision should match the architecture Design produced, not the architecture the builder finds interesting.
+The environment decision should match the architecture Design produced, not the architecture the builder finds interesting.
 
 :::{.callout-note}
 ## Action Step
-Map your designed agent count against the supervisor named in the Hybrid Accountability Chart. If the count exceeds three agents under one supervisor, flag it as a design gap before Build proceeds. The platform you pick won't solve a supervision problem; only the design can.
+Map your designed agent count against the supervisor named in the Hybrid Accountability Chart. If the count exceeds three agents under one supervisor, flag it as a design gap before Build proceeds. The environment you pick won't solve a supervision problem; only the design can.
 :::
 
 ## Sprint: the three-week quoting workflow.
 
 Meridian Manufacturing came into Build with a clear Signal: quotes were taking 3.8 days, Elena was the bottleneck on every one, and the constraint was costing them $558K a year in lost revenue, misallocated VP time, and shop floor underutilization. Source mapped the inputs: the inbound RFQ, three years of job costing history in the ERP, the rate card, and a pricing exceptions spreadsheet on Elena's desktop that had never been shared or backed up. Design produced a workflow where three agents (Quote Research, Quote Pricing, Quote Assembly) drafted the quote inside a single Claude project, and Elena reviewed every output before Ty delivered it to the customer.
 
-The build path was low-code. Elena assembled the workflow herself using Claude Team and n8n, which Meridian already had a license for. She hired a freelance n8n developer for three days to wire the API connections to HubSpot and JobBOSS. Cleaning the pricing exceptions spreadsheet took the most work. Thirty-one of the 147 rows had conflicting entries. Fourteen referenced customers Meridian hadn't worked with in three years. Elena spent a full day reducing it to 112 validated rules.
+Design picked the low-code category. Elena assembled the workflow herself using Claude Team and n8n, which Meridian already had a license for. She hired a freelance n8n developer for three days to wire the API connections to HubSpot and JobBOSS. Cleaning the pricing exceptions spreadsheet took the most work. Thirty-one of the 147 rows had conflicting entries. Fourteen referenced customers Meridian hadn't worked with in three years. Elena spent a full day reducing it to 112 validated rules.
 
 Before the build started, Elena completed the spec and ran the Guardrails Checklist. The spec told the developer: inputs are the inbound RFQ and ERP job costing history; outputs are a draft PDF landing in Elena's CRM review queue; the agents draft, Elena edits and approves, Ty delivers. The checklist locked the access layer before they built anything else — pricing data stayed within the defined scope, no agent could send anything to a customer, and the kill switch was defined before the first workflow ran. Those were ten-minute decisions. They made three and a half weeks of build work unambiguous.
 
@@ -310,7 +310,7 @@ Low-code worked because Design gave Elena a workflow narrow enough to build with
 
 ## What *done* looks like.
 
-{{< excalidraw ch07-meridian-build-spec "Meridian's Build Spec — eight sections, from workflow summary through build path." >}}
+{{< excalidraw ch07-meridian-build-spec "Meridian's Build Spec — eight sections, from workflow summary through environment." >}}
 
 {{< excalidraw ch07-meridian-guardrails "Meridian's Guardrails Checklist — seven pre-deploy gates." >}}
 
@@ -341,7 +341,7 @@ Build makes it work. Deliver puts it into the company's actual operating rhythm 
 
 ## Reflection Questions
 
-1. For your Sprint's designed workflow, match the Design Brief's platform category to the five runtime environments in this chapter: Claude Projects, Claude Team, Claude Code, a workflow orchestration platform, or a custom server. Which environment fits the agent count, data sensitivity, and supervision model the design specified? Does that match where your team assumed you'd end up?
+1. For your Sprint's designed workflow, match the Design Brief's category to the five environments in this chapter: Claude Projects, Claude Team, Claude Code, a workflow orchestration platform, or a custom server. Which environment fits the agent count, data sensitivity, and supervision model the design specified? Does that match where your team assumed you'd end up?
 2. Before Build begins, fill in all seven Guardrails Checklist questions for your workflow. Which question is hardest to answer — and is that difficulty a sign that Design needs another session, or that you genuinely haven't decided yet?
 3. The chapter says the team that ships a Claude project with three skills in a week beats the team that spends six weeks architecting a pipeline — if the design only called for a skill. Where in your current build is scope creep already showing up? What does the spec say, versus what the builder is proposing — and which one wins?
 4. Run the five-question "Done" test against your build using last week's real inputs. Did the build produce expected outputs? Did it handle edge cases? Did escalation fire correctly? Could the supervisor evaluate the output without a walkthrough? Has the Human Orchestrator confirmed the team is briefed and ready? Which question did you fail?

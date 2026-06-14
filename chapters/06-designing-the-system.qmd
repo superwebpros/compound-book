@@ -4,7 +4,7 @@
 
 :::{.callout-important}
 ## In Brief
-Design is the stage where your constraint and knowledge map become a workflow with named owners — human and AI. It produces four things: Hybrid Accountability Chart entries that assign every accountability to a named supervisor; a governance framework (autonomy levels, guardrails, escalation paths) that makes the system safe to operate; a mini-spec for every agent on the chart; and a platform choice for each agent before Build begins. This chapter covers the frameworks for designing the system. The next chapter covers designing the work itself.
+Design is the stage where your constraint and knowledge map become a workflow with named owners — human and AI. It produces four things: Hybrid Accountability Chart entries that assign every accountability to a named supervisor; a governance framework (autonomy levels, guardrails, escalation paths) that makes the system safe to operate; a mini-spec for every agent on the chart; and a category choice for each agent before Build begins. This chapter covers the frameworks for designing the system. The next chapter covers designing the work itself.
 :::
 
 My COO is on a weekly call and she's not building up to it. "She's not keeping up with clients. Reports are late. I think we need to let her go."
@@ -25,13 +25,15 @@ This chapter and the next one fill in the Design row of the Sequence first-pass 
 
 ## What Design *produces*.
 
-Design has two deliverables that land together.
+Design has four deliverables that land together.
 
 The first is a *designed workflow* — specific enough that Build can execute against it without ambiguity. A workflow specification that names the inputs, the steps, the handoffs, the outputs, and the points where a human decides versus an agent executes. If Build has to ask "what did you mean here?" the specification isn't finished.
 
 The second is a set of entries in the *Hybrid Accountability Chart* for the accountabilities this Sprint is addressing. Each entry names the function, the agent team (if applicable), the human supervisor, and whether the work is AI-assisted or automated. A single Sprint often produces multiple entries; the PM workflow we ran internally generated five in its first pass. Over many Sprints, the chart fills in. After one Sprint, it has its first rows — the first structural record of your company operating as a Co-Intelligent Company.
 
-Design has to produce both. A workflow without an accountability entry is a process map nobody owns. An accountability entry without a designed workflow is an org chart row with nothing behind it.
+The third is a *governance framework* for every agent team on the chart: autonomy levels, guardrails, and escalation paths. The fourth is a *mini-spec* for every agent and a *category choice* for each one before Build begins.
+
+Design has to produce all four. A workflow without an accountability entry is a process map nobody owns. An accountability entry without a designed workflow is an org chart row with nothing behind it. A mini-spec without a category choice is a spec Build has to interpret rather than execute against.
 
 ## The *Hybrid Accountability Chart*.
 
@@ -198,13 +200,13 @@ A mini-spec answers six questions, one to a line:
 
 That last field comes from Julie Bedard and colleagues at BCG. Their March 2026 piece in *Harvard Business Review*, "When Using AI Leads to 'Brain Fry,'" found productivity inverts after three concurrent AI agents per supervisor. The norm they recommend, the same way operations leaders already manage spans of control for human reports, is no more than three high-oversight agents under one supervisor at a time. Before the mini-specs leave Design, count the agents one supervisor is taking on. If it's more than three, the design isn't done; either consolidate agents, raise some toward Automated, or split the supervisor role.
 
-Next to the mini-spec, post the AWS supervisor-capability check: the supervisor has to be able to *trace decisions, challenge outputs, and apply expertise*. If any of the three is missing for an agent on the chart, that agent isn't ready to run. The mini-spec template gets the full walkthrough in the next chapter inside the Design Brief; what matters here is naming the discipline: every agent on the chart has a spec, every spec answers six questions, no agent goes to Build without one.
+Next to the mini-spec, post the AWS/Effectual supervisor-capability check (HBR sponsor content, June 2026): the supervisor has to be able to *trace decisions, challenge outputs, and apply expertise*. If any of the three is missing for an agent on the chart, that agent isn't ready to run. The mini-spec template gets the full walkthrough in the next chapter inside the Design Brief; what matters here is naming the discipline: every agent on the chart has a spec, every spec answers six questions, no agent goes to Build without one.
 
-## *Tool and platform* selection.
+## Tool *category* selection.
 
-The mini-spec names what each agent is. Tool selection names what each agent runs on. That decision belongs in Design, not Build. The design chooses the platform; Build executes against the chosen platform. A team that picks a vendor or tool because of an existing relationship, or because someone read a launch post that week, is making a design decision under the cover of Build, and they will pay for it.
+The mini-spec names what each agent is. Tool category selection names the kind of environment each agent runs on. That decision belongs in Design, not Build. The design chooses the category; Build picks the specific environment inside it. A team that picks a vendor or tool because of an existing relationship, or because someone read a launch post that week, is making a design decision under the cover of Build, and they will pay for it.
 
-The platform options group into three categories. Most Compound Sprints land in one of them; a few combine two.
+The category options group into three. Most Compound Sprints land in one of them; a few combine two.
 
 **Off-the-shelf tool.** Existing software that maps cleanly to the designed workflow with light configuration. The work is selection, configuration, and integration into the team's existing flow, not building from scratch. Use this category when a mature product already does what the design requires, with no custom behavior needed.
 
@@ -212,7 +214,7 @@ The platform options group into three categories. Most Compound Sprints land in 
 
 **Hand-built integration.** Custom code involving an API to a system of record, with an engineer in the loop. Slower than low-code, higher return, harder to change later. Use this category when the workflow runs at a scale or against a system that low-code tools can't reach, or when the integration touches data the company won't route through a third-party platform.
 
-{{< excalidraw ch06-platform-decision "Decision flowchart: three platform categories (off-the-shelf, low-code, hand-built) with qualifying questions routing each agent in the mini-spec to one of them." >}}
+{{< excalidraw ch06-platform-decision "Decision flowchart: three categories (off-the-shelf, low-code, hand-built) with qualifying questions routing each agent in the mini-spec to one of them." >}}
 
 To pick the category for each agent in your Hybrid Accountability Chart, run these questions in order:
 
@@ -220,7 +222,7 @@ To pick the category for each agent in your Hybrid Accountability Chart, run the
 2. Is the agent's workflow custom but composed of standard moves (pull from a system, run through an agent, write back, notify someone)? If yes, low-code. Your team can own and change it directly.
 3. Does the workflow run at a scale, or touch a system of record, that low-code tools can't reach? Or does the data sensitivity rule out a third-party automation platform? If yes, hand-built.
 
-Our marketing lead's four-agent setup, the one from Chapter 3, didn't require a line of code. It was a low-code build: skills wired, projects connected, tools configured. The project management agent team that replaced our coordinator role was different. It lives on a server, runs continuously, and gets and receives information in real time across our projects and communication channels. That one required infrastructure, monitoring, and an always-on deployment. Same Sprint discipline, different platform category. The Design phase named both before Build started either one.
+Our marketing lead's four-agent setup, the one from Chapter 3, didn't require a line of code. It was a low-code build: skills wired, projects connected, tools configured. The project management agent team that replaced our coordinator role was different. It lives on a server, runs continuously, and gets and receives information in real time across our projects and communication channels. That one required infrastructure, monitoring, and an always-on deployment. Same Sprint discipline, different category. The Design phase named both before Build started either one.
 
 ### The current tools.
 
@@ -238,7 +240,7 @@ These aren't a hierarchy. The right tool is the one that matches the agent's min
 
 :::{.callout-note}
 ## Action Step
-For every agent in your Hybrid Accountability Chart, name the category (off-the-shelf, low-code, hand-built) and the specific tool. Write the choice in one line per agent and the reason in one sentence. If you can't write the reason without guessing, the design isn't done.
+For every agent in your Hybrid Accountability Chart, name the category (off-the-shelf, low-code, hand-built). Write the choice in one line per agent and the reason in one sentence. If you can't write the reason without guessing, the design isn't done. (Build will pick the specific environment inside the category.)
 :::
 
 ## The *Human Orchestrator*.
@@ -283,7 +285,7 @@ The charter is short. It says: this team owns the design of Human+AI workflows f
 
 This matters because Design decisions affect multiple functions. The quoting workflow touches sales, operations, and engineering. The content production workflow touches marketing and client delivery. A Design Team with cross-functional representation catches the dependencies that a single-function design session misses — and produces workflows that the whole company can operate against, not just the function that requested the Sprint.
 
-The artifact that comes out of the Design Team's work is a *Design Brief* — the single document that captures the design decisions, stakeholders, systems, and specifications Build will inherit. The next chapter introduces the Design Brief in detail. Chapter 8 then shows how the Build Spec is derived from it: restating the relevant sections at developer-execution depth, and adding the implementation-level content (agent scope, failure modes, build path) that Design does not own.
+The artifact that comes out of the Design Team's work is a *Design Brief* — the single document that captures the design decisions, stakeholders, systems, and specifications Build will inherit. The next chapter introduces the Design Brief in detail. Chapter 8 then shows how the Build Spec is derived from it: restating the relevant sections at developer-execution depth, and adding the implementation-level content (agent scope, failure modes, environment) that Design does not own.
 
 :::{.callout-tip}
 ## Pro Tip

@@ -155,7 +155,7 @@ The Design Brief's hardest job is specifying each agent with enough precision th
 
 #### Span-of-control check.
 
-When your Hybrid Accountability Chart assigns more than three concurrent agents to one supervisor, that supervisor needs to justify why the load doesn't violate the productivity-inversion threshold Bedard et al. identified: after three concurrent AI tools, productivity scores dipped. The three-agent ceiling isn't a hard stop, but it's a design question you answer explicitly. If Elena supervises four agents, what is the review structure that prevents cognitive overload? If the answer is "she'll manage," the design isn't finished.
+When your Hybrid Accountability Chart assigns more than three concurrent agents to one supervisor, that supervisor needs to justify why the load doesn't violate the productivity-inversion threshold. Per Bedard's three-agent ceiling (see Chapter 7), the three-agent ceiling isn't a hard stop, but it's a design question you answer explicitly. If Elena supervises four agents, what is the review structure that prevents cognitive overload? If the answer is "she'll manage," the design isn't finished.
 
 #### The supervisor capability checklist.
 
@@ -184,7 +184,7 @@ Elena Ruiz's quoting team has three agents. Here's the mini-spec for the Quote A
 - *Challenge:* If the quote format is wrong, Elena can note the specific field, mark the draft for revision, and the workflow re-triggers assembly with the correction. She has targeted the mistake; the agent corrects that piece.
 - *Apply expertise:* Elena catches cases where the quote is technically correct but contextually wrong. A price that's within spec for this customer's standard terms can still be too high for the relationship context of this specific bid. That judgment call is hers. The agent can't hold it.
 
-The Design Brief feeds the Build Spec in the next chapter. The Build Spec isn't a parallel artifact; it's derived from this one. Where the Design Brief says *what* the system should do and *why*, the Build Spec restates the relevant sections at developer-execution depth and adds the three things Design doesn't own: agent scope at the call level, failure-mode behavior, and the build path itself. A gap in the Design Brief becomes a question in Build. Close the gaps here.
+The Design Brief feeds the Build Spec in the next chapter. The Build Spec isn't a parallel artifact; it's derived from this one. Where the Design Brief says *what* the system should do and *why*, the Build Spec restates the relevant sections at developer-execution depth and adds the three things Design doesn't own: agent scope at the call level, failure-mode behavior, and the specific environment within Design's category. A gap in the Design Brief becomes a question in Build. Close the gaps here.
 
 ## Prototype before you *build*.
 
