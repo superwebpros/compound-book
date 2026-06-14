@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-This chapter defines the Co-Operating Model — the structure that makes humans and AI work as one system instead of two disconnected tracks. You'll learn the specific ownership split between human intelligence and agent intelligence, see what Parallel Workstreams look like in practice, and finish with an equation you can put on your wall: *Co-Intelligence + Rhythm = Compound.* By the end, you'll have mapped at least one role in your company against the model.
+Now that you know why the operating model is the problem, this chapter names what the right operating model looks like. The Co-Operating Model is the structure that makes humans and AI work as one system instead of two disconnected tracks. You'll learn the specific ownership split between human intelligence and agent intelligence, see what Parallel Workstreams look like in practice, and close with an equation you can put on your wall: *Co-Intelligence + Rhythm = Compound.* By the end, you'll have mapped at least one role in your company against the model.
 :::
 
 Jesse was in a management meeting with Sofia, his VP of Operations, and a direct report, going through the Accountability Chart. We had a team member, a marketing coordinator, who was good at organization. She could manage processes, track content calendars, coordinate subcontractors. But she wasn't revenue-positive and hadn't been for months. She was spending most of her time on content production (editing videos, formatting posts), work that took her hours and still wasn't shipping fast enough to keep up with the pace we needed. The work was piling up behind her, not because she wasn't working hard, but because the role as designed required one person to do what should have been running in parallel across multiple workstreams.
@@ -18,8 +18,6 @@ What happened in that meeting is the move Julie has watched leadership teams def
 Most companies have never asked that question explicitly. They've grown roles by layering tasks onto people. Because the work was never designed, only assigned, the role collapses when the person leaves, and AI has no defined relationship to it when it arrives. The rest of this book is the discipline of asking that question deliberately, role by role, constraint by constraint, and building the structure that answers it. We call that structure the **Co-Operating Model**.
 
 You've got an operating-model problem, not a technology problem. This chapter answers what the right operating model looks like. The Co-Operating Model is what a Co-Intelligent Company is built on. It's what makes *Co-Intelligent Co-Operation*, humans and AI working the same problems together, something other than an accident.
-
-This chapter is also where you start filling in your Sprint Planning Canvas. The structure defined here is what the Constraint and Team sections of the Canvas sit inside.
 
 ## What a *Co-Intelligent Company* is.
 
@@ -272,6 +270,14 @@ When the numbers land, expect a reaction. The Column B percentage is usually lar
 Most operators are shocked by the Column B percentage — it usually lands between 40% and 60% for operational roles. That doesn't mean you fire the person. It means you redesign what they do. The human isn't the cost. The misallocation of their intelligence is the cost.
 :::
 
+## The *Hybrid Accountability Chart* — a preview.
+
+The sort you just ran is the foundation of a more formal instrument called the **Hybrid Accountability Chart** (HAC). The HAC does for the whole org what the two-column sort does for a single role: it maps every accountability in the company against the human-agent split, names one human supervisor for each agent-handled function, and tracks the review cadence.
+
+Every entry in the HAC follows one rule: there is exactly one named human accountable for every outcome, whether a person or an agent team produces the work. That rule is what prevents the accountability gap we described in the opening story. The agent's work has somewhere to land. Someone's name is on it.
+
+Chapter 7 is where you build the HAC for real: questions, format, completed example. For now, know it exists, and know that the sort you've been doing in this chapter is the raw material it starts from.
+
 ## The *Equation*.
 
 Everything in this chapter reduces to one line.
@@ -280,19 +286,21 @@ Everything in this chapter reduces to one line.
 
 {{< excalidraw ch02-the-equation "Co-Intelligence + Rhythm = Compound" >}}
 
-The left side of the equation has two parts.
+Put it on the wall. Co-Intelligence is the Co-Operating Model you just read. Rhythm is the cadence that runs it Sprint by Sprint. Together they produce Compound, as a verb and not a destination. The mechanics of how the two halves connect live in the chapters ahead.
 
-**Co-Intelligence** is the system half — the Co-Operating Model you just read, the designed structure where human and agent intelligence do their respective work against the same problems.
+---
 
-**Rhythm** is the cadence half — running the system on a quarterly beat, Sprint by Sprint, against your real operational constraints. The quarterly beat is the evaluation cadence: the cycle where you assess what the last Sprint built and what the next one should target. Sprint duration itself is a design decision and can range from days to a full quarter depending on the work.
+**What this chapter installed:**
 
-Together they produce the right side of the equation: **Compound**, as a verb. Each Sprint produces a return. The infrastructure built in that Sprint reduces the cost of the next one. The design improvements made between Sprints accelerate every Sprint that follows. The company compounds on its AI investment the same way a balance sheet compounds on retained earnings. The gains start small and grow over time.
+- Humans own outcomes. Agents own tasks.
+- One named human supervisor for every HAC entry.
+- Two patterns of parallel work: human-supervised, agent-supervised.
+- The Hybrid Accountability Chart preview — full build in Chapter 7.
+- How you build a Co-Op Model is the next chapter.
 
-The equation belongs on the wall as the headline. What actually diagnoses what's missing is the system underneath it: the Co-Operating Model on one side, the Rhythm on the other, and the constraint each Sprint is aimed at. A company with the model but no Rhythm produces a slide deck and ships no work. A company with Rhythm but no model produces activity but no compounding. Both halves have to run together, on the same beat, against real constraints. That produces the outcome.
+---
 
-## What's *next*.
-
-The next chapter gives you the *how*: the Framework that runs the Co-Operating Model in practice, the Sequence of six stages that carry a Sprint from a validated constraint through Signal → Source → Design → Build → Deliver → Compound, the Rhythm that runs that Sequence quarter after quarter, and the Sprint as the unit of work where all of it lands.
+With the destination clear, the next chapter is how you get there.
 
 ## Reflection Questions
 
