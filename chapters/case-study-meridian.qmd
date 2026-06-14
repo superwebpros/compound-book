@@ -86,18 +86,9 @@ One Green, two Yellows, two Reds. The Green on Constraint Clarity meant they cou
 | **Quantified cost** | \$418K/year in documented lost revenue (11 lost bids × \$38K average). Estimated \$80K/year in Elena's time on quoting (~15 hours/week × \$103/hr loaded cost × 50 weeks). Floor underutilization from pipeline gaps: estimated \$60K-90K/year in lost capacity. Total estimated annual cost: \$558K-\$598K. |
 | **Validating evidence** | CRM win/loss records (Ty). Elena's self-reported time allocation. Carlos's production schedule gaps. Client feedback on three specific lost bids where turnaround was cited. |
 
-#### Artifact: Is/Is Not Test
-
-| | IS | IS NOT |
-|---|---|---|
-| **Where** does it occur? | Quoting workflow — the handoff between Ty (sales) and Elena (operations), and Elena's processing of RFQs against pricing, materials, and labor data | Product quality. Shop floor execution. Engineering design accuracy. Invoicing. |
-| **When** does it happen? | Every new RFQ. Worst during weeks when Elena is managing production issues, equipment failures, or scheduling conflicts — which is most weeks. | It doesn't happen on repeat orders from existing customers with locked pricing — those go fast because the lookup is simple. |
-| **Who** is affected? | Ty (can't close without quotes), Elena (overloaded), Mark (can't quote without Elena), shop floor (schedule gaps from pipeline delays) | Dave (engineering estimates are a small piece of the total). Junior engineers. Admin staff. Customers who have existing contracts with fixed pricing. |
-| **What** is the problem? | Speed of producing accurate quotes. Specifically: the time between RFQ receipt and quote delivery, caused by Elena being the only person who holds all the knowledge pieces simultaneously. | Quote accuracy (Elena's quotes are accurate — the problem is throughput, not quality). Customer relationships (strong). Pricing strategy (competitive). |
-
-The IS NOT column sharpened the constraint. The problem wasn't Elena's competence — her quotes were accurate and her win rates on submitted quotes were above industry average. The problem was throughput. She was a high-quality bottleneck.
-
 #### Artifact: Five Whys
+
+The team's first instinct was that the quotes themselves were the problem. They weren't. Elena's quotes were accurate and her win rate on submitted bids ran above the industry average. The problem was throughput: she was a high-quality bottleneck. Walking the Five Whys out loud, with Mark and Ty in the room, made that distinction structural.
 
 1. **Why is quoting slow?** Because every quote requires Elena's direct involvement — she processes them personally, one at a time, between her other responsibilities.
 

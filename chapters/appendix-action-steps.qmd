@@ -105,7 +105,7 @@ These steps produce your first Sprint Planning Canvas — a compass for the Spri
 
 :::{.callout-note}
 ## Action Step
-Write down the constraint you'd solve first. One sentence. If it takes more than one breath to read aloud, it's too long. (You may not know your constraint yet — that's exactly what Signal in Chapter 4 is for. Write your best guess. Signal will sharpen it.) This is your draft Signal.
+Write down the constraint you'd solve first. One sentence. If it takes more than one breath to read aloud, it's too long. (You may not know your constraint yet — that's exactly what Signal in Chapter 4 is for. Write your best guess. Signal will sharpen it.) This is your draft constraint.
 :::
 
 :::{.callout-note}
@@ -126,7 +126,7 @@ These steps walk you through the full Signal process — surfacing constraint ca
 
 :::{.callout-note}
 ## Action Step
-Pick your top three candidates. Run Is/Is Not on each. Then run Five Whys on the survivors. Cross off anything that traces to a market condition, a personality, or a problem you can't put a number on.
+Pick your top three candidates. Trace each one to root with the Five Whys, out loud, with the people closest to the work. Cross off anything that traces to a market condition, a personality, or a problem you can't put a number on.
 :::
 
 :::{.callout-note}

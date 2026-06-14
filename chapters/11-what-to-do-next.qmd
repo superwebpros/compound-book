@@ -73,7 +73,7 @@ Write a number. Even a rough estimate works. If you can't estimate it, that tell
 **3. What would have to be true for it to be solved?**
 Write one sentence. This tells you whether the constraint is Sprint-solvable or whether something upstream needs to move first.
 
-If you can answer all three, you have the seed of a Signal. That answer goes in the *Active Sprint* row of your Hybrid Org Today. If you can't, that's your first Sprint: getting to where you can.
+If you can answer all three, you have the seed of a constraint. That answer goes in the *Active Sprint* row of your Hybrid Org Today. If you can't, that's your first Sprint: getting to where you can.
 
 :::{.callout-tip}
 ## Pro Tip

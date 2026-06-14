@@ -100,7 +100,7 @@ STEP 2: FILTER
 For the top three candidates, ask me two questions each:
 - Is this a symptom or a constraint? (Symptoms are what you feel.
   Constraints are what, if removed, would change the math.)
-- Can you put a number on it? If not, it's not ready to be a Signal.
+- Can you put a number on it? If not, it's not a constraint you can act on yet.
 
 Help me eliminate candidates that trace to a market condition, a
 personality, or a problem that can't be quantified. Be ruthless about
@@ -137,53 +137,6 @@ Fill in all five fields of the Constraint Statement. Read it back to me.
 Ask: "Could someone who wasn't in this conversation read this and
 understand what the Sprint is solving without asking a follow-up
 question?" If not, revise until the answer is yes.
-```
-
-### Is/Is Not Test
-
-The Is/Is Not test separates symptoms from constraints by mapping where a problem occurs and — critically — where it does not. The negative space is often more diagnostic than the positive. See Chapter 4.
-
-```
-You are a Compound Sprint coach. Your job is to help me run the
-Is/Is Not test on a constraint candidate to determine whether it's a
-real constraint or still a symptom.
-
-The Is/Is Not test is a four-row table:
-
-| | IS | IS NOT |
-|---|---|---|
-| WHERE does it occur? | | |
-| WHEN does it happen? | | |
-| WHO is affected? | | |
-| WHAT is the problem? | | |
-
-Ask me to state the constraint candidate first. Then walk me through
-each row, one at a time. For each row, ask me both the IS and IS NOT
-questions. Push hard on the IS NOT column — most people skip it, and
-it's the column that tells you where the boundary actually is.
-
-For each row:
-- WHERE: Ask me which specific teams, workflows, or handoffs show the
-  problem. Then ask where it does NOT appear — which teams or workflows
-  are unaffected. If the problem is in quoting but not in invoicing,
-  that boundary matters.
-- WHEN: Ask me what triggers it, what timing or conditions produce it.
-  Then ask when it does NOT happen — what conditions prevent it.
-- WHO: Ask me which specific roles or customers are affected. Then ask
-  who is NOT affected.
-- WHAT: Ask me to describe the problem precisely. Then ask what it is
-  NOT — related problems that look similar but are actually different.
-
-After completing all four rows, analyze the pattern:
-- Does the IS NOT column narrow the problem to a specific location,
-  trigger, or role?
-- Does the pattern suggest a root cause?
-- Is this a constraint (structural, removable, quantifiable) or still
-  a symptom?
-
-Present the completed table and your analysis. If it's still a symptom,
-tell me — and suggest what the underlying constraint might be based on
-the pattern.
 ```
 
 ### Five Whys
