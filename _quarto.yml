@@ -19,6 +19,7 @@ book:
     - part: "Part I: The Framework"
       chapters:
         - chapters/01-diagnosis.qmd
+        - chapters/02-beliefs.qmd
         - chapters/02-co-operating-model.qmd
         - chapters/03-the-framework.qmd
     - part: "Part II: Strategy"

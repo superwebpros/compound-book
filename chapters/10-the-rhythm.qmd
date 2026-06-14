@@ -83,7 +83,7 @@ A Sprint can become a Rock when committed in quarterly planning. The HAC layers 
 
 Once you're running the Rhythm, you maintain one living document: the Hybrid Org Today. It is the current operational picture of your Co-Intelligent Company.
 
-The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. The Hybrid Accountability Chart from Chapter 6 is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
+The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. The Hybrid Accountability Chart from Chapter 7 is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
 
 The template should fit on one page. If it doesn't, you're tracking too much. The Hybrid Org Today is a dashboard, not a filing cabinet.
 
@@ -146,7 +146,7 @@ The Source phase of the first Sprint took three weeks. The team did not have a k
 
 The Hybrid Accountability Chart has been updated four times. The organization has named agent teams with documented levels of automation, each with a human supervisor. The Human Orchestrator responsibility is written into two people's job descriptions — not as a side project but as the operational role it became. The Signal Backlog appears on the quarterly agenda alongside revenue and rocks.
 
-And the leaders themselves have changed. Executives who, eighteen months ago, had no mental model for directing an agent team are now making design-improvement decisions between Sprints without being prompted. The Co-Operating Model from Chapter 2 is no longer a concept. It is how the leadership team thinks about work.
+And the leaders themselves have changed. Executives who, eighteen months ago, had no mental model for directing an agent team are now making design-improvement decisions between Sprints without being prompted. The Co-Operating Model from Chapter 3 is no longer a concept. It is how the leadership team thinks about work.
 
 ### Two business lines, half the staff.
 

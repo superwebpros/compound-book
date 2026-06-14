@@ -77,7 +77,7 @@ When AI investments don't pay off, the first instinct is to blame the tools — 
 
 Your AI investments aren't producing returns because of an operating-model problem. Specifically, a Co-Intelligent Co-Operation problem.
 
-A *Co-Intelligent Co-Operation problem* has two parts. *Co-Intelligent* is the actual workforce: humans and AI as one system, defined in Chapter 2. *Co-Operation* is the structural work of getting that workforce to operate together.
+A *Co-Intelligent Co-Operation problem* has two parts. *Co-Intelligent* is the actual workforce: humans and AI as one system, defined in Chapter 3. *Co-Operation* is the structural work of getting that workforce to operate together.
 
 Culture matters: a team that resists change will stall any initiative. Training matters: people need to know what the tools can do. Tool selection matters: the wrong platform creates its own drag. These are all real, but the deeper problem is the operating model. The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker, synthetic, capable, available, and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, and no defined handoff. So it produces nothing the organization can compound on. Culture, training, and tools are necessary. The missing piece is structural redesign.
 

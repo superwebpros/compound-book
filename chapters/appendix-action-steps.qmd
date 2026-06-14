@@ -43,7 +43,7 @@ Do the math right now. Hours per week spent on the constraint, multiplied by loa
 The scorecard is the input every other chapter references. Take an hour with your leadership team, ideally before your next L10, to score each dimension and write the scores down. Every chapter ahead will ask you to come back to them.
 :::
 
-## Chapter 2: The Co-Operating Model
+## Chapter 3: The Co-Operating Model
 
 These steps map the human-versus-agent ownership split for a real role in your company and calculate the cost of not redesigning it.
 
@@ -94,18 +94,18 @@ Now that you've split the role into Column A and Column B, map the hybrid versio
 | Coordinates cross-functional priorities between teams | Tracks task dependencies and surfaces blockers |
 | Decides whose pricing exception to honor | Applies documented exception rules and flags edge cases |
 
-This hybrid split is enough to see the shape of the redesigned role. Chapter 5 introduces the full design instrument — the TML framework (Task / Management / Leadership) — which sorts work into three categories rather than two; for now, the two-column version is the right starting point.
+This hybrid split is enough to see the shape of the redesigned role. Chapter 6 introduces the full design instrument — the TML framework (Task / Management / Leadership) — which sorts work into three categories rather than two; for now, the two-column version is the right starting point.
 
 If you have multiple roles touching the same constraint, repeat this process for each one. Compile the results into a single table: Role, Column B %, Loaded Cost, Annual Misallocation Cost. That table is the raw material for the Sprint design work in the chapters ahead.
 :::
 
-## Chapter 3: The Framework
+## Chapter 4: The Framework
 
 These steps produce your first Sprint Planning Canvas — a compass for the Sprint before Signal begins.
 
 :::{.callout-note}
 ## Action Step
-Write down the constraint you'd solve first. One sentence. If it takes more than one breath to read aloud, it's too long. (You may not know your constraint yet — that's exactly what Signal in Chapter 4 is for. Write your best guess. Signal will sharpen it.) This is your draft constraint.
+Write down the constraint you'd solve first. One sentence. If it takes more than one breath to read aloud, it's too long. (You may not know your constraint yet — that's exactly what Signal in Chapter 5 is for. Write your best guess. Signal will sharpen it.) This is your draft constraint.
 :::
 
 :::{.callout-note}
@@ -120,7 +120,7 @@ A blank Sprint Planning Canvas template — and the rest of the Compound resourc
 Pick your constraint. Fill in the Sprint Planning Canvas. Book the quarterly review. The Sprint is real when the review is on the calendar.
 :::
 
-## Chapter 4: Signal
+## Chapter 5: Signal
 
 These steps walk you through the full Signal process — surfacing constraint candidates, tracing symptoms to root causes, quantifying costs, and locking the one constraint the Sprint will solve.
 
@@ -144,7 +144,7 @@ Fill in the one-page Constraint Statement template for your chosen constraint. R
 Pull your current issues list, your stalled rocks, and any open headcount requests. Pick the one that feels most expensive and run it through the five constraint questions. If you can put a real number on it, you have a constraint worth a Sprint. If you can't, keep walking the list.
 :::
 
-## Chapter 5: Source
+## Chapter 6: Source
 
 These steps produce the Knowledge Map — a one-page picture of what your organization knows about the validated constraint, where that knowledge lives, and what's missing or at risk.
 
@@ -178,7 +178,7 @@ Identify the highest-risk organic source on your Knowledge Map — the person wh
 Run the six-item completeness test against your Knowledge Map. Fix any gaps. Then put the Constraint Statement from Signal at the top of the page and the Knowledge Map below it. That one page is what you hand to Design.
 :::
 
-## Chapter 6: Designing the System
+## Chapter 7: Designing the System
 
 These steps produce the Hybrid Accountability Chart entry and the governance framework that make the designed workflow safe to hand to Build.
 
@@ -197,7 +197,7 @@ For each accountability in your constraint workflow, place it on the AI-assisted
 Identify your Human Orchestrator candidate. Ask: does this person have authority over the constraint outcome? Are they willing to shift from executing to designing? Write down the name. If there's a development gap, name it — and plan the first Sprint as the ramp-up, not as a test they need to pass.
 :::
 
-## Chapter 6b: Designing the Work
+## Chapter 7b: Designing the Work
 
 These steps run Work Deconstruction on your constraint workflow, visualize the design, and confirm all five Design Gate items are locked before Build begins.
 
@@ -216,7 +216,7 @@ Pick the workflow you're designing. Draw a swim lane diagram with two lanes — 
 Run the five-item Design Gate checklist against your current Sprint's design. If any item has a gap, that gap is your next working session — not your next Build discovery. Fix it now.
 :::
 
-## Chapter 7: Build
+## Chapter 8: Build
 
 These steps translate the locked design into a developer-ready Build Spec, apply the Guardrails Checklist, and confirm the build is truly done before handing off to Deliver.
 
@@ -255,7 +255,7 @@ Answer all seven questions in writing. Attach the answers to the Build Spec as a
 Pull last week's real inputs. Run the full five-question test. Document the results. Fix any failures and retest. The test results are part of the Build handoff to Deliver.
 :::
 
-## Chapter 8: Deliver
+## Chapter 9: Deliver
 
 These steps close the gap between "deployed" and "delivered" — training affected roles, logging what production reveals, measuring the Sprint outcome, and confirming the change has actually taken hold.
 
@@ -279,7 +279,7 @@ Create the log template — four columns: Date, What happened, Category, What it
 Go back to your Signal instrument. Copy the Constraint Statement and quantified cost exactly as written. Measure the same metric now — same unit, same timeframe, same source. Calculate the delta. Write the outcome in one sentence. No spin.
 :::
 
-## Chapter 9: Compound
+## Chapter 10: Compound
 
 These steps run the Sprint Retrospective, install the one design change, re-rank the Signal Backlog, and update the three living documents — turning the delivered Sprint into the foundation of the next one.
 
@@ -298,7 +298,7 @@ After the retrospective, write the one design change on a card with four fields:
 At the end of the Compound session, update all three living documents before anyone leaves the room. Chart row made permanent, backlog re-ranked, Sprint outcome recorded in one sentence. Fifteen minutes. No exceptions.
 :::
 
-## Chapter 10: The Rhythm
+## Chapter 11: The Rhythm
 
 These steps install the quarterly operating session into your existing cadence and start the Compounding Scorecard that proves the returns are real over time.
 
@@ -312,7 +312,7 @@ Put the quarterly operating session on the calendar for the end of this quarter.
 Create the Compounding Scorecard. Fill in the first row with your current Sprint. Tape it to the wall next to your accountability chart.
 :::
 
-## Chapter 11: What to Do Next
+## Chapter 12: What to Do Next
 
 These steps produce your First Sprint Plan — a one-page commitment with a named constraint, a team, a path, and a start date.
 

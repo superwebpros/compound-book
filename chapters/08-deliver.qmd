@@ -124,7 +124,7 @@ Four categories. Use exactly these:
 - **Edge case** — an input the design didn't account for.
 - **User confusion** — a person whose work changed didn't know what to do.
 
-In Chapter 5, I described a client whose AI kept surfacing expired information because nobody audited the knowledge base before indexing it. That's what Deliver's logging phase catches — the gaps that Source couldn't see because they only become visible in production.
+In Chapter 6, I described a client whose AI kept surfacing expired information because nobody audited the knowledge base before indexing it. That's what Deliver's logging phase catches — the gaps that Source couldn't see because they only become visible in production.
 
 Here's what Meridian's first two weeks looked like:
 

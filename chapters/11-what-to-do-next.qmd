@@ -27,7 +27,7 @@ By the time you close this book, your leadership team has a filled-in Sprint Pla
 
 ## The *one* document you go back to.
 
-Before anything else in this chapter, name what you're actually building. The Hybrid Org Today, introduced in Chapter 10, is the single living document the Co-Intelligent Company runs on. It is the one page you go back to. Every other instrument in the book is a slice of it or a feeder into it.
+Before anything else in this chapter, name what you're actually building. The Hybrid Org Today, introduced in Chapter 11, is the single living document the Co-Intelligent Company runs on. It is the one page you go back to. Every other instrument in the book is a slice of it or a feeder into it.
 
 The Hybrid Org Today maps four things on one page: what your Active Sprint is, what your Signal Backlog ranks, what your Hybrid Accountability Chart names, and what your Completed Sprints have delivered. The Hybrid Accountability Chart is one slice. The Signal Backlog is another slice. The Compounding Scorecard sits beside it as the proof the Rhythm is working. Together they answer the only question your leadership team needs to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
 
@@ -45,7 +45,7 @@ In Chapter 1 you took the AI Readiness Scorecard. Five dimensions. Red, yellow, 
 
 **If you scored a mix of Red and Yellow:** start with Signal and Source. Name the constraint, then map what you already know about it — the workflows, the people, the data. Two phases. One Sprint. You're building the foundation for a Design phase in Sprint two.
 
-**If you scored mostly Yellow and Green:** you're ready for the full Sequence. Signal through Compound, one Sprint, using the instruments from Chapters 4 through 9. You have enough structural discipline in place that the framework won't outrun you.
+**If you scored mostly Yellow and Green:** you're ready for the full Sequence. Signal through Compound, one Sprint, using the instruments from Chapters 5 through 10. You have enough structural discipline in place that the framework won't outrun you.
 
 :::{.callout-note}
 ## Action Step
@@ -62,7 +62,7 @@ Doing that step honestly, without rushing to a solution, is what separates the c
 
 If you've read this far and done the thinking the chapters asked of you, you have a sense of where your real constraint lives. You may have already named it on the margin of a page. The job now is to sharpen it.
 
-Three questions. This is your minimum viable Signal — the seed that the full Signal process from Chapter 4 will refine.
+Three questions. This is your minimum viable Signal — the seed that the full Signal process from Chapter 5 will refine.
 
 **1. What is the one operational problem costing you the most money or time right now?**
 Write one sentence describing a specific, observable problem.
@@ -111,7 +111,7 @@ The obstacle was the gap between the vision and the first step. He kept staring 
 
 "I don't have that person" and "I don't have that structure" are the same constraint. Both resolve with a named first Sprint.
 
-The Clarity Call is not Signal. Signal is the rigorous diagnostic process described in Chapter 4. The call is a 30-minute conversation that gives you a head start on it: it surfaces the constraint category, sharpens the question you take into the full process, and tells you whether your first Sprint candidate is real. You walk away with clarity about where AI fits in *your* organization: your team, your industry, your headcount math, your numbers. The output isn't a software recommendation or a sales pitch. It's a constraint you can act on.
+The Clarity Call is not Signal. Signal is the rigorous diagnostic process described in Chapter 5. The call is a 30-minute conversation that gives you a head start on it: it surfaces the constraint category, sharpens the question you take into the full process, and tells you whether your first Sprint candidate is real. You walk away with clarity about where AI fits in *your* organization: your team, your industry, your headcount math, your numbers. The output isn't a software recommendation or a sales pitch. It's a constraint you can act on.
 
 Whether you ever talk to us again or not, what you walk away with is yours.
 
@@ -125,14 +125,14 @@ Once you have a constraint named clearly enough to commit a Sprint to it, you ha
 
 **Path A: Run it yourself.** The framework is in this book. The Sequence is here. The instruments are defined in the chapters behind you: the Knowledge Map, the Hybrid Accountability Chart, the Hybrid Org Today. Use the chapter instruments to guide each phase:
 
-- **Signal** (Chapter 4) — Define the constraint with precision
-- **Source** (Chapter 5) — Map the knowledge around it
-- **Design** (Chapter 6) — Architect the solution
-- **Build** (Chapter 7) — Construct and test
-- **Deliver** (Chapter 8) — Deploy and validate
-- **Compound** (Chapter 9) — Extract the reusable pattern
+- **Signal** (Chapter 5) — Define the constraint with precision
+- **Source** (Chapter 6) — Map the knowledge around it
+- **Design** (Chapter 7) — Architect the solution
+- **Build** (Chapter 8) — Construct and test
+- **Deliver** (Chapter 9) — Deploy and validate
+- **Compound** (Chapter 10) — Extract the reusable pattern
 
-Set the quarterly rhythm from Chapter 10 to make it repeatable. A disciplined operating team with EOS or Scaling Up already in place can execute a first Sprint on its own. Many will. We wrote the book so they could.
+Set the quarterly rhythm from Chapter 11 to make it repeatable. A disciplined operating team with EOS or Scaling Up already in place can execute a first Sprint on its own. Many will. We wrote the book so they could.
 
 **Path B: Run it with Compound.** The same Sequence, paired with weekly retros, a cohort of peer CEOs running the same framework against constraints in their own companies, and a Compound strategist coaching you through each stage. The membership includes tools that run the same methodology, along with a Clarity Call (30 minutes, no cost) where a strategist walks through your constraint with you and tells you whether it's Sprint-ready.
 
@@ -157,7 +157,7 @@ Before the plan commits, two questions catch the gaps that turn into wasted quar
 Signal traces the symptom to the underlying constraint; if the constraint you've named is the most visible problem rather than the structural cause underneath it, the Sprint will solve the wrong thing.
 
 **2. Does the named Human Orchestrator pass the *Right Seat Evaluation*?**
-Run the three-criteria *Right Seat Evaluation* from Chapter 6 (*Sees It*, *Wants It*, *Suited for It*) against the person you've named; if they can't evaluate the agent's output, won't own the outcome, or lack the authority to override when it drifts, name someone else before the Sprint starts.
+Run the three-criteria *Right Seat Evaluation* from Chapter 7 (*Sees It*, *Wants It*, *Suited for It*) against the person you've named; if they can't evaluate the agent's output, won't own the outcome, or lack the authority to override when it drifts, name someone else before the Sprint starts.
 
 If you can't answer both, the plan isn't yet ready to ship.
 

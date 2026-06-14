@@ -93,7 +93,7 @@ The build paths that cover almost every Compound Sprint:
 
 {{< excalidraw ch07-build-path-decision "Decision flowchart: three build paths — off-the-shelf, low-code, and hand-built — with qualifying questions routing to each." >}}
 
-Our marketing lead's four-agent setup, the one from Chapter 2, didn't require a line of code. It was a low-code build: skills wired, projects connected, tools configured.
+Our marketing lead's four-agent setup, the one from Chapter 3, didn't require a line of code. It was a low-code build: skills wired, projects connected, tools configured.
 
 Contrast that with our project management agent team, which lives on a server and runs continuously — getting and receiving information in real time across all of our projects and communication channels. That build required infrastructure, monitoring, and an always-on deployment. Same Sprint framework, same spec discipline, entirely different complexity tier. The marketing build took an afternoon of configuration. The PM build took weeks of engineering. The Design phase told us that before we started either one.
 
@@ -189,7 +189,7 @@ Your spec's data sensitivity classification and the volume estimate from your wo
 
 If you've run a software team, you know this language. If you haven't, here's what matters for Build.
 
-**Sprint.** A fixed time box. In our case, that's the Compound Sprint from Chapter 3. Build happens inside that time box. It has a start, an end, and a defined deliverable. That deliverable is whatever the Design Brief specifies: the workflow, the outputs, the human supervision model. The discipline of the time box prevents Build from expanding to fill whatever time is available.
+**Sprint.** A fixed time box. In our case, that's the Compound Sprint from Chapter 4. Build happens inside that time box. It has a start, an end, and a defined deliverable. That deliverable is whatever the Design Brief specifies: the workflow, the outputs, the human supervision model. The discipline of the time box prevents Build from expanding to fill whatever time is available.
 
 **Backlog.** A prioritized list of work items that need to get done. In a Compound Build, the backlog is the spec — eight sections, each one a work item. The builder works through them in order. New items don't get added mid-build unless Design reopens.
 
@@ -199,7 +199,7 @@ When new signals, issues, or ideas surface during Build, they don't derail the c
 
 **Accountability.** Every work item has an owner. Every test has a person who signs off. Every failure has someone who fixes it. This maps directly to the Hybrid Accountability Chart — the human supervisor named there is the person accountable for Build's output.
 
-The Chapter 3 Compound Sprint is the strategic container. Build's Sprint discipline is the tactical version — same principle of time-boxed, scoped, accountable work, applied to the construction of a single workflow.
+The Chapter 4 Compound Sprint is the strategic container. Build's Sprint discipline is the tactical version — same principle of time-boxed, scoped, accountable work, applied to the construction of a single workflow.
 
 :::{.callout-tip}
 ## Pro Tip

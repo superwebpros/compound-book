@@ -66,7 +66,7 @@ Be direct. Do not soften bad scores. A Red is information, not failure.
 
 ### Constraint Statement
 
-The Constraint Statement is the one-page artifact Signal produces. It names the problem in one sentence, locates it in the organization, states how long it has existed, and quantifies what it costs. Everything in the Sprint is designed to answer the question this artifact asks. See Chapter 4.
+The Constraint Statement is the one-page artifact Signal produces. It names the problem in one sentence, locates it in the organization, states how long it has existed, and quantifies what it costs. Everything in the Sprint is designed to answer the question this artifact asks. See Chapter 5.
 
 ```
 You are a Compound Sprint coach. Your job is to help me produce a
@@ -141,7 +141,7 @@ question?" If not, revise until the answer is yes.
 
 ### Five Whys
 
-The Five Whys traces a symptom to its root cause. You've reached the constraint when the answer points to a workflow, a handoff, a missing system, or a structural gap — not a person's behavior or a market condition. See Chapter 4.
+The Five Whys traces a symptom to its root cause. You've reached the constraint when the answer points to a workflow, a handoff, a missing system, or a structural gap — not a person's behavior or a market condition. See Chapter 5.
 
 ```
 You are a Compound Sprint coach. Your job is to help me run the
@@ -188,7 +188,7 @@ missing and suggest a different starting point.
 
 ### Knowledge Map
 
-The Knowledge Map is the deliverable of Source — a single page showing what the organization knows about the validated constraint, where that knowledge lives, what's missing, and what's at risk of walking out the door. See Chapter 5.
+The Knowledge Map is the deliverable of Source — a single page showing what the organization knows about the validated constraint, where that knowledge lives, what's missing, and what's at risk of walking out the door. See Chapter 6.
 
 ```
 You are a Compound Sprint coach. Your job is to help me build a
@@ -271,7 +271,7 @@ issues from the completeness test.
 
 ### Source Classification
 
-Source Classification tags each entry on the Knowledge Map along two axes (Structured/Unstructured, Durable/Ephemeral) and one tier system (Standing Context, Retrieved Knowledge, Historical Record). It takes five minutes per source and saves Design hours of rework. See Chapter 5.
+Source Classification tags each entry on the Knowledge Map along two axes (Structured/Unstructured, Durable/Ephemeral) and one tier system (Standing Context, Retrieved Knowledge, Historical Record). It takes five minutes per source and saves Design hours of rework. See Chapter 6.
 
 ```
 You are a Compound Sprint coach. I have a completed Knowledge Map
@@ -327,7 +327,7 @@ classification columns added.
 
 ### Work Deconstruction
 
-Work Deconstruction classifies every task in the constraint workflow into the three categories of the TML framework — Task, Management, Leadership. It also documents source inputs and outputs for each task. This is the method that reveals the actual shape of a role. See Chapter 6b.
+Work Deconstruction classifies every task in the constraint workflow into the three categories of the TML framework — Task, Management, Leadership. It also documents source inputs and outputs for each task. This is the method that reveals the actual shape of a role. See Chapter 7b.
 
 ```
 You are a Compound Sprint coach. Your job is to help me run Work
@@ -402,7 +402,7 @@ Then summarize:
 
 ### Hybrid Accountability Chart Entry
 
-The Hybrid Accountability Chart extends your org's accountability chart to include agent teams alongside humans. Each entry names the function, the agent team, the human supervisor, and the autonomy level. Every row must have a named human supervisor — no exceptions. See Chapter 6.
+The Hybrid Accountability Chart extends your org's accountability chart to include agent teams alongside humans. Each entry names the function, the agent team, the human supervisor, and the autonomy level. Every row must have a named human supervisor — no exceptions. See Chapter 7.
 
 ```
 You are a Compound Sprint coach. Your job is to help me build Hybrid
@@ -459,7 +459,7 @@ Then check:
 
 ### Information Flow Specification
 
-The information flow spec maps how data moves through one accountability — what feeds the work, what transformations happen, what decisions get made, and where the output goes. It is the route, where the Knowledge Map was the atlas. See Chapter 6.
+The information flow spec maps how data moves through one accountability — what feeds the work, what transformations happen, what decisions get made, and where the output goes. It is the route, where the Knowledge Map was the atlas. See Chapter 7.
 
 ```
 You are a Compound Sprint coach. Your job is to help me write an
@@ -531,7 +531,7 @@ count is higher than the number of steps, flag it as a fragility risk.
 
 ### Design Brief
 
-The Design Brief is the comprehensive document that captures all design decisions before Build begins. It connects workflow specification, stakeholders, systems, data requirements, success criteria, guardrails, and the V1 artifact description. See Chapter 6b.
+The Design Brief is the comprehensive document that captures all design decisions before Build begins. It connects workflow specification, stakeholders, systems, data requirements, success criteria, guardrails, and the V1 artifact description. See Chapter 7b.
 
 ```
 You are a Compound Sprint coach. Your job is to help me write a
@@ -612,7 +612,7 @@ Flag any gaps. Those gaps are my next working session.
 
 ### Build Spec
 
-The Build Spec translates the Design Brief into a developer-ready specification. Eight sections, no ambiguity. If the spec is right, Build is execution. If the spec is wrong, Build is negotiation. See Chapter 7.
+The Build Spec translates the Design Brief into a developer-ready specification. Eight sections, no ambiguity. If the spec is right, Build is execution. If the spec is wrong, Build is negotiation. See Chapter 8.
 
 ```
 You are a Compound Sprint coach. Your job is to help me write a
@@ -700,7 +700,7 @@ Flag any issues.
 
 ### Guardrails Checklist
 
-The Guardrails Checklist is the set of quality, privacy, and oversight decisions that must be locked before the solution goes live. Seven questions, answered in writing, before the build executes. See Chapter 7.
+The Guardrails Checklist is the set of quality, privacy, and oversight decisions that must be locked before the solution goes live. Seven questions, answered in writing, before the build executes. See Chapter 8.
 
 ```
 You are a Compound Sprint coach. Your job is to help me complete the
@@ -773,7 +773,7 @@ now — not in Build, and not after deployment.
 
 ### Deploy Readiness Audit
 
-The Deploy Readiness Audit is a pre-flight check with four binary gates. Every gate must pass before the workflow goes live. If any answer is "no," you stop, fix it, and re-run. See Chapter 8.
+The Deploy Readiness Audit is a pre-flight check with four binary gates. Every gate must pass before the workflow goes live. If any answer is "no," you stop, fix it, and re-run. See Chapter 9.
 
 ```
 You are a Compound Sprint coach. Your job is to help me run the
@@ -831,7 +831,7 @@ pass.
 
 ### Per-Role Runbook
 
-The per-role runbook documents what each affected person receives, what they produce, and when they escalate. The test: could someone who was on vacation during the entire Sprint sit down with this document and know what changed about their job? See Chapter 8.
+The per-role runbook documents what each affected person receives, what they produce, and when they escalate. The test: could someone who was on vacation during the entire Sprint sit down with this document and know what changed about their job? See Chapter 9.
 
 ```
 You are a Compound Sprint coach. Your job is to help me write
@@ -881,7 +881,7 @@ Present the completed runbook as a formatted table with all roles.
 
 ### Sprint Outcome Measurement
 
-Sprint outcome measurement ties the result back to Signal's quantified cost. It is five fields: the Signal statement, the cost at start, the result after Sprint, the delta, and the outcome in one sentence. See Chapter 8.
+Sprint outcome measurement ties the result back to Signal's quantified cost. It is five fields: the Signal statement, the cost at start, the result after Sprint, the delta, and the outcome in one sentence. See Chapter 9.
 
 ```
 You are a Compound Sprint coach. Your job is to help me measure my
@@ -943,7 +943,7 @@ Present the completed measurement artifact.
 
 ### Sprint Retrospective
 
-The Sprint Retrospective asks the same three questions every time: what worked, what didn't, and what one design change would make the next Sprint better. The discipline of one design change — not a list — is what makes compounding structural. See Chapter 9.
+The Sprint Retrospective asks the same three questions every time: what worked, what didn't, and what one design change would make the next Sprint better. The discipline of one design change — not a list — is what makes compounding structural. See Chapter 10.
 
 ```
 You are a Compound Sprint coach. Your job is to help me run a Sprint
@@ -1008,7 +1008,7 @@ compounding answers.
 
 ### Constraint Re-rank
 
-The Constraint Re-rank reorders the Signal Backlog against the new information the Sprint produced. Four questions drive it. The constraint at rank one becomes the input for the next Signal conversation. See Chapter 9.
+The Constraint Re-rank reorders the Signal Backlog against the new information the Sprint produced. Four questions drive it. The constraint at rank one becomes the input for the next Signal conversation. See Chapter 10.
 
 ```
 You are a Compound Sprint coach. Your job is to help me re-rank my
@@ -1067,7 +1067,7 @@ we close.
 
 ### Hybrid Org Today
 
-The Hybrid Org Today is the one-page operational picture of the Co-Intelligent Company. It maps what people own, what AI handles, what is solved, and what is next. Updated quarterly. See Chapter 10.
+The Hybrid Org Today is the one-page operational picture of the Co-Intelligent Company. It maps what people own, what AI handles, what is solved, and what is next. Updated quarterly. See Chapter 11.
 
 ```
 You are a Compound Sprint coach. Your job is to help me build (or
@@ -1125,7 +1125,7 @@ of the next quarterly review.
 
 ### Compounding Scorecard
 
-The Compounding Scorecard tracks whether the Rhythm is working. Each Sprint produces a delta — the measurable difference between what the constraint cost before and what it costs after. After four Sprints, the cumulative column is the business case for continuing. See Chapter 10.
+The Compounding Scorecard tracks whether the Rhythm is working. Each Sprint produces a delta — the measurable difference between what the constraint cost before and what it costs after. After four Sprints, the cumulative column is the business case for continuing. See Chapter 11.
 
 ```
 You are a Compound Sprint coach. Your job is to help me build (or
