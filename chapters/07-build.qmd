@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-Build is the stage where the locked design becomes a working, deployed system. It is the narrowest stage of the Sequence — and the fastest, when the diagnostic work was done properly. Build produces one thing: a deployed solution to the validated constraint, specified by an eight-section Build Spec, stress-tested against a seven-question Guardrails Checklist, and confirmed done only when it handles real work under real supervision. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
+Build is the stage where the locked Design Brief becomes a working, deployed system. Design has already made the hard calls: which constraint to solve, which workflow to build, which platform category fits. Build's job is narrower. It produces one thing: a deployed solution to the validated constraint, specified by an eight-section Build Spec, stress-tested against a seven-question Guardrails Checklist, and confirmed done only when it handles real work under real supervision. Once the spec and guardrails are locked, there's one question left: where does this agent actually live? That's the platform-decision — and it lives here, not in Design. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
 :::
 
 We built the project management agent team, the five agents that replaced our $24,000-a-year coordinator role. We locked the Hybrid Accountability Chart entry first, before the workflow steps: Sofia named as supervisor, every agent team starting AI-Assisted, her sign-off required on every output in Sprint one. Access boundaries, failure modes, and build path all followed from that accountability decision.
@@ -67,49 +67,6 @@ IT's role in this picture is real and essential, but it's different from what mo
 :::{.callout-note}
 ## Action Step
 Before your next Build, ask: does the builder need to be a developer, or does the builder need to be the person who knows the work? If the answer is the second, put them in front of the tool and let them build. Pair them with IT for access and security — not for construction.
-:::
-
-## The complexity spectrum.
-
-Not every build is the same size, and the gap between the simplest and most complex is enormous. Understanding where your build sits on that spectrum prevents two failure modes: overbuilding simple things and underbuilding complex ones.
-
-At the simple end: a shared AI environment. Claude Teams or ChatGPT Enterprise with shared projects and skills. Your team logs in, the skills are there, the context is loaded, the guardrails are set. The "build" is configuration — writing the skills, setting the project context, defining what the agent can access. A competent person does this in an afternoon.
-
-At the complex end: fully agentic workflows. Multiple agents coordinating across systems, making bounded decisions in sequence inside the scope the design specified, passing outputs between stages, running on schedules with the human supervising by exception instead of approving every step. These involve orchestration platforms, API integrations, error handling at every junction, monitoring dashboards. They take weeks, sometimes months.
-
-Between those poles is where most builds land. The workflow pulls from one or two systems, runs data through an agent with a defined skill, and delivers the output to a human for review. Low-code tools handle this well. The thinking is the same at every point on the spectrum: Design covers the how, Build does the work. The spec tells you where you're on the spectrum. Build it there.
-
-## The build *paths*.
-
-The team enters Build with a designed workflow. They exit Build with that workflow operating in production. Between those two points is a choice — and the design already made it. The choice is which path fits the design, nothing else.
-
-The build paths that cover almost every Compound Sprint:
-
-- **Off-the-shelf tool.** Existing software that maps cleanly to the designed workflow with light configuration. The work is selection, configuration, and integration into the team's existing flow — not building from scratch. Use this path when a mature product category already does what the design requires, with no custom behavior needed.
-
-- **Low-code or no-code build.** A workflow assembled in something like Zapier, Make, Airtable, n8n, or a Claude project with skills and connectors. No external engineering. The team owns it directly — they can see how it works, change it, and extend it. Use this path when the workflow is custom but built from standard primitives: pull from a system, run through an agent, write back, notify someone.
-
-- **Hand-built integration.** Custom code involving an API to a system of record, with an engineer in the loop. Slower than low-code, higher return, harder to change later. Use this path when the workflow runs at a scale or against a system that low-code tools can't reach — or when the integration touches data the company won't route through a third-party platform.
-
-{{< excalidraw ch07-build-path-decision "Decision flowchart: three build paths — off-the-shelf, low-code, and hand-built — with qualifying questions routing to each." >}}
-
-Our marketing lead's four-agent setup, the one from Chapter 3, didn't require a line of code. It was a low-code build: skills wired, projects connected, tools configured.
-
-Contrast that with our project management agent team, which lives on a server and runs continuously — getting and receiving information in real time across all of our projects and communication channels. That build required infrastructure, monitoring, and an always-on deployment. Same Sprint framework, same spec discipline, entirely different complexity tier. The marketing build took an afternoon of configuration. The PM build took weeks of engineering. The Design phase told us that before we started either one.
-
-These aren't a hierarchy. None of them is better than the others. The right path is the one that matches the design — the workflow's shape, the systems it touches, the data sensitivity, the team's ability to own it, the volume it will run at, and the speed the constraint demands.
-
-To pick the right path for your design, run through these questions in order:
-
-1. Does a mature product already do exactly what the designed workflow requires, with light configuration? If yes — off-the-shelf. Don't build what you can configure.
-2. Is the workflow custom but composed of standard moves — pull from a system, run through an agent, write back, notify someone? If yes — low-code. Your team can own and change it directly.
-3. Does the workflow run at a scale, or touch a system of record, that low-code tools can't reach? Or does the data sensitivity rule out a third-party automation platform? If yes — hand-built.
-
-The Design phase determines the path. Build executes it. A team that picks a path because of a vendor relationship or a market fashion is making a Design decision under the cover of Build — and they will pay for it.
-
-:::{.callout-note}
-## Action Step
-Pull the designed workflow from Design. Run the three-question decision tree above. Write down which path you're on and why. If you can't answer the questions without guessing, Design isn't done — go back.
 :::
 
 ## Technical literacy — what you need to know.
@@ -308,6 +265,39 @@ These are the conditions under which the human supervisor can actually supervise
 Answer all seven questions in writing. Attach the answers to the Build Spec as a companion document. If any question can't be answered, the build is not ready to deploy — resolve the gap before going live.
 :::
 
+## Where the *agent* lives.
+
+The spec names what the agent does. The Guardrails Checklist names what it's allowed to touch. The next question is where it actually runs.
+
+This is the platform decision, and it belongs in Build — not Design. Design picked a category: low-code workflow, shared AI environment, custom integration. Build picks the specific platform inside that category and configures the agent to run there. The distinction matters because platform options shift faster than workflow design principles do. What's named here is the category logic; the current products are examples. Check the market when you're running your Sprint, not when you read this.
+
+The categories, with what fits and what doesn't:
+
+**Claude Projects** fit skill-level work: a single agent, a defined knowledge base, one person or a small team using it co-operatively. The "build" is configuration — a system prompt, uploaded context, defined scope, guardrails set in the project settings. A competent person does this in an afternoon. This is the right environment when the designed workflow is one agent, one output stream, one supervisor reviewing every output. The marketing lead's four-agent setup from Chapter 3 started here. When a workflow grows past one agent or starts running programmatically, Claude Projects doesn't stretch to cover it.
+
+**Claude Team** (shared workspace, multiple projects) fits cross-team, skill-level work where multiple people need access to the same agent context. The agent's knowledge base and guardrails are set once; the team uses it. This is the right environment when Design identified several people touching the same workflow and the work is AI-assisted, not automated. It doesn't fit workflows that run on a schedule without a human initiating each run.
+
+**Claude Code** fits multi-agent, programmatic, and tooling-heavy builds. When the designed workflow involves agents calling other agents, running on triggers, writing back to systems, or operating at a volume that requires monitoring dashboards, Claude Code is the environment where the builder wires that together. Our project management agent team lives here — running continuously across projects and communication channels, with infrastructure, monitoring, and an always-on deployment behind it. Claude Projects couldn't have held that.
+
+**n8n, Make, Zapier, and similar workflow orchestration platforms** fit data pipeline builds: pull from a system, run through an agent, write back, notify someone. When the designed workflow is composed of standard connectors and the team needs to own, see, and change it directly without engineering overhead, these platforms handle it well. Meridian's quoting workflow used n8n alongside Claude Team. The two worked together: Claude Team held the agent; n8n handled the system connections. These platforms don't fit workflows that require the agent to reason across complex branching logic or operate against large unstructured data sets.
+
+**Custom server and infrastructure** fits workflows where control matters most. When data residency requirements rule out third-party platforms, when the workflow runs at a volume no low-code tool can handle, or when the agent needs to integrate with a system of record through a proprietary API — a custom build on your own infrastructure is the path. Slower to build, harder to change, and it requires someone to maintain it. The return is full control: your data doesn't leave your environment, you own the uptime, and you're not subject to a platform's rate limits or pricing shifts. This path is the right call when the Guardrails Checklist's data sensitivity question forces it, not because it's architecturally elegant.
+
+### The span-of-control constraint.
+
+Before you finalize the platform decision, check the agent count against a finding from Bedard et al. (BCG, HBR, March 2026): productivity inverts after three concurrent agents under one supervisor. Up to three, adding agents produces compounding gains. Beyond three, the supervisor's cognitive budget runs out and error rates climb.
+
+The finding named it "AI brain fry" — mental fatigue from oversight load exceeding a person's capacity. The practical implication for Build: if the designed system puts four, five, or six agents under one human supervisor, the design has a structural problem. The platform decision doesn't fix that. You can run six agents on the best infrastructure available and still produce worse outcomes than three agents on a simpler setup, because the bottleneck is the supervisor's attention, not the platform's throughput.
+
+If the platform decision is pushing toward a many-agent architecture, stop. Go back to Design. Either scope the system smaller (fewer agents per supervisor) or add a layer of agent-supervised parallel work, where a coordinator agent manages the subagents and the human supervisor reviews the coordinator's output rather than every individual agent's output. That pattern is named in Chapter 3: the quote-orchestrator that runs a team inside its own loop, with the human reviewing what the orchestrator surfaces, not what each subagent produced. Chapter 7, Design, is where that architectural decision gets made. Build inherits it.
+
+The platform decision should match the architecture Design produced, not the architecture the builder finds interesting.
+
+:::{.callout-note}
+## Action Step
+Map your designed agent count against the supervisor named in the Hybrid Accountability Chart. If the count exceeds three agents under one supervisor, flag it as a design gap before Build proceeds. The platform you pick won't solve a supervision problem; only the design can.
+:::
+
 ## Sprint: the three-week quoting workflow.
 
 Meridian Manufacturing came into Build with a clear Signal: quotes were taking 3.8 days, Elena was the bottleneck on every one, and the constraint was costing them $558K a year in lost revenue, misallocated VP time, and shop floor underutilization. Source mapped the inputs: the inbound RFQ, three years of job costing history in the ERP, the rate card, and a pricing exceptions spreadsheet on Elena's desktop that had never been shared or backed up. Design produced a workflow where three agents (Quote Research, Quote Pricing, Quote Assembly) drafted the quote inside a single Claude project, and Elena reviewed every output before Ty delivered it to the customer.
@@ -351,7 +341,7 @@ Build makes it work. Deliver puts it into the company's actual operating rhythm 
 
 ## Reflection Questions
 
-1. For your Sprint's designed workflow, run the three-question build path decision tree: does a mature product already do this with light configuration? Is it custom but composed of standard moves? Does it touch a system or data sensitivity that requires hand-built integration? Which path does the answer point to — and does that match where your team assumed you'd end up?
+1. For your Sprint's designed workflow, match the Design Brief's platform category to the five runtime environments in this chapter: Claude Projects, Claude Team, Claude Code, a workflow orchestration platform, or a custom server. Which environment fits the agent count, data sensitivity, and supervision model the design specified? Does that match where your team assumed you'd end up?
 2. Before Build begins, fill in all seven Guardrails Checklist questions for your workflow. Which question is hardest to answer — and is that difficulty a sign that Design needs another session, or that you genuinely haven't decided yet?
-3. The chapter says the team that ships a Claude project with three skills in a week beats the team that spends six weeks architecting a pipeline — if the design only called for a skill. Where in your current build is scope creep already showing up? What does the spec actually say, versus what the builder is proposing?
+3. The chapter says the team that ships a Claude project with three skills in a week beats the team that spends six weeks architecting a pipeline — if the design only called for a skill. Where in your current build is scope creep already showing up? What does the spec say, versus what the builder is proposing — and which one wins?
 4. Run the five-question "Done" test against your build using last week's real inputs. Did the build produce expected outputs? Did it handle edge cases? Did escalation fire correctly? Could the supervisor evaluate the output without a walkthrough? Has the Human Orchestrator confirmed the team is briefed and ready? Which question did you fail?
