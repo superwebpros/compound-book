@@ -97,6 +97,27 @@ The right visualization depends on what you're designing. You don't need every t
 
 **Visual design tools** (Figma, Claude's artifact system, Excalidraw) are for when the workflow produces something a stakeholder needs to see. If the agent team is generating customer-facing quotes, draft what the quote looks like. If it's producing reports, mock up the report format. The visual artifact gives the stakeholder something concrete to react to, which is faster and more honest than asking them to imagine the output from a written spec.
 
+:::{.callout-tip}
+## How to draw a swim lane.
+A swim lane has four components: **lanes** (one per role: each person, team, or agent gets their own band), **steps** (boxes inside each lane showing who does this task), **handoff arrows** (lines that cross lane boundaries, labeled with what's being transferred), and **decision branches** (diamonds sitting in the lane of whoever makes the call, with labeled exits for each path). That's the vocabulary. Here's the procedure.
+
+**1. List every role that touches the workflow.** Start with a list, not a drawing. Who does something at any point in this flow? Include agents as roles. Each agent gets its own lane. Meridian's quoting list: Ty (Sales), Dave (Engineering), Elena (Operations), Quote Research Agent, Quote Pricing Agent, Quote Assembly Agent.
+
+**2. Draw one lane per role.** Parallel horizontal bands, left-to-right flow. Label each band with the role name. Don't assign lanes based on org-chart rank; assign them based on who actually touches this workflow.
+
+**3. Walk the workflow from trigger to output, placing each step in the correct lane.** Start from whatever kicks this off. Put the first action in the lane of whoever does it. Then ask: what happens next, and who does it? Keep going until you reach the end state. Don't skip steps because they seem obvious.
+
+**4. Draw an arrow at every handoff.** Every time the next step belongs to a different lane, draw an arrow crossing the boundary. Label the arrow with what's moving: an RFQ record, a draft price, a labor estimate. An unlabeled handoff is an incomplete design.
+
+**5. Mark decision branches.** Wherever the workflow can go two or more directions, add a diamond in the lane of whoever decides. Label every branch. An unlabeled branch exit is a gap.
+
+**6. Find the gnarly bits.** Two patterns signal risk. First: arrows that cross the same lane boundary more than once in the same direction. That's a rework loop. It has a cost. Second: work returning upstream, from a downstream lane back to an earlier one. Count total handoffs when you're done. More handoffs than steps is a fragility signal.
+
+For tools: Excalidraw is free and fast enough for production-quality work (it's what built the diagrams in this book). Lucidchart and Miro support collaborative swim-lane templates. Mermaid lets you describe the diagram in plain text and render it anywhere that supports markdown. Any AI assistant can generate Mermaid from a plain-English workflow description. Treat the output as a first draft. Walk every handoff manually afterward, because lane assignments are where AI diagrams go wrong most often.
+
+For deeper coverage of both swim lanes and flowcharts (how to read one, when to use which, and the full Mermaid-via-AI shortcut): see the Diagramming Primer in the appendix.
+:::
+
 :::{.callout-note}
 ## Action Step
 Pick the workflow you're designing. Draw a swim lane diagram with two lanes — human and agent. Map every step. Count the handoff crossings. If the count is higher than the number of steps, redesign the handoffs before moving to Build.
@@ -115,6 +136,53 @@ A Design Brief includes:
 - **Success criteria.** The measurable outcomes from Signal that this design is intended to move. Not vague improvement, but specific targets the Sprint will be measured against.
 - **Constraints and guardrails.** The governance decisions from the previous chapter: data access boundaries, action permissions, escalation paths, quality monitoring cadence, kill switch conditions.
 - **V1 artifact description.** What will the first working version of this workflow actually produce? Is the output an interface? A formatted document? An automated pipeline? A dashboard? Name the artifact. If you can't describe what the first version looks like, the design isn't finished.
+
+### Per-agent mini-spec.
+
+The Design Brief's hardest job is specifying each agent with enough precision that Build can execute without guessing. For every agent named in your Hybrid Accountability Chart, the Design Brief includes a mini-spec covering six fields. These six come from the agent-anatomy concept introduced in Ch 3: system prompt, tools, context sources, memory rules, judgment and escalation rules, and oversight load.
+
+**1. System prompt.** The operating rules: what the agent does and, just as explicitly, what it doesn't do. "Assemble draft quotes from upstream research and pricing outputs. Do not calculate prices. Do not contact customers or suppliers. Do not access any system outside the defined scope."
+
+**2. Tools.** What the agent is allowed to call: APIs, search, file access, integrations. Name every one. If a tool isn't listed, the agent doesn't get it.
+
+**3. Context sources.** Which rows of your Knowledge Map feed this agent. Cross-reference directly. "Quote Research Agent receives: ERP job costing history (Retrieved knowledge row 1), CRM customer records (Retrieved knowledge row 2), Elena's pricing exceptions database (Standing context row 1)."
+
+**4. Memory rules.** What the agent tracks across runs. Session state (what does it carry from one step to the next?), accumulated decisions (what previous outputs does it reference?), and any lookback window that governs how far back it reasons.
+
+**5. Judgment and escalation rules.** When the agent escalates, and what it refuses outright. The refusal list is the most important part: "Escalate if confidence score falls below 60%. Escalate if no historical match within 25% spec similarity. Refuse any action that would create an external communication. Refuse any access to systems outside the defined list."
+
+**6. Oversight load.** Low, medium, or high, drawn from Bedard et al.'s 2026 BCG research on AI brain fry: oversight draws from the same finite cognitive budget the human is spending on everything else. Assign oversight load deliberately. A high-load agent reviewing every output is a different design choice than a low-load agent that only surfaces exceptions. You're making a cognitive-budget decision when you assign the number.
+
+#### Span-of-control check.
+
+When your Hybrid Accountability Chart assigns more than three concurrent agents to one supervisor, that supervisor needs to justify why the load doesn't violate the productivity-inversion threshold Bedard et al. identified: after three concurrent AI tools, productivity scores dipped. The three-agent ceiling isn't a hard stop, but it's a design question you answer explicitly. If Elena supervises four agents, what is the review structure that prevents cognitive overload? If the answer is "she'll manage," the design isn't finished.
+
+#### The supervisor capability checklist.
+
+Next to each mini-spec, confirm three things about the human supervisor (AWS/Effectual, HBR sponsor content, June 2026):
+
+- **Trace.** Can the supervisor trace the agent's decision back to its inputs? If the agent produced this output, can the supervisor reconstruct why? If not, the agent's reasoning is opaque and the supervisor is rubber-stamping, not reviewing.
+- **Challenge.** Can the supervisor challenge a specific output and get a real revision? Not just reject the whole document. Target a specific line, explain what's wrong, and watch the agent correct that piece. If the challenge loop doesn't work, the oversight is theater.
+- **Apply expertise.** Where does the supervisor apply expertise the agent can't replicate? If every output could ship without the supervisor's input, the supervisor isn't in the loop. They're a speed bump. Name the expertise explicitly: "Elena applies fourteen years of customer-relationship knowledge to catch pricing decisions that look right on paper but signal relationship risk the data doesn't show."
+
+#### Worked example: Quote Assembly Agent (Meridian Manufacturing).
+
+Elena Ruiz's quoting team has three agents. Here's the mini-spec for the Quote Assembly Agent, the last agent in the chain:
+
+| Field | Detail |
+|---|---|
+| **System prompt** | Assemble draft PDF quotes in Meridian's standard format using data provided by the Quote Pricing Agent. Do not calculate, modify, or estimate any pricing. Do not contact customers, suppliers, or any external party. Do not access any system not listed in the tools field. All output is a draft until Elena Ruiz approves. If the Pricing Agent output is incomplete, flag it and stop. |
+| **Tools** | HubSpot CRM (read: customer contact information, RFQ reference, delivery queue; write: draft quote record only). Google Workspace (write: populate standard quote template). n8n workflow API (output: place completed draft in Elena's review queue). No other access. |
+| **Context sources** | Standard rate card (Standing context, loaded on every run). Meridian quote template (Standing context, format reference). Customer name and contact from HubSpot record (Retrieved per-run). |
+| **Memory rules** | No session-to-session memory. Each assembly run is triggered fresh from the Pricing Agent's output for that RFQ. The agent does not reference prior quote drafts. |
+| **Judgment and escalation rules** | Escalate to Elena if the Pricing Agent output contains any field marked "incomplete" or "manual pricing required." Refuse to generate a quote if the pricing confidence score is below 60%. Refuse to place anything in the customer-delivery queue. Output goes to Elena's review queue only. |
+| **Oversight load** | High in Sprint 1. Elena reviews every draft. Target: move to medium (spot-check on exceptions) after three consecutive weeks with zero substantive corrections on format and assembly. Bedard et al. note that autonomy is earned through demonstrated accuracy. The Assembly Agent earns reduced review frequency when the data supports it. |
+
+**Supervisor capability check for Elena (Quote Assembly Agent):**
+
+- *Trace:* Elena can open any draft quote, see the Pricing Agent output that fed it, and confirm each line maps to a source. The audit trail is visible in the CRM. If the quote shows a material cost, Elena can trace it to the pricing database row it came from.
+- *Challenge:* If the quote format is wrong, Elena can note the specific field, mark the draft for revision, and the workflow re-triggers assembly with the correction. She has targeted the mistake; the agent corrects that piece.
+- *Apply expertise:* Elena catches cases where the quote is technically correct but contextually wrong. A price that's within spec for this customer's standard terms can still be too high for the relationship context of this specific bid. That judgment call is hers. The agent can't hold it.
 
 The Design Brief feeds the Build Spec in the next chapter. The Build Spec isn't a parallel artifact; it's derived from this one. Where the Design Brief says *what* the system should do and *why*, the Build Spec restates the relevant sections at developer-execution depth and adds the three things Design doesn't own: agent scope at the call level, failure-mode behavior, and the build path itself. A gap in the Design Brief becomes a question in Build. Close the gaps here.
 
