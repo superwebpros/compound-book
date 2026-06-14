@@ -4,7 +4,7 @@
 
 :::{.callout-important}
 ## In Brief
-Design is the stage where your constraint and knowledge map become a workflow with named owners — human and AI. It produces two things: Hybrid Accountability Chart entries that assign every accountability to a named supervisor, and a governance framework (autonomy levels, guardrails, escalation paths) that makes the system safe to operate. This chapter covers the frameworks for designing the system. The next chapter covers designing the work itself.
+Design is the stage where your constraint and knowledge map become a workflow with named owners — human and AI. It produces four things: Hybrid Accountability Chart entries that assign every accountability to a named supervisor; a governance framework (autonomy levels, guardrails, escalation paths) that makes the system safe to operate; a mini-spec for every agent on the chart; and a platform choice for each agent before Build begins. This chapter covers the frameworks for designing the system. The next chapter covers designing the work itself.
 :::
 
 My COO is on a weekly call and she's not building up to it. "She's not keeping up with clients. Reports are late. I think we need to let her go."
@@ -35,7 +35,8 @@ Design has to produce both. A workflow without an accountability entry is a proc
 
 ## The *Hybrid Accountability Chart*.
 
-{{< excalidraw ch06-hybrid-accountability-chart-intro "Hybrid Accountability Chart: example showing Role/Function | Agent Team | Human Supervisor | Autonomy Level columns." >}}
+<!-- TODO (F77/F88): Excalidraw redo. First-intro chart must match the §6.9.1 case-study chart quality. Column A (Role/Function) names OUTCOMES, not tasks. Use phrasing like "Customer data retrieval and history matching" or "Draft quote generation and review", never "Look up pricing." Every row should be the kind of accountability a supervisor would defend in a meeting, not the kind of task a junior would do in an hour. -->
+{{< excalidraw ch06-hybrid-accountability-chart-intro "Hybrid Accountability Chart introduction: four columns. Role/Function (outcome-based accountability, never a task label), Agent Team, Human Supervisor, Autonomy Level. The first example a reader meets is the same shape as the worked one later in the chapter." >}}
 
 The Accountability Chart is the tool that maps who owns what inside your company. Each row names one accountability and the person responsible for it. One accountability, one name. No shared rows, no "the team." If you run EOS, you already have one: it maps your seats from Integrator down, with every role and its owner named. If you don't run EOS, think of it as a one-page org chart organized around outcomes rather than titles. Not "Director of Marketing" but "Generate qualified pipeline." Not "Operations Manager" but "Deliver client work on time and on scope." Every meaningful accountability your company has, with one name next to it.
 
@@ -180,6 +181,64 @@ There are five questions to answer for every agent team. Write the answers down.
 :::{.callout-tip}
 ## Pro Tip
 The question "does this workflow need an interface?" is a governance question in disguise. If the accountability is fully automated, it probably doesn't need one — data in, data out, humans monitor by exception. If it's AI-assisted with a human in the loop, the human needs a way to interact. That interaction might be co-operative (working alongside the AI in Claude or ChatGPT) or notification-based (approvals via Slack or Teams). The interface decision follows from the autonomy level, not the other way around.
+:::
+
+## The *agent mini-spec*.
+
+The chart names the agent team. The mini-spec names what the agent actually is. Every row in the Hybrid Accountability Chart gets a mini-spec, and the mini-spec is what you hand to Build.
+
+A mini-spec answers six questions, one to a line:
+
+1. **System prompt.** The operating rules. Who the agent is, what it's accountable for, what it does and doesn't decide. Three to five sentences, written as if you were briefing a new hire.
+2. **Tools.** What the agent can call. APIs, search, file access, the specific systems the Knowledge Map says it needs. Name them by name.
+3. **Context sources.** Which Knowledge Map rows feed this agent. Document store, CRM record, rate-card spreadsheet, the cleaned exception database. If the source isn't on the map, it isn't a source.
+4. **Memory rules.** What the agent tracks across runs. Conversation history, prior outputs, learned customer preferences. Most first-Sprint agents have no memory. Saying so is part of the spec.
+5. **Judgment and escalation rules.** When the agent escalates, what it refuses, what triggers a hand-off to the human supervisor. The governance answers from the previous section land here, agent by agent.
+6. **Oversight load.** Low, medium, or high. How much of the human supervisor's attention this agent consumes per run.
+
+That last field comes from Julie Bedard and colleagues at BCG. Their March 2026 piece in *Harvard Business Review*, "When Using AI Leads to 'Brain Fry,'" found productivity inverts after three concurrent AI agents per supervisor. The norm they recommend, the same way operations leaders already manage spans of control for human reports, is no more than three high-oversight agents under one supervisor at a time. Before the mini-specs leave Design, count the agents one supervisor is taking on. If it's more than three, the design isn't done; either consolidate agents, raise some toward Automated, or split the supervisor role.
+
+Next to the mini-spec, post the AWS supervisor-capability check: the supervisor has to be able to *trace decisions, challenge outputs, and apply expertise*. If any of the three is missing for an agent on the chart, that agent isn't ready to run. The mini-spec template gets the full walkthrough in the next chapter inside the Design Brief; what matters here is naming the discipline: every agent on the chart has a spec, every spec answers six questions, no agent goes to Build without one.
+
+## *Tool and platform* selection.
+
+The mini-spec names what each agent is. Tool selection names what each agent runs on. That decision belongs in Design, not Build. The design chooses the platform; Build executes against the chosen platform. A team that picks a vendor or tool because of an existing relationship, or because someone read a launch post that week, is making a design decision under the cover of Build, and they will pay for it.
+
+The platform options group into three categories. Most Compound Sprints land in one of them; a few combine two.
+
+**Off-the-shelf tool.** Existing software that maps cleanly to the designed workflow with light configuration. The work is selection, configuration, and integration into the team's existing flow, not building from scratch. Use this category when a mature product already does what the design requires, with no custom behavior needed.
+
+**Low-code or no-code workflow.** A workflow assembled in something like Zapier, Make, Airtable, n8n, or a Claude project with skills and connectors. No external engineering. The team owns it directly. They can see how it works, change it, and extend it. Use this category when the workflow is custom but built from standard primitives: pull from a system, run through an agent, write back, notify someone.
+
+**Hand-built integration.** Custom code involving an API to a system of record, with an engineer in the loop. Slower than low-code, higher return, harder to change later. Use this category when the workflow runs at a scale or against a system that low-code tools can't reach, or when the integration touches data the company won't route through a third-party platform.
+
+{{< excalidraw ch06-platform-decision "Decision flowchart: three platform categories (off-the-shelf, low-code, hand-built) with qualifying questions routing each agent in the mini-spec to one of them." >}}
+
+To pick the category for each agent in your Hybrid Accountability Chart, run these questions in order:
+
+1. Does a mature product already do exactly what this agent requires, with light configuration? If yes, off-the-shelf. Don't build what you can configure.
+2. Is the agent's workflow custom but composed of standard moves (pull from a system, run through an agent, write back, notify someone)? If yes, low-code. Your team can own and change it directly.
+3. Does the workflow run at a scale, or touch a system of record, that low-code tools can't reach? Or does the data sensitivity rule out a third-party automation platform? If yes, hand-built.
+
+Our marketing lead's four-agent setup, the one from Chapter 3, didn't require a line of code. It was a low-code build: skills wired, projects connected, tools configured. The project management agent team that replaced our coordinator role was different. It lives on a server, runs continuously, and gets and receives information in real time across our projects and communication channels. That one required infrastructure, monitoring, and an always-on deployment. Same Sprint discipline, different platform category. The Design phase named both before Build started either one.
+
+### The current tools.
+
+Tools age faster than books do. The categories above are stable; the products that populate them rotate every few quarters. Check current options when you read this. The table names the categories first, with the products that fit them today as examples.
+
+| Category | What it does | Who it serves | When to pick it | When not to |
+|---|---|---|---|---|
+| Conversational AI workspace (e.g., Claude Project, ChatGPT Workspace, Microsoft Copilot Workspace) | Shared environment for skills, prompts, and uploaded knowledge; humans co-operate with the AI in a chat interface | Knowledge workers doing drafting, brainstorming, iteration on documented SOPs | The agent is conversational, the data fits in a project, and a human reviews every output | Volume is high, the workflow runs unattended, or the data can't travel through the provider's servers |
+| Agent platforms with tool use and connectors (e.g., Claude Code, Claude Co-work, ChatGPT Operator, Gemini Workspace) | Agent that can call APIs, run code, browse, and act inside scoped tools | Workflows where the agent has to do more than draft: pull data, run a script, file a record | The agent needs to act, not just suggest, and the platform's tool connectors already reach the systems you need | The workflow is purely conversational, or you need fine-grained on-prem control |
+| Low-code automation (e.g., n8n, Zapier, Make, Power Automate) | Visual workflow builder that connects systems and triggers actions; AI calls slot in as one step | Operators who own the workflow and don't want to wait for engineering | The work is routing, reformatting, and orchestration between systems your team already uses | The workflow needs reasoning at every step, or the volume exceeds what low-code platforms price for |
+| Embedded vendor AI (e.g., HubSpot Breeze, Salesforce Einstein, ERP-native AI features) | AI capability built into a system of record you already pay for | Teams that want AI inside the tool the work already lives in | The system holding the data is also where the work happens, and the vendor's AI is competent at the task | The AI is shallow, locked to one record type, or doesn't let the agent reach outside its own system |
+| Hand-built integration (custom code on Claude API, OpenAI API, or self-hosted models) | Engineered agent running on your infrastructure or directly against a model provider's API | Builds that need scale, custom logic, data residency, or always-on operation | The workflow runs at volume, the integration touches a regulated system, or low-code can't compose what the design requires | The same outcome is reachable with a low-code build the team can own without engineering |
+
+These aren't a hierarchy. The right tool is the one that matches the agent's mini-spec, the data sensitivity from the governance answers, and the team's ability to own it. If a vendor relationship or a market trend is doing the choosing, the design isn't.
+
+:::{.callout-note}
+## Action Step
+For every agent in your Hybrid Accountability Chart, name the category (off-the-shelf, low-code, hand-built) and the specific tool. Write the choice in one line per agent and the reason in one sentence. If you can't write the reason without guessing, the design isn't done.
 :::
 
 ## The *Human Orchestrator*.
