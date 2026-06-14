@@ -165,10 +165,6 @@ To make that concrete, here is the sort run on a typical professional services r
 Column B accounts for roughly 55% of this coordinator's week. At a loaded annual cost of $65,000, that is $36,000 per year of human intelligence allocated to work that follows learnable rules. Run the same sort on the role you picked. You'll do the cost calculation a few pages from now.
 :::
 
-### Meridian Manufacturing.
-
-The Project Coordinator above is the exercise. Meridian Manufacturing from Chapter 1 is the worked example: the same two columns landed inside one specific role at one specific company. Elena Ruiz is the bottleneck for quoting because the pricing rules, the material lead-times, and the customer history all live in her head. The work she does on each quote splits the same way. Choosing which exceptions to honor for a long-standing customer is Column A judgment. Pulling material costs from JobBOSS and assembling the line items against documented pricing logic is Column B execution. The first half stays with Elena. The second half can move to an agent, with Elena reviewing the draft before it goes to the customer. Same two columns, applied inside a real operating constraint, and that's how the Headcount Math at Meridian starts to move.
-
 When you get the ownership wrong (and most companies get it wrong on first attempt), you get the failure mode we keep seeing in the field: two disconnected tracks producing nothing structural. The team has its workflow. The agents have theirs. The handoff is undefined. The outcome belongs to no one. The dashboard shows tool adoption and the P&L shows nothing.
 
 Here's what it looks like done right.

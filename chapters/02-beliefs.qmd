@@ -24,7 +24,7 @@ The four beliefs cascade. Belief 1 is the foundation. The other three follow fro
 
 ## You're already a *system* company.
 
-You're not becoming a technology company. You already are one. The question is whether you'll redesign work around the systems you already have, or keep paying humans to be the glue between them.
+You're not becoming a technology company. You already are a system company. The question is whether you'll redesign work around the systems you already have, or keep paying humans to be the glue between them.
 
 Look at what's running inside your business right now. A CRM (HubSpot, Salesforce, Pipedrive). An ERP or accounting system (NetSuite, QuickBooks, Sage). A project management tool (Asana, Monday, ClickUp). A communications stack (Slack, Teams, Gmail). A document store (Google Drive, SharePoint, Dropbox). A few function-specific tools layered on top — a billing platform, a scheduling tool, a customer support system.
 
@@ -36,7 +36,7 @@ For an agent, that same stack is a gold mine. Structured data is what agents rea
 
 The mid-market operator's actual advantage is unfair. You've got less legacy bloat than enterprise. You've got more system maturity than a startup. The systems you spent the last decade installing, the ones your team still complains about, turn out to be the substrate AI runs on. Mastery of your own data, in Argenti's framing in the same HBR piece, is the precondition for any of this working. Raffaella Sadun, in HBR (August 2023), made the matching point: AI is "effective only to the extent that it's well-integrated with the specific use case." The systems you already have are that specific use case.
 
-Mid-market companies are in the best position for this, and most don't see it. They keep talking like "tech company" is something to become. It already happened. Every meaningful function of your business runs on a digital system. What hasn't happened is the redesign of work around those systems. That's the move. Belief 1 is the move's name.
+Mid-market companies are in the best position for this, and most don't see it. They keep talking like "tech company" is something to become. The system company part already happened. Every meaningful function of your business runs on a digital system. What hasn't happened is the redesign of work around those systems. That's the move. Belief 1 is the move's name.
 
 > If your systems are running and your people are still the glue between them, you've got an operating-model gap, not a technology gap.
 
@@ -56,7 +56,7 @@ That's not a metaphor. It's literal. An agent, defined in Chapter 1, holds a goa
 
 Argenti named the shift in the same HBR piece: *"From individual contributor to supervisor and mentor."* The mindset move he asked the banker to make is the move every operator in your company will make. Not *what tasks can this tool do for me?* Instead, *what work am I assigning to this worker, and what does good look like?*
 
-Argenti also reaches for a metaphor to make the move concrete, and the metaphor is worth quoting directly because the substitution is doing the work: *"What's the 10% of horse-riding skills they should hang on to in order to master driving? Probably none. What's the 100% of skills they should adapt to be a great driver? Their reflexes and instincts."*
+Argenti also reaches for a metaphor to make the move concrete, and the metaphor is worth quoting directly because the substitution is doing the work: *"What's the 10% of horse-riding skills that they should hang on to in order to master driving? Probably none. What's the 100% of skills they should adapt to be a great driver? Their reflexes and instincts."*
 
 The skills that transfer are the ones that were never about the saddle. Judgment, taste, knowing when an answer doesn't smell right, knowing when to escalate. Those carry into the new role. The hands-on craft of producing the deliverable, in many functions, doesn't.
 
@@ -99,7 +99,7 @@ Belief 4 isn't *more work*. It's *different work, not more work.* That distincti
 
 The shift is in where attention goes, not in how much of it you've got to spend. If a coordinator used to spend twenty hours a week formatting reports and four hours reviewing them, the design move puts agents on the formatting and the human on the four hours of review — sharpened, scoped, with a clear deliverable. The job didn't grow. The composition changed. Bedard's data agrees: AI that *replaces toil* lowers burnout 15%. AI that *adds oversight load on top of the existing job* raises brain fry. The design decision is which one your operating model produces.
 
-Belief 4 sets up the rest of this book. The Sequence (Chapter 3), the Co-Operating Model (Chapter 4), and the design chapters (Chapters 6 and 6b) are the discipline of designing work so the composition changes deliberately, not accidentally. Your role moves from doing the work to designing it. The framework is how.
+Belief 4 sets up the rest of this book. The Co-Operating Model (Chapter 3), the Sequence (Chapter 4), and the design chapters (Chapters 6 and 6b) are the discipline of designing work so the composition changes deliberately, not accidentally. Your role moves from doing the work to designing it. The framework is how.
 
 Jesse's COO walked into a project-coordinator conversation in Chapter 6 expecting to write a job description and ended the meeting with an agent-team design and a redefined human seat. That's Belief 4 in operating terms. The reflex to solve a personnel problem with another person is the reflex Belief 4 interrupts. Not because hiring is wrong. Because designing the work first is what tells you whether hiring is the right move.
 
