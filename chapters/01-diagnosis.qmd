@@ -3,7 +3,7 @@
 ::: callout-important
 ## In Brief
 
-This chapter is a diagnostic. You'll name what's actually broken in your company's AI approach — and it's not the tools, the training, or the team. It's the operating model. By the end you'll have a scored AI Readiness Scorecard across five dimensions, a clear picture of where to start, and the honest answer to a question most leadership teams avoid: are we actually ready to operate differently?
+This chapter is a diagnostic. You'll name what's actually broken in your company's AI approach. It's not the tools, the training, or the team. It's the operating model. By the end you'll have scored your business on a twenty-question AI Readiness Scorecard, you'll have a single percentage that puts you on one side of the AI divide or the other, and you'll know which of five dimensions to start with.
 :::
 
 We learned most of it from one question.
@@ -19,6 +19,8 @@ This is a design problem, not a technology problem. It's the most common version
 The design we mean is the *operating model*: how work actually moves through your company. Who decides what gets done, who hands what to whom, what each function is accountable for. The org chart names the boxes. The operating model is how work moves between them.
 
 We've watched this same pattern for two decades, long before AI entered the conversation. A mid-market company would complete an acquisition and absorb the new entity without redesigning how work actually moved. The acquired operation got bolted onto the existing structure, with the same managers handling expanded volume. The accountability map was never rebuilt to match the expanded scope. AI is just the latest technology to expose a problem that's been visible the whole time.
+
+The stakes are no longer theoretical. Raffaella Sadun, in *Harvard Business Review* (August 2023), called out the pattern directly: "vast differences in the extent to which some firms are really able to click and figure out how to use these technologies for their own benefit," opening "between those that are at the frontier and those that remain behind." Only 5% of AI implementations deliver measurable business returns, per the MIT study cited by AWS and Effectual in *Harvard Business Review* (June 2026). The scorecard at the close of this chapter is the diagnostic that tells you which side of that divide you're on today.
 
 This pattern is common. It might describe your company.
 
@@ -121,30 +123,31 @@ If your AI initiative starts with "what tasks can AI do?" you'll get a list of t
 
 The AI Readiness Scorecard tells you where you stand.
 
-The AI Readiness Scorecard covers five dimensions of operational readiness. For each one, you'll score yourself Red, Yellow, or Green.
+The scorecard covers five dimensions of operational readiness, four questions per dimension, twenty questions in total. For each statement, rank your business 1 to 5, where 1 is weak and 5 is strong. At the end you'll add up the rankings, divide by 100, and turn the result into a percentage. That percentage places you on the AI divide we named earlier in this chapter.
 
 Do this with whoever would be in the room if you were deciding whether to invest in AI. Not just you, the team.
 
-A note before you start: you may not be able to answer all five of these cleanly. The scorecard shows you where you're starting. A Red score is the starting point most companies are at, and the rest of this book is built to move you forward from there.
+A note before you start: you may not be able to answer all twenty questions cleanly. The scorecard shows you where you're starting. A low score is the starting point most companies are at, and the rest of this book is built to move you forward from there.
 
 We'll define every term as we go. For now, a "constraint" means the one operational pain point your company keeps hitting: the thing your team keeps circling in meetings, the process that breaks when one person is out, the workflow where you feel the drag every week. Sometimes that pain is the biggest dollar cost on the P&L. Often it isn't. It might be the risk that keeps you up at night, the bottleneck that caps growth in a key account, the dependency on one person that you can't afford to lose. The cost matters and we'll get to the math in Dimension 5. The pain is what tells you where to look first.
 
-The five dimensions sit inside two preconditions. Information Readiness and Workflow Visibility are the *technical preconditions* that determine whether an AI agent can actually do the work: whether the knowledge exists in a form the system can reach, and whether the workflow is mapped clearly enough to be handed off. Constraint Clarity, Decision Rights, and Measurement Discipline are the *operating-model preconditions* that determine whether your organization will hold the change once it's deployed: whether your team agrees on what to solve, who decides what AI touches, and whether you can measure the result. A company can score Green on the technical side and Red on the operating side. It can have leadership clarity and no documented workflow. Both halves have to be Green before a Sprint will hold.
+The five dimensions sit inside two preconditions. Information Readiness and Workflow Visibility are the *technical preconditions* that determine whether an AI agent can actually do the work: whether the knowledge exists in a form the system can reach, and whether the workflow is mapped clearly enough to be handed off. Constraint Clarity, Decision Rights, and Measurement Discipline are the *operating-model preconditions* that determine whether your organization will hold the change once it's deployed: whether your team agrees on what to solve, who decides what AI touches, and whether you can measure the result. A company can score strongly on the technical side and weakly on the operating side, or the reverse. Both halves have to come up before a Sprint will hold.
 
 ### Dimension 1: Constraint Clarity
 
 *Can your leadership team name the ONE operational constraint AI should solve?*
 
-| Score | What it looks like |
-|------------------------------------|------------------------------------|
-| **Red** | No clear constraint. The team talks about AI in general terms ("we should use AI") but can't name a specific operational problem it would solve. |
-| **Yellow** | Multiple candidates, no priority. The issues list has several items that "could benefit from AI," but the team hasn't ranked them or committed to one. |
-| **Green** | One validated constraint with a cost. The team can name the constraint in one sentence and attach a dollar figure to it. |
+| # | Statement | 1–5 |
+|---|---|---|
+| 1 | We can name one operational constraint that, if removed, would change next quarter's P&L. | ___ |
+| 2 | We've quantified the cost of that constraint in dollars, hours, or margin. | ___ |
+| 3 | Our leadership team agrees on what the #1 constraint actually is, not just that one exists. | ___ |
+| 4 | We've traced the symptoms of the constraint back to a structural root. | ___ |
 
 ::: callout-note
 ## Action Step
 
-Don't ask your leadership team what AI should solve. They don't know yet, and neither did you before you picked up this book. Ask them a question they *can* answer: "What is the one operational problem we keep circling and never close, the one that hurts the most, whether it shows up in dollars, hours, risk, or a person we can't afford to lose?" Poll each person individually, write down the answers verbatim, and compare. If five people give five different answers, you've found something more useful than a constraint. You've found the leadership-team disagreement that any AI work would have run into anyway. Chapter 4 turns that raw answer into a usable constraint statement.
+Don't ask your leadership team what AI should solve. They don't know yet, and neither did you before you picked up this book. Ask them a question they *can* answer: "What is the one operational problem we keep circling and never close, the one that hurts the most, whether it shows up in dollars, hours, risk, or a person we can't afford to lose?" Poll each person individually, write down the answers verbatim, and compare. If five people give five different answers, you've found something more useful than a constraint. You've found the leadership-team disagreement that any AI work would have run into anyway.
 :::
 
 The poll results tell you more than any scorecard row. Agreement on the operational pain means you've got a starting point. Disagreement means the constraint isn't the workflow yet; it's the leadership team's agreement on what matters most.
@@ -159,13 +162,14 @@ If your leadership team can't agree on the constraint, that disagreement IS the 
 
 *Is the knowledge your team runs on documented and accessible, or trapped in people's heads?*
 
-| Score | What it looks like |
-|------------------------------------|------------------------------------|
-| **Red** | Mostly tribal. The way things get done lives in the heads of a few key people. When they're out, things slow down or break. |
-| **Yellow** | Partially documented. Some processes are written down, but the critical knowledge (pricing logic, client history, escalation paths) still depends on specific individuals. |
-| **Green** | Documented and indexed. Processes, decisions, and institutional knowledge are written down, stored in systems the team can access, and maintained regularly. |
+| # | Statement | 1–5 |
+|---|---|---|
+| 5 | We can answer "where does this information live?" for every critical workflow. | ___ |
+| 6 | We've identified the institutional knowledge that exists only in one person's head. | ___ |
+| 7 | The knowledge our team runs on is captured outside of conversations and email threads. | ___ |
+| 8 | We have a process for keeping that knowledge current as the business changes. | ___ |
 
-If your best operations person quit tomorrow, how long before the replacement could run the workflow without calling them? If the answer is "months," you're Red regardless of what's in your wiki.
+If your best operations person quit tomorrow, how long before the replacement could run the workflow without calling them? If the answer is "months," your real score is a 1 or a 2, regardless of what's in your wiki.
 
 ::: callout-note
 ## Action Step
@@ -177,13 +181,14 @@ Pick your most critical workflow. Ask the person who owns it: "If you had to han
 
 *Can you draw the workflow where the constraint lives, including who does what and where handoffs break?*
 
-| Score | What it looks like |
-|------------------------------------|------------------------------------|
-| **Red** | Nobody can draw it. The workflow exists as a series of habits and reactions. If you asked three people to map it, you'd get three different maps. |
-| **Yellow** | Someone knows it but it's not documented. One or two people could walk you through the workflow, but it lives in their heads and has never been drawn, validated, or shared. |
-| **Green** | Documented with ownership. The workflow is mapped, each step has an owner, handoffs are identified, and the team agrees on where it breaks. |
+| # | Statement | 1–5 |
+|---|---|---|
+| 9 | We can describe end-to-end how work moves through our critical processes. | ___ |
+| 10 | We know where work currently breaks: manual handoffs, system gaps, undocumented expertise. | ___ |
+| 11 | Our processes are documented at the task level, not just summarized. | ___ |
+| 12 | We've identified which steps are routing and admin versus which require human judgment. | ___ |
 
-The gap between Yellow and Green here is agreement. A workflow described by one person isn't enough. The team has to validate it, and that's what AI needs to run on.
+A workflow described by one person isn't enough. The team has to agree on the map, and that's what AI needs to run on.
 
 ::: callout-note
 ## Action Step
@@ -195,11 +200,12 @@ Whiteboard your most constrained workflow in fifteen minutes. Put every handoff 
 
 *Does your team know who decides what AI handles vs. what stays with humans?*
 
-| Score | What it looks like |
-|------------------------------------|------------------------------------|
-| **Red** | No conversation has happened. The team hasn't discussed which tasks AI could take over, which require human judgment, and who makes that call. |
-| **Yellow** | Vague ideas. People have opinions about what AI "should" do, but there are no explicit assignments, no written boundaries, and no agreement on who decides. |
-| **Green** | Explicit assignments per role. The team has defined which decisions and tasks are AI-eligible, which stay human, and who has authority to change the boundary. |
+| # | Statement | 1–5 |
+|---|---|---|
+| 13 | Every accountability in our org has exactly one named owner. | ___ |
+| 14 | We've documented which decisions require human review and which can run inside a designed scope. | ___ |
+| 15 | When a workflow fails, we can name who's accountable without ambiguity. | ___ |
+| 16 | Our team agrees on who has the authority to change the boundary between human work and AI work. | ___ |
 
 Decision rights come down to organizational trust, not AI capability. The question is whether you trust the output enough to act on it without a human checking. That's a leadership decision. And not every workflow should aim for full automation. Some workflows should keep a human in the loop. Make that a deliberate choice based on the goal, not a default because nobody designed the alternative.
 
@@ -213,11 +219,12 @@ List the five most frequent decisions in your constrained workflow. For each one
 
 *Can you put a dollar number on what the constraint costs per quarter?*
 
-| Score | What it looks like |
-|------------------------------------|------------------------------------|
-| **Red** | Can't quantify. The team knows something is expensive or slow, but can't produce a number. |
-| **Yellow** | Rough estimate. Someone can say "it probably costs us around \$X" but the number isn't validated, isn't tracked, and wouldn't survive scrutiny. |
-| **Green** | Validated number with data. The cost is calculated from real data (hours tracked, margin analyzed, revenue measured) and the team can show the math. |
+| # | Statement | 1–5 |
+|---|---|---|
+| 17 | We measure outcomes weekly with named numbers, not vibes. | ___ |
+| 18 | Every team has a scorecard with five to fifteen metrics they own. | ___ |
+| 19 | We can prove last quarter's investments paid back, in dollars. | ___ |
+| 20 | We track revenue per employee and review it at least quarterly. | ___ |
 
 If you can't measure what the constraint costs today, you can't measure whether AI made it better tomorrow. Cost here is broader than dollars. It can be hours lost, deals walked, errors caught late, customers who churned quietly, the risk you carry in one person's head. Dollar cost is the cleanest version, and where you can get to it, use it. Where you can't, pick the most honest unit you can defend and measure it the same way every quarter. Without that, you have an AI experiment, not an AI initiative. An initiative has a target.
 
@@ -227,108 +234,52 @@ If you can't measure what the constraint costs today, you can't measure whether 
 Do the math right now. Hours per week spent on the constraint, multiplied by loaded cost per hour, multiplied by thirteen weeks. That's your quarterly cost floor. If you can't fill in the numbers, write down what data you'd need and where you'd get it. That gap is your first task.
 :::
 
-### Read your pattern.
+### Score yourself.
 
-Fill in your scorecard:
+For each of the twenty statements above, you ranked your business 1 to 5. Now tally the count of each ranking across all twenty rows.
 
-| Dimension | Score |
-|-----------|-------|
-| Constraint Clarity | [ R / Y / G ] |
-| Information Readiness | [ R / Y / G ] |
-| Workflow Visibility | [ R / Y / G ] |
-| Decision Rights | [ R / Y / G ] |
-| Measurement Discipline | [ R / Y / G ] |
+| Count of each ranking | ___ ones | ___ twos | ___ threes | ___ fours | ___ fives |
+|---|---|---|---|---|---|
+| Multiply by | × 1 | × 2 | × 3 | × 4 | × 5 |
+| Subtotal | ___ | ___ | ___ | ___ | ___ |
 
-**All Red:** You aren't ready for an AI initiative yet. The Compound Sprint framework exists to move you from Red to Green, dimension by dimension.
+Add the five subtotals together. The lowest possible total is 20 (every row scored 1). The highest is 100 (every row scored 5). Your total is your AI Readiness percentage: ___%.
 
-**Mixed Red/Yellow:** Start with whichever dimension scored Yellow. Yellow means you've got something to build on: a partial answer, an existing document, a person who already knows the workflow but hasn't written it down. Red means you're building from scratch. That's why your Yellow is your best starting point: the foundation already exists, so turning Yellow to Green is clarification work.
+### Read your bucket.
 
-**Mostly Yellow:** The work is clarification and commitment. The Sprint framework will move fast for you.
+| Score | What it means |
+|---|---|
+| **20–34%** | Start here. This book is for you. The operating model isn't designed for AI yet, the basic preconditions aren't in place, and that is the most honest answer most mid-market companies give on first read. |
+| **35–49%** | Foundations exist. The math hasn't compounded yet. Most readers land here. You have partial answers across most dimensions; the work is locking the answers, not inventing them. |
+| **50–64%** | You're above average. The framework will sharpen what's already there. Expect faster movement in two or three dimensions and slower work in whichever one you scored lowest. |
+| **65–79%** | You're operating well. The book formalizes what you already do informally and gives you the language to scale the discipline beyond the people who currently carry it. |
+| **80–100%** | You're running a Co-Intelligent Co-Operation in fact, if not in name. The chapters ahead will give you the vocabulary, the artifacts, and the through-line to make what you've built repeatable across the next decade of growth. |
 
-**Any Green:** Protect it. A Green score means someone did the work to document, quantify, or decide. Build from that foundation — don't let a new initiative overwrite the discipline that produced it.
+Look at the dimensions inside the score. Add the four rankings inside each dimension to get a dimension subtotal out of 20. The dimension with the lowest subtotal is where the chapters ahead start moving the math for you.
 
-**All Green:** You don't need the rest of this chapter. Skip to Chapter 4 and run the Sprint.
+::: callout-note
+## Your closing checklist
 
-### What it looks like in practice.
+Before you turn the page, write these four numbers down:
 
-To make the Sequence tangible, we built a fictional company from the real patterns we've seen across dozens of engagements. Meridian Manufacturing will follow you through every chapter of this book, so you can see each stage applied to one continuous example. The full case study is in the appendix if you want to read it straight through.
-
-### Meridian Manufacturing.
-
-Meet Meridian Manufacturing. Seven-point-two million in revenue, twenty-seven employees, custom metal fabrication for industrial clients. Mark Ellison is the CEO. He built the business from a two-person garage shop eighteen years ago and still holds the key customer relationships. Elena Ruiz is his VP of Operations and Integrator. She runs the floor, manages scheduling, and is the only person in the company who can produce a complete quote. The rest of the leadership team: Ty Banfield in sales, Dave Kowalski as senior design engineer (thirty-one years in fabrication), and Carlos Medina running the shop floor.
-
-Meridian runs EOS. Accountability chart, scorecards, L10s, the works. They've grown profitably for years. The constraint: their quotes take three to five days to turn around. Industry standard is twenty-four to forty-eight hours. The full cost of that constraint runs to roughly \$558,000 a year, combining walked bids that cite turnaround time, misallocated senior time, and floor underutilization. The actual number is higher because most clients who go elsewhere don't explain. The bottleneck is Elena. Pricing exceptions live on her desktop. Material lead-times live in her head. She's the only one who can close a quote, and she's getting buried.
-
-Six months ago, Mark bought a ChatGPT subscription. He uses it for emails. He suspects AI could help with the quoting problem but has no idea how to start. That's where we meet them.
-
-| Dimension | Score | What We Found |
-|-----------|-------|---------------|
-| **Constraint Clarity** | Yellow | The L10 kept circling quoting speed, but the CEO and VP of Ops hadn't agreed it was THE constraint. The issues list had eight items. Quoting was on it — but so were six other things. |
-| **Information Readiness** | Red | The VP of Ops WAS the documentation. Pricing exceptions lived in a spreadsheet on her desktop. Material lead-time knowledge was in her head. She was the only person who could produce a complete quote. |
-| **Workflow Visibility** | Yellow | The sales lead could draw the front half of quoting. The design engineer could draw the estimation piece. The VP of Ops could draw the whole thing. The three drawings would conflict on at least four steps. |
-| **Decision Rights** | Red | The AI conversation hadn't happened. The CEO bought a ChatGPT subscription six months ago. He used it for emails. Nobody had discussed what AI should or shouldn't touch in the quoting workflow. |
-| **Measurement Discipline** | Yellow | The sales lead had win/loss data showing lost bids from slow quotes. The VP of Ops had gut estimates on time per quote. Neither number had been validated or tracked as a metric. |
-
-Two Reds, three Yellows. The Yellows told Meridian where to start. Constraint Clarity was Yellow because the quoting bottleneck was already showing up in every L10, but the team hadn't committed to it as the single constraint. Workflow Visibility was Yellow because three people could each draw part of the quoting workflow, but they hadn't agreed on one map. Measurement Discipline was Yellow because the sales lead already had win/loss data that still needed to be validated and turned into a real number.
-
-The Reds were the deeper problems. Information Readiness was Red because one person was the system — pricing exceptions on a desktop spreadsheet, lead-time knowledge in her head, customer-specific terms that no one else could access. AI can't operate inside a system that only exists in someone's head. Decision Rights was Red because the conversation hadn't started. Until a leadership team decides what AI is allowed to touch and who owns the call, every tool they buy helps individuals but never shows up on the P&L.
-
-Meridian had three Yellows on the board. Which one to attack first wasn't obvious from the colors alone. Here's the rubric we used with them, and the one we use with every team that finds itself in the same spot.
-
-1. **Foundation first.** Some Yellows unblock the others. Constraint Clarity is almost always the foundation: until the leadership team agrees on the one bottleneck, every other dimension is being scored against a moving target. If a Yellow row is a precondition for the others, it goes first.
-2. **Highest pain inside reach.** Of the remaining Yellows, pick the one closest to the operational pain that brought you to the conversation. Not the most interesting Yellow, not the easiest Yellow, the one that sits on the workflow that's actually hurting.
-3. **Smallest gap to Green.** When two Yellows are roughly tied on pain, pick the one with the smallest distance to Green. Yellow means you've got partial answer, document, or person. Less distance means a faster Green, and a fast Green builds credibility for the harder work behind it.
-4. **Owner in the room.** Don't pick a Yellow that nobody on the leadership team owns. If you can't name the person who'll move it, you've picked a wish, not a constraint.
-5. **Two-quarter horizon.** Pick the Yellow you can plausibly turn Green inside two quarters with the team you've got. If it's longer than that, the work is too big to be a single Sprint and needs to be broken down into a tighter constraint before Signal starts.
-
-Apply the rubric in order. The first Yellow that passes all five is where you start. For Meridian, that meant Constraint Clarity first (foundation), then Workflow Visibility (highest pain inside reach, smallest gap to Green, Elena owns it). Measurement Discipline waited. Chapter 4 turns the chosen Yellow into a written constraint statement the leadership team can hold each other to.
-
-Meridian's starting point: lock the quoting bottleneck as the constraint (turn Constraint Clarity from Yellow to Green), then map the end-to-end quoting workflow around it (turn Workflow Visibility from Yellow to Green). Those two moves created the foundation for everything that followed.
+- **Your overall AI Readiness score:** ____ %
+- **Your lowest dimension(s):** _______________
+- **Your highest dimension(s):** _______________
+- **The dimension you'll start with:** _______________ (Chapter 5 hands you the rubric for choosing it on purpose, not by gut.)
+:::
 
 ::: callout-tip
 ## Pro Tip
 
-The AI Readiness Scorecard isn't a test. It's a map of where to start. If you're all Red, that's not a failure; it's the most honest answer most companies give. If you've got a Yellow, run it through the five-criterion rubric above and start there. You've already got something to build on.
+The scorecard isn't a test. It's a map of where to start. The lowest dimension is your first move. The highest is the foundation you protect while you do the work.
 :::
 
-## Your map: the *Sprint Planning Canvas*.
-
-The scorecard tells you where you're starting. The next thing you need is a map of where you're going. That map is the Sprint Planning Canvas.
-
-If you run EOS, the Sprint Planning Canvas is the VTO equivalent. It is the single one-page document your leadership team fills in together as you work through the chapters ahead. The VTO is the one artifact that holds everything else in EOS together; the Sprint Planning Canvas plays the same role for Compound.
-
-The Canvas has five sections.
-
-1. **Constraint.** The one operational bottleneck you've decided to solve this Sprint, stated in one sentence with a dollar figure attached.
-2. **Sequence first-pass.** One honest first guess per stage of the six-stage Sequence (Signal → Source → Design → Build → Deliver → Compound). The Sequence is defined in Chapter 3.
-3. **Team.** Three to five people closest to the constraint workflow, plus a named Human Orchestrator who runs the Sprint day-to-day.
-4. **Human Orchestrator.** The role that owns execution: cadence, handoffs, and the decision-making boundary between you and the AI workforce.
-5. **Quarterly review.** The date you'll review the Sprint outcome with your leadership team. The Sprint is real when the review is on the calendar.
-
-{{< excalidraw ch01-sprint-planning-canvas-empty "The Sprint Planning Canvas, empty: a one-page document with five sections (Constraint, Sequence first-pass, Team, Human Orchestrator, Quarterly review) populated across the remaining chapters." >}}
-
-Every chapter from here forward fills in one section of this Canvas. Chapter 2 sets up the structural frame the Canvas sits inside. Chapter 3 defines the Canvas formally and shows a populated example. Chapters 4 through 9 walk the six stages of the Sequence, each one sharpening the row that stage owns. Chapter 10 sets the Quarterly review cadence. Chapter 11 hands you the worksheet for your first Sprint.
-
-By the last page of this book, your leadership team has a filled-in Sprint Planning Canvas for your first Sprint, the next constraint already named, and the quarterly review on the calendar. That is the deliverable. Everything else is the work of producing it.
-
-## What this *book* is for.
-
-There is a name for the company that runs on the second question, the goal-oriented one from earlier in the chapter: *what outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?* We call that company the Co-Intelligent Company: a company where humans and AI operate as one system, where the work has been designed before the tool was deployed. That's where the Headcount Math moves.
-
-This book gives you the Co-Operating Model to build that company: a specific sequence of stages with defined outputs at each step and a Sprint model you can run inside your existing meeting rhythms. The chapters ahead will show you what we did and give you the tools to replicate it.
-
-The next chapter defines the Co-Intelligent Company precisely enough that you can locate yourself on the map and know where you're starting from. After that, you build.
-
-::: callout-note
-## Action Step
-
-The scorecard is the input every other chapter references. Take an hour with your leadership team, ideally before your next L10, to score each dimension and write the scores down. Every chapter ahead will ask you to come back to them.
-:::
+Before we hand you the system, there are four things you have to be willing to believe.
 
 ## Reflection Questions
 
-1.  Which of the five AI Readiness Scorecard dimensions scored lowest for your company — and does your leadership team agree on that score, or would each person give a different number?
-2.  The chapter describes Meridian Manufacturing: two Reds and three Yellows. Walk into your next leadership meeting and ask the same question we asked Mark and Elena: what is the one operational problem this company keeps circling and never closes? Write down the answers verbatim, one per person. How much do they overlap, and what does that overlap (or its absence) tell you about whether you've got a constraint problem or an agreement problem?
+1.  Which of the five AI Readiness Scorecard dimensions scored lowest for your company, and does your leadership team agree on that score, or would each person give a different number?
+2.  Walk into your next leadership meeting and ask: what is the one operational problem this company keeps circling and never closes? Write down the answers verbatim, one per person. How much do they overlap, and what does that overlap (or its absence) tell you about whether you've got a constraint problem or an agreement problem?
 3.  Are you running the wrong question? When your team discusses AI, does the conversation start with "what tasks could AI help with?" or "what outcomes are we accountable for, and how should human + AI deliver them?" Which framing dominated your last AI conversation?
 4.  The Headcount Paradox says revenue and headcount move on a slope, and AI was supposed to bend it. Pull your own numbers: what is your revenue per employee today versus two years ago? Has the AI line item moved that number at all?
 5.  Describe your operating model in three sentences: how work actually moves through your company, not the org chart. If you can't do it in three sentences, what does that tell you about where AI would even plug in?
