@@ -98,7 +98,7 @@ Orphan branches lead nowhere. An infinite loop returns to an earlier step with n
 
 ## Tools
 
-You don't need sophisticated software to draw either diagram. The right tool is the one you'll actually use.
+You don't need sophisticated software to draw either diagram.
 
 **Whiteboard or paper.** The fastest first draft is physical. Draw it by hand. Photograph it. You can clean it up digitally later. Paper diagrams in a working session are faster than a laptop for anything with more than four lanes.
 

@@ -11,7 +11,7 @@ One agent handled client-facing task updates. It had read/write access to our pr
 
 Sofia, our VP of Operations, reviewed every output the agents produced in those first weeks. The agents drafted. She approved. Rachel, the subcontractor who had been doing the coordination work, shifted to exception handling — the judgment calls the agents couldn't make.
 
-The Guardrails Checklist isn't a compliance exercise. It's the point in Build where you decide what the system is allowed to touch. Do that work before the build executes and it costs almost nothing. Discover it after something goes sideways — after the wrong person pulls the wrong data — and it costs a lot more. The spec has to include the guardrail. If it doesn't, Build isn't done.
+The Guardrails Checklist is where you decide what the system is allowed to touch. Do that work before the build executes and it costs almost nothing. Discover it after something goes sideways, after the wrong person pulls the wrong data, and it costs a lot more. The spec has to include the guardrail. If it doesn't, Build isn't done.
 
 This chapter fills in the Build row of the Sequence first-pass on your Sprint Planning Canvas.
 
@@ -56,9 +56,9 @@ Build doesn't require developers.
 
 Not always. Not for every path. But the assumption that Build means "hand it to engineering" kills more Sprints than bad specs do. The team waits for a developer. The developer is three projects deep. The Sprint stalls. The constraint keeps costing what it costs.
 
-The real requirement is curiosity and systems thinking. The rest is teachable. I teach psychology, economics, and criminal justice majors at Michigan State, not engineers or computer scientists. Within a semester, those students are building functional data pipelines. Pulling data from APIs, transforming it through agents, writing it back to systems. They learned because the tools have been designed to make high-value work accessible to non-engineers. Your team will have to learn new tools. Some of them will have to start thinking in systems. That is the bar — not a computer science degree.
+The real requirement is curiosity and systems thinking. The rest is teachable. I teach psychology, economics, and criminal justice majors at Michigan State, not engineers or computer scientists. Within a semester, those students are building functional data pipelines. Pulling data from APIs, transforming it through agents, writing it back to systems. They learned because the tools have been designed to make high-value work accessible to non-engineers. Your team will have to learn new tools. Some of them will have to start thinking in systems. That is the bar. A computer science degree isn't.
 
-Being "not technical" is no longer a valid excuse. Everyone entering the workforce today grew up with computers. The tools are designed for people who aren't engineers. The Sprint cycle gives your team bounded chances to experiment, which is how the learning sticks. The companies that compound fastest are the ones that require curiosity from everyone on the team.
+Everyone entering the workforce today grew up with computers, and the tools are designed for people who aren't engineers. The Sprint cycle gives your team bounded chances to experiment.
 
 Anyone on your team who is smart and diligent can learn to make a skill. That's not a motivational claim. It's an observation about the current state of the tools. Claude's project interface lets you build a working skill in a conversation. Replit lets a non-developer ship a working app by describing what they want. n8n lets you wire automations by dragging blocks. The barrier to low-code building is lower than most leadership teams realize — and it drops every quarter.
 
@@ -113,7 +113,7 @@ Every team wants the same thing from AI: access their data and reduce hallucinat
 
 *Fine-tuning* is retraining a model on your data so it behaves differently by default. It's expensive, slow to set up, and hard to update. When your data changes, you retrain. It makes sense when you need the model to behave differently than it does out of the box, across thousands of interactions, with the same specialized pattern. For most organizations, fine-tuning is rare.
 
-*RAG* — retrieval-augmented generation — is giving the model access to your data at the moment it needs it, without changing the model itself. The model stays general-purpose, and your data provides the specifics. RAG is cheaper, faster to set up, and easy to update: you change the reference material, not the model. It requires some infrastructure: an indexed data store, a retrieval layer, and a way to keep the data current. For most builds in a Compound Sprint, RAG is the right approach.
+*RAG*, or retrieval-augmented generation, is giving the model access to your data at the moment it needs it, without changing the model itself. The model stays general-purpose, and your data provides the specifics. RAG is cheaper, faster to set up, and easy to update: you change the reference material, not the model. It requires some infrastructure: an indexed data store, a retrieval layer, and a way to keep the data current. For most builds in a Compound Sprint, RAG is the right approach.
 
 *Large context window* is the simplest approach: loading your documents directly into the conversation. No infrastructure, no indexing, no retrieval pipeline. You paste the data in or upload the files, and the model works with it on the spot. This works well for smaller datasets or ad-hoc work where the relevant material fits inside the model's context window. The limitation is capacity: context windows are large and growing, but they aren't infinite, and performance can degrade as you approach the limit.
 

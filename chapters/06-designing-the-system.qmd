@@ -9,7 +9,7 @@ Design is the stage where your constraint and knowledge map become a workflow wi
 
 My COO is on a weekly call and she's not building up to it. "She's not keeping up with clients. Reports are late. I think we need to let her go."
 
-I know the feeling on both ends of that sentence. The project coordinator had been with us long enough to know things — where the client files actually lived, which contacts needed extra lead time, what the unwritten rules were for each account. That knowledge doesn't transfer with a two-week notice. It walks out the door and you spend the next three months paying a new person to relearn it while the work piles up. We'd been around this loop before and I could feel myself reaching for the job description template.
+The project coordinator had been with us long enough to know where the client files actually lived, which contacts needed extra lead time, and what the unwritten rules were for each account. That knowledge doesn't transfer with a two-week notice. You spend the next three months paying a new person to relearn it while the work piles up. We'd been around this loop before.
 
 Most operators in that moment reach for the job description. The instinct is to solve the personnel problem with a hire: find someone, get them trained, keep the work moving. My COO's instinct was the same. She didn't want to lose the knowledge, and she knew what replacing institutional memory costs. The Sequence is designed to interrupt that reflex.
 
@@ -29,7 +29,7 @@ Design has four deliverables that land together.
 
 The first is a *designed workflow* — specific enough that Build can execute against it without ambiguity. A workflow specification that names the inputs, the steps, the handoffs, the outputs, and the points where a human decides versus an agent executes. If Build has to ask "what did you mean here?" the specification isn't finished.
 
-The second is a set of entries in the *Hybrid Accountability Chart* for the accountabilities this Sprint is addressing. Each entry names the function, the agent team (if applicable), the human supervisor, and whether the work is AI-assisted or automated. A single Sprint often produces multiple entries; the PM workflow we ran internally generated five in its first pass. Over many Sprints, the chart fills in. After one Sprint, it has its first rows — the first structural record of your company operating as a Co-Intelligent Company.
+The second is a set of entries in the *Hybrid Accountability Chart* for the accountabilities this Sprint is addressing. Each entry names the function, the agent team (if applicable), the human supervisor, and whether the work is AI-assisted or automated. A single Sprint often produces multiple entries; the PM workflow we ran internally generated five in its first pass. Over many Sprints, the chart fills in. After one Sprint, it has its first rows.
 
 The third is a *governance framework* for every agent team on the chart: autonomy levels, guardrails, and escalation paths. The fourth is a *mini-spec* for every agent and a *category choice* for each one before Build begins.
 
@@ -77,7 +77,7 @@ The four questions aren't a template to fill in once and forget. They are a desi
 
 Before the chart makes sense, you have to answer a question most leadership teams never ask: how does information actually move through this part of the company?
 
-Every accountability in a knowledge business is, at some level, an information problem. The project coordinator isn't "managing projects." She's taking information from one system, combining it with information from another system, applying rules she carries in her head, and producing an output that moves to the next person in the chain. The quoting process isn't "creating quotes." It's pulling customer data from the CRM, matching it against pricing tables in the ERP, applying exception rules that live in a spreadsheet on someone's desktop, and assembling the result into a format the customer can read. When you see the work as information flow, the design question changes. The question isn't "what tool should we use?" It's "what information does this work need, where does it live, and how should it move?"
+Every accountability in a knowledge business is an information problem. The project coordinator takes information from one system, combines it with information from another system, applies rules she carries in her head, and produces an output that moves to the next person in the chain. The quoting process pulls customer data from the CRM, matches it against pricing tables in the ERP, applies exception rules that live in a spreadsheet on someone's desktop, and assembles the result into a format the customer can read. When you see the work as information flow, the design question changes. The question becomes: what information does this work need, where does it live, and how should it move?
 
 That question produces an *Information Flow Specification*: a spec for how information moves through one accountability. It names:
 
@@ -139,7 +139,7 @@ Don't pick the technology pattern first. Map the information flow first, then as
 
 ## AI-assisted or *automated*.
 
-The fourth question on the HAC is the one operators get wrong most often. They treat it as a technology decision. It's a design decision.
+The fourth question on the HAC is the one operators get wrong most often. It's a design decision, not a technology decision.
 
 Always start AI-assisted. Every accountability, every agent team, every Sprint — begin with a human in the loop reviewing every output. No exceptions. The progression toward automation isn't about reducing review frequency. It is about moving the human's role toward exceptions and final decisions.
 
@@ -151,7 +151,7 @@ This is a spectrum, not a binary. And it shifts over time. Nothing about the age
 
 **Start AI-assisted**, always. Humans in the loop, reviewing every output, conservative by default. This is the starting position for every agent.
 
-**Move toward automated when:** the human is rubber-stamping more often than not. When the review consistently confirms what the agent already produced, the design is ready to shift the human's role back — toward exception handling and final approval rather than line-by-line review.
+**Move toward automated when:** the human is rubber-stamping more often than not. When the review consistently confirms what the agent already produced, move the human to exception handling and final approval instead of line-by-line review.
 
 The autonomy level is a governance decision, not a capability decision. The agent may be perfectly capable of running unsupervised. The question is whether your organization has the monitoring, the escalation paths, and the discipline to let it. Start with more guardrails than you think you need. Loosening guardrails is easy. Recovering from a bad output that went unreviewed is expensive.
 

@@ -17,7 +17,7 @@ What happened in that meeting is the move Julie has watched leadership teams def
 
 Most companies have never asked that question explicitly. They've grown roles by layering tasks onto people. Because the work was never designed, only assigned, the role collapses when the person leaves, and AI has no defined relationship to it when it arrives. The rest of this book is the discipline of asking that question deliberately, role by role, constraint by constraint, and building the structure that answers it. We call that structure the **Co-Operating Model**.
 
-You've got an operating-model problem, not a technology problem. This chapter answers what the right operating model looks like. The Co-Operating Model is what a Co-Intelligent Company is built on. It's what makes *Co-Intelligent Co-Operation*, humans and AI working the same problems together, intentional rather than accidental.
+You've got an operating-model problem, not a technology problem. This chapter answers what the right operating model looks like. The Co-Operating Model is what a Co-Intelligent Company is built on. It makes *Co-Intelligent Co-Operation*, humans and AI working the same problems together, deliberate.
 
 ## What a *Co-Intelligent Company* is.
 
@@ -173,7 +173,7 @@ Here's what it looks like done right.
 
 ## The end of *linear* work.
 
-Our marketing lead manages content and video production for Compound. Before we applied the model, she was the doer — writing the copy, editing the video, building the assets, one task at a time. Linear work, the shape everyone recognizes: finish this before starting that.
+Our marketing lead manages content and video production for Compound. Before we applied the model, she was the doer. She wrote the copy, edited the video, and built the assets, one task at a time. Finish this before starting that.
 
 After, we stopped and looked at what was actually happening on her screen.
 
@@ -209,7 +209,7 @@ There is one more thing she brings to that arrangement that the ownership table 
 
 The failure mode we see most often is people who use agents and then accept whatever comes back, because output feels like progress. Getting an agent to produce something isn't doing good work. It's a first draft. The human who directs agent work has to know the difference between a draft and a result, and has to call the draft a draft until the result is actually there. That knowledge isn't automatic. It depends on skill and on having done the work long enough to recognize where the seams are. An operator who reviews agent output without that grounding is its own failure mode, which is why the human assigned to steer a stream needs to actually know the work, not just sign off on it.
 
-The human sets the standard, not the agent. The human sets it before the work starts and holds it through every review cycle. Without that standard, the output is low-quality work with a professional's name on it. With it, the output is the work the human would have done, at the speed and scale only the agent can provide.
+The human sets the standard before the work starts and holds it through every review cycle. Without that standard, the output is low-quality work with a professional's name on it. With it, the output is the work the human would have done, at the speed and scale only the agent can provide.
 
 :::{.callout-tip}
 ## Pro Tip

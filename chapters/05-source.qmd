@@ -17,9 +17,9 @@ The information environment inside every operating company breaks into three lay
 
 **Systems of Semantics** are where relationships and meaning live. Ontologies, embeddings, knowledge graphs: the structures that let an AI model understand that "client A" in the CRM is the same entity as "Account 0042" in the ERP, and that both are covered by a pricing exception written in a spreadsheet on Elena's desktop. This is the layer most companies don't yet have. It's also the layer AI work has to build, because without it an agent can retrieve data but can't reason across it.
 
-Marco Argenti, Goldman Sachs CIO, writing in *Harvard Business Review* (June 2026): "Data is the lifeblood of context — the ground truth of your organization — and the map of your human and autonomous drivers." His argument: get your data in order before you deploy at scale, not after. The sequence matters. Raffaella Sadun, in the same publication (August 2023), made the matching constraint explicit: AI is "effective only to the extent that it's well-integrated with the specific use case." The specific use case is the information your organization already holds across these three layers, not generic capability the model brings to the table.
+Marco Argenti, Goldman Sachs CIO, writing in *Harvard Business Review* (June 2026), calls data "the ground truth of your organization... and the map of your human and autonomous drivers." His argument: get your data in order before you deploy at scale, not after. The sequence matters. Raffaella Sadun, in the same publication (August 2023), made the matching constraint explicit: AI is "effective only to the extent that it's well-integrated with the specific use case." The specific use case is the information your organization already holds across these three layers, not generic capability the model brings to the table.
 
-AWS framed what's at stake from the other side: AI systems "lack the contextual awareness, institutional knowledge, human creativity, and ethical judgment experienced professionals bring to their work." The gap between what AI can reach and what the organization actually knows is what Source closes. Not by building new systems, but by making the existing layers visible before anyone starts designing against them.
+AWS framed what's at stake from the other side: AI systems "lack the contextual awareness, institutional knowledge, human creativity, and ethical judgment experienced professionals bring to their work." The gap between what AI can reach and what the organization actually knows is what Source closes. It does this by making the existing layers visible before anyone starts designing against them.
 
 Source doesn't build your Systems of Semantics. That's a Design and Build decision. Source names what layer each piece of knowledge currently lives in, which tells Design exactly what exists to work with and what has to be built before any agent can reason reliably.
 
@@ -41,7 +41,7 @@ The temptation at the end of Signal is to act. The constraint is named, the cost
 
 Becoming a Co-Intelligent Company capable of Co-Intelligent Co-Operation requires knowing what you're working with: which records exist, which ones don't, which decisions get made by software, which ones get made by a person nobody has ever interviewed. Source produces that ground truth. Skip it and you won't get past the first design conversation, because nobody in the room will agree on what data exists, where it lives, or who holds the judgment the workflow depends on.
 
-Once you know where knowledge lives (Record / Knowledge / Semantics), the next question is what type of work that knowledge enables. That's where the **TML framework** (Task / Management / Leadership) comes in. TML is a second, orthogonal lens, not a replacement for the three-layer frame but a classification that runs alongside it. The three-layer frame answers "where does this knowledge live?" TML answers "what does this knowledge let someone do?"
+Once you know where knowledge lives (Record / Knowledge / Semantics), the next question is what type of work that knowledge enables. The **TML framework** (Task / Management / Leadership) classifies that. It's a second, orthogonal lens that runs alongside the three-layer frame. The three-layer frame tells you where knowledge lives. TML tells you what that knowledge lets someone do.
 
 **Task knowledge** is the documented steps: the SOPs, the process maps, the work that can be written down and followed. **Management knowledge** is the decision rights, the escalation paths, the governance rules that determine who approves what. **Leadership knowledge** is the judgment, the relationships, the context, the pattern recognition that only comes from years inside the business.
 
@@ -59,7 +59,7 @@ If you run Source on the wrong constraint, you get an inventory of information f
 
 ## Create a *Knowledge Map*.
 
-The deliverable of Source is a **Knowledge Map**: a structured inventory of every information source relevant to the validated constraint. It's a table: six columns (Source, Type, Owner, Status, Pipeline, Notes), one row per source, that fits on a single page. Digital systems, people, and gaps all appear as rows in the same table, because a workflow consumes all of them the same way. The Knowledge Map isn't a diagram or a narrative. It's a structured reference that makes the information environment legible at a glance.
+The deliverable of Source is a **Knowledge Map**: a structured inventory of every information source relevant to the validated constraint. It's a table: six columns (Source, Type, Owner, Status, Pipeline, Notes), one row per source, that fits on a single page. Digital systems, people, and gaps all appear as rows in the same table, because a workflow consumes all of them the same way.
 
 Each row on the Knowledge Map inventories one source. Most of what you'll catalog lives in Systems of Record: the CRM records, the ERP data, the structured digital sources with names and login screens. Some will live in Systems of Knowledge: the SOPs, the playbooks, the expertise that's been written down somewhere. Very little, in most companies, lives in Systems of Semantics. That last layer is what AI work has to build: the relationships and meaning that let an agent reason across the other two. Naming which layer each source falls into is part of the map. It tells Design exactly where the gaps are.
 
@@ -201,7 +201,7 @@ Source provides context to the systems, agents, and humans that need to complete
 
 People don't have APIs. But you can make them transcripts. A transcript is the highest-fidelity extraction method available.
 
-When you ask someone to type a summary or fill out a form, they compress. They leave out the context, the exceptions, and the reasoning behind the decision. Data entry is lossy because typing is slow and people edit as they go. When you sit someone down, ask the right questions, and record what they say, you get the full picture: the judgment, the edge cases, and the qualifiers that make institutional knowledge useful.
+When you ask someone to type a summary or fill out a form, they compress. They leave out the context and the reasoning behind the decision. Data entry is lossy because typing is slow and people edit as they go. When you sit someone down, ask the right questions, and record what they say, you get the judgment and qualifiers that make institutional knowledge useful.
 
 Humans evolved a sophisticated communication system through voice over hundreds of thousands of years. Typing has existed for decades. As the cost of speech-to-text drops to effectively zero, it is cheaper in both time and information quality to talk than to type. Use the natural architecture.
 
