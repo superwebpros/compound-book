@@ -8,9 +8,15 @@ list mapped to beads. If you own a chapter, find it below and work its beads.
 1. `_julie/audits/sprint-canvas-coherence-audit.md` — structural spine (named tool / Sprint Planning Canvas tie-back / closing artifact per chapter). Verdict: spine ~80% built; 4 gaps.
 2. `.claude/research/readability-scorecard-compound-vs-traction.md` — length + reading-level targets vs *Traction*. Verdict: matches Traction; 4 technical chapters too dense.
 3. `_julie/audits/arc-synthesis.md` — prospect read-through, 3 axes (A clarity / B get-moving / C artifacts). Verdict: editorially close, not structurally broken.
+4. `_julie/audits/flow-pacing-synthesis.md` — internal flow vs the canonical template (hook→concept/context→how-to→example), pacing, simplicity, concrete-thread coverage. Verdict: spine sound; how-to arrives too late and concept gets re-argued before the reader can act.
+
+## North-star reminders (from author direction / memory)
+- **Canonical chapter flow:** hook/story → concept & context → how-to → example. **Simplify, simplify, simplify** — practical over comprehensive.
+- **Meridian/Elena is the deliberate through-line.** Never cut it for "redundancy"; the gap is the front chapters that *lack* it.
+- **The mindset chapter is "You're Already a Tech Company"** (not "The Four Beliefs") — it opens by convincing the reader they're already a tech/systems company, then makes the other shifts. It's our "Letting Go of the Vine." Bead `book-zsrx`.
 
 ## All work lives under ONE epic: `book-8v6v` (JF Print Feedback)
-14 open children: 12 ARC beads + `.24` (spine visibility) + `.27` (fillable-artifact audit).
+20 open children: 12 ARC beads + `.24` (spine visibility) + `.27` (fillable-artifact audit) + 6 flow/pacing/Beliefs beads (below).
 *(Separate epic `book-ff63` = Julie-merge, different workstream. ~9 loose beads exist outside both — not part of this brief.)*
 
 ---
@@ -55,6 +61,39 @@ Legend: A=Clarity · B=Get-moving · C=Artifacts. ✅Pass ⚠️Risk ❌Fail. Fl
 | Case: PM Agent Team | ⚠️ | ❌ | ⚠️ | 54 | ARC#3, ARC#4 (**the only Fail** — add reflection+handoff), ARC#6, ARC#11 |
 
 ---
+
+## Flow / pacing / simplicity beads (from analysis #4)
+
+| Bead | Fix | Priority |
+|---|---|---|
+| `book-zsrx` BELIEFS | Retitle "You're Already a Tech Company" + reorganize around the tech-company shift; add closing action; Meridian sentence; Headcount → callbacks | **P1** |
+| `book-0fq9` FLOW#1 | Lead with practice — reorder heavy/late chapters so how-to precedes deep concept, pull first action earlier (Build, Co-Op, Framework, Diagnosis, Design-System, 06b, Signal) | **P1** |
+| `book-3w1t` FLOW#2 | Source simplicity rescue (cut/merge knowledge-mgmt sections, PIS→1 sentence, resequence vocab) — only main-body Simplicity Fail | **P1** |
+| `book-b8yy` FLOW#3 | Weave Meridian into front chapters that lack it (Diagnosis, Co-Op, What-to-Do-Next) | P2 |
+| `book-bco3` FLOW#4 | Resolve Headcount-Paradox retread — Diagnosis owns, Beliefs/Compound/Rhythm/WhatNext callback only | P2 |
+| `book-o81e` FLOW#5 | Trim three-beat outros, artifact dumps, In-Brief/reflection over-caps (Deliver, Compound, Co-Op, Rhythm, Meridian CS) | P3 |
+
+### Flow/pacing scoreboard (Flow · Pacing · Simplicity · Concrete-thread)
+
+| Chapter | Flow | Pacing | Simplicity | Thread |
+|---|---|---|---|---|
+| 01 Diagnosis | ⚠️ | ⚠️ | ⚠️ | ❌ |
+| 02 Beliefs | ✅ | ⚠️ | ⚠️ | ❌ |
+| 03 Co-Op Model | ⚠️ | ⚠️ | ⚠️ | ❌ |
+| 04 Framework | ✅ | ⚠️(89% late) | ⚠️ | ✅ |
+| 05 Signal | ✅ | ⚠️ | ⚠️ | ✅ |
+| 06 Source | ⚠️ | ⚠️ | ❌ | ✅ |
+| 07 Design-System | ⚠️ | ⚠️ | ⚠️ | ✅ |
+| 08 Design-Work | ⚠️ | ⚠️ | ⚠️ | ✅ |
+| 09 Build | ⚠️ | ⚠️ | ⚠️ | ✅ |
+| 10 Deliver | ✅ | ⚠️ | ⚠️ | ✅ |
+| 11 Compound | ✅ | ⚠️ | ⚠️ | ✅ |
+| 12 Rhythm | ✅ | ⚠️ | ⚠️ | ✅ |
+| 13 What to Do Next | ⚠️ | ⚠️ | ❌ | ❌ |
+| CS Meridian | ✅ | ⚠️ | ⚠️ | ✅ |
+| CS PM Team | ⚠️ | ❌ | ❌ | ✅ |
+
+**Systemic:** how-to too late (5 chapters act past midpoint; Framework 89%); concept re-argued before action; only the front three + What-to-Do-Next lack the Meridian thread.
 
 ## How to delegate
 
