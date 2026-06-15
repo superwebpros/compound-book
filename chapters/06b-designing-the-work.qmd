@@ -17,7 +17,7 @@ Work Deconstruction applies the *TML* lens from Source to the work itself. Where
 
 {{< excalidraw ch06b-work-deconstruction-populated "Work Deconstruction: three TML categories with source inputs and outputs — Task (Fully Automatable), Management (AI-Assisted), Leadership (Human Judgment Required)" >}}
 
-For every task, ask one sorting question: "If I gave a well-briefed agent this task with the right data, would the output need human review every time, or only when something goes wrong?" If only on exceptions: ***Task*** (Fully Automatable — and this includes pure workflow automation, where data routes between systems without an agent in the middle). If every output requires review: ***Management*** (AI-Assisted). If the answer depends on who the client is, what happened last week, or a judgment call with no clear rule: ***Leadership*** (Human Judgment Required).
+For every task, ask one sorting question: "If I gave a well-briefed agent this task with the right data, would the output need human review every time, or only when something goes wrong?" A well-briefed agent is an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs. If only on exceptions: ***Task*** (Fully Automatable). This includes pure workflow automation, where data routes between systems without an agent in the middle. If every output requires review: ***Management*** (AI-Assisted). If the answer depends on who the client is, what happened last week, or a judgment call with no clear rule: ***Leadership*** (Human Judgment Required).
 
 :::{.callout-tip}
 ## Pro Tip
@@ -137,13 +137,25 @@ A Design Brief includes:
 - **Constraints and guardrails.** The governance decisions from the previous chapter: data access boundaries, action permissions, escalation paths, quality monitoring cadence, kill switch conditions.
 - **V1 artifact description.** What will the first working version of this workflow actually produce? Is the output an interface? A formatted document? An automated pipeline? A dashboard? Name the artifact. If you can't describe what the first version looks like, the design isn't finished.
 
+Here is the blank seven-section template. Fill it in for the Sprint you are running. Build inherits this document as is.
+
+| Section | Your Sprint |
+|---|---|
+| **1. Workflow summary** | _(trigger to output, every step, every handoff, every decision)_ |
+| **2. Stakeholders** | _(Human Orchestrator, role-change list, downstream consumers, approvers)_ |
+| **3. Systems** | _(every system touched, with the specific data each provides or receives)_ |
+| **4. Data requirements** | _(what data, where it lives, what format, what happens when it is missing)_ |
+| **5. Success criteria** | _(measurable targets from Signal that this design has to move)_ |
+| **6. Constraints and guardrails** | _(data access, action permissions, escalation paths, quality cadence, kill switch)_ |
+| **7. V1 artifact description** | _(what the first working version produces: interface, document, pipeline, dashboard)_ |
+
 ### Per-agent mini-spec.
 
 The Design Brief's hardest job is specifying each agent with enough precision that Build can execute without guessing. For every agent named in your Hybrid Accountability Chart, the Design Brief includes a mini-spec covering six fields. These six come from the agent-anatomy concept introduced in Ch 3: system prompt, tools, context sources, memory rules, judgment and escalation rules, and oversight load.
 
 **1. System prompt.** The operating rules: what the agent does and, just as explicitly, what it doesn't do. "Assemble draft quotes from upstream research and pricing outputs. Do not calculate prices. Do not contact customers or suppliers. Do not access any system outside the defined scope."
 
-**2. Tools.** What the agent is allowed to call: APIs, search, file access, integrations. Name every one. If a tool isn't listed, the agent doesn't get it.
+**2. Tools.** What the agent is allowed to call: APIs (application programming interfaces, how systems talk to other systems), search, file access, integrations. Name every one. If a tool isn't listed, the agent doesn't get it.
 
 **3. Context sources.** Which rows of your Knowledge Map feed this agent. Cross-reference directly. "Quote Research Agent receives: ERP job costing history (Retrieved knowledge row 1), CRM customer records (Retrieved knowledge row 2), Elena's pricing exceptions database (Standing context row 1)."
 
@@ -164,6 +176,17 @@ Next to each mini-spec, confirm three things about the human supervisor (AWS/Eff
 - **Trace.** Can the supervisor trace the agent's decision back to its inputs? If the agent produced this output, can the supervisor reconstruct why? If not, the agent's reasoning is opaque and the supervisor is rubber-stamping, not reviewing.
 - **Challenge.** Can the supervisor challenge a specific output and get a real revision? Not just reject the whole document. Target a specific line, explain what's wrong, and watch the agent correct that piece. If the challenge loop doesn't work, the oversight is theater.
 - **Apply expertise.** Where does the supervisor apply expertise the agent can't replicate? If every output could ship without the supervisor's input, the supervisor isn't in the loop. They're a speed bump. Name the expertise explicitly: "Elena applies fourteen years of customer-relationship knowledge to catch pricing decisions that look right on paper but signal relationship risk the data doesn't show."
+
+Here is the blank mini-spec template. Copy it once per agent on your Hybrid Accountability Chart.
+
+| Field | This agent |
+|---|---|
+| **System prompt** | _(operating rules: what the agent does, what it does not decide. Three to five sentences.)_ |
+| **Tools** | _(every API, integration, or system the agent can call. Named. If a tool is not listed, the agent does not get it.)_ |
+| **Context sources** | _(which Knowledge Map rows feed this agent. Cross-reference the row directly.)_ |
+| **Memory rules** | _(what carries across runs. Session state, accumulated decisions, lookback window. "None" is a valid answer.)_ |
+| **Judgment and escalation rules** | _(when the agent escalates, what it refuses outright, what triggers a hand-off.)_ |
+| **Oversight load** | _(Low / Medium / High. Three-agent ceiling per supervisor.)_ |
 
 #### Worked example: Quote Assembly Agent (Meridian Manufacturing).
 

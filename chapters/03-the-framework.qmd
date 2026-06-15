@@ -135,6 +135,27 @@ The Canvas asks eight questions. Each one previews a stage of the Sequence, and 
 
 {{< excalidraw ch03-Sprint-planning-canvas-blank "The Sprint Planning Canvas with the eight questions: constraint, knowledge, information flow, accountability, system spec, delivery, structural change, cadence." >}}
 
+Here is the blank Canvas. Copy this table into a doc, a spreadsheet, or a whiteboard, and fill in your first-pass answers as you read the chapters that teach each row.
+
+**Constraint:** _One sentence. The validated bottleneck, where it lives, what it costs._
+
+**Leadership sponsor:** _____________ **Human Orchestrator:** _____________ **Quarter (review date):** _____________
+
+| # | Question | Your first-pass answer | Teaching chapter |
+|---|---|---|---|
+| 1 | What's the validated constraint, and what does it cost? |  | Signal |
+| 2 | What does the org know about it, and where does that knowledge live? |  | Source |
+| 3 | How does information flow through the workflow? |  | Source / Design |
+| 4 | Who's accountable across humans and agents? |  | Design (HAC) |
+| 5 | What's the system specification? |  | Build (Spec + Guardrails) |
+| 6 | How does the deployment land in real work? |  | Deliver |
+| 7 | What changed structurally? |  | Compound (Hybrid Org Today) |
+| 8 | What's the cadence, and what's next? |  | Rhythm |
+
+**Team:** _Domain owner, knowledge source, downstream consumer. Names, not titles._
+
+**Review:** _Quarterly operating session date and attendees. Calendar invite sent before Signal begins._
+
 The eight questions are the spine. Each subsequent chapter in this book takes one or two of them and walks you through how to answer it for your company. By the time you've finished the stage chapters, the Canvas you start with today should be filled in with what you actually built.
 
 A Sprint is bounded by scope, not by a fixed calendar. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. One constraint, one documented outcome, one Sprint. Duration is set in Design and depends on the constraint. Some Sprints close in days; some run for weeks; the longest stretch across a quarter. What doesn't stretch is the scope. The Canvas locks the constraint at the top, and the constraint is the boundary the rest of the work runs against.
@@ -178,7 +199,7 @@ The format doesn't matter much. A spreadsheet works, a Word doc works, a literal
 ## Action Step
 Fill in a Sprint Planning Canvas for your company. One sentence for the constraint. One first-pass answer per question. Name the sponsor, the Orchestrator, and the review date. A wrong first guess is better than a blank row. Blanks stay blank. Guesses get corrected.
 
-A blank Sprint Planning Canvas template, and the rest of the Compound resources library, will be available at *compound.co/resources* when it launches. Until then, copy the eight-question structure into the tool of your choice.
+A blank Sprint Planning Canvas template sits in this chapter, above the populated Meridian example. Copy the eight-row table into a doc, a spreadsheet, or a whiteboard, fill in the three operating fixtures at the top (sponsor, Orchestrator, review date), and write a first-pass answer in every row.
 :::
 
 You won't have a confident answer to every question yet. That's expected. The chapters that follow are how you fill it in. Signal teaches you Question 1. Source teaches you Question 2 and most of Question 3. Design teaches you the rest of Question 3 and Question 4. Build teaches you Question 5. Deliver teaches you Question 6. Compound teaches you Questions 7 and 8. The Rhythm chapter teaches you what to do once the Canvas has been filled in for one Sprint and you're ready for the next.

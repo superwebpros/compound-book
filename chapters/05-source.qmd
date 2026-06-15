@@ -15,7 +15,7 @@ The information environment inside every operating company breaks into three lay
 
 **Systems of Knowledge** are where institutional know-how lives. SOPs, process playbooks, training documents, captured expertise. Not the raw transaction log; the interpretation of it. The pricing policy document that explains when exceptions apply. The onboarding guide that tells a new hire how the exception-handling process actually works. Most mid-market companies have partial Systems of Knowledge at best: some written down, much of it locked in people's heads.
 
-**Systems of Semantics** are where relationships and meaning live. Ontologies, embeddings, knowledge graphs: the structures that let an AI model understand that "client A" in the CRM is the same entity as "Account 0042" in the ERP, and that both are covered by a pricing exception written in a spreadsheet on Elena's desktop. This is the layer most companies don't yet have. It's also the layer AI work has to build, because without it an agent can retrieve data but can't reason across it.
+**Systems of Semantics** are where relationships and meaning live. Ontologies (structured maps of how concepts relate), embeddings (numeric representations of text AI uses for search and similarity), knowledge graphs: the structures that let an AI model understand that "client A" in the CRM is the same entity as "Account 0042" in the ERP, and that both are covered by a pricing exception written in a spreadsheet on Elena's desktop. This is the layer most companies don't yet have. It's also the layer AI work has to build, because without it an agent (an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs — not a chatbot that answers a question and stops) can retrieve data but can't reason across it.
 
 Marco Argenti, Goldman Sachs CIO, writing in *Harvard Business Review* (June 2026), calls data "the ground truth of your organization... and the map of your human and autonomous drivers." His argument: get your data in order before you deploy at scale, not after. The sequence matters. Raffaella Sadun, in the same publication (August 2023), made the matching constraint explicit: AI is "effective only to the extent that it's well-integrated with the specific use case." The specific use case is the information your organization already holds across these three layers, not generic capability the model brings to the table.
 
@@ -45,7 +45,7 @@ Once you know where knowledge lives (Record / Knowledge / Semantics), the next q
 
 **Task knowledge** is the documented steps: the SOPs, the process maps, the work that can be written down and followed. **Management knowledge** is the decision rights, the escalation paths, the governance rules that determine who approves what. **Leadership knowledge** is the judgment, the relationships, the context, the pattern recognition that only comes from years inside the business.
 
-Task knowledge is the easiest to capture and the most common to find in systems; Management knowledge is partially documented and inconsistently followed; Leadership knowledge almost never exists outside the people who hold it. Each layer requires a different capture and transfer approach. AI can reliably handle Task knowledge, can assist with Management knowledge, and requires human oversight for Leadership knowledge at every step. The same framework applies to the work itself in Chapter 7b, where TML becomes the lens for deconstructing what each role actually does.
+Task knowledge is the easiest to capture and the most common to find in systems. Management knowledge is partially documented and inconsistently followed. Leadership knowledge almost never exists outside the people who hold it. Each layer requires a different capture and transfer approach. AI can reliably handle Task knowledge. It can assist with Management knowledge. It requires human oversight for Leadership knowledge at every step. The same framework applies to the work itself in Chapter 7b, where TML is how you break down what each role actually does.
 
 This is why Source belongs in Diagnose, not Execute. The diagnosis includes the information environment. Until you've mapped what you've got, the constraint is a named problem without a buildable path forward. Once the map exists, it becomes a design problem: scoped, specific, and grounded in reality.
 
@@ -118,7 +118,7 @@ Not all knowledge is the same. Once the map is built, classify each source along
 
 ### Structured vs. *unstructured*.
 
-Database fields, tagged articles, CRM records, spreadsheets with defined columns: structured. AI can use it directly, cheaply, and fast. Emails, meeting transcripts, PDFs, Slack threads, "ask Sarah": unstructured. One of the real values of AI is that it can reason against unstructured information that earlier software couldn't touch at all. It costs more in tokens, runs slower, and asks more of the system around it, but it works. The point is not to structure everything. The point is to be deliberate about your knowledge architecture: what gets structured, what stays as prose, what gets light structure layered on top of unstructured source material. Unstructured information with thoughtful structure around it is often the strongest combination. If a source is unstructured and valuable, flag it. That's a Design decision about how much structure to add and where.
+Database fields, tagged articles, CRM records, spreadsheets with defined columns: structured. AI can use it directly, cheaply, and fast. Emails, meeting transcripts, PDFs, Slack threads, "ask Sarah": unstructured. One of the real values of AI is that it can reason against unstructured information that earlier software couldn't touch at all. It costs more in tokens (the units of text AI is priced and limited by, roughly three-quarters of a word each), runs slower, and asks more of the system around it, but it works. The point is not to structure everything. The point is to be deliberate about your knowledge architecture: what gets structured, what stays as prose, what gets light structure layered on top of unstructured source material. Unstructured information with thoughtful structure around it is often the strongest combination. If a source is unstructured and valuable, flag it. That's a Design decision about how much structure to add and where.
 
 ### Durable vs. *ephemeral*.
 
@@ -296,7 +296,20 @@ Before you call Source done, run eight checks:
 Run the eight-item completeness test against your Knowledge Map. Fix any gaps. Then put the Constraint Statement from Signal at the top of the page and the Knowledge Map below it. That one page is what you hand to Design.
 :::
 
-Here is Meridian's completed Knowledge Map — the artifact that session produced:
+Here is the blank Knowledge Map template. Copy it into a doc or spreadsheet and fill in one row per source. Run the three passes (Digital, Organic, Missing) and stop when every row connects to the constraint Signal validated.
+
+| Source | Type | Owner | Status | Pipeline | Notes |
+|---|---|---|---|---|---|
+|  | Digital / Organic / Missing |  | Clean / Needs Work / Missing | Connected / Manual / Broken |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+Add one row per source the constraint workflow touches. Flag any organic source that is a single point of failure with **AT RISK** in the Notes column. If the map runs longer than one page, you have drifted from the constraint. Cut rows that do not touch the workflow Signal named.
+
+Here is Meridian's completed Knowledge Map populated against the quoting constraint, as a worked reference:
 
 | Source | Type | Owner | Status | Pipeline | Notes |
 |---|---|---|---|---|---|

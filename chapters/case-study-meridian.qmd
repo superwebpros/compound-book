@@ -181,7 +181,7 @@ Mark wanted one thing above all: the ability to get a first-pass quote to a clie
 
 Elena resisted at first. "I'm not comfortable sending a number I haven't personally reviewed."
 
-Dave asked: "What if you still reviewed every estimate before it went out? The agent does the assembly. It pulls the historical data, applies the rate card, and formats the document. You review it in fifteen minutes instead of building it from scratch in three hours."
+Dave asked: "What if you still reviewed every estimate before it went out? The agent does the assembly. It pulls the historical data, applies the rate card, and formats the document. You review it in fifteen minutes instead of building it from scratch in three hours." (An agent, here, is an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs — not a chatbot that answers one question at a time.)
 
 Elena paused. "That's different. If I'm reviewing it, that's different."
 

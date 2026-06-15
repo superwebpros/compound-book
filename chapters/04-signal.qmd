@@ -120,7 +120,19 @@ The room agreed. What was the constraint underneath the efficiency gap? Scheduli
 
 The expansion plan was a symptom. The scheduling loop was the constraint. The gap between 60 and 83 tells you which one to work on.
 
-Here's what the one-page Constraint Statement looked like for that clinic:
+Here is the blank Constraint Statement template. Fill it in for your own validated constraint as you work through this chapter. The PT clinic populated version follows directly below it as a worked reference.
+
+| Field | Your constraint |
+|---|---|
+| **Constraint** _(the one anchoring sentence)_ |  |
+| **Where it lives** _(function, workflow, locations)_ |  |
+| **Duration** _(how long has it been this way)_ |  |
+| **Quantified cost** _(dollars, hours, throughput per period)_ |  |
+| **Validating evidence** _(who confirmed it, with what data)_ |  |
+
+The anchoring sentence at the top follows the Function / Outcome / Root cause / Cost structure from earlier in the chapter: "[Function] cannot [desired outcome] because [root cause], which costs us approximately [X] per [time period]."
+
+Here is what that template looked like populated for the PT clinic:
 
 | Field | Detail |
 |---|---|

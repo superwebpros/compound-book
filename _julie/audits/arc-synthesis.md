@@ -78,6 +78,10 @@ Multiple chapters point readers at references that don't exist or loop back on t
 
 Book-native terms are deployed as if established: **Sprint Planning Canvas** (02, 04, 05, 10, 11), **Human Orchestrator** (03, 06, 08, 09 — never mapped to the EOS Integrator the reader already knows), **ICs** (02), **Sequence first-pass** (04, 05), **Issue Surfacer** (04), **Hybrid Org Today** (03, 10, 11 — never distinguished from the Hybrid Accountability Chart), **design infrastructure** (10). The **EOS bridge** is the recurring missed opportunity: Hybrid Accountability Chart → Accountability Chart, Human Orchestrator → Integrator, "design the work not do it" → Visionary/Integrator split. These land for free with one sentence and are currently left for the reader to infer (02-beliefs, 03, 06, 09, 10, case-meridian, case-pm).
 
+```jf-note:
+It's telling that the readers correlated Humin orchestrated and EOS integrator because they are not the same thing. That means somewhere along the lines we got confused or they got confused that this was the same role but it's not it also talks about making the EOS bridge more concrete, but that's also a mistake because this is not a strictly speaking EOS book.
+```
+
 ### 3D. "So what?" / missing-AI-bridge failures
 
 Two chapters never answer the reader's standing question — *what does this have to do with AI?*
@@ -93,6 +97,10 @@ Four chapters lack a clean reading-to-doing threshold:
 - **02-beliefs (Risk):** closes on a tease ("here's what you're actually building") with no assigned action; the gut check produces nothing written.
 - **06b-designing-the-work (Risk):** the central artifact (Design Brief) has no Action Step telling the reader to write theirs; only 3 Action Steps for ~5,000 words.
 - **case-study-meridian (Risk):** ends as narrative ("The next Sprint starts Monday"), no reader bridge.
+
+```jf-note:
+That case study referenced doesn't need reflection questions or handoff. It's independent as is the Meridian case study and the appendix. I'm only interested in feedback in the core chapters.
+```
 
 ### 3F. Artifacts that aren't recognizable as artifacts (C = Risk, 9 chapters)
 

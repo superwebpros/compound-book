@@ -32,7 +32,7 @@ Every one of those systems has structured data, defined interfaces, and rules yo
 
 For a human, that stack is a pain in the neck. Your team context-switches across six tools to close one deal. They retype the same information from one system into another. They send the Slack message that says "did you see the ticket?" because the ticket and the conversation live in different tools. The exception handling, where the rule doesn't fit and a person has to decide, eats hours nobody put on the calendar.
 
-For an agent, that same stack is a gold mine. Structured data is what agents read. Defined interfaces are what they call. Rules are what they execute. The work that's friction for a human is feedstock for an agent.
+For an agent, that same stack is an asset. An agent is an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs without a human re-prompting between steps. Agents read structured data, call defined interfaces, and execute rules. The work that's friction for a human is what an agent runs on.
 
 The mid-market operator's actual advantage is unfair. You've got less legacy bloat than enterprise. You've got more system maturity than a startup. The systems you spent the last decade installing, the ones your team still complains about, turn out to be the substrate AI runs on. Mastery of your own data, in Argenti's framing in the same HBR piece, is the precondition for any of this working. Raffaella Sadun, in HBR (August 2023), made the matching point: AI is "effective only to the extent that it's well-integrated with the specific use case." The systems you already have are that specific use case.
 
@@ -46,13 +46,13 @@ The other three beliefs follow from this one.
 
 ## AI is a new kind of *worker*, not a tool.
 
-If Belief 1 is true and your systems are the substrate, the next question is what operates inside those systems. The vocabulary you bring to that question decides what you can see.
+If Belief 1 is true and your systems are the substrate, the next question is what operates inside those systems.
 
 Most operators bring software vocabulary: *deploy, integrate, license, train the model.* That language was right for the last thirty years. It described a tool you installed and used. Software didn't have a workday. It didn't have judgment. It didn't make handoffs to other parts of the org.
 
 The new vocabulary is management. You assign work. You supervise. You evaluate the output and adjust the assignment.
 
-An agent, defined in Chapter 1, holds a goal and runs the steps toward it without you typing every prompt. It has scope, access to specific data and tools, and it produces deliverables on a cadence. A human reviews the output and adjusts the scope. The structure is identical to how you manage a competent junior employee. The interface is different, but the work pattern is the same.
+An agent holds a goal and runs the steps toward it without you typing every prompt. It has scope, access to specific data and tools, and it produces deliverables on a cadence. A human reviews the output and adjusts the scope. The structure is identical to how you manage a competent junior employee. The interface is different, but the work pattern is the same.
 
 Argenti named the shift in the same HBR piece: *"From individual contributor to supervisor and mentor."* The mindset move he asked the banker to make is the move every operator in your company will make. Not *what tasks can this tool do for me?* Instead, *what work am I assigning to this worker, and what does good look like?*
 
@@ -91,7 +91,7 @@ Calculate your revenue per employee today. Then ask the question that follows fr
 
 If the math can bend, then the role of the operator at the top of the org chart changes too. The change shows up in where the hours go, not in the title.
 
-Belief 4 is the personal-role reframe. The job changes. You direct, design, and supervise the work instead of doing it. The execution work that used to anchor your week — the proposals you rewrote, the reports you reformatted, the routing you owned because no one else could be trusted with it — most of it isn't where your time produces the most value anymore. Not because you stopped being good at it. Because there's now a worker on the other side of the desk that handles it inside the design you set.
+Belief 4 is the personal-role reframe. The job changes. You direct, design, and supervise the work instead of doing it. The execution work that used to anchor your week was the proposals you rewrote, the reports you reformatted, the routing you owned because no one else could be trusted with it. Most of it isn't where your time produces the most value anymore. AI handles it inside the design you set.
 
 This is the belief that's easiest to misread. Read it wrong and it sounds like *every worker is now a manager of agents, on top of their existing job.* Bedard et al., writing in HBR (March 2026), flagged that exact misread: *"Labeling ICs 'managers' of agents... indirectly denotes an increase in one's level of responsibility."* Their study found that operators who treat AI oversight as an add-on to existing work suffer a 12% increase in mental fatigue and a 19% increase in information overload. One of their senior-engineering-manager respondents put it cleanly: *"I was working harder to manage the tools than to actually solve the problem."*
 

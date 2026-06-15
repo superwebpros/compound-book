@@ -42,7 +42,7 @@ The instinct is to blame adoption, or to blame the tool itself. *AI can't do X. 
 
 The real problem is upstream of adoption, and it has two parts. The first: the company has no designed structure for a non-human worker to operate inside. Nobody built that before the AI subscriptions started.
 
-The second is just as common and rarely named. Operators don't yet have a clear picture of what AI can actually do inside a business like theirs. They've seen the demos. They've read the headlines. They haven't seen what a designed agent workflow looks like in their own operation, with their own data, hitting their own numbers. So the asks stay small, and the design conversation never starts.
+The second is just as common and rarely named. Operators don't yet have a clear picture of what AI can actually do inside a business like theirs. They've seen the demos. They've read the headlines. They haven't seen what a designed agent workflow looks like in their own operation, with their own data, hitting their own numbers. (An agent is an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs — without the human re-prompting between steps. A chatbot answers a question and stops; an agent works the problem until it's done.) So the asks stay small, and the design conversation never starts.
 
 To use AI, non-technical and bricks-and-mortar businesses have to learn structures software companies have used for years: workflows run as systems, knowledge stored as an indexed asset, handoffs built as interfaces. That means new terms and new processes. Part of that is education, and this book is part of it, combining the operating patterns you already run with those of software companies.
 
@@ -64,7 +64,7 @@ Revenue and headcount run on a slope: every meaningful jump in revenue pulls a r
 
 The slope has a name. Divide revenue by headcount and you get revenue per employee, the metric that sits under the paradox. In most companies it stays roughly flat as they grow: each new dollar of revenue arrives with about the same amount of human labor attached to it. Every company can calculate this number today. What this book is about is moving it.
 
-Meanwhile your COO (Integrator if you run EOS) is on the calendar asking to approve the next two roles. The numbers in the request aren't unreasonable: the work is real, the team is stretched, the demand is there. You sign off, because the alternative is throttling growth. But you sign off knowing the AI investment was supposed to bend that slope by now, and you can't point to the reason it didn't.
+Meanwhile your COO is on the calendar asking to approve the next two roles. The numbers in the request aren't unreasonable: the work is real, the team is stretched, the demand is there. You sign off, because the alternative is throttling growth. But you sign off knowing the AI investment was supposed to bend that slope by now, and you can't point to the reason it didn't.
 
 The Headcount Paradox: each new dollar of revenue still demands roughly the same headcount it did before, even after you invested in AI to change that math. The investment is on the books, and it hasn't changed the structure.
 
@@ -97,7 +97,7 @@ Your AI investments aren't producing returns because of an operating-model probl
 
 A *Co-Intelligent Co-Operation problem* has two parts. *Co-Intelligent* is the actual workforce: humans and AI as one system, defined in Chapter 3. *Co-Operation* is the structural work of getting that workforce to operate together.
 
-Culture matters: a team that resists change will stall any initiative. Training matters: people need to know what the tools can do. Tool selection matters: the wrong platform creates its own drag. These are all real. But the deeper problem is the operating model.
+Culture matters: a team that resists change will stall any initiative. Training matters: people need to know what the tools can do. Tool selection matters: the wrong platform creates its own drag. These are all real. The operating model is the bigger problem.
 
 The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker, synthetic, capable, available, and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, and no defined handoff. So it produces nothing the organization can compound on.
 
@@ -107,7 +107,7 @@ This failure has the same shape across thirty years of operating-model changes, 
 
 AI is usually treated as a chatbot — a thing you type questions into and read answers from. In most companies, that's the relationship: one human, one chat window, one task at a time. Every instruction comes from the human, and every output goes back to the human. That can raise productivity, but it doesn't compound, because the human is still the bottleneck.
 
-The real capability is in agents — the kind defined earlier: workflows that take actions and run steps on their own, where the design says which moves require a human review and which don't. An agent can research, draft, route, check, escalate, and deliver inside a designed system. And agents can run in parallel. While you're reviewing one deliverable, three other workstreams are moving.
+The real capability is in agents: workflows that take actions and run steps on their own, where the design says which moves require a human review and which don't. An agent can research, draft, route, check, escalate, and deliver inside a designed system. And agents can run in parallel. While you're reviewing one deliverable, three other workstreams are moving.
 
 EOS, Scaling Up, and other disciplined systems are built on this shape: an Accountability Chart, scorecards, and the L10 (EOS's weekly leadership meeting) or its equivalent. Work added without a named owner dies in the gap. AI is no different. It's a new kind of worker added to the system without anyone naming who owns it, what it's accountable for, or where the handoffs live. So it dies in the gap, the same way any unowned function does.
 
@@ -125,7 +125,7 @@ None of this is mysterious. All of it is operating work, not technology work. Th
 
 ## The wrong *question*.
 
-Most organizations fall into the same trap at the start of their AI effort.
+Most organizations start their AI effort with the wrong question.
 
 The first question most teams ask is task-oriented: *which of our existing tasks could AI help with?* It gets you some of the way there. You'll find prompt tips, a few useful shortcuts, some real time saved. Using AI to write a social media post is a fine task. But task-orientation is insufficient. It adds AI on top of the existing workflow, and that workflow was designed for humans. The gains stay small and scattered, and nothing changes structurally.
 

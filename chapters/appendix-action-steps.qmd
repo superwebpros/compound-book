@@ -112,7 +112,7 @@ Write down the constraint you'd solve first. One sentence. If it takes more than
 ## Action Step
 Fill in a Sprint Planning Canvas for your company. Constraint in one sentence. One first-pass answer per stage. Name the Orchestrator. Book the review. A wrong first guess is better than a blank row — blanks stay blank, guesses get corrected.
 
-A blank Sprint Planning Canvas template — and the rest of the Compound resources library — will be available at *compound.co/resources* when it launches. Until then, copy the five-part structure into the tool of your choice.
+The blank Sprint Planning Canvas table sits in Chapter 4 above the populated Meridian example. Copy the eight-row structure into the tool of your choice and fill in each row as the stage chapters teach you how.
 :::
 
 :::{.callout-note}

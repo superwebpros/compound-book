@@ -15,7 +15,7 @@ Here is the specific moment I can point to. We had a project coordinator who was
 
 We stopped before we did that. Not because we had some principled objection to hiring. Because by that point we had run enough Sprints that the first question had changed. Not *who do we hire?* but *what does Signal say about this?*
 
-So we ran Signal. What is the actual constraint? What does this role touch? We mapped the information sources: the CRM fields she used, the project management cadence she owned, the client follow-up patterns she was responsible for. We asked which parts of the work required human judgment and which parts were high-volume and structured. Then we designed a workflow without assuming a human had to sit in every seat. We built a set of AI agents that could handle the bulk of what she was doing: the routing, the reporting, the follow-up cadence. We deployed.
+So we ran Signal. What is the actual constraint? What does this role touch? We mapped the information sources: the CRM fields she used, the project management cadence she owned, the client follow-up patterns she was responsible for. We asked which parts of the work required human judgment and which parts were high-volume and structured. Then we designed a workflow without assuming a human had to sit in every seat. We built a set of AI agents — AI systems that hold a goal, run a sequence of steps toward it, and adjust based on their own outputs, rather than chatbots that answer one question at a time — that could handle the bulk of what she was doing: the routing, the reporting, the follow-up cadence. We deployed.
 
 The hire never got posted. We did let her go. The work got absorbed into the organization without a crisis, and the team didn't miss a beat.
 

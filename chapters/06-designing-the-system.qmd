@@ -4,7 +4,7 @@
 
 :::{.callout-important}
 ## In Brief
-Design is the stage where your constraint and knowledge map become a workflow with named owners — human and AI. It produces four things: Hybrid Accountability Chart entries that assign every accountability to a named supervisor; a governance framework (autonomy levels, guardrails, escalation paths) that makes the system safe to operate; a mini-spec for every agent on the chart; and a category choice for each agent before Build begins. This chapter covers the frameworks for designing the system. The next chapter covers designing the work itself.
+Design is the stage where your constraint and knowledge map become a workflow with named owners — human and AI. It produces four things: Hybrid Accountability Chart entries that assign every accountability to a named supervisor; a governance framework (autonomy levels, guardrails, escalation paths) that makes the system safe to operate; a mini-spec for every agent on the chart (an agent is an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs — not a chatbot answering one question at a time); and a category choice for each agent before Build begins. This chapter covers the frameworks for designing the system. The next chapter covers designing the work itself.
 :::
 
 My COO is on a weekly call and she's not building up to it. "She's not keeping up with clients. Reports are late. I think we need to let her go."
@@ -42,7 +42,7 @@ Design has to produce all four. A workflow without an accountability entry is a 
 
 The Accountability Chart is the tool that maps who owns what inside your company. Each row names one accountability and the person responsible for it. One accountability, one name. No shared rows, no "the team." If you run EOS, you already have one: it maps your seats from Integrator down, with every role and its owner named. If you don't run EOS, think of it as a one-page org chart organized around outcomes rather than titles. Not "Director of Marketing" but "Generate qualified pipeline." Not "Operations Manager" but "Deliver client work on time and on scope." Every meaningful accountability your company has, with one name next to it.
 
-The Hybrid Accountability Chart extends that structure to include agent teams. Every row still names one accountability and one human supervisor. But now some rows also name the agent team doing the execution work underneath that supervisor. The accountability doesn't move from human to agent. The ownership stays with the supervisor. What changes is who does the execution work, and the chart makes that visible.
+The Hybrid Accountability Chart is inspired by that structure and adds rows for agent teams. If you run EOS, you already have an Accountability Chart — the HAC isn't a replacement for it, it's a structural addition that operates alongside it. Every row still names one accountability and one human supervisor. But now some rows also name the agent team doing the execution work underneath that supervisor. The accountability doesn't move from human to agent. The ownership stays with the supervisor. What changes is who does the execution work, and the chart makes that visible.
 
 You build it one Sprint at a time. For each accountability your Sprint is addressing, you answer four questions — and you write the answers into the chart before Build begins:
 
@@ -68,7 +68,7 @@ If the supervisor candidate fails any of the three tests, the HAC has a name in 
 
 :::{.callout-tip}
 ## Pro Tip
-If you run EOS, you already have the muscle for this. Your Accountability Chart says every seat has a name. The Hybrid Accountability Chart says every agent team does too. Same principle, extended to a workforce that includes non-human workers.
+If you run EOS, you already have the muscle for this. Your Accountability Chart says every seat has a name. The Hybrid Accountability Chart says every agent team does too. Same principle applied to a workforce that includes non-human workers — the HAC sits alongside your Accountability Chart, not as a rewrite of it.
 :::
 
 The four questions aren't a template to fill in once and forget. They are a design discipline. Every Sprint forces the four answers for every row — including the harder ones. "Who supervises this team?" is uncomfortable when the agent team is producing work nobody on the leadership team has owned before. The chart surfaces that question before any code is written.
@@ -112,15 +112,17 @@ Paste your Constraint Statement and information flow into Claude or ChatGPT and 
 
 This conversation works best when you give the AI enough context to reason about your specific workflow. The Prompt Appendix at the back of this book includes a full prompt template for information flow analysis — pre-structured so you can drop in your Constraint Statement, data sources, and workflow steps and get a useful decomposition back. Use that instead of starting from scratch.
 
+You (the CEO or operator) decide which pattern the workflow needs. Build handles the implementation details. The vocabulary below is what you need to make that call, not what you need to wire it up.
+
 **1. Skills reinforcing SOPs.** The knowledge lives in people's heads. It's been captured (or will be captured in Source) as documented process — standard operating procedures, decision frameworks, institutional knowledge. The AI uses that documentation as context for brainstorming, iteration, and drafting. This is the co-operation pattern: you work alongside the AI in a conversational interface (Claude, ChatGPT), and the quality of the output depends on the quality of the documented knowledge. Most companies start here. It's the lowest infrastructure lift and the fastest to show value.
 
 **2. RAG — retrieval-augmented generation.** The knowledge lives in documents, records, or databases. The AI retrieves relevant chunks at runtime and uses them to generate answers, drafts, or analyses. This is how you make an agent that "knows" your company. It doesn't memorize everything; it looks up what it needs when it needs it. RAG requires decisions about chunking (how you break documents into retrievable pieces), metadata (how you tag those pieces so the right ones surface), and freshness (how often the retrieval index updates). It's more infrastructure than skills-on-SOPs, but it unlocks agent teams that can operate against your actual data without you manually feeding context every time.
 
-**3. Data pipelines.** The knowledge lives in systems that need to talk to each other. The AI isn't generating content here; it's processing, routing, or transforming data between systems. The project coordinator's report generation (pulling data from the CRM, formatting it, dropping it into a template) is a pipeline problem. No conversation needed. Just data in, transformation, data out. Tools like n8n, Make, or Zapier handle this kind of plumbing without requiring custom code.
+**3. Data pipelines.** The knowledge lives in systems that need to talk to each other. The AI isn't generating content here; it's processing, routing, or transforming data between systems. The project coordinator's report generation (pulling data from the CRM, formatting it, dropping it into a template) is a pipeline problem. No conversation needed. Just data in, transformation, data out. Tools like n8n (a low-code workflow tool, similar to Zapier), Make, or Zapier handle this kind of plumbing without requiring custom code.
 
 **4. Low-code integration tools.** Platforms like Zapier, Make, or Power Automate that connect systems without writing code. These handle the routing and handoff problems that don't need intelligence, just connectivity. They're not AI, but they're part of the design because they handle the pieces the agent team doesn't need to touch.
 
-**5. Service layers and APIs.** The AI operates as a service — accepting requests, processing them against defined logic, returning structured outputs. This is the most engineered pattern and the one that scales agent teams into production workflows. Your Build team (internal or external) implements this when the design calls for an agent team that operates reliably, at volume, with defined inputs and outputs.
+**5. Service layers and APIs.** (A service layer is engineered code that runs an agent as a backend service; an API, or application programming interface, is how systems talk to other systems.) The AI operates as a service — accepting requests, processing them against defined logic, returning structured outputs. This is the most engineered pattern and the one that scales agent teams into production workflows. Your Build team (internal or external) implements this when the design calls for an agent team that operates reliably, at volume, with defined inputs and outputs.
 
 You don't necessarily need all five. Most first Sprints use patterns one and two, with some pattern four for the routing work. The point is knowing what's available so the design matches the information problem — not the other way around.
 
@@ -198,6 +200,17 @@ A mini-spec answers six questions, one to a line:
 5. **Judgment and escalation rules.** When the agent escalates, what it refuses, what triggers a hand-off to the human supervisor. The governance answers from the previous section land here, agent by agent.
 6. **Oversight load.** Low, medium, or high. How much of the human supervisor's attention this agent consumes per run.
 
+Here is the blank mini-spec template. One per agent on your Hybrid Accountability Chart. The full walkthrough sits in the next chapter, inside the Design Brief.
+
+| Field | This agent |
+|---|---|
+| **System prompt** | _(operating rules: who the agent is, what it does, what it does not decide. Three to five sentences.)_ |
+| **Tools** | _(every API, integration, or system the agent can call. Named.)_ |
+| **Context sources** | _(which Knowledge Map rows feed this agent. If it is not on the map, it is not a source.)_ |
+| **Memory rules** | _(what carries across runs. Most first-Sprint agents have no memory. Saying so is part of the spec.)_ |
+| **Judgment and escalation rules** | _(when the agent escalates, what it refuses, what triggers a hand-off to the human supervisor.)_ |
+| **Oversight load** | _(Low / Medium / High. How much of the supervisor's attention per run.)_ |
+
 That last field comes from Julie Bedard and colleagues at BCG. Their March 2026 piece in *Harvard Business Review*, "When Using AI Leads to 'Brain Fry,'" found productivity inverts after three concurrent AI agents per supervisor. The norm they recommend, the same way operations leaders already manage spans of control for human reports, is no more than three high-oversight agents under one supervisor at a time. Before the mini-specs leave Design, count the agents one supervisor is taking on. If it's more than three, the design isn't done; either consolidate agents, raise some toward Automated, or split the supervisor role.
 
 Next to the mini-spec, post the AWS/Effectual supervisor-capability check (HBR sponsor content, June 2026): the supervisor has to be able to *trace decisions, challenge outputs, and apply expertise*. If any of the three is missing for an agent on the chart, that agent isn't ready to run. The mini-spec template gets the full walkthrough in the next chapter inside the Design Brief; what matters here is naming the discipline: every agent on the chart has a spec, every spec answers six questions, no agent goes to Build without one.
@@ -210,7 +223,7 @@ The category options group into three. Most Compound Sprints land in one of them
 
 **Off-the-shelf tool.** Existing software that maps cleanly to the designed workflow with light configuration. The work is selection, configuration, and integration into the team's existing flow, not building from scratch. Use this category when a mature product already does what the design requires, with no custom behavior needed.
 
-**Low-code or no-code workflow.** A workflow assembled in something like Zapier, Make, Airtable, n8n, or a Claude project with skills and connectors. No external engineering. The team owns it directly. They can see how it works, change it, and extend it. Use this category when the workflow is custom but built from standard primitives: pull from a system, run through an agent, write back, notify someone.
+**Low-code or no-code workflow.** A workflow assembled in something like Zapier, Make, Airtable, n8n, or a Claude project with skills and connectors (pre-built integrations between two systems). No external engineering. The team owns it directly. They can see how it works, change it, and extend it. Use this category when the workflow is custom but built from standard primitives: pull from a system, run through an agent, write back, notify someone.
 
 **Hand-built integration.** Custom code involving an API to a system of record, with an engineer in the loop. Slower than low-code, higher return, harder to change later. Use this category when the workflow runs at a scale or against a system that low-code tools can't reach, or when the integration touches data the company won't route through a third-party platform.
 
@@ -249,6 +262,8 @@ Design produces a workflow specification and an entry in the Hybrid Accountabili
 
 Every operator eventually asks: what does the human do when the AI does the work? The Human Orchestrator is the answer. It's a different job.
 
+A note on terms before we go further. Human Orchestrator is a Sprint-level role: the person who sets goals for an agent team, designs the workflow, and owns the constraint outcome for one Sprint. If your company runs EOS, the Integrator is a full-company role that runs day-to-day operations across every function. The Integrator may be the Human Orchestrator on a given Sprint, but the roles are not equivalent. The Integrator's scope is the whole company. The Orchestrator's scope is one workflow.
+
 The Human Orchestrator sets the goals for the agent team. They design the workflow the agent team executes against. They own the outcome: the Sprint's measurable result against the constraint from Signal. They review the agent team at the goal level, not the task level. They don't check every output line by line; they ask whether the team is moving the constraint in the right direction. And they make the design improvements between Sprints. After every Compound phase, the Human Orchestrator looks at what the team produced and asks: what one design change would make the next Sprint better? Eight Sprints of one good design change each produces an agent team substantially more capable than the one that shipped in Sprint one.
 
 You met a version of this role in Chapter 3: our marketing lead running four agent teams in parallel, each working a different piece of the same content project. Each one had a named tool, a scoped task, and her as the supervisor reviewing outputs. What I didn't show you there is the Design work that made that shift possible. Someone had to sit down and ask what she was actually accountable for. Which parts of her job required her judgment, and which parts required execution that any well-designed agent could handle? Which teams needed to surface decisions to her, and at what frequency? Those questions got answered in a Design session before a single agent was built. The four-tab setup wasn't improvised. It was designed, and because it was designed, her role changed when the agents came in.
@@ -279,7 +294,7 @@ The Human Orchestrator also owns the day-to-day operation of the agent team: kee
 
 In a company of 25, the Design session might be the CEO and one direct report at a whiteboard. In a company of 100, Design needs more structure — and that structure is a cross-functional Design Team with a charter.
 
-The Design Team is a functional team, not a committee. It's owned by leadership, typically the COO (Integrator if you run EOS), and it has a defined scope: research the constraint, analyze it from multiple angles, benchmark against what's possible, build a roadmap, and maintain a prioritized backlog of design work. The team includes the Human Orchestrator candidate, whoever understands the data and systems involved, and whoever has authority to make decisions about the workflow.
+The Design Team is a functional team, not a committee. It's owned by company-level operating leadership: the COO, or in EOS companies the Integrator. That ownership sits above any single Sprint, because it belongs to the person who runs day-to-day across the whole business rather than the Human Orchestrator of one workflow. The team has a defined scope: research the constraint, analyze it from multiple angles, benchmark against what's possible, build a roadmap, and maintain a prioritized backlog of design work. The team includes the Human Orchestrator candidate, whoever understands the data and systems involved, and whoever has authority to make decisions about the workflow.
 
 The charter is short. It says: this team owns the design of Human+AI workflows for the company. It meets on a cadence (weekly during active Sprints, biweekly between Sprints). It produces Hybrid Accountability Chart entries and workflow specifications. It does not build. Build is a separate stage with separate roles. The constraint comes from Signal, the knowledge map comes from Source, and the design hands off to Build with everything Build needs to execute.
 
@@ -301,6 +316,17 @@ Here's what the Hybrid Accountability Chart looks like for a real constraint —
 **Knowledge Map (from Source):** HubSpot CRM with win/loss history (manual pipeline), JobBOSS ERP with job costing history and rate card (not connected to quoting), "Customer Notes.xlsx" — 147 rows of pricing exceptions on Elena's desktop (cleaned to 112 validated rules during Build), two organic sources (Elena for pricing judgment, Dave Kowalski for fabrication hour estimation), two missing sources (historical quote-to-actual accuracy, customer segment profitability).
 
 ### Hybrid Accountability Chart
+
+Here is the blank four-column template. Add one row per accountability your Sprint is addressing. Column 1 names the outcome the row owns, not a task. No blank supervisor cells. No "TBD."
+
+| Role / Function | Agent Team | Human Supervisor | Level |
+|---|---|---|---|
+| _(outcome the row owns, not a task)_ | _(named agent team, or None)_ | _(one human, no shared rows)_ | AI-Assisted / Automated / N/A |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+Meridian's populated chart against the quoting constraint:
 
 | Role / Function | Agent Team | Human Supervisor | Level |
 |---|---|---|---|

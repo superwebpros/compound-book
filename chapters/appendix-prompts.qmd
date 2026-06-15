@@ -402,7 +402,7 @@ Then summarize:
 
 ### Hybrid Accountability Chart Entry
 
-The Hybrid Accountability Chart extends your org's accountability chart to include agent teams alongside humans. Each entry names the function, the agent team, the human supervisor, and the autonomy level. Every row must have a named human supervisor — no exceptions. See Chapter 7.
+The Hybrid Accountability Chart is inspired by a traditional accountability chart and adds rows for agent teams alongside humans. It operates alongside your existing accountability chart rather than replacing it. Each entry names the function, the agent team, the human supervisor, and the autonomy level. Every row must have a named human supervisor — no exceptions. See Chapter 7.
 
 ```
 You are a Compound Sprint coach. Your job is to help me build Hybrid

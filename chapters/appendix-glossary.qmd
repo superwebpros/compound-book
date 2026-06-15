@@ -111,7 +111,7 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : Stage 2 of the *Sequence*. Maps the information environment around the validated constraint — what knowledge exists, where it lives, who holds it, what's missing, and what's at risk of leaving. Produces the *Knowledge Map*. (First introduced: Chapter 4)
 
 **Sprint Planning Canvas** (Compound)
-: A one-page artifact completed before *Signal* begins: names the constraint, maps a first-pass answer to each stage, identifies the team, sets the *Human Orchestrator*, and books the quarterly review. Intentionally incomplete — *Signal* will refine it. (First introduced: Chapter 1; defined formally in Chapter 4)
+: A one-page artifact completed before *Signal* begins: names the constraint, maps a first-pass answer to each stage, identifies the team, sets the *Human Orchestrator*, and books the quarterly review. Intentionally incomplete — *Signal* will refine it. (First introduced: Chapter 4)
 
 **Sprint Retrospective** (Compound)
 : The structured review that runs inside the *Compound* stage: what worked, what didn't (with each "didn't work" reframed as a design question), and what one design change would make the next Sprint better. Run with the *Human Orchestrator* and all Sprint accountability owners. (First introduced: Chapter 10)

@@ -101,7 +101,7 @@ If you want a peer to pressure-test that constraint with you before you spend a 
 
 Book a free 30-minute Clarity Call with a Compound strategist who will diagnose your constraint, not pitch you a product.
 
-I was on a discovery call with a physical therapy practice owner. By his own description, his was one of the top private practices in the country, and I believed him. He'd just come back from a foundation retreat and he was lit up. His vision: an automated executive suite. AI agents for every C-suite function: budgeting, forecasting, marketing, KPI management, all of it running on agents trained on his institutional knowledge. He wanted to package that knowledge and take it to the world.
+I was on a discovery call with a physical therapy practice owner. By his own description, his was one of the top private practices in the country, and I believed him. He'd just come back from a foundation retreat and he was lit up. His vision: an automated executive suite. AI agents — AI systems that hold a goal, run a sequence of steps toward it, and adjust based on their own outputs, rather than chatbots that answer one question at a time — for every C-suite function: budgeting, forecasting, marketing, KPI management, all of it running on agents trained on his institutional knowledge. He wanted to package that knowledge and take it to the world.
 
 It was an impressive vision. So I asked the only question that mattered: "Who on your team would build this?"
 

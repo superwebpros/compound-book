@@ -19,7 +19,7 @@ I close the laptop. I go home. I have dinner with my family.
 
 It happens again the next night. And the night after that.
 
-If I counted the times I left at 5:30 in the eighteen months before I started deploying these systems versus the six months after, the gap is embarrassing. The work was the same. The industry was the same. I was still moving fast. What changed is that the infrastructure I'd built was doing work in parallel. That work used to wait for me. It was queued behind my availability. Each Sprint I ran built on the last. The agents knew the company's conventions because they'd learned them in an earlier Sprint. The tools knew the formats because we'd built the templates. The Source maps from the first Sprint were sitting inside the system, accelerating the fifth. None of that had to be rebuilt. It just ran.
+If I counted the times I left at 5:30 in the eighteen months before I started deploying these systems versus the six months after, the gap is embarrassing. The work was the same. The industry was the same. I was still moving fast. What changed is that the infrastructure I'd built was doing work in parallel. That work used to wait for me. It was queued behind my availability. Each Sprint I ran built on the last. The agents (AI systems that hold a goal, run a sequence of steps toward it, and adjust based on their own outputs — not chatbots that answer one question at a time) knew the company's conventions because they'd learned them in an earlier Sprint. The tools knew the formats because we'd built the templates. The Source maps from the first Sprint were sitting inside the system, accelerating the fifth. None of that had to be rebuilt. It just ran.
 
 I could stop because it ran.
 
@@ -39,7 +39,7 @@ An updated *Signal Backlog* — the running, prioritized list of validated const
 
 An updated *Hybrid Accountability Chart*. The chart gained entries when Design produced accountabilities for this Sprint. By the end of Deliver those entries were real — named agent teams, named human supervisors, positions on the AI-assisted-to-automated spectrum, and documented outcomes against the constraint. In Compound, you make those entries permanent and review any neighboring rows for second-order effects from the Sprint that just completed.
 
-A *Sprint Outcome Record*: one sentence that captures what changed. The constraint, the before-and-after cost, the specific result. "Standard quote turnaround reduced from 3.8 days to 4.2 hours. Elena's quoting time from 15 hrs/wk to 5. Throughput doubled." That record is filed in the Hybrid Org Today and becomes the first row of the Compounding Scorecard. It is how you know, six Sprints from now, what each one produced.
+A *Sprint Outcome Record*: one sentence that captures what changed. The constraint, the before-and-after cost, the specific result. "Standard quote turnaround reduced from 3.8 days to 4.2 hours. Elena's quoting time from 15 hrs/wk to 5. Throughput doubled." That record is filed in the Hybrid Org Today and becomes the first row of the Compounding Scorecard (the blank scorecard template sits in Chapter 12, *Rhythm*; add this Sprint's row to it before the session ends). It is how you know, six Sprints from now, what each one produced.
 
 {{< excalidraw ch09-compound-deliverables "Three Compound deliverables: Signal Backlog update, permanent HAC row, and Sprint Outcome Record — with location and owner." >}}
 
