@@ -26,14 +26,16 @@ import os
 from pathlib import Path
 from statistics import mean, median, pstdev
 
-# --- Heuristic thresholds (calibrate later) ---
-CV_MONOTONE = 0.45        # below this, sentence-length variety is low (drag risk)
-CV_GOOD = 0.55            # at/above this, healthy rhythm
+# --- Thresholds, calibrated against Traction (audiobook transcript, 2026-06-15) ---
+# Traction baseline: per-chapter CV 0.43-0.71 (mean 0.56); nominalization 3.2/100;
+# short(<=8w) 21%; long(>=40w) 1.6%; mean sentence 15.5w.
+CV_MONOTONE = 0.45        # Traction's per-chapter floor is 0.43; below ~0.45 = drag risk
+CV_GOOD = 0.56            # Traction's mean; at/above this = healthy rhythm
 RUN_LEN = 5               # N consecutive sentences within RUN_BAND = a monotone run
 RUN_BAND = 4              # max(len)-min(len) <= this counts as "same length"
 FLAT_PARA_STDEV = 2.5     # paragraph w/ >=3 sentences and stdev below this reads flat
-LONG_SENTENCE = 40        # words; run-on flag
-NOMINAL_PER_100 = 3.0     # nominalizations per 100 words above this = abstraction-heavy
+LONG_SENTENCE = 40        # words; run-on flag (Traction keeps these to ~1.6% of sentences)
+NOMINAL_PER_100 = 3.6     # Traction sits at 3.2; flag only genuine outliers above ~3.6
 
 SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-Z\"'(\[])")
 NOMINAL = re.compile(r"\b[A-Za-z]{4,}(?:tion|tions|ment|ments|ness|ity|ities|ance|ence|ancy|ency)\b", re.I)
