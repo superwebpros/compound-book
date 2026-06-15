@@ -14,29 +14,35 @@ Three people. One company. Three different tools. No shared accounts or projects
 
 We asked what they were hoping AI would do for the business. The answer was honest: they had a gut sense that AI could be doing more for the company, but they didn't know what was even possible. They booked the call precisely because they didn't know what they wanted, only that they were leaving something on the table.
 
+## The diagnosis is the *operating model*.
+
 This is a design problem. It's the most common version of the AI problem we see: three people using three tools, with no coordination and no structural change. No one designed the work before the tool arrived.
 
 The design we mean is the *operating model*: how work actually moves through your company. Who decides what gets done, who hands what to whom, what each function is accountable for. The org chart names the boxes. The operating model is how work moves between them.
 
 We've watched this same pattern for two decades, long before AI entered the conversation. A mid-market company would complete an acquisition and absorb the new entity without redesigning how work actually moved. The acquired operation got bolted onto the existing structure, with the same managers handling expanded volume. The accountability map was never rebuilt to match the expanded scope. AI is just the latest technology to expose a problem that's been visible the whole time.
 
-Raffaella Sadun, in *Harvard Business Review* (August 2023), called out the pattern directly: "vast differences in the extent to which some firms are really able to click and figure out how to use these technologies for their own benefit," opening "between those that are at the frontier and those that remain behind." Only 5% of AI implementations deliver measurable business returns, per the MIT study cited by AWS and Effectual in *Harvard Business Review* (June 2026). The scorecard at the close of this chapter is the diagnostic that tells you where your company stands.
+Raffaella Sadun warned in *Harvard Business Review* (August 2023) that AI adoption widens the gap between firms. The leaders compound. The laggards fall further behind. The scorecard at the close of this chapter is the diagnostic that tells you which side you're starting on.
 
 This pattern is common. It might describe your company.
 
 > You know AI matters. You just don't know what it can actually do inside your company — or where to start.
 
-That sentence isn't a secret. CEOs say it all the time: to their boards, their coaches, their peers at dinner. They know AI matters, they've started looking, and they still can't find the entry point that makes sense for the business they run. We've watched this happen inside our own companies and inside the companies we work with. Agents are doing real work. Smaller teams are shipping more. The cost curve of knowledge work is bending in ways that no longer feel theoretical. The gap is between that reality and what you're supposed to *do* about it inside the company you run.
+That sentence isn't a secret. CEOs say it all the time: to their boards, their coaches, their peers at dinner. They know AI matters, they've started looking, and they still can't find the entry point that makes sense for the business they run. We've watched this happen inside our own companies and inside the companies we work with.
+
+Agents are doing real work. Smaller teams are shipping more. The cost curve of knowledge work is bending in ways that no longer feel theoretical. The gap is between that reality and what you're supposed to *do* about it inside the company you run.
+
+## You've already *tried*.
 
 It's not for lack of effort. You bought subscriptions, ran a pilot or two, brought in a consultant, sat through a vendor demo. What you've got to show for it is a tool your team barely uses and a handful of use cases that never scaled. The missing piece is how to design the work.
 
-We were on a call with a company that runs on EOS (the Entrepreneurial Operating System): Accountability Chart, scorecards, L10 meetings, the works. A disciplined company. And even here, they couldn't frame the AI problem, let alone implement a solution. They had AI subscriptions across the team. One marketing lead was building an agent in Microsoft Copilot on her own time, after hours. Everyone else was using AI as a sounding board. No workflow had changed. No output was different. When we asked who in the organization could drive their AI initiative, the owner paused and said four words: "I don't have that person."
-
-One person working harder inside a system that was never designed for AI doesn't move the company.
+This isn't isolated to one company. We've watched the same pattern in EOS-run companies, in companies with no operating system at all, in startups and mature mid-market firms alike. The pattern doesn't care about your discipline. It cares about whether the work was designed for AI.
 
 The instinct is to blame adoption, or to blame the tool itself. *AI can't do X. It's not ready for our industry.* That diagnosis is comfortable because it avoids fixing the operating model. Acting on it produces exactly one outcome: another training session that also doesn't work.
 
-The real problem is upstream of adoption, and it has two parts. The first: the company has no designed structure for a non-human worker to operate inside. Nobody built that before the AI subscriptions started. The second is just as common and rarely named. Operators don't yet have a clear picture of what AI can actually do inside a business like theirs. They've seen the demos. They've read the headlines. They haven't seen what a designed agent workflow looks like in their own operation, with their own data, hitting their own numbers. So the asks stay small, and the design conversation never starts.
+The real problem is upstream of adoption, and it has two parts. The first: the company has no designed structure for a non-human worker to operate inside. Nobody built that before the AI subscriptions started.
+
+The second is just as common and rarely named. Operators don't yet have a clear picture of what AI can actually do inside a business like theirs. They've seen the demos. They've read the headlines. They haven't seen what a designed agent workflow looks like in their own operation, with their own data, hitting their own numbers. So the asks stay small, and the design conversation never starts.
 
 To use AI, non-technical and bricks-and-mortar businesses have to learn structures software companies have used for years: workflows run as systems, knowledge stored as an indexed asset, handoffs built as interfaces. That means new terms and new processes. Part of that is education, and this book is part of it, combining the operating patterns you already run with those of software companies.
 
@@ -44,11 +50,17 @@ To use AI, non-technical and bricks-and-mortar businesses have to learn structur
 
 Here is the math you're living right now.
 
-The company is growing. The pipeline is healthy. So your leadership team is asking to hire. Another account manager. Another ops person. Another engineer. The assumption underneath is that growth means adding people. Automation is familiar in manufacturing, where machines replaced repetitive physical work. It's less familiar in the information economy, where the work requires judgment. And it's almost entirely unfamiliar in an intelligence economy, where decisions themselves can be assisted or handled by a non-human worker. When operators think about software here, they think about moving data between systems, maybe Zapier, maybe an integration. They aren't yet thinking about AI for work that requires decisions. But now they can.
+The company is growing. The pipeline is healthy. So your leadership team is asking to hire. Another account manager. Another ops person. Another engineer.
 
-You've bought some AI: a ChatGPT subscription, maybe an automation tool, maybe a consultant for a few hours. You didn't bet the farm. Most operators haven't. The spend has been small. You're willing to invest more. The budget is there. The intent is there. But you don't know where to aim, what to buy, what to build, or what return to expect.
+The assumption underneath is that growth means adding people. Automation is familiar in manufacturing, where machines replaced repetitive physical work. It's less familiar in the information economy, where the work requires judgment. And it's almost entirely unfamiliar in an intelligence economy, where decisions themselves can be assisted or handled by a non-human worker.
 
-Revenue and headcount run on a slope: every meaningful jump in revenue pulls a roughly proportional jump in headcount along with it. That slope was steep in 2022, and for most mid-market operators the AI line item on the P&L, small as it is, hasn't done anything to bend it. A handful of enterprises that have taken this work seriously are already seeing the slope start to flatten in specific functions. The pattern hasn't reached the middle market yet, which is who this book is for.
+When operators think about software here, they think about moving data between systems, maybe Zapier, maybe an integration. They aren't yet thinking about AI for work that requires decisions. But now they can.
+
+You've bought some AI: a ChatGPT subscription, maybe an automation tool, maybe a consultant for a few hours. You didn't bet the farm. Most operators haven't. The spend has been small.
+
+You're willing to invest more. The budget is there. The intent is there. But you don't know where to aim, what to buy, what to build, or what return to expect.
+
+Revenue and headcount run on a slope: every meaningful jump in revenue pulls a roughly proportional jump in headcount along with it. That slope was steep in 2022, and for most mid-market operators the AI line item on the P&L, small as it is, hasn't done anything to bend it. The failure isn't AI's. The operating model never got redesigned to make AI matter. A handful of enterprises that have taken this work seriously are already seeing the slope start to flatten in specific functions, because they did redesign. The pattern hasn't reached the middle market yet, which is who this book is for.
 
 The slope has a name. Divide revenue by headcount and you get revenue per employee, the metric that sits under the paradox. In most companies it stays roughly flat as they grow: each new dollar of revenue arrives with about the same amount of human labor attached to it. Every company can calculate this number today. What this book is about is moving it.
 
@@ -58,15 +70,21 @@ The Headcount Paradox: each new dollar of revenue still demands roughly the same
 
 ### How the math finally moves.
 
-Here's how it resolved at Jesse's company. SuperWebPros, his software development firm, went from thirteen people to eight. We mapped every function, identified what required human judgment and what didn't, built agent teams for rule-based work, and kept humans on work that required taste, relationships, and strategic decisions. Billings went up. Profitability went up.
+The math moves the same way at every scale: redesign the operating model before you staff it. Sometimes that redesign uses AI. Sometimes it doesn't. The principle is the same.
+
+Here's the AI-era version, at Jesse's company. SuperWebPros, his software development firm, went from thirteen people to eight. We mapped every function, identified what required human judgment and what didn't, built agent teams for rule-based work, and kept humans on work that required taste, relationships, and strategic decisions. Billings went up. Profitability went up.
 
 Five people left the company. They weren't laid off in a single round, and we worked to place several of them well. But those five seats are gone, because the work they existed to do now runs on systems we designed. At Jesse's company the slope inverted. The more common version is less extreme and just as valuable: the team grows slower than the top line, so the marginal headcount per next dollar of revenue drops. That's the Headcount Math moving the way it's supposed to.
 
-That same math can work at very different scales. When a global food safety company completed a Fortune 500 division acquisition, Julie was the CHRO overseeing the integration across 44 countries. The instinct in every integration conversation was to add HR business partners by region. The alternative was to redesign the operating model first — making a deliberate decision about which HR functions required local human judgment and which could run on a standardized system. The resulting global HR function served 44 countries with a smaller proportional team than the pre-acquisition domestic function had. Not because headcount was cut. Because the work was designed before it was staffed.
+The same principle worked decades earlier, without AI. When a global food safety company completed a Fortune 500 division acquisition, Julie was the CHRO overseeing the integration across 44 countries. The instinct in every integration conversation was to add HR business partners by region. The alternative was to redesign the operating model first, making a deliberate decision about which HR functions required local human judgment and which could run on a standardized system.
+
+The resulting global HR function served 44 countries with a smaller proportional team than the pre-acquisition domestic function had. Not because headcount was cut. Because the work was designed before it was staffed.
+
+AI wasn't part of that redesign. The principle was. AI now lets that same kind of redesign reach further, because an agent can hold a workflow a software tool could only assist with.
 
 ::: callout-tip
 ## Pro Tip
-The Headcount Paradox doesn't break by adding AI to the existing org chart. It breaks by redesigning the org chart so AI has a seat on it. That's what changes the slope.
+The Headcount Paradox is an operating problem, not a technology problem. It doesn't break by adding AI to the existing org chart. It breaks by redesigning the org chart, with or without AI. What AI changes is the scale of what's possible inside the redesign, because agency lets it do work the previous tool wave could only assist with.
 :::
 
 {{< excalidraw ch01-headcount-before-after "The Headcount Paradox: the slope before redesign vs. the slope after — revenue climbs faster than headcount when work is designed before it's staffed." >}}
@@ -79,7 +97,11 @@ Your AI investments aren't producing returns because of an operating-model probl
 
 A *Co-Intelligent Co-Operation problem* has two parts. *Co-Intelligent* is the actual workforce: humans and AI as one system, defined in Chapter 3. *Co-Operation* is the structural work of getting that workforce to operate together.
 
-Culture matters: a team that resists change will stall any initiative. Training matters: people need to know what the tools can do. Tool selection matters: the wrong platform creates its own drag. These are all real, but the deeper problem is the operating model. The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker, synthetic, capable, available, and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, and no defined handoff. So it produces nothing the organization can compound on. Culture, training, and tools are necessary. The missing piece is structural redesign.
+Culture matters: a team that resists change will stall any initiative. Training matters: people need to know what the tools can do. Tool selection matters: the wrong platform creates its own drag. These are all real, but the deeper problem is the operating model.
+
+The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker, synthetic, capable, available, and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, and no defined handoff. So it produces nothing the organization can compound on.
+
+Culture, training, and tools are necessary. The missing piece is structural redesign.
 
 This failure has the same shape across thirty years of operating-model changes, long before AI. ERP rollouts are the clearest example: companies spent eight-figure sums to install new systems, then left the old reporting structures and decision rights exactly as they were. The system sat live while people worked around it. The pattern isn't that the technology failed. The capability arrived and the structure never changed to receive it. The new thing sat next to the old structure and produced nothing structural. AI is the latest technology to run into the same wall — the only difference is the speed and cost of the collision.
 
@@ -107,7 +129,11 @@ Every organization falls into the same trap at the start of its AI effort.
 
 The first question most teams ask is task-oriented: *which of our existing tasks could AI help with?* It gets you some of the way there. You'll find prompt tips, a few useful shortcuts, some real time saved. Using AI to write a social media post is a fine task. But task-orientation is insufficient. It adds AI on top of the existing workflow, and that workflow was designed for humans. The gains stay small and scattered, and nothing changes structurally.
 
-Companies that get this right end up with the Headcount Math working in their favor. Revenue and profitability climb while the team's growth rate decouples from the top line. The discipline behind that result is straightforward: start with the outcome the organization is accountable for, then design the work backward from that outcome. A single question drives the whole exercise: who owns what step, and does that step require judgment or follow a rule? The answer tells you where AI belongs and where it doesn't. Skipping the outcome and design steps and going straight to tools is what produces the scattered use cases and the stalled pilots. This discipline predates AI. The AI era made the cost of skipping it visible.
+Companies that get this right end up with the Headcount Math working in their favor. Revenue and profitability climb while the team's growth rate decouples from the top line.
+
+The discipline behind that result is straightforward: start with the outcome the organization is accountable for, then design the work backward from that outcome. A single question drives the whole exercise: who owns what step, and does that step require judgment or follow a rule? The answer tells you where AI belongs and where it doesn't.
+
+Skipping the outcome and design steps and going straight to tools is what produces the scattered use cases and the stalled pilots. This discipline predates AI. The AI era made the cost of skipping it visible.
 
 The question that unlocks real value is goal-oriented: *what outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?* That question starts with the outcomes and with accountability for them, not with the tools. It produces a deliberate design that sets who owns what, what the human reviews, what the agent team executes, where the handoff lives, and how the result gets measured. Writing a social post is a task. Building a content production workflow that holds up regardless of who's sitting in the seat is a bigger problem with a much bigger payoff.
 
