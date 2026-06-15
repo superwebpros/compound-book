@@ -278,6 +278,13 @@ def build_report(chapter_path: Path, paragraphs: list, vale_result: dict,
         if len(semantic_findings) > 30:
             out.append(f"- ... {len(semantic_findings) - 30} more")
 
+    # Prose rhythm & craft layer (Provost sentence-variety + Williams nominalization + proselint)
+    try:
+        import prose_rhythm
+        out.extend(prose_rhythm.rhythm_section_lines(chapter_path))
+    except Exception as e:  # noqa — never let the rhythm layer break the scan
+        out.append(f"\n## Prose rhythm & craft\n⚠ rhythm layer error: {e}\n")
+
     # Paragraph index for the LLM judgment layer
     out.append("\n## Paragraph index (for downstream LLM judgment scan)\n")
     out.append("Patterns deterministic can't catch — pass these paragraph indices to the voice-scanner agent for A1/A2/A4/A5/A12/A13/A14/A15 judgment:\n")
