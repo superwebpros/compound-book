@@ -36,9 +36,9 @@ Agents are doing real work. Smaller teams are shipping more. The cost curve of k
 
 It's not for lack of effort. You bought subscriptions, ran a pilot or two, brought in a consultant, sat through a vendor demo. What you've got to show for it is a tool your team barely uses and a handful of use cases that never scaled. The missing piece is how to design the work.
 
-This isn't isolated to one company. We've watched the same pattern in EOS-run companies, in companies with no operating system at all, in startups and mature mid-market firms alike. The pattern doesn't care about your discipline. It cares about whether the work was designed for AI.
+This isn't isolated to one company. We've seen the same pattern in EOS-run companies, in companies with no operating system at all, in startups and mature mid-market firms alike. It shows up regardless of how disciplined the company is. What it tracks is whether the work was designed for AI.
 
-The instinct is to blame adoption, or to blame the tool itself. *AI can't do X. It's not ready for our industry.* That diagnosis is comfortable because it avoids fixing the operating model. Acting on it produces exactly one outcome: another training session that also doesn't work.
+The instinct is to blame adoption, or to blame the tool itself. *AI can't do X. It's not ready for our industry.* That diagnosis is comfortable because it avoids fixing the operating model. Act on it and you get another training session that also doesn't work.
 
 The real problem is upstream of adoption, and it has two parts. The first: the company has no designed structure for a non-human worker to operate inside. Nobody built that before the AI subscriptions started.
 
@@ -93,17 +93,17 @@ When AI investments don't pay off, the first instinct is to blame the tools — 
 
 ## It looks like a *technology* problem. It's actually an *operating* problem.
 
-Your AI investments aren't producing returns because of an operating-model problem. Specifically, a Co-Intelligent Co-Operation problem.
+Your AI investments aren't producing returns because of an operating-model problem: a Co-Intelligent Co-Operation problem.
 
 A *Co-Intelligent Co-Operation problem* has two parts. *Co-Intelligent* is the actual workforce: humans and AI as one system, defined in Chapter 3. *Co-Operation* is the structural work of getting that workforce to operate together.
 
-Culture matters: a team that resists change will stall any initiative. Training matters: people need to know what the tools can do. Tool selection matters: the wrong platform creates its own drag. These are all real, but the deeper problem is the operating model.
+Culture matters: a team that resists change will stall any initiative. Training matters: people need to know what the tools can do. Tool selection matters: the wrong platform creates its own drag. These are all real. But the deeper problem is the operating model.
 
 The company was designed, deliberately or by drift, to be run by humans alone. You then introduced a second kind of worker, synthetic, capable, available, and dropped it next to the structure without changing the structure. The new worker has no seat, no accountability, and no defined handoff. So it produces nothing the organization can compound on.
 
 Culture, training, and tools are necessary. The missing piece is structural redesign.
 
-This failure has the same shape across thirty years of operating-model changes, long before AI. ERP rollouts are the clearest example: companies spent eight-figure sums to install new systems, then left the old reporting structures and decision rights exactly as they were. The system sat live while people worked around it. The pattern isn't that the technology failed. The capability arrived and the structure never changed to receive it. The new thing sat next to the old structure and produced nothing structural. AI is the latest technology to run into the same wall — the only difference is the speed and cost of the collision.
+This failure has the same shape across thirty years of operating-model changes, long before AI. ERP rollouts are the clearest example: companies spent eight-figure sums to install new systems, then left the old reporting structures and decision rights exactly as they were. The system sat live while people worked around it. The technology didn't fail. The capability arrived and the structure never changed to receive it. The new thing sat next to the old structure and produced nothing structural. AI runs into the same wall. The speed and cost of the collision are higher.
 
 AI is usually treated as a chatbot — a thing you type questions into and read answers from. In most companies, that's the relationship: one human, one chat window, one task at a time. Every instruction comes from the human, and every output goes back to the human. That can raise productivity, but it doesn't compound, because the human is still the bottleneck.
 
@@ -125,7 +125,7 @@ None of this is mysterious. All of it is operating work, not technology work. Th
 
 ## The wrong *question*.
 
-Every organization falls into the same trap at the start of its AI effort.
+Most organizations fall into the same trap at the start of their AI effort.
 
 The first question most teams ask is task-oriented: *which of our existing tasks could AI help with?* It gets you some of the way there. You'll find prompt tips, a few useful shortcuts, some real time saved. Using AI to write a social media post is a fine task. But task-orientation is insufficient. It adds AI on top of the existing workflow, and that workflow was designed for humans. The gains stay small and scattered, and nothing changes structurally.
 
@@ -135,7 +135,7 @@ The discipline behind that result is straightforward: start with the outcome the
 
 Skipping the outcome and design steps and going straight to tools is what produces the scattered use cases and the stalled pilots. This discipline predates AI. The AI era made the cost of skipping it visible.
 
-The question that unlocks real value is goal-oriented: *what outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?* That question starts with the outcomes and with accountability for them, not with the tools. It produces a deliberate design that sets who owns what, what the human reviews, what the agent team executes, where the handoff lives, and how the result gets measured. Writing a social post is a task. Building a content production workflow that holds up regardless of who's sitting in the seat is a bigger problem with a much bigger payoff.
+The goal-oriented question is: *what outcomes are we accountable for, and how should the human + AI workforce be designed to deliver them?* It starts with the outcomes and accountability for them, not with the tools. It produces a deliberate design that sets who owns what, what the human reviews, what the agent team executes, where the handoff lives, and how the result gets measured. Writing a social post is a task. Building a content production workflow that holds up regardless of who's sitting in the seat has a much bigger payoff.
 
 ::: callout-tip
 ## Pro Tip
