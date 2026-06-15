@@ -14,6 +14,8 @@ list mapped to beads. If you own a chapter, find it below and work its beads.
 - **Canonical chapter flow:** hook/story → concept & context → how-to → example. **Simplify, simplify, simplify** — practical over comprehensive.
 - **Meridian/Elena is the deliberate through-line.** Never cut it for "redundancy"; the gap is the front chapters that *lack* it.
 - **The mindset chapter is "You're Already a Tech Company"** (not "The Four Beliefs") — it opens by convincing the reader they're already a tech/systems company, then makes the other shifts. It's our "Letting Go of the Vine." Bead `book-zsrx`.
+- **Jargon house-rule** (memory `jargon-house-rule`): at first use of a technical term, give a one-sentence plain-English gloss in parentheses **+ a forward pointer to where it's covered in depth** (named-stage ref, not a bare chapter number). One canonical "agent vs. ChatGPT" line reused.
+- **EOS positioning** (memory `eos-positioning`): **EOS-agnostic by default** — never require EOS knowledge; frame around "your operating system." Reference EOS **strategically** as an optional familiar-paradigm bridge ("if you run EOS, this is like X") for that target buyer — never load-bearing. Approved mappings (HAC↔Accountability Chart, Human Orchestrator↔Integrator, Signal↔IDS, Right-Seat↔GWC) in the memory.
 
 ## All work lives under ONE epic: `book-8v6v` (JF Print Feedback)
 20 open children: 12 ARC beads + `.24` (spine visibility) + `.27` (fillable-artifact audit) + 6 flow/pacing/Beliefs beads (below).
