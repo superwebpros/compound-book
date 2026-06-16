@@ -60,6 +60,8 @@ Everyone entering the workforce today grew up with computers, and the tools are 
 
 Anyone on your team who is smart and diligent can learn to make a skill. That's not a motivational claim. It's an observation about the current state of the tools. Claude's project interface lets you build a working skill in a conversation. Replit lets a non-developer ship a working app by describing what they want. n8n (a low-code workflow tool, similar to Zapier, where you wire automations by dragging blocks instead of writing code) lets you connect systems without a developer. The barrier to low-code building is lower than most leadership teams realize, and it drops every quarter.
 
+The developer-free claim applies to the design and configuration work in this book. When the workflow needs system-to-system wiring, hiring a freelancer for a day or two is normal — and still far cheaper than a standing engineering team.
+
 IT's role in this picture is real and essential, but it's different from what most teams assume. IT controls the keys: permissions, access, security policies, system credentials. When Build needs a connection to the CRM or read access to the ERP, IT gates that. When the data sensitivity requires enterprise-grade authentication, IT specs it. But IT doesn't need to be the one prototyping the workflow, writing the skill, or assembling the automation. The person closest to the work builds it. IT makes sure it's safe.
 
 If you have no IT department at all, this still holds. You are the person who controls the keys. The connections the build needs (your CRM login, your ERP access, the credentials for whatever systems hold your data) are yours to grant or withhold. The person closest to the work still does the building.
@@ -88,7 +90,7 @@ A complete spec covers eight sections:
 5. **Human supervisor role.** Who reviews the output. What they're reviewing for. What the handoff looks like: where the output lands, in what form, on what timeline.
 6. **Systems and integrations.** Every system the workflow touches. Read access, write access, or both. Authentication method. Data sensitivity classification for each.
 7. **Failure modes.** What happens when the agent produces output that needs escalation. Who it goes to. In what form. On what timeline. What the builder needs to wire to make that possible.
-8. **Environment and constraints.** Which specific environment inside Design's category (off-the-shelf, low-code, hand-built; see the Designing the System chapter) this build runs on, and why. Any constraints the builder must observe: data residency, existing licenses, internal security requirements.
+8. **Environment and constraints.** Which specific environment inside Design's category (off-the-shelf, low-code, hand-built; see the Designing the System chapter) this build runs on, and why. Any constraints the builder must observe: data residency (legal or regulatory requirements that your data stay in a specific geography or on servers you control), existing licenses, internal security requirements.
 
 {{< excalidraw ch07-build-spec-sections "Build Spec: eight sections with section name and a one-line description of what belongs in each." >}}
 
@@ -115,7 +117,7 @@ Here's what the spec looked like, section by section:
 
 **Section 2, Inputs:** Inbound RFQ (submitted via standardized intake form, parsed into HubSpot CRM as a new deal record), ERP job costing history (three years, roughly 800 completed jobs), current rate card (maintained by finance in JobBOSS ERP), cleaned pricing exceptions database (112 validated customer-specific rules, sourced from the VP's spreadsheet), senior engineer's labor hour estimate (submitted via structured form), and CRM customer history including win/loss records.
 
-**Section 3, Outputs:** A draft PDF quote in Meridian's standard format, landing in the VP of Operations' CRM review queue. It contains a line-item breakdown (materials, labor, overhead, margin), a confidence score (high/medium/low), the closest historical job matches with pricing, and any exception rules applied. Plus a flag for any input the agent could not resolve.
+**Section 3, Outputs:** A draft PDF quote in Meridian's standard format, landing in the VP of Operations' CRM review queue. It contains a line-item breakdown (materials, labor, overhead, margin), a confidence score (the agent's own estimate of how sure it is about an output) reported as high/medium/low, the closest historical job matches with pricing, and any exception rules applied. Plus a flag for any input the agent could not resolve.
 
 **Section 4, Agent Scope:** Quote Research matches the RFQ to historical jobs by spec, materials, and complexity, and surfaces customer context and pricing terms. Quote Pricing calculates the draft price using historical matches, rate card, labor estimates, and exception rules. Quote Assembly generates the formatted PDF. No agent sets a final price, overrides the rate card, applies undocumented exceptions, or sends anything to a customer.
 
@@ -198,7 +200,7 @@ Design chose the category; Build picks the specific environment within it. Desig
 
 The environments, with what fits and what doesn't:
 
-**Claude Projects** fit skill-level work: a single agent, a defined knowledge base, one person or a small team using it co-operatively. The "build" is configuration: a system prompt (the standing instructions that tell an agent who it is and what it does and doesn't decide; specified field-by-field in the Designing the Work chapter), uploaded context, defined scope, guardrails set in the project settings. A competent person does this in an afternoon. This is the right environment when the designed workflow is one agent, one output stream, one supervisor reviewing every output. The marketing lead's four-agent setup from the Co-Operating Model chapter started here. When a workflow grows past one agent or starts running programmatically, Claude Projects doesn't stretch to cover it.
+**Claude Projects** fit skill-level work: a single agent, a defined knowledge base, one person or a small team using it co-operatively. The "build" is configuration: a system prompt (the standing instructions that tell an agent who it is and what it does and doesn't decide; specified field-by-field in the Designing the Work chapter), uploaded context, defined scope, guardrails set in the project settings. A competent person does this in an afternoon. This is the right environment when the designed workflow is one agent, one output stream, one supervisor reviewing every output. The marketing lead's four-agent setup from the Co-Operating Model chapter started here. When a workflow grows past one agent or starts running programmatically (running automatically on a schedule or trigger, without a human starting each run), Claude Projects doesn't stretch to cover it.
 
 **Claude Team** (shared workspace, multiple projects) fits cross-team, skill-level work where multiple people need access to the same agent context. The agent's knowledge base and guardrails are set once; the team uses it. This is the right environment when Design identified several people touching the same workflow and the work is AI-assisted, not automated. It doesn't fit workflows that run on a schedule without a human initiating each run.
 
@@ -206,7 +208,7 @@ The environments, with what fits and what doesn't:
 
 **n8n, Make, Zapier, and similar workflow orchestration platforms** fit data pipeline builds: pull from a system, run through an agent, write back, notify someone. When the designed workflow is composed of standard connectors and the team needs to own, see, and change it directly without engineering overhead, these platforms handle it well. Meridian's quoting workflow used n8n alongside Claude Team. The two worked together: Claude Team held the agent; n8n handled the system connections. These platforms don't fit workflows that require the agent to reason across complex branching logic or operate against large unstructured data sets.
 
-**Custom server and infrastructure** fits workflows where control matters most. When data residency requirements rule out third-party platforms, when the workflow runs at a volume no low-code tool can handle, or when the agent needs to integrate with a system of record through a proprietary API, a custom build on your own infrastructure is the path. Slower to build, harder to change, and it requires someone to maintain it. The return is full control: your data doesn't leave your environment, you own the uptime, and you're not subject to a platform's rate limits or pricing shifts. This path is the right call when the Guardrails Checklist's data sensitivity question forces it, not because it's architecturally elegant.
+**Custom server and infrastructure** fits workflows where control matters most. When data residency requirements rule out third-party platforms, when the workflow runs at a volume no low-code tool can handle, or when the agent needs to integrate with a system of record through a proprietary API, a custom build on your own infrastructure is the path. Slower to build, harder to change, and it requires someone to maintain it. The return is full control: your data doesn't leave your environment, you own the uptime, and you're not subject to a platform's rate limits (caps on how many requests your workflow can make per minute or per day) or pricing shifts. This path is the right call when the Guardrails Checklist's data sensitivity question forces it, not because it's architecturally elegant.
 
 | Environment | Fits | Doesn't fit | Example |
 |---|---|---|---|
@@ -243,7 +245,7 @@ You don't pick a provider the way you pick a vendor for a five-year contract. Yo
 
 ### Tokens and pricing.
 
-Every interaction with a model consumes tokens: every prompt you send and every response it generates. A token is roughly three-quarters of a word. A 1,000-word document is about 1,300 tokens.
+Every interaction with a model consumes tokens: every prompt you send and every response it generates. Tokens are the unit you're billed on, the way minutes are the unit on a phone plan. A token is roughly three-quarters of a word. A 1,000-word document is about 1,300 tokens.
 
 Pricing is per token, and it varies by provider and model. Input tokens (what you send) and output tokens (what the model generates) are priced differently, and output is usually more expensive.
 
@@ -291,7 +293,7 @@ Once you know what the build does and which model powers it, the next decision i
 
 **Your own server.** You host the model (usually open source) on your infrastructure or a cloud provider you control. Full data control. Higher setup cost. Requires someone to maintain it.
 
-**Serverless / edge.** The model runs on distributed infrastructure that scales automatically. Useful for high-volume workflows where you need speed and don't want to manage capacity. Overkill for most first Sprints.
+**Serverless / edge** (rented computing that expands and shrinks on demand)**.** The model runs on distributed infrastructure that scales automatically. Useful for high-volume workflows where you need speed and don't want to manage capacity. Overkill for most first Sprints.
 
 Your spec's data sensitivity classification and your workflow's volume estimate determine which deployment fits. Start with provider-hosted unless the Guardrails Checklist flags a data residency requirement.
 
