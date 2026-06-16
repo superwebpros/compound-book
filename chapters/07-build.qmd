@@ -150,7 +150,7 @@ Your spec's data sensitivity classification and the volume estimate from your wo
 
 If you've run a software team, you know this language. If you haven't, here's what matters for Build.
 
-**Sprint.** A fixed time box. In our case, that's the Compound Sprint from Chapter 4. Build happens inside that time box. It has a start, an end, and a defined deliverable. That deliverable is whatever the Design Brief specifies: the workflow, the outputs, the human supervision model. The discipline of the time box prevents Build from expanding to fill whatever time is available.
+**Sprint.** A fixed time box. In our case, that's the Compound Sprint from the Framework chapter. Build happens inside that time box. It has a start, an end, and a defined deliverable. That deliverable is whatever the Design Brief specifies: the workflow, the outputs, the human supervision model. The discipline of the time box prevents Build from expanding to fill whatever time is available.
 
 **Backlog.** A prioritized list of work items that need to get done. In a Compound Build, the backlog is the spec — eight sections, each one a work item. The builder works through them in order. New items don't get added mid-build unless Design reopens.
 
@@ -160,7 +160,7 @@ When new signals, issues, or ideas surface during Build, they don't derail the c
 
 **Accountability.** Every work item has an owner. Every test has a person who signs off. Every failure has someone who fixes it. This maps directly to the Hybrid Accountability Chart — the human supervisor named there is the person accountable for Build's output.
 
-The Chapter 4 Compound Sprint is the strategic container. Build's Sprint discipline is the tactical version — same principle of time-boxed, scoped, accountable work, applied to the construction of a single workflow.
+The Framework chapter's Compound Sprint is the strategic container. Build's Sprint discipline is the tactical version — same principle of time-boxed, scoped, accountable work, applied to the construction of a single workflow.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -186,7 +186,7 @@ A complete spec covers eight sections:
 5. **Human supervisor role.** Who reviews the output. What they're reviewing for. What the handoff looks like — where the output lands, in what form, on what timeline.
 6. **Systems and integrations.** Every system the workflow touches. Read access, write access, or both. Authentication method. Data sensitivity classification for each.
 7. **Failure modes.** What happens when the agent produces output that needs escalation. Who it goes to. In what form. On what timeline. What the builder needs to wire to make that possible.
-8. **Environment and constraints.** Which specific environment inside Design's category (off-the-shelf, low-code, hand-built — see Chapter 7) this build runs on, and why. Any constraints the builder must observe — data residency, existing licenses, internal security requirements.
+8. **Environment and constraints.** Which specific environment inside Design's category (off-the-shelf, low-code, hand-built — see Designing the System) this build runs on, and why. Any constraints the builder must observe — data residency, existing licenses, internal security requirements.
 
 {{< excalidraw ch07-build-spec-sections "Build Spec Writer: eight sections with section name and a one-line description of what belongs in each." >}}
 
@@ -298,11 +298,11 @@ Answer all seven questions in writing. Attach the answers to the Build Spec as a
 
 The spec names what the agent does. The Guardrails Checklist names what it's allowed to touch. The next question is where it actually runs.
 
-Design chose the category; Build picks the specific environment within it. Design picked one of three categories — off-the-shelf, low-code, or hand-built (see Chapter 7). Build picks the specific environment inside that category and configures the agent to run there. The distinction matters because environment options shift faster than workflow design principles do. What's named here is the environment logic; the current products are examples. Check the market when you're running your Sprint, not when you read this.
+Design chose the category; Build picks the specific environment within it. Design picked one of three categories — off-the-shelf, low-code, or hand-built (see Designing the System). Build picks the specific environment inside that category and configures the agent to run there. The distinction matters because environment options shift faster than workflow design principles do. What's named here is the environment logic; the current products are examples. Check the market when you're running your Sprint, not when you read this.
 
 The environments, with what fits and what doesn't:
 
-**Claude Projects** fit skill-level work: a single agent, a defined knowledge base, one person or a small team using it co-operatively. The "build" is configuration — a system prompt, uploaded context, defined scope, guardrails set in the project settings. A competent person does this in an afternoon. This is the right environment when the designed workflow is one agent, one output stream, one supervisor reviewing every output. The marketing lead's four-agent setup from Chapter 3 started here. When a workflow grows past one agent or starts running programmatically, Claude Projects doesn't stretch to cover it.
+**Claude Projects** fit skill-level work: a single agent, a defined knowledge base, one person or a small team using it co-operatively. The "build" is configuration — a system prompt, uploaded context, defined scope, guardrails set in the project settings. A competent person does this in an afternoon. This is the right environment when the designed workflow is one agent, one output stream, one supervisor reviewing every output. The marketing lead's four-agent setup from the Co-Operating Model chapter started here. When a workflow grows past one agent or starts running programmatically, Claude Projects doesn't stretch to cover it.
 
 **Claude Team** (shared workspace, multiple projects) fits cross-team, skill-level work where multiple people need access to the same agent context. The agent's knowledge base and guardrails are set once; the team uses it. This is the right environment when Design identified several people touching the same workflow and the work is AI-assisted, not automated. It doesn't fit workflows that run on a schedule without a human initiating each run.
 
@@ -314,11 +314,11 @@ The environments, with what fits and what doesn't:
 
 ### The span-of-control constraint.
 
-Before you finalize the environment decision, check the agent count. Per Bedard's three-agent ceiling (see Chapter 7), productivity inverts after three concurrent agents under one supervisor. Up to three, adding agents produces compounding gains. Beyond three, the supervisor's cognitive budget runs out and error rates climb.
+Before you finalize the environment decision, check the agent count. Per Bedard's three-agent ceiling (see Designing the System), productivity inverts after three concurrent agents under one supervisor. Up to three, adding agents produces compounding gains. Beyond three, the supervisor's cognitive budget runs out and error rates climb.
 
 The practical implication for Build: if the designed system puts four, five, or six agents under one human supervisor, the design has a structural problem. The environment decision doesn't fix that. You can run six agents on the best infrastructure available and still produce worse outcomes than three agents on a simpler setup, because the bottleneck is the supervisor's attention, not the environment's throughput.
 
-If the environment decision is pushing toward a many-agent architecture, stop. Go back to Design. Either scope the system smaller (fewer agents per supervisor) or add a layer of agent-supervised parallel work, where a coordinator agent manages the subagents and the human supervisor reviews the coordinator's output rather than every individual agent's output. That pattern is named in Chapter 3: the quote-orchestrator that runs a team inside its own loop, with the human reviewing what the orchestrator surfaces, not what each subagent produced. Chapter 7, Design, is where that architectural decision gets made. Build inherits it.
+If the environment decision is pushing toward a many-agent architecture, stop. Go back to Design. Either scope the system smaller (fewer agents per supervisor) or add a layer of agent-supervised parallel work, where a coordinator agent manages the subagents and the human supervisor reviews the coordinator's output rather than every individual agent's output. That pattern is named in the Co-Operating Model chapter: the quote-orchestrator that runs a team inside its own loop, with the human reviewing what the orchestrator surfaces, not what each subagent produced. Designing the System is where that architectural decision gets made. Build inherits it.
 
 The environment decision should match the architecture Design produced, not the architecture the builder finds interesting.
 

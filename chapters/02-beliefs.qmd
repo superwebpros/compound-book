@@ -11,7 +11,7 @@ The banker was asking the wrong question.
 
 Argenti's answer: let go of that 10%. The 10% isn't the moat. The new 100% is review, judgment, debate with the team, calling the client before the client calls you. The job got reshaped. The banker was asking how to defend an old role. Argenti told him the role had already changed.
 
-That same question is sitting on a lot of mid-market operator desks right now, in a quieter form. *Where does AI fit on top of what I already do?* It's the same defensive frame, and it produces the same scattered pilots Chapter 1 just diagnosed. Four things have to be true for you first. These are the four beliefs.
+That same question is sitting on a lot of mid-market operator desks right now, in a quieter form. *Where does AI fit on top of what I already do?* It's the same defensive frame, and it produces the same scattered pilots the Diagnosis chapter just named. Four things have to be true for you first. These are the four beliefs.
 
 We're not here to motivate you into them. The beliefs aren't aspirational. They're load-bearing. If you read past them without signing on, the framework that follows will feel like extra work for the same outcomes. With them in place, the framework is the cheapest path to outcomes you already want.
 
@@ -60,7 +60,7 @@ Argenti put it this way: *"What's the 10% of horse-riding skills that they shoul
 
 The skills that transfer are the ones that were never about the saddle. Judgment, taste, knowing when an answer doesn't smell right, knowing when to escalate. Those carry into the new role. The hands-on craft of producing the deliverable, in many functions, doesn't.
 
-Sadun draws the same line from a different angle: *"AI isn't an oracle... a support system for, not really a replacement for, decision making."* The worker analogy holds here. A worker has scope, can be wrong, and reports to someone. An oracle has none of those. If your team is treating AI like an oracle, typing questions and reading answers as authoritative, they're stuck inside the chatbot loop Chapter 1 diagnosed. The move past that loop is treating AI as a worker.
+Sadun draws the same line from a different angle: *"AI isn't an oracle... a support system for, not really a replacement for, decision making."* The worker analogy holds here. A worker has scope, can be wrong, and reports to someone. An oracle has none of those. If your team is treating AI like an oracle, typing questions and reading answers as authoritative, they're stuck inside the chatbot loop the Diagnosis chapter named. The move past that loop is treating AI as a worker.
 
 Software vocabulary keeps the gains small. To make them structural, you have to manage AI like a worker.
 
@@ -68,7 +68,7 @@ Software vocabulary keeps the gains small. To make them structural, you have to 
 
 If you accept that AI is a worker, the next question is what changes about the headcount math.
 
-Chapter 1 named the slope: every meaningful jump in revenue pulls a roughly proportional jump in headcount along with it. Revenue per employee stays roughly flat as companies grow. That slope is the Headcount Paradox. The investment is on the books and the slope hasn't moved.
+The Diagnosis chapter named the slope: every meaningful jump in revenue pulls a roughly proportional jump in headcount along with it. Revenue per employee stays roughly flat as companies grow. That slope is the Headcount Paradox. The investment is on the books and the slope hasn't moved.
 
 Belief 3 is that the slope isn't a law of nature. It's a feature of how work was designed for the last hundred years. Redesign the work and the slope changes.
 
@@ -76,9 +76,9 @@ At SuperWebPros, Jesse's software development firm, the team went from thirteen 
 
 Neither of those numbers came from buying more AI. They came from designing the work before staffing it. Belief 3 is what makes that design work worth doing. If you don't actually believe the math can move, every Sprint is a curiosity exercise. You'll run one, get a useful demo, and never connect it to the P&L. You'll book the consultant for another briefing.
 
-If you do believe the math can move, the framework has somewhere to go. The constraint diagnosis (Chapter 5) attaches a dollar figure. The design discipline (Chapters 7 and 7b) builds the structure that bends the slope. The Compound stage (Chapter 10) is where the numbers compound across Sprints.
+If you do believe the math can move, the framework has somewhere to go. The constraint diagnosis (Signal) attaches a dollar figure. The design discipline (the two Design chapters) builds the structure that bends the slope. The Compound stage is where the numbers compound across Sprints.
 
-Sadun warned in HBR that the gap between firms that figure this out and firms that don't is going to widen. *"Vast differences in the extent to which some firms are really able to click and figure out how to use these technologies for their own benefit."* That divergence is the polarization Chapter 1 anchored the scorecard against. Belief 3 is what gets you on the moving side of the gap.
+Sadun warned in HBR that the gap between firms that figure this out and firms that don't is going to widen. *"Vast differences in the extent to which some firms are really able to click and figure out how to use these technologies for their own benefit."* That divergence is the polarization the Diagnosis chapter anchored the scorecard against. Belief 3 is what gets you on the moving side of the gap.
 
 The math bending isn't a promise. It's an operator decision. You can decide that revenue per employee is fixed for your industry, and you'll be right for as long as you don't redesign. The companies that decide otherwise are the ones whose numbers move.
 
@@ -99,9 +99,9 @@ Belief 4 is different work, not more work.
 
 The shift is in where attention goes, not in how much of it you've got to spend. If a coordinator used to spend twenty hours a week formatting reports and four hours reviewing them, the design move puts agents on the formatting and the human on the four hours of review — sharpened, scoped, with a clear deliverable. The job didn't grow. The composition changed. Bedard's data agrees: AI that *replaces toil* lowers burnout 15%. AI that *adds oversight load on top of the existing job* raises brain fry. The design decision is which one your operating model produces.
 
-Belief 4 sets up the rest of this book. The Co-Operating Model (Chapter 3), the Sequence (Chapter 4), and the design chapters (Chapters 7 and 7b) are the discipline of designing work so the composition changes deliberately, not accidentally. Your role moves from doing the work to designing it. The framework is how.
+Belief 4 sets up the rest of this book. The Co-Operating Model, the Sequence, and the Design chapters are the discipline of designing work so the composition changes deliberately, not accidentally. Your role moves from doing the work to designing it. The framework is how.
 
-Jesse's COO walked into a project-coordinator conversation in Chapter 7 expecting to write a job description and ended the meeting with an agent-team design and a redefined human seat. That's Belief 4 in operating terms. The reflex to solve a personnel problem with another person is the reflex Belief 4 interrupts. Not because hiring is wrong. Because designing the work first is what tells you whether hiring is the right move.
+Jesse's COO walked into a project-coordinator conversation in the Design chapter expecting to write a job description and ended the meeting with an agent-team design and a redefined human seat. That's Belief 4 in operating terms. The reflex to solve a personnel problem with another person is the reflex Belief 4 interrupts. Not because hiring is wrong. Because designing the work first is what tells you whether hiring is the right move.
 
 ## The four-question gut *check*.
 

@@ -7,7 +7,7 @@ Source maps the information environment around the one constraint Signal validat
 
 ## Every organization runs on three *layers*.
 
-Chapter 2 said you're already a system company. The CRM, the ERP, the project tool, the document store: the investment is on the books. The systems are running. Source is where that belief gets operationalized. Before you can design anything, you need to see what those systems actually hold, what they don't hold, and what layer each piece of knowledge lives in.
+The beliefs chapter said you're already a system company. The CRM, the ERP, the project tool, the document store: the investment is on the books. The systems are running. Source is where that belief gets operationalized. Before you can design anything, you need to see what those systems actually hold, what they don't hold, and what layer each piece of knowledge lives in.
 
 The information environment inside every operating company breaks into three layers.
 
@@ -45,7 +45,7 @@ Once you know where knowledge lives (Record / Knowledge / Semantics), the next q
 
 **Task knowledge** is the documented steps: the SOPs, the process maps, the work that can be written down and followed. **Management knowledge** is the decision rights, the escalation paths, the governance rules that determine who approves what. **Leadership knowledge** is the judgment, the relationships, the context, the pattern recognition that only comes from years inside the business.
 
-Task knowledge is the easiest to capture and the most common to find in systems. Management knowledge is partially documented and inconsistently followed. Leadership knowledge almost never exists outside the people who hold it. Each layer requires a different capture and transfer approach. AI can reliably handle Task knowledge. It can assist with Management knowledge. It requires human oversight for Leadership knowledge at every step. The same framework applies to the work itself in Chapter 7b, where TML is how you break down what each role actually does.
+Task knowledge is the easiest to capture and the most common to find in systems. Management knowledge is partially documented and inconsistently followed. Leadership knowledge almost never exists outside the people who hold it. Each layer requires a different capture and transfer approach. AI can reliably handle Task knowledge. It can assist with Management knowledge. It requires human oversight for Leadership knowledge at every step. The same framework applies to the work itself in Designing the Work, where TML is how you break down what each role actually does.
 
 This is why Source belongs in Diagnose, not Execute. The diagnosis includes the information environment. Until you've mapped what you've got, the constraint is a named problem without a buildable path forward. Once the map exists, it becomes a design problem: scoped, specific, and grounded in reality.
 
@@ -261,7 +261,7 @@ Most companies don't have anyone whose job it is to do this work. The shared dri
 
 We use the working term *knowledge manager* for it. The job is to curate the institutional knowledge the rest of the company runs on: deciding what gets captured, what gets retired, what gets restructured, what gets connected to which agent. They are the person accountable for whether the knowledge base reflects how the business actually operates today, and for catching the moment it stops.
 
-The Human Orchestrator (Chapter 7) sets the goals for an agent team inside a single Sprint and reviews the agent team at the goal level. The knowledge manager works underneath every Sprint, keeping the inputs each Sprint depends on clean, current, and reachable. A Human Orchestrator running a Sprint against a knowledge base nobody has curated will spend most of the Sprint debugging the data instead of designing the workflow. A Human Orchestrator's outcomes are only as good as the knowledge a knowledge manager made clear.
+The Human Orchestrator (introduced in the Design chapters) sets the goals for an agent team inside a single Sprint and reviews the agent team at the goal level. The knowledge manager works underneath every Sprint, keeping the inputs each Sprint depends on clean, current, and reachable. A Human Orchestrator running a Sprint against a knowledge base nobody has curated will spend most of the Sprint debugging the data instead of designing the workflow. A Human Orchestrator's outcomes are only as good as the knowledge a knowledge manager made clear.
 
 Most companies don't have this role today. They will. The companies that introduce it early run their Sprints against knowledge they can trust; the companies that don't end up running their Sprints against whatever was in the drive when somebody asked.
 

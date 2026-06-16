@@ -43,7 +43,7 @@ A **chatbot** is an interface. You ask a question, you get an answer, the intera
 
 An **agent** is different: an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs — without the human re-prompting between steps. A chatbot answers a question and stops; an agent works the problem until it's done. When you run an agent team on a content build, you're not typing questions and reading answers. You're managing a production process. You set the direction. The agents run the work. You review, redirect, and ship. The loop keeps running until the output is right.
 
-Every agent is a constructed thing, and the construction has six parts: a **system prompt** (the operating rules), **tools** (what it's allowed to call: APIs (application programming interfaces, how systems talk to other systems), search, your CRM, any integration you've wired in), **context sources** (the knowledge it can reach, your Knowledge Map rows plugged in so it reasons against your data), **memory rules** (what it tracks across runs: session state, accumulated decisions), **judgment and escalation rules** (when to escalate, what to refuse), and **oversight load** (how much human supervision each output requires: low, medium, or high). Most operators skip the sixth one. Bedard et al., writing in HBR (March 2026), found that oversight draws from the same finite cognitive budget the human is spending on everything else. It's a design variable you set before the agent runs. Chapter 7 (Designing the System) and Chapter 7b (Designing the Work) walk through how to specify all six.
+Every agent is a constructed thing, and the construction has six parts: a **system prompt** (the operating rules), **tools** (what it's allowed to call: APIs (application programming interfaces, how systems talk to other systems), search, your CRM, any integration you've wired in), **context sources** (the knowledge it can reach, your Knowledge Map rows plugged in so it reasons against your data), **memory rules** (what it tracks across runs: session state, accumulated decisions), **judgment and escalation rules** (when to escalate, what to refuse), and **oversight load** (how much human supervision each output requires: low, medium, or high). Most operators skip the sixth one. Bedard et al., writing in HBR (March 2026), found that oversight draws from the same finite cognitive budget the human is spending on everything else. It's a design variable you set before the agent runs. The two Design chapters (Designing the System and Designing the Work) walk through how to specify all six.
 
 That distinction matters for operating design: chatbot as input/output tool, agent as iterative co-worker. A chatbot gives you a productivity improvement localized to the person typing. An agent gives you a structural change, because the loop can run without the human inside every step. And once an agent is connected to your systems and your data, it can access and reason across more of your company's knowledge than any individual human holds. From a knowledge standpoint, it's significantly more capable. But it still can't direct the work.
 
@@ -55,7 +55,7 @@ We think of this as the organizational brain: the knowledge that used to live in
 
 Here is why this matters. SuperWebPros is a software company. The inventory is people: what they know how to build, how they think about problems, the decisions embedded in the codebase. A couple of years ago, a developer Jesse had been working with for years left. Jesse had paid for years of training and competency building, with context accumulating inside one person's head. When the developer left, the knowledge left with him. There was no way to capture what he already knew. We had no system or process to keep the investment in his learning inside the business when he left.
 
-That issue surfaced during a normal issues meeting: *I do not own my knowledge in my own business.* It became the first structural problem we solved. We mapped the sources of information we had: where they lived, what was tracked, what existed only in people's heads. Then we built a knowledge management system to make sure the team was contributing knowledge back into the business in a structured way. That was the foundation. The AI layer came later, once the technology was mature enough to connect to what we'd built. When it did, everything accelerated. The knowledge base became the backbone of our agent systems, and the agents could reason against our actual context instead of starting from scratch. It started because one departure exposed a vulnerability that no tool purchase could have prevented. Chapter 6 covers knowledge management in full.
+That issue surfaced during a normal issues meeting: *I do not own my knowledge in my own business.* It became the first structural problem we solved. We mapped the sources of information we had: where they lived, what was tracked, what existed only in people's heads. Then we built a knowledge management system to make sure the team was contributing knowledge back into the business in a structured way. That was the foundation. The AI layer came later, once the technology was mature enough to connect to what we'd built. When it did, everything accelerated. The knowledge base became the backbone of our agent systems, and the agents could reason against our actual context instead of starting from scratch. It started because one departure exposed a vulnerability that no tool purchase could have prevented. The Source chapter covers knowledge management in full.
 
 An organization with a well-built memory layer doesn't have that exposure. The knowledge stays because it was designed to stay.
 
@@ -197,7 +197,7 @@ The compounding math is direct. Parallelism reduces calendar time for the work i
 
 Most companies miss this because they adopt agents the way they adopted every tool before, one at a time, bolted onto the existing workflow. A single agent assistant added to a linear process produces a linear process that's slightly faster in one step. That's the AI subscription that changes nothing on the P&L.
 
-A Co-Operating Model is designed for parallel from the start. When you map the work against the two columns, human owns and agent executes, you're also mapping what can run simultaneously. Every row in the agent column is a potential parallel workstream. The design question isn't "should we add this agent?" It's "what runs at the same time, and who is steering?" The mechanics of designing for parallel show up in Chapter 7, *Design*: how to bound each workstream, how to set the handoffs, how to spec the agents. For now, the point is that parallelism is a design choice you make before the work runs, not a happy accident the tools produce on their own.
+A Co-Operating Model is designed for parallel from the start. When you map the work against the two columns, human owns and agent executes, you're also mapping what can run simultaneously. Every row in the agent column is a potential parallel workstream. The design question isn't "should we add this agent?" It's "what runs at the same time, and who is steering?" The mechanics of designing for parallel show up in the *Design* chapters: how to bound each workstream, how to set the handoffs, how to spec the agents. For now, the point is that parallelism is a design choice you make before the work runs, not a happy accident the tools produce on their own.
 
 She was steering four workstreams at once. That's the job: concrete, operational. Four parallel outputs moving simultaneously, one human directing the whole system toward a single standard of quality.
 
@@ -256,7 +256,7 @@ Here is the illustrative Project Coordinator's hybrid split:
 | Quality standard for all agent output — reviews before anything ships | Updates scope change logs (dates, costs, approvals) |
 | | Compiles lessons-learned documents from project notes |
 
-This hybrid split is enough to see the shape of the redesigned role. Chapter 6 introduces the full design instrument — the **TML framework** (Task / Management / Leadership) — which sorts work into three categories rather than two; for now, the two-column version is the right starting point.
+This hybrid split is enough to see the shape of the redesigned role. The Source chapter introduces the full design instrument — the **TML framework** (Task / Management / Leadership) — which sorts work into three categories rather than two; for now, the two-column version is the right starting point.
 
 If you have multiple roles touching the same constraint, repeat this process for each one. Compile the results into a single table: Role, Column B %, Loaded Cost, Annual Misallocation Cost. That table is the raw material for the Sprint design work in the chapters ahead.
 :::
@@ -274,7 +274,7 @@ The sort you just ran is the foundation of a more formal instrument called the *
 
 Every entry in the HAC follows one rule: there is exactly one named human accountable for every outcome, whether a person or an agent team produces the work. That rule is what prevents the accountability gap we described in the opening story. The agent's work has somewhere to land. Someone's name is on it.
 
-Chapter 7 is where you build the HAC for real: questions, format, completed example. For now, know it exists, and know that the sort you've been doing in this chapter is the raw material it starts from.
+The Design chapters are where you build the HAC for real: questions, format, completed example. For now, know it exists, and know that the sort you've been doing in this chapter is the raw material it starts from.
 
 ## The *Equation*.
 
@@ -293,7 +293,7 @@ Put it on the wall. Co-Intelligence is the Co-Operating Model you just read. Rhy
 - Humans own outcomes. Agents own tasks.
 - One named human supervisor for every HAC entry.
 - Two patterns of parallel work: human-supervised, agent-supervised.
-- The Hybrid Accountability Chart preview — full build in Chapter 7.
+- The Hybrid Accountability Chart preview — full build in the Design chapters.
 - How you build a Co-Op Model is the next chapter.
 
 ---

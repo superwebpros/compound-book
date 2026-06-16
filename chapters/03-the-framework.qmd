@@ -67,7 +67,7 @@ After Source, you know what your org actually knows. You know which knowledge an
 
 ### *Design*. The shape of the work, made explicit.
 
-A workflow without a designed shape is a habit. People do what they've always done, the work moves through the same hands in the same order, and the role each person plays has never been written down. Adding an agent to that mess produces an agent that nobody knows how to supervise. Design is the discipline of asking, role by role and handoff by handoff, who owns what. It's also where the operating model from Chapter 3 stops being a concept and starts being an actual chart you can point at.
+A workflow without a designed shape is a habit. People do what they've always done, the work moves through the same hands in the same order, and the role each person plays has never been written down. Adding an agent to that mess produces an agent that nobody knows how to supervise. Design is the discipline of asking, role by role and handoff by handoff, who owns what. It's also where the Co-Operating Model stops being a concept and starts being an actual chart you can point at.
 
 Design produces two artifacts. The **Hybrid Accountability Chart** names which functions stay human, which move to agents, where the handoffs live, who supervises each agent's output, and how exceptions get routed. The **Design Brief** captures the workflow's information flow, the governance rules, and the guardrails the build has to honor. Together they answer the question every Sprint has to answer before any code gets written: who is accountable, human and agent, for which piece of this work?
 

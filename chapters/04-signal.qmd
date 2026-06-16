@@ -282,7 +282,7 @@ The one-page Constraint Statement is the handoff to Source. With the constraint 
 
 If you can't hand someone that one page and have them understand what the Sprint is solving without asking a follow-up question, you're not done with Signal. Go back. The gate is real.
 
-That is Chapter 6.
+That is Source.
 
 ## Reflection Questions
 

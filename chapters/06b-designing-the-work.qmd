@@ -151,7 +151,7 @@ Here is the blank seven-section template. Fill it in for the Sprint you are runn
 
 ### Per-agent mini-spec.
 
-The Design Brief's hardest job is specifying each agent with enough precision that Build can execute without guessing. For every agent named in your Hybrid Accountability Chart, the Design Brief includes a mini-spec covering six fields. These six come from the agent-anatomy concept introduced in Ch 3: system prompt, tools, context sources, memory rules, judgment and escalation rules, and oversight load.
+The Design Brief's hardest job is specifying each agent with enough precision that Build can execute without guessing. For every agent named in your Hybrid Accountability Chart, the Design Brief includes a mini-spec covering six fields. These six come from the agent-anatomy concept introduced in the Co-Operating Model chapter: system prompt, tools, context sources, memory rules, judgment and escalation rules, and oversight load.
 
 **1. System prompt.** The operating rules: what the agent does and, just as explicitly, what it doesn't do. "Assemble draft quotes from upstream research and pricing outputs. Do not calculate prices. Do not contact customers or suppliers. Do not access any system outside the defined scope."
 
@@ -167,7 +167,7 @@ The Design Brief's hardest job is specifying each agent with enough precision th
 
 #### Span-of-control check.
 
-When your Hybrid Accountability Chart assigns more than three concurrent agents to one supervisor, that supervisor needs to justify why the load doesn't violate the productivity-inversion threshold. Per Bedard's three-agent ceiling (see Chapter 7), the three-agent ceiling isn't a hard stop, but it's a design question you answer explicitly. If Elena supervises four agents, what is the review structure that prevents cognitive overload? If the answer is "she'll manage," the design isn't finished.
+When your Hybrid Accountability Chart assigns more than three concurrent agents to one supervisor, that supervisor needs to justify why the load doesn't violate the productivity-inversion threshold. Per Bedard's three-agent ceiling (from Designing the System), the three-agent ceiling isn't a hard stop, but it's a design question you answer explicitly. If Elena supervises four agents, what is the review structure that prevents cognitive overload? If the answer is "she'll manage," the design isn't finished.
 
 #### The supervisor capability checklist.
 

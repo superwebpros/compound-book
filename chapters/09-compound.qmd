@@ -39,7 +39,7 @@ An updated *Signal Backlog* — the running, prioritized list of validated const
 
 An updated *Hybrid Accountability Chart*. The chart gained entries when Design produced accountabilities for this Sprint. By the end of Deliver those entries were real — named agent teams, named human supervisors, positions on the AI-assisted-to-automated spectrum, and documented outcomes against the constraint. In Compound, you make those entries permanent and review any neighboring rows for second-order effects from the Sprint that just completed.
 
-A *Sprint Outcome Record*: one sentence that captures what changed. The constraint, the before-and-after cost, the specific result. "Standard quote turnaround reduced from 3.8 days to 4.2 hours. Elena's quoting time from 15 hrs/wk to 5. Throughput doubled." That record is filed in the Hybrid Org Today and becomes the first row of the Compounding Scorecard (the blank scorecard template sits in Chapter 12, *Rhythm*; add this Sprint's row to it before the session ends). It is how you know, six Sprints from now, what each one produced.
+A *Sprint Outcome Record*: one sentence that captures what changed. The constraint, the before-and-after cost, the specific result. "Standard quote turnaround reduced from 3.8 days to 4.2 hours. Elena's quoting time from 15 hrs/wk to 5. Throughput doubled." That record is filed in the Hybrid Org Today and becomes the first row of the Compounding Scorecard (the blank scorecard template sits in *Rhythm*; add this Sprint's row to it before the session ends). It is how you know, six Sprints from now, what each one produced.
 
 {{< excalidraw ch09-compound-deliverables "Three Compound deliverables: Signal Backlog update, permanent HAC row, and Sprint Outcome Record — with location and owner." >}}
 
