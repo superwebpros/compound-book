@@ -1,4 +1,4 @@
-# *Compound*: Turn the Sprint Into Infrastructure
+# Compound: Turn One Sprint Into Infrastructure
 
 :::{.callout-important}
 ## In Brief

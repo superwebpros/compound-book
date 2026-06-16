@@ -1,4 +1,4 @@
-# *Deliver*.
+# Deliver: Ship It Into How the Work Runs
 
 :::{.callout-important}
 ## In Brief

@@ -1,4 +1,4 @@
-# Signal: Lock the one constraint worth a Sprint
+# Signal: Lock the One Constraint Worth a Sprint
 
 :::{.callout-important}
 ## In Brief

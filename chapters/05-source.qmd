@@ -1,4 +1,4 @@
-# Source: Map What the Organization Knows About the Constraint
+# Source: Map What Your Company Actually Knows
 
 :::{.callout-important}
 ## In Brief

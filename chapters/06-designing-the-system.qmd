@@ -1,4 +1,4 @@
-# Designing the System: Every Row Has a Name
+# Designing the System: Give Every Row a Name
 
 <!-- STRUCTURAL: Ch06/06b order under review — see .claude/output/ch06-swap-analysis.md -->
 

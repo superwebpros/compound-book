@@ -1,4 +1,4 @@
-# Chapter 4: The *Framework*: Six Stages, One Sprint at a Time
+# The Framework: Six Stages, One Sprint at a Time
 
 :::{.callout-important}
 ## In Brief

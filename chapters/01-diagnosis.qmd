@@ -1,4 +1,4 @@
-# Chapter 1: Diagnosis: It's an Operating Problem, Not a Technology Problem
+# Diagnosis: It's an Operating Problem, Not a Technology Problem
 
 ::: callout-important
 ## In Brief
