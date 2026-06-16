@@ -1,29 +1,23 @@
-# The *Framework*.
+# Chapter 4: The *Framework*: Six Stages, One Sprint at a Time
 
 :::{.callout-important}
 ## In Brief
-You've met the Co-Operating Model. The Framework is how you build one. This chapter walks the six stages of the Sequence in order (Signal → Source → Design → Build → Deliver → Compound), shows why each one matters, names what each one produces, and introduces the Sprint Planning Canvas: a one-page artifact with eight questions that the rest of the book teaches you to answer. By the last page you'll have walked Meridian Manufacturing's populated Canvas and have a blank one to fill in for your own company.
+You've met the Co-Operating Model. The Framework is how you build one. By the end of this chapter you'll have a one-page Sprint Planning Canvas for your own company: eight questions that turn a vague AI ambition into a constraint you can actually run a Sprint against.
 :::
 
 We were mid-conversation with a CEO: Jesse, Julie, and her on the other side of the screen. She'd been talking for twenty minutes about her company, her bottlenecks, the AI-powered workflows she was hoping would fix the quoting problem that was eating her operations lead's time. Then she leaned forward and said it: "Can we just build the workflow? I just need this thing built."
 
 We knew exactly what she meant. She'd seen demos. She'd read the case studies. She had a clear picture in her head of the tool that was going to solve her problem, and she wanted to stop talking about it and start building it. That's the instinct of someone who has run a business.
 
-But we've also watched what happens when you start there. The build doesn't go well. The requirements shift two weeks in because nobody mapped what the work actually required, so the spec changes, the scope expands, and the thing that was supposed to take three weeks is now in week seven and still not done. Edge cases surface that nobody anticipated because nobody understood the process well enough to anticipate them. The tool gets deployed eventually, in some version of what was originally scoped, and then the team doesn't use it because it doesn't fit how the work actually moves.
+But we've also watched what happens when you start there. The spec changes. The scope expands. Edge cases surface that nobody anticipated because nobody understood the process well enough to anticipate them. The thing that was supposed to take three weeks is in week seven and still not done. A tool gets deployed eventually, and then the team doesn't use it because it doesn't fit how the work actually moves. We've seen enough versions of this to know: the actual constraint surfaces later, usually one or two steps upstream from where the CEO was looking.
 
-That's what we told her on the call: you can't start at Build. The diagnosis has to come first. The conversation ended with us agreeing to quote a focused diagnostic engagement (what this book calls a Signal Sprint), and walking away from the assumption that the tool she came in wanting was the right place to start. We've seen enough versions of this pattern to know what would have happened if we'd built what she asked for. A tool gets shipped. The team patches around it for months. Somewhere along the way the actual constraint surfaces, usually one or two steps upstream from where she'd been looking.
+That's what we told her: you can't start at Build. The conversation ended with us agreeing to quote a focused diagnostic engagement, what this book calls a Signal Sprint, and walking away from the quoting workflow entirely until Signal named the real constraint.
 
-The instinct to move to solution before diagnosis isn't unique to AI. It's the most common and most expensive mistake in organizational change, and it's the pattern Julie has watched across two decades of org-design work. An ERP rollout that nobody used. A post-merger integration that broke the company it was supposed to fix. The root cause was always the same: the solution got built before the problem was understood. Everyone moved to what felt like progress, which was building, and discovered twelve months later that they'd built the wrong thing at great expense.
-
-That's the conversation this chapter is meant to prevent.
-
-## Why the *order* matters.
-
-Most AI initiatives skip the diagnosis and start at Build. A tool gets chosen and a workflow launches on the budget, and the cracks show up almost immediately. The team patches around them and bolts on edge cases. Months go by putting out fires the diagnosis would have surfaced before the spend. The most common AI failure mode in the field is a wrong order, not a wrong tool.
-
-This is a principle that's at least thirty years old in how organizations are designed and changed: diagnose before you prescribe. Julie has watched it anchor every major org-design engagement she's led. Jesse ran into it directly inside his own company's first Sprint. The constraint he thought he was solving turned out to be a symptom of a different constraint two steps upstream. The order is what makes the work compound.
+## Diagnose *before* you build, or build pays the cost
 
 Each stage produces something the next stage requires. Signal produces a Constraint Statement. Source produces a Knowledge Map about that constraint. Design produces an accountability split that depends on both. Build executes against the Design. Deliver installs Build into the operating rhythm. Compound captures what was learned and feeds it into the next Sprint's Signal. Skip a stage and the next one has nothing real to work against.
+
+Jesse ran into this directly inside his own company's first Sprint. The constraint he thought he was solving turned out to be a symptom of a different constraint two steps upstream. The order is what makes the work compound.
 
 Building before diagnosing means each step has nothing solid under it. The work looks like progress until the result has to hold up, and then it fails. Skip the first two stages and you're buying a tool. Run all six in order and you're changing how the work is owned. That's why the order matters. The rest of this chapter walks it.
 
@@ -39,25 +33,25 @@ This book uses four related words that are easy to conflate.
 Each names a different thing. You'll meet them again as the chapter unfolds.
 :::
 
-## The six *stages*.
+## The six *stages*, in order
 
 The Sequence is six stages. Each one gets its own chapter later in the book. Here is what each one does, why it matters, what it produces, and what changes after you run it.
 
 {{< excalidraw ch03-the-sequence "The six-stage Sequence: Signal → Source → Design → Build → Deliver → Compound." >}}
 
-### *Signal*. The constraint, named and priced.
+### Signal — name the *constraint*, price it
 
 Most teams build for the wrong constraint. They build for the visible problem or the loudest complaint. Neither is automatically the constraint. The constraint is the structural failure underneath the symptom, and until you've separated the two, every dollar you spend on a build assumes the symptom and the constraint are the same problem. They almost never are. "Quoting takes too long" is a symptom. "One person holds the pricing logic and her review is the queue" is a constraint. A tool fixes the first. The second needs a structural fix.
 
-Signal produces a one-page **Constraint Statement**. One sentence at the top names the function that's failing, the outcome that's blocked, the structural cause, and the cost: "[Function] cannot [desired outcome] because [root cause], which costs us approximately [X dollars] per [Y time period]." The rest of the page surrounds that sentence with the evidence that validates it. For Meridian Manufacturing, Signal produced: *"Elena Ruiz is the sole quoting bottleneck. Every quote flows through her, costing an estimated \$558K/year in delayed and lost revenue."* The rest of the Sprint runs against that sentence.
+Signal produces a one-page **Constraint Statement**. For Meridian Manufacturing, Signal produced: *"Elena Ruiz is the sole quoting bottleneck. Every quote flows through her, costing an estimated \$558K/year in delayed and lost revenue."* The rest of the Sprint runs against that sentence. The structure generalizes: one sentence at the top names the function that's failing, the outcome that's blocked, the structural cause, and the cost: "[Function] cannot [desired outcome] because [root cause], which costs us approximately [X dollars] per [Y time period]." The rest of the page surrounds that sentence with the evidence that validates it.
 
 The quantified cost is non-negotiable. A constraint has to carry a number: "$558K per year in lost revenue, misallocated time, and floor underutilization." The number does two things. It tells you whether the constraint is worth a Sprint's attention, and it gives Deliver a target to measure against.
 
 After Signal, three things change. The team stops arguing about symptoms. The leadership sponsor knows what number the Sprint is going to move. And the cost of the constraint is on paper, which means the Sprint has a target Deliver can measure against. You can't prove a Sprint paid for itself unless Signal wrote down what the constraint cost before you started.
 
-### *Source*. What the org actually knows.
+### Source — map what the *organization* knows
 
-You can't design a workflow against knowledge that lives nowhere. Every AI workflow built without Source has nothing reliable to reason against, which is why hallucinations, gaps, and edge-case failures show up the first time a non-standard case appears. Source is the discipline of finding the knowledge the constraint depends on, before you ask an agent (an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs, rather than a chatbot you prompt one turn at a time; full definition in the Co-Operating Model chapter) to use it. In an information business, most constraints have a data or system dimension. Sloppy data entry, wrong captures, poor data architecture. Source is where that dimension surfaces.
+You can't design a workflow against knowledge that lives nowhere. Every AI workflow built without Source has nothing reliable to reason against, which is why hallucinations, gaps, and edge-case failures show up the first time a non-standard case appears. Source is the discipline of finding the knowledge the constraint depends on before you ask an agent (defined fully in Chapter 2) to use it. In an information business, most constraints have a data or system dimension. Sloppy data entry, wrong captures, poor data architecture. Source is where that dimension surfaces.
 
 Source produces a **Knowledge Map**: what exists in writing, what exists in systems, what lives only in people's heads, and where the gaps are. For Meridian, Source surfaced that Elena's pricing logic lived in a 147-row spreadsheet on her desktop, that Dave Kowalski's fabrication knowledge lived in his head after thirty-one years, and that JobBOSS held the job history but had no connection to the CRM. None of that was visible to anyone but the person holding it. Source also names what doesn't exist yet, which is its own finding. The work to capture undocumented knowledge becomes scope for Build.
 
@@ -65,49 +59,53 @@ The Knowledge Map distinguishes three categories. Structured knowledge lives in 
 
 After Source, you know what your org actually knows. You know which knowledge an agent can reason against and which knowledge a human still has to supply. You know which systems hold the data and which systems have to be connected before a build is possible. The Sprint stops running on the team's collective memory and starts running on a map.
 
-### *Design*. The shape of the work, made explicit.
+### Design — make the *shape* of the work explicit
 
 A workflow without a designed shape is a habit. People do what they've always done, the work moves through the same hands in the same order, and the role each person plays has never been written down. Adding an agent to that mess produces an agent that nobody knows how to supervise. Design is the discipline of asking, role by role and handoff by handoff, who owns what. It's also where the Co-Operating Model stops being a concept and starts being an actual chart you can point at.
 
-Design produces two artifacts. The **Hybrid Accountability Chart** names which functions stay human, which move to agents, where the handoffs live, who supervises each agent's output, and how exceptions get routed. The **Design Brief** captures the workflow's information flow, the governance rules, and the guardrails the build has to honor. Together they answer the question every Sprint has to answer before any code gets written: who is accountable, human and agent, for which piece of this work?
+Design produces two artifacts. The **Hybrid Accountability Chart** names which functions stay human, which move to agents, where the handoffs live, who supervises each agent's output, and how exceptions get routed. The **Design Brief** captures the workflow's information flow, the governance rules, and the guardrails the build has to honor. For Meridian, Design produced a Hybrid Accountability Chart where Elena moved from quote producer to quote reviewer, Ty took quote initiation, and the quoting agent landed under Elena's supervisor seat. Together they answer the question every Sprint has to answer before any code gets written: who is accountable, human and agent, for which piece of this work?
 
 The split between human and agent isn't ideology. It's a function of two questions. Does the work require judgment a model can't supply from the context you can give it? If yes, the work stays human. Does the work follow rules an agent can apply consistently if the rules are documented? If yes, the work moves to an agent under a human supervisor. Most workflows have both, which is why Design is a chart and not a binary.
 
 After Design, every accountability has one named owner. Every handoff has a defined trigger. Every agent has a human supervisor. The team can point at the chart and say which work runs in parallel and which work runs in sequence, where the human judgment lives, and where the agent operates inside guardrails. The operating model for this constraint is on paper. Build now has something to execute against.
 
-### *Build*. The system, working.
+### Build — ship the *system* that works
 
-Build is fast when Design is locked. The slowness teams blame on building is almost always Design work bleeding into Build because it wasn't finished upstream. When the spec is clear, the integrations are scoped, and the guardrails are written, Build is what the modern tooling is good at. The tools have caught up. A well-designed Sprint often produces a workflow a non-technical operator can build, with a freelance developer brought in for the integrations.
+Build is fast when Design is locked. The slowness teams blame on building is almost always Design work bleeding into Build because it wasn't finished upstream. When the spec is clear, the integrations are scoped, and the guardrails are written, Build is what the modern tooling is good at. The tools have caught up. A well-designed Sprint often produces a workflow a non-technical operator can build, with a freelance developer brought in for the integrations. Tools like n8n connect your software without custom code, so you don't need in-house technical staff to run a Sprint; a freelance n8n developer handles the integrations.
 
-Build produces a **Build Spec** that walks the system end to end and a **Guardrails Checklist** that defines what the agent can and can't do, when a human gets pulled in, and what gets logged. The output is the working machine: agent prompts, integrations to your CRM and your operations systems, a knowledge layer connected to the documents Source surfaced, and observability so the team can see what the agent did and why. Teams that skip Design and start at Build fail.
+Build produces a **Build Spec** that walks the system end to end and a **Guardrails Checklist** that defines what the agent can and can't do, when a human gets pulled in, and what gets logged. For Meridian, the Build Spec connected HubSpot → JobBOSS → Claude through an n8n workflow, and the Guardrails Checklist locked the rule that no quote ships without Elena's approval until the workflow had been calibrated for sixty days.
+
+The output is the working machine: agent prompts, integrations to your CRM and your operations systems, a knowledge layer connected to the documents Source surfaced, and observability so the team can see what the agent did and why.
+
+Teams that skip Design and start at Build fail.
 
 Build also chooses a path. Off-the-shelf when an existing product already does what the Design specifies. Low-code when the workflow needs custom integration but not custom logic. Hand-built when the logic, the data, or the guardrails are specific enough that nothing off-the-shelf will fit. The Sprint picks one. A Build Spec that hedges between two paths produces a build that does neither well.
 
 After Build, a working system handles real work end to end. You can run it against the constraint Signal named, scoped to the design Design specified, with the data Source mapped. The system isn't yet inside your team's hands. That's the next stage.
 
-### *Deliver*. The handoff into how work actually gets done.
+### Deliver — land the *system* in how work actually gets done
 
-Deploying isn't delivering. A tool sitting in a tab nobody opens is deployed but not delivered. Delivery is when the work people actually do has changed because of the new system. The gap between the two is where most AI projects die. The cause is usually that nobody designed the handoff from the technical build to the human team whose process is about to change.
+Deploying isn't the same as delivering. A tool sitting in a tab nobody opens is deployed but not delivered. Delivery is when the work people actually do has changed because of the new system. Most AI projects fail at this gap. The cause is usually that nobody designed the handoff from the technical build to the human team whose process is about to change.
 
-Deliver produces three things. A **Deploy Readiness Audit** confirms the integrations work, the data flows, and the guardrails are honored under load. A **per-role runbook** tells each person whose work touches the new system what they do now, what's different from before, and what to escalate. A **Delivery Test** measures the workflow against the cost Signal quantified. Quote turnaround drops from 3.8 days to under eight hours, or it doesn't. The test is the proof.
+Deliver produces three things. A **Deploy Readiness Audit** confirms the integrations work, the data flows, and the guardrails are honored under load. A **per-role runbook** tells each person whose work touches the new system what they do now, what's different from before, and what to escalate. A **Delivery Test** measures the workflow against the cost Signal quantified. For Meridian, the Delivery Test was thirty quotes through the new workflow in thirty days, with the runbook telling Ty exactly what to initiate, what to validate, and when to pull Elena in. Quote turnaround drops from 3.8 days to under eight hours, or it doesn't. The test is the proof.
 
 The per-role runbook matters more than the technical audit. The audit confirms the machine works. The runbook confirms the humans whose work it changes know what to do differently on Monday morning. A workflow that passes the audit and fails the runbook is a workflow that gets used for two weeks and then quietly abandoned. Deliver is finished when each role's runbook has been walked, the Delivery Test has been run, and the people running the new process can do so without the build team in the room.
 
 After Deliver, the work has changed. Not the slide deck about the work, not the dashboard view of the work, the work itself. The team's day looks different. The handoffs are different. The numbers on the Constraint Statement have moved against the target the Sprint set. The Sprint is finished when the test passes and the change holds.
 
-### *Compound*. What the next Sprint inherits.
+### Compound — turn the Sprint into *infrastructure*
 
 Sprints stop being one-offs when the company starts to compound. The investment in this Sprint has to pay forward, or the next Sprint starts from scratch and the work never gets faster. Compound is the discipline of capturing what the Sprint produced, ranking what comes next, and putting the infrastructure in place so the next Sprint runs on top of this one instead of beside it.
 
-Compound produces a **Sprint Outcome Record** that documents what shipped, what changed in the operating model, what the Sprint cost, and what it returned. It updates the **Hybrid Org Today**, the running picture of how the company is structured across humans and agents right now. And it re-ranks the constraint queue: the next Yellow, the next Signal target, the next Sprint's leadership sponsor. The Compound Bench, the agent team that supports the next Sprint's design work, inherits everything this Sprint built.
+Compound produces a **Sprint Outcome Record** that documents what shipped, what changed in the operating model, what the Sprint cost, and what it returned. It updates the **Hybrid Org Today**, the running picture of how the company is structured across humans and agents right now. And it re-ranks the constraint queue: the next Yellow, the next Signal target, the next Sprint's leadership sponsor. For Meridian, the Sprint Outcome Record carried the quoting workflow into Q4 with scheduling (the next Elena-dependent function) re-ranked to the top of the queue. The Compound Bench (the agent team that supports the next Sprint's design work) inherits everything this Sprint built.
 
 What carries forward isn't just documents. The next Sprint can query the knowledge base instead of rebuilding it. The team has practiced the design discipline once and can apply it faster. There's a roster of who runs Sprints well and who needs more coaching. The second Sprint costs less than the first because the company has already paid for the muscle. The third costs less than the second.
 
 After Compound, the company learns. The Knowledge Map gets richer. The design discipline gets faster. The team's judgment about which constraints are worth a Sprint and which are still symptoms gets sharper. The Sprint stops being a project and becomes part of how the company runs.
 
-## *Diagnose* and *Execute & Compound*.
+## Diagnose before you *execute* and compound
 
-The Sequence splits into two groups. The first group is **Diagnose**: Signal and Source. The second group is **Execute & Compound**: Design, Build, Deliver, Compound. Two stages, then four. Diagnose is the work most companies skip, because the inputs are abstract and the output is a piece of paper. Execute & Compound is the work most companies start at, because building feels like progress. A Sprint that stalls in Build almost never has a Build problem. It has a Diagnose problem that surfaced late. When that happens, go back to Signal. An undisclosed assumption made it into execution, and Signal is where you find it.
+The Sequence splits into two groups. The first group is **Diagnose**: Signal and Source. The second group is **Execute & Compound**: Design, Build, Deliver, Compound. Two stages, then four. Diagnose is harder to commit to: the inputs are abstract and the output is a piece of paper. Execute & Compound is where building starts, where progress is visible.
 
 In a physical process, when something breaks you can usually see it. In an information process, a misclassified taxonomy in a knowledge base can cause an agent to query the wrong data and hallucinate answers, and that stays invisible until the damage is done. Diagnose is where you find those problems before they reach execution. Source explains the digital source of what Signal identifies. The two stages are separate so each can be done well, and connected because most constraints worth a Sprint sit on top of an information problem.
 
@@ -118,7 +116,7 @@ In a physical process, when something breaks you can usually see it. In an infor
 When a Sprint stalls in Build, don't troubleshoot the build. Go back to Signal, Source, and Design. The problem almost always lives in one of them, not in the implementation.
 :::
 
-## The *Sprint Planning Canvas*.
+## The Sprint Planning Canvas holds *eight* questions in one page
 
 You sketch a Sprint before you run one. The Sprint Planning Canvas is a one-page artifact that names the constraint, captures your first-pass answer to each stage of the Sequence, identifies the team, and locks the review date. It's intentionally incomplete. The point is to stop staring at a blank page and start with something the Sequence can work against.
 
@@ -156,13 +154,11 @@ Here is the blank Canvas. Copy this table into a doc, a spreadsheet, or a whiteb
 
 **Review:** _Quarterly operating session date and attendees. Calendar invite sent before Signal begins._
 
-The eight questions are the spine. Each subsequent chapter in this book takes one or two of them and walks you through how to answer it for your company. By the time you've finished the stage chapters, the Canvas you start with today should be filled in with what you actually built.
-
 A Sprint is bounded by scope, not by a fixed calendar. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. One constraint, one documented outcome, one Sprint. Duration is set in Design and depends on the constraint. Some Sprints close in days; some run for weeks; the longest stretch across a quarter. What doesn't stretch is the scope. The Canvas locks the constraint at the top, and the constraint is the boundary the rest of the work runs against.
 
 The Canvas also sits on top of three operating fixtures that don't change Sprint to Sprint. **Leadership sponsor**: the person accountable for the outcome, not the person doing the work. **Human Orchestrator**: the person who runs the Sprint day-to-day, owns the cadence, and holds the handoffs together. **Review date**: the quarterly operating session where the Sprint's outcome gets measured. A Sprint that has no review date has no deadline. Book the review before you start Signal. The Sprint is real when the review is on the calendar.
 
-### What a populated Canvas looks like.
+### A populated Canvas *looks* like this
 
 Remember Meridian Manufacturing? \$7.2M revenue, twenty-seven employees, custom metal fabrication in Grand Rapids, running EOS. Mark Ellison is the CEO and visionary; Elena Ruiz is the VP of Operations and integrator, and the only person in the company who can produce a complete quote. Quotes take three to five business days. Competitors turn them in twenty-four to forty-eight hours. Meridian is losing bids not on price but on speed, and the bottleneck is Elena.
 
@@ -189,11 +185,11 @@ This is what Meridian's Sprint Planning Canvas looked like at the start of their
 
 {{< excalidraw ch03-Sprint-planning-canvas "Sprint Planning Canvas — Meridian Manufacturing's populated example with all eight questions answered." >}}
 
-That Canvas took thirty minutes to fill. It's wrong in at least two places. The team knows which ones, and Signal will correct them. The point was never to be right on the first pass. The point was to put something on the page that the Sequence can sharpen.
+That Canvas took thirty minutes and it's already wrong in two places. Signal will fix that. The point was to put something on the page that the Sequence can work against.
 
 The format doesn't matter much. A spreadsheet works, a Word doc works, a literal one-pager works. What matters is that all eight answers sit in one place, the constraint sits at the top, the three operating fixtures (sponsor, Orchestrator, review date) are named, and the Canvas is the artifact the team comes back to at every quarterly review.
 
-### Fill in your own.
+### Fill in *your* own
 
 :::{.callout-note}
 ## Action Step
@@ -206,13 +202,13 @@ You won't have a confident answer to every question yet. That's expected. The ch
 
 The eight-question Canvas is the artifact the rest of the book is organized around. Carry it forward.
 
-## One Sprint, then *another*.
+## Run one Sprint. Then *another*.
 
-The Framework is learned by running it. Reading about the six stages tells you the order. Running one Sprint on one real constraint in your own company is the only way to understand why the order matters. The stages aren't interchangeable steps in a checklist. Each one produces something the next one can't work without, and that dependency only becomes real when you hit it.
+The Framework is learned by running it. The stages aren't interchangeable steps in a checklist; each one produces something the next one can't work without, and that dependency only becomes real when you hit it on one real constraint in your own company.
 
 The Rhythm is what turns that one Sprint into a compounding business. Quarterly, you run another one. The Hybrid Accountability Chart gains new entries. The Knowledge Map gets richer. The team's design judgment improves. Each Sprint gets cheaper and faster than the one before it, because the infrastructure each Sprint leaves behind accelerates the next. The first Sprint is where the Framework stops being something you read about and starts being something your company can do. Every Sprint after that is what makes the change permanent.
 
-## Begin at *Signal*.
+## Begin at Signal
 
 The Sequence is the workflow. The next chapter is the first stage. Every Sprint begins at Signal, with one constraint named, quantified, and validated before anything else moves.
 
