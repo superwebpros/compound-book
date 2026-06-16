@@ -87,6 +87,17 @@ Meridian's first pass at this listed the quoting bottleneck under CRM, the prici
 | Document store |  |
 | Other |  |
 
+*Meridian's completed version, for reference:*
+
+| System | Where a person does work the system should be doing |
+|---|---|
+| CRM (HubSpot) | Elena manually drafts every custom quote; the bottleneck costs ~$558K/year in delayed closes |
+| Accounting / ERP (NetSuite) | Pricing exceptions sit on Elena's desktop — no one else can approve them |
+| Project tool (Asana) | Shop-floor handoff still happens by phone call; no automatic task is created when a job is won |
+| Communications | — |
+| Document store | — |
+| Other | — |
+
 This list is Sprint 1's first input. The Signal chapter prices your top item, and the entries you write here become the raw material for the Sprint Planning Canvas, the master worksheet you'll build up across the book and carry into your first Design Brief. Keep the list. You'll use it within a chapter or two.
 
 ## Reflect on your *operation*.

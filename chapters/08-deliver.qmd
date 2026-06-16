@@ -53,6 +53,8 @@ Before your team flips the switch, you run a pre-flight check. Four binary gates
 
 If the result is not 4/4, you're not ready to deploy. Every "Fail" is a task. Assign it, complete it, re-run the audit.
 
+Gate 4 names the Human Orchestrator — the person accountable for reviewing, course-correcting, and closing the loop on what the agent team produces, sprint by sprint (not a chatbot supervisor, but an operational owner with a weekly cadence; covered in depth in the Design chapter). If you run EOS, think of it as the Integrator role extended to cover the agent team — the scope is different (Sprint-level, not company-level), but the accountability pattern is the same.
+
 The Audit is a check on prior work, not new authoring. Every question points to something that should already exist: a trained person, a documented path, a tested input, a scheduled review. If any answer is missing, that item blocks the deploy. Failed deploys trace back to a question nobody asked at this gate.
 
 ### Meridian Manufacturing.
@@ -61,7 +63,7 @@ At Meridian Manufacturing, Elena and Dave completed hands-on training with the t
 
 :::{.callout-note}
 ## Action Step
-Pull up your Hybrid Accountability Chart from Design. List every person whose daily work changes because of this Sprint. For each one, confirm they've completed hands-on training — not a meeting, not an email. If anyone hasn't, that's your first task before deploy.
+Pull up your Hybrid Accountability Chart from Design — the map of who owns what, extended to include the agent roles alongside the human ones (covered in the Design chapter). If you run EOS, this extends your Accountability Chart: same structure, with agent roles added to the seats. List every person whose daily work changes because of this Sprint. For each one, confirm they've completed hands-on training — not a meeting, not an email. If anyone hasn't, that's your first task before deploy.
 :::
 
 ## The *per-role runbook*.
@@ -168,6 +170,16 @@ The structure is straightforward. Pull out your Signal statement — the sentenc
 | **Result after Sprint** | [what actually happened — same metric, same unit] |
 | **Delta** | [the change — quantified] |
 | **Outcome in one sentence** | [what this Sprint produced, stated plainly] |
+
+*Meridian example — what "done" looks like:*
+
+| Field | Entry |
+|-------|-------|
+| **Signal statement** | Elena Ruiz is the sole quoting bottleneck. Every quote runs through her — $558K/year in lost revenue, misallocated time, and shop floor underutilization. |
+| **Cost at start** | 3.8-day average turnaround; ~15 hrs/week of Elena's time; capacity capped at 8–10 quotes/week. |
+| **Result after Sprint** | 4.2-hour average turnaround on standard work; ~5 hrs/week of Elena's time; 18–22 quotes/week. |
+| **Delta** | Turnaround reduced 89%. Elena recovered 10 hrs/week. Quote volume doubled. First-month revenue recovery: $47K. |
+| **Outcome in one sentence** | Three-agent quoting pipeline removed Elena as the bottleneck on standard work, cut turnaround from 3.8 days to 4.2 hours, and produced $47K in new revenue in month one. |
 
 The five-row table captures the operational result — the cost Signal named against the result Deliver produced. That's one of two numbers the Sprint outcome requires. The second is adoption rate: what percentage of the affected roles are using the new workflow as designed, not the old workflow out of habit. A workflow that works technically but is adopted by 60% of the team is producing 40% less value than the Sprint was designed to generate.
 

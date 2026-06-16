@@ -50,7 +50,7 @@ Doing that step honestly, without rushing to a solution, is what separates the c
 
 If you've read this far and done the thinking the chapters asked of you, you have a sense of where your real constraint lives. You may have already named it on the margin of a page. The job now is to sharpen it.
 
-Three questions. This is your minimum viable Signal — the seed that the full Signal process from the Signal chapter will refine.
+Three questions. This is your minimum viable Signal — the seed that the full Signal process from the Signal chapter will refine. (If you run EOS, think of Signal as the rigorous root-cause layer underneath IDS: instead of surfacing and solving issues week to week, Signal traces the structural constraint that keeps generating them.)
 
 **1. What is the one operational problem costing you the most money or time right now?**
 Write one sentence describing a specific, observable problem.
@@ -80,6 +80,8 @@ The most common failure on question one is answering with a category instead of 
 
 You need three roles filled. The names land directly on your Hybrid Org Today: one becomes the Human Orchestrator on the Active Sprint, two or three populate the supervisor column of the Hybrid Accountability Chart.
 
+The Human Orchestrator is the person who owns the constraint outcome and supervises the agent team — not a technical role, not a new hire, but the operator who already owns that workflow and can judge whether the agent's output is right (more on this role in the Designing the System chapter). If you run EOS, think of the Integrator role extended to a team that includes agents — the Orchestrator runs the Sprint the way the Integrator runs the company, but the scope is one workflow, not the whole org. The Hybrid Accountability Chart (if you run EOS: your Accountability Chart extended to include agent rows alongside the human ones) is where that role lands on paper.
+
 **Who owns the workflow where the constraint lives?** That person is your Human Orchestrator candidate. They don't need to be technical. They need to own the outcome.
 
 **Who are the two or three people closest to the problem daily?** They're in the room for Signal and Source. They see what the reports don't show.
@@ -91,6 +93,8 @@ You need three roles filled. The names land directly on your Hybrid Org Today: o
 | Human Orchestrator (workflow owner) | |
 | Daily-proximate supervisors (2–3) | |
 | Builder (internal / external / Compound) | |
+
+Meridian's roster looked like this: Elena Ruiz (VP of Operations) as the Human Orchestrator — she owned quoting, knew the exceptions, and could judge whether a draft quote was right. Ty Banfield (Sales Lead) and Dave Kowalski (Senior Design Engineer) as the daily-proximate supervisors — Ty saw the quotes the way customers saw them; Dave knew which specs the agent would struggle with. A freelance n8n developer (three days of API work) as the builder. No new hires. No internal engineering team. That was the full roster.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -164,7 +168,7 @@ Before the plan commits, two questions catch the gaps that turn into wasted quar
 Signal traces the symptom to the underlying constraint; if the constraint you've named is the most visible problem rather than the structural cause underneath it, the Sprint will solve the wrong thing.
 
 **2. Does the named Human Orchestrator pass the *Right Seat Evaluation*?**
-Run the three-criteria *Right Seat Evaluation* from the Designing the System chapter (*Sees It*, *Wants It*, *Suited for It*) against the person you've named; if they can't evaluate the agent's output, won't own the outcome, or lack the authority to override when it drifts, name someone else before the Sprint starts.
+Run the three-criteria *Right Seat Evaluation* from the Designing the System chapter (*Sees It*, *Wants It*, *Suited for It*) against the person you've named; if they can't evaluate the agent's output, won't own the outcome, or lack the authority to override when it drifts, name someone else before the Sprint starts. (If you run EOS, this is the GWC test — Get it, Want it, Capacity to do it — applied to the agent supervisor seat rather than a human role.)
 
 If you can't answer both, the plan isn't yet ready to ship.
 

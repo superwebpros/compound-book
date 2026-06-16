@@ -15,7 +15,7 @@ Here is the specific moment I can point to. We had a project coordinator who was
 
 We stopped before we did that. Not because we had some principled objection to hiring. Because by that point we had run enough Sprints that the first question had changed. Not *who do we hire?* but *what does Signal say about this?*
 
-So we ran Signal. What is the actual constraint? What does this role touch? We mapped the information sources: the CRM fields she used, the project management cadence she owned, the client follow-up patterns she was responsible for. We asked which parts of the work required human judgment and which parts were high-volume and structured. Then we designed a workflow without assuming a human had to sit in every seat. We built a set of AI agents that could handle the bulk of what she was doing: routing, reporting, and follow-up cadence. AI agents hold a goal, run a sequence of steps toward it, and adjust on their own, unlike a chatbot that answers one question at a time. We deployed.
+So we ran Signal. What is the actual constraint? What does this role touch? We mapped the information sources: the CRM fields she used, the project management cadence she owned, the client follow-up patterns she was responsible for. We asked which parts of the work required human judgment and which parts were high-volume and structured. Then we designed a workflow without assuming a human had to sit in every seat. We built a set of AI agents that could handle the bulk of what she was doing: routing, reporting, and follow-up cadence. AI agents hold a goal, run a sequence of steps toward it, and adjust on their own, unlike a chatbot that answers one question at a time (how these agents are structured and what they cost to build is in the Build and Source chapters). We deployed.
 
 The hire never got posted. We did let her go. The work got absorbed into the organization without a crisis, and the team didn't miss a beat.
 
@@ -37,9 +37,9 @@ The Rhythm has a meeting. One to two hours, your leadership team, every quarter,
 
 **Step 2: Update the Signal Backlog.** Pull the re-ranked backlog from the Compound phase. Review each candidate: still relevant? Cost changed? New information? Add any new constraints that emerged during the quarter. Remove any that were resolved as side effects. What has shifted in priority since last quarter? The Signal Backlog is the running inventory of your company's most expensive operational problems, ranked. It is the input to every quarterly conversation.
 
-**Step 3: Commit the next Sprint.** Pick the top constraint from the updated backlog. Name the Human Orchestrator. Confirm the team has the resources — people, tools, budget. Set the Sprint start date. One validated constraint. One constraint owner. A specific six-to-eight-week window. The one-page Constraint Statement from Signal is the artifact. Your team leaves the session knowing exactly what the next Sprint is about and who owns it.
+**Step 3: Commit the next Sprint.** Pick the top constraint from the updated backlog. Name the Human Orchestrator (the person on your leadership team who owns the Sprint's output and supervises the agent team doing the work — the Design chapter covers how this role is assigned; if you run EOS, think of this as the Integrator role extended to the Sprint level, not the whole company). Confirm the team has the resources — people, tools, budget. Set the Sprint start date. One validated constraint. One constraint owner. A specific six-to-eight-week window. The one-page Constraint Statement from Signal is the artifact. Your team leaves the session knowing exactly what the next Sprint is about and who owns it.
 
-**Step 4: Update the Hybrid Accountability Chart.** Make permanent any HAC rows from the completed Sprint that are staying. Remove or revise any that didn't work. Note which roles have shifted since last quarter. If an agent team's scope changed, if the Human Orchestrator's handoffs moved — record it. The chart is a living document, not a workshop output from eighteen months ago. This becomes the new Hybrid Org Today baseline.
+**Step 4: Update the Hybrid Accountability Chart.** (If you run EOS, the HAC extends your existing Accountability Chart — same structure, with agent teams and their human supervisors added as new rows.) Make permanent any HAC rows from the completed Sprint that are staying. Remove or revise any that didn't work. Note which roles have shifted since last quarter. If an agent team's scope changed, if the Human Orchestrator's handoffs moved — record it. The chart is a living document, not a workshop output from eighteen months ago. This becomes the new Hybrid Org Today baseline.
 
 That is the entire session. The agenda is stable. The inputs are the Signal Backlog and the previous Sprint's scorecard. The output is a commitment and an updated chart.
 
@@ -126,6 +126,17 @@ Each Sprint produces a delta: the measurable difference between what the constra
 | Q2 | | | | | |
 | Q3 | | | | | |
 | Q4 | | | | | |
+
+Here is what a filled scorecard looks like after two completed Sprints. Meridian Manufacturing (a $7.2M custom fabrication shop — the running example from the Signal chapter) ran Signal before every requisition:
+
+| Quarter | Constraint Solved | Cost Before | Cost After | Delta | Cumulative Impact |
+|---|---|---|---|---|---|
+| Q3 2026 | Quoting bottleneck: Elena sole quoter, 3.8-day turnaround | $558K/yr | $112K/yr | $446K/yr | $446K/yr |
+| Q4 2026 | CRM-ERP sync: HubSpot and JobBOSS conflicting records | $74K/yr | $8K/yr | $66K/yr | $512K/yr |
+| Q1 2027 | Customer onboarding: 11-day manual handoff (in flight) | — | — | — | — |
+| Q2 2027 | | | | | |
+
+The cumulative column is the business case. Sprint 2 only existed because Sprint 1 freed Elena from quoting and made the data-sync problem visible.
 
 :::{.callout-note}
 ## Action Step

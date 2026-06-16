@@ -58,6 +58,16 @@ Use your most recent company-wide system rollout as the anchor: your ERP, CRM, P
 | Today | $______ | ______ | $______ |
 | Next year, +20% revenue, no new hires | $______ | ______ | $______ |
 
+*Meridian example:* When Elena's team filled this in, the numbers looked like this:
+
+| Snapshot | Revenue | Employees | Revenue per Employee |
+|---|---|---|---|
+| At last major system rollout (ERP, 4 years ago) | $5.8M | 24 | $242K |
+| Today | $7.2M | 27 | $267K |
+| Next year, +20% revenue, no new hires | $8.6M | 27 | $319K |
+
+The ERP rollout moved revenue per employee by $25K over four years. The quoting bottleneck alone — Elena's $558K in delayed and lost bids — represents more than two years of that prior gain sitting idle in a single workflow.
+
 Every prior technology wave bent this number. Spreadsheets bent it. CRM bent it. ERP bent it. The reason your company invested in any of them was the same: to move revenue per employee in the right direction. Most of them worked. The companies that ran them well got more output from the same staff.
 
 AI can move that number more dramatically. Prior waves made a human faster at a category of work. AI can take the category. Triaging inbound, drafting recurring documents, reconciling records, summarizing what was said — categories of work that previously required a person are now categories an AI can hold. That's the difference. Not faster humans; fewer human-hours required for whole categories of output.

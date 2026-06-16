@@ -21,7 +21,7 @@ The junior coordinator listing was never posted. One row in the chart replaced a
 
 That outcome was Work Deconstruction. Here is the method that produced it.
 
-Together with the previous chapter, this is the second half of the Design row on your Sprint Planning Canvas, and the work that locks in your Human Orchestrator.
+Together with the previous chapter, this is the second half of the Design row on your Sprint Planning Canvas, and the work that locks in your Human Orchestrator (the person who owns the agent team's output and holds final authority over every escalation — more in the Co-Operating Model chapter; if you run EOS, think of this as the Integrator role extended to run the agent team, though the scope is Sprint-level, not company-level).
 
 ## Deconstruct the work task by *task*.
 
@@ -53,7 +53,7 @@ TML doesn't tell you which column is right for every task. For each one, it make
 List every task in the constraint workflow. Sort each one into the three TML categories — Task, Management, Leadership. Count the tasks in each bucket. If more than half land in **Leadership (Human Judgment Required)**, challenge each one: is this genuinely judgment, or is it judgment because nobody has written down the rules? Do it on paper or in a shared doc.
 :::
 
-Once the deconstruction is done, the results flow directly into the *Hybrid Accountability Chart* you built in the previous chapter. Each classified task maps to a chart entry — the function, the agent team, the supervisor, the autonomy level. Work Deconstruction is the thinking. The chart entries are what makes the thinking durable and actionable for Build.
+Once the deconstruction is done, the results flow directly into the *Hybrid Accountability Chart* you built in the previous chapter (if you run EOS, the Hybrid Accountability Chart extends your existing Accountability Chart — it adds agent teams and their human supervisors alongside your people). Each classified task maps to a chart entry — the function, the agent team, the supervisor, the autonomy level. Work Deconstruction is the thinking. The chart entries are what makes the thinking durable and actionable for Build.
 
 ### Meridian's quoting workflow, fully *deconstructed*.
 
@@ -135,6 +135,18 @@ Here is the blank seven-section template. Fill it in for the Sprint you're runni
 | **6. Constraints and guardrails** | _(data access, action permissions, escalation paths, quality cadence, kill switch)_ |
 | **7. V1 artifact description** | _(what the first working version produces: interface, document, pipeline, dashboard)_ |
 
+Here's what Meridian's filled-in Design Brief looked like for the quoting Sprint:
+
+| Section | Meridian — Quoting Sprint |
+|---|---|
+| **1. Workflow summary** | Trigger: inbound RFQ email. Steps: auto-log to HubSpot → Quote Research Agent pulls customer history → Quote Pricing Agent assembles material and labor costs → Quote Assembly Agent produces draft PDF → Elena reviews and approves → Ty delivers to customer. Seven steps, four handoff crossings. |
+| **2. Stakeholders** | Human Orchestrator: Elena Ruiz (VP Ops). Role changes: Elena moves from building quotes to reviewing drafts. Downstream consumer: Ty Banfield (Sales Lead). Approver: Elena on every quote. |
+| **3. Systems** | HubSpot CRM (customer records, RFQ intake, quote delivery queue). JobBOSS ERP (material pricing, lead times). Customer Notes.xlsx (112 pricing exception rules). Google Workspace (standard quote template). |
+| **4. Data requirements** | Customer history: HubSpot, structured records, complete for all active accounts. Material pricing: JobBOSS, updated nightly. Pricing exceptions: validated Excel file, 112 rows, loaded as standing context. If exceptions file is missing or stale: escalate to Elena before running. |
+| **5. Success criteria** | Quote turnaround from 3 days to same-day. Elena's quoting hours from 15/week to under 3. Revenue recovered from delayed quotes: target $558K annualized. |
+| **6. Constraints and guardrails** | Agents read HubSpot and JobBOSS; no write access except draft quote record. No external communications. Escalate if pricing confidence below 60% or if any exception rule is ambiguous. Kill switch: Ty or Elena can halt the workflow from HubSpot with a single flag. Quality review: Elena audits weekly aggregate accuracy. |
+| **7. V1 artifact description** | A draft PDF quote in Meridian's standard format, placed in Elena's HubSpot review queue within 2 hours of RFQ receipt. Elena approves or marks for revision before the quote leaves the building. |
+
 ### Specify every agent with a six-field *mini-spec*.
 
 The Design Brief's hardest job is specifying each agent precisely enough that Build can execute without guessing. For every agent named in your Hybrid Accountability Chart, write a mini-spec covering six fields. These six come from the agent-anatomy concept introduced in the Co-Operating Model chapter: system prompt, tools, context sources, memory rules, judgment and escalation rules, and oversight load.
@@ -181,7 +193,7 @@ Elena Ruiz's quoting team has three agents. Here's the mini-spec for the Quote A
 | Field | Detail |
 |---|---|
 | **System prompt** | Assemble draft PDF quotes in Meridian's standard format using data provided by the Quote Pricing Agent. Do not calculate, modify, or estimate any pricing. Do not contact customers, suppliers, or any external party. Do not access any system not listed in the tools field. All output is a draft until Elena Ruiz approves. If the Pricing Agent output is incomplete, flag it and stop. |
-| **Tools** | HubSpot CRM (read: customer contact information, RFQ reference, delivery queue; write: draft quote record only). Google Workspace (write: populate standard quote template). n8n workflow API (output: place completed draft in Elena's review queue). No other access. |
+| **Tools** | HubSpot CRM (read: customer contact information, RFQ reference, delivery queue; write: draft quote record only). Google Workspace (write: populate standard quote template). n8n workflow API (n8n is a no-code automation tool that connects systems and triggers actions between them — more in the Build chapter; output: place completed draft in Elena's review queue). No other access. |
 | **Context sources** | Standard rate card (Standing context, loaded on every run). Meridian quote template (Standing context, format reference). Customer name and contact from HubSpot record (Retrieved per-run). |
 | **Memory rules** | No session-to-session memory. Each assembly run is triggered fresh from the Pricing Agent's output for that RFQ. The agent does not reference prior quote drafts. |
 | **Judgment and escalation rules** | Escalate to Elena if the Pricing Agent output contains any field marked "incomplete" or "manual pricing required." Refuse to generate a quote if the pricing confidence score is below 60%. Refuse to place anything in the customer-delivery queue. Output goes to Elena's review queue only. |

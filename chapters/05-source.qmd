@@ -140,7 +140,7 @@ Brand guidelines, pricing rules, process SOPs, regulatory requirements: durable.
 
 ### Sort by AI tier (1, 2, 3, or Not AI-tier)
 
-For each source on the map, mark which tier it falls into. The tier tells Design what's reachable today, what's reachable with extraction work, and what stays human.
+For each source on the map, mark which tier it falls into. The tier tells Design what's reachable today, what's reachable with extraction work, and what stays human. (Tier 1 sources are "API-accessible" — an API, or application programming interface, is how one software system talks to another; more in the "How systems talk to each other" section below.)
 
 | Tier | What AI can do | Example |
 |---|---|---|
@@ -175,7 +175,7 @@ Model context protocols are the new concept here, and the most important one for
 
 ### Connectors — pre-built integrations
 
-Pre-built integrations between specific systems. Zapier, Make, n8n: these platforms offer thousands of connectors that link one system to another without writing code. Connectors are useful. They're also the most common thing companies buy before doing Source work, which means they've wired systems together without knowing whether those systems hold the right data in the first place.
+Pre-built integrations between specific systems. Zapier, Make, n8n (n8n is an open-source workflow automation platform — it lets you connect apps and automate multi-step processes without custom code): these platforms offer thousands of connectors that link one system to another without writing code. Connectors are useful. They're also the most common thing companies buy before doing Source work, which means they've wired systems together without knowing whether those systems hold the right data in the first place.
 
 :::{.callout-note}
 ## A note on terminology
@@ -222,7 +222,7 @@ Most companies don't have anyone whose job this is. The shared drive is owned by
 
 We use the working term *knowledge manager* for it. The job is to curate the institutional knowledge the rest of the company runs on: deciding what gets captured, what gets retired, what gets restructured, what gets connected to which agent. They're the person accountable for whether the knowledge base reflects how the business actually operates today, and for catching the moment it stops.
 
-The Human Orchestrator (introduced in the Design chapters) sets the goals for an agent team inside a single Sprint and reviews that team at the goal level. The knowledge manager works underneath every Sprint, keeping the inputs each Sprint depends on clean, current, and reachable. A Human Orchestrator running a Sprint against a knowledge base nobody has curated will spend most of the Sprint debugging the data. Orchestrator outcomes depend on the quality of the knowledge the knowledge manager maintains.
+The Human Orchestrator (the person who owns the agent team's goal and reviews its output inside a Sprint — introduced in the Designing the System chapter; if you run EOS, think of this as the Integrator role extended to run the agent team, though the scope is Sprint-level rather than company-level) sets the goals for an agent team inside a single Sprint and reviews that team at the goal level. The knowledge manager works underneath every Sprint, keeping the inputs each Sprint depends on clean, current, and reachable. A Human Orchestrator running a Sprint against a knowledge base nobody has curated will spend most of the Sprint debugging the data. Orchestrator outcomes depend on the quality of the knowledge the knowledge manager maintains.
 
 Most companies don't have this role today. They will. The ones that introduce it early run their Sprints against knowledge they can trust; the ones that don't run their Sprints against whatever was in the drive when somebody asked.
 

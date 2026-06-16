@@ -5,7 +5,7 @@
 Build is the stage where the locked Design Brief becomes a working, deployed system. It produces one thing: a deployed solution to the validated constraint, specified by an eight-section Build Spec, stress-tested against a seven-question Guardrails Checklist, and confirmed done only when it handles real work under real supervision. Once the spec and guardrails are locked, one question is left: where does the agent actually live? (An agent is an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs, not a chatbot answering one question at a time.) That's the environment decision, and it lives here, not in Design. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
 :::
 
-We built the project management agent team, the five agents that replaced our $24,000-a-year coordinator role. We locked the Hybrid Accountability Chart entry first, before the workflow steps: Sofia named as supervisor, every agent team starting AI-Assisted, her sign-off required on every output in Sprint one. Access boundaries, failure modes, and environment all followed from that accountability decision.
+We built the project management agent team, the five agents that replaced our $24,000-a-year coordinator role. We locked the Hybrid Accountability Chart entry first, before the workflow steps: Sofia named as supervisor, every agent team starting AI-Assisted, her sign-off required on every output in Sprint one. Access boundaries, failure modes, and environment all followed from that accountability decision. (The Hybrid Accountability Chart is the version of your org chart that adds agents alongside people and names a human supervisor for each one — if you run EOS, think of it as extending your existing Accountability Chart to include the agent team. More in the Designing the System chapter.)
 
 One agent handled client-facing task updates. It had read/write access to our project management system. Another agent compiled internal performance reports: billable hours, delivery velocity, resource allocation. That one could see data the first agent had no business touching. A third routed subcontractor communications. Different data, different stakes, different guardrails. Same Sprint. Five agents, five different access levels, every boundary decided in Design before Build executed any of them.
 
@@ -29,7 +29,7 @@ That bar is deliberately high. Build is done when work the team used to do is no
 
 ## Build stays scoped to the *designed* workflow.
 
-The agents we designed in the last chapter took on the bulk of the workflow the Human Orchestrator used to manage alone. This is where they got built, to the shape Design specified.
+The agents we designed in the last chapter took on the bulk of the workflow the Human Orchestrator used to manage alone. (The Human Orchestrator is the person who runs the agent team for a Sprint: assigns work, reviews outputs, escalates exceptions — not a chatbot, a human coordinator. If you run EOS, this is the closest thing to the Integrator role, extended to the agent team rather than the whole company. More in the Co-Operating Model chapter.) This is where they got built, to the shape Design specified.
 
 The single most common Build failure is scope drift: the moment the engineer or vendor or low-code builder looks at the spec and starts to "improve" it. Add a feature. Connect another system. Generalize the workflow into a platform. Use the constraint as an excuse to rebuild a tool the company should have replaced anyway.
 

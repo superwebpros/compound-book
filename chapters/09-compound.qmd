@@ -21,7 +21,7 @@ It happens again the next night. And the night after that.
 
 If I counted the times I left at 5:30 in the eighteen months before I started deploying these systems versus the six months after, the gap is embarrassing. The work was the same. The industry was the same. I was still moving fast. What changed is that the infrastructure I'd built was doing work in parallel. That work used to wait for me. It was queued behind my availability.
 
-Each Sprint I ran built on the last. The agents knew the company's conventions because they'd learned them in an earlier Sprint. The tools knew the formats because we'd built the templates. The Source maps from the first Sprint were sitting inside the system, accelerating the fifth. None of that had to be rebuilt. It just ran.
+Each Sprint I ran built on the last. The agents (software that hold a goal and run a sequence of steps on their own — not chatbots you prompt one question at a time; covered in depth in the Build chapter) knew the company's conventions because they'd learned them in an earlier Sprint. The tools knew the formats because we'd built the templates. The Source maps from the first Sprint were sitting inside the system, accelerating the fifth. None of that had to be rebuilt. It just ran.
 
 I could stop because it ran.
 
@@ -33,7 +33,7 @@ The retrospective looks at the design, not the people. The chart entries, the wo
 
 An updated *Signal Backlog* — the running, prioritized list of validated constraints your organization is working through. Signal generated the constraint that drove this Sprint; the Sprint generated new information about the rest of the backlog. Compound is where you re-rank the backlog against what you now know.
 
-An updated *Hybrid Accountability Chart*. The chart gained entries when Design produced accountabilities for this Sprint. By the end of Deliver those entries were real — named agent teams, named human supervisors, positions on the AI-assisted-to-automated spectrum, and documented outcomes against the constraint. In Compound, you make those entries permanent and review any neighboring rows for second-order effects from the Sprint that just completed.
+An updated *Hybrid Accountability Chart*. The chart gained entries when Design produced accountabilities for this Sprint. By the end of Deliver those entries were real — named agent teams, named human supervisors, positions on the AI-assisted-to-automated spectrum, and documented outcomes against the constraint. In Compound, you make those entries permanent and review any neighboring rows for second-order effects from the Sprint that just completed. (If you run EOS, the Hybrid Accountability Chart extends your Accountability Chart — it adds agent roles and their human supervisors alongside your existing seats.)
 
 A *Sprint Outcome Record*: one sentence that captures what changed. The constraint, the before-and-after cost, the specific result. "Standard quote turnaround reduced from 3.8 days to 4.2 hours. Elena's quoting time from 15 hrs/wk to 5. Throughput doubled." That record is filed in the Hybrid Org Today and becomes the first row of the Compounding Scorecard (the blank scorecard template sits in the Rhythm chapter; add this Sprint's row to it before the session ends). It is how you know, six Sprints from now, what each one produced.
 
@@ -45,7 +45,7 @@ If your Sprint ends and the backlog isn't re-ranked, the chart hasn't been updat
 
 :::{.callout-note}
 ## Action Step
-Before the Sprint enters Build, put the Compound session on the calendar. Include the Human Orchestrator and every supervisor who owned a Sprint accountability. If it's not scheduled before the Sprint ships, it won't happen after.
+Before the Sprint enters Build, put the Compound session on the calendar. Include the Human Orchestrator (the person who owns the Sprint design and runs the Compound session — covered in the Design chapter) and every supervisor who owned a Sprint accountability. If it's not scheduled before the Sprint ships, it won't happen after. (If you run EOS, the Human Orchestrator is the Integrator role extended to run the agent team — Sprint-level, not company-level.)
 :::
 
 ## Run the Sprint *Retrospective* honestly
@@ -77,7 +77,7 @@ Beyond the Sprint outcome you measured in Deliver, Compound asks three additiona
 
 *What capability exists now that didn't exist before?* A working quoting agent team that cut standard quote turnaround from 3.8 days to 4.2 hours. Elena's quoting time dropped from fifteen hours a week to five. Throughput doubled. That capability doesn't disappear when the Sprint ends. It's infrastructure — and it produced $47K in new revenue in the first month.
 
-*What is the next Sprint starting with that the first Sprint didn't have?* Three trained agents, 112 validated pricing rules, three years of indexed ERP job data, and a sales team that's been using the new intake workflow for six weeks. Sprint two starts from that baseline, not from zero.
+*What is the next Sprint starting with that the first Sprint didn't have?* Three trained agents, 112 validated pricing rules, three years of indexed ERP job data (organized and tagged so the agents can search and retrieve it quickly), and a sales team that's been using the new intake workflow for six weeks. Sprint two starts from that baseline, not from zero.
 
 If you can't answer these three questions, the Sprint delivered output but didn't compound.
 
@@ -111,6 +111,15 @@ After the retrospective, write the one design change on a card with four fields.
 | **Who** installs it | |
 | **How you'll know** it's working | |
 | **By date** it's installed | |
+
+*Meridian's card, Sprint one:*
+
+| Field | Fill in |
+|---|---|
+| **What** the change is | Add fabrication complexity indicators (bend count, tolerance class, weld count, surface finish) as matching criteria in the Quote Research Agent |
+| **Who** installs it | Dave Kowalski provides the classification framework; Mark configures it in the agent |
+| **How you'll know** it's working | Re-run the 8 quotes Elena corrected last month — at least 7 of 8 produce the correct comparable job match |
+| **By date** it's installed | Before Sprint two kickoff |
 :::
 
 ## Re-rank the Signal Backlog on what the *Sprint* taught you

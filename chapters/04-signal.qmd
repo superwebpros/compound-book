@@ -48,7 +48,7 @@ The quantified cost is non-negotiable. A constraint needs a number on it. "It's 
 
 ## You don't pass the gate by *declaring* you've passed it
 
-Signal is a gate. You don't move to Source until the constraint is locked — one validated Constraint Statement with a number on it.
+Signal is a gate. You don't move to Source until the constraint is locked — one validated Constraint Statement with a number on it. (If you run EOS, think of Signal as a deeper, root-cause version of IDS — the Issues list traced all the way to the structural constraint underneath, not just named and tabled.)
 
 The most common failure mode is political, not technical. Leadership teams can't agree on which constraint is the constraint, so they punt — they pick three, or they write something so abstract it can't be acted on. If your team can't pick one, you've learned something important before a single line of the Sprint has been built: the leadership team is unclear about priorities.
 
@@ -166,6 +166,16 @@ Capture them in a simple Issue Surfacer worksheet as you go. Tag each one with t
 | 2 |  |  |  |
 | 3 |  |  |  |
 | … |  |  |  |
+
+Here is how Meridian's team populated that worksheet at the start of their Signal session:
+
+| # | Candidate (what's broken or slow) | Pattern (recurring / workaround / sausage / turnover) | Owner |
+|---|---|---|---|
+| 1 | Every quote passes through Elena — 3–5 day turnaround vs. 24-hr standard | Recurring (surfaced every L10 for 6+ months) | Elena / Ops |
+| 2 | Job costing is reconciled manually after close — nobody knows margin in real time | Workaround (spreadsheet built when ERP reports proved unreliable) | Finance |
+| 3 | Workflow visibility: tasks created in PM system but never updated | Recurring + workaround (VP of Ops chases updates by phone) | VP of Ops |
+
+This is the artifact after the surface pass — no filtering, no debate. Meridian's room agreed the quoting bottleneck (row 1) belonged at the top of the trace list. The others stayed on the board as candidates to revisit after the Sprint.
 
 :::{.callout-note}
 ## Action Step

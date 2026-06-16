@@ -15,7 +15,7 @@ Most operators in that moment reach for the job description. The instinct is to 
 
 I stopped and asked a different question. Not "who should we hire?" but "what does this role actually do?" We opened a blank document and started pulling the role apart. We listed the sources of information that fed the job: the CRM, the project tracker, the report templates she'd built, the client check-in cadence she managed from memory. Then we listed the outcomes the role was responsible for: the reports delivered, the tasks created, the assignments made, the clients kept on track. And then we mapped every accountability against a simple filter: which items required human judgment and relationships, and which were data-flow operations. Information moving from one system to another, following rules that didn't require a person in the middle. The shape of the role changed in front of us. What had looked like one job was actually two, and one of those jobs we could design an agent team for.
 
-We did let her go. We never posted the listing for a replacement. The work got absorbed into the organization without a crisis. The team didn't miss a beat. What the agent team took on was the administration: the routing, the formatting, the status updates. What stayed with people was the judgment. The role got more strategic, not because we gave anyone a new title, but because we gave them back the hours the low-judgment work had been consuming.
+We did let her go. We never posted the listing for a replacement. The work got absorbed into the organization without a crisis. The team didn't miss a beat. What the agent team (software that runs multi-step work autonomously, not just a chatbot you prompt — more in the Build chapter) took on was the administration: the routing, the formatting, the status updates. What stayed with people was the judgment. The role got more strategic, not because we gave anyone a new title, but because we gave them back the hours the low-judgment work had been consuming.
 
 ## Design exists to ask what the work actually is
 
@@ -47,6 +47,15 @@ That question produces an *Information Flow Specification*: a spec for how infor
 | **Decisions** | _(what gets decided along the way, and whether each decision is rule-based or judgment-based)_ |
 | **Output** | _(what the output is and where it goes next)_ |
 
+*Meridian example — quoting accountability:*
+
+| Field | Meridian quoting |
+|---|---|
+| **Data feeds** | HubSpot CRM (customer history and deal data); JobBOSS ERP (job costing history and rate card); "Customer Notes.xlsx" (112 validated pricing exception rules, Elena's desktop) |
+| **Processing steps** | Match RFQ to customer record; look up applicable rate card; apply exception rules; assemble draft quote in customer-facing format |
+| **Decisions** | Rule-based: standard material pricing, lead-time lookup. Judgment-based: non-standard tolerances, strategic account discounts |
+| **Output** | Draft quote delivered to Elena for review within four hours of RFQ receipt; exception cases flagged to Elena or routed to Dave Kowalski |
+
 The best tool for making an information flow visible is a *swim lane diagram*. A swim lane diagram draws parallel horizontal lanes, one for each actor in the workflow (a person, a team, an agent, a system). Each step in the flow sits in the lane of whoever owns it. When data moves from one actor to another, a line crosses the lane boundary, and that crossing is a *handoff*. The diagram makes three things immediately visible: who does what, where information changes hands, and how many handoffs the workflow requires. A six-step process with twelve handoffs is a process designed to be fragile. You can see that on the swim lane before you build anything.
 
 For information flows between humans and agents, two lanes are usually enough to start, one for human work and one for agent work. As the design matures, you can split the agent lane into individual agent teams and add lanes for external systems.
@@ -77,9 +86,9 @@ You (the CEO or operator) decide which pattern the workflow needs. Build handles
 
 **1. Skills reinforcing SOPs.** The knowledge lives in people's heads. It's been captured (or will be captured in Source) as documented process: standard operating procedures, decision frameworks, institutional knowledge. The AI uses that documentation as context for brainstorming, iteration, and drafting. This is the co-operation pattern: you work alongside the AI in a conversational interface (Claude, ChatGPT), and the quality of the output depends on the quality of the documented knowledge. Most companies start here. It's the lowest infrastructure lift and the fastest to show value.
 
-**2. RAG — retrieval-augmented generation.** The knowledge lives in documents, records, or databases. The AI retrieves relevant chunks at runtime and uses them to generate answers, drafts, or analyses. This is how you make an agent that "knows" your company. It doesn't memorize everything; it looks up what it needs when it needs it. RAG requires decisions about chunking (how you break documents into retrievable pieces), metadata (how you tag those pieces so the right ones surface), and freshness (how often the retrieval index updates). It's more infrastructure than skills-on-SOPs, but it unlocks agent teams that can operate against your actual data without you manually feeding context every time.
+**2. RAG — retrieval-augmented generation** (a technique where the AI looks up relevant pieces of your documents at the moment it needs them, rather than memorizing everything in advance — covered in depth in the Source chapter). The knowledge lives in documents, records, or databases. The AI retrieves relevant chunks at runtime and uses them to generate answers, drafts, or analyses. This is how you make an agent that "knows" your company. It doesn't memorize everything; it looks up what it needs when it needs it. RAG requires decisions about chunking (how you break documents into retrievable pieces), metadata (how you tag those pieces so the right ones surface), and freshness (how often the retrieval index updates). It's more infrastructure than skills-on-SOPs, but it unlocks agent teams that can operate against your actual data without you manually feeding context every time.
 
-**3. Data pipelines.** The knowledge lives in systems that need to talk to each other, and the work runs on a schedule. The AI processes data between systems at a defined interval. The project coordinator's report generation, pulling from the CRM each morning, formatting it, dropping it into a template, is a pipeline problem. No conversation. Just data in, processing steps, data out on a schedule. Tools like n8n, Make, or Zapier handle this without custom code.
+**3. Data pipelines.** The knowledge lives in systems that need to talk to each other, and the work runs on a schedule. The AI processes data between systems at a defined interval. The project coordinator's report generation, pulling from the CRM each morning, formatting it, dropping it into a template, is a pipeline problem. No conversation. Just data in, processing steps, data out on a schedule. Tools like n8n (a visual automation platform that connects apps and moves data between them without writing code), Make, or Zapier handle this without custom code.
 
 **4. Low-code integration tools.** Similar tools, different trigger. Where data pipelines run on a schedule, low-code integrations are event-driven: a new deal closes in the CRM and a task fires in the project management tool; a form is submitted and a Slack message routes to the right channel. The test is simple: if the work runs every morning regardless of what happened yesterday, it's a pipeline; if it only runs when something changes, it's a low-code trigger. No AI, no scheduled batch — connectivity that fires when something happens. These handle the handoffs the agent team doesn't need to touch, and your team can own and change them directly.
 
@@ -120,7 +129,7 @@ Here's what your chart looks like after a handful of Sprints, built up over time
 
 Every agent team in the chart has a human supervisor, every row, no exceptions. There are no unowned teams. This is a structural rule of the chart, not a soft principle. The reason is straightforward: humans are still responsible for making sure the organization accomplishes its goals. There needs to be a person you can talk to, work with, and hold accountable in the real world. That person keeps the agents on track and owns the outcome when they're not.
 
-Selecting the right human supervisor for an agent team is a design decision. The ***Right Seat Evaluation*** is the three-test discipline that makes the call:
+Selecting the right human supervisor for an agent team is a design decision. The ***Right Seat Evaluation*** is the three-test discipline that makes the call. (If you run EOS, this maps closely to the GWC test — Get it / Want it / Capacity — extended from human seats to agent supervision seats.)
 
 - ***Sees It*** — does this person understand the work the agent does well enough to evaluate whether the output is correct, or will they rubber-stamp because they can't tell the difference?
 - ***Wants It*** — are they genuinely accountable for the outcome, or do they treat the agent team as someone else's problem with their name attached?
@@ -222,7 +231,7 @@ The chart names the agent team. The mini-spec names what the agent actually is. 
 
 A mini-spec answers six questions, one to a line:
 
-1. **System prompt.** The operating rules. Who the agent is, what it's accountable for, what it does and doesn't decide. Three to five sentences, written as if you were briefing a new hire.
+1. **System prompt** (the standing instructions you write that tell the agent who it is, what it's responsible for, and what it's not allowed to decide — like a job description the agent reads before every task). The operating rules. Who the agent is, what it's accountable for, what it does and doesn't decide. Three to five sentences, written as if you were briefing a new hire.
 2. **Tools.** What the agent can call. APIs, search, file access, the specific systems the Knowledge Map says it needs. Name them by name.
 3. **Context sources.** Which Knowledge Map rows feed this agent. Document store, CRM record, rate-card spreadsheet, the cleaned exception database. If the source isn't on the map, it isn't a source.
 4. **Memory rules.** What the agent tracks across runs. Conversation history, prior outputs, learned customer preferences. Most first-Sprint agents have no memory. Saying so is part of the spec.
@@ -239,6 +248,17 @@ Here is the blank mini-spec template. One per agent on your Hybrid Accountabilit
 | **Memory rules** | _(what carries across runs. Most first-Sprint agents have no memory. Saying so is part of the spec.)_ |
 | **Judgment and escalation rules** | _(when the agent escalates, what it refuses, what triggers a hand-off to the human supervisor.)_ |
 | **Oversight load** | _(Low / Medium / High. How much of the supervisor's attention per run.)_ |
+
+*Meridian example — Quote Research Agent (one of the three agents under Elena Ruiz):*
+
+| Field | Quote Research Agent |
+|---|---|
+| **System prompt** | You are the Quote Research Agent for Meridian Manufacturing. Your job is to retrieve the customer's purchase history and match their RFQ against the closest historical jobs. You produce a summary for the quoting team to use; you do not set prices, apply exceptions, or contact customers. |
+| **Tools** | HubSpot CRM read access; JobBOSS ERP read access |
+| **Context sources** | HubSpot deal history; JobBOSS job costing records |
+| **Memory rules** | No memory across runs. Each RFQ is treated fresh. |
+| **Judgment and escalation rules** | If no historical job matches within 20% of the RFQ specs, flag for Elena. Do not estimate; flag and hold. |
+| **Oversight load** | Medium — Elena reviews the research summary before the Pricing Agent runs. |
 
 That last field comes with a hard limit. Julie Bedard and colleagues at BCG, writing in *Harvard Business Review*, found that productivity inverts after three concurrent AI agents per supervisor. Manage agent oversight the way operations leaders already manage spans of control for human reports: no more than three high-oversight agents under one supervisor at a time. Before the mini-specs leave Design, count the agents one supervisor is taking on. If it's more than three, the design isn't done; either consolidate agents, raise some toward Automated, or split the supervisor role.
 
