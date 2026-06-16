@@ -21,6 +21,7 @@ Listed in Phase 3C dispatch priority order (per master plan).
 | 8b | [ch-12-rhythm.md](ch-12-rhythm.md) | Ch 12 — Rhythm | ✍️ written | **Light** — Headcount callback tighten; cut 2 of 3 Sprint-six subsections; keep Meridian as single illustration |
 | 8c | [ch-13-what-to-do-next.md](ch-13-what-to-do-next.md) | Ch 13 — What to Do Next | ✍️ written | **Light** — "math is still moving" tightening (14 lines → 3-4); directive headings |
 | 9 | [ch-03-co-operating-model.md](ch-03-co-operating-model.md) | Ch 3 — Co-Operating Model | ✍️ written | **Light-medium** — collapse 6-part agent anatomy to one sentence; promote "Why Co matters"; Bedard cross-ref Ch 7 |
+| 10 | [ch-04-framework.md](ch-04-framework.md) | Ch 4 — The Framework | ✍️ written | **Optional / minimal** — reference model (only full Pass on all 3 ARC axes); just retitle + strip italic-fragment headings + optional early Action Step. Recommend doing LAST in Phase 3C. |
 
 ## Cross-chapter themes (validated across outlines)
 
@@ -69,11 +70,11 @@ Every outline defers the following to 3B sweeps:
 3. **Time-budget at Ch 11 Compound L52** ("90-minute block"): strip or keep?
 4. **Meridian weave in Ch 3 Co-Op Model**: add one sentence, or skip (Compound's own examples are concrete)?
 5. **Strip-numericals heading pass timing**: bundle with Phase 3C per-chapter Drafters, OR separate orchestrator-direct mechanical sweep after 3C?
-6. **Ch 4 (Framework) inclusion** — the "only full Pass" chapter wasn't on the Phase 3C list. Should it get a light pass for directive heading conversion only, or stay completely untouched?
+6. **Ch 4 (Framework) outline written** (`ch-04-framework.md`) — minimal-touch scope: retitle + strip italic-fragment headings + optional early Action Step. Confirm scope is right, or extend if you want anything else changed.
 
 ## What's NOT covered by the outlines
 
-- **Ch 4 the-framework.qmd** — only-full-Pass chapter; not on Phase 3C priority list.
+- ~~Ch 4 the-framework.qmd~~ — now covered by `ch-04-framework.md` (minimal-touch scope).
 - **Case studies** (`case-study-meridian.qmd`, `case-study-pm-agent-team.qmd`) — closed in triage per author scope direction. Independent reference material.
 - **Appendices** (`appendix-action-steps.qmd`, `appendix-diagramming-primer.qmd`, `appendix-glossary.qmd`, `appendix-prompt-engineering.qmd`, `appendix-prompts.qmd`) — not in Phase 3 scope.
 - **Preface** (`index.qmd`) — already revised in commit c6c686b + deflourish.
