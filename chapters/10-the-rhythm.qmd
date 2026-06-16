@@ -9,33 +9,29 @@ This time last year, I had thirteen people. I'm looking at the current roster an
 
 Five people are gone. They weren't cut in a crisis or managed out because the company was struggling. They're gone because the work they were doing is now being done differently. And we're growing. Double-digit growth on billings and profitability. The fewer people are the reason.
 
-The shift did not happen because we adopted a new platform or made a strategic decision to run lean. It happened because we ran Signal before we wrote requisitions. That's the behavioral change. It sounds small. It's not.
+The shift didn't happen because we adopted a new platform or made a strategic decision to run lean. It happened because we ran Signal before we wrote requisitions. That's the behavioral change.
 
 Here is the specific moment I can point to. We had a project coordinator who was underperforming. The reports weren't getting done. Client follow-ups were slipping. Capacities weren't being updated. Our VP of Operations was frustrated — had been bringing the same complaint to every meeting for weeks. We knew what the next step was supposed to be: let her go, write a job description, post for a replacement, spend two months hiring and onboarding the next version of the same role.
 
 We stopped before we did that. Not because we had some principled objection to hiring. Because by that point we had run enough Sprints that the first question had changed. Not *who do we hire?* but *what does Signal say about this?*
 
-So we ran Signal. What is the actual constraint? What does this role touch? We mapped the information sources: the CRM fields she used, the project management cadence she owned, the client follow-up patterns she was responsible for. We asked which parts of the work required human judgment and which parts were high-volume and structured. Then we designed a workflow without assuming a human had to sit in every seat. We built a set of AI agents — AI systems that hold a goal, run a sequence of steps toward it, and adjust based on their own outputs, rather than chatbots that answer one question at a time — that could handle the bulk of what she was doing: the routing, the reporting, the follow-up cadence. We deployed.
+So we ran Signal. What is the actual constraint? What does this role touch? We mapped the information sources: the CRM fields she used, the project management cadence she owned, the client follow-up patterns she was responsible for. We asked which parts of the work required human judgment and which parts were high-volume and structured. Then we designed a workflow without assuming a human had to sit in every seat. We built a set of AI agents that could handle the bulk of what she was doing: routing, reporting, and follow-up cadence. AI agents hold a goal, run a sequence of steps toward it, and adjust on their own, unlike a chatbot that answers one question at a time. We deployed.
 
 The hire never got posted. We did let her go. The work got absorbed into the organization without a crisis, and the team didn't miss a beat.
 
 We went from thirteen people to eight over the following year. By the fourth and fifth Sprint, running Signal before writing a requisition was not a deliberate practice anymore. It was the default. The question that used to be automatic, *who fills this?*, had been replaced by a different automatic question.
 
-This chapter is about what happens when the Sequence stops being a program the CEO is running and becomes the cadence the company makes its most important operational decisions on.
+## Rhythm means *quarterly*. Faster loses depth. Slower loses infrastructure.
 
-This chapter sets the Quarterly review on your Sprint Planning Canvas, and turns one Sprint into the rhythm that produces the next one.
-
-## What *Rhythm* means in this book.
-
-The Equation is *Co-Intelligence + Rhythm = Compound*. The first term is the system — humans and AI working as one workforce, designed deliberately, owned by named people. The second term is the cadence. Without the cadence, the system is a one-time project that produced one improved workflow and then went dormant. With the cadence, every quarter takes the next constraint, runs it through the same six stages, and adds the result to a stack of designed work the organization now operates on.
+Co-Intelligence is the system, and you have it. What's missing is the Rhythm: the cadence. Without it, the system is a one-time project that produced one improved workflow and then went dormant. With it, every quarter takes the next constraint, runs it through the same six stages, and adds the result to a stack of designed work the organization now operates on.
 
 The Rhythm is quarterly. A Sprint takes six to eight weeks; the leadership team needs one focused session per quarter to commit the next one and confirm the work is moving in the right direction. Faster than that and the Sprint loses the depth that makes it pay off. Slower than that and the design infrastructure built in the last Sprint starts to degrade before the next one begins. Quarterly also matches the team's capacity to absorb the change. Run a new design every six weeks and the people executing it can't internalize the last one before the next arrives. The shift never holds.
 
-## The quarterly operating *session*.
+## Run the quarterly operating session in *four steps*.
 
-The Rhythm has a meeting. One to two hours, your leadership team, every quarter, on the calendar before the year starts. You do four things, in this order:
+The Rhythm has a meeting. One to two hours, your leadership team, every quarter, on the calendar before the year starts. The governance discipline is the point: a fixed agenda, committed outputs, an updated accountability chart, and a specific next-quarter commitment made before the session closes.[^coe] You do four things, in this order:
 
-The structure of the quarterly operating session draws on the ***Center of Excellence (COE) Operating Model*** — Dave Ulrich's three-pillar HR framework from *Human Resource Champions* (1997), where specialized expertise centers coordinate across the business with defined governance and a recurring meeting cadence. The governance discipline is the point: a fixed agenda, committed outputs, an updated accountability chart, and a specific next-quarter commitment made before the session closes. What the four steps below add is how that discipline runs inside a Compound Sprint cycle.
+[^coe]: The session's structure draws on the Center of Excellence (COE) Operating Model — Dave Ulrich's three-pillar HR framework from *Human Resource Champions* (1997), where specialized expertise centers coordinate across the business with defined governance and a recurring meeting cadence. The four steps below add how that discipline runs inside a Compound Sprint cycle.
 
 **Step 1: Review the previous Sprint at the outcome level.** Read the Sprint outcome statement from Deliver. Review the retrospective findings from Compound. Did the constraint move? By how much? What changed in the cost your team quantified during Signal? This isn't a status update on the agent team's activity — that conversation happens elsewhere, more often. This is the outcome question. The Hybrid Accountability Chart names a constraint owner; that owner reports the result. And you answer one question that determines what happens next: is the workflow permanent, or does it need another Sprint?
 
@@ -63,7 +59,7 @@ Put the quarterly operating session on the calendar for the end of this quarter.
 
 {{< excalidraw ch10-rhythm-layer-stack "The Rhythm as a layer on top of EOS/Scaling Up: base OS layer with quarterly cadence, Compound Sprint Session layer above feeding commitment into existing rocks/L10." >}}
 
-### How it maps to your operating system.
+### Layer the session onto EOS, Scaling Up, or *4DX*.
 
 If you're running EOS, Scaling Up, 4DX, or a homegrown operating cadence, the Compound quarterly session runs on top of it. It doesn't replace the operating system you already use. Your quarterly off-site still happens, your rocks still get set, and your L10s still run. The Sprint session is the focused hour that decides what your AI workforce is doing this quarter. That decision arrives at your existing meetings as data: what your largest constraint is, in dollars.
 
@@ -79,13 +75,13 @@ Here is how the pieces map:
 
 A Sprint can become a Rock when committed in quarterly planning. The HAC layers onto your accountability chart. The Signal Backlog is your strategic issues list, focused on operational constraints AI can address. EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm makes them executable by a Human+AI workforce. The two stack.
 
-## The *Hybrid Org Today*.
+## Maintain one living document: the *Hybrid Org Today*.
 
 Once you're running the Rhythm, you maintain one living document: the Hybrid Org Today. It is the current operational picture of your Co-Intelligent Company.
 
-The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. The Hybrid Accountability Chart from Chapter 7 is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
+The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. The Hybrid Accountability Chart from the Design chapters is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
 
-The template should fit on one page. If it doesn't, you're tracking too much. The Hybrid Org Today is a dashboard, not a filing cabinet.
+The template should fit on one page. If it doesn't, you're tracking too much.
 
 You update the Hybrid Org Today in the quarterly session. Not by a Notion-curator on a Thursday afternoon. Not at year-end planning. By your leadership team, during the meeting, as part of the four things the session does. That is the discipline that prevents the document from becoming the wiki page that rots — a thing every operator has watched happen with every other "living" document the company has tried to maintain.
 
@@ -95,17 +91,17 @@ When a new executive joins, the Hybrid Org Today is the briefing. When the board
 
 ## The Headcount Paradox, *resolved*.
 
-Return to where this book started. Revenue growing. Headcount growing alongside it on a steep slope. AI investments doing nothing to bend that slope. The CEO knows the math is wrong and can't find the lever that moves it.
+Chapter 1 named the Headcount Paradox: revenue grows; headcount grows alongside it; AI investments don't bend the slope. After six to eight Sprints on the Rhythm, that slope bends — because Signal runs before requisitions.
 
-After six to eight Sprints on the Rhythm, headcount growth slows. The behavioral marker is specific. When you hit a capacity problem, your first question is *what does Signal say about this?* rather than *who do we hire?*
+When you hit a capacity problem, your first question is *what does Signal say about this?* rather than *who do we hire?*
 
 Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked against the Signal Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the Sprint that addresses it ships a designed workflow instead of a job posting.
 
-Companies that default to designing before hiring build a different slope than companies that default to adding people. The ones running Signal before requisitions get compounding returns on the infrastructure they build. The ones adding people to absorb demand grow headcount in lockstep with revenue, forever. That gap between the two slopes is the Headcount Math. The metric the quarterly review tracks is revenue per employee. In most companies it stays flat. In yours it climbs, because each Sprint finds another place the work doesn't actually require another body.
+The ones adding people to absorb demand grow headcount in lockstep with revenue, forever. That gap between the two slopes is the Headcount Math. The metric the quarterly review tracks is revenue per employee. In most companies it stays flat. In yours it climbs, because each Sprint finds another place the work doesn't actually require another body.
 
 {{< excalidraw ch10-headcount-math "Headcount Math before/after: headcount climbs on a steep slope with revenue (left) vs. the slope bends — headcount still grows, but the marginal headcount per next dollar of revenue drops as design infrastructure compounds (right)." >}}
 
-The hire that never got posted wasn't a one-time decision. It came from running Signal enough times that the requisition-first reflex had been overwritten. That's the Rhythm working. The thirteen-to-eight arc the Preface points at — the developer who left, and the knowledge that left with them — closed over a year of running this loop until the math moved.
+The hire that never got posted wasn't a one-time decision. It came from running Signal enough times that the requisition-first reflex had been overwritten. The thirteen-to-eight arc the opener describes closed over a year of running this loop until the math moved.
 
 Most teams already have a meeting cadence: the L10, the weekly standup, the quarterly review. The cadence is real. What's usually missing is the discipline to turn a red number into a named constraint, and a named constraint into a Sprint. Weeks of red scorecards mean the cadence exists and the Rhythm does not. The Rhythm doesn't add a meeting. It adds four required outputs:
 
@@ -116,13 +112,13 @@ Most teams already have a meeting cadence: the L10, the weekly standup, the quar
 
 Without all four, the session produces nothing.
 
-## The *Compounding Scorecard*.
+## Track compounding on a single *scorecard*.
 
 The Hybrid Org Today tells you where you stand. The Compounding Scorecard tells you whether the Rhythm is working.
 
 The Compounding Scorecard is a design-validation document, not a financial one. Each Sprint's delta tells you whether the design correctly identified the constraint and correctly allocated the work. The scorecard tells you which pattern you're running; the retrospective tells you why.
 
-Each Sprint produces a delta — the measurable difference between what the constraint cost before and what it costs after. The scorecard tracks those deltas across quarters. After four Sprints, the cumulative column is the business case for continuing.
+Each Sprint produces a delta: the measurable difference between what the constraint cost before and what it costs after. The scorecard tracks those deltas across quarters. After four Sprints, the cumulative column is the business case for continuing.
 
 | Quarter | Constraint Solved | Cost Before | Cost After | Delta | Cumulative Impact |
 |---|---|---|---|---|---|
@@ -136,7 +132,7 @@ Each Sprint produces a delta — the measurable difference between what the cons
 Create the Compounding Scorecard. Fill in the first row with your current Sprint. Tape it to the wall next to your accountability chart.
 :::
 
-## What compounding looks like, *Sprint six*.
+## What six Sprints look like in *practice*.
 
 A company is six to eight Sprints in. What has actually changed?
 
@@ -146,19 +142,9 @@ The Source phase of the first Sprint took three weeks. The team did not have a k
 
 The Hybrid Accountability Chart has been updated four times. The organization has named agent teams with documented levels of automation, each with a human supervisor. The Human Orchestrator responsibility is written into two people's job descriptions — not as a side project but as the operational role it became. The Signal Backlog appears on the quarterly agenda alongside revenue and rocks.
 
-And the leaders themselves have changed. Executives who, eighteen months ago, had no mental model for directing an agent team are now making design-improvement decisions between Sprints without being prompted. The Co-Operating Model from Chapter 3 is no longer a concept. It is how the leadership team thinks about work.
+And the leaders themselves have changed. Executives who, eighteen months ago, had no mental model for directing an agent team are now making design-improvement decisions between Sprints without being prompted. The Co-Operating Model is no longer a concept. It is how the leadership team thinks about work.
 
-### Two business lines, half the staff.
-
-Here is what Sprint six looked like for us, concretely.
-
-I'm on a call with our marketing lead, and I stop mid-conversation and say: let's get a little meta about what's happening right now. Four agents are running in parallel. One handling design. One handling content synthesis. One doing research. One producing video. She isn't doing any of those things. She is directing the team that does all of them. Her title hasn't changed. Her job has become unrecognizable from what it was a year ago.
-
-The year before, we had launched nothing new. We were at capacity. We had twice the headcount. That year, we launched two new business lines. Half the staff.
-
-We did not cut our way to growth. We ran the Sequence enough times that the design infrastructure compounding in the background was doing real work — work that used to require bodies, now running on agent teams with named human supervisors overseeing the outputs. Her role shifted from being the doer of marketing content to the orchestrator of agent teams producing it. That shift was not planned on a slide. It accumulated, one Sprint at a time, until one day it was simply what the job was.
-
-### Three Sprints · Meridian Manufacturing.
+### Three Sprints at *Meridian Manufacturing*.
 
 Here is what this looks like on paper. Meridian Manufacturing, the $7.2M custom fabrication shop from the case study, ran three Sprints over three quarters. Elena Ruiz, the VP of Operations, was the Human Orchestrator for all three. This is their Hybrid Org Today document and Compounding Scorecard at the end of Sprint 3.
 
@@ -179,24 +165,15 @@ Two Sprints completed. A third in flight. $512K in annualized cost reduction, wi
 The first Sprint's delta will almost always be the largest. Don't let the smaller numbers in later quarters fool you into thinking the Rhythm is losing steam. Later Sprints are faster, cheaper to run, and the freed capacity stacks on top of everything that came before.
 :::
 
-### The company that was already ready.
-
-A mid-market company growing at strong double digits year over year, running EOS at high fidelity. Real accountability chart. Scorecards on the wall. IDS in every L10. That kind of company does not need to learn the Rhythm — it already has the muscle. Running a focused session, committing to a measurable outcome, and reviewing it on cadence is its default state.
-
-What that company needs is to install the Sequence as the AI layer on top of the operating system it already runs. The Rhythm in companies like that is fast, because the operating discipline is already there. The first Sprint ships in a quarter. The second Sprint ships in the next. By the fourth quarter the leadership team is running the quarterly session as naturally as the L10.
-
 ## The *Co-Intelligent Company*.
 
-The Co-Intelligent Company is the company built by running the Sequence on the Rhythm, quarter by quarter, Sprint by Sprint.
-
-Every term is operational. Each one is a document the leadership team can produce or a behavior a CEO can run in the next quarterly session.
+The Co-Intelligent Company is the company built by running the Sequence on the Rhythm. It shows up in a cumulative column that reads $512K and climbing, or a roster that went from thirteen to eight while billings grew.
 
 The framework is yours to run. The next chapter is about the one thing Compound does that you should not run alone.
 
 ## Reflection Questions
 
-1. Look at your last four quarters of headcount decisions. How many requisitions were written before anyone asked "what does Signal say about this?" How many constraints were design problems disguised as headcount problems? Run the math: what did those hires cost against what a Sprint would have cost?
+1. Look at your last four quarters of headcount decisions. How many requisitions were written before anyone asked "what does Signal say about this?" How many constraints were design problems disguised as headcount problems?
 2. Set up your Compounding Scorecard today. Fill in the first row with your current or most recent Sprint. For each Sprint you've completed, what is the cumulative delta? Is the compounding visible yet, or is this your first data point?
-3. Your quarterly operating session has four steps: review the previous Sprint at the outcome level, update the Signal Backlog, commit the next Sprint, and update the Hybrid Accountability Chart. Is that 90-minute session on your calendar this quarter — with all four steps on the agenda and the right people in the room?
-4. The Hybrid Org Today document maps what people own, what AI handles, what is solved, and what is next. Could you fill in that one-page template for your company right now? What would the "Completed Sprints" section say, and what would the "Active Sprint" section say?
-5. The chapter describes executives who, after eighteen months, make design-improvement decisions between Sprints without being prompted. What would have to be true about your leadership team's operating model for that behavior to become automatic — not deliberate — within two years?
+3. Your quarterly operating session has four steps: review the previous Sprint at the outcome level, update the Signal Backlog, commit the next Sprint, and update the Hybrid Accountability Chart. Is that session on your calendar this quarter — with all four steps on the agenda and the right people in the room?
+4. The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. Could you fill in that one-page template for your company right now? What would the "Completed Sprints" section say, and what would the "Active Sprint" section say?
