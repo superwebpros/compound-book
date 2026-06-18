@@ -57,7 +57,6 @@ Context engineering is the practice of designing what information an AI model ha
 
 If you have run the Source phase of a Compound Sprint, you have already done context engineering — you just called it something else. The Knowledge Map is a context engineering artifact. The Source Classification is a context engineering decision framework. The AI tiers — standing context, retrieved knowledge, historical record — are context engineering architecture. This section makes that connection explicit.
 
-{{< excalidraw appendix-context-stack "The context engineering stack: five layers from prompt to tool connections, with Compound Sprint artifacts mapped to each layer." >}}
 
 ### The context stack.
 

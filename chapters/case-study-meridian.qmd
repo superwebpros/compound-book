@@ -205,7 +205,6 @@ Task count: Human judgment required — 2. Agent-assisted — 2. Fully automatab
 
 The team mapped the full quoting workflow as a swim lane diagram — two lanes, human and agent, showing where data moves between them. The human lane tracked Elena's reviews, Dave's labor estimates, and Ty's delivery. The agent lane tracked research, pricing assembly, and document generation. The handoff points made the design concrete: every time work crossed from agent lane to human lane, that was a review gate. Every time it crossed from human lane to agent lane, that was structured input the agent needed to proceed.
 
-{{< excalidraw cs-meridian-swim-lane "Swim lane diagram: Meridian quoting workflow — human lane (Elena reviews, Dave estimates, Ty delivers) and agent lane (research, pricing, assembly) with handoff points" >}}
 
 #### Artifact: Roles, Tasks, and Accountability Deconstruction
 

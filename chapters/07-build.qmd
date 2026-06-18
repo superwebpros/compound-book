@@ -73,7 +73,6 @@ Before your next Build, ask: does the builder need to be a developer, or does th
 
 ## Write the eight-section Build *Spec*.
 
-{{< excalidraw ch07-design-brief-example "Example design brief: workflow specification, agent team scope, supervisor named, governance answers locked." >}}
 
 Build runs on two instruments, and the first is the Build Spec. Both are derived from the Design Brief that Design handed off. Neither restarts the design conversation.
 
@@ -113,7 +112,6 @@ Here is the blank eight-section Build Spec template. Fill in every row before an
 
 Here is what those sections look like filled in. This is from Meridian Manufacturing: twenty-seven employees, custom metal fabrication, quoting bottleneck costing $558K a year in lost revenue, misallocated VP time, and shop floor underutilization. Signal nailed the constraint, Source mapped the data, Design produced the workflow and the Design Brief that captured it. Build started from that Design Brief.
 
-{{< excalidraw ch07-design-brief-meridian "Meridian's design brief for the quoting Sprint: Quote Agent Team scope, Elena as supervisor, AI-Assisted autonomy, data access rules." >}}
 
 Here's what the spec looked like, section by section:
 

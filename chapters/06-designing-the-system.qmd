@@ -120,7 +120,6 @@ You don't necessarily need all five. Most first Sprints use patterns one and two
 You can now describe the flow and the patterns that connect AI to it. What you can't do yet is say who owns it. That's what the Hybrid Accountability Chart does: it takes the lanes you just drew and puts a name against each one.
 
 <!-- TODO (F77/F88): Excalidraw redo. First-intro chart must match the §6.9.1 case-study chart quality. Column A (Role/Function) names OUTCOMES, not tasks. Use phrasing like "Customer data retrieval and history matching" or "Draft quote generation and review", never "Look up pricing." Every row should be the kind of accountability a supervisor would defend in a meeting, not the kind of task a junior would do in an hour. -->
-{{< excalidraw ch06-hybrid-accountability-chart-intro "Hybrid Accountability Chart introduction: four columns. Role/Function (outcome-based accountability, never a task label), Agent Team, Human Supervisor, Autonomy Level. The first example a reader meets is the same shape as the worked one later in the chapter." >}}
 
 The Hybrid Accountability Chart takes the Accountability Chart structure from the Co-Operating Model chapter and adds rows for agent teams — same discipline, new workforce. Every row still names one accountability and one human supervisor. But now some rows also name the agent team doing the execution work underneath that supervisor. The accountability doesn't move from human to agent. The ownership stays with the supervisor. What changes is who does the execution work, and the chart makes that visible. (If you run EOS, the HAC isn't a replacement for your Accountability Chart; it's a structural addition that operates alongside it.)
 
@@ -298,7 +297,6 @@ The category options group into three. Most Compound Sprints land in one of them
 
 **Hand-built integration.** Custom code involving an API to a system of record, with an engineer in the loop. Slower than low-code, higher return, harder to change later. Use this category when the workflow runs at a scale or against a system that low-code tools can't reach, or when the integration touches data the company won't route through a third-party platform. (No in-house engineer? This is the category where you bring in a builder or contractor; the other two your team can usually own directly.)
 
-{{< excalidraw ch06-platform-decision "Decision flowchart: three categories (off-the-shelf, low-code, hand-built) with qualifying questions routing each agent in the mini-spec to one of them." >}}
 
 To pick the category for each agent in your Hybrid Accountability Chart, run these questions in order:
 

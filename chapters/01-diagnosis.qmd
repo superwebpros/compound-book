@@ -129,7 +129,6 @@ There are five dimensions where AI-ready operating models hold and AI-unready on
 
 The five dimensions group into two preconditions. Information Readiness and Workflow Visibility are the *technical preconditions*: whether an AI agent can do the work at all. Constraint Clarity, Decision Rights, and Measurement Discipline are the *operating-model preconditions*: whether your organization holds the change once it's deployed. A company can score strongly on one half and weakly on the other. Both halves have to come up before the redesign work compounds.
 
-{{< excalidraw ch01-dimensions-split "The five dimensions split into two halves: technical preconditions (Information Readiness, Workflow Visibility) determine whether an AI agent can do the work; operating-model preconditions (Constraint Clarity, Decision Rights, Measurement Discipline) determine whether the change holds." >}}
 
 ### Constraint *Clarity*
 
