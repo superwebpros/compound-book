@@ -186,7 +186,6 @@ And the leaders themselves have changed. Executives who, eighteen months ago, ha
 
 Here is what this looks like on paper. Meridian Manufacturing, the $7.2M custom fabrication shop from the case study, ran three Sprints over three quarters. Elena Ruiz, the VP of Operations, was the Human Orchestrator for all three. This is their Hybrid Org Today document and Compounding Scorecard at the end of Sprint 3.
 
-{{< excalidraw ch10-hybrid-org-today-meridian "Meridian's Hybrid Org Today at end of Sprint 3: Active Sprint (customer onboarding), Signal Backlog (engineering change orders, scheduling visibility), Hybrid Accountability Chart (quoting, CRM-ERP sync, onboarding), and Completed Sprints (quoting bottleneck Q3 2026, CRM-ERP sync Q4 2026)." >}}
 
 And the scorecard:
 
