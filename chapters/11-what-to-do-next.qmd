@@ -165,15 +165,7 @@ Decide which path you're taking. Write it down. If Path A, schedule the Signal s
 
 ## Fill in the *Sprint Planning Canvas*.
 
-<!-- moves:sprint-planning-canvas -->
-### How to fill in the *Sprint Planning Canvas*
-
-1. **Enter the constraint statement** — Populates the Active Sprint row of the Hybrid Org Today with a single precise sentence — the Sprint's north star.
-2. **Enter the annual cost estimate** — Establishes the baseline number the Sprint must beat and makes the business case visible to the team.
-3. **Name the three roles on the Canvas** — Connects the roster (Orchestrator, supervisors, builder) to the Sprint artifact so ownership is unambiguous.
-4. **Choose and record the path (self-guided or Compound)** — Locks in the operating model so execution doesn't stall on a decision that should already be made.
-5. **Run the pre-flight checklist** — Two gate questions (constraint is structural; Orchestrator passes Right Seat Evaluation) catch the gaps that turn into wasted quarters before the Sprint starts.
-<!-- /moves:sprint-planning-canvas -->
+You'll fill in the full **Sprint Planning Canvas** using the nine-question walk-through in the Framework chapter (*How to fill in the Sprint Planning Canvas*). Everything you name in this chapter — the constraint, its annual cost, the roster, and the path you choose — becomes the inputs you bring to it.
 
 You already have the template. The Sprint Planning Canvas from the Framework chapter is the artifact. Pull it back out now and fill it in based on everything the chapters behind you have built:
 
