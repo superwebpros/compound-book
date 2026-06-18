@@ -434,3 +434,28 @@ Same artifact, same slug `sprint-planning-canvas`. #7 is the **canonical full sp
 - **Signal family** — `run-signal-session` (#8, full facilitated session) and `minimum-viable-signal` (#30, 3-step solo version). Intentionally different scopes; keep both but cross-link so #30 reads as the stripped-down on-ramp to #8.
 - **Backlog re-rank** — `constraint-re-rank` (#26, Compound chapter) and Step 2 of `quarterly-operating-session` (#27, Rhythm chapter) are the same move at two cadences. Keep both; make the Rhythm step explicitly point to the #26 spine so the re-rank logic is authored once.
 - **HAC touchpoints** — `hybrid-accountability-chart` (#12, build it), `quarterly-operating-session` Step 4 (#27, update it), `hybrid-org-today` (#28, fold it into the living doc). Not duplicates — lifecycle stages of one artifact. Ensure column names match across all three.
+
+---
+
+## Book-insert convention (slug-anchored "how to" blocks) — LOCKED 2026-06-18
+
+Every process's **book overview** ("the moves" spine) is inserted at its **Section anchor** as a
+slug-anchored block so it is both reader-demarcated AND machine-addressable for maintenance:
+
+```
+<!-- moves:<slug> -->
+### How to <do the process>
+1. <Canonical step label 1> — <one-line why>
+2. <Canonical step label 2> — <one-line why>
+...
+<!-- /moves:<slug> -->
+```
+
+Rules:
+- **Step labels are the canonical labels in this registry, verbatim** (same as the worksheet) — book overview and worksheet read as one spine.
+- The block is a **scannable overview, not a re-teach** — the chapter's existing detailed prose stays as the detail beneath/around it.
+- **Buried** processes: insert the block at the anchor. **Visible** processes: wrap/align the existing enumerated block with the anchor + canonical labels.
+- Heading house style applies (sentence case + one italic where natural; the `### How to …` directive form is the carrier).
+- The HTML comments are Quarto-safe (pass through to output as comments) and are the handle the **`sync-process` skill** uses to locate + replace a block by slug.
+
+This is what makes the demarcated how-to sections maintainable: edit worksheet → (if spine changed) update registry labels → `sync-process` finds `<!-- moves:<slug> -->` and replaces the book block. Surgical, no hunting.
