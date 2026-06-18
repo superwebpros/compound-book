@@ -1,0 +1,31 @@
+# Normalize text to LF in the repo and working copy.
+# Overrides any machine-level core.autocrlf=true (which was rewriting the
+# working copy to CRLF and breaking shell scripts, e.g. bin/deploy.sh).
+
+* text=auto eol=lf
+
+# Scripts and code — must be LF or they fail to execute
+*.sh   text eol=lf
+*.py   text eol=lf
+*.lua  text eol=lf
+
+# Prose / config / web
+*.qmd  text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.scss text eol=lf
+*.css  text eol=lf
+*.html text eol=lf
+
+# Binaries — never touch line endings
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.svg  binary
+*.pdf  binary
+*.epub binary
+*.woff2 binary
+*.ttf  binary
+*.otf  binary
