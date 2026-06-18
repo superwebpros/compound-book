@@ -44,6 +44,16 @@ If the old system is still accessible, people will use it. Deliver's first move 
 
 Before your team flips the switch, you run a pre-flight check. Four binary gates. Every gate must pass. If any answer is "no," you stop, fix it, and re-run.
 
+<!-- moves:deploy-readiness-audit -->
+### How to run the *Deploy Readiness Audit*
+
+1. **Gate 1 — Confirm hands-on training** — Every person whose work changes must have practiced on real inputs before go-live; a meeting or email doesn't count.
+2. **Gate 2 — Document the escalation path** — Unexpected agent output needs a named human, a channel, and a response window before it hits production.
+3. **Gate 3 — Test against real data** — Validating on actual inputs from the last two weeks surfaces gaps that synthetic tests miss.
+4. **Gate 4 — Book the Human Orchestrator review cadence** — A recurring, non-negotiable calendar event makes oversight an operating rhythm, not a best intention.
+5. **Resolve every Fail before deploying** — Each failed gate becomes a named task; re-running at 4/4 is the deploy condition.
+<!-- /moves:deploy-readiness-audit -->
+
 | # | Gate | Pass / Fail |
 |---|------|-------------|
 | 1 | Has every person whose work changes been trained on the new flow, with hands-on practice on actual inputs? | Pass / Fail |
@@ -67,6 +77,16 @@ Pull up your Hybrid Accountability Chart from Design — the map of who owns wha
 :::
 
 ## The *per-role runbook*.
+
+<!-- moves:per-role-runbook -->
+### How to write the *per-role runbook*
+
+1. **Identify affected roles from the Hybrid Accountability Chart** — Scope the runbook to every person whose handoffs changed — no one surprises left out.
+2. **For each role, answer the four change questions** — Forces explicit articulation of what the person does differently, what the agent now handles, how they review output, and what triggers escalation.
+3. **Write the three-column entry (input / output / escalation)** — One concrete sentence each — vague entries like 'reviews output' are not runbook entries.
+4. **Apply the vacation test** — A colleague who missed the entire Sprint should be able to read the document and know exactly what changed about their job.
+5. **Publish the runbook in the team's live tool before go-live** — A runbook in a folder no one opens is not a runbook; it must be findable where the team already works.
+<!-- /moves:per-role-runbook -->
 
 For every role affected by the Sprint, document three things: what they receive, what they produce, and when they escalate.
 
@@ -113,6 +133,16 @@ Pick one role from your Hybrid Accountability Chart whose handoffs changed. Writ
 
 Deliver also surfaces what did not work. The full retrospective belongs to Compound, in the next chapter. This is the operational log that captures, in real time, the gaps between what was designed and what production actually revealed.
 
+<!-- moves:operational-log -->
+### How to build and *maintain* the operational log
+
+1. **Create the four-column log template before deploy** — The log must exist on day one of production — building it post-launch means the first gap goes unrecorded.
+2. **Assign a single named owner** — Accountability without a name means the log dies; one person owns it, no committee.
+3. **Run daily check-ins for the first two weeks** — The daily cadence surfaces patterns before they compound; week-two review timing aligns with the delivery test window.
+4. **Categorize every entry (Unplanned intervention / Data gap / Edge case / User confusion)** — Consistent categories make tallying possible; the category with the most entries identifies the next constraint.
+5. **Tally by category at end of week two and surface the top category as the next Sprint signal** — The log is a sensor, not a complaint box — it feeds Design for the next Sprint.
+<!-- /moves:operational-log -->
+
 Create the log on day one of deployment. Assign one person to own it — named, accountable. Set a daily check-in for the first two weeks: review the log, categorize new entries, note patterns.
 
 | Date | What happened | Category | What it signals |
@@ -152,6 +182,16 @@ Create the log template — four columns: Date, What happened, Category, What it
 :::
 
 ## The *measurement* question.
+
+<!-- moves:sprint-outcome-measurement -->
+### How to *measure* the Sprint outcome
+
+1. **Pull the Signal statement and quantified cost** — The baseline must come from the original Signal instrument — same metric, same unit — so the comparison is apples-to-apples.
+2. **Measure the same metric in production (result after Sprint)** — An imperfect measurement beats a vibe; write the number even when the original Signal quantification was loose.
+3. **Compute the delta** — Leadership needs to see what moved, not a narrative — the delta makes the change legible.
+4. **Write the outcome in one sentence** — The outcome sentence mirrors the Signal statement and becomes the artifact Compound works against.
+5. **Calculate and report adoption rate (week-two window)** — Operational improvement and adoption rate together diagnose whether a low result is a Design problem or a change-management problem.
+<!-- /moves:sprint-outcome-measurement -->
 
 Deliver's first responsibility is to measure the Sprint against Signal's quantified cost. Signal said the constraint costs $150K a year. Deliver shows a workflow that recovers 80% of that. The Sprint produced. The math is legible. The next Sprint earns the right to start.
 

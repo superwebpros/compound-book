@@ -72,6 +72,15 @@ The job doesn't grow. The composition changes. At Meridian, Elena's hours didn't
 
 ## Take stock before *Sprint 1*.
 
+<!-- moves:take-stock-operating-model-gap -->
+### How to take stock of the *operating-model gap*
+
+1. **Open your four core systems side by side** — Forces the reader to look at the actual stack rather than describe it from memory, surfacing real friction points.
+2. **For each system, name one place a person is doing work the system should be doing** — Constrains the exercise to one item per system so the list stays actionable rather than becoming a complaint session.
+3. **Record the list in the Sprint Planning Canvas table** — Externalizes the gap so it can be handed to Sprint 1 as a concrete candidate-constraint input, not a vague feeling.
+4. **Carry the list forward — do not solve yet** — The chapter explicitly defers prioritization to the Signal chapter; the move here is observation, not intervention.
+<!-- /moves:take-stock-operating-model-gap -->
+
 These shifts only matter if they change what you do this week. So before you start Sprint 1, do one thing.
 
 Open your CRM, your accounting or ERP system, your project tool, and your communications stack on the same screen. For each one, write down a single place where a person is doing work the system should be doing. Don't solve anything yet. Just take stock.

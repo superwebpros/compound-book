@@ -50,6 +50,16 @@ Before the Sprint enters Build, put the Compound session on the calendar. Includ
 
 ## Run the Sprint *Retrospective* honestly
 
+<!-- moves:sprint-retrospective -->
+### How to run the Sprint *Retrospective* honestly
+
+1. **Ask: what worked?** — Names the specific design decisions that paid off — mechanism, not sentiment — so they can be intentionally repeated.
+2. **Ask: what didn't work?** — Surfaces broken handoffs, dirty inputs, and wrong cadences — the honest friction every Sprint produces.
+3. **For each failure, ask: what would have to be true for this not to happen again?** — Reframes blame into design fix — converts observations into actionable constraints on the next Sprint's design.
+4. **Ask: what one design change would make the next Sprint better?** — Forces prioritization before the session ends; feeds directly into the Install One Design Change step.
+5. **Measure what compounded (three compounding questions)** — Distinguishes output (Sprint delivered something) from compound interest (the Sprint built infrastructure the next Sprint inherits).
+<!-- /moves:sprint-retrospective -->
+
 The Sprint Retrospective is one of two instruments in the Compound stage. It's the structured review of the Sprint that just shipped, and it asks the same three questions every time.
 
 **Question one: what worked?** The specific design decisions that paid off. Not "the team did great." The workflow that cut quoting time from four hours to twenty minutes. The ops manager who served as Human Orchestrator because she knew every pricing exception. The agent's access to three years of historical data that made the estimates accurate. Name the mechanism, not the sentiment.
@@ -82,6 +92,16 @@ Beyond the Sprint outcome you measured in Deliver, Compound asks three additiona
 If you can't answer these three questions, the Sprint delivered output but didn't compound.
 
 ## Install one *design change*. Just one.
+
+<!-- moves:install-design-change -->
+### How to install one *design change*
+
+1. **Survey everything the Sprint surfaced** — Human Orchestrator scans all retrospective items — Source gaps, wrong cadences, broken handoffs, dirty inputs — before picking.
+2. **Name the single change that will most improve the next Sprint** — The discipline of one defeats the 'lessons learned list' failure mode; forces a real priority decision.
+3. **Write the four-field change card (What / Who / How you'll know / By date)** — Makes the change specific and testable; any blank field signals the change is too vague to install.
+4. **Install the change structurally before the next Sprint begins** — An insight that doesn't change the design isn't worth recording — the change must land in the chart, workflow, or Source map.
+5. **Verify the change using the 'how you'll know' criterion** — Closes the loop — confirms the change is working before Sprint two kicks off, not assumed.
+<!-- /moves:install-design-change -->
 
 After every Sprint, you answer one question as the Human Orchestrator: *what one design change would make the next Sprint better?*
 
@@ -123,6 +143,16 @@ After the retrospective, write the one design change on a card with four fields.
 :::
 
 ## Re-rank the Signal Backlog on what the *Sprint* taught you
+
+<!-- moves:constraint-re-rank -->
+### How to re-rank the Signal Backlog on what the *Sprint* taught you
+
+1. **Ask: did the Sprint reveal new information about any other constraints?** — Solving one constraint exposes the real cost of another — the backlog order the company entered the Sprint with may no longer be correct.
+2. **Ask: did any constraints get partially resolved as a side effect?** — Recognizes spillover value and adjusts rankings to reflect what actually changed, not just what was targeted.
+3. **Ask: did any new constraints surface during the Sprint that weren't on the original list?** — Prevents new constraints from falling through the cracks by capturing them at the moment of highest clarity.
+4. **Ask: given what you now know, which constraint should the next Sprint solve?** — Converts the re-ranked backlog into a decision — the top constraint becomes the input for the next Signal conversation.
+5. **Assign a Human Orchestrator for the next Sprint and write it down before leaving the room** — Names ownership before the Compound session ends; without a named Orchestrator the next Sprint has no driver.
+<!-- /moves:constraint-re-rank -->
 
 The second instrument in Compound is the Constraint Re-rank. The Signal Backlog that existed at the start of the Sprint was built on the information your company had at that moment. The Sprint produced new information — about what the data really looks like, which accountabilities have unexpected friction, which constraints turned out to be symptoms of a deeper constraint. You take the backlog into that new information and reorder it.
 

@@ -25,6 +25,16 @@ Together with the previous chapter, this is the second half of the Design row on
 
 ## Deconstruct the work task by *task*.
 
+<!-- moves:work-deconstruction -->
+### How to *deconstruct* the work task by task
+
+1. **Pull the actual accountability list** — Job descriptions are sanitized; the real weekly task list is what gets classified — you can't sort what you haven't named.
+2. **Document source inputs and outputs for each task** — Connecting each task to where its data comes from and where the result goes makes the information flow from Source concrete at task level.
+3. **Apply the TML sorting question to each task** — A single binary question — 'would the output need human review every time, or only on exceptions?' — assigns every task to Task, Management, or Leadership without ambiguity.
+4. **Tally the three buckets and challenge the Leadership pile** — If more than half land in Leadership, each item must be re-examined — genuine judgment stays, but undocumented rules that look like judgment get reclassified.
+5. **Map each classified task to a Hybrid Accountability Chart entry** — Deconstruction is thinking; the chart entry (function, agent team, supervisor, autonomy level) is what makes that thinking durable and actionable for Build.
+<!-- /moves:work-deconstruction -->
+
 Work Deconstruction applies the *TML framework* from Source to the work itself. Where Source used TML to categorize what the organization knows, Design uses TML to categorize what the work requires.
 
 The method is straightforward. Pull the actual accountability list for a role, not the job description. You want the real list of things that person touches every week. Then go task by task and classify each one using the TML framework from Source: ***Task***, ***Management***, ***Leadership***. For every task, also document the *source inputs* (where the data comes from — which system, which person, which document) and the *outputs* (where the result goes next). If you've done the Source work properly, you already know these. Writing them into the deconstruction makes the information flow from the previous chapter concrete at the task level.
@@ -112,6 +122,18 @@ Pick the workflow you're designing. Draw a swim lane diagram with two lanes — 
 ## The Design Brief is what Build *inherits*.
 
 Before you prototype, you need a document that captures everything the design has decided. The *Design Brief* is that document. It names who decides, which systems are involved, and how the workflow is governed. It's Design's output and Build's input. No other channel.
+
+<!-- moves:design-brief -->
+### How to write the *Design Brief*
+
+1. **Write the Workflow Summary** — Translates the swim lane or flowchart into written specification — trigger to output, every step, handoff, and decision point named.
+2. **Name the Stakeholders** — Identifies the Human Orchestrator, role-change list, downstream consumers, and approvers so accountability is unambiguous before Build begins.
+3. **List the Systems** — Every system the workflow touches must be named with the specific data it provides or receives, preventing integration surprises in Build.
+4. **Define the Data Requirements** — Specifying what data the agent team needs, where it lives, what format it arrives in, and what happens when it is missing or malformed closes the most common Build failure mode.
+5. **State the Success Criteria** — Anchors the brief to the measurable Signal targets so Build knows what it is optimizing for, not just what it is building.
+6. **Document Constraints and Guardrails** — Locks the governance decisions from Designing the System — data access, action permissions, escalation paths, quality cadence, kill switch — into the design record before Build inherits it.
+7. **Describe the V1 Artifact** — If you cannot describe what the first working version actually produces, the design is not finished — this field forces that decision.
+<!-- /moves:design-brief -->
 
 A Design Brief includes:
 

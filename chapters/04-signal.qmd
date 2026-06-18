@@ -146,6 +146,19 @@ Signal is a facilitated conversation with your leadership team. The room is your
 
 {{< excalidraw ch04-constraint-path "The path Signal walks: surface the candidates, trace each to root, confirm the load-bearing one, quantify the cost, and lock a single constraint on paper." >}}
 
+<!-- moves:run-signal-session -->
+### How to run the *Signal* session
+
+1. **Assemble the room** — Signal is a facilitated conversation, not a solo exercise — the CEO, senior leadership, relevant function owner, and a facilitator must all be present for the constraint to be validated by the people who own the business.
+2. **Surface the candidates** — Before you can pick one constraint you need an honest inventory; the Issue Surfacer questions (workarounds, new-hire confusion, sausage-making, turnover, recurring conversations) generate five to ten candidates without filtering.
+3. **Trace symptoms to root with the Five Whys** — Most candidates are symptoms, not constraints; running Five Whys out loud with the people closest to the work finds the structural cause — and the stop rule ensures you land on workflow/handoff/gap, not a person.
+4. **Pick among the survivors using the tiebreaker rubric** — When more than one candidate survives the trace, the five-criteria rubric (foundation first, highest pain, smallest gap, owner in room, two-quarter horizon) applied in order produces a defensible, unambiguous pick.
+5. **Run the five constraint questions** — Walking the chosen candidate through the five questions — problem in one sentence, where it lives, how long, what it costs, what changes if removed — builds the evidence base and forces the cost to be a real number.
+6. **Write the Constraint Statement** — The one-page template (one anchoring sentence, location, duration, quantified cost, validating evidence) converts the conversation into a locked, shareable artifact that everyone in the room can see and agree to.
+7. **Apply the lever test and restate test** — Two final checks confirm you are at root constraint and not still holding a symptom: the lever test asks whether solving this one moves multiple others; the restate test asks whether the room actually agrees.
+8. **Check for failure modes and lock the gate** — A checklist of seven common Signal failures (too abstract, too many, no number, dominant personality, named the person, solved the symptom, unsolvable by a Sprint) catches anything the previous steps missed before you hand off to Source.
+<!-- /moves:run-signal-session -->
+
 ### Surface the *candidates*
 
 Before you can pick one constraint, you need an honest inventory of what's broken or slow. This is the Issue Surfacer conversation. Ask the room questions like these (use them as a starting set, not a script):

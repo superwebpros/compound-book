@@ -36,6 +36,17 @@ But before you can assign owners to the work, you have to see what the work actu
 
 Before the chart makes sense, you have to answer a question most leadership teams never ask: how does information actually move through this part of the company?
 
+<!-- moves:information-flow-spec -->
+### How to write the *Information Flow Specification*
+
+1. **Name the accountability** — Pins the spec to one specific outcome so you are describing a workflow, not a job description.
+2. **List the data feeds** — Forces you to name every source system and document set that supplies raw material to the work, surfacing hidden dependencies.
+3. **Document the processing steps** — Makes the transformation work visible — lookups, comparisons, calculations, formatting — so you can later decide what a rule covers vs. what requires judgment.
+4. **Classify each decision: rule-based or judgment-based** — This split is the design hinge: rule-based decisions are AI-automatable; judgment-based ones require a human in the loop.
+5. **Define the output and its destination** — Anchors the spec to a measurable deliverable and names who or what receives it, enabling handoff design downstream.
+6. **Draw the swim lane diagram** — Puts every actor and every handoff on one page, making fragile multi-handoff flows immediately visible before anything is built.
+<!-- /moves:information-flow-spec -->
+
 Every accountability in a knowledge business is an information problem. The project coordinator takes information from one system, combines it with information from another system, applies rules she carries in her head, and produces an output that moves to the next person in the chain. At Meridian, the quoting workflow pulls customer data from HubSpot, matches it against pricing tables in JobBOSS, applies exception rules that live in a 147-row spreadsheet on Elena Ruiz's desktop, and assembles the result into a format the customer can read. Four steps. That's the information flow. The Knowledge Map you built in Source named where each piece lives; this section is about how those pieces move. When you see the work as information flow, the design question changes. It becomes: what information does this work need, where does it live, and how should it move?
 
 That question produces an *Information Flow Specification*: a spec for how information moves through one accountability. It names four things:
@@ -115,12 +126,18 @@ The Hybrid Accountability Chart takes the Accountability Chart structure from th
 
 Meridian's chart, populated at the end of this chapter, has five rows: three under Elena Ruiz as the agent supervisor and two human-only rows. Every row has a name.
 
-You build it one Sprint at a time. For each accountability your Sprint is addressing, you answer four questions, and you write the answers into the chart before Build begins:
+You build it one Sprint at a time. For each accountability your Sprint is addressing, you work through six steps and write the answers into the chart before Build begins:
 
-1. **What role or function does this team perform?** Not the task, the outcome this person or team is responsible for. "Produce accurate initial quotes within 2 hours of request" is an accountability. "Look up pricing" is a task.
-2. **What is the name of the agent team, if applicable?** Name it and scope it. The name matters because accountability requires something to point to. Without a name, there's no clear owner, no clear scope, and no clear question to ask when something goes wrong. "Quote Generation Team" names who's doing what; "AI Helper" names nothing useful. The name is how the agent team shows up in the chart with a supervisor attached.
-3. **Who is the human supervisor?** Every row must have one. No exceptions. No "TBD." No "the team." A name. If you can't name the supervisor, the design isn't done.
-4. **Is this accountability *AI-assisted* or *Automated*?** AI-assisted means human-in-the-loop, reviewing every output. Automated means human-on-the-loop, monitoring by exception and reviewing on schedule.
+<!-- moves:hybrid-accountability-chart -->
+### How to build the *Hybrid Accountability Chart*
+
+1. **Name the role/function as an outcome, not a task** — Outcome framing ('produce accurate initial quotes within 2 hours') defines what the row is accountable for; task framing ('look up pricing') describes activity with no clear owner or success criterion.
+2. **Name the agent team (or mark None)** — A named team can be pointed to when something goes wrong; 'AI Helper' names nothing useful and dissolves accountability.
+3. **Name one human supervisor — no TBD, no shared rows** — Every agent team must have a named human who owns the outcome; blank or shared supervisor cells are a governance failure waiting to surface in production.
+4. **Set the autonomy level: AI-Assisted or Automated** — This is a governance decision, not a capability decision; the level determines how much human review sits between the agent output and any consequential action.
+5. **Apply the Right Seat Evaluation to the supervisor candidate** — Sees It / Wants It / Suited for It — a supervisor who fails any of the three tests means the chart has a name in the column but ineffective supervision underneath it.
+6. **Answer the five governance questions for each row** — Data access, permitted actions, escalation path, quality monitoring method, and kill-switch conditions must be written down before Build begins; unanswered questions become expensive surprises after deployment.
+<!-- /moves:hybrid-accountability-chart -->
 
 Here's what your chart looks like after a handful of Sprints, built up over time, with multiple rows per Sprint when the constraint workflow touches multiple functions:
 
@@ -229,14 +246,19 @@ The question "does this workflow need an interface?" is a governance question in
 
 The chart names the agent team. The mini-spec names what the agent actually is. Every row in the Hybrid Accountability Chart gets a mini-spec, and the mini-spec is what you hand to Build.
 
-A mini-spec answers six questions, one to a line:
+A mini-spec answers seven questions in Design — the first six define the agent; the seventh locks the tool category before Build inherits the spec:
 
-1. **System prompt** (the standing instructions you write that tell the agent who it is, what it's responsible for, and what it's not allowed to decide — like a job description the agent reads before every task). The operating rules. Who the agent is, what it's accountable for, what it does and doesn't decide. Three to five sentences, written as if you were briefing a new hire.
-2. **Tools.** What the agent can call. APIs, search, file access, the specific systems the Knowledge Map says it needs. Name them by name.
-3. **Context sources.** Which Knowledge Map rows feed this agent. Document store, CRM record, rate-card spreadsheet, the cleaned exception database. If the source isn't on the map, it isn't a source.
-4. **Memory rules.** What the agent tracks across runs. Conversation history, prior outputs, learned customer preferences. Most first-Sprint agents have no memory. Saying so is part of the spec.
-5. **Judgment and escalation rules.** When the agent escalates, what it refuses, what triggers a hand-off to the human supervisor. The governance answers from the previous section land here, agent by agent.
-6. **Oversight load.** Low, medium, or high. How much of the human supervisor's attention this agent consumes per run.
+<!-- moves:agent-mini-spec -->
+### How to write the *Agent Mini-Spec*
+
+1. **Write the system prompt** — Three-to-five sentences that tell the agent who it is, what it is accountable for, and what it does not decide — the standing operating rules it reads before every task.
+2. **List the tools** — Names every API, integration, or system the agent can call; unnamed tools are tools Build has to guess at.
+3. **Identify the context sources** — Maps the Knowledge Map rows that feed this agent; if a source is not on the map, it is not a source — this prevents scope creep at the data layer.
+4. **Set the memory rules** — Explicitly stating what the agent tracks across runs (or that it tracks nothing) prevents the agent from carrying stale state into new tasks.
+5. **Define judgment and escalation rules** — Specifies exactly when the agent escalates, what it refuses, and what triggers a handoff to the human supervisor — the governance answers from the HAC land here, agent by agent.
+6. **Rate the oversight load (Low / Medium / High)** — Keeps the supervisor's span of control visible; no supervisor should carry more than three high-oversight agents at once, so this field is the span-of-control check before the spec leaves Design.
+7. **Select the tool category (off-the-shelf / low-code / hand-built)** — Locking the category in Design — by running the three routing questions in order — prevents Build from making an architecture decision based on vendor relationships or recency rather than the workflow's actual requirements.
+<!-- /moves:agent-mini-spec -->
 
 Here is the blank mini-spec template. One per agent on your Hybrid Accountability Chart. The full walkthrough sits in the next chapter, inside the Design Brief.
 

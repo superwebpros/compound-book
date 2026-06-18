@@ -33,6 +33,15 @@ The Rhythm has a meeting. One to two hours, your leadership team, every quarter,
 
 [^coe]: The session's structure draws on the Center of Excellence (COE) Operating Model — Dave Ulrich's three-pillar HR framework from *Human Resource Champions* (1997), where specialized expertise centers coordinate across the business with defined governance and a recurring meeting cadence. The four steps below add how that discipline runs inside a Compound Sprint cycle.
 
+<!-- moves:quarterly-operating-session -->
+### How to run the quarterly *operating session*
+
+1. **Step 1: Review the previous Sprint at the outcome level** — Determines whether the constraint actually moved and whether the workflow is permanent or needs another Sprint — the outcome question, not a status update.
+2. **Step 2: Update the Signal Backlog** — Re-ranks the running inventory of constraints so the next Sprint is chosen from current reality, not last quarter's assumptions.
+3. **Step 3: Commit the next Sprint** — Converts backlog priority into a named constraint, a named Human Orchestrator, a budget confirmation, and a start date — the team leaves with a specific commitment.
+4. **Step 4: Update the Hybrid Accountability Chart** — Makes permanent any HAC rows from the completed Sprint, removes what didn't work, and resets the Hybrid Org Today baseline so the living document stays current.
+<!-- /moves:quarterly-operating-session -->
+
 **Step 1: Review the previous Sprint at the outcome level.** Read the Sprint outcome statement from Deliver. Review the retrospective findings from Compound. Did the constraint move? By how much? What changed in the cost your team quantified during Signal? This isn't a status update on the agent team's activity — that conversation happens elsewhere, more often. This is the outcome question. The Hybrid Accountability Chart names a constraint owner; that owner reports the result. And you answer one question that determines what happens next: is the workflow permanent, or does it need another Sprint?
 
 **Step 2: Update the Signal Backlog.** Pull the re-ranked backlog from the Compound phase. Review each candidate: still relevant? Cost changed? New information? Add any new constraints that emerged during the quarter. Remove any that were resolved as side effects. What has shifted in priority since last quarter? The Signal Backlog is the running inventory of your company's most expensive operational problems, ranked. It is the input to every quarterly conversation.
@@ -79,6 +88,15 @@ A Sprint can become a Rock when committed in quarterly planning. The HAC layers 
 
 Once you're running the Rhythm, you maintain one living document: the Hybrid Org Today. It is the current operational picture of your Co-Intelligent Company.
 
+<!-- moves:hybrid-org-today -->
+### How to maintain the *Hybrid Org Today*
+
+1. **Combine the Hybrid Accountability Chart and Signal Backlog into one document** — The structural layer (who owns what handoffs) and the constraint inventory (solved / in-flight / queued) together answer the one quarterly question: where does the design layer stand today?
+2. **Fit it on one page** — If it spills past one page you are tracking too much — the constraint forces prioritization and prevents the document from becoming an ignored wiki.
+3. **Update it during the quarterly session, not between sessions** — Leadership-team ownership in the meeting is the discipline that prevents the document from rotting; Thursday-afternoon curation by a Notion-curator is how every 'living document' dies.
+4. **Use it as the standard briefing and the board receipt** — A new executive or a board question gets answered from one current, concrete document — not a slide deck assembled from memory.
+<!-- /moves:hybrid-org-today -->
+
 The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. The Hybrid Accountability Chart from the Design chapters is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
 
 The template should fit on one page. If it doesn't, you're tracking too much.
@@ -115,6 +133,15 @@ Without all four, the session produces nothing.
 ## Track compounding on a single *scorecard*.
 
 The Hybrid Org Today tells you where you stand. The Compounding Scorecard tells you whether the Rhythm is working.
+
+<!-- moves:compounding-scorecard -->
+### How to track *compounding* on the scorecard
+
+1. **Create the scorecard with six columns: Quarter, Constraint Solved, Cost Before, Cost After, Delta, Cumulative Impact** — The fixed structure forces each Sprint to produce a measurable delta and makes the cumulative column — the business case — visible across quarters.
+2. **Fill in the first row with the current Sprint** — Anchors the document in real data immediately; an empty scorecard is not a scorecard.
+3. **After each Sprint closes, add a row with the measured delta** — The delta tells you whether the design correctly identified the constraint; the retrospective tells you why — both are required to improve the next Sprint.
+4. **Read the cumulative column at each quarterly session to confirm compounding** — The cumulative column is the business case for continuing the Rhythm; declining marginal deltas are normal and expected — the compounding is in the stack, not each individual row.
+<!-- /moves:compounding-scorecard -->
 
 The Compounding Scorecard is a design-validation document, not a financial one. Each Sprint's delta tells you whether the design correctly identified the constraint and correctly allocated the work. The scorecard tells you which pattern you're running; the retrospective tells you why.
 

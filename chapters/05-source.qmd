@@ -71,6 +71,17 @@ A blank Knowledge Map template, ready to copy, sits at the end of this chapter, 
 
 ## Build the map in three *passes*.
 
+<!-- moves:build-knowledge-map -->
+### How to build the *Knowledge Map*
+
+1. **Start from the Constraint Statement** — Scopes the entire map to the one validated constraint so no row is extraneous.
+2. **Draw the six-column table (Source, Type, Owner, Status, Pipeline, Notes)** — Establishes the shared schema all three passes populate; running both the Knowledge Map and Pipeline Audit together prevents duplicated effort.
+3. **Pass 1 — List every digital source that touches the constraint** — Surfaces the named, login-accessible systems first because they are the easiest to enumerate and set the baseline for what is Connected, Manual, or Broken.
+4. **Pass 2 — List every person whose judgment the constraint workflow depends on** — Captures organic sources (institutional knowledge held by individuals) and flags single points of failure as AT RISK before the knowledge can walk out the door.
+5. **Pass 3 — List every gap: knowledge that should exist but does not appear in Pass 1 or Pass 2** — Naming missing sources before Build begins converts invisible Sprint failure modes into explicit design decisions.
+6. **Apply the one-page test** — Forces constraint scope discipline — if the map exceeds one page, rows unrelated to the constraint have crept in and must be cut.
+<!-- /moves:build-knowledge-map -->
+
 {{< excalidraw ch05-three-pass-build "Three-pass build: Digital, Organic, and Missing passes feeding into a completed one-page Knowledge Map" >}}
 
 ### Pass 1 — Digital sources
@@ -129,6 +140,15 @@ That single session produced the map that made Design possible. Without it, the 
 ## Classify what you *found*.
 
 Not all knowledge is the same. Once the map is built, classify each source along two axes and one tier system.
+
+<!-- moves:classify-sources -->
+### How to *classify* each source on the map
+
+1. **Mark each source as structured or unstructured** — Tells Design whether the source is directly queryable or requires an extraction pipeline, which affects cost, speed, and system architecture.
+2. **Mark each source as durable or ephemeral** — Filters out knowledge that will not matter in 90 days; only durable knowledge belongs on the map and informs agent design.
+3. **Assign each source an AI tier (Tier 1 / Tier 2 / Tier 3 / Not AI-tier)** — Tells Design what is reachable today, what requires extraction work before it is usable, and what must remain human-executed — preventing agents from mixing authoritative and stale sources.
+4. **Run the eight-item completeness test** — Acts as a pre-handoff gate ensuring the map covers layers, TML types, pipeline statuses, at-risk flags, gaps, and constraint scope before it goes to Design.
+<!-- /moves:classify-sources -->
 
 ### Structured vs. unstructured
 

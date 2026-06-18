@@ -83,14 +83,18 @@ The spec itself is the artifact a builder works from, whether engineer, vendor, 
 
 A complete spec covers eight sections:
 
-1. **Workflow summary.** One paragraph: what this workflow does, end to end, in plain language. No jargon. A builder who knows nothing about your business should be able to read it and understand what they're building.
-2. **Inputs.** What triggers the workflow. What data enters it, in what form, from which systems. Where that data lives and how the builder accesses it.
-3. **Outputs.** What the workflow produces. What form it takes. Where it goes. Who receives it.
-4. **Agent scope.** What the agent handles. What decisions it makes. What it isn't permitted to decide. Frame this as scope boundaries, not procedural instructions. Agents that are over-prescribed at the step level lose the flexibility that makes them effective.
-5. **Human supervisor role.** Who reviews the output. What they're reviewing for. What the handoff looks like: where the output lands, in what form, on what timeline.
-6. **Systems and integrations.** Every system the workflow touches. Read access, write access, or both. Authentication method. Data sensitivity classification for each.
-7. **Failure modes.** What happens when the agent produces output that needs escalation. Who it goes to. In what form. On what timeline. What the builder needs to wire to make that possible.
-8. **Environment and constraints.** Which specific environment inside Design's category (off-the-shelf, low-code, hand-built; see the Designing the System chapter) this build runs on, and why. Any constraints the builder must observe: data residency (legal or regulatory requirements that your data stay in a specific geography or on servers you control), existing licenses, internal security requirements.
+<!-- moves:write-build-spec -->
+### How to write the eight-section Build *Spec*
+
+1. **Section 1: Write the workflow summary** — Gives any builder a plain-language end-to-end picture of what they're building before they touch anything.
+2. **Section 2: Define the inputs** — Specifies exactly what triggers the workflow and what data enters it, so the builder knows where to reach and how to access it.
+3. **Section 3: Define the outputs** — Locks the deliverable form, destination, and recipient so the build can't drift toward something the supervisor can't use.
+4. **Section 4: Set agent scope boundaries** — States what the agent handles and what it cannot decide, preventing over-prescription that kills agent effectiveness.
+5. **Section 5: Name the human supervisor role** — Identifies who reviews, what they review for, and what the handoff looks like — the accountability anchor for the whole build.
+6. **Section 6: List every system and integration** — Documents read/write access, authentication method, and data sensitivity for every system touched so nothing is wired by assumption.
+7. **Section 7: Document the failure modes** — Pre-decides what happens on every edge case and outage so the builder wires escalation paths instead of improvising them under pressure.
+8. **Section 8: Specify the environment and constraints** — Locks which specific platform within Design's category the build runs on and any data residency, license, or security constraints.
+<!-- /moves:write-build-spec -->
 
 {{< excalidraw ch07-build-spec-sections "Build Spec: eight sections with section name and a one-line description of what belongs in each." >}}
 
@@ -142,13 +146,25 @@ Open a document. Write the eight section headers. Fill in Sections 1-3 from your
 
 Before building starts, audit the spec against these seven failures. Each one has ended a Sprint early or produced a system that got shut down within weeks. Check each against the completed spec, not against the build.
 
-- [ ] **1. Reinventing existing capabilities.** Search before you build. Does a tool, feature, or integration already exist that does what this section of the spec describes? Fifteen minutes of searching saves weeks of building. This is the most common implementation failure, and it's not technical. It's a research failure.
-- [ ] **2. Using the wrong tool for the job.** Match the environment to Design's category, not the other way around. If the spec calls for low-code and someone proposes a custom API integration because "it would be cleaner," the spec wins.
-- [ ] **3. Building before the spec is complete.** Every empty section in the spec is a decision the builder will make on the fly. Builders aren't designers. The decisions they make under build pressure won't match what Design intended.
-- [ ] **4. Ignoring the handoff.** The output must land where the work already lives. If the output lands in a new tool the team has never opened, adoption is zero.
-- [ ] **5. Skipping failure modes.** If Section 7 is empty, the build handles the happy path and breaks on the first edge case. Every workflow has edge cases.
-- [ ] **6. Building for the demo instead of the workflow.** A demo shows the happy path. A build handles the edge cases, the missing data, the system outages, the weird inputs, the supervisor who's on vacation.
-- [ ] **7. Declaring done before testing against real inputs.** Pull last week's actual data, the real records and the real requests, and run them through the build. Synthetic data and cherry-picked examples aren't tests.
+<!-- moves:audit-spec-failures -->
+### How to audit the spec against seven common *failures*
+
+1. **Check 1: Search for existing capabilities before building** — Prevents rebuilding what already exists — the most common implementation failure, which is a research gap, not a technical one.
+2. **Check 2: Confirm the environment matches Design's category** — Stops a builder from substituting a 'cleaner' architecture for the one the spec actually calls for.
+3. **Check 3: Verify the spec is complete before build starts** — Every empty section becomes an on-the-fly decision that won't match Design's intent.
+4. **Check 4: Confirm the output lands where the work already lives** — A workflow that outputs to a tool no one opens produces zero adoption regardless of technical quality.
+5. **Check 5: Verify Section 7 (failure modes) is populated** — A build that only handles the happy path breaks on the first edge case.
+6. **Check 6: Confirm the build handles real-world edge cases, not just the demo path** — A demo shows the happy path; the build must handle missing data, system outages, and off-script inputs.
+7. **Check 7: Require testing against real inputs before declaring done** — Synthetic and cherry-picked examples are not tests; last week's actual data is the only honest gate.
+<!-- /moves:audit-spec-failures -->
+
+- [ ] **Check 1: Search for existing capabilities before building.** Search before you build. Does a tool, feature, or integration already exist that does what this section of the spec describes? Fifteen minutes of searching saves weeks of building. This is the most common implementation failure, and it's not technical. It's a research failure.
+- [ ] **Check 2: Confirm the environment matches Design's category.** Match the environment to Design's category, not the other way around. If the spec calls for low-code and someone proposes a custom API integration because "it would be cleaner," the spec wins.
+- [ ] **Check 3: Verify the spec is complete before build starts.** Every empty section in the spec is a decision the builder will make on the fly. Builders aren't designers. The decisions they make under build pressure won't match what Design intended.
+- [ ] **Check 4: Confirm the output lands where the work already lives.** The output must land where the work already lives. If the output lands in a new tool the team has never opened, adoption is zero.
+- [ ] **Check 5: Verify Section 7 (failure modes) is populated.** If Section 7 is empty, the build handles the happy path and breaks on the first edge case. Every workflow has edge cases.
+- [ ] **Check 6: Confirm the build handles real-world edge cases, not just the demo path.** A demo shows the happy path. A build handles the edge cases, the missing data, the system outages, the weird inputs, the supervisor who's on vacation.
+- [ ] **Check 7: Require testing against real inputs before declaring done.** Pull last week's actual data, the real records and the real requests, and run them through the build. Synthetic data and cherry-picked examples aren't tests.
 
 :::{.callout-note}
 ## Action Step
@@ -162,6 +178,18 @@ The Guardrails Checklist is the second instrument, and it carries the quality, p
 {{< excalidraw ch07-guardrails-checklist "Guardrails Checklist: seven questions as a scannable pre-deploy gate." >}}
 
 Here is the blank seven-row Guardrails Checklist template.
+
+<!-- moves:guardrails-checklist -->
+### How to answer the seven *guardrails* questions in writing
+
+1. **Question 1: Lock data access boundaries in writing** — Documents exactly what data the system may touch and what is off-limits, with an owner for that decision.
+2. **Question 2: Define agent autonomy vs. human sign-off** — Draws the exact line between what the agent can do unilaterally and what requires a human approval before action.
+3. **Question 3: Specify behavior on unrecognized inputs** — Prevents the agent from guessing or going silent when it encounters something outside its design envelope.
+4. **Question 4: Define quality measurement and baseline** — Makes 'good enough' measurable so the supervisor can calibrate review cadence and know when to trust the system more.
+5. **Question 5: Name the escalation path** — Routes judgment-requiring outputs to a specific person, in a specific form, on a specific timeline — no ambiguity in the moment.
+6. **Question 6: Name the accountability owner** — Establishes who owns a bad output the same way they'd own it if a person produced it — no diffuse responsibility.
+7. **Question 7: Define the kill switch condition** — Pre-decides the specific failures that trigger immediate shutdown, so the decision isn't made under pressure after something goes wrong.
+<!-- /moves:guardrails-checklist -->
 
 | Question | Your answer |
 |---|---|

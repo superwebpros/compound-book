@@ -124,6 +124,20 @@ You sketch a Sprint before you run one. The Sprint Planning Canvas is a one-page
 
 The Canvas asks eight questions. Each one previews a stage of the Sequence, and each one points at a chapter later in the book that teaches you how to answer it.
 
+<!-- moves:sprint-planning-canvas -->
+### How to fill in the *Sprint Planning Canvas*
+
+1. **Name the constraint and price it** — The constraint sentence is the scope boundary the entire Sprint runs against; without a number the Sprint has no target to measure.
+2. **Inventory what the org knows and where it lives** — Surfaces knowledge gaps before Design so the build is not assembled from memory.
+3. **Trace how information flows through the workflow** — Exposes the handoffs and disconnected systems that are invisible on an org chart.
+4. **Assign accountability across humans and agents** — Every role — human and agent — needs one named owner before any code is written.
+5. **Draft the system specification** — Locks what the build must produce and what guardrails it must honor, preventing scope drift in Build.
+6. **Define how the deployment lands in real work** — Forces a per-role answer before launch, which is the gap where most AI projects fail.
+7. **Describe what changes structurally after the Sprint** — Commits the team to a specific operating-model change rather than a tool no one uses.
+8. **Set the cadence and identify the next Sprint** — Books the review date and names the next constraint, turning one Sprint into a compounding system.
+9. **Name the three operating fixtures: sponsor, Orchestrator, review date** — A Sprint without a named sponsor, orchestrator, and calendar date has no accountability and no deadline.
+<!-- /moves:sprint-planning-canvas -->
+
 1. **What's the validated constraint, and what does it cost?** (Signal)
 2. **What does the org know about it, and where does that knowledge live?** (Source)
 3. **How does information flow through the workflow?** (Source / Design)

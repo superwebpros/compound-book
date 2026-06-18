@@ -46,6 +46,17 @@ Maybe you've already tried: subscriptions, a pilot or two, a consultant, a vendo
 
 ## The Headcount *Paradox*
 
+<!-- moves:revenue-per-employee -->
+### How to *calculate* revenue per employee
+
+1. **Pull last-twelve-months revenue** — Establishes the numerator; forces a single agreed-on number before the division.
+2. **Count current full-time headcount** — Establishes the denominator; should reflect payroll today, not budgeted seats.
+3. **Divide revenue by headcount to get today's baseline** — Produces the per-person productivity proxy that all comparisons anchor to.
+4. **Fill in the 'at last major system rollout' row** — Gives a before-AI-investment reference point so the prior tech wave's lift is visible.
+5. **Project the '+20% revenue, no new hires' row** — Makes the target slope concrete — shows whether the math is achievable or aspirational.
+6. **Read the delta across the three rows** — Surfaces whether prior investment moved the number and whether the AI investment is on track to move it further.
+<!-- /moves:revenue-per-employee -->
+
 Stop here and do this calculation. Add up your company's revenue for the last twelve months. Divide it by the number of full-time employees on payroll today. That's your revenue per employee: the dollars of revenue each person on staff generates.
 
 Revenue per employee is the cleanest dollar-level proxy for productivity at the company level. A higher number means each person on staff is producing more, usually because the company has invested in systems, processes, or technology that lets people produce more without working harder. Flat or declining revenue per employee means revenue grew, but only by adding people at the same rate. The whole reason companies invest in technology is to move this number — to get more output from the same number of people.
@@ -161,6 +172,18 @@ At Meridian, the pricing and exception calls all routed through Elena, and nobod
 At Meridian, the $558K cost of the bottleneck was a first-read estimate, not a tracked number.
 
 ## Score Your AI *Readiness*
+
+<!-- moves:ai-readiness-scorecard -->
+### How to *run* the AI Readiness Scorecard
+
+1. **Assemble the right team** — The Scorecard is designed to surface disagreement; solo scoring misses the organizational signal.
+2. **Score all 20 statements 1–5** — Each statement probes one of the five dimensions; honest scoring requires the team to rate the company, not individual performance.
+3. **Sum each dimension's four scores into a subtotal out of 20** — Isolates which dimension is weakest so effort can be targeted before the redesign begins.
+4. **Add all five subtotals to get the total AI Readiness percentage** — Converts the raw scores into a single number that maps to one of five named readiness buckets.
+5. **Read the bucket description for the total score** — Translates the percentage into a starting posture — what to expect from the work ahead.
+6. **Identify the lowest dimension subtotal** — Pinpoints where the redesign work will require the most effort and the longest conversations.
+7. **Record the three closing-checklist items (overall score, lowest dimension, highest dimension)** — Locks the baseline so progress is measurable and the team has a shared reference as the chapters continue.
+<!-- /moves:ai-readiness-scorecard -->
 
 Twenty questions, four per dimension. For each statement, rank your company on a 1-to-5 scale — 1 means "not at all true" and 5 means "absolutely true." Do this with whoever would be in the room if you were deciding whether to invest in AI. Not just you. The team.
 

@@ -105,6 +105,15 @@ The columns also don't tell you yet how to apply them to a real role in your com
 
 ## Humans own outcomes. Agents own *tasks*.
 
+<!-- moves:two-column-role-sort -->
+### How to run the *Two-Column Role Sort*
+1. **Pick a real role** — Grounds the sort in actual work rather than abstract categories; the job description is not the role as it runs.
+2. **List the work as it actually happens** — Capturing what the person spends their week on (not the job description) surfaces the tasks that are ripe for redesign.
+3. **Sort each task into Column A or Column B** — Column A = judgment that changes based on context a machine cannot observe; Column B = processing that follows rules a machine could learn.
+4. **Split compound tasks** — Many tasks contain both a judgment component and a rule-following component; splitting them prevents undercounting Column B.
+5. **Read the completed sort** — The distribution of tasks tells you where the design opportunity is and whether a redesign conversation is unavoidable.
+<!-- /moves:two-column-role-sort -->
+
 Humans own outcomes. Agents own tasks, and the intermediate outputs those tasks produce.
 
 The way we use "ownership" here is specific. It doesn't mean who is aware of a task or who is cc'd on the outcome. It means who is accountable for the decision, the quality, and the next move if something goes wrong. A human always holds that ultimate accountability for the outcome. A human can delegate the *tasks* underneath the outcome to an agent or a team of agents. Each task needs a single named owner. One person, or one agent, picks it up and doesn't put it down until the handoff. But the agent's ownership is always derived from a human's delegation, and the outcome stays on the human's name. Organizations hold humans responsible for outcomes, even in fully automated processes.
@@ -207,6 +216,24 @@ Set the standard before the work starts. Hold it through every review cycle. The
 :::
 
 ### Two patterns: human-supervised, *agent*-supervised.
+
+<!-- moves:calculate-design-opportunity -->
+### How to calculate the *design opportunity*
+1. **Count the tasks in each column** — Establishes the ratio of human-intelligence work to agent-intelligence work for this role.
+2. **Estimate hours per week for each task** — Converts task count into time, making the misallocation concrete rather than just a fraction.
+3. **Calculate the Column B percentage of the role's week** — Produces the headline number — the share of the role that could run on agent intelligence instead of human hours.
+4. **Write the single summary sentence** — 'This role is __% Column B' creates a decision-forcing statement the team can react to.
+5. **Multiply Column B percentage by the role's loaded annual cost** — Translates the percentage into an annual dollar misallocation — the cost of not redesigning the role.
+<!-- /moves:calculate-design-opportunity -->
+
+<!-- moves:map-hybrid-split -->
+### How to map the *hybrid split*
+1. **Take the completed Column A / Column B sort** — The sort is the raw material; the hybrid split translates it into a redesigned operating picture.
+2. **Move Column B tasks into the 'Agent Labors' column** — Names the specific work the agent will own, making the delegation explicit rather than implied.
+3. **Move Column A tasks into the 'Human Manages' column** — Names the judgment and direction responsibilities the human retains, clarifying what the redesigned role actually requires.
+4. **Add a quality-standard row for the human** — Ensures the human's review responsibility over all agent output is explicit in the design — this is what prevents AI slop shipping under the role's name.
+5. **Read the hybrid split as a role description** — The completed table is the shape of the redesigned seat — enough to see whether it is viable and to hand off to Sprint design work.
+<!-- /moves:map-hybrid-split -->
 
 What the marketing lead is doing is one pattern. It's not the only one, and the design discipline shifts as the pattern shifts.
 
