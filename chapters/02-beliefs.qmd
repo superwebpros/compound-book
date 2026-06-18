@@ -39,6 +39,8 @@ That's good news, and mid-market is where it lands hardest. You carry less legac
 
 > If your systems are running and your people are still the glue between them, you've got an operating-model gap, not a technology gap.
 
+What that gap is, and how you close it, is the next chapter: the Co-Operating Model.
+
 The first question to ask isn't *which AI tool should we buy?* It's *given the systems we already run, where is human labor doing the work the systems should be doing?* That's where AI goes. Everything else in the book is the discipline of finding those places.
 
 ## Adopt the AI *operator* mindset.
