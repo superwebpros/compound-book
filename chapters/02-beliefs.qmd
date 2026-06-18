@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-One claim does the work in this chapter: you're already a tech company. Three shifts follow once that lands. AI is a worker, not a tool. The headcount math can bend. Your job is to design the work, not do it. The chapter closes with one thing to do before Sprint 1: take stock of where your people are doing work your systems should be doing, and carry that list forward.
+One claim does the work in this chapter: you're already a tech company. Three shifts follow once that lands. AI is a worker, not a tool. The headcount math can bend. Your job is to design the work, not do it. The chapter closes with a gut check on what you now believe, and one short list to carry into your first sprint: where your people are doing work your systems should be doing.
 :::
 
 Marco Argenti, the CIO of Goldman Sachs, told a story in *Harvard Business Review* (June 2026). One of his senior bankers asked him a question: *"With AI getting better so fast, what's the 10% of my job AI will never be able to do, so I can hang on to it?"*
@@ -39,17 +39,17 @@ That's good news, and mid-market is where it lands hardest. You carry less legac
 
 > If your systems are running and your people are still the glue between them, you've got an operating-model gap, not a technology gap.
 
-That one line changes which question you ask first. The question isn't *which AI tool should we buy?* It's *given the systems we already run, where is human labor doing the work the systems should be doing?* That's where AI goes. Everything else in the book is the discipline of finding those places.
+The first question to ask isn't *which AI tool should we buy?* It's *given the systems we already run, where is human labor doing the work the systems should be doing?* That's where AI goes. Everything else in the book is the discipline of finding those places.
 
 ## Adopt the AI *operator* mindset.
 
-Once you see the company as already tech, three shifts follow. They're the mindset an operator runs on: manage AI like a worker, decide the headcount math can bend, and design the work instead of doing it.
+Once you see the company as already tech, three shifts follow. Manage AI like a worker. Decide the headcount math can bend. Design the work instead of doing it.
 
 ### Manage AI like a worker, not a tool.
 
-If your systems are the substrate, the next question is what operates inside them. Most operators reach for software vocabulary: *deploy, integrate, license, train the model.* That language was right for thirty years. It described a tool you installed and used. A tool didn't have a workday or hand off to other parts of the org.
+If your systems are the foundation everything runs on, the next question is what operates inside them. Most operators reach for software vocabulary: *deploy, integrate, license, operate, use.* That language was right for thirty years. It described a tool you installed and used. A tool didn't have a workday or hand off to other parts of the org.
 
-The new vocabulary is management. You assign work. You supervise. You evaluate the output and adjust the assignment. An agent holds a goal, has a defined scope and access to specific data, and produces deliverables on a cadence. A human reviews the output and adjusts the scope. The structure is identical to how you manage a competent junior employee. The interface is different; the work pattern is the same.
+The new vocabulary is management. You assign work. You supervise. You evaluate the output and adjust the assignment. An agent holds a goal, has a defined scope and access to specific data, and produces deliverables on a cadence. A human reviews the output and adjusts the scope. The structure is identical to how you manage a competent junior employee.
 
 At Meridian, Elena stopped describing the quoting work as "a tool to integrate" and started describing it as "an agent that drafts the quote, hands it to me to review, and learns from my corrections." If your team is still typing questions into a chatbot and reading the answers as authoritative, they're stuck in the loop the Diagnosis chapter named. Treating AI as a worker is the move past it.
 
@@ -59,35 +59,47 @@ The Diagnosis chapter named the Headcount Paradox: every meaningful jump in reve
 
 This is an operator decision. Revenue per employee stays fixed for your industry only as long as you don't redesign the work. The companies whose numbers move are the ones that decided otherwise. Meridian's quoting bottleneck was costing them roughly $558K a year. Elena didn't believe the slope could bend until she ran the redesign math (that's the Signal chapter's work). The Sprints ahead are what bending the slope actually looks like.
 
-::: callout-tip
-## Pro Tip
-Calculate your revenue per employee today: last year's revenue divided by your headcount. Then ask the question that follows from this shift: *what would it take to ship our next eight figures of revenue without adding the proportional headcount?* If the question feels absurd, that's the belief gap, and the gap is exactly what the framework is built to close.
-:::
-
 ### Design the work, don't do it.
 
-If the math can bend, your own role changes too. The change shows up in where your hours go. You design and supervise the work instead of doing it. The execution work that used to anchor your week, the proposals you rewrote, the reports you reformatted, the routing you owned because no one else could be trusted with it, moves inside a system you designed.
+Designing the work just means answering one question: what's the most efficient way this outcome happens? The steps, their order, and who or what does each one. If the math can bend, your own role changes too. The change shows up in where your hours go. You design and supervise the work instead of doing it. The execution work that used to anchor your week, the proposals you rewrote, the reports you reformatted, the routing you owned because no one else could be trusted with it, moves inside a system you designed.
 
-This is the shift that's easiest to misread. Read it wrong and it sounds like *everyone's now a manager of agents, on top of their existing job.* Bedard and colleagues, writing in *HBR* (March 2026), found that operators who treat AI oversight as an add-on suffer measurably more fatigue and information overload, while AI that genuinely removes toil lowers burnout. The difference is the design decision: does your operating model add oversight on top of the job, or does it move the toil off the desk?
+Done right, the work you used to do leaves your desk, and a lighter layer of oversight takes its place. It doesn't add agent management on top of your existing job.
 
-The job doesn't grow. The composition changes. At Meridian, Elena's hours didn't expand when the agent landed. Fifteen hours of quote drafting moved off her desk; the four hours of pricing judgment that remained got sharper. That's the shift in operating terms: different work, not more work. The rest of this book, the Co-Operating Model, the Sequence, and the two Design chapters, is the discipline of changing that composition on purpose instead of by accident.
+Bedard and colleagues, writing in *HBR* (March 2026), found that operators who treat AI oversight as an add-on suffer measurably more fatigue and information overload, while AI that genuinely removes toil lowers burnout. The difference is the design decision: does your operating model add oversight on top of the job, or does it move the toil off the desk?
 
-## Take stock before *Sprint 1*.
+The job doesn't grow. The composition changes. 
+
+At Meridian, Elena's hours didn't expand when the agent landed. Fifteen hours of quote drafting moved off her desk; the four hours of pricing judgment that remained got sharper. That's the shift in operating terms: different work, not more work. The rest of this book, the Co-Operating Model, the Sequence, and the two Design chapters, is the discipline of changing that composition on purpose instead of by accident.
+
+## Take stock before your first *sprint*.
+
+You don't have to act on any of this yet. The redesign work comes later, in focused cycles we'll call sprints (the Signal chapter runs your first one). For now the shift is the point, so two things close the chapter: a gut check on what you actually believe, and one short list to keep.
+
+### What you now *believe*
+
+This chapter made one claim and drew three shifts from it. Mark where you honestly land on each:
+
+| Claim | Yes | No | We'll see |
+|---|:-:|:-:|:-:|
+| We're already a tech company. |  |  |  |
+| AI is a worker to manage, not a tool to deploy. |  |  |  |
+| The headcount math can bend. |  |  |  |
+| My job is to design the work, not do it. |  |  |  |
+
+Anywhere you marked *no* or *we'll see* is what the rest of the book is built to earn. You don't have to believe it yet. You just have to be willing to test it.
+
+Now one concrete thing to carry forward.
 
 <!-- moves:take-stock-operating-model-gap -->
 ### How to take stock of the *operating-model gap*
 
-1. **Open your four core systems side by side** — Forces the reader to look at the actual stack rather than describe it from memory, surfacing real friction points.
-2. **For each system, name one place a person is doing work the system should be doing** — Constrains the exercise to one item per system so the list stays actionable rather than becoming a complaint session.
-3. **Record the list in the Sprint Planning Canvas table** — Externalizes the gap so it can be handed to Sprint 1 as a concrete candidate-constraint input, not a vague feeling.
-4. **Carry the list forward — don't solve yet** — The chapter explicitly defers prioritization to the Signal chapter; the move here is observation, not intervention.
+1. **Open your core systems side by side** — your CRM, your accounting or ERP system, your project tool, your communications stack, your document store. Real screens beat working from memory.
+2. **For each one, name a single place a person is doing work the system should be doing** — retyping data the system already has, say, or making a routine call the system could route. One item per system, so the list stays concrete instead of a gripe session.
+3. **Write those down as one short list** — nothing fancy, a few lines you can set aside.
+4. **Keep the list, don't act on it yet** — the prioritizing comes later, in the Signal chapter. Right now you're only noticing.
 <!-- /moves:take-stock-operating-model-gap -->
 
-These shifts only matter if they change what you do this week. So before you start Sprint 1, do one thing.
-
-Open your CRM, your accounting or ERP system, your project tool, and your communications stack on the same screen. For each one, write down a single place where a person is doing work the system should be doing. Don't solve anything yet. Just take stock.
-
-Meridian's first pass at this listed the quoting bottleneck under CRM, the pricing exceptions trapped on Elena's desktop under accounting, and the missing handoff to the shop floor under the project tool. That short list became Sprint 1's candidate constraints.
+Fill in the table below. Meridian's version follows, for reference.
 
 | System | Where a person does work the system should be doing |
 |---|---|
@@ -98,23 +110,23 @@ Meridian's first pass at this listed the quoting bottleneck under CRM, the prici
 | Document store |  |
 | Other |  |
 
-*Meridian's completed version, for reference:*
+*Meridian's first pass:*
 
 | System | Where a person does work the system should be doing |
 |---|---|
 | CRM (HubSpot) | Elena manually drafts every custom quote; the bottleneck costs ~$558K/year in delayed closes |
-| Accounting / ERP (NetSuite) | Pricing exceptions sit on Elena's desktop — no one else can approve them |
-| Project tool (Asana) | Shop-floor handoff still happens by phone call; no automatic task is created when a job is won |
+| Accounting / ERP (NetSuite) | Pricing exceptions sit on Elena's desktop; no one else can approve them |
+| Project tool (Asana) | Shop-floor handoff still happens by phone call; no task is created when a job is won |
 | Communications | — |
 | Document store | — |
 | Other | — |
 
-This list is Sprint 1's first input. The Signal chapter prices your top item, and the entries you write here become the raw material for the Sprint Planning Canvas, the master worksheet you'll build up across the book and carry into your first Design Brief. Keep the list. You'll use it within a chapter or two.
+Hang onto this list. When you run your first sprint, it's where the work starts.
 
 ## Reflect on your *operation*.
 
-1.  Look at the list you just built. Which constraint is costing you the most, measured in hours lost, dollars unearned, or decisions you're personally absorbing? Which one have you been avoiding, and why?
-2.  The last time your team talked about an AI use case, did anyone ask *what scope is this worker accountable for, and who supervises the output?* If not, what did they ask instead, and what did that framing miss?
-3.  Of the work you personally did last week, how much required your judgment, and how much was execution someone (or something) else could do inside a design you set?
+1. Look at the list you just built. Which item is costing you the most, measured in hours lost, dollars unearned, or decisions you're personally absorbing? Which one have you been avoiding, and why?
+2. The last time your team talked about an AI use case, did anyone ask *what scope is this worker accountable for, and who supervises the output?* If not, what did they ask instead, and what did that framing miss?
+3. Of the work you personally did last week, how much required your judgment, and how much was execution someone (or something) else could do inside a design you set?
 
 You're already a tech company. The next question is how your people and your agents actually share the work. That's the Co-Operating Model.
