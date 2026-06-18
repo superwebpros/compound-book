@@ -16,3 +16,8 @@ _book/
 .wrangler/
 index.tex
 _excalidraw-cache/
+.DS_Store
+full_book.md
+.env
+.env.local
+.claude/.env

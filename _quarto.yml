@@ -10,7 +10,7 @@ book:
       affiliation: Compound
     - name: Julie Mann
       affiliation: Compound
-  date: "2026"
+  date: "2026-06-01"
   site-url: https://books.compoundorg.com
   cover-image: assets/cover.png
   favicon: assets/logo-mark-dark.svg
@@ -19,6 +19,7 @@ book:
     - part: "Part I: The Framework"
       chapters:
         - chapters/01-diagnosis.qmd
+        - chapters/02-beliefs.qmd
         - chapters/02-co-operating-model.qmd
         - chapters/03-the-framework.qmd
     - part: "Part II: Strategy"
@@ -44,6 +45,7 @@ book:
         - chapters/case-study-pm-agent-team.qmd
     - chapters/appendix-prompt-engineering.qmd
     - chapters/appendix-prompts.qmd
+    - chapters/appendix-diagramming-primer.qmd
     - chapters/appendix-glossary.qmd
     - chapters/appendix-action-steps.qmd
 

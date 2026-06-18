@@ -1,0 +1,7 @@
+extends: occurrence
+message: "Em-dash density: %s em-dashes in this paragraph (max 1, calculated only). Voice charter §2: em-dashes are an AI tell, use sparingly."
+level: warning
+scope: paragraph
+max: 1
+token: '—'
+link: '_julie/voice-charter.md'

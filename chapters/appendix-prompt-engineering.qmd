@@ -4,15 +4,15 @@ Prompt engineering is a real skill, and it is worth developing once your agent t
 
 Prompt engineering and context engineering are complementary skills. Prompting is the instruction — what you tell the agent to do. Context engineering is the information environment that instruction runs inside — what the agent has access to, how that information is structured, and where it lives. Most people spend their time refining the instruction when the real leverage is in the information environment. This appendix covers both, starting with prompting and then moving to the context stack that makes prompting work.
 
-If you have read this book and you are interested in prompt engineering, your timing is right: you now have the design context that makes prompt skill meaningful. If you are reading this appendix before you have run a sprint, go back to Signal. The design work comes first.
+If you have read this book and you are interested in prompt engineering, your timing is right: you now have the design context that makes prompt skill meaningful. If you are reading this appendix before you have run a Sprint, go back to Signal. The design work comes first.
 
-## What effective prompting looks like in the *sprint context*.
+## What effective prompting looks like in the *Sprint context*.
 
-In the Design phase, when Work Deconstruction has identified the specific tasks your agent team will execute, prompt design is the activity of writing precise, testable instructions for each task — instructions that depend on the constraint Signal surfaced and the knowledge map Source produced. The best prompts in a sprint context are specific about the input format the agent receives, explicit about the output format it should produce, and include the constraints and edge cases your human supervisor identified during Design.
+In the Design phase, when Work Deconstruction has identified the specific tasks your agent team will execute, prompt design is the activity of writing precise, testable instructions for each task — instructions that depend on the constraint Signal surfaced and the knowledge map Source produced. The best prompts in a Sprint context are specific about the input format the agent receives, explicit about the output format it should produce, and include the constraints and edge cases your human supervisor identified during Design.
 
-Here is what that looks like in practice. Suppose your sprint constraint (from Signal) is *"Our proposal win rate drops when the executive summary exceeds one page."* Work Deconstruction assigns an agent the task of drafting executive summaries. A prompt built against that accountability reads differently than a generic "write a summary" instruction:
+Here is what that looks like in practice. Suppose your Sprint constraint (from Signal) is *"Our proposal win rate drops when the executive summary exceeds one page."* Work Deconstruction assigns an agent the task of drafting executive summaries. A prompt built against that accountability reads differently than a generic "write a summary" instruction:
 
-{{< excalidraw appendix-prompt-anatomy "Prompt anatomy: ROLE / INPUT / OUTPUT / CONSTRAINTS sections, with sprint phase source for each (Signal → CONSTRAINTS, Source → INPUT, Design → ROLE + OUTPUT)." >}}
+{{< excalidraw appendix-prompt-anatomy "Prompt anatomy: ROLE / INPUT / OUTPUT / CONSTRAINTS sections, with Sprint phase source for each (Signal → CONSTRAINTS, Source → INPUT, Design → ROLE + OUTPUT)." >}}
 
 ```
 ROLE
@@ -41,11 +41,11 @@ EDGE CASES
 - If multiple evaluation criteria are equally weighted, prioritize the one listed first
 ```
 
-Your prompt will differ — the accountability, the input sources, the constraints are all specific to your sprint. This template is the structure. Fill it from your Signal constraint, your Source knowledge map, and the edge cases your supervisor flagged in Design. A prompt built this way gives the agent a target it can hit and gives you a result you can evaluate. Prompts built in the abstract give you neither.
+Your prompt will differ — the accountability, the input sources, the constraints are all specific to your Sprint. This template is the structure. Fill it from your Signal constraint, your Source knowledge map, and the edge cases your supervisor flagged in Design. A prompt built this way gives the agent a target it can hit and gives you a result you can evaluate. Prompts built in the abstract give you neither.
 
-After the Deliver phase, the Sprint Retrospective will surface cases where the agent produced unexpected output. Those cases are prompt design signals — they indicate where the instruction was ambiguous or where an edge case was not anticipated. The Compound phase is where those signals become prompt improvements, then Design improvements, then better sprint performance in the next cycle.
+After the Deliver phase, the Sprint Retrospective will surface cases where the agent produced unexpected output. Those cases are prompt design signals — they indicate where the instruction was ambiguous or where an edge case was not anticipated. The Compound phase is where those signals become prompt improvements, then Design improvements, then better Sprint performance in the next cycle.
 
-{{< excalidraw appendix-feedback-loop "Prompt improvement feedback loop: Design → Build/Deliver → Retrospective → Compound → Design (next sprint, better prompt)." >}}
+{{< excalidraw appendix-feedback-loop "Prompt improvement feedback loop: Design → Build/Deliver → Retrospective → Compound → Design (next Sprint, better prompt)." >}}
 
 ## Context engineering — what it is and why it matters more than prompting.
 
@@ -75,7 +75,7 @@ An AI agent's context has five layers, stacked from simplest to most complex. Ea
 
 Each layer is more powerful and more complex to set up than the one below it. Most teams stop at Layer 1. Teams that run the Compound Sprint build through Layer 3 by default and reach Layers 4 and 5 when the constraint requires it.
 
-### How sprint artifacts map to the context stack.
+### How Sprint artifacts map to the context stack.
 
 The Compound Sprint produces the inputs for context engineering. The mapping is direct.
 
@@ -134,4 +134,4 @@ Prompt engineering is a writing skill. Context engineering is a design disciplin
 
 The Compound Sprint gives you the design discipline. Signal tells you what the agent is accountable for. Source maps the information environment and classifies it. Design specifies how the agent accesses that information — which layers, which connections, which retrieval patterns. Build implements the context stack. Deliver tests whether the agent had the right information to produce the right output. Compound improves the stack for the next cycle.
 
-If you have run the sprint, you have done context engineering. The vocabulary is new. The work is not.
+If you have run the Sprint, you have done context engineering. The vocabulary is new. The work is not.

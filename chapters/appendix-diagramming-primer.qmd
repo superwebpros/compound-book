@@ -1,0 +1,133 @@
+---
+title: "A Diagramming Primer"
+---
+
+This appendix is a reference for two visualization tools you'll use throughout the Compound Sprint: swim-lane diagrams and flowcharts. You'll draw both during Design and revisit them in every Sprint after that. Keep it bookmarked. The conventions don't change.
+
+## Why operators need both diagrams
+
+Swim lanes and flowcharts answer different questions. They're not interchangeable.
+
+A swim lane answers *who does what, and where does the work cross a boundary.* Each lane belongs to a role. Each box inside the lane belongs to whoever owns that step. When work crosses from one lane to another, that crossing is a handoff. Handoffs are where operational friction lives. A swim lane makes every handoff visible, which is the point.
+
+A flowchart answers *what decision gets made next, and which path does the work take.* Boxes are steps. Diamonds are decisions. Every diamond has at least two exits, and every exit leads somewhere. A flowchart maps the decision logic inside a workflow, not the people who run it.
+
+Most operational workflows have both: multiple roles touching the same flow, and multiple decisions inside it. Meridian's quoting workflow crosses four roles (Sales, Engineering, Operations, Finance) and includes at least three decision branches (Is the RFQ complete? Is the job standard or custom? Does the quote need mark-up for strategic accounts?). The swim lane shows who does what. The flowchart shows what decisions govern where the work goes. Both diagrams together give you the full picture.
+
+Draw both when you're designing a workflow. Don't merge them into one diagram. That produces clutter, not clarity.
+
+## Reading a swim lane
+
+A swim-lane diagram has four components.
+
+**Lanes** represent roles. Each lane belongs to one actor: a person, a team, or an agent. The lane is the domain; everything inside it is that actor's work.
+
+**Steps** are boxes inside a lane. Each box is one task. The box sits in the lane of whoever performs the task, not whoever requested it.
+
+**Handoff arrows** cross lane boundaries. Every time an arrow moves from one lane to another, work is changing hands. The arrow shows what moves (a document, an approval, a data record) and who receives it.
+
+**Decision points** inside a swim lane use the same diamond shape as a flowchart. The diamond sits in the lane of the role that makes the decision. Branches leave the diamond labeled with the outcome (yes/no, approve/revise, standard/custom).
+
+Here's how those four components look in practice. Meridian's quoting process runs across four lanes: Sales (Ty), Engineering (Dave), Operations (Elena), and Finance. Ty receives the RFQ and logs it; the arrow crosses into Operations, where Elena reviews completeness. That's the first handoff. If the RFQ is incomplete, the arrow crosses back to Sales for Ty to follow up with the client. If it's complete, Elena's lane continues: she routes the job specs to Engineering.
+
+Dave's lane receives the specs, produces the labor estimate, and hands off back to Operations. Elena assembles the quote; if the job is flagged as a strategic account, the arrow crosses to Finance for a margin review before the quote goes back to Ty for delivery. Count the lane crossings in that description: five handoffs across four roles. That's five points where the work can stall. The diagram makes every one of them explicit.
+
+## Drawing a swim lane
+
+**Step 1. List every role that touches the workflow.**
+
+Don't start with the diagram. Start with a list. Ask: who does something at any point in this workflow? Include AI agents if this is a designed workflow. Meridian's quoting list: Ty (Sales), Dave (Engineering), Elena (Operations), Finance, and the Quote Research/Pricing/Assembly agents. If you're mapping the pre-Sprint workflow, the agents don't exist yet; list only the human roles.
+
+**Step 2. Draw one lane per role.**
+
+Left-to-right orientation is conventional. The lanes run vertically (top-to-bottom if you prefer portrait orientation), and the workflow moves left to right. Draw the lanes as parallel horizontal bands. Label each one with the role name. Don't assign lanes based on org-chart hierarchy; assign them based on who actually touches this specific workflow.
+
+**Step 3. Walk the workflow from start to end, placing each step inside the correct lane.**
+
+Start from the trigger: what starts this workflow? Put that box in the lane of whoever receives the trigger. Then ask: what happens next? Who does it? Put that box in their lane. Continue step by step through the workflow until you reach the end state. Don't skip steps because they seem obvious. The obvious steps are usually where handoff failures hide.
+
+**Step 4. Draw an arrow at every handoff.**
+
+Every time the next step belongs to a different lane than the current step, draw an arrow crossing the lane boundary. Label the arrow with what's being handed off: an RFQ email, a labor estimate, an approved quote. Unlabeled handoff arrows are incomplete. If you can't label what crosses the boundary, the handoff hasn't been designed.
+
+**Step 5. Mark decision branches.**
+
+Wherever the workflow can go one of two (or more) directions, add a diamond. Put it in the lane of whoever makes the decision. Label each branch. A diamond with one exit is a step, not a decision. A diamond with unlabeled exits is a design gap.
+
+**Step 6. Find the gnarly bits.**
+
+Two patterns signal operational risk. First: arrows that cross the same lane boundary more than once in the same direction. That's a rework loop, and it has a cost. Second: handoffs that return upstream, meaning work going from a downstream lane back to an earlier one. In Meridian's pre-Sprint workflow, RFQs crossed from Sales to Operations and sometimes returned to Sales incomplete, then crossed back to Operations again. That double crossing was costing Elena an average of four hours a week in rework. The diagram made the loop visible before anyone counted the hours.
+
+When your swim lane is finished, count the handoffs. More handoffs than steps is a fragility signal.
+
+## Reading a flowchart
+
+A flowchart has four components.
+
+**Terminators** are rounded rectangles (or ovals) marking the start and end states. Every flowchart has exactly one start and at least one end.
+
+**Process boxes** are rectangles. Each box is one action or step.
+
+**Decision diamonds** are the choice points. Each diamond has one entry and at least two labeled exits.
+
+**Arrows** connect everything and show direction of flow.
+
+Here's how those components look in a working example. Meridian's pre-Sprint "should we send this quote out?" decision chain ran like this: Start (Elena receives assembled quote) → Is the job standard work? → If yes: Is the calculated price within 15% of the closest historical match? → If yes: Approve and send to Ty. If no (price deviation): Elena manually reviews pricing logic. → If no (not standard work): Is it a strategic account? → If yes: Finance reviews margin. → If no: Elena applies judgment on custom pricing. End (approved quote to Ty). Six steps, three decision branches, four possible paths to the endpoint. That chain was running inside Elena's head before the Sprint. The flowchart pulled it out.
+
+## Drawing a flowchart
+
+**Step 1. Name the start state and the end state.**
+
+What triggers this flowchart? What does it produce when it's done? Write both before drawing anything else. A flowchart without a defined end state grows indefinitely.
+
+**Step 2. List the decisions between start and end.**
+
+A decision is a question with more than one answer. Identify every branch point in the workflow. Write each one as a yes/no question or a labeled multi-choice. Don't treat judgment calls as black boxes. "Elena decides" isn't a decision in a flowchart. "Is this job a standard spec?" is.
+
+**Step 3. Draw each decision as a diamond with labeled branches.**
+
+Every branch needs a label. "Yes" and "No" are acceptable if the question on the diamond is precise. If the question isn't precise enough to make "Yes" and "No" unambiguous, rewrite the question.
+
+**Step 4. Connect with arrows.**
+
+Each branch leads somewhere. Trace every path from start to end. If a branch has no destination, the flowchart has an orphan. Fix it before you share the diagram.
+
+**Step 5. Look for three failure patterns.**
+
+Orphan branches lead nowhere. An infinite loop returns to an earlier step with no exit condition. A false binary forces a yes/no choice on something that actually has three or more outcomes. All three appear regularly in first-draft flowcharts. Run each branch from start to finish, verify it reaches an end state, and check that every diamond with two exits shouldn't actually have three.
+
+## Tools
+
+You don't need sophisticated software to draw either diagram.
+
+**Whiteboard or paper.** The fastest first draft is physical. Draw it by hand. Photograph it. You can clean it up digitally later. Paper diagrams in a working session are faster than a laptop for anything with more than four lanes.
+
+**Excalidraw.** Free, browser-based, no account required. The diagrams in this book were built in Excalidraw. It's good enough for production-quality workflow diagrams and fast enough for working sessions. Exports as PNG or SVG.
+
+**Lucidchart or Miro.** Both support swim-lane templates and are designed for collaborative editing. Use these when multiple people are building or reviewing the diagram across different locations. Both have free tiers sufficient for a Sprint.
+
+**Mermaid.** Text-based diagram syntax that renders as a visual diagram. Paste Mermaid code into any compatible editor (VS Code, Notion, GitHub) and the diagram renders automatically. The advantage: diagrams live in version control alongside your documentation. The learning curve is twenty minutes.
+
+When you're choosing, the question is whether you need real-time collaboration (Lucidchart, Miro), version-controlled diagrams (Mermaid), fast working-session drafts (whiteboard, paper, Excalidraw), or a clean shareable visual (any of the above). Don't let the tool choice slow down the drawing.
+
+## The Mermaid-via-AI shortcut
+
+You can describe a workflow in plain English to Claude, ChatGPT, or Cursor, and ask for a Mermaid swim lane or flowchart in return. The AI writes the code; you paste it into an editor that renders Mermaid; the diagram appears.
+
+Here's a prompt that works:
+
+> *"I'm going to describe a workflow. Please produce a Mermaid flowchart diagram for it. The workflow has the following steps and decision points: [describe your workflow in plain English, step by step]. Use standard Mermaid flowchart syntax with rectangles for steps and diamonds for decisions."*
+
+For swim lanes, substitute "swimlane diagram" and name the roles before describing the steps.
+
+One caution: AI gets lane assignments wrong more often than it gets steps wrong. It will sometimes assign a step to the wrong actor, especially at handoff points. After the diagram renders, walk every handoff manually and confirm the lane assignment matches who actually performs the step. Treat the AI output as a first draft that needs your review, not a final artifact. The model draws what you describe; it can't see the parts of the workflow you didn't mention.
+
+## When to use which
+
+Use a swim lane when you need to see who does what. The lanes force you to assign every step to an owner. If you can't assign a step to a lane, you don't know who owns it, which is the information you needed.
+
+Use a flowchart when you need to see what decision comes next. The diamond forces you to name the question and label both exits. If you can't label the exits, you haven't defined the logic, which is the information you needed.
+
+Use both when the workflow has cross-role handoffs and decision branches inside the same flow. Most operational workflows qualify. For Meridian's quoting workflow, the swim lane shows where Sales, Engineering, Operations, and Finance hand off to each other; the flowchart shows what Elena decides at each review gate. You need both to design a workflow an agent can run inside.
+
+Draw the swim lane first. It anchors the who. Then draw the flowchart to resolve the what. When both diagrams agree, the design is ready for Build.

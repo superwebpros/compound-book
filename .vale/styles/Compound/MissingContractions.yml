@@ -1,0 +1,20 @@
+extends: existence
+message: "Missing contraction ('%s'): voice charter §2. Use contractions; absence is an AI tell."
+level: warning
+ignorecase: false
+link: '_julie/voice-charter.md'
+# Flag common multi-word forms that should be contractions in our voice
+tokens:
+  - "\\bThat is why\\b"
+  - "\\bIt is not\\b"
+  - "\\bdo not\\b"
+  - "\\bcan not\\b"
+  - "\\bwill not\\b"
+  - "\\bis not\\b"
+  - "\\bare not\\b"
+  - "\\bcannot\\b"
+  - "\\byou are\\b"
+  - "\\bwe are\\b"
+  - "\\bthey are\\b"
+  - "\\bwe have\\b"
+  - "\\byou have\\b"

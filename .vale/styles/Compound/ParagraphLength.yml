@@ -1,0 +1,8 @@
+extends: occurrence
+message: "Paragraph length: %s words. Charter style: 3-6 sentences (~50-150 words). Long paragraphs hurt skimmability."
+level: suggestion
+scope: paragraph
+max: 150
+link: '_julie/voice-charter.md'
+# Token regex matches any word; max applies to occurrence count = word count
+token: '\b\w+\b'

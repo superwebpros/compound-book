@@ -9,103 +9,118 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 ## Compound Framework Terms
 
 **AI Readiness Scorecard** (Compound)
-: A five-dimension diagnostic tool — Constraint Clarity, Information Readiness, Workflow Visibility, Decision Rights, and Measurement Discipline — scored Red/Yellow/Green to show a leadership team exactly where their AI readiness gaps are before starting a sprint. (First introduced: Chapter 1)
+: A five-dimension diagnostic tool — Constraint Clarity, Information Readiness, Workflow Visibility, Decision Rights, and Measurement Discipline — scored Red/Yellow/Green to show a leadership team exactly where their AI readiness gaps are before starting a Sprint. (First introduced: Chapter 1)
 
 **At-Risk Source** (Compound)
-: Institutional knowledge that lives in one person's head and is about to leave the organization through departure, retirement, or role change. Named and prioritized during Source so it can be captured before it walks out the door. (First introduced: Chapter 5)
+: Institutional knowledge that lives in one person's head and is about to leave the organization through departure, retirement, or role change. Named and prioritized during *Source* so it can be captured before it walks out the door. (First introduced: Chapter 6)
+
+**Build Spec** (Compound)
+: The eight-section developer-ready specification produced in *Build*, derived from the *Design Brief*. The first three sections (workflow summary, inputs, outputs) and the systems and integrations section are restatements of Design Brief content at developer-execution depth. Four sections add what Design doesn't own: agent scope at the call level, human supervisor role, failure-mode behavior, and build path with implementation constraints. If the spec disagrees with the Design Brief, the Design Brief wins. Produced via the *Build Spec Writer* instrument. (First introduced: Chapter 8)
+
+**Center of Excellence (COE) Operating Model** (Compound)
+: The organizational design pattern that coordinates specialized functions across a large organization through defined governance, accountability, and recurring alignment sessions. Originates in Dave Ulrich's three-pillar HR framework — HR Business Partners, Centers of Excellence, Shared Services — from *Human Resource Champions* (1997). The Compound quarterly operating session borrows the COE governance discipline (fixed agenda, committed outputs, recurring cadence) and adds the four-step structure: review the previous Sprint, update the *Signal Backlog*, commit the next Sprint, update the *Hybrid Accountability Chart*. (First introduced: Chapter 11)
 
 **Clarity Call** (Compound)
-: A 30-minute, no-cost conversation with a Compound strategist designed to pressure-test a constraint and determine whether it is sprint-ready. Not a sales pitch; the output is a named constraint you can act on. (First introduced: Chapter 11)
+: A 30-minute, no-cost conversation with a Compound strategist designed to pressure-test a constraint and determine whether it is Sprint-ready. Not a sales pitch; the output is a named constraint you can act on. (First introduced: Chapter 12)
 
 **Co-Intelligence** (Compound)
-: The designed structure where human and agent intelligence work together against the same problems inside the same operating loop — not relegated to separate tracks. The system half of the equation *Co-Intelligence + Rhythm = Compound.* (First introduced: Chapter 2)
+: The designed structure where human and agent intelligence work together against the same problems inside the same operating loop — not relegated to separate tracks. The system half of the equation *Co-Intelligence + Rhythm = Compound.* (First introduced: Chapter 3)
 
-**Co-Intelligent Co-operation** (Compound)
-: The activity of humans and AI working the same problems together, inside the same loop, against the same outcome — as the company's default way of working rather than a project or initiative. (First introduced: Chapter 2)
+**Co-Intelligent Co-Operation** (Compound)
+: The activity of humans and AI working the same problems together, inside the same loop, against the same outcome — as the company's default way of working rather than a project or initiative. (First introduced: Chapter 3)
 
 **Co-Intelligent Company** (Compound)
 : What a company becomes when humans and AI work as one system, not two parallel tracks. A higher bar than "uses AI tools" or "has an AI strategy." (First introduced: Chapter 1)
 
 **Co-Operating Model** (Compound)
-: The explicit design of who brings what intelligence to the work and who owns which operating responsibility — the structure that makes Co-Intelligent Co-operation possible. The answer to the operating-model problem most companies have. (First introduced: Chapter 2)
+: The explicit design of who brings what intelligence to the work and who owns which operating responsibility — the structure that makes *Co-Intelligent Co-Operation* possible. The answer to the operating-model problem most companies have. (First introduced: Chapter 3)
 
 **Compound (stage)** (Compound)
-: The sixth and final stage of the Sequence. After a sprint is delivered, Compound runs the Sprint Retrospective, re-ranks the Signal Backlog, installs one design change, updates the Hybrid Accountability Chart, and names the next constraint — turning a shipped project into the foundation of the next sprint. (First introduced: Chapter 3)
+: The sixth and final stage of the *Sequence*. After a Sprint is delivered, *Compound* runs the *Sprint Retrospective*, re-ranks the *Signal Backlog*, installs one design change, updates the *Hybrid Accountability Chart*, and names the next constraint — turning a shipped project into the foundation of the next Sprint. (First introduced: Chapter 4)
 
 **Compound Bench** (Compound)
-: Six AI coaching agents — one per stage of the Sequence — that run the framework *with* you during a sprint: interrogating constraints, surfacing knowledge gaps, running Work Deconstruction, specifying builds, structuring rollouts, and closing the retrospective. Available through Compound membership.
+: Six AI coaching agents — one per stage of the Sequence — that run the framework *with* you during a Sprint: interrogating constraints, surfacing knowledge gaps, running Work Deconstruction, specifying builds, structuring rollouts, and closing the retrospective. Available through Compound membership.
 
 **Compound Coach** (Compound)
-: A Compound strategist who works with members through weekly coaching calls — helping close gaps, resolve uncertainties, and guide sprint execution. Remote, not on-site. The human support complement to the Compound Bench's agent support.
+: A Compound strategist who works with members through weekly coaching calls — helping close gaps, resolve uncertainties, and guide Sprint execution. Remote, not on-site. The human support complement to the Compound Bench's agent support.
 
 **Compound Sprint** (Compound)
-: One complete pass through the six-stage Sequence (Signal → Source → Design → Build → Deliver → Compound) on one validated constraint. The unit of work this book teaches. (First introduced: Chapter 3)
+: One complete pass through the six-stage Sequence (Signal → Source → Design → Build → Deliver → Compound) on one validated constraint. The unit of work this book teaches. (First introduced: Chapter 4)
 
 **Compounding Scorecard** (Compound)
-: A running table that tracks the cost delta for each sprint across quarters — constraint solved, cost before, cost after, delta, and cumulative impact — so leadership can see the compounding returns building over time. (First introduced: Chapter 10)
+: A running table that tracks the cost delta for each Sprint across quarters — constraint solved, cost before, cost after, delta, and cumulative impact — so leadership can see the compounding returns building over time. (First introduced: Chapter 11)
 
 **Constraint Statement** (Compound)
-: The one-page artifact that Signal produces: a single sentence naming the operational constraint, plus the location in the org, its duration, the quantified cost, and the validating evidence. The handoff from Signal to Source. (First introduced: Chapter 4)
+: The one-page artifact that Signal produces: a single sentence naming the operational constraint, plus the location in the org, its duration, the quantified cost, and the validating evidence. The handoff from Signal to Source. (First introduced: Chapter 5)
 
 **Decision Rights** (Compound)
 : One of the five dimensions of the AI Readiness Scorecard. The degree to which a leadership team has explicitly assigned which tasks AI handles versus which stay with humans, and who has authority to change the boundary. (First introduced: Chapter 1)
 
 **Design Brief** (Compound)
-: The comprehensive artifact produced in Design that captures all design decisions before prototyping and Build: workflow summary, stakeholders, systems involved, data requirements, success criteria, constraints/guardrails, and V1 artifact description. The upstream input to the Build Spec. (First introduced: Chapter 6b)
+: The single artifact *Design* produces. It captures every decision Design has committed to before prototyping and *Build*: workflow summary, stakeholders, systems involved, data requirements, success criteria, constraints and guardrails, and V1 artifact description. It's the sole upstream input to the *Build Spec*, and the source of truth on *what* the system should do and *why*. (First introduced: Chapter 7b)
 
 **Design Gate** (Compound)
-: The five-item checklist that must be fully checked before a sprint moves from Design into Build: Work Deconstruction complete, all HAC fields filled with named supervisors, Human Orchestrator named, AI-Assisted vs. Automated decided with rationale, and guardrails defined. (First introduced: Chapter 6b)
+: The five-item checklist that must be fully checked before a Sprint moves from *Design* into *Build*: *Work Deconstruction* complete, all *HAC* fields filled with named supervisors, *Human Orchestrator* named, AI-Assisted vs. Automated decided with rationale, and guardrails defined. (First introduced: Chapter 7b)
 
 **Diagnose / Execute & Compound** (Compound)
-: The two halves of the Sequence. Diagnose = Signal + Source (the work most companies skip). Execute & Compound = Design + Build + Deliver + Compound (ships only when Diagnose is solid). (First introduced: Chapter 3)
+: The two halves of the *Sequence*. Diagnose = *Signal* + *Source* (the work most companies skip). Execute & Compound = *Design* + *Build* + *Deliver* + *Compound* (ships only when Diagnose is solid). (First introduced: Chapter 4)
 
 **Human Orchestrator** (Compound)
-: The single person who owns both irreducible human decisions and agent team supervision for a sprint. Sets goals, reviews at the goal level, manages the agent team day-to-day, surfaces escalations, and makes design improvements between sprints. Different from the leadership sponsor, who owns the outcome. (First introduced: Chapter 3)
+: The single person who owns both irreducible human decisions and agent team supervision for a Sprint. Sets goals, reviews at the goal level, manages the agent team day-to-day, surfaces escalations, and makes design improvements between Sprints. Different from the leadership sponsor, who owns the outcome. (First introduced: Chapter 4)
 
 **Hybrid Accountability Chart (HAC)** (Compound)
-: An extension of a traditional accountability chart that includes agent teams alongside humans. Every row names a role or function, the agent team responsible, the human supervisor, and the AI-Assisted vs. Automated level. Every row has a named supervisor — no exceptions. A single sprint can produce multiple HAC entries. (First introduced: Chapter 6)
+: An extension of a traditional accountability chart that includes agent teams alongside humans. Every row names a role or function, the agent team responsible, the human supervisor, and the AI-Assisted vs. Automated level. Every row has a named supervisor — no exceptions. A single Sprint can produce multiple *HAC* entries. (First introduced: Chapter 7)
 
 **Hybrid Org Today** (Compound)
-: A one-page living document that gives the current operational picture of the Co-Intelligent Company: active sprint status, Signal Backlog ranked by cost, Hybrid Accountability Chart entries, completed sprint outcomes, and the next quarterly review date. Updated during each quarterly operating session. (First introduced: Chapter 10)
+: A one-page living document that gives the current operational picture of the *Co-Intelligent Company*: active Sprint status, *Signal Backlog* ranked by cost, *Hybrid Accountability Chart* entries, completed Sprint outcomes, and the next quarterly review date. Updated during each quarterly operating session. (First introduced: Chapter 11)
 
 **Information Flow Specification** (Compound)
-: A spec for how information moves through one accountability — naming inputs, outputs, transformations, decision points, and handoffs between humans and agents. Distinct from the Knowledge Map (which is the atlas of what's known); the information flow spec is the route the work takes. (First introduced: Chapter 6)
+: A spec for how information moves through one accountability — naming inputs, outputs, transformations, decision points, and handoffs between humans and agents. Distinct from the *Knowledge Map* (which is the atlas of what's known); the information flow spec is the route the work takes. (First introduced: Chapter 7)
 
 **Knowledge Map** (Compound)
-: The one-page Source deliverable that shows what the organization knows about the validated constraint — every relevant data source, its owner, its status (Clean/Needs Work/Missing), and its pipeline connectivity. Includes Digital sources, Organic sources (people), and Missing sources. (First introduced: Chapter 5)
+: The one-page *Source* deliverable that shows what the organization knows about the validated constraint — every relevant data source, its owner, its status (Clean/Needs Work/Missing), and its pipeline connectivity. Includes Digital sources, Organic sources (people), and Missing sources. (First introduced: Chapter 6)
 
 **Meridian Manufacturing** (Compound)
-: The fictional through-line case study used throughout this book — a $7.2M custom metal fabrication shop in Grand Rapids, Michigan, with 27 employees and a quoting bottleneck costing $558K/year. The company, its characters, and its sprint are illustrative composites, not a real company. (First introduced: Case Studies)
+: The fictional through-line case study used throughout this book — a $7.2M custom metal fabrication shop in Grand Rapids, Michigan, with 27 employees and a quoting bottleneck costing $558K/year. The company, its characters, and its Sprint are illustrative composites, not a real company. (First introduced: Case Studies)
 
 **Organizational Memory** (Compound)
-: The layer of connected knowledge — CRM records, SOPs, transcripts, client history — that makes an agent "know" a company rather than just the world. Built deliberately through Source and maintained sprint by sprint. Prevents the loss of institutional knowledge when people leave. (First introduced: Chapter 2)
+: The layer of connected knowledge — CRM records, SOPs, transcripts, client history — that makes an agent "know" a company rather than just the world. Built deliberately through *Source* and maintained Sprint by Sprint. Prevents the loss of institutional knowledge when people leave. (First introduced: Chapter 3)
 
 **Parallel Workstreams** (Compound)
-: Multiple agent-driven work tracks running simultaneously under one human's direction. The design pattern that collapses calendar time and produces compounding output — contrasted with linear work, where tasks run sequentially because all workers are human. (First introduced: Chapter 2)
+: Multiple agent-driven work tracks running simultaneously under one human's direction. The design pattern that collapses calendar time and produces compounding output — contrasted with linear work, where tasks run sequentially because all workers are human. (First introduced: Chapter 3)
+
+**PIS Framework** (Compound)
+: The three-phase diagnostic structure — *Problem*, *Identify*, *Solution* — that prevents organizations from moving to solution before the problem is fully understood. The *Compound Sprint* embeds PIS into its order: *Signal* is the Problem phase (name and quantify the constraint), *Source* is the Identify phase (map what the organization knows about the constraint), and *Design* through *Deliver* is the Solution phase. (First introduced: Chapter 6)
 
 **Rhythm** (Compound)
-: The quarterly cadence of running sprints. What turns a single sprint into a compounding business outcome. Running the Sequence over and over — with a quarterly operating session to review the previous sprint, update the Signal Backlog, commit the next sprint, and update the HAC. (First introduced: Chapter 3)
+: The quarterly cadence of running Sprints. What turns a single Sprint into a compounding business outcome. Running the *Sequence* over and over — with a quarterly operating session to review the previous Sprint, update the *Signal Backlog*, commit the next Sprint, and update the *HAC*. (First introduced: Chapter 4)
+
+**Right Seat Evaluation** (Compound)
+: The three-test discipline for assigning a human supervisor to every *Hybrid Accountability Chart* row: ***Sees It*** (does the supervisor understand the agent's work well enough to evaluate output quality?), ***Wants It*** (are they genuinely accountable for the outcome, not just named on the chart?), and ***Suited for It*** (do they have the judgment, context, and authority to override the agent and make the calls the agent can't?). A supervisor candidate who fails any test is not a supervisor — choose someone else or build the development plan that gets them to all three. (First introduced: Chapter 7)
 
 **Sequence** (Compound)
-: The ordered six stages inside the Framework: Signal → Source → Design → Build → Deliver → Compound. Always all six. Always in that order, because each stage produces something the next stage requires. (First introduced: Chapter 3)
+: The ordered six stages inside the Framework: *Signal* → *Source* → *Design* → *Build* → *Deliver* → *Compound*. Always all six. Always in that order, because each stage produces something the next stage requires. (First introduced: Chapter 4)
 
 **Signal (stage)** (Compound)
-: Stage 1 of the Sequence. The discipline of identifying the one operational constraint worth solving, tracing symptoms to root cause, and quantifying the cost in dollars or hours before committing a sprint to it. Produces a one-page Constraint Statement. (First introduced: Chapter 3)
+: Stage 1 of the *Sequence*. The discipline of identifying the one operational constraint worth solving, tracing symptoms to root cause, and quantifying the cost in dollars or hours before committing a Sprint to it. Produces a one-page *Constraint Statement*. (First introduced: Chapter 4)
 
 **Signal Backlog** (Compound)
-: The running, ranked list of validated operational constraints the organization is working through. Updated during every Compound session as new information emerges. The top entry becomes the input for the next sprint's Signal conversation. (First introduced: Chapter 9)
+: The running, ranked list of validated operational constraints the organization is working through. Updated during every *Compound* session as new information emerges. The top entry becomes the input for the next Sprint's *Signal* conversation. (First introduced: Chapter 10)
 
 **Source (stage)** (Compound)
-: Stage 2 of the Sequence. Maps the information environment around the validated constraint — what knowledge exists, where it lives, who holds it, what's missing, and what's at risk of leaving. Produces the Knowledge Map. (First introduced: Chapter 3)
+: Stage 2 of the *Sequence*. Maps the information environment around the validated constraint — what knowledge exists, where it lives, who holds it, what's missing, and what's at risk of leaving. Produces the *Knowledge Map*. (First introduced: Chapter 4)
 
 **Sprint Planning Canvas** (Compound)
-: A one-page artifact completed before Signal begins: names the constraint, maps a first-pass answer to each stage, identifies the team, sets the Human Orchestrator, and books the quarterly review. Intentionally incomplete — Signal will refine it. (First introduced: Chapter 3)
+: A one-page artifact completed before *Signal* begins: names the constraint, maps a first-pass answer to each stage, identifies the team, sets the *Human Orchestrator*, and books the quarterly review. Intentionally incomplete — *Signal* will refine it. (First introduced: Chapter 4)
 
 **Sprint Retrospective** (Compound)
-: The structured review that runs inside the Compound stage: what worked, what didn't (with each "didn't work" reframed as a design question), and what one design change would make the next sprint better. Run with the Human Orchestrator and all sprint accountability owners. (First introduced: Chapter 9)
+: The structured review that runs inside the *Compound* stage: what worked, what didn't (with each "didn't work" reframed as a design question), and what one design change would make the next Sprint better. Run with the *Human Orchestrator* and all Sprint accountability owners. (First introduced: Chapter 10)
+
+**TML Framework** (Compound)
+: The three-layer classification system — *Task*, *Management*, *Leadership* — that separates organizational work and knowledge by the type of intelligence required. *Task* knowledge and work follow defined rules and can be fully systematized (Fully Automatable). *Management* requires judgment about process and is best handled with human-AI collaboration (AI-Assisted). *Leadership* requires judgment about people, strategy, and context and must remain with humans (Human Judgment Required). *Source* uses TML to categorize what the organization knows (Chapter 6); *Design* uses TML to categorize what the work requires (Chapter 7b). (First introduced: Chapter 6)
 
 **Work Deconstruction** (Compound)
-: The Design-stage instrument that classifies every task in a constraint workflow into four categories — Human judgment required, Agent-assisted, Fully automatable, or Workflow automation only — to determine what the agent team handles and what stays with a human. (First introduced: Chapter 6b)
+: The Design-stage instrument that classifies every task in a constraint workflow into the three categories of the *TML framework* — *Task* (Fully Automatable), *Management* (AI-Assisted), *Leadership* (Human Judgment Required) — to determine what the agent team handles and what stays with a human. (First introduced: Chapter 7b)
 
 ---
 
@@ -181,7 +196,7 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : AI models built and hosted by a company (Anthropic, OpenAI, Google) and accessed via their API. You send data to their servers; they process it and return results. Most capable models are proprietary. The trade-off versus open source is that data travels through the provider's systems.
 
 **QA (Quality Assurance)** (Technical)
-: Testing a built workflow against real inputs to confirm it produces the expected outputs, handles edge cases correctly, and escalates appropriately — before declaring it done. In the Compound Sprint, this is the "Done test" in Build: four questions answered against last week's actual data.
+: Testing a built workflow against real inputs to confirm it produces the expected outputs, handles edge cases correctly, and escalates appropriately — before declaring it done. In the Compound Sprint, this is the "Done test" in Build: five questions answered against last week's actual data.
 
 **RAG (Retrieval-Augmented Generation)** (Technical)
 : Giving an AI model access to your company's specific documents and data at the moment it needs them, without retraining the model itself. Think of handing the model a reference binder before each question. The model stays general-purpose; your knowledge provides the specifics. Faster and cheaper to set up than fine-tuning, and easy to update as your information changes.

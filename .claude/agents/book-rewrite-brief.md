@@ -12,15 +12,29 @@ Title: **Co-Intelligent Co-Operation: How to build the Human+AI Company of the F
 
 ## Voice — operator-to-operator
 
+**Canonical reference: `_julie/voice-charter.md`.** Read it before drafting or revising prose. The summary below is the operator quick-reference; the charter is authoritative.
+
 The reader is a peer. Same vocabulary as a CEO talking to a CEO. Sharper cadence than a consulting deck. Less hedge, more claim.
 
 - **Direct, Confident, No-BS, Wise, Empowering.** No qualifiers that soften the diagnosis. ("Most companies fail at this" — not "Many companies sometimes encounter difficulties in this area.")
 - **You** to the reader. Always. Never "one" or "users." Never "our customers" / "our clients" — they are *operators*.
-- **We** for Compound when speaking institutionally.
-- **Em-dashes — used freely — are part of the editorial rhythm.** Oxford comma. Periods on full-sentence headlines. No exclamation marks.
+- **We** for Compound when speaking institutionally. Dual-author convention: "Jesse:" / "Julie:" when a story belongs to one of them; "we" when both. Blended authorial voice for analysis.
+- **Em-dashes are an AI tell — use sparingly.** **REVISED from earlier guidance.** Em-dashes were previously called "the editorial rhythm" used "freely"; that produced AI-cadence drift. Going forward: em-dashes appear only when no other punctuation works. Default rhythm uses periods, commas, semicolons. Existing manuscript em-dashes are grandfathered in; new edits do not add em-dashes. Oxford comma. Periods on full-sentence headlines. No exclamation marks.
 - **Sentence case headlines with periods.** Never title case. `Find the real constraint.` not `Find the Real Constraint`.
-- **One sentence, one beat — full sentences, not staccato fragments.** Em-dashes do the work bullet lists usually do.
+- **One sentence, one beat — full sentences, not staccato fragments.**
 - **Numbers are specific and load-bearing.** "If your largest operational constraint costs $150K+ per year, the first sprint pays for the year." > "Save up to 40% on AI costs."
+- **Chapter endings:** reflection questions (2–4 short questions that engage the reader to apply the chapter to their business) followed by a one-line handoff. No recap-style summaries.
+
+## Forbidden constructions
+
+See `_julie/voice-charter.md` Section 4 for the full anti-pattern list (A1–A12). Auto-reject filters apply. Most consequential during drafting:
+
+- **A1** abstract-noun-equals-abstract-noun ("The Sequence is a process to execute")
+- **A2** coined term used before defined
+- **A3** triplet pileup ("The pattern is mechanical. The diagnosis is mechanical. The fix is mechanical.")
+- **A4** contrived biographical examples
+- **A5** general AI smell — hedged, verbose, no operator weight
+- **A12** invented company beats / unnamed engagements with specific numbers
 
 ## Forbidden words and phrases
 

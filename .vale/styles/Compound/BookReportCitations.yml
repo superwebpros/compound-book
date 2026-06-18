@@ -1,0 +1,12 @@
+extends: existence
+message: "Book-report citation form ('%s'): voice charter A7. Sourced research inline is OK; book-report openers are not."
+level: warning
+ignorecase: false
+link: '_julie/voice-charter.md'
+tokens:
+  - 'In [A-Z][a-z]+ by [A-Z][a-z]+'
+  - 'According to [A-Z][a-z]+ \([12][0-9]{3}\)'
+  - '\([A-Z][a-z]+, [12][0-9]{3}\)'
+  - "Studies show"
+  - 'Research has shown'
+  - 'Experts (?:say|believe|argue)'

@@ -1,0 +1,13 @@
+extends: existence
+message: "Book-as-location metaphor ('%s'): voice charter A16. Books are artifacts with pages, not places. Use 'finish,' 'close,' 'by the last page'."
+level: warning
+ignorecase: true
+link: '_julie/voice-charter.md'
+tokens:
+  - "you'll leave with"
+  - 'you will leave with'
+  - 'walk away from this book'
+  - 'walk away with'
+  - 'inside this book'
+  - 'enter this book'
+  - 'in these pages you will'
