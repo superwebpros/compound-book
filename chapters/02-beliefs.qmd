@@ -21,7 +21,7 @@ You're already a tech company. Today.
 
 Look at what's actually running inside your business right now. A CRM (HubSpot, Salesforce, Pipedrive). An accounting or ERP system, the platform that runs the financial and operational backbone of the company (NetSuite, QuickBooks, Sage). A project management tool (Asana, Monday, ClickUp). A communications stack (Slack, Teams, Gmail). A document store (Google Drive, SharePoint, Dropbox). A few function-specific tools layered on top: a billing platform, a scheduling tool, a customer support system.
 
-If your "ERP" is really a stack of spreadsheets, or you've got three of those systems instead of six, the claim still holds. You don't need every system, and you don't need an expensive one. You need to run on systems at all. Almost every company past its first few employees already does.
+If your "ERP" is really a stack of spreadsheets, or you've got three of those systems instead of six, the claim still holds. You don't need every system, and you don't need an expensive one. You just need to run on systems at all, and almost every company past its first few employees already does.
 
 Every one of those systems has structured data, defined interfaces, and rules you've already paid to encode. The investment is on the books. The systems are running. The tech-company part already happened. What hasn't happened is the redesign of work around those systems. That's the move, and it's the whole rest of this book.
 
@@ -35,13 +35,15 @@ For a human, the stack is context-switching overhead. Your team jumps across six
 
 For an agent, that same stack is an asset. An agent is an AI system that holds a goal and runs a sequence of steps toward it on its own, adjusting as it goes. It's not a chatbot you prompt one question at a time. Agents read structured data. They call defined interfaces. They execute rules. (More on how agents are built in the Source and Build chapters.) The work that's friction for a human is exactly what an agent runs on.
 
-You've got less legacy bloat than enterprise and more system maturity than a startup. The systems you spent the last decade installing, the ones your team still complains about, are what AI runs on. Mastery of your own data, as Argenti puts it in the same piece, is the precondition for any of this working. Mid-market companies are in the best position for it.
+That's good news, and mid-market is where it lands hardest. You carry less legacy bloat than a large enterprise and run on more real systems than a startup. The systems you spent the last decade installing, the ones your team still complains about, are what AI runs on. Mastery of your own data, as Argenti puts it in the same piece, is the precondition for any of this working.
 
 > If your systems are running and your people are still the glue between them, you've got an operating-model gap, not a technology gap.
 
 That one line changes which question you ask first. The question isn't *which AI tool should we buy?* It's *given the systems we already run, where is human labor doing the work the systems should be doing?* That's where AI goes. Everything else in the book is the discipline of finding those places.
 
-## Three *shifts* follow from this one.
+## Adopt the AI *operator* mindset.
+
+Once you see the company as already tech, three shifts follow. They're the mindset an operator runs on: manage AI like a worker, decide the headcount math can bend, and design the work instead of doing it.
 
 ### Manage AI like a worker, not a tool.
 
@@ -78,7 +80,7 @@ The job doesn't grow. The composition changes. At Meridian, Elena's hours didn't
 1. **Open your four core systems side by side** — Forces the reader to look at the actual stack rather than describe it from memory, surfacing real friction points.
 2. **For each system, name one place a person is doing work the system should be doing** — Constrains the exercise to one item per system so the list stays actionable rather than becoming a complaint session.
 3. **Record the list in the Sprint Planning Canvas table** — Externalizes the gap so it can be handed to Sprint 1 as a concrete candidate-constraint input, not a vague feeling.
-4. **Carry the list forward — do not solve yet** — The chapter explicitly defers prioritization to the Signal chapter; the move here is observation, not intervention.
+4. **Carry the list forward — don't solve yet** — The chapter explicitly defers prioritization to the Signal chapter; the move here is observation, not intervention.
 <!-- /moves:take-stock-operating-model-gap -->
 
 These shifts only matter if they change what you do this week. So before you start Sprint 1, do one thing.
