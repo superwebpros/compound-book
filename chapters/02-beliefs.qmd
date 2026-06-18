@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-One claim does the work in this chapter: you're already a tech company. Three shifts follow once that lands. AI is a worker, not a tool. The headcount math can bend. Your job is to design the work, not do it. The chapter closes with a gut check on what you now believe.
+One claim does the work in this chapter: you're already a tech company. Four shifts follow once that lands. AI is a worker, not a tool. Your people's work rises as the routine moves to agents. The headcount math can bend. Your job is to design the work, not do it. The chapter closes with a gut check on what you now believe.
 :::
 
 Marco Argenti, the CIO of Goldman Sachs, told a story in *Harvard Business Review* (June 2026). One of his senior bankers asked him a question: *"With AI getting better so fast, what's the 10% of my job AI will never be able to do, so I can hang on to it?"*
@@ -45,7 +45,7 @@ The first question to ask isn't *which AI tool should we buy?* It's *given the s
 
 ## Adopt the AI *operator* mindset.
 
-Once you see the company as already tech, three shifts follow. Manage AI like a worker. Decide the headcount math can bend. Design the work instead of doing it.
+Once you see the company as already tech, four shifts follow. Manage AI like a worker. Elevate the work for your people. Decide the headcount math can bend. Design the work instead of doing it.
 
 ### Manage AI like a worker, not a tool.
 
@@ -54,6 +54,16 @@ If your systems are the foundation everything runs on, the next question is what
 The new vocabulary is management. You assign work. You supervise. You evaluate the output and adjust the assignment. An agent holds a goal, has a defined scope and access to specific data, and produces deliverables on a cadence. A human reviews the output and adjusts the scope. The structure is identical to how you manage a competent junior employee.
 
 At Meridian, Elena stopped describing the quoting work as "a tool to integrate" and started describing it as "an agent that drafts the quote, hands it to me to review, and learns from my corrections." If your team is still typing questions into a chatbot and reading the answers as authoritative, they're stuck in the loop the Diagnosis chapter named. Treating AI as a worker is the move past it.
+
+### Elevate the work for your *people*.
+
+The chapter opened with Argenti's banker letting go of the 10%. The same shift reaches every role AI touches. When routine work moves to agents, the people who used to do it don't end up with smaller jobs; they move up to the work the banker kept: judgment, relationships, the calls that need context no system can see.
+
+The elevated job asks for skills the old one didn't. The people who work best alongside agents learn to frame a problem clearly enough for an agent to run with, to plan how they'll check its work, and to decide what matters most when suddenly everything is possible. The contributions a machine can't hold carry more weight than they used to: institutional knowledge, taste, ethical judgment, reading a room.
+
+This is the demanding part for you. Your people won't pick up those skills on the side, and you can't hire them in faster than you can grow them; someone from outside doesn't know how your work actually runs. Reskilling is part of the design, not an HR afterthought. Name the new skills, build the time to learn into the work, and make plain why it matters and where it leads. In a company with a thin bench, that's urgent: there's no spare capacity to absorb the gap.
+
+At Meridian, when the agent took over quote drafting, Elena's junior estimator didn't lose her seat. She became the one who frames the hard quotes for the agent and reviews its exceptions, higher-judgment work she'd never have had room for while she was buried in data entry.
 
 ### Decide the math can bend.
 
@@ -75,12 +85,13 @@ At Meridian, Elena's hours didn't expand when the agent landed. Fifteen hours of
 
 ## What you now *believe*
 
-You don't have to act on any of this yet. The redesign work comes later, in focused cycles we'll call sprints (the Signal chapter runs your first one). For now the mindset shift is the whole point. This chapter made one claim and drew three shifts from it. Mark where you honestly land on each:
+You don't have to act on any of this yet. The redesign work comes later, in focused cycles we'll call sprints (the Signal chapter runs your first one). For now the mindset shift is the whole point. This chapter made one claim and drew four shifts from it. Mark where you honestly land on each:
 
 | Claim | Yes | No | We'll see |
 |---|:-:|:-:|:-:|
 | We're already a tech company. |  |  |  |
 | AI is a worker to manage, not a tool to deploy. |  |  |  |
+| My people's work rises as the routine moves to agents. |  |  |  |
 | The headcount math can bend. |  |  |  |
 | My job is to design the work, not do it. |  |  |  |
 
@@ -88,7 +99,7 @@ Anywhere you marked *no* or *we'll see* is what the rest of the book is built to
 
 ## Reflect on your *operation*.
 
-1. Of the three shifts in this chapter, which is hardest for you to accept, and what's underneath that resistance?
+1. Of the four shifts in this chapter, which is hardest for you to accept, and what's underneath that resistance?
 2. The last time your team talked about an AI use case, did anyone ask *what scope is this worker accountable for, and who supervises the output?* If not, what did they ask instead, and what did that framing miss?
 3. Of the work you personally did last week, how much required your judgment, and how much was execution someone (or something) else could do inside a design you set?
 
