@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-One claim does the work in this chapter: you're already a tech company. Three shifts follow once that lands. AI is a worker, not a tool. The headcount math can bend. Your job is to design the work, not do it. The chapter closes with a gut check on what you now believe, and one short list to carry into your first sprint: where your people are doing work your systems should be doing.
+One claim does the work in this chapter: you're already a tech company. Three shifts follow once that lands. AI is a worker, not a tool. The headcount math can bend. Your job is to design the work, not do it. The chapter closes with a gut check on what you now believe.
 :::
 
 Marco Argenti, the CIO of Goldman Sachs, told a story in *Harvard Business Review* (June 2026). One of his senior bankers asked him a question: *"With AI getting better so fast, what's the 10% of my job AI will never be able to do, so I can hang on to it?"*
@@ -47,7 +47,7 @@ Once you see the company as already tech, three shifts follow. Manage AI like a 
 
 ### Manage AI like a worker, not a tool.
 
-If your systems are the foundation everything runs on, the next question is what operates inside them. Most operators reach for software vocabulary: *deploy, integrate, license, operate, use.* That language was right for thirty years. It described a tool you installed and used. A tool didn't have a workday or hand off to other parts of the org.
+If your systems are the foundation everything runs on, the next question is what operates inside them. Most operators reach for software vocabulary: *deploy, integrate, license, operate, use.* That language described a tool you installed and used, one that didn't have a workday or hand off to other parts of the org.
 
 The new vocabulary is management. You assign work. You supervise. You evaluate the output and adjust the assignment. An agent holds a goal, has a defined scope and access to specific data, and produces deliverables on a cadence. A human reviews the output and adjusts the scope. The structure is identical to how you manage a competent junior employee.
 
@@ -61,9 +61,9 @@ This is an operator decision. Revenue per employee stays fixed for your industry
 
 ### Design the work, don't do it.
 
-Designing the work just means answering one question: what's the most efficient way this outcome happens? The steps, their order, and who or what does each one. If the math can bend, your own role changes too. The change shows up in where your hours go. You design and supervise the work instead of doing it. The execution work that used to anchor your week, the proposals you rewrote, the reports you reformatted, the routing you owned because no one else could be trusted with it, moves inside a system you designed.
+Designing the work just means answering one question: what's the most efficient way this outcome happens? The steps, their order, and who or what does each one. You're answering it for the whole team, not just your own desk: you're deciding how a piece of work moves across everyone who touches it, people and agents alike. Your own role shifts first, and you can see it in where your hours go. The execution work that used to anchor your week, the proposals you rewrote, the reports you reformatted, the routing you owned because no one else could be trusted with it, moves inside a system you designed. Your team's routine execution moves the same way.
 
-Done right, the work you used to do leaves your desk, and a lighter layer of oversight takes its place. It doesn't add agent management on top of your existing job.
+Done right, the work people used to grind through leaves their desks, and a lighter layer of oversight takes its place. It doesn't pile agent management on top of everyone's existing job.
 
 Bedard and colleagues, writing in *HBR* (March 2026), found that operators who treat AI oversight as an add-on suffer measurably more fatigue and information overload, while AI that genuinely removes toil lowers burnout. The difference is the design decision: does your operating model add oversight on top of the job, or does it move the toil off the desk?
 
@@ -71,13 +71,9 @@ The job doesn't grow. The composition changes.
 
 At Meridian, Elena's hours didn't expand when the agent landed. Fifteen hours of quote drafting moved off her desk; the four hours of pricing judgment that remained got sharper. That's the shift in operating terms: different work, not more work. The rest of this book, the Co-Operating Model, the Sequence, and the two Design chapters, is the discipline of changing that composition on purpose instead of by accident.
 
-## Take stock before your first *sprint*.
+## What you now *believe*
 
-You don't have to act on any of this yet. The redesign work comes later, in focused cycles we'll call sprints (the Signal chapter runs your first one). For now the shift is the point, so two things close the chapter: a gut check on what you actually believe, and one short list to keep.
-
-### What you now *believe*
-
-This chapter made one claim and drew three shifts from it. Mark where you honestly land on each:
+You don't have to act on any of this yet. The redesign work comes later, in focused cycles we'll call sprints (the Signal chapter runs your first one). For now the mindset shift is the whole point. This chapter made one claim and drew three shifts from it. Mark where you honestly land on each:
 
 | Claim | Yes | No | We'll see |
 |---|:-:|:-:|:-:|
@@ -88,44 +84,9 @@ This chapter made one claim and drew three shifts from it. Mark where you honest
 
 Anywhere you marked *no* or *we'll see* is what the rest of the book is built to earn. You don't have to believe it yet. You just have to be willing to test it.
 
-Now one concrete thing to carry forward.
-
-<!-- moves:take-stock-operating-model-gap -->
-### How to take stock of the *operating-model gap*
-
-1. **Open your core systems side by side** — your CRM, your accounting or ERP system, your project tool, your communications stack, your document store. Real screens beat working from memory.
-2. **For each one, name a single place a person is doing work the system should be doing** — retyping data the system already has, say, or making a routine call the system could route. One item per system, so the list stays concrete instead of a gripe session.
-3. **Write those down as one short list** — nothing fancy, a few lines you can set aside.
-4. **Keep the list, don't act on it yet** — the prioritizing comes later, in the Signal chapter. Right now you're only noticing.
-<!-- /moves:take-stock-operating-model-gap -->
-
-Fill in the table below. Meridian's version follows, for reference.
-
-| System | Where a person does work the system should be doing |
-|---|---|
-| CRM |  |
-| Accounting / ERP |  |
-| Project tool |  |
-| Communications |  |
-| Document store |  |
-| Other |  |
-
-*Meridian's first pass:*
-
-| System | Where a person does work the system should be doing |
-|---|---|
-| CRM (HubSpot) | Elena manually drafts every custom quote; the bottleneck costs ~$558K/year in delayed closes |
-| Accounting / ERP (NetSuite) | Pricing exceptions sit on Elena's desktop; no one else can approve them |
-| Project tool (Asana) | Shop-floor handoff still happens by phone call; no task is created when a job is won |
-| Communications | — |
-| Document store | — |
-| Other | — |
-
-Hang onto this list. When you run your first sprint, it's where the work starts.
-
 ## Reflect on your *operation*.
 
-1. Look at the list you just built. Which item is costing you the most, measured in hours lost, dollars unearned, or decisions you're personally absorbing? Which one have you been avoiding, and why?
+1. Of the three shifts in this chapter, which is hardest for you to accept, and what's underneath that resistance?
 2. The last time your team talked about an AI use case, did anyone ask *what scope is this worker accountable for, and who supervises the output?* If not, what did they ask instead, and what did that framing miss?
 3. Of the work you personally did last week, how much required your judgment, and how much was execution someone (or something) else could do inside a design you set?
 
