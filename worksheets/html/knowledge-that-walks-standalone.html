@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knowledge That Walks — Capture Worksheet · Compound</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAFAF8;
+    --ink:#0A0A0A;
+    --ink-70:rgba(10,10,10,.70);
+    --ink-55:rgba(10,10,10,.55);
+    --ink-12:rgba(10,10,10,.12);
+    --ink-06:rgba(10,10,10,.06);
+    --red:#E11D2D;
+    --sans:'Archivo',system-ui,-apple-system,sans-serif;
+    --display:'Bricolage Grotesque','Archivo',sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{
+    background:var(--ink);
+    font-family:var(--sans);
+    color:var(--ink);
+    line-height:1.5;
+    padding:0 0 80px;
+  }
+
+  /* ---- top toolbar ---- */
+  .toolbar{
+    position:sticky; top:0; z-index:50;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 24px;
+    background:rgba(10,10,10,.92);
+    backdrop-filter:saturate(140%) blur(6px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .toolbar .brand{
+    font-family:var(--mono); font-size:12px; letter-spacing:.08em;
+    color:rgba(255,255,255,.78); text-transform:uppercase;
+  }
+  .toolbar .brand b{color:#fff;}
+  .toolbar .brand .red{color:var(--red);}
+  .tbtn{
+    font-family:var(--sans); font-size:13px; font-weight:600;
+    border:none; border-radius:8px; padding:9px 16px; cursor:pointer;
+    background:#fff; color:var(--ink); transition:transform .08s ease,opacity .15s ease;
+  }
+  .tbtn.primary{background:var(--red); color:#fff;}
+  .tbtn:hover{transform:translateY(-1px);}
+  .tbtn:active{transform:translateY(0);}
+
+  /* ---- page sheets ---- */
+  .page{
+    width:8.5in; max-width:calc(100% - 32px);
+    min-height:11in;
+    background:var(--paper);
+    margin:28px auto;
+    padding:0.85in 0.9in 0.7in;
+    box-shadow:0 24px 60px rgba(0,0,0,.45);
+    position:relative;
+    display:flex; flex-direction:column;
+  }
+
+  /* ---- cover ---- */
+  .cover{
+    background:var(--ink); color:var(--paper);
+    justify-content:space-between;
+  }
+  .cover .kicker{
+    font-family:var(--mono); font-size:12.5px; letter-spacing:.14em;
+    text-transform:uppercase; color:rgba(255,255,255,.55);
+  }
+  .cover .kicker .red{color:var(--red);}
+  .cover h1{
+    font-family:var(--display); font-weight:700;
+    font-size:62px; line-height:.98; letter-spacing:-.02em;
+    margin:18px 0 0;
+  }
+  .cover h1 em{font-style:normal; color:var(--red);}
+  .cover .sub{
+    font-size:20px; color:rgba(255,255,255,.78); max-width:30ch;
+    margin-top:22px; line-height:1.4;
+  }
+  .cover .rule{height:3px; width:64px; background:var(--red); margin:30px 0;}
+  .cover .pull{
+    font-family:var(--display); font-weight:500; font-size:23px;
+    line-height:1.3; color:#fff; max-width:34ch;
+  }
+  .cover .pull .red{color:var(--red);}
+  .cover .meta{
+    font-family:var(--mono); font-size:12px; letter-spacing:.05em;
+    color:rgba(255,255,255,.5); border-top:1px solid rgba(255,255,255,.12);
+    padding-top:18px;
+  }
+
+  /* ---- page header ---- */
+  .phead{ border-bottom:2px solid var(--ink); padding-bottom:12px; margin-bottom:22px;
+    display:flex; align-items:flex-end; justify-content:space-between; gap:20px;}
+  .phead .label{font-family:var(--mono); font-size:11px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--ink-55);}
+  .phead h2{font-family:var(--display); font-weight:700; font-size:31px;
+    line-height:1.02; letter-spacing:-.015em; margin-top:6px;}
+  .phead h2 em{font-style:normal; color:var(--red);}
+  .phead .step{font-family:var(--display); font-weight:800; font-size:50px;
+    color:var(--ink-12); line-height:.8; white-space:nowrap;}
+
+  .intro{font-size:15.5px; color:var(--ink-70); max-width:62ch; margin-bottom:20px;}
+  .intro strong{color:var(--ink);}
+
+  /* ---- instruction box ---- */
+  .ibox{background:var(--ink-06); border-left:3px solid var(--red);
+    border-radius:0 8px 8px 0; padding:14px 18px; margin-bottom:22px;}
+  .ibox ol{list-style:none; counter-reset:i; display:flex; flex-direction:column; gap:9px;}
+  .ibox li{display:flex; gap:11px; font-size:14px; color:var(--ink-70); line-height:1.45;}
+  .ibox li .n{font-family:var(--mono); font-weight:600; color:var(--red);
+    font-size:13px; flex:none;}
+  .ibox li strong{color:var(--ink);}
+
+  /* ---- prompt blocks ---- */
+  .q{margin-bottom:18px;}
+  .q .tag{font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.08em;
+    color:var(--red); text-transform:uppercase;}
+  .q .ask{font-family:var(--display); font-weight:600; font-size:17px; line-height:1.25;
+    margin:3px 0 11px;}
+  .q .ask small{display:block; font-family:var(--sans); font-weight:400; font-size:13px;
+    color:var(--ink-55); margin-top:3px; letter-spacing:0;}
+
+  .line{display:block; width:100%; border:none; border-bottom:1.5px solid var(--ink-12);
+    background:transparent; font-family:var(--sans); font-size:15px; color:var(--ink);
+    padding:7px 2px; margin-bottom:8px;}
+  .line:focus{outline:none; border-bottom-color:var(--red);}
+  .line::placeholder{color:rgba(10,10,10,.32); font-style:italic;}
+
+  /* ---- field card (single answer) ---- */
+  .field{margin-bottom:16px;}
+  .field .lbl{font-family:var(--mono); font-size:11px; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--ink-55); margin-bottom:5px;}
+  .field .lbl b{color:var(--ink);}
+  textarea.line{border:1.5px solid var(--ink-12); border-radius:8px; resize:none;
+    min-height:54px; line-height:1.45;}
+  textarea.line:focus{border-color:var(--red);}
+
+  /* ---- tables ---- */
+  table{width:100%; border-collapse:collapse; margin-bottom:18px; font-size:13.5px;}
+  th{font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase;
+    text-align:left; color:var(--ink-55); padding:8px 10px; border-bottom:2px solid var(--ink);
+    vertical-align:bottom;}
+  td{border-bottom:1px solid var(--ink-12); padding:9px 10px; vertical-align:top;}
+  td.rowlab{font-weight:600; width:30%;}
+  td.rowlab small{display:block; font-weight:400; color:var(--ink-55); font-size:11.5px; margin-top:2px;}
+  .cellinput{width:100%; border:none; background:transparent; font-family:var(--sans);
+    font-size:13.5px; color:var(--ink); padding:2px;}
+  .cellinput:focus{outline:none;}
+  .cellinput::placeholder{color:rgba(10,10,10,.3); font-style:italic; font-size:12.5px;}
+
+  /* TML legend chips */
+  .legend{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px;}
+  .chip{font-family:var(--mono); font-size:11px; letter-spacing:.04em; padding:5px 9px;
+    border-radius:6px; border:1px solid var(--ink-12);}
+  .chip b{color:var(--ink);}
+  .chip.t{background:rgba(225,29,45,.06); border-color:rgba(225,29,45,.25);}
+  .chip span{color:var(--ink-55);}
+
+  /* ---- worked example ---- */
+  .wex{border:1px dashed var(--ink-12); border-radius:10px; padding:15px 17px;
+    background:#fff; margin-top:auto;}
+  .wex .h{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--red); margin-bottom:8px;}
+  .wex p{font-size:13px; color:var(--ink-70); line-height:1.5;}
+  .wex p + p{margin-top:6px;}
+  .wex b{color:var(--ink);}
+  .wex .risk{display:inline-block; font-family:var(--mono); font-size:10.5px; font-weight:600;
+    letter-spacing:.06em; background:var(--red); color:#fff; padding:2px 7px; border-radius:4px;}
+
+  /* ---- checklist ---- */
+  .check{display:flex; flex-direction:column; gap:13px; margin-bottom:8px;}
+  .check .item{display:flex; gap:12px; align-items:flex-start;}
+  .check .box{flex:none; width:20px; height:20px; border:2px solid var(--ink);
+    border-radius:5px; margin-top:1px;}
+  .check .item .txt{font-size:14.5px; line-height:1.4;}
+  .check .item .txt b{font-weight:700;}
+  .check .item .txt small{display:block; color:var(--ink-55); font-size:12.5px; margin-top:2px;}
+
+  .closing{margin-top:auto; border-top:2px solid var(--ink); padding-top:16px;}
+  .closing .big{font-family:var(--display); font-weight:600; font-size:19px; line-height:1.3;}
+  .closing .big .red{color:var(--red);}
+  .closing p{font-size:13.5px; color:var(--ink-70); margin-top:8px; max-width:60ch;}
+
+  /* ---- footer ---- */
+  .pfoot{margin-top:26px; padding-top:12px; border-top:1px solid var(--ink-12);
+    display:flex; justify-content:space-between; align-items:center;
+    font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; color:var(--ink-55);}
+  .pfoot .red{color:var(--red);}
+
+  /* ---- print ---- */
+  @media print{
+    body{background:#fff; padding:0;}
+    .toolbar{display:none;}
+    .page{box-shadow:none; margin:0; width:100%; max-width:none; min-height:0;
+      padding:0.55in 0.6in; page-break-after:always;}
+    .page:last-child{page-break-after:auto;}
+    .wex,.closing{break-inside:avoid;}
+    @page{size:letter; margin:0;}
+  }
+  @media (max-width:680px){
+    .cover h1{font-size:44px;}
+    .phead h2{font-size:24px;}
+    .phead .step{font-size:36px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="brand"><b>Compound</b> &nbsp;·&nbsp; Source / Knowledge Capture</div>
+  <button class="tbtn primary" onclick="window.print()">Print / Save PDF</button>
+</div>
+
+<!-- ===================== COVER ===================== -->
+<section class="page cover">
+  <div>
+    <div class="kicker">The Co-Operating Model &nbsp;<span class="red">/</span>&nbsp; Knowledge Capture</div>
+    <h1>Knowledge<br>That <em>Walks</em>.</h1>
+    <div class="sub">Get one constraint's hardest knowledge out of a single head — before it walks out the door.</div>
+    <div class="rule"></div>
+    <div class="pull">The most fragile asset on your balance sheet <span class="red">isn't in the financials.</span> It's the judgment one person holds and no system has ever captured.</div>
+  </div>
+  <div class="meta">Companion worksheet · Compound — compoundorg.com</div>
+</section>
+
+<!-- ===================== STEP 01 ===================== -->
+<section class="page">
+  <div class="phead">
+    <div>
+      <div class="label">Knowledge Capture / Worksheet</div>
+      <h2>Name what you're <em>capturing</em>.</h2>
+    </div>
+    <div class="step">01</div>
+  </div>
+
+  <p class="intro">You've already named a constraint. Before you fix it — or hand any part of it to AI — you have to know whose head the knowledge lives in. <strong>An agent is only as competent as the institutional context available to it.</strong> This worksheet captures the knowledge one constraint depends on, before it walks.</p>
+
+  <div class="ibox">
+    <ol>
+      <li><span class="n">1.</span><span>Write your validated constraint in one line. Everything below scopes to it — not the whole company.</span></li>
+      <li><span class="n">2.</span><span>List the people whose <strong>judgment</strong> this constraint depends on. Run the walk test on each: <em>if they didn't show up tomorrow, what stops or degrades?</em></span></li>
+      <li><span class="n">3.</span><span>Circle the one whose loss would hurt most. That's who you capture first.</span></li>
+    </ol>
+  </div>
+
+  <div class="field">
+    <div class="lbl"><b>The constraint</b> — one sentence (from Signal)</div>
+    <textarea class="line" placeholder="e.g. Quotes take 5 days when they should take 1 — every RFQ routes through one person who reconciles pricing by hand."></textarea>
+  </div>
+
+  <div class="q">
+    <div class="tag">The walk test — who holds it?</div>
+    <div class="ask">Whose judgment does this constraint depend on?
+      <small>Who handles the exceptions · whose call can't be replaced by reading the SOP · who people walk over to and ask "how do I…?"</small>
+    </div>
+    <input class="line" placeholder="Person / role  —  what would stop or degrade if they were gone tomorrow">
+    <input class="line" placeholder="Person / role  —  what would stop or degrade if they were gone tomorrow">
+    <input class="line" placeholder="Person / role  —  what would stop or degrade if they were gone tomorrow">
+    <input class="line" placeholder="Person / role  —  what would stop or degrade if they were gone tomorrow">
+  </div>
+
+  <div class="wex">
+    <div class="h">Worked example — Meridian (quoting constraint)</div>
+    <p><b>Elena, VP Ops</b> — the only person who can reconcile the rate card against 147 customer-specific pricing exceptions. If she's out, no quote goes out right.</p>
+    <p><b>Dave, Sr. Design Engineer (31 yrs)</b> — estimates fabrication hours to within 10% by feel. Has never written the method down. Four years to retirement.</p>
+  </div>
+
+  <div class="pfoot"><span>Compound <span class="red">—</span> compoundorg.com</span><span>Knowledge That Walks · 01</span></div>
+</section>
+
+<!-- ===================== STEP 02 ===================== -->
+<section class="page">
+  <div class="phead">
+    <div>
+      <div class="label">Knowledge Capture / Worksheet</div>
+      <h2>Score the <em>risk</em>.</h2>
+    </div>
+    <div class="step">02</div>
+  </div>
+
+  <p class="intro">Knowledge concentrated in one head is an <strong>asset with a measurable cost</strong> — and an exposure. Treat it like one. Score the person you circled in Step 1. The cost you can't put a number on is the cost that's invisible until it's gone.</p>
+
+  <div class="ibox">
+    <ol>
+      <li><span class="n">1.</span><span>Fill in every cell for your top person. Be specific — names, dates, dollars.</span></li>
+      <li><span class="n">2.</span><span>Flag <strong>AT RISK</strong> when concentration is <em>1</em> <strong>and</strong> an exit, retirement, role change, or reorg is anywhere on the horizon.</span></li>
+      <li><span class="n">3.</span><span>If you can't put a number on what it costs to lose them, you haven't found the real exposure yet.</span></li>
+    </ol>
+  </div>
+
+  <table>
+    <thead><tr><th>Dimension</th><th>Your answer</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlab">Who<small>Name + role</small></td><td><input class="cellinput" placeholder="e.g. Elena Ruiz — VP Operations"></td></tr>
+      <tr><td class="rowlab">Concentration<small>How many people could do this without them?</small></td><td><input class="cellinput" placeholder="e.g. Zero — she's the only one"></td></tr>
+      <tr><td class="rowlab">Exposure<small>Planned exit, retirement, role change, reorg? When?</small></td><td><input class="cellinput" placeholder="e.g. No near-term exit, but no backup either"></td></tr>
+      <tr><td class="rowlab">Cost if it walks<small>Hours to reconstruct · revenue at risk · errors introduced — a number</small></td><td><input class="cellinput" placeholder="e.g. ~2 years to rebuild + pricing errors across every quote"></td></tr>
+      <tr><td class="rowlab">Risk flag<small>Concentration × exposure</small></td><td><input class="cellinput" placeholder="LOW / MEDIUM / AT RISK"></td></tr>
+    </tbody>
+  </table>
+
+  <div class="wex">
+    <div class="h">Worked example — the knowledge that almost walked</div>
+    <p>At a global food-safety company, a senior pricing strategist held <b>twenty years of customer-specific pricing exceptions</b> in his head — decisions made one at a time over decades, never consolidated into any system.</p>
+    <p>He wasn't flagged until the knowledge was scored. The team had <b>four weeks</b> before he retired. They captured everything. The loss they avoided would have taken <b>two years to reconstruct</b> and produced pricing errors throughout the transition. <span class="risk">AT RISK</span></p>
+  </div>
+
+  <div class="pfoot"><span>Compound <span class="red">—</span> compoundorg.com</span><span>Knowledge That Walks · 02</span></div>
+</section>
+
+<!-- ===================== STEP 03 ===================== -->
+<section class="page">
+  <div class="phead">
+    <div>
+      <div class="label">Knowledge Capture / Worksheet</div>
+      <h2>Sort what they <em>know</em>.</h2>
+    </div>
+    <div class="step">03</div>
+  </div>
+
+  <p class="intro">Not all knowledge is the same. Some can be written down and systematized — AI can run it. Some is judgment that has to stay human. Sort before you capture: it tells you what to turn into steps, what to turn into rules, and where a person has to stay in the loop. This is the <strong>TML</strong> framework — Task, Management, Leadership.</p>
+
+  <div class="legend">
+    <span class="chip t"><b>Task</b> <span>— documentable steps · AI runs it</span></span>
+    <span class="chip"><b>Management</b> <span>— decision rights &amp; rules · AI assists</span></span>
+    <span class="chip"><b>Leadership</b> <span>— judgment &amp; relationships · stays human</span></span>
+  </div>
+
+  <div class="ibox">
+    <ol>
+      <li><span class="n">1.</span><span>List what your top person actually knows about this constraint — one item per row.</span></li>
+      <li><span class="n">2.</span><span>Tag each as <strong>T</strong>, <strong>M</strong>, or <strong>L</strong>. Most "one person knows it" pain hides in M and L.</span></li>
+      <li><span class="n">3.</span><span>Tasks get written as steps. Leadership gets captured as <em>reasoning and examples</em> — never faked into a rule.</span></li>
+    </ol>
+  </div>
+
+  <table>
+    <thead><tr><th style="width:66%">What they know</th><th>T / M / L</th></tr></thead>
+    <tbody>
+      <tr><td><input class="cellinput" placeholder="e.g. The 8-step process for reconciling a quote against the rate card"></td><td><input class="cellinput" placeholder="T"></td></tr>
+      <tr><td><input class="cellinput" placeholder="e.g. When a legacy customer gets exception pricing — and who must approve it"></td><td><input class="cellinput" placeholder="M"></td></tr>
+      <tr><td><input class="cellinput" placeholder="e.g. Reading whether a customer will walk over price"></td><td><input class="cellinput" placeholder="L"></td></tr>
+      <tr><td><input class="cellinput" placeholder=""></td><td><input class="cellinput" placeholder=""></td></tr>
+      <tr><td><input class="cellinput" placeholder=""></td><td><input class="cellinput" placeholder=""></td></tr>
+      <tr><td><input class="cellinput" placeholder=""></td><td><input class="cellinput" placeholder=""></td></tr>
+    </tbody>
+  </table>
+
+  <div class="wex">
+    <div class="h">Why the sort matters</div>
+    <p>Point AI at the <b>Task</b> rows and it does the work directly. Give it the <b>Management</b> rules and it assists — flags the exception, routes the approval. The <b>Leadership</b> rows stay human; what you capture there is the <i>thinking</i>, so the next person can learn the judgment, not just the rule.</p>
+  </div>
+
+  <div class="pfoot"><span>Compound <span class="red">—</span> compoundorg.com</span><span>Knowledge That Walks · 03</span></div>
+</section>
+
+<!-- ===================== STEP 04 ===================== -->
+<section class="page">
+  <div class="phead">
+    <div>
+      <div class="label">Knowledge Capture / Worksheet</div>
+      <h2>Capture it: the <em>interview</em>.</h2>
+    </div>
+    <div class="step">04</div>
+  </div>
+
+  <p class="intro">Don't ask them to write a summary — they'll compress and leave out the reasoning that makes the knowledge useful. <strong>A transcript is the closest thing a person has to an API.</strong> Sit them down, ask the real questions, and record it. The recording — transcribed — is the asset that feeds every workflow downstream.</p>
+
+  <div class="ibox">
+    <ol>
+      <li><span class="n">1.</span><span>Book <strong>45–60 minutes</strong> with your top person. Record it. Have it transcribed.</span></li>
+      <li><span class="n">2.</span><span>Work the questions below. Chase the <em>why</em> behind every answer — that's the part no SOP holds.</span></li>
+      <li><span class="n">3.</span><span>Store the transcript where both a person and an AI can reach it. A file on someone's desktop is not captured.</span></li>
+    </ol>
+  </div>
+
+  <div class="q">
+    <div class="tag">The interview script</div>
+    <div class="ask" style="margin-bottom:6px;">Ask these. Record the answers — don't summarize them.</div>
+  </div>
+
+  <div class="check" style="margin-bottom:18px;">
+    <div class="item"><div class="box"></div><div class="txt">What decisions do you make that nobody else makes?</div></div>
+    <div class="item"><div class="box"></div><div class="txt">Which exceptions have you handled that aren't written down anywhere?</div></div>
+    <div class="item"><div class="box"></div><div class="txt">What rule of thumb do you use that you've never had to explain?</div></div>
+    <div class="item"><div class="box"></div><div class="txt">Walk me through the last hard one. What did you weigh, and why?</div></div>
+    <div class="item"><div class="box"></div><div class="txt">What would a new hire get wrong in their first month — and how would you catch it?</div></div>
+  </div>
+
+  <table>
+    <thead><tr><th>Capture log</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlab">Who's interviewed</td><td><input class="cellinput" placeholder="Name + role"></td></tr>
+      <tr><td class="rowlab">Session booked for</td><td><input class="cellinput" placeholder="Date / time"></td></tr>
+      <tr><td class="rowlab">Recorded &amp; transcribed?</td><td><input class="cellinput" placeholder="Yes / scheduled — tool used"></td></tr>
+      <tr><td class="rowlab">Where the transcript lives</td><td><input class="cellinput" placeholder="Shared, reachable location — not a desktop"></td></tr>
+    </tbody>
+  </table>
+
+  <div class="pfoot"><span>Compound <span class="red">—</span> compoundorg.com</span><span>Knowledge That Walks · 04</span></div>
+</section>
+
+<!-- ===================== STEP 05 ===================== -->
+<section class="page">
+  <div class="phead">
+    <div>
+      <div class="label">Knowledge Capture / Worksheet</div>
+      <h2>Before you call it <em>captured</em>.</h2>
+    </div>
+    <div class="step">05</div>
+  </div>
+
+  <p class="intro">Knowledge isn't captured because you held a meeting. It's captured when someone else — or an agent — can do the work from what you wrote down, without going back to the person. Run the check.</p>
+
+  <div class="check">
+    <div class="item"><div class="box"></div><div class="txt"><b>Someone else could do the work from this.</b><small>No follow-up question to the original person required. If they'd still have to ask, it's not captured yet.</small></div></div>
+    <div class="item"><div class="box"></div><div class="txt"><b>Task knowledge is written as steps</b> — not as prose, and not as "ask Elena."<small>A new hire could follow it on day one.</small></div></div>
+    <div class="item"><div class="box"></div><div class="txt"><b>The judgment is captured as reasoning and examples</b> — not faked into a rule it isn't.<small>Leadership knowledge teaches the thinking, so the next person can learn it.</small></div></div>
+    <div class="item"><div class="box"></div><div class="txt"><b>It lives where a person AND an AI can reach it.</b><small>Not a head, not a desktop file, not a wiki nobody maintains.</small></div></div>
+    <div class="item"><div class="box"></div><div class="txt"><b>Someone owns keeping it current.</b><small>Name a knowledge manager — the person accountable for whether the knowledge base still reflects how the business runs today.</small></div></div>
+  </div>
+
+  <div class="closing">
+    <div class="big">An agent is only as competent as the institutional context <span class="red">available to it.</span></div>
+    <p>What you just captured is the foundation every AI workflow on this constraint will stand on. Clean, current, reachable knowledge in — a well-briefed operator out. Skip it, and the AI runs confidently, plausibly, wrong — at scale. Knowledge that walks is a risk. Knowledge you captured is an asset.</p>
+  </div>
+
+  <div class="pfoot"><span>Compound <span class="red">—</span> compoundorg.com</span><span>Knowledge That Walks · 05</span></div>
+</section>
+
+</body>
+</html>
