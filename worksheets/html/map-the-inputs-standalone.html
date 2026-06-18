@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where the Work Runs — System &amp; Data Map · Compound</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAFAF8;
+    --ink:#0A0A0A;
+    --ink-70:rgba(10,10,10,.70);
+    --ink-55:rgba(10,10,10,.55);
+    --ink-12:rgba(10,10,10,.12);
+    --ink-06:rgba(10,10,10,.06);
+    --red:#E11D2D;
+    --sans:'Archivo',system-ui,-apple-system,sans-serif;
+    --display:'Bricolage Grotesque','Archivo',sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ background:var(--ink); font-family:var(--sans); color:var(--ink); line-height:1.5; padding:0 0 80px; }
+
+  .toolbar{ position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between;
+    padding:14px 24px; background:rgba(10,10,10,.92); backdrop-filter:saturate(140%) blur(6px);
+    border-bottom:1px solid rgba(255,255,255,.08); }
+  .toolbar .brand{ font-family:var(--mono); font-size:12px; letter-spacing:.08em; color:rgba(255,255,255,.78); text-transform:uppercase; }
+  .toolbar .brand b{color:#fff;}
+  .toolbar .brand .red{color:var(--red);}
+  .tbtn{ font-family:var(--sans); font-size:13px; font-weight:600; border:none; border-radius:8px; padding:9px 16px;
+    cursor:pointer; background:#fff; color:var(--ink); transition:transform .08s ease,opacity .15s ease; }
+  .tbtn.primary{background:var(--red); color:#fff;}
+  .tbtn:hover{transform:translateY(-1px);}
+  .tbtn:active{transform:translateY(0);}
+
+  .page{ width:8.5in; max-width:calc(100% - 32px); min-height:11in; background:var(--paper);
+    margin:28px auto; padding:0.85in 0.9in 0.7in; box-shadow:0 24px 60px rgba(0,0,0,.45);
+    position:relative; display:flex; flex-direction:column; }
+
+  .cover{ background:var(--ink); color:var(--paper); justify-content:space-between; }
+  .cover .kicker{ font-family:var(--mono); font-size:12.5px; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.55); }
+  .cover .kicker .red{color:var(--red);}
+  .cover h1{ font-family:var(--display); font-weight:700; font-size:60px; line-height:.98; letter-spacing:-.02em; margin:18px 0 0; }
+  .cover h1 em{font-style:normal; color:var(--red);}
+  .cover .sub{ font-size:20px; color:rgba(255,255,255,.78); max-width:32ch; margin-top:22px; line-height:1.4; }
+  .cover .rule{height:3px; width:64px; background:var(--red); margin:30px 0;}
+  .cover .pull{ font-family:var(--display); font-weight:500; font-size:23px; line-height:1.3; color:#fff; max-width:34ch; }
+  .cover .pull .red{color:var(--red);}
+  .cover .meta{ font-family:var(--mono); font-size:12px; letter-spacing:.05em; color:rgba(255,255,255,.5);
+    border-top:1px solid rgba(255,255,255,.12); padding-top:18px; }
+
+  .phead{ border-bottom:2px solid var(--ink); padding-bottom:12px; margin-bottom:22px; display:flex; align-items:flex-end; justify-content:space-between; gap:20px;}
+  .phead .label{font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-55);}
+  .phead h2{font-family:var(--display); font-weight:700; font-size:31px; line-height:1.02; letter-spacing:-.015em; margin-top:6px;}
+  .phead h2 em{font-style:normal; color:var(--red);}
+  .phead .step{font-family:var(--display); font-weight:800; font-size:50px; color:var(--ink-12); line-height:.8; white-space:nowrap;}
+
+  .intro{font-size:15.5px; color:var(--ink-70); max-width:64ch; margin-bottom:18px;}
+  .intro strong{color:var(--ink);}
+
+  .ibox{background:var(--ink-06); border-left:3px solid var(--red); border-radius:0 8px 8px 0; padding:14px 18px; margin-bottom:20px;}
+  .ibox ol{list-style:none; counter-reset:i; display:flex; flex-direction:column; gap:9px;}
+  .ibox li{display:flex; gap:11px; font-size:14px; color:var(--ink-70); line-height:1.45;}
+  .ibox li .n{font-family:var(--mono); font-weight:600; color:var(--red); font-size:13px; flex:none;}
+  .ibox li strong{color:var(--ink);}
+
+  /* layer / definition cards */
+  .defs{display:flex; flex-direction:column; gap:9px; margin-bottom:18px;}
+  .def{display:flex; gap:12px; align-items:baseline; font-size:13.5px; line-height:1.4;}
+  .def .k{font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.04em; color:var(--red);
+    text-transform:uppercase; flex:none; width:160px;}
+  .def .v{color:var(--ink-70);}
+  .def .v b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; margin-bottom:18px; font-size:13px;}
+  th{font-family:var(--mono); font-size:10px; letter-spacing:.05em; text-transform:uppercase; text-align:left;
+    color:var(--ink-55); padding:8px 8px; border-bottom:2px solid var(--ink); vertical-align:bottom;}
+  td{border-bottom:1px solid var(--ink-12); padding:8px 8px; vertical-align:top;}
+  td.rowlab{font-weight:600;}
+  td.rowlab small{display:block; font-weight:400; color:var(--ink-55); font-size:11.5px; margin-top:2px;}
+  .cellinput{width:100%; border:none; background:transparent; font-family:var(--sans); font-size:13px; color:var(--ink); padding:2px;}
+  .cellinput:focus{outline:none;}
+  .cellinput::placeholder{color:rgba(10,10,10,.3); font-style:italic; font-size:12px;}
+
+  .legend{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px;}
+  .chip{font-family:var(--mono); font-size:11px; letter-spacing:.04em; padding:5px 9px; border-radius:6px; border:1px solid var(--ink-12);}
+  .chip b{color:var(--ink);}
+  .chip span{color:var(--ink-55);}
+  .chip.t{background:rgba(225,29,45,.06); border-color:rgba(225,29,45,.25);}
+
+  .wex{border:1px dashed var(--ink-12); border-radius:10px; padding:15px 17px; background:#fff; margin-top:auto;}
+  .wex .h{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--red); margin-bottom:8px;}
+  .wex p{font-size:13px; color:var(--ink-70); line-height:1.5;}
+  .wex p + p{margin-top:6px;}
+  .wex b{color:var(--ink);}
+  .wex .tag{font-family:var(--mono); font-size:10px; font-weight:600; padding:1px 6px; border-radius:4px; background:var(--ink-06); color:var(--ink-70);}
+  .wex .tag.bad{background:var(--red); color:#fff;}
+
+  .check{display:flex; flex-direction:column; gap:12px; margin-bottom:8px;}
+  .check .item{display:flex; gap:12px; align-items:flex-start;}
+  .check .box{flex:none; width:20px; height:20px; border:2px solid var(--ink); border-radius:5px; margin-top:1px;}
+  .check .item .txt{font-size:14px; line-height:1.4;}
+  .check .item .txt b{font-weight:700;}
+  .check .item .txt small{display:block; color:var(--ink-55); font-size:12.5px; margin-top:2px;}
+
+  .closing{margin-top:auto; border-top:2px solid var(--ink); padding-top:16px;}
+  .closing .big{font-family:var(--display); font-weight:600; font-size:19px; line-height:1.3;}
+  .closing .big .red{color:var(--red);}
+  .closing p{font-size:13.5px; color:var(--ink-70); margin-top:8px; max-width:60ch;}
+
+  .pfoot{margin-top:24px; padding-top:12px; border-top:1px solid var(--ink-12); display:flex; justify-content:space-between;
+    align-items:center; font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; color:var(--ink-55);}
+  .pfoot .red{color:var(--red);}
+
+  @media print{
+    body{background:#fff; padding:0;}
+    .toolbar{display:none;}
+    .page{box-shadow:none; margin:0; width:100%; max-width:none; min-height:0; padding:0.5in 0.55in; page-break-after:always;}
+    .page:last-child{page-break-after:auto;}
+    .wex,.closing{break-inside:avoid;}
+    @page{size:letter; margin:0;}
+  }
+  @media (max-width:680px){ .cover h1{font-size:42px;} .phead h2{font-size:24px;} .phead .step{font-size:36px;} .def .k{width:auto;} .def{flex-direction:column; gap:2px;} }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="brand"><b>Compound</b> &nbsp;·&nbsp; Source / System &amp; Data Map</div>
+  <button class="tbtn primary" onclick="window.print()">Print / Save PDF</button>
+</div>
+
+<!-- ===================== COVER ===================== -->
+<section class="page cover">
+  <div>
+    <div class="kicker">The Co-Operating Model &nbsp;<span class="red">/</span>&nbsp; System &amp; Data Map</div>
+    <h1>Where the<br>Work <em>Runs</em>.</h1>
+    <div class="sub">The systems, stores, and pipelines one constraint depends on — and whether AI can actually reach them.</div>
+    <div class="rule"></div>
+    <div class="pull">You can't design a system you can't see. <span class="red">Knowledge That Walks</span> mapped the human inputs. This maps the digital ones. Together they're the picture Design needs.</div>
+  </div>
+  <div class="meta">Companion worksheet · Compound — compoundorg.com</div>
+</section>
+
+<!-- ===================== STEP 01 ===================== -->
+<section class="page">
+  <div class="phead">
+    <div>
+      <div class="label">System &amp; Data Map / Worksheet</div>
+      <h2>List the <em>sources</em>.</h2>
+    </div>
+    <div class="step">01</div>
+  </div>
+
+  <p class="intro">Every task in the constraint workflow consumes information from somewhere and sends it somewhere else. List every digital source that touches it, then mark which <strong>layer</strong> it lives in. The layer tells Design what exists to work with — and what has to be built before any agent can reason reliably.</p>
+
+  <div class="defs">
+    <div class="def"><span class="k">System of Record</span><span class="v"><b>Authoritative data.</b> CRM, ERP, QuickBooks, the job-costing database. If it's wrong here, it's wrong everywhere.</span></div>
+    <div class="def"><span class="k">System of Knowledge</span><span class="v"><b>Institutional know-how.</b> SOPs, playbooks, pricing policy, the doc that explains how exceptions actually work.</span></div>
+    <div class="def"><span class="k">System of Semantics</span><span class="v"><b>Meaning &amp; relationships.</b> What ties "Client A" in the CRM to "Account 0042" in the ERP. Most companies don't have one yet — note it as a gap.</span></div>
+  </div>
+
+  <div class="ibox">
+    <ol>
+      <li><span class="n">1.</span><span>One row per source: shared drives, inboxes, spreadsheets, the CRM, the ERP, the process logs.</span></li>
+      <li><span class="n">2.</span><span>Tag the <strong>layer</strong> and name a real <strong>owner</strong>. "Nobody" is a finding, not a blank.</span></li>
+      <li><span class="n">3.</span><span>Mark <strong>status</strong>: Clean (usable as-is), Needs Work (quality/format problems), or Missing (should exist, doesn't).</span></li>
+    </ol>
+  </div>
+
+  <table>
+    <thead><tr><th style="width:40%">Source</th><th>Layer</th><th>Owner</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td><input class="cellinput" placeholder="e.g. HubSpot CRM — win/loss, deal sizes"></td><td><input class="cellinput" placeholder="Record"></td><td><input class="cellinput" placeholder="Ty (Sales)"></td><td><input class="cellinput" placeholder="Needs Work"></td></tr>
+      <tr><td><input class="cellinput" placeholder="e.g. JobBOSS ERP — job costing history"></td><td><input class="cellinput" placeholder="Record"></td><td><input class="cellinput" placeholder="Finance"></td><td><input class="cellinput" placeholder="Clean"></td></tr>
+      <tr><td><input class="cellinput" placeholder="e.g. Customer Notes.xlsx — pricing exceptions"></td><td><input class="cellinput" placeholder="Knowledge"></td><td><input class="cellinput" placeholder="Elena"></td><td><input class="cellinput" placeholder="Needs Work"></td></tr>
+      <tr><td><input class="cellinput" placeholder=""></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput" placeholder=""></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput" placeholder=""></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+    </tbody>
+  </table>
+
+  <div class="wex">
+    <div class="h">Watch for — the data-audit trap</div>
+    <p>If every row is a <b>System of Record</b> and none is Knowledge or Semantics, you ran a data audit, not Source. The know-how that makes the constraint hard usually lives in the Knowledge layer — or in nobody's system at all. Keep it scoped to the one constraint; if it doesn't touch the workflow, it doesn't go on the map.</p>
+  </div>
+
+  <div class="pfoot"><span>Compound <span class="red">—</span> compoundorg.com</span><span>Where the Work Runs · 01</span></div>
+</section>
+
+<!-- ===================== STEP 02 ===================== -->
+<section class="page">
+  <div class="phead">
+    <div>
+      <div class="label">System &amp; Data Map / Worksheet</div>
+      <h2>Run the <em>pipeline</em> audit.</h2>
+    </div>
+    <div class="step">02</div>
+  </div>
+
+  <p class="intro">Knowing where data lives isn't enough — Design needs to know whether it <strong>moves</strong>. For each source, ask: does it connect to the other systems around the constraint, or is a person carrying data by hand? Mark each one <strong>Connected</strong>, <strong>Manual</strong>, or <strong>Broken</strong>.</p>
+
+  <div class="defs">
+    <div class="def"><span class="k">API</span><span class="v"><b>How systems talk to systems.</b> Your CRM has one; your ERP has one. Other software can ask it questions and get structured answers back.</span></div>
+    <div class="def"><span class="k">MCP</span><span class="v"><b>How AI talks to your systems.</b> Lets a model read your CRM or check a status live — the difference between a chatbot and a workflow.</span></div>
+    <div class="def"><span class="k">Connector</span><span class="v"><b>Pre-built integration.</b> Zapier, Make, n8n — links two systems without custom code. The thing companies buy <i>before</i> doing this work.</span></div>
+  </div>
+
+  <div class="ibox">
+    <ol>
+      <li><span class="n">1.</span><span><strong>Connected</strong> — an API, MCP, or connector already carries data between this source and the systems around it.</span></li>
+      <li><span class="n">2.</span><span><strong>Manual</strong> — a person is carrying data a connection could carry (export, re-key, copy-paste).</span></li>
+      <li><span class="n">3.</span><span><strong>Broken</strong> — the data doesn't move at all; it sits in one place nobody can reach programmatically. Every Manual or Broken row is your handoff to Design.</span></li>
+    </ol>
+  </div>
+
+  <table>
+    <thead><tr><th style="width:34%">Source</th><th>Connected / Manual / Broken</th><th>Last verified accurate?</th></tr></thead>
+    <tbody>
+      <tr><td><input class="cellinput" placeholder="e.g. JobBOSS ERP"></td><td><input class="cellinput" placeholder="Manual — Elena queries by memory, not systematically"></td><td><input class="cellinput" placeholder="Unknown"></td></tr>
+      <tr><td><input class="cellinput" placeholder="e.g. Customer Notes.xlsx"></td><td><input class="cellinput" placeholder="Broken — desktop file, no backup, no sync"></td><td><input class="cellinput" placeholder="Never validated"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+    </tbody>
+  </table>
+
+  <div class="wex">
+    <div class="h">Pro tip</div>
+    <p>You don't need to understand the engineering behind APIs or MCPs. You need to know whether your systems talk to each other <b>or a person is carrying data between them</b>. That's the whole question this column answers — and it's what you hand a contractor or leave for Design to wire.</p>
+  </div>
+
+  <div class="pfoot"><span>Compound <span class="red">—</span> compoundorg.com</span><span>Where the Work Runs · 02</span></div>
+</section>
+
+<!-- ===================== STEP 03 ===================== -->
+<section class="page">
+  <div class="phead">
+    <div>
+      <div class="label">System &amp; Data Map / Worksheet</div>
+      <h2>Tier it for <em>AI</em>.</h2>
+    </div>
+    <div class="step">03</div>
+  </div>
+
+  <p class="intro">Each source is reachable by AI today, reachable with extraction work, or not reachable at all. The tier tells Design what to use directly, what to build a pipeline for, and what stays human. Run it while the map is fresh — it goes fast.</p>
+
+  <div class="legend">
+    <span class="chip t"><b>Tier 1</b> <span>— use directly · structured &amp; API-accessible</span></span>
+    <span class="chip"><b>Tier 2</b> <span>— extract first · unstructured but capturable</span></span>
+    <span class="chip"><b>Tier 3</b> <span>— human judgment · not AI-accessible yet</span></span>
+    <span class="chip"><b>Not AI</b> <span>— ephemeral / in-the-moment</span></span>
+  </div>
+
+  <div class="ibox">
+    <ol>
+      <li><span class="n">1.</span><span>Tag each source <strong>1, 2, 3,</strong> or <strong>Not AI</strong>. Also note structured vs. unstructured.</span></li>
+      <li><span class="n">2.</span><span>An AI workflow that mixes Tier 1 truth with a stale Tier 3 archive will <strong>confidently cite your 2019 pricing.</strong> The tiers exist to prevent exactly that.</span></li>
+      <li><span class="n">3.</span><span>A valuable Tier 2 source (a transcript, a PDF of SOPs) is a Design decision: how much structure to add, and where.</span></li>
+    </ol>
+  </div>
+
+  <table>
+    <thead><tr><th style="width:42%">Source</th><th>Tier</th><th>Structured?</th><th>What AI can do with it</th></tr></thead>
+    <tbody>
+      <tr><td><input class="cellinput" placeholder="e.g. CRM / ERP records"></td><td><input class="cellinput" placeholder="1"></td><td><input class="cellinput" placeholder="Yes"></td><td><input class="cellinput" placeholder="Query in real time"></td></tr>
+      <tr><td><input class="cellinput" placeholder="e.g. Documented SOPs, transcripts, PDFs"></td><td><input class="cellinput" placeholder="2"></td><td><input class="cellinput" placeholder="No"></td><td><input class="cellinput" placeholder="Extract, then index"></td></tr>
+      <tr><td><input class="cellinput" placeholder="e.g. Undocumented relationship context"></td><td><input class="cellinput" placeholder="3"></td><td><input class="cellinput" placeholder="—"></td><td><input class="cellinput" placeholder="Nothing yet — keep human"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+    </tbody>
+  </table>
+
+  <div class="wex">
+    <div class="h">Why this matters downstream</div>
+    <p>Agents treat every accessible piece of information as equally valid unless you tell them otherwise. A human handed bad data slows down and asks a question. An agent handed bad data <b>executes against it, at scale, every time.</b> The tier and the status are how you stop that before Build.</p>
+  </div>
+
+  <div class="pfoot"><span>Compound <span class="red">—</span> compoundorg.com</span><span>Where the Work Runs · 03</span></div>
+</section>
+
+<!-- ===================== STEP 04 ===================== -->
+<section class="page">
+  <div class="phead">
+    <div>
+      <div class="label">System &amp; Data Map / Worksheet</div>
+      <h2>Name what's <em>missing</em>.</h2>
+    </div>
+    <div class="step">04</div>
+  </div>
+
+  <p class="intro">The first three steps describe what exists. This column reveals the most risk: knowledge a designer would need that <strong>isn't represented anywhere</strong> — questions your current sources can't answer, decisions made by gut today that should be made by data. Every missing source is a potential Sprint failure mode. Name them before Build, not after deployment finds them.</p>
+
+  <div class="ibox">
+    <ol>
+      <li><span class="n">1.</span><span>List every question a designer would ask that your current sources <strong>can't</strong> answer.</span></li>
+      <li><span class="n">2.</span><span>For each, note what it <strong>should</strong> be — a digital system, a documented process, captured expertise — and what it'd take to create.</span></li>
+      <li><span class="n">3.</span><span>If the Missing column is empty, you didn't look hard enough. Zero gaps is a red flag, not a clean bill.</span></li>
+    </ol>
+  </div>
+
+  <table>
+    <thead><tr><th style="width:46%">What's missing — the question we can't answer</th><th>Should be</th><th>What it'd take</th></tr></thead>
+    <tbody>
+      <tr><td><input class="cellinput" placeholder="e.g. Are our fast estimates actually accurate vs. final cost?"></td><td><input class="cellinput" placeholder="Joined data"></td><td><input class="cellinput" placeholder="Compare ERP actuals to quoted amounts"></td></tr>
+      <tr><td><input class="cellinput" placeholder="e.g. Which customer segments are most profitable to quote?"></td><td><input class="cellinput" placeholder="Joined data"></td><td><input class="cellinput" placeholder="Link CRM win/loss to ERP job costing"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+    </tbody>
+  </table>
+
+  <div class="wex">
+    <div class="h">Worked example — Meridian's two missing inputs</div>
+    <p>Two things that didn't exist yet — <b>historical quote-to-actual accuracy</b> and <b>customer-segment profitability</b> — were the exact inputs the team needed to decide whether an AI-assisted quoting workflow was even viable. <span class="tag bad">Missing</span> The data to build them sat in the ERP and the CRM. Nobody had ever joined them. None of this surfaces in a general data audit — only by working it against one constraint.</p>
+  </div>
+
+  <div class="pfoot"><span>Compound <span class="red">—</span> compoundorg.com</span><span>Where the Work Runs · 04</span></div>
+</section>
+
+<!-- ===================== STEP 05 ===================== -->
+<section class="page">
+  <div class="phead">
+    <div>
+      <div class="label">System &amp; Data Map / Worksheet</div>
+      <h2>Assemble the <em>map</em>.</h2>
+    </div>
+    <div class="step">05</div>
+  </div>
+
+  <p class="intro">Now put it on one page. Pull your digital rows together with the human sources from <strong>Knowledge That Walks</strong> into a single six-column Knowledge Map — the input Design needs, and all it needs. Then run the check.</p>
+
+  <table>
+    <thead><tr><th style="width:26%">Source</th><th>Type</th><th>Owner</th><th>Status</th><th>Pipeline</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td><input class="cellinput" placeholder="System or person"></td><td><input class="cellinput" placeholder="Digital / Organic / Missing"></td><td><input class="cellinput"></td><td><input class="cellinput" placeholder="Clean / Needs Work / Missing"></td><td><input class="cellinput" placeholder="Connected / Manual / Broken"></td><td><input class="cellinput" placeholder="AT RISK?"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+      <tr><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td><td><input class="cellinput"></td></tr>
+    </tbody>
+  </table>
+
+  <div class="check">
+    <div class="item"><div class="box"></div><div class="txt"><b>Architect test.</b> Someone who wasn't in the room could read this and know what they're designing against.</div></div>
+    <div class="item"><div class="box"></div><div class="txt"><b>One constraint, one page.</b> Every row touches the constraint. If it runs longer than a page, you've drifted into a data audit.</div></div>
+    <div class="item"><div class="box"></div><div class="txt"><b>Layers, not just Records.</b> Knowledge and Semantics rows exist — or are explicitly named as gaps.</div></div>
+    <div class="item"><div class="box"></div><div class="txt"><b>No blank pipelines, no empty Missing column.</b> Every digital row is Connected / Manual / Broken; the gaps are named.</div></div>
+  </div>
+
+  <div class="closing">
+    <div class="big">Constraint + map. One page. <span class="red">That's the input Design needs.</span></div>
+    <p>The human inputs from <i>Knowledge That Walks</i> and the digital inputs from this worksheet are the same map seen from two sides. Put the Constraint Statement on top, the Knowledge Map below it, and hand both to Design. You can't architect a system against inputs you never made visible.</p>
+  </div>
+
+  <div class="pfoot"><span>Compound <span class="red">—</span> compoundorg.com</span><span>Where the Work Runs · 05</span></div>
+</section>
+
+</body>
+</html>
