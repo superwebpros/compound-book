@@ -2,109 +2,67 @@
 
 :::{.callout-important}
 ## In Brief
-Signal is the discipline of refusing to move forward until one constraint has been identified precisely, confirmed against actual numbers, and quantified in dollars or hours. By the time you finish this stage, you have a one-page Constraint Statement that names the problem, where it lives, how long it has existed, and what it has cost. That dollar number is what every AI Sprint downstream has to earn back.
+Signal is the discipline of refusing to move forward until one constraint has been identified precisely, confirmed against actual numbers, and quantified in dollars or hours. By the time you finish this stage, you've got a one-page Constraint Statement that names the problem, where it lives, how long it has existed, and what it has cost. That dollar number is what every AI Sprint downstream has to earn back.
 :::
 
 Jesse was in our own L10, reviewing the scorecard for our project management function. The numbers weren't red, they were blank. Tasks were being created but not updated. Client deliverables were slipping by days without anyone flagging it. Billing was late because nobody could confirm what had been delivered and what hadn't. We were paying a project coordinator $24,000 a year as a subcontractor, and the work was still falling behind.
 
-We asked the room a question we ask clients all the time: what is this costing us? Not the subcontractor's invoice, but the actual cost. The late billing. The missed deliverables. The hours our VP of Operations was spending chasing task updates instead of running operations.
+So we asked the question we ask clients all the time: what is this costing us? Not the subcontractor's invoice. The real number. Billing that went out late. Deliverables that slipped. The hours our VP of Operations burned chasing task updates instead of running operations.
 
-Nobody had the number. We'd been living with the problem long enough that it felt like weather, just the way project coordination worked at our size. The coordinator was failing, but the role was also inadequate. The work required someone in the system constantly, updating tasks and flagging overdue items. No part-time subcontractor was going to sustain that, and hiring a full-time person meant $50,000 or more for work that was largely mechanical.
+Nobody had it. We'd lived with the problem long enough that it stopped registering as a problem at all. The coordinator was failing, but the role was also inadequate. The work required someone in the system constantly, updating tasks and flagging overdue items. No part-time subcontractor was going to sustain that, and hiring a full-time person meant $50,000 or more for work that was largely mechanical.
 
-The real question was whether this was a capacity problem, a capability problem, or whether we could redesign the work itself. That question is what launched us down the path that became Source and Design.
+The real question was whether this was a capacity problem, a capability problem, or whether we could redesign the work itself. That question launched us down the path that became Source and Design.
 
-That conversation was the first time we named the constraint instead of the symptom. The symptom was "tasks are falling behind." The constraint was structural: the project coordination function required constant, systematic attention that no human in the role, at the price point we could justify, was going to sustain. Without Signal, teams replace the person, add a person, or build a workaround, and the constraint stays where it was.
+That conversation was the first time we named the constraint instead of the symptom. The symptom was "tasks are falling behind." The constraint was structural: the project coordination function required constant, systematic attention that no human in the role, at the price point we could justify, was going to sustain. Without Signal, teams reach for a new hire or a workaround, and the constraint stays where it was.
 
-## What the *dollar number* has to earn back
-
-Julie has watched this discipline land outside any AI context. In a post-acquisition integration at a global food safety company, the presenting problem was a talent gap: leadership teams in the acquired division were underperforming against expectations, and the business instinct was to replace several key leaders. Before any replacement decisions were made, Julie ran the equivalent of Signal — what was the actual constraint, where did it live, what was it costing? Tracing the underperformance to its root revealed it was concentrated in roles where two reporting lines crossed, matrix structures inherited from the Fortune 500 parent with no clear decision authority assigned.
-
-The leaders were operating inside an accountability structure that made it impossible to perform. The constraint was how authority was assigned. No one was replaced. The redesign resolved the performance gap.
-
-This chapter fills in the Constraint section of your Sprint Planning Canvas, plus the first row of the Sequence first-pass.
-
-## The deliverable is one sentence with a dollar number *attached*
+## What Signal produces: one sentence with a dollar number *attached*
 
 Signal produces one artifact: a one-page Constraint Statement. Its single anchoring sentence names the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The rest of the page surrounds that sentence with the evidence that validates it.
 
-Here's the template. You'll fill it in by the end of this chapter.
-
 {{< excalidraw ch04-constraint-statement-template "Constraint Statement template: one sentence, location, duration, quantified cost, and validating evidence." >}}
 
-The anchoring sentence follows this structure: "[Function] cannot [desired outcome] because [root cause], which costs us [X dollars] per [Y time period]."
+The anchoring sentence follows this structure: "[Function] can't [desired outcome] because [root cause], which costs us [X dollars] per [Y time period]." That form names the function that's failing, the outcome that's blocked, and the structural cause rather than the symptom. "Elena can't quote within 24 hours because she's the sole holder of customer pricing context, which costs us approximately $558K per year." That's a constraint you can act on.
 
-That form names the function that's failing, the outcome that's blocked, and the structural cause rather than the symptom. "Elena can't quote within 24 hours because she's the sole holder of customer pricing context, which costs us approximately $558K per year." That's a constraint you can act on.
-
-The discipline of insisting on one is the entire point. You may arrive at this conversation with five candidates. The job of Signal is to refuse the list. You pick one constraint: the one that, if removed, would change the math most meaningfully. You commit to it for the length of the Sprint.
+You may arrive at this conversation with five candidates. The job of Signal isn't to delete the other four. You'll always have a backlog. The job is to focus the Sprint: pick the one constraint that, if removed, would change the math most, and commit to it for the length of the Sprint.
 
 That commitment is structural. A Sprint that tries to solve three problems solves none of them. A Sprint that solves one produces a measurable result against a number you wrote down at the start, and that result becomes the proof point that earns the next Sprint. The narrowness is what makes the work pay.
 
-The quantified cost is non-negotiable. A constraint needs a number on it. "It's a big problem" isn't enough; "The quoting bottleneck is costing us $558K per year in lost revenue, misallocated time, and floor underutilization" is a constraint you can work with. The number does two things. It tells you whether the constraint is worth a Sprint's attention, and it gives you a target the Deliver phase can measure against. Without it, you cannot prove the Sprint paid for itself.
+The quantified cost is non-negotiable. A constraint needs a number on it. "The quoting bottleneck is costing us $558K per year in lost revenue, misallocated time, and floor underutilization" is a constraint you can work with. The number tells you whether the constraint is worth a Sprint's attention. It gives the Deliver phase a target to measure against. And it names the opportunity cost. Without it, you can't prove the Sprint paid for itself.
 
 :::{.callout-tip}
 ## Pro Tip
-"Significant" is not a number. Neither is "a lot." Hours per week, dollars per quarter, margin lost, deals not closed — pick a unit and estimate it.
+"Significant" isn't a number. Neither is "a lot." Hours per week, dollars per quarter, margin lost, deals not closed — pick a unit and estimate it.
 :::
 
-## You don't pass the gate by *declaring* you've passed it
+Signal is a gate. You don't move to Source until the constraint is locked: one validated Constraint Statement, in writing, with a number on it and everyone in the room agreeing it names the right problem. If you run EOS, think of Signal as a deeper, root-cause version of IDS — the Issues list traced all the way to the structural constraint underneath, not just named and tabled.
 
-Signal is a gate. You don't move to Source until the constraint is locked — one validated Constraint Statement with a number on it. (If you run EOS, think of Signal as a deeper, root-cause version of IDS — the Issues list traced all the way to the structural constraint underneath, not just named and tabled.)
+The most common reason teams can't lock the gate is political, not technical. The leadership team can't agree on which constraint is the constraint, so they punt. They pick three, or they write something so abstract nobody can act on it. If your team can't pick one, you've learned something important before a single line of the Sprint has been built: the leadership team is unclear about its priorities.
 
-The most common failure mode is political, not technical. Leadership teams can't agree on which constraint is the constraint, so they punt — they pick three, or they write something so abstract it can't be acted on. If your team can't pick one, you've learned something important before a single line of the Sprint has been built: the leadership team is unclear about priorities.
+Julie has watched this discipline land outside any AI context. In a post-acquisition integration at a global food safety company, the presenting problem was a talent gap. Leadership teams in the acquired division were underperforming, and the business instinct was to replace several key leaders.
 
-Signal is locked when the team has a Constraint Statement in writing and everyone in the room agrees that it names the right problem.
+Before any replacement decision, Julie ran the equivalent of Signal. What was the actual constraint, where did it live, what was it costing? Tracing the underperformance to its root revealed it concentrated in roles where two reporting lines crossed: matrix structures inherited from the Fortune 500 parent, with no clear decision authority assigned. The leaders were operating inside a structure that made it impossible to perform. The constraint was how authority was assigned, not who held the seats. Replacing them would have cost more and fixed nothing: months to hire and ramp new leaders who would have hit the same wall. No one was replaced. The redesign closed the gap.
 
 ## Trace the symptom until you reach *structure*
 
-Symptoms are visible. Constraints are structural.
+Quoting takes too long because three different systems hold pieces of the customer record, and the ops manager is the only person who knows how to reconcile them. Onboarding is messy because the handoff between sales and delivery is undefined, and every new customer triggers a custom escalation chain. The symptom is what the team feels. The constraint is the structure underneath that produces the feeling.
 
-Signal traces the symptom to the underlying constraint. Quoting takes too long because three different systems hold pieces of the customer record, and the ops manager is the only person who knows how to reconcile them. Onboarding is messy because the handoff between sales and delivery is undefined, and every new customer triggers a custom escalation chain.
-
-The same distinction matters in human-capital contexts. "Our managers aren't developing their people" is a symptom we've watched leadership teams treat as a personnel problem for years. The constraint underneath it might be that managers have no time for development conversations because their operational workload has grown to absorb every hour. Or the constraint might be that the performance management system creates no accountability for development outcomes, so development conversations never happen because nothing bad happens when they don't. Without the structural cause and a cost, you're treating weather.
+The same distinction holds in human-capital work. "Our managers aren't developing their people" is a symptom leadership teams treat as a personnel problem for years. The constraint underneath might be that managers have no time for development conversations because their operational workload has grown to absorb every hour. Or it might be that the performance system creates no accountability for development outcomes, so the conversations never happen because nothing bad happens when they don't. Treat the symptom and the cost stays on the books.
 
 {{< excalidraw ch04-symptom-to-constraint "Symptom to constraint: three complaints traced from the visible symptom to the structural cause and what it costs." >}}
 
-Four patterns reliably surface the structural constraint underneath the symptom:
+A few patterns reliably surface the constraint underneath the symptom. These are the first places to look, not an exhaustive list:
 
-**Conversations that keep coming up but never get resolved.** If your team has been discussing the same issue for two quarters and nobody has fixed it, the issue is a symptom. The constraint is whatever makes the issue unresolvable. Ask: what would have to change structurally for this conversation to stop recurring?
+**Conversations that keep coming up but never get resolved.** If your team has been discussing the same issue for two quarters and nobody has fixed it, the issue is a symptom. The constraint is whatever makes it unresolvable. Ask what would have to change structurally for this conversation to stop recurring.
 
-**Workarounds.** Every manual process that exists because something upstream failed is a constraint. The workaround tells you the symptom is visible enough that someone built a patch for it. The patch points directly at the structural failure underneath.
+**Workarounds.** Every manual process that exists because something upstream failed is a constraint. The workaround tells you the symptom was visible enough that someone built a patch for it. The patch points directly at the structural failure underneath.
 
 **Sausage-making.** Every organization has processes nobody would want a customer, a board member, or a new hire to watch. The discomfort you feel imagining that observation is pointing at the constraint. Name it.
 
 **Turnover.** When the same role keeps bouncing people out, the role is the symptom. The constraint is the structural failure the role was built on top of. Nobody can succeed in a role where the work was never designed to succeed.
 
-### Meridian Manufacturing
+**New-hire confusion.** What does a new person always find confusing in their first ninety days? Where they stumble is where the work is implicit, undocumented, or contradictory, and that's where a constraint hides.
 
-Consider Meridian Manufacturing, the fictional company we introduced earlier. Their team's symptom was "our quoting takes too long." The constraint underneath it was Elena Ruiz, the VP of Operations. Every quote passed through her because she was the only person who held the customer-specific pricing, material lead-time knowledge, and historical job context simultaneously. That constraint cost $558K per year in lost revenue, misallocated time, and floor capacity they were paying for but not billing against.
-
-### Keep asking why until the answer stops *moving*
-
-Most of what you surface is symptoms. The way down to the constraint underneath is a conversation, not a worksheet. Take one candidate and keep asking why until the answer stops moving.
-
-1. Why is this happening? The first answer is almost always another symptom.
-2. Why is that the case? Closer.
-3. Why does that happen? Now you're near the structure.
-4. What's underneath that? The structural cause.
-5. What's the root? The constraint itself.
-
-Run it as a back-and-forth with the room, not a form one person fills out alone. Two people rarely trace the same symptom to the same place. The CEO names one cause, the manager closest to the work names another, and the gap between their answers is usually where the constraint is hiding. Keep going until the room lands in the same spot.
-
-**The stop rule.** You've reached the constraint when the answer points to a workflow, a handoff, a missing system, or a structural gap. You have not reached it when the answer is a person's name or a market condition. If the honest answer to your last "why" is a name, "because Sarah is the only one who knows," go one layer down. The constraint isn't Sarah. It's that critical knowledge lives in one head with no system to distribute it. The structure put Sarah in that position, and the structure is what a Sprint can fix.
-
-{{< excalidraw ch04-five-whys-chain "The Five Whys traced on the PT clinic: from the symptom (efficiency 58–63%) down to the structural constraint, with the stop rule that keeps you off the people layer." >}}
-
-:::{.callout-tip}
-## Pro Tip
-Push past the person to the structure. The most common way this conversation stalls is stopping at "the wrong person is in the seat." The seat is rarely the root; the structure that built it is. EOS calls this root-cause work Identify, the first move of its IDS track. Mark O'Donnell's *Issues!* is the best field guide to running it. Read it for the craft, then keep going past the person to the structure that put the wrong person in the role.
-:::
-
-:::{.callout-note}
-## Action Step
-Take your top three candidates. Trace each one to root with the Five Whys, out loud, with the people closest to the work in the room. Cross off anything that bottoms out at a market condition, a personality, or a problem you can't put a number on.
-:::
-
-## A PT clinic that almost opened a *sixth location*
+### A PT clinic that almost opened a *sixth location*
 
 Julie sat in on a meeting with a PT clinic operator that was forty-five minutes into a conversation about opening their sixth location. Site selection, lease terms, staffing — everyone around the table owned a piece of the vision.
 
@@ -114,11 +72,130 @@ Julie asked what their clinical efficiency rating was across the five clinics th
 
 Julie put the marker down and said: we've spent four hours today discussing a sixth facility, and the five you already own are running at 60 percent efficiency. You're not ready to expand. Stop that conversation.
 
-The room agreed. What was the constraint underneath the efficiency gap? Scheduling. When patients canceled, nobody filled those slots fast enough. The front desk was running the replacement loop manually — checking the waitlist in the EHR, calling patients one by one, hoping someone could come in on short notice. A backlog of people who wanted appointments existed in the system. The process connecting them to the open slots was broken. Thirty-seven to forty-two percent of cancellation slots went unfilled, despite a waitlist of patients who wanted those appointments.
+The room agreed. What was the constraint underneath the efficiency gap? Scheduling. When patients canceled, nobody filled the slots fast enough. The front desk ran the replacement loop by hand — checking the waitlist in the EHR, calling patients one by one, hoping someone could come in on short notice. A backlog of people who wanted appointments sat in the system. The process connecting them to the open slots was broken. Thirty-seven to forty-two percent of cancellation slots went unfilled, despite a waitlist of patients who wanted those appointments.
 
-The expansion plan was a symptom. The scheduling loop was the constraint. The gap between 60 and 83 tells you which one to work on.
+The expansion plan was a symptom. The scheduling loop was the constraint. The gap between 60 and 83 told them which one to work on.
 
-Here is the blank Constraint Statement template. Fill it in for your own validated constraint as you work through this chapter. The PT clinic populated version follows directly below it as a worked reference.
+{{< excalidraw ch04-five-whys-chain "The PT clinic traced from the symptom (efficiency 58–63%) down to the structural constraint, the scheduling loop, with the stop rule that keeps you off the people layer." >}}
+
+Here is what their Constraint Statement looked like once they'd traced and quantified it:
+
+| Field | Detail |
+|---|---|
+| **Constraint** | Patient cancellation slots are filled manually by front desk staff, leaving 37-42% of slots unfilled despite a backlog of patients waiting for appointments. |
+| **Where it lives** | Front desk → scheduling workflow → manual process of matching cancellations to the waitlist. All 5 locations. |
+| **Duration** | ~2 years (since third location opened). Workaround normalized — staff treats manual slot-filling as their job, not as a broken process. |
+| **Quantified cost** | Efficiency at 58-63% vs. 83% expansion threshold. ~$420K/year in unrealized revenue (22 unfilled slots/week × $75 avg visit × 5 locations × 50 weeks). Blocking planned 6th location — est. $200K+ in delayed expansion revenue. |
+| **Validating evidence** | Efficiency calculated live in leadership meeting. Front desk confirmed manual process. Waitlist exists in EHR but not connected to cancellation notifications. No staff member disputed the gap. |
+
+Anybody in that company could read it and understand what the Sprint was solving without asking a follow-up question.
+
+## Run *Signal* yourself
+
+Signal is a facilitated conversation with your leadership team, not a solo exercise. The rest of this section walks the session step by step, with Meridian Manufacturing (the fictional manufacturer we've been following) as the worked example.
+
+There's no time budget on this. The session runs until the Constraint Statement is written.
+
+{{< excalidraw ch04-constraint-path "The path Signal walks: surface the candidates, trace each to root, confirm the load-bearing one, quantify the cost, and lock a single constraint on paper." >}}
+
+<!-- moves:run-signal-session -->
+### How to run the *Signal* session
+
+1. **Assemble the room.** Get the CEO, senior leadership, the owner of the function the constraint sits inside, and a facilitator in one place. The constraint has to be validated by the people who own the business.
+2. **Surface the candidates.** Run the lenses from the section above as live questions and write down everything that's broken or slow — no filtering, no debate. Aim for five to ten candidates.
+3. **Trace each to root with the Five Whys.** Most candidates are symptoms. Keep asking why until the answer lands on a workflow, a handoff, or a structural gap, not a person.
+4. **Pick among the survivors.** When more than one candidate survives the trace, apply the tiebreaker rubric in order: foundation first, highest pain in reach, smallest gap, owner in the room, two-quarter horizon.
+5. **Quantify and write the Constraint Statement.** Fill in the one-page template — anchoring sentence, location, duration, quantified cost, validating evidence. The cost must be a real number.
+6. **Lock it.** Apply the lever test and the restate test, read the statement back, and confirm the room agrees.
+7. **Check the failure modes.** Run the seven-item checklist before you hand off to Source.
+<!-- /moves:run-signal-session -->
+
+### Assemble the *room*
+
+The room is your senior leadership team (Sales, Operations, Finance) plus whoever runs the function the constraint sits inside. The CEO is in the room. The facilitator can be the CEO, a coach, or a designated lead. The constraint gets validated by the people who own the business, which is why a solo exercise doesn't count.
+
+### Surface the *candidates*
+
+Before you can pick one constraint, you need an honest inventory of what's broken or slow. Run the lenses from the section above as live questions:
+
+1. What are we working around? What manual process exists because something upstream failed?
+2. What does a new person always find confusing in their first ninety days?
+3. What process would we never let a customer watch?
+4. Where do we keep losing the same person or role?
+5. What conversation keeps coming up in meetings but never gets resolved?
+
+Write everything down without filtering. Aim for five to ten candidates. Fewer than three and you haven't been honest enough. More than fifteen and you're listing symptoms — group them. Capture them in a simple Issue Surfacer worksheet, tagging each with the pattern it came from so the clusters show:
+
+| # | Candidate (what's broken or slow) | Pattern (recurring / workaround / sausage / turnover) | Owner |
+|---|---|---|---|
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| … |  |  |  |
+
+If you run EOS, Scaling Up, or a similar cadence-based system, most of this inventory is already on the board. The **Issues list** is the obvious input — every L10 and quarterly review produces one, and most items on it are symptoms, but a few traced honestly are constraints. **Stalled rocks** are the second: a rock carried for three quarters without progress is almost always sitting on top of a constraint nobody named. **The headcount conversation** is the third: every time the org reaches for a hire, a constraint is usually hiding under the work that's stretching the team. You don't have to generate candidates from scratch. You have to know where to look, then trace what you find.
+
+Here's how Meridian's team populated the worksheet at the start of their session:
+
+| # | Candidate (what's broken or slow) | Pattern (recurring / workaround / sausage / turnover) | Owner |
+|---|---|---|---|
+| 1 | Every quote passes through Elena — 3–5 day turnaround vs. 24-hr standard | Recurring (surfaced every L10 for 6+ months) | Elena / Ops |
+| 2 | Job costing is reconciled manually after close — nobody knows margin in real time | Workaround (spreadsheet built when ERP reports proved unreliable) | Finance |
+| 3 | Workflow visibility: tasks created in PM system but never updated | Recurring + workaround (VP of Ops chases updates by phone) | VP of Ops |
+
+That's the artifact after the surface pass — no filtering, no debate. Three candidates on the board, ready to trace.
+
+:::{.callout-note}
+## Action Step
+Open a whiteboard or shared doc. List candidates using the five questions above. No filtering, no debate about whether something belongs. Write everything down.
+:::
+
+### Trace each to root with the *Five Whys*
+
+Most of what you surfaced is symptoms. The way down to the constraint underneath is a conversation, not a worksheet. Take one candidate and keep asking why until the answer stops moving. This tool is the Five Whys, and you run it out loud with the room:
+
+1. Why is this happening? The first answer is almost always another symptom.
+2. Why is that the case? Closer.
+3. Why does that happen? Now you're near the structure.
+4. What's underneath that? The structural cause.
+5. What's the root? The constraint itself.
+
+Run it as a back-and-forth, not a form one person fills out alone. Two people rarely trace the same symptom to the same place. The CEO names one cause, the manager closest to the work names another, and the gap between their answers is usually where the constraint is hiding. Keep going until the room lands in the same spot.
+
+**The stop rule.** You've reached the constraint when the answer points to a workflow, a handoff, a missing system, or a structural gap. You haven't reached it when the answer is a person's name or a market condition. If the honest answer to your last "why" is a name ("because Sarah is the only one who knows"), go one layer down. The constraint isn't Sarah. It's that critical knowledge lives in one head with no system to distribute it. The structure put Sarah in that position, and the structure is what a Sprint can fix. The same logic holds for "the wrong person is in the seat": replacing the person rarely fixes the problem because the role was built on a structural gap that breaks whoever sits in it. Push past the person to the structure.
+
+:::{.callout-tip}
+## Pro Tip
+Issue and constraint identification is hard work. Mark O'Donnell's *Issues!* is an excellent field guide to it.
+:::
+
+:::{.callout-note}
+## Action Step
+Take your top three candidates. Trace each one to root with the Five Whys, out loud, with the people closest to the work in the room. Cross off anything that bottoms out at a market condition, a personality, or a problem you can't put a number on.
+:::
+
+When Meridian traced their three candidates, two of them (the workflow-visibility gap and the manual job costing) bottomed out fast. But the quoting bottleneck kept going. Quotes are slow because every one passes through Elena. They pass through Elena because she's the only one who holds customer pricing, material lead-times, and job history together. That knowledge lives only in her head because no system was ever built to distribute it. The root wasn't Elena. It was that the quoting workflow depended entirely on one person's undocumented context. Three candidates survived the trace, ready for the tiebreaker.
+
+### Pick among the *survivors*
+
+When the Five Whys leaves more than one candidate standing, pain level alone won't tell you which to attack first. You need a tiebreaker. Apply this rubric in order; the first candidate that passes all five is where you start.
+
+1. **Foundation first.** Some candidates unblock the others. The test: if you solved this one, would two or more of the others get easier to evaluate or solve? If yes, it goes first.
+2. **Highest pain inside reach.** Of the rest, pick the one closest to the operational pain that brought you to the conversation. Not the most interesting candidate, not the easiest — the one on the workflow that's actually hurting.
+3. **Smallest gap to resolution.** When two are tied on pain, pick the one with the shortest distance to a locked constraint: the one that already has partial answers, partial documentation, or a person who knows the workflow. A fast lock builds credibility for the harder work behind it.
+4. **Owner in the room.** Don't pick a candidate nobody on the leadership team owns. If you can't name the person who'll move it, you've picked a wish, not a constraint.
+5. **Two-quarter horizon.** Pick the candidate you can plausibly lock and Sprint inside two quarters with the team you've got. Name the deliverable and the team that ships it. If you can't see it landing, the work is too big and needs to be broken into a tighter constraint first.
+
+For Meridian, the quoting bottleneck cleared all five. Until the leadership team agreed it was *the* constraint, the workflow-visibility and cost-tracking candidates were being measured against a moving target. It carried the clearest pain, had an obvious owner in Elena, and fit a two-quarter horizon. So Meridian's starting point was set: lock the quoting bottleneck as the constraint, then map the workflow around it. Those two moves set up the work in Source and Design.
+
+:::{.callout-tip}
+## Pro Tip
+When the tiebreaker doesn't produce a clear winner (two candidates pass all five), go with the one whose cost estimate is harder to dispute. The number that survives scrutiny is the one the room will hold each other to.
+:::
+
+### Quantify it and write the *Constraint Statement*
+
+Now you write it down. The one-page Constraint Statement is the deliverable:
 
 | Field | Your constraint |
 |---|---|
@@ -128,206 +205,81 @@ Here is the blank Constraint Statement template. Fill it in for your own validat
 | **Quantified cost** _(dollars, hours, throughput per period)_ |  |
 | **Validating evidence** _(who confirmed it, with what data)_ |  |
 
-Using the anchoring structure from earlier, here's what that template looked like populated for the PT clinic:
-
-| Field | Detail |
-|---|---|
-| **Constraint** | Patient cancellation slots are filled manually by front desk staff, leaving 37-42% of slots unfilled despite a backlog of patients waiting for appointments. |
-| **Where it lives** | Front desk → scheduling workflow → manual process of matching cancellations to the waitlist. All 5 locations. |
-| **Duration** | ~2 years (since third location opened). Workaround normalized — staff treats manual slot-filling as their job, not as a broken process. |
-| **Quantified cost** | Efficiency at 58-63% vs. 83% expansion threshold. ~$420K/year in unrealized revenue (22 unfilled slots/week x $75 avg visit x 5 locations x 50 weeks). Blocking planned 6th location — est. $200K+ in delayed expansion revenue. |
-| **Validating evidence** | Efficiency calculated live in leadership meeting. Front desk confirmed manual process. Waitlist exists in EHR but not connected to cancellation notifications. No staff member disputed the gap. |
-
-That's the artifact. Anybody in that company could read it and understand what the Sprint was solving without asking a follow-up question.
-
-## Run Signal *yourself*
-
-Signal is a facilitated conversation with your leadership team. The room is your senior leadership team, Sales, Operations, Finance, plus whoever runs the function the constraint sits inside. The CEO is in the room. The facilitator can be the CEO, a coach, or a designated lead. There's no time budget on this. The conversation runs until the Constraint Statement is written.
-
-{{< excalidraw ch04-constraint-path "The path Signal walks: surface the candidates, trace each to root, confirm the load-bearing one, quantify the cost, and lock a single constraint on paper." >}}
-
-<!-- moves:run-signal-session -->
-### How to run the *Signal* session
-
-1. **Assemble the room** — Signal is a facilitated conversation, not a solo exercise — the CEO, senior leadership, relevant function owner, and a facilitator must all be present for the constraint to be validated by the people who own the business.
-2. **Surface the candidates** — Before you can pick one constraint you need an honest inventory; the Issue Surfacer questions (workarounds, new-hire confusion, sausage-making, turnover, recurring conversations) generate five to ten candidates without filtering.
-3. **Trace symptoms to root with the Five Whys** — Most candidates are symptoms, not constraints; running Five Whys out loud with the people closest to the work finds the structural cause — and the stop rule ensures you land on workflow/handoff/gap, not a person.
-4. **Pick among the survivors using the tiebreaker rubric** — When more than one candidate survives the trace, the five-criteria rubric (foundation first, highest pain, smallest gap, owner in room, two-quarter horizon) applied in order produces a defensible, unambiguous pick.
-5. **Run the five constraint questions** — Walking the chosen candidate through the five questions — problem in one sentence, where it lives, how long, what it costs, what changes if removed — builds the evidence base and forces the cost to be a real number.
-6. **Write the Constraint Statement** — The one-page template (one anchoring sentence, location, duration, quantified cost, validating evidence) converts the conversation into a locked, shareable artifact that everyone in the room can see and agree to.
-7. **Apply the lever test and restate test** — Two final checks confirm you are at root constraint and not still holding a symptom: the lever test asks whether solving this one moves multiple others; the restate test asks whether the room actually agrees.
-8. **Check for failure modes and lock the gate** — A checklist of seven common Signal failures (too abstract, too many, no number, dominant personality, named the person, solved the symptom, unsolvable by a Sprint) catches anything the previous steps missed before you hand off to Source.
-<!-- /moves:run-signal-session -->
-
-### Surface the *candidates*
-
-Before you can pick one constraint, you need an honest inventory of what's broken or slow. This is the Issue Surfacer conversation. Ask the room questions like these (use them as a starting set, not a script):
-
-1. What are we working around? What manual process exists because something upstream failed?
-2. What does a new person always find confusing in their first ninety days?
-3. What process would we never let a customer watch?
-4. Where do we keep losing the same person or role? Turnover clusters around constraints.
-5. What conversation keeps coming up in meetings but never gets resolved?
-
-Write everything down without filtering. Aim for five to ten candidates. If you have fewer than three, you haven't been honest enough. If you have more than fifteen, you're listing symptoms — group them.
-
-Capture them in a simple Issue Surfacer worksheet as you go. Tag each one with the pattern it came from so you can spot the clusters:
-
-| # | Candidate (what's broken or slow) | Pattern (recurring / workaround / sausage / turnover) | Owner |
-|---|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| … |  |  |  |
-
-Here is how Meridian's team populated that worksheet at the start of their Signal session:
-
-| # | Candidate (what's broken or slow) | Pattern (recurring / workaround / sausage / turnover) | Owner |
-|---|---|---|---|
-| 1 | Every quote passes through Elena — 3–5 day turnaround vs. 24-hr standard | Recurring (surfaced every L10 for 6+ months) | Elena / Ops |
-| 2 | Job costing is reconciled manually after close — nobody knows margin in real time | Workaround (spreadsheet built when ERP reports proved unreliable) | Finance |
-| 3 | Workflow visibility: tasks created in PM system but never updated | Recurring + workaround (VP of Ops chases updates by phone) | VP of Ops |
-
-This is the artifact after the surface pass — no filtering, no debate. Meridian's room agreed the quoting bottleneck (row 1) belonged at the top of the trace list. The others stayed on the board as candidates to revisit after the Sprint.
-
-:::{.callout-note}
-## Action Step
-Open a whiteboard or shared doc. List candidates using the five questions above. No filtering, no debate about whether something belongs. Write everything down.
-:::
-
-### If you run EOS or Scaling Up, the candidates are already on the *board*
-
-If your company runs on EOS, Scaling Up, or a similar cadence-based management system, you already have most of Signal's candidate inventory sitting on a whiteboard or in a shared doc. You just have to know where to look — and then run the constraint questions against what you find. If your team hasn't built the muscle of surfacing and articulating issues yet, that's the skill to develop first, and the trace method earlier in this chapter is where to start.
-
-**The Issues list** (an EOS term) is the most obvious input. Every L10, every weekly tactical, every quarterly review produces a list of issues the team has been carrying. Most of them are symptoms. A few of them, traced honestly, are constraints. Walk that list and ask, for each one: is this a root cause or a symptom? An issue that survives that question is one you can locate in a specific workflow, with a duration and a cost. When you find one, run the five constraint questions against it. That becomes your constraint candidate.
-
-**Stalled rocks** are the second input. A rock that has been carried for three quarters without progress is almost always sitting on top of a constraint that nobody named. The rock is the symptom; the constraint is whatever keeps it from moving. Ask what would have to be true for this rock to move on its own, and the answer usually points straight at the structure underneath.
-
-**The headcount conversation** is the third. Every time the org reaches for a hire, a constraint is hiding underneath. The work is real, the team is stretched, and the default move is to add a person. But under that conversation is a workflow that was never designed for the volume it's now carrying. Before you post the role, run the constraint questions: what is the constraint generating the demand for a new hire? Where does it live? What has it cost this quarter? Sometimes naming it redirects you entirely. Often you still hire — but against a redesigned workflow rather than the one that's already failing.
-
-:::{.callout-note}
-## Action Step
-Pull your current issues list, your stalled rocks, and any open headcount requests. Pick the one that feels most expensive and run it through the five constraint questions. If you can put a real number on it, you have a constraint worth a Sprint. If you can't, keep walking the list.
-:::
-
-### Trace symptoms to *constraints*
-
-Most of your candidates are symptoms. Trace your top three to root with the Five Whys (described above). Run each as a conversation with the people closest to the work, not a form filled out alone. Cross off anything that bottoms out at a market condition, a personality conflict, or a problem you can't quantify.
-
-### Pick among the *survivors*
-
-When the Five Whys leaves you with more than one surviving candidate, the pain level alone won't tell you which to attack first. You need a tiebreaker. Here's the rubric we use with every team that finds itself in that spot.
-
-1. **Foundation first.** Some candidates unblock the others. Constraint Clarity is almost always the foundation: until the leadership team agrees on the one bottleneck, every other candidate is being evaluated against a moving target. The test: if you solved this candidate, would two or more of the others become easier to evaluate or solve? If yes, it goes first.
-2. **Highest pain inside reach.** Of the remaining candidates, pick the one closest to the operational pain that brought you to the conversation. Not the most interesting candidate, not the easiest one, the one that sits on the workflow that's actually hurting.
-3. **Smallest gap to resolution.** When two candidates are roughly tied on pain, pick the one with the smallest distance to a locked constraint. The test: which one already has partial answers, partial documentation, or a person who knows the workflow? Less distance means a faster lock, and a fast lock builds credibility for the harder work behind it.
-4. **Owner in the room.** Don't pick a candidate that nobody on the leadership team owns. If you can't name the person who'll move it, you've picked a wish, not a constraint.
-5. **Two-quarter horizon.** Pick the candidate you can plausibly lock and Sprint inside two quarters with the team you've got. The test: name the deliverable and the team that ships it — if you can't see it landing in two quarters, the work is too big and needs to be broken down into a tighter constraint first.
-
-Apply the rubric in order. The first candidate that passes all five is where you start.
-
-### Meridian applied
-
-Meridian's Issue Surfacer conversation surfaced several candidates. Their Five Whys work left three: the quoting bottleneck, the workflow visibility gap, and incomplete cost tracking. Which one first wasn't obvious from the symptoms alone.
-
-Foundation first: the quoting bottleneck had already surfaced in every L10, but the leadership team hadn't formally committed to it as the single constraint. Locking that agreement was the precondition for everything else. Workflow Visibility and cost tracking both depended on the team agreeing on what constraint they were mapping and measuring. Quoting passed all five criteria: clear pain, clear owner in Elena, two-quarter horizon, and unlocked both remaining candidates once the bottleneck was named.
-
-Meridian's starting point: lock the quoting bottleneck as the constraint, then map the workflow around it. Those two moves created the foundation for everything that followed in Source and Design.
-
-:::{.callout-tip}
-## Pro Tip
-When the tiebreaker doesn't produce a clear winner (two candidates pass all five criteria), go with the one whose cost estimate is harder to dispute. The number that survives scrutiny is the one the room will hold each other to.
-:::
-
-### Run the five constraint *questions*
-
-Walk each surviving candidate through these five questions, in order. Do not skip ahead.
-
-**Question 1: What is the problem in one sentence?** Force precision. A usable statement reads: "The VP of Operations is the sole bottleneck for quoting — every quote requires her direct involvement, resulting in 3-5 day turnaround versus the 24-48 hour industry standard, costing $558K per year."
-
-**Question 2: Where does it live in the organization?** Name the team, the workflow, and the handoff. If it crosses departments, name the boundary where the breakdown occurs. Test: could you walk to the place in your building where this problem lives?
-
-**Question 3: How long has it existed?** Months? Years? Since a system change? Since a departure? Duration tells you two things: how deeply embedded the workarounds are, and whether the team has normalized the problem. Anything over twelve months has almost certainly been normalized.
-
-**Question 4: What does it cost?** In hours per week, dollars per quarter, margin lost, or deals not closed. This must be a number. This is the gate. Without a quantified cost, you can't act on it.
+Work the fields in order. The anchoring sentence forces precision: "[Function] can't [outcome] because [root cause], which costs [X] per [Y]." **Where it lives** names the team, the workflow, and the handoff — if it crosses departments, name the boundary where the breakdown occurs. **Duration** tells you how deeply the workarounds are embedded; anything over twelve months has almost certainly been normalized. **Quantified cost** is the gate. It must be a number.
 
 If the data isn't clean, estimate:
 
-- **Hours:** "How many hours per week does this person or team spend on this?" multiplied by hourly loaded cost, multiplied by 52 weeks.
-- **Deals:** "How many quotes or opportunities did we lose or not pursue because of this?" multiplied by average deal value.
-- **Margin:** "What would our margin be on this line if this constraint didn't exist?" minus current margin.
-- **Speed:** "How many days does this add to our cycle?" multiplied by cost of delay per day.
+- **Hours:** hours per week the person or team spends on this, times hourly loaded cost, times 52 weeks.
+- **Deals:** quotes or opportunities lost or not pursued because of this, times average deal value.
+- **Margin:** the margin this line would carry if the constraint didn't exist, minus current margin.
+- **Speed:** days this adds to your cycle, times cost of delay per day.
 
-**Question 5: If this constraint were removed, what would actually change?** Be specific. What would be different in the next ninety days? Which number would move, and by how much?
+**Validating evidence** records who confirmed the constraint and with what data, so the number isn't one person's guess.
 
-{{< excalidraw ch04-five-signal-questions "The five constraint questions in order, with Question 4 — cost — as the gate you can't pass without a number." >}}
+Here's how Meridian filled it in for the quoting bottleneck:
 
-Here is how Meridian answered the five questions for its quoting bottleneck:
-
-| Question | Meridian's answer |
+| Field | Meridian's answer |
 |---|---|
-| 1. Problem in one sentence | The VP of Operations is the sole bottleneck for quoting — every quote requires Elena's direct involvement. |
-| 2. Where it lives | Operations → the quoting workflow, where customer pricing, material lead-times, and job history converge on one person. |
-| 3. How long | Long enough to surface in every L10 without resolving. |
-| 4. What it costs | $558K per year in lost revenue, misallocated time, and floor capacity billed against but unused. |
-| 5. What changes if removed | Quote turnaround moves from 3–5 days toward the 24–48 hour standard, and the floor bills against capacity it currently wastes. |
+| **Constraint** | The VP of Operations is the sole bottleneck for quoting — every quote requires Elena's direct involvement, producing 3–5 day turnaround versus a 24–48 hour standard. |
+| **Where it lives** | Operations → the quoting workflow, where customer pricing, material lead-times, and job history converge on one person. |
+| **Duration** | Long enough to surface in every L10 without resolving — 6+ months named, years in practice. |
+| **Quantified cost** | $558K per year in lost revenue, misallocated time, and floor capacity billed against but unused. |
+| **Validating evidence** | Surfaced in every L10. Finance confirmed the floor-utilization gap. Elena confirmed she touches every quote. No one in the room disputed the turnaround numbers. |
 
 :::{.callout-tip}
 ## Pro Tip
-Question 4 is where Signal lives or dies. If the data isn't clean, don't stall — use the four estimation formulas above to put a defensible number on it.
+The cost field is where Signal lives or dies. If the data isn't clean, don't stall — use the four estimation formulas above to put a defensible number on it.
 :::
 
-### Pick one. *Lock* it.
+### Lock *it*
 
-When you've walked the candidates through all five questions, one will have the strongest answers — the clearest location, the longest history, the largest cost. That is the constraint you bring to Source. Write it in a single sentence, surrounded by the evidence that validates it, using the one-page template from earlier in this chapter.
+Two tests confirm you're at the root constraint and not still holding a symptom.
 
-Two tests confirm you're at root constraint and not still looking at a symptom:
+**The lever test.** Look at your candidate list and ask: "If we solved this one, how many of the others get easier or go away on their own?" A root constraint is load-bearing. Solving it moves multiple problems. If the answer is "none," you're likely holding a symptom. If the answer is "several," you've found the right one.
 
-**The lever test.** Look at your candidate list and ask: "If we solved this one, how many of the others get easier or go away on their own?" A root constraint is load-bearing. Solving it moves multiple problems. If the answer is "none of them," you're likely holding a symptom. If the answer is "several," you've found the right one.
+**The restate test.** Say it out loud: "All of these problems stem from [your candidate]. This is the problem we need to solve." If the room resists and people reach for other causes, you don't have the root yet. Keep asking why. If the room agrees, you're there.
 
-**The restate test.** Say out loud: "All of these problems stem from [your candidate]. This is actually the problem we need to solve." If the room resists and people reach for other causes, you don't have the root yet. Keep asking why. If the room agrees, you're there.
-
-Read the completed statement back to the room. Ask: "Is this the thing?" If anyone hesitates, you're not locked. Keep refining until the room actually agrees.
+Read the completed statement back. Ask: "Is this the thing?" If anyone hesitates, you're not locked. Keep refining until the room actually agrees — the kind of agreement where people nod because the math convinced them, not because the meeting has run long.
 
 :::{.callout-note}
 ## Action Step
-Fill in the one-page Constraint Statement template for your chosen constraint. Read it aloud to the team. If the room can't agree that this is the one constraint worth a Sprint, you're not done. Keep working until you have real agreement — the kind where people nod because the math convinced them, not because the meeting has gone long.
+Fill in the one-page Constraint Statement template for your chosen constraint. Read it aloud to the team. If the room can't agree this is the one constraint worth a Sprint, you're not done. Keep working until you've got real agreement.
 :::
 
-### Check for the common *failure modes*
+### Check the *failure modes*
 
-Before you call Signal complete, check for these common failure modes:
+Before you call Signal complete, run this checklist:
 
-- **Too abstract.** "We need better processes" is not a constraint. Can you point to a specific workflow?
-- **Too many.** You wrote down three constraints. Pick one. A Sprint that solves three problems solves none.
-- **No number.** The cost field is empty or says "significant." Go back to question four.
-- **Dominant personality resolved the ambiguity.** The most senior person in the room named the symptom first. Everyone nodded. The meeting moved on. The structural cause never surfaced. This is the most common Signal failure in well-run leadership teams. Ask: "Did we pick this because the data points here, or because the first person to speak named it?"
-- **Named the person instead of the structure.** "The constraint is Susie" is never the answer. Susie operates inside a structure. If Susie is failing, the structure failed first. The constraint is whatever the structure does that makes it impossible for anyone in Susie's position to succeed. This isn't a defense of poor performance. It's a discipline that keeps Signal from becoming a performance review.
-- **Solved the symptom.** Your constraint sentence describes what you feel, not what causes it. Run Five Whys one more time.
-- **Can't be solved by a Sprint.** The constraint is "our market is shrinking" or "our founder won't delegate." These are real, but they're upstream of this book. Signal is for operational constraints a Sprint can address.
+- **Too abstract.** "We need better processes" isn't a constraint. Can you point to a specific workflow?
+- **Too many.** You wrote down three constraints. Pick one.
+- **No number.** The cost field is empty or says "significant." Go back and quantify it.
+- **Dominant personality resolved the ambiguity.** The most senior person named the symptom first, everyone nodded, and the meeting moved on. The structural cause never surfaced. This is the most common Signal failure in well-run leadership teams. Ask: "Did we pick this because the data points here, or because the first person to speak named it?"
+- **Named the person instead of the structure.** "The constraint is Susie" is never the answer. Susie operates inside a structure. If Susie is failing, the structure failed first. This isn't a defense of poor performance. It's a discipline that keeps Signal from becoming a performance review.
+- **Solved the symptom.** Your constraint sentence describes what you feel, not what causes it. Run the Five Whys one more time.
+- **Can't be solved by a Sprint.** "Our market is shrinking" or "our founder won't delegate" are real, but they're upstream of this book. Signal is for operational constraints a Sprint can address.
 
 If any of these are true, go back. The gate is real. Passing through it with a bad Constraint Statement costs more than the time it takes to fix it.
 
 ## Activity is not *Signal*
 
-Skipping Signal doesn't look like failure. It looks like activity: tools being evaluated, demos on Fridays, somebody prompting in Slack. None of it is Signal. The org hasn't named a single constraint it's committed to solving.
+Skipping Signal doesn't look like failure. It looks like activity: tools being evaluated, demos on Fridays, somebody prompting in Slack. None of it is Signal. The org hasn't named a single constraint it's committed to solving, so the work has nothing to earn back against.
 
-It happens inside well-run shops too. The most common way the gate gets passed with the wrong answer is the dominant-personality failure: the room nods and the constraint stays unnamed.
+## Put the Constraint Statement on the *Canvas*
 
-## Hand the Constraint Statement to *Source*
+The locked Constraint Statement is the first thing written on your Sprint Planning Canvas. It fills the Constraint row at the top of the page and seeds the first row of the Sequence — the constraint every later stage works against.
 
-The one-page Constraint Statement is the handoff to Source. With the constraint named, quantified, and validated, the next move is to map the knowledge and data that surround it — what the organization actually knows about the problem, where that knowledge lives, who holds it, and what is missing.
-
-Hand the Constraint Statement to whoever runs Source. Source opens with the dollar number already written down and uses it to determine what knowledge and data the Sprint will need: which records describe the constraint, who holds the context that isn't written down anywhere, and what the team will have to capture before it can build against the number you just locked.
+From there, the Sprint Lead carries it into Source. Source opens with the dollar number already written down and uses it to decide what knowledge and data the Sprint will need. Which records describe the constraint. Who holds the context that isn't written anywhere. What the team has to capture before it can build against the number you just locked.
 
 :::{.callout-note}
 ## Action Step
 Schedule the Signal session. Send one calendar invite and attach the Constraint Statement template. Write your top three candidate constraints in the invite body. The session is locked when a single Constraint Statement is read aloud and the room agrees.
 :::
 
-## Reflection Questions
+## Reflect on your operation
 
-1. Run the Issue Surfacer questions on your company right now: what process would you never let a customer watch? Where does your team keep losing the same person or role? What conversation keeps coming up in L10s but never gets resolved? Which answer feels most expensive?
-2. The PT clinic was forty-five minutes into planning a sixth location before someone asked what clinical efficiency rating was. Where in your company is your team solving a symptom while the actual constraint runs untouched underneath it?
-3. Apply the Five Whys to your top constraint candidate. Does the fifth "why" point to a workflow, a handoff, or a structural gap — or does it point to a person? If it points to a person, reframe: what system failure put that person in the position of being the only one who knows?
-4. If you polled your leadership team individually and asked "what is the ONE operational problem AI should solve for us?" — how many different answers would you get? Run the poll before your next L10 and compare results.
+1. Run the surfacing lenses on your company right now: what process would you never let a customer watch? Where does your team keep losing the same role? What conversation keeps coming up in your L10s but never gets resolved? Which answer feels most expensive?
+2. Take that most-expensive answer and run the Five Whys on it out loud. Does the fifth "why" land on a workflow, a handoff, or a structural gap — or on a person? If it's a person, what system failure put them in the position of being the only one who knows?
+3. Put a number on it. Use one of the four estimation formulas — hours, deals, margin, or speed — and write the cost as dollars per quarter or per year. If you can't, you don't have a constraint yet; you have a complaint.
+4. If you polled your leadership team individually and asked, "What is the one operational problem AI should solve for us?" — how many different answers would you get? The gap between them is what Signal closes.
+
+Source maps what your company actually knows about the constraint you just locked. The dollar number goes with it.

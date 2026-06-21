@@ -28,7 +28,7 @@
 | 5 | Calculate the Design Opportunity | 02-co-operating-model | Two patterns: human-supervised, *agent*-supervised. | `calculate-design-opportunity` | Buried | 5 |
 | 6 | Map the Hybrid Split | 02-co-operating-model | Two patterns: human-supervised, *agent*-supervised. | `map-hybrid-split` | Buried | 5 |
 | 7 | Fill in the Sprint Planning Canvas | 03-the-framework | The Sprint Planning Canvas asks one *question* per stage | `sprint-planning-canvas` | Visible | 6 |
-| 8 | Run the Signal Session | 04-signal | Run Signal *yourself* | `run-signal-session` (ships as `signal`) | Buried | 8 |
+| 8 | Run the Signal Session | 04-signal | Run the *Signal* session | `run-signal-session` (ships as `signal`) | Buried | 7 |
 | 9 | Build the Knowledge Map | 05-source | Build the map in three passes. | `build-knowledge-map` (ships as `knowledge-that-walks`) | Visible | 6 |
 | 10 | Classify each source on the map | 05-source | Classify what you found. | `classify-sources` | Buried | 4 |
 | 11 | Write the Information Flow Specification | 06-designing-the-system | See the work as information flow first | `information-flow-spec` (ships as `map-the-inputs`) | Buried | 6 |
@@ -126,16 +126,15 @@ Each block below is the verbatim source for both the worksheet and the book over
 6. **Compound — what did you learn, and what changes for the next Sprint?** → Compound chapter. Captures the outcome and re-ranks the queue.
 
 ### 8. Run the Signal Session — `run-signal-session` (worksheet ships as `signal`)
-*04-signal · Run Signal yourself · Buried*
+*04-signal · Run the Signal session · Buried*
 
 1. **Assemble the room** — Signal is a facilitated conversation, not a solo exercise — the CEO, senior leadership, relevant function owner, and a facilitator must all be present for the constraint to be validated by the people who own the business.
-2. **Surface the candidates** — Before you can pick one constraint you need an honest inventory; the Issue Surfacer questions (workarounds, new-hire confusion, sausage-making, turnover, recurring conversations) generate five to ten candidates without filtering.
-3. **Trace symptoms to root with the Five Whys** — Most candidates are symptoms, not constraints; running Five Whys out loud with the people closest to the work finds the structural cause — and the stop rule ensures you land on workflow/handoff/gap, not a person.
+2. **Surface the candidates** — Before you can pick one constraint you need an honest inventory; the surfacing lenses (workarounds, new-hire confusion, sausage-making, turnover, recurring conversations) generate five to ten candidates without filtering.
+3. **Trace each to root with the Five Whys** — Most candidates are symptoms, not constraints; running the Five Whys out loud with the people closest to the work finds the structural cause — and the stop rule ensures you land on workflow/handoff/gap, not a person.
 4. **Pick among the survivors using the tiebreaker rubric** — When more than one candidate survives the trace, the five-criteria rubric (foundation first, highest pain, smallest gap, owner in room, two-quarter horizon) applied in order produces a defensible, unambiguous pick.
-5. **Run the five constraint questions** — Walking the chosen candidate through the five questions — problem in one sentence, where it lives, how long, what it costs, what changes if removed — builds the evidence base and forces the cost to be a real number.
-6. **Write the Constraint Statement** — The one-page template (one anchoring sentence, location, duration, quantified cost, validating evidence) converts the conversation into a locked, shareable artifact that everyone in the room can see and agree to.
-7. **Apply the lever test and restate test** — Two final checks confirm you are at root constraint and not still holding a symptom: the lever test asks whether solving this one moves multiple others; the restate test asks whether the room actually agrees.
-8. **Check for failure modes and lock the gate** — A checklist of seven common Signal failures (too abstract, too many, no number, dominant personality, named the person, solved the symptom, unsolvable by a Sprint) catches anything the previous steps missed before you hand off to Source.
+5. **Quantify and write the Constraint Statement** — Fill in the one-page template (anchoring sentence, location, duration, quantified cost, validating evidence); the cost must be a real number, using the four estimation formulas if the data isn't clean.
+6. **Lock it** — Apply the lever test and the restate test, read the statement back, and confirm the room agrees it names the right problem.
+7. **Check the failure modes** — A checklist of seven common Signal failures (too abstract, too many, no number, dominant personality, named the person, solved the symptom, unsolvable by a Sprint) catches anything the previous steps missed before you hand off to Source.
 
 ### 9. Build the Knowledge Map — `build-knowledge-map` (worksheet ships as `knowledge-that-walks`)
 *05-source · Build the map in three passes · Visible*
