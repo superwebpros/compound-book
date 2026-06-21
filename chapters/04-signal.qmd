@@ -17,17 +17,19 @@ That conversation was the first time we named the constraint instead of the symp
 
 ## What Signal produces: one sentence with a dollar number *attached*
 
-Signal produces one artifact: a one-page Constraint Statement. Its single anchoring sentence names the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The rest of the page surrounds that sentence with the evidence that validates it.
+Signal produces one artifact: a one-page Constraint Statement `jf-note: a statement isn't one-page. its a sentence.`. Its single anchoring sentence names the problem, where it lives in the org, how long it has existed, and what it has cost in dollars, time, or margin. The rest of the page surrounds that sentence with the evidence that validates it `jf-note: so what? whats the point/context for this?`.
 
 {{< excalidraw ch04-constraint-statement-template "Constraint Statement template: one sentence, location, duration, quantified cost, and validating evidence." >}}
 
-The anchoring sentence follows this structure: "[Function] can't [desired outcome] because [root cause], which costs us [X dollars] per [Y time period]." That form names the function that's failing, the outcome that's blocked, and the structural cause rather than the symptom. "Elena can't quote within 24 hours because she's the sole holder of customer pricing context, which costs us approximately $558K per year." That's a constraint you can act on.
+The anchoring sentence follows this structure: "[Function] can't [desired outcome] because [root cause], which costs us [X dollars] per [Y time period]." 
 
-You may arrive at this conversation with five candidates. The job of Signal isn't to delete the other four. You'll always have a backlog. The job is to focus the Sprint: pick the one constraint that, if removed, would change the math most, and commit to it for the length of the Sprint.
+That form names the function that's failing, the outcome that's blocked, and the structural cause rather than the symptom. "Elena can't quote within 24 hours because she's the sole holder of customer pricing context, which costs us approximately $558K per year." That's a constraint you can act on.
+
+You may arrive at this conversation `jf-note: what conversation?` with five candidates `jf-note: 5 candidates for what?`. The job of Signal isn't to delete the other four. You'll always have a backlog. The job is to focus the Sprint: pick the one constraint that, if removed, would change the math most `jf-note: this is an awkward sentence. i dont know what we mean...if we were to do a pilot, would it move the math the most? math is what? cost? time? what about probability of success? The point is that all sprints must be constrained. Ordering the constraints for the purpose of focus is a different exercise. that's more like organizing the backlog. the point is to be clear about what the sprint is focused on. ordeirng the backlog and committting to a focused project are two different things.`, and commit to it for the length of the Sprint.
 
 That commitment is structural. A Sprint that tries to solve three problems solves none of them. A Sprint that solves one produces a measurable result against a number you wrote down at the start, and that result becomes the proof point that earns the next Sprint. The narrowness is what makes the work pay.
 
-The quantified cost is non-negotiable. A constraint needs a number on it. "The quoting bottleneck is costing us $558K per year in lost revenue, misallocated time, and floor underutilization" is a constraint you can work with. The number tells you whether the constraint is worth a Sprint's attention. It gives the Deliver phase a target to measure against. And it names the opportunity cost. Without it, you can't prove the Sprint paid for itself.
+The quantified cost is non-negotiable `jf-note: the cost is non-negotiable? or not having one documented?`. A constraint needs a number on it. "The quoting bottleneck is costing us $558K per year in lost revenue, misallocated time, and floor underutilization" is a constraint you can work with. The number tells you whether the constraint is worth a Sprint's attention. It gives the Deliver phase a target to measure against. And it names the opportunity cost. Without it, you can't prove the Sprint paid for itself. `jf-note: this all reads like AI`
 
 :::{.callout-tip}
 ## Pro Tip
@@ -102,8 +104,8 @@ There's no time budget on this. The session runs until the Constraint Statement 
 ### How to run the *Signal* session
 
 1. **Assemble the room.** Get the CEO, senior leadership, the owner of the function the constraint sits inside, and a facilitator in one place. The constraint has to be validated by the people who own the business.
-2. **Surface the candidates.** Run the lenses from the section above as live questions and write down everything that's broken or slow — no filtering, no debate. Aim for five to ten candidates.
-3. **Trace each to root with the Five Whys.** Most candidates are symptoms. Keep asking why until the answer lands on a workflow, a handoff, or a structural gap, not a person.
+2. **Surface the candidates.** Run the lenses from the section above as live questions and write down everything that's broken or slow — no filtering, no debate. Aim for at least five to ten candidates.
+3. **Trace each to root with the Five Whys.** Most candidates are symptoms. Keep asking why until the answer lands on a workflow, a handoff, or a structural gap, not a person. `jf-note: shouldn't there be some sort of sorting function first? where do we rank and evaluate the opportunity costs? Is this process syllogistcally sound?`
 4. **Pick among the survivors.** When more than one candidate survives the trace, apply the tiebreaker rubric in order: foundation first, highest pain in reach, smallest gap, owner in the room, two-quarter horizon.
 5. **Quantify and write the Constraint Statement.** Fill in the one-page template — anchoring sentence, location, duration, quantified cost, validating evidence. The cost must be a real number.
 6. **Lock it.** Apply the lever test and the restate test, read the statement back, and confirm the room agrees.
@@ -152,7 +154,7 @@ Open a whiteboard or shared doc. List candidates using the five questions above.
 
 ### Trace each to root with the *Five Whys*
 
-Most of what you surfaced is symptoms. The way down to the constraint underneath is a conversation, not a worksheet. Take one candidate and keep asking why until the answer stops moving. This tool is the Five Whys, and you run it out loud with the room:
+Most of what you surfaced is symptoms. The way down to the constraint underneath is a conversation, not a worksheet `jf-note: this sentence doesnt make sense. its both. the point is to drill down`. Take one candidate and keep asking why until the answer stops moving. This tool is the Five Whys, and you run it out loud with the room `jf-note: this is an awkward construction`:
 
 1. Why is this happening? The first answer is almost always another symptom.
 2. Why is that the case? Closer.
@@ -160,7 +162,7 @@ Most of what you surfaced is symptoms. The way down to the constraint underneath
 4. What's underneath that? The structural cause.
 5. What's the root? The constraint itself.
 
-Run it as a back-and-forth, not a form one person fills out alone. Two people rarely trace the same symptom to the same place. The CEO names one cause, the manager closest to the work names another, and the gap between their answers is usually where the constraint is hiding. Keep going until the room lands in the same spot.
+Run it as a back-and-forth, not a form one person fills out alone `jf-note: we are belaboring this point`. Two people rarely trace the same symptom to the same place. The CEO names one cause, the manager closest to the work names another, and the gap between their answers is usually where the constraint is hiding. Keep going until the room lands in the same spot.
 
 **The stop rule.** You've reached the constraint when the answer points to a workflow, a handoff, a missing system, or a structural gap. You haven't reached it when the answer is a person's name or a market condition. If the honest answer to your last "why" is a name ("because Sarah is the only one who knows"), go one layer down. The constraint isn't Sarah. It's that critical knowledge lives in one head with no system to distribute it. The structure put Sarah in that position, and the structure is what a Sprint can fix. The same logic holds for "the wrong person is in the seat": replacing the person rarely fixes the problem because the role was built on a structural gap that breaks whoever sits in it. Push past the person to the structure.
 
@@ -176,7 +178,14 @@ Take your top three candidates. Trace each one to root with the Five Whys, out l
 
 When Meridian traced their three candidates, two of them (the workflow-visibility gap and the manual job costing) bottomed out fast. But the quoting bottleneck kept going. Quotes are slow because every one passes through Elena. They pass through Elena because she's the only one who holds customer pricing, material lead-times, and job history together. That knowledge lives only in her head because no system was ever built to distribute it. The root wasn't Elena. It was that the quoting workflow depended entirely on one person's undocumented context. Three candidates survived the trace, ready for the tiebreaker.
 
+```jf-note: i wonder if we should have, somewhere in this chapter, an example of constraint statements.
+```
+
 ### Pick among the *survivors*
+
+```jf-note:
+conceptually a good section, but it needs examples. its not intuitive to me that 5 whys would have multiple "survivors"....what do we mean by "survivors" anyways? are survivors constraints? or are they symptoms?
+```
 
 When the Five Whys leaves more than one candidate standing, pain level alone won't tell you which to attack first. You need a tiebreaker. Apply this rubric in order; the first candidate that passes all five is where you start.
 
@@ -265,6 +274,10 @@ If any of these are true, go back. The gate is real. Passing through it with a b
 Skipping Signal doesn't look like failure. It looks like activity: tools being evaluated, demos on Fridays, somebody prompting in Slack. None of it is Signal. The org hasn't named a single constraint it's committed to solving, so the work has nothing to earn back against.
 
 ## Put the Constraint Statement on the *Canvas*
+
+```jf-note:
+we need an excalidraw, zoomed in, of the statement on the canvas, so its visual
+```
 
 The locked Constraint Statement is the first thing written on your Sprint Planning Canvas. It fills the Constraint row at the top of the page and seeds the first row of the Sequence — the constraint every later stage works against.
 
