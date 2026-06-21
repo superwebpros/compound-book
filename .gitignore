@@ -21,3 +21,5 @@ full_book.md
 .env
 .env.local
 .claude/.env
+
+/.luarc.json
