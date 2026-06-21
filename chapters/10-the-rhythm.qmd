@@ -38,7 +38,7 @@ The Rhythm has a meeting. One to two hours, your leadership team, every quarter,
 
 1. **Step 1: Review the previous Sprint at the outcome level** — Determines whether the constraint actually moved and whether the workflow is permanent or needs another Sprint — the outcome question, not a status update.
 2. **Step 2: Update the Signal Backlog** — Re-ranks the running inventory of constraints so the next Sprint is chosen from current reality, not last quarter's assumptions.
-3. **Step 3: Commit the next Sprint** — Converts backlog priority into a named constraint, a named Human Orchestrator, a budget confirmation, and a start date — the team leaves with a specific commitment.
+3. **Step 3: Commit the next Sprint** — Converts backlog priority into a named constraint, a named Human Orchestrator, a named Sprint Lead, a budget confirmation, and a start date — the team leaves with a specific commitment.
 4. **Step 4: Update the Hybrid Accountability Chart** — Makes permanent any HAC rows from the completed Sprint, removes what didn't work, and resets the Hybrid Org Today baseline so the living document stays current.
 <!-- /moves:quarterly-operating-session -->
 
@@ -46,7 +46,7 @@ The Rhythm has a meeting. One to two hours, your leadership team, every quarter,
 
 **Step 2: Update the Signal Backlog.** Pull the re-ranked backlog from the Compound phase. Review each candidate: still relevant? Cost changed? New information? Add any new constraints that emerged during the quarter. Remove any that were resolved as side effects. What has shifted in priority since last quarter? The Signal Backlog is the running inventory of your company's most expensive operational problems, ranked. It is the input to every quarterly conversation.
 
-**Step 3: Commit the next Sprint.** Pick the top constraint from the updated backlog. Name the Human Orchestrator (the person on your leadership team who owns the Sprint's output and supervises the agent team doing the work — the Design chapter covers how this role is assigned; if you run EOS, think of this as the Integrator role extended to the Sprint level, not the whole company). Confirm the team has the resources — people, tools, budget. Set the Sprint start date. One validated constraint. One constraint owner. A specific six-to-eight-week window. The one-page Constraint Statement from Signal is the artifact. Your team leaves the session knowing exactly what the next Sprint is about and who owns it.
+**Step 3: Commit the next Sprint.** Pick the top constraint from the updated backlog. Name the Human Orchestrator (the person who'll run the redesigned workflow and supervise its agent team once it ships — the Designing the System chapter covers how this role is assigned). Name the Sprint Lead who'll run the Sprint project itself. Confirm the team has the resources — people, tools, budget. Set the Sprint start date. One validated constraint. A named Human Orchestrator and Sprint Lead. A specific six-to-eight-week window. The one-page Constraint Statement from Signal is the artifact. Your team leaves the session knowing exactly what the next Sprint is about and who owns it.
 
 **Step 4: Update the Hybrid Accountability Chart.** (If you run EOS, the HAC extends your existing Accountability Chart — same structure, with agent teams and their human supervisors added as new rows.) Make permanent any HAC rows from the completed Sprint that are staying. Remove or revise any that didn't work. Note which roles have shifted since last quarter. If an agent team's scope changed, if the Human Orchestrator's handoffs moved — record it. The chart is a living document, not a workshop output from eighteen months ago. This becomes the new Hybrid Org Today baseline.
 
@@ -78,7 +78,7 @@ Here is how the pieces map:
 |---|---|---|
 | Signal Backlog | Issues List (strategic) | Priorities / Rocks candidates |
 | Sprint commitment | Quarterly Rock | Quarterly Priority |
-| Human Orchestrator | Rock owner | Priority owner |
+| Sprint Lead | Rock owner | Priority owner |
 | HAC update | Accountability Chart review | Function Accountability Chart |
 | Quarterly operating session | Quarterly Planning | Quarterly Planning |
 

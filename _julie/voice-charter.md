@@ -79,7 +79,7 @@ Voice scanner / editorial-coherence: flag any lowercase "co-intelligent" / "co-i
 - **Grouping:** Diagnose (Signal + Source) ⟂ Execute & Compound (Design + Build + Deliver + Compound).
 - **The twelve instruments:** Constraint Finder, Issue Surfacer, Knowledge Map, Data Pipeline Audit, Work Deconstruction, Hybrid Accountability Chart, Build Spec Writer, Guardrails Checklist, Deploy Readiness Audit, Training Set Generator, Sprint Retrospective, Constraint Re-rank.
 - **Six Compound Bench agents:** Signal Agent, Source Agent, Design Agent, Build Agent, Deliver Agent, Compound Agent.
-- **Roles:** Human Orchestrator, Agent Coordinator.
+- **Roles:** Human Orchestrator (operates and supervises the agent team in the shipped workflow), Sprint Lead (runs the Sprint project), leadership sponsor (accountable for the outcome), Agent Coordinator.
 - **Artifacts:** Hybrid Accountability Chart, Hybrid Org Today.
 - **Pain framing:** Headcount Paradox, headcount math, Design Before Deploy.
 - **Equation:** *Co-Intelligence + Co-Operation + Rhythm = Compound.* (Co-Operation added as an explicit term in the Ch 3 re-conception, 2026-06; supersedes the earlier two-term form.)

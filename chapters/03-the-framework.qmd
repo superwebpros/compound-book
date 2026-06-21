@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-You've met the Co-Operating Model. The Framework is how you build one. By the end of this chapter you'll know the six-stage Sequence and the Sprint Planning Canvas: the one-page tool the rest of the book fills in, one row per stage, until you reach the last page with a complete map of your first Sprint.
+You've met the Co-Operating Model. The six-step Framework is how you build one. By the end of this chapter you'll know the six-stage Sequence and the Sprint Planning Canvas: the one-page tool the rest of the book fills in, one row per stage, until you reach the last page with a complete map of your first Sprint.
 :::
 
 We were mid-conversation with a CEO: Jesse, Julie, and her on the other side of the screen. She'd been talking for twenty minutes about her company, her bottlenecks, the AI-powered workflows she hoped would fix the quoting problem eating her operations lead's time. Then she leaned forward and said it: "Can we just build the workflow? I just need this thing built."
@@ -64,9 +64,9 @@ When a Sprint stalls in Build, don't troubleshoot the build. Go back to Signal, 
 
 ## The Sprint Planning Canvas asks one *question* per stage
 
-The Sprint Planning Canvas is the book's through-line tool. It's a one-page artifact that names the constraint, asks one question per stage of the Sequence, identifies the team, and locks the review date. Think of it the way an EOS company thinks of its V/TO: the single page the whole operation comes back to. The Canvas is built on questions because a question demands an answer.
+The Sprint Planning Canvas is the backbone of a Co-Operating Model. A Sprint's plan starts scattered: the constraint lives in one person's head, the systems in another's, the half-formed fix in a third's. The Canvas pulls all of it onto a single page the whole team can see and agree on, the way an EOS company gets its vision onto one V/TO. One constraint at the top, one question per stage of the Sequence beneath it, the team named, the review date locked. It's the page the operation comes back to at every review.
 
-You can't answer them all yet. Each chapter ahead teaches you how to answer one question. By the last page you'll have a complete Canvas for your first Sprint.
+You can't answer every question yet. Each chapter ahead teaches you one, so by the last page you'll have a complete Canvas for your first Sprint.
 
 <!-- moves:sprint-planning-canvas -->
 ### The six *questions*
@@ -87,7 +87,9 @@ That's the blank Canvas. A downloadable template is available at the book's reso
 
 A Sprint is bounded by scope, not by a fixed calendar. The narrowness is the discipline that prevents the failure mode every operator has seen: an AI project becoming a platform project, a platform project becoming a reorg, and eighteen months later nothing has shipped. One constraint, one documented outcome, one Sprint. Duration is set in Design and depends on the constraint. Some Sprints close in days, some run for weeks, the longest stretch across a quarter. What doesn't stretch is the scope. The Canvas locks the constraint at the top, and the constraint is the boundary the rest of the work runs against.
 
-The Canvas also sits on top of three operating fixtures that don't change Sprint to Sprint. The **leadership sponsor** is accountable for the outcome, not for doing the work. The **Human Orchestrator** runs the Sprint day-to-day, owns the cadence, and holds the handoffs together (if you run EOS, think of this as the Integrator role extended to run the agent team, at Sprint scope rather than company scope). The **review date** is the quarterly operating session where the Sprint's outcome gets measured. A Sprint with no review date has no deadline. Book the review before you start Signal.
+The Canvas also names the people a Sprint runs on. The **leadership sponsor** is accountable for the outcome, not for doing the work. The **Sprint Lead** runs the Sprint day-to-day, owns the cadence, and holds the handoffs together; who fills it varies, often the sponsor in a small company, a delegated lead or an outside coach in a larger one.
+
+The **Human Orchestrator** is the person whose role the Sprint redesigns: the upgraded worker who'll run the new workflow and supervise its agents once it ships. They help design it during the Sprint and get trained to run it before it lands. Pull in **subject-matter experts** wherever the constraint's knowledge lives; in a small shop one person often wears several of these hats. Book a **review date**, the quarterly session where the outcome gets measured, before Signal begins: a Sprint with no review has no deadline.
 
 ### A completed Canvas *looks* like this
 
@@ -95,17 +97,11 @@ Here is what Meridian Manufacturing's Sprint Planning Canvas looked like after t
 
 {{< excalidraw ch03-Sprint-planning-canvas "Meridian Manufacturing's completed Sprint Planning Canvas." >}}
 
-### Start a blank one if you *want*
-
-You won't have a confident answer to any of the six questions yet, and that's expected. You lack the tools, and the chapters ahead are how you get them. If it helps to start a blank Canvas now and watch it fill in, do it. The real work is the reading: Signal answers the first question, Source the second, Design the third, Build the fourth, Deliver the fifth, and Compound the sixth. The Rhythm chapter teaches you what to do once the Canvas is complete for one Sprint and you're ready for the next.
-
-The Canvas is the artifact the rest of the book is organized around. Carry it forward.
-
 ## Run one Sprint. Then *another*.
 
-The Framework is learned by running it. The stages aren't interchangeable steps in a checklist. Each one produces something the next can't work without, and that dependency only becomes real when you hit it on one real constraint in your own company.
+The Framework is learned by running it, not reading about it. The stages aren't interchangeable checklist steps; each produces something the next can't work without, and that dependency only becomes real on one real constraint in your own company. Start a blank Canvas now if it helps, but the answers come from the work ahead.
 
-The Rhythm is running another Sprint every quarter. The Hybrid Accountability Chart gains new entries, the Knowledge Map gets richer, and the team's design judgment improves. Each Sprint gets cheaper and faster than the one before it, because the infrastructure each Sprint leaves behind accelerates the next. The first Sprint is where your company learns to run the Framework. The Rhythm is what makes the change permanent.
+The Rhythm is running another Sprint every quarter, and each one leaves infrastructure behind that makes the next cheaper and faster: the Hybrid Accountability Chart gains entries, the Knowledge Map gets richer, the team's design judgment sharpens. The first Sprint is where your company learns to run the Framework. The Rhythm is what makes the change permanent. Carry the Canvas forward.
 
 ## Begin at Signal
 

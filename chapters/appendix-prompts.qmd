@@ -553,7 +553,7 @@ language — each step, handoff, and decision point named. Ask:
 
 SECTION 2: STAKEHOLDERS
 Help me name:
-- The Human Orchestrator (owner of the constraint outcome)
+- The Human Orchestrator (operator of the redesigned workflow)
 - Team members whose roles change because of this Sprint
 - Downstream consumers of the agent team's output
 - Anyone with approval authority

@@ -29,7 +29,7 @@ That bar is deliberately high. Build is done when work the team used to do is no
 
 ## Build stays scoped to the *designed* workflow.
 
-The agents we designed in the last chapter took on the bulk of the workflow the Human Orchestrator used to manage alone. (The Human Orchestrator is the person who runs the agent team for a Sprint: assigns work, reviews outputs, escalates exceptions — not a chatbot, a human coordinator. If you run EOS, this is the closest thing to the Integrator role, extended to the agent team rather than the whole company. More in the Co-Operating Model chapter.) This is where they got built, to the shape Design specified.
+The agents we designed in the last chapter took on the bulk of the workflow the Human Orchestrator used to run alone. (The Human Orchestrator is the operator whose role the Sprint upgrades: the existing employee who runs the new workflow and supervises its agents once it ships, reviewing outputs and handling exceptions. Introduced in the Framework chapter; detailed in the Designing the System chapter.) This is where they got built, to the shape Design specified.
 
 The single most common Build failure is scope drift: the moment the engineer or vendor or low-code builder looks at the spec and starts to "improve" it. Add a feature. Connect another system. Generalize the workflow into a platform. Use the constraint as an excuse to rebuild a tool the company should have replaced anyway.
 

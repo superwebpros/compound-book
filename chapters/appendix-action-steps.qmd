@@ -194,7 +194,7 @@ For each accountability in your constraint workflow, place it on the AI-assisted
 
 :::{.callout-note}
 ## Action Step
-Identify your Human Orchestrator candidate. Ask: does this person have authority over the constraint outcome? Are they willing to shift from executing to designing? Write down the name. If there's a development gap, name it — and plan the first Sprint as the ramp-up, not as a test they need to pass.
+Identify your Human Orchestrator candidate. Ask: does this person have operational authority over the workflow? Are they willing to shift from executing the work to directing the team that executes it? Write down the name. If there's a development gap, name it — and plan the first Sprint as the ramp-up, not as a test they need to pass.
 :::
 
 ## Chapter 7b: Designing the Work

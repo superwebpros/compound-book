@@ -45,7 +45,7 @@ If your Sprint ends and the backlog isn't re-ranked, the chart hasn't been updat
 
 :::{.callout-note}
 ## Action Step
-Before the Sprint enters Build, put the Compound session on the calendar. Include the Human Orchestrator (the person who owns the Sprint design and runs the Compound session — covered in the Design chapter) and every supervisor who owned a Sprint accountability. If it's not scheduled before the Sprint ships, it won't happen after. (If you run EOS, the Human Orchestrator is the Integrator role extended to run the agent team — Sprint-level, not company-level.)
+Before the Sprint enters Build, put the Compound session on the calendar. Include the Sprint Lead (who runs the session), the Human Orchestrator (the operator who runs the redesigned workflow and supervises its agents day-to-day — detailed in the Designing the System chapter), and every supervisor who owned a Sprint accountability. If it's not scheduled before the Sprint ships, it won't happen after.
 :::
 
 ## Run the Sprint *Retrospective* honestly
@@ -96,14 +96,14 @@ If you can't answer these three questions, the Sprint delivered output but didn'
 <!-- moves:install-design-change -->
 ### How to install one *design change*
 
-1. **Survey everything the Sprint surfaced** — Human Orchestrator scans all retrospective items — Source gaps, wrong cadences, broken handoffs, dirty inputs — before picking.
+1. **Survey everything the Sprint surfaced** — the team scans all retrospective items — Source gaps, wrong cadences, broken handoffs, dirty inputs — before picking, with the Human Orchestrator surfacing what broke inside the workflow.
 2. **Name the single change that will most improve the next Sprint** — The discipline of one defeats the 'lessons learned list' failure mode; forces a real priority decision.
 3. **Write the four-field change card (What / Who / How you'll know / By date)** — Makes the change specific and testable; any blank field signals the change is too vague to install.
 4. **Install the change structurally before the next Sprint begins** — An insight that doesn't change the design isn't worth recording — the change must land in the chart, workflow, or Source map.
 5. **Verify the change using the 'how you'll know' criterion** — Closes the loop — confirms the change is working before Sprint two kicks off, not assumed.
 <!-- /moves:install-design-change -->
 
-After every Sprint, you answer one question as the Human Orchestrator: *what one design change would make the next Sprint better?*
+After every Sprint, you answer one question: *what one design change would make the next Sprint better?*
 
 The answer is one. One committed design change, installed before the next Sprint begins.
 
@@ -111,7 +111,7 @@ The temptation after a good Sprint is to list every observation the team made an
 
 Compound is finished when that one design change is installed. The change has to be structural: a chart entry revised, a workflow step added, a guardrail tightened, a Source map updated. It is something the next Sprint inherits as part of how the company now operates. An insight that doesn't change the design isn't worth recording.
 
-The discipline of one design change defeats that failure mode. The Human Orchestrator looks across everything the Sprint surfaced: the Source phase that ran too thin, the supervisor cadence that was wrong, the handoff between the agent team and the human reviewer that broke once, the input format that turned out to need cleaning nobody scoped. Then the Orchestrator names the *single* change that will most improve the next Sprint.
+The discipline of one design change defeats that failure mode. You look across everything the Sprint surfaced: the Source phase that ran too thin, the supervisor cadence that was wrong, the handoff between the agent team and the human reviewer that broke once, the input format that turned out to need cleaning nobody scoped. Much of that gets flagged by the Human Orchestrator, who lived inside the workflow. Then you name the *single* change that will most improve the next Sprint.
 
 Meridian's one design change: add fabrication complexity indicators (bend count, tolerance class, weld count, and surface finish) as matching criteria in the Quote Research Agent. Dave Kowalski provides the classification framework from his thirty-one years of fabrication experience. The agent uses it when selecting historical matches. You know it's working when you re-run the eight quotes from the previous month where Elena corrected the agent's match, and at least seven of eight produce the correct comparable. Installed before Sprint two kickoff.
 
@@ -151,7 +151,7 @@ After the retrospective, write the one design change on a card with four fields.
 2. **Ask: did any constraints get partially resolved as a side effect?** — Recognizes spillover value and adjusts rankings to reflect what actually changed, not just what was targeted.
 3. **Ask: did any new constraints surface during the Sprint that weren't on the original list?** — Prevents new constraints from falling through the cracks by capturing them at the moment of highest clarity.
 4. **Ask: given what you now know, which constraint should the next Sprint solve?** — Converts the re-ranked backlog into a decision — the top constraint becomes the input for the next Signal conversation.
-5. **Assign a Human Orchestrator for the next Sprint and write it down before leaving the room** — Names ownership before the Compound session ends; without a named Orchestrator the next Sprint has no driver.
+5. **Name the next Sprint's Human Orchestrator and write it down before leaving the room** — Identifies who'll operate the next workflow before the Compound session ends; without a named Orchestrator the next Sprint has no operator lined up.
 <!-- /moves:constraint-re-rank -->
 
 The second instrument in Compound is the Constraint Re-rank. The Signal Backlog that existed at the start of the Sprint was built on the information your company had at that moment. The Sprint produced new information — about what the data really looks like, which accountabilities have unexpected friction, which constraints turned out to be symptoms of a deeper constraint. You take the backlog into that new information and reorder it.

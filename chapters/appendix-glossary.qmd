@@ -69,7 +69,7 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : The two halves of the *Sequence*. Diagnose = *Signal* + *Source* (the work most companies skip). Execute & Compound = *Design* + *Build* + *Deliver* + *Compound* (ships only when Diagnose is solid). (First introduced: Chapter 4)
 
 **Human Orchestrator** (Compound)
-: The single person who owns both irreducible human decisions and agent team supervision for a Sprint. Sets goals, reviews at the goal level, manages the agent team day-to-day, surfaces escalations, and makes design improvements between Sprints. Different from the leadership sponsor, who owns the outcome. (First introduced: Chapter 4)
+: The operator who runs the redesigned workflow and supervises its agent team day-to-day once it ships. An existing employee whose role the Sprint upgrades, trained during the Sprint to direct the agents, review their output, and handle exceptions. Distinct from the leadership sponsor (accountable for the outcome) and the *Sprint Lead* (who runs the Sprint project). The detailed treatment of the role is in the Designing the System chapter. (First introduced: the Framework chapter)
 
 **Hybrid Accountability Chart (HAC)** (Compound)
 : An extension of a traditional accountability chart that includes agent teams alongside humans. Every row names a role or function, the agent team responsible, the human supervisor, and the AI-Assisted vs. Automated level. Every row has a named supervisor — no exceptions. A single Sprint can produce multiple *HAC* entries. (First introduced: Chapter 7)
@@ -113,11 +113,14 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 **Source (stage)** (Compound)
 : Stage 2 of the *Sequence*. Maps the information environment around the validated constraint — what knowledge exists, where it lives, who holds it, what's missing, and what's at risk of leaving. Produces the *Knowledge Map*. (First introduced: Chapter 4)
 
+**Sprint Lead** (Compound)
+: The person who runs the Sprint project day-to-day — cadence, handoffs, scope. Who fills it varies: often the leadership sponsor in a small company, a delegated lead or an outside coach in a larger one. Distinct from the *Human Orchestrator*, who operates the shipped workflow, and the leadership sponsor, who's accountable for the outcome. (First introduced: the Framework chapter)
+
 **Sprint Planning Canvas** (Compound)
 : A one-page artifact completed before *Signal* begins: names the constraint, maps a first-pass answer to each stage, identifies the team, sets the *Human Orchestrator*, and books the quarterly review. Intentionally incomplete — *Signal* will refine it. (First introduced: Chapter 4)
 
 **Sprint Retrospective** (Compound)
-: The structured review that runs inside the *Compound* stage: what worked, what didn't (with each "didn't work" reframed as a design question), and what one design change would make the next Sprint better. Run with the *Human Orchestrator* and all Sprint accountability owners. (First introduced: Chapter 10)
+: The structured review that runs inside the *Compound* stage: what worked, what didn't (with each "didn't work" reframed as a design question), and what one design change would make the next Sprint better. Run with the *Human Orchestrator* and all Sprint accountability owners — the people who operated the shipped workflow. (First introduced: Chapter 10)
 
 **TML Framework** (Compound)
 : The three-layer classification system — *Task*, *Management*, *Leadership* — that separates organizational work and knowledge by the type of intelligence required. *Task* knowledge and work follow defined rules and can be fully systematized (Fully Automatable). *Management* requires judgment about process and is best handled with human-AI collaboration (AI-Assisted). *Leadership* requires judgment about people, strategy, and context and must remain with humans (Human Judgment Required). *Source* uses TML to categorize what the organization knows (Chapter 6); *Design* uses TML to categorize what the work requires (Chapter 7b). (First introduced: Chapter 6)

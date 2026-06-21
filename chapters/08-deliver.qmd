@@ -63,7 +63,7 @@ Before your team flips the switch, you run a pre-flight check. Four binary gates
 
 If the result is not 4/4, you're not ready to deploy. Every "Fail" is a task. Assign it, complete it, re-run the audit.
 
-Gate 4 names the Human Orchestrator — the person accountable for reviewing, course-correcting, and closing the loop on what the agent team produces, sprint by sprint (not a chatbot supervisor, but an operational owner with a weekly cadence; covered in depth in the Design chapter). If you run EOS, think of it as the Integrator role extended to cover the agent team — the scope is different (Sprint-level, not company-level), but the accountability pattern is the same.
+Gate 4 names the Human Orchestrator — the operator who runs the shipped workflow and supervises its agent team day to day: reviewing output, course-correcting, and closing the loop on what the agents produce, sprint by sprint (not a chatbot supervisor, but an operational owner with a weekly cadence; covered in depth in the Design chapter).
 
 The Audit is a check on prior work, not new authoring. Every question points to something that should already exist: a trained person, a documented path, a tested input, a scheduled review. If any answer is missing, that item blocks the deploy. Failed deploys trace back to a question nobody asked at this gate.
 

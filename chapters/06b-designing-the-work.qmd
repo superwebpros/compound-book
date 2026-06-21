@@ -21,7 +21,7 @@ The junior coordinator listing was never posted. One row in the chart replaced a
 
 That outcome was Work Deconstruction. Here is the method that produced it.
 
-Together with the previous chapter, this is the second half of the Design row on your Sprint Planning Canvas, and the work that locks in your Human Orchestrator (the person who owns the agent team's output and holds final authority over every escalation — more in the Co-Operating Model chapter; if you run EOS, think of this as the Integrator role extended to run the agent team, though the scope is Sprint-level, not company-level).
+Together with the previous chapter, this is the second half of the Design row on your Sprint Planning Canvas, and the work that locks in your Human Orchestrator (the person who operates the agent team in the shipped workflow and holds final authority over every escalation — detailed in the Designing the System chapter).
 
 ## Deconstruct the work task by *task*.
 
