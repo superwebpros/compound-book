@@ -236,7 +236,7 @@ Elena's role shifted.
 | Draft quote generation and review | Reviews every draft quote; approves, edits, or escalates | Elena (VP Ops) | Assembles complete quote document from upstream outputs | Quote Assembly Agent |
 | Quote delivery and follow-up | Delivers quote to customer, handles negotiation | Ty (Sales Lead) | Routes approved quote to sales queue | Delivery Automation (workflow, not agent) |
 
-**Human Orchestrator:** Elena Ruiz, VP of Operations. Owns the constraint outcome: reduce quote turnaround from 3-5 days to same-day for standard work. Monitors intake quality, flags quotes stuck in the pipeline, reports on turnaround times weekly.
+**Human Orchestrator:** Elena Ruiz, VP of Operations. Operates the redesigned quoting workflow and supervises its agent team against the target: quote turnaround from 3-5 days to same-day for standard work. Monitors intake quality, flags quotes stuck in the pipeline, reports on turnaround times weekly.
 
 #### Artifact: Agent Description to Definition
 
