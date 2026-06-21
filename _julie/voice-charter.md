@@ -82,7 +82,7 @@ Voice scanner / editorial-coherence: flag any lowercase "co-intelligent" / "co-i
 - **Roles:** Human Orchestrator, Agent Coordinator.
 - **Artifacts:** Hybrid Accountability Chart, Hybrid Org Today.
 - **Pain framing:** Headcount Paradox, headcount math, Design Before Deploy.
-- **Equation:** *Co-Intelligence + Rhythm = Compound.*
+- **Equation:** *Co-Intelligence + Co-Operation + Rhythm = Compound.* (Co-Operation added as an explicit term in the Ch 3 re-conception, 2026-06; supersedes the earlier two-term form.)
 - **Tagline:** *Stop transforming. Start compounding.*
 - **CTA:** Clarity Call. compoundorg.com/clarity-call.
 

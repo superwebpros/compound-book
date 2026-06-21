@@ -23,7 +23,7 @@
 |---|---------|---------|----------------|----------------|-------------|---------|
 | 1 | Calculate Revenue per Employee | 01-diagnosis | The Headcount *Paradox* | `revenue-per-employee` | Buried | 6 |
 | 2 | Run the AI Readiness Scorecard | 01-diagnosis | Score Your AI *Readiness* | `ai-readiness-scorecard` | Visible | 7 |
-| 3 | Take Stock of the Operating-Model Gap | 02-beliefs | Take stock before *Sprint 1*. | `take-stock-operating-model-gap` | Buried | 4 |
+| 3 | Take Stock of the Operating-Model Gap | 02-beliefs | — | `take-stock-operating-model-gap` | **REMOVED** | — |
 | 4 | Run the Two-Column Role Sort | 02-co-operating-model | Humans own outcomes. Agents own *tasks*. | `two-column-role-sort` | Buried | 5 |
 | 5 | Calculate the Design Opportunity | 02-co-operating-model | Two patterns: human-supervised, *agent*-supervised. | `calculate-design-opportunity` | Buried | 5 |
 | 6 | Map the Hybrid Split | 02-co-operating-model | Two patterns: human-supervised, *agent*-supervised. | `map-hybrid-split` | Buried | 5 |
@@ -54,7 +54,7 @@
 | 31 | Name the Sprint roster | 11-what-to-do-next | Name *three roles*: Orchestrator, Owners, Builder. | `sprint-roster` | Visible | 3 |
 | 32 | Fill in the Sprint Planning Canvas (DUP of #7) | 11-what-to-do-next | Fill in the *Sprint Planning Canvas*. | `sprint-planning-canvas` | Buried | 5 |
 
-**32 process entries** across 12 chapters (30 unique processes after deduping #13/#16 and #7/#32 — see §4).
+**32 process entries** across 12 chapters (30 unique processes after deduping #13/#16 and #7/#32 — see §4). *#3 Take-Stock-of-the-Operating-Model-Gap later removed per author; 29 active.*
 
 ---
 
@@ -83,13 +83,8 @@ Each block below is the verbatim source for both the worksheet and the book over
 6. **Identify the lowest dimension subtotal** — Pinpoints where the redesign work will require the most effort and the longest conversations.
 7. **Record the three closing-checklist items (overall score, lowest dimension, highest dimension)** — Locks the baseline so progress is measurable and the team has a shared reference as the chapters continue.
 
-### 3. Take Stock of the Operating-Model Gap — `take-stock-operating-model-gap`
-*02-beliefs · Take stock before Sprint 1 · Buried*
-
-1. **Open your four core systems side by side** — Forces the reader to look at the actual stack rather than describe it from memory, surfacing real friction points.
-2. **For each system, name one place a person is doing work the system should be doing** — Constrains the exercise to one item per system so the list stays actionable rather than becoming a complaint session.
-3. **Record the list in the Sprint Planning Canvas table** — Externalizes the gap so it can be handed to Sprint 1 as a concrete candidate-constraint input, not a vague feeling.
-4. **Carry the list forward — do not solve yet** — The chapter explicitly defers prioritization to the Signal chapter; the move here is observation, not intervention.
+### 3. Take Stock of the Operating-Model Gap — `take-stock-operating-model-gap` *(REMOVED)*
+*Removed from 02-beliefs per author (edits/fine-tuning, 2026-06): the exercise asked readers to spot "work a system should be doing," a diagnosis they aren't equipped to make in a mindset chapter (if they could, they'd already automate it). Ch 2 now closes with a belief-checklist; real constraint identification happens in the Signal chapter. Worksheet deleted.*
 
 ### 4. Run the Two-Column Role Sort — `two-column-role-sort`
 *02-co-operating-model · Humans own outcomes. Agents own tasks. · Buried*
@@ -381,7 +376,7 @@ Each block below is the verbatim source for both the worksheet and the book over
 | Process | Chapter | Slug |
 |---------|---------|------|
 | Calculate Revenue per Employee | 01-diagnosis | `revenue-per-employee` |
-| Take Stock of the Operating-Model Gap | 02-beliefs | `take-stock-operating-model-gap` |
+| Take Stock of the Operating-Model Gap | 02-beliefs | `take-stock-operating-model-gap` — **REMOVED** |
 | Run the Two-Column Role Sort | 02-co-operating-model | `two-column-role-sort` |
 | Calculate the Design Opportunity | 02-co-operating-model | `calculate-design-opportunity` |
 | Map the Hybrid Split | 02-co-operating-model | `map-hybrid-split` |
@@ -418,7 +413,7 @@ All other unique processes. Priority tier 1 = the Sprint-spine backbone a reader
 `ai-readiness-scorecard`, `sprint-planning-canvas`, `classify-sources`, `hybrid-accountability-chart`, `agent-mini-spec`, `design-brief`, `write-build-spec`, `guardrails-checklist`, `deploy-readiness-audit`, `sprint-outcome-measurement`, `sprint-retrospective`, `quarterly-operating-session`.
 
 Tier 2 (calculators / stock-takes / supporting artifacts):
-`revenue-per-employee`, `take-stock-operating-model-gap`, `two-column-role-sort`, `calculate-design-opportunity`, `map-hybrid-split`, `work-deconstruction`, `audit-spec-failures`, `per-role-runbook`, `operational-log`, `install-design-change`, `constraint-re-rank`, `hybrid-org-today`, `compounding-scorecard`, `minimum-viable-signal`, `sprint-roster`.
+`revenue-per-employee`, `two-column-role-sort`, `calculate-design-opportunity`, `map-hybrid-split`, `work-deconstruction`, `audit-spec-failures`, `per-role-runbook`, `operational-log`, `install-design-change`, `constraint-re-rank`, `hybrid-org-today`, `compounding-scorecard`, `minimum-viable-signal`, `sprint-roster`.
 
 ---
 

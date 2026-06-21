@@ -18,7 +18,7 @@ They'd booked the call because they sensed they were leaving money on the table.
 
 Three tools, no coordination, no structural change. Nobody designed the work before the tools arrived.
 
-Every business has an operating model, whether it was designed deliberately or assembled by habit. The question is whether it's any good.
+Every business has an operating model, whether it was designed deliberately or assembled by habit. Your operating model is how work actually moves through the company: who decides, who hands off to whom, and how a job gets from intake to outcome. It's the wiring, not the org chart. The question is whether yours is any good.
 
 **A good operating model:**
 
@@ -36,7 +36,7 @@ Every business has an operating model, whether it was designed deliberately or a
 - Hires when the work stalls, because no other lever is visible.
 - Adds tools (including AI) on top of undesigned work and expects the tools to do the design.
 
-We've watched this same pattern for two decades, long before AI entered the conversation. A mid-market company would complete an acquisition and absorb the new entity without redesigning how work actually moved. The acquired operation got bolted onto the existing structure, with the same managers handling expanded volume. The accountability map was never rebuilt to match the expanded scope. AI is the latest technology to expose a problem that's been visible the whole time.
+We've watched this same pattern for two decades, long before AI entered the conversation: a company takes on more volume and stacks it on top of work nobody redesigned. A mid-market company would complete an acquisition and absorb the new entity without redesigning how work actually moved. The acquired operation got bolted onto the existing structure, with the same managers handling expanded volume. The accountability map was never rebuilt to match the expanded scope. AI is the latest technology to expose the underlying problem: the work was never deliberately designed, and no tool fixes that on its own. The gap has been visible the whole time.
 
 > You know AI matters. You just don't know what it can actually do inside your company — or where to start.
 
@@ -45,6 +45,10 @@ CEOs say that line all the time: to their boards, their coaches, their peers at 
 Maybe you've already tried: subscriptions, a pilot or two, a consultant, a vendor demo. What you got is people using AI in silos, with no coordination across the company. The tools are doing work, but the structure hasn't changed. The missing piece is how to design the work: the workflows, the knowledge, the handoffs. The Source chapter covers how to turn that knowledge into something an AI can search and retrieve on demand.
 
 ## The Headcount *Paradox*
+
+Revenue per employee is the cleanest dollar-level proxy for productivity at the company level. A higher number means each person on staff is producing more, usually because the company has invested in systems, processes, or technology that lets people produce more without working harder. Flat or declining revenue per employee means revenue grew, but only by adding people at the same rate. The whole reason companies invest in technology is to move this number: more output from the same number of people.
+
+So before we go any further, calculate yours.
 
 <!-- moves:revenue-per-employee -->
 ### How to *calculate* revenue per employee
@@ -57,11 +61,7 @@ Maybe you've already tried: subscriptions, a pilot or two, a consultant, a vendo
 6. **Read the delta across the three rows** — Surfaces whether prior investment moved the number and whether the AI investment is on track to move it further.
 <!-- /moves:revenue-per-employee -->
 
-Stop here and do this calculation. Add up your company's revenue for the last twelve months. Divide it by the number of full-time employees on payroll today. That's your revenue per employee: the dollars of revenue each person on staff generates.
-
-Revenue per employee is the cleanest dollar-level proxy for productivity at the company level. A higher number means each person on staff is producing more, usually because the company has invested in systems, processes, or technology that lets people produce more without working harder. Flat or declining revenue per employee means revenue grew, but only by adding people at the same rate. The whole reason companies invest in technology is to move this number — to get more output from the same number of people.
-
-Use your most recent company-wide system rollout as the anchor: your ERP, CRM, PSA, practice-management system, or whatever it was. That's the cleanest reference point most operators have. Now compare three snapshots: where you were at that rollout; where you stand today; and where you'd be next year if you grew 20% without adding people. The first comparison tells you whether your prior tech investment moved the number. The second tells you whether you can plausibly grow without adding bodies.
+Use your most recent company-wide system rollout as the anchor: your ERP, CRM, PSA, practice-management system, or whatever it was. That's the cleanest reference point most operators have. Now compare three snapshots: where you were at that rollout, where you stand today, and where you'd be next year if you grew 20% without adding people. The first comparison tells you whether your prior tech investment moved the number. The third row isn't a prediction; it's the target: the revenue per employee you'd have to reach to grow a fifth without adding a single person. Whether you can hit it is what the rest of this book is about.
 
 | Snapshot | Revenue | Employees | Revenue per Employee |
 |---|---|---|---|
@@ -69,7 +69,11 @@ Use your most recent company-wide system rollout as the anchor: your ERP, CRM, P
 | Today | $______ | ______ | $______ |
 | Next year, +20% revenue, no new hires | $______ | ______ | $______ |
 
-*Meridian example:* When Elena's team filled this in, the numbers looked like this:
+There are only two ways to move this number, and the table holds both. Grow revenue without growing headcount in lockstep (the +20% row). Or hold revenue flat and run the work with fewer people, which moves the number just as well. Most real redesigns pull both at once, more top line on slower headcount, which is why the slope bends instead of just sliding up the page.
+
+Throughout this book we'll follow one company: Meridian Manufacturing, a twenty-seven-person custom metal fabrication shop doing $7.2M in revenue. Meridian is fictional, a composite built from patterns we've seen across dozens of mid-market operators. Its quoting workflow is bottlenecked on Elena Ruiz, the VP of Operations, who personally holds about fifteen hours a week of pricing and exception decisions no one else can make. By the team's own first read, that bottleneck costs roughly $558K a year in delayed and lost bids. Every chapter ahead comes back to Meridian and what redesigning its work looks like in real time.
+
+When Elena's team filled in the same table, it looked like this:
 
 | Snapshot | Revenue | Employees | Revenue per Employee |
 |---|---|---|---|
@@ -77,21 +81,21 @@ Use your most recent company-wide system rollout as the anchor: your ERP, CRM, P
 | Today | $7.2M | 27 | $267K |
 | Next year, +20% revenue, no new hires | $8.6M | 27 | $319K |
 
-The ERP rollout moved revenue per employee by $25K over four years. The quoting bottleneck alone — Elena's $558K in delayed and lost bids — represents more than two years of that prior gain sitting idle in a single workflow.
+The ERP rollout moved revenue per employee by $25K over four years. The quoting bottleneck alone, Elena's $558K in delayed and lost bids, represents more than two years of that prior gain sitting idle in a single workflow.
 
 Every prior technology wave bent this number. Spreadsheets bent it. CRM bent it. ERP bent it. The reason your company invested in any of them was the same: to move revenue per employee in the right direction. Most of them worked. The companies that ran them well got more output from the same staff.
 
-AI can move that number more dramatically. Prior waves made a human faster at a category of work. AI can take the category. Triaging inbound, drafting recurring documents, reconciling records, summarizing what was said — categories of work that previously required a person are now categories an AI can hold. That's the difference. Not faster humans; fewer human-hours required for whole categories of output.
+AI can move that number more dramatically. Prior waves made a human faster at a category of work. AI can take the category. Triaging inbound, drafting recurring documents, reconciling records, summarizing what was said: these previously required a person, and an AI can now hold them. That means fewer human-hours required for **whole categories of output.**
 
-Revenue and headcount have run on a slope for most of business history: every meaningful jump in revenue pulled a roughly proportional jump in headcount. That slope IS the productivity question. If revenue per employee is rising, the slope bends — revenue grows faster than headcount. For most mid-market operators, the AI line item on the P&L hasn't bent that slope, because the operating model never got redesigned. Meanwhile your COO is on the calendar asking to approve the next two roles, and you sign off knowing the AI investment was supposed to bend that slope by now.
+For most mid-market operators, the AI line item on the P&L hasn't bent this slope, because the operating model never got redesigned. Meanwhile your COO is on the calendar asking to approve the next two roles, and you sign off knowing the AI investment was supposed to make them unnecessary by now.
 
-The Headcount Paradox: each new dollar of revenue still demands roughly the same headcount it did before, even after you invested in AI to change that math. The investment is on the books, but the operating structure hasn't changed.
+This is the Headcount Paradox. You invested in AI specifically to break the link between revenue and headcount, and the link held: each new dollar of revenue still demands roughly the same number of people it always did. The spend is on the books. The operating structure that would have changed the math never got touched.
 
 {{< excalidraw ch01-headcount-before-after "The Headcount Paradox: the slope before redesign vs. the slope after — revenue climbs faster than headcount when work is designed before it's staffed." >}}
 
 ### Redesign the Operating *Model* Before You Staff It
 
-The math moves the same way at every scale: redesign the operating model before you staff it. Sometimes that redesign uses AI. Sometimes it doesn't. The principle is the same.
+This isn't a new principle, and it isn't really about AI. Design the work before you add people to it, and the headcount math changes. Skip that step and no tool, AI included, fixes it for you. Two examples, twenty years apart, make the point: one built on AI, one from long before it.
 
 Here's the AI-era version at Jesse's company. SuperWebPros, his software development firm, went from thirteen people to eight. We mapped every function, identified what required human judgment, and built AI agent teams for the rule-based work, while keeping humans on work that required taste, relationships, and strategic decisions. An agent is software that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs, without the human re-prompting between steps. The full definition lives in the Co-Op Model chapter. Billings went up. Profitability went up.
 
@@ -103,11 +107,9 @@ The resulting global HR function served 44 countries with a smaller proportional
 
 AI wasn't part of that redesign. The principle was. AI lets that same kind of redesign reach further, because an agent can hold a workflow a software tool could only assist with.
 
-Throughout the rest of this book, we'll follow a fictional case study: Meridian Manufacturing, a twenty-seven-person custom metal fabrication shop with $7.2M in revenue (a composite built from the patterns we've seen across dozens of mid-market operators). Meridian's quoting workflow is bottlenecked on Elena Ruiz, the VP of Operations, who holds fifteen hours a week of pricing and exception decisions nobody else in the company can make, costing them, by their own first read, around $558K a year in delayed and lost bids. Every chapter ahead shows what redesigning Meridian's work looks like in real time.
-
 ## You Have a Co-Intelligent *Co-Operation* Problem
 
-That's the class of problem you're solving. It has a name: a Co-Intelligent Co-Operation problem. *Co-Intelligent* is the actual workforce — humans and AI as one workforce. *Co-Operation* is how you design the handoffs between your human team and your AI agents: who does what, who reviews, where the work moves between them.
+The operating model this book builds toward has a name: Co-Intelligent Co-Operation. *Co-Intelligent* names the workforce, humans and AI working as one. *Co-Operation* names the design, how you set the handoffs between your people and your AI agents: who does what, who reviews, where the work moves between them. The problem you're solving is that you've got the workforce without the design: a co-intelligent workforce, with no co-operation built around it.
 
 Culture, training, and tool selection are real factors. Operating-model design is what they all sit on top of.
 
@@ -125,7 +127,7 @@ Walk through your company and list every function where AI is currently being us
 
 ## The Five Dimensions That Tell You Where Your Operating Model Is *Broken*
 
-There are five dimensions where AI-ready operating models hold and AI-unready ones don't. Here's what each one is and what it costs you when it's weak.
+There are five dimensions where a Co-Intelligent Co-Operation model holds and an undesigned one doesn't. They're what the AI Readiness Scorecard at the end of this chapter measures. Here's what each one is and what it costs you when it's weak.
 
 The five dimensions group into two preconditions. Information Readiness and Workflow Visibility are the *technical preconditions*: whether an AI agent can do the work at all. Constraint Clarity, Decision Rights, and Measurement Discipline are the *operating-model preconditions*: whether your organization holds the change once it's deployed. A company can score strongly on one half and weakly on the other. Both halves have to come up before the redesign work compounds.
 
@@ -136,15 +138,11 @@ The five dimensions group into two preconditions. Information Readiness and Work
 
 **Why it matters.** Tools without a target produce scattered pilots. Naming the constraint precisely determines whether the rest works.
 
-At Meridian, the bottleneck was never quantified.
-
 ### Information *Readiness*
 
 **What it is.** Whether the knowledge your team runs on is documented and accessible, or trapped in people's heads.
 
 **Why it matters.** An agent can only act on knowledge it can reach. Tacit knowledge in a person's head is invisible to AI.
-
-At Meridian, the customer notes spreadsheet existed but lived on one desktop.
 
 ### Workflow *Visibility*
 
@@ -152,23 +150,17 @@ At Meridian, the customer notes spreadsheet existed but lived on one desktop.
 
 **Why it matters.** Workflows that exist only in habit can't be specified for an agent.
 
-At Meridian, the quoting workflow had five handoffs and two systems that didn't talk.
-
 ### Decision *Rights*
 
 **What it is.** Whether your team knows who decides what AI handles and what stays with humans.
 
 **Why it matters.** Organizational trust, not AI capability, determines what gets deployed. Without explicit decision rights, every AI output gets second-guessed or rubber-stamped.
 
-At Meridian, the pricing and exception calls all routed through Elena, and nobody else was authorized to make them.
-
 ### Measurement *Discipline*
 
 **What it is.** Whether you can put a dollar number on what the constraint costs per quarter.
 
 **Why it matters.** Without a number, you can't prove AI made it better. You need a target before you spend.
-
-At Meridian, the $558K cost of the bottleneck was a first-read estimate, not a tracked number.
 
 ## Score Your AI *Readiness*
 
@@ -187,27 +179,27 @@ At Meridian, the $558K cost of the bottleneck was a first-read estimate, not a t
 Twenty questions, four per dimension. For each statement, rank your company on a 1-to-5 scale — 1 means "not at all true" and 5 means "absolutely true." Do this with whoever would be in the room if you were deciding whether to invest in AI. Not just you. The team.
 
 | # | Dimension | Statement | 1 | 2 | 3 | 4 | 5 |
-|---|---|---|---|---|---|---|---|
-| 1 | Constraint Clarity | We can name one operational constraint that, if removed, would change next quarter's P&L. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 2 | Constraint Clarity | We've quantified the cost of that constraint in dollars, hours, or margin. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 3 | Constraint Clarity | Our leadership team agrees on what the #1 constraint actually is, not just that one exists. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 4 | Constraint Clarity | We've traced the symptoms of the constraint back to a structural root. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 5 | Information Readiness | We can answer "where does this information live?" for every critical workflow. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 6 | Information Readiness | We've identified the institutional knowledge that exists only in one person's head. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 7 | Information Readiness | The knowledge our team runs on is captured outside of conversations and email threads. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 8 | Information Readiness | We have a process for keeping that knowledge current as the business changes. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 9 | Workflow Visibility | We can describe end-to-end how work moves through our critical processes. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 10 | Workflow Visibility | We know where work currently breaks: manual handoffs, system gaps, undocumented expertise. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 11 | Workflow Visibility | Our processes are documented at the task level, not just summarized. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 12 | Workflow Visibility | We've identified which steps are routing and admin versus which require human judgment. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 13 | Decision Rights | Every accountability in our org has exactly one named owner. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 14 | Decision Rights | We've documented which decisions require human review and which can run inside a designed scope. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 15 | Decision Rights | When a workflow fails, we can name who's accountable without ambiguity. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 16 | Decision Rights | Our team agrees on who has authority to change the boundary between human work and AI work. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 17 | Measurement Discipline | We measure outcomes weekly with named numbers, not vibes. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 18 | Measurement Discipline | Every team has a scorecard with five to fifteen metrics they own. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 19 | Measurement Discipline | We can prove last quarter's investments paid back, in dollars. | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 20 | Measurement Discipline | We track revenue per employee and review it at least quarterly. | ☐ | ☐ | ☐ | ☐ | ☐ |
+|:--|:------------|:-------------------------------------------------------------|:-:|:-:|:-:|:-:|:-:|
+| 1 | Constraint Clarity | We can name one operational constraint that, if removed, would change next quarter's P&L. |  |  |  |  |  |
+| 2 | Constraint Clarity | We've quantified the cost of that constraint in dollars, hours, or margin. |  |  |  |  |  |
+| 3 | Constraint Clarity | Our leadership team agrees on what the #1 constraint actually is, not just that one exists. |  |  |  |  |  |
+| 4 | Constraint Clarity | We've traced the symptoms of the constraint back to a structural root. |  |  |  |  |  |
+| 5 | Information Readiness | We can answer "where does this information live?" for every critical workflow. |  |  |  |  |  |
+| 6 | Information Readiness | We've identified the institutional knowledge that exists only in one person's head. |  |  |  |  |  |
+| 7 | Information Readiness | The knowledge our team runs on is captured outside of conversations and email threads. |  |  |  |  |  |
+| 8 | Information Readiness | We have a process for keeping that knowledge current as the business changes. |  |  |  |  |  |
+| 9 | Workflow Visibility | We can describe end-to-end how work moves through our critical processes. |  |  |  |  |  |
+| 10 | Workflow Visibility | We know where work currently breaks: manual handoffs, system gaps, undocumented expertise. |  |  |  |  |  |
+| 11 | Workflow Visibility | Our processes are documented at the task level, not just summarized. |  |  |  |  |  |
+| 12 | Workflow Visibility | We've identified which steps are routing and admin versus which require human judgment. |  |  |  |  |  |
+| 13 | Decision Rights | Every accountability in our org has exactly one named owner. |  |  |  |  |  |
+| 14 | Decision Rights | We've documented which decisions require human review and which can run inside a designed scope. |  |  |  |  |  |
+| 15 | Decision Rights | When a workflow fails, we can name who's accountable without ambiguity. |  |  |  |  |  |
+| 16 | Decision Rights | Our team agrees on who has authority to change the boundary between human work and AI work. |  |  |  |  |  |
+| 17 | Measurement Discipline | We measure outcomes weekly with named numbers, not vibes. |  |  |  |  |  |
+| 18 | Measurement Discipline | Every team has a scorecard with five to fifteen metrics they own. |  |  |  |  |  |
+| 19 | Measurement Discipline | We can prove last quarter's investments paid back, in dollars. |  |  |  |  |  |
+| 20 | Measurement Discipline | We track revenue per employee and review it at least quarterly. |  |  |  |  |  |
 
 ### Compute Your Dimension *Subtotals*
 

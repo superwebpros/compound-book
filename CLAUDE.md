@@ -36,6 +36,7 @@ PDF builds require a LaTeX install. If missing, `quarto install tinytex` provide
 
 ## Editorial notes
 
+- **Editorial workflow canon: `_julie/EDITORIAL-WORKFLOW.md`.** Read this first when picking up editorial work (especially after compaction). It documents current state, source-of-truth artifacts, the per-chapter pipeline, orchestration rules, house rules, and build/deploy/infra.
 - **Voice canon: `_julie/voice-charter.md`.** Read it before any prose edit. The charter codifies pillars, cadence, vocabulary, and 12 auto-reject anti-patterns extracted from the de-AI'd manuscript.
 - The book is a four-stage model (Explore → Organize → Integrate → Compound) plus a "Compound Sprint" operational mechanism. Chapters cross-reference these stages and phases; when editing one chapter, check that terminology (stage names, sprint phase names like Signal/Source/Design/Build/Deliver/Compound) stays consistent with the others.
 - Author voice is declarative and unhedged (see `chapters/01-introduction.qmd` for the established tone). Avoid softening edits that introduce qualifiers the surrounding prose doesn't use.
