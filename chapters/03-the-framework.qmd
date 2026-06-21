@@ -51,11 +51,11 @@ The Sequence is six stages, each taught later in the book. Here is the roadmap: 
 
 ## The two *Phases*: diagnose, then execute and compound
 
+{{< excalidraw ch03-diagnose-execute-split "The Sequence splits into Diagnose (Signal, Source) and Execute & Compound (Design, Build, Deliver, Compound)." >}}
+
 The Sequence groups into two Phases. The first is **Diagnose**: Signal and Source. The second is **Execute & Compound**: Design, Build, Deliver, Compound. Two stages, then four.
 
 Diagnose is the abstract half. It takes more thought, its output is a constraint and a map rather than a working tool, and it's the half most teams skip. It's also where the payoff is. In a physical process, when something breaks you can usually see it. In an information process, a misclassified taxonomy in a knowledge base can send an agent to query the wrong data and hallucinate answers, and that stays invisible until the damage is done. Diagnose is where you find those problems before they reach execution. The two Phases are separate so each can be done well, and connected because most constraints worth a Sprint sit on top of an information problem.
-
-{{< excalidraw ch03-diagnose-execute-split "The Sequence splits into Diagnose (Signal, Source) and Execute & Compound (Design, Build, Deliver, Compound)." >}}
 
 :::{.callout-tip}
 ## Pro Tip
@@ -99,9 +99,9 @@ Here is what Meridian Manufacturing's Sprint Planning Canvas looked like after t
 
 ## Run one Sprint. Then *another*.
 
-The Framework is learned by running it, not reading about it. The stages aren't interchangeable checklist steps; each produces something the next can't work without, and that dependency only becomes real on one real constraint in your own company. Start a blank Canvas now if it helps, but the answers come from the work ahead.
+The Framework is learned by running it; each stage produces something the next can't work without, and that dependency only becomes real on one real constraint in your own company. Start a blank Canvas now if it helps, but the answers come from the work ahead.
 
-The Rhythm is running another Sprint every quarter, and each one leaves infrastructure behind that makes the next cheaper and faster: the Hybrid Accountability Chart gains entries, the Knowledge Map gets richer, the team's design judgment sharpens. The first Sprint is where your company learns to run the Framework. The Rhythm is what makes the change permanent. Carry the Canvas forward.
+One Sprint fixes one constraint. Run the next, then the one after, each on the back of the last: that's the Rhythm, and it's what turns one-off Sprints into compounding returns. Every Sprint leaves infrastructure behind that makes the next cheaper and faster. The Hybrid Accountability Chart gains entries, the Knowledge Map gets richer, the team's design judgment sharpens. The first Sprint is where your company learns to run the Framework. The Rhythm is what makes the change permanent. Carry the Canvas forward.
 
 ## Begin at Signal
 
