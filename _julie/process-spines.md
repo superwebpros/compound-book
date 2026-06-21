@@ -27,7 +27,7 @@
 | 4 | Run the Two-Column Role Sort | 02-co-operating-model | Humans own outcomes. Agents own *tasks*. | `two-column-role-sort` | Buried | 5 |
 | 5 | Calculate the Design Opportunity | 02-co-operating-model | Two patterns: human-supervised, *agent*-supervised. | `calculate-design-opportunity` | Buried | 5 |
 | 6 | Map the Hybrid Split | 02-co-operating-model | Two patterns: human-supervised, *agent*-supervised. | `map-hybrid-split` | Buried | 5 |
-| 7 | Fill in the Sprint Planning Canvas | 03-the-framework | The Sprint Planning Canvas holds *eight* questions in one page | `sprint-planning-canvas` | Visible | 9 |
+| 7 | Fill in the Sprint Planning Canvas | 03-the-framework | The Sprint Planning Canvas asks one *question* per stage | `sprint-planning-canvas` | Visible | 6 |
 | 8 | Run the Signal Session | 04-signal | Run Signal *yourself* | `run-signal-session` (ships as `signal`) | Buried | 8 |
 | 9 | Build the Knowledge Map | 05-source | Build the map in three passes. | `build-knowledge-map` (ships as `knowledge-that-walks`) | Visible | 6 |
 | 10 | Classify each source on the map | 05-source | Classify what you found. | `classify-sources` | Buried | 4 |
@@ -114,18 +114,16 @@ Each block below is the verbatim source for both the worksheet and the book over
 5. **Read the hybrid split as a role description** — The completed table is the shape of the redesigned seat — enough to see whether it is viable and to hand off to Sprint design work.
 
 ### 7. Fill in the Sprint Planning Canvas — `sprint-planning-canvas`
-*03-the-framework · The Sprint Planning Canvas holds eight questions in one page · Visible*
+*03-the-framework · The Sprint Planning Canvas asks one question per stage · Visible*
 **Canonical home for the Sprint Planning Canvas spine. The 11-ch instance (#32) is the abbreviated kickoff version — see §4.**
+**REFRAMED (edits/fine-tuning, 2026-06):** the Framework chapter is now an orienting chapter. The Canvas is presented as ONE question per stage (six questions, matching the form diagram), answered across the book — not a fill-it-now nine-step exercise. The in-chapter moves block is a question→teaching-chapter map; the three operating fixtures (sponsor, Orchestrator, review date) and team/review live on the Canvas form (the blank + completed-Meridian excalidraws), not as enumerated steps. Worksheet = the full Canvas form.
 
-1. **Name the constraint and price it** — The constraint sentence is the scope boundary the entire Sprint runs against; without a number the Sprint has no target to measure.
-2. **Inventory what the org knows and where it lives** — Surfaces knowledge gaps before Design so the build is not assembled from memory.
-3. **Trace how information flows through the workflow** — Exposes the handoffs and disconnected systems that are invisible on an org chart.
-4. **Assign accountability across humans and agents** — Every role — human and agent — needs one named owner before any code is written.
-5. **Draft the system specification** — Locks what the build must produce and what guardrails it must honor, preventing scope drift in Build.
-6. **Define how the deployment lands in real work** — Forces a per-role answer before launch, which is the gap where most AI projects fail.
-7. **Describe what changes structurally after the Sprint** — Commits the team to a specific operating-model change rather than a tool no one uses.
-8. **Set the cadence and identify the next Sprint** — Books the review date and names the next constraint, turning one Sprint into a compounding system.
-9. **Name the three operating fixtures: sponsor, Orchestrator, review date** — A Sprint without a named sponsor, orchestrator, and calendar date has no accountability and no deadline.
+1. **Signal — what's the one constraint, and what does it cost?** → Signal chapter. The constraint sentence + its number is the scope boundary the whole Sprint runs against.
+2. **Source — what does the org know about it, and where does that knowledge live?** → Source chapter. Surfaces knowledge gaps before Design.
+3. **Design — what does the human-and-agent workflow look like, and who owns what?** → Design chapter. Every role, human and agent, gets one named owner.
+4. **Build — what gets built, and on what (off-the-shelf, low-code, hand-built)?** → Build chapter. Locks the spec and the path.
+5. **Deliver — how do you know it worked, and what number moved?** → Deliver chapter. The per-role landing + the Delivery Test against Signal's number.
+6. **Compound — what did you learn, and what changes for the next Sprint?** → Compound chapter. Captures the outcome and re-ranks the queue.
 
 ### 8. Run the Signal Session — `run-signal-session` (worksheet ships as `signal`)
 *04-signal · Run Signal yourself · Buried*
