@@ -24,16 +24,19 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : A 30-minute, no-cost conversation with a Compound strategist designed to pressure-test a constraint and determine whether it is Sprint-ready. Not a sales pitch; the output is a named constraint you can act on. (First introduced: Chapter 12)
 
 **Co-Intelligence** (Compound)
-: The designed structure where human and agent intelligence work together against the same problems inside the same operating loop — not relegated to separate tracks. The system half of the equation *Co-Intelligence + Rhythm = Compound.* (First introduced: Chapter 3)
+: Human intelligence and machine intelligence working the same problem. Neither one is enough alone; the combination is the part that compounds. The first term in the equation *Co-Intelligence + Co-Operation + Rhythm = Compound.* (First introduced: Chapter 3)
 
 **Co-Intelligent Co-Operation** (Compound)
-: The activity of humans and AI working the same problems together, inside the same loop, against the same outcome — as the company's default way of working rather than a project or initiative. (First introduced: Chapter 3)
+: The activity of humans and AI working the same problems together, inside the same loop, against the same outcome — as the company's default way of working rather than a project or initiative. (First introduced: Chapter 1)
 
 **Co-Intelligent Company** (Compound)
 : What a company becomes when humans and AI work as one system, not two parallel tracks. A higher bar than "uses AI tools" or "has an AI strategy." (First introduced: Chapter 1)
 
 **Co-Operating Model** (Compound)
 : The explicit design of who brings what intelligence to the work and who owns which operating responsibility — the structure that makes *Co-Intelligent Co-Operation* possible. The answer to the operating-model problem most companies have. (First introduced: Chapter 3)
+
+**Co-Operation** (Compound)
+: How the work is split between humans and agents: humans own outcomes, agents own tasks. The deliberate design of who does what, who reviews, and where work moves between them. The second term in the equation *Co-Intelligence + Co-Operation + Rhythm = Compound.* (First introduced: Chapter 3)
 
 **Compound (stage)** (Compound)
 : The sixth and final stage of the *Sequence*. After a Sprint is delivered, *Compound* runs the *Sprint Retrospective*, re-ranks the *Signal Backlog*, installs one design change, updates the *Hybrid Accountability Chart*, and names the next constraint — turning a shipped project into the foundation of the next Sprint. (First introduced: Chapter 4)
