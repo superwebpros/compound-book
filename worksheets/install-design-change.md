@@ -28,7 +28,7 @@ The discipline of one defeats the "lessons learned list" failure mode; it forces
 
 1. From the surveyed list, ask of each item: *if we installed only this, how much better is the next Sprint?* Rank by that answer, not by how easy each is to fix.
 2. Pick the **one** item at the top. Write a single sentence naming the change. If you can't pick one, you haven't ranked by impact — go back to step 1.
-3. Cross the rest off this worksheet. They are not lost — re-ranking the Signal Backlog is where they get reconsidered. Here, only one survives.
+3. Cross the rest off this worksheet. They are not lost — re-ranking the Constraint Backlog is where they get reconsidered. Here, only one survives.
 
 > **Meridian:** Out of everything surfaced, the one change named was: add fabrication complexity indicators (bend count, tolerance class, weld count, surface finish) as matching criteria in the Quote Research Agent. That single change would most improve the next Sprint's quote accuracy, so it won; the other items went back to the backlog.
 

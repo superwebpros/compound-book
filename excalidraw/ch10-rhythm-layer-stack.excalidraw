@@ -266,14 +266,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Quarterly cadence: Signal Backlog + Sprint commitment",
+      "text": "Quarterly cadence: Constraint Backlog + Sprint commitment",
       "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "top",
       "baseline": 14,
       "containerId": null,
-      "originalText": "Quarterly cadence: Signal Backlog + Sprint commitment"
+      "originalText": "Quarterly cadence: Constraint Backlog + Sprint commitment"
     },
     {
       "id": "stack-arrow",

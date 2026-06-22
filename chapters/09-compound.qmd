@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-Compound is the sixth stage of the Sequence — the one that turns a delivered Sprint into the foundation of the next one. You run a Sprint Retrospective, re-rank your Signal Backlog against what the Sprint taught you, install one design change, and name the next constraint. The Sprint that skips this stage shipped a project. The Sprint that runs it built infrastructure.
+Compound is the sixth stage of the Sequence — the one that turns a delivered Sprint into the foundation of the next one. You run a Sprint Retrospective, re-rank your Constraint Backlog against what the Sprint taught you, install one design change, and name the next constraint. The Sprint that skips this stage shipped a project. The Sprint that runs it built infrastructure.
 :::
 
 I'm a compulsive worker. I've always known that about myself, and I manage it rather than fix it. For most of my career, I was never actually done for the day. "Done" was just what I said when I ran out of energy. The list never cleared. The inbox never reached zero. There was always another thread to pull, another problem to work, another thing that would get worse if I left it overnight.
@@ -31,15 +31,15 @@ The retrospective looks at the design, not the people. The chart entries, the wo
 
 ## Compound produces three *deliverables*. Don't skip any.
 
-An updated *Signal Backlog* — the running, prioritized list of validated constraints your organization is working through. Signal generated the constraint that drove this Sprint; the Sprint generated new information about the rest of the backlog. Compound is where you re-rank the backlog against what you now know.
+An updated *Constraint Backlog* — the running, prioritized list of validated constraints your organization is working through. Signal generated the constraint that drove this Sprint; the Sprint generated new information about the rest of the backlog. Compound is where you re-rank the backlog against what you now know.
 
 An updated *Hybrid Accountability Chart*. The chart gained entries when Design produced accountabilities for this Sprint. By the end of Deliver those entries were real — named agent teams, named human supervisors, positions on the AI-assisted-to-automated spectrum, and documented outcomes against the constraint. In Compound, you make those entries permanent and review any neighboring rows for second-order effects from the Sprint that just completed. (If you run EOS, the Hybrid Accountability Chart extends your Accountability Chart — it adds agent roles and their human supervisors alongside your existing seats.)
 
 A *Sprint Outcome Record*: one sentence that captures what changed. The constraint, the before-and-after cost, the specific result. "Standard quote turnaround reduced from 3.8 days to 4.2 hours. Elena's quoting time from 15 hrs/wk to 5. Throughput doubled." That record is filed in the Hybrid Org Today and becomes the first row of the Compounding Scorecard (the blank scorecard template sits in the Rhythm chapter; add this Sprint's row to it before the session ends). It is how you know, six Sprints from now, what each one produced.
 
-{{< excalidraw ch09-compound-deliverables "Three Compound deliverables: Signal Backlog update, permanent HAC row, and Sprint Outcome Record — with location and owner." >}}
+{{< excalidraw ch09-compound-deliverables "Three Compound deliverables: Constraint Backlog update, permanent HAC row, and Sprint Outcome Record — with location and owner." >}}
 
-These three deliverables slot into the living document described in the next chapter — the Hybrid Org Today, the current operational picture of the Co-Intelligent Company. The Signal Backlog and the Hybrid Accountability Chart are both slices of it. Compound is where those slices get updated.
+These three deliverables slot into the living document described in the next chapter — the Hybrid Org Today, the current operational picture of the Co-Intelligent Company. The Constraint Backlog and the Hybrid Accountability Chart are both slices of it. Compound is where those slices get updated.
 
 If your Sprint ends and the backlog isn't re-ranked, the chart hasn't been updated, and no next constraint is named, the Sprint didn't finish.
 
@@ -142,21 +142,22 @@ After the retrospective, write the one design change on a card with four fields.
 | **By date** it's installed | Before Sprint two kickoff |
 :::
 
-## Re-rank the Signal Backlog on what the *Sprint* taught you
+## Re-rank the Constraint Backlog on what the *Sprint* taught you
 
 <!-- moves:constraint-re-rank -->
-### How to re-rank the Signal Backlog on what the *Sprint* taught you
+### How to re-rank the Constraint Backlog on what the *Sprint* taught you
 
 1. **Ask: did the Sprint reveal new information about any other constraints?** — Solving one constraint exposes the real cost of another — the backlog order the company entered the Sprint with may no longer be correct.
 2. **Ask: did any constraints get partially resolved as a side effect?** — Recognizes spillover value and adjusts rankings to reflect what actually changed, not just what was targeted.
 3. **Ask: did any new constraints surface during the Sprint that weren't on the original list?** — Prevents new constraints from falling through the cracks by capturing them at the moment of highest clarity.
-4. **Ask: given what you now know, which constraint should the next Sprint solve?** — Converts the re-ranked backlog into a decision — the top constraint becomes the input for the next Signal conversation.
-5. **Name the next Sprint's Human Orchestrator and write it down before leaving the room** — Identifies who'll operate the next workflow before the Compound session ends; without a named Orchestrator the next Sprint has no operator lined up.
+4. **Ask: does one candidate constraint govern the others — would solving it unblock or clarify what the rest of the backlog should be?** — The load-bearing test. A constraint that unlocks several others gets priority over a constraint that stands alone, regardless of relative cost. Apply eligibility first, then this question; use cost only as a tiebreak when no constraint clearly governs.
+5. **Ask: given what you now know, which constraint should the next Sprint solve?** — Converts the re-ranked backlog into a decision — the governing constraint becomes the input for the next Signal conversation.
+6. **Name the next Sprint's Human Orchestrator and write it down before leaving the room** — Identifies who'll operate the next workflow before the Compound session ends; without a named Orchestrator the next Sprint has no operator lined up.
 <!-- /moves:constraint-re-rank -->
 
-The second instrument in Compound is the Constraint Re-rank. The Signal Backlog that existed at the start of the Sprint was built on the information your company had at that moment. The Sprint produced new information — about what the data really looks like, which accountabilities have unexpected friction, which constraints turned out to be symptoms of a deeper constraint. You take the backlog into that new information and reorder it.
+The second instrument in Compound is the Constraint Re-rank. The Constraint Backlog that existed at the start of the Sprint was built on the information your company had at that moment. The Sprint produced new information — about what the data really looks like, which accountabilities have unexpected friction, which constraints turned out to be symptoms of a deeper constraint. You take the backlog into that new information and reorder it.
 
-Four questions drive the re-rank:
+Five questions drive the re-rank:
 
 *Did the Sprint reveal new information about any of the other constraints?* Solving one constraint frequently exposes the real cost of another. Meridian's quoting Sprint exposed that every quote the agent generated still had to be manually entered into JobBOSS, their ERP, when the quote converted to a job. Ty was entering the same data twice: once in HubSpot for the quote, again in JobBOSS for the job record. The HubSpot-to-JobBOSS data sync, previously ranked third on the backlog, jumped to first.
 
@@ -164,14 +165,16 @@ Four questions drive the re-rank:
 
 *Did any new constraints surface during the Sprint that weren't on the original list?* Meridian discovered that 40% of their quotes went to three customers who negotiated the same terms every time. Customer pricing standardization — pre-negotiated tiers for those three accounts — hadn't been on the backlog at all. It entered at rank two.
 
-*Given what you now know, which constraint should the next Sprint solve?* The constraint at rank one becomes the input for the next Signal conversation. Meridian's answer: the HubSpot-to-JobBOSS data sync. Mark assigned Elena as Human Orchestrator. Sprint two kicks off at the next quarterly planning session.
+*Does one candidate constraint govern the others — would solving it unblock or clarify what the rest of the backlog should be?* The load-bearing test. The HubSpot-to-JobBOSS sync wasn't just expensive on its own; it was the bottleneck that kept the quoting Sprint from fully propagating into operations. Every subsequent Sprint that touched a downstream process would inherit that gap. That's the governing constraint. When one candidate clearly governs, it wins regardless of whether another item looks cheaper to solve.
+
+*Given what you now know, which constraint should the next Sprint solve?* The governing constraint — the one that passes the eligibility filter and the load-bearing test — becomes the input for the next Signal conversation. Cost settles tiebreakers when no single constraint clearly governs. Meridian's answer: the HubSpot-to-JobBOSS data sync. Mark assigned Elena as Human Orchestrator. Sprint two kicks off at the next quarterly planning session.
 
 :::{.callout-tip}
 ## Pro Tip
 If you're picking the same constraint for Sprint two that you picked for Sprint one, the Sprint didn't deliver. Go back to the operational log and figure out what's still broken before you run the same play again.
 :::
 
-Pull the Signal Backlog. Re-rank it using the four questions. Name the top constraint. Assign a Human Orchestrator for the next Sprint. Write both down before you leave the room.
+Pull the Constraint Backlog. Re-rank it using the five questions. Name the governing constraint. Assign a Human Orchestrator for the next Sprint. Write both down before you leave the room.
 
 ## Update the three *living documents* before the room empties
 
@@ -179,7 +182,7 @@ Three artifacts get updated at the end of every Compound session. Don't skip thi
 
 The *Hybrid Accountability Chart* — any entry that was temporary for the Sprint becomes permanent if the workflow is staying. Any entry that didn't work gets revised. Meridian made the quoting row permanent: three agents (Quote Research, Quote Pricing, Quote Assembly), with Elena confirmed as Human Supervisor at the AI-Assisted level. They also reviewed neighboring rows for second-order effects. Carlos's production scheduling entry got a note that faster quoting was creating more jobs, and scheduling hadn't kept pace.
 
-The *Signal Backlog* — re-ranked per the Constraint Re-rank. HubSpot-to-JobBOSS data sync moved to the top. Customer pricing standardization entered at second. Specialty materials pricing moved up to third.
+The *Constraint Backlog* — re-ranked per the Constraint Re-rank. HubSpot-to-JobBOSS data sync moved to the top. Customer pricing standardization entered at second. Specialty materials pricing moved up to third.
 
 The *Sprint Outcome Record* — the one-sentence outcome from Deliver, filed for future reference. "Standard quote turnaround reduced from 3.8 days to 4.2 hours. Elena's quoting time from 15 hrs/wk to 5. Throughput doubled. $47K new revenue in month one."
 
@@ -229,7 +232,7 @@ Compound is what bends the slope Chapter 1 named — revenue grows while headcou
 One Sprint produces one Compound stage. That's the unit. You run the Sequence on one validated constraint, you ship the work, and you close it in a single Compound session that leaves the room with:
 
 - the Sprint Retrospective run and compounding measured,
-- the Constraint Re-rank done and the backlog re-ranked,
+- the Constraint Re-rank done and the Constraint Backlog re-ranked,
 - one design change installed,
 - the chart updated and the living documents current,
 - the next constraint named and the next Human Orchestrator assigned.
@@ -243,4 +246,4 @@ The chapter that follows is *the Rhythm* — what happens when this stage runs q
 1. Run the Sprint Retrospective questions on your most recent AI initiative: what specifically worked, what specifically didn't, and — for each item in the "didn't work" column — what would have to be true for it to not happen again? Does the reframe point to a design fix or a knowledge gap?
 2. Answer the three compounding questions: what does your organization know now that it didn't know before? What capability exists now that didn't exist before? What will the next Sprint start with that this one didn't have? If you can't answer all three, the Sprint produced output but didn't compound.
 3. What is your one design change for the next Sprint — not a list, one? Write it on a card with four fields: what the change is, who installs it, how you'll know it's working, and the date it's installed by. If any field is blank, the change isn't specific enough.
-4. Re-rank your Signal Backlog using the four Constraint Re-rank questions. Did the Sprint reveal new information that moves any constraint up or down? Is there a constraint that surfaced during the Sprint that wasn't on the original list?
+4. Re-rank your Constraint Backlog using the five Constraint Re-rank questions. Did the Sprint reveal new information that moves any constraint up or down? Is there a constraint that surfaced during the Sprint that wasn't on the original list? Does one candidate govern the others — would solving it first unblock or clarify what follows?

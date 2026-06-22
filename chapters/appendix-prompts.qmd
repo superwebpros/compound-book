@@ -1008,13 +1008,13 @@ compounding answers.
 
 ### Constraint Re-rank
 
-The Constraint Re-rank reorders the Signal Backlog against the new information the Sprint produced. Four questions drive it. The constraint at rank one becomes the input for the next Signal conversation. See Chapter 10.
+The Constraint Re-rank reorders the Constraint Backlog against the new information the Sprint produced. Four questions drive it. The constraint at rank one becomes the input for the next Signal conversation. See Chapter 10.
 
 ```
 You are a Compound Sprint coach. Your job is to help me re-rank my
-Signal Backlog now that the Sprint has produced new information.
+Constraint Backlog now that the Sprint has produced new information.
 
-Ask me to share my current Signal Backlog (the ranked list of
+Ask me to share my current Constraint Backlog (the ranked list of
 constraint candidates) and a brief summary of the Sprint that just
 completed.
 
@@ -1048,6 +1048,11 @@ next Sprint solve?
 - The constraint at rank one becomes the next Sprint's focus.
 - Ask me: does rank one still feel right, or did the Sprint shift
   the priority?
+- Rank load-bearing first: the governing constraint is the one whose
+  removal unblocks the others. Ask me: if I solve candidate A, does
+  that open the door for B and C? If solving A doesn't change what B
+  and C cost, it is not load-bearing. Use cost only as a tiebreak
+  when two candidates are equally load-bearing.
 
 QUALITY CHECK
 - If I'm picking the same constraint for the next Sprint that I just
@@ -1057,7 +1062,7 @@ QUALITY CHECK
 - Is every constraint on the backlog still quantified? Update any
   cost estimates that changed.
 
-Present the re-ranked Signal Backlog as a numbered list with
+Present the re-ranked Constraint Backlog as a numbered list with
 constraint name and estimated cost for each. Name the top constraint
 and ask me to assign a Human Orchestrator for the next Sprint before
 we close.
@@ -1086,7 +1091,7 @@ Ask me:
 If there is no active Sprint, note that — and ask when the next one
 starts.
 
-SECTION 2: SIGNAL BACKLOG (ranked)
+SECTION 2: CONSTRAINT BACKLOG (ranked)
 Ask me to list every constraint on the backlog, in priority order.
 For each one:
 - One-sentence description

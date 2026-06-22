@@ -4,9 +4,9 @@ Compound · Compound / The Rhythm
 
 Run the one-to-two-hour leadership session that closes the last Sprint, picks the next one, and keeps your hybrid org's living document current — in four fixed steps.
 
-The quarterly operating session is the meeting that turns one Sprint into a rhythm. Same agenda every quarter, same room, booked on the calendar before the year starts. You do four things in order: review the Sprint that just ran at the outcome level, re-rank the Signal Backlog, commit the next Sprint, and update the Hybrid Accountability Chart. The output is a specific next-quarter commitment and an updated chart — made before the session closes, not "we'll circle back."
+The quarterly operating session is the meeting that turns one Sprint into a rhythm. Same agenda every quarter, same room, booked on the calendar before the year starts. You do four things in order: review the Sprint that just ran at the outcome level, re-rank the Constraint Backlog, commit the next Sprint, and update the Hybrid Accountability Chart. The output is a specific next-quarter commitment and an updated chart — made before the session closes, not "we'll circle back."
 
-**Before you start:** Bring two inputs into the room — the previous Sprint's outcome statement and Compounding Scorecard (from Deliver and Compound), and the Signal Backlog re-ranked at the end of the last Sprint. Bring the leadership team, including the constraint owner the Hybrid Accountability Chart names. Without the scorecard and the backlog, the session has nothing to decide from.
+**Before you start:** Bring two inputs into the room — the previous Sprint's outcome statement and Compounding Scorecard (from Deliver and Compound), and the Constraint Backlog re-ranked at the end of the last Sprint. Bring the leadership team, including the constraint owner the Hybrid Accountability Chart names. Without the scorecard and the backlog, the session has nothing to decide from.
 
 Copy this page and fill it in live during the session — one block per step, ending with the committed Sprint and the updated chart.
 
@@ -29,7 +29,7 @@ Determine whether the constraint actually moved and whether the workflow is perm
 
 > **Meridian example.** Sprint 1 targeted the quoting bottleneck: Elena Ruiz the sole quoter, 3.8-day turnaround. Cost before: $558K/yr. Cost after: $112K/yr. Delta: $446K/yr. Decision: workflow is permanent — standard turnaround dropped to 4.2 hours and throughput doubled, so the quoting agent team stays and no second Sprint is needed on this constraint.
 
-## Step 2: Update the Signal Backlog
+## Step 2: Update the Constraint Backlog
 
 Re-rank the running inventory of constraints so the next Sprint is chosen from current reality, not last quarter's assumptions.
 
@@ -85,7 +85,7 @@ Make permanent any HAC rows from the completed Sprint, remove what didn't work, 
 Hand this page to someone who wasn't in the room. They should be able to see what the last Sprint produced, what the next one is, and where the org stands — without coming back to ask. Check:
 
 - [ ] Step 1 records a **before → after delta** and the explicit decision: workflow permanent, or another Sprint.
-- [ ] The Signal Backlog is **re-ranked**, with new constraints added and resolved ones removed — ordered by cost.
+- [ ] The Constraint Backlog is **re-ranked**, with new constraints added and resolved ones removed — ordered by cost.
 - [ ] The next Sprint is **committed**: a one-sentence constraint, a **named** Human Orchestrator, resources confirmed, and a start date.
 - [ ] The Hybrid Accountability Chart is **updated in the room** — permanent rows kept, dead rows removed, shifted roles noted.
 - [ ] The result is declared the **new Hybrid Org Today baseline**, current as of today.

@@ -172,14 +172,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Updated\nSignal Backlog",
+      "text": "Updated\nConstraint Backlog",
       "fontSize": 20,
       "fontFamily": 2,
       "textAlign": "center",
       "verticalAlign": "middle",
       "baseline": 20,
       "containerId": null,
-      "originalText": "Updated\nSignal Backlog"
+      "originalText": "Updated\nConstraint Backlog"
     },
     {
       "id": "out2-box",

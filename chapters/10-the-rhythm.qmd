@@ -37,24 +37,24 @@ The Rhythm has a meeting. One to two hours, your leadership team, every quarter,
 ### How to run the quarterly *operating session*
 
 1. **Step 1: Review the previous Sprint at the outcome level** — Determines whether the constraint actually moved and whether the workflow is permanent or needs another Sprint — the outcome question, not a status update.
-2. **Step 2: Update the Signal Backlog** — Re-ranks the running inventory of constraints so the next Sprint is chosen from current reality, not last quarter's assumptions.
+2. **Step 2: Update the Constraint Backlog** — Re-ranks the running inventory of constraints so the next Sprint is chosen from current reality, not last quarter's assumptions.
 3. **Step 3: Commit the next Sprint** — Converts backlog priority into a named constraint, a named Human Orchestrator, a named Sprint Lead, a budget confirmation, and a start date — the team leaves with a specific commitment.
 4. **Step 4: Update the Hybrid Accountability Chart** — Makes permanent any HAC rows from the completed Sprint, removes what didn't work, and resets the Hybrid Org Today baseline so the living document stays current.
 <!-- /moves:quarterly-operating-session -->
 
 **Step 1: Review the previous Sprint at the outcome level.** Read the Sprint outcome statement from Deliver. Review the retrospective findings from Compound. Did the constraint move? By how much? What changed in the cost your team quantified during Signal? This isn't a status update on the agent team's activity — that conversation happens elsewhere, more often. This is the outcome question. The Hybrid Accountability Chart names a constraint owner; that owner reports the result. And you answer one question that determines what happens next: is the workflow permanent, or does it need another Sprint?
 
-**Step 2: Update the Signal Backlog.** Pull the re-ranked backlog from the Compound phase. Review each candidate: still relevant? Cost changed? New information? Add any new constraints that emerged during the quarter. Remove any that were resolved as side effects. What has shifted in priority since last quarter? The Signal Backlog is the running inventory of your company's most expensive operational problems, ranked. It is the input to every quarterly conversation.
+**Step 2: Update the Constraint Backlog.** Pull the re-ranked backlog from the Compound phase. Review each candidate: still relevant? Cost changed? New information? Add any new constraints that emerged during the quarter. Remove any that were resolved as side effects. What has shifted in priority since last quarter? The Constraint Backlog is the running inventory of your company's most expensive operational problems, ranked. It is the input to every quarterly conversation.
 
-**Step 3: Commit the next Sprint.** Pick the top constraint from the updated backlog. Name the Human Orchestrator (the person who'll run the redesigned workflow and supervise its agent team once it ships — the Designing the System chapter covers how this role is assigned). Name the Sprint Lead who'll run the Sprint project itself. Confirm the team has the resources — people, tools, budget. Set the Sprint start date. One validated constraint. A named Human Orchestrator and Sprint Lead. A specific six-to-eight-week window. The one-page Constraint Statement from Signal is the artifact. Your team leaves the session knowing exactly what the next Sprint is about and who owns it.
+**Step 3: Commit the next Sprint.** From the eligible constraints in the updated backlog, commit the load-bearing one — the governing constraint whose removal unblocks the others; cost breaks ties when none governs. Name the Human Orchestrator (the person who'll run the redesigned workflow and supervise its agent team once it ships — the Designing the System chapter covers how this role is assigned). Name the Sprint Lead who'll run the Sprint project itself. Confirm the team has the resources — people, tools, budget. Set the Sprint start date. One validated constraint. A named Human Orchestrator and Sprint Lead. A specific six-to-eight-week window. The one-page Constraint Statement from Signal is the artifact. Your team leaves the session knowing exactly what the next Sprint is about and who owns it.
 
 **Step 4: Update the Hybrid Accountability Chart.** (If you run EOS, the HAC extends your existing Accountability Chart — same structure, with agent teams and their human supervisors added as new rows.) Make permanent any HAC rows from the completed Sprint that are staying. Remove or revise any that didn't work. Note which roles have shifted since last quarter. If an agent team's scope changed, if the Human Orchestrator's handoffs moved — record it. The chart is a living document, not a workshop output from eighteen months ago. This becomes the new Hybrid Org Today baseline.
 
-That is the entire session. The agenda is stable. The inputs are the Signal Backlog and the previous Sprint's scorecard. The output is a commitment and an updated chart.
+That is the entire session. The agenda is stable. The inputs are the Constraint Backlog and the previous Sprint's scorecard. The output is a commitment and an updated chart.
 
 :::{.callout-tip}
 ## Pro Tip
-This session replaces no existing meetings. If you run EOS, it layers onto your quarterly planning: Signal Backlog maps to Rocks, HAC maps to your Accountability Chart, Sprint review maps to your quarterly review. Same cadence, new layer. A Sprint can become a Rock when committed in quarterly planning, but it is a Sprint first, a focused unit of time designed to address a specific signal. The quarterly session is a short addition to your quarterly planning.
+This session replaces no existing meetings. If you run EOS, it layers onto your quarterly planning: Constraint Backlog maps to Rocks, HAC maps to your Accountability Chart, Sprint review maps to your quarterly review. Same cadence, new layer. A Sprint can become a Rock when committed in quarterly planning, but it is a Sprint first, a focused unit of time designed to address a specific signal. The quarterly session is a short addition to your quarterly planning.
 :::
 
 The session only works if it's on the calendar before the quarter starts — not penciled in as a maybe, but booked with the same discipline as any other quarterly commitment.
@@ -76,13 +76,13 @@ Here is how the pieces map:
 
 | Compound Rhythm | EOS Equivalent | Scaling Up Equivalent |
 |---|---|---|
-| Signal Backlog | Issues List (strategic) | Priorities / Rocks candidates |
+| Constraint Backlog | Issues List (strategic) | Priorities / Rocks candidates |
 | Sprint commitment | Quarterly Rock | Quarterly Priority |
 | Sprint Lead | Rock owner | Priority owner |
 | HAC update | Accountability Chart review | Function Accountability Chart |
 | Quarterly operating session | Quarterly Planning | Quarterly Planning |
 
-A Sprint can become a Rock when committed in quarterly planning. The HAC layers onto your accountability chart. The Signal Backlog is your strategic issues list, focused on operational constraints AI can address. EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm makes them executable by a Human+AI workforce. The two stack.
+A Sprint can become a Rock when committed in quarterly planning. The HAC layers onto your accountability chart. The Constraint Backlog is your strategic issues list, focused on operational constraints AI can address. EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm makes them executable by a Human+AI workforce. The two stack.
 
 ## Maintain one living document: the *Hybrid Org Today*.
 
@@ -91,19 +91,19 @@ Once you're running the Rhythm, you maintain one living document: the Hybrid Org
 <!-- moves:hybrid-org-today -->
 ### How to maintain the *Hybrid Org Today*
 
-1. **Combine the Hybrid Accountability Chart and Signal Backlog into one document** — The structural layer (who owns what handoffs) and the constraint inventory (solved / in-flight / queued) together answer the one quarterly question: where does the design layer stand today?
+1. **Combine the Hybrid Accountability Chart and Constraint Backlog into one document** — The structural layer (who owns what handoffs) and the constraint inventory (solved / in-flight / queued) together answer the one quarterly question: where does the design layer stand today?
 2. **Fit it on one page** — If it spills past one page you are tracking too much — the constraint forces prioritization and prevents the document from becoming an ignored wiki.
 3. **Update it during the quarterly session, not between sessions** — Leadership-team ownership in the meeting is the discipline that prevents the document from rotting; Thursday-afternoon curation by a Notion-curator is how every 'living document' dies.
 4. **Use it as the standard briefing and the board receipt** — A new executive or a board question gets answered from one current, concrete document — not a slide deck assembled from memory.
 <!-- /moves:hybrid-org-today -->
 
-The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. The Hybrid Accountability Chart from the Design chapters is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Signal Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
+The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. The Hybrid Accountability Chart from the Design chapters is one slice of it: the structural layer, who owns which handoffs across your human and agent workforce. The Constraint Backlog is another slice: the prioritized inventory of constraints — solved, in flight, queued. Together those slices answer the only question you need to answer each quarter: *where does the design layer of this company stand today, and what is it doing next?*
 
 The template should fit on one page. If it doesn't, you're tracking too much.
 
 You update the Hybrid Org Today in the quarterly session. Not by a Notion-curator on a Thursday afternoon. Not at year-end planning. By your leadership team, during the meeting, as part of the four things the session does. That is the discipline that prevents the document from becoming the wiki page that rots — a thing every operator has watched happen with every other "living" document the company has tried to maintain.
 
-{{< excalidraw ch10-hybrid-org-today "Hybrid Org Today: HAC (structural layer) and Signal Backlog (constraint inventory) as two slices, updated by the quarterly session." >}}
+{{< excalidraw ch10-hybrid-org-today "Hybrid Org Today: HAC (structural layer) and Constraint Backlog (constraint inventory) as two slices, updated by the quarterly session." >}}
 
 When a new executive joins, the Hybrid Org Today is the briefing. When the board asks what the AI investments have produced, it is the receipt — concrete, current, in your own vocabulary.
 
@@ -113,7 +113,7 @@ Chapter 1 named the Headcount Paradox: revenue grows; headcount grows alongside 
 
 When you hit a capacity problem, your first question is *what does Signal say about this?* rather than *who do we hire?*
 
-Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked against the Signal Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the Sprint that addresses it ships a designed workflow instead of a job posting.
+Some constraints are headcount constraints, and the answer is to hire. The shift is that the question gets asked against the Constraint Backlog, *before* the requisition is written. And more often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem — and the Sprint that addresses it ships a designed workflow instead of a job posting.
 
 The ones adding people to absorb demand grow headcount in lockstep with revenue, forever. That gap between the two slopes is the Headcount Math. The metric the quarterly review tracks is revenue per employee. In most companies it stays flat. In yours it climbs, because each Sprint finds another place the work doesn't actually require another body.
 
@@ -178,7 +178,7 @@ A company is six to eight Sprints in. What has actually changed?
 
 The Source phase of the first Sprint took three weeks. The team did not have a knowledge map for that function; building one was the work. The Source phase of the current Sprint, in the same function, takes three days — because the knowledge map already exists, has been updated twice since, and is sitting in the Hybrid Org Today.
 
-The Hybrid Accountability Chart has been updated four times. The organization has named agent teams with documented levels of automation, each with a human supervisor. The Human Orchestrator responsibility is written into two people's job descriptions — not as a side project but as the operational role it became. The Signal Backlog appears on the quarterly agenda alongside revenue and rocks.
+The Hybrid Accountability Chart has been updated four times. The organization has named agent teams with documented levels of automation, each with a human supervisor. The Human Orchestrator responsibility is written into two people's job descriptions — not as a side project but as the operational role it became. The Constraint Backlog appears on the quarterly agenda alongside revenue and rocks.
 
 And the leaders themselves have changed. Executives who, eighteen months ago, had no mental model for directing an agent team are now making design-improvement decisions between Sprints without being prompted. The Co-Operating Model is no longer a concept. It is how the leadership team thinks about work.
 
@@ -212,5 +212,5 @@ The framework is yours to run. The next chapter is about the one thing Compound 
 
 1. Look at your last four quarters of headcount decisions. How many requisitions were written before anyone asked "what does Signal say about this?" How many constraints were design problems disguised as headcount problems?
 2. Set up your Compounding Scorecard today. Fill in the first row with your current or most recent Sprint. For each Sprint you've completed, what is the cumulative delta? Is the compounding visible yet, or is this your first data point?
-3. Your quarterly operating session has four steps: review the previous Sprint at the outcome level, update the Signal Backlog, commit the next Sprint, and update the Hybrid Accountability Chart. Is that session on your calendar this quarter — with all four steps on the agenda and the right people in the room?
+3. Your quarterly operating session has four steps: review the previous Sprint at the outcome level, update the Constraint Backlog, commit the next Sprint, and update the Hybrid Accountability Chart. Is that session on your calendar this quarter — with all four steps on the agenda and the right people in the room?
 4. The Hybrid Org Today maps what people own, what AI handles, what is solved, and what is next. Could you fill in that one-page template for your company right now? What would the "Completed Sprints" section say, and what would the "Active Sprint" section say?
