@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-Source maps what the organization knows about the one constraint Signal validated. The deliverable is a one-page Knowledge Map: a six-column table that inventories every digital system, every person, and every gap relevant to that constraint. Skip Source and Design becomes a guessing exercise built on assumptions nobody verified.
+Source maps what the organization knows about the one constraint Signal validated. The deliverable is a Knowledge Map: a six-column table that inventories every digital system, every person, and every gap relevant to that constraint. Alongside it, your company maintains a Systems Inventory — a standing catalog of every system you have, what layer it sits in, and who owns it. The Knowledge Map pulls from that inventory for each Sprint. Skip Source and Design becomes a guessing exercise built on assumptions nobody verified.
 :::
 
 ## Before you decide what to do, map what she actually *does*.
@@ -17,7 +17,7 @@ We didn't call it that at the time. But it was the step that kept us from acting
 
 ## Every organization's information lives in three *layers*.
 
-The beliefs chapter said you're already a tech company. The CRM, the ERP, the project tool, the document store: the investment is on the books, the systems are running. Source is where that belief gets operational: before you can design anything, you've got to see what those systems actually hold, what they don't, and what layer each piece of knowledge lives in.
+You're already a tech company. The CRM, the ERP, the project tool, the document store: the investment is on the books, the systems are running. Source is where that belief gets operational: before you can design anything, you've got to see what those systems actually hold, what they don't, and what layer each piece of knowledge lives in.
 
 The information environment inside every operating company breaks into three layers.
 
@@ -25,11 +25,11 @@ The information environment inside every operating company breaks into three lay
 
 **Systems of Knowledge** are where institutional know-how lives. SOPs, process playbooks, training documents, captured expertise. Not the raw transaction log; the interpretation of it. The pricing policy that explains when exceptions apply. The onboarding guide that tells a new hire how exception handling actually works. Most mid-market companies have partial Systems of Knowledge at best: some written down, much of it locked in people's heads.
 
-**Systems of Semantics** are where relationships and meaning live. This is the layer that lets an AI model understand that "client A" in the CRM is the same entity as "Account 0042" in the ERP, and that both are covered by a pricing exception written in a spreadsheet on Elena's desktop. The structures that do that work are ontologies (structured maps of how concepts relate), embeddings (numeric representations of text AI uses for search and similarity), and knowledge graphs. This is the layer most companies don't yet have.
+**Systems of Semantics** are where relationships and meaning live. This is the layer that gives an AI model the structure it needs to treat "client A" in the CRM and "Account 0042" in the ERP as the same entity, and that both are covered by a pricing exception written in a spreadsheet on Elena's desktop. The structures that do that work are ontologies (structured maps of how concepts relate), embeddings (numeric representations of text AI uses for search and similarity), and knowledge graphs. This is the layer most companies don't yet have.
 
 :::{.callout-note}
 ## What is an agent?
-An agent is an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs. Unlike a chatbot that answers a question and stops, an agent executes. Without a System of Semantics, an agent can retrieve data but can't reason across it.
+An agent is an AI system that is given a goal, runs a sequence of steps toward it, and adjusts course based on its own intermediate outputs. Unlike a chatbot that answers a question and stops, an agent executes. Without a System of Semantics, an agent can retrieve data but can't reason across it.
 :::
 
 It's also the layer AI work has to build, and the layer Source names as absent when it isn't there yet.
@@ -44,30 +44,36 @@ The first question Julie asked every integration team was the same question Sour
 
 ## You aren't done with diagnosis until you know what you *have*.
 
+{{< excalidraw ch05-tml-framework "TML — what kind of work the knowledge supports: Task (AI handles), Management (AI assists), Leadership (human oversight)." >}}
+
 The temptation at the end of Signal is to act. The constraint is named, the cost is quantified, and the team wants to move: hire someone, buy a tool, build something. Acting before you know what you already have wastes the spend. Skip the inventory and you won't get past the first design conversation, because nobody in the room will agree on what data exists, where it lives, or who holds the judgment the workflow depends on.
 
-Once you know where knowledge lives (Record, Knowledge, Semantics), the next question is what kind of work that knowledge lets someone do. The **TML framework** (Task, Management, Leadership) answers it. It's a second lens that runs alongside the three-layer frame.
+Once you know where knowledge lives (Record, Knowledge, Semantics), the next question is what kind of work that knowledge lets someone do. The **TML framework** (Task, Management, Leadership) answers it. It's a second lens that runs alongside the three-layer frame:
 
-**Task knowledge** is the documented steps: the SOPs, the process maps, the work that can be written down and followed. AI handles it directly. **Management knowledge** is the decision rights, the escalation paths, the rules that determine who approves what. It's partially documented, and AI assists with it. **Leadership knowledge** is the judgment, the relationships, the pattern recognition that only comes from years inside the business. It almost never exists outside the people who hold it, and it needs human oversight at every step. The same framework returns in the Designing the Work chapter, where TML is how you break down what each role actually does.
+- **Task knowledge** is the documented steps: the SOPs, the process maps, the work that can be written down and followed. AI handles it directly.
+- **Management knowledge** is the decision rights, the escalation paths, the rules that determine who approves what. It's partially documented, and AI assists with it.
+- **Leadership knowledge** is the judgment, the relationships, the pattern recognition that only comes from years inside the business. It almost never exists outside the people who hold it, and it needs human oversight at every step. The same framework returns in the Designing the Work chapter, where TML is how you break down what each role actually does.
 
-Mapped along both lenses, you know what exists, what has to be built, and what stays human. Design has what it needs.
+## Build the *Knowledge Map* — scoped to one constraint.
 
-## Build the one-page *Knowledge Map*.
+{{< excalidraw ch05-knowledge-map-blank "The Knowledge Map: six columns — Source, Type, Owner, Status, Pipeline, Notes — one row per source, one page, one constraint." >}}
 
-The deliverable of Source is a **Knowledge Map**: a structured inventory of every information source relevant to the validated constraint. It's a table with six columns (Source, Type, Owner, Status, Pipeline, Notes), one row per source, that fits on a single page. Digital systems, people, and gaps all appear as rows in the same table, because a workflow consumes all of them the same way.
+The deliverable of Source is a **Knowledge Map**: a structured inventory of every information source relevant to the validated constraint. It's a table with six columns:
 
-For a given Sprint and a given constraint, a good Knowledge Map fits on one page. It doesn't catalog every database in the company. It catalogs everything relevant to the constraint Signal validated, and nothing else. If the constraint is the quoting cycle, the map describes what's known about quoting: the pricing rules, the historical quotes, the exception handling, the customer-specific terms, the institutional memory of who decided what and why. It doesn't describe HR records, the accounting close, or marketing analytics, because those aren't in the path of the constraint. Over multiple Sprints you'll accumulate multiple maps, and over time they build into a broader picture of where your organization's knowledge lives. But each map stays scoped to one constraint.
+- **Source** — what it is (system name or person's name)
+- **Type** — Digital, Organic, or Missing
+- **Owner** — who is accountable for it
+- **Status** — Clean, Needs Work, or Missing
+- **Pipeline** — Connected, Manual, or Isolated
+- **Notes** — at-risk flags, exceptions, anything Design needs to know
 
-The test for a good Knowledge Map is simple: could someone who wasn't in the room use this map to architect a workflow against the constraint? When we mapped what our project coordinator did, the map didn't catalog every system in the company. It cataloged what she touched, what she decided, and what would break if she disappeared tomorrow.
+One row per source. Digital systems, people, and gaps all appear as rows in the same table, because a workflow consumes all of them the same way.
 
-{{< excalidraw ch05-knowledge-map-pm-case-study "Knowledge Map: PM Agent Team case study — six-column inventory of information sources." >}}
+The Knowledge Map is scoped to the one constraint Signal validated — not to the whole company. Your company maintains a standing catalog called the **Systems Inventory**: a complete, cross-Sprint catalog of every System of Record, System of Knowledge, and System of Semantics you have — what layer each sits in, who owns it, how it connects. The relationship mirrors how Signal works: just as the **Constraint Backlog** holds every constraint the business has surfaced while each Sprint commits to one, the Systems Inventory holds every system you have while the Knowledge Map pulls only what this constraint needs. The Knowledge Map adds the organic sources (people) and the missing sources that no system holds, stays scoped to one constraint, fits on one page, and goes to Design.
 
-:::{.callout-tip}
-## Pro Tip
-If your Source output doesn't fit on one page, it's not scoped to the constraint. You've drifted into a general data audit. Cut it back down.
-:::
+The Sprint Planning Canvas's Source row holds the one-line summary of the constraint's information environment and points to the Knowledge Map — the same way the Constraint Statement sits behind the Canvas's Constraint row.
 
-A blank Knowledge Map template, ready to copy, sits at the end of this chapter, right before the handoff to Design. Start with a blank page and the Constraint Statement Signal produced. Draw the six columns: *Source*, *Type*, *Owner*, *Status*, *Pipeline*, *Notes*. The first four columns are the Knowledge Map. The fifth (Pipeline) is the Data Pipeline Audit. Run them together, not as separate exercises. Then work through three passes.
+The test for a good Knowledge Map is whether it makes unambiguous what systems feed the constraint. When we mapped what our project coordinator did, the map didn't catalog every system in the company. It cataloged what she touched, what she decided, and what would break if she disappeared tomorrow. That's the standard.
 
 ## Build the map in three *passes*.
 
@@ -76,7 +82,7 @@ A blank Knowledge Map template, ready to copy, sits at the end of this chapter, 
 
 1. **Start from the Constraint Statement** — Scopes the entire map to the one validated constraint so no row is extraneous.
 2. **Draw the six-column table (Source, Type, Owner, Status, Pipeline, Notes)** — Establishes the shared schema all three passes populate; running both the Knowledge Map and Pipeline Audit together prevents duplicated effort.
-3. **Pass 1 — List every digital source that touches the constraint** — Surfaces the named, login-accessible systems first because they are the easiest to enumerate and set the baseline for what is Connected, Manual, or Broken.
+3. **Pass 1 — List every digital source that touches the constraint** — Pull from your Systems Inventory; surfaces the named, login-accessible systems first because they are the easiest to enumerate and set the baseline for what is Connected, Manual, or Isolated.
 4. **Pass 2 — List every person whose judgment the constraint workflow depends on** — Captures organic sources (institutional knowledge held by individuals) and flags single points of failure as AT RISK before the knowledge can walk out the door.
 5. **Pass 3 — List every gap: knowledge that should exist but does not appear in Pass 1 or Pass 2** — Naming missing sources before Build begins converts invisible Sprint failure modes into explicit design decisions.
 6. **Apply the one-page test** — Forces constraint scope discipline — if the map exceeds one page, rows unrelated to the constraint have crept in and must be cut.
@@ -86,18 +92,22 @@ A blank Knowledge Map template, ready to copy, sits at the end of this chapter, 
 
 ### Pass 1 — Digital sources
 
-List every digital source that touches the constraint: the CRM records, the process logs, the shared drives, the inboxes, the spreadsheets. For each one, write the name, mark it as Digital, name the person who owns or maintains it, and mark its status: Clean (accurate, current, usable as-is), Needs Work (exists but has quality or format problems), or Missing (should exist but doesn't).
+{{< excalidraw ch05-knowledge-map-pass1 "Pass 1 — Meridian's digital sources: the CRM, the ERP, and the isolated pricing spreadsheet, each with its pipeline status." >}}
 
-Then answer four Pipeline Audit questions: Does this source connect to the other systems that touch the constraint, or does data move by manual export? Can a workflow read from it directly, or does someone have to export and re-enter it first? Who owns the handoff: a person, a scheduled job, or nobody? When was the data last verified as accurate? Mark each source's pipeline as *Connected*, *Manual*, or *Broken*.
+List every digital source that touches the constraint: the CRM records, the process logs, the shared drives, the inboxes, the spreadsheets. Pull relevant entries from your Systems Inventory first — they're already classified by layer and owner, and they set the baseline. For each source, write the name, mark it as Digital, name the person who owns or maintains it, and mark its status: Clean (accurate, current, usable as-is), Needs Work (exists but has quality or format problems), or Missing (should exist but doesn't).
 
-Digital sources are the ones an audit naturally finds, because they have names and login screens. They're also the smallest part of the actual information environment, because most of what makes the work run isn't stored in any of them. The people who run the work are the next set of rows.
+Then answer four Pipeline Audit questions: Does this source connect to the other systems that touch the constraint, or does data move by manual export? Can a workflow read from it directly, or does someone have to export and re-enter it first? Who owns the handoff: a person, a scheduled job, or nobody? When was the data last verified as accurate? Mark each source's pipeline as *Connected*, *Manual*, or *Isolated*.
+
+The goal of this pass is to make information explicit in those systems. Digital systems are leaky. Context gets trapped in people's heads rather than written into them — what those systems hold is often incomplete or stale, and the gap between what's in the system and what actually governs the work is where the real risk lives. That's what the next two passes surface.
 
 :::{.callout-note}
 ## Action Step
-Open the Constraint Statement from Signal. List every digital system that touches the constraint workflow. For each one, fill in all six columns: Source, Type, Owner, Status, Pipeline, Notes. Don't filter. If it touches the constraint, it goes on the map.
+Open the Constraint Statement from Signal. Pull any relevant systems from your Systems Inventory. List every additional digital system that touches the constraint workflow. For each one, fill in all six columns: Source, Type, Owner, Status, Pipeline, Notes. Don't filter. If it touches the constraint, it goes on the map.
 :::
 
 ### Pass 2 — Organic sources (people)
+
+{{< excalidraw ch05-knowledge-map-pass2 "Pass 2 — the same map plus the organic sources: Elena and Dave, both flagged AT RISK." >}}
 
 List every person whose judgment the constraint workflow depends on: if they disappeared tomorrow, the work would stop or degrade. The ops lead who handles the exceptions, the account manager who knows the customer's actual tolerance, the senior engineer who hasn't written anything down. Each person is a row on the same map, marked Organic. Name them, name what they know that isn't documented anywhere, and be specific. Not "she knows the quoting process" but "she knows the three pricing exceptions for legacy customers that override the rate card." The Knowledge Map treats people as sources in the formal sense, named and located and described, because operationally that is what they are. Pretending otherwise is the reason data audits produce libraries that don't match the business.
 
@@ -112,9 +122,16 @@ Name every person whose judgment the constraint workflow depends on. For each on
 
 ### Pass 3 — Missing sources
 
+{{< excalidraw ch05-knowledge-map-pass3 "Pass 3 — the completed map: the two missing sources (highlighted) join the digital and organic rows. The full picture against the quoting constraint." >}}
+
 The first two passes describe what exists. The column that reveals the most risk is what's *missing*: knowledge someone would need to solve this constraint that isn't represented anywhere in Pass 1 or Pass 2, questions about the workflow your current sources can't answer, and decisions made by gut feel today that should be made by data. Add those rows as Missing sources, note what type they *should* be (digital system, documented process, captured expertise), and note what it would take to create them.
 
-The Missing column is the most important column on the map, because that's where the highest-risk gaps live. Missing sources cluster in two of TML's three categories. Management knowledge loss: decisions made by leaders who have since left, governance rules that existed nowhere except a person's memory and walked out with them. Leadership knowledge loss: customer or market intelligence that was never systematically captured. Task knowledge is the category most commonly captured in systems, so its absence is usually a documentation gap, not a knowledge loss. Every missing source is a potential Sprint failure mode. Name them before Build begins, not after deployment reveals them.
+The Missing column is the most *overlooked* on the map — and the highest-risk per row — because that's where the hidden gaps live. Missing sources cluster in two of TML's three categories:
+
+- **Management knowledge loss:** decisions made by leaders who have since left, governance rules that existed nowhere except a person's memory and walked out with them.
+- **Leadership knowledge loss:** customer or market intelligence that was never systematically captured.
+
+Task knowledge is the category most commonly captured in systems, so its absence is usually a documentation gap, not a knowledge loss. Every missing source is a potential Sprint failure mode. Name them before Build begins, not after deployment reveals them.
 
 :::{.callout-note}
 ## Action Step
@@ -125,15 +142,13 @@ When you're done, you've got a Knowledge Map: one page, one constraint, everythi
 
 ## Source at Meridian
 
-{{< excalidraw ch05-knowledge-map-elena "Elena's completed Knowledge Map — every source, gap, and at-risk dependency in one view." >}}
-
 Elena Ruiz cleared her Thursday afternoon, sat down with Mark, Ty, and Dave, and asked a simple question: when an RFQ hits my inbox, what do I actually do?
 
 Her answer took forty-five minutes. She described a process nobody else in the company had ever watched end to end: cross-referencing customer history, material requirements, and labor estimates simultaneously, then pulling up a file called "Customer Notes.xlsx" on her desktop to check whether the customer had negotiated terms that overrode the standard rate card. The spreadsheet had 147 rows of pricing exceptions. It had never been shared, backed up, or version-controlled.
 
 Dave added his piece. Thirty-one years of fabrication experience compressed into a gut feel for estimated hours, accurate to within 10% on standard work. But he couldn't estimate materials costs, didn't know customer-specific pricing, and had no access to the ERP's job costing history. Ty described what he saw from the sales side: he forwarded RFQs to Elena and waited. He had no visibility into where a quote stood.
 
-The Knowledge Map that emerged made the information environment visible for the first time. HubSpot CRM: Connected, but holding win/loss records with no link to quotes. JobBOSS ERP: Connected to invoicing, but nobody queried it for quoting. Customer Notes.xlsx: Broken, living on Elena's desktop with no sync. Elena herself: Organic, at-risk, the only person who could reconcile all the sources. Dave: Organic, at-risk, four years to retirement with an undocumented estimation method.
+The Knowledge Map that emerged made the information environment visible for the first time. HubSpot CRM: Connected, but holding win/loss records with no link to quotes. JobBOSS ERP: Connected to invoicing, but nobody queried it for quoting. Customer Notes.xlsx: Isolated, living on Elena's desktop with no sync. Elena herself: Organic, at-risk, the only person who could reconcile all the sources. Dave: Organic, at-risk, four years to retirement with an undocumented estimation method.
 
 That single session produced the map that made Design possible. Without it, the team would have started building agents against assumptions about what Elena did, not against what she actually did and what systems she actually touched. Source gives you the second starting point.
 
@@ -162,6 +177,11 @@ Brand guidelines, pricing rules, process SOPs, regulatory requirements: durable.
 
 For each source on the map, mark which tier it falls into. The tier tells Design what's reachable today, what's reachable with extraction work, and what stays human. (Tier 1 sources are "API-accessible" — an API, or application programming interface, is how one software system talks to another; more in the "How systems talk to each other" section below.)
 
+:::{.callout-tip}
+## Pro Tip
+A fast way to tell if a system has an API is to search the system name plus "api" in your browser. Most modern SaaS tools will return a developer documentation page within the first few results. If nothing comes up, ask your vendor.
+:::
+
 | Tier | What AI can do | Example |
 |---|---|---|
 | **Tier 1** | Use it directly. Structured and API-accessible; queried in real time. | CRM records, ERP job costing, rate card |
@@ -183,7 +203,7 @@ Review each source on your map. Mark whether it's structured or unstructured, du
 
 ## How systems *talk to each other*.
 
-If you're going to map where knowledge lives, you need to understand how it moves. Three terms come up constantly in AI implementation work, and they're worth defining in plain language: API, MCP, and connector. These are the terms behind the *Connected*, *Manual*, and *Broken* statuses you marked in the Pipeline Audit.
+If you're going to map where knowledge lives, you need to understand how it moves. Three terms come up constantly in AI implementation work, and they're worth defining in plain language: API, MCP, and connector. These are the terms behind the *Connected*, *Manual*, and *Isolated* statuses you marked in the Pipeline Audit.
 
 ### APIs — how systems talk to systems
 
@@ -195,18 +215,24 @@ Model context protocols are the new concept here, and the most important one for
 
 ### Connectors — pre-built integrations
 
-Pre-built integrations between specific systems. Zapier, Make, n8n (n8n is an open-source workflow automation platform — it lets you connect apps and automate multi-step processes without custom code): these platforms offer thousands of connectors that link one system to another without writing code. Connectors are useful. They're also the most common thing companies buy before doing Source work, which means they've wired systems together without knowing whether those systems hold the right data in the first place.
+Pre-built integrations between specific systems. Zapier, Make, and n8n offer thousands of connectors that link one system to another without writing code. (n8n is an open-source workflow-automation platform — it connects apps and automates multi-step processes without custom code.) Connectors are useful. They're also the most common thing companies buy before doing Source work. People buy them because they integrate systems — that's exactly what they're designed to do. However, companies often wire systems together without thinking through the governance implications: whether the data flowing through that connection is accurate, current, and scoped to the right use. At best, this can breed bad data, at worst expose you to unnecessary security vulnerabilities.
 
 :::{.callout-note}
 ## A note on terminology
 Different platforms use different names for the same underlying ideas. Anthropic (Claude) calls its system integrations "MCP connectors" or just "connectors." OpenAI calls them "tools." Automation platforms call them "integrations" or "actions." The labels vary. The fundamental concept doesn't change: something that lets one system read from or write to another.
 :::
 
-The Pipeline column on your Knowledge Map is where these terms become operational. *Connected* means an API, MCP, or connector already carries data between that source and the systems around the constraint. *Manual* means a person is carrying data that a connection could carry. *Broken* means the data doesn't move at all: it sits in one place and nobody can reach it programmatically. Design will decide what to build. Source makes the current state visible.
+The Pipeline column on your Knowledge Map is where these terms become operational. Mark each digital source's pipeline status:
+
+- **Connected** — an API, MCP, or connector already carries data between that source and the systems around the constraint. Data moves without a person carrying it.
+- **Manual** — a person is carrying data that a connection could carry. Export, re-entry, copy-paste: someone's time is the integration layer.
+- **Isolated** — the data sits in one place and nobody can reach it programmatically. It doesn't move at all.
+
+Design will decide what to build. Source makes the current state visible.
 
 :::{.callout-tip}
 ## Pro Tip
-You don't need to understand the engineering behind APIs, MCPs, or connectors. You need to know whether your systems talk to each other or whether a person is carrying data between them. The Pipeline column captures that answer. If you don't have an engineer in-house, the Pipeline column is also your handoff: every *Manual* or *Broken* row is what you hand a contractor or leave for Design to solve. You name the gap; they decide how to wire it.
+You don't need to understand the engineering behind APIs, MCPs, or connectors. You need to know whether your systems talk to each other or whether a person is carrying data between them. The Pipeline column captures that answer. If you don't have an engineer in-house, the Pipeline column is also your handoff: every *Manual* or *Isolated* row is what you hand a contractor or leave for Design to solve. You name the gap; they decide how to wire it.
 :::
 
 ## A transcript is the closest thing a person has to an *API*.
@@ -215,13 +241,21 @@ People don't have APIs. But you can make them transcripts. A transcript is the h
 
 When you ask someone to type a summary or fill out a form, they compress. They leave out the context and the reasoning behind the decision. Data entry is lossy because typing is slow and people edit as they go. When you sit someone down, ask the right questions, and record what they say, you get the judgment and qualifiers that make institutional knowledge useful.
 
+A structured interview works best with open-ended questions — questions that can't be answered yes or no, that force the person to walk through their reasoning rather than confirm yours. Questions like:
+
+- What decisions do you make that nobody else makes?
+- Which exceptions have you handled that aren't written down anywhere?
+- What rule of thumb do you use that you've never had to explain before?
+- If you were training your replacement, what's the thing they'd get wrong first?
+- What breaks first when you're out for a week?
+
 A well-structured transcript becomes raw material an AI can reference, retrieve, and reason against. An ops lead walking through her exception-handling process. A salesperson explaining why specific customers get different terms. An engineer describing the estimation logic behind a quote. The transcript doesn't replace the person's judgment. It makes that judgment available when the person isn't in the room.
 
-The practical move: when your Knowledge Map flags an organic source as at-risk, the first Source action is a structured interview. Not a casual conversation. A deliberate session with specific questions: What decisions do you make that nobody else makes? Which exceptions have you handled that aren't written down? What rule of thumb do you use that you've never had to explain? The output is a transcript that feeds directly into the Knowledge Map as captured institutional knowledge.
+The practical move: when your Knowledge Map flags an organic source as at-risk, the first Source action is a structured interview. Not a casual conversation. A deliberate session with specific open-ended questions. The output is a transcript that feeds directly into the Knowledge Map as captured institutional knowledge.
 
 :::{.callout-note}
 ## Action Step
-Identify the highest-risk organic source on your Knowledge Map: the person whose knowledge is most at risk of leaving. Schedule a structured interview this week. Ask what decisions they make that nobody else makes. Record it. Transcribe it. Add the output to the map.
+Identify the highest-risk organic source on your Knowledge Map: the person whose knowledge is most at risk of leaving. Schedule a structured interview this week. Use open-ended questions. Record it. Transcribe it. Add the output to the map.
 :::
 
 ## Treat knowledge management as *infrastructure*.
@@ -232,45 +266,84 @@ Most companies treat knowledge as something that takes care of itself. It doesn'
 
 Every claim in this book about what AI can do for an operating company depends on the knowledge the AI can reach. An agent is only as competent as the institutional context available to it: the SOPs, the historical records, the pricing rules, the customer history, the decisions captured in writing instead of left in someone's head. Give it clean, current, well-indexed knowledge and it operates at the standard you'd expect from a well-briefed employee. Give it dirty, stale, or absent knowledge and it operates like an employee handed the job on their first morning with no onboarding. Confidently, plausibly, wrong.
 
-The compounding effect is what changes the math. A human handed bad information will usually ask a question, sense the disconnect, slow down. An agent handed bad information will execute against it, at scale, in parallel, every time you ask, so the cost is no longer the occasional mistake but how fast and how far a bad answer propagates before anyone notices. You can't engineer your way around a knowledge base that hasn't been curated. An AI model reaches the information you make reachable and weights it the way you structure it. Getting that right is **context engineering** (the discipline of structuring what information the AI can see and how it's organized), and it runs downstream of knowledge management. It can't substitute for it.
-
-Treat knowledge management as a budget line, a named owner, and a regular review cadence. Treat it as infrastructure, not a project. Companies that take it seriously discover that every Sprint after the first one gets cheaper, because the Knowledge Map already exists for the part of the business the next constraint touches. Companies that don't discover the opposite: every Sprint feels like the first one, because nobody captured what the last one learned.
-
-### Name a knowledge manager
-
-Most companies don't have anyone whose job this is. The shared drive is owned by whoever set it up; the wiki is owned by whoever last cared enough to edit it; the question of what's current and what's archived is owned by nobody. That gap is the role that's missing.
-
-We use the working term *knowledge manager* for it. The job is to curate the institutional knowledge the rest of the company runs on: deciding what gets captured, what gets retired, what gets restructured, what gets connected to which agent. They're the person accountable for whether the knowledge base reflects how the business actually operates today, and for catching the moment it stops.
-
-The Human Orchestrator (the operator who runs the redesigned workflow and supervises its agent team day-to-day once it ships — detailed in the Designing the System chapter) sets the goals for an agent team inside a single Sprint and reviews that team at the goal level. The knowledge manager works underneath every Sprint, keeping the inputs each Sprint depends on clean, current, and reachable. A Human Orchestrator running a Sprint against a knowledge base nobody has curated will spend most of the Sprint debugging the data. Orchestrator outcomes depend on the quality of the knowledge the knowledge manager maintains.
-
-Most companies don't have this role today. They will. The ones that introduce it early run their Sprints against knowledge they can trust; the ones that don't run their Sprints against whatever was in the drive when somebody asked.
-
-## What bad data does to an *agent*.
-
-Your company's data is a massive asset, *if* you can get it into a format AI can actually use. An agent pointed at dirty data, outdated records, or unstructured knowledge with no classification produces bad answers confidently and at scale. Source is where you confront the quality of what you've got before you build anything on top of it.
+The compounding effect is what changes the math. A human handed bad information will usually ask a question, sense the disconnect, slow down. An agent handed bad information will execute against it, at scale, in parallel, every time you ask, so the cost is no longer the occasional mistake but how fast and how far a bad answer propagates before anyone notices.
 
 We learned this the hard way inside our own company. The agents kept surfacing wrong information. Old pricing, deprecated processes, policies superseded two revisions back. We'd correct it. It would surface the same thing again. It took more iterations than we want to admit before we asked the right question: why does it keep showing old information?
 
-The answer was three things we hadn't gotten clear about. Taxonomies: the naming and grouping system that tells you what each piece of knowledge is and where it belongs. Knowledge hygiene: the discipline of keeping that system current and free of contradictory, stale, or duplicate entries. And how we vectorized work: the process of indexing documents into a format an AI can search and retrieve. (Embeddings are numeric representations of text the AI uses to find similar things; a vector database is where those representations are stored and searched. Both are covered further in the glossary.)
+The answer was three things we hadn't gotten clear about. 
 
-The root cause was simple and brutal. Everything we had ever stored was indexed together: current and expired, active and archived, no distinction. The AI had no way to know what was old. If the data was in the knowledge base, the system assumed it was meant to be there.
+First, taxonomies: the naming and grouping system that tells you what each piece of knowledge is and where it belongs. 
 
-We saw the same pattern at a client site. They deployed an application against their internal knowledge base and it kept surfacing expired information, for the exact same reason. Current and outdated content living side by side, with no process for managing which was which.
+Second, knowledge hygiene: the discipline of keeping that system current and free of contradictory, stale, or duplicate entries. 
 
-The AI was doing exactly what it was designed to do in both cases. The problem wasn't the AI. Nobody had done the Source work before pointing the AI at the data.
+Third, how we indexed the work: documents had been loaded into the knowledge base without any distinction between current and archived. 
 
-Source isn't where data infrastructure gets built. Source names the gaps. Whether to fill them, capture the judgment, or design around the limitation is a Design decision. Confusing the two phases is how Source bloats into a year-long data project that never produces a workflow.
+Everything we had ever stored was indexed together. The AI had no way to know what was old. If the data was in the knowledge base, the system assumed it was meant to be there.
+
+We've since seen the identical pattern at client sites: current and archived content indexed side by side, with no process for telling them apart. The AI was doing exactly what it was designed to do — nobody had done the Source work before pointing it at the data.
+
+You can't engineer your way around a knowledge base that hasn't been curated. An AI model reaches the information you make reachable and weights it the way you structure it. Getting that right is **context engineering** (the discipline of structuring what information the AI can see and how it's organized). Context engineering runs downstream of knowledge management — it can't substitute for it.
+
+Here's how to know you have a context problem: the agent keeps surfacing information you know is stale or contradictory; it treats archived content the same as current content because both are indexed in the same place. 
+
+The fix isn't technical. It's a taxonomy decision: distinguish current from archived, retire stale entries, restructure anything that contradicts current policy, and only index what you'd hand a new employee on their first day. 
+
+Establish a regular review cadence — at least once per Sprint — where someone asks: what's in the knowledge base that no longer reflects how the business actually runs? 
+
+That cadence is **knowledge hygiene**, and it's the thing most companies skip because it feels like overhead. You'll realize the true cost, though, when the agent surfaces bad information, steers your team in the wrong direction, or embarrasses you in front of a customer.
+
+Treat knowledge management as infrastructure, not a project. Give it a budget line, a named owner, and a regular review cadence.
+
+Companies that take knowledge hygiene seriously discover that every Sprint after the first one gets cheaper, because the Knowledge Map already exists for the part of the business the next constraint touches. Companies that don't discover the opposite: every Sprint feels sluggish, because nobody captured what the last one learned.
+
+### Name a knowledge *manager*.
+
+Most companies don't have anyone whose job this it is to manage their Systems of Knowledge. The shared drive is owned by whoever set it up; the wiki is owned by whoever last cared enough to edit it; the question of what's current and what's archived is owned by nobody. That gap is the role that's missing.
+
+We use the working term *knowledge manager* for it. This role is the **custodian of context**. They own the Systems Inventory and the knowledge-management process: deciding what gets captured, what gets retired, what gets restructured, what gets connected to which agent. They set and enforce the taxonomy and the hygiene cadence. They're the person accountable for whether the knowledge base reflects how the business actually operates today, and for catching the moment it stops.
+
+The knowledge manager affects **every Sprint**. Each Sprint's agent team depends on knowledge that's clean, current, and reachable. 
+
+When the knowledge manager keeps the Systems Inventory current and the taxonomy clear, each Knowledge Map your team builds draws from something it can trust. When that work hasn't been done, the Sprint team spends half its time debugging what it thought was good data.
+
+Most companies don't have this role today. They will. The ones that introduce it early run their Sprints against knowledge they can trust; the ones that don't run their Sprints against whatever was in the drive when somebody asked.
+
+## Capture what you know in an *open* format.
+
+The knowledge manager needs somewhere to put all of this: the captured transcripts, the documented exceptions, the Systems Inventory itself. The wrong answer is a proprietary catalog that locks your knowledge inside one vendor's tool. The right answer is a format you own, that any AI model can read, and that moves with you when your tools change.
+
+In 2026, Google shipped one: the **Open Knowledge Format** (OKF), an open standard built for exactly this problem: portable, inspectable, vendor-neutral knowledge capture. 
+
+It's deliberately plain. An OKF bundle is a folder of markdown files, each with a short header (a few lines naming what the file is, who owns it, when it was last updated) and a body that's just readable text: a system's schema, a pricing policy, an engineer's estimation logic, a runbook. 
+
+Files link to each other the way web pages do. You can write it in any text editor, keep it in version control, and an AI agent can read it directly.
+
+{{< excalidraw ch05-okf-bundle "An Open Knowledge Format bundle: a folder of plain markdown files with short headers, cross-linked — the on-ramp to a System of Semantics." >}}
+
+Here's why it belongs in Source. Most companies don't have a System of Semantics, the layer that lets an AI understand how concepts relate. 
+
+An OKF bundle is the on-ramp: each file is a piece of captured knowledge, and the links between files are the beginning of the knowledge graph a System of Semantics is built on. A dozen well-written, cross-linked files are often a stronger foundation than a far more expensive vendor platform.
+
+It's also the concrete answer to context engineering. A vendor's knowledge index is a black box: you can't see what's in it, what's stale, or why the agent surfaced what it did. An OKF bundle is the opposite. Every file is inspectable, every change is tracked, and retiring a stale entry is just deleting a file. The knowledge manager curates the bundle the way a librarian curates a collection.
+
+And a non-engineer can start one today. Writing the files is writing markdown, a skill anyone who's used a wiki already has. Auto-generating files from your source systems takes an engineer, but the human-authored start doesn't, and that's where the highest-value knowledge lives anyway: the judgment that was never in a system to begin with.
+
+Whether OKF itself becomes the standard or something like it does, the principle is the durable part: capture what your company knows as portable, cross-linked, human- and agent-readable files you own, not as entries locked inside a tool you rent — so the next Sprint doesn't start from scratch, and your knowledge doesn't vanish when you switch tools. Your Systems Inventory and every transcript you capture can live in one bundle.
+
+:::{.callout-note}
+## Action Step
+Start an OKF bundle for your constraint. Make a folder, add an index file, and write one markdown file for each system, person, and metric on your Knowledge Map: a few lines of header (what it is, who owns it) and a paragraph on what matters about it. Link the files that relate to each other. You've just begun your System of Semantics.
+:::
 
 ## Run the completeness test before you hand *off*.
 
 Before you call Source done, run eight checks:
 
-1. **Architect test.** Could someone who wasn't in the room look at this Knowledge Map and know what they're designing against: what data exists, where it lives, what's missing, and what's at risk?
+1. **Architect test.** Could someone who wasn't in the room look at this Knowledge Map and know unambiguously what systems feed the constraint — what data exists, where it lives, what's missing, and what's at risk?
 2. **Constraint scope test.** Every row connects to the constraint. If a row doesn't, cut it.
-3. **Layer test.** Every row is classified by its information layer: System of Record, System of Knowledge, or System of Semantics. If all your rows are Record and none are Knowledge or Semantics, you've done a data audit, not Source.
+3. **Layer test.** Every digital row is classified by its information layer — System of Record, System of Knowledge, or System of Semantics — and traces back to an entry in the Systems Inventory. If all your rows are Record and none are Knowledge or Semantics, you've done a data audit, not Source.
 4. **TML test.** Every row is also classified by TML type: Task, Management, or Leadership. This informs how Design handles capture and transfer.
-5. **Pipeline test.** Every digital source has a pipeline status: Connected, Manual, or Broken. No blanks.
+5. **Pipeline test.** Every digital source has a pipeline status: Connected, Manual, or Isolated. No blanks.
 6. **At-risk test.** You explicitly asked: who on this list is a single point of failure? The answer is on the map.
 7. **Gap test.** The Missing column isn't empty. Zero missing sources means you didn't look hard enough.
 8. **One-page test.** The map fits on one page. If it doesn't, you've drifted from the constraint.
@@ -280,11 +353,14 @@ Before you call Source done, run eight checks:
 Run the eight-item completeness test against your Knowledge Map. Fix any gaps. Then put the Constraint Statement from Signal at the top of the page and the Knowledge Map below it. That one page is what you hand to Design.
 :::
 
-Here is the blank Knowledge Map template. Copy it into a doc or spreadsheet and fill in one row per source. Run the three passes (Digital, Organic, Missing) and stop when every row connects to the constraint Signal validated.
+Here is the blank Knowledge Map template — it's also the `knowledge-that-walks` worksheet. Copy it, fill in one row per source, and run the three passes (Digital, Organic, Missing), stopping when every row connects to the constraint Signal validated.
 
+{{< excalidraw ch05-knowledge-map-blank "Blank Knowledge Map template: six columns, one row per source — copy it and fill it in." >}}
+
+<!-- BACKUP TABLE — keep in case excalidraw is reverted:
 | Source | Type | Owner | Status | Pipeline | Notes |
 |---|---|---|---|---|---|
-|  | Digital / Organic / Missing |  | Clean / Needs Work / Missing | Connected / Manual / Broken |  |
+|  | Digital / Organic / Missing |  | Clean / Needs Work / Missing | Connected / Manual / Isolated |  |
 |  |  |  |  |  |  |
 |  |  |  |  |  |  |
 |  |  |  |  |  |  |
@@ -292,18 +368,23 @@ Here is the blank Knowledge Map template. Copy it into a doc or spreadsheet and 
 |  |  |  |  |  |  |
 
 Add one row per source the constraint workflow touches. Flag any organic source that is a single point of failure with **AT RISK** in the Notes column. If the map runs longer than one page, you've drifted from the constraint. Cut rows that don't touch the workflow Signal named.
+-->
 
 Here is Meridian's completed Knowledge Map, populated against the quoting constraint, as a worked reference:
 
+{{< excalidraw ch05-knowledge-map-pass3 "Meridian's completed Knowledge Map: three digital sources, two at-risk people, and two gaps — all scoped to the quoting constraint." >}}
+
+<!-- BACKUP TABLE — keep in case excalidraw is reverted:
 | Source | Type | Owner | Status | Pipeline | Notes |
 |---|---|---|---|---|---|
 | HubSpot CRM (win/loss records, deal sizes) | Digital | Ty (Sales) | Needs Work | Manual — Ty tracks outcomes but doesn't link to quotes | Has win rates by customer and job type. Missing: quote amounts on lost bids. |
 | JobBOSS ERP (job costing history, 800+ jobs) | Digital | Finance / ERP admin | Clean | Manual — Elena queries by memory, not systematically | Best source for historical pricing. Structured and queryable, but nobody uses it for quoting. |
-| "Customer Notes.xlsx" (pricing exceptions) | Digital | Elena (VP Ops) | Needs Work | Broken — lives on Elena's desktop, no backup, no version control | 147 customer-specific pricing rules. Mix of simple discounts and complex terms. Never validated against current contracts. |
+| "Customer Notes.xlsx" (pricing exceptions) | Digital | Elena (VP Ops) | Needs Work | Isolated — lives on Elena's desktop, no backup, no version control | 147 customer-specific pricing rules. Mix of simple discounts and complex terms. Never validated against current contracts. |
 | Elena — pricing exceptions, customer history, quoting judgment | Organic | Elena (VP Ops) | — | — | Holds the complete picture for every quote. Only person who can reconcile all sources. **AT RISK: single point of failure. No backup, no documentation.** |
 | Dave — fabrication hour estimation | Organic | Dave (Sr Design Eng, 31 yrs) | — | — | Estimates accurate to ~10% on standard work. Has never documented his estimation method. **AT RISK: 4 years to retirement.** |
 | Historical quote-to-actual accuracy | Missing | Nobody | Missing | — | Would validate whether rapid estimates are reliable. Data exists in ERP (actuals) and Elena's files (quotes) but has never been compared. |
 | Customer segment profitability | Missing | Nobody | Missing | — | Would enable prioritized quoting — fast-track high-margin segments. Requires joining CRM win/loss to ERP job costing. |
+-->
 
 Look at what this map makes visible. Two organic sources are flagged at risk: Elena as a single point of failure, Dave with four years to retirement. A critical spreadsheet with 147 pricing rules lives on one person's desktop with no sync. The CRM and ERP hold the data you'd need to build a quoting workflow, but nobody has ever joined them. And two pieces of information that don't exist yet (historical accuracy and segment profitability) are the exact inputs the team would need to decide whether an agent-assisted quoting workflow is even viable. Every one of those findings came from working the three passes against a single constraint. None of them would surface in a general data audit.
 
@@ -317,6 +398,6 @@ Constraint plus map. One page. That's the input Design needs, and it's all Desig
 
 ## Reflection Questions
 
-1. Build a first-pass Knowledge Map for your top constraint right now. List the digital sources that touch that workflow. How many are Connected vs. Manual vs. Broken in the Pipeline column? What does that ratio tell you about the design work ahead?
+1. Build a first-pass Knowledge Map for your top constraint right now. List the digital sources that touch that workflow. How many are Connected vs. Manual vs. Isolated in the Pipeline column? What does that ratio tell you about the design work ahead?
 2. Who on your Knowledge Map is an organic source: someone whose judgment the constraint workflow depends on? Is that person a single point of failure? If they left tomorrow, what would break first?
 3. When you classify the sources on your map, what share of your information is structured vs. unstructured? What's the most valuable piece of unstructured knowledge in the constraint workflow, and what would it take to make it AI-usable?

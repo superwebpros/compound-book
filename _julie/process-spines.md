@@ -31,6 +31,7 @@
 | 8 | Run the Signal Session | 04-signal | Run the *Signal* session | `run-signal-session` (ships as `signal`) | Buried | 7 |
 | 8a | Build the Constraint Backlog | 04-signal | Build the *Constraint Backlog* and select the one | `constraint-backlog` | Buried | 6 |
 | 9 | Build the Knowledge Map | 05-source | Build the map in three passes. | `build-knowledge-map` (ships as `knowledge-that-walks`) | Visible | 6 |
+| 9a | Build the Systems Inventory | 05-source | Build and maintain the *Systems Inventory* | `systems-inventory` | Buried | 4 |
 | 10 | Classify each source on the map | 05-source | Classify what you found. | `classify-sources` | Buried | 4 |
 | 11 | Write the Information Flow Specification | 06-designing-the-system | See the work as information flow first | `information-flow-spec` (ships as `map-the-inputs`) | Buried | 6 |
 | 12 | Build the Hybrid Accountability Chart | 06-designing-the-system | The Hybrid Accountability Chart assigns owners to the flow | `hybrid-accountability-chart` | Visible | 6 |
@@ -152,10 +153,18 @@ Each block below is the verbatim source for both the worksheet and the book over
 
 1. **Start from the Constraint Statement** — Scopes the entire map to the one validated constraint so no row is extraneous.
 2. **Draw the six-column table (Source, Type, Owner, Status, Pipeline, Notes)** — Establishes the shared schema all three passes populate; running both the Knowledge Map and Pipeline Audit together prevents duplicated effort.
-3. **Pass 1 — List every digital source that touches the constraint** — Surfaces the named, login-accessible systems first because they are the easiest to enumerate and set the baseline for what is Connected, Manual, or Broken.
+3. **Pass 1 — List every digital source that touches the constraint** — Surfaces the named, login-accessible systems first because they are the easiest to enumerate and set the baseline for what is Connected, Manual, or Isolated.
 4. **Pass 2 — List every person whose judgment the constraint workflow depends on** — Captures organic sources (institutional knowledge held by individuals) and flags single points of failure as AT RISK before the knowledge can walk out the door.
 5. **Pass 3 — List every gap: knowledge that should exist but does not appear in Pass 1 or Pass 2** — Naming missing sources before Build begins converts invisible Sprint failure modes into explicit design decisions.
 6. **Apply the one-page test** — Forces constraint scope discipline — if the map exceeds one page, rows unrelated to the constraint have crept in and must be cut.
+
+### 9a. Build the Systems Inventory — `systems-inventory`
+*05-source · Build and maintain the Systems Inventory · Buried · standing companion to #9*
+
+1. **List every system, by layer** — Catalog Systems of Record, Systems of Knowledge, and any Systems of Semantics in one place, so the whole information environment is visible before any one constraint scopes it.
+2. **Name an owner and what each system holds** — Turns a list of logos into an accountable map; a name, not a department, against each system and one line on what the business actually relies on it for.
+3. **Mark health and reachability** — Clean / Needs Work / Stale, and Yes (API/MCP) / Manual / No — so every future Sprint sees at a glance what's usable today and what needs work first.
+4. **Keep it current — assign the cadence** — The knowledge manager owns it as a standing responsibility with a per-Sprint review; after each Sprint, fold in what the Knowledge Map learned.
 
 ### 10. Classify each source on the map — `classify-sources`
 *05-source · Classify what you found · Buried*
@@ -390,6 +399,7 @@ Each block below is the verbatim source for both the worksheet and the book over
 | Map the Hybrid Split | 02-co-operating-model | `map-hybrid-split` |
 | Run the Signal Session | 04-signal | `run-signal-session` |
 | Build the Constraint Backlog | 04-signal | `constraint-backlog` |
+| Build the Systems Inventory | 05-source | `systems-inventory` |
 | Classify each source on the map | 05-source | `classify-sources` |
 | Write the Information Flow Specification | 06-designing-the-system | `information-flow-spec` |
 | Work Deconstruction | 06b-designing-the-work | `work-deconstruction` |
@@ -422,7 +432,7 @@ All other unique processes. Priority tier 1 = the Sprint-spine backbone a reader
 `ai-readiness-scorecard`, `sprint-planning-canvas`, `classify-sources`, `hybrid-accountability-chart`, `agent-mini-spec`, `design-brief`, `write-build-spec`, `guardrails-checklist`, `deploy-readiness-audit`, `sprint-outcome-measurement`, `sprint-retrospective`, `quarterly-operating-session`.
 
 Tier 2 (calculators / stock-takes / supporting artifacts):
-`revenue-per-employee`, `two-column-role-sort`, `calculate-design-opportunity`, `map-hybrid-split`, `work-deconstruction`, `audit-spec-failures`, `per-role-runbook`, `operational-log`, `install-design-change`, `constraint-re-rank`, `hybrid-org-today`, `compounding-scorecard`, `minimum-viable-signal`, `sprint-roster`, `constraint-backlog`.
+`revenue-per-employee`, `two-column-role-sort`, `calculate-design-opportunity`, `map-hybrid-split`, `work-deconstruction`, `audit-spec-failures`, `per-role-runbook`, `operational-log`, `install-design-change`, `constraint-re-rank`, `hybrid-org-today`, `compounding-scorecard`, `minimum-viable-signal`, `sprint-roster`, `constraint-backlog`, `systems-inventory`.
 
 ---
 
@@ -438,6 +448,7 @@ Same artifact, same slug `sprint-planning-canvas`. #7 is the **canonical full sp
 - **Signal family** — `run-signal-session` (#8, full facilitated session) and `minimum-viable-signal` (#30, 3-step solo version). Intentionally different scopes; keep both but cross-link so #30 reads as the stripped-down on-ramp to #8.
 - **Backlog re-rank** — `constraint-re-rank` (#26, Compound chapter) and Step 2 of `quarterly-operating-session` (#27, Rhythm chapter) are the same move at two cadences. Keep both; make the Rhythm step explicitly point to the #26 spine so the re-rank logic is authored once.
 - **Constraint Backlog lifecycle** — `constraint-backlog` (#8a, Signal: build it + first selection) and `constraint-re-rank` (#26, Compound: re-rank it after each Sprint) are the same standing table at two moments. The build-and-select logic is authored in #8a; #26 re-orders what #8a created. Keep both; the selection rule (eligibility → load-bearing → cost) is shared, authored in #8a.
+- **Systems Inventory ↔ Knowledge Map** — `systems-inventory` (#9a, the standing company-wide catalog of all systems by layer) and `knowledge-that-walks` (#9, the per-constraint Knowledge Map) are the same both/and as the Constraint Backlog ↔ committed constraint: a standing inventory vs. a per-Sprint scoped pull. The knowledge manager owns #9a across Sprints; each Sprint's #9 draws the relevant systems from it. Keep both.
 - **HAC touchpoints** — `hybrid-accountability-chart` (#12, build it), `quarterly-operating-session` Step 4 (#27, update it), `hybrid-org-today` (#28, fold it into the living doc). Not duplicates — lifecycle stages of one artifact. Ensure column names match across all three.
 
 ---
