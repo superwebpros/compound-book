@@ -88,7 +88,7 @@ Acts as a pre-handoff gate ensuring the map covers layers, TML types, pipeline s
 - **Constraint scope test.** Every row connects to the constraint. If a row doesn't, cut it.
 - **Layer test.** Every row is classified by information layer: System of Record, System of Knowledge, or System of Semantics. All-Record means you did a data audit, not Source.
 - **TML test.** Every row is classified by TML type: Task, Management, or Leadership. This tells Design how to handle capture and transfer.
-- **Pipeline test.** Every digital source has a pipeline status — Connected, Manual, or Broken. No blanks.
+- **Pipeline test.** Every digital source has a pipeline status — Connected, Manual, or Isolated. No blanks.
 - **At-risk test.** You explicitly asked who is a single point of failure, and the answer is on the map.
 - **Gap test.** The Missing column isn't empty. Zero missing sources means you didn't look hard enough.
 - **One-page test.** The map fits on one page. If it doesn't, you've drifted from the constraint.

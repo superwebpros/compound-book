@@ -29,7 +29,9 @@
 | 6 | Map the Hybrid Split | 02-co-operating-model | Two patterns: human-supervised, *agent*-supervised. | `map-hybrid-split` | Buried | 5 |
 | 7 | Fill in the Sprint Planning Canvas | 03-the-framework | The Sprint Planning Canvas asks one *question* per stage | `sprint-planning-canvas` | Visible | 6 |
 | 8 | Run the Signal Session | 04-signal | Run the *Signal* session | `run-signal-session` (ships as `signal`) | Buried | 7 |
+| 8a | Build the Constraint Backlog | 04-signal | Build the *Constraint Backlog* and select the one | `constraint-backlog` | Buried | 6 |
 | 9 | Build the Knowledge Map | 05-source | Build the map in three passes. | `build-knowledge-map` (ships as `knowledge-that-walks`) | Visible | 6 |
+| 9a | Build the Systems Inventory | 05-source | Build and maintain the *Systems Inventory* | `systems-inventory` | Buried | 4 |
 | 10 | Classify each source on the map | 05-source | Classify what you found. | `classify-sources` | Buried | 4 |
 | 11 | Write the Information Flow Specification | 06-designing-the-system | See the work as information flow first | `information-flow-spec` (ships as `map-the-inputs`) | Buried | 6 |
 | 12 | Build the Hybrid Accountability Chart | 06-designing-the-system | The Hybrid Accountability Chart assigns owners to the flow | `hybrid-accountability-chart` | Visible | 6 |
@@ -46,7 +48,7 @@
 | 23 | Measure the Sprint Outcome | 08-deliver | The *measurement* question. | `sprint-outcome-measurement` | Visible | 5 |
 | 24 | Run the Sprint Retrospective | 09-compound | Run the Sprint *Retrospective* honestly | `sprint-retrospective` | Buried | 5 |
 | 25 | Install One Design Change | 09-compound | Install one *design change*. Just one. | `install-design-change` | Buried | 5 |
-| 26 | Re-rank the Signal Backlog (Constraint Re-rank) | 09-compound | Re-rank the Signal Backlog on what the *Sprint* taught you | `constraint-re-rank` | Buried | 5 |
+| 26 | Re-rank the Constraint Backlog (Constraint Re-rank) | 09-compound | Re-rank the Constraint Backlog on what the *Sprint* taught you | `constraint-re-rank` | Buried | 5 |
 | 27 | Run the quarterly operating session | 10-the-rhythm | Run the quarterly operating session in *four steps*. | `quarterly-operating-session` | Visible | 4 |
 | 28 | Maintain the Hybrid Org Today | 10-the-rhythm | Maintain one living document: the *Hybrid Org Today*. | `hybrid-org-today` | Buried | 4 |
 | 29 | Track compounding on the Compounding Scorecard | 10-the-rhythm | Track compounding on a single *scorecard*. | `compounding-scorecard` | Buried | 4 |
@@ -136,15 +138,33 @@ Each block below is the verbatim source for both the worksheet and the book over
 6. **Quantify and write the Constraint Statement** — Write the anchoring sentence and complete the validation record with a cost expressed as a rate or unit per period.
 7. **Lock it and check the failure modes** — Run the restate test, read the statement back, and confirm the room agrees before handing off to Source.
 
+### 8a. Build the Constraint Backlog — `constraint-backlog`
+*04-signal · Build the Constraint Backlog and select the one · Buried · zooms steps 4–5 of #8*
+
+1. **Enter every candidate constraint in the backlog table** — Land each candidate that survived the Five Whys as a one-line structural statement; the Backlog is born here and carried into every later Sprint.
+2. **Fill in owner, closeable, and cost for each row** — A name, a yes/needs-breakdown, and a rate or unit per period — the three fields selection runs on.
+3. **Filter for the eligible candidates** — Mark any row with no owner, no cost, or "needs breakdown" as not-ready; it stays in the Backlog but is out of the running.
+4. **Find the load-bearing one** — The governing candidate whose removal unblocks or clarifies the others; if one clearly governs, that's the constraint.
+5. **Cost tiebreak — only if none clearly governs** — When candidates are independent, commit to the costliest you can close.
+6. **Commit the one and record the rest as the standing Backlog** — The selected constraint goes to the Constraint Statement and the Sprint Planning Canvas; the rest persist for the Compound re-rank.
+
 ### 9. Build the Knowledge Map — `build-knowledge-map` (worksheet ships as `knowledge-that-walks`)
 *05-source · Build the map in three passes · Visible*
 
 1. **Start from the Constraint Statement** — Scopes the entire map to the one validated constraint so no row is extraneous.
 2. **Draw the six-column table (Source, Type, Owner, Status, Pipeline, Notes)** — Establishes the shared schema all three passes populate; running both the Knowledge Map and Pipeline Audit together prevents duplicated effort.
-3. **Pass 1 — List every digital source that touches the constraint** — Surfaces the named, login-accessible systems first because they are the easiest to enumerate and set the baseline for what is Connected, Manual, or Broken.
+3. **Pass 1 — List every digital source that touches the constraint** — Surfaces the named, login-accessible systems first because they are the easiest to enumerate and set the baseline for what is Connected, Manual, or Isolated.
 4. **Pass 2 — List every person whose judgment the constraint workflow depends on** — Captures organic sources (institutional knowledge held by individuals) and flags single points of failure as AT RISK before the knowledge can walk out the door.
 5. **Pass 3 — List every gap: knowledge that should exist but does not appear in Pass 1 or Pass 2** — Naming missing sources before Build begins converts invisible Sprint failure modes into explicit design decisions.
 6. **Apply the one-page test** — Forces constraint scope discipline — if the map exceeds one page, rows unrelated to the constraint have crept in and must be cut.
+
+### 9a. Build the Systems Inventory — `systems-inventory`
+*05-source · Build and maintain the Systems Inventory · Buried · standing companion to #9*
+
+1. **List every system, by layer** — Catalog Systems of Record, Systems of Knowledge, and any Systems of Semantics in one place, so the whole information environment is visible before any one constraint scopes it.
+2. **Name an owner and what each system holds** — Turns a list of logos into an accountable map; a name, not a department, against each system and one line on what the business actually relies on it for.
+3. **Mark health and reachability** — Clean / Needs Work / Stale, and Yes (API/MCP) / Manual / No — so every future Sprint sees at a glance what's usable today and what needs work first.
+4. **Keep it current — assign the cadence** — The knowledge manager owns it as a standing responsibility with a per-Sprint review; after each Sprint, fold in what the Knowledge Map learned.
 
 ### 10. Classify each source on the map — `classify-sources`
 *05-source · Classify what you found · Buried*
@@ -305,8 +325,8 @@ Each block below is the verbatim source for both the worksheet and the book over
 4. **Install the change structurally before the next Sprint begins** — An insight that doesn't change the design isn't worth recording — the change must land in the chart, workflow, or Source map.
 5. **Verify the change using the 'how you'll know' criterion** — Closes the loop — confirms the change is working before Sprint two kicks off, not assumed.
 
-### 26. Re-rank the Signal Backlog (Constraint Re-rank) — `constraint-re-rank`
-*09-compound · Re-rank the Signal Backlog on what the Sprint taught you · Buried*
+### 26. Re-rank the Constraint Backlog (Constraint Re-rank) — `constraint-re-rank`
+*09-compound · Re-rank the Constraint Backlog on what the Sprint taught you · Buried*
 
 1. **Ask: did the Sprint reveal new information about any other constraints?** — Solving one constraint exposes the real cost of another — the backlog order the company entered the Sprint with may no longer be correct.
 2. **Ask: did any constraints get partially resolved as a side effect?** — Recognizes spillover value and adjusts rankings to reflect what actually changed, not just what was targeted.
@@ -318,14 +338,14 @@ Each block below is the verbatim source for both the worksheet and the book over
 *10-the-rhythm · Run the quarterly operating session in four steps · Visible*
 
 1. **Step 1: Review the previous Sprint at the outcome level** — Determines whether the constraint actually moved and whether the workflow is permanent or needs another Sprint — the outcome question, not a status update.
-2. **Step 2: Update the Signal Backlog** — Re-ranks the running inventory of constraints so the next Sprint is chosen from current reality, not last quarter's assumptions.
+2. **Step 2: Update the Constraint Backlog** — Re-ranks the running inventory of constraints so the next Sprint is chosen from current reality, not last quarter's assumptions.
 3. **Step 3: Commit the next Sprint** — Converts backlog priority into a named constraint, a named Human Orchestrator, a budget confirmation, and a start date — the team leaves with a specific commitment.
 4. **Step 4: Update the Hybrid Accountability Chart** — Makes permanent any HAC rows from the completed Sprint, removes what didn't work, and resets the Hybrid Org Today baseline so the living document stays current.
 
 ### 28. Maintain the Hybrid Org Today — `hybrid-org-today`
 *10-the-rhythm · Maintain one living document: the Hybrid Org Today · Buried*
 
-1. **Combine the Hybrid Accountability Chart and Signal Backlog into one document** — The structural layer (who owns what handoffs) and the constraint inventory (solved / in-flight / queued) together answer the one quarterly question: where does the design layer stand today?
+1. **Combine the Hybrid Accountability Chart and Constraint Backlog into one document** — The structural layer (who owns what handoffs) and the constraint inventory (solved / in-flight / queued) together answer the one quarterly question: where does the design layer stand today?
 2. **Fit it on one page** — If it spills past one page you are tracking too much — the constraint forces prioritization and prevents the document from becoming an ignored wiki.
 3. **Update it during the quarterly session, not between sessions** — Leadership-team ownership in the meeting is the discipline that prevents the document from rotting; Thursday-afternoon curation by a Notion-curator is how every 'living document' dies.
 4. **Use it as the standard briefing and the board receipt** — A new executive or a board question gets answered from one current, concrete document — not a slide deck assembled from memory.
@@ -378,13 +398,15 @@ Each block below is the verbatim source for both the worksheet and the book over
 | Calculate the Design Opportunity | 02-co-operating-model | `calculate-design-opportunity` |
 | Map the Hybrid Split | 02-co-operating-model | `map-hybrid-split` |
 | Run the Signal Session | 04-signal | `run-signal-session` |
+| Build the Constraint Backlog | 04-signal | `constraint-backlog` |
+| Build the Systems Inventory | 05-source | `systems-inventory` |
 | Classify each source on the map | 05-source | `classify-sources` |
 | Write the Information Flow Specification | 06-designing-the-system | `information-flow-spec` |
 | Work Deconstruction | 06b-designing-the-work | `work-deconstruction` |
 | Write the Per-Role Runbook | 08-deliver | `per-role-runbook` |
 | Run the Sprint Retrospective | 09-compound | `sprint-retrospective` |
 | Install One Design Change | 09-compound | `install-design-change` |
-| Re-rank the Signal Backlog | 09-compound | `constraint-re-rank` |
+| Re-rank the Constraint Backlog | 09-compound | `constraint-re-rank` |
 | Maintain the Hybrid Org Today | 10-the-rhythm | `hybrid-org-today` |
 | Track compounding on the Compounding Scorecard | 10-the-rhythm | `compounding-scorecard` |
 
@@ -410,7 +432,7 @@ All other unique processes. Priority tier 1 = the Sprint-spine backbone a reader
 `ai-readiness-scorecard`, `sprint-planning-canvas`, `classify-sources`, `hybrid-accountability-chart`, `agent-mini-spec`, `design-brief`, `write-build-spec`, `guardrails-checklist`, `deploy-readiness-audit`, `sprint-outcome-measurement`, `sprint-retrospective`, `quarterly-operating-session`.
 
 Tier 2 (calculators / stock-takes / supporting artifacts):
-`revenue-per-employee`, `two-column-role-sort`, `calculate-design-opportunity`, `map-hybrid-split`, `work-deconstruction`, `audit-spec-failures`, `per-role-runbook`, `operational-log`, `install-design-change`, `constraint-re-rank`, `hybrid-org-today`, `compounding-scorecard`, `minimum-viable-signal`, `sprint-roster`.
+`revenue-per-employee`, `two-column-role-sort`, `calculate-design-opportunity`, `map-hybrid-split`, `work-deconstruction`, `audit-spec-failures`, `per-role-runbook`, `operational-log`, `install-design-change`, `constraint-re-rank`, `hybrid-org-today`, `compounding-scorecard`, `minimum-viable-signal`, `sprint-roster`, `constraint-backlog`, `systems-inventory`.
 
 ---
 
@@ -425,6 +447,8 @@ Same artifact, same slug `sprint-planning-canvas`. #7 is the **canonical full sp
 **C. Soft overlap to watch (no merge, but keep labels distinct):**
 - **Signal family** — `run-signal-session` (#8, full facilitated session) and `minimum-viable-signal` (#30, 3-step solo version). Intentionally different scopes; keep both but cross-link so #30 reads as the stripped-down on-ramp to #8.
 - **Backlog re-rank** — `constraint-re-rank` (#26, Compound chapter) and Step 2 of `quarterly-operating-session` (#27, Rhythm chapter) are the same move at two cadences. Keep both; make the Rhythm step explicitly point to the #26 spine so the re-rank logic is authored once.
+- **Constraint Backlog lifecycle** — `constraint-backlog` (#8a, Signal: build it + first selection) and `constraint-re-rank` (#26, Compound: re-rank it after each Sprint) are the same standing table at two moments. The build-and-select logic is authored in #8a; #26 re-orders what #8a created. Keep both; the selection rule (eligibility → load-bearing → cost) is shared, authored in #8a.
+- **Systems Inventory ↔ Knowledge Map** — `systems-inventory` (#9a, the standing company-wide catalog of all systems by layer) and `knowledge-that-walks` (#9, the per-constraint Knowledge Map) are the same both/and as the Constraint Backlog ↔ committed constraint: a standing inventory vs. a per-Sprint scoped pull. The knowledge manager owns #9a across Sprints; each Sprint's #9 draws the relevant systems from it. Keep both.
 - **HAC touchpoints** — `hybrid-accountability-chart` (#12, build it), `quarterly-operating-session` Step 4 (#27, update it), `hybrid-org-today` (#28, fold it into the living doc). Not duplicates — lifecycle stages of one artifact. Ensure column names match across all three.
 
 ---

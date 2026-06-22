@@ -212,7 +212,7 @@ workflow. For each one I name, ask:
 - What is the data status? (Clean, Needs Work, or Missing)
 - Pipeline status — does this system connect to the other systems that
   touch the constraint, or does data move by manual export?
-  (Connected / Manual / Broken)
+  (Connected / Manual / Isolated)
 - Any notes — what specifically does this system hold that matters for
   the constraint?
 
@@ -316,7 +316,7 @@ After classifying all sources, flag any issues:
 - Any source classified as historical that people are treating as
   current? That's how an AI confidently cites your deprecated pricing
   from 2019.
-- Any durable source with a Broken pipeline? That's a gap Design needs
+- Any durable source with a Isolated pipeline? That's a gap Design needs
   to address.
 
 Present the classified Knowledge Map as a table with the three

@@ -126,7 +126,7 @@ The ERP held job costing history. Every completed job had a record with actual m
 |---|---|---|---|---|---|
 | ERP job costing history (800+ jobs, 3 years) | Digital | Finance / ERP admin | Clean | Manual — Elena queries by memory, not systematically | Best source for historical pricing, but nobody uses it for quoting. Structured data, queryable. |
 | CRM win/loss records | Digital | Ty (Sales) | Needs Work | Manual — Ty tracks outcomes but doesn't link to quotes | Has win rates by customer and job type. Missing: quote amounts on lost bids. |
-| Elena's pricing exceptions spreadsheet ("Customer Notes.xlsx") | Digital | Elena | Needs Work | Broken — lives on Elena's desktop, no backup, no version control | 147 customer-specific pricing rules. Mix of simple discounts and complex terms. Never validated against current contracts. |
+| Elena's pricing exceptions spreadsheet ("Customer Notes.xlsx") | Digital | Elena | Needs Work | Isolated — lives on Elena's desktop, no backup, no version control | 147 customer-specific pricing rules. Mix of simple discounts and complex terms. Never validated against current contracts. |
 | Standard rate card (labor, overhead, margin targets) | Digital | Finance | Clean | Connected to ERP for invoicing, not for quoting | Updated annually. Clear and structured. |
 | Material supplier pricing and lead times | Digital | Elena + Carlos | Needs Work | Manual — Elena calls suppliers or checks emails for current pricing | Supplier price lists exist as PDFs and emails. No centralized database. Lead times are experience-based. |
 | Elena — pricing exceptions, customer history, quoting judgment | Organic | Elena | — | — | Holds the complete picture for every quote. Only person who can reconcile all sources. **AT RISK: single point of failure. No backup, no documentation.** |
@@ -155,7 +155,7 @@ The ERP held job costing history. Every completed job had a record with actual m
 
 2. **Constraint scope test.** Every row connects to the quoting constraint. **Pass.** No rows for HR, marketing, or accounting — only what touches quoting.
 
-3. **Pipeline test.** Every digital source has a pipeline status. **Pass.** Two Connected (rate card to ERP, CRM for records), two Manual (ERP queried by memory, supplier pricing via email), one Broken (Elena's spreadsheet).
+3. **Pipeline test.** Every digital source has a pipeline status. **Pass.** Two Connected (rate card to ERP, CRM for records), two Manual (ERP queried by memory, supplier pricing via email), one Isolated (Elena's spreadsheet).
 
 4. **At-risk test.** Elena flagged as single point of failure. Dave flagged with four years to retirement. **Pass.**
 
