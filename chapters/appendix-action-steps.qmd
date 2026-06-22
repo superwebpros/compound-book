@@ -281,7 +281,7 @@ Go back to your Signal instrument. Copy the Constraint Statement and quantified 
 
 ## Chapter 10: Compound
 
-These steps run the Sprint Retrospective, install the one design change, re-rank the Signal Backlog, and update the three living documents — turning the delivered Sprint into the foundation of the next one.
+These steps run the Sprint Retrospective, install the one design change, re-rank the Constraint Backlog, and update the three living documents — turning the delivered Sprint into the foundation of the next one.
 
 :::{.callout-note}
 ## Action Step

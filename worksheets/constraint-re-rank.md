@@ -1,10 +1,10 @@
 Compound · Compound / Constraint Re-rank
 
-# Re-rank the Signal Backlog
+# Re-rank the Constraint Backlog
 
 *Take the backlog you entered the Sprint with, reorder it against what the Sprint actually taught you, and leave the room with the next constraint and a named Orchestrator.*
 
-The Sprint you just finished produced new information — about what your data really looks like, where accountabilities have friction, which constraints turned out to be symptoms of a deeper one. This worksheet walks the re-rank: four questions that reorder the backlog, then one decision and one name that turn the new order into the next Sprint. **Before you start, you need your current Signal Backlog (the running, prioritized list of validated constraints) and the Sprint Outcome Record from the Sprint you just closed.**
+The Sprint you just finished produced new information — about what your data really looks like, where accountabilities have friction, which constraints turned out to be symptoms of a deeper one. This worksheet walks the re-rank: four questions that reorder the backlog, then one decision and one name that turn the new order into the next Sprint. **Before you start, you need your current Constraint Backlog (the running, prioritized list of validated constraints) and the Sprint Outcome Record from the Sprint you just closed.**
 
 ---
 
@@ -49,8 +49,9 @@ Prevents new constraints from falling through the cracks by capturing them at th
 Converts the re-ranked backlog into a decision — the top constraint becomes the input for the next Signal conversation.
 
 1. Read the reordered backlog top to bottom and confirm the rank-one constraint is the one the Sprint's new information actually points to.
-2. Write the rank-one constraint as the named input for the next Signal conversation.
-3. Sanity check: if the next constraint is the same one you just solved, the Sprint didn't deliver — go back to the operational log and find what's still broken before re-running the same play.
+2. **Apply the load-bearing test before confirming rank one.** For each candidate in contention, ask: *does solving this constraint unblock the others?* The governing constraint is the one whose removal opens the door for the next two or three constraints to be addressed. If solving candidate A doesn't change what B and C cost, A is not load-bearing — move it down. If two candidates tie on this test, use cost as the tiebreak and pick the more expensive one.
+3. Write the rank-one constraint as the named input for the next Signal conversation.
+4. Sanity check: if the next constraint is the same one you just solved, the Sprint didn't deliver — go back to the operational log and find what's still broken before re-running the same play.
 
 > **Meridian:** With the backlog re-ranked, the answer was the HubSpot-to-JobBOSS data sync at rank one. That constraint became the input for Sprint two, to kick off at the next quarterly planning session.
 
@@ -61,7 +62,7 @@ Converts the re-ranked backlog into a decision — the top constraint becomes th
 Names ownership before the Compound session ends; without a named Orchestrator the next Sprint has no driver.
 
 1. Name one person as Human Orchestrator for the next Sprint — a single name, not "the team."
-2. Write the rank-one constraint and the Orchestrator's name into the Signal Backlog before anyone leaves the room.
+2. Write the rank-one constraint and the Orchestrator's name into the Constraint Backlog before anyone leaves the room.
 3. Note when the next Sprint starts (e.g., the next quarterly planning session) so the commitment has a date attached.
 
 > **Meridian:** Mark assigned Elena as Human Orchestrator for Sprint two, with the data-sync constraint named and the kickoff set for the next quarterly planning session — all written down before the Compound session ended.

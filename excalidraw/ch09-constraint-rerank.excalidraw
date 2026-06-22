@@ -42,14 +42,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Re-order the Signal Backlog after a sprint based on what was learned.",
+      "text": "Re-order the Constraint Backlog after a sprint based on what was learned.",
       "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "Re-order the Signal Backlog after a sprint based on what was learned."
+      "originalText": "Re-order the Constraint Backlog after a sprint based on what was learned."
     },
     {
       "id": "q-border",

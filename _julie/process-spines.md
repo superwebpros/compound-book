@@ -128,13 +128,13 @@ Each block below is the verbatim source for both the worksheet and the book over
 ### 8. Run the Signal Session — `run-signal-session` (worksheet ships as `signal`)
 *04-signal · Run the Signal session · Buried*
 
-1. **Assemble the room** — Signal is a facilitated conversation, not a solo exercise — the CEO, senior leadership, relevant function owner, and a facilitator must all be present for the constraint to be validated by the people who own the business.
-2. **Surface the candidates** — Before you can pick one constraint you need an honest inventory; the surfacing lenses (workarounds, new-hire confusion, sausage-making, turnover, recurring conversations) generate five to ten candidates without filtering.
-3. **Trace each to root with the Five Whys** — Most candidates are symptoms, not constraints; running the Five Whys out loud with the people closest to the work finds the structural cause — and the stop rule ensures you land on workflow/handoff/gap, not a person.
-4. **Pick among the survivors using the tiebreaker rubric** — When more than one candidate survives the trace, the five-criteria rubric (foundation first, highest pain, smallest gap, owner in room, two-quarter horizon) applied in order produces a defensible, unambiguous pick.
-5. **Quantify and write the Constraint Statement** — Fill in the one-page template (anchoring sentence, location, duration, quantified cost, validating evidence); the cost must be a real number, using the four estimation formulas if the data isn't clean.
-6. **Lock it** — Apply the lever test and the restate test, read the statement back, and confirm the room agrees it names the right problem.
-7. **Check the failure modes** — A checklist of seven common Signal failures (too abstract, too many, no number, dominant personality, named the person, solved the symptom, unsolvable by a Sprint) catches anything the previous steps missed before you hand off to Source.
+1. **Assemble the room** — The CEO, senior leadership, the relevant function owner, and a facilitator must all be present to validate the constraint.
+2. **Surface the symptoms** — Run the surfacing lenses as live questions; write everything down without filtering.
+3. **Trace each symptom to root with the Five Whys** — Run the Five Whys out loud until each answer lands on a workflow, handoff, or structural gap — not a person.
+4. **Build the Constraint Backlog** — Land each candidate constraint in the standing table; the Backlog is born here and carried forward into every subsequent Sprint.
+5. **Select the one** — Filter for eligible candidates, find the load-bearing one, and use cost as the tiebreak only when none clearly governs.
+6. **Quantify and write the Constraint Statement** — Write the anchoring sentence and complete the validation record with a cost expressed as a rate or unit per period.
+7. **Lock it and check the failure modes** — Run the restate test, read the statement back, and confirm the room agrees before handing off to Source.
 
 ### 9. Build the Knowledge Map — `build-knowledge-map` (worksheet ships as `knowledge-that-walks`)
 *05-source · Build the map in three passes · Visible*

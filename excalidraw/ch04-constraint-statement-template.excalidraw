@@ -18,13 +18,13 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "ONE-PAGE CONSTRAINT STATEMENT",
+      "text": "CONSTRAINT STATEMENT — VALIDATION RECORD",
       "fontSize": 24,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "ONE-PAGE CONSTRAINT STATEMENT"
+      "originalText": "CONSTRAINT STATEMENT — VALIDATION RECORD"
     },
     {
       "id": "field1-label",
@@ -41,13 +41,13 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "1. Constraint in one sentence",
+      "text": "1. Anchoring sentence",
       "fontSize": 20,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "1. Constraint in one sentence"
+      "originalText": "1. Anchoring sentence"
     },
     {
       "id": "field1-box",
@@ -228,13 +228,13 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "4. Quantified cost ($, hours)",
+      "text": "4. Quantified cost (rate or unit / period)",
       "fontSize": 20,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "4. Quantified cost ($, hours)"
+      "originalText": "4. Quantified cost (rate or unit / period)"
     },
     {
       "id": "field4-box",

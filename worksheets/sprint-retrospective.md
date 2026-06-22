@@ -84,4 +84,4 @@ Hand this page to someone who wasn't in the room. They should be able to install
 - [ ] The one change is **structural** (chart, workflow, guardrail, or Source map), inheritable by the next Sprint.
 - [ ] All **three compounding questions** are answered. If any is blank, the Sprint delivered output but didn't compound.
 
-Carry the change card and the compounding answers into the Compound session, where the one change gets installed and the Signal Backlog gets re-ranked.
+Carry the change card and the compounding answers into the Compound session, where the one change gets installed and the Constraint Backlog gets re-ranked.

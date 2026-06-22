@@ -18,7 +18,7 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : The eight-section developer-ready specification produced in *Build*, derived from the *Design Brief*. The first three sections (workflow summary, inputs, outputs) and the systems and integrations section are restatements of Design Brief content at developer-execution depth. Four sections add what Design doesn't own: agent scope at the call level, human supervisor role, failure-mode behavior, and build path with implementation constraints. If the spec disagrees with the Design Brief, the Design Brief wins. Produced via the *Build Spec Writer* instrument. (First introduced: Chapter 8)
 
 **Center of Excellence (COE) Operating Model** (Compound)
-: The organizational design pattern that coordinates specialized functions across a large organization through defined governance, accountability, and recurring alignment sessions. Originates in Dave Ulrich's three-pillar HR framework — HR Business Partners, Centers of Excellence, Shared Services — from *Human Resource Champions* (1997). The Compound quarterly operating session borrows the COE governance discipline (fixed agenda, committed outputs, recurring cadence) and adds the four-step structure: review the previous Sprint, update the *Signal Backlog*, commit the next Sprint, update the *Hybrid Accountability Chart*. (First introduced: Chapter 11)
+: The organizational design pattern that coordinates specialized functions across a large organization through defined governance, accountability, and recurring alignment sessions. Originates in Dave Ulrich's three-pillar HR framework — HR Business Partners, Centers of Excellence, Shared Services — from *Human Resource Champions* (1997). The Compound quarterly operating session borrows the COE governance discipline (fixed agenda, committed outputs, recurring cadence) and adds the four-step structure: review the previous Sprint, update the *Constraint Backlog*, commit the next Sprint, update the *Hybrid Accountability Chart*. (First introduced: Chapter 11)
 
 **Clarity Call** (Compound)
 : A 30-minute, no-cost conversation with a Compound strategist designed to pressure-test a constraint and determine whether it is Sprint-ready. Not a sales pitch; the output is a named constraint you can act on. (First introduced: Chapter 12)
@@ -39,7 +39,7 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : How the work is split between humans and agents: humans own outcomes, agents own tasks. The deliberate design of who does what, who reviews, and where work moves between them. The second term in the equation *Co-Intelligence + Co-Operation + Rhythm = Compound.* (First introduced: Chapter 3)
 
 **Compound (stage)** (Compound)
-: The sixth and final stage of the *Sequence*. After a Sprint is delivered, *Compound* runs the *Sprint Retrospective*, re-ranks the *Signal Backlog*, installs one design change, updates the *Hybrid Accountability Chart*, and names the next constraint — turning a shipped project into the foundation of the next Sprint. (First introduced: Chapter 4)
+: The sixth and final stage of the *Sequence*. After a Sprint is delivered, *Compound* runs the *Sprint Retrospective*, re-ranks the *Constraint Backlog*, installs one design change, updates the *Hybrid Accountability Chart*, and names the next constraint — turning a shipped project into the foundation of the next Sprint. (First introduced: Chapter 4)
 
 **Compound Bench** (Compound)
 : Six AI coaching agents — one per stage of the Sequence — that run the framework *with* you during a Sprint: interrogating constraints, surfacing knowledge gaps, running Work Deconstruction, specifying builds, structuring rollouts, and closing the retrospective. Available through Compound membership.
@@ -52,6 +52,9 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 
 **Compounding Scorecard** (Compound)
 : A running table that tracks the cost delta for each Sprint across quarters — constraint solved, cost before, cost after, delta, and cumulative impact — so leadership can see the compounding returns building over time. (First introduced: Chapter 11)
+
+**Constraint Backlog** (Compound)
+: The standing inventory of validated candidate constraints the organization is working through — born in *Signal* (Chapter 5), where the first constraint is named and quantified. Re-ranked during every *Compound* session as new information emerges; reviewed in *Rhythm* each quarter. The top entry becomes the input for the next Sprint's *Signal* conversation. Selection is load-bearing-first: the governing constraint whose removal unblocks the others. Cost serves as the inventory view and breaks ties, not as the primary selection criterion. (First introduced: Chapter 5)
 
 **Constraint Statement** (Compound)
 : The one-page artifact that Signal produces: a single sentence naming the operational constraint, plus the location in the org, its duration, the quantified cost, and the validating evidence. The handoff from Signal to Source. (First introduced: Chapter 5)
@@ -75,7 +78,7 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : An extension of a traditional accountability chart that includes agent teams alongside humans. Every row names a role or function, the agent team responsible, the human supervisor, and the AI-Assisted vs. Automated level. Every row has a named supervisor — no exceptions. A single Sprint can produce multiple *HAC* entries. (First introduced: Chapter 7)
 
 **Hybrid Org Today** (Compound)
-: A one-page living document that gives the current operational picture of the *Co-Intelligent Company*: active Sprint status, *Signal Backlog* ranked by cost, *Hybrid Accountability Chart* entries, completed Sprint outcomes, and the next quarterly review date. Updated during each quarterly operating session. (First introduced: Chapter 11)
+: A one-page living document that gives the current operational picture of the *Co-Intelligent Company*: active Sprint status, *Constraint Backlog* ranked by cost, *Hybrid Accountability Chart* entries, completed Sprint outcomes, and the next quarterly review date. Updated during each quarterly operating session. (First introduced: Chapter 11)
 
 **Information Flow Specification** (Compound)
 : A spec for how information moves through one accountability — naming inputs, outputs, transformations, decision points, and handoffs between humans and agents. Distinct from the *Knowledge Map* (which is the atlas of what's known); the information flow spec is the route the work takes. (First introduced: Chapter 7)
@@ -96,7 +99,7 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : The three-phase diagnostic structure — *Problem*, *Identify*, *Solution* — that prevents organizations from moving to solution before the problem is fully understood. The *Compound Sprint* embeds PIS into its order: *Signal* is the Problem phase (name and quantify the constraint), *Source* is the Identify phase (map what the organization knows about the constraint), and *Design* through *Deliver* is the Solution phase. (First introduced: Chapter 6)
 
 **Rhythm** (Compound)
-: The quarterly cadence of running Sprints. What turns a single Sprint into a compounding business outcome. Running the *Sequence* over and over — with a quarterly operating session to review the previous Sprint, update the *Signal Backlog*, commit the next Sprint, and update the *HAC*. (First introduced: Chapter 4)
+: The quarterly cadence of running Sprints. What turns a single Sprint into a compounding business outcome. Running the *Sequence* over and over — with a quarterly operating session to review the previous Sprint, update the *Constraint Backlog*, commit the next Sprint, and update the *HAC*. (First introduced: Chapter 4)
 
 **Right Seat Evaluation** (Compound)
 : The three-test discipline for assigning a human supervisor to every *Hybrid Accountability Chart* row: ***Sees It*** (does the supervisor understand the agent's work well enough to evaluate output quality?), ***Wants It*** (are they genuinely accountable for the outcome, not just named on the chart?), and ***Suited for It*** (do they have the judgment, context, and authority to override the agent and make the calls the agent can't?). A supervisor candidate who fails any test is not a supervisor — choose someone else or build the development plan that gets them to all three. (First introduced: Chapter 7)
@@ -106,9 +109,6 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 
 **Signal (stage)** (Compound)
 : Stage 1 of the *Sequence*. The discipline of identifying the one operational constraint worth solving, tracing symptoms to root cause, and quantifying the cost in dollars or hours before committing a Sprint to it. Produces a one-page *Constraint Statement*. (First introduced: Chapter 4)
-
-**Signal Backlog** (Compound)
-: The running, ranked list of validated operational constraints the organization is working through. Updated during every *Compound* session as new information emerges. The top entry becomes the input for the next Sprint's *Signal* conversation. (First introduced: Chapter 10)
 
 **Source (stage)** (Compound)
 : Stage 2 of the *Sequence*. Maps the information environment around the validated constraint — what knowledge exists, where it lives, who holds it, what's missing, and what's at risk of leaving. Produces the *Knowledge Map*. (First introduced: Chapter 4)
@@ -136,7 +136,7 @@ This glossary defines the vocabulary used throughout the book — both terms we 
 : How software systems talk to each other. Think of a waiter carrying orders between a kitchen and a table: the API carries requests from one system and brings structured answers back from another. When a system "has an API," other software can query it and get data in return without anyone typing it manually.
 
 **Backlog** (Technical)
-: A prioritized list of work items to be completed. In software development this is a task list for a development team; in the Compound Sprint context, the Signal Backlog is the prioritized list of operational constraints the company is working through.
+: A prioritized list of work items to be completed. In software development this is a task list for a development team; in the Compound Sprint context, the Constraint Backlog is the prioritized list of operational constraints the company is working through.
 
 **Chunking** (Technical)
 : How documents are broken into smaller pieces for storage and retrieval in a RAG system. The size and structure of chunks affects how accurately the AI finds and uses information when answering questions against a knowledge base.
