@@ -32,7 +32,7 @@ Together with the previous chapter, this is the second half of the Design row on
 2. **Document source inputs and outputs for each task** — Connecting each task to where its data comes from and where the result goes makes the information flow from Source concrete at task level.
 3. **Apply the TML sorting question to each task** — A single binary question — 'would the output need human review every time, or only on exceptions?' — assigns every task to Task, Management, or Leadership without ambiguity.
 4. **Tally the three buckets and challenge the Leadership pile** — If more than half land in Leadership, each item must be re-examined — genuine judgment stays, but undocumented rules that look like judgment get reclassified.
-5. **Map each classified task to a Hybrid Accountability Chart entry** — Deconstruction is thinking; the chart entry (function, agent team, supervisor, autonomy level) is what makes that thinking durable and actionable for Build.
+5. **Map each classified task to a Hybrid Accountability Chart entry** — Deconstruction is thinking; the chart entry (function, agent team, Human Orchestrator, autonomy level) is what makes that thinking durable and actionable for Build.
 <!-- /moves:work-deconstruction -->
 
 Work Deconstruction applies the *TML framework* from Source to the work itself. Where Source used TML to categorize what the organization knows, Design uses TML to categorize what the work requires.
@@ -63,7 +63,7 @@ TML doesn't tell you which column is right for every task. For each one, it make
 List every task in the constraint workflow. Sort each one into the three TML categories — Task, Management, Leadership. Count the tasks in each bucket. If more than half land in **Leadership (Human Judgment Required)**, challenge each one: is this genuinely judgment, or is it judgment because nobody has written down the rules? Do it on paper or in a shared doc.
 :::
 
-Once the deconstruction is done, the results flow directly into the *Hybrid Accountability Chart* you built in the previous chapter (if you run EOS, the Hybrid Accountability Chart extends your existing Accountability Chart — it adds agent teams and their human supervisors alongside your people). Each classified task maps to a chart entry — the function, the agent team, the supervisor, the autonomy level. Work Deconstruction is the thinking. The chart entries are what makes the thinking durable and actionable for Build.
+Once the deconstruction is done, the results flow directly into the *Hybrid Accountability Chart* you built in the previous chapter (if you run EOS, the Hybrid Accountability Chart extends your existing Accountability Chart — it adds agent teams and their Human Orchestrators alongside your people). Each classified task maps to a chart entry — the function, the agent team, the Human Orchestrator, the autonomy level. Work Deconstruction is the thinking. The chart entries are what makes the thinking durable and actionable for Build.
 
 ### Meridian's quoting workflow, fully *deconstructed*.
 
@@ -83,7 +83,7 @@ Task count: Leadership (Human Judgment Required), 2. Management (AI-Assisted), 2
 
 The Hybrid Accountability Chart entries that came out of this deconstruction:
 
-| Role / Function | Agent Team | Human Supervisor | Level |
+| Role / Function | Agent Team | Human Orchestrator | Level |
 |---|---|---|---|
 | RFQ intake and CRM logging | None (workflow automation) | Ty Banfield (Sales Lead) | N/A |
 | Customer data retrieval and history matching | Quote Research Agent | Elena Ruiz (VP Ops) | AI-Assisted |
@@ -91,7 +91,7 @@ The Hybrid Accountability Chart entries that came out of this deconstruction:
 | Draft quote generation and review | Quote Assembly Agent | Elena Ruiz (VP Ops) | AI-Assisted |
 | Quote delivery and customer follow-up | None | Ty Banfield (Sales Lead) | N/A |
 
-Every row has a name. Every agent team has a supervisor. All agent outputs start AI-Assisted: Elena reviews every quote.
+Every row has a name. Every agent team has a named Human Orchestrator. All agent outputs start AI-Assisted: Elena reviews every quote.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -183,7 +183,7 @@ The Design Brief's hardest job is specifying each agent precisely enough that Bu
 
 **5. Judgment and escalation rules.** When the agent escalates, and what it refuses outright. The refusal list is the most important part: "Escalate if confidence score falls below 60%. Escalate if no historical match within 25% spec similarity. Refuse any action that would create an external communication. Refuse any access to systems outside the defined list."
 
-**6. Oversight load.** Low, medium, or high. Oversight draws on the reviewer's mental bandwidth, the same bandwidth the human is spending on everything else, so assign it deliberately. A high-load agent reviewing every output is a different design choice than a low-load agent that only surfaces exceptions. You're deciding how much of the supervisor's attention this agent claims.
+**6. Oversight load.** Low, medium, or high. Oversight draws on the reviewer's mental bandwidth, the same bandwidth the human is spending on everything else, so assign it deliberately. A high-load agent reviewing every output is a different design choice than a low-load agent that only surfaces exceptions. You're deciding how much of the Human Orchestrator's attention this agent claims.
 
 Here is the blank mini-spec template. Copy it once per agent on your Hybrid Accountability Chart.
 
@@ -194,19 +194,19 @@ Here is the blank mini-spec template. Copy it once per agent on your Hybrid Acco
 | **Context sources** | _(which Knowledge Map rows feed this agent. Cross-reference the row directly.)_ |
 | **Memory rules** | _(what carries across runs. Session state, accumulated decisions, lookback window. "None" is a valid answer.)_ |
 | **Judgment and escalation rules** | _(when the agent escalates, what it refuses outright, what triggers a hand-off.)_ |
-| **Oversight load** | _(Low / Medium / High. Three-agent ceiling per supervisor.)_ |
+| **Oversight load** | _(Low / Medium / High. Three-agent ceiling per Human Orchestrator.)_ |
 
 #### Check span of control against the three-agent *ceiling*.
 
-When your Hybrid Accountability Chart assigns more than three concurrent agents to one supervisor, that supervisor needs to justify why the load doesn't tip into overload. Per Bedard's three-agent ceiling (from Designing the System), the ceiling isn't a hard stop, but it's a design question you answer explicitly. If Elena supervises four agents, what is the review structure that prevents cognitive overload? If the answer is "she'll manage," the design isn't finished.
+When your Hybrid Accountability Chart assigns more than three concurrent agents to one Human Orchestrator, that Human Orchestrator needs to justify why the load doesn't tip into overload. Per Bedard's three-agent ceiling (from Designing the System), the ceiling isn't a hard stop, but it's a design question you answer explicitly. If Elena supervises four agents, what is the review structure that prevents cognitive overload? If the answer is "she'll manage," the design isn't finished.
 
-#### Confirm supervisor capability: trace, challenge, *apply*.
+#### Confirm Human Orchestrator capability: trace, challenge, *apply*.
 
-Next to each mini-spec, confirm three things about the human supervisor (the supervisor-capability tests introduced in Designing the System):
+Next to each mini-spec, confirm three things about the Human Orchestrator (the capability tests introduced in Designing the System):
 
-- **Trace.** Can the supervisor trace the agent's decision back to its inputs? If the agent produced this output, can the supervisor reconstruct why? If not, the agent's reasoning is opaque and the supervisor is rubber-stamping, not reviewing.
-- **Challenge.** Can the supervisor challenge a specific output and get a real revision? Not just reject the whole document. Target a specific line, explain what's wrong, and watch the agent correct that piece. If the challenge loop doesn't work, the oversight is theater.
-- **Apply expertise.** Where does the supervisor apply expertise the agent can't replicate? If every output could ship without the supervisor's input, the supervisor isn't in the loop. They're a speed bump. Name the expertise explicitly: "Elena applies fourteen years of customer-relationship knowledge to catch pricing decisions that look right on paper but signal relationship risk the data doesn't show."
+- **Trace.** Can the Human Orchestrator trace the agent's decision back to its inputs? If the agent produced this output, can the Human Orchestrator reconstruct why? If not, the agent's reasoning is opaque and the Human Orchestrator is rubber-stamping, not reviewing.
+- **Challenge.** Can the Human Orchestrator challenge a specific output and get a real revision? Not just reject the whole document. Target a specific line, explain what's wrong, and watch the agent correct that piece. If the challenge loop doesn't work, the oversight is theater.
+- **Apply expertise.** Where does the Human Orchestrator apply expertise the agent can't replicate? If every output could ship without the Human Orchestrator's input, the Human Orchestrator isn't in the loop. They're a speed bump. Name the expertise explicitly: "Elena applies fourteen years of customer-relationship knowledge to catch pricing decisions that look right on paper but signal relationship risk the data doesn't show."
 
 #### Worked example: the Quote Assembly *Agent*.
 
@@ -221,7 +221,7 @@ Elena Ruiz's quoting team has three agents. Here's the mini-spec for the Quote A
 | **Judgment and escalation rules** | Escalate to Elena if the Pricing Agent output contains any field marked "incomplete" or "manual pricing required." Refuse to generate a quote if the pricing confidence score is below 60%. Refuse to place anything in the customer-delivery queue. Output goes to Elena's review queue only. |
 | **Oversight load** | High in Sprint 1. Elena reviews every draft. Target: move to medium (spot-check on exceptions) after three consecutive weeks with zero substantive corrections on format and assembly. Autonomy is earned through demonstrated accuracy. The Assembly Agent earns reduced review frequency when the data supports it. |
 
-**Supervisor capability check for Elena (Quote Assembly Agent):**
+**Human Orchestrator capability check for Elena (Quote Assembly Agent):**
 
 - *Trace:* Elena can open any draft quote, see the Pricing Agent output that fed it, and confirm each line maps to a source. The audit trail is visible in the CRM. If the quote shows a material cost, Elena can trace it to the pricing database row it came from.
 - *Challenge:* If the quote format is wrong, Elena can note the specific field, mark the draft for revision, and the workflow re-triggers assembly with the correction. She has targeted the mistake; the agent corrects that piece.
@@ -259,7 +259,7 @@ Teams that find Build slow or complicated are almost always teams that moved thr
 A locked Design has five things. Before you move to Build, check your own Design against this list:
 
 - [ ] Every task in the constraint workflow is classified — Work Deconstruction complete, three TML categories (Task / Management / Leadership), no unclassified items
-- [ ] Every accountability has a Hybrid Accountability Chart entry with all four fields filled and a named supervisor
+- [ ] Every accountability has a Hybrid Accountability Chart entry with all four fields filled and a named Human Orchestrator
 - [ ] The Human Orchestrator is named — with irreducible decisions and escalation triggers documented
 - [ ] AI-Assisted vs. Automated is decided for each agent team, with a rationale — not just a box checked
 - [ ] Constraints and guardrails are defined: data access boundaries, action permissions, escalation paths, quality monitoring cadence, and a kill switch

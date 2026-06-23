@@ -41,7 +41,7 @@ The Sequence is six stages, each taught later in the book. Here is the roadmap: 
 
 **Source** maps what the organization knows about the constraint: what's written down, what lives in systems, what lives only in someone's head, and where the gaps are. It produces a **Knowledge Map**. You learn it in the Source chapter.
 
-**Design** splits the work between humans and agents, role by role and handoff by handoff. It produces a **Hybrid Accountability Chart** (if you run EOS, this extends your Accountability Chart by adding agent seats and their human supervisors) and a **Design Brief**. You learn it in the Design chapters.
+**Design** splits the work between humans and agents, role by role and handoff by handoff. It produces a **Hybrid Accountability Chart** (if you run EOS, this extends your Accountability Chart by adding agent seats and their Human Orchestrators) and a **Design Brief**. You learn it in the Design chapters.
 
 **Build** ships the working system: the prompts, integrations, knowledge layer, and observability that handle real work end to end. It produces a **Build Spec** and a **Guardrails Checklist**. You learn it in the Build chapter.
 

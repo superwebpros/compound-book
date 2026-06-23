@@ -5,7 +5,7 @@
 Build is the stage where the locked Design Brief becomes a working, deployed system. It produces one thing: a deployed solution to the validated constraint, specified by an eight-section Build Spec, stress-tested against a seven-question Guardrails Checklist, and confirmed done only when it handles real work under real supervision. Once the spec and guardrails are locked, one question is left: where does the agent actually live? (An agent is an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs, not a chatbot answering one question at a time.) That's the environment decision, and it lives here, not in Design. If Build feels slow or chaotic, the problem is almost never in Build. It is upstream.
 :::
 
-We built the project management agent team, the five agents that replaced our $24,000-a-year coordinator role. We locked the Hybrid Accountability Chart entry first, before the workflow steps: Sofia named as supervisor, every agent team starting AI-Assisted, her sign-off required on every output in Sprint one. Access boundaries, failure modes, and environment all followed from that accountability decision. (The Hybrid Accountability Chart is the version of your org chart that adds agents alongside people and names a human supervisor for each one — if you run EOS, think of it as extending your existing Accountability Chart to include the agent team. More in the Designing the System chapter.)
+We built the project management agent team, the five agents that replaced our $24,000-a-year coordinator role. We locked the Hybrid Accountability Chart entry first, before the workflow steps: Sofia named as Human Orchestrator, every agent team starting AI-Assisted, her sign-off required on every output in Sprint one. Access boundaries, failure modes, and environment all followed from that accountability decision. (The Hybrid Accountability Chart is the version of your org chart that adds agents alongside people and names a Human Orchestrator for each one — if you run EOS, think of it as extending your existing Accountability Chart to include the agent team. More in the Designing the System chapter.)
 
 One agent handled client-facing task updates. It had read/write access to our project management system. Another agent compiled internal performance reports: billable hours, delivery velocity, resource allocation. That one could see data the first agent had no business touching. A third routed subcontractor communications. Different data, different stakes, different guardrails. Same Sprint. Five agents, five different access levels, every boundary decided in Design before Build executed any of them.
 
@@ -21,11 +21,11 @@ Build is the most variable stage in the Sequence. The problem being solved, the 
 
 Build produces one thing: a working, deployed solution to the validated constraint.
 
-*Working* means the solution has been tested against real inputs (the actual records, emails, quote requests, customer files, whatever the design specified) and produces outputs the human supervisor can review and trust. The outputs land in a form the supervisor can evaluate the same way they would evaluate a person's work.
+*Working* means the solution has been tested against real inputs (the actual records, emails, quote requests, customer files, whatever the design specified) and produces outputs the Human Orchestrator can review and trust. The outputs land in a form the Human Orchestrator can evaluate the same way they would evaluate a person's work.
 
 *Deployed* means the solution is operating inside the actual business environment: connected to the systems it needs, used by the people who need to use it, producing outputs that flow into the next handoff. A working system that the team is using on real work is the deliverable.
 
-That bar is deliberately high. Build is done when work the team used to do is now being done by the designed system, supervised by the person the Hybrid Accountability Chart names. A demo that impressed leadership doesn't clear it, and neither does a prototype sitting in a sandbox. A workflow that works but nobody uses is not done.
+That bar is deliberately high. Build is done when work the team used to do is now being done by the designed system, supervised by the Human Orchestrator the Hybrid Accountability Chart names. A demo that impressed leadership doesn't clear it, and neither does a prototype sitting in a sandbox. A workflow that works but nobody uses is not done.
 
 ## Build stays scoped to the *designed* workflow.
 
@@ -87,9 +87,9 @@ A complete spec covers eight sections:
 
 1. **Section 1: Write the workflow summary** — Gives any builder a plain-language end-to-end picture of what they're building before they touch anything.
 2. **Section 2: Define the inputs** — Specifies exactly what triggers the workflow and what data enters it, so the builder knows where to reach and how to access it.
-3. **Section 3: Define the outputs** — Locks the deliverable form, destination, and recipient so the build can't drift toward something the supervisor can't use.
+3. **Section 3: Define the outputs** — Locks the deliverable form, destination, and recipient so the build can't drift toward something the Human Orchestrator can't use.
 4. **Section 4: Set agent scope boundaries** — States what the agent handles and what it cannot decide, preventing over-prescription that kills agent effectiveness.
-5. **Section 5: Name the human supervisor role** — Identifies who reviews, what they review for, and what the handoff looks like — the accountability anchor for the whole build.
+5. **Section 5: Name the Human Orchestrator role** — Identifies who reviews, what they review for, and what the handoff looks like — the accountability anchor for the whole build.
 6. **Section 6: List every system and integration** — Documents read/write access, authentication method, and data sensitivity for every system touched so nothing is wired by assumption.
 7. **Section 7: Document the failure modes** — Pre-decides what happens on every edge case and outage so the builder wires escalation paths instead of improvising them under pressure.
 8. **Section 8: Specify the environment and constraints** — Locks which specific platform within Design's category the build runs on and any data residency, license, or security constraints.
@@ -105,7 +105,7 @@ Here is the blank eight-section Build Spec template. Fill in every row before an
 | **2. Inputs** | _(what triggers the workflow, what data enters, in what form, from which systems, how the builder accesses it.)_ |
 | **3. Outputs** | _(what the workflow produces, what form it takes, where it goes, who receives it.)_ |
 | **4. Agent scope** | _(what the agent handles, what decisions it makes, what it is not permitted to decide. Scope boundaries, not procedural instructions.)_ |
-| **5. Human supervisor role** | _(who reviews, what they review for, what the handoff looks like, where the output lands, in what form, on what timeline.)_ |
+| **5. Human Orchestrator role** | _(who reviews, what they review for, what the handoff looks like, where the output lands, in what form, on what timeline.)_ |
 | **6. Systems and integrations** | _(every system touched, read or write access, authentication method, data sensitivity classification.)_ |
 | **7. Failure modes** | _(what happens when the agent produces output that needs escalation. Who it goes to, in what form, on what timeline.)_ |
 | **8. Environment and constraints** | _(specific environment within Design's category, plus data residency, license, or security constraints the builder must observe.)_ |
@@ -123,7 +123,7 @@ Here's what the spec looked like, section by section:
 
 **Section 4, Agent Scope:** Quote Research matches the RFQ to historical jobs by spec, materials, and complexity, and surfaces customer context and pricing terms. Quote Pricing calculates the draft price using historical matches, rate card, labor estimates, and exception rules. Quote Assembly generates the formatted PDF. No agent sets a final price, overrides the rate card, applies undocumented exceptions, or sends anything to a customer.
 
-**Section 5, Human Supervisor Role:** Elena Ruiz, VP of Operations, reviews every draft quote. Reviews for scope interpretation, pricing accuracy, confidence score, and exception rule application. Expected review: fifteen to twenty minutes per quote, down from three hours when she built quotes from scratch. Escalation: low-confidence quotes get her full manual review; non-standard materials route to the senior engineer; strategic account pricing goes to the CEO.
+**Section 5, Human Orchestrator Role:** Elena Ruiz, VP of Operations, reviews every draft quote. Reviews for scope interpretation, pricing accuracy, confidence score, and exception rule application. Expected review: fifteen to twenty minutes per quote, down from three hours when she built quotes from scratch. Escalation: low-confidence quotes get her full manual review; non-standard materials route to the senior engineer; strategic account pricing goes to the CEO.
 
 **Section 6, Systems and Integrations:** HubSpot CRM (read/write: customer records, RFQ intake, quote pipeline, delivery queue), JobBOSS ERP (read: historical job costing, rate card, materials pricing), Claude Team workspace (single project with three defined workflows), n8n (workflow orchestration and system connectors). Sensitivity: pricing data is medium; everything else is low.
 
@@ -161,7 +161,7 @@ Before building starts, audit the spec against these seven failures. Each one ha
 - [ ] **Check 3: Verify the spec is complete before build starts.** Every empty section in the spec is a decision the builder will make on the fly. Builders aren't designers. The decisions they make under build pressure won't match what Design intended.
 - [ ] **Check 4: Confirm the output lands where the work already lives.** The output must land where the work already lives. If the output lands in a new tool the team has never opened, adoption is zero.
 - [ ] **Check 5: Verify Section 7 (failure modes) is populated.** If Section 7 is empty, the build handles the happy path and breaks on the first edge case. Every workflow has edge cases.
-- [ ] **Check 6: Confirm the build handles real-world edge cases, not just the demo path.** A demo shows the happy path. A build handles the edge cases, the missing data, the system outages, the weird inputs, the supervisor who's on vacation.
+- [ ] **Check 6: Confirm the build handles real-world edge cases, not just the demo path.** A demo shows the happy path. A build handles the edge cases, the missing data, the system outages, the weird inputs, the Human Orchestrator who's on vacation.
 - [ ] **Check 7: Require testing against real inputs before declaring done.** Pull last week's actual data, the real records and the real requests, and run them through the build. Synthetic data and cherry-picked examples aren't tests.
 
 :::{.callout-note}
@@ -183,7 +183,7 @@ Here is the blank seven-row Guardrails Checklist template.
 1. **Question 1: Lock data access boundaries in writing** — Documents exactly what data the system may touch and what is off-limits, with an owner for that decision.
 2. **Question 2: Define agent autonomy vs. human sign-off** — Draws the exact line between what the agent can do unilaterally and what requires a human approval before action.
 3. **Question 3: Specify behavior on unrecognized inputs** — Prevents the agent from guessing or going silent when it encounters something outside its design envelope.
-4. **Question 4: Define quality measurement and baseline** — Makes 'good enough' measurable so the supervisor can calibrate review cadence and know when to trust the system more.
+4. **Question 4: Define quality measurement and baseline** — Makes 'good enough' measurable so the Human Orchestrator can calibrate review cadence and know when to trust the system more.
 5. **Question 5: Name the escalation path** — Routes judgment-requiring outputs to a specific person, in a specific form, on a specific timeline — no ambiguity in the moment.
 6. **Question 6: Name the accountability owner** — Establishes who owns a bad output the same way they'd own it if a person produced it — no diffuse responsibility.
 7. **Question 7: Define the kill switch condition** — Pre-decides the specific failures that trigger immediate shutdown, so the decision isn't made under pressure after something goes wrong.
@@ -208,10 +208,10 @@ Here are the same seven questions populated with Meridian's answers:
 | **3. Unrecognized inputs.** When the agent encounters an input it wasn't designed for, what does it do? | If the RFQ references a material not in the pricing exceptions database or ERP materials list, specialty alloys like Inconel, the agent produces no price estimate for that line item, flags it as "manual pricing required," and routes to the senior engineer. If the RFQ lacks sufficient spec detail, the agent flags it as "insufficient for rapid estimate" and routes to Elena. |
 | **4. Quality measurement.** What specific checks, against what baseline, measured how? | Weekly comparison of agent-drafted prices to Elena's final approved prices. Target: substantive corrections on fewer than 10% of drafts within eight weeks. Historical match accuracy tracked separately, target 95% before Elena reduces review cadence on the Research Agent. |
 | **5. Escalation path.** When the agent produces output that requires human judgment, who does it go to? In what form? On what timeline? | Low-confidence quotes to Elena for full manual review. Non-standard materials to Dave Kowalski (senior engineer). Strategic account pricing to Mark Ellison (CEO). Any quote where the calculated price deviates more than 15% from the closest historical match gets flagged for Elena's investigation before approval. |
-| **6. Accountability.** Who is responsible when the agent produces a bad output? | Elena Ruiz, VP of Operations, owns every quote the agents produce, the same way she'd own it if she'd built it from scratch. She is the named human supervisor in the Hybrid Accountability Chart. |
+| **6. Accountability.** Who is responsible when the agent produces a bad output? | Elena Ruiz, VP of Operations, owns every quote the agents produce, the same way she'd own it if she'd built it from scratch. She is the named Human Orchestrator in the Hybrid Accountability Chart. |
 | **7. Kill switch.** What would cause you to shut down the agent workflow immediately? | Pricing errors exceeding 20% on three quotes in any week, any quote reaching a customer without Elena's review, or any data access outside defined scope. Elena holds the switch. |
 
-These are the conditions under which the human supervisor can actually supervise.
+These are the conditions under which the Human Orchestrator can actually supervise.
 
 :::{.callout-note}
 ## Action Step
@@ -226,7 +226,7 @@ Design chose the category; Build picks the specific environment within it. Desig
 
 The environments, with what fits and what doesn't:
 
-**Claude Projects** fit skill-level work: a single agent, a defined knowledge base, one person or a small team using it co-operatively. The "build" is configuration: a system prompt (the standing instructions that tell an agent who it is and what it does and doesn't decide; specified field-by-field in the Designing the Work chapter), uploaded context, defined scope, guardrails set in the project settings. A competent person does this in an afternoon. This is the right environment when the designed workflow is one agent, one output stream, one supervisor reviewing every output. The marketing lead's four-agent setup from the Co-Operating Model chapter started here. When a workflow grows past one agent or starts running programmatically (running automatically on a schedule or trigger, without a human starting each run), Claude Projects doesn't stretch to cover it.
+**Claude Projects** fit skill-level work: a single agent, a defined knowledge base, one person or a small team using it co-operatively. The "build" is configuration: a system prompt (the standing instructions that tell an agent who it is and what it does and doesn't decide; specified field-by-field in the Designing the Work chapter), uploaded context, defined scope, guardrails set in the project settings. A competent person does this in an afternoon. This is the right environment when the designed workflow is one agent, one output stream, one Human Orchestrator reviewing every output. The marketing lead's four-agent setup from the Co-Operating Model chapter started here. When a workflow grows past one agent or starts running programmatically (running automatically on a schedule or trigger, without a human starting each run), Claude Projects doesn't stretch to cover it.
 
 **Claude Team** (shared workspace, multiple projects) fits cross-team, skill-level work where multiple people need access to the same agent context. The agent's knowledge base and guardrails are set once; the team uses it. This is the right environment when Design identified several people touching the same workflow and the work is AI-assisted, not automated. It doesn't fit workflows that run on a schedule without a human initiating each run.
 
@@ -238,7 +238,7 @@ The environments, with what fits and what doesn't:
 
 | Environment | Fits | Doesn't fit | Example |
 |---|---|---|---|
-| **Claude Projects** | One agent, one knowledge base, one supervisor; configuration in an afternoon | More than one agent, or anything that runs programmatically | Marketing lead's four-agent setup |
+| **Claude Projects** | One agent, one knowledge base, one Human Orchestrator; configuration in an afternoon | More than one agent, or anything that runs programmatically | Marketing lead's four-agent setup |
 | **Claude Team** | Cross-team, AI-assisted work where several people share the same agent context | Workflows that run on a schedule without a human starting each run | Meridian's Quote Agent Team |
 | **Claude Code** | Multi-agent, programmatic, tooling-heavy builds with triggers and write-back | Simple single-agent skill work that needs no infrastructure | Our PM agent team |
 | **n8n, Make, Zapier** | Data pipelines: pull, run through an agent, write back, notify | Complex branching logic or large unstructured data | Meridian's n8n connectors |
@@ -246,13 +246,13 @@ The environments, with what fits and what doesn't:
 
 ### Verify span of *control* before you commit.
 
-Before you finalize the environment decision, check the agent count. Per Bedard's three-agent ceiling (see the Designing the System chapter), productivity inverts after three concurrent agents under one supervisor. If the designed system puts four, five, or six agents under one human supervisor, the environment decision won't fix that. Go back to Design.
+Before you finalize the environment decision, check the agent count. Per Bedard's three-agent ceiling (see the Designing the System chapter), productivity inverts after three concurrent agents under one Human Orchestrator. If the designed system puts four, five, or six agents under one Human Orchestrator, the environment decision won't fix that. Go back to Design.
 
 The escape hatch is architectural, and Design owns it: a coordinator agent that runs a team inside its own loop, with the human reviewing what the coordinator surfaces rather than every individual agent's output. That pattern is the quote-orchestrator named in the Co-Operating Model chapter. Build inherits the decision; it doesn't make it. The environment should match the architecture Design produced, not the architecture the builder finds interesting.
 
 :::{.callout-note}
 ## Action Step
-Map your designed agent count against the supervisor named in the Hybrid Accountability Chart. If the count exceeds three agents under one supervisor, flag it as a design gap before Build proceeds. The environment you pick won't solve a supervision problem; only the design can.
+Map your designed agent count against the Human Orchestrator named in the Hybrid Accountability Chart. If the count exceeds three agents under one Human Orchestrator, flag it as a design gap before Build proceeds. The environment you pick won't solve a supervision problem; only the design can.
 :::
 
 ## Know enough about the *technology* to hold your own.
@@ -325,7 +325,7 @@ Your spec's data sensitivity classification and your workflow's volume estimate 
 
 ## Map the Sprint vocabulary to *Agile*, in one paragraph.
 
-The vocabulary maps to *Agile*. **Sprint** is the time box; here, the Compound Sprint from the Framework chapter. **Backlog** is the prioritized work list; here, the eight-section Build Spec, where new items don't get added mid-build but log to the next Sprint's Signal. **QA** is testing against real inputs before declaring done; here, the five-question Done test below. **Accountability** means every item has an owner and every test a sign-off; here, the human supervisor named in the Hybrid Accountability Chart.
+The vocabulary maps to *Agile*. **Sprint** is the time box; here, the Compound Sprint from the Framework chapter. **Backlog** is the prioritized work list; here, the eight-section Build Spec, where new items don't get added mid-build but log to the next Sprint's Signal. **QA** is testing against real inputs before declaring done; here, the five-question Done test below. **Accountability** means every item has an owner and every test a sign-off; here, the Human Orchestrator named in the Hybrid Accountability Chart.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -350,10 +350,10 @@ Low-code worked because Design gave Elena a workflow narrow enough to build with
 
 Build is done by the same standard: real inputs, real supervision, real work. The Done test is five questions. Pull the last week of actual inputs the workflow was supposed to handle and run them through the build:
 
-1. **Did it produce the expected outputs?** Compare agent output to what a competent person would have produced. Not identical, but within the quality range the supervisor would accept from a team member.
+1. **Did it produce the expected outputs?** Compare agent output to what a competent person would have produced. Not identical, but within the quality range the Human Orchestrator would accept from a team member.
 2. **Did it handle the edge cases?** Every failure mode you named in Section 7 of the spec, did the build handle it as specified?
 3. **Did it escalate correctly?** Feed it inputs that should trigger escalation. Did the right person get notified, in the right form, on the right timeline?
-4. **Could the supervisor understand the output without a walkthrough?** Show the output to the named supervisor. No explanation. Can they evaluate it and make a decision?
+4. **Could the Human Orchestrator understand the output without a walkthrough?** Show the output to the named Human Orchestrator. No explanation. Can they evaluate it and make a decision?
 5. **Has the team been briefed on what changes?** A technically complete build deployed into a team that wasn't told it was coming produces adoption failure, workarounds, and quiet abandonment within six weeks. The *Human Orchestrator* identifies every person whose handoff changes, briefs them on what changes and why, and confirms they're ready to operate the new workflow on day one.
 
 If yes to all five: Build is done. Hand off to Deliver. If no to any: fix what failed, run the test again, and do not advance past Build on a partial pass.
