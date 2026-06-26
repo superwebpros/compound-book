@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Run the Sprint Retrospective — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: sprint-retrospective.md</div>
+<p>Compound · Compound / Sprint Retrospective</p>
+<h1>Run the Sprint Retrospective</h1>
+<p>Review the Sprint that just shipped — honestly — and turn its friction into design constraints for the next one.</p>
+<p>The Sprint Retrospective is the structured review you run after a Sprint delivers. It asks the same questions every time: what worked, what didn&#x27;t, and — for every failure — what would have to be true for it not to happen again. The output isn&#x27;t a feelings recap; it&#x27;s a short list of design constraints the next Sprint inherits. This worksheet captures the answers so they survive past the room.</p>
+<p><strong>Before you start:</strong> Bring the people who owned Sprint accountabilities — your Human Orchestrator and any supervisors who owned lanes. Bring the Sprint outcome number you measured in Deliver (the constraint metric, before and after). The room has to be safe enough for honest answers; if no one will name what broke, the retrospective produces nothing.</p>
+<p>Copy this page and fill it in live during the session — one row per worked / didn&#x27;t-work item, then the four-field change card, then the three compounding answers.</p>
+<hr>
+<h2>Ask: what worked?</h2>
+<p>Name the specific design decisions that paid off — mechanism, not sentiment — so they can be intentionally repeated.</p>
+<ol><li>List each thing that worked as a <strong>mechanism</strong>, not a compliment. &quot;The team did great&quot; is not an answer; &quot;the workflow that cut quoting time&quot; is.</li><li>For each one, write <strong>why</strong> it worked — the specific design decision (a workflow step, a chosen Human Orchestrator, an agent&#x27;s data access) that produced the result.</li><li>Mark which of these you want to <strong>deliberately keep</strong> in the next Sprint&#x27;s design, so a good decision doesn&#x27;t quietly get dropped.</li></ol>
+<blockquote><strong>Meridian example.</strong> What worked: the new intake workflow cut standard quote turnaround from 3.8 days to 4.2 hours. Why: Elena&#x27;s pricing exceptions were captured as 112 validated rules the agent could apply, and the agent had three years of indexed ERP job data to match against. Keep: the validated-rules layer and the indexed job data carry into Sprint two.</blockquote>
+<h2>Ask: what didn&#x27;t work?</h2>
+<p>Surface the broken handoffs, dirty inputs, and wrong cadences — the honest friction every Sprint produces.</p>
+<ol><li>List each thing that broke or underperformed: handoffs that failed, inputs dirtier than Source claimed, supervisor reviews skipped because the cadence was wrong, scope that ran thin.</li><li>For each item, name <strong>who</strong> raised it and <strong>what specifically</strong> went wrong — concrete enough that someone outside the room understands the failure.</li><li>Don&#x27;t stop at the first item. If the &quot;didn&#x27;t work&quot; column has zero entries, you didn&#x27;t run it honestly — every Sprint has friction.</li></ol>
+<blockquote><strong>Meridian example.</strong> Three items surfaced. (1) Dave Kowalski: the agent&#x27;s historical matching was right ~85% of the time but missed complexity — Elena was correcting about one in eight quotes. (2) Ty admitted he forwarded three RFQs to Elena the old email way in week one out of habit. (3) Carlos: every Inconel or titanium job still routed to Elena manually because the materials database didn&#x27;t cover specialty alloys.</blockquote>
+<h2>For each failure, ask: what would have to be true for this not to happen again?</h2>
+<p>Reframe blame into a design fix — convert each observation into an actionable constraint on the next Sprint&#x27;s design.</p>
+<ol><li>Take each &quot;didn&#x27;t work&quot; item and answer the single question: <em>what would have to be true for this not to happen again?</em> The answer is a <strong>design fix</strong>, not a person to coach.</li><li>Write the fix as a concrete change to the system — a workflow step, a data field, a killed fallback path, an added Source — and note whether it&#x27;s a <strong>design fix</strong> or a <strong>knowledge gap</strong>.</li><li>Keep the failure and its fix paired on the same line, so nothing surfaces without a proposed change attached.</li></ol>
+<blockquote><strong>Meridian example.</strong> (1) Agent misses complexity → the agent needs fabrication complexity indicators (bend count, tolerance class, surface finish), not just material and dimensions. (2) Old email path still used → kill the old email path on day one, not leave it open as a fallback. (3) Specialty alloys route manually → add the five most common non-standard materials before Sprint two.</blockquote>
+<h2>Ask: what one design change would make the next Sprint better?</h2>
+<p>Force the prioritization before the session ends; this feeds directly into the Install One Design Change step.</p>
+<ol><li>Look across <strong>everything</strong> the Sprint surfaced — the thin Source phase, the wrong cadence, the broken handoff, the unscoped dirty input. Then name the <strong>single</strong> change that will most improve the next Sprint. One, not a &quot;lessons learned&quot; list.</li><li>Write it on the four-field change card. <strong>Any blank field means the change is too vague to install:</strong></li></ol>
+<table>
+<tr><th>Field</th><th>Fill in</th></tr>
+<tr><td><strong>What</strong> the change is</td><td></td></tr>
+<tr><td><strong>Who</strong> owns installing it</td><td></td></tr>
+<tr><td><strong>How you&#x27;ll know</strong> it worked</td><td></td></tr>
+<tr><td><strong>By date</strong> (before next Sprint kickoff)</td><td></td></tr>
+</table>
+<ol><li>Confirm the change is <strong>structural</strong> — a chart entry, a workflow step, a guardrail, a Source map update — not just an insight in a doc. An insight that doesn&#x27;t change the design isn&#x27;t worth recording.</li></ol>
+<blockquote><strong>Meridian example.</strong> One design change: add fabrication complexity indicators (bend count, tolerance class, weld count, surface finish) as matching criteria in the Quote Research Agent. <strong>Who:</strong> Dave Kowalski supplies the classification framework; the agent applies it. <strong>How you&#x27;ll know:</strong> re-run the eight quotes Elena corrected last month; at least seven of eight now produce the correct comparable. <strong>By date:</strong> installed before Sprint two kickoff.</blockquote>
+<h2>Measure what compounded (three compounding questions)</h2>
+<p>Distinguish output (the Sprint delivered something) from compound interest (the Sprint built infrastructure the next Sprint inherits).</p>
+<ol><li>Answer: <strong>what does the organization know now that it didn&#x27;t know before this Sprint?</strong> Name the specific learning, with numbers where you have them.</li><li>Answer: <strong>what capability exists now that didn&#x27;t exist before?</strong> Name the working thing that doesn&#x27;t disappear when the Sprint ends — and its measured effect.</li><li>Answer: <strong>what is the next Sprint starting with that this one didn&#x27;t have?</strong> List the concrete assets the baseline now includes. If you can&#x27;t answer all three, the Sprint produced output but didn&#x27;t compound.</li></ol>
+<blockquote><strong>Meridian example.</strong> Knows now: Elena&#x27;s 147-row Customer Notes spreadsheet held only 112 validated rules (35 were duplicates or outdated), and ~70% of volume is standard-spec the agent handles cleanly. Capability now: a working quoting agent team — standard turnaround 3.8 days → 4.2 hours, Elena&#x27;s quoting 15 hrs/week → 5, throughput doubled, $47K new revenue in month one. Next Sprint starts with: three trained agents, 112 validated rules, three years of indexed ERP job data, and a sales team six weeks into the new intake workflow.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Hand this page to someone who wasn&#x27;t in the room. They should be able to install the next Sprint&#x27;s improvements from what&#x27;s written, without coming back to ask. Check:</p>
+<ul><li>[ ] The <strong>what worked</strong> list names <strong>mechanisms</strong>, not sentiment — each with the design decision behind it.</li><li>[ ] The <strong>what didn&#x27;t work</strong> column has <strong>at least one</strong> honest entry (zero means you didn&#x27;t run it honestly).</li><li>[ ] Every failure is paired with a <strong>&quot;what would have to be true&quot;</strong> fix, tagged design fix or knowledge gap.</li><li>[ ] Exactly <strong>one</strong> design change is named — not a lessons-learned list.</li><li>[ ] The change card has <strong>no blank fields</strong>: What / Who / How you&#x27;ll know / By date are all filled.</li><li>[ ] The one change is <strong>structural</strong> (chart, workflow, guardrail, or Source map), inheritable by the next Sprint.</li><li>[ ] All <strong>three compounding questions</strong> are answered. If any is blank, the Sprint delivered output but didn&#x27;t compound.</li></ul>
+<p>Carry the change card and the compounding answers into the Compound session, where the one change gets installed and the Constraint Backlog gets re-ranked.</p>
+</body></html>

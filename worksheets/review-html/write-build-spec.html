@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Write the Eight-Section Build Spec — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: write-build-spec.md</div>
+<p>Compound · Build / Specification</p>
+<h1>Write the Eight-Section Build Spec</h1>
+<p><em>Turn the locked Design Brief into a developer-ready specification a builder can start from without asking a single question.</em></p>
+<p>The Build Spec is one of two instruments Build runs on, and it&#x27;s the first. It restates the workflow, systems, and data from the Design Brief precisely enough that a builder can begin, then adds three sections Design doesn&#x27;t own: what each agent handles, what happens when things break, and where the build runs. If the spec is right, the build is mostly execution. If it&#x27;s wrong, the build is mostly negotiation.</p>
+<p><strong>Before you start, you need a locked Design Brief.</strong> The Design Brief is the single upstream input. If you can&#x27;t fill Sections 1–3 from your Design artifacts without guessing, Design isn&#x27;t done — stop and finish it. And one standing rule: if the Build Spec and the Design Brief ever disagree on a workflow step or a system boundary, <strong>the Design Brief wins</strong>, and the gap routes back to Design.</p>
+<p>Fill the eight sections in order. An empty section is a decision the builder will make under build pressure, and those decisions almost never match what Design intended.</p>
+<hr>
+<h2>Section 1: Write the workflow summary</h2>
+<p>Give any builder a plain-language, end-to-end picture of what they&#x27;re building before they touch anything.</p>
+<ol><li>Write one paragraph: what this workflow does, trigger to final output, in plain language. No jargon.</li><li>Name each step and each agent in sequence, including the human review and approval, so the path is unambiguous.</li><li>Apply the test: a builder who knows nothing about your business should read it and understand what they&#x27;re building. If they couldn&#x27;t, rewrite it.</li></ol>
+<blockquote><strong>Meridian — Workflow Summary:</strong> When a new RFQ arrives through the standardized intake form, a CRM record is created and the quoting workflow triggers automatically. The Quote Research Agent pulls customer history and matches the RFQ against three years of historical jobs in the ERP. The Quote Pricing Agent applies the rate card, the senior engineer&#x27;s labor estimate, and the applicable pricing exceptions. The Quote Assembly Agent formats the draft as a PDF and places it in the VP of Operations&#x27; review queue. She reviews, edits if needed, and approves. The approved quote routes to the sales lead for customer delivery.</blockquote>
+<hr>
+<h2>Section 2: Define the inputs</h2>
+<p>Specify exactly what triggers the workflow and what data enters it, so the builder knows where to reach and how to access it.</p>
+<ol><li>Name the trigger: what kicks the workflow off, and how it arrives.</li><li>List every data source that enters the workflow, in what form, and from which system. Include rough volume where it matters (years of history, record counts).</li><li>For each source, note where the data lives and how the builder accesses it.</li></ol>
+<blockquote><strong>Meridian — Inputs:</strong> Inbound RFQ (submitted via standardized intake form, parsed into HubSpot CRM as a new deal record), ERP job costing history (three years, roughly 800 completed jobs), current rate card (maintained by finance in JobBOSS ERP), cleaned pricing exceptions database (112 validated customer-specific rules, sourced from the VP&#x27;s spreadsheet), senior engineer&#x27;s labor hour estimate (submitted via structured form), and CRM customer history including win/loss records.</blockquote>
+<hr>
+<h2>Section 3: Define the outputs</h2>
+<p>Lock the deliverable&#x27;s form, destination, and recipient so the build can&#x27;t drift toward something the supervisor can&#x27;t use.</p>
+<ol><li>State what the workflow produces and what form it takes.</li><li>Name where it lands and who receives it.</li><li>Itemize what the output must contain — the line items, scores, flags, or attachments the recipient needs to act on it.</li></ol>
+<blockquote><strong>Meridian — Outputs:</strong> A draft PDF quote in Meridian&#x27;s standard format, landing in the VP of Operations&#x27; CRM review queue. It contains a line-item breakdown (materials, labor, overhead, margin), a confidence score (the agent&#x27;s own estimate of how sure it is about an output) reported as high/medium/low, the closest historical job matches with pricing, and any exception rules applied. Plus a flag for any input the agent could not resolve.</blockquote>
+<hr>
+<h2>Section 4: Set agent scope boundaries</h2>
+<p>State what the agent handles and what it cannot decide, preventing over-prescription that kills agent effectiveness.</p>
+<ol><li>For each agent, name what it handles and what decisions it makes.</li><li>Write the hard limits: what no agent is permitted to decide or do.</li><li>Frame all of this as scope boundaries, not step-by-step procedure. Agents over-prescribed at the step level lose the flexibility that makes them effective.</li></ol>
+<blockquote><strong>Meridian — Agent Scope:</strong> Quote Research matches the RFQ to historical jobs by spec, materials, and complexity, and surfaces customer context and pricing terms. Quote Pricing calculates the draft price using historical matches, rate card, labor estimates, and exception rules. Quote Assembly generates the formatted PDF. No agent sets a final price, overrides the rate card, applies undocumented exceptions, or sends anything to a customer.</blockquote>
+<hr>
+<h2>Section 5: Name the human supervisor role</h2>
+<p>Identify who reviews, what they review for, and what the handoff looks like — the accountability anchor for the whole build.</p>
+<ol><li>Name the person (and their title) who reviews the output.</li><li>List exactly what they review for, and the expected time per review.</li><li>Define the handoff: where the output lands, in what form, on what timeline — plus the escalation routes for the outputs they don&#x27;t approve themselves.</li></ol>
+<blockquote><strong>Meridian — Human Supervisor Role:</strong> Elena Ruiz, VP of Operations, reviews every draft quote. Reviews for scope interpretation, pricing accuracy, confidence score, and exception rule application. Expected review: fifteen to twenty minutes per quote, down from three hours when she built quotes from scratch. Escalation: low-confidence quotes get her full manual review; non-standard materials route to the senior engineer; strategic account pricing goes to the CEO.</blockquote>
+<hr>
+<h2>Section 6: List every system and integration</h2>
+<p>Document read/write access, authentication method, and data sensitivity for every system touched so nothing is wired by assumption.</p>
+<ol><li>List every system the workflow touches.</li><li>For each, mark read access, write access, or both, and the authentication method.</li><li>Assign each system a data sensitivity classification (e.g., low / medium / high).</li></ol>
+<blockquote><strong>Meridian — Systems and Integrations:</strong> HubSpot CRM (read/write: customer records, RFQ intake, quote pipeline, delivery queue), JobBOSS ERP (read: historical job costing, rate card, materials pricing), Claude Team workspace (single project with three defined workflows), n8n (workflow orchestration and system connectors). Sensitivity: pricing data is medium; everything else is low.</blockquote>
+<hr>
+<h2>Section 7: Document the failure modes</h2>
+<p>Pre-decide what happens on every edge case and outage so the builder wires escalation paths instead of improvising them under pressure.</p>
+<ol><li>List the edge cases and outages the workflow will hit: missing data, unknown inputs, a system being down, low-confidence output, out-of-range results.</li><li>For each, write what the agent does, who it escalates to, in what form, and on what timeline.</li><li>Note what the builder must wire to make each escalation path possible.</li></ol>
+<blockquote><strong>Meridian — Failure Modes:</strong> No similar historical jobs found: agent flags as &quot;insufficient for rapid estimate&quot; and routes to the VP for full manual review. Unknown material (e.g., Inconel): agent produces no price estimate for that line item and flags as &quot;manual pricing required.&quot; ERP API down: RFQs queue in the CRM, and the agent processes them when the connection restores. Confidence score below 60%: draft routes to the VP with a warning flag. Pricing deviation greater than 15% from closest historical match: agent flags the deviation, and the VP investigates before approving.</blockquote>
+<hr>
+<h2>Section 8: Specify the environment and constraints</h2>
+<p>Lock which specific platform within Design&#x27;s category the build runs on and any data residency, license, or security constraints.</p>
+<ol><li>Name the specific environment inside Design&#x27;s category (off-the-shelf, low-code, hand-built — see the Designing the System chapter), and why.</li><li>List any builder resourcing the environment requires (existing licenses, a freelance developer, internal team).</li><li>Write every constraint the builder must observe: data residency (legal or regulatory requirements that your data stay in a specific geography or on servers you control), existing licenses, internal security requirements. Flag any prerequisite that must be true <em>before</em> build begins.</li></ol>
+<blockquote><strong>Meridian — Environment and Constraints:</strong> Low-code category, run via n8n (existing license) and Claude Team. Freelance n8n developer for three days of API wiring to HubSpot and JobBOSS. All data stays in existing systems. The pricing exceptions spreadsheet must be cleaned and validated before build begins. That&#x27;s a prerequisite, not a build task.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Run this test before the spec leaves your hands for a builder:</p>
+<ul><li><strong>All eight sections have content.</strong> No blanks. An empty section is a decision the builder makes under pressure — and it won&#x27;t match Design.</li><li><strong>Sections 1–3 came from your Design artifacts, not from guessing.</strong> If you had to invent any of it, Design isn&#x27;t finished. Go back.</li><li><strong>Nothing contradicts the Design Brief.</strong> If the spec and the Brief disagree on a workflow step or system boundary, the Brief wins and the gap routes back to Design.</li><li><strong>A builder who&#x27;s never met your business could start from this alone</strong> — engineer, vendor, or low-code assembler — with no ambiguity meetings and no mid-build design decisions.</li></ul>
+<p>When all four are true, the spec is the artifact. Hand it off. (Next instrument: the seven-question Guardrails Checklist.)</p>
+</body></html>

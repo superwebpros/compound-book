@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fill in the Sprint Planning Canvas — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: sprint-planning-canvas.md</div>
+<p>Compound · The Framework / Sprint Planning</p>
+<h1>Fill in the Sprint Planning Canvas</h1>
+<p>Sketch one Sprint on a single page — eight questions, three operating fixtures, before you run anything.</p>
+<p>The Sprint Planning Canvas is the one-page artifact the rest of the book is organized around. It names the validated constraint, captures a first-pass answer to each stage of the Sequence, identifies the team, and locks the review date. It is intentionally incomplete: the point is to stop staring at a blank page and start with something the Sequence can work against. A wrong first guess beats a blank row — guesses get corrected, blanks stay blank.</p>
+<p><strong>Before you start:</strong> You need a constraint candidate to anchor the page. If you&#x27;ve run a Signal Session, bring the Constraint Statement. If you haven&#x27;t, write your best one-sentence guess at the bottleneck and let the stage chapters correct it. The format doesn&#x27;t matter — a doc, a spreadsheet, or a whiteboard all work — as long as all eight answers, the constraint, and the three fixtures sit in one place.</p>
+<p>Copy this table; you&#x27;ll fill one row per question and the three fixtures at the top.</p>
+<p><strong>Constraint:</strong> _One sentence. The validated bottleneck, where it lives, what it costs._</p>
+<p><strong>Leadership sponsor:</strong> _____________ <strong>Human Orchestrator:</strong> _____________ <strong>Quarter (review date):</strong> _____________</p>
+<table>
+<tr><th>#</th><th>Question</th><th>Your first-pass answer</th></tr>
+<tr><td>1</td><td>What&#x27;s the validated constraint, and what does it cost?</td><td></td></tr>
+<tr><td>2</td><td>What does the org know about it, and where does that knowledge live?</td><td></td></tr>
+<tr><td>3</td><td>How does information flow through the workflow?</td><td></td></tr>
+<tr><td>4</td><td>Who&#x27;s accountable across humans and agents?</td><td></td></tr>
+<tr><td>5</td><td>What&#x27;s the system specification?</td><td></td></tr>
+<tr><td>6</td><td>How does the deployment land in real work?</td><td></td></tr>
+<tr><td>7</td><td>What changed structurally?</td><td></td></tr>
+<tr><td>8</td><td>What&#x27;s the cadence, and what&#x27;s next?</td><td></td></tr>
+</table>
+<p>Then run the nine steps below to make each cell real.</p>
+<hr>
+<h2>Name the constraint and price it</h2>
+<p>The constraint sentence is the scope boundary the entire Sprint runs against; without a number the Sprint has no target to measure.</p>
+<ol><li>Write the constraint as one sentence at the top of the Canvas: the validated bottleneck, <em>where</em> it lives, and <em>what it costs</em> per year. This is Canvas Question 1.</li><li>Put a real number on the cost — delayed revenue, lost bids, hours burned. If you can only estimate, estimate; mark it as a guess Signal will validate.</li><li>Confirm the sentence names a workflow or handoff, not a person to blame. The constraint is the structure the work is stuck in, not someone&#x27;s fault.</li></ol>
+<blockquote><strong>Meridian example.</strong> &quot;Elena Ruiz is the sole quoting bottleneck. Every quote flows through her, costing an estimated \$558K/year in delayed and lost revenue.&quot; Quoting takes 3.8 days average; competitors close in 24–48 hours. The number is a first-pass estimate the Signal stage will pressure-test.</blockquote>
+<h2>Inventory what the org knows and where it lives</h2>
+<p>Surfaces knowledge gaps before Design so the build is not assembled from memory.</p>
+<ol><li>In Canvas Question 2, list what the organization knows about the constraint and <em>where that knowledge physically lives</em> — a person&#x27;s head, a spreadsheet, an ERP, a CRM.</li><li>Name the people who hold critical knowledge by name and role, and flag any single point of failure (one person, one file).</li><li>Note which systems are connected and which are not — disconnected systems are future Design work.</li></ol>
+<blockquote><strong>Meridian example.</strong> &quot;Elena holds quoting logic. Dave Kowalski (Sr Design Engineer, 31 years) holds fabrication knowledge. Ty Banfield (Sales Lead) owns HubSpot CRM and sees RFQs first. Critical artifact: &#x27;Customer Notes.xlsx&#x27;, 147 rows of pricing exceptions Elena maintains by hand. JobBOSS ERP holds job history but isn&#x27;t connected to CRM.&quot;</blockquote>
+<h2>Trace how information flows through the workflow</h2>
+<p>Exposes the handoffs and disconnected systems that are invisible on an org chart.</p>
+<ol><li>In Canvas Question 3, walk the workflow start to finish: where the work enters, every hand-off between people and systems, and where it exits to the customer or next step.</li><li>Count the handoffs and call out the disconnected systems — these are where the work slows and breaks.</li><li>Keep it to the path the constraint actually travels; don&#x27;t diagram the whole company.</li></ol>
+<blockquote><strong>Meridian example.</strong> &quot;RFQ lands in HubSpot via Ty. Ty pastes the inquiry into an email to Elena. Elena opens Customer Notes.xlsx, cross-references JobBOSS history, asks Dave about fabrication feasibility, drafts a quote in Word, sends it back to Ty, Ty sends it to the customer. Five handoffs, two systems disconnected.&quot;</blockquote>
+<h2>Assign accountability across humans and agents</h2>
+<p>Every role — human and agent — needs one named owner before any code is written.</p>
+<ol><li>In Canvas Question 4, sketch who (or what) owns each part of the workflow once AI is in the loop: what the agent drafts or pulls, and who reviews and approves.</li><li>Name a human who owns judgment on the hard cases, and name who validates output before it reaches the customer.</li><li>Don&#x27;t leave any lane unowned. This is a first pass at the Hybrid Accountability Chart you&#x27;ll build in Design — one named owner per lane.</li></ol>
+<blockquote><strong>Meridian example.</strong> &quot;AI drafts quotes by pulling customer history from HubSpot, job data from JobBOSS, and exception rules from Customer Notes.xlsx. Elena reviews and approves, owns judgment on non-standard jobs. Ty routes inbound RFQs and validates final quotes before they go to the customer. Dave is consulted for fabrication-heavy exceptions only.&quot;</blockquote>
+<h2>Draft the system specification</h2>
+<p>Locks what the build must produce and what guardrails it must honor, preventing scope drift in Build.</p>
+<ol><li>In Canvas Question 5, name what gets built: the knowledge capture, the workflow connections between systems, and the agent or assistant that does the work.</li><li>Write at least one guardrail — the thing the system may <em>not</em> do without a human. This becomes your Guardrails Checklist in Build.</li><li>Keep it a first-pass spec, not a contract. Build will sharpen it; the Canvas just locks the intent.</li></ol>
+<blockquote><strong>Meridian example.</strong> &quot;Knowledge capture sessions with Elena and Dave, structured into a quoting knowledge base. n8n workflow connecting HubSpot → JobBOSS → Claude for quote generation. Claude-powered quoting assistant that applies documented pricing logic and flags exceptions for Elena&#x27;s review. Guardrails: no quote ships without Elena&#x27;s approval until the workflow has been calibrated for sixty days.&quot;</blockquote>
+<h2>Define how the deployment lands in real work</h2>
+<p>Forces a per-role answer before launch, which is the gap where most AI projects fail.</p>
+<ol><li>In Canvas Question 6, state the target outcome in a measurable number (turnaround, volume, error rate) and how each role&#x27;s day changes once the system is live.</li><li>Write a per-role runbook line: what each named person does differently the morning after launch.</li><li>Define a Delivery Test — a concrete count of real work through the new workflow inside a fixed window — so you&#x27;ll know if it actually landed.</li></ol>
+<blockquote><strong>Meridian example.</strong> &quot;Quote turnaround target: under eight hours. Ty initiates a draft quote without Elena in the room. Exception flags catch non-standard jobs before they go out. Per-role runbook for Elena (review queue, override patterns), Ty (initiation, validation), and Dave (exception-only consults). Delivery Test: thirty quotes through the new workflow inside thirty days.&quot;</blockquote>
+<h2>Describe what changes structurally after the Sprint</h2>
+<p>Commits the team to a specific operating-model change rather than a tool no one uses.</p>
+<ol><li>In Canvas Question 7, name how roles shift: who stops doing what, who picks up what, and what knowledge moves out of one head into a shared place.</li><li>Name the new agent the org now operates and who supervises it — this is the first entry in your Hybrid Org Today.</li><li>Frame it as a structural change, not a tool purchase. The test: would an org chart drawn after the Sprint look different from before?</li></ol>
+<blockquote><strong>Meridian example.</strong> &quot;Elena&#x27;s role shifts from quote producer to quote reviewer. Ty&#x27;s role expands from RFQ routing to quote initiation. The Customer Notes.xlsx artifact migrates from Elena&#x27;s desktop into a structured knowledge base every agent and human can read. The Hybrid Org Today picks up its first explicit agent: the quoting assistant, supervised by Elena.&quot;</blockquote>
+<h2>Set the cadence and identify the next Sprint</h2>
+<p>Books the review date and names the next constraint, turning one Sprint into a compounding system.</p>
+<ol><li>In Canvas Question 8, set the review date (the quarterly operating session where this Sprint&#x27;s outcome gets measured) and name what happens if the Delivery Test passes vs. fails.</li><li>Name the next Sprint candidate — the next constraint you&#x27;d tackle once this one closes — so the work compounds instead of stopping.</li><li>Note what artifact carries forward (the Sprint Outcome Record) so the next quarter starts from this quarter&#x27;s result, not a blank page.</li></ol>
+<blockquote><strong>Meridian example.</strong> &quot;Quarterly review at end of Q3. If the Delivery Test passes, the next Sprint candidate is scheduling, the next Elena-dependent workflow. If it doesn&#x27;t pass, the Sprint regroups in Signal and revalidates the constraint. The Sprint Outcome Record carries forward to Q4.&quot;</blockquote>
+<h2>Name the three operating fixtures: sponsor, Orchestrator, review date</h2>
+<p>A Sprint without a named sponsor, orchestrator, and calendar date has no accountability and no deadline.</p>
+<ol><li><strong>Leadership sponsor</strong> — name the person accountable for the <em>outcome</em>, not the person doing the work. One name, no &quot;leadership team.&quot;</li><li><strong>Human Orchestrator</strong> — name the person who runs the Sprint day-to-day, owns the cadence, and holds the handoffs together. (If you run EOS, think Integrator extended to run the agent team — Sprint-level scope, same accountability.)</li><li><strong>Review date</strong> — book the quarterly operating session on the calendar <em>before</em> Signal begins, and list its attendees. A Sprint with no review date has no deadline; the Sprint is real when the review is on the calendar.</li></ol>
+<blockquote><strong>Meridian example.</strong> Leadership sponsor: Mark Ellison (CEO). Human Orchestrator: Elena Ruiz (VP of Operations). Quarter: Q3. Review: quarterly operating session, end of Q3; attendees Mark Ellison, Elena Ruiz, Ty Banfield, Dave Kowalski; calendar invite sent before Signal begins.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Hand the Canvas to someone who wasn&#x27;t in the room. They should be able to read it and know the constraint, the plan, and who&#x27;s on the hook — without coming back to ask. Check:</p>
+<ul><li>[ ] The <strong>constraint</strong> is one sentence with a <strong>dollar (or hours) cost</strong> at the top of the page.</li><li>[ ] All <strong>eight questions</strong> have a first-pass answer — a guess where you don&#x27;t know yet, never a blank row.</li><li>[ ] Every lane in Question 4 has a <strong>named owner</strong>; no unowned work, no &quot;TBD.&quot;</li><li>[ ] Question 5 names at least one <strong>guardrail</strong> the system may not cross without a human.</li><li>[ ] Question 6 names a <strong>measurable target</strong> and a <strong>Delivery Test</strong> with a count and a window.</li><li>[ ] The three <strong>operating fixtures</strong> are named with real people: sponsor, Human Orchestrator, review date.</li><li>[ ] The <strong>review date is on the calendar</strong> before Signal begins, with attendees listed.</li><li>[ ] Question 8 names the <strong>next Sprint candidate</strong>, so this Sprint compounds into the next.</li></ul>
+<p>A blank row isn&#x27;t a failure — it&#x27;s a diagnostic. The blanks are exactly what the stage chapters teach you to fill in. Carry the Canvas forward.</p>
+</body></html>

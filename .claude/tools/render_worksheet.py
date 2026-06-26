@@ -3,7 +3,14 @@
 
 NOT the production renderer (that's the bundler pipeline that makes worksheets/html/*.html).
 This produces a clean, readable, Compound-styled standalone page so a worksheet .md can be
-eyeballed visually. Self-contained (no deps); web fonts via Google Fonts CDN.
+eyeballed visually. Self-contained (CSS inlined; web fonts via Google Fonts CDN).
+
+Styling is codified in ONE place: worksheets/worksheet.css. This script inlines it into
+each output so the HTML stays self-contained for printing/sharing. Edit the CSS there.
+
+Convention: a table whose body cells are ALL blank is treated as a fillable grid — it gets
+class="fill" (tall, writable rows) and, together with its section heading, is lifted onto
+its own page (`.fill-page`). Put such a table as the LAST element of its section.
 
 Usage:
   /usr/bin/python3 .claude/tools/render_worksheet.py worksheets/<slug>.md
@@ -11,30 +18,6 @@ Usage:
 """
 import re, sys, html as _h
 from pathlib import Path
-
-CSS = """
-:root{--paper:#FAFAF8;--ink:#0A0A0A;--red:#E11D2D;--muted:#6b6b66;--line:#e4e4df;--card:#fff;}
-*{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;
-  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
-h1{font-family:'Bricolage Grotesque','Archivo',sans-serif;font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
-h2{font-family:'Bricolage Grotesque','Archivo',sans-serif;font-size:1.3rem;margin:2.2em 0 .4em;
-  padding-top:1.1em;border-top:1px solid var(--line)}
-h3{font-size:1.05rem;margin:1.4em 0 .3em}
-.kicker{font:600 .72rem/'1' 'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--red);margin-bottom:14px}
-.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
-ol,ul{padding-left:1.3em}li{margin:.3em 0}
-strong{font-weight:600}
-blockquote{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--red);
-  border-radius:6px;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
-table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
-th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
-th{background:#f1f1ec;font-weight:600}
-hr{border:0;border-top:1px solid var(--line);margin:2em 0}
-code{font-family:'JetBrains Mono',monospace;font-size:.85em;background:#f1f1ec;padding:1px 5px;border-radius:4px}
-.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
-"""
 
 def inline(s):
     s = _h.escape(s)
@@ -45,15 +28,38 @@ def inline(s):
 
 def render(md):
     lines = md.split("\n"); out=[]; i=0; n=len(lines)
+    last_section_idx = [0]  # index in `out` of the most recent heading (section start)
+
     def flush_table(rows):
         if not rows: return
-        out.append("<table>")
+        # Parse cells per row, dropping the |---| separator row.
+        parsed=[]
         for r,row in enumerate(rows):
             cells=[c.strip() for c in row.strip().strip("|").split("|")]
             if r==1 and all(set(c)<=set("-: ") for c in cells): continue
+            parsed.append(cells)
+        if not parsed: return
+        header, data = parsed[0], parsed[1:]
+        is_fill = bool(data) and all(c=="" for row in data for c in row)
+        cls = ' class="fill"' if is_fill else ''
+        tbl=[f"<table{cls}>"]
+        if is_fill:
+            # Fixed layout; weight the first column 2x (it holds the long descriptive field).
+            ncol=len(header); total=ncol+1
+            widths=[(2 if k==0 else 1)/total*100 for k in range(ncol)]
+            tbl.append("<colgroup>"+"".join(f'<col style="width:{w:.4g}%">' for w in widths)+"</colgroup>")
+        for r,cells in enumerate(parsed):  # parsed[0]=header; separator already dropped
             tag="th" if r==0 else "td"
-            out.append("<tr>"+"".join(f"<{tag}>{inline(c)}</{tag}>" for c in cells)+"</tr>")
-        out.append("</table>")
+            tbl.append("<tr>"+"".join(f"<{tag}>{inline(c)}</{tag}>" for c in cells)+"</tr>")
+        tbl.append("</table>")
+        if is_fill:
+            # Lift section heading + intro + this table onto their own page.
+            out.insert(last_section_idx[0], '<section class="fill-page">')
+            out.extend(tbl)
+            out.append("</section>")
+        else:
+            out.extend(tbl)
+
     while i<n:
         ln=lines[i]
         if re.match(r'^\s*\|.*\|\s*$', ln):
@@ -62,7 +68,8 @@ def render(md):
             flush_table(rows); continue
         m=re.match(r'^(#{1,4})\s+(.*)', ln)
         if m:
-            lvl=len(m.group(1)); out.append(f"<h{lvl}>{inline(m.group(2))}</h{lvl}>"); i+=1; continue
+            lvl=len(m.group(1)); last_section_idx[0]=len(out)
+            out.append(f"<h{lvl}>{inline(m.group(2))}</h{lvl}>"); i+=1; continue
         if re.match(r'^\s*>\s?', ln):
             buf=[]
             while i<n and re.match(r'^\s*>\s?', lines[i]): buf.append(re.sub(r'^\s*>\s?','',lines[i])); i+=1
@@ -87,12 +94,13 @@ def main():
     p=Path(sys.argv[1]); md=p.read_text(encoding="utf-8")
     title=(re.search(r'^#\s+(.*)', md, re.M) or [None,p.stem])[1]
     body=render(md)
+    css=(p.parent/"worksheet.css").read_text(encoding="utf-8")
     doc=f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{_h.escape(title)} — Compound (review render)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<style>{CSS}</style></head><body>
+<style>{css}</style></head><body>
 <div class="banner">Review render (not production styling). Source of truth: {_h.escape(p.name)}</div>
 {body}
 </body></html>"""

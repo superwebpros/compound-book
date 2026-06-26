@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Build the Knowledge Map in three passes — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: knowledge-that-walks.md</div>
+<p>Source · Source / Knowledge Map</p>
+<h1>Build the Knowledge Map in three passes</h1>
+<p><em>Inventory everything the one validated constraint touches — every system, every person, every gap — on a single page, so Design works from reality instead of assumptions.</em></p>
+<p>The Knowledge Map is the deliverable of Source: a six-column table, one row per source, scoped to the one constraint Signal validated. You build it in three passes — digital systems, then people, then gaps — pulling what you can from your standing <strong>Systems Inventory</strong> and adding what only lives in people&#x27;s heads. <strong>Before you start, you need the Constraint Statement from Signal and access to your Systems Inventory (if you&#x27;ve built one). If you haven&#x27;t, this is also where you start one.</strong></p>
+<p>The six columns:</p>
+<table>
+<tr><th>Source</th><th>Type</th><th>Owner</th><th>Status</th><th>Pipeline</th><th>Notes</th></tr>
+<tr><td></td><td>Digital / Organic / Missing</td><td></td><td>Clean / Needs Work / Missing</td><td>Connected / Manual / Isolated</td><td></td></tr>
+</table>
+<hr>
+<h2>Start from the Constraint Statement and pull from the Systems Inventory</h2>
+<p>Scopes the entire map to one constraint so no row is extraneous, and saves you from starting blank.</p>
+<ol><li>Write the Constraint Statement from Signal at the top of the page. Every row you add has to connect to it.</li><li>Open your Systems Inventory and pull the systems that sit in the path of this constraint — they&#x27;re already classified by layer and owner. Leave the rest of the inventory alone; this map is scoped to one constraint, not the whole company.</li><li>Draw the six-column table. You&#x27;ll fill it across the three passes below.</li></ol>
+<blockquote><strong>Meridian:</strong> The constraint was the quoting bottleneck. From the Systems Inventory, Elena&#x27;s team pulled HubSpot, JobBOSS, and the Customer Notes spreadsheet — the systems in the quoting path — and left HR, marketing, and the accounting close off the map entirely.</blockquote>
+<hr>
+<h2>Pass 1 — Digital sources</h2>
+<p>Surfaces the named, login-accessible systems first; they&#x27;re the easiest to enumerate and they set the pipeline baseline.</p>
+<ol><li>List every digital source that touches the constraint: CRM records, process logs, shared drives, inboxes, spreadsheets. Mark each <strong>Digital</strong>.</li><li>For each, name the owner and mark its <strong>Status</strong>: Clean, Needs Work, or Missing.</li><li>Run the four Pipeline Audit questions and mark each source <strong>Connected</strong>, <strong>Manual</strong>, or <strong>Isolated</strong>: Does it connect to the other systems, or does data move by hand? Can a workflow read it directly? Who owns the handoff? When was the data last verified?</li></ol>
+<blockquote><strong>Meridian:</strong> HubSpot — Manual. JobBOSS — Manual (Elena queries it from memory, not systematically). Customer Notes.xlsx — Isolated, on Elena&#x27;s desktop, no backup.</blockquote>
+<hr>
+<h2>Pass 2 — Organic sources (people)</h2>
+<p>Captures the institutional knowledge no system holds, and flags single points of failure before the knowledge walks out the door.</p>
+<ol><li>List every person whose judgment the constraint workflow depends on — if they vanished tomorrow, the work would stop or degrade. Mark each <strong>Organic</strong>.</li><li>Name specifically what each one knows that isn&#x27;t documented. Not &quot;she knows quoting&quot; but &quot;she holds the three legacy-customer pricing exceptions that override the rate card.&quot;</li><li>Flag anyone who is a single point of failure with <strong>AT RISK</strong> in the Notes column — especially anyone facing a planned exit, retirement, or role change.</li></ol>
+<blockquote><strong>Meridian:</strong> Elena — Organic, AT RISK: the only person who can reconcile all the sources. Dave — Organic, AT RISK: 31 years of estimation judgment, undocumented, four years to retirement.</blockquote>
+<hr>
+<h2>Pass 3 — Missing sources</h2>
+<p>Converts invisible Sprint failure modes into explicit design decisions by naming what should exist but doesn&#x27;t.</p>
+<ol><li>Ask what a designer would need that isn&#x27;t in Pass 1 or Pass 2: questions your current sources can&#x27;t answer, decisions made by gut that should be made by data.</li><li>Add each as a <strong>Missing</strong> row. Note what type it <em>should</em> be (digital system, documented process, captured expertise) and what it would take to create.</li><li>Watch for Management and Leadership knowledge loss — decisions and market intelligence that lived only in someone&#x27;s head. Task-knowledge gaps are usually just documentation; Management and Leadership gaps are the expensive ones.</li></ol>
+<blockquote><strong>Meridian:</strong> Historical quote-to-actual accuracy — Missing (the data exists in two places but has never been compared). Customer segment profitability — Missing (would require joining CRM win/loss to ERP job costing).</blockquote>
+<hr>
+<h2>Apply the one-page test</h2>
+<p>Forces constraint-scope discipline: if it doesn&#x27;t fit on a page, rows that don&#x27;t belong have crept in.</p>
+<ol><li>Read every row and confirm it connects to the constraint. If it doesn&#x27;t, cut it.</li><li>If the map runs longer than one page, you&#x27;ve drifted into a general data audit. Tighten back to the constraint.</li><li>Put the Constraint Statement at the top and the Knowledge Map below it. That one page is what you hand to Design.</li></ol>
+<blockquote><strong>Meridian:</strong> Seven rows — three digital, two organic, two missing — on one page. Anyone could read it and see exactly what feeds the quoting constraint and where it&#x27;s at risk.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<ul><li><strong>Every row connects to the constraint.</strong> No general-audit rows.</li><li><strong>Every digital source has a pipeline status</strong> — Connected, Manual, or Isolated. No blanks.</li><li><strong>At-risk people are flagged</strong> — you explicitly asked who&#x27;s a single point of failure, and the answer is on the map.</li><li><strong>The Missing column isn&#x27;t empty.</strong> Zero missing sources means you didn&#x27;t look hard enough.</li><li><strong>It fits on one page</strong>, with the Constraint Statement on top.</li></ul>
+<p>When all five are true, you&#x27;ve got the second half of the Design input: constraint plus map, one page. (Then classify each source — see the Classify Sources worksheet — before you hand off.)</p>
+</body></html>

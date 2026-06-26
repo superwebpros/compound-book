@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maintain the Hybrid Org Today — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: hybrid-org-today.md</div>
+<p>Compound · Compound / The Rhythm</p>
+<h1>Maintain the Hybrid Org Today</h1>
+<p>Fold the Hybrid Accountability Chart and the Constraint Backlog into one current page — the operational picture of your Co-Intelligent Company.</p>
+<p>The Hybrid Org Today is the single living document you maintain once you&#x27;re running the Rhythm. It maps what people own, what AI handles, what is solved, and what is next. It is not a new artifact you build from scratch: it is two slices you already have — the Hybrid Accountability Chart (the structural layer) and the Constraint Backlog (the constraint inventory) — combined onto one page and kept current. It answers the only question you need to answer each quarter: where does the design layer of this company stand today, and what is it doing next?</p>
+<p><strong>Before you start:</strong> Bring the current Hybrid Accountability Chart and the current Constraint Backlog. You maintain this document <em>in</em> the quarterly operating session, with your leadership team — not between sessions, not by one person curating a wiki. If you don&#x27;t have a Sprint completed yet, you don&#x27;t have a Hybrid Org Today to maintain; come back after Sprint one ships.</p>
+<p>Copy this page and fill it in live during the quarterly session. Update it; don&#x27;t rewrite it.</p>
+<hr>
+<h2>Combine the Hybrid Accountability Chart and Constraint Backlog into one document</h2>
+<p>The structural layer (who owns what handoffs) and the constraint inventory (solved / in-flight / queued) together answer the one quarterly question: where does the design layer stand today?</p>
+<ol><li>Drop in the <strong>Hybrid Accountability Chart</strong> as the structural slice — one row per function the Rhythm has touched, with its agent team, the named human supervisor, and the autonomy level. This is who owns which handoffs across your human and agent workforce.</li><li>Drop in the <strong>Constraint Backlog</strong> as the constraint slice, sorted into three states: <strong>Active Sprint</strong> (the one running now), <strong>queued</strong> (constraints waiting, in priority order), and <strong>Completed Sprints</strong> (what&#x27;s been solved, with the quarter it shipped).</li><li>Lay them out as the four standing sections so the page reads the same way every quarter: <strong>Active Sprint</strong>, <strong>Constraint Backlog</strong>, <strong>Hybrid Accountability Chart</strong>, <strong>Completed Sprints</strong>.</li></ol>
+<table>
+<tr><th>Section</th><th>What goes here</th></tr>
+<tr><td><strong>Active Sprint</strong></td><td>The constraint being solved now, plus its Human Orchestrator</td></tr>
+<tr><td><strong>Constraint Backlog</strong></td><td>Queued constraints, in priority order</td></tr>
+<tr><td><strong>Hybrid Accountability Chart</strong></td><td>Function → agent team → human supervisor → autonomy level</td></tr>
+<tr><td><strong>Completed Sprints</strong></td><td>Solved constraints, each with the quarter it shipped</td></tr>
+</table>
+<blockquote><strong>Meridian example.</strong> At the end of Sprint 3, Meridian Manufacturing&#x27;s Hybrid Org Today read: <strong>Active Sprint</strong> — customer onboarding (11-day manual handoff across 3 systems), Elena Ruiz as Human Orchestrator. <strong>Constraint Backlog</strong> — engineering change orders, then scheduling visibility. <strong>Hybrid Accountability Chart</strong> — quoting, CRM-ERP sync, and onboarding, each with its agent team and human supervisor. <strong>Completed Sprints</strong> — quoting bottleneck (Q3 2026) and CRM-ERP sync (Q4 2026).</blockquote>
+<h2>Fit it on one page</h2>
+<p>If it spills past one page you are tracking too much — the constraint forces prioritization and prevents the document from becoming an ignored wiki.</p>
+<ol><li>Hold the whole document to <strong>one page</strong>. If it doesn&#x27;t fit, you&#x27;re tracking too much.</li><li>Cut to the load-bearing entries: a function only earns a Hybrid Accountability Chart row once a Sprint has actually changed it. Backlog items that no longer reflect reality get dropped, not archived in place.</li><li>Use one line per entry. If a section needs a paragraph to explain itself, it belongs in the underlying chart or backlog, not on this summary page.</li></ol>
+<blockquote><strong>Meridian example.</strong> Three Sprints in, Meridian&#x27;s whole picture — three completed and active constraints, two queued, and a Hybrid Accountability Chart covering quoting, CRM-ERP sync, and onboarding — still fit on a single page. They tracked the design layer, not every task in the shop.</blockquote>
+<h2>Update it during the quarterly session, not between sessions</h2>
+<p>Leadership-team ownership in the meeting is the discipline that prevents the document from rotting; Thursday-afternoon curation by a Notion-curator is how every &quot;living document&quot; dies.</p>
+<ol><li>Make the update part of the <strong>quarterly operating session</strong>, owned by the <strong>leadership team in the room</strong> — not a side task delegated to one person between meetings.</li><li>Walk the four sections and make the changes the just-finished Sprint earned: move the solved constraint into <strong>Completed Sprints</strong> with its quarter, promote the next constraint into <strong>Active Sprint</strong> with its Human Orchestrator, re-rank the <strong>Constraint Backlog</strong>, and make permanent (or remove) any <strong>Hybrid Accountability Chart</strong> rows the Sprint produced.</li><li>Reset this page as the new baseline before anyone leaves the room. Do not schedule a &quot;cleanup pass&quot; for later — later is when living documents die.</li></ol>
+<blockquote><strong>Meridian example.</strong> Elena Ruiz was the Human Orchestrator across all three Sprints, and the Hybrid Org Today was updated in each quarterly session — the CRM-ERP sync constraint moved from Active Sprint to Completed (Q4 2026) and customer onboarding was promoted into the Active Sprint slot, all in the meeting, by the leadership team.</blockquote>
+<h2>Use it as the standard briefing and the board receipt</h2>
+<p>A new executive or a board question gets answered from one current, concrete document — not a slide deck assembled from memory.</p>
+<ol><li>Make the Hybrid Org Today the <strong>onboarding briefing</strong> for any new executive: hand them this one page and they see what people own, what AI handles, what&#x27;s solved, and what&#x27;s next.</li><li>Make it the <strong>answer to the board question</strong> &quot;what have the AI investments produced?&quot; — point at the Completed Sprints section and the constraints they removed, in your own vocabulary, with the quarters attached.</li><li>Keep it current enough that you&#x27;d hand it over <strong>today</strong> without first assembling a slide deck. If you&#x27;d need to rebuild it from memory to show it, the document isn&#x27;t doing its job.</li></ol>
+<blockquote><strong>Meridian example.</strong> By the end of Sprint 3, Meridian&#x27;s board question about AI ROI had a one-page answer: Completed Sprints showing the quoting bottleneck and CRM-ERP sync both solved, with the quarters they shipped — concrete and current, not a deck built from memory.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Hand this page to a new executive or imagine handing it to the board. They should understand where the design layer of the company stands — and what it&#x27;s doing next — from this page alone, without coming back to ask. Check:</p>
+<ul><li>[ ] Both slices are present: the <strong>Hybrid Accountability Chart</strong> (structural) and the <strong>Constraint Backlog</strong> (constraints).</li><li>[ ] All four sections are filled: <strong>Active Sprint</strong>, <strong>Constraint Backlog</strong>, <strong>Hybrid Accountability Chart</strong>, <strong>Completed Sprints</strong>.</li><li>[ ] The <strong>Active Sprint</strong> names its constraint <strong>and</strong> its Human Orchestrator.</li><li>[ ] Every <strong>Completed Sprint</strong> has the <strong>quarter</strong> it shipped attached.</li><li>[ ] The whole thing <strong>fits on one page</strong>. If it doesn&#x27;t, you&#x27;re tracking too much — cut to the load-bearing entries.</li><li>[ ] It was updated <strong>in the quarterly session by the leadership team</strong> — not by one person between meetings.</li><li>[ ] You could hand it over <strong>as-is</strong> as a new-executive briefing or a board receipt, with no slide deck assembled from memory.</li></ul>
+<p>This is the page the next quarterly session opens with. Pair it with the Compounding Scorecard, which tracks whether the Rhythm is actually paying off across quarters.</p>
+</body></html>

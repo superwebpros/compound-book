@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Write the Per-Role Runbook — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: per-role-runbook.md</div>
+<p>Compound · Deliver / Per-role runbook</p>
+<h1>Write the Per-Role Runbook</h1>
+<p><em>Document, role by role, exactly what changed about each person&#x27;s job — so the workflow is delivered, not just deployed.</em></p>
+<p>A deployed workflow isn&#x27;t a delivered one until every affected person knows what they now do differently, what the agent took over, how they check its work, and when they escalate. This worksheet turns that into one short page per role. The test it has to pass: a colleague who was on vacation for the entire Sprint could read it and know exactly what changed about their job.</p>
+<p><strong>Before you start, you need the Hybrid Accountability Chart from Design</strong> — the map of who owns what, with the agent roles added alongside the human ones. The runbook is scoped from that chart.</p>
+<hr>
+<section class="fill-page">
+<h2>Identify affected roles from the Hybrid Accountability Chart</h2>
+<p>Scope the runbook to every person whose handoffs changed — no one surprises left out.</p>
+<ol><li>Pull up the Hybrid Accountability Chart from Design. Read down it and circle every role whose daily work changes because of this Sprint.</li><li>List those roles here — name and seat — one row each. A role only belongs on the list if a handoff (what they send the agent, or what they get back) actually changed.</li><li>For each role, confirm hands-on training is done — not a meeting, not an email. If anyone hasn&#x27;t trained, that&#x27;s the first task before deploy, and their runbook entry isn&#x27;t trustworthy until they have.</li></ol>
+<table class="fill">
+<colgroup><col style="width:50%"><col style="width:25%"><col style="width:25%"></colgroup>
+<tr><th>Role (name + seat)</th><th>Handoff that changed</th><th>Training done?</th></tr>
+<tr><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td></tr>
+</table>
+</section>
+<blockquote><strong>Meridian:</strong> Three roles changed and made the list — Dave Kowalski (Sr. Design Engineer), Elena Ruiz (VP Ops), and Ty Banfield (Sales). Everyone else in the shop kept their handoffs, so they stayed off the runbook.</blockquote>
+<hr>
+<section class="fill-page">
+<h2>For each role, answer the four change questions</h2>
+<p>Forces explicit articulation of what the person does differently, what the agent now handles, how they review output, and what triggers escalation.</p>
+<p>For each role on your list, answer all four — in plain sentences, not &quot;handled by agent&quot;:</p>
+<ol><li>What does this person now do <strong>differently</strong> than before the Sprint?</li><li>What does the <strong>agent</strong> handle that this person used to handle?</li><li>How does this person <strong>review</strong> the agent&#x27;s output?</li><li>What <strong>triggers an escalation</strong> — and to whom?</li></ol>
+<table class="fill">
+<colgroup><col style="width:33.33%"><col style="width:16.67%"><col style="width:16.67%"><col style="width:16.67%"><col style="width:16.67%"></colgroup>
+<tr><th>Role</th><th>1. Now does differently</th><th>2. Agent now handles</th><th>3. Reviews output by</th><th>4. Escalation trigger → to whom</th></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+</section>
+<blockquote><strong>Meridian — Elena Ruiz (VP Ops):</strong> (1) Used to build every quote from scratch, ~15 hrs/week; now reviews agent-drafted quotes in 15–20 min each and spends the recovered hours on production planning and supplier negotiations. (2) The agent assembles the draft quote, attaches a confidence score, and surfaces historical matches. (3) Reviews every assembled quote in her CRM queue, watching the confidence-score distribution. (4) Updates pricing rules when a new exception appears; flags low-confidence drafts for closer work.</blockquote>
+<hr>
+<section class="fill-page">
+<h2>Write the three-column entry (input / output / escalation)</h2>
+<p>One concrete sentence each — vague entries like &#x27;reviews output&#x27; are not runbook entries.</p>
+<ol><li>Collapse each role&#x27;s four answers into the three-column form: <strong>Input</strong> (what they send the agent — the trigger), <strong>Output</strong> (what comes back and in what format), <strong>Escalation</strong> (what they do when something lands outside the expected range).</li><li>Write one concrete sentence per cell. Name the tool, the place, the threshold, the timeline. &quot;Reviews output&quot; fails; &quot;Opens the quote draft in the shared folder, checks unit costs against the rate card, approves or flags within 4 hours&quot; passes.</li><li>One page per role. Keep it short enough that someone reads the whole thing in under a minute.</li></ol>
+<table class="fill">
+<colgroup><col style="width:40%"><col style="width:20%"><col style="width:20%"><col style="width:20%"></colgroup>
+<tr><th>Role</th><th>Input (what they receive)</th><th>Output (what they produce)</th><th>Escalation (when and how)</th></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+</table>
+</section>
+<blockquote><strong>Meridian — three-column runbook:</strong> - <strong>Dave Kowalski (Sr. Design Engineer):</strong> <em>Input</em> — specs flagged by the Quote Research Agent for non-standard materials or tight tolerances. <em>Output</em> — manual pricing for flagged line items; confirmation or correction of the agent&#x27;s historical job match. <em>Escalation</em> — consulted on any quote involving Inconel, titanium, or exotic alloys; gets Claude Team notifications when the agent flags a match it can&#x27;t confirm. - <strong>Elena Ruiz (VP Ops):</strong> <em>Input</em> — agent-assembled draft quote in her CRM review queue, with confidence score and historical matches. <em>Output</em> — approved quote (or edited and approved), updated Customer Notes.xlsx when new exceptions arise. <em>Escalation</em> — reviews every assembled quote, monitors confidence-score distribution, updates pricing rules for new exceptions; works from Claude Team and JobBOSS. - <strong>Ty Banfield (Sales):</strong> <em>Input</em> — approved quote delivered via HubSpot notification. <em>Output</em> — customer-facing proposal sent same-day for standard work. <em>Escalation</em> — reports customer feedback to Elena, flags any quote that doesn&#x27;t match what the customer requested, submits all RFQs through the standardized intake form (no email forwards).</blockquote>
+<hr>
+<h2>Apply the vacation test</h2>
+<p>A colleague who missed the entire Sprint should be able to read the document and know exactly what changed about their job.</p>
+<ol><li>Hand each role&#x27;s page to someone who wasn&#x27;t in the Sprint — or read it as if you were that person on their first day back.</li><li>Ask: from this page alone, do I know what I now do differently, what the agent does, how I check it, and when I escalate? Any &quot;I&#x27;d have to go ask someone&quot; is a gap.</li><li>Fix every gap before go-live. The runbook isn&#x27;t done until it passes this test without a single follow-up question.</li></ol>
+<blockquote><strong>Meridian:</strong> The test the runbook had to clear — could someone who was on vacation during the entire Sprint sit down with this document and know exactly what changed about their job? Each role&#x27;s page (Dave, Elena, Ty) was written to answer that with no follow-up call.</blockquote>
+<hr>
+<h2>Publish the runbook in the team&#x27;s live tool before go-live</h2>
+<p>A runbook in a folder no one opens is not a runbook; it must be findable where the team already works.</p>
+<ol><li>Pick the tool the team already lives in — the project management system, the shared doc, or the Slack channel. Not a new folder, not a new app.</li><li>Put the runbook there and link it where the affected roles will trip over it in normal work.</li><li>Do this <strong>before</strong> the workflow goes live, so day one of production is day one of the runbook — not a document people discover weeks later.</li></ol>
+<blockquote><strong>Meridian:</strong> The runbook went into the tools the team already used so each role found it in the flow of work — published before the workflow went live, not filed in a folder no one opens.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>The runbook is finished when all of these are true:</p>
+<ul><li><strong>Every affected role from the Hybrid Accountability Chart has a page</strong> — and only the roles whose handoffs actually changed.</li><li><strong>Each page answers the four change questions</strong> and collapses into a three-column entry with one concrete sentence per cell — tool, place, threshold, timeline named.</li><li><strong>It passes the vacation test</strong> — a colleague who missed the entire Sprint could read it and know exactly what changed about their job, with zero follow-up questions.</li><li><strong>It&#x27;s published in the team&#x27;s live tool before go-live</strong> — findable where the team already works, not in a folder no one opens.</li></ul>
+<p>When all four are true, the workflow is delivered to the people, not just deployed to production.</p>
+</body></html>

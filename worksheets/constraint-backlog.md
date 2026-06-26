@@ -12,15 +12,9 @@ The Five Whys turns your symptoms into candidate constraints — the structural 
 
 The Backlog is the standing inventory of everything worth a Sprint. It's born here, in this session, and every later Sprint draws from it — so write the candidates down even though you'll only commit to one.
 
-1. Make a table with five columns: candidate constraint, owner, closeable in one Sprint?, cost / measure, load-bearing?
+1. Use the **Constraint Backlog table on the last page** — five columns: candidate constraint, owner, closeable in one Sprint?, cost / measure, load-bearing?
 2. Add one row for each candidate constraint that survived the Five Whys. Write each as a single structural sentence — the workflow, handoff, or missing system, not the symptom you started from.
 3. Don't rank them yet. This pass is just an honest inventory of what a Sprint could fix.
-
-| Candidate constraint | Owner | Closeable in one Sprint? | Cost / measure | Load-bearing? |
-|---|---|---|---|---|
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
 
 > **Meridian:** Three symptoms survived the trace — the quoting bottleneck, manual job costing, and PM task visibility. Each went into the Backlog as a one-line structural statement: "Quoting workflow depends on one person's undocumented context," "Job costing is manual; margin not visible until after close," "PM task updates are driven by the VP of Ops, not the system."
 
@@ -96,3 +90,23 @@ Run this test before you leave the Backlog and move to the Constraint Statement:
 - **One constraint is committed** as the Sprint's target, and the rest are recorded as the standing Backlog for future Sprints.
 
 When all four are true, you have a Backlog you can return to every quarter and a single constraint the Sprint can earn its keep against.
+
+---
+
+## Constraint Backlog
+
+One row per surviving candidate. Mark the load-bearing one, then commit a single constraint as this Sprint's target.
+
+| Candidate constraint | Owner | Closeable in one Sprint? | Cost / measure | Load-bearing? |
+|---|---|---|---|---|
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |

@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Track compounding on the Compounding Scorecard — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: compounding-scorecard.md</div>
+<p>Compound · Compound / Rhythm</p>
+<h1>Track compounding on the Compounding Scorecard</h1>
+<p><em>Build the one document that proves the Rhythm is working — a row per Sprint, a delta per row, and a cumulative column that becomes the business case for continuing.</em></p>
+<p>The Hybrid Org Today tells you where you stand. The Compounding Scorecard tells you whether the Rhythm is working. It is a design-validation document, not a financial one: each Sprint&#x27;s delta tells you whether the design correctly identified the constraint and correctly allocated the work. This worksheet builds the scorecard, seeds it with your current Sprint, and gives you the discipline to add one honest row per quarter.</p>
+<p><strong>Before you start, you need at least one Sprint outcome you can quantify</strong> — the constraint you solved, what it cost before, and what it costs after. If you&#x27;ve run the Sprint Outcome Measurement, those numbers are already in hand. If your current Sprint is still in flight, you can still create the scorecard and seed the constraint row now, leaving the cost columns blank until it closes.</p>
+<hr>
+<section class="fill-page">
+<h2>Create the scorecard with six columns: Quarter, Constraint Solved, Cost Before, Cost After, Delta, Cumulative Impact</h2>
+<p>The fixed structure forces each Sprint to produce a measurable delta and makes the cumulative column — the business case — visible across quarters.</p>
+<ol><li>Draw the six-column table below. Keep the column names exactly as written — Quarter, Constraint Solved, Cost Before, Cost After, Delta, Cumulative Impact. Do not add columns; the discipline is in the fixed shape.</li><li>Decide the unit and hold it constant down every column: annualized cost (<code>$X/yr</code>) is the default. Whatever you pick — dollars per year, hours per year, headcount — every Cost Before and Cost After uses the same unit so the deltas are comparable.</li><li>Put the scorecard where it will be seen: tape it on the wall next to your Hybrid Accountability Chart, or pin it in the same tool that holds the Hybrid Org Today. A scorecard in a folder no one opens stops compounding anything.</li></ol>
+<table class="fill">
+<colgroup><col style="width:28.57%"><col style="width:14.29%"><col style="width:14.29%"><col style="width:14.29%"><col style="width:14.29%"><col style="width:14.29%"></colgroup>
+<tr><th>Quarter</th><th>Constraint Solved</th><th>Cost Before</th><th>Cost After</th><th>Delta</th><th>Cumulative Impact</th></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+</section>
+<blockquote><strong>Meridian:</strong> Meridian Manufacturing, a $7.2M custom fabrication shop, built a six-column scorecard with one row per quarterly Sprint. Same columns, same unit (<code>$/yr</code>) the whole way down — that is what lets Q3&#x27;s $446K delta and Q4&#x27;s $66K delta stack into a single readable cumulative number.</blockquote>
+<hr>
+<h2>Fill in the first row with the current Sprint</h2>
+<p>Anchors the document in real data immediately; an empty scorecard is not a scorecard.</p>
+<ol><li>Name the constraint in the <strong>Constraint Solved</strong> cell in one specific sentence — the constraint as Signal stated it, not a category. &quot;Quoting bottleneck: Elena sole quoter, 3.8-day turnaround,&quot; not &quot;quoting.&quot;</li><li>Enter <strong>Cost Before</strong> (the quantified cost from the original Signal statement) and <strong>Cost After</strong> (the same metric measured in production). Subtract to fill <strong>Delta</strong>. If the Sprint is still in flight, write the constraint sentence now and leave Cost Before, Cost After, and Delta blank with an &quot;(in flight)&quot; note until it closes.</li><li>Set <strong>Cumulative Impact</strong> equal to this first Delta — there is nothing yet to add it to. This cell is the running total every later row will build on.</li></ol>
+<blockquote><strong>Meridian, first row:</strong>  | Quarter | Constraint Solved | Cost Before | Cost After | Delta | Cumulative Impact | |---|---|---|---|---|---| | Q3 2026 | Quoting bottleneck: Elena sole quoter, 3.8-day turnaround | $558K/yr | $112K/yr | $446K/yr | $446K/yr |  Elena Ruiz, the VP of Operations, was the Human Orchestrator. The first row&#x27;s Cumulative Impact equals its Delta — $446K — because it is the foundation everything else stacks on.</blockquote>
+<hr>
+<h2>After each Sprint closes, add a row with the measured delta</h2>
+<p>The delta tells you whether the design correctly identified the constraint; the retrospective tells you why — both are required to improve the next Sprint.</p>
+<ol><li>When a Sprint closes, add one new row. Fill Quarter, Constraint Solved, Cost Before, Cost After, and Delta from that Sprint&#x27;s outcome measurement — never from memory or a vibe.</li><li>Compute <strong>Cumulative Impact</strong> for the new row: previous row&#x27;s Cumulative Impact + this row&#x27;s Delta. This is the only column that touches the row above it.</li><li>Pair the row with its retrospective. The scorecard records <em>what</em> moved; the retrospective records <em>why</em> it moved (or why the delta was smaller than expected). A row without its retrospective is half a data point.</li></ol>
+<blockquote><strong>Meridian, after Sprint two:</strong>  | Quarter | Constraint Solved | Cost Before | Cost After | Delta | Cumulative Impact | |---|---|---|---|---|---| | Q3 2026 | Quoting bottleneck: Elena sole quoter, 3.8-day turnaround | $558K/yr | $112K/yr | $446K/yr | $446K/yr | | Q4 2026 | CRM-ERP sync: HubSpot and JobBOSS conflicting records | $74K/yr | $8K/yr | $66K/yr | $512K/yr | | Q1 2027 | Customer onboarding: 11-day manual handoff across 3 systems (in flight) | — | — | — | — |  Sprint 2&#x27;s $66K delta is far smaller than Sprint 1&#x27;s $446K — and that is fine. The Q1 2027 row is seeded with its constraint sentence while still in flight; its cost columns stay blank until it closes.</blockquote>
+<hr>
+<h2>Read the cumulative column at each quarterly session to confirm compounding</h2>
+<p>The cumulative column is the business case for continuing the Rhythm; declining marginal deltas are normal and expected — the compounding is in the stack, not each individual row.</p>
+<ol><li>At the quarterly operating session, read the <strong>Cumulative Impact</strong> of the bottom row out loud. That single number is the answer to &quot;is the Rhythm worth continuing?&quot; — present it next to revenue and rocks.</li><li>Expect each new Delta to be smaller than the first. The largest delta is almost always the first Sprint. Do not read shrinking deltas as the Rhythm losing steam — read the cumulative column, which only grows.</li><li>Trace one compounding link out loud: name how an earlier Sprint made a later one possible. This proves the deltas are stacking on a foundation, not happening in isolation.</li></ol>
+<blockquote><strong>Meridian, read at the end of Sprint 3:</strong> Two Sprints completed, a third in flight, and the cumulative column reads $512K in annualized cost reduction — with Elena&#x27;s freed capacity redirected from producing quotes to designing workflows. The compounding link: Sprint 2 (the CRM-ERP sync) only existed because Sprint 1 freed Elena from quoting and made the data-sync problem visible. Each Sprint built on the foundation the previous ones created.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Run this test before the quarterly session ends:</p>
+<ul><li><strong>The scorecard has all six columns, named exactly</strong> — Quarter, Constraint Solved, Cost Before, Cost After, Delta, Cumulative Impact — and every Cost cell uses the same unit.</li><li><strong>The first row holds a real, current Sprint</strong> — a specific constraint sentence and (once closed) a measured Cost Before, Cost After, and Delta. No placeholder rows.</li><li><strong>Every closed Sprint has its own row, and every Cumulative Impact equals the row above it plus this row&#x27;s Delta.</strong> The math chains cleanly down the column.</li><li><strong>The cumulative number was read at the session and one compounding link was named</strong> — a specific earlier Sprint that made a later one possible.</li></ul>
+<p>When all four are true, the scorecard is doing its job: it is the document you hand a board member or a skeptical executive that proves, in one number, that the Rhythm compounds.</p>
+</body></html>

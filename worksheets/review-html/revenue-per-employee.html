@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculate Revenue per Employee — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: revenue-per-employee.md</div>
+<p>Compound · Diagnosis / Baseline Calculator</p>
+<h1>Calculate Revenue per Employee</h1>
+<p><em>Produces a three-row table that shows whether your prior technology investment moved productivity — and whether the AI investment is on track to move it further.</em></p>
+<p>This worksheet turns the Headcount Paradox from a feeling into a number. You&#x27;ll capture one productivity figure for three moments — your last major system rollout, today, and a +20%-revenue target with no new hires — and read the delta between them. No accounting system or analyst required: you need two numbers per row (revenue and headcount) and a calculator. Pull last-twelve-months revenue first; everything else divides from there.</p>
+<hr>
+<h2>1. Pull last-twelve-months revenue</h2>
+<p>Establishes the numerator; forces a single agreed-on number before the division.</p>
+<ol><li>Add up total company revenue for the trailing twelve months (not last fiscal year, not a forecast — the last 12 actual months).</li><li>Write one number. If two people in the room have two different figures, reconcile before you go further; the whole exercise depends on one agreed-on numerator.</li><li>Record it in the <strong>Today</strong> row, Revenue column, of the table below.</li></ol>
+<blockquote><strong>Meridian example:</strong> Elena&#x27;s team pulled $7.2M in trailing-twelve-month revenue. One number, agreed in the room, before anyone reached for the headcount.</blockquote>
+<hr>
+<h2>2. Count current full-time headcount</h2>
+<p>Establishes the denominator; should reflect payroll today, not budgeted seats.</p>
+<ol><li>Count full-time employees on payroll <strong>today</strong> — actual people drawing a paycheck, not approved-but-unfilled roles and not budgeted seats.</li><li>Decide once how you treat part-timers and long-term contractors (e.g., two half-time people = one), and apply that rule the same way in every row.</li><li>Record the number in the <strong>Today</strong> row, Employees column.</li></ol>
+<blockquote><strong>Meridian example:</strong> 27 people on payroll today. The two roles the COO had queued for next quarter were <em>not</em> counted — budgeted seats are not headcount.</blockquote>
+<hr>
+<h2>3. Divide revenue by headcount to get today&#x27;s baseline</h2>
+<p>Produces the per-person productivity proxy that all comparisons anchor to.</p>
+<ol><li>Divide trailing-twelve-month revenue by current headcount.</li><li>Round to the nearest thousand and write it in the <strong>Today</strong> row, Revenue per Employee column.</li><li>This single figure is your baseline. Every other row is read against it.</li></ol>
+<blockquote><strong>Meridian example:</strong> $7.2M ÷ 27 = <strong>$267K</strong> revenue per employee. That&#x27;s the baseline every other snapshot gets compared to.</blockquote>
+<hr>
+<h2>4. Fill in the &#x27;at last major system rollout&#x27; row</h2>
+<p>Gives a before-AI-investment reference point so the prior tech wave&#x27;s lift is visible.</p>
+<ol><li>Pick your most recent company-wide system rollout as the anchor — ERP, CRM, PSA, practice-management system, whatever it was. It&#x27;s the cleanest reference point most operators have.</li><li>Pull revenue and headcount <strong>as they were at that rollout</strong>, using the same part-timer rule from step 2.</li><li>Divide and record all three cells in the <strong>At last major system rollout</strong> row.</li></ol>
+<blockquote><strong>Meridian example:</strong> Four years ago, at the ERP rollout: $5.8M ÷ 24 = <strong>$242K</strong>.</blockquote>
+<hr>
+<h2>5. Project the &#x27;+20% revenue, no new hires&#x27; row</h2>
+<p>Makes the target slope concrete — shows whether the math is achievable or aspirational.</p>
+<ol><li>Multiply today&#x27;s revenue by 1.2 (a 20% increase).</li><li>Keep headcount <strong>the same as today</strong> — that&#x27;s the whole point of the row.</li><li>Divide and record all three cells in the <strong>Next year, +20% revenue, no new hires</strong> row.</li></ol>
+<blockquote><strong>Meridian example:</strong> $7.2M × 1.2 = $8.6M, still at 27 people: $8.6M ÷ 27 = <strong>$319K</strong>.</blockquote>
+<hr>
+<h2>The table</h2>
+<table>
+<tr><th>Snapshot</th><th>Revenue</th><th>Employees</th><th>Revenue per Employee</th></tr>
+<tr><td>At your last major system rollout</td><td>$______</td><td>______</td><td>$______</td></tr>
+<tr><td>Today</td><td>$______</td><td>______</td><td>$______</td></tr>
+<tr><td>Next year, +20% revenue, no new hires</td><td>$______</td><td>______</td><td>$______</td></tr>
+</table>
+<hr>
+<h2>6. Read the delta across the three rows</h2>
+<p>Surfaces whether prior investment moved the number and whether the AI investment is on track to move it further.</p>
+<ol><li><strong>Rollout → Today:</strong> subtract the rollout figure from today&#x27;s figure. Did your last big tech investment actually move revenue per employee, and by how much over how many years?</li><li><strong>Today → +20% row:</strong> the gap to that row is the productivity lift you&#x27;d need to grow 20% without adding bodies. Is that a stretch or a reach?</li><li>Write one sentence naming what the deltas tell you — e.g., whether prior investment bent the slope and whether the next dollar of revenue still demands the same headcount it always did (the Headcount Paradox).</li></ol>
+<blockquote><strong>Meridian example:</strong> The ERP rollout moved revenue per employee by <strong>$25K over four years</strong> ($242K → $267K). Elena&#x27;s single quoting bottleneck — $558K a year in delayed and lost bids — represents more than two years of that prior gain sitting idle in one workflow. The number had barely moved, and the cost of <em>why</em> was sitting in a single seat.</blockquote>
+<blockquote><strong>The principle this number serves:</strong> redesign the operating model before you staff it, and the slope bends. At Jesse&#x27;s firm, SuperWebPros, that redesign took the company from <strong>thirteen people to eight</strong> — work was mapped function by function, rule-based work moved to AI agent teams, and humans stayed on judgment. Billings went up; profitability went up. That&#x27;s revenue per employee moving the way it&#x27;s supposed to.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>You&#x27;re done when someone who wasn&#x27;t in the room could pick up this sheet and understand your productivity picture without asking you a single question. Check:</p>
+<ul><li>All nine cells are filled — three rows, revenue / employees / revenue per employee each. No blanks.</li><li>The same headcount rule (part-timers, contractors) was applied in every row.</li><li>The <strong>Today</strong> figure uses trailing-twelve-month revenue and today&#x27;s actual payroll — not last fiscal year, not budgeted seats.</li><li>You wrote the one-sentence read of the deltas, not just the numbers.</li><li>You can answer in one breath: did prior investment move this number, and is the next dollar of revenue still pulling the same headcount?</li></ul>
+</body></html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Answer the seven Guardrails Checklist questions — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: guardrails-checklist.md</div>
+<p>Compound · Build / Guardrails</p>
+<h1>Answer the seven Guardrails Checklist questions</h1>
+<p><em>Lock the quality, privacy, and oversight decisions in writing — so the human supervisor can actually supervise — before the build goes live.</em></p>
+<p>The Guardrails Checklist is the second of Build&#x27;s two instruments. The Build Spec names what the agent <em>does</em>; this checklist names what it&#x27;s <em>allowed to touch</em> and what happens when something goes wrong. Answer all seven questions in writing before Build executes. If any question can&#x27;t be answered, the build isn&#x27;t ready — that gap is a decision someone will otherwise make under pressure, after something has already gone sideways.</p>
+<p><strong>Before you start, you need the locked Build Spec.</strong> These answers attach to it as a companion document. Do this work before the build runs and it costs almost nothing; discover it after the wrong person pulls the wrong data and it costs a lot more.</p>
+<p>Answer the seven questions in order. A blank is not a deferral — it&#x27;s an undecided guardrail going to production.</p>
+<hr>
+<h2>Question 1: Lock data access boundaries in writing</h2>
+<p>Document exactly what data the system may touch and what is off-limits, with an owner for that decision.</p>
+<ol><li>List every system and dataset the agent is permitted to touch, and mark each one read, write, or both.</li><li>Write the explicit off-limits list: the systems and data the agent must never reach, named so there&#x27;s no ambiguity.</li><li>Name who decided the boundary and where it&#x27;s documented, so the decision has an owner and a paper trail.</li></ol>
+<blockquote><strong>Meridian — Data access:</strong> HubSpot CRM deal records (read/write), JobBOSS ERP job costing and rate card (read), cleaned pricing exceptions database (read). Off-limits: financial reporting, employee records, customer payment history, supplier contracts, or any system not listed.</blockquote>
+<hr>
+<h2>Question 2: Define agent autonomy vs. human sign-off</h2>
+<p>Draw the exact line between what the agent can do unilaterally and what requires a human approval before action.</p>
+<ol><li>List what the agent may do without asking anyone — the actions it takes on its own.</li><li>List what requires human sign-off before it happens — the actions a person must approve first.</li><li>Check the line for anything irreversible or customer-facing: those almost always belong on the sign-off side.</li></ol>
+<blockquote><strong>Meridian — Agent autonomy:</strong> Can match RFQs to historical jobs, apply rate card pricing, apply documented exception rules, generate draft PDFs, assign confidence scores, place drafts in review queue. Cannot send anything to a customer, apply undocumented exceptions, override the rate card, or commit a quote.</blockquote>
+<hr>
+<h2>Question 3: Specify behavior on unrecognized inputs</h2>
+<p>Prevent the agent from guessing or going silent when it encounters something outside its design envelope.</p>
+<ol><li>Name the kinds of input the agent was <em>not</em> designed for (missing fields, unfamiliar materials, out-of-scope requests).</li><li>For each, write what the agent does instead of guessing: produce no answer for that item, flag it with a specific label, and stop.</li><li>Name where each flagged input routes and to whom, so an unrecognized input never just disappears.</li></ol>
+<blockquote><strong>Meridian — Unrecognized inputs:</strong> If the RFQ references a material not in the pricing exceptions database or ERP materials list — specialty alloys like Inconel — the agent produces no price estimate for that line item, flags it as &quot;manual pricing required,&quot; and routes to the senior engineer. If the RFQ lacks sufficient spec detail, the agent flags it as &quot;insufficient for rapid estimate&quot; and routes to Elena.</blockquote>
+<hr>
+<h2>Question 4: Define quality measurement and baseline</h2>
+<p>Make &quot;good enough&quot; measurable so the supervisor can calibrate review cadence and know when to trust the system more.</p>
+<ol><li>Name the specific check that tells you the output is good — compared against what baseline (the human&#x27;s prior work, an accuracy target).</li><li>State how often you measure it and over what window.</li><li>Set the threshold that would let the supervisor reduce review cadence — the number that means &quot;trust this more.&quot;</li></ol>
+<blockquote><strong>Meridian — Quality measurement:</strong> Weekly comparison of agent-drafted prices to Elena&#x27;s final approved prices. Target: substantive corrections on fewer than 10% of drafts within eight weeks. Historical match accuracy tracked separately, target 95% before Elena reduces review cadence on the Research Agent.</blockquote>
+<hr>
+<h2>Question 5: Name the escalation path</h2>
+<p>Route judgment-requiring outputs to a specific person, in a specific form, on a specific timeline — no ambiguity in the moment.</p>
+<ol><li>List the output types that need human judgment (low confidence, non-standard cases, high-stakes decisions).</li><li>For each, name exactly who it goes to — a person, not a role in the abstract.</li><li>State the form it arrives in and the timeline for a response, so the handoff isn&#x27;t improvised when it happens.</li></ol>
+<blockquote><strong>Meridian — Escalation path:</strong> Low-confidence quotes to Elena for full manual review. Non-standard materials to Dave Kowalski (senior engineer). Strategic account pricing to Mark Ellison (CEO). Any quote where the calculated price deviates more than 15% from the closest historical match gets flagged for Elena&#x27;s investigation before approval.</blockquote>
+<hr>
+<h2>Question 6: Name the accountability owner</h2>
+<p>Establish who owns a bad output the same way they&#x27;d own it if a person produced it — no diffuse responsibility.</p>
+<ol><li>Name the single person — with their title — who is responsible when the agent produces a bad output.</li><li>Tie that name to the Hybrid Accountability Chart so the ownership is consistent across the Sprint, not invented here.</li><li>Confirm it&#x27;s one named human, not a committee or a tool: accountability without a single name dies.</li></ol>
+<blockquote><strong>Meridian — Accountability:</strong> Elena Ruiz, VP of Operations, owns every quote the agents produce, the same way she&#x27;d own it if she&#x27;d built it from scratch. She is the named human supervisor in the Hybrid Accountability Chart.</blockquote>
+<hr>
+<h2>Question 7: Define the kill switch condition</h2>
+<p>Pre-decide the specific failures that trigger immediate shutdown, so the decision isn&#x27;t made under pressure after something goes wrong.</p>
+<ol><li>Write the specific conditions that would make you shut the workflow down immediately — error rates, a breach of scope, an output reaching a customer unreviewed.</li><li>State them as concrete, observable thresholds, not vibes (a number, a count, a boundary crossed).</li><li>Name who holds the switch and can pull it.</li></ol>
+<blockquote><strong>Meridian — Kill switch:</strong> Pricing errors exceeding 20% on three quotes in any week, any quote reaching a customer without Elena&#x27;s review, or any data access outside defined scope. Elena holds the switch.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Run this test before the checklist leaves your hands and the build goes live:</p>
+<ul><li><strong>All seven questions are answered in writing.</strong> No blanks. An unanswered guardrail is a decision made later, under pressure, after something has already gone wrong.</li><li><strong>The answers are attached to the Build Spec as a companion document</strong> — the spec names what the agent does, the checklist names what it&#x27;s allowed to touch; they travel together.</li><li><strong>Every routing and ownership question lands on a named person</strong>, not a role, a tool, or a committee — escalation (Q5), accountability (Q6), and the kill switch (Q7) each name who.</li><li><strong>The thresholds are concrete and observable</strong> — quality (Q4) and the kill switch (Q7) are numbers someone could check, not judgment calls made in the moment.</li></ul>
+<p>When all four are true, these are the conditions under which the human supervisor can actually supervise. If any question can&#x27;t be answered, the build is not ready — resolve the gap before going live.</p>
+</body></html>
