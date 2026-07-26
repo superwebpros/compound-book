@@ -561,14 +561,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": ["right-path"],
-      "text": "Compounds into next sprint",
+      "text": "Compounds into next Sprint",
       "fontSize": 22,
       "fontFamily": 2,
       "textAlign": "center",
       "verticalAlign": "middle",
       "baseline": 22,
       "containerId": null,
-      "originalText": "Compounds into next sprint"
+      "originalText": "Compounds into next Sprint"
     }
   ],
   "appState": {

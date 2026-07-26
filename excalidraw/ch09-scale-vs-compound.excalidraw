@@ -235,14 +235,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Same sprint cost each time",
+      "text": "Same Sprint cost each time",
       "fontSize": 20,
       "fontFamily": 2,
       "textAlign": "center",
       "verticalAlign": "middle",
       "baseline": 20,
       "containerId": null,
-      "originalText": "Same sprint cost each time"
+      "originalText": "Same Sprint cost each time"
     },
     {
       "id": "c-r1",
@@ -260,14 +260,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Decreasing sprint cost",
+      "text": "Decreasing Sprint cost",
       "fontSize": 20,
       "fontFamily": 2,
       "textAlign": "center",
       "verticalAlign": "middle",
       "baseline": 20,
       "containerId": null,
-      "originalText": "Decreasing sprint cost"
+      "originalText": "Decreasing Sprint cost"
     },
     {
       "id": "s-r2",
@@ -360,14 +360,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Exponential trajectory",
+      "text": "Compounding trajectory (widening gap)",
       "fontSize": 20,
       "fontFamily": 2,
       "textAlign": "center",
       "verticalAlign": "middle",
       "baseline": 20,
       "containerId": null,
-      "originalText": "Exponential trajectory"
+      "originalText": "Compounding trajectory (widening gap)"
     },
     {
       "id": "s-r4",
@@ -410,14 +410,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Each sprint inherits from previous",
+      "text": "Each Sprint inherits from previous",
       "fontSize": 20,
       "fontFamily": 2,
       "textAlign": "center",
       "verticalAlign": "middle",
       "baseline": 20,
       "containerId": null,
-      "originalText": "Each sprint inherits from previous"
+      "originalText": "Each Sprint inherits from previous"
     }
   ],
   "appState": {
