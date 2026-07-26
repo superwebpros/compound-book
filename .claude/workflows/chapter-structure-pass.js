@@ -14,10 +14,12 @@ export const meta = {
 // args:
 //   chapter    (required) e.g. 'chapters/07-build.qmd'
 //   mode       'produce' (full pass from an audit brief) | 'revise' (resolve jf-notes surgically). default 'produce'
-//   auditPath  produce mode: path to the chapter-auditor report (its Section E is the drafter brief)
+//   auditPath  produce mode: path to the chapter-auditor report (see the section titled "Drafter brief" for the brief itself)
 //   rulings    author decisions text (fork answers in produce mode; jf-note rulings in revise mode)
 //   skipDiagrams  true to skip the Diagrams phase (e.g. revise rounds that touch no visuals)
-const { chapter, mode = 'produce', auditPath = '', rulings = '', skipDiagrams = false } = args || {}
+// The harness sometimes delivers `args` as a JSON string rather than an object — tolerate both.
+const A = typeof args === 'string' ? JSON.parse(args) : (args || {})
+const { chapter, mode = 'produce', auditPath = '', rulings = '', skipDiagrams = false } = A
 if (!chapter) throw new Error('args.chapter is required, e.g. chapters/07-build.qmd')
 const ROOT = '/Users/jesseflores/projects/compound/sites/compound-book'
 const stem = chapter.replace(/^.*\//, '').replace(/\.qmd$/, '')
@@ -41,12 +43,14 @@ phase('Draft')
 const draftPrompt = mode === 'produce'
   ? `You are the drafter for the structural fine-tuning pass on ${chapter} in ${ROOT}.
 
-READ FIRST, in order: (1) .claude/skills/chapter-structure-pass/SKILL.md — the five patterns, the author's verbatim per-step template (a DEFAULT, not a law), and the house rules; (2) _julie/voice-charter.md; (3) the audit report at ${auditPath} — its Section E is your brief, Section B your findings list; (4) ${chapter} in full; (5) the exemplars chapters/04-signal.qmd and chapters/05-source.qmd when in doubt about shape.
+READ FIRST, in order: (1) .claude/skills/chapter-structure-pass/SKILL.md — the five patterns, the author's verbatim per-step template (a DEFAULT, not a law), and the house rules; (2) _julie/voice-charter.md; (3) the audit report at ${auditPath} in full, including any trailing sections that correct, amend, or add to the sections above them (e.g. "Corrections to the audit above", "Additive findings", "Second-pass priority read") — those later sections are binding and win on conflict with earlier ones. Within it, the section titled "Drafter brief" is your brief and the section whose heading begins "Findings by pattern" is your findings list; (4) ${chapter} in full; (5) the exemplars chapters/04-signal.qmd and chapters/05-source.qmd when in doubt about shape.
 
 AUTHOR RULINGS on the audit's conceptual forks (execute exactly; do not reopen):
-${rulings || '(none provided — if the audit lists Section D forks, STOP and return "FORKS UNSETTLED" plus the fork list instead of drafting)'}
+${rulings || '(none provided — if the audit has a section whose heading begins "Conceptual forks", STOP and return "FORKS UNSETTLED" plus the fork list instead of drafting)'}
 
-Execute the brief: apply patterns 1–4 (terms, stepwise teaching, redundancy cull, Meridian narrative). For diagrams (pattern 5), leave <!-- TODO excalidraw: <name> — <one-line spec> --> placeholders per the audit's Section F; do not author JSON yourself. Resolve and DELETE every jf-note marker per the brief.
+Execute the brief: apply patterns 1–4 (terms, stepwise teaching, redundancy cull, Meridian narrative). For diagrams (pattern 5), leave <!-- TODO excalidraw: <name> — <one-line spec> --> placeholders per the audit's section titled "Diagram list"; do not author JSON yourself. Resolve and DELETE every jf-note marker per the brief.
+
+If the audit report has a section whose heading contains "Propagation" (e.g. "Propagation flags"), those are fixes that are DELIBERATELY OUT OF SCOPE for this chapter pass — they are already tracked as separate corpus-tie-up beads. Do NOT act on any fix listed there and do NOT treat that section as a source for diagram or prose edits.
 
 ${CANON}
 
