@@ -285,7 +285,7 @@ These steps run the Sprint Retrospective, install the one design change, re-rank
 
 :::{.callout-note}
 ## Action Step
-Before the Sprint enters Build, put the Compound session on the calendar. A 90-minute block with the Human Orchestrator and every supervisor who owned a Sprint accountability. If it's not scheduled before the Sprint ships, it won't happen after.
+Before the Sprint enters Build, put the Compound session on the calendar. A 90-minute block with the Human Orchestrator and everyone who owned a Sprint accountability. If it's not scheduled before the Sprint ships, it won't happen after.
 :::
 
 :::{.callout-note}
