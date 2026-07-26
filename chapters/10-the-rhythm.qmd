@@ -15,7 +15,7 @@ Here is the specific moment I can point to. We had a project coordinator who was
 
 We stopped before we did that. Not because we had some principled objection to hiring. Because by that point we had run enough Sprints that the first question had changed. Not *who do we hire?* but *what does Signal say about this?*
 
-So we ran Signal. What is the actual constraint? What does this role touch? We mapped what the role actually handled: the CRM fields, the project cadence, the client follow-ups. The parts that required human judgment were few; the bulk was high-volume and structured. So we designed the workflow without assuming a human had to sit in every seat. Then we built a small team of AI agents, the goal-holding systems covered back in the Source and Build chapters, to carry the routing, the reporting, and the follow-up cadence.
+So we ran Signal. What is the actual constraint? What does this role touch? We mapped what the role actually handled: the CRM fields, the project cadence, the client follow-ups. The parts that required human judgment were few; the bulk was high-volume and structured. So we designed the workflow without assuming a human had to sit in every seat. Then we built a small team of AI agents to carry the routing, the reporting, and the follow-up cadence.
 
 We let her go before the workflow went live. The hire never got posted. We deployed, and the work got absorbed into the organization without a crisis. The reports got done. The client follow-ups stopped slipping.
 
@@ -23,9 +23,9 @@ We went from thirteen people to eight over the following year. By the fourth and
 
 ## Rhythm means *quarterly*. Faster loses depth. Slower loses infrastructure.
 
-The equation from the Co-Operating Model chapter has three terms: Co-Intelligence + Co-Operation + Rhythm = Compound. By this point you hold the first two. Your people and your agents work as one system, and the Sequence gives that system its structure. Run once, that's a project: one improved workflow, one updated chart, and then the machinery goes dormant. The Rhythm is the third term, and it's concrete: every quarter, take the next constraint from the backlog, run it through the same six stages, and add the result to the stack of designed work the organization now operates on.
+The equation from the Co-Operating Model chapter has three terms: Co-Intelligence + Co-Operation + Rhythm = Compound. By this point you hold the first two. Your people and your agents work as one system, and the Sequence gives that system its structure. Run once, that's a project: one improved workflow, one updated chart, and then the machinery sits idle. The Rhythm is the third term, and it's concrete: every quarter, take the next constraint from the backlog, run it through the same six stages, and add the result to the stack of designed work the organization now operates on.
 
-The Rhythm is quarterly. A Sprint takes six to eight weeks; the leadership team needs one focused session per quarter to commit the next one and confirm the work is moving in the right direction. Faster than that and the Sprint loses the depth that makes it pay off. Slower than that and the design infrastructure built in the last Sprint starts to degrade before the next one begins. Quarterly also matches the team's capacity to absorb the change. Run a new design every six weeks and the people executing it can't internalize the last one before the next arrives. The shift never holds.
+The Rhythm is quarterly. A Sprint takes six to eight weeks; the leadership team needs one focused session per quarter to commit the next one and confirm the work is moving in the right direction. Faster than that and the Sprint closes before the design has been tested against real work. Slower than that and the design infrastructure built in the last Sprint starts to degrade before the next one begins. Quarterly also matches the team's capacity to absorb the change. Run a new design every six weeks and the people executing it can't internalize the last one before the next arrives. The shift never holds.
 
 The Rhythm adds exactly one meeting: a quarterly operating session, layered onto whatever planning cadence you already run. No new weekly meetings, no parallel management system. The session goes on the calendar before the quarter starts, booked with the same discipline as any other quarterly commitment, not penciled in as a maybe.
 
@@ -38,10 +38,10 @@ One to two hours, your leadership team, every quarter. The governance discipline
 <!-- moves:quarterly-operating-session -->
 ### How to run the quarterly *operating session*
 
-1. **Review the previous Sprint at the outcome level** — Determines whether the constraint actually moved and whether the workflow is permanent or needs another Sprint — the outcome question, not a status update.
-2. **Update the Constraint Backlog** — Confirms the re-rank from the Compound session so the next Sprint is chosen from current reality, not last quarter's assumptions.
-3. **Commit the next Sprint** — Converts backlog priority into a named constraint, a named Human Orchestrator, a named Sprint Lead, a budget confirmation, and a start date — the team leaves with a specific commitment.
-4. **Update the Hybrid Accountability Chart** — Makes permanent any HAC rows from the completed Sprint, removes what didn't work, and resets the baseline of the Hybrid Org Today, the one-page living document taught later in this chapter.
+1. **Review the previous Sprint at the outcome level**
+2. **Update the Constraint Backlog**
+3. **Commit the next Sprint**
+4. **Update the Hybrid Accountability Chart**
 <!-- /moves:quarterly-operating-session -->
 
 ### Review the previous Sprint at the *outcome* level
@@ -52,21 +52,21 @@ The step produces one decision: is the workflow permanent, or does it need anoth
 
 ### Update the *Constraint Backlog*
 
-The re-rank already ran: the Compound session at Sprint close reordered the backlog against what the Sprint taught (the five re-rank questions live in the Compound chapter). This step confirms that ranking with a quarter's hindsight. For each candidate, ask:
+The re-rank already ran: at Sprint close, the Compound session reordered the backlog against what the Sprint had just taught the team. This step confirms that ranking with a quarter's hindsight. For each candidate, ask:
 
 - Is it still relevant?
 - Has its cost changed?
 - Has new information arrived since the Sprint closed?
 
-Add any constraints that emerged during the quarter. Retire any that were resolved as side effects. The Constraint Backlog is the running inventory of your company's most expensive operational problems, ranked, and it's the input to every quarterly conversation.
+Add any constraints that emerged during the quarter. Retire any that were resolved as side effects. The backlog is the input to every quarterly conversation, so this is the step that keeps it honest.
 
 ### Commit the *next Sprint*
 
 From the eligible constraints in the updated backlog, commit the load-bearing one — the governing constraint whose removal unblocks the others; cost breaks ties when none governs. The Compound session recommended a next constraint at Sprint close; this is where leadership commits it, adding what only leadership can add: budget, start date, calendar. The commitment has five parts:
 
-- the constraint, validated by the one-page Constraint Statement from Signal
-- the Human Orchestrator: the person who'll run the redesigned workflow and supervise its agent team once it ships (the Designing the System chapter covers how this role is assigned)
-- the Sprint Lead, who runs the Sprint project itself
+- the constraint, validated by its Constraint Statement from Signal
+- the Human Orchestrator
+- the Sprint Lead
 - a budget confirmation: people, tools, dollars
 - the start date, opening a specific six-to-eight-week window
 
@@ -101,7 +101,7 @@ Here is how the pieces map:
 | HAC update | Accountability Chart review | Function Accountability Chart |
 | Quarterly operating session | Quarterly Planning | Quarterly Planning |
 
-A Sprint can become a Rock when committed in quarterly planning. The HAC layers onto your accountability chart. The Constraint Backlog is your strategic issues list, focused on operational constraints AI can address. EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm changes who does the executing: a workforce that now includes agents. The two stack.
+EOS, Scaling Up, and 4DX make companies execute. The Sequence on the Rhythm changes who does the executing: a workforce that now includes agents. The two stack.
 
 ## Maintain one living document: the *Hybrid Org Today*.
 
@@ -110,21 +110,23 @@ Once you're running the Rhythm, you maintain one living document: the Hybrid Org
 <!-- moves:hybrid-org-today -->
 ### How to maintain the *Hybrid Org Today*
 
-1. **Assemble the five sections** — Together they answer the one quarterly question: where does the design layer stand today?
-2. **Keep it to one page** — If it spills past that you're tracking too much; the constraint forces prioritization.
-3. **Update it during the quarterly session, not between sessions** — Leadership-team ownership in the meeting is what keeps a living document alive.
-4. **Use it as the standard briefing and the board receipt** — One document, always current, replaces the slide deck assembled from memory.
+1. **Assemble the five sections**
+2. **Keep it to one page**
+3. **Update it during the quarterly session, not between sessions**
+4. **Use it as the standard briefing and the board receipt**
 <!-- /moves:hybrid-org-today -->
 
-Five sections, one page:
+Five sections, one page. Together they answer the one question the quarter turns on: where does the design layer of this company stand today, and what is it doing next?
 
 - **Active Sprint**: the constraint being worked right now, its Human Orchestrator and Sprint Lead, and where it stands in the six-to-eight-week window.
-- **Constraint Backlog**: the ranked inventory from the Signal chapter, carried forward and re-ranked every Sprint. What's queued, at what cost, in what order.
+- **Constraint Backlog**: carried forward and re-ranked every Sprint. What's queued, at what cost, in what order.
 - **Hybrid Accountability Chart entries**: the structural layer from the Design chapters. Who owns which handoffs across your human and agent workforce.
 - **Completed Sprint outcomes**: the one-sentence Sprint Outcome Records filed at each Sprint close. The Compounding Scorecard, coming next, is their quantified summary.
 - **Next quarterly review date**: when the next session is booked, so the document always says when it will next be confirmed true.
 
-You update the Hybrid Org Today in the quarterly session. Not by a Notion-curator on a Thursday afternoon. Not at year-end planning. By your leadership team, during the meeting, as part of the four things the session does. That's the discipline that prevents the document from becoming the wiki page that rots — a thing every operator has watched happen with every other "living" document the company has tried to maintain.
+If it spills past one page, you're tracking too much. The single-page limit is what forces the prioritizing.
+
+You update the Hybrid Org Today in the quarterly session. Not by a Notion-curator on a Thursday afternoon. Not at year-end planning. By your leadership team, during the meeting, as part of the four things the session does. That's what keeps it from becoming another wiki page nobody opens.
 
 {{< excalidraw ch10-hybrid-org-today "Hybrid Org Today template: five sections on one page (Active Sprint, ranked Constraint Backlog, HAC entries, completed Sprint outcomes, next quarterly review date), updated only in the quarterly session." >}}
 
@@ -137,11 +139,13 @@ The Hybrid Org Today tells you where you stand. The Compounding Scorecard tells 
 <!-- moves:compounding-scorecard -->
 ### How to track *compounding* on the scorecard
 
-1. **Create the scorecard with six columns: Quarter, Constraint Solved, Cost Before, Cost After, Delta, Cumulative Impact** — The fixed structure forces each Sprint to produce a measurable delta and makes the cumulative column (the business case) visible across quarters.
-2. **Fill in the first row with the current Sprint** — Anchors the document in real data immediately; an empty scorecard is not a scorecard.
-3. **After each Sprint closes, add a row with the measured delta** — An unmeasured Sprint can't improve the one that follows.
-4. **Read the cumulative column at each quarterly session to confirm compounding** — One glance at the stack answers whether the Rhythm is paying for itself.
+1. **Create the scorecard with six columns**
+2. **Fill in the first row with the current Sprint**
+3. **After each Sprint closes, add a row with the measured delta**
+4. **Read the cumulative column at each quarterly session to confirm compounding**
 <!-- /moves:compounding-scorecard -->
+
+Six columns, one row per Sprint. The fixed structure forces every Sprint to produce a measurable number, and it puts the cumulative column where a skeptical board member can find it: that column is the business case for continuing.
 
 The Compounding Scorecard is a design-validation document, not a financial one. Each Sprint's delta (the measurable difference between what the constraint cost before and what it costs after) tells you whether the design correctly identified the constraint and correctly allocated the work; the retrospective tells you why.
 
@@ -169,7 +173,12 @@ A company is six to eight Sprints in. What has actually changed?
 
 The Source stage that took three weeks in Sprint 1 takes three days by Sprint 6 (the Compound chapter walked that arithmetic). What's new here is where the Knowledge Map lives: in the Hybrid Org Today, updated every quarter, current the day the next Sprint needs it.
 
-The Hybrid Accountability Chart has been updated four times. The organization has named agent teams with documented autonomy levels, each with a named Human Orchestrator. The Human Orchestrator responsibility is written into two people's job descriptions — not as a side project but as the operational role it became. The Constraint Backlog appears on the quarterly agenda alongside revenue and rocks.
+What else is different:
+
+- The Hybrid Accountability Chart has been updated every quarter, not once at a workshop.
+- Agent teams are named, with documented autonomy levels and a named Human Orchestrator on each.
+- The Human Orchestrator responsibility sits in real job descriptions, as the operational role it became rather than a side project.
+- The Constraint Backlog appears on the quarterly agenda alongside revenue and rocks.
 
 And the leaders themselves have changed. Executives who, eighteen months ago, had no mental model for directing an agent team are now making design-improvement decisions between Sprints without being prompted. The Co-Operating Model is no longer a concept. It is how the leadership team thinks about work.
 
@@ -197,11 +206,11 @@ And the scorecard:
 | Q4 2026 | CRM-ERP sync: HubSpot and JobBOSS conflicting records | $74K/yr | $8K/yr | $66K/yr | $512K/yr |
 | Q1 2027 | Customer pricing standardization: 3 accounts renegotiating identical terms every quote (in flight) | | | | |
 
-Two Sprints completed, a third in flight, $512K in annualized cost reduction, and Elena's freed capacity redirected from producing quotes to designing workflows. Sprint 2 only existed because Sprint 1 exposed the data-sync problem that had been invisible while Elena was the sole quoter. Each Sprint builds on the operational foundation the previous ones created.
+Two Sprints completed, a third in flight, $512K in annualized cost reduction, and Elena's freed capacity redirected from producing quotes to designing workflows. Sprint 2 only existed because Sprint 1 exposed the data-sync problem that had been invisible while Elena was the sole quoter.
 
 :::{.callout-tip}
 ## Pro Tip
-The first Sprint's delta will almost always be the largest. Don't let the smaller numbers in later quarters fool you into thinking the Rhythm is losing steam. Later Sprints are faster, cheaper to run, and the freed capacity stacks on top of everything that came before. Declining marginal deltas are normal; the compounding is in the cumulative column, not any single row.
+Your first Sprint takes the load-bearing constraint, so it produces the biggest single delta almost by definition. Later quarters return smaller numbers. That is the selection rule working, not the Rhythm slowing down: the Sprints get cheaper and faster to run, and the freed capacity stacks on everything before it. The compounding is in the cumulative column, not in any single row.
 :::
 
 ## The Headcount Paradox, *resolved*.
@@ -210,13 +219,13 @@ The Diagnosis chapter named the Headcount Paradox: revenue grows; headcount grow
 
 Some constraints are headcount constraints, and the answer is still to hire; the Constraint Backlog is where that gets decided, before the requisition is written. More often than you expected, the answer comes back that the constraint is a design problem, not a headcount problem, and the Sprint that addresses it ships a designed workflow instead of a job posting.
 
-Companies on the Rhythm bend the slope. Companies absorbing demand with headcount grow it in lockstep with revenue, forever. The gap between those two slopes is the headcount math working in your favor. The metric the quarterly review tracks is revenue per employee: flat in most companies, climbing in yours, because each Sprint finds another place the work doesn't actually require another body.
+Companies on the Rhythm bend the slope. Companies absorbing demand with headcount grow it in lockstep with revenue, forever. The gap between those two slopes is the headcount math working in your favor. The metric the quarterly review tracks is the one you calculated in the Diagnosis chapter: revenue per employee, the dollar-level proxy for whether each person on staff is producing more. Flat means revenue only grew by adding people. On the Rhythm it climbs, because each Sprint finds another place the work doesn't actually require another body.
 
 {{< excalidraw ch10-headcount-math "Headcount math before/after: headcount climbs on a steep slope with revenue (left) vs. the slope bends — headcount still grows, but the marginal headcount per next dollar of revenue drops as design infrastructure compounds (right)." >}}
 
 ## The *Co-Intelligent Company*.
 
-The Co-Intelligent Company is the company built by running the Sequence on the Rhythm. It shows up in a cumulative column that reads $512K and climbing, or a roster that went from thirteen to eight while billings grew.
+A cumulative column that reads $512K and climbing. A roster that went from thirteen to eight while billings grew. That is what running the Sequence on the Rhythm builds, and it is what makes a company Co-Intelligent rather than a company that bought some AI.
 
 ## Reflection Questions
 
