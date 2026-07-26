@@ -154,7 +154,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 50]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          50
+        ]
+      ]
     },
     {
       "id": "col-divider-2",
@@ -171,7 +180,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 50]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          50
+        ]
+      ]
     },
     {
       "id": "col-divider-3",
@@ -188,7 +206,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 50]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          50
+        ]
+      ]
     },
     {
       "id": "row1-bg",
@@ -221,14 +248,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Week 2",
+      "text": "Day 2",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 16,
       "containerId": null,
-      "originalText": "Week 2"
+      "originalText": "Day 2"
     },
     {
       "id": "row1-what",
@@ -245,14 +272,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Agent produced quote with\nwrong rate card",
+      "text": "Agent priced an Inconel spec off\n316 stainless — 40% under cost",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 16,
       "containerId": null,
-      "originalText": "Agent produced quote with\nwrong rate card"
+      "originalText": "Agent priced an Inconel spec off\n316 stainless — 40% under cost"
     },
     {
       "id": "row1-category",
@@ -269,14 +296,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Data gap",
+      "text": "Edge case",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 16,
       "containerId": null,
-      "originalText": "Data gap"
+      "originalText": "Edge case"
     },
     {
       "id": "row1-signals",
@@ -293,14 +320,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Rate card source not\nconnected — Design fix",
+      "text": "No estimate on unknown\nmaterials — guardrail added",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 16,
       "containerId": null,
-      "originalText": "Rate card source not\nconnected — Design fix"
+      "originalText": "No estimate on unknown\nmaterials — guardrail added"
     },
     {
       "id": "row1-divider-1",
@@ -317,7 +344,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 80]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          80
+        ]
+      ]
     },
     {
       "id": "row1-divider-2",
@@ -334,7 +370,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 80]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          80
+        ]
+      ]
     },
     {
       "id": "row1-divider-3",
@@ -351,7 +396,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 80]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          80
+        ]
+      ]
     },
     {
       "id": "row2-bg",
@@ -384,14 +438,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Week 3",
+      "text": "Day 7",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 16,
       "containerId": null,
-      "originalText": "Week 3"
+      "originalText": "Day 7"
     },
     {
       "id": "row2-what",
@@ -408,14 +462,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Supervisor overrode agent output\non 3 quotes",
+      "text": "Dave challenged the agent's match:\ntolerances tighter, labor doubled",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 16,
       "containerId": null,
-      "originalText": "Supervisor overrode agent output\non 3 quotes"
+      "originalText": "Dave challenged the agent's match:\ntolerances tighter, labor doubled"
     },
     {
       "id": "row2-category",
@@ -456,14 +510,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Scoping checklist may\nneed refinement",
+      "text": "Tolerance class must be a\nmatching criterion",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 16,
       "containerId": null,
-      "originalText": "Scoping checklist may\nneed refinement"
+      "originalText": "Tolerance class must be a\nmatching criterion"
     },
     {
       "id": "row2-divider-1",
@@ -480,7 +534,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 80]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          80
+        ]
+      ]
     },
     {
       "id": "row2-divider-2",
@@ -497,7 +560,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 80]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          80
+        ]
+      ]
     },
     {
       "id": "row2-divider-3",
@@ -514,7 +586,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 80]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          80
+        ]
+      ]
     },
     {
       "id": "empty-row-bg",
@@ -535,9 +616,9 @@
     {
       "id": "empty-row-text",
       "type": "text",
-      "x": 70,
+      "x": 220,
       "y": 313,
-      "width": 300,
+      "width": 380,
       "height": 22,
       "angle": 0,
       "strokeColor": "#888888",
@@ -547,14 +628,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "— add entries each sprint —",
+      "text": "— add entries daily —",
       "fontSize": 16,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 14,
       "containerId": null,
-      "originalText": "— add entries each sprint —"
+      "originalText": "— add entries daily —"
     },
     {
       "id": "empty-row-divider-1",
@@ -571,7 +652,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 50]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          50
+        ]
+      ]
     },
     {
       "id": "empty-row-divider-2",
@@ -588,7 +678,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 50]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          50
+        ]
+      ]
     },
     {
       "id": "empty-row-divider-3",
@@ -605,7 +704,16 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [0, 50]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          50
+        ]
+      ]
     }
   ],
   "appState": {

@@ -418,14 +418,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Is the Human Supervisor's review cadence defined\nand on the calendar? Recurring. Non-negotiable.",
+      "text": "Is the Human Orchestrator's review cadence defined\nand on the calendar? Recurring. Non-negotiable.",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "middle",
       "baseline": 18,
       "containerId": null,
-      "originalText": "Is the Human Supervisor's review cadence defined\nand on the calendar? Recurring. Non-negotiable."
+      "originalText": "Is the Human Orchestrator's review cadence defined\nand on the calendar? Recurring. Non-negotiable."
     },
     {
       "id": "row4-gate-box",

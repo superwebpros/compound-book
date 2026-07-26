@@ -42,14 +42,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Prove the sprint produced value tied to the constraint Signal named.",
+      "text": "Prove the Sprint produced value tied to the constraint Signal named.",
       "fontSize": 16,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "Prove the sprint produced value tied to the constraint Signal named."
+      "originalText": "Prove the Sprint produced value tied to the constraint Signal named."
     },
     {
       "id": "template-border",
@@ -66,7 +66,9 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "roundness": {"type": 3}
+      "roundness": {
+        "type": 3
+      }
     },
     {
       "id": "template-header",
@@ -147,7 +149,16 @@
       "strokeStyle": "dotted",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [580, 0]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          580,
+          0
+        ]
+      ]
     },
     {
       "id": "f0-ph",
@@ -212,7 +223,16 @@
       "strokeStyle": "dotted",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [580, 0]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          580,
+          0
+        ]
+      ]
     },
     {
       "id": "f1-ph",
@@ -229,14 +249,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "[The quantified cost \u2014 dollars, hours, or margin]",
+      "text": "[The quantified cost — dollars, hours, or margin]",
       "fontSize": 14,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 14,
       "containerId": null,
-      "originalText": "[The quantified cost \u2014 dollars, hours, or margin]"
+      "originalText": "[The quantified cost — dollars, hours, or margin]"
     },
     {
       "id": "f2-label",
@@ -277,7 +297,16 @@
       "strokeStyle": "dotted",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [580, 0]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          580,
+          0
+        ]
+      ]
     },
     {
       "id": "f2-ph",
@@ -294,14 +323,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "[What actually happened \u2014 same metric, same unit]",
+      "text": "[What actually happened — same metric, same unit]",
       "fontSize": 14,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 14,
       "containerId": null,
-      "originalText": "[What actually happened \u2014 same metric, same unit]"
+      "originalText": "[What actually happened — same metric, same unit]"
     },
     {
       "id": "f3-label",
@@ -342,7 +371,16 @@
       "strokeStyle": "dotted",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [580, 0]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          580,
+          0
+        ]
+      ]
     },
     {
       "id": "f3-ph",
@@ -359,14 +397,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "[The change \u2014 quantified]",
+      "text": "[The change — quantified]",
       "fontSize": 14,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 14,
       "containerId": null,
-      "originalText": "[The change \u2014 quantified]"
+      "originalText": "[The change — quantified]"
     },
     {
       "id": "f4-label",
@@ -407,14 +445,23 @@
       "strokeStyle": "dotted",
       "roughness": 0,
       "opacity": 100,
-      "points": [[0, 0], [810, 0]]
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          810,
+          0
+        ]
+      ]
     },
     {
       "id": "f4-ph",
       "type": "text",
-      "x": 80,
-      "y": 394,
-      "width": 500,
+      "x": 410,
+      "y": 370,
+      "width": 470,
       "height": 20,
       "angle": 0,
       "strokeColor": "#999999",
@@ -424,14 +471,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "[What this sprint produced, stated plainly]",
+      "text": "[What this Sprint produced, stated plainly]",
       "fontSize": 14,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 14,
       "containerId": null,
-      "originalText": "[What this sprint produced, stated plainly]"
+      "originalText": "[What this Sprint produced, stated plainly]"
     },
     {
       "id": "example-border",
@@ -448,7 +495,9 @@
       "strokeStyle": "dashed",
       "roughness": 0,
       "opacity": 100,
-      "roundness": {"type": 3}
+      "roundness": {
+        "type": 3
+      }
     },
     {
       "id": "example-title",
@@ -465,14 +514,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "EXAMPLE \u2014 Manufacturing Quoting Sprint",
+      "text": "EXAMPLE — Meridian's Quoting Sprint",
       "fontSize": 18,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 18,
       "containerId": null,
-      "originalText": "EXAMPLE \u2014 Manufacturing Quoting Sprint"
+      "originalText": "EXAMPLE — Meridian's Quoting Sprint"
     },
     {
       "id": "ex0-label",
@@ -513,14 +562,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Design engineers spend 4-6 hours per quote, creating a bottleneck\nthat delays proposals and deprioritizes high-probability bids.",
+      "text": "Elena Ruiz is the sole quoting bottleneck. Every quote runs through her —\n$558K/year in lost revenue, misallocated time, shop floor underutilization.",
       "fontSize": 12,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 12,
       "containerId": null,
-      "originalText": "Design engineers spend 4-6 hours per quote, creating a bottleneck\nthat delays proposals and deprioritizes high-probability bids."
+      "originalText": "Elena Ruiz is the sole quoting bottleneck. Every quote runs through her —\n$558K/year in lost revenue, misallocated time, shop floor underutilization."
     },
     {
       "id": "ex1-label",
@@ -561,14 +610,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "~30 engineering hours/week on quoting; average turnaround 4.2 days;\nwin rate on quoted deals: 22%.",
+      "text": "3.8-day average turnaround; ~15 hrs/week of Elena's time;\ncapacity capped at 8-10 quotes/week.",
       "fontSize": 12,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 12,
       "containerId": null,
-      "originalText": "~30 engineering hours/week on quoting; average turnaround 4.2 days;\nwin rate on quoted deals: 22%."
+      "originalText": "3.8-day average turnaround; ~15 hrs/week of Elena's time;\ncapacity capped at 8-10 quotes/week."
     },
     {
       "id": "ex2-label",
@@ -609,14 +658,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "~5 engineering hours/week on quote review; average turnaround\n0.8 days; win rate after 3 months: 32%.",
+      "text": "4.2-hour average turnaround on standard work; ~5 hrs/week of Elena's time;\n18-22 quotes/week.",
       "fontSize": 12,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 12,
       "containerId": null,
-      "originalText": "~5 engineering hours/week on quote review; average turnaround\n0.8 days; win rate after 3 months: 32%."
+      "originalText": "4.2-hour average turnaround on standard work; ~5 hrs/week of Elena's time;\n18-22 quotes/week."
     },
     {
       "id": "ex3-label",
@@ -657,14 +706,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "25 engineering hours/week recovered; turnaround reduced 81%;\nwin rate +10 percentage points.",
+      "text": "Turnaround reduced 89%. Elena recovered 10 hrs/week. Quote volume doubled.\nFirst-month revenue recovery: $47K.",
       "fontSize": 12,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 12,
       "containerId": null,
-      "originalText": "25 engineering hours/week recovered; turnaround reduced 81%;\nwin rate +10 percentage points."
+      "originalText": "Turnaround reduced 89%. Elena recovered 10 hrs/week. Quote volume doubled.\nFirst-month revenue recovery: $47K."
     },
     {
       "id": "ex4-label",
@@ -705,14 +754,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "Rapid-estimate workflow freed engineers from quote creation, cut turnaround\nfrom 4 days to under 1, produced 10-point win rate increase.",
+      "text": "Three-agent quoting pipeline removed Elena as the bottleneck on standard work,\ncut turnaround from 3.8 days to 4.2 hours, produced $47K in month one.",
       "fontSize": 12,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 12,
       "containerId": null,
-      "originalText": "Rapid-estimate workflow freed engineers from quote creation, cut turnaround\nfrom 4 days to under 1, produced 10-point win rate increase."
+      "originalText": "Three-agent quoting pipeline removed Elena as the bottleneck on standard work,\ncut turnaround from 3.8 days to 4.2 hours, produced $47K in month one."
     }
   ],
   "appState": {

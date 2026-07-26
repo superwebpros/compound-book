@@ -42,14 +42,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "For every role affected by the sprint, document three things. Repeat pattern for each.",
+      "text": "For every role affected by the Sprint, document three things. Repeat pattern for each.",
       "fontSize": 16,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 14,
       "containerId": null,
-      "originalText": "For every role affected by the sprint, document three things. Repeat pattern for each."
+      "originalText": "For every role affected by the Sprint, document three things. Repeat pattern for each."
     },
     {
       "id": "card1-border",
@@ -290,14 +290,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "When and how to escalate\n(e.g., confidence < 85%, route to senior engineer)",
+      "text": "When and how to escalate\n(e.g., low confidence, route to senior engineer)",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "When and how to escalate\n(e.g., confidence < 85%, route to senior engineer)"
+      "originalText": "When and how to escalate\n(e.g., low confidence, route to senior engineer)"
     },
     {
       "id": "card2-border",
@@ -538,14 +538,14 @@
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
-      "text": "When and how to escalate\n(e.g., approval rate < 90% over 5 days)",
+      "text": "When and how to escalate\n(e.g., most drafts need correction)",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 16,
       "containerId": null,
-      "originalText": "When and how to escalate\n(e.g., approval rate < 90% over 5 days)"
+      "originalText": "When and how to escalate\n(e.g., most drafts need correction)"
     },
     {
       "id": "ellipsis",
