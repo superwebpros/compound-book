@@ -1,0 +1,11 @@
+extends: existence
+message: "Speaker-label prefix ('%s'): voice charter A17 — auto-reject. The 'Name: …' screenplay format is banned. Name the author inline in prose and use 'I' or 'we'."
+level: error
+ignorecase: false
+link: '_julie/voice-charter.md'
+scope: raw
+# Matches a line that begins (optionally with whitespace or bold markers) with Jesse: or Julie:
+# Does NOT match inline names used in normal prose — only the colon-label prefix pattern.
+tokens:
+  - '(?m)^\s*(?:\*\*)?Jesse(?:\*\*)?:\s'
+  - '(?m)^\s*(?:\*\*)?Julie(?:\*\*)?:\s'

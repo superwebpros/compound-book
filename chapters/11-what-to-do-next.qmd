@@ -86,7 +86,7 @@ The most common failure on question one is answering with a category instead of 
 
 ## Name *three roles*: Orchestrator, Owners, Builder.
 
-You need three roles filled. The names land directly on your Hybrid Org Today: one becomes the Human Orchestrator on the Active Sprint, two or three populate the supervisor column of the Hybrid Accountability Chart.
+You need three roles filled. The names land directly on your Hybrid Org Today: one becomes the Human Orchestrator on the Active Sprint, two or three become the named Human Orchestrators in the Hybrid Accountability Chart.
 
 The Human Orchestrator is the person who operates the redesigned workflow and supervises its agent team — not a technical role, not a new hire, but the operator who already owns that workflow and can judge whether the agent's output is right (more on this role in the Designing the System chapter). The Hybrid Accountability Chart (if you run EOS: your Accountability Chart extended to include agent rows alongside the human ones) is where that role lands on paper.
 
@@ -94,7 +94,7 @@ The Human Orchestrator is the person who operates the redesigned workflow and su
 ### How to name the *Sprint roster*
 
 1. **Identify the Human Orchestrator** — Assigns workflow ownership and agent-supervision authority to one named person before the Sprint starts.
-2. **Name the daily-proximate supervisors** — Identifies the two or three people closest to the problem who contribute to Signal and Source and catch what reports miss.
+2. **Name the daily-proximate owners** — Identifies the two or three people closest to the problem who contribute to Signal and Source and catch what reports miss.
 3. **Confirm the builder resource** — Locks in who will construct the solution — internal developer, external partner, or Compound membership — so the Sprint is fully staffed.
 <!-- /moves:sprint-roster -->
 
@@ -107,10 +107,10 @@ The Human Orchestrator is the person who operates the redesigned workflow and su
 | Role | Named person |
 |---|---|
 | Human Orchestrator (workflow owner) | |
-| Daily-proximate supervisors (2–3) | |
+| Daily-proximate owners (2–3) | |
 | Builder (internal / external / Compound) | |
 
-Meridian's roster looked like this: Elena Ruiz (VP of Operations) as the Human Orchestrator — she owned quoting, knew the exceptions, and could judge whether a draft quote was right. Ty Banfield (Sales Lead) and Dave Kowalski (Senior Design Engineer) as the daily-proximate supervisors — Ty saw the quotes the way customers saw them; Dave knew which specs the agent would struggle with. A freelance n8n developer (three days of API work) as the builder. No new hires. No internal engineering team. That was the full roster.
+Meridian's roster looked like this: Elena Ruiz (VP of Operations) as the Human Orchestrator — she owned quoting, knew the exceptions, and could judge whether a draft quote was right. Ty Banfield (Sales Lead) and Dave Kowalski (Senior Design Engineer) as the daily-proximate owners — Ty saw the quotes the way customers saw them; Dave knew which specs the agent would struggle with. A freelance n8n developer (three days of API work) as the builder. No new hires. No internal engineering team. That was the full roster.
 
 :::{.callout-tip}
 ## Pro Tip
@@ -186,7 +186,7 @@ Before the plan commits, two questions catch the gaps that turn into wasted quar
 Signal traces the symptom to the underlying constraint; if the constraint you've named is the most visible problem rather than the structural cause underneath it, the Sprint will solve the wrong thing.
 
 **2. Does the named Human Orchestrator pass the *Right Seat Evaluation*?**
-Run the three-criteria *Right Seat Evaluation* from the Designing the System chapter (*Sees It*, *Wants It*, *Suited for It*) against the person you've named; if they can't evaluate the agent's output, won't own the outcome, or lack the authority to override when it drifts, name someone else before the Sprint starts. (If you run EOS, this is the GWC test — Get it, Want it, Capacity to do it — applied to the agent supervisor seat rather than a human role.)
+Run the three-criteria *Right Seat Evaluation* from the Designing the System chapter (*Sees It*, *Wants It*, *Suited for It*) against the person you've named; if they can't evaluate the agent's output, won't own the outcome, or lack the authority to override when it drifts, name someone else before the Sprint starts. (If you run EOS, this is the GWC test — Get it, Want it, Capacity to do it — applied to the Human Orchestrator seat rather than a standard human role.)
 
 If you can't answer both, the plan isn't yet ready to ship.
 

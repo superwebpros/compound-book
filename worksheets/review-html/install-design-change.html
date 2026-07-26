@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Install One Design Change — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: install-design-change.md</div>
+<p>Compound · Compound / Retrospective</p>
+<h1>Install One Design Change</h1>
+<p><em>Turn one Sprint&#x27;s retrospective into a single structural change the next Sprint inherits — named, installed, and verified before the next Sprint begins.</em></p>
+<p>After every Sprint, the Human Orchestrator answers one question: <em>what one design change would make the next Sprint better?</em> The answer is one. This worksheet takes you from &quot;everything the Sprint surfaced&quot; to a single change card that is actually installed in the chart, workflow, or Source map — not a &quot;lessons learned&quot; list that never lands.</p>
+<p><strong>Before you start, you need a completed Sprint retrospective</strong> — the honest list of what ran thin, what cadence was wrong, what handoff broke, what input needed cleaning nobody scoped. You are picking <em>one</em> item from it, not closing all of them.</p>
+<hr>
+<h2>Survey everything the Sprint surfaced</h2>
+<p>Scan all retrospective items — Source gaps, wrong cadences, broken handoffs, dirty inputs — before picking anything.</p>
+<ol><li>List every observation the Sprint produced, in one place, with no editing yet. Pull from the retrospective: the Source phase that ran too thin, the supervisor cadence that was wrong, the handoff that broke once, the input format that needed cleaning nobody scoped.</li><li>For each item, write one line: what it cost this Sprint (time, a bad output, a manual rescue, an adoption gap).</li><li>Resist installing anything yet. This step is inventory, not decision — a long list here is fine because you are about to cut it to one.</li></ol>
+<blockquote><strong>Meridian:</strong> The Sprint surfaced several items — among them the Quote Research Agent picking the wrong historical comparable on jobs with unusual fabrication complexity, which Elena Ruiz had to correct by hand. Each surfaced item got a line before anyone argued about which one to install.</blockquote>
+<hr>
+<h2>Name the single change that will most improve the next Sprint</h2>
+<p>The discipline of one defeats the &quot;lessons learned list&quot; failure mode; it forces a real priority decision.</p>
+<ol><li>From the surveyed list, ask of each item: <em>if we installed only this, how much better is the next Sprint?</em> Rank by that answer, not by how easy each is to fix.</li><li>Pick the <strong>one</strong> item at the top. Write a single sentence naming the change. If you can&#x27;t pick one, you haven&#x27;t ranked by impact — go back to step 1.</li><li>Cross the rest off this worksheet. They are not lost — re-ranking the Constraint Backlog is where they get reconsidered. Here, only one survives.</li></ol>
+<blockquote><strong>Meridian:</strong> Out of everything surfaced, the one change named was: add fabrication complexity indicators (bend count, tolerance class, weld count, surface finish) as matching criteria in the Quote Research Agent. That single change would most improve the next Sprint&#x27;s quote accuracy, so it won; the other items went back to the backlog.</blockquote>
+<hr>
+<h2>Write the four-field change card (What / Who / How you&#x27;ll know / By date)</h2>
+<p>Makes the change specific and testable; any blank field signals the change is too vague to install.</p>
+<ol><li>Fill in all four fields below. A blank field means the change isn&#x27;t specific enough to install — resolve it now, not under next-Sprint pressure.</li></ol>
+<table>
+<tr><th>Field</th><th>Fill in</th></tr>
+<tr><td><strong>What</strong> the change is</td><td></td></tr>
+<tr><td><strong>Who</strong> installs it</td><td></td></tr>
+<tr><td><strong>How you&#x27;ll know</strong> it&#x27;s working</td><td></td></tr>
+<tr><td><strong>By date</strong> it&#x27;s installed</td><td></td></tr>
+</table>
+<ol><li>Make &quot;What&quot; structural, not aspirational: a chart entry revised, a workflow step added, a guardrail tightened, a Source map updated, a prompt revised. &quot;Improve quote accuracy&quot; is not a change; &quot;add four complexity indicators as agent matching criteria&quot; is.</li><li>Make &quot;How you&#x27;ll know&quot; a re-runnable test against real data, not a feeling. Name the actual records and the pass bar.</li></ol>
+<blockquote><strong>Meridian&#x27;s card, Sprint one:</strong>  | Field | Fill in | |---|---| | <strong>What</strong> the change is | Add fabrication complexity indicators (bend count, tolerance class, weld count, surface finish) as matching criteria in the Quote Research Agent | | <strong>Who</strong> installs it | Dave Kowalski provides the classification framework; Mark configures it in the agent | | <strong>How you&#x27;ll know</strong> it&#x27;s working | Re-run the 8 quotes Elena corrected last month — at least 7 of 8 produce the correct comparable job match | | <strong>By date</strong> it&#x27;s installed | Before Sprint two kickoff |</blockquote>
+<hr>
+<h2>Install the change structurally before the next Sprint begins</h2>
+<p>An insight that doesn&#x27;t change the design isn&#x27;t worth recording — the change must land in the chart, workflow, or Source map.</p>
+<ol><li>Make the change in the actual artifact, not in a notes file. Open the Hybrid Accountability Chart, the workflow, the prompt, or the Source map and edit it so the next Sprint inherits the change as part of how the company now operates.</li><li>Confirm the person named in &quot;Who&quot; did the install, and that the supporting input exists. A change that depends on someone&#x27;s expertise needs that expertise captured, not assumed.</li><li>Time-box it to the &quot;By date.&quot; Compound is finished when this one change is installed — if it slips past next-Sprint kickoff, it isn&#x27;t a change, it&#x27;s a wish.</li></ol>
+<blockquote><strong>Meridian:</strong> Dave Kowalski&#x27;s thirty-one years of fabrication experience became the classification framework the agent uses when selecting historical matches; Mark configured it into the Quote Research Agent. The change landed in the agent&#x27;s actual matching logic before Sprint two kickoff — not in a &quot;lessons learned&quot; doc.</blockquote>
+<hr>
+<h2>Verify the change using the &quot;how you&#x27;ll know&quot; criterion</h2>
+<p>Closes the loop — confirms the change is working before Sprint two kicks off, not assumed.</p>
+<ol><li>Run the exact test you wrote in the &quot;How you&#x27;ll know&quot; field. Use real data — last month&#x27;s actual records, not a synthetic or cherry-picked example.</li><li>Compare the result to the pass bar you set. If it clears, the change is verified and Compound is done. If it doesn&#x27;t, the change isn&#x27;t installed correctly — fix it before the next Sprint, don&#x27;t carry a broken change forward.</li><li>Record the verified result on the card so the next retrospective starts from confirmed fact, not memory.</li></ol>
+<blockquote><strong>Meridian:</strong> Verification was re-running the eight quotes from the previous month where Elena had corrected the agent&#x27;s match. With the complexity indicators installed, the test passed at the bar set — at least seven of eight produced the correct comparable — so the change was confirmed working before Sprint two, not assumed.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Run this test before the next Sprint begins:</p>
+<ul><li><strong>Exactly one change was named.</strong> Not a list, not three &quot;quick wins&quot; — one, chosen by impact on the next Sprint.</li><li><strong>All four card fields are filled.</strong> No blank What / Who / How you&#x27;ll know / By date. A blank field means the change was too vague to install.</li><li><strong>The change landed in a real artifact</strong> — the chart, the workflow, the prompt, or the Source map — not in a notes file. The next Sprint inherits it structurally.</li><li><strong>The &quot;how you&#x27;ll know&quot; test was actually run against real data and passed.</strong> The change is verified working, not assumed.</li></ul>
+<p>When all four are true, Compound is finished and the next Sprint inherits a company that operates one design change better than the last one.</p>
+</body></html>

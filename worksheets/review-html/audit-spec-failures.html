@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Audit the Spec Against Seven Common Failures — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: audit-spec-failures.md</div>
+<p>Compound · Build / Specification</p>
+<h1>Audit the Spec Against Seven Common Failures</h1>
+<p><em>Run the completed Build Spec through seven checks that have each ended a Sprint early or gotten a system shut down — before a single thing is built.</em></p>
+<p>Every failure on this list has happened: it ended a Sprint early or produced a system the team killed within weeks. None of them are caught by looking at the build, because the build doesn&#x27;t exist yet. You catch them by reading the spec against each failure, with the builder in the room.</p>
+<p><strong>Before you start, you need a completed Build Spec — all eight sections filled.</strong> This audit checks the spec, not the build. Walk through all seven checks with the builder present. Any check you can&#x27;t clear is a gap that must be resolved <em>before</em> build begins, not patched after.</p>
+<hr>
+<h2>Check 1: Search for existing capabilities before building</h2>
+<p>Prevents rebuilding what already exists — the most common implementation failure, and it&#x27;s a research gap, not a technical one.</p>
+<ol><li>For each section of the spec that describes a capability, ask: does a tool, feature, or integration already do this?</li><li>Spend fifteen minutes searching — the platform&#x27;s own features, existing integrations, the connectors your tools already ship with — before agreeing to build it.</li><li>Write down what you found and what&#x27;s genuinely missing. Only the genuinely missing parts go into the build.</li></ol>
+<blockquote><strong>Meridian:</strong> The quoting workflow ran on n8n alongside Claude Team. Rather than hand-build system connections, the team used n8n&#x27;s standard connectors to reach HubSpot and JobBOSS — the integration already existed. The build was three days of wiring, not weeks of custom development.</blockquote>
+<hr>
+<h2>Check 2: Confirm the environment matches Design&#x27;s category</h2>
+<p>Stops a builder from substituting a &quot;cleaner&quot; architecture for the one the spec actually calls for.</p>
+<ol><li>Read the category Design chose: off-the-shelf, low-code, or hand-built.</li><li>Confirm the environment named in the spec sits inside that category — match the environment to the category, not the other way around.</li><li>If anyone proposes a different approach because &quot;it would be cleaner,&quot; the spec wins. Note the disagreement and route it back to Design rather than letting the builder decide.</li></ol>
+<blockquote><strong>Meridian:</strong> Design chose the low-code category. Build ran it on n8n plus Claude Team — both inside that category — instead of a custom API integration. If a builder had proposed a hand-built integration because it would be &quot;cleaner,&quot; the spec&#x27;s category would have overruled it.</blockquote>
+<hr>
+<h2>Check 3: Verify the spec is complete before build starts</h2>
+<p>Every empty section becomes an on-the-fly decision that won&#x27;t match Design&#x27;s intent.</p>
+<ol><li>Walk all eight spec sections. Confirm each one has real content — no blanks, no placeholders.</li><li>For any thin or empty section, name the specific decision a builder would otherwise make under build pressure.</li><li>Resolve the gap with Design before build begins. Builders aren&#x27;t designers; decisions made under build pressure don&#x27;t match what Design intended.</li></ol>
+<blockquote><strong>Meridian:</strong> The pricing exceptions database (112 validated customer-specific rules) had to be cleaned and validated <em>before</em> build began — it was flagged as a prerequisite, not a build task. An incomplete exceptions section would have forced the builder to guess at pricing rules under pressure.</blockquote>
+<hr>
+<h2>Check 4: Confirm the output lands where the work already lives</h2>
+<p>A workflow that outputs to a tool no one opens produces zero adoption regardless of technical quality.</p>
+<ol><li>Read the spec&#x27;s output destination. Name the exact tool and place the deliverable lands.</li><li>Confirm that&#x27;s where the supervisor and the team already do this work today — not a new tool they&#x27;d have to learn or remember to open.</li><li>If the output lands somewhere new, fix the destination now. Adoption of an output in an unopened tool is zero.</li></ol>
+<blockquote><strong>Meridian:</strong> Draft quotes land in Elena Ruiz&#x27;s CRM review queue — the same HubSpot pipeline she already works in every day. The output meets her where the work already lives, so reviewing it is part of her existing flow, not a new habit to build.</blockquote>
+<hr>
+<h2>Check 5: Verify Section 7 (failure modes) is populated</h2>
+<p>A build that only handles the happy path breaks on the first edge case.</p>
+<ol><li>Turn to Section 7 of the spec and confirm it lists the workflow&#x27;s edge cases and outages — not just the smooth path.</li><li>For each listed case, confirm there&#x27;s a defined response: what the agent does, who it escalates to, in what form, on what timeline.</li><li>If Section 7 is empty or thin, stop. Every workflow has edge cases, and the build will break on the first one Section 7 missed.</li></ol>
+<blockquote><strong>Meridian:</strong> Section 7 was populated: no similar historical job routes to manual review; an unknown material like Inconel produces no estimate and flags &quot;manual pricing required&quot;; the ERP API going down queues RFQs until the connection restores. The happy path was never the whole spec.</blockquote>
+<hr>
+<h2>Check 6: Confirm the build handles real-world edge cases, not just the demo path</h2>
+<p>A demo shows the happy path; the build must handle missing data, system outages, and off-script inputs.</p>
+<ol><li>Pressure-test the spec against the messy reality: missing data, a system that&#x27;s down, weird inputs, the supervisor on vacation.</li><li>For each, confirm the spec says what the build does — not what the demo would do.</li><li>Where the spec only describes the clean run, send it back to add the edge-case behavior before build proceeds.</li></ol>
+<blockquote><strong>Meridian:</strong> The guardrails answered the off-script cases directly. A confidence score below the threshold routes the draft to Elena with a warning flag; a price deviating more than 15% from the closest historical match gets flagged for her investigation before approval. The build was specified for the weird inputs, not the demo.</blockquote>
+<hr>
+<h2>Check 7: Require testing against real inputs before declaring done</h2>
+<p>Synthetic and cherry-picked examples are not tests; last week&#x27;s actual data is the only honest gate.</p>
+<ol><li>Define the test set: pull last week&#x27;s <em>actual</em> records and requests, not synthetic data and not cherry-picked examples.</li><li>Run them through the build and compare the output to what the human supervisor would have produced.</li><li>Make passing this test the condition for &quot;done.&quot; Don&#x27;t declare the build finished until it has run against real inputs.</li></ol>
+<blockquote><strong>Meridian:</strong> The quality measure was a weekly comparison of agent-drafted prices against Elena&#x27;s final approved prices, with a target of substantive corrections on fewer than 10% of drafts within eight weeks. &quot;Done&quot; was defined against her real, approved quotes — not a demo run.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Run this test before the build begins:</p>
+<ul><li><strong>All seven checks were walked with the builder present</strong> — against the completed spec, not the build.</li><li><strong>Every check cleared, or the gap is written down and routed.</strong> A check that can&#x27;t clear is a gap that gets resolved before build starts, not after.</li><li><strong>Where the spec disagreed with Design, Design won</strong> — the gap went back to Design rather than getting decided under build pressure.</li><li><strong>The &quot;done&quot; condition is real inputs.</strong> Last week&#x27;s actual data is the gate, named before the build starts so no one is tempted to declare done on a demo.</li></ul>
+<p>When all four are true, the spec has survived the audit and Build can proceed.</p>
+</body></html>

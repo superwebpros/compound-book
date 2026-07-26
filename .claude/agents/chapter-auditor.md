@@ -40,7 +40,7 @@ For each of the five patterns, list concrete findings with line numbers and a on
 5. **Progressive excalidraws** — the chapter's central artifact(s); is there a progressive-fill B/W excalidraw and a statement of how the artifact rolls up to the Sprint Planning Canvas row? List diagrams that need creating or redrawing (with names like `chNN-...`), and which existing shortcodes stay.
 
 ### C. House-rule flags
-Undefined jargon (list terms + line); dense lists that should be bullets; In-Brief overstatement; missing/weak reflection-questions+handoff; forbidden vocab (grep for "leverage", "transformation"); EOS-bridge gaps.
+Undefined jargon (list terms + line); dense lists that should be bullets; In-Brief overstatement; missing/weak reflection-questions+handoff; forbidden vocab (grep for "leverage", "transformation"); EOS-bridge gaps; **narrative voice** — grep for colon-label speaker prefixes (`^\s*(?:\*\*)?(?:Jesse|Julie)(?:\*\*)?:`) and flag any hit as A17 auto-reject (the `Name: …` screenplay format is banned; inline naming in normal prose is correct and must not be flagged).
 
 ### D. Conceptual forks for the author
 Any decisions that should be settled BEFORE drafting (term consolidation, what an artifact is, structural choices) — phrased as crisp options. These are not yours to decide; surface them.

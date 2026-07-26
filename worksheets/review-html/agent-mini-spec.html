@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Write the Agent Mini-Spec — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: agent-mini-spec.md</div>
+<p>Compound · Integrate / Designing the System</p>
+<h1>Write the Agent Mini-Spec</h1>
+<p>Turn each row on your Hybrid Accountability Chart into a build-ready spec — what the agent is, what it can touch, and how it&#x27;s overseen — before Build begins.</p>
+<p>The chart names the agent team. The mini-spec names what the agent actually <em>is</em>. Every agent-supervised row on your Hybrid Accountability Chart gets one mini-spec, and the mini-spec is what you hand to Build. Seven fields, one to a line. Fill in one of these per agent. The first six describe the agent; the seventh locks the kind of environment it runs on, so Build executes the design instead of re-deciding it.</p>
+<p><strong>Before you start:</strong> Have your Hybrid Accountability Chart (which agent teams exist, who supervises each) and your Knowledge Map (which sources are real) in front of you. The mini-spec draws from both; if a source isn&#x27;t on the map, it isn&#x27;t a source.</p>
+<p>Fill in the seven-field spec, one per agent:</p>
+<table>
+<tr><th>Field</th><th>This agent</th></tr>
+<tr><td><strong>System prompt</strong></td><td>_(operating rules: who the agent is, what it does, what it does not decide. Three to five sentences.)_</td></tr>
+<tr><td><strong>Tools</strong></td><td>_(every API, integration, or system the agent can call. Named.)_</td></tr>
+<tr><td><strong>Context sources</strong></td><td>_(which Knowledge Map rows feed this agent. If it is not on the map, it is not a source.)_</td></tr>
+<tr><td><strong>Memory rules</strong></td><td>_(what carries across runs. Most first-Sprint agents have no memory. Saying so is part of the spec.)_</td></tr>
+<tr><td><strong>Judgment and escalation rules</strong></td><td>_(when the agent escalates, what it refuses, what triggers a hand-off to the human supervisor.)_</td></tr>
+<tr><td><strong>Oversight load</strong></td><td>_(Low / Medium / High. How much of the supervisor&#x27;s attention per run.)_</td></tr>
+<tr><td><strong>Tool category</strong></td><td>_(Off-the-shelf / Low-code / Hand-built — plus a one-sentence reason.)_</td></tr>
+</table>
+<p>Then run the seven steps below to make each field real.</p>
+<hr>
+<h2>Write the system prompt</h2>
+<p>Three-to-five sentences that tell the agent who it is, what it is accountable for, and what it does not decide — the standing operating rules it reads before every task.</p>
+<ol><li>State who the agent is and which workflow it serves, in one sentence. Name the company and the role, the way you&#x27;d brief a new hire.</li><li>State what it produces and who consumes that output. The deliverable, named, and the human or next agent who receives it.</li><li>State what it does <strong>not</strong> decide. The exclusions matter as much as the job: pricing, exceptions, customer contact — whatever stays human.</li><li>Keep it to three to five sentences. If it runs longer, you&#x27;re describing the whole workflow, not this agent&#x27;s seat.</li></ol>
+<blockquote><strong>Meridian example — Quote Research Agent.</strong> &quot;You are the Quote Research Agent for Meridian Manufacturing. Your job is to retrieve the customer&#x27;s purchase history and match their RFQ against the closest historical jobs. You produce a summary for the quoting team to use; you do not set prices, apply exceptions, or contact customers.&quot; Three sentences: who it is, what it produces and for whom, and the three things it does not decide.</blockquote>
+<h2>List the tools</h2>
+<p>Name every API, integration, or system the agent can call; unnamed tools are tools Build has to guess at.</p>
+<ol><li>List every system the agent reads from or writes to, by name. APIs, search, file access, the specific systems the Knowledge Map says it needs.</li><li>Mark read vs. write for each. &quot;HubSpot read access&quot; and &quot;HubSpot write access&quot; are different grants with different risk.</li><li>If a tool isn&#x27;t on this list, the agent doesn&#x27;t get it. Don&#x27;t leave a tool implied — Build will either skip it or guess at it.</li></ol>
+<blockquote><strong>Meridian example — Quote Research Agent.</strong> Tools: HubSpot CRM read access; JobBOSS ERP read access. Both read-only — the research agent retrieves and matches; it never writes back to a system of record.</blockquote>
+<h2>Identify the context sources</h2>
+<p>Map the Knowledge Map rows that feed this agent; if a source is not on the map, it is not a source — this prevents scope creep at the data layer.</p>
+<ol><li>For each system in the Tools list, name the specific data this agent draws from it. Document store, CRM record, rate-card spreadsheet, the cleaned exception database.</li><li>Cross-check every source against your Knowledge Map. If it&#x27;s not a row on the map, either add it to the map first or cut it from the spec.</li><li>Confirm the agent&#x27;s sources are scoped to what this seat needs — not every source the company has.</li></ol>
+<blockquote><strong>Meridian example — Quote Research Agent.</strong> Context sources: HubSpot deal history; JobBOSS job costing records. Both trace to rows on Meridian&#x27;s Knowledge Map. The 112-rule cleaned pricing-exceptions database feeds the <em>Pricing</em> Agent, not this one — so it does not appear here.</blockquote>
+<h2>Set the memory rules</h2>
+<p>Explicitly stating what the agent tracks across runs (or that it tracks nothing) prevents the agent from carrying stale state into new tasks.</p>
+<ol><li>Decide what, if anything, carries from one run to the next: conversation history, prior outputs, learned customer preferences.</li><li>If the agent should treat every task fresh, write that down. Most first-Sprint agents have no memory, and saying so is part of the spec — not an omission.</li><li>If it does carry state, name the window and what triggers a reset, so Build doesn&#x27;t invent its own.</li></ol>
+<blockquote><strong>Meridian example — Quote Research Agent.</strong> Memory rules: &quot;No memory across runs. Each RFQ is treated fresh.&quot; A first-Sprint agent — the spec states the no-memory rule explicitly rather than leaving Build to assume it.</blockquote>
+<h2>Define judgment and escalation rules</h2>
+<p>Specifies exactly when the agent escalates, what it refuses, and what triggers a hand-off to the human supervisor — the governance answers from the Hybrid Accountability Chart land here, agent by agent.</p>
+<ol><li>Write the escalation trigger as a concrete condition, not a vibe. A threshold, a confidence floor, a missing input — something a machine can test.</li><li>Write what the agent does <strong>while it waits</strong>: pause and hold, return a default, or continue with a warning. &quot;Flag and hold&quot; beats &quot;flag and keep going.&quot;</li><li>Pull the governance answers for this row from your Hybrid Accountability Chart (data limits, permitted actions, escalation path) and state them here in the agent&#x27;s own terms.</li></ol>
+<blockquote><strong>Meridian example — Quote Research Agent.</strong> Judgment and escalation rules: &quot;If no historical job matches within 20% of the RFQ specs, flag for Elena. Do not estimate; flag and hold.&quot; A testable trigger (20% match threshold), a refusal (no estimating), and a wait behavior (hold for the named supervisor).</blockquote>
+<h2>Rate the oversight load (Low / Medium / High)</h2>
+<p>Keeps the supervisor&#x27;s span of control visible; no supervisor should carry more than three high-oversight agents at once, so this field is the span-of-control check before the spec leaves Design.</p>
+<ol><li>Rate how much of the supervisor&#x27;s attention this agent consumes per run: <strong>Low</strong>, <strong>Medium</strong>, or <strong>High</strong>. Write the one-line reason — what the supervisor actually does each run.</li><li>Count the agents under each supervisor. The hard limit: no more than three high-oversight agents under one human at a time (Bedard and colleagues at BCG, in <em>Harvard Business Review</em>, found productivity inverts past three concurrent agents per supervisor).</li><li>If a supervisor is over the limit, the design isn&#x27;t done. Consolidate agents, raise some toward Automated, or split the supervisor role — then re-rate.</li><li>Confirm the supervisor can <strong>trace</strong> the agent&#x27;s decisions, <strong>challenge</strong> its outputs, and <strong>apply</strong> expertise of their own. If any of the three is missing for this agent, it isn&#x27;t ready to run.</li></ol>
+<blockquote><strong>Meridian example — Quote Research Agent.</strong> Oversight load: &quot;Medium — Elena reviews the research summary before the Pricing Agent runs.&quot; Elena (VP Ops) supervises three quoting agents; medium load each keeps her inside the span-of-control limit, and she can trace, challenge, and apply expertise to each one.</blockquote>
+<h2>Select the tool category (off-the-shelf / low-code / hand-built)</h2>
+<p>Locking the category in Design — by running the three routing questions in order — prevents Build from making an architecture decision based on vendor relationships or recency rather than the workflow&#x27;s actual requirements.</p>
+<ol><li>Run the three questions in order and stop at the first <strong>yes</strong>:</li></ol>
+<ul><li>Does a mature product already do exactly what this agent requires, with light configuration? → <strong>Off-the-shelf.</strong> Don&#x27;t build what you can configure.</li><li>Is the agent&#x27;s workflow custom but composed of standard moves (pull from a system, run through an agent, write back, notify someone)? → <strong>Low-code.</strong> Your team can own and change it directly.</li><li>Does the workflow run at a scale, or touch a system of record, that low-code tools can&#x27;t reach — or does data sensitivity rule out a third-party platform? → <strong>Hand-built.</strong></li></ul>
+<ol><li>Write the category in one line and the reason in one sentence. If you can&#x27;t write the reason without guessing, the design isn&#x27;t done.</li><li>Leave the <em>specific</em> product to Build. Design names the category; Build picks the environment inside it. (No in-house engineer and the answer is hand-built? That&#x27;s the row where you bring in a builder or contractor.)</li></ol>
+<blockquote><strong>Meridian example.</strong> The Quote Research Agent pulls from two systems, runs the matching logic, and hands a summary to the next agent — standard moves the team can own. Category: <strong>Low-code</strong>, because the workflow is custom but built from standard primitives and Elena&#x27;s team can change it without engineering. By contrast, Compound&#x27;s own project-management agent team lives on a server, runs continuously, and exchanges information in real time across projects and channels — that one is <strong>Hand-built</strong>. Same Sprint discipline, different category; Design named both before Build started either.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Hand the mini-spec to someone who missed the Design session — or to the builder. They should be able to build this agent from what&#x27;s written, without coming back to ask. Check, for every agent on the chart:</p>
+<ul><li>[ ] The <strong>system prompt</strong> is three to five sentences and names what the agent does <em>not</em> decide, not just what it does.</li><li>[ ] Every <strong>tool</strong> is named with read vs. write marked; nothing is left implied.</li><li>[ ] Every <strong>context source</strong> traces to a row on the Knowledge Map — no sources invented at the spec.</li><li>[ ] <strong>Memory rules</strong> are stated explicitly, including &quot;no memory&quot; when that&#x27;s the answer.</li><li>[ ] <strong>Judgment and escalation rules</strong> give a testable trigger, a refusal list, and a wait behavior — not &quot;reviews output.&quot;</li><li>[ ] <strong>Oversight load</strong> is rated, no supervisor carries more than three high-oversight agents, and the supervisor can trace / challenge / apply expertise.</li><li>[ ] The <strong>tool category</strong> is chosen by the three routing questions, with a one-sentence reason — and the specific product is left to Build.</li></ul>
+<p>If any box is blank, that blank is your next Design session — not a Build surprise at five times the cost.</p>
+</body></html>

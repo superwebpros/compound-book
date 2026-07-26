@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculate the Design Opportunity — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: calculate-design-opportunity.md</div>
+<p>Compound · Diagnosis / Co-Operating Model</p>
+<h1>Calculate the Design Opportunity</h1>
+<p><em>Turns your Column A / Column B sort into one headline percentage and one annual dollar figure — the cost of leaving the role un-redesigned.</em></p>
+<p>This worksheet converts the task sort you already ran into a decision-forcing number. You&#x27;ll count and time the tasks in each column, find the share of the week that could run on agent intelligence, write it as a single sentence, and price it against the role&#x27;s loaded annual cost. Prerequisite: bring the completed Column A (Human Intelligence) / Column B (Agent Intelligence) sort for one role — the &quot;Map One Role Against the Two Columns&quot; step from this chapter. No sort, nothing to calculate here.</p>
+<hr>
+<h2>1. Count the tasks in each column</h2>
+<p>Establishes the ratio of human-intelligence work to agent-intelligence work for this role.</p>
+<ol><li>From your completed sort, count the tasks in Column A (Human Intelligence). Write the count.</li><li>Count the tasks in Column B (Agent Intelligence). Write the count.</li><li>If a task was split across both columns, count each half once in its column — don&#x27;t double-count the original task.</li></ol>
+<blockquote><strong>Project Coordinator example (illustrative composite):</strong> Column A held 4 tasks (managing scope-change requests, coordinating client/delivery, negotiating timelines, handling escalations). Column B held 7 (scheduling, status emails, deliverable tracking, meeting summaries, flagging overdue items, updating scope-change logs, compiling lessons-learned).</blockquote>
+<hr>
+<h2>2. Estimate hours per week for each task</h2>
+<p>Converts task count into time, making the misallocation concrete rather than just a fraction.</p>
+<ol><li>For each task in both columns, estimate the hours per week the person actually spends on it (the week as it happens, not the job description). Write the hours next to each task.</li><li>Total the Column A hours. Total the Column B hours. Total the whole week.</li><li>If the weekly totals don&#x27;t add up to a believable workweek, adjust the estimates until they do — the time has to be real, not aspirational.</li></ol>
+<blockquote><strong>Project Coordinator example:</strong> Roughly 45% of the week landed on the four Column A judgment tasks; the seven Column B tasks (scheduling, status emails, logs, summaries, follow-ups) ate the rest of the week.</blockquote>
+<hr>
+<h2>3. Calculate the Column B percentage of the role&#x27;s week</h2>
+<p>Produces the headline number — the share of the role that could run on agent intelligence instead of human hours.</p>
+<ol><li>Divide total Column B hours by total weekly hours.</li><li>Multiply by 100 and round to a whole percent. Write the Column B percentage.</li><li>Sanity check: for most operational roles this lands between 40% and 60%. If yours is far outside that band, revisit your hour estimates in step 2 before trusting the number.</li></ol>
+<blockquote><strong>Project Coordinator example:</strong> Column B accounted for roughly <strong>55%</strong> of the coordinator&#x27;s week.  <strong>Meridian example:</strong> Elena ran the same sort on her client-success coordinator and the number came back <strong>58% Column B</strong> — more than half the seat following learnable rules.</blockquote>
+<hr>
+<h2>4. Write the single summary sentence</h2>
+<p>&#x27;This role is __% Column B&#x27; creates a decision-forcing statement the team can react to.</p>
+<ol><li>Fill in the blank with your step-3 percentage: &quot;This role is ____% Column B.&quot;</li><li>Write it where the team will see it — a whiteboard, the top of the Sprint doc. The point is to force a reaction, not to file it.</li><li>Read it out loud to whoever owns the role. The number, not the argument, is what starts the redesign conversation.</li></ol>
+<blockquote><strong>Meridian example:</strong> Elena wrote &quot;This role is 58% Column B.&quot; That single sentence started a redesign conversation she could no longer avoid — she&#x27;d run the sort expecting to confirm the obvious.</blockquote>
+<hr>
+<h2>5. Multiply Column B percentage by the role&#x27;s loaded annual cost</h2>
+<p>Translates the percentage into an annual dollar misallocation — the cost of not redesigning the role.</p>
+<ol><li>Find the role&#x27;s <strong>loaded annual cost</strong>: salary + benefits + overhead (not just base salary). Write one number.</li><li>Multiply the loaded cost by the Column B percentage from step 3.</li><li>Write the result as a sentence: &quot;$______/year of human intelligence spent on work that follows learnable rules.&quot; That figure is the annual operating cost of leaving this role un-redesigned.</li></ol>
+<blockquote><strong>Project Coordinator example:</strong> 55% Column B × <strong>$65,000</strong> loaded cost = <strong>$36,000/year</strong> spent on work that follows learnable rules. That is the dollar value of human intelligence being spent on agent-intelligence work.</blockquote>
+<hr>
+<h2>The summary box</h2>
+<table>
+<tr><th>Field</th><th>Your number</th></tr>
+<tr><td>Role</td><td>______</td></tr>
+<tr><td>Column A tasks / hours per week</td><td>______ / ______</td></tr>
+<tr><td>Column B tasks / hours per week</td><td>______ / ______</td></tr>
+<tr><td>Total hours per week</td><td>______</td></tr>
+<tr><td><strong>Column B percentage</strong></td><td>______%</td></tr>
+<tr><td>Summary sentence</td><td>&quot;This role is ____% Column B.&quot;</td></tr>
+<tr><td>Loaded annual cost</td><td>$______</td></tr>
+<tr><td><strong>Annual misallocation cost</strong></td><td>$______ /year</td></tr>
+</table>
+<blockquote><strong>Doing more than one role?</strong> If several roles touch the same constraint, repeat this worksheet for each and compile the rows into one table — Role, Column B %, Loaded Cost, Annual Misallocation — as the raw material for the Sprint design work ahead.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>You&#x27;re done when someone who wasn&#x27;t in the room could read this sheet and understand both the size of the opportunity and its price, without asking you a single question. Check:</p>
+<ul><li>Every task from your sort has an hours-per-week estimate, and the column totals add up to a believable workweek.</li><li>The Column B percentage is computed from hours, not from task count alone.</li><li>The summary sentence is written in the exact form &quot;This role is __% Column B&quot; and the blank is filled.</li><li>The loaded annual cost is salary + benefits + overhead — not base salary alone.</li><li>The annual misallocation figure is written as a dollar-per-year sentence, not just a percentage.</li><li>You can say in one breath what redesigning this role is worth per year — and that number is what carries into the Sprint design work.</li></ul>
+</body></html>

@@ -1,262 +1,336 @@
-# Designing the Work: Lock the Gate Before You Build
+# Designing the Work: Classify every task, spec every agent, lock the gate before you build
 
 :::{.callout-important}
 ## In Brief
-The previous chapter designed the system: information flows, roles, the Hybrid Accountability Chart, governance. This chapter designs the work itself. Work Deconstruction classifies every task in the constraint workflow using the ***TML framework*** (***Task***, ***Management***, ***Leadership***) from Source. The Design Brief captures the full specification. A prototype proves the design works before Build begins. Nothing enters Build until the Design Gate is locked: five items, all checked.
+The previous chapter mapped how information moves and built the Hybrid Accountability Chart. This chapter goes one level deeper: it classifies every task inside that flow, specs every agent the chart names, selects the tool category each agent runs on, and defines how the Human Orchestrator runs the team day-to-day. The Design Brief captures all of it. A prototype proves the design works. Nothing enters Build until the Design Gate is locked: five items, all checked.
 :::
 
-## What coordinator deconstruction looks like in *practice*.
+## What deconstruction looks like in *practice*.
 
-The clearest way to see what this chapter produces is to watch it run on a real role, in real time, with a hiring decision on the table.
+Go back to the coordinator role from the previous chapter. You watched us pull it apart; you didn't watch the classification pass that did the pulling. That pass is what this chapter produces, so here it is at full resolution.
 
-Jesse: We had a project coordinator role and a pending decision to hire a second one at $24K. Before posting the listing, we ran the role through Work Deconstruction. We listed every accountability she owned on the existing Accountability Chart, not her job description. The job description was cleaner than reality. Her actual list was the work she touched every week.
+We listed every accountability she owned, not what her job description said. Job descriptions are cleaner than reality. Her actual list was the work she touched every week.
 
-Then we ran every item through one classification: is this a ***Task*** (fully automatable), ***Management*** (an agent assists, a human reviews every output), or ***Leadership*** (judgment that depends on knowing the client, knowing the history, reading a room)?
+Then we ran every item through one classification: is this a ***Task*** (fully automatable), a ***Management*** activity (an agent assists and a human reviews every output), or a ***Leadership*** call (judgment that depends on knowing the client and the history)?
 
 The classification surfaced something the job title hid. A substantial fraction of her work was routing and documentation. Scheduling client check-ins. Updating the project tracker after calls. Generating the weekly status reports from data that already lived in the CRM. That work looked like operations because it happened inside the operations function. It was administration, not judgment. It ate a skilled person's hours and left no time for the parts of the role that required her.
 
-That work became a designed agent team. It landed in the Hybrid Accountability Chart as an AI-assisted entry. She reviewed every output to start, the right call when a team is new and trust isn't established yet. The remaining accountability stayed with her: the client relationships, the judgment calls, the situations that required someone who knew the history. Her role became more strategic because we gave her back the hours the low-judgment work had been consuming.
+The administration became a designed agent team and landed in the Hybrid Accountability Chart as an AI-Assisted entry. Sofia, as Human Orchestrator, reviewed every output to start. That's the right call when a team is new and trust isn't established yet. The judgment went the other way: the client relationships and the situations no agent could read redistributed to the people who stayed.
 
-The junior coordinator listing was never posted. One row in the chart replaced a $24K hire.
+When she left, one row in the chart replaced the hire we would have made.
 
 That outcome was Work Deconstruction. Here is the method that produced it.
 
-Together with the previous chapter, this is the second half of the Design row on your Sprint Planning Canvas, and the work that locks in your Human Orchestrator (the person who operates the agent team in the shipped workflow and holds final authority over every escalation — detailed in the Designing the System chapter).
-
 ## Deconstruct the work task by *task*.
+
+The previous chapter produced an Information Flow Specification: how data moves through the workflow, where decisions get made, and what the output is. That map is now your input.
+
+Work Deconstruction zooms into the tasks inside that flow and classifies each one using the ***TML framework*** (***Task***, ***Management***, ***Leadership***) from the Source chapter. Where the Information Flow Specification showed you the route, Work Deconstruction classifies the work at every stop. The result maps directly to the Hybrid Accountability Chart entries from the previous chapter — the rows name the functions, Work Deconstruction tells you what autonomy level belongs in each one.
 
 <!-- moves:work-deconstruction -->
 ### How to *deconstruct* the work task by task
 
-1. **Pull the actual accountability list** — Job descriptions are sanitized; the real weekly task list is what gets classified — you can't sort what you haven't named.
-2. **Document source inputs and outputs for each task** — Connecting each task to where its data comes from and where the result goes makes the information flow from Source concrete at task level.
-3. **Apply the TML sorting question to each task** — A single binary question — 'would the output need human review every time, or only on exceptions?' — assigns every task to Task, Management, or Leadership without ambiguity.
-4. **Tally the three buckets and challenge the Leadership pile** — If more than half land in Leadership, each item must be re-examined — genuine judgment stays, but undocumented rules that look like judgment get reclassified.
-5. **Map each classified task to a Hybrid Accountability Chart entry** — Deconstruction is thinking; the chart entry (function, agent team, Human Orchestrator, autonomy level) is what makes that thinking durable and actionable for Build.
+1. **Pull the actual accountability list** — Job descriptions are sanitized; the real weekly task list is what gets classified.
+2. **Document the source and destination for each task** — Connect each task to where its data comes from and where the result goes, grounding the Information Flow Spec at task level.
+3. **Apply the TML sorting question to each task** — One binary question assigns every task to Task, Management, or Leadership.
+4. **Tally the three buckets and challenge the Leadership pile** — If more than half land in Leadership, examine each: true judgment stays, consistent-but-unsurfaced patterns move to Management.
+5. **Map each classified task to a Hybrid Accountability Chart entry** — The deconstruction is thinking; the chart entry (function, agent team, Human Orchestrator, autonomy level) makes the thinking durable and actionable for Build.
 <!-- /moves:work-deconstruction -->
 
-Work Deconstruction applies the *TML framework* from Source to the work itself. Where Source used TML to categorize what the organization knows, Design uses TML to categorize what the work requires.
+{{< excalidraw ch06b-work-deconstruction-progressive "Work Deconstruction: Meridian's quoting tasks sorted into the three TML buckets — Task, Management, Leadership." >}}
 
-The method is straightforward. Pull the actual accountability list for a role, not the job description. You want the real list of things that person touches every week. Then go task by task and classify each one using the TML framework from Source: ***Task***, ***Management***, ***Leadership***. For every task, also document the *source inputs* (where the data comes from — which system, which person, which document) and the *outputs* (where the result goes next). If you've done the Source work properly, you already know these. Writing them into the deconstruction makes the information flow from the previous chapter concrete at the task level.
+### Pull the actual accountability *list*
 
-{{< excalidraw ch06b-work-deconstruction-populated "Work Deconstruction: three TML categories with source inputs and outputs — Task (Fully Automatable), Management (AI-Assisted), Leadership (Human Judgment Required)" >}}
+Don't start with the job description. Start with the real list of things that person touches every week. The job description is what the role looked like when someone wrote it; the actual task list is what the role costs. Those two things diverge — sometimes dramatically. You can't sort what you haven't named.
 
-One thing to know before you start sorting: an agent is software that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs.
+If a role covers the full constraint workflow, pull every task in the workflow, not just one person's slice. Write each one down before classifying any of them.
 
-For every task, ask one sorting question:
+- A coordinator role: schedule client check-ins, update the project tracker, generate the weekly status report, handle contract renewal reminders, route escalations to the right lead.
+- A quoting role: receive RFQs, pull customer history, look up material pricing, apply exception rules, assemble the quote, review and approve, deliver to the customer.
+- A finance role: pull job cost entries, match against approved budgets, flag variances, format the weekly exception report, sign off on reconciled entries.
+
+### Document the *source and destination* for each task
+
+For each task, write where the input comes from (which system, which person, which file) and where the result goes next. You've already mapped this at the workflow level in the Information Flow Spec; here you're making it concrete at the task level.
+
+This step matters because it catches the hidden handoffs. A task that looks routine often has a source that's unreliable, or a destination that nobody is officially waiting for. Those gaps become Build failures if you don't see them now.
+
+- "Pull customer history" — comes from HubSpot CRM; goes to the quoting agent as a structured summary.
+- "Generate the weekly status report" — comes from the project tracker and CRM; goes to the account manager's inbox by Monday morning.
+- "Flag job cost variances" — comes from the ERP nightly pull; goes to the finance director's exception queue.
+
+### Apply the TML *sorting question* to each task
+
+For every task on your list, ask one question:
 
 > If I gave an agent this task, would the output need human review every time, or only when something goes wrong?
 
-If only on exceptions: ***Task*** (Fully Automatable). This includes pure workflow automation, where data routes between systems without an agent in the middle. If every output requires review: ***Management*** (AI-Assisted). If the answer depends on who the client is, what happened last week, or a judgment call with no clear rule: ***Leadership*** (Human Judgment Required).
+If only on exceptions: ***Task*** (Fully Automatable). This includes pure workflow automation, where data routes between systems without judgment in the middle. The AI here runs straight through, work in and work out; a human sees only the exceptions.
 
-:::{.callout-tip}
-## Pro Tip
-AI-Assisted is where most things start. Fully Automatable is where they move after the agent proves itself over multiple Sprints. Autonomy is earned, not assigned.
-:::
+If every output requires review: ***Management*** (AI-Assisted). The agent does the work; a human reviews every result before anything consequential happens. The interaction is a work queue: the agent proposes, the human approves.
 
-Decompose the role honestly, task by task. Most accountabilities have a different shape than the leader assumed. The "judgment-heavy role" turns out to be 70% routing and documentation. The "low-skill operational task" depends on a relationship the agent can't replicate. You won't know which is which until you do the decomposition.
+If the answer depends on who the client is, what happened last week, or a judgment call with no clear rule: ***Leadership*** (Human Judgment Required). AI doesn't disappear from this category; it shifts shape. Instead of executing, it works as a co-pilot: it holds a back-and-forth that sharpens the human's judgment before they make the call.
 
-TML doesn't tell you which column is right for every task. For each one, it makes you ask what type of intelligence the work requires, and which type AI is reliably capable of providing at the quality standard this organization needs.
+Those three shapes sit at points along the Co-Operating spectrum: what changes from category to category is where the human sits relative to the loop.
+
+TML doesn't assign these categories for you. It makes you ask what type of intelligence the work requires, and which type an AI can provide at the quality standard your company needs. The same task in two different companies can land in different columns — what's fully automatable for Meridian depends on whether Meridian's exception rules are actually documented.
+
+### Tally the three buckets and *challenge the Leadership pile*
+
+Count the tasks in each bucket. If more than half land in Leadership (Human Judgment Required), go back through that pile and challenge each one. The previous chapter split every decision into rule-based or judgment-based; this is that split at finer resolution, because rule-based covers both the rule that's written down and the pattern nobody has surfaced yet. What looks like a single kind of judgment is usually three shades of decision:
+
+- **Codified rule** — the decision is written down and comes out the same way every time. Software or an agent executes it. This is Task, and it never belonged in the Leadership pile.
+- **Consistent pattern nobody has written down** — the expert decides it the same way every time, but the logic lives only in her head. A pricing exception that follows a pattern but exists only in Elena's memory. A routing call that always follows the same logic but was never captured. Once surfaced, an agent can propose the decision with a confidence flag and a human checks it. This is Management.
+- **True judgment** — depends on relationship context, history, or reading a situation, and can't be fully documented. A client negotiation that turns on the account's history with the company. An escalation call that depends on what's politically sensitive right now. This stays in Leadership.
+
+Work through the Leadership pile and ask: has this ever been decided the same way twice with the same inputs? If yes, it's probably the middle shade: a pattern you haven't surfaced yet, not judgment you can't replace.
 
 :::{.callout-note}
 ## Action Step
-List every task in the constraint workflow. Sort each one into the three TML categories — Task, Management, Leadership. Count the tasks in each bucket. If more than half land in **Leadership (Human Judgment Required)**, challenge each one: is this genuinely judgment, or is it judgment because nobody has written down the rules? Do it on paper or in a shared doc.
+List every task in the constraint workflow. Sort each one into the three TML categories. Count the tasks in each bucket. If more than half land in Leadership, run each one through the three shades: codified rule, consistent pattern nobody has written down, or true judgment. Only the third belongs there.
 :::
 
-Once the deconstruction is done, the results flow directly into the *Hybrid Accountability Chart* you built in the previous chapter (if you run EOS, the Hybrid Accountability Chart extends your existing Accountability Chart — it adds agent teams and their Human Orchestrators alongside your people). Each classified task maps to a chart entry — the function, the agent team, the Human Orchestrator, the autonomy level. Work Deconstruction is the thinking. The chart entries are what makes the thinking durable and actionable for Build.
+:::{.callout-tip}
+## Pro Tip
+AI-Assisted is where most things start. Fully Automatable is where they move after the agent proves itself over multiple Sprints. Autonomy is earned through demonstrated accuracy, not assumed at the start.
+:::
+
+### Map each classified task to a *Hybrid Accountability Chart entry*
+
+For each classified task, identify the Hybrid Accountability Chart row it belongs in, and confirm that row has all four fields: the function (stated as an outcome), the agent team name (or None), the Human Orchestrator (a named person), and the autonomy level (AI-Assisted or Automated).
+
+If a task doesn't map cleanly to an existing chart row, that's a signal that either the chart is missing a row or the task is actually part of a larger accountability you haven't separated out yet. Resolve it here, not in Build.
 
 ### Meridian's quoting workflow, fully *deconstructed*.
 
-Here's what a completed Work Deconstruction looks like for the Meridian quoting constraint — where Elena Ruiz, the VP of Operations, was the sole bottleneck for every quote. She spent fifteen hours a week building quotes from scratch because she was the only person who held the customer-specific pricing, material lead-time knowledge, and historical job context. The estimated annual cost of the bottleneck was $558K in lost revenue, misallocated time, and floor underutilization.
+Elena Ruiz was the sole bottleneck for every quote at Meridian — fifteen hours a week building quotes from scratch because she held the customer-specific pricing knowledge, the material lead-time context, and the historical job data. The Information Flow Specification from the previous chapter showed how the quoting workflow moved. Work Deconstruction classified what each step actually required.
 
 | Task | Category | Source / Input | Output / Destination | Rationale |
 |---|---|---|---|---|
 | Receive RFQ, log in CRM | Task (workflow automation) | Inbound RFQ email from client | CRM record in HubSpot, triggers quoting workflow | Routing problem. Standardized intake form auto-creates the CRM record. No agent needed. |
-| Pull customer history from HubSpot | Task (Fully Automatable) | HubSpot CRM (customer records, win/loss data) → Quote Research Agent | Customer profile, past jobs, pricing terms → Quote Pricing Agent | Structured lookup. Agent queries CRM and returns customer context. Elena audits weekly. |
-| Look up material pricing in JobBOSS | Task (Fully Automatable) | JobBOSS ERP (materials database, supplier pricing) → Quote Pricing Agent | Material costs, lead times, out-of-stock flags → Quote Pricing Agent | Structured lookup against known tables. Agent retrieves current pricing and flags anything unavailable or above threshold. |
-| Cross-reference Customer Notes.xlsx for pricing exceptions | Management (AI-Assisted) | Customer Notes.xlsx (112 validated rules) → Quote Pricing Agent | Applicable exception rules with confidence flags → Elena for review | 112 customer-specific pricing rules — some simple discounts, others complex terms with context the spreadsheet doesn't fully capture. Agent applies documented rules. Elena reviews every output until the exception set is fully validated. |
+| Pull customer history from HubSpot | Task (Fully Automatable) | HubSpot CRM (customer records, win/loss data) | Customer profile, past jobs, pricing terms → Quote Pricing Agent | Structured lookup. Agent queries CRM and returns customer context. Elena audits weekly. |
+| Look up material pricing in JobBOSS | Task (Fully Automatable) | JobBOSS ERP (materials database, supplier pricing) | Material costs, lead times, out-of-stock flags → Quote Pricing Agent | Structured lookup against known tables. Agent retrieves current pricing and flags anything unavailable or above threshold. |
+| Cross-reference pricing exceptions | Management (AI-Assisted) | Customer Notes.xlsx (147 raw rules from Source, 112 validated) → Quote Pricing Agent | Applicable exception rules with confidence flags → Elena for review | 112 customer-specific pricing rules — some simple discounts, others complex terms with context the spreadsheet doesn't fully capture. Agent applies documented rules; Elena reviews every output until the exception set is fully validated, the middle shade of decision. |
 | Calculate final price and assemble quote | Management (AI-Assisted) | All upstream agent outputs + Dave's labor hour estimate + rate card → Quote Assembly Agent | Draft PDF quote in Meridian's standard format → Elena's review queue in HubSpot | Agent assembles the complete quote from research, pricing, and labor inputs. Elena reviews every draft — fifteen to twenty minutes instead of building from scratch in three hours. |
-| Review and approve quote | Leadership (Human Judgment Required) | Agent-assembled draft quote → Elena | Approved quote → Ty for delivery | The design decision that makes everything else work. Elena holds final authority on every number. Her judgment catches what the exception rules miss — strategic account considerations, spec ambiguities, margin calls on edge cases. |
-| Deliver quote to customer | Leadership (Human Judgment Required) | Approved quote PDF → Ty via HubSpot sales queue | Quote delivered to customer, follow-up tracked in CRM | Customer relationship. Ty reads the negotiation, knows the account history, decides timing and positioning. The handoff from Elena to Ty is structured — the approved quote lands in his CRM queue with context notes. |
+| Review and approve quote | Leadership (Human Judgment Required) | Agent-assembled draft quote → Elena | Approved quote → Ty for delivery | Elena holds final authority on every number. Her judgment catches what the exception rules miss — strategic account considerations, spec ambiguities, margin calls on edge cases. |
+| Deliver quote to customer | Leadership (Human Judgment Required) | Approved quote PDF → Ty via HubSpot sales queue | Quote delivered to customer, follow-up tracked in CRM | Customer relationship. Ty reads the negotiation, knows the account history, decides timing and positioning. |
 
-Task count: Leadership (Human Judgment Required), 2. Management (AI-Assisted), 2. Task (Fully Automatable), 3. The role that felt like "Elena's judgment" was roughly 65% data retrieval and document assembly. That work required her *access*, not her judgment. The remaining 35% stayed with her because the deconstruction showed the judgment couldn't be removed.
+Task count: Task (Fully Automatable), 3. Management (AI-Assisted), 2. Leadership (Human Judgment Required), 2. The role that felt like "Elena's judgment" was roughly 65% data retrieval and document assembly. That work required her access, not her judgment. The remaining 35% stayed with her because the deconstruction showed the judgment couldn't be removed.
 
-The Hybrid Accountability Chart entries that came out of this deconstruction:
+{{< excalidraw ch06b-work-deconstruction-populated "Work Deconstruction: Meridian's quoting workflow classified into three TML categories — Task (Fully Automatable), Management (AI-Assisted), Leadership (Human Judgment Required)" >}}
 
-| Role / Function | Agent Team | Human Orchestrator | Level |
-|---|---|---|---|
-| RFQ intake and CRM logging | None (workflow automation) | Ty Banfield (Sales Lead) | N/A |
-| Customer data retrieval and history matching | Quote Research Agent | Elena Ruiz (VP Ops) | AI-Assisted |
-| Material and labor pricing assembly | Quote Pricing Agent | Elena Ruiz (VP Ops) + Dave Kowalski (labor estimates) | AI-Assisted |
-| Draft quote generation and review | Quote Assembly Agent | Elena Ruiz (VP Ops) | AI-Assisted |
-| Quote delivery and customer follow-up | None | Ty Banfield (Sales Lead) | N/A |
+The Hybrid Accountability Chart entries from the previous chapter align with this deconstruction: three agent rows (Quote Research Agent, Quote Pricing Agent, Quote Assembly Agent), all starting AI-Assisted, all with Elena as the named Human Orchestrator.
 
-Every row has a name. Every agent team has a named Human Orchestrator. All agent outputs start AI-Assisted: Elena reviews every quote.
+## One agent or a *team*.
 
-:::{.callout-tip}
-## Pro Tip
-The difference between AI-Assisted and Automated is the human's role, not the review frequency. AI-Assisted: the human reviews every output and holds final authority. Automated: outputs ship, and the human's role shifts to handling exceptions, monitoring aggregate quality, and making final decisions on edge cases. If you're not sure which to pick, start AI-Assisted. Moving toward Automated is a promotion the agent earns — it happens when the human is rubber-stamping more often than correcting.
+Why three agent rows and not one? The Hybrid Accountability Chart names agent teams, but it doesn't tell you the team's shape: one agent doing everything, or several specialized ones passing work between them. That's a Design decision, and Build inherits it.
+
+The split heuristic falls out of the mini-spec (the one-page agent spec) you're about to write. Split into separate agents when the tasks need different tools and permissions, different oversight loads, or different escalation rules. When the work shares all three, keep one agent; splitting it anyway just manufactures handoffs someone has to review.
+
+Meridian's quote team is the heuristic applied. Research reads CRM and ERP records and holds when no historical match is close enough. Pricing applies exception rules that Elena reviews on every output, and Assembly writes the draft quote into HubSpot. Different tools, different escalation triggers: three agents, not one.
+
+A team also needs a coordination shape, and there are two. A **pipeline**: each agent hands its output to the next, the way Meridian's research feeds pricing and pricing feeds assembly. A **coordinating agent**: one agent dispatches work to the others and assembles the result, the way SuperWebPros' quote team runs in the Co-Operating Model chapter. Multi-agent frameworks like Claude's agent tooling exist to run these shapes; in plain English, they're the plumbing that moves work between agents so nobody wires every handoff by hand. Build picks the tool. Design locks the shape.
+
+## Spec every agent with a *mini-spec*.
+
+The Hybrid Accountability Chart names the agent teams. The mini-spec is the agent's standing operating rules — seven fields: system prompt, tools, context sources, memory rules, judgment and escalation rules, oversight load, and tool category. Every row in the chart that has an agent team gets a mini-spec. It's what you hand to Build. Without it, Build inherits a name on a chart and has to make the architecture decisions you should be making now.
+
+{{< excalidraw ch06-agent-mini-spec "Agent Mini-Spec: seven fields — system prompt, tools, context sources, memory rules, judgment and escalation rules, oversight load, and tool category." >}}
+
+<!-- moves:agent-mini-spec -->
+### How to write the *Agent Mini-Spec*
+
+1. **Write the system prompt** — Three to five sentences, ending with the hard does-not-decide boundary.
+2. **List the tools** — Name every API (application programming interface — how systems talk to each other), integration, or system the agent can call, each with its permission level. Unnamed tools are tools Build has to guess at.
+3. **Identify the context sources** — Map the Knowledge Map rows that feed this agent. If a source isn't on the map, it isn't a source.
+4. **Set the memory rules** — State explicitly what state the agent carries between runs (or none). "No memory across runs" is a complete answer.
+5. **Define judgment and escalation rules** — State exactly when the agent escalates, what it refuses, and what triggers a handoff to the Human Orchestrator.
+6. **Rate the oversight load (Low / Medium / High)** — No Human Orchestrator should carry more than three High-oversight agents at once. This field is the span-of-control check before the spec leaves Design.
+7. **Select the tool category** — Lock the category here (off-the-shelf, low-code, or hand-built) so Build inherits a decision, not an open question. The routing logic is in "Pick the tool category" below.
+<!-- /moves:agent-mini-spec -->
+
+### Write the *system prompt*
+
+The prompt is three to five sentences: who the agent is, what it produces, what it's allowed to decide, and what it does not decide. The does-not-decide sentence comes last, and it's the hard boundary. Without it, the agent drifts into decisions it was never designed for.
+
+Examples from different workflows:
+
+- A quote research agent: "You are the Quote Research Agent. Your job is to retrieve the customer's purchase history and match their RFQ against the closest historical jobs. You decide which past jobs count as a match and produce a summary for the quoting team. You do not set prices, apply exceptions, or contact customers."
+- A support routing agent: "You are the Support Routing Agent. Your job is to match incoming tickets to the correct team based on issue type and account tier. You decide where each ticket goes, then route and log it. You do not resolve tickets, contact customers, or escalate without a matching rule."
+- A cost reconciliation agent: "You are the Cost Reconciliation Agent. Your job is to match daily job cost entries against approved budgets. You decide which entries cross the defined variance threshold, then flag and hold. You do not modify records or approve any line."
+
+### List the *tools*
+
+Name every API or system the agent can call, and name it with its permission level: read, write, or the scope of the write. "CRM access" isn't a tool spec. "HubSpot CRM read access" is. These permissions are the same boundaries the previous chapter's governance framework set: what each agent can read and what it can do. The mini-spec is where they get pinned to a specific agent. Build uses this list to wire the integrations; anything unnamed is a gap Build has to interpret.
+
+- A quote research agent: HubSpot CRM read access; JobBOSS ERP read access.
+- A cost reconciliation agent: ERP nightly data export (read); budget spreadsheet (read); exception reporting queue (write — flags only).
+- A contract intake agent: document storage read access; PM system write access (project creation only); email notification trigger.
+
+### Identify the *context sources*
+
+If a source isn't on the Knowledge Map from the Source chapter, it isn't an authorized context source — this is where scope creep gets caught before it reaches Build.
+
+- "Receives: ERP job costing history (Retrieved knowledge row 1), CRM customer records (Retrieved knowledge row 2), Elena's pricing exceptions database (Standing context row 1)."
+- If a source you need isn't on the Knowledge Map, stop here. Either add it to the map or remove it from the agent's scope.
+
+**Memory rules.** State explicitly what state the agent carries between runs — or none. "No memory across runs" is a complete answer. So is "remembers the last five quotes for this customer." What's not acceptable is leaving it blank. The default is no memory, so a blank field doesn't produce a wrong guess; it produces a silently dropped requirement: the workflow needed the agent to remember something and nobody said so. Design specifies what the agent remembers and for how long; Build decides where that memory lives (a cache, a database). Examples: no memory across runs (each RFQ treated fresh); tracks open tickets for the current shift, clears at end of day; each nightly run is independent.
+
+**Judgment and escalation rules.** State exactly when the agent escalates, what it refuses to do, and what triggers a handoff to the Human Orchestrator. "Escalate when uncertain" isn't an escalation rule. "Escalate if no historical job matches within 20% of the RFQ specs" is. Examples: escalate if pricing confidence falls below 60%, flag and hold, do not estimate; refuse any action that creates an external communication; escalate if the input file is missing or more than 24 hours stale.
+
+**Oversight load (Low / Medium / High).** Low: the Orchestrator reviews exceptions only. Medium: the Orchestrator reviews a sample or summary on a cadence. High: the Orchestrator reviews every output before anything consequential happens — use this for new agents in Sprint 1, any agent whose output reaches a customer, and any agent whose exception rules aren't fully validated yet. Start every new agent at High. The target is to earn Medium through demonstrated accuracy over multiple Sprints.
+
+**Span-of-control check:** no Human Orchestrator should carry more than three High-oversight agents at once. Julie Bedard and colleagues at BCG, writing in *Harvard Business Review*, found that productivity inverts after three concurrent AI agents per Human Orchestrator. Count the oversight loads before the specs leave Design. If Elena carries three High-oversight agents, the design is at the limit — adding a fourth requires either moving one to Medium or naming a second Orchestrator.
+
+:::{.callout-note}
+## Human Orchestrator Capability Check
+Before a mini-spec leaves Design, confirm three things about the named Orchestrator: Can they **trace** an agent output back to its inputs — not just see the result, but reconstruct why? Can they **challenge** a specific line and get a real revision, not reject the whole document? And where do they **apply expertise** the agent can't replicate? If every output could ship without their input, they aren't in the loop — they're a speed bump. Name the expertise explicitly.
 :::
 
-## Make the design legible before you *build* it.
+### Meridian's *Quote Research Agent mini-spec*
 
-A good workflow design is legible. You can look at it, trace the path from input to output, see where humans decide and where agents execute, and spot the gaps before Build does.
+Elena's quoting team has three agents. Here's the mini-spec for the Quote Research Agent, the first in the chain:
 
-The right visualization depends on what you're designing. You don't need every tool for every Sprint, but you should know what's available and reach for the right one.
+| Field | Quote Research Agent |
+|---|---|
+| **System prompt** | You are the Quote Research Agent for Meridian Manufacturing. Your job is to retrieve the customer's purchase history and match their RFQ against the closest historical jobs. You decide which past jobs count as a match and produce a summary for the quoting team to use. You do not set prices, apply exceptions, or contact customers. |
+| **Tools** | HubSpot CRM read access; JobBOSS ERP read access |
+| **Context sources** | HubSpot deal history; JobBOSS job costing records |
+| **Memory rules** | No memory across runs. Each RFQ is treated fresh. |
+| **Judgment and escalation rules** | If no historical job matches within 20% of the RFQ specs, flag for Elena. Do not estimate; flag and hold. |
+| **Oversight load** | High (Sprint one) — Elena reviews every research summary before the Pricing Agent runs; Medium once the lookup accuracy is proven. |
+| **Tool category** | Low-code — pulls from two read-only APIs and writes to a staging table. Standard moves, no custom infrastructure. |
 
-**Swim lane diagrams** are for mapping information flows between humans and agents. Draw two lanes — one for human work, one for agent work. Walk the workflow from trigger to output and draw each step in the lane where it happens. Every time the work crosses from one lane to the other, that's a handoff. Every handoff is a design decision: what format does the output need to be in? Who reviews it? What happens when the handoff fails? Swim lanes force you to answer those questions because the crossing points are visible. If your swim lane diagram has fifteen crossings for a six-step workflow, you've designed something that will be fragile in production. Simplify before you build.
+**Elena's capability check:** She can trace any research summary to its CRM and ERP records in HubSpot. She can flag a wrong historical job match by job number and watch the agent replace that specific entry. And she applies expertise the agent can't replicate — recognizing when a "closest match" is right on specs but wrong on customer context. That call is hers.
 
-**Flowcharts** are for mapping decision logic. When the workflow has branching paths (if the quote is above a dollar threshold, route to VP; if the customer segment is new, flag for manual review), a flowchart makes the logic inspectable. You can build these in any diagramming tool: Lucidchart, Miro, or even a whiteboard photo. Mermaid is also worth knowing about. It's a text-based diagramming format where you describe the logic in plain language and the tool draws the diagram. Every major AI assistant can generate Mermaid from a description, and it renders in most documentation tools. You can describe your workflow to an AI assistant and get a Mermaid diagram back in the same conversation. That's useful because the diagram becomes a checkpoint. If the flowchart doesn't match what you intended, the design has a gap you can fix now instead of in Build.
+## Pick the *tool category* before you pick the tool.
 
-**Visual design tools** (Figma, Claude's artifact system, Excalidraw) are for when the workflow produces something a stakeholder needs to see. If the agent team is generating customer-facing quotes, draft what the quote looks like. If it's producing reports, mock up the report format. The visual artifact gives the stakeholder something concrete to react to, which is faster and more honest than asking them to imagine the output from a written spec.
+The mini-spec names what each agent is. Tool category selection names the environment it runs on. Lock the category in Design so Build inherits a decision, not an open question — and so the architecture choice follows the workflow's actual requirements, not whoever the Build team last talked to.
 
-Meridian used a swim lane diagram for the quoting workflow: two lanes, seven steps, four handoff crossings. Then Elena and Ty reviewed a visual quote mock to confirm the agent-assembled output looked right before Build started.
+There are three categories.
 
-The Diagramming Primer in the appendix covers swim lanes and flowcharts in more depth: how to read one, when to use which, and the full Mermaid-via-AI shortcut.
+{{< excalidraw ch06-tool-category-decision "Pick the tool category: three routing questions lead to off-the-shelf, low-code, or hand-built." >}}
+
+**Off-the-shelf tool.** Existing software that maps cleanly to the designed workflow with light configuration. The work is selection, configuration, and integration — not building from scratch. Use this when a mature product already does what the design requires, with no custom behavior needed. Examples: conversational AI workspaces like Claude Projects or a vendor's embedded AI feature already inside a tool you pay for.
+
+**Low-code workflow.** A workflow assembled in a visual builder — Zapier, Make, n8n (a visual automation platform that connects apps and moves data between them without writing code), or a similar tool. No engineer required. Your team owns it directly, can see how it works, and can change it. Use this when the workflow is custom but built from standard moves: pull from a system, run through an agent, write back, notify someone. This is the path for operators with no in-house engineer.
+
+**Hand-built integration.** Custom code, an engineer in the loop, and a deployment environment your team manages. Slower, higher return, harder to change later. Use this when the workflow runs at a scale or against a system that low-code tools can't reach, or when data sensitivity rules out routing through a third-party platform. No in-house engineer? This is the category where you bring in a builder or contractor — the other two your team can usually own directly.
+
+To pick the category for each agent, run these three questions in order:
+
+1. Does a mature product already do exactly what this agent requires, with light configuration? If yes — off-the-shelf. Don't build what you can configure.
+2. Is the agent's workflow custom but composed of standard moves (pull from a system, run through an agent, write back, notify someone)? If yes — low-code. Your team can own and change it directly.
+3. Does the workflow run at a scale or touch a system of record that low-code tools can't reach? Or does the data sensitivity rule out routing through a third-party automation platform? If yes — hand-built.
+
+Our marketing lead's four-agent setup didn't require a line of code, but it wasn't low-code either. It was four off-the-shelf tools, configured and connected. Our low-code example is the workflow we built around our ERP: transcription, summarization, classification, and a Q&A bot, all assembled in n8n from standard moves. No engineer touched it, and the team that uses it can open the builder and change it. The project management agent team that replaced our coordinator role was different — it runs continuously on a server. That one required infrastructure, monitoring, and an always-on deployment. Hand-built.
 
 :::{.callout-note}
 ## Action Step
-Pick the workflow you're designing. Draw a swim lane diagram with two lanes — human and agent. Map every step. Count the handoff crossings. If the count is higher than the number of steps, redesign the handoffs before moving to Build.
+For every agent in your Hybrid Accountability Chart, name the category (off-the-shelf, low-code, hand-built) and write the reason in one sentence. If you can't write the reason without guessing, the design isn't done. Build picks the specific environment inside the category.
+:::
+
+## Run the *role*: what the Human Orchestrator does day-to-day.
+
+The Hybrid Accountability Chart from the previous chapter named the Human Orchestrator and ran the Right Seat Evaluation. This chapter covers what comes after: how the Orchestrator actually runs the agent team once the workflow ships.
+
+The Orchestrator reviews at the goal level, not the task level. They don't check every output line by line; they ask whether the team is moving the constraint in the right direction. And they feed the design improvements between Sprints. After every Compound phase, the Orchestrator looks at what the team produced and asks: what one design change would make the next Sprint better? Eight Sprints of one good change each produces an agent team substantially more capable than the one that shipped in Sprint one.
+
+**Day-to-day, the Orchestrator owns three things:**
+
+- **Inputs clean.** The agent team is only as good as what goes into it. If the CRM records are stale, the pricing exceptions file hasn't been updated, or the intake form is getting bypassed, the Orchestrator catches it before the outputs degrade.
+- **Outputs reviewed at the right frequency.** AI-Assisted means every output. Medium oversight means a sample or a summary on a cadence. Whatever the mini-spec says, the Orchestrator holds the line — not because every review finds an error, but because the review cadence is what maintains trust in the system.
+- **Drift flagged.** Drift shows up as inputs degrading, outputs trending off, and a class of decisions no longer being handled cleanly. Companies that deploy agent teams without a named person responsible for this discover within weeks that the team has drifted — inputs no longer reviewed, outputs no longer trusted, the workflow quietly reverted to "we just do it the old way." The fix is naming the role and giving it the hours.
+
+**What the ramp-up arc looks like.** The Orchestrator works through Design alongside the Sprint Lead, operates independently by the second Sprint, and by Sprint four is driving design improvements themselves — not because someone handed it to them, but because they've run the loop enough times to see what to fix. The skill is learned by doing the work.
+
+**The development gap.** The operations lead who got the job because she was excellent at executing operations work is now being asked to direct an agent team that does the executing instead of doing it herself. It's a different role, and developing the capability is deliberate work. The right person has operational authority over the workflow — someone who can direct the agent team and make the calls it can't, not just coordinate around it. The best candidate is usually the person closest to the work who's also frustrated by the parts of it that don't require their skill.
+
+You saw this with our marketing lead in the Co-Operating Model chapter — that setup was designed, not improvised. The four-tab arrangement didn't happen because we handed her agents; it happened because someone first asked what she was actually accountable for, which parts required her judgment, and at what frequency each team needed to surface decisions to her.
+
+:::{.callout-note}
+## Action Step
+Identify your Human Orchestrator candidate. Does this person have operational authority over the workflow? Are they willing to shift from executing the work themselves to directing the team that executes it? Write down the name. If there's a development gap to fill, name it and plan the first Sprint as the ramp-up. For each agent they'll oversee, note the oversight load — if they're carrying more than three High-oversight agents, the design needs adjustment before Build begins.
 :::
 
 ## The Design Brief is what Build *inherits*.
 
-Before you prototype, you need a document that captures everything the design has decided. The *Design Brief* is that document. It names who decides, which systems are involved, and how the workflow is governed. It's Design's output and Build's input. No other channel.
+Work Deconstruction, the mini-specs, the tool categories, the Orchestrator role — all of it consolidates into one document: the *Design Brief*. It's Design's output and Build's input. No other channel.
+
+The Design Brief names who decides, which systems are involved, how the workflow is governed, and what the first working version actually produces. A gap in the Design Brief becomes a question in Build. Close the gaps here.
 
 <!-- moves:design-brief -->
 ### How to write the *Design Brief*
 
-1. **Write the Workflow Summary** — Translates the swim lane or flowchart into written specification — trigger to output, every step, handoff, and decision point named.
+1. **Write the Workflow Summary** — Translates the Information Flow Spec into written specification: trigger to output, every step, handoff, and decision point named.
 2. **Name the Stakeholders** — Identifies the Human Orchestrator, role-change list, downstream consumers, and approvers so accountability is unambiguous before Build begins.
-3. **List the Systems** — Every system the workflow touches must be named with the specific data it provides or receives, preventing integration surprises in Build.
-4. **Define the Data Requirements** — Specifying what data the agent team needs, where it lives, what format it arrives in, and what happens when it is missing or malformed closes the most common Build failure mode.
-5. **State the Success Criteria** — Anchors the brief to the measurable Signal targets so Build knows what it is optimizing for, not just what it is building.
-6. **Document Constraints and Guardrails** — Locks the governance decisions from Designing the System — data access, action permissions, escalation paths, quality cadence, kill switch — into the design record before Build inherits it.
-7. **Describe the V1 Artifact** — If you cannot describe what the first working version actually produces, the design is not finished — this field forces that decision.
+3. **List the Systems** — Every system the workflow touches, named, with the specific data each provides or receives.
+4. **Define the Data Requirements** — What data the agent team needs, where it lives, what format it arrives in, and what happens when it's missing or malformed.
+5. **State the Success Criteria** — The measurable targets from Signal: specific numbers Build optimizes for and Deliver measures against.
+6. **Document Constraints and Guardrails** — Locks the governance decisions from the previous chapter — data access, action permissions, escalation paths, quality cadence, kill switch — into the design record.
+7. **Describe the V1 Artifact** — If you can't describe what the first working version produces, the design isn't finished. This field forces that decision.
 <!-- /moves:design-brief -->
 
-A Design Brief includes:
+Each section is one decision closed. Here's what each one needs:
 
-- **Workflow summary.** The information flow from trigger to output, with each step, handoff, and decision point named. This is the swim lane or flowchart from the previous chapter, translated into written specification.
-- **Stakeholders.** The Human Orchestrator, the team members whose roles change, the downstream consumers of the agent team's output, and anyone with approval authority.
-- **Systems.** Every system the workflow touches: CRM, ERP, project management tool, communication platforms. Name the specific data each system provides or receives.
-- **Data requirements.** What data the agent team needs, where it lives, what format it arrives in, and what happens when it's missing or malformed.
-- **Success criteria.** The measurable outcomes from Signal that this design is intended to move. Not vague improvement, but specific targets the Sprint will be measured against.
-- **Constraints and guardrails.** The governance decisions from the previous chapter: data access boundaries, action permissions, escalation paths, quality monitoring cadence, kill switch conditions.
-- **V1 artifact description.** What will the first working version of this workflow actually produce? Is the output an interface? A formatted document? An automated pipeline? A dashboard? Name the artifact. If you can't describe what the first version looks like, the design isn't finished.
+**Workflow Summary.** The Information Flow Specification from the previous chapter, translated into written prose. Trigger to output, every step, every handoff, every decision point named. What triggers the workflow, what happens at each step and who does it, and what does the final output look like and where does it go?
 
-Here is the blank seven-section template. Fill it in for the Sprint you're running. Build inherits this document as is.
+**Stakeholders.** Four groups: the Human Orchestrator (the named person who holds final authority); the role-change list (every person whose job changes, with what changes stated); downstream consumers (whoever receives the output — they'll tell you if the format doesn't work); and approvers (anyone with sign-off authority before Build begins). A brief with "TBD" in this section isn't finished.
+
+**Systems.** Every system the workflow touches, with the specific data it provides or receives. "CRM access" isn't a system spec. "HubSpot CRM — reads customer records and deal history; writes draft quote record" is. This list is broader than the agent's tool list: every system the workflow touches, not just what the agent calls directly. If a system appears in Data Requirements but isn't listed here, that's a gap. If a system is listed but nobody has confirmed access, that's a Build blocker. Name it now.
+
+**Data Requirements.** For each source: what the specific data element is, where it lives, what format it arrives in, and what happens when it's missing, stale, or malformed — escalate, halt, or default? The pricing exceptions file is the stress test: it exists, it's on Elena's desktop, it was last updated eight months ago, and there's no documented update process. Three data-quality gaps that need answers before Build begins.
+
+**Success Criteria.** Copy the measurable targets from the Constraint Statement in Signal. These are the numbers Build optimizes for and Deliver measures against. Don't add goals that weren't in Signal — the Design Brief isn't the place to expand scope.
+
+**Constraints and Guardrails.** The five governance answers from the previous chapter: data access (what agents can read and can't), permitted actions (what they can do without approval), escalation path (who gets flagged, how fast, what the agent does while it waits), quality monitoring cadence, and kill switch conditions. If any answer is "we haven't decided yet," that's the decision you make now.
+
+**V1 Artifact.** Name what the first working version produces. Is it a formatted document, an automated data pipeline, a notification, a dashboard? Name the artifact, the format, who receives it, and the standard it has to meet. If you can't describe V1 without hedging, the design isn't finished.
+
+### Meridian's *Design Brief*
+
+| Section | Meridian — Quoting Sprint |
+|---|---|
+| **1. Workflow summary** | Trigger: inbound RFQ email. Steps: auto-log to HubSpot → Quote Research Agent pulls customer history → Quote Pricing Agent assembles material and labor costs → Quote Assembly Agent produces draft PDF → Elena reviews and approves → Ty delivers to customer. Seven steps, four handoff crossings. |
+| **2. Stakeholders** | Human Orchestrator: Elena Ruiz (VP Ops). Role changes: Elena moves from building quotes to reviewing drafts; Ty moves from chasing Elena to working from a structured CRM queue. Downstream consumer: Ty Banfield (Sales Lead). Approver: Elena on every quote. |
+| **3. Systems** | HubSpot CRM (customer records, RFQ intake, quote delivery queue). JobBOSS ERP (material pricing, lead times). Customer Notes.xlsx (112 validated pricing exception rules). Google Workspace (standard quote template). |
+| **4. Data requirements** | Customer history: HubSpot, structured records, complete for all active accounts. Material pricing: JobBOSS, updated nightly. Pricing exceptions: validated Excel file, 112 rows (from 147 raw rules in Source, cleaned and validated), loaded as standing context. If exceptions file is missing or stale: escalate to Elena before running. |
+| **5. Success criteria** | Quote turnaround from 3 days to same-day. Elena's quoting hours from 15/week to under 3. Revenue recovered from delayed quotes: target $558K annualized. |
+| **6. Constraints and guardrails** | Agents read HubSpot and JobBOSS; no write access except draft quote record. No external communications. Escalate if pricing confidence below 60% or if any exception rule is ambiguous. Kill switch: Ty or Elena can halt the workflow from HubSpot with a single flag. Quality review: Elena audits weekly aggregate accuracy. |
+| **7. V1 artifact description** | A draft PDF quote in Meridian's standard format, placed in Elena's HubSpot review queue within 2 hours of RFQ receipt. Elena approves or marks for revision before the quote leaves the building. |
+
+Here is the blank template. Fill it in for the Sprint you're running. Build inherits this document as-is.
 
 | Section | Your Sprint |
 |---|---|
 | **1. Workflow summary** | _(trigger to output, every step, every handoff, every decision)_ |
 | **2. Stakeholders** | _(Human Orchestrator, role-change list, downstream consumers, approvers)_ |
 | **3. Systems** | _(every system touched, with the specific data each provides or receives)_ |
-| **4. Data requirements** | _(what data, where it lives, what format, what happens when it is missing)_ |
+| **4. Data requirements** | _(what data, where it lives, what format, what happens when it's missing)_ |
 | **5. Success criteria** | _(measurable targets from Signal that this design has to move)_ |
 | **6. Constraints and guardrails** | _(data access, action permissions, escalation paths, quality cadence, kill switch)_ |
-| **7. V1 artifact description** | _(what the first working version produces: interface, document, pipeline, dashboard)_ |
-
-Here's what Meridian's filled-in Design Brief looked like for the quoting Sprint:
-
-| Section | Meridian — Quoting Sprint |
-|---|---|
-| **1. Workflow summary** | Trigger: inbound RFQ email. Steps: auto-log to HubSpot → Quote Research Agent pulls customer history → Quote Pricing Agent assembles material and labor costs → Quote Assembly Agent produces draft PDF → Elena reviews and approves → Ty delivers to customer. Seven steps, four handoff crossings. |
-| **2. Stakeholders** | Human Orchestrator: Elena Ruiz (VP Ops). Role changes: Elena moves from building quotes to reviewing drafts. Downstream consumer: Ty Banfield (Sales Lead). Approver: Elena on every quote. |
-| **3. Systems** | HubSpot CRM (customer records, RFQ intake, quote delivery queue). JobBOSS ERP (material pricing, lead times). Customer Notes.xlsx (112 pricing exception rules). Google Workspace (standard quote template). |
-| **4. Data requirements** | Customer history: HubSpot, structured records, complete for all active accounts. Material pricing: JobBOSS, updated nightly. Pricing exceptions: validated Excel file, 112 rows, loaded as standing context. If exceptions file is missing or stale: escalate to Elena before running. |
-| **5. Success criteria** | Quote turnaround from 3 days to same-day. Elena's quoting hours from 15/week to under 3. Revenue recovered from delayed quotes: target $558K annualized. |
-| **6. Constraints and guardrails** | Agents read HubSpot and JobBOSS; no write access except draft quote record. No external communications. Escalate if pricing confidence below 60% or if any exception rule is ambiguous. Kill switch: Ty or Elena can halt the workflow from HubSpot with a single flag. Quality review: Elena audits weekly aggregate accuracy. |
-| **7. V1 artifact description** | A draft PDF quote in Meridian's standard format, placed in Elena's HubSpot review queue within 2 hours of RFQ receipt. Elena approves or marks for revision before the quote leaves the building. |
-
-### Specify every agent with a six-field *mini-spec*.
-
-The Design Brief's hardest job is specifying each agent precisely enough that Build can execute without guessing. For every agent named in your Hybrid Accountability Chart, write a mini-spec covering six fields. These six come from the agent-anatomy concept introduced in the Co-Operating Model chapter: system prompt, tools, context sources, memory rules, judgment and escalation rules, and oversight load.
-
-**1. System prompt.** The operating rules: what the agent does and, just as explicitly, what it doesn't do. "Assemble draft quotes from upstream research and pricing outputs. Do not calculate prices. Do not contact customers or suppliers. Do not access any system outside the defined scope."
-
-**2. Tools.** What the agent is allowed to call: APIs (application programming interfaces, how systems talk to other systems), search, file access, integrations. Name every one. If a tool isn't listed, the agent doesn't get it.
-
-**3. Context sources.** Which rows of your Knowledge Map feed this agent. Cross-reference directly. "Quote Research Agent receives: ERP job costing history (Retrieved knowledge row 1), CRM customer records (Retrieved knowledge row 2), Elena's pricing exceptions database (Standing context row 1)."
-
-**4. Memory rules.** What the agent tracks across runs. Session state (what does it carry from one step to the next?), accumulated decisions (what previous outputs does it reference?), and any lookback window that governs how far back it reasons.
-
-**5. Judgment and escalation rules.** When the agent escalates, and what it refuses outright. The refusal list is the most important part: "Escalate if confidence score falls below 60%. Escalate if no historical match within 25% spec similarity. Refuse any action that would create an external communication. Refuse any access to systems outside the defined list."
-
-**6. Oversight load.** Low, medium, or high. Oversight draws on the reviewer's mental bandwidth, the same bandwidth the human is spending on everything else, so assign it deliberately. A high-load agent reviewing every output is a different design choice than a low-load agent that only surfaces exceptions. You're deciding how much of the Human Orchestrator's attention this agent claims.
-
-Here is the blank mini-spec template. Copy it once per agent on your Hybrid Accountability Chart.
-
-| Field | This agent |
-|---|---|
-| **System prompt** | _(operating rules: what the agent does, what it does not decide. Three to five sentences.)_ |
-| **Tools** | _(every API, integration, or system the agent can call. Named. If a tool isn't listed, the agent doesn't get it.)_ |
-| **Context sources** | _(which Knowledge Map rows feed this agent. Cross-reference the row directly.)_ |
-| **Memory rules** | _(what carries across runs. Session state, accumulated decisions, lookback window. "None" is a valid answer.)_ |
-| **Judgment and escalation rules** | _(when the agent escalates, what it refuses outright, what triggers a hand-off.)_ |
-| **Oversight load** | _(Low / Medium / High. Three-agent ceiling per Human Orchestrator.)_ |
-
-#### Check span of control against the three-agent *ceiling*.
-
-When your Hybrid Accountability Chart assigns more than three concurrent agents to one Human Orchestrator, that Human Orchestrator needs to justify why the load doesn't tip into overload. Per Bedard's three-agent ceiling (from Designing the System), the ceiling isn't a hard stop, but it's a design question you answer explicitly. If Elena supervises four agents, what is the review structure that prevents cognitive overload? If the answer is "she'll manage," the design isn't finished.
-
-#### Confirm Human Orchestrator capability: trace, challenge, *apply*.
-
-Next to each mini-spec, confirm three things about the Human Orchestrator (the capability tests introduced in Designing the System):
-
-- **Trace.** Can the Human Orchestrator trace the agent's decision back to its inputs? If the agent produced this output, can the Human Orchestrator reconstruct why? If not, the agent's reasoning is opaque and the Human Orchestrator is rubber-stamping, not reviewing.
-- **Challenge.** Can the Human Orchestrator challenge a specific output and get a real revision? Not just reject the whole document. Target a specific line, explain what's wrong, and watch the agent correct that piece. If the challenge loop doesn't work, the oversight is theater.
-- **Apply expertise.** Where does the Human Orchestrator apply expertise the agent can't replicate? If every output could ship without the Human Orchestrator's input, the Human Orchestrator isn't in the loop. They're a speed bump. Name the expertise explicitly: "Elena applies fourteen years of customer-relationship knowledge to catch pricing decisions that look right on paper but signal relationship risk the data doesn't show."
-
-#### Worked example: the Quote Assembly *Agent*.
-
-Elena Ruiz's quoting team has three agents. Here's the mini-spec for the Quote Assembly Agent, the last agent in the chain:
-
-| Field | Detail |
-|---|---|
-| **System prompt** | Assemble draft PDF quotes in Meridian's standard format using data provided by the Quote Pricing Agent. Do not calculate, modify, or estimate any pricing. Do not contact customers, suppliers, or any external party. Do not access any system not listed in the tools field. All output is a draft until Elena Ruiz approves. If the Pricing Agent output is incomplete, flag it and stop. |
-| **Tools** | HubSpot CRM (read: customer contact information, RFQ reference, delivery queue; write: draft quote record only). Google Workspace (write: populate standard quote template). n8n workflow API (n8n is a no-code automation tool that connects systems and triggers actions between them — more in the Build chapter; output: place completed draft in Elena's review queue). No other access. |
-| **Context sources** | Standard rate card (Standing context, loaded on every run). Meridian quote template (Standing context, format reference). Customer name and contact from HubSpot record (Retrieved per-run). |
-| **Memory rules** | No session-to-session memory. Each assembly run is triggered fresh from the Pricing Agent's output for that RFQ. The agent does not reference prior quote drafts. |
-| **Judgment and escalation rules** | Escalate to Elena if the Pricing Agent output contains any field marked "incomplete" or "manual pricing required." Refuse to generate a quote if the pricing confidence score is below 60%. Refuse to place anything in the customer-delivery queue. Output goes to Elena's review queue only. |
-| **Oversight load** | High in Sprint 1. Elena reviews every draft. Target: move to medium (spot-check on exceptions) after three consecutive weeks with zero substantive corrections on format and assembly. Autonomy is earned through demonstrated accuracy. The Assembly Agent earns reduced review frequency when the data supports it. |
-
-**Human Orchestrator capability check for Elena (Quote Assembly Agent):**
-
-- *Trace:* Elena can open any draft quote, see the Pricing Agent output that fed it, and confirm each line maps to a source. The audit trail is visible in the CRM. If the quote shows a material cost, Elena can trace it to the pricing database row it came from.
-- *Challenge:* If the quote format is wrong, Elena can note the specific field, mark the draft for revision, and the workflow re-triggers assembly with the correction. She has targeted the mistake; the agent corrects that piece.
-- *Apply expertise:* Elena catches cases where the quote is technically correct but contextually wrong. A price that's within spec for this customer's standard terms can still be too high for the relationship context of this specific bid. That judgment call is hers. The agent can't hold it.
-
-The Design Brief feeds the Build Spec in the next chapter. The Build Spec is derived from the Design Brief. The Design Brief says *what* the system should do and *why*. The Build Spec restates the relevant sections at developer-execution depth. It adds the three things Design doesn't own:
-
-- Agent scope at the call level
-- Failure-mode behavior
-- The specific deployment target
-
-A gap in the Design Brief becomes a question in Build. Close the gaps here.
+| **7. V1 artifact description** | _(what the first working version produces: document, pipeline, dashboard, notification)_ |
 
 ## Prototype before you *build*.
 
-Design isn't finished when the workflow looks right on paper. It's finished when you've confirmed that the people who'll use the output understand what they're getting and agree it solves the constraint.
+Design is finished when the people who'll use the output understand what they're getting and agree it solves the constraint. There's one way to check.
 
-Run the agent workflow on one real input. Take an actual bid request from last week and run it through the designed quoting workflow. Show the Human Orchestrator the draft quote the agent produced. Show the team members who will use it the handoff format. Ask two questions: Does this output look right? Does this workflow match how you'd actually use it?
+Run the agent workflow on one real input. Take an actual bid request from last week and run it through the designed quoting workflow. Show the Human Orchestrator the draft the agent produced. Show the team members who'll use it the handoff format. Ask two questions: Does this output look right? Does this workflow match how you'd actually use it?
 
-The answers will surprise you. The quote format makes sense to you but confuses the sales team. The handoff between the agent and the human reviewer doesn't include a field the reviewer needs. The escalation trigger fires on cases that don't actually need escalation. Every one of those findings is a design fix that costs minutes now and would cost hours in Build.
+The answers will surprise you. The quote format makes sense to you but confuses the sales team. The handoff between the agent and the reviewer doesn't include a field the reviewer needs. The escalation trigger fires on cases that don't actually need escalation. Every one of those findings is a design fix that costs minutes now and would cost hours in Build.
 
 :::{.callout-tip}
 ## Pro Tip
 Stakeholder surveys work here too — especially when the agent team's output reaches people outside the immediate workflow. If the quoting agent produces something a customer will see, ask three customers what they'd think of the new format. Five responses are enough to catch the design gaps that internal review misses.
 :::
 
-It's a steady loop: design a piece, prototype it, get feedback, adjust. The Compound Sprint is short enough that this loop runs naturally if you start prototyping early. If you wait until the design feels "complete" before testing it, you discover in Build that the design doesn't match reality. Test early.
-
 ## Design is the gate. Hold *it*.
 
 Nothing past Design begins until Design is locked.
 
-Teams that find Build slow or complicated are almost always teams that moved through Design too quickly — they discovered mid-build that there were decisions nobody had made, handoffs nobody had specified, supervision arrangements nobody had named. Every one of those discoveries is a piece of Design surfacing where it doesn't belong.
+Teams that find Build error-prone are almost always teams that moved through Design too quickly. What surfaces mid-build as errors is usually a decision, a handoff, or an oversight arrangement nobody named.
 
-A locked Design has five things. Before you move to Build, check your own Design against this list:
+A locked Design has five things. Check your own against this list before moving to Build:
 
 - [ ] Every task in the constraint workflow is classified — Work Deconstruction complete, three TML categories (Task / Management / Leadership), no unclassified items
 - [ ] Every accountability has a Hybrid Accountability Chart entry with all four fields filled and a named Human Orchestrator
@@ -264,24 +338,21 @@ A locked Design has five things. Before you move to Build, check your own Design
 - [ ] AI-Assisted vs. Automated is decided for each agent team, with a rationale — not just a box checked
 - [ ] Constraints and guardrails are defined: data access boundaries, action permissions, escalation paths, quality monitoring cadence, and a kill switch
 
-That fifth item deserves emphasis. Before the design is locked, define what the agents *aren't* allowed to do. What data is off-limits. What actions require human sign-off. What happens when the agent encounters something outside its designed scope. What error rate triggers a shutdown. These are governance decisions, and they belong in Design — not discovered in Build after something goes wrong.
+{{< excalidraw ch06b-design-gate-checklist "Design Gate checklist: five items that must all be checked before Build begins." >}}
+
+That fifth item deserves emphasis. Before the design is locked, define what the agents aren't allowed to do. What data is off-limits. What actions require human sign-off. What happens when the agent encounters something outside its designed scope. What error rate triggers a shutdown. These are governance decisions, and they belong in Design — not discovered in Build after something goes wrong.
+
+When those five are in place, Build can begin. Until they're in place, it can't. Holding that line is the difference between Sprints that produce a designed workflow you can compound on and Sprints that produce code nobody uses.
 
 :::{.callout-note}
 ## Action Step
 Run the five-item Design Gate checklist against your current Sprint's design. If any item has a gap, that gap is your next working session — not your next Build discovery. Fix it now.
 :::
 
-:::{.callout-note}
-## Action Step
-Open the Design Brief template and fill in every section you can answer from the current Sprint. Every blank is a Design decision that hasn't been made yet. Schedule the decision that closes each blank before Build begins.
-:::
+## Reflect on your operation
 
-When those five are in place, Build can begin. Until they're in place, it can't. Holding that line is the difference between Sprints that produce a designed workflow you can compound on and Sprints that produce code nobody uses.
+1. Run Work Deconstruction on one real role in your company — not the job description, the actual weekly work. What percentage of tasks land in **Leadership (Human Judgment Required)** versus **Task** and **Management**? If more than half land in Leadership, challenge each one: is it true judgment, or a consistent pattern no one has surfaced yet?
+2. For each agent you've named in your Hybrid Accountability Chart, can you write its system prompt right now? Three to five sentences: what it does, what it decides, what it doesn't, and the hard boundary that keeps it in scope. If you can't, the agent isn't specified yet.
+3. Look at your Human Orchestrator. Can they trace an agent output back to its inputs, challenge a specific line and get a real revision, and name the expertise they apply that the agent can't replicate? If any of those three is a no, name what has to change.
 
-The next chapter is Build — the phase where the designed workflow becomes a deployable system. The spec is written at developer-execution depth. The guardrails and oversight decisions Design locked are already set.
-
-## Reflection Questions
-
-1. Run Work Deconstruction on one real role in your company — not the job description, the actual weekly work. What percentage of tasks land in **Leadership (Human Judgment Required)** versus **Task** and **Management**? If more than half land in Leadership, challenge each one: is it genuinely judgment, or is it judgment because no one has written the rules down?
-2. Run the five-item Design Gate checklist against your current Sprint's design. Which item is hardest to check off — and what would have to happen in the next working session to clear it?
-3. Have you shown the designed output to the stakeholder who will live with it daily? What surprised them?
+The next chapter is Build — where the designed workflow becomes a deployable system. The spec is written at developer-execution depth. The guardrails and oversight decisions you locked in Design are already set.

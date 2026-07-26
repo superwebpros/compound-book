@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Work Deconstruction — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: work-deconstruction.md</div>
+<p>Compound · Design / Work Design</p>
+<h1>Work Deconstruction</h1>
+<p>Classify every task in the constraint workflow using the TML framework — Task, Management, Leadership — so each one becomes a row in the Hybrid Accountability Chart with its own supervisor and autonomy level.</p>
+<p>Work Deconstruction applies the TML framework from Source to the work itself. Where Source used TML to categorize what the organization knows, here you use it to categorize what the work <em>requires</em> — task by task, with its real inputs and outputs named. The output is a classified task table plus the Hybrid Accountability Chart entries that Build inherits. Done honestly, it usually shows that a role assumed to be judgment-heavy is mostly retrieval and assembly.</p>
+<p><strong>Before you start:</strong> Pick the one role (or one workflow) that sits on your constraint from Signal. Have the previous chapter&#x27;s Source work in front of you — you already know where each task&#x27;s data lives.</p>
+<p>Fill in the classified task table, one row per task:</p>
+<table>
+<tr><th>Task</th><th>Category</th><th>Source / Input</th><th>Output / Destination</th><th>Rationale</th></tr>
+<tr><td>_(the actual weekly task)_</td><td>_(Task / Management / Leadership)_</td><td>_(system, person, or document the data comes from)_</td><td>_(where the result goes next)_</td><td>_(why it sorts here)_</td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+<p>Then run the five steps below to build and pressure-test it.</p>
+<hr>
+<h2>Pull the actual accountability list</h2>
+<p>Job descriptions are sanitized; the real weekly task list is what gets classified — you can&#x27;t sort what you haven&#x27;t named.</p>
+<ol><li>List every accountability the role owns from the existing Accountability Chart, not the job description. The job description will be cleaner than reality — ignore it.</li><li>Add anything the person actually touches every week that the chart doesn&#x27;t capture. The target is the real list of work, not the tidy version.</li><li>Break compound items into single tasks (&quot;handle quotes&quot; becomes receive RFQ, pull history, look up pricing, assemble draft, review, deliver). One row per task you could hand off on its own.</li></ol>
+<blockquote><strong>Jesse:</strong> Before posting a listing for a second project coordinator at $24K, we ran the role through Work Deconstruction. We listed every accountability she owned on the existing Accountability Chart, not her job description. The job description was cleaner than reality. Her actual list was the work she touched every week.</blockquote>
+<h2>Document source inputs and outputs for each task</h2>
+<p>Connecting each task to where its data comes from and where the result goes makes the information flow from Source concrete at the task level.</p>
+<ol><li>For each task, name the <strong>source input</strong> — the specific system, person, or document the data comes from (e.g., &quot;HubSpot CRM,&quot; &quot;Customer Notes.xlsx,&quot; &quot;Dave&#x27;s labor estimate&quot;). If you did the Source work properly, you already know these.</li><li>Name the <strong>output / destination</strong> — where the result goes next, and to whom (e.g., &quot;draft PDF to Elena&#x27;s review queue,&quot; &quot;approved quote to Ty for delivery&quot;).</li><li>Where a task feeds an agent, note which agent (e.g., &quot;→ Quote Pricing Agent&quot;). The chain of inputs and outputs is the information flow from the previous chapter, written at task level.</li></ol>
+<blockquote><strong>Meridian example.</strong> For the quoting constraint, &quot;Look up material pricing&quot; drew its input from JobBOSS ERP (materials database, supplier pricing) and sent its output — material costs, lead times, out-of-stock flags — to the Quote Pricing Agent. Every task in the deconstruction names its system in and its destination out.</blockquote>
+<h2>Apply the TML sorting question to each task</h2>
+<p>A single binary question — would the output need human review every time, or only on exceptions? — assigns every task to Task, Management, or Leadership without ambiguity.</p>
+<ol><li>For each task ask the one sorting question: <em>&quot;If I gave an agent this task, would the output need human review every time, or only when something goes wrong?&quot;</em></li><li>Sort by the answer. Only on exceptions → <strong>Task</strong> (Fully Automatable), including pure workflow automation where data routes between systems with no agent in the middle. Every output needs review → <strong>Management</strong> (AI-Assisted). The answer depends on who the client is, what happened last week, or a judgment call with no clear rule → <strong>Leadership</strong> (Human Judgment Required).</li><li>When unsure, start a task at <strong>Management (AI-Assisted)</strong>. Autonomy is earned over multiple Sprints once the agent proves itself, not assigned up front.</li></ol>
+<blockquote><strong>Meridian example.</strong> &quot;Cross-reference Customer Notes.xlsx for pricing exceptions&quot; sorted to Management (AI-Assisted): 112 customer-specific rules, some simple discounts and others with context the spreadsheet doesn&#x27;t fully capture, so Elena reviews every output until the exception set is validated. &quot;Review and approve quote&quot; sorted to Leadership — her judgment catches strategic-account and margin calls the rules miss.</blockquote>
+<h2>Tally the three buckets and challenge the Leadership pile</h2>
+<p>If more than half land in Leadership, each item must be re-examined — genuine judgment stays, but undocumented rules that look like judgment get reclassified.</p>
+<ol><li>Count the tasks in each bucket: Task, Management, Leadership. Write the three numbers down.</li><li>If <strong>more than half land in Leadership (Human Judgment Required)</strong>, challenge each one: is this genuinely judgment, or is it judgment only because nobody has written down the rules?</li><li>Reclassify anything that turns out to be a documentable rule down into Management or Task. Genuine judgment — depends on knowing the client, the history, reading a room — stays in Leadership.</li></ol>
+<blockquote><strong>Meridian example.</strong> The role that felt like &quot;Elena&#x27;s judgment&quot; tallied 3 Task, 2 Management, 2 Leadership. Roughly 65% of the work was data retrieval and document assembly — it required her <em>access</em>, not her judgment. The remaining 35% stayed with her because the deconstruction showed the judgment genuinely couldn&#x27;t be removed.</blockquote>
+<h2>Map each classified task to a Hybrid Accountability Chart entry</h2>
+<p>Deconstruction is thinking; the chart entry — function, agent team, supervisor, autonomy level — is what makes that thinking durable and actionable for Build.</p>
+<ol><li>Roll the classified tasks up into functions and create one Hybrid Accountability Chart entry per function: <strong>Role / Function, Agent Team, Human Supervisor, Level</strong>. (If you run EOS, this extends your existing Accountability Chart — agent teams and their supervisors alongside your people.)</li><li>Give every row a named human supervisor. Task-level workflow automation may have no agent team, but it still has an accountable human. No anonymous rows.</li><li>Set every agent team&#x27;s starting Level to AI-Assisted (the human reviews every output and holds final authority). Moving toward Automated is a promotion the agent earns over Sprints, not a default.</li></ol>
+<blockquote><strong>Meridian example.</strong> The deconstruction produced five chart entries — including &quot;Material and labor pricing assembly → Quote Pricing Agent → Elena Ruiz (VP Ops) + Dave Kowalski → AI-Assisted&quot; and &quot;Quote delivery and customer follow-up → None → Ty Banfield (Sales Lead) → N/A.&quot; Every row has a name, every agent team has a supervisor, and all agent outputs start AI-Assisted: Elena reviews every quote.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Hand the deconstruction to someone who didn&#x27;t run it — or to the person doing Build. They should be able to see what each task is, where its data comes from, where its result goes, why it sorts where it does, and who supervises it, without coming back to ask. Check:</p>
+<ul><li>[ ] The task list came from the <strong>actual accountability list</strong>, not the job description, broken into single hand-off-able tasks.</li><li>[ ] Every task names a <strong>source input</strong> and an <strong>output / destination</strong> — system, person, or document, in and out.</li><li>[ ] Every task carries a <strong>TML category</strong> answered by the sorting question — no unclassified items.</li><li>[ ] The three buckets are <strong>tallied</strong>, and if Leadership held more than half, each item was challenged and reclassified or kept on purpose.</li><li>[ ] Every classified task rolls up into a <strong>Hybrid Accountability Chart entry</strong> with a named supervisor and a starting Level (agent teams start AI-Assisted).</li></ul>
+<p>If any box is blank, the deconstruction isn&#x27;t ready for Build — finish it here, not in Build.</p>
+</body></html>

@@ -249,7 +249,7 @@ Elena's role shifted.
 #### Artifact: Design Gate Checklist
 
 - [x] Every task in the constraint workflow is classified — Work Deconstruction complete, four categories, no unclassified items
-- [x] Every accountability has a Hybrid Accountability Chart entry with all four fields filled and a named supervisor
+- [x] Every accountability has a Hybrid Accountability Chart entry with all four fields filled and a named Human Orchestrator
 - [x] The Human Orchestrator (Elena) is named — with irreducible decisions and escalation triggers documented
 - [x] AI-Assisted vs. Automated is decided for each agent team, with a rationale: all agent outputs are AI-Assisted (Elena reviews every quote) because the exception rules aren't fully captured and the agent is new
 - [x] Guardrails are defined: data access boundaries (CRM + ERP read, no financial reporting or HR), action permissions (draft only, never send to customer), escalation paths (low-confidence to Elena, unknown material to Carlos), quality monitoring (Elena reviews 100% in Sprint one), and kill switch (any quote sent without review, pricing error >20% on three quotes in a week, or data access outside defined scope)
@@ -314,7 +314,7 @@ Dave's estimation method became a structured skill within the Claude project —
 | **Agent capabilities** | Quote Research Agent: match incoming RFQs to historical jobs, surface customer context and pricing terms. Quote Pricing Agent: calculate draft pricing using historical matches, rate card, labor estimates, and exception rules. Quote Assembly Agent: generate formatted PDF quote document in Meridian's standard template. |
 | **Access/permissions** | Agents can read: CRM deal records, ERP job costing history, ERP rate card, cleaned pricing exceptions database, Dave's estimation framework. Agents cannot access: financial reporting, employee records, customer payment history, supplier contracts, or any system not listed. No agent can send external communications. |
 | **Guardrails** | All outputs are drafts until Elena approves. Agent flags any RFQ it can't match to historical work (confidence below 60%). Agent flags any pricing deviation >15% from closest historical match. Agent cannot apply undocumented exceptions. Kill switch: any quote reaching a customer without human review, pricing errors >20% on three quotes in any week, or data access outside defined scope. Elena holds the kill switch. |
-| **Human supervisor** | Elena Ruiz, VP of Operations. Reviews every draft quote. Approves, edits, or escalates. Target review time: 15-20 minutes per quote. |
+| **Human Orchestrator** | Elena Ruiz, VP of Operations. Reviews every draft quote. Approves, edits, or escalates. Target review time: 15-20 minutes per quote. |
 
 ### Deliver
 

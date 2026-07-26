@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Measure the Sprint Outcome — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: sprint-outcome-measurement.md</div>
+<p>Compound · Deliver / Sprint Outcome</p>
+<h1>Measure the Sprint Outcome</h1>
+<p><em>Prove the Sprint against the cost Signal named — two numbers, one sentence — so the next Sprint earns the right to start.</em></p>
+<p>This worksheet produces the artifact Compound works against: a five-row outcome table plus an adoption rate, summed into one outcome sentence that mirrors the original Signal statement. Deliver&#x27;s first responsibility is to measure the Sprint against Signal&#x27;s quantified cost — the difference between &quot;deployed&quot; and &quot;delivered&quot; is whether you can prove the work changed with a number tied to the constraint.</p>
+<p><strong>Before you start, you need two things in hand:</strong> your original Signal instrument (the Constraint Statement and its quantified cost) and your operational log from the last two weeks of production. Don&#x27;t reconstruct the baseline from memory. Pull it from the source.</p>
+<hr>
+<h2>Pull the Signal statement and quantified cost</h2>
+<p>The baseline must come from the original Signal instrument — same metric, same unit — so the comparison is apples-to-apples.</p>
+<ol><li>Copy the Constraint Statement from your Signal instrument word-for-word into the <strong>Signal statement</strong> row. Don&#x27;t paraphrase it to sound better; the outcome sentence has to mirror it later.</li><li>Copy the quantified cost exactly as Signal wrote it into the <strong>Cost at start</strong> row — the dollars, hours, or margin, with the unit attached.</li><li>Note the metric, the unit, and the timeframe the cost was measured over. You will measure the <em>same</em> metric, the <em>same</em> unit, the <em>same</em> timeframe in the next step.</li></ol>
+<blockquote><strong>Meridian — Signal pulled forward:</strong> Signal statement: &quot;Elena Ruiz is the sole quoting bottleneck. Every quote runs through her — $558K/year in lost revenue, misallocated time, and shop floor underutilization.&quot; Cost at start: 3.8-day average turnaround; ~15 hrs/week of Elena&#x27;s time; capacity capped at 8–10 quotes/week.</blockquote>
+<hr>
+<h2>Measure the same metric in production (result after Sprint)</h2>
+<p>An imperfect measurement beats a vibe; write the number even when the original Signal quantification was loose.</p>
+<ol><li>Measure the same metric now — same unit, same timeframe, same source as the Cost at start row — and write it in the <strong>Result after Sprint</strong> row.</li><li>If the original Signal number was loose (e.g., &quot;around 8 hours a week&quot;), write the production number down anyway. A move from &quot;around 8 hours&quot; to &quot;30 minutes a week&quot; is real recovery and good enough to report. Note that the loose baseline is a Signal lesson for the next Sprint, not a reason to skip the measurement.</li><li>Refuse both traps: don&#x27;t declare victory without evidence, and don&#x27;t let imperfect evidence become an excuse to claim nothing happened. No spin, no three-decimal-place ROI.</li></ol>
+<blockquote><strong>Meridian — Result after Sprint:</strong> 4.2-hour average turnaround on standard work; ~5 hrs/week of Elena&#x27;s time; 18–22 quotes/week. Plus $47K in new revenue in the first month from bids that would previously have arrived too late.</blockquote>
+<hr>
+<h2>Compute the delta</h2>
+<p>Leadership needs to see what moved, not a narrative — the delta makes the change legible.</p>
+<ol><li>Subtract the <strong>Result after Sprint</strong> from the <strong>Cost at start</strong> for each metric and write the change in the <strong>Delta</strong> row, quantified (a percentage, a count, a dollar figure).</li><li>Express each delta the way a leadership team reads fastest — &quot;reduced 89%,&quot; &quot;recovered 10 hrs/week,&quot; &quot;volume doubled&quot; — not as a paragraph.</li><li>Keep the delta to what actually moved. If a metric didn&#x27;t change, say so; don&#x27;t pad the row.</li></ol>
+<blockquote><strong>Meridian — Delta:</strong> Turnaround reduced 89%. Elena recovered 10 hrs/week. Quote volume doubled. First-month revenue recovery: $47K.</blockquote>
+<hr>
+<h2>Write the outcome in one sentence</h2>
+<p>The outcome sentence mirrors the Signal statement and becomes the artifact Compound works against.</p>
+<ol><li>Write one sentence in the <strong>Outcome in one sentence</strong> row that names what the Sprint produced, stated plainly: what the workflow removed or changed, the headline number, and the business result.</li><li>Check that the sentence mirrors the Signal statement — it should answer the constraint Signal named, in the same terms.</li><li>If you can&#x27;t produce this sentence, stop and diagnose before declaring the Sprint done. An outcome you can&#x27;t state in one sentence is an outcome you can&#x27;t prove.</li></ol>
+<blockquote><strong>Meridian — Outcome in one sentence:</strong> Three-agent quoting pipeline removed Elena as the bottleneck on standard work, cut turnaround from 3.8 days to 4.2 hours, and produced $47K in new revenue in month one by letting Meridian quote fast enough to win jobs they used to lose.</blockquote>
+<p><strong>Your completed table:</strong></p>
+<table>
+<tr><th>Field</th><th>Entry</th></tr>
+<tr><td><strong>Signal statement</strong></td><td></td></tr>
+<tr><td><strong>Cost at start</strong></td><td></td></tr>
+<tr><td><strong>Result after Sprint</strong></td><td></td></tr>
+<tr><td><strong>Delta</strong></td><td></td></tr>
+<tr><td><strong>Outcome in one sentence</strong></td><td></td></tr>
+</table>
+<hr>
+<h2>Calculate and report adoption rate (week-two window)</h2>
+<p>Operational improvement and adoption rate together diagnose whether a low result is a Design problem or a change-management problem.</p>
+<ol><li>Set the <strong>denominator</strong>: the named roles from the Hybrid Accountability Chart whose handoffs changed in <em>this</em> Sprint — not enterprise-wide users, not licensed seats, just the specific people whose work changed.</li><li>Set the <strong>numerator</strong>: the named people observably running their work through the designed workflow, visible in the operational log. &quot;Use&quot; means the person&#x27;s work went through the designed path, not around it out of habit.</li><li>Divide numerator by denominator, report the percentage as of <strong>week two after launch</strong> (the same window the operational log&#x27;s first review cadence closes on), and read it against the operational result:</li></ol>
+<ul><li><strong>High adoption + modest operational improvement</strong> → Design problem. The constraint was named right but the workflow wasn&#x27;t built to solve it at the projected cost.</li><li><strong>Low adoption + strong operational improvement</strong> on the work that did flow through → absorption problem. The design works; the organization hasn&#x27;t adopted it yet.</li></ul>
+<p>   The next Sprint adjusts the workflow design or the change-management approach depending on which number is low.</p>
+<blockquote><strong>Meridian — Adoption read:</strong> Denominator is the named roles from the Hybrid Accountability Chart whose handoffs changed — Elena and the engineers running quotes through the new pipeline, not all of Meridian. Numerator is the people whose work actually went through the designed path in the operational log, measured at week two. Reported alongside the operational result so the team can tell whether a soft number is a Design problem or an absorption problem.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Run this test before the outcome leaves your hands:</p>
+<ul><li><strong>The baseline came from the Signal instrument</strong>, copied word-for-word — not reconstructed from memory or quietly improved to make the delta look bigger.</li><li><strong>The Result after Sprint uses the same metric, unit, timeframe, and source as Cost at start</strong> — apples-to-apples, even if the original number was loose.</li><li><strong>Both numbers are on the page: the operational result (the five-row table) and the adoption rate</strong> measured at week two. One number alone is incomplete.</li><li><strong>The outcome sentence mirrors the Signal statement</strong> and states what the Sprint produced in plain language someone in leadership could repeat without the table in front of them.</li></ul>
+<p>When all four are true, you have the artifact Compound works against. If you can&#x27;t produce the outcome sentence, stop and diagnose before declaring the Sprint done.</p>
+</body></html>

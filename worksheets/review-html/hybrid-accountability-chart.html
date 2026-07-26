@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Build the Hybrid Accountability Chart — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: hybrid-accountability-chart.md</div>
+<p>Compound · Integrate / Designing the System</p>
+<h1>Build the Hybrid Accountability Chart</h1>
+<p>Put a named owner against every lane of the workflow — human and agent — before Build begins.</p>
+<p>You traced the work as information flow and drew the swim lanes. Now you assign ownership. The Hybrid Accountability Chart takes those lanes and puts a name against each one: one accountability, one named human supervisor, and (where applicable) one named agent team doing the execution work underneath. The accountability never moves from human to agent — only the execution work does. Work one Sprint at a time, one row per accountability your Sprint touches.</p>
+<p><strong>Before you start:</strong> Have your Information Flow Specification (the swim lanes) and your Knowledge Map in front of you. The chart is the answer to &quot;who owns each lane,&quot; so you need the lanes first.</p>
+<p>Fill in the four-column chart, one row per accountability:</p>
+<table>
+<tr><th>Role / Function</th><th>Agent Team</th><th>Human Supervisor</th><th>Level</th></tr>
+<tr><td>_(outcome the row owns, not a task)_</td><td>_(named agent team, or None)_</td><td>_(one human, no shared rows)_</td><td>AI-Assisted / Automated / N/A</td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+</table>
+<p>Then run the six steps below to make each row real.</p>
+<hr>
+<h2>Name the role/function as an outcome, not a task</h2>
+<p>Define what the row is accountable <em>for</em> — the outcome, not the activity.</p>
+<ol><li>For each accountability your Sprint touches, write the outcome the row owns: the measurable result a supervisor would defend in a meeting.</li><li>Stress-test the phrasing. If it reads like a task a junior could finish in an hour (&quot;look up pricing&quot;), rewrite it as the outcome that work serves.</li><li>Confirm each row names one outcome, not a bundle of three. Split it if it does.</li></ol>
+<blockquote><strong>Meridian example.</strong> Elena&#x27;s quoting Sprint produced five rows. The agent-supervised outcomes were written as outcomes, never tasks: &quot;Customer data retrieval and history matching,&quot; &quot;Material and labor pricing assembly,&quot; and &quot;Draft quote generation and review&quot; — not &quot;look up the CRM&quot; or &quot;open JobBOSS.&quot; The two human-only rows: &quot;Quote delivery and customer negotiation&quot; and &quot;Non-standard material and tolerance consultation.&quot;</blockquote>
+<h2>Name the agent team (or mark None)</h2>
+<p>Give the execution work a name you can point to — or mark the row human-only.</p>
+<ol><li>For each row, decide whether an agent team does the execution work. If yes, name and scope it. If the work is pure human judgment, write <strong>None</strong>.</li><li>Make the name specific enough to own. &quot;Quote Pricing Agent&quot; names who does what; &quot;AI Helper&quot; names nothing useful and dissolves accountability.</li><li>Confirm the name carries scope: someone reading it knows what to ask when something goes wrong.</li></ol>
+<blockquote><strong>Meridian example.</strong> Three named agent teams: Quote Research Agent (customer data retrieval and history matching), Quote Pricing Agent (material and labor pricing assembly), Quote Assembly Agent (draft quote generation and review). The two human-judgment rows — quote delivery/negotiation and non-standard tolerance consultation — are marked <strong>None</strong>.</blockquote>
+<h2>Name one human supervisor — no TBD, no shared rows</h2>
+<p>Every row gets exactly one named human who owns the outcome.</p>
+<ol><li>Write one person&#x27;s name in the supervisor cell for every row, agent-supervised and human-only alike.</li><li>Reject every non-answer: no &quot;TBD,&quot; no &quot;the team,&quot; no two names sharing a row. If you can&#x27;t name the supervisor, the design isn&#x27;t done — that blank is your Design session.</li><li>Confirm there are no unowned agent teams anywhere in the chart. This is a structural rule, not a soft principle: someone real has to be accountable when the agents drift.</li></ol>
+<blockquote><strong>Meridian example.</strong> All three agent rows name <strong>Elena Ruiz (VP Ops)</strong> as supervisor. The human-only rows name their owners directly: <strong>Ty Banfield (Sales Lead)</strong> on quote delivery and customer negotiation, <strong>Dave Kowalski (Sr Design Engineer)</strong> on non-standard material and tolerance consultation. Five rows, five names, no blanks.</blockquote>
+<h2>Set the autonomy level: AI-Assisted or Automated</h2>
+<p>Decide how much human review sits between agent output and any consequential action.</p>
+<ol><li>For each agent-supervised row, set the level: <strong>AI-Assisted</strong> (human-in-the-loop, reviewing every output) or <strong>Automated</strong> (human-on-the-loop, monitoring by exception and reviewing on schedule). Mark human-only rows <strong>N/A — human judgment</strong>.</li><li>Always start AI-Assisted. Every agent team, every Sprint, begins with a human reviewing every output. You earn automation later, after the agent has proved reliable over several Sprints.</li><li>Write the <em>rationale</em>, not just the label. &quot;AI-Assisted because the exception rules aren&#x27;t fully documented yet&quot; is a rationale; &quot;AI-Assisted&quot; by itself is a checkbox.</li><li>Remember this is a governance decision, not a capability decision. The question isn&#x27;t whether the agent <em>could</em> run unsupervised — it&#x27;s whether you have the monitoring and discipline to let it.</li></ol>
+<blockquote><strong>Meridian example.</strong> All three agent rows start <strong>AI-Assisted</strong>: Elena reviews every draft quote in Sprint one. The two human rows are <strong>N/A — human judgment</strong>. The move toward Automated is Elena&#x27;s call, made only after an agent runs clean for several Sprints — not a setting flipped at deploy.</blockquote>
+<h2>Apply the Right Seat Evaluation to the supervisor candidate</h2>
+<p>Confirm the named supervisor can actually supervise — three tests, all must pass.</p>
+<ol><li><strong>Sees It</strong> — Does this person understand the work the agent does well enough to evaluate whether the output is correct, or will they rubber-stamp because they can&#x27;t tell the difference?</li><li><strong>Wants It</strong> — Are they genuinely accountable for the outcome, or do they treat the agent team as someone else&#x27;s problem with their name attached?</li><li><strong>Suited for It</strong> — Do they have the judgment, context, and authority to override the agent when it drifts and make the calls the agent can&#x27;t?</li><li>If the candidate fails any one of the three, you have a name in the column and ineffective supervision underneath it. Choose someone else, or write the development plan that gets them to all three before the Sprint runs.</li></ol>
+<blockquote><strong>Meridian example.</strong> Elena Ruiz passes all three for the quoting agents: she ran quoting personally for years (Sees It), she&#x27;s the Human Orchestrator who owns the constraint outcome (Wants It), and as VP Ops she has the authority and judgment to override a quote and route an exception to Dave or to Mark Ellison on strategic-account pricing (Suited for It).  <em>EOS note:</em> this maps closely to the GWC test — Get it / Want it / Capacity — extended from human seats to agent-supervision seats.</blockquote>
+<h2>Answer the five governance questions for each row</h2>
+<p>Write down what the system may do and may not do — before Build, not after a bad output.</p>
+<p>For each agent team, answer all five in writing. &quot;We haven&#x27;t decided yet&quot; is the decision you make now.</p>
+<ol><li><strong>What data can agents access? What&#x27;s off-limits?</strong> Name the systems, databases, and document sets the agent can read; name what it can&#x27;t touch (PII, regulated records, anything not listed). Lock access at the source, not at processing time.</li><li><strong>What actions can agents take without approval? What requires sign-off?</strong> Draw the line where output leaves internal review. &quot;Draft a quote&quot; is not &quot;send a quote.&quot;</li><li><strong>What happens on an input the agent wasn&#x27;t designed for?</strong> Define the escalation path: who gets the flag, how fast, and what the agent does while it waits — pause, default, or continue with a warning.</li><li><strong>How will you monitor output quality?</strong> Pick one: full review (AI-Assisted), spot checks on a sample (transition), or dashboard with exception flags (Automated).</li><li><strong>What would make you shut the workflow down immediately?</strong> Define the kill switch in concrete conditions the whole team knows — customer-facing send without review, data accessed outside permitted systems, error rate over a threshold.</li></ol>
+<blockquote><strong>Meridian example.</strong> 1. <em>Data access:</em> read HubSpot CRM deal records, JobBOSS ERP job costing and rate card, and the 112-rule cleaned pricing-exceptions database. Off-limits: financial reporting, employee records, customer payment history, supplier contracts, anything not listed. 2. <em>Actions without approval:</em> draft quotes, pull data, flag exceptions. Not allowed: send any customer communication, modify pricing tables, apply undocumented pricing exceptions. 3. <em>Escalation:</em> on unknown material, missing ERP data, RFQ confidence below 60%, or pricing deviation greater than 15% from the closest historical match — flag Elena and hold until she resolves or routes to Dave (materials) or Mark Ellison (strategic-account pricing). 4. <em>Quality monitoring:</em> AI-Assisted phase — Elena reviews every draft quote. Target: zero substantive corrections for three consecutive weeks before considering human-on-the-loop. 5. <em>Kill switch:</em> any quote reaching a customer without Elena&#x27;s review; the agent accesses data outside permitted systems; pricing errors exceed 20% on three quotes in any week.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Hand the chart to someone who missed the Design session. They should be able to read it and know exactly who owns what — without coming back to ask. Check:</p>
+<ul><li>[ ] Every Role / Function cell names an <strong>outcome</strong>, not a task.</li><li>[ ] Every agent team is <strong>named and scoped</strong> (or the row is honestly marked None).</li><li>[ ] Every row has <strong>one named human supervisor</strong> — no TBD, no &quot;the team,&quot; no shared cells, no unowned agent teams.</li><li>[ ] Every agent row has an <strong>autonomy level with a written rationale</strong>, and every agent team starts AI-Assisted.</li><li>[ ] The supervisor on every agent row <strong>passes all three Right Seat tests</strong> (Sees It / Wants It / Suited for It) — or has a named development plan.</li><li>[ ] All <strong>five governance questions are answered in writing</strong> for every agent team, with no &quot;we haven&#x27;t decided yet.&quot;</li></ul>
+<p>If any box is blank, that blank is your next Design session — not a Build surprise at five times the cost.</p>
+</body></html>

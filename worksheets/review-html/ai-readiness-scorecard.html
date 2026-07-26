@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Run the AI Readiness Scorecard — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: ai-readiness-scorecard.md</div>
+<p>Compound · Diagnosis / Readiness Scorecard</p>
+<h1>Run the AI Readiness Scorecard</h1>
+<p><em>Produces a single AI Readiness percentage, a named readiness bucket, and the one dimension where the redesign work ahead will demand the most from you.</em></p>
+<p>This worksheet turns the twenty-statement Scorecard into a scored baseline: five dimension subtotals, one total percentage, and a recorded lowest and highest dimension. The number isn&#x27;t a grade — it&#x27;s a map of where you&#x27;ll need to push hardest. Capture it now so progress is measurable as the later chapters do the redesign work.</p>
+<p><strong>Before you start:</strong> Get the right people in the room (see step 1) and have the twenty-statement table in front of you. Score the company as it actually runs, not how anyone wishes it ran.</p>
+<hr>
+<h2>Assemble the right team</h2>
+<p>The Scorecard is designed to surface disagreement; solo scoring misses the organizational signal.</p>
+<ol><li>List everyone who would be in the room if you were deciding whether to invest in AI — not just you. Owner, ops lead, the people who run the critical workflows day to day.</li><li>Brief them on one rule before you start: each person scores the <strong>company</strong>, not their own performance. The question is &quot;is this true of how we operate,&quot; not &quot;am I good at this.&quot;</li><li>Plan to score independently first, then compare. Where two people give the same statement a 2 and a 5, that gap <em>is</em> the finding — don&#x27;t average it away before you&#x27;ve talked about it.</li></ol>
+<blockquote><strong>Meridian example.</strong> Meridian scored the Scorecard with its leadership team, not the owner alone. The disagreement surfaced the real picture: the bottleneck was felt by everyone but priced by no one, and the customer-notes spreadsheet &quot;everyone used&quot; actually lived on one person&#x27;s desktop.</blockquote>
+<h2>Score all 20 statements 1–5</h2>
+<p>Each statement probes one of the five dimensions; honest scoring requires the team to rate the company, not individual performance.</p>
+<ol><li>For each statement, rank the company on a 1-to-5 scale: <strong>1 = &quot;not at all true,&quot; 5 = &quot;absolutely true.&quot;</strong> Mark one box per row.</li><li>When the team disagrees on a row, talk it through before you settle a number. The conversation is the point; the number just records where you landed.</li><li>Resist the urge to round up. The most useful first read is the honest one — most mid-market companies land lower than they expect, and that&#x27;s the map working.</li></ol>
+<table>
+<tr><th>#</th><th>Dimension</th><th>Statement</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+<tr><td>1</td><td>Constraint Clarity</td><td>We can name one operational constraint that, if removed, would change next quarter&#x27;s P&amp;L.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>2</td><td>Constraint Clarity</td><td>We&#x27;ve quantified the cost of that constraint in dollars, hours, or margin.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>3</td><td>Constraint Clarity</td><td>Our leadership team agrees on what the #1 constraint actually is, not just that one exists.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>4</td><td>Constraint Clarity</td><td>We&#x27;ve traced the symptoms of the constraint back to a structural root.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>5</td><td>Information Readiness</td><td>We can answer &quot;where does this information live?&quot; for every critical workflow.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>6</td><td>Information Readiness</td><td>We&#x27;ve identified the institutional knowledge that exists only in one person&#x27;s head.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>7</td><td>Information Readiness</td><td>The knowledge our team runs on is captured outside of conversations and email threads.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>8</td><td>Information Readiness</td><td>We have a process for keeping that knowledge current as the business changes.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>9</td><td>Workflow Visibility</td><td>We can describe end-to-end how work moves through our critical processes.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>10</td><td>Workflow Visibility</td><td>We know where work currently breaks: manual handoffs, system gaps, undocumented expertise.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>11</td><td>Workflow Visibility</td><td>Our processes are documented at the task level, not just summarized.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>12</td><td>Workflow Visibility</td><td>We&#x27;ve identified which steps are routing and admin versus which require human judgment.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>13</td><td>Decision Rights</td><td>Every accountability in our org has exactly one named owner.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>14</td><td>Decision Rights</td><td>We&#x27;ve documented which decisions require human review and which can run inside a designed scope.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>15</td><td>Decision Rights</td><td>When a workflow fails, we can name who&#x27;s accountable without ambiguity.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>16</td><td>Decision Rights</td><td>Our team agrees on who has authority to change the boundary between human work and AI work.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>17</td><td>Measurement Discipline</td><td>We measure outcomes weekly with named numbers, not vibes.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>18</td><td>Measurement Discipline</td><td>Every team has a scorecard with five to fifteen metrics they own.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>19</td><td>Measurement Discipline</td><td>We can prove last quarter&#x27;s investments paid back, in dollars.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+<tr><td>20</td><td>Measurement Discipline</td><td>We track revenue per employee and review it at least quarterly.</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+</table>
+<h2>Sum each dimension&#x27;s four scores into a subtotal out of 20</h2>
+<p>Isolates which dimension is weakest so effort can be targeted before the redesign begins.</p>
+<ol><li>Add the four scores in each dimension. Each subtotal runs from 4 (every row a 1) to 20 (every row a 5).</li><li>Write each subtotal in the table below. Don&#x27;t skip a dimension — a blank here breaks the total in the next step.</li><li>Glance across the five numbers. A spread (say, one dimension at 6 while another sits at 14) is exactly the signal you&#x27;re after: the redesign work isn&#x27;t evenly distributed.</li></ol>
+<table>
+<tr><th>Dimension</th><th>Subtotal (out of 20)</th></tr>
+<tr><td>Constraint Clarity</td><td>___</td></tr>
+<tr><td>Information Readiness</td><td>___</td></tr>
+<tr><td>Workflow Visibility</td><td>___</td></tr>
+<tr><td>Decision Rights</td><td>___</td></tr>
+<tr><td>Measurement Discipline</td><td>___</td></tr>
+</table>
+<blockquote><strong>Meridian example.</strong> Meridian&#x27;s subtotals: Constraint Clarity 6, Information Readiness 9, Workflow Visibility 8, Decision Rights 10, Measurement Discipline 8. Constraint Clarity sitting lowest matched what the team felt — the bottleneck was real but never priced.</blockquote>
+<h2>Add all five subtotals to get the total AI Readiness percentage</h2>
+<p>Converts the raw scores into a single number that maps to one of five named readiness buckets.</p>
+<ol><li>Add the five dimension subtotals together. The lowest possible total is 20 (every row a 1); the highest is 100 (every row a 5).</li><li>That total is your AI Readiness percentage. Write it down: <strong>____%</strong>.</li><li>Double-check the arithmetic against the rows — twenty statements, so the total can&#x27;t exceed 100.</li></ol>
+<blockquote><strong>Meridian example.</strong> 6 + 9 + 8 + 10 + 8 = 41. Meridian&#x27;s first-read AI Readiness score was 41%.</blockquote>
+<h2>Read the bucket description for the total score</h2>
+<p>Translates the percentage into a starting posture — what to expect from the work ahead.</p>
+<ol><li>Find the row your percentage falls into and read what it means. The bucket sets expectations; it doesn&#x27;t change the order of the work.</li></ol>
+<table>
+<tr><th>Score</th><th>What it means</th></tr>
+<tr><td><strong>20–34%</strong></td><td>Start here. The operating model isn&#x27;t designed for AI yet. The most honest answer most mid-market companies give on first read.</td></tr>
+<tr><td><strong>35–49%</strong></td><td>Foundations exist. The math hasn&#x27;t compounded yet. Most readers land here. You have partial answers across most dimensions; the work is locking them, not inventing them.</td></tr>
+<tr><td><strong>50–64%</strong></td><td>You&#x27;re above average. The framework will sharpen what&#x27;s already there.</td></tr>
+<tr><td><strong>65–79%</strong></td><td>You&#x27;re operating well. The book formalizes what you already do informally and gives you the language to scale the discipline.</td></tr>
+<tr><td><strong>80–100%</strong></td><td>You&#x27;re running a Co-Intelligent Co-Operation in fact, if not in name. The chapters ahead give you the vocabulary and the through-line to scale the discipline.</td></tr>
+</table>
+<ol><li>Write your bucket name next to your score so it travels with the number: <strong>____% — ________________ bucket</strong>.</li></ol>
+<blockquote><strong>Meridian example.</strong> 41% landed Meridian in the 35–49% bucket: foundations present, math not yet compounding. That set the expectation — the work ahead was locking partial answers, not inventing them from zero.</blockquote>
+<h2>Identify the lowest dimension subtotal</h2>
+<p>Pinpoints where the redesign work will require the most effort and the longest conversations.</p>
+<ol><li>Circle the smallest of your five dimension subtotals. That dimension is where the first stretch of redesign will demand the most attention.</li><li>Note your highest subtotal too — it&#x27;s the strength you&#x27;ll lean on while you bring the low one up.</li><li>If two dimensions tie for lowest, pick the one that shows up earlier in the redesign order (Constraint Clarity, then Information Readiness, then Workflow Visibility, then Decision Rights, then Measurement Discipline). Each stage depends on the inputs the prior stage produced, so the earlier gap is the more consequential one.</li></ol>
+<blockquote><strong>Meridian example.</strong> Constraint Clarity at 6 was Meridian&#x27;s lowest — the bottleneck was felt but never priced. Decision Rights at 10 was highest. The team knew, before turning the page, that the longest conversations ahead would be about naming and pricing the constraint.</blockquote>
+<h2>Record the three closing-checklist items (overall score, lowest dimension, highest dimension)</h2>
+<p>Locks the baseline so progress is measurable and the team has a shared reference as the chapters continue.</p>
+<ol><li>Before you move on, write all three down in one place the team can return to:</li></ol>
+<ul><li><strong>Overall AI Readiness score:</strong> ____%</li><li><strong>Lowest dimension:</strong> ________________</li><li><strong>Highest dimension:</strong> ________________</li></ul>
+<ol><li>Date it. This is your baseline — the later chapters do the work, and you&#x27;ll want to re-score against this exact starting point.</li><li>Share the three items with everyone who scored, so the whole team is working from one reference, not five memories.</li></ol>
+<blockquote><strong>Meridian example.</strong> Meridian&#x27;s recorded baseline: overall 41%, lowest dimension Constraint Clarity, highest dimension Decision Rights. That single line became the reference the team carried through every chapter that followed.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Hand the recorded baseline to someone who wasn&#x27;t in the scoring room. They should be able to read it and know exactly where the company stands and where the work ahead concentrates — without coming back to ask. Check:</p>
+<ul><li>[ ] The Scorecard was scored by <strong>the team that would decide an AI investment</strong>, not one person alone.</li><li>[ ] All <strong>twenty statements</strong> have a 1–5 score, with the company rated — not individual performance.</li><li>[ ] All <strong>five dimension subtotals</strong> are filled in, each out of 20.</li><li>[ ] The <strong>total percentage</strong> is computed and matched to its <strong>named bucket</strong>.</li><li>[ ] The <strong>lowest</strong> and <strong>highest</strong> dimensions are identified (with ties broken by redesign order).</li><li>[ ] The <strong>three closing-checklist items</strong> are written down and dated as the baseline.</li></ul>
+<p>If any box is blank, the baseline isn&#x27;t set — and you&#x27;ll have nothing to measure the redesign against when you come back.</p>
+</body></html>

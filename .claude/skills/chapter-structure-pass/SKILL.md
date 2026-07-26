@@ -72,12 +72,16 @@ The chapter's central artifact rolls up to a **Sprint Planning Canvas row**, and
 - **Bullets** — dense comma-lists and question sets become bullets.
 - **In-Brief** — summarizes; never overstates ("that single rule is all Design does" → it's one of N).
 - **Close** — 2–4 reflection questions that apply the chapter to the reader's business, then a one-line handoff. No recap summary.
+- **Narrative voice** — first-person blended; name the author inline in prose ("Jesse was in our L10…", "I sat in on a meeting…"); NO "Jesse:"/"Julie:" colon-label speaker prefixes (A17 — auto-reject). "We" when both authors. See `_julie/voice-charter.md` A17 and Vale rule `SpeakerLabel.yml`.
 - **Voice** — `_julie/voice-charter.md` (declarative operator voice, contractions, em-dashes sparingly, forbidden vocab incl. "leverage"/"transformation"); craft per `_julie/prose-craft-charter.md`.
 - **EOS** — agnostic by default; one optional familiar-paradigm bridge per concept.
 - **Meridian/Elena** is the deliberate through-line — never cut as "redundancy."
 - **Moves blocks** are registered in `_julie/process-spines.md`; keep labels in sync (skill `sync-process`).
 
 ## The orchestration recipe
+
+**Model routing:** Heavy passes — the drafter, the judge trio (voice-scanner / prose-craft / editorial-coherence), and the reconcile-implementer — run on **Fable** (`claude-fable-5`): 1M context holds the whole chapter + skill + charter + prior chapters, and stronger judgment catches mechanical or over-templated application. Cheap mechanical work — diagram authoring, greps/renders/renames, worksheet renders — runs on **Sonnet** for cost. The orchestration seat may also run on Fable.
+
 1. **Audit** — dispatch the `chapter-auditor` agent (read-only). It produces a findings + fix-plan report at `.claude/output/structure-audit-<stem>.md`: per-pattern findings with line refs, a drafter brief, a diagram list (new/redrawn progressive excalidraws), a term-disambiguation list (with propagation flags), redundancy cuts, and Meridian-narrative gaps. Fan it out across several upcoming chapters in parallel to get ahead of the author's read.
 2. **Settle concept forks** — if the audit surfaces genuine conceptual decisions (term consolidation, what an artifact *is*, structure), raise them with the author via AskUserQuestion *before* drafting. (This is what the Signal noun-spine and ch6 role-consolidation discussions were.)
 3. **Draft** — dispatch the `drafter` agent with the audit's brief (or the `draft-chapter` skill). Apply patterns 1–4; leave `<!-- TODO excalidraw: … -->` comments for diagrams. Remove `jf-note:` markers.
@@ -89,3 +93,16 @@ The chapter's central artifact rolls up to a **Sprint Planning Canvas row**, and
 
 ## When to invoke
 Fine-tuning or re-conceiving any chapter Co-Operating Model → end (Designing the Work, Build, Deliver, Compound, Rhythm, What-to-Do-Next, the case studies). The `ideal-customer-reader` agent is **complementary** — run it *after* the structural fixes to catch CEO-confusion/"so what" issues this pass doesn't cover.
+
+## Persistence layers (survive compaction + sessions)
+- **Executable pipeline:** `.claude/workflows/chapter-structure-pass.js` — invoke via `Workflow({name: "chapter-structure-pass", args: {chapter, mode: "produce"|"revise", auditPath, rulings, skipDiagrams}})`. It runs draft → diagrams → gate → judge trio → reconcile → re-gate with the model routing and canon guardrails baked in. Never re-author this pipeline inline; invoke the named workflow.
+- **Cross-session state:** the `chapter-pass` bd formula (`.beads/formulas/chapter-pass.formula.toml`). One molecule per chapter: audit → **AUTHOR GATE forks** → produce → **AUTHOR GATE read** → jf-note rounds → **AUTHOR GATE approve** → handoff. Human gates block via bd; the author clears them with `bd gate resolve <gate-id>` (or you resolve on their explicit say-so in-session).
+
+## Running a chapter molecule (tmux session bootstrap)
+You are one of several parallel sessions, each owning ONE chapter molecule in a SHARED working tree on branch `edits/fine-tuning`.
+1. `bd show <molecule-root>` → claim the first open step (`bd update <id> --claim`).
+2. Follow each step's description verbatim. The step descriptions are the protocol; this skill is the standard.
+3. **Scope rule:** edit only your chapter's `.qmd` (and its own `excalidraw/chNN-*` files). Anything cross-file → `bd create` with label `corpus-tie-up`. This is what makes parallel sessions safe.
+4. Commit only your chapter's files; `git pull --rebase` before each commit (other sessions are committing too). If a per-chapter `quarto render` fails on a cache/lock oddity, retry once before debugging.
+5. At author gates: park. Update the bead notes with exactly what the author needs to do, then wait for their input in your session.
+6. Do NOT merge to master or deploy. The orchestrator ships the corpus after all molecules land and corpus-tie-up beads are swept.

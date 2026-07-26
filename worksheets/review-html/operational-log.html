@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Build and Maintain the Operational Log — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: operational-log.md</div>
+<p>Compound · Deliver / Production Sensor</p>
+<h1>Build and Maintain the Operational Log</h1>
+<p><em>Stand up a four-column log on day one of deployment, run it for two weeks, and turn the busiest category into the signal for your next Sprint.</em></p>
+<p>The operational log captures, in real time, the gaps between what you designed and what production actually revealed. It is not a complaint box — it is a sensor. Every entry tells Design something about the next Sprint, and the category that fills up fastest is the next constraint. <strong>Before you start, you need a deployed workflow and the named roles from the Hybrid Accountability Chart whose handoffs changed in this Sprint.</strong></p>
+<hr>
+<h2>Create the four-column log template before deploy</h2>
+<p>The log must exist on day one of production — building it post-launch means the first gap goes unrecorded.</p>
+<ol><li>Make the table live where the team already works (the same shared doc or tool the workflow runs in), with exactly four columns: <strong>Date</strong>, <strong>What happened</strong>, <strong>Category</strong>, <strong>What it signals</strong>.</li><li>Lock the four categories at the top of the log so every entry uses the same words: <strong>Unplanned intervention</strong> (a human had to step in where the agent was supposed to handle it), <strong>Data gap</strong> (the workflow needed information that doesn&#x27;t exist or wasn&#x27;t connected), <strong>Edge case</strong> (an input the design didn&#x27;t account for), <strong>User confusion</strong> (a person whose work changed didn&#x27;t know what to do).</li><li>Confirm the log is open and reachable before go-live — not a thing someone promises to set up later that day.</li></ol>
+<blockquote><strong>Meridian:</strong> Elena Ruiz&#x27;s quoting workflow went live with the four-column log already open. Day 2 it caught the first entry — the agent hitting an Inconel 718 spec that wasn&#x27;t in Customer Notes.xlsx — because the log existed before the first RFQ ran through the new path.</blockquote>
+<hr>
+<h2>Assign a single named owner</h2>
+<p>Accountability without a name means the log dies; one person owns it, no committee.</p>
+<ol><li>Write one person&#x27;s name as the log owner — the same person reviews it every day for the first two weeks. Not &quot;the team,&quot; not &quot;whoever&#x27;s around.&quot;</li><li>Make the owner the person closest to the review work, so logging is part of their existing flow rather than a separate chore.</li><li>State, in writing, what the owner does each day: read new entries, categorize them, and note any pattern forming.</li></ol>
+<blockquote><strong>Meridian:</strong> Elena owned the log. She works the HubSpot review queue every day, so catching and recording each gap — the 40%-low Inconel estimate, the missing-drawing RFQ — happened inside the review she was already doing, not on top of it.</blockquote>
+<hr>
+<h2>Run daily check-ins for the first two weeks</h2>
+<p>The daily cadence surfaces patterns before they compound; week-two review timing aligns with the delivery test window.</p>
+<ol><li>Book a short daily check-in for fourteen days, on the calendar, non-negotiable — the owner reviews the day&#x27;s entries and categorizes each one.</li><li>At each check-in, write the category in column three the same day the event happened, while the detail is still fresh, so column two stays specific.</li><li>Note any category that is starting to repeat — a forming pattern is the early read on where the next Sprint will aim.</li></ol>
+<blockquote><strong>Meridian:</strong> Across the first two weeks the daily review captured the Day 2 edge case, the Day 4 user confusion (Ty submitting an RFQ with no drawing), and the Day 7 unplanned intervention (Dave catching the tolerance mismatch on a weldment quote) — each logged the day it happened, not reconstructed later.</blockquote>
+<hr>
+<h2>Categorize every entry (Unplanned intervention / Data gap / Edge case / User confusion)</h2>
+<p>Consistent categories make tallying possible; the category with the most entries identifies the next constraint.</p>
+<ol><li>Assign every entry exactly one of the four categories — no new categories, no blanks.</li><li>In &quot;What it signals,&quot; write the design fix the entry points to (a guardrail, a required field, a new matching criterion), not just a description of what went wrong.</li><li>Log the positives too: a genuinely good outcome with no category (mark it &quot;— (positive signal)&quot;) still tells Design what the new workflow is producing.</li></ol>
+<blockquote><strong>Meridian:</strong> The Day 2 edge case signaled a guardrail (&quot;no price estimate for unknown materials — flag as &#x27;manual pricing required&#x27; and stop,&quot; added same day). The Day 10 entry — a customer praising same-day turnaround and submitting a second RFQ that afternoon — was logged as a positive signal: speed is producing repeat inbound, worth tracking.</blockquote>
+<hr>
+<h2>Tally by category at end of week two and surface the top category as the next Sprint signal</h2>
+<p>The log is a sensor, not a complaint box — it feeds Design for the next Sprint.</p>
+<ol><li>At the end of week two, count entries by category and write the totals down.</li><li>Name the category with the most entries — that category is the first thing to fix and the strongest signal for where the next Sprint should aim.</li><li>Hand the top category, with its underlying entries, to Design as a candidate constraint for the next Sprint.</li></ol>
+<blockquote><strong>Meridian:</strong> At the two-week tally, whichever category had stacked up the most entries became the lead candidate for the next Sprint — the tolerance-class matching gap from Day 7, for instance, was already written down as a Design task for the next Sprint at the moment it surfaced.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Run this test at the end of week two:</p>
+<ul><li><strong>The log existed on day one</strong> — four columns, four locked categories, live where the team works, in place before the first real input ran through the workflow.</li><li><strong>One named person owns it</strong> — and reviewed it daily for two weeks, not a committee and not retroactively.</li><li><strong>Every entry is categorized</strong> with one of the four labels, and each &quot;What it signals&quot; names a design fix, not just a description.</li><li><strong>The week-two tally is written down</strong> and the top category has been handed to Design as the next Sprint&#x27;s candidate constraint.</li></ul>
+<p>When all four are true, the log has done its job: it turned two weeks of production into a specific signal the next Sprint can run against.</p>
+</body></html>

@@ -9,7 +9,7 @@ We built the project management agent team, the five agents that replaced our $2
 
 One agent handled client-facing task updates. It had read/write access to our project management system. Another agent compiled internal performance reports: billable hours, delivery velocity, resource allocation. That one could see data the first agent had no business touching. A third routed subcontractor communications. Different data, different stakes, different guardrails. Same Sprint. Five agents, five different access levels, every boundary decided in Design before Build executed any of them.
 
-Sofia, our VP of Operations, reviewed every output the agents produced in those first weeks. The agents drafted. She approved. Rachel, the subcontractor who had been doing the coordination work, shifted to exception handling, the judgment calls the agents couldn't make.
+Sofia reviewed every output the agents produced in those first weeks. The agents drafted. She approved. Exception handling, the judgment calls the agents couldn't make, stayed with her.
 
 The Guardrails Checklist is where you decide what the system is allowed to touch. Do that work before the build executes and it costs almost nothing. Discover it after something goes sideways, after the wrong person pulls the wrong data, and it costs a lot more. The spec has to include the guardrail. If it doesn't, Build isn't done.
 

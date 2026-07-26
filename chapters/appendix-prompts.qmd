@@ -374,11 +374,16 @@ For each task, also document:
 
 STEP 3: CHALLENGE THE CLASSIFICATION
 After classifying all tasks, count each category. Then challenge me:
-- If more than half landed in Leadership, push back on each one: is
-  this genuinely judgment about people / strategy / context, or is it
-  judgment because nobody has written down the rules? Many tasks feel
-  like judgment because the rules are undocumented, not because the
-  rules don't exist.
+- If more than half landed in Leadership, run each one through the
+  three shades of decision. Codified rule: written down, same result
+  every time (that's Task; it never belonged here). Consistent
+  pattern nobody has written down: the expert decides it the same way
+  every time, but the logic lives only in their head (that's
+  Management; once surfaced, the agent proposes with a confidence
+  flag and a human checks it). True judgment about people, strategy,
+  relationships, or context stays in Leadership. Ask: has this ever
+  been decided the same way twice with the same inputs? If yes, it's
+  the middle shade, not judgment.
 - If nothing landed in Leadership, push back — am I undervaluing the
   human elements? Relationship management, exception handling with
   ambiguous inputs, and strategic decisions are real.

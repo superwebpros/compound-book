@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Build the Constraint Backlog and select the one — Compound (review render)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bricolage+Grotesque:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>/* Compound worksheet — review-render stylesheet (SINGLE SOURCE OF TRUTH).
+   Inlined into every standalone review HTML by .claude/tools/render_worksheet.py.
+   Edit here; re-run the renderer to propagate to all worksheets.
+   Tokens reconciled with the production bundler (--ink-06 / --ink-12 / --ink-70,
+   --sans / --display / --mono) so review and production share one vocabulary. */
+:root{
+  --paper:#FAFAF8;
+  --ink:#0A0A0A;
+  --red:#E11D2D;
+  --muted:#6b6b66;
+  --ink-70:rgba(10,10,10,.70);
+  --ink-12:rgba(10,10,10,.12);
+  --ink-06:rgba(10,10,10,.06);
+  --line:rgba(10,10,10,.12);
+  --sans:'Archivo',system-ui,sans-serif;
+  --display:'Bricolage Grotesque','Archivo',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{background:#fff}
+body{background:#fff;color:var(--ink);font-family:var(--sans);
+  line-height:1.55;max-width:780px;margin:0 auto;padding:48px 28px 96px;font-size:17px}
+h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:.2em 0 .1em}
+h2{font-family:var(--display);font-size:1.3rem;margin:2.2em 0 .4em;
+  padding-top:1.1em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.4em 0 .3em}
+.kicker{font:600 .72rem/'1' var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+ol,ul{padding-left:1.3em}li{margin:.3em 0}
+strong{font-weight:600}
+/* Meridian / callout boxes — house style: ink-tint fill, red left edge */
+blockquote{background:var(--ink-06);border-left:3px solid var(--red);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin:1em 0;color:#333;font-size:.96rem}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink-06);font-weight:600}
+/* `---` section breaks: the h2 top border is the divider, so the rule is redundant */
+hr{display:none}
+code{font-family:var(--mono);font-size:.85em;background:var(--ink-06);padding:1px 5px;border-radius:4px}
+.banner{background:#fff6e9;border:1px solid #f0d9a8;border-radius:6px;padding:8px 12px;font-size:.8rem;color:#8a6d3b;margin-bottom:24px}
+
+/* Fillable grid — generator auto-tags any table whose body cells are all blank
+   and lifts it (with its section heading) onto its own page with tall, writable rows. */
+.fill-page{page-break-before:always;break-before:page}
+.fill-page h2{border-top:0;padding-top:0;margin-top:0}
+table.fill{table-layout:fixed}
+table.fill td{height:56px}
+table.fill tr,table.fill{page-break-inside:avoid;break-inside:avoid}
+
+@media print{
+  body{padding-top:28px}
+  .banner{display:none}
+  table,tr,blockquote,li{page-break-inside:avoid;break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style></head><body>
+<div class="banner">Review render (not production styling). Source of truth: constraint-backlog.md</div>
+<p>Signal · Signal / Constraint Backlog</p>
+<h1>Build the Constraint Backlog and select the one</h1>
+<p><em>Land every candidate constraint that survived the trace in one standing table, then commit the Sprint to the one that&#x27;s load-bearing.</em></p>
+<p>The Five Whys turns your symptoms into candidate constraints — the structural roots a Sprint can actually fix. This worksheet captures those candidates in the Constraint Backlog (the standing table you carry into every Sprint that follows) and walks the selection: filter for the ones you can act on, find the one whose removal unblocks the rest, and commit the Sprint to it. <strong>Before you start, you need the candidate constraints from your Five Whys trace — the symptoms that bottomed out at a workflow, a handoff, or a missing system, not at a person or a market condition.</strong></p>
+<hr>
+<h2>Enter every candidate constraint in the backlog table</h2>
+<p>The Backlog is the standing inventory of everything worth a Sprint. It&#x27;s born here, in this session, and every later Sprint draws from it — so write the candidates down even though you&#x27;ll only commit to one.</p>
+<ol><li>Use the <strong>Constraint Backlog table on the last page</strong> — five columns: candidate constraint, owner, closeable in one Sprint?, cost / measure, load-bearing?</li><li>Add one row for each candidate constraint that survived the Five Whys. Write each as a single structural sentence — the workflow, handoff, or missing system, not the symptom you started from.</li><li>Don&#x27;t rank them yet. This pass is just an honest inventory of what a Sprint could fix.</li></ol>
+<blockquote><strong>Meridian:</strong> Three symptoms survived the trace — the quoting bottleneck, manual job costing, and PM task visibility. Each went into the Backlog as a one-line structural statement: &quot;Quoting workflow depends on one person&#x27;s undocumented context,&quot; &quot;Job costing is manual; margin not visible until after close,&quot; &quot;PM task updates are driven by the VP of Ops, not the system.&quot;</blockquote>
+<hr>
+<h2>Fill in owner, closeable, and cost for each row</h2>
+<p>These three fields are the eligibility test. A candidate without them isn&#x27;t a real contender yet, no matter how much it hurts.</p>
+<ol><li><strong>Owner</strong> — name one person who would move this if it became the Sprint. A name, not &quot;the team.&quot; No owner means no one drives it.</li><li><strong>Closeable in one Sprint?</strong> — yes, or &quot;needs breakdown.&quot; If the candidate is too big to close in a single Sprint, it has to be broken into a tighter constraint first.</li><li><strong>Cost / measure</strong> — a rate or a unit per period: dollars per quarter, hours per week, deals lost per period, days of cycle time. &quot;Significant&quot; is not a number. If the data isn&#x27;t clean, estimate it and note the estimate.</li></ol>
+<blockquote><strong>Meridian:</strong> Quoting — owner Ops, closeable yes, ~$558K/year in lost revenue and floor capacity. Job costing — owner Finance, closeable yes, cost still to be estimated. PM visibility — owner VP of Ops, closeable yes, ~4 hours/week of VP time.</blockquote>
+<hr>
+<h2>Filter for the eligible candidates</h2>
+<p>You commit only to a candidate you can actually own, measure, and close. The rest aren&#x27;t dropped — they wait in the Backlog until they&#x27;re ready.</p>
+<ol><li>Mark any row with no owner, no cost estimate, or a &quot;needs breakdown&quot; as <strong>not-ready</strong>. It stays in the Backlog; it&#x27;s just not in the running this Sprint.</li><li>Confirm the remaining rows each have a name, a number, and a yes. Those are your eligible candidates.</li><li>If nothing is eligible, you&#x27;re not done with the trace or the quantification — go back before you go forward.</li></ol>
+<blockquote><strong>Meridian:</strong> All three candidates had an owner and were closeable in a Sprint, so all three stayed in the running. The only soft spot was the job-costing cost, still an estimate — flagged, but good enough to keep it eligible.</blockquote>
+<hr>
+<h2>Find the load-bearing one</h2>
+<p>A Sprint improves the system only by removing the constraint that currently governs it. The load-bearing candidate is the one whose removal unblocks or clarifies the others.</p>
+<ol><li>For each eligible candidate, ask the test: if you solved this one, would it make two or more of the others easier to evaluate, easier to solve, or unnecessary?</li><li>The candidate that unblocks the others is the load-bearing one. Mark it. That&#x27;s where the Sprint starts.</li><li>If exactly one candidate clearly governs the rest, you&#x27;re done selecting — skip the cost tiebreak below.</li></ol>
+<blockquote><strong>Meridian:</strong> The quoting bottleneck was load-bearing. Until Elena&#x27;s undocumented pricing context was distributed, Finance couldn&#x27;t build reliable margin forecasts and the PM gap kept getting papered over with VP hours. Solving quoting made the other two easier to evaluate — so quoting was the constraint.</blockquote>
+<hr>
+<h2>Cost tiebreak — only if none clearly governs</h2>
+<p>When the eligible candidates are genuinely independent and none unblocks the others, the dollar number breaks the tie.</p>
+<ol><li>Confirm no single candidate governs the rest — they&#x27;re separate problems, not a chain.</li><li>Pick the costliest eligible candidate you can close in a Sprint. The biggest provable payback wins.</li><li>If the costs are close, take the one whose number is hardest to dispute — the estimate the room will hold each other to.</li></ol>
+<blockquote><strong>Meridian:</strong> Not needed. Quoting governed the other two, so the load-bearing test settled it before cost ever had to arbitrate.</blockquote>
+<hr>
+<h2>Commit the one and record the rest as the standing Backlog</h2>
+<p>Focus is the whole point: one constraint, one target, one number to earn back. The others don&#x27;t disappear — they become the queue for the Sprints that follow.</p>
+<ol><li>Mark the selected candidate as <strong>the constraint</strong>. It goes on to the Constraint Statement and the top of the Sprint Planning Canvas as the Sprint&#x27;s single target.</li><li>Keep every other candidate in the Backlog, with its owner and cost. This is the standing inventory you&#x27;ll re-rank in Compound after the Sprint closes.</li><li>Note that ordering the rest of the Backlog is a separate exercise — you&#x27;re committing to one now, not ranking the queue.</li></ol>
+<blockquote><strong>Meridian:</strong> Quoting was committed as the Sprint&#x27;s constraint and written into the Constraint Statement. Job costing and PM visibility stayed in the Backlog, owners and estimates attached, ready for the Compound re-rank.</blockquote>
+<hr>
+<h2>Before you call it done</h2>
+<p>Run this test before you leave the Backlog and move to the Constraint Statement:</p>
+<ul><li><strong>Every surviving candidate is in the table</strong> — one structural sentence each, with an owner and a cost or a flag that it still needs one.</li><li><strong>Ineligible candidates are marked not-ready</strong> — no owner, no number, or too big — and left in the Backlog, not deleted.</li><li><strong>The load-bearing one is identified</strong> — or, if none governs, the cost tiebreak has picked the costliest you can close.</li><li><strong>One constraint is committed</strong> as the Sprint&#x27;s target, and the rest are recorded as the standing Backlog for future Sprints.</li></ul>
+<p>When all four are true, you have a Backlog you can return to every quarter and a single constraint the Sprint can earn its keep against.</p>
+<hr>
+<section class="fill-page">
+<h2>Constraint Backlog</h2>
+<p>One row per surviving candidate. Mark the load-bearing one, then commit a single constraint as this Sprint&#x27;s target.</p>
+<table class="fill">
+<colgroup><col style="width:33.33%"><col style="width:16.67%"><col style="width:16.67%"><col style="width:16.67%"><col style="width:16.67%"></colgroup>
+<tr><th>Candidate constraint</th><th>Owner</th><th>Closeable in one Sprint?</th><th>Cost / measure</th><th>Load-bearing?</th></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+</section>
+</body></html>
