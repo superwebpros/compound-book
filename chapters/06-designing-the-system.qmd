@@ -2,14 +2,14 @@
 
 :::{.callout-important}
 ## In Brief
-Design starts by mapping how information actually moves through one workflow. From that map, it builds a Hybrid Accountability Chart — every accountability named as an outcome, every agent team named, every Human Orchestrator named. It sets the autonomy level for each row. And it locks governance before Build inherits anything. Those decisions are the Design row of your Sprint Planning Canvas. After this chapter, you can produce the four architecture deliverables: a designed workflow, a populated Hybrid Accountability Chart, autonomy levels, and a governance framework ready for Build.
+Design starts by mapping how information moves through one workflow. From that map, it builds a Hybrid Accountability Chart — every accountability named as an outcome, every agent team named, every Human Orchestrator named. It sets the autonomy level for each row. And it locks governance before Build inherits anything. Those decisions are the Design row of your Sprint Planning Canvas. After this chapter, you can produce the four architecture deliverables: a designed workflow, a populated Hybrid Accountability Chart, autonomy levels, and a governance framework ready for Build.
 :::
 
-My Ops Manager is on a weekly call and she's not building up to it. "She's not keeping up with clients. Reports are late. I think we need to let her go."
+Sofia, our VP of Operations, is on a weekly call and she's not building up to it. "She's not keeping up with clients. Reports are late. I think we need to let her go."
 
-The project coordinator had been with us long enough to know where the client files actually lived, which contacts needed extra lead time, and what the unwritten rules were for each account. That knowledge doesn't transfer with a two-week notice. You spend the next three months paying a new person to relearn it while the work piles up. We'd been around this loop before.
+The project coordinator had been with us long enough to know where the client files lived, which contacts needed extra lead time, and what the unwritten rules were for each account. In most companies, that knowledge doesn't transfer with a two-week notice. You spend the next three months paying a new person to rebuild it while the work piles up. We were partially protected against that loss. We'd lived Source: her workflows were documented, her exception rules captured, the systems she touched mapped. Losing her didn't mean losing what she knew.
 
-Most operators in that moment reach for the job description. The instinct is to solve the personnel problem with a hire: find someone, get them trained, keep the work moving. My Ops Manager's instinct was the same. She didn't want to lose the knowledge, and she knew what replacing institutional memory costs. The Sequence starts by asking what the role actually does — not who to hire for it.
+The hiring impulse doesn't care about any of that. The work still needs doing, and the instinct is to reach for the job description: post the listing, find someone, get them trained, keep the work moving.
 
 I stopped and asked a different question. Not "who should we hire?" but "what does this role actually do?"
 
@@ -17,15 +17,17 @@ We opened a blank document and started pulling the role apart.
 
 We listed the sources of information that fed the job: the CRM, the project tracker, the report templates she'd built, the client check-in cadence she managed from memory.
 
-Then we listed the outcomes the role was responsible for: the reports delivered, the tasks created, the assignments made, the clients kept on track. And then we mapped every accountability against a simple filter: which items required human judgment and relationships, and which were data-flow operations.
+Then we listed the outcomes the role was responsible for: the reports delivered, the tasks created, the assignments made, the clients kept on track. And then we mapped every accountability — every named outcome the role owned — against a simple filter: which items required human judgment and relationships, and which were data-flow operations.
 
-Information moving from one system to another, following rules that didn't require a person in the middle. The shape of the role changed in front of us. What had looked like one job was actually two, and one of those jobs we could design an agent team for.
+Data-flow operations meant information moving from one system to another, following rules that didn't require a person in the middle. The shape of the role changed in front of us.
 
-We did let her go — and never posted the listing for a replacement.
+What had looked like one job was two, and one of those jobs we could design an agent team for.
 
-The work got absorbed into the organization without a crisis. The team didn't miss a beat.
+So we did. And we did let her go — without posting a listing for a replacement.
 
-What the agent team took on was the administration: the routing, the formatting, the status updates. What stayed with people was the judgment. The role got more strategic, not because we gave anyone a new title, but because we gave them back the hours the low-judgment work had been consuming.
+Instead, the work got absorbed into the company without a crisis. The team didn't miss a beat.
+
+What the agent team took on was the administration: the routing, the formatting, the status updates. What stayed with people was the judgment. The work got more strategic for the people who stayed, not because we gave anyone a new title, but because we gave them back the hours the low-judgment work had been consuming.
 
 ## Design exists to ask what the work *actually* is
 
@@ -42,19 +44,21 @@ The first deliverable has to be specific enough that Build can execute against i
 
 Design has to produce all four. A workflow without an accountability entry is a process map nobody owns. An accountability entry without a designed workflow is an org chart row with nothing behind it.
 
-But before you can assign owners to the work, you've got to see what the work actually is. And the work, in a knowledge business, is information moving from place to place. That's where Design starts.
+But before you can assign owners, you've got to see the work itself. Every accountability bundles three kinds of work: physical action, information processing, and the judgment applied to that information. The information layer is the part Design can redesign. That's where Design starts.
 
 ## See the work as *information flow* first
 
-Before the chart makes sense, you've got to answer a question most leadership teams never ask: how does information actually move through this part of the company?
+Before the chart makes sense, you've got to answer a question most leadership teams never ask: how does information move through this part of the company?
 
-In a knowledge business, every accountability is an information problem. A salesperson assembling a proposal pulls quote history from the CRM, current pricing from a rate sheet, and available capacity from the ops calendar — then applies judgment about what the customer actually needs.
+Not every part of the work is information. AI can't stack boxes in the warehouse, but it can reconcile the receipts against the ERP. A treasurer compiling the weekly cash report is doing information work even in a business that moves physical product. Whatever your company makes, an information layer runs through every role.
+
+A salesperson assembling a proposal pulls quote history from the CRM, current pricing from a rate sheet, and available capacity from the ops calendar — then applies judgment about what the customer needs.
 
 An account manager preparing a renewal pulls usage data from the product, contract terms from the file, and relationship context from memory.
 
 An analyst turning source systems into a board report pulls from three databases, applies formatting rules, makes presentation decisions.
 
-The information moves through each of them. Every accountability in a knowledge business follows the same structure: something comes in, gets processed by rules or judgment, and goes out as a usable result.
+The information moves through each of them. In every business, the information layer follows the same structure: something comes in, gets processed by rules or judgment, and goes out as a usable result.
 
 That structure is what the *Information Flow Specification* captures — a one-accountability spec that pins down the data feeds, processing steps, decisions, and output for a single workflow.
 
@@ -205,7 +209,7 @@ You build it one Sprint at a time. For each accountability your Sprint is addres
 
 1. **Name the role/function as an outcome, not a task** — Outcome framing defines what the row is accountable for; task framing describes activity with no clear success criterion.
 2. **Name the agent team (or mark None)** — A named team can be pointed to when something goes wrong; a vague label names nothing useful and dissolves accountability.
-3. **Name the Human Orchestrator — no TBD, no shared rows** — Every agent team must have one named human who owns the outcome; blank or shared cells are a governance failure waiting to surface in production.
+3. **Name the Human Orchestrator** — Every agent team must have one named human who owns the outcome; blank or shared cells are a governance failure waiting to surface in production.
 4. **Apply the Right Seat Evaluation to the Human Orchestrator candidate** — Sees It / Wants It / Suited for It. An Orchestrator who fails any of the three tests means the chart has a name in the column but ineffective supervision underneath it.
 5. **Set the autonomy level: AI-Assisted or Automated** — This is a governance decision, not a capability decision; the level determines how much human review sits between the agent output and any consequential action.
 6. **Answer the five governance questions for each row** — Data access, permitted actions, escalation path, quality monitoring method, and kill-switch conditions must be written down before Build begins.
@@ -244,7 +248,7 @@ Examples:
 If you run EOS, you already have the muscle for this. Your Accountability Chart says every seat has a name. The Hybrid Accountability Chart extends that same discipline to your agent teams. The naming rigor you already apply to human roles now applies to non-human workers too.
 :::
 
-How the Human Orchestrator actually runs the agent team day-to-day — review cadence, exceptions, drift — is the next chapter, *Designing the Work*.
+How the Human Orchestrator runs the agent team day-to-day — review cadence, exceptions, drift — is the next chapter, *Designing the Work*.
 
 ## Start AI-Assisted. Earn *Automation*.
 
@@ -278,7 +282,7 @@ Examples:
 - Job cost entries are automatically reconciled nightly, with the finance director reviewing only the flagged variances — Automated
 - RFQ intake is automatically logged to the CRM and triggers the quoting workflow, with no human in that first routing step — Automated
 
-**Rule of thumb for moving along the spectrum:** when the Human Orchestrator is spending more time confirming what the agent already got right than catching what it got wrong, it's time to move toward Automated for that step. Don't move early. The cost of a bad output that went unreviewed is higher than the cost of reviewing outputs a few weeks longer than necessary.
+**Rule of thumb for moving along the spectrum:** when the Human Orchestrator is spending more time confirming what the agent already got right than catching what it got wrong, it's time to move toward Automated for that step. Don't move early. The cost of a bad output that went unreviewed can be higher than the cost of reviewing outputs a few weeks longer than necessary.
 
 {{< excalidraw ch06-ai-assisted-automated-spectrum "AI-Assisted to Automated spectrum: human role shifts from reviewing every output toward exceptions and final decisions" >}}
 

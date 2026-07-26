@@ -35,10 +35,10 @@
 | 10 | Classify each source on the map | 05-source | Classify what you found. | `classify-sources` | Buried | 4 |
 | 11 | Write the Information Flow Specification | 06-designing-the-system | See the work as information flow first | `information-flow-spec` (ships as `map-the-inputs`) | Buried | 6 |
 | 12 | Build the Hybrid Accountability Chart | 06-designing-the-system | The Hybrid Accountability Chart assigns owners to the flow | `hybrid-accountability-chart` | Visible | 6 |
-| 13 | Write the Agent Mini-Spec | 06-designing-the-system | Every agent gets a six-field mini-spec | `agent-mini-spec` | Visible | 7 |
+| 13 | Write the Agent Mini-Spec | 06b-designing-the-work | Spec every agent with a mini-spec. | `agent-mini-spec` | Visible | 7 |
 | 14 | Work Deconstruction | 06b-designing-the-work | Deconstruct the work task by task. | `work-deconstruction` | Buried | 5 |
 | 15 | Write the Design Brief | 06b-designing-the-work | The Design Brief is what Build inherits. | `design-brief` | Visible | 7 |
-| 16 | Write the Agent Mini-Spec (DUP of #13) | 06b-designing-the-work | Specify every agent with a six-field mini-spec. | `agent-mini-spec` | Visible | 6 |
+| 16 | Write the Agent Mini-Spec (DUP of #13) | 06b-designing-the-work | Spec every agent with a mini-spec. | `agent-mini-spec` | Visible | 6 |
 | 17 | Write the eight-section Build Spec | 07-build | Write the eight-section Build *Spec*. | `write-build-spec` | Visible | 8 |
 | 18 | Audit the spec against seven common failures | 07-build | Audit the spec against seven common *failures*. | `audit-spec-failures` | Visible | 7 |
 | 19 | Answer the seven Guardrails Checklist questions | 07-build | Answer the seven *guardrails* questions in writing. | `guardrails-checklist` | Visible | 7 |
@@ -187,23 +187,23 @@ Each block below is the verbatim source for both the worksheet and the book over
 ### 12. Build the Hybrid Accountability Chart — `hybrid-accountability-chart`
 *06-designing-the-system · The Hybrid Accountability Chart assigns owners to the flow · Visible*
 
-1. **Name the role/function as an outcome, not a task** — Outcome framing ('produce accurate initial quotes within 2 hours') defines what the row is accountable for; task framing ('look up pricing') describes activity with no clear owner or success criterion.
-2. **Name the agent team (or mark None)** — A named team can be pointed to when something goes wrong; 'AI Helper' names nothing useful and dissolves accountability.
-3. **Name one human supervisor — no TBD, no shared rows** — Every agent team must have a named human who owns the outcome; blank or shared supervisor cells are a governance failure waiting to surface in production.
-4. **Set the autonomy level: AI-Assisted or Automated** — This is a governance decision, not a capability decision; the level determines how much human review sits between the agent output and any consequential action.
-5. **Apply the Right Seat Evaluation to the supervisor candidate** — Sees It / Wants It / Suited for It — a supervisor who fails any of the three tests means the chart has a name in the column but ineffective supervision underneath it.
-6. **Answer the five governance questions for each row** — Data access, permitted actions, escalation path, quality monitoring method, and kill-switch conditions must be written down before Build begins; unanswered questions become expensive surprises after deployment.
+1. **Name the role/function as an outcome, not a task** — Outcome framing defines what the row is accountable for; task framing describes activity with no clear success criterion.
+2. **Name the agent team (or mark None)** — A named team can be pointed to when something goes wrong; a vague label names nothing useful and dissolves accountability.
+3. **Name the Human Orchestrator** — Every agent team must have one named human who owns the outcome; blank or shared cells are a governance failure waiting to surface in production.
+4. **Apply the Right Seat Evaluation to the Human Orchestrator candidate** — Sees It / Wants It / Suited for It. An Orchestrator who fails any of the three tests means the chart has a name in the column but ineffective supervision underneath it.
+5. **Set the autonomy level: AI-Assisted or Automated** — This is a governance decision, not a capability decision; the level determines how much human review sits between the agent output and any consequential action.
+6. **Answer the five governance questions for each row** — Data access, permitted actions, escalation path, quality monitoring method, and kill-switch conditions must be written down before Build begins.
 
 ### 13. Write the Agent Mini-Spec — `agent-mini-spec`
-*06-designing-the-system · Every agent gets a six-field mini-spec · Visible*
-**Canonical home for the Agent Mini-Spec spine. The 06b instance (#16) is the same process — see §4. This 7-step version (system home) is canonical because it adds the tool-category routing step.**
+*06b-designing-the-work · Spec every agent with a mini-spec. · Visible*
+**Canonical home for the Agent Mini-Spec spine: 06b-designing-the-work (the mini-spec moved there in the ch6/06b split; 06-designing-the-system now only points forward to it). Seven fields. The legacy 06b instance (#16) is the same process — see §4.**
 
-1. **Write the system prompt** — Three-to-five sentences that tell the agent who it is, what it is accountable for, and what it does not decide — the standing operating rules it reads before every task.
-2. **List the tools** — Names every API, integration, or system the agent can call; unnamed tools are tools Build has to guess at.
+1. **Write the system prompt** — Three to five sentences, ending with the hard does-not-decide boundary.
+2. **List the tools** — Names every API, integration, or system the agent can call, each with its permission level; unnamed tools are tools Build has to guess at.
 3. **Identify the context sources** — Maps the Knowledge Map rows that feed this agent; if a source is not on the map, it is not a source — this prevents scope creep at the data layer.
 4. **Set the memory rules** — Explicitly stating what the agent tracks across runs (or that it tracks nothing) prevents the agent from carrying stale state into new tasks.
-5. **Define judgment and escalation rules** — Specifies exactly when the agent escalates, what it refuses, and what triggers a handoff to the human supervisor — the governance answers from the HAC land here, agent by agent.
-6. **Rate the oversight load (Low / Medium / High)** — Keeps the supervisor's span of control visible; no supervisor should carry more than three high-oversight agents at once, so this field is the span-of-control check before the spec leaves Design.
+5. **Define judgment and escalation rules** — Specifies exactly when the agent escalates, what it refuses, and what triggers a handoff to the Human Orchestrator — the governance answers from the HAC land here, agent by agent.
+6. **Rate the oversight load (Low / Medium / High)** — Keeps the Human Orchestrator's span of control visible; no Human Orchestrator should carry more than three High-oversight agents at once, so this field is the span-of-control check before the spec leaves Design.
 7. **Select the tool category (off-the-shelf / low-code / hand-built)** — Locking the category in Design — by running the three routing questions in order — prevents Build from making an architecture decision based on vendor relationships or recency rather than the workflow's actual requirements.
 
 ### 14. Work Deconstruction — `work-deconstruction`
@@ -212,8 +212,8 @@ Each block below is the verbatim source for both the worksheet and the book over
 1. **Pull the actual accountability list** — Job descriptions are sanitized; the real weekly task list is what gets classified — you can't sort what you haven't named.
 2. **Document source inputs and outputs for each task** — Connecting each task to where its data comes from and where the result goes makes the information flow from Source concrete at task level.
 3. **Apply the TML sorting question to each task** — A single binary question — 'would the output need human review every time, or only on exceptions?' — assigns every task to Task, Management, or Leadership without ambiguity.
-4. **Tally the three buckets and challenge the Leadership pile** — If more than half land in Leadership, each item must be re-examined — genuine judgment stays, but undocumented rules that look like judgment get reclassified.
-5. **Map each classified task to a Hybrid Accountability Chart entry** — Deconstruction is thinking; the chart entry (function, agent team, supervisor, autonomy level) is what makes that thinking durable and actionable for Build.
+4. **Tally the three buckets and challenge the Leadership pile** — If more than half land in Leadership, examine each: true judgment stays, consistent-but-unsurfaced patterns move to Management.
+5. **Map each classified task to a Hybrid Accountability Chart entry** — Deconstruction is thinking; the chart entry (function, agent team, Human Orchestrator, autonomy level) is what makes that thinking durable and actionable for Build.
 
 ### 15. Write the Design Brief — `design-brief`
 *06b-designing-the-work · The Design Brief is what Build inherits · Visible*
@@ -226,25 +226,25 @@ Each block below is the verbatim source for both the worksheet and the book over
 6. **Document Constraints and Guardrails** — Locks the governance decisions from Designing the System — data access, action permissions, escalation paths, quality cadence, kill switch — into the design record before Build inherits it.
 7. **Describe the V1 Artifact** — If you cannot describe what the first working version actually produces, the design is not finished — this field forces that decision.
 
-### 16. Write the Agent Mini-Spec (06b instance) — `agent-mini-spec`
-*06b-designing-the-work · Specify every agent with a six-field mini-spec · Visible*
-**DUPLICATE of #13. Dedupe to the canonical #13 spine. The 06b labels below are kept only as the merge source; do not generate a separate worksheet.**
+### 16. Write the Agent Mini-Spec (legacy 06b instance) — `agent-mini-spec`
+*06b-designing-the-work · Spec every agent with a mini-spec. · Visible*
+**DUPLICATE of #13, which is now also homed at 06b-designing-the-work. Dedupe to the canonical #13 seven-step spine. The labels below are kept only as the merge source; do not generate a separate worksheet.**
 
 1. **Write the System Prompt** — Defines what the agent does and, just as explicitly, what it does not do — the operating rules that scope every subsequent decision.
 2. **List the Tools** — Every API, integration, or system the agent can call must be named; if a tool is not listed, the agent does not get it.
 3. **Cross-reference the Context Sources** — Identifying which Knowledge Map rows feed this agent by row reference makes the spec traceable back to Source and prevents agents being built on undocumented data.
 4. **Set the Memory Rules** — Deciding what carries across runs — session state, accumulated decisions, lookback window — determines whether the agent reasons over history or starts fresh each time.
 5. **Write the Judgment and Escalation Rules** — The refusal list and escalation triggers are the most important governance element: they define exactly when the agent stops and the human decides.
-6. **Assign the Oversight Load and confirm supervisor capability** — Naming Low/Medium/High oversight load (and running the Trace/Challenge/Apply-expertise tests) ensures the supervisor is genuinely in the loop, not rubber-stamping.
+6. **Assign the Oversight Load and confirm Human Orchestrator capability** — Naming Low/Medium/High oversight load (and running the Trace/Challenge/Apply-expertise tests) ensures the Orchestrator is genuinely in the loop, not rubber-stamping.
 
 ### 17. Write the eight-section Build Spec — `write-build-spec`
 *07-build · Write the eight-section Build Spec · Visible*
 
 1. **Section 1: Write the workflow summary** — Gives any builder a plain-language end-to-end picture of what they're building before they touch anything.
 2. **Section 2: Define the inputs** — Specifies exactly what triggers the workflow and what data enters it, so the builder knows where to reach and how to access it.
-3. **Section 3: Define the outputs** — Locks the deliverable form, destination, and recipient so the build can't drift toward something the supervisor can't use.
+3. **Section 3: Define the outputs** — Locks the deliverable form, destination, and recipient so the build can't drift toward something the Human Orchestrator can't use.
 4. **Section 4: Set agent scope boundaries** — States what the agent handles and what it cannot decide, preventing over-prescription that kills agent effectiveness.
-5. **Section 5: Name the human supervisor role** — Identifies who reviews, what they review for, and what the handoff looks like — the accountability anchor for the whole build.
+5. **Section 5: Name the Human Orchestrator role** — Identifies who reviews, what they review for, and what the handoff looks like — the accountability anchor for the whole build.
 6. **Section 6: List every system and integration** — Documents read/write access, authentication method, and data sensitivity for every system touched so nothing is wired by assumption.
 7. **Section 7: Document the failure modes** — Pre-decides what happens on every edge case and outage so the builder wires escalation paths instead of improvising them under pressure.
 8. **Section 8: Specify the environment and constraints** — Locks which specific platform within Design's category the build runs on and any data residency, license, or security constraints.
@@ -266,7 +266,7 @@ Each block below is the verbatim source for both the worksheet and the book over
 1. **Question 1: Lock data access boundaries in writing** — Documents exactly what data the system may touch and what is off-limits, with an owner for that decision.
 2. **Question 2: Define agent autonomy vs. human sign-off** — Draws the exact line between what the agent can do unilaterally and what requires a human approval before action.
 3. **Question 3: Specify behavior on unrecognized inputs** — Prevents the agent from guessing or going silent when it encounters something outside its design envelope.
-4. **Question 4: Define quality measurement and baseline** — Makes 'good enough' measurable so the supervisor can calibrate review cadence and know when to trust the system more.
+4. **Question 4: Define quality measurement and baseline** — Makes 'good enough' measurable so the Human Orchestrator can calibrate review cadence and know when to trust the system more.
 5. **Question 5: Name the escalation path** — Routes judgment-requiring outputs to a specific person, in a specific form, on a specific timeline — no ambiguity in the moment.
 6. **Question 6: Name the accountability owner** — Establishes who owns a bad output the same way they'd own it if a person produced it — no diffuse responsibility.
 7. **Question 7: Define the kill switch condition** — Pre-decides the specific failures that trigger immediate shutdown, so the decision isn't made under pressure after something goes wrong.
@@ -369,7 +369,7 @@ Each block below is the verbatim source for both the worksheet and the book over
 *11-what-to-do-next · Name three roles: Orchestrator, Owners, Builder · Visible*
 
 1. **Identify the Human Orchestrator** — Assigns workflow ownership and agent-supervision authority to one named person before the Sprint starts.
-2. **Name the daily-proximate supervisors** — Identifies the two or three people closest to the problem who contribute to Signal and Source and catch what reports miss.
+2. **Name the daily-proximate owners** — Identifies the two or three people closest to the problem who contribute to Signal and Source and catch what reports miss.
 3. **Confirm the builder resource** — Locks in who will construct the solution — internal developer, external partner, or Compound membership — so the Sprint is fully staffed.
 
 ### 32. Fill in the Sprint Planning Canvas (kickoff instance) — `sprint-planning-canvas`
@@ -378,7 +378,7 @@ Each block below is the verbatim source for both the worksheet and the book over
 
 1. **Enter the constraint statement** — Populates the Active Sprint row of the Hybrid Org Today with a single precise sentence — the Sprint's north star.
 2. **Enter the annual cost estimate** — Establishes the baseline number the Sprint must beat and makes the business case visible to the team.
-3. **Name the three roles on the Canvas** — Connects the roster (Orchestrator, supervisors, builder) to the Sprint artifact so ownership is unambiguous.
+3. **Name the three roles on the Canvas** — Connects the roster (Orchestrator, owners, builder) to the Sprint artifact so ownership is unambiguous.
 4. **Choose and record the path (self-guided or Compound)** — Locks in the operating model so execution doesn't stall on a decision that should already be made.
 5. **Run the pre-flight checklist** — Two gate questions (constraint is structural; Orchestrator passes Right Seat Evaluation) catch the gaps that turn into wasted quarters before the Sprint starts.
 
@@ -438,8 +438,8 @@ Tier 2 (calculators / stock-takes / supporting artifacts):
 
 ## 4. Duplicate / overlapping processes — DEDUPE
 
-**A. Agent Mini-Spec — #13 (06-designing-the-system) ≡ #16 (06b-designing-the-work).**
-Same artifact, same slug `agent-mini-spec`, same six core fields. The 06-system version is the **canonical** spine because it carries a 7th step (tool-category routing) that 06b omits. Action: collapse to ONE worksheet and ONE book overview using the #13 seven-step spine. In 06b, reference the same spine rather than re-listing it with slightly different field-name casing ("System Prompt" vs "system prompt"). The casing/wording drift between the two is exactly the failure mode this registry exists to prevent.
+**A. Agent Mini-Spec — #13 ≡ #16 (both now 06b-designing-the-work).**
+Same artifact, same slug `agent-mini-spec`. The #13 seven-step spine is **canonical** (it carries the tool-category routing step #16 omits); its home moved from 06-designing-the-system to 06b-designing-the-work in the ch6/06b split; 06-designing-the-system now only points forward to it. Action: collapse to ONE worksheet and ONE book overview using the #13 seven-step spine. The casing/wording drift between the two instances ("System Prompt" vs "system prompt") is exactly the failure mode this registry exists to prevent.
 
 **B. Sprint Planning Canvas — #7 (03-the-framework) ≡ #32 (11-what-to-do-next).**
 Same artifact, same slug `sprint-planning-canvas`. #7 is the **canonical full spine** (9 steps, the eight Canvas questions + the three operating fixtures). #32 is an abbreviated 5-step kickoff/pre-flight pass that maps onto a subset of #7 (constraint, cost, roles, path, pre-flight gates). Action: one worksheet (the full Canvas). In Ch 11, present the kickoff pass as a short "fast path through the Canvas you already know" callback, not a second independent process.
