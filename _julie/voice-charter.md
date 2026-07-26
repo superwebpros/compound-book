@@ -2,7 +2,7 @@
 
 The canonical voice profile for this book. Extracted from the de-AI'd chapter source after multiple polishing rounds. Authoring agents must read this before drafting or rewriting any prose.
 
-**Out of scope:** I-vs-we / Jesse:/Julie: callout convention. That is handled separately as the dual-author pass. This charter governs cadence, vocabulary, sentence structure, anti-patterns, and anti-AI signals only.
+**Narrative voice rule (canonical — now in scope):** Stories are told in first-person, blended narrative. Never use "Jesse:" / "Julie:" — or any — colon-label speaker prefixes; that screenplay/transcript format is banned and is an auto-reject anti-pattern (see A17 below). When a story belongs to one author, name them inside the prose ("Jesse was in our L10…", "My ops manager…") and use "I"; when it belongs to both, use "we." Inline naming in normal prose is correct and must not be flagged. This REPLACES the prior dual-author convention. This charter governs cadence, vocabulary, sentence structure, anti-patterns, and anti-AI signals.
 
 ---
 
@@ -21,7 +21,7 @@ Numbers are load-bearing. Names of artifacts, tools, people (anonymized or compo
 The work is plumbing, not philosophy. Words like *workflow, handoff, accountability, structural, designed, gate, deliverable* carry the weight. The sampled triplet "*The pattern is mechanical. The diagnosis is mechanical. The fix is mechanical.*" (01-diagnosis.qmd:81) reads as AI cadence (triplet pileup, A3 below) and should not be imitated — the *principle* lives, the *construction* doesn't.
 
 **5. Embedded story, never decorative anecdote.**
-Stories arrive at the moment they make a point and end the moment the point is made. They are first-person, specific, and quantified where possible. They do not begin with "Imagine if..." or "Picture a company..." First-person tag follows the dual-author rule (Jesse:/Julie: when a story belongs to one of them; "we" when it belongs to both). Example (04-signal.qmd:92): the PT clinic story opens *"I sat in on a meeting with a PT clinic operator that was forty-five minutes into a conversation about opening their sixth location."*
+Stories arrive at the moment they make a point and end the moment the point is made. They are first-person, specific, and quantified where possible. They do not begin with "Imagine if..." or "Picture a company..." First-person tag follows the narrative voice rule: name the author inline in prose ("Jesse was in our L10…"; "I sat in on a meeting…") and use "I" for one author, "we" for both. Never use a colon-label prefix ("Jesse: …"). Example (04-signal.qmd:92): the PT clinic story opens *"I sat in on a meeting with a PT clinic operator that was forty-five minutes into a conversation about opening their sixth location."*
 
 **6. Refuses recap rituals; ends with reflection questions.**
 No "In this chapter we covered...", no "To recap...", no "Taken together...". Chapters end with **reflection questions that engage the reader to apply the chapter to their own business** — typically 2–4 short questions in a `### Reflect on your operation` style block (or equivalent), followed by a one-line handoff to the next chapter. Example handoff (07-build.qmd:342): *"Build makes it work. Deliver puts it into the company's actual operating rhythm..."*
@@ -197,6 +197,12 @@ Each entry: **(a)** the pattern, **(b)** why forbidden, **(c)** what NOT to writ
 **Don't write:** *"You'll leave with the framework..."* *"Walk away from this book with..."* *"Inside this book, you'll find..."*
 **Do instead:** Use verbs that match the book's actual ontology. *"By the last page, you'll have..."* *"When you finish, you'll have..."* *"You'll close this book with..."* *"You'll put this book down with..."*
 
+### A17. Colon-label speaker prefix — AUTO-REJECT
+**Why:** The screenplay/transcript format "Jesse: …" / "Julie: …" breaks the first-person blended narrative voice. It signals a different genre (interview, script, dialogue) and ruptures the reader's immersion in the book's operator-to-operator register. Inline naming in normal prose ("Jesse was in our L10," "Julie sat in on a meeting") is **correct** and must never be flagged.
+**Don't write:** *"Jesse: We had a project coordinator role…"* *"Julie: I ran the sprint with a PT clinic…"* or any `Name:` prefix at the start of a sentence or paragraph.
+**Do instead:** Name the author inside the prose and use "I" or "we." *"We had a project coordinator role…"* (both authors) or *"Jesse was reviewing the role when we ran it through Work Deconstruction…"* (one author named inline).
+**Vale rule:** `SpeakerLabel.yml` (error level) flags this pattern automatically. LLM scanner also checks.
+
 ---
 
 ## Section 5 — How to use this charter (operator instructions for implementer agents)
@@ -231,7 +237,7 @@ Current anti-pattern list (lines 41–50) covers corporate filler, fear-urgency,
 - A4 (contrived/boastful biographical examples) — currently no rule
 - A12 (invented company beats) — currently no rule; scanner should flag any numeric claim attached to an unnamed engagement
 
-Also: scanner's Pillar 6 ("First Person & Anonymized") will need revision once the I-vs-we dual-author convention is finalized. Out of scope for this charter.
+Also: scanner's Pillar 6 ("First Person & Anonymized") must be updated to reflect the canonical narrative voice rule now in this charter: colon-label speaker prefixes ("Jesse: …", "Julie: …") are banned and are auto-reject (A17). First-person blended with inline naming is the correct form.
 
 ### `voice-implementer.md` — needs additions
 Voice Quick Reference (lines 31–35) is thin. **Suggested addition:** a "before you rewrite, run this checklist" block pointing to this charter's Section 4. Currently the implementer has no anti-pattern reference at all — it just trusts the scanner's flags.

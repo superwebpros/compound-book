@@ -72,12 +72,16 @@ The chapter's central artifact rolls up to a **Sprint Planning Canvas row**, and
 - **Bullets** — dense comma-lists and question sets become bullets.
 - **In-Brief** — summarizes; never overstates ("that single rule is all Design does" → it's one of N).
 - **Close** — 2–4 reflection questions that apply the chapter to the reader's business, then a one-line handoff. No recap summary.
+- **Narrative voice** — first-person blended; name the author inline in prose ("Jesse was in our L10…", "I sat in on a meeting…"); NO "Jesse:"/"Julie:" colon-label speaker prefixes (A17 — auto-reject). "We" when both authors. See `_julie/voice-charter.md` A17 and Vale rule `SpeakerLabel.yml`.
 - **Voice** — `_julie/voice-charter.md` (declarative operator voice, contractions, em-dashes sparingly, forbidden vocab incl. "leverage"/"transformation"); craft per `_julie/prose-craft-charter.md`.
 - **EOS** — agnostic by default; one optional familiar-paradigm bridge per concept.
 - **Meridian/Elena** is the deliberate through-line — never cut as "redundancy."
 - **Moves blocks** are registered in `_julie/process-spines.md`; keep labels in sync (skill `sync-process`).
 
 ## The orchestration recipe
+
+**Model routing:** Heavy passes — the drafter, the judge trio (voice-scanner / prose-craft / editorial-coherence), and the reconcile-implementer — run on **Fable** (`claude-fable-5`): 1M context holds the whole chapter + skill + charter + prior chapters, and stronger judgment catches mechanical or over-templated application. Cheap mechanical work — diagram authoring, greps/renders/renames, worksheet renders — runs on **Sonnet** for cost. The orchestration seat may also run on Fable.
+
 1. **Audit** — dispatch the `chapter-auditor` agent (read-only). It produces a findings + fix-plan report at `.claude/output/structure-audit-<stem>.md`: per-pattern findings with line refs, a drafter brief, a diagram list (new/redrawn progressive excalidraws), a term-disambiguation list (with propagation flags), redundancy cuts, and Meridian-narrative gaps. Fan it out across several upcoming chapters in parallel to get ahead of the author's read.
 2. **Settle concept forks** — if the audit surfaces genuine conceptual decisions (term consolidation, what an artifact *is*, structure), raise them with the author via AskUserQuestion *before* drafting. (This is what the Signal noun-spine and ch6 role-consolidation discussions were.)
 3. **Draft** — dispatch the `drafter` agent with the audit's brief (or the `draft-chapter` skill). Apply patterns 1–4; leave `<!-- TODO excalidraw: … -->` comments for diagrams. Remove `jf-note:` markers.

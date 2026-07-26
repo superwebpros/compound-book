@@ -42,7 +42,7 @@ PDF builds require a LaTeX install. If missing, `quarto install tinytex` provide
 - Author voice is declarative and unhedged (see `chapters/01-introduction.qmd` for the established tone). Avoid softening edits that introduce qualifiers the surrounding prose doesn't use.
 - **Em-dashes: use sparingly** (revised rule — see voice charter). They were previously the "editorial rhythm"; now they're a calculated tool, not a default.
 - **Chapters end with reflection questions** (2–4 short questions that engage the reader to apply the chapter to their business), followed by a one-line handoff. No recap-style summaries.
-- **Dual-author convention:** "Jesse:" / "Julie:" when a story belongs to one of them; "we" when both. Blended authorial voice for analysis.
+- **Narrative voice — first-person blended; NO colon-label speaker prefixes.** Stories are told in first-person, blended narrative. Never use "Jesse:" / "Julie:" — or any — colon-label speaker prefixes; that screenplay/transcript format is banned. When a story belongs to one author, name them inside the prose ("Jesse was in our L10…", "My ops manager…") and use "I"; when it belongs to both, use "we." Inline naming in normal prose ("Jesse was in our L10", "Julie sat in on a meeting") is correct and must not be flagged or changed.
 - Diagrams will (soon) be authored as Excalidraw drawings. Default to **black and white** unless the chapter context explicitly calls for color.
 
 ## Voice scanning pipeline

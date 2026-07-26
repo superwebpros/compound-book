@@ -35,7 +35,7 @@ This produces `.claude/output/voice-scan-<chapter-stem>.md` with the determinist
 
 ## Canonical reference: `_julie/voice-charter.md`
 
-Before scanning, read `_julie/voice-charter.md` in full. It is the authoritative voice spec. Voice charter Section 4 lists anti-patterns A1-A16. The deterministic layer catches A3, A6, A7, A8, A9, A10, A11, A16 plus partial detection of A1, A5, A12, A15. **Your job is to judge: A1 (where deterministic missed it), A2, A4, A5 (the judgment cases), A12 (where deterministic missed it), A13, A14, A15.**
+Before scanning, read `_julie/voice-charter.md` in full. It is the authoritative voice spec. Voice charter Section 4 lists anti-patterns A1-A16. The deterministic layer catches A3, A6, A7, A8, A9, A10, A11, A16 plus partial detection of A1, A5, A12, A15. **Your job is to judge: A1 (where deterministic missed it), A2, A4, A5 (the judgment cases), A12 (where deterministic missed it), A13, A14, A15, A17 (where Vale missed unusual formatting).**
 
 ## Voice DNA (Jesse Flores / Compound):
 
@@ -54,8 +54,8 @@ Foundation → Bridge → Application. Explains why before how.
 ### Pillar 5: Peer-to-Peer Tone
 Smart friend over coffee, not professor lecturing. Contractions. "You" address. Short sentences mixed with medium. No clinical/textbook prose.
 
-### Pillar 6: First Person & Anonymized
-All stories first person. All client/company names anonymized.
+### Pillar 6: First Person & Anonymized (UPDATED — canonical rule now finalized)
+All stories are first-person blended narrative. All client/company names anonymized. **Colon-label speaker prefixes ("Jesse: …", "Julie: …") are banned (A17 — auto-reject).** Name the author inline in prose and use "I" (one author) or "we" (both). Inline naming in normal prose ("Jesse was in our L10," "Julie sat in on a meeting") is correct and must NOT be flagged.
 
 ## Anti-Patterns (instant flag — derived from `_julie/voice-charter.md` Section 4):
 
@@ -76,6 +76,7 @@ All stories first person. All client/company names anonymized.
 - **A3 (expanded). Triplet pileup / parallel-construction overload.** Beyond "not X — it's Y." Flag ANY three-item parallel construction (verb-noun, noun-verb, etc.) if more than 1 per section or 3 per chapter. Example to flag: "The pattern is mechanical. The diagnosis is mechanical. The fix is mechanical."
 - **A4. Contrived or boastful biographical examples.** Flag biographical detail that exists to impress rather than to give the reader a number/pattern they can use. Canonical example: "121 episodes simultaneous with global HR function."
 - **A12. Generic / invented company beats.** Flag any numeric claim attached to an unnamed engagement ("A Fortune 500 company we worked with saw 47% improvement..."). Only named real composites (Meridian Manufacturing) or generic-by-design ("a 60-person professional services firm") are allowed.
+- **A17. Colon-label speaker prefix (AUTO-REJECT).** Flag any line/sentence that opens with a `Name:` speaker-label prefix — "Jesse: …", "Julie: …", or any bold variant ("**Jesse:** …"). This screenplay/transcript format is banned. The Vale rule `SpeakerLabel.yml` (error level) catches this deterministically; your job is to catch any that slip through (e.g. mid-paragraph label resets, unusual formatting). Inline naming in normal prose ("Jesse was in our L10," "Julie sat in on a meeting") is **correct** — do not flag it.
 
 **Em-dash density (revised rule).** Em-dashes were previously called "the editorial rhythm." That guidance is **retired** — em-dashes are now treated as a calculated tool, not a default. Flag any paragraph that uses em-dashes as primary punctuation in more than one sentence. The existing manuscript has em-dashes from prior guidance grandfathered in; flag only NEW em-dashes introduced by this scan's revisions.
 
