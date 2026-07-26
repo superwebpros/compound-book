@@ -1,0 +1,121 @@
+formula = "chapter-pass"
+description = "Per-chapter structural fine-tuning pipeline for Co-Intelligent Co-Operation: audit -> author forks (human gate) -> produce -> author read (human gate) -> jf-note rounds -> author approval (human gate) -> handoff. Executable middle = Workflow({name:'chapter-structure-pass'}); standard = .claude/skills/chapter-structure-pass/SKILL.md."
+version = 1
+type = "workflow"
+
+[vars.slug]
+description = "Chapter file stem, e.g. 07-build (file = chapters/<slug>.qmd)"
+required = true
+
+[[steps]]
+id = "audit"
+title = "Audit {{slug}}: structural pre-read"
+type = "task"
+description = """
+Dispatch the `chapter-auditor` agent (read-only) on chapters/{{slug}}.qmd per
+.claude/skills/chapter-structure-pass/SKILL.md. Output:
+.claude/output/structure-audit-{{slug}}.md.
+
+Then present the report's Section D (conceptual forks) to the author via
+AskUserQuestion — crisp options, recommendation first. Record the author's
+rulings in this bead's notes verbatim; the produce step passes them to the
+drafter.
+
+SCOPE RULE (life of this molecule): edit ONLY chapters/{{slug}}.qmd. Any fix
+touching another file (glossary, process-spines, other chapters, appendices)
+becomes a bead labeled corpus-tie-up, not an edit.
+"""
+
+[[steps]]
+id = "settle-forks"
+title = "AUTHOR GATE: settle conceptual forks for {{slug}}"
+needs = ["audit"]
+description = """
+The author settles the audit's Section D forks (book IP — never decided
+unilaterally). Session Claude: after the author answers, write the rulings
+into the audit bead's notes, then `bd gate resolve` this gate's blocker.
+If Section D is empty, note that and resolve immediately.
+"""
+
+  [steps.gate]
+  type = "human"
+
+[[steps]]
+id = "produce"
+title = "Produce {{slug}}: draft + diagrams + gate + judges + reconcile"
+needs = ["settle-forks"]
+description = """
+Run the repo workflow:
+
+  Workflow({name: "chapter-structure-pass", args: {
+    chapter: "chapters/{{slug}}.qmd",
+    mode: "produce",
+    auditPath: ".claude/output/structure-audit-{{slug}}.md",
+    rulings: "<author fork rulings from the audit bead notes>"
+  }})
+
+The gate + judge trio inside it are NON-SKIPPABLE. When it returns: review
+notesForOrchestrator (apply judgment; dispatch a voice-implementer round if
+warranted), file each propagationItem as a bead labeled corpus-tie-up, verify
+render exit 0 + scan report, then commit the chapter checkpoint on branch
+edits/fine-tuning (this chapter's files only). Summarize judgment calls in
+this bead's notes for the author's read.
+"""
+
+[[steps]]
+id = "author-read"
+title = "AUTHOR GATE: read {{slug}}"
+needs = ["produce"]
+description = """
+The author reads the produced chapter and leaves jf-note markers in the file.
+Session Claude: `bd gate resolve` when the author says the read is done
+(with or without notes).
+"""
+
+  [steps.gate]
+  type = "human"
+
+[[steps]]
+id = "resolve-notes"
+title = "Resolve jf-note rounds for {{slug}}"
+needs = ["author-read"]
+description = """
+For each round: grep the jf-notes; discuss conceptual questions with the
+author first (AskUserQuestion) and capture rulings; then run
+
+  Workflow({name: "chapter-structure-pass", args: {
+    chapter: "chapters/{{slug}}.qmd",
+    mode: "revise",
+    rulings: "<author rulings for this round>",
+    skipDiagrams: true   // unless a note asks for a visual
+  }})
+
+Repeat until grep jf-note = 0. Commit after each round. File any new
+propagation items as corpus-tie-up beads. If the author left zero notes,
+close this step immediately.
+"""
+
+[[steps]]
+id = "author-approve"
+title = "AUTHOR GATE: approve {{slug}}"
+needs = ["resolve-notes"]
+description = """
+The author confirms the chapter is done (no further notes coming).
+`bd gate resolve` on their explicit approval only.
+"""
+
+  [steps.gate]
+  type = "human"
+
+[[steps]]
+id = "handoff"
+title = "Handoff {{slug}}: park for corpus tie-up"
+needs = ["author-approve"]
+description = """
+Final checks: 0 jf-notes; quarto render exit 0; all chapter commits on
+edits/fine-tuning pushed; every propagation item filed as a corpus-tie-up
+bead; lessons worth keeping written to this bead's notes.
+
+Do NOT merge to master and do NOT deploy — the orchestrator ships the corpus
+after all chapter molecules land and corpus-tie-up beads are swept.
+"""
