@@ -7,7 +7,7 @@ Build deployed the workflow. Deliver makes the organization actually use it. The
 
 We flip the switch on a Wednesday.
 
-The workflow goes live. The agent — an AI system that holds a goal, runs a sequence of steps toward it, and adjusts based on its own outputs without a human re-prompting between steps; not a chatbot that answers a question and stops — starts pulling tickets from the queue, routing them, logging its decisions. I'm watching the dashboard with Sofia, our VP of Operations, reviewing with me in real time. Left side: everything working the way we designed it. Right side: flags. The agent is handling a category of inputs we didn't map fully in Source, and it's doing things we didn't expect.
+The workflow goes live. The agent starts pulling tickets from the queue, routing them, logging its decisions. I'm watching the dashboard with Sofia, our VP of Operations, reviewing with me in real time. Left side: everything working the way we designed it. Right side: flags. The agent is handling a category of inputs we didn't map fully in Source, and it's doing things we didn't expect.
 
 I tell her: "Pretty buggy over here. But it's doing a great job over there."
 
@@ -15,17 +15,19 @@ She nods. We're both looking at the same screen.
 
 "Live" is a technical claim. The agent is running. The workflow is in production. The ticket is about to get closed. None of that means the Sprint produced.
 
-The Sprint produces on Monday. The operator whose week was supposed to change sits down, opens their queue, and the eight hours of routing work they used to do is gone. They have something different to do instead. If that happens, the Sprint produced. If they're still routing manually and sending work to the old inbox, still working the system we were supposed to replace, then we deployed a tool and didn't deliver anything.
-
-The difference is operational.
-
-This chapter fills in the Deliver row of the Sequence first-pass on your Sprint Planning Canvas.
+The Sprint produces on Monday. The operator whose week was supposed to change sits down, opens their queue, and the eight hours of routing work they used to do is gone. They have something different to do instead. If that happens, the Sprint produced. If they're still routing manually and sending work to the old inbox, still working the system we were supposed to replace, then we deployed a tool and didn't deliver anything. How much you delivered is a number, and it comes later in this chapter.
 
 ## *Deployed* is not the same as *delivered*.
 
 Build ends with a working agent running in production. That is a real milestone. It is also incomplete. The agent is doing the work it was designed to do; the organization around it has not yet adjusted to receive what the agent now produces.
 
-Deliver is the stage operators most often skip the work of. The technology side is built; the organizational side is assumed. Every implementation that succeeded at Deliver did three things before the go-live date: named exactly who was affected and how their daily work would change, trained those people on the new handoffs before they encountered them in production, and established a measurement baseline against the cost Signal identified. Every implementation that failed at Deliver skipped one or more — and discovered the gap in production, where fixing it was expensive. The Deploy Readiness Audit below operationalizes all three.
+Operators skip Deliver's work more often than any other stage's. The technology side is built; the organizational side is assumed. Three things have to be true before the go-live date:
+
+- Everyone affected is named, with how their daily work changes stated.
+- Those people are trained on the new handoffs before they meet them in production.
+- A measurement baseline exists against the cost Signal identified.
+
+Skip one and you discover the gap in production, where fixing it is expensive. The Deploy Readiness Audit below turns all three into gates.
 
 The person whose week used to include four hours of manual routing now has those four hours back — but only if their calendar, their queue, and their handoffs have been re-set to reflect that. The colleague who used to send them tickets needs to know to send the tickets somewhere else. The manager who used to see the weekly summary needs the new reporting wired up. The escalation path for the exceptions the agent flags needs to land on a human who has been told it will land on them.
 
@@ -37,55 +39,100 @@ This wasn't resistance. Nobody told her to stop. That's Deliver's job. The techn
 
 :::{.callout-tip}
 ## Pro Tip
-If the old system is still accessible, people will use it. Deliver's first move is to close the old path — not alongside the new one, instead of it.
+If the old system is still accessible, people will use it. Close the old path. The new workflow replaces the old one; it doesn't run alongside it.
 :::
+
+This chapter fills in the Deliver row of the Sequence first-pass on your Sprint Planning Canvas. Deliver runs in five parts, in order. The Deploy Readiness Audit proves the organization is ready before the switch flips. The per-role runbook makes the change explicit for every person whose handoffs moved. The operational log captures what production reveals that the design didn't. The Sprint outcome measurement puts two numbers on what the Sprint produced. And the delivery test is the gate that says whether you delivered or just deployed.
 
 ## The *Deploy Readiness Audit*.
 
 Before your team flips the switch, you run a pre-flight check. Four binary gates. Every gate must pass. If any answer is "no," you stop, fix it, and re-run.
 
+The Audit is a check on prior work, not new authoring. Every question points to something that should already exist: a trained person, a documented path, a tested input, a scheduled review. The inputs arrive from upstream. The Design Brief's Stakeholders section named every role whose job changes, and Build's Done test packaged that list forward with the working system. What Build didn't do is brief those people — that's Deliver's first job, and the Human Orchestrator is accountable for the briefing having happened before Gate 1 gets answered. Most failed deploys trace back to a question nobody asked at this gate.
+
 <!-- moves:deploy-readiness-audit -->
 ### How to run the *Deploy Readiness Audit*
 
-1. **Gate 1 — Confirm hands-on training** — Every person whose work changes must have practiced on real inputs before go-live; a meeting or email doesn't count.
-2. **Gate 2 — Document the escalation path** — Unexpected agent output needs a named human, a channel, and a response window before it hits production.
-3. **Gate 3 — Test against real data** — Validating on actual inputs from the last two weeks surfaces gaps that synthetic tests miss.
-4. **Gate 4 — Book the Human Orchestrator review cadence** — A recurring, non-negotiable calendar event makes oversight an operating rhythm, not a best intention.
-5. **Resolve every Fail before deploying** — Each failed gate becomes a named task; re-running at 4/4 is the deploy condition.
+1. **Gate 1 — Confirm hands-on training**
+2. **Gate 2 — Document the escalation path**
+3. **Gate 3 — Test against real data**
+4. **Gate 4 — Book the Human Orchestrator review cadence**
+5. **Resolve every Fail before deploying**
 <!-- /moves:deploy-readiness-audit -->
+
+
+### Gate 1 — how much practice is *enough*
+
+Scheduled training doesn't clear Gate 1. What clears it is every affected person having run real inputs through the new workflow with their own hands. How much practice that takes scales with how often the role touches the workflow:
+
+- A claims processor who'll touch the new flow forty times a day needs a supervised morning on live claims, not a demo.
+- A scheduler who'll touch it a few times a week needs three or four real bookings run end to end, with someone watching.
+- An account manager who only receives the workflow's output needs one walkthrough of a real deliverable, plus the escalation rule for when it looks wrong.
+
+"Practiced" means the person has hit the workflow's normal case and at least one exception. If they haven't seen an exception yet, they've watched, not practiced.
+
+### Gate 2 — verify the *escalation path* is live
+
+Gate 2 doesn't author the escalation path. The Guardrails Checklist in Build already named it: judgment-requiring output goes to a specific person, in a specific form, on a specific timeline. What this gate verifies is that the answer left the checklist: it's published where the team works, and the named humans have been told the escalations land on them. A person who discovers they're the escalation path when the first exception arrives is a Fail, even if the document was perfect.
+
+The response window is the part operators guess at. Set it by the cost of a wrong output escaping, not by the volume of escalations you expect:
+
+- Customer-facing output (a quote, a support reply, a proposal): hours, because someone is waiting on it.
+- Internal batch work (a weekly report, a reconciliation run): next business day is defensible.
+- Anything touching money or compliance: before the output leaves the building, whatever that takes.
+
+### Gate 3 — test on the inputs your team *dreads*
+
+Synthetic tests confirm the workflow does what you designed. Real inputs surface what you didn't design. The last two weeks matter not because two weeks is magic, but because recent inputs carry your current customers, current formats, and current mess.
+
+Volume matters less than selection. Don't pick the clean ones:
+
+- For an intake workflow: the rambling email with the attachment missing.
+- For a bookkeeping workflow: the vendor who invoices in a different format every month.
+- For a scheduling workflow: the client who calls in changes an hour before the appointment.
+
+If nothing in the test set makes your best person wince, you tested the demo, not the operation.
+
+### Gate 4 — verify the oversight cadence is on the *calendar*
+
+Gate 4 doesn't decide how much oversight the workflow needs. Designing the Work already set the oversight load for every agent in the spec (Low, Medium, or High), and every new agent starts at High. This gate checks that the calendar matches the level: a High-oversight agent with no recurring review event is a Fail, however good the intentions.
+
+The cadence tapers on evidence, not on time. The target Designing the Work set is to earn Medium through demonstrated accuracy over multiple Sprints, and the operational log below is where that evidence accumulates. The review never comes off the calendar entirely, even at Low.
 
 | # | Gate | Pass / Fail |
 |---|------|-------------|
 | 1 | Has every person whose work changes been trained on the new flow, with hands-on practice on actual inputs? | Pass / Fail |
-| 2 | Is there a documented escalation path for when the workflow produces unexpected output — with named people, channels, and response windows? | Pass / Fail |
+| 2 | Is the escalation path from the Guardrails Checklist published where the team works, and have its named people been told the escalations land on them? | Pass / Fail |
 | 3 | Has the workflow been tested against real data from the last two weeks, using actual inputs from your operation? | Pass / Fail |
-| 4 | Is the Human Orchestrator's review cadence defined and on the calendar? Recurring. Non-negotiable. | Pass / Fail |
-
-If the result is not 4/4, you're not ready to deploy. Every "Fail" is a task. Assign it, complete it, re-run the audit.
-
-Gate 4 names the Human Orchestrator — the operator who runs the shipped workflow and supervises its agent team day to day: reviewing output, course-correcting, and closing the loop on what the agents produce, sprint by sprint (not a chatbot supervisor, but an operational owner with a weekly cadence; covered in depth in the Design chapter).
-
-The Audit is a check on prior work, not new authoring. Every question points to something that should already exist: a trained person, a documented path, a tested input, a scheduled review. If any answer is missing, that item blocks the deploy. Failed deploys trace back to a question nobody asked at this gate.
+| 4 | Is the oversight level set in Designing the Work on the Human Orchestrator's calendar as a recurring review? Non-negotiable. | Pass / Fail |
 
 ### Meridian Manufacturing.
 
-At Meridian Manufacturing, Elena and Dave completed hands-on training with the three-agent quoting pipeline before the workflow went live. Elena ran real quotes through the system while Dave reviewed the agent's historical job matching against specs he knew by heart. The escalation path was documented in the Claude Team workspace: any quote flagged as low confidence routed to Dave for non-standard materials, with Elena reviewing every assembled quote before it went to the customer. The workflow was tested against real RFQs pulled from HubSpot, actual customer requests from the prior two weeks. Elena's review cadence was booked on the calendar: Monday and Thursday mornings, recurring. Systems verified: HubSpot connected, JobBOSS connected, Customer Notes.xlsx with 112 validated pricing rules loaded into the agent's context. Four gates passed. Clear to deploy.
+Elena ran real quotes through the pipeline herself while Dave sat with the agent's historical job matching, checking its picks against specs he knew by heart. That was Gate 1: live work, not a walkthrough. The rest of the audit was verification. The escalation path was already written and published, non-standard materials routing to Dave and low-confidence quotes to Elena. The workflow ran against two weeks of real RFQs pulled from HubSpot, with the 112 validated pricing rules loaded into the pricing project's context. Elena's review went on the calendar as Monday and Thursday mornings, recurring. Four gates, four passes. Clear to deploy.
+
+{{< excalidraw ch08-readiness-gates-progressive-1 "Frame 1 of the Deploy Readiness Audit: one gate cleared, three still pending." >}}
+
+{{< excalidraw ch08-readiness-gates-progressive-4 "Frame 4: all four gates cleared and stamped 4/4, which is the deploy condition." >}}
 
 :::{.callout-note}
 ## Action Step
-Pull up your Hybrid Accountability Chart from Design — the map of who owns what, extended to include the agent roles alongside the human ones (covered in the Design chapter). If you run EOS, this extends your Accountability Chart: same structure, with agent roles added to the seats. List every person whose daily work changes because of this Sprint. For each one, confirm they've completed hands-on training — not a meeting, not an email. If anyone hasn't, that's your first task before deploy.
+Pull up your Hybrid Accountability Chart from Designing the System. Set it next to the Design Brief's role-change list and confirm every person whose daily work changes has completed hands-on training that meets Gate 1's bar. If anyone hasn't, that's your first task before deploy.
 :::
 
 ## The *per-role runbook*.
 
+Deliver training is different from technology training. Most technology training covers how to use the new system. The training that prevents adoption failure covers the handoff: where the human's work ends and the agent's work begins. The handoff is where the work breaks. It's where the human either completes the output correctly and passes it to the agent, or does it incorrectly and compromises everything the agent produces downstream. Every person whose handoff changes should be able to answer two questions before go-live: what do I do differently now, and what does the agent do that I used to do? The per-role runbook is the document that makes both answers explicit, one page per role.
+
+You're not discovering who those people are. The Design Brief's role-change list named them; the list arrived in Build's handoff package. The runbook turns each name on it into a page: what changed, in writing, so the answer doesn't live only in whoever ran the training.
+
 <!-- moves:per-role-runbook -->
 ### How to write the *per-role runbook*
 
-1. **Identify affected roles from the Hybrid Accountability Chart** — Scope the runbook to every person whose handoffs changed — no one surprises left out.
-2. **For each role, answer the four change questions** — Forces explicit articulation of what the person does differently, what the agent now handles, how they review output, and what triggers escalation.
-3. **Write the three-column entry (input / output / escalation)** — One concrete sentence each — vague entries like 'reviews output' are not runbook entries.
-4. **Apply the vacation test** — A colleague who missed the entire Sprint should be able to read the document and know exactly what changed about their job.
-5. **Publish the runbook in the team's live tool before go-live** — A runbook in a folder no one opens is not a runbook; it must be findable where the team already works.
+1. **Identify affected roles from the Hybrid Accountability Chart**
+2. **For each role, answer the four change questions**
+3. **Write the three-column entry (input / output / escalation)**
+4. **Apply the vacation test**
+5. **Publish the runbook in the team's live tool before go-live**
 <!-- /moves:per-role-runbook -->
 
 For every role affected by the Sprint, document three things: what they receive, what they produce, and when they escalate.
@@ -96,16 +143,28 @@ For every role affected by the Sprint, document three things: what they receive,
 
 For each role, answer four questions:
 
-1. What does this person now do differently than before the Sprint?
-2. What does the agent handle that this person used to handle?
-3. How does this person review agent output?
-4. What triggers an escalation?
+- What does this person do differently than before the Sprint?
+- What does the agent handle that this person used to handle?
+- How does this person review agent output?
+- What triggers an escalation?
 
-Deliver training is different from technology training. Most technology training covers how to use the new system. The training that prevents adoption failure covers the handoff: where the human's work ends and the agent's work begins. The handoff is the moment of highest failure risk in any human-AI workflow. It's where the human either completes the output correctly and passes it to the agent, or does it incorrectly and compromises everything the agent produces downstream. Every person whose handoff changes should be able to answer two questions before go-live: what do I do differently now, and what does the agent do that I used to do? If they can't answer both, the training is incomplete, and the runbook isn't done.
+{{< excalidraw ch08-per-role-runbook "A runbook card, one per affected role, with the three columns filled as examples." >}}
 
-Sit down with the Hybrid Accountability Chart from Design and work through each role whose handoffs changed. For each role, write three things: what they send to the agent (the trigger or input), what comes back to them (the output and its format), and what they do when something lands outside the expected range (the escalation path). One page per role.
+### "Reviews output" is not an *entry*
 
-At Meridian, the per-role runbook looked like this:
+The runbook's failure mode is the entry a manager could have written without knowing the job. "Reviews output" describes half the roles in your company; it tells the person on the page nothing about Monday morning. "Opens the quote draft in the shared folder, checks unit costs against the rate card, approves or flags within 4 hours" is an entry: it names the artifact, the check, and the clock. The same bar holds for a bookkeeper: "Reviews the coded invoices" fails; "Opens the agent's coded invoice batch each morning, checks vendor and GL code against the coding rules, approves or flags by noon" passes.
+
+If the sentence could be pasted into another role's row without anyone noticing, it isn't concrete enough.
+
+### Meridian's runbook, *role by role*.
+
+At Meridian, three roles changed handoffs — the three names on the role-change list. What changed:
+
+- Dave used to give Elena verbal labor-hour estimates when she asked. Now he reviews the agent's historical matching weekly and gets pulled in only for non-standard materials — the work that actually requires thirty-one years of fabrication knowledge.
+- Elena used to build every quote from scratch, fifteen hours a week. Now she reviews agent-generated drafts in fifteen to twenty minutes each, spending the recovered hours on production planning and supplier negotiations.
+- Ty used to wait three to five days for Elena to produce a quote, then forward it to the customer. Now he receives approved quotes same-day for standard work and can see every quote's status in the CRM pipeline.
+
+The runbook made each change explicit:
 
 | Role | Input | Output | Escalation |
 |------|-------|--------|------------|
@@ -113,20 +172,14 @@ At Meridian, the per-role runbook looked like this:
 | Elena Ruiz (VP Ops) | Agent-assembled draft quote in her CRM review queue, with confidence score and historical matches | Approved quote (or edited and approved), updated Customer Notes.xlsx when new exceptions arise | Reviews every assembled quote. Monitors confidence score distribution. Updates pricing rules for new exceptions. Works from Claude Team workspace and JobBOSS. |
 | Ty Banfield (Sales) | Approved quote delivered via HubSpot notification | Customer-facing proposal sent same-day for standard work | Reports customer feedback to Elena. Flags any quote that does not match what the customer requested. Submits all RFQs through the standardized intake form — no email forwards. |
 
-What changed per role: Dave used to give Elena verbal labor-hour estimates when she asked. Now he reviews the agent's historical matching weekly and gets pulled in only for non-standard materials — the work that actually requires thirty-one years of fabrication knowledge. Elena used to build every quote from scratch, fifteen hours a week. Now she reviews agent-generated drafts in fifteen to twenty minutes each, spending the recovered hours on production planning and supplier negotiations. Ty used to wait three to five days for Elena to produce a quote, then forward it to the customer. Now he receives approved quotes same-day for standard work and can see every quote's status in the CRM pipeline.
-
-Get the runbook into the tool the team already uses, whether that's the project management system, the shared doc, or the Slack channel. Do it before the workflow goes live.
-
 :::{.callout-tip}
 ## Pro Tip
 The runbook test: could someone who was on vacation during the entire Sprint sit down with this document and know exactly what changed about their job? If not, the runbook isn't done.
 :::
 
-Once the runbook passes that test, put it where the team will actually find it — not a folder they'll never open.
-
 :::{.callout-note}
 ## Action Step
-Pick one role from your Hybrid Accountability Chart whose handoffs changed. Write the three-column entry — input, output, escalation — in one sentence each. Be concrete: "Reviews output" is not specific enough. "Opens the quote draft in the shared folder, checks unit costs against the rate card, approves or flags within 4 hours" is.
+Pick one role from your Hybrid Accountability Chart whose handoffs changed. Write the three-column entry (input, output, escalation), one sentence per column. Then apply the paste test: if any sentence could sit in another role's row unnoticed, sharpen it until it can't. Publish the page where the team already works (the project management system, the shared doc, the Slack channel).
 :::
 
 ## What gets *logged*.
@@ -136,18 +189,18 @@ Deliver also surfaces what did not work. The full retrospective belongs to Compo
 <!-- moves:operational-log -->
 ### How to build and *maintain* the operational log
 
-1. **Create the four-column log template before deploy** — The log must exist on day one of production — building it post-launch means the first gap goes unrecorded.
-2. **Assign a single named owner** — Accountability without a name means the log dies; one person owns it, no committee.
-3. **Run daily check-ins for the first two weeks** — The daily cadence surfaces patterns before they compound; week-two review timing aligns with the delivery test window.
-4. **Categorize every entry (Unplanned intervention / Data gap / Edge case / User confusion)** — Consistent categories make tallying possible; the category with the most entries identifies the next constraint.
-5. **Tally by category at end of week two and surface the top category as the next Sprint signal** — The log is a sensor, not a complaint box — it feeds Design for the next Sprint.
+1. **Create the four-column log template before deploy**
+2. **Assign a single named owner**
+3. **Run daily check-ins for the first two weeks**
+4. **Categorize every entry (Unplanned intervention / Data gap / Edge case / User confusion)**
+5. **Tally by category at end of week two and surface the top category as the next Sprint signal**
 <!-- /moves:operational-log -->
-
-Create the log on day one of deployment. Assign one person to own it — named, accountable. Set a daily check-in for the first two weeks: review the log, categorize new entries, note patterns.
 
 | Date | What happened | Category | What it signals |
 |------|---------------|----------|-----------------|
 | | | | |
+
+{{< excalidraw ch08-operational-log-blank "Operational log, Day One: headers set and the four locked categories keyed below (Unplanned intervention, Data gap, Edge case, User confusion), no rows yet." >}}
 
 Four categories. Use exactly these:
 
@@ -156,9 +209,13 @@ Four categories. Use exactly these:
 - **Edge case** — an input the design didn't account for.
 - **User confusion** — a person whose work changed didn't know what to do.
 
-In Source, I described a client whose AI kept surfacing expired information because nobody audited the knowledge base before indexing it. That's what Deliver's logging phase catches — the gaps that Source couldn't see because they only become visible in production.
+Some entries fit two categories. A human steps in because the design missed an input type: that's an unplanned intervention and an edge case at once. File it by what happened, not by what caused it: if a person had to step in, it's an unplanned intervention, and the cause goes in the signals column, where it becomes the fix. The category column counts what production cost your people; the signal column says what to change. And if two categories tie at the week-two tally, you usually don't have two problems — you have one problem surfacing two ways. Read the signal column across both categories and look for the single design change that clears entries in each. That's the candidate constraint the tally hands forward.
 
-Here's what Meridian's first two weeks looked like:
+In Source, we described how our own agents kept surfacing expired information because nobody audited the knowledge base before indexing it. That's what Deliver's logging phase catches — the gaps that Source couldn't see because they only become visible in production.
+
+### Meridian's first *two weeks*.
+
+Meridian's log filled fast. Four entries in ten days, three of them the kind of gap no test catches until real work hits the system:
 
 | Date | What happened | Category | What it signals |
 |------|---------------|----------|-----------------|
@@ -167,41 +224,40 @@ Here's what Meridian's first two weeks looked like:
 | Day 7 | Dave sat in on Elena's review and challenged the agent's historical matching on a weldment quote. The agent matched on material and dimensions but missed that the tolerances were tighter, which doubled the labor. Side-by-side comparison showed the agent was correct on four of five specs — Dave caught the one tolerance error that mattered. | Unplanned intervention | Tolerance class needs to be a matching criterion, not just material and dimensions. Design task for next Sprint. |
 | Day 10 | Ty reported that a customer praised Meridian's same-day turnaround on a standard bracket quote — first time Meridian had ever delivered a quote that fast. Customer submitted a second RFQ the same afternoon. | — (positive signal) | Speed is producing repeat inbound. Track whether faster turnaround correlates with increased RFQ volume from existing customers. |
 
-At the end of week two, tally entries by category. The category with the most entries is the first thing to fix — and the strongest signal for where the next Sprint should aim.
+{{< excalidraw ch08-operational-log-day2 "The operational log with its first entry filed, two days into production." >}}
 
-:::{.callout-tip}
-## Pro Tip
-The operational log isn't a complaint box. It's a sensor. Every entry tells Design something about the next Sprint. If the same category keeps appearing, that category is the next constraint.
-:::
+{{< excalidraw ch08-operational-log-day10 "The log at the end of week two: four entries and the category tally that hands the next Sprint its candidate constraint." >}}
 
-The log has to exist before the workflow goes live. Build it as part of the deployment.
+The Day 7 entry is the ambiguous case in the wild: the tolerance miss was an edge case, but Dave had to step in, so it's filed as an unplanned intervention with the design fix carried in the signals column.
 
 :::{.callout-note}
 ## Action Step
-Create the log template — four columns: Date, What happened, Category, What it signals — in whatever tool your team already uses. Name the person who owns it. Do this before you flip the switch, not after.
+Create the log template in whatever tool your team already uses, with four columns: Date, What happened, Category, What it signals. Name the person who owns it, and put a daily review on their calendar for the first two weeks. Do this before you flip the switch, not after.
 :::
 
 ## The *measurement* question.
 
+Deliver's last instrument produces the *Sprint Outcome Record*: five fields that put the cost Signal named next to what production actually delivered, capped by the outcome in one sentence. The Record is the artifact Compound works against; if you can't produce it, stop and diagnose before declaring the Sprint done. Filling it honestly takes two numbers — the operational number (what moved against the constraint) and the adoption number (how many of the affected people actually run the new workflow). One number alone is incomplete.
+
 <!-- moves:sprint-outcome-measurement -->
 ### How to *measure* the Sprint outcome
 
-1. **Pull the Signal statement and quantified cost** — The baseline must come from the original Signal instrument — same metric, same unit — so the comparison is apples-to-apples.
-2. **Measure the same metric in production (result after Sprint)** — An imperfect measurement beats a vibe; write the number even when the original Signal quantification was loose.
-3. **Compute the delta** — Leadership needs to see what moved, not a narrative — the delta makes the change legible.
-4. **Write the outcome in one sentence** — The outcome sentence mirrors the Signal statement and becomes the artifact Compound works against.
-5. **Calculate and report adoption rate (week-two window)** — Operational improvement and adoption rate together diagnose whether a low result is a Design problem or a change-management problem.
+1. **Pull the Signal statement and quantified cost**
+2. **Measure the same metric in production (result after Sprint)**
+3. **Compute the delta**
+4. **Write the outcome in one sentence**
+5. **Calculate and report adoption rate (week-two window)**
 <!-- /moves:sprint-outcome-measurement -->
 
-Deliver's first responsibility is to measure the Sprint against Signal's quantified cost. Signal said the constraint costs $150K a year. Deliver shows a workflow that recovers 80% of that. The Sprint produced. The math is legible. The next Sprint earns the right to start.
+### The *operational* number
+
+Deliver's first responsibility is to measure the Sprint against Signal's quantified cost: same metric, same unit, so the comparison holds. When Signal put a number on the constraint and Deliver can show what that number is now, the math is legible and the next Sprint earns the right to start.
 
 That's the clean case. The harder cases are the ones where the measurement is harder. The Sprint clearly changed the work. The operator's week looks different, the bottleneck is gone, and the log shows unplanned interventions dropping week over week. But the dollar figure is hard to pin down because the original Signal quantification was looser than it should have been. That's a Signal lesson, not a Deliver failure, and it goes into the Compound stage as an input to how the next Sprint gets framed.
 
-The discipline is to write the number down anyway. Even an imperfect measurement beats a vibe. If the constraint cost was estimated at "around 8 hours a week" and Deliver shows the work now takes 30 minutes a week, the recovery is real and the math is good enough to report. Refuse the trap of declaring victory without evidence — and the equally bad trap of letting imperfect evidence become an excuse to claim nothing happened.
+The discipline is to write the number down anyway. If the constraint cost was estimated at "around 8 hours a week" and Deliver shows the work now takes 30 minutes a week, the recovery is real and the math is good enough to report. Refuse the trap of declaring victory without evidence, and the equally bad trap of letting imperfect evidence become an excuse to claim nothing happened. The leadership team needs to know what changed; they don't need a three-decimal-place ROI.
 
-An honest measurement beats a precise one. The leadership team needs to know what changed. They don't need a three-decimal-place ROI.
-
-The structure is straightforward. Pull out your Signal statement — the sentence with the number. Write the production result next to it. Compute the delta. Then write the Sprint outcome sentence:
+The Record itself is five fields:
 
 | Field | Entry |
 |-------|-------|
@@ -211,7 +267,11 @@ The structure is straightforward. Pull out your Signal statement — the sentenc
 | **Delta** | [the change — quantified] |
 | **Outcome in one sentence** | [what this Sprint produced, stated plainly] |
 
-*Meridian example — what "done" looks like:*
+{{< excalidraw ch08-sprint-outcome-blank "The Sprint Outcome Record template: five fields, blank — Signal statement, cost at start, result after Sprint, delta, and the outcome in one sentence." >}}
+
+### What Meridian could *prove*
+
+Meridian's Record is what the baseline discipline buys you. Signal wrote the constraint down with a number. Deliver measured the same metric in production. The delta needed no narrative:
 
 | Field | Entry |
 |-------|-------|
@@ -219,38 +279,29 @@ The structure is straightforward. Pull out your Signal statement — the sentenc
 | **Cost at start** | 3.8-day average turnaround; ~15 hrs/week of Elena's time; capacity capped at 8–10 quotes/week. |
 | **Result after Sprint** | 4.2-hour average turnaround on standard work; ~5 hrs/week of Elena's time; 18–22 quotes/week. |
 | **Delta** | Turnaround reduced 89%. Elena recovered 10 hrs/week. Quote volume doubled. First-month revenue recovery: $47K. |
-| **Outcome in one sentence** | Three-agent quoting pipeline removed Elena as the bottleneck on standard work, cut turnaround from 3.8 days to 4.2 hours, and produced $47K in new revenue in month one. |
+| **Outcome in one sentence** | Three-agent quoting pipeline removed Elena as the bottleneck on standard work, cut turnaround from 3.8 days to 4.2 hours, and produced $47K in new revenue in month one, by letting Meridian quote fast enough to win jobs they used to lose. |
 
-The five-row table captures the operational result — the cost Signal named against the result Deliver produced. That's one of two numbers the Sprint outcome requires. The second is adoption rate: what percentage of the affected roles are using the new workflow as designed, not the old workflow out of habit. A workflow that works technically but is adopted by 60% of the team is producing 40% less value than the Sprint was designed to generate.
+{{< excalidraw ch08-sprint-outcome-meridian "Meridian's Sprint Outcome Record, filled: the five fields reveal what the $558K constraint became — turnaround down 89%, quote volume doubled, $47K recovered in month one." >}}
+
+The team tracked three leading indicators weekly:
+
+- Quote volume per week.
+- Confidence score distribution across the agent pipeline.
+- Escalation frequency to Dave on non-standard materials.
+
+Those leading indicators matter because the outcome sentence is a trailing measurement — it tells you what happened. The leading indicators tell you whether it will keep happening.
+
+### The *adoption* number
+
+The Record's operational fields capture the cost Signal named against the result Deliver produced. That's one of the two numbers the Sprint outcome requires. The second is adoption rate: what percentage of the affected roles are using the new workflow as designed, not the old workflow out of habit. A workflow that works technically but that half the affected people route around is delivering a fraction of what the Sprint was designed to produce.
 
 Adoption rate is countable at the scale most operators run. The denominator is the named roles from the Hybrid Accountability Chart whose handoffs changed in this Sprint — not enterprise-wide users, not licensed seats, but the specific people whose work changed. The numerator is the named people observably running their work through the designed workflow, visible in the operational log. "Use" means the affected person's work went through the designed path, not around it. Report the number as of week two after launch, the same window the operational log's first review cadence closes on.
 
-The two numbers together tell the story. High adoption with modest operational improvement is a Design problem: the constraint was named correctly but the workflow wasn't built to solve it at the projected cost. Low adoption with strong operational improvement on the work that did flow through is an absorption problem: the design works, but the organization hasn't adopted it yet. The next Sprint adjusts accordingly — either the workflow design or the change-management approach, depending on which number is low. One number alone is incomplete.
+At Meridian the denominator was three: Dave, Elena, and Ty, the three roles on the runbook. Week one's count was two of three: Ty had forwarded three RFQs to Elena the old way, out of habit. By week two the count was three of three. That week-one miss isn't a failure story. It's what the adoption number exists to catch while it's still one person and one habit, not a workflow quietly dying.
 
-At Meridian:
+The two numbers together tell the story. High adoption with modest operational improvement is a Design problem: the constraint was named correctly but the workflow wasn't built to solve it at the projected cost. Low adoption with strong operational improvement on the work that did flow through is a change-management problem: the design works, but the organization hasn't adopted it yet. The next Sprint adjusts accordingly — either the workflow design or the change-management approach, depending on which number is low. Meridian's quadrant was the one you want: high adoption, strong improvement.
 
-```
-SIGNAL STATEMENT:    Elena Ruiz is the sole quoting bottleneck. Every quote runs
-                     through her — $558K/year in lost revenue, misallocated time,
-                     and shop floor underutilization.
-COST AT START:       Average quote turnaround: 3.8 days. Elena's time on quoting:
-                     ~15 hours/week. Throughput limited to 8-10 quotes/week by
-                     Elena's capacity alone.
-RESULT AFTER SPRINT: Average quote turnaround on standard work: 4.2 hours. Elena's
-                     time on quoting: ~5 hours/week. Throughput doubled to 18-22
-                     quotes/week. $47K in new revenue in the first month from bids
-                     that would previously have arrived too late.
-DELTA:               Turnaround reduced by 89%. Elena recovered 10 hours/week.
-                     Quote volume doubled. First-month revenue recovery: $47K.
-OUTCOME IN ONE SENTENCE: Three-agent quoting pipeline removed Elena as the
-                     bottleneck on standard work, cut turnaround from 3.8 days to
-                     4.2 hours, and produced $47K in new revenue in month one by
-                     letting Meridian quote fast enough to win jobs they used to lose.
-```
-
-Leading indicators the team tracked weekly: quote volume per week, confidence score distribution across the agent pipeline, and escalation frequency to Dave on non-standard materials. Those leading indicators matter because the outcome sentence is a trailing measurement — it tells you what happened. The leading indicators tell you whether it will keep happening.
-
-That outcome sentence mirrors the Signal statement. It's the artifact Compound works against. If you can't produce it, stop and diagnose before declaring the Sprint done.
+{{< excalidraw ch08-adoption-diagnostic "The adoption diagnostic: adoption rate against operational improvement, with the read in each quadrant and Meridian's position marked in the target quadrant." >}}
 
 :::{.callout-note}
 ## Action Step
@@ -270,26 +321,20 @@ Every unchecked box is a task, not a judgment call. Check them all and the Sprin
 
 :::{.callout-tip}
 ## Pro Tip
-If you can't fill in the "Result After Sprint" line with a number, go back to the operational log and figure out what you need to measure. The Sprint hasn't delivered until a number moved.
+If you can't fill in the "Result After Sprint" line with a number, go back to the operational log and figure out what you need to measure.
 :::
-
-## The change is not the *launch*. The change is the *week*.
-
-A well-run Deliver phase changes the work the people in the function do. Their week looks different on Monday than it did on Friday. The hours they used to spend on the work that's now automated either get reinvested in the strategic work Design identified as the higher-return use of their time, or they come out of the org over time, as the Headcount Math gets rerun against the new operating reality.
-
-That's the test of whether Deliver delivered: can the people whose work was supposed to change describe, concretely, what they now do that they didn't do before, and what they no longer do that they used to? The agent running and the dashboard existing are table stakes.
 
 ## End of the Sprint as a *project*. Start of it as *infrastructure*.
 
-Deliver is where the Sprint stops being a project and becomes infrastructure. The workflow is live, the team is trained, the result is measured, and the log of what didn't work is captured. Depending on the Sprint, the constraint Signal named is either resolved, materially reduced, or honestly described in terms of how much of it the Sprint moved and how much remains.
+Deliver is where the Sprint stops being a project and becomes infrastructure. The workflow is live and the team runs it. The hours it recovered either get reinvested in the higher-return work Design identified or come out of the org over time as the headcount math gets rerun. Depending on the Sprint, the constraint Signal named is either resolved, materially reduced, or honestly described in terms of how much of it the Sprint moved and how much remains.
 
 {{< excalidraw ch08-build-deliver-compound-handoff "Build → Deliver → Compound handoff: what each stage produces and passes forward." >}}
 
-That artifact set is what the next stage works against: the outcome, the log, the runbook, the updated Hybrid Accountability Chart entry. Compound is where the team turns it into the inputs that accelerate the next Sprint. That's the next chapter.
+That artifact set is the work behind the Deliver row on your Sprint Planning Canvas, and it's what the next stage works against: the Sprint Outcome Record, the log, the runbook, the updated Hybrid Accountability Chart entry. Compound is where the team turns it into the inputs that accelerate the next Sprint. That's the next chapter.
 
 ## Reflection Questions
 
 1. Run the Deploy Readiness Audit on your current Sprint before you flip the switch. Which of the four gates — training, escalation path, real-data testing, Human Orchestrator cadence on calendar — is the hardest to confirm as Pass? What specific task would close it?
 2. Write the per-role runbook entry for the person whose daily work changes most because of this Sprint. Does the runbook pass the vacation test — could someone who missed the entire Sprint sit down with that document and know exactly what changed about their job?
 3. The chapter describes a teammate who kept routing to the old inbox because nobody explicitly told her to stop. Is there an old inbox, old process, or old system in your Sprint that will stay open after deploy unless someone actively closes it? Who closes it, and when?
-4. Fill in the Sprint outcome measurement template: Signal statement, cost at start, result after Sprint, delta, outcome in one sentence. If you cannot fill in "result after Sprint" with a real number, what measurement do you need to set up before Deliver begins — not after?
+4. Fill in the Sprint Outcome Record: Signal statement, cost at start, result after Sprint, delta, outcome in one sentence. If you can't fill in "result after Sprint" with a real number, what measurement do you need to set up before Deliver begins — not after?

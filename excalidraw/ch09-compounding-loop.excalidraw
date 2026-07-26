@@ -367,14 +367,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Next sprint:\nricher Signal input",
+      "text": "Next Sprint:\nricher Signal input",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "center",
       "verticalAlign": "middle",
       "baseline": 18,
       "containerId": null,
-      "originalText": "Next sprint:\nricher Signal input"
+      "originalText": "Next Sprint:\nricher Signal input"
     },
     {
       "id": "next2-box",
@@ -409,14 +409,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Next sprint:\nDesign inherits structure",
+      "text": "Next Sprint:\nDesign inherits structure",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "center",
       "verticalAlign": "middle",
       "baseline": 18,
       "containerId": null,
-      "originalText": "Next sprint:\nDesign inherits structure"
+      "originalText": "Next Sprint:\nDesign inherits structure"
     },
     {
       "id": "next3-box",
@@ -451,14 +451,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Next sprint:\nBuild inherits rule",
+      "text": "Next Sprint:\nBuild inherits rule",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "center",
       "verticalAlign": "middle",
       "baseline": 18,
       "containerId": null,
-      "originalText": "Next sprint:\nBuild inherits rule"
+      "originalText": "Next Sprint:\nBuild inherits rule"
     },
     {
       "id": "merge-line-left",
@@ -595,14 +595,14 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [],
-      "text": "Each sprint starts with more than the last one had.",
+      "text": "Each Sprint starts with more than the last one had.",
       "fontSize": 18,
       "fontFamily": 2,
       "textAlign": "center",
       "verticalAlign": "top",
       "baseline": 18,
       "containerId": null,
-      "originalText": "Each sprint starts with more than the last one had."
+      "originalText": "Each Sprint starts with more than the last one had."
     }
   ],
   "appState": {

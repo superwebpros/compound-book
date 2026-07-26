@@ -26,7 +26,20 @@ You audit one chapter of *Co-Intelligent Co-Operation* against the **chapter-str
 5. Memories/standards: `_julie/voice-charter.md`, the `jargon-house-rule` / `eos-positioning` / `book-chapter-flow-and-meridian-thread` memories.
 
 ## What to produce
-Write `.claude/output/structure-audit-<chapter-stem>.md` with these sections:
+Write `.claude/output/structure-audit-<chapter-stem>.md` with these sections, in this order:
+
+- **Verdict + shape**
+- **Findings by pattern** (line-referenced)
+- **House-rule flags**
+- **Conceptual forks** for the author
+- **Drafter brief**
+- **Diagram list**
+
+This is a stable section contract: the chapter-structure-pass workflow locates your sections **by these names**, not by letter, so every report must use them — do not rename, drop, merge, or reorder them. Letter prefixes (A., B., C. …) are optional decoration for cross-referencing within your own report; if you use them, keep them sequential, but the heading text after the letter is what the contract fixes and must stay exactly as titled here.
+
+If your audit surfaces fixes that are explicitly out of scope for this chapter (touch another file — glossary, process-spines, another chapter, appendices), do not invent a numbering scheme for them: either mark them inline as **PROPAGATION** where they arise (as in Findings by pattern below) or, if there are enough to warrant it, collect them under their own section titled **Propagation flags**. Either way, name it exactly that if you use it — the workflow recognizes propagation items by a heading containing the word "Propagation" and treats everything under it as deliberately out of scope, never as drafter or diagram material.
+
+If you re-audit a chapter you've already audited (a second pass, or incorporating author feedback), fold your corrections and additions directly into the relevant section above, in place — do not append trailing sections like "Corrections to the audit above," "Additive findings," or "Second-pass priority read." The report must always read as one coherent, current audit, not a sequence of passes layered on top of each other.
 
 ### A. Verdict + shape
 One line: does the chapter follow hook → frame → roadmap → per-step teaching → worked example → reflection-questions+handoff? List its current section order and flag where the shape breaks.

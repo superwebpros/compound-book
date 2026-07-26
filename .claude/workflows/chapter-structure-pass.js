@@ -3,21 +3,23 @@ export const meta = {
   description: 'Full structural pass on one chapter: draft → diagrams → gate → judge trio → reconcile → re-gate',
   whenToUse: 'After the chapter-auditor has run and the author has settled conceptual forks (mode: produce), or to resolve a round of author jf-notes (mode: revise). Pairs with the chapter-pass bd formula and .claude/skills/chapter-structure-pass/SKILL.md.',
   phases: [
-    { title: 'Draft', detail: 'Fable drafter executes the brief', model: 'fable' },
+    { title: 'Draft', detail: 'Opus drafter executes the brief', model: 'opus' },
     { title: 'Diagrams', detail: 'Sonnet agents author TODO excalidraws' },
     { title: 'Gate', detail: 'voice-scan + quarto render' },
     { title: 'Judge', detail: 'voice-scanner / prose-craft / editorial-coherence in parallel', model: 'fable' },
-    { title: 'Reconcile', detail: 'Apply must/should-fixes under canon guardrails, re-gate', model: 'fable' },
+    { title: 'Reconcile', detail: 'Opus implementer applies must/should-fixes under canon guardrails, re-gate', model: 'opus' },
   ],
 }
 
 // args:
 //   chapter    (required) e.g. 'chapters/07-build.qmd'
 //   mode       'produce' (full pass from an audit brief) | 'revise' (resolve jf-notes surgically). default 'produce'
-//   auditPath  produce mode: path to the chapter-auditor report (its Section E is the drafter brief)
+//   auditPath  produce mode: path to the chapter-auditor report (see the section titled "Drafter brief" for the brief itself)
 //   rulings    author decisions text (fork answers in produce mode; jf-note rulings in revise mode)
 //   skipDiagrams  true to skip the Diagrams phase (e.g. revise rounds that touch no visuals)
-const { chapter, mode = 'produce', auditPath = '', rulings = '', skipDiagrams = false } = args || {}
+// The harness sometimes delivers `args` as a JSON string rather than an object — tolerate both.
+const A = typeof args === 'string' ? JSON.parse(args) : (args || {})
+const { chapter, mode = 'produce', auditPath = '', rulings = '', skipDiagrams = false } = A
 if (!chapter) throw new Error('args.chapter is required, e.g. chapters/07-build.qmd')
 const ROOT = '/Users/jesseflores/projects/compound/sites/compound-book'
 const stem = chapter.replace(/^.*\//, '').replace(/\.qmd$/, '')
@@ -34,6 +36,15 @@ const CANON = `LOCKED CANON (protect; judges/implementers may not "fix" these):
 - Coordination shapes: a pipeline / a coordinating agent (NOT "orchestrator" for the agent shape).
 - No "leverage"/"transformation"; em-dashes sparingly, no NEW em-dashes where a colon/comma works; contractions in prose but NOT inside quoted agent-spec text; EOS-agnostic with at most one bridge per concept; no academic citations in prose.`
 
+const LESSONS_REF = `MANDATORY — read _julie/chapter-pass-lessons.md IN FULL before writing a single sentence. It abstracts the author's 22 notes on the Ch7 Build pass, which cleared every gate in this pipeline and was still rated 3/5. Its twelve principles bind you. The ones this pipeline violates most:
+- Do NOT invent a rule of thumb to fill the per-step template's heuristic slot. If no real heuristic exists, cut the slot (P3).
+- Do NOT state a comparative statistic or a cost claim you cannot source to Meridian, a Compound story, or a citation (P3).
+- Do NOT gloss a term already defined in an earlier chapter — grep the corpus first (P2).
+- Do NOT define items in a moves-block/roadmap AND again in the teaching below. Roadmap = bare labels; teaching lives once (P5).
+- Do NOT editorialize about your own content or state the obvious (P4).
+- Hold register and tense across a run of prose; never interrupt a story to teach an instrument (P1).
+- Length is a defect. Budget against Signal (~4,500 words) and Source (~6,200) (P12).`
+
 const SCOPE = `SCOPE RULE: edit ONLY ${chapter}. If a fix requires touching any other file (glossary, process-spines, another chapter, appendices), do NOT make it — report it as a PROPAGATION item instead.`
 
 // ---------------------------------------------------------------- Draft
@@ -41,14 +52,18 @@ phase('Draft')
 const draftPrompt = mode === 'produce'
   ? `You are the drafter for the structural fine-tuning pass on ${chapter} in ${ROOT}.
 
-READ FIRST, in order: (1) .claude/skills/chapter-structure-pass/SKILL.md — the five patterns, the author's verbatim per-step template (a DEFAULT, not a law), and the house rules; (2) _julie/voice-charter.md; (3) the audit report at ${auditPath} — its Section E is your brief, Section B your findings list; (4) ${chapter} in full; (5) the exemplars chapters/04-signal.qmd and chapters/05-source.qmd when in doubt about shape.
+READ FIRST, in order: (1) .claude/skills/chapter-structure-pass/SKILL.md — the five patterns, the author's verbatim per-step template (a DEFAULT, not a law), and the house rules; (2) _julie/voice-charter.md; (3) the audit report at ${auditPath} in full, including any trailing sections that correct, amend, or add to the sections above them (e.g. "Corrections to the audit above", "Additive findings", "Second-pass priority read") — those later sections are binding and win on conflict with earlier ones. Within it, the section titled "Drafter brief" is your brief and the section whose heading begins "Findings by pattern" is your findings list; (4) ${chapter} in full; (5) the exemplars chapters/04-signal.qmd and chapters/05-source.qmd when in doubt about shape.
 
 AUTHOR RULINGS on the audit's conceptual forks (execute exactly; do not reopen):
-${rulings || '(none provided — if the audit lists Section D forks, STOP and return "FORKS UNSETTLED" plus the fork list instead of drafting)'}
+${rulings || '(none provided — if the audit has a section whose heading begins "Conceptual forks", STOP and return "FORKS UNSETTLED" plus the fork list instead of drafting)'}
 
-Execute the brief: apply patterns 1–4 (terms, stepwise teaching, redundancy cull, Meridian narrative). For diagrams (pattern 5), leave <!-- TODO excalidraw: <name> — <one-line spec> --> placeholders per the audit's Section F; do not author JSON yourself. Resolve and DELETE every jf-note marker per the brief.
+Execute the brief: apply patterns 1–4 (terms, stepwise teaching, redundancy cull, Meridian narrative). For diagrams (pattern 5), leave <!-- TODO excalidraw: <name> — <one-line spec> --> placeholders per the audit's section titled "Diagram list"; do not author JSON yourself. Resolve and DELETE every jf-note marker per the brief.
+
+If the audit report has a section whose heading contains "Propagation" (e.g. "Propagation flags"), those are fixes that are DELIBERATELY OUT OF SCOPE for this chapter pass — they are already tracked as separate corpus-tie-up beads. Do NOT act on any fix listed there and do NOT treat that section as a source for diagram or prose edits.
 
 ${CANON}
+
+${LESSONS_REF}
 
 ${SCOPE}
 
@@ -63,12 +78,17 @@ ${rulings || '(none — resolve each note per its own text; if a note asks an op
 
 ${CANON}
 
+${LESSONS_REF}
+
 ${SCOPE}
 
 VERIFY before finishing (grep): jf-note count is 0 (or exactly the NEEDS-AUTHOR ones you list); 0 colon-label prefixes; 0 leverage/transformation; no new em-dashes where a colon/comma works.
 Return: per-note resolution summary with key new prose verbatim + any PROPAGATION items + any NEEDS-AUTHOR notes.`
 
-const draft = await agent(draftPrompt, { label: `draft:${stem}`, phase: 'Draft', model: 'fable' })
+// Prose-writing stages run on Opus at high effort. Fable's 1M context was chosen for retrieval, but
+// context was never the binding constraint on a ~7k-word chapter — prose quality is. (Author rated the
+// Fable-drafted Ch7 pass 3/5: "poorly written, difficult to skim... tone doesn't match voice.")
+const draft = await agent(draftPrompt, { label: `draft:${stem}`, phase: 'Draft', model: 'opus', effort: 'high' })
 if (typeof draft === 'string' && draft.includes('FORKS UNSETTLED')) {
   return { status: 'forks-unsettled', draft }
 }
@@ -103,7 +123,10 @@ const gate = await agent(
 1. /usr/bin/python3 .claude/tools/voice-scan.py ${chapter} — then Read ${scanReport} and summarize alerts (file:line + rule). Note which fall in quoted agent-spec text (contraction false positives) vs real prose.
 2. quarto render ${chapter} --to html (MUST exit 0; report the error tail if not).
 3. grep -c "jf-note" ${chapter}.
-Return: render exit status, jf-note count, alert bullets.`,
+4. LENGTH BUDGET (a clean scan is not a green light — length is the defect our other metrics miss). Count prose words in ${chapter} and in the exemplars chapters/04-signal.qmd and chapters/05-source.qmd, excluding fenced blocks, HTML comments, shortcodes, tables and headings:
+   python3 -c "import re,sys;t=open(sys.argv[1]).read();t=re.sub(r'\`\`\`.*?\`\`\`','',t,flags=re.S);t=re.sub(r'<!--.*?-->','',t,flags=re.S);t=re.sub(r'\\{\\{<.*?>\\}\\}','',t,flags=re.S);t=re.sub(r'^\\s*\\|.*$','',t,flags=re.M);t=re.sub(r'^#{1,6} .*$','',t,flags=re.M);print(len(re.findall(r\\"[A-Za-z']+\\",t)))" <file>
+   Report all three. Signal is ~4,500 words and Source ~6,200. Flag explicitly if this chapter exceeds Source, and by how much — a chapter materially longer than Source needs a stated reason.
+Return: render exit status, jf-note count, alert bullets, and the word-count comparison.`,
   { label: 'gate:scan+render', phase: 'Gate', model: 'sonnet' }
 )
 
@@ -131,6 +154,20 @@ const FINDINGS = {
   required: ['findings', 'verdict'],
 }
 
+const LESSONS = `MANDATORY CRITERIA — read _julie/chapter-pass-lessons.md in full before judging. It abstracts the author's 22 notes on the Ch7 Build pass, which cleared every gate in this pipeline and was still rated 3/5 ("poorly written, difficult to skim, confusing, tone doesn't match voice"). Our deterministic gates measure violations, not quality: that chapter's Flesch, grade level, words-per-sentence and paragraph lengths were all in band with the exemplars. Judge against these twelve principles explicitly, and cite the principle number in your findings:
+P1 register/tense holds across a run of prose; don't interrupt a story to teach an instrument.
+P2 gloss a term once per BOOK at first use — grep the corpus before adding any parenthetical; re-glossing a term from an earlier chapter is a defect.
+P3 no invented authority: no fabricated comparative statistics, no heuristics invented to fill a template slot, no unsourced assertions. Every number and rule of thumb traces to Meridian, a Compound story, or a citation.
+P4 no editorializing about your own content ("that bar is deliberately high"); cut what a competent reader would call obvious.
+P5 commit to ONE teaching location — a roadmap is bare scannable labels, teaching lives once, below. Half-defining in both is the per-step template's most repeatable failure.
+P6 list-shaped content is a list (3+ parallel items).
+P7 every abstract instruction carries a concrete instance.
+P8 action steps must be executable by the actual reader, not assume capability the book hasn't built.
+P9 no vague evocative modifiers.
+P10 provenance for anything inherited — a cross-reference is not provenance; restate the substance in a clause.
+P11 attribute failure modes to the right actor; plausible is not true.
+P12 length is a defect. Budget against Signal (~4,500 words) and Source (~6,200).`
+
 const judgeCtx = `Judge ${chapter} in ${ROOT} after a ${mode} pass. Drafter change summary:
 ${draft}
 
@@ -139,7 +176,9 @@ ${gate}
 
 ${CANON}
 
-${mode === 'revise' ? 'Scope: the changed regions per the drafter summary, plus integration with the untouched remainder (which already passed a full judge pass — do not re-litigate it).' : 'Scope: the full chapter.'}`
+${LESSONS}
+
+${mode === 'revise' ? 'Scope: the changed regions per the drafter summary, plus integration with the untouched remainder. The remainder passed a previous judge pass, but that pass predates the twelve principles above — so DO re-examine it against those, while not re-litigating settled matters of taste.' : 'Scope: the full chapter.'}`
 
 const judges = await parallel([
   () => agent(`${judgeCtx}
@@ -181,7 +220,7 @@ ${JSON.stringify(actionable, null, 2)}
 
 VERIFY (Grep — you have no Bash): 0 jf-notes (unless the drafter listed NEEDS-AUTHOR ones); 0 colon-label prefixes; 0 leverage/transformation; no new em-dashes introduced by your rewrites.
 Return: each fix verbatim old→new, plus any findings you skipped and why.`,
-    { label: 'reconcile:implement', phase: 'Reconcile', model: 'fable', agentType: 'voice-implementer' }
+    { label: 'reconcile:implement', phase: 'Reconcile', model: 'opus', effort: 'high', agentType: 'voice-implementer' }
   )
   finalGate = await agent(
     `In ${ROOT}: quarto render ${chapter} --to html (must exit 0) and /usr/bin/python3 .claude/tools/voice-scan.py ${chapter}. Return render status + any NEW alerts vs the previous report.`,
