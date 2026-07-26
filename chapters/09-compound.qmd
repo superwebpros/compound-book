@@ -21,7 +21,7 @@ It happens again the next night. And the night after that.
 
 Count the times I left at 5:30 in the eighteen months before I started deploying these systems against the six months after, and the gap is embarrassing. The work was the same. The industry was the same. I was still moving fast. What changed is that the infrastructure I'd built was doing work in parallel. That work used to wait for me. It was queued behind my availability.
 
-Each Sprint I ran built on the last. The agents (software that holds a goal and runs a sequence of steps on its own — not a chatbot you prompt one question at a time; covered in depth in the Build chapter) knew the company's conventions because they'd learned them in an earlier Sprint. The tools knew the formats because we'd built the templates. The Knowledge Maps from the first Sprint were sitting inside the system, accelerating the fifth. None of that had to be rebuilt. It just ran.
+Each Sprint I ran built on the last. The agents knew the company's conventions because they'd learned them in an earlier Sprint. The tools knew the formats because we'd built the templates. The Knowledge Maps from the first Sprint were sitting inside the system, accelerating the fifth. None of that had to be rebuilt. It just ran.
 
 I could stop because it ran.
 
@@ -29,7 +29,7 @@ That's what Compound is for.
 
 Compound runs as one working meeting: the **Compound session**, held in the days after Deliver, where the team that ran the Sprint closes it. Every established operating system has a quarterly review beat; EOS and Scaling Up both run one. Compound is that discipline applied to the Sprint that just shipped: stop, look at what the Sprint produced, identify what the design got wrong, install one specific improvement, and carry it into the next Sprint. The companies that sustain this kind of change built a mechanism to learn from the work and carry the learning forward.
 
-The Compound session isn't the quarterly operating session you'll meet in the next chapter, and the split matters: the Compound session closes the Sprint and nominates the next one (the governing constraint plus a proposed Human Orchestrator); the quarterly operating session commits it (constraint, Human Orchestrator, Sprint Lead, budget, start date).
+This isn't the quarterly operating session you'll meet in the next chapter, and the split matters. The Compound session closes the Sprint and nominates the next one: the governing constraint plus a proposed Human Orchestrator. The quarterly operating session is where those get committed, along with the Sprint Lead, the budget, and the start date.
 
 The session reviews the design: the chart entries, the workflow, the Knowledge Map. The question isn't who didn't perform. It's what the design assumed that turned out to be wrong. Companies that run this session get better every quarter.
 
@@ -39,7 +39,7 @@ Compound runs on two instruments, the Sprint Retrospective and the Constraint Re
 
 The three Compound deliverables:
 
-- An updated **Constraint Backlog**: the running, prioritized list of validated constraints your organization is working through, re-ranked against what the Sprint just taught you.
+- An updated **Constraint Backlog**, re-ranked against what the Sprint just taught you.
 - An updated **Hybrid Accountability Chart**: the Sprint's temporary entries revised or proposed permanent, with neighboring rows reviewed for second-order effects.
 - A **Sprint Outcome Record**: the one-sentence outcome written in Deliver, filed here. The constraint, the before-and-after cost, the specific result.
 
@@ -51,7 +51,7 @@ If your Sprint ends and the backlog isn't re-ranked, the chart hasn't been updat
 
 :::{.callout-note}
 ## Action Step
-Before the Sprint enters Build, put the Compound session on the calendar. Include the Sprint Lead (who runs the session), the Human Orchestrator (the operator who runs the redesigned workflow and supervises its agents day-to-day — detailed in the Designing the System chapter), and everyone who owned a Sprint accountability. If it's not scheduled before the Sprint ships, it won't happen after.
+Before the Sprint enters Build, put the Compound session on the calendar. Include the Sprint Lead who runs the session, the Human Orchestrator, and everyone who owned a Sprint accountability. If it's not scheduled before the Sprint ships, it won't happen after.
 :::
 
 ## The first instrument is the Sprint *Retrospective*.
@@ -98,7 +98,7 @@ The Sprint Lead takes each item in the "didn't work" column and asks one questio
 - "Half the records were missing the matching field" becomes "the data pipeline would need a sample-and-verify step before Build starts."
 - "Reviews got skipped" becomes "the review would have to sit inside a meeting that already exists, not on a new calendar slot."
 
-Each answer points at one of two targets, and the distinction decides where the fix lands. If what would have to be true is a document, a data source, or context the system didn't have, it's a **knowledge gap**: the fix feeds Source, and the Knowledge Map gets updated. If it's a handoff, a cadence, a permission, or a workflow step, it's a **design gap**: the fix lands in the chart or the workflow itself. Rule of thumb: knowledge gaps are about what the system knows; design gaps are about how the work moves.
+Each answer points at one of two targets, and the distinction decides where the fix lands. If what would have to be true is a document, a data source, or context the system didn't have, it's a **knowledge gap**: the fix feeds Source, and the Knowledge Map gets updated. If it's a handoff, a cadence, a permission, or a workflow step, it's a **design gap**: the fix lands in the chart or the workflow itself.
 
 ### Meridian's retrospective surfaced *three* items
 
@@ -117,7 +117,7 @@ If your retrospective produces zero "what didn't work" items, you didn't run it 
 
 ## Measure what *compounded* beyond the Sprint outcome.
 
-This is the retrospective's closing move, the fifth step in the how-to list above. Beyond the Sprint outcome you measured in Deliver, Compound asks three more questions. The answers are the compound interest.
+The retrospective closes here. Beyond the Sprint outcome you measured in Deliver, Compound asks three more questions. The answers are the compound interest.
 
 *What does the organization know now that it didn't know before this Sprint?* Not the outcome; the knowledge. The real exception rate in a process. The actual state of a data source everyone assumed was clean. Which approvals turned out to be theater.
 
@@ -127,7 +127,7 @@ This is the retrospective's closing move, the fifth step in the how-to list abov
 
 ### What compounded at *Meridian*
 
-Meridian's answers, in order. Knowledge: Elena's Customer Notes spreadsheet (147 rows of pricing exceptions on her desktop) contained only 112 validated rules; thirty-five were duplicates or outdated. The Sprint also separated the standard-spec quotes the agent handles cleanly (about 70% of volume) from the complex fabrication and specialty-alloy quotes that still need Elena's review. Capability: the working quoting agent team — the outcome sentence from Deliver carries the numbers. Baseline: Sprint two starts with three trained agents, 112 validated pricing rules, three years of indexed ERP job data (organized and tagged so the agents can search and retrieve it quickly), and a sales team six weeks into the new intake workflow.
+Meridian's answers, in order. Knowledge: Elena's Customer Notes spreadsheet (147 rows of pricing exceptions on her desktop) contained only 112 validated rules; thirty-five were duplicates or outdated. The Sprint also separated the standard-spec quotes the agent handles cleanly (about 70% of volume) from the complex fabrication and specialty-alloy quotes that still need Elena's review. Capability: the working quoting agent team — the outcome sentence from Deliver carries the numbers. Baseline: Sprint two starts with three trained agents, 112 validated pricing rules, three years of indexed ERP job data, and a sales team already fluent in the new intake workflow.
 
 If you can't answer the three questions, the Sprint delivered output but didn't compound.
 
@@ -144,10 +144,10 @@ The change has to be structural: something the next Sprint inherits as part of h
 <!-- moves:install-design-change -->
 ### How to install one *design change*
 
-1. **Survey everything the Sprint surfaced** — The team scans all retrospective items (Source gaps, wrong cadences, broken handoffs, dirty inputs) before picking, with the Human Orchestrator surfacing what broke inside the workflow.
-2. **Name the single change that will most improve the next Sprint** — The discipline of one defeats the 'lessons learned list' failure mode; forces a real priority decision.
-3. **Write the four-field change card (What / Who / How you'll know / By date)** — Makes the change specific and testable; any blank field signals the change is too vague to install.
-4. **Install the change structurally before the next Sprint begins** — The change must land in the chart, the workflow, or the Knowledge Map; a change that lives only in a document changes nothing.
+1. **Survey everything the Sprint surfaced** — The full list, with the Human Orchestrator naming what broke inside the workflow.
+2. **Name the single change that will most improve the next Sprint** — The priority decision.
+3. **Write the four-field change card (What / Who / How you'll know / By date)** — The specificity test.
+4. **Install the change structurally before the next Sprint begins** — Into the chart, the workflow, or the Knowledge Map.
 5. **Verify the change using the 'how you'll know' criterion** — Closes the loop.
 <!-- /moves:install-design-change -->
 
@@ -159,7 +159,7 @@ The change doesn't have to touch an agent at all:
 - A cadence fix: the Orchestrator's review moves inside a meeting that already exists.
 - A kill switch: the legacy intake path shuts off on day one instead of lingering as a fallback.
 
-The picking heuristic: choose the change the next Sprint would trip over first. Not the biggest observation and not the easiest fix. The one standing in the next Sprint's path.
+Pick the one standing in the next Sprint's path. Not the biggest observation, and not the easiest fix.
 
 Verification is the card's third field doing its job. Before the next Sprint kicks off, run the "how you'll know" test and confirm the change held. A change that was installed but never verified is a lessons-learned list with better formatting.
 
@@ -207,11 +207,11 @@ The Constraint Backlog that existed at the start of the Sprint was built on the 
 6. **Nominate the next Sprint's Human Orchestrator and write it down before leaving the room** — The assignment.
 <!-- /moves:constraint-re-rank -->
 
-*Did the Sprint reveal new information about any of the other constraints?* Solving one constraint frequently exposes the real cost of another. The workflow you just fixed was hiding a manual re-entry step downstream. The report you automated revealed that its data source updates weekly, not daily. Expect at least one ranking to move; a Sprint that changes nothing about the backlog usually means nobody looked.
+*Did the Sprint reveal new information about any of the other constraints?* Solving one constraint frequently exposes the real cost of another. The workflow you just fixed was hiding a manual re-entry step downstream. The report you automated revealed that its data source updates weekly, not daily. Expect at least one ranking to move.
 
 *Did any constraints get partially resolved as a side effect of this Sprint?* Some constraints get cheaper without being targeted. Faster output upstream gives a downstream team slack it never had. A dataset cleaned for this Sprint takes a bite out of a reporting constraint two rows down. Adjust the rankings to what actually changed, not just what was targeted.
 
-*Did any new constraints surface during the Sprint that weren't on the original list?* A Sprint is a discovery engine. The team that lived inside a workflow for the length of the Sprint saw things no Signal session would have surfaced. Capture them now, at the moment of highest clarity. A constraint that waits for the next Signal session usually arrives without its evidence.
+*Did any new constraints surface during the Sprint that weren't on the original list?* The team that lived inside a workflow for the length of the Sprint saw things no Signal session would have surfaced. Capture them now, while the evidence is still in front of you.
 
 *Does one candidate constraint govern the others?* The load-bearing test, the same one Signal ran. Would solving this candidate unblock or clarify what the rest of the backlog should be? A constraint that unlocks several others gets priority over a constraint that stands alone, regardless of relative cost. Apply eligibility first (eligible means a named owner and a cost estimate — the filter from Signal), then this question. Cost settles ties only when no constraint clearly governs.
 
@@ -268,7 +268,7 @@ The same is true of every artifact in the Sequence. The Hybrid Accountability Ch
 
 {{< excalidraw ch09-compounding-loop "Sprint-to-Sprint compounding loop: Compound outputs feed into the next Sprint as inherited artifacts, reducing cost and increasing sharpness each pass." >}}
 
-A company six Sprints in feels it everywhere. The constraint they're working on now is sharper, because three Sprints' worth of Sprint Retrospectives taught them which constraints actually change a number. The Hybrid Accountability Chart entry they draft in Design takes an afternoon, because they've drafted six of them. That's the infrastructure compounding. It's what the work feels like in the seventh Sprint, compared to the first.
+A company six Sprints in works differently. The constraint they're working on now is sharper, because three Sprints' worth of Sprint Retrospectives taught them which constraints actually change a number. The Hybrid Accountability Chart entry they draft in Design takes an afternoon, because they've drafted six of them. That's the infrastructure compounding. It's what the work feels like in the seventh Sprint, compared to the first.
 
 ### Forty-five minutes that saved *weeks*
 
@@ -282,7 +282,7 @@ Forty-five minutes later, we're done. I pull up the document. It has everything 
 
 That document is still inside their company. The next Sprint they run, the Source work starts from that map, not from zero. That's the 45-minute session doing compounding work across every Sprint that follows it.
 
-The coordinator's knowledge base I described in the Design chapter is still working too. We extracted it before she left and built the agents on top of it. The next Sprint runs on it. The knowledge we mapped became infrastructure that each Sprint added to. The numbers in the next chapter didn't come from a single Sprint. They came from the stack of infrastructure each Sprint left behind.
+The project coordinator's knowledge base from the Design chapter is still working too — where the client files lived, which contacts needed extra lead time, the unwritten rules for each account, all of it documented before she left. We built the agents on top of it. The next Sprint runs on it. The knowledge we mapped became infrastructure that each Sprint added to. The numbers in the next chapter didn't come from a single Sprint. They came from the stack of infrastructure each Sprint left behind.
 
 ## Compound is the *mechanism* behind the slope.
 
