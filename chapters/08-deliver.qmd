@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-Build deployed the workflow. Deliver makes the organization actually use it. The difference between "deployed" and "delivered" is whether people's work changed — and whether you can prove it with a number tied to the constraint Signal named. This stage has five parts: a readiness audit, per-role runbooks, an operational log, a Sprint outcome measurement, and a delivery test. Skip none.
+Build deployed the workflow. Deliver is where the organization actually starts using it. The difference between "deployed" and "delivered" is whether people's work changed — and whether you can prove it with a number tied to the constraint named in Signal. This stage has five parts: a readiness audit, per-role runbooks, an operational log, a Sprint outcome measurement, and a delivery test. Skip none.
 :::
 
 We flip the switch on a Wednesday.
@@ -15,7 +15,7 @@ She nods. We're both looking at the same screen.
 
 "Live" is a technical claim. The agent is running. The workflow is in production. The ticket is about to get closed. None of that means the Sprint produced.
 
-The Sprint produces on Monday. The operator whose week was supposed to change sits down, opens their queue, and the eight hours of routing work they used to do is gone. They have something different to do instead. If that happens, the Sprint produced. If they're still routing manually and sending work to the old inbox, still working the system we were supposed to replace, then we deployed a tool and didn't deliver anything. How much you delivered is a number, and it comes later in this chapter.
+The Sprint produces on Monday. The operator whose week was supposed to change sits down, opens their queue, and the eight hours of routing work they used to do is gone. They have something different to do instead. If that happens, the Sprint produced. If they're still routing manually and sending work to the old inbox, still working the system we were supposed to replace, then we deployed a tool and didn't deliver anything. How much you delivered is a number: the share of the affected people who actually run the new workflow.
 
 ## *Deployed* is not the same as *delivered*.
 
@@ -25,13 +25,13 @@ Operators skip Deliver's work more often than any other stage's. The technology 
 
 - Everyone affected is named, with how their daily work changes stated.
 - Those people are trained on the new handoffs before they meet them in production.
-- A measurement baseline exists against the cost Signal identified.
+- A measurement baseline exists against the cost identified in Signal.
 
 Skip one and you discover the gap in production, where fixing it is expensive. The Deploy Readiness Audit below turns all three into gates.
 
 The person whose week used to include four hours of manual routing now has those four hours back — but only if their calendar, their queue, and their handoffs have been re-set to reflect that. The colleague who used to send them tickets needs to know to send the tickets somewhere else. The manager who used to see the weekly summary needs the new reporting wired up. The escalation path for the exceptions the agent flags needs to land on a human who has been told it will land on them.
 
-If you skip that work, the deployed system still functions — but the organization continues to behave as if the old workflow is in place. People route around the new system because they were never told to route through it. The agent does its job. The hours don't come back. The cost Signal quantified doesn't get recovered. The Sprint produced less than it could have.
+If you skip that work, the deployed system still functions — but the organization continues to behave as if the old workflow is in place. People route around the new system because they were never told to route through it. The agent does its job. The hours don't come back. The cost quantified in Signal doesn't get recovered. The Sprint produced less than it could have.
 
 I learned this in my own shop before I understood it as a principle. We finished a Sprint, deployed a workflow, wrote the runbook. Two weeks later I watched a teammate do the task manually, the exact task the agent now handles, because she'd never been explicitly told to stop. The workflow was in production. The old inbox was still open. She was routing to both, hedging, not sure which one was "real." I asked her why she was still doing it the old way when we'd built the tool to do it. But I was the one who never closed the old inbox.
 
@@ -42,7 +42,7 @@ This wasn't resistance. Nobody told her to stop. That's Deliver's job. The techn
 If the old system is still accessible, people will use it. Close the old path. The new workflow replaces the old one; it doesn't run alongside it.
 :::
 
-This chapter fills in the Deliver row of the Sequence first-pass on your Sprint Planning Canvas. Deliver runs in five parts, in order. The Deploy Readiness Audit proves the organization is ready before the switch flips. The per-role runbook makes the change explicit for every person whose handoffs moved. The operational log captures what production reveals that the design didn't. The Sprint outcome measurement puts two numbers on what the Sprint produced. And the delivery test is the gate that says whether you delivered or just deployed.
+This chapter fills in the Deliver row of the Sequence first-pass on your Sprint Planning Canvas. Deliver runs in five parts, and they follow the go-live date. Two of them happen before you flip the switch, two run through the two weeks after it, and the last one is the gate. The Deploy Readiness Audit proves the organization is ready before the switch flips. The per-role runbook makes the change explicit for every person whose handoffs moved. The operational log captures what production reveals that the design didn't. The Sprint outcome measurement puts two numbers on what the Sprint produced. And the delivery test is the gate that says whether you delivered or just deployed.
 
 ## The *Deploy Readiness Audit*.
 
@@ -215,7 +215,7 @@ In Source, we described how our own agents kept surfacing expired information be
 
 ### Meridian's first *two weeks*.
 
-Meridian's log filled fast. Four entries in ten days, three of them the kind of gap no test catches until real work hits the system:
+Meridian's log ran four entries in ten days. Three of them are the kind of gap that only appears once real work moves through the system, which is the reason the log exists at all:
 
 | Date | What happened | Category | What it signals |
 |------|---------------|----------|-----------------|
@@ -237,7 +237,7 @@ Create the log template in whatever tool your team already uses, with four colum
 
 ## The *measurement* question.
 
-Deliver's last instrument produces the *Sprint Outcome Record*: five fields that put the cost Signal named next to what production actually delivered, capped by the outcome in one sentence. The Record is the artifact Compound works against; if you can't produce it, stop and diagnose before declaring the Sprint done. Filling it honestly takes two numbers — the operational number (what moved against the constraint) and the adoption number (how many of the affected people actually run the new workflow). One number alone is incomplete.
+Deliver's last instrument produces the *Sprint Outcome Record*: five fields that put the cost named in Signal next to what production actually delivered, capped by the outcome in one sentence. The Record is the artifact Compound works against; if you can't produce it, stop and diagnose before declaring the Sprint done. Filling it honestly takes two numbers — the operational number (what moved against the constraint) and the adoption number (how many of the affected people actually run the new workflow). One number alone is incomplete.
 
 <!-- moves:sprint-outcome-measurement -->
 ### How to *measure* the Sprint outcome
@@ -271,7 +271,7 @@ The Record itself is five fields:
 
 ### What Meridian could *prove*
 
-Meridian's Record is what the baseline discipline buys you. Signal wrote the constraint down with a number. Deliver measured the same metric in production. The delta needed no narrative:
+Here is the worked example, filled in. The constraint was written down with a number in Signal, the same metric was measured in production, and the delta needed no narrative:
 
 | Field | Entry |
 |-------|-------|
@@ -293,7 +293,7 @@ Those leading indicators matter because the outcome sentence is a trailing measu
 
 ### The *adoption* number
 
-The Record's operational fields capture the cost Signal named against the result Deliver produced. That's one of the two numbers the Sprint outcome requires. The second is adoption rate: what percentage of the affected roles are using the new workflow as designed, not the old workflow out of habit. A workflow that works technically but that half the affected people route around is delivering a fraction of what the Sprint was designed to produce.
+The Record's operational fields capture the cost named in Signal against the result Deliver produced. That's one of the two numbers the Sprint outcome requires. The second is adoption rate: what percentage of the affected roles are using the new workflow as designed, not the old workflow out of habit. A workflow that works technically but that half the affected people route around is delivering a fraction of what the Sprint was designed to produce.
 
 Adoption rate is countable at the scale most operators run. The denominator is the named roles from the Hybrid Accountability Chart whose handoffs changed in this Sprint — not enterprise-wide users, not licensed seats, but the specific people whose work changed. The numerator is the named people observably running their work through the designed workflow, visible in the operational log. "Use" means the affected person's work went through the designed path, not around it. Report the number as of week two after launch, the same window the operational log's first review cadence closes on.
 
@@ -314,7 +314,7 @@ The delivery test is a checklist. Run it before you declare the Sprint complete:
 
 - [ ] The people whose work changed can describe, concretely, what they now do differently — and the old process is closed, not running in parallel.
 - [ ] The workflow has produced results on real inputs for at least two weeks without anyone reverting to the previous method.
-- [ ] You can show the leadership team a number that moved — tied directly to the constraint Signal identified.
+- [ ] You can show the leadership team a number that moved — tied directly to the constraint identified in Signal.
 - [ ] The operational log exists, is owned by a named person, and has been reviewed at least twice.
 
 Every unchecked box is a task, not a judgment call. Check them all and the Sprint delivered. Leave any unchecked and you deployed a tool — the organization hasn't changed yet.
@@ -326,7 +326,7 @@ If you can't fill in the "Result After Sprint" line with a number, go back to th
 
 ## End of the Sprint as a *project*. Start of it as *infrastructure*.
 
-Deliver is where the Sprint stops being a project and becomes infrastructure. The workflow is live and the team runs it. The hours it recovered either get reinvested in the higher-return work Design identified or come out of the org over time as the headcount math gets rerun. Depending on the Sprint, the constraint Signal named is either resolved, materially reduced, or honestly described in terms of how much of it the Sprint moved and how much remains.
+Deliver is where the Sprint stops being a project and becomes infrastructure. The workflow is live and the team runs it. The hours it recovered either get reinvested in the higher-return work identified in Design or come out of the org over time as the headcount math gets rerun. Depending on the Sprint, the constraint named in Signal is either resolved, materially reduced, or honestly described in terms of how much of it the Sprint moved and how much remains.
 
 {{< excalidraw ch08-build-deliver-compound-handoff "Build → Deliver → Compound handoff: what each stage produces and passes forward." >}}
 
