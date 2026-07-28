@@ -139,7 +139,7 @@ What a good answer looks like, across functions:
 
 - Operations: the ops manager checks each generated work order for crew assignment and materials; anything unusual goes to the scheduler.
 - Finance: the controller works flagged mismatches daily, inside the accounting system's existing exceptions view; anything over $5K goes up the same day.
-- Marketing: the marketing lead reads drafted campaign copy in the approval doc the team already uses; brand-risk items route to the CEO.
+- Marketing: the marketing lead reads drafted campaign copy in the approval doc the team already uses; brand-risk items route to the CMO.
 
 {{< excalidraw ch07-build-spec-progressive-2 "the accountability layer — sections 4 and 5 written, 7 and 8 still open" >}}
 
@@ -189,7 +189,7 @@ Start with what fits in the window, move to RAG when the data outgrows it or cha
 
 ### Section 8: where it *runs*, and what must be true first.
 
-You picked one of three categories in Design: off-the-shelf, low-code, or hand-built. In Build you pick the specific product inside that category. Products change faster than the logic for picking them, so what follows is the logic. Check the market when you run your Sprint, not when you read this. Off-the-shelf points at Claude Projects or Claude Team, low-code at n8n, Make, Zapier and their peers, hand-built at Claude Code or a server of your own.
+You picked one of three categories in Design: off-the-shelf, low-code, or hand-built. In Build you pick the specific product inside that category. Products change faster than the logic for picking them, so what follows is the logic. Check the market when you run your Sprint. Off-the-shelf points at Claude Projects or Claude Team, low-code at n8n, Make, Zapier and their peers, hand-built at Claude Code or a server of your own.
 
 | Product | Fits | Doesn't fit | Example |
 |---|---|---|---|
@@ -197,21 +197,30 @@ You picked one of three categories in Design: off-the-shelf, low-code, or hand-b
 | **Claude Team** | Cross-team, AI-assisted work where several people share the same agent context | Workflows that start themselves on a schedule | Meridian's Quote Agent Team: three projects in one workspace |
 | **Claude Code** | Multi-agent, programmatic, tooling-heavy builds with triggers and write-back | Single-agent skill work that needs no infrastructure | Sofia's PM agent team, built with Claude Code and running on its own server |
 | **n8n, Make, Zapier** | Data pipelines: pull, run through an agent, write back, notify | Complex branching or large volumes of unstructured data | Meridian's n8n connectors |
+| **AI app builders** | A standalone app or a screen someone outside the team uses; you describe it and own the code it writes | Supervising agents inside systems you already run | Replit, Base44, Lovable and their peers |
 | **Custom server** | Data that can't leave your systems, extreme volume, or a proprietary system-of-record API | Anything a hosted or low-code path already handles | Forced by residency, volume, or reliability, never by taste |
 
-One rule belongs to the surface rather than the product. A surface is where you actually work with a product: a website, a desktop app, a command line. On the claude.ai web surface, one project holds one running process, so running several agents there means several projects, several tabs, and one person reading all of them. The marketing lead from the Co-Operating Model chapter works that way, though not all of it inside Claude: four tools, four tabs, her as the single read on all of it. Four streams can run at once that way, as long as she supervises each one separately. What outgrows the web surface is agents that have to coordinate with each other, or a workflow that starts itself on a schedule or a trigger. Off the web, a single workspace runs several agents at once: Cowork, which is Anthropic's desktop agent workspace, or a server, or Claude Code.
+App builders are the one row that doesn't sit neatly under a Design category. You end up owning code, so treat them as hand-built, but you got there by describing what you wanted instead of hiring someone to write it. Reach for one when the workflow needs an interface a person outside your team has to use. A quoting workflow Elena runs from her CRM queue doesn't; a customer-facing request form does.
+
+One rule belongs to the surface rather than the product. A surface is where you actually work with a product: a website, a desktop app, a command line. 
+
+On the claude.ai web surface, one project holds one running process, so running several agents there means several projects, several tabs, and one person reading all of them. 
+
+The marketing lead from the Co-Operating Model chapter works that way, though not all of it inside Claude: four tools, four tabs, her as the single read on all of it. Four streams can run at once that way, as long as she supervises each one separately. 
+
+What outgrows the web surface is agents that have to coordinate with each other, or a workflow that starts itself on a schedule or a trigger. 
+
+Off the web, a single workspace runs several agents at once: Cowork, which is Anthropic's desktop agent workspace, or a server, or Claude Code.
 
 Three questions route the pick inside your category.
 
-1. Does more than one agent run under one Human Orchestrator, and do they have to run at the same time?
+1. Does more than one agent run under one Human Orchestrator, and do they have to run at the same time? If the answer is more than three, stop: that's the span-of-control gap from Designing the Work, and no product on this list fixes it.
 2. Does the workflow start itself, on a schedule or a trigger?
 3. Can the data leave your systems?
 
 Pick the least infrastructure that satisfies all three answers.
 
-Count the agents while you're here. Past three concurrent agents under one Human Orchestrator, productivity inverts. That's the span-of-control check from Designing the Work, where Julie Bedard and colleagues at BCG report it in *Harvard Business Review*. Four or more agents under one person is a design gap, and no product choice fixes it. Either go back to Design, or give the team a coordinating agent and let the Human Orchestrator read what the coordinator surfaces instead of every agent's output.
-
-{{< excalidraw ch07-category-to-environment "Category to environment: Design's three categories bin into five products, Meridian's low-code + off-the-shelf pick marked, routed by three questions." >}}
+{{< excalidraw ch07-category-to-environment "Category to environment: Design's three categories bin into the product options, Meridian's low-code plus off-the-shelf pick marked, routed by three questions." >}}
 
 Then the prerequisites, which are what actually stall builds: the things that have to be true before the build starts.
 
