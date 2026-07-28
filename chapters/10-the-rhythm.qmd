@@ -2,7 +2,7 @@
 
 :::{.callout-important}
 ## In Brief
-One Sprint is a project. A rhythm of Sprints is a compounding operating model. The Rhythm is the Sequence — Signal → Source → Design → Build → Deliver → Compound — run quarterly, on the next constraint, on top of whatever operating system you already use. This chapter gives you the quarterly session agenda, the living document that tracks where your company actually stands, and the scorecard that proves the compounding is real.
+One Sprint is a project. A rhythm of Sprints is a compounding operating model. The Rhythm is the Sequence — Signal → Source → Design → Build → Deliver → Compound — run quarterly, on the next constraint, on top of whatever operating system you already use. The Rhythm runs on one meeting and the two documents that meeting keeps current. This chapter gives you all three: the quarterly session agenda, the living document that tracks where your company actually stands, and the scorecard that proves the compounding is real.
 :::
 
 This time last year, I had thirteen people. I'm looking at the current roster and there are eight.
@@ -186,7 +186,7 @@ And the leaders themselves have changed. Executives who, eighteen months ago, ha
 
 Here is what this looks like on paper. Meridian Manufacturing, the $7.2M fabrication shop we've followed since the Diagnosis chapter, closed two Sprints over two quarters and committed a third, with Elena Ruiz as Human Orchestrator for all three. Walk into their Q1 2027 quarterly operating session and you can watch the four steps do their work.
 
-Step one, the outcome review. Elena read Sprint 2's Outcome Record: duplicate order entry between HubSpot and JobBOSS eliminated, the sync cost down from $74K a year to $8K. The workflow had held at target without a design fix since mid-quarter. Permanent. The call took four minutes, because the record was one sentence and the heuristic was clear.
+Step one, the outcome review. Elena read Sprint 2's Outcome Record: duplicate order entry between HubSpot and JobBOSS eliminated, the sync cost down from $74K a year to $8K. The workflow had held at target without a design fix since mid-quarter. Permanent. The call took four minutes.
 
 Step two, the backlog. The re-rank had already run in Sprint 2's Compound session: with the sync solved, customer pricing standardization moved to the top, ahead of specialty materials pricing and production scheduling. It had entered the backlog at rank two during Sprint 1. The session confirmed the order held after a quarter of living with it. Nothing new had surfaced; nothing got retired.
 
@@ -225,7 +225,7 @@ Companies on the Rhythm bend the slope. Companies absorbing demand with headcoun
 
 ## The *Co-Intelligent Company*.
 
-A cumulative column that reads $512K and climbing. A roster that went from thirteen to eight while billings grew. That is what running the Sequence on the Rhythm builds, and it is what makes a company Co-Intelligent rather than a company that bought some AI.
+Our roster went from thirteen to eight while billings grew. That took a year of quarters, and it is what running the Sequence on the Rhythm actually builds: not a company that bought some AI, but a company that keeps redesigning its own work. On Meridian's page, the same machinery shows up as a cumulative column that reads $512K and climbing.
 
 ## Reflection Questions
 
