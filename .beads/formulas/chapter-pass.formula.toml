@@ -1,6 +1,6 @@
 formula = "chapter-pass"
-description = "Per-chapter structural fine-tuning pipeline for Co-Intelligent Co-Operation: audit -> author forks (human gate) -> produce -> author read (human gate) -> jf-note rounds -> author approval (human gate) -> handoff. Executable middle = Workflow({name:'chapter-structure-pass'}); standard = .claude/skills/chapter-structure-pass/SKILL.md."
-version = 1
+description = "Per-chapter structural fine-tuning pipeline for Co-Intelligent Co-Operation: audit -> author forks (human gate) -> STRUCTURE PROPOSAL -> author approves the OUTLINE (human gate) -> produce -> author read (human gate) -> jf-note rounds -> author approval (human gate) -> handoff. Executable middle = Workflow({name:'chapter-structure-pass'}); standard = .claude/skills/chapter-structure-pass/SKILL.md."
+version = 2
 type = "workflow"
 
 [vars.slug]
@@ -15,6 +15,16 @@ description = """
 Dispatch the `chapter-auditor` agent (read-only) on chapters/{{slug}}.qmd per
 .claude/skills/chapter-structure-pass/SKILL.md. Output:
 .claude/output/structure-audit-{{slug}}.md.
+
+The audit MUST report the craft baseline up front, measured not guessed:
+  /usr/bin/python3 .claude/tools/prose_rhythm.py chapters/{{slug}}.qmd
+plus the same numbers for chapters/04-signal.qmd and chapters/05-source.qmd.
+Targets: nominalization <= 2.8 per 100 words (both exemplars sit there; >= 3.6
+prints "heavy" and is a blocking defect), Flesch >= 58, prose words <= 6,200.
+It MUST also run the DECLARED-VS-ACTUAL ARCHITECTURE CHECK (pattern 6 in the
+skill): does any framing sentence claim a number of instruments/parts that the
+chapter's own H2s contradict? Ch7 said "Build runs on two instruments" and then
+presented four. That single contradiction cost three passes.
 
 Then present the report's Section D (conceptual forks) to the author via
 AskUserQuestion — crisp options, recommendation first. Record the author's
@@ -41,20 +51,69 @@ If Section D is empty, note that and resolve immediately.
   type = "human"
 
 [[steps]]
+id = "structure-proposal"
+title = "Propose the structure for {{slug}} (before any prose)"
+needs = ["settle-forks"]
+description = """
+WHY THIS STEP EXISTS: Ch7 Build took THREE passes and two 3/5 author ratings
+because passes 1 and 2 optimized prose inside a broken architecture. Never draft
+before the architecture is agreed. Prose fixes cannot reach a structural defect.
+
+Dispatch an agent (Opus) that loads the `bmad-editorial-review-structure` skill
+and writes a proposal to .claude/output/{{slug}}-restructure-proposal.md.
+PROPOSAL ONLY — it edits no chapter file.
+
+The proposal must contain: (1) diagnosis with line refs of why the current
+structure fails a reader who does NOT already know the material; (2) the proposed
+section order with a one-line purpose and word budget per section; (3) THE
+ORGANIZING IDEA that relates the chapter's instruments/lists to each other, and
+how it becomes visible on the page; (4) a cognitive-scaffolding plan; (5) a
+nominalization plan with worked before/after rewrites hitting <= 2.8; (6) a cut
+list; (7) open questions for the author, recommendation first.
+
+Skip this step only if the audit found no structural defect — say so explicitly
+in the bead notes rather than skipping silently.
+"""
+
+[[steps]]
+id = "approve-outline"
+title = "AUTHOR GATE: approve the OUTLINE for {{slug}}"
+needs = ["structure-proposal"]
+description = """
+The author approves the proposed section order and the organizing idea BEFORE any
+prose is written, and settles the proposal's open questions. This is the gate
+that was missing when Ch7 burned two full passes.
+
+Session Claude: present the organizing idea, the proposed section order, and the
+open questions via AskUserQuestion (recommendation first). Record the rulings in
+the structure-proposal bead's notes VERBATIM, flagging in CAPS any ruling that
+OVERRIDES the proposal's own recommendation so the drafter cannot quietly revert
+it. Then `bd gate resolve` this gate's blocker.
+"""
+
+  [steps.gate]
+  type = "human"
+
+[[steps]]
 id = "produce"
 title = "Produce {{slug}}: draft + diagrams + gate + judges + reconcile"
-needs = ["settle-forks"]
+needs = ["approve-outline"]
 description = """
 Run the repo workflow:
 
   Workflow({name: "chapter-structure-pass", args: {
     chapter: "chapters/{{slug}}.qmd",
     mode: "produce",
-    auditPath: ".claude/output/structure-audit-{{slug}}.md",
-    rulings: "<author fork rulings from the audit bead notes>"
+    auditPath: ".claude/output/{{slug}}-restructure-proposal.md",
+    rulings: "<author fork rulings + outline rulings, verbatim, overrides in CAPS>"
   }})
 
-The gate + judge trio inside it are NON-SKIPPABLE. When it returns: review
+The gate + judge QUARTET inside it are NON-SKIPPABLE (voice / prose-craft /
+editorial-coherence / simplicity). If the proposal uses non-standard headings,
+pass an explicit section map in `rulings` — the workflow resolves audit sections
+by NAME. Verify the produced chapter against the craft targets yourself
+(prose_rhythm.py: nominalization <= 2.8; Flesch >= 58; words <= 6,200) and do not
+accept the drafter's self-reported numbers — measure them. When it returns: review
 notesForOrchestrator (apply judgment; dispatch a voice-implementer round if
 warranted), file each propagationItem as a bead labeled corpus-tie-up, verify
 render exit 0 + scan report, then commit the chapter checkpoint on branch

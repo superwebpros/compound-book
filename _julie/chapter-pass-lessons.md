@@ -116,3 +116,43 @@ Three distinct forms, all present in Ch7:
 2. **The judges need these principles as explicit criteria.** Prose-craft caught mechanical cadence and the 184-word paragraph; it did not catch invented heuristics, re-glossing, or register drift, because nothing told it to look.
 3. **The per-step template is the leading cause of P3, P5, and P12.** Its heuristic slot invites invented rules; its roadmap+teaching pairing invites double-definition; its per-item expansion drives length. Apply it where it earns its place.
 4. **A clean gate is not a green light.** Ch7 shipped to the author with every check passing.
+
+---
+
+# Round 2 + 3 lessons (Ch7, 2026-07-28) — second 3/5, then the rebuild
+
+The author read the patched chapter and rated it 3/5 again: *"complex, boring, and at times I found myself wondering what the hell we're talking about — even as someone who actually knows this stuff. The structure isn't obvious, how they connect to each other isn't obvious… I thought i had guardrails around a lot of this (eg skills to organize, simplify, etc) so we need to examine that."*
+
+## P13 — Architecture beats prose. Never draft before the outline is agreed.
+Ch7 declared "Build runs on two instruments" at line 72 and its table of contents then presented **four** co-equal numbered instruments, never relating them. That is a false statement of the chapter's own architecture, in the frame position, 190 lines before the last instrument appears — and it was the literal cause of "how they connect to each other isn't obvious."
+
+**Two full passes were spent improving sentences inside that broken architecture, and the author's rating did not move.** The third pass reframed it as **one document and three gates on it** (Gate 1 tests the *document*, Gate 2 the *permissions*, Gate 3 the *built system*) and every metric moved at once.
+
+**Encoded as:** pattern 6 in the skill, a mandatory first check in the chapter-auditor, and a new `structure-proposal` + `AUTHOR GATE: approve the OUTLINE` pair in the bd formula (v2). **Prose fixes cannot reach a structural defect — stop patching after one failed round and re-examine the architecture.**
+
+## P14 — A metric that prints but does not gate is not a guardrail.
+`prose_rhythm.py` measured nominalization at 3.7–3.9 and printed **"heavy"** into the scan report through both failed passes. Nothing read it, because the gate step only asked for Vale alerts, render status, and jf-note count. The author's "I thought I had guardrails around this" was exactly right.
+
+**Encoded as:** the gate step now reads and reports every craft verdict and leads its return with blocking ones. Any new metric must have a named consumer or it does not exist.
+
+## P15 — Installed skills the pipeline never calls are not capabilities.
+`bmad-editorial-review-structure` ("cuts, reorganization, and simplification"), `bmad-editorial-review-prose`, `bmad-mkt-coherence-check`, and `ai-tell-scan` all existed and had **never** been invoked by this workflow. **Encoded as:** a fourth judge seat (`simplicity`, Opus/high effort) that loads them, and the structure-proposal step that drives `bmad-editorial-review-structure`.
+
+## P16 — Fictional specifics may illustrate; they may never argue.
+*"Meridian is a fictional company; for us to say it only took 3.5 weeks is completely made up."* A fictional number must not migrate out of the worked example and into the argument. Fine as a narrative beat; not fine as proof a build takes that long. Book-wide sweep: bead `book-qd37`.
+
+## P17 — Stage names are not actors.
+*"'Design' isn't a proper noun and it isn't capable of 'picking'."* Rewrite volitional agency ("Design picks the category" → "in Design, you pick the category"); leave artifact-production shorthand ("Build produces a deployed system"). Preferred fix is a locative — "named in Signal", "specified in Design" — rather than always substituting "you", which gets clunky. ~57 candidates found book-wide, 24 filed as beads.
+
+## What the rebuild actually produced
+
+| | before | after | Signal | Source |
+|---|---|---|---|---|
+| words | 6,144 | 5,404 | 4,514 | 6,166 |
+| Flesch | 55.5 | 65.2 | 65.8 | 58.4 |
+| grade | 9.5 | 7.9 | 7.6 | 9.1 |
+| nominalization | 3.7 | 1.9 | 2.8 | 2.8 |
+| H2 sections | 12 | 9 | | |
+| taught items | 27 | 14 | | |
+
+Nominalization landed *below* the exemplars. Worth watching for over-correction, but sentence length stayed healthy at 14.9 words, so it read as concrete rather than choppy.

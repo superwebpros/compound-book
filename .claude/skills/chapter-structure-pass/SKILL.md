@@ -5,11 +5,11 @@ description: "The canonical standard and orchestration recipe for the structural
 
 # Chapter structure pass
 
-Every chapter from the Co-Operating Model onward has arrived with the **same five structural problems**. This skill is the standard that fixes them, plus the orchestration recipe for applying it. Run it to pre-process a chapter before the author reads, so they read a structurally-sound draft instead of catching the obvious things by hand.
+Every chapter from the Co-Operating Model onward has arrived with the **same recurring structural problems** (five patterns, plus a sixth added after Ch7 Build cost three passes). This skill is the standard that fixes them, plus the orchestration recipe for applying it. Run it to pre-process a chapter before the author reads, so they read a structurally-sound draft instead of catching the obvious things by hand.
 
 The proven exemplars — chapters that cleared the author's bar — are **Signal (`chapters/04-signal.qmd`)** and **Source (`chapters/05-source.qmd`)**. When in doubt about the shape, match those.
 
-## The five patterns (the audit checklist)
+## The patterns (the audit checklist)
 
 ### 1. Disambiguate terms
 One canonical term per concept. No conflated roles or artifacts. Check every coined/role/artifact term against the glossary (`chapters/appendix-glossary.qmd`) and the chapters already fine-tuned — the same concept must use the same word everywhere.
@@ -67,6 +67,24 @@ The chapter's central artifact rolls up to a **Sprint Planning Canvas row**, and
 - **Smell:** a static end-of-chapter table only; no visual of the artifact building; no statement of how the artifact rolls up to the Canvas.
 - **Fix:** author progressive-fill excalidraws (B/W house style — see the `compound-design-system` skill and any existing `excalidraw/chNN-*.excalidraw` for the JSON format: `strokeColor #000000`, transparent fills, `roughness 0`, `fontFamily 1`, white canvas); state once that the artifact is the work behind its Canvas row and gets packaged forward.
 
+### 6. Declared architecture matches actual architecture
+The chapter's framing sentences must describe the structure the chapter actually has, and the relationship between its instruments/lists must be stated, not left implicit.
+- **Smell:** a frame sentence claiming a count the H2s contradict ("Build runs on two instruments" followed by four co-equal numbered instruments); several numbered sets presented as peers with nothing saying how they relate or in what order the reader uses them; a forward pointer that apologises for the structure ("the environment pick is taught later in this chapter"); one question taught two or three times as if it were two or three different decisions.
+- **Fix:** find the organizing idea the chapter is already using silently and say it. Ch7's four instruments were really **one document and three gates on it**, each gate testing a different subject at a different moment — the spec audit tests the *document* (six of its seven checks re-ask "did you fill in Section N"), the guardrails test the *permissions*, the Done Test tests the *built system*. Then make it visible: gate-carrying H2 headings, one subject/when/asks table, a numbered sequence, and a diagram that shows the shape rather than a flat pipeline of peers.
+- **Why this pattern is here:** Ch7 took THREE passes and two 3/5 author ratings. Passes 1 and 2 improved sentences inside a broken architecture and the author's complaint did not move. This is the single highest-cost defect class in the project so far. **Check it first.**
+
+### Craft metrics — measure, never guess
+Run `/usr/bin/python3 .claude/tools/prose_rhythm.py <chapter>` and compare against the exemplars, at audit time and again before the author reads:
+
+| Metric | Target | Why |
+|---|---|---|
+| Nominalization (Williams) | **≤ 2.8 /100 words** | Both exemplars sit at 2.8. `≥ 3.6` prints "heavy". This is the measurable form of "complex, boring, not enough active verbs" — abstract `-tion/-ment/-ness` nouns that bury the actor. Ch7 sat at 3.7–3.9 through two passes while the tool printed "heavy" into a report nobody read. |
+| Flesch reading ease | **≥ 58** | Source 58.4, Signal 65.8. |
+| Prose words | **≤ 6,200** | Source 6,166; Signal 4,514. |
+| Enumerated items taught | **≤ ~15** | Ch7 had 27 across four instruments and the reader could not file them. |
+
+A clean Vale/voice scan is evidence that no banned string is present. It is **not** evidence the prose is good.
+
 ## Standing house rules (always apply)
 - **Jargon** — plain-English gloss inline at first use (RAG, API, MCP, tokens, embeddings, agent…). See the `jargon-house-rule` memory.
 - **Bullets** — dense comma-lists and question sets become bullets.
@@ -84,10 +102,11 @@ The chapter's central artifact rolls up to a **Sprint Planning Canvas row**, and
 
 1. **Audit** — dispatch the `chapter-auditor` agent (read-only). It produces a findings + fix-plan report at `.claude/output/structure-audit-<stem>.md`: per-pattern findings with line refs, a drafter brief, a diagram list (new/redrawn progressive excalidraws), a term-disambiguation list (with propagation flags), redundancy cuts, and Meridian-narrative gaps. Fan it out across several upcoming chapters in parallel to get ahead of the author's read.
 2. **Settle concept forks** — if the audit surfaces genuine conceptual decisions (term consolidation, what an artifact *is*, structure), raise them with the author via AskUserQuestion *before* drafting. (This is what the Signal noun-spine and ch6 role-consolidation discussions were.)
+2b. **Propose the structure, and get the OUTLINE approved before any prose** — if the audit found a structural defect, dispatch an agent that loads `bmad-editorial-review-structure` to write `.claude/output/<stem>-restructure-proposal.md` (proposal only, no chapter edits): diagnosis, proposed section order with word budgets, **the organizing idea that relates the instruments**, scaffolding plan, nominalization plan with worked rewrites, cut list, open questions. Take the organizing idea + section order + open questions to the author via AskUserQuestion. **Do not draft until the outline is approved.** Flag in CAPS any author ruling that overrides the proposal's own recommendation, so the drafter can't quietly revert it. This gate exists because Ch7 burned two full passes polishing prose inside an architecture nobody had agreed to.
 3. **Draft** — dispatch the `drafter` agent with the audit's brief (or the `draft-chapter` skill). Apply patterns 1–4; leave `<!-- TODO excalidraw: … -->` comments for diagrams. Remove `jf-note:` markers.
 4. **Diagrams** — author the progressive excalidraws (parallel general-purpose agents, B/W house style), validate JSON, then wire shortcodes into the chapter.
 5. **Gate** — `/usr/bin/python3 .claude/tools/voice-scan.py <chapter>` + `quarto render <chapter> --to html` (exit 0). Eyeball diagrams (rsvg-convert SVG→PNG, Read the PNG).
-6. **Judge** — run the trio in parallel: `voice-scanner`, `prose-craft`, `editorial-coherence`. **The gate (step 5) + judge trio are NON-SKIPPABLE.** The model lacks the author's context and will apply these patterns blindly; this workflow is what catches those blindspots — especially the prose-craft judge catching Pattern 2 applied mechanically. Reconcile their findings yourself (protect canon + the consolidations); apply surgical fixes via an implementer.
+6. **Judge** — run the QUARTET in parallel: `voice-scanner`, `prose-craft`, `editorial-coherence`, and **`simplicity`** (Opus/high effort, loads `bmad-editorial-review-prose` and `bmad-editorial-review-structure`, owns nominalization, long sentences, weak verbs, missing scaffolding, unexplained connections, and passages that are simply boring). The simplicity seat was added after the author asked "I thought I had guardrails around a lot of this (eg skills to organize, simplify, etc)" — those skills existed and this pipeline had never invoked them. **The gate (step 5) + judge trio are NON-SKIPPABLE.** The model lacks the author's context and will apply these patterns blindly; this workflow is what catches those blindspots — especially the prose-craft judge catching Pattern 2 applied mechanically. Reconcile their findings yourself (protect canon + the consolidations); apply surgical fixes via an implementer.
 7. **Author read** — present the finished chapter + the diagrams + any judgment calls. Nothing commits until the author reads. On their go: commit → merge to master → `bash bin/deploy.sh` (export the nvm PATH so `npx wrangler` resolves).
 8. **Propagate** — if a term consolidation flagged in step 1 touches other files, run the focused rename sweep before merge/deploy (precedents: Constraint Backlog, Human Orchestrator).
 

@@ -25,6 +25,18 @@ You audit one chapter of *Co-Intelligent Co-Operation* against the **chapter-str
 4. For term checks: `chapters/appendix-glossary.qmd`, `_julie/process-spines.md` (registered moves blocks + canonical step labels), and the chapters already fine-tuned (Co-Operating Model `02-co-operating-model.qmd`, Framework `03-the-framework.qmd`, Signal, Source, Designing the System `06-designing-the-system.qmd`).
 5. Memories/standards: `_julie/voice-charter.md`, the `jargon-house-rule` / `eos-positioning` / `book-chapter-flow-and-meridian-thread` memories.
 
+## Mandatory first two checks (do these before anything else)
+
+**1. DECLARED-VS-ACTUAL ARCHITECTURE.** Read every framing sentence (In Brief, chapter opening, section intros) and ask whether the structure it claims is the structure the chapter has. Ch7 Build declared "Build runs on two instruments" and its table of contents then presented FOUR co-equal numbered instruments with nothing relating them. That single contradiction cost three full passes and two 3/5 author ratings, because passes 1 and 2 improved sentences inside an architecture nobody had questioned. Also flag: several numbered sets presented as peers with no stated relationship or reader order; forward pointers that apologise for the structure ("taught later in this chapter"); and one decision taught two or three times as if it were two or three different decisions. If you find this defect, say so in the verdict — it outranks every other finding.
+
+**2. CRAFT BASELINE, MEASURED.** Run and report in your verdict:
+
+    /usr/bin/python3 .claude/tools/prose_rhythm.py chapters/<stem>.qmd
+    /usr/bin/python3 .claude/tools/prose_rhythm.py chapters/04-signal.qmd
+    /usr/bin/python3 .claude/tools/prose_rhythm.py chapters/05-source.qmd
+
+Targets: **nominalization ≤ 2.8 per 100 words** (both exemplars sit at 2.8; ≥ 3.6 prints "heavy" and is a blocking defect — it is the measurable form of "complex, boring, not enough active verbs"), **Flesch ≥ 58**, **prose words ≤ 6,200**, **enumerated items taught ≤ ~15**. Never guess these; the numbers exist. A clean Vale/voice scan proves only that no banned string is present.
+
 ## What to produce
 Write `.claude/output/structure-audit-<chapter-stem>.md` with these sections, in this order:
 
