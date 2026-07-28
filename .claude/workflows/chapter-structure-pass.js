@@ -123,10 +123,14 @@ const gate = await agent(
 1. /usr/bin/python3 .claude/tools/voice-scan.py ${chapter} — then Read ${scanReport} and summarize alerts (file:line + rule). Note which fall in quoted agent-spec text (contraction false positives) vs real prose.
 2. quarto render ${chapter} --to html (MUST exit 0; report the error tail if not).
 3. grep -c "jf-note" ${chapter}.
+3b. CRAFT VERDICTS — the scan report has a rhythm/craft section whose verdicts have been printing into the file and being IGNORED. Read them and report each one explicitly:
+   - **Nominalization density (Williams)** — abstract -tion/-ment/-ness nouns that bury the actor and kill active verbs. The tool prints "ok" or "heavy". BOTH EXEMPLARS SIT AT 2.8 per 100 words; anything at or above 3.6 prints "heavy". A "heavy" verdict is a BLOCKING defect, not a note: it is the measurable form of the author's complaint that a chapter is "complex, boring... we dont use active verbs as often as we should." Report the number, the verdict, and the same number for chapters/04-signal.qmd and chapters/05-source.qmd so the judges can see the gap.
+   - Provost CV (sentence-length variation), monotone runs, flat paragraphs, run-ons, proselint hits. Report each.
+   You can get these directly with: /usr/bin/python3 .claude/tools/prose_rhythm.py <file>
 4. LENGTH BUDGET (a clean scan is not a green light — length is the defect our other metrics miss). Count prose words in ${chapter} and in the exemplars chapters/04-signal.qmd and chapters/05-source.qmd, excluding fenced blocks, HTML comments, shortcodes, tables and headings:
    python3 -c "import re,sys;t=open(sys.argv[1]).read();t=re.sub(r'\`\`\`.*?\`\`\`','',t,flags=re.S);t=re.sub(r'<!--.*?-->','',t,flags=re.S);t=re.sub(r'\\{\\{<.*?>\\}\\}','',t,flags=re.S);t=re.sub(r'^\\s*\\|.*$','',t,flags=re.M);t=re.sub(r'^#{1,6} .*$','',t,flags=re.M);print(len(re.findall(r\\"[A-Za-z']+\\",t)))" <file>
    Report all three. Signal is ~4,500 words and Source ~6,200. Flag explicitly if this chapter exceeds Source, and by how much — a chapter materially longer than Source needs a stated reason.
-Return: render exit status, jf-note count, alert bullets, and the word-count comparison.`,
+Return: render exit status, jf-note count, alert bullets, THE CRAFT VERDICTS (nominalization number + verdict, with the two exemplar numbers for comparison), and the word-count comparison. Lead your return with any BLOCKING defect: a "heavy" nominalization verdict or a word count over Source.`,
   { label: 'gate:scan+render', phase: 'Gate', model: 'sonnet' }
 )
 
@@ -193,8 +197,26 @@ Judge as prose-craft: your overriding mandate is "is this propelling the reader 
 
 Judge as editorial-coherence: terminology against the glossary (chapters/appendix-glossary.qmd) and the fine-tuned chapters; moves-block drift against _julie/process-spines.md (flag sync needs, don't edit the registry); cross-chapter story/thread consistency (grep the beats across chapters/); stage-name and artifact-name consistency (Signal/Source/Design/Build/Deliver/Compound; Constraint Backlog; HAC; Knowledge Map). Findings in OTHER files = note severity with file:line (they become propagation beads, not edits).`,
     { label: 'judge:coherence', phase: 'Judge', schema: FINDINGS, model: 'fable', agentType: 'editorial-coherence' }),
+  // Fourth judge added after the author asked "I thought I had guardrails around a lot of this (eg
+  // skills to organize, simplify, etc) so we need to examine that." The bmad editorial-review skills
+  // existed and this pipeline had never invoked them. This judge is the simplicity/clarity seat.
+  () => agent(`${judgeCtx}
+
+Judge as the SIMPLICITY editor. FIRST load the 'bmad-editorial-review-prose' skill (Skill tool) and, if useful, 'bmad-editorial-review-structure'; work their methods rather than improvising. These skills exist to catch exactly what this pipeline has been shipping past the author twice.
+
+Your single overriding target is the reader the author describes: a non-technical business operator who does NOT already know this material, and who reported "wondering what the hell we're talking about."
+
+Flag, with file:line and a concrete rewrite direction:
+1. NOMINALIZATION — abstract -tion/-ment/-ance/-ness noun stacks that bury the actor. Both exemplars sit at 2.8 per 100 words; the gate report gives this chapter's number. Where it is high, name the worst offending sentences and rewrite them actor-verb. This is severity must-fix when the gate reports "heavy".
+2. LONG SENTENCES / WEAK VERBS — sentences over ~30 words, and sentences whose main verb is a form of "to be" where an action verb exists.
+3. MISSING COGNITIVE SCAFFOLDING — a term, instrument, or number arriving with nothing to hold onto. Ask of every technical term: would a reader who skipped the last chapter survive this sentence? Note that chapters/appendix-diagramming-primer.qmd teaches swimlane charting and is under-used, and that Quarto renders Mermaid natively.
+4. UNEXPLAINED CONNECTIONS — where the chapter presents several instruments or lists without making visible how they relate or in what order the reader uses them.
+5. THINGS THAT ARE JUST BORING — passages that restate, over-qualify, or march through a template. Say what to cut.
+
+Do not flag deliberate author rulings or locked canon. Prefer cutting to rewriting.`,
+    { label: 'judge:simplicity', phase: 'Judge', schema: FINDINGS, model: 'opus', effort: 'high' }),
 ])
-const [voice, proseCraft, coherence] = judges
+const [voice, proseCraft, coherence, simplicity] = judges
 
 // ---------------------------------------------------------------- Reconcile
 phase('Reconcile')
@@ -239,6 +261,7 @@ return {
     voice: voice && voice.verdict,
     proseCraft: proseCraft && proseCraft.verdict,
     coherence: coherence && coherence.verdict,
+    simplicity: simplicity && simplicity.verdict,
   },
   reconcile,
   finalGate,
