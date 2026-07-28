@@ -56,7 +56,7 @@ Before the Sprint enters Build, put the Compound session on the calendar. Includ
 
 ## The first instrument is the Sprint *Retrospective*.
 
-The Sprint Retrospective is the structured review of the Sprint that just shipped. It asks the same three questions every time: what worked, what didn't work, and what one design change would make the next Sprint better; the third question is a discipline in its own right, not a third instrument. Two more moves finish the retrospective: a reframe that turns question two's answers into design fixes, and a measurement of what compounded beyond the Sprint outcome.
+The Sprint Retrospective is the structured review of the Sprint that just shipped, and it runs the same five moves every time: what worked, what didn't, the reframe that turns each failure into a design fix, the one design change that comes out of it, and a measurement of what compounded beyond the Sprint outcome. The fourth move is a discipline in its own right rather than a third instrument, and it gets the section after this one.
 
 You run the retrospective with your Human Orchestrator and everyone who owned a Sprint accountability.
 
@@ -85,7 +85,7 @@ Name the mechanism, not the sentiment. "The handoff held because the intake form
 The honest friction every Sprint produces:
 
 - The handoff that broke: drafts piled up because the review queue lived in an inbox nobody owned.
-- The inputs that turned out dirtier than Source claimed: half the records were missing the field the agent matched on.
+- The inputs that turned out dirtier than the Knowledge Map said: half the records were missing the field the agent matched on.
 - The Orchestrator reviews that got skipped: the check lived in a separate Thursday meeting nobody protected.
 
 Write them all down. Filtering happens in the next move, not here.
@@ -115,9 +115,9 @@ If your retrospective produces zero "what didn't work" items, you didn't run it 
 
 {{< excalidraw ch09-sprint-retrospective "The Sprint Retrospective's three questions: what worked, what didn't (with the reframe), one design change, plus the measurement strip for what compounded beyond the Sprint outcome." >}}
 
-## Measure what *compounded* beyond the Sprint outcome.
+### Measure what *compounded* beyond the Sprint outcome
 
-The retrospective closes here. Beyond the Sprint outcome you measured in Deliver, Compound asks three more questions. The answers are the compound interest.
+The retrospective's last move. Beyond the Sprint outcome you measured in Deliver, you ask three more questions. The answers are the compound interest.
 
 *What does the organization know now that it didn't know before this Sprint?* Not the outcome; the knowledge. The real exception rate in a process. The actual state of a data source everyone assumed was clean. Which approvals turned out to be theater.
 
