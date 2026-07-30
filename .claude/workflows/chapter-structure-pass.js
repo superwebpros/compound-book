@@ -130,7 +130,8 @@ const gate = await agent(
 4. LENGTH BUDGET (a clean scan is not a green light — length is the defect our other metrics miss). Count prose words in ${chapter} and in the exemplars chapters/04-signal.qmd and chapters/05-source.qmd, excluding fenced blocks, HTML comments, shortcodes, tables and headings:
    python3 -c "import re,sys;t=open(sys.argv[1]).read();t=re.sub(r'\`\`\`.*?\`\`\`','',t,flags=re.S);t=re.sub(r'<!--.*?-->','',t,flags=re.S);t=re.sub(r'\\{\\{<.*?>\\}\\}','',t,flags=re.S);t=re.sub(r'^\\s*\\|.*$','',t,flags=re.M);t=re.sub(r'^#{1,6} .*$','',t,flags=re.M);print(len(re.findall(r\\"[A-Za-z']+\\",t)))" <file>
    Report all three. Signal is ~4,500 words and Source ~6,200. Flag explicitly if this chapter exceeds Source, and by how much — a chapter materially longer than Source needs a stated reason.
-Return: render exit status, jf-note count, alert bullets, THE CRAFT VERDICTS (nominalization number + verdict, with the two exemplar numbers for comparison), and the word-count comparison. Lead your return with any BLOCKING defect: a "heavy" nominalization verdict or a word count over Source.`,
+5. AI-TELL SCAN (mandatory, not optional). Load the 'ai-tell-scan' skill via the Skill tool and run it over ${chapter}. The author's standing complaint on this project is "tons of AI smells", and this skill existed for months while this pipeline never invoked it — the same failure class as the craft verdicts in step 3b. Report every flagged instance with file:line and the proposed cut or rewrite, and state plainly that you loaded the skill. If you cannot load it, that is a FAILED GATE — say so in your return rather than substituting your own judgement for the skill's method.
+Return: render exit status, jf-note count, alert bullets, THE CRAFT VERDICTS (nominalization number + verdict, with the two exemplar numbers for comparison), the word-count comparison, and THE AI-TELL FINDINGS. Lead your return with any BLOCKING defect: a "heavy" nominalization verdict, a word count over Source, or an ai-tell scan that did not run.`,
   { label: 'gate:scan+render', phase: 'Gate', model: 'sonnet' }
 )
 
@@ -202,7 +203,7 @@ Judge as editorial-coherence: terminology against the glossary (chapters/appendi
   // existed and this pipeline had never invoked them. This judge is the simplicity/clarity seat.
   () => agent(`${judgeCtx}
 
-Judge as the SIMPLICITY editor. FIRST load the 'bmad-editorial-review-prose' skill (Skill tool) and, if useful, 'bmad-editorial-review-structure'; work their methods rather than improvising. These skills exist to catch exactly what this pipeline has been shipping past the author twice.
+Judge as the SIMPLICITY editor. MANDATORY FIRST STEP, BOTH OF THEM, NO EXCEPTIONS: load the 'bmad-editorial-review-prose' skill AND the 'bmad-editorial-review-structure' skill via the Skill tool, and work their methods rather than improvising. These skills exist to catch exactly what this pipeline has been shipping past the author twice, and "if useful" was previously enough of a loophole that the structure skill got skipped. State in your return which skills you loaded and name one finding each method produced; if you cannot load one, say so explicitly rather than silently proceeding — an unloaded skill is a failed gate, not a stylistic choice.
 
 Your single overriding target is the reader the author describes: a non-technical business operator who does NOT already know this material, and who reported "wondering what the hell we're talking about."
 
