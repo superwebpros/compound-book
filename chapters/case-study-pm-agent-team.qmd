@@ -117,7 +117,7 @@ In that session, I designed four agents on a whiteboard. Describing an agent is 
 | Agent | Described (Conceptual) | Defined (Spec'd) |
 |------------------------|------------------------|------------------------|
 | **Task Agent** | "We need something that creates tasks from project charters" | **Input:** Project charter + milestone definitions from CRM API. **Output:** Complete task descriptions with SMART outcomes, point estimates, dependency ordering — written back to CRM via API. **Trigger:** Daily poll at 7:15am for projects needing tasks. **Guardrails:** Cannot modify existing tasks; creates only. All generated tasks posted to Slack for review. |
-| **Coordination Agent** | "We need something that assigns work and flags problems" | **Input:** All open tasks + team capacity data + skills matrix from CRM. **Output:** Task assignments, conflict flags, daily summary posted to Slack, review task for Sofia. **Trigger:** Daily at 7:45am. **Guardrails:** Cannot override Sofia's manual assignments. Excluded users list (Sofia, Jesse). Creates a daily review task so Sofia sees everything before the team does. |
+| **Coordination Agent** | "We need something that assigns work and flags problems" | **Input:** All open tasks + team capacity data + skills matrix from CRM. **Output:** Task assignments, conflict flags, a run summary posted to Slack, review task for Sofia. **Trigger:** 7:45am, Mon/Wed/Fri. **Guardrails:** Cannot override Sofia's manual assignments. Excluded users list (Sofia, Jesse). Creates a review task on each run so Sofia sees everything before the team does. |
 | **Reporting Agent** | "We need something that generates scorecards automatically" | **Input:** CRM project data + time tracking data (Kimai). **Output:** Daily reports (completed tasks, overdue items, open cases) + weekly reports (cost variance, schedule variance, team productivity). Uses earned value management: EV = estimated points x completion %, AC = hours logged. **Trigger:** Daily at 7:30am, weekly summary on Fridays. **Guardrails:** Read-only access to source systems. Reports posted to Slack, not sent to clients. |
 | **Garbage Collector** | "We need something that cleans up bad data" | **Input:** Full scan of CRM task and project descriptions. **Output:** Flagged items with specific quality issues (missing descriptions, incomplete project definitions, unestimated tasks). **Trigger:** Daily at 7:00am. **Guardrails:** Cannot modify data — flags only. Sofia reviews flagged items and decides what to fix. |
 
@@ -146,7 +146,7 @@ I named the whole thing on the whiteboard: "PM Agent Team." Sofia would take the
 | Function | Human Role | Who | Agent Role | Which Agent |
 |---------------|---------------|---------------|---------------|---------------|
 | Task creation and estimation | Reviews and approves generated tasks | Sofia | Generates tasks from charters, estimates points, orders dependencies | Task Agent |
-| Daily work assignment | Makes strategic prioritization calls | Sofia | Assigns tasks based on skills/capacity, flags conflicts | Coordination Agent |
+| Work assignment | Makes strategic prioritization calls | Sofia | Assigns tasks based on skills/capacity, flags conflicts | Coordination Agent |
 | Progress reporting | Interprets reports, makes decisions | Jesse / Sofia | Generates daily and weekly variance reports | Reporting Agent |
 | Data quality | Reviews flagged items | Sofia | Scans for incomplete descriptions, bad data | Garbage Collector |
 | Client communication | Owns all client relationships | Sofia | Drafts status updates for review | Coordination Agent |
@@ -184,7 +184,7 @@ This is the design brief as it existed when we moved from Design into Build. It 
 
 **Workflow Summary**
 
-The PM Agent Team replaces the coordination work previously done by a subcontractor. Five agents run on weekday mornings between 7:00am and 7:45am, each handling a specific coordination function: task creation from project charters, daily work assignment and conflict flagging, variance reporting with earned value management, personalized reminders for overdue and blocked work, and data quality scanning. All agent output posts to Slack for human review. Sofia Reyes supervises the team as Human Orchestrator, monitoring by exception rather than approving every action.
+The PM Agent Team replaces the coordination work previously done by a subcontractor. Five agents run on weekday mornings between 7:00am and 7:45am, three of them every weekday and two on a lighter cadence, each handling a specific coordination function: task creation from project charters, daily work assignment and conflict flagging, variance reporting with earned value management, personalized reminders for overdue and blocked work, and data quality scanning. All agent output posts to Slack for human review. Sofia Reyes supervises the team as Human Orchestrator, monitoring by exception rather than approving every action.
 
 **Stakeholders**
 
@@ -212,10 +212,10 @@ The PM Agent Team replaces the coordination work previously done by a subcontrac
 | Data | Source | Freshness Required | Access |
 |------------------|------------------|------------------|------------------|
 | Project charters and milestone definitions | CRM | Real-time (API poll) | Task Agent reads at 7:15am daily |
-| Open tasks with status, assignee, and estimates | CRM | Real-time | Coordination Agent reads at 7:45am daily |
+| Open tasks with status, assignee, and estimates | CRM | Real-time | Coordination Agent reads at 7:45am Mon/Wed/Fri |
 | Team skills matrix and capacity data | CRM | Updated weekly by Sofia | Coordination Agent reads for assignment logic |
 | Hours logged per task | Kimai | Previous day's entries | Reporting Agent reads at 7:30am daily |
-| Task and project descriptions | CRM | Real-time | Garbage Collector reads at 7:00am daily |
+| Task and project descriptions | CRM | Real-time | Garbage Collector reads at 7:00am Mon & Wed |
 | Overdue and blocked task flags | CRM | Real-time | Reminder Agent reads at 7:00am daily |
 
 **Success Criteria**
@@ -274,11 +274,13 @@ The main agent suite consisted of five agents, each running as a standalone Node
 
 | Agent | Schedule | What It Does |
 |------------------------|------------------------|------------------------|
-| **Task Agent** | 7:15am Mon-Fri | Polls for projects needing tasks, gathers context from the CRM, calls Claude to generate task descriptions with SMART outcomes, point estimates, and dependency ordering. Writes everything back to the CRM via API. |
-| **Coordination Agent** | 7:45am Mon-Fri | Gathers all open tasks, uses Claude to estimate unestimated tasks and assign unassigned ones based on team skills and capacity. Posts flags and summary to Slack. Creates a daily review task for Sofia. |
+| **Task Agent** | 7:15am Mon-Fri | Scans for projects sitting in Revision status, reads the files attached to each one, calls Claude to generate task descriptions with SMART outcomes, point estimates, and dependency ordering, writes them back to the CRM, then moves the project to In Process. |
+| **Coordination Agent** | 7:45am Mon/Wed/Fri | Gathers all open tasks, uses Claude to estimate unestimated tasks and assign unassigned ones based on team skills and capacity. Posts flags and summary to Slack. Creates a review task for Sofia on each run. |
 | **Reporting Agent** | 7:30am Mon-Fri | Generates daily reports (completed tasks, overdue items, open cases) and weekly reports (project cost variance, schedule variance, team productivity, case responsiveness). Uses earned value management: EV = estimated points x completion %, AC = hours logged from time tracking. |
 | **Reminder Agent** | 7:00am Mon-Fri | Sends personalized Slack DMs to each team member listing overdue and blocked tasks. Flags completed tasks missing point estimates or evidence of completion. No AI needed — purely data-driven. |
-| **Garbage Collector** | 7:00am (via n8n) | Scans for data quality issues — poor task descriptions, incomplete project definitions. |
+| **Garbage Collector** | 7:00am Mon & Wed (via n8n) | Scans for data quality issues — poor task descriptions, incomplete project definitions. |
+
+The order is deliberate. Reminders alert people first, the quality scan catches bad data, reporting documents what happened, and coordination plans what comes next. Not every agent needs to run every day: the ones that react to yesterday's work run daily, and the ones that reshape the week's plan run less often.
 
 The architecture is straightforward: native Node.js modules, no heavy dependencies. CRM API auth via API key header. Claude API via direct HTTPS. Each agent has three run modes: HTTP server with cron (default for production), CLI one-shot, and CLI with arguments for testing.
 
@@ -302,7 +304,7 @@ I also laid out the governance model in that same conversation: "The human respo
 | Tools / platforms | Node.js agent server (five agents), scheduled CRM agent (operates as first-class CRM user), n8n (Garbage Collector only) |
 | Agent capabilities | Task generation + estimation, daily work assignment + conflict flagging, daily/weekly variance reporting, personalized reminders, data quality scanning |
 | Access / permissions | Each agent has its own CRM user with scoped API key and role-based permissions |
-| Guardrails | Agents run on fixed schedules (7:00-7:45am Mon-Fri), post all output to Slack for review, create review tasks for Sofia, excluded users list prevents agents from touching Sofia's or Jesse's work |
+| Guardrails | Agents run on fixed schedules in the 7:00-7:45am window, daily or several times a week, post all output to Slack for review, create review tasks for Sofia, excluded users list prevents agents from touching Sofia's or Jesse's work |
 | Human Orchestrator | Sofia Reyes |
 
 ## Deliver: Shipping It
@@ -326,9 +328,9 @@ Agent tooling runs about \$500/month — roughly \$200 for server hosting and \$
 | Coordinator cost | \$24K/year (subcontractor) | \~\$6K/year (\~\$500/mo for server + Claude API) | 75% cost reduction |
 | Report generation | Manual, self-reported, weekly | Automated daily + weekly, earned value math | From lagging self-reports to daily automated variance tracking |
 | Task creation | Manual — Rachel read charters and transcripts | Automated — Task Agent generates from charters with SMART outcomes | From hours of manual work to minutes of agent processing |
-| Work assignment | Manual — Rachel/Sofia assigned tasks by hand | Automated — Coordination Agent assigns daily based on skills/capacity | From ad-hoc delegation to systematic daily assignment |
+| Work assignment | Manual — Rachel/Sofia assigned tasks by hand | Automated — Coordination Agent assigns based on skills/capacity | From ad-hoc delegation to a systematic assignment run |
 | Team notification | Manual — Rachel/Sofia messaged individuals | Automated — Reminder Agent sends personalized Slack DMs | From inconsistent follow-up to daily personalized reminders |
-| Data quality | No systematic review | Automated — Garbage Collector flags poor descriptions | From no QA to continuous automated scanning |
+| Data quality | No systematic review | Automated — Garbage Collector flags poor descriptions | From no QA to a standing twice-weekly scan |
 | Communication speed | Delayed — waited for Rachel to relay priorities | Immediate — agents post directly to Slack each morning | Team knows what's past due and what's priority before standup |
 
 ## Compound: What the Next Sprint Inherits
