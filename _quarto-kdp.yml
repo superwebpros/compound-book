@@ -1,0 +1,36 @@
+# KDP profile — print-ready paperback interior + upload-ready Kindle EPUB.
+# Render with:  quarto render --profile kdp --to pdf   (or --to epub)
+# Spec: https://kdp.amazon.com/en_US/help/topic/G202145060
+#   - 6" x 9" trim, no bleed (no content extends to page edge)
+#   - mirrored margins: inner (gutter) 0.75" — required for 501-700 page
+#     interiors (the book renders at ~570 pages); outer 0.625", top/bottom 0.75"
+#   - all link colors black: red URLs print as gray smudge in B&W interiors
+#   - fonts embedded automatically by xelatex
+#   - EPUB carries no embedded cover: KDP attaches the separately uploaded
+#     cover, an embedded one would duplicate it
+project:
+  output-dir: _book-kdp
+
+format:
+  pdf:
+    documentclass: scrbook
+    # match the HTML book: no dissertation-style 1.4.1 heading numbers
+    number-sections: false
+    geometry:
+      - paperwidth=6in
+      - paperheight=9in
+      - inner=0.75in
+      - outer=0.625in
+      - top=0.75in
+      - bottom=0.75in
+    fontsize: 10.5pt
+    linestretch: 1.35
+    colorlinks: true
+    linkcolor: black
+    urlcolor: black
+    citecolor: black
+    toccolor: black
+  # NOTE: Quarto's schema forbids unsetting the epub cover from a profile, so
+  # the KDP epub is post-processed instead: bin/strip-epub-cover.sh removes the
+  # embedded cover (KDP attaches the separately uploaded cover; an embedded one
+  # would show doubled).
