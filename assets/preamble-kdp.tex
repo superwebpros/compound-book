@@ -1,0 +1,51 @@
+% KDP print additions — loaded after assets/preamble.tex by _quarto-kdp.yml.
+
+% Tables at \footnotesize: a 6x9 text block is ~4.6in wide; full-size table
+% type forces pathological wrapping and the widest tables (6 columns) still
+% overflowed at \small. kdp-tables.lua's width math assumes this size.
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\footnotesize\setlength{\tabcolsep}{4pt}}
+\AtBeginEnvironment{tabular}{\footnotesize\setlength{\tabcolsep}{4pt}}
+
+% Wrap long code-block lines: the prompts appendix and ASCII-layout blocks
+% run to the physical page edge otherwise. fvextra patches both the
+% highlighted (Highlighting) and plain (verbatim) environments.
+\usepackage{fvextra}
+\fvset{breaklines=true,breakanywhere=true,fontsize=\footnotesize}
+% Deferred to \begin{document}: Quarto's callout support loads tcolorbox
+% AFTER header-includes, and tcolorbox pulls in verbatim.sty, which would
+% clobber this redefinition if it ran here.
+\AtBeginDocument{%
+  \RecustomVerbatimEnvironment{verbatim}{Verbatim}{breaklines=true,breakanywhere=true,fontsize=\footnotesize}%
+}
+
+% TOC: break long entries instead of squeezing them into the gutter, and
+% set entries at \small — the squeezed dot-leader lines then fit outright.
+\DeclareTOCStyleEntries[raggedentrytext,entryformat=\small,pagenumberformat=\small]{tocline}{chapter,section}
+% Bold 3-digit chapter page numbers overflow KOMA's default 1.55em number
+% box and hang into the gutter on verso TOC pages — give them room.
+\DeclareTOCStyleEntries[pagenumberwidth=2.5em]{tocline}{part,chapter,section}
+
+% Let slightly-tight lines stretch instead of protruding into the gutter
+% (KDP preflight measures ink, not the text block).
+\emergencystretch=3em
+
+% KDP measures ink, not the text block: microtype's optical margin
+% protrusion hangs punctuation 1-3pt into the margins and trips their
+% gutter check on nearly every page. Kill protrusion, keep expansion.
+\microtypesetup{protrusion=false}
+
+% Running heads: chapter/section titles in this book are long
+% "Name: subtitle" constructions that overflow the 6x9 head line (the
+% overflow reached the physical page edge). Use only the part before the
+% first colon — standard trade-book short running heads.
+\makeatletter
+\newcommand{\kdp@shortmark}[1]{%
+  \begingroup
+  \def\kdp@split##1:##2\kdp@end{\gdef\kdp@short{##1}}%
+  \kdp@split#1:\kdp@end
+  \endgroup
+}
+\renewcommand{\chaptermark}[1]{\kdp@shortmark{#1}\markboth{\kdp@short}{}}
+\renewcommand{\sectionmark}[1]{\kdp@shortmark{#1}\markright{\kdp@short}}
+\makeatother

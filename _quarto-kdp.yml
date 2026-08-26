@@ -23,6 +23,15 @@ format:
       - outer=0.625in
       - top=0.75in
       - bottom=0.75in
+      # keep the folio well inside the trim: without this, KOMA's footskip
+      # drops page numbers to ~0.1in from the bottom edge (KDP preflight error)
+      - footskip=0.3in
+    toc-depth: 2
+    include-in-header:
+      - assets/preamble.tex
+      - assets/preamble-kdp.tex
+    filters:
+      - assets/kdp-tables.lua
     fontsize: 10.5pt
     linestretch: 1.35
     colorlinks: true
